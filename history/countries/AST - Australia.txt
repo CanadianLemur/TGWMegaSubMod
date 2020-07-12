@@ -1,0 +1,268 @@
+﻿capital = 517
+
+#-------------------------------------------------------
+#					GENERIC VALUES
+#-------------------------------------------------------
+set_fuel_ratio = 0.20
+set_research_slots = 3
+set_stability = 0.75œ
+set_convoys = 100
+
+#-------------------------------------------------------
+#					POLITICS & ARMY
+#-------------------------------------------------------
+create_country_leader={ name = "Ronald Munro-Ferguson" desc=AST_ronald_munro_ferguson_DESC picture="gfx/leaders/AST_ronald_munro_ferguson.dds" expire="1935.1.1" ideology=liberalism traits={  } }
+create_country_leader={ name = "William Humble Ward" desc=AST_r_h_william_ward_DESC picture="gfx/leaders/AST_r_h_william_ward.dds" expire="1935.1.1" ideology=conservatism traits={  } }
+create_corps_commander={  name = "Chauvel,H.G." id=5002 portrait_path="gfx/generals/AST_chauvel_hg.dds" traits={   } skill=2 }
+create_corps_commander={  name = "Elliott" id=5003 portrait_path="gfx/generals/AST_elliott.dds" traits={   } skill=4 }
+create_corps_commander={  name = "Talbot Hobbs,J.J." id=5004 portrait_path="gfx/generals/AST_talbot_hobbs_jj.dds" traits={   } skill=2 }
+create_corps_commander={  name = "M'Cay" id=5005 portrait_path="gfx/generals/AST_m_cay.dds" traits={   } skill=3 }
+create_corps_commander={  name = "Legge" id=5008 portrait_path="gfx/generals/AST_legge.dds" traits={   } skill=2 }
+create_corps_commander={  name = "Cox" id=5009 portrait_path="gfx/generals/AST_cox.dds" traits={   } skill=3 }
+create_corps_commander={  name = "Brand" id=5010 portrait_path="gfx/generals/AST_brand.dds" traits={   } skill=3 }
+create_corps_commander={  name = "Gellibrand" id=5011 portrait_path="gfx/generals/AST_gellibrand.dds" traits={   } skill=3 }
+create_corps_commander={  name = "Glasgow" id=5012 portrait_path="gfx/generals/AST_glasgow.dds" traits={   } skill=3 }
+create_corps_commander={  name = "Holmes" id=5013 portrait_path="gfx/generals/AST_holmes.dds" traits={   } skill=3 }
+create_corps_commander={  name = "MacLaurin" id=5014 portrait_path="gfx/generals/AST_maclaurin.dds" traits={   } skill=2 }
+create_corps_commander={  name = "Onslow" id=5015 portrait_path="gfx/generals/AST_onslow.dds" traits={   } skill=3 }
+create_corps_commander={  name = "Rosenthal" id=5016 portrait_path="gfx/generals/AST_rosenthal.dds" traits={   } skill=3 }
+create_corps_commander={  name = "Ryrie" id=5022 portrait_path="gfx/generals/AST_ryrie.dds" traits={   } skill=3 }
+create_corps_commander={  name = "Wilson" id=5023 portrait_path="gfx/generals/AST_wilson.dds" traits={   } skill=2 }
+create_corps_commander={  name = "Sinclair-MacLagan,E.G." id=5025 portrait_path="gfx/generals/AST_sinclair_maclagan_eg.dds" traits={   } skill=3 }
+
+# Open Beta 0.7.3 #
+create_field_marshal={  name = "John Monash" id=5006 portrait_path="gfx/hoi4tgw_portraits/AST/army_generals/AST_john_monash.dds" traits={ organisational_leader thorough_planner } skill=5 }
+
+create_field_marshal={  name = "Blamey,T.A." id=5028 portrait_path="gfx/fieldmarshal/AST_blamey_ta.dds" traits={ logistics_wizard offensive_doctrine } skill=3 }
+create_navy_leader={  name = "Creswell" id=5021 portrait_path="gfx/admiral/AST_creswell.dds" traits={   } skill=3 }
+create_navy_leader={  name = "Beresford" id=5024 portrait_path="gfx/admiral/AST_beresford.dds" traits={   } skill=2 }
+
+set_technology = {
+	# Navy
+	ww1_battleship0 = 1
+	ww1_battleship0_mtg = 1
+	
+	ww1_battleship1 = 1
+	ww1_battleship1_mtg = 1
+	
+	###ww1_battleship2 = 0 #  ww1_battleship_1906 (Dreadnought I)
+	###ww1_battleship3 = 0 #  ww1_battleship_1910 (Dreadnought II)
+	###ww1_battleship4 = 0 #  ww1_battleship_1914 (Dreadnought III)
+
+	###ww1_battlecruiser1 = 0 # ww1_battlecruiser_1906 (Battlecruiser I)
+	###ww1_battlecruiser2 = 0 # ww1_battlecruiser_1910 (Battlecruiser II)
+	###ww1_battlecruiser3 = 0 # ww1_battlecruiser_1910 (Battlecruiser III)
+
+	ww1_heavy_cruiser0 = 1
+	ww1_heavy_cruiser0_mtg = 1 # heavy_cruiser_1890 (Armored Cruiser I)
+	ww1_heavy_cruiser1 = 1
+	ww1_heavy_cruiser1_mtg = 1 # heavy_cruiser_1900 (Armored Cruiser II)
+
+	ww1_light_cruiser0 = 1
+	ww1_light_cruiser0_mtg = 1 # light_cruiser_1890 (Protected Cruiser I)
+	ww1_light_cruiser1 = 1
+	ww1_light_cruiser1_mtg = 1 # light_cruiser_1900 (Protected Cruiser II)
+	###ww1_light_cruiser2 = 0 # light_cruiser_1906 (Light Cruiser I)
+	###ww1_light_cruiser3 = 0 # light_cruiser_1910 (Light Cruiser II)
+	###ww1_light_cruiser4 = 0 # light_cruiser_1914 (Light Cruiser III)
+
+	ww1_destroyer0 = 1
+	ww1_destroyer0_mtg = 1 # destroyer_1890 (Torpedo Boat I)
+	ww1_destroyer1 = 1
+	ww1_destroyer1_mtg = 1 # destroyer_1900 (Destroyer I)
+	ww1_destroyer2 = 1
+	ww1_destroyer2_mtg = 1 # destroyer_1906 (Destroyer II)
+	###ww1_destroyer3 = 0 # destroyer_1910 (Destroyer III)
+	###ww1_destroyer4 = 0 # destroyer_1914 (Destroyer IV)	
+
+	ww1_moduleMTG_mines = 1
+	ww1_moduleMTG_mines_mtg = 1 # Mines
+
+	ww1_submarine0 = 1
+	ww1_submarine0_mtg = 1 # coastal_submarine_1900 (Coastal Submarine 1900, first available Submarine)
+	###ww1_submarine1 = 0 # submarine_1906 (Submarine I)
+	###ww1_submarine2 = 0 # submarine_1910 (Submarine II)
+	###ww1_submarine3 = 0 # submarine_1914 (Submarine III)
+
+	transport = 1
+	transport_mtg = 1 # Naval Transport
+}
+if = {
+	limit = { has_dlc = "Together for Victory" }
+
+	add_to_tech_sharing_group = commonwealth_research
+}
+
+1910.1.1 = {
+	oob = "AST_1910"
+
+	#-------------------------------------------------------
+	#							NF
+	#-------------------------------------------------------
+
+	#-------------------------------------------------------
+
+	set_technology = {
+
+		# Infantry
+		infantry_weapons = 1
+		support_weapons = 1
+		infantry_binoculars = 1
+		motorised_infantry = 1
+		ww1_ambulance1 = 1
+
+
+		# Support
+		tech_support = 1
+		tech_engineers = 1
+		tech_recon = 1
+		#tech_military_police = 1
+		#tech_maintenance_company = 1
+		#tech_field_hospital = 1
+		#tech_logistics_company = 1
+
+		# Armor
+
+		# Artillery
+		light_field_gun1 = 1
+		heavy_field_gun1 = 1
+
+		# Air
+
+		# Engineering
+		electronic_mechanical_engineering = 1
+
+		# Industry
+	}
+
+	set_politics = {
+	    ruling_party = democratic
+	    last_election = "1910.4.13"
+	    election_frequency = 36
+	    elections_allowed = yes
+	}
+	set_popularities = {
+	    democratic = 96
+	    fascism = 1
+	    communism = 2
+	    neutrality = 1
+	}
+
+	add_ideas = {
+		limited_conscription
+	}	
+}
+
+1914.1.1 = {
+	oob = "AST_1914"
+
+
+	#-------------------------------------------------------
+	#							NF
+	#-------------------------------------------------------
+
+	#Army
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = ww1_artillery_effort_1
+	complete_national_focus = doctrine_effort
+	complete_national_focus = ww1_trenchwarfare
+
+	#Industrial
+	complete_national_focus = industrial_effort
+	complete_national_focus = infrastructure_effort
+
+	#Political
+	complete_national_focus = political_effort
+
+	#Diplomatic
+	complete_national_focus = ww1_diplomatic_effort
+	complete_national_focus = ww1_takeposition	
+	complete_national_focus = ww1_supportfrance
+	complete_national_focus = ww1_supportrussia	
+	complete_national_focus = interventionism_focus
+	complete_national_focus = volunteer_corps
+	complete_national_focus = foreign_expeditions
+	
+
+	#-------------------------------------------------------
+
+	set_technology = {
+
+		# Infantry
+		infantry_weapons = 1
+		ww1infantry_weapons1 = 1
+		support_weapons = 1
+		infantry_binoculars = 1
+		infantry_grenade = 1
+		motorised_infantry = 1
+		ww1_ambulance1 = 1
+
+
+		# Support
+		tech_support = 1
+		tech_engineers = 1
+		tech_recon = 1
+		tech_military_police = 1
+		tech_maintenance_company = 1
+		tech_field_hospital = 1
+		tech_logistics_company = 1
+
+		# Armor
+		gwtank = 1 # 1910 Armored Car
+
+		# Artillery
+		light_field_gun1 = 1
+		bonus_artillery1 = 1
+		heavy_field_gun1 = 1
+		bonus_bertha1 = 1
+
+		# Navy
+		ww1_destroyer0 = 1
+	ww1_destroyer0_mtg = 1
+		ww1_destroyer1 = 1
+	ww1_destroyer1_mtg = 1
+		ww1_light_cruiser1 = 1
+	ww1_light_cruiser1_mtg = 1
+		ww1_light_cruiser0 = 1
+	ww1_light_cruiser0_mtg = 1
+		ww1_battleship0 = 1
+	ww1_battleship0_mtg = 1
+		ww1_battleship1 = 1
+	ww1_battleship1_mtg = 1
+		ww1_submarine1 = 1
+	ww1_submarine1_mtg = 1
+		ww1_coastal_submarine1 = 1
+	ww1_coastal_submarine1_mtg = 1
+		transport = 1
+	transport_mtg = 1
+
+		# Air
+		ww1_fighter1 = 1
+
+		# Engineering
+		electronic_mechanical_engineering = 1
+
+		# Industry
+	}
+
+	set_politics = {
+	    ruling_party = democratic
+	    last_election = "1913.5.31"
+	    election_frequency = 36
+	    elections_allowed = yes
+	}
+	set_popularities = {
+	    democratic = 96
+	    fascism = 1
+	    communism = 2
+	    neutrality = 1
+	}
+
+	add_ideas = {
+		neutrality_idea
+		limited_conscription
+	}
+
+	set_country_flag = ward_retired
+}

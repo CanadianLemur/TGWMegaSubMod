@@ -1,0 +1,269 @@
+spriteTypes = {
+	
+	#####--Balkans Ablaze ideas/national Spirits--#####
+	spriteType = {
+		name = "GFX_idea_BUL_sofia_artillery_arsenal_designer"
+		texturefile = "gfx/interface/ideas/idea_BUL_sofia_artillery_arsenal.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BUL_sofia_artillery_arsenal"
+		texturefile = "gfx/interface/ideas/idea_BUL_sofia_artillery_arsenal.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BUL_militarism"
+		texturefile = "gfx/interface/ideas/idea_BUL_militarism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BUL_glorious_militarism"
+		texturefile = "gfx/interface/ideas/idea_BUL_militarism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BUL_nationalist_fervor"
+		texturefile = "gfx/interface/ideas/idea_BUL_nationalist_fervor.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BUL_army_deserters"
+		texturefile = "gfx/interface/ideas/idea_BUL_army_deserters.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BUL_bulgarian_army_staff"
+		texturefile = "gfx/interface/ideas/idea_BUL_bulgarian_army_staff.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_grain_shortage"
+		texturefile = "gfx/interface/ideas/idea_generic_grain_shortage.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_TUR_ottoman_army_staff"
+		texturefile = "gfx/interface/ideas/idea_TUR_ottoman_army_staff.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_FRA_french_army_staff"
+		texturefile = "gfx/interface/ideas/idea_FRA_french_army_staff.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ENG_empire_expeditionary_force"
+		texturefile = "gfx/interface/ideas/idea_eng_service_overseas.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ENG_recruitment_drive"
+		texturefile = "gfx/interface/ideas/idea_ENG_recruitment_drive.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_LUX_german_influence"
+		texturefile = "gfx/interface/ideas/idea_general_staff.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ALB_austro-hungarian_influence"
+		texturefile = "gfx/hoi4tgw_national_spirit/House_Habsburg_Lorraine.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BAL_league_mobilization"
+		texturefile = "gfx/interface/ideas/idea_BAL_league_mobilization.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BAL_ceasefire_with_bulgaria"
+		texturefile = "gfx/interface/ideas/idea_BAL_treaty.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BUL_receiving_reparations"
+		texturefile = "gfx/interface/ideas/idea_BUL_receiving_reparations.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SER_paying_reparations"
+		texturefile = "gfx/interface/ideas/idea_SER_paying_reparations.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_GRE_tenacious_warriors"
+		texturefile = "gfx/interface/ideas/idea_GRE_tenacious_warriors.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_MTN_fierce_warriors"
+		texturefile = "gfx/interface/ideas/idea_MTN_fierce_warriors.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SER_fighting_spirit"
+		texturefile = "gfx/interface/ideas/idea_SER_fighting_spirit.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_GER_armament_exports"
+		texturefile = "gfx/interface/ideas/idea_GER_armament_exports.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_TUR_armament_imports"
+		texturefile = "gfx/interface/ideas/idea_TUR_armament_imports.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_PER_legacy_of_the_qizilbash"
+		texturefile = "gfx/interface/ideas/idea_PER_legacy_of_the_qizilbash.dds"
+	}
+	
+	### Getting the following from the base game's folders rather than having to add them to the mod, thus saving space ###
+	spriteType = {
+		name = "GFX_idea_ba_can_wartime_prices_and_trade_board"
+		texturefile = "gfx/interface/ideas/idea_can_wartime_prices_and_trade_board.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ba_generic_agrarian_society"
+		texturefile = "gfx/interface/ideas/idea_generic_agrarian_society.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ba_generic_constitutional_guarantees"
+		texturefile = "gfx/interface/ideas/idea_generic_constitutional_guarantee.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ba_generic_build_infrastructure"
+		texturefile = "gfx/interface/ideas/idea_generic_build_infrastructure.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ba_generic_army_problems"
+		texturefile = "gfx/interface/ideas/idea_generic_army_problems.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ba_hol_aloof_neutrality"
+		texturefile = "gfx/interface/ideas/idea_hol_aloof_neutrality.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ba_eng_tackle_capitalism"
+		texturefile = "gfx/interface/ideas/idea_eng_tackle_capitalism.dds"
+	}
+	
+	
+	
+	#####--Balkans Ablaze Decision Categories and Decisions--#####
+	spriteType = {
+		name = "GFX_decision_cat_picture_bulgarian_infantry_assault_fbw_1912-1913"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_bulgarian_infantry_assault_fbw_1912-1913.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_kgd_of_montenegro"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_kgd_of_montenegro.dds"
+	}
+	
+	
+	
+	#####--Balkans Ablaze Events--#####
+	spriteType = {
+		name = "GFX_report_event_bulgarian_artillery_1910"
+		texturefile = "gfx/event_pictures/report_event_bulgarian_artillery_1910.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_bulgarian_militiamen"
+		texturefile = "gfx/event_pictures/report_event_bulgarian_militiamen.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_sofia_1910"
+		texturefile = "gfx/event_pictures/report_event_sofia_1910.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_athens_1910"
+		texturefile = "gfx/event_pictures/report_event_athens_1910.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_balkan_league_propaganda"
+		texturefile = "gfx/event_pictures/report_event_balkan_league_propaganda.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_ferdinand_and_george"
+		texturefile = "gfx/event_pictures/report_event_ferdinand_and_george.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_first_balkan_aftermath"
+		texturefile = "gfx/event_pictures/report_event_first_balkan_aftermath.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_ottoman_troops"
+		texturefile = "gfx/event_pictures/report_event_ottoman_troops.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_serbian_forces"
+		texturefile = "gfx/event_pictures/report_event_serbian_forces.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_german_postcard_1914"
+		texturefile = "gfx/event_pictures/report_event_german_postcard_1914.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_balkan_crisis_1908"
+		texturefile = "gfx/event_pictures/report_event_balkan_crisis_1908.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_french_servicemen_around_1900"
+		texturefile = "gfx/event_pictures/report_event_french_servicemen_around_1900.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_henri_farman_biplane_january_1910"
+		texturefile = "gfx/event_pictures/report_event_henri_farman_biplane_january_1910.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_bulgarian_heavy_artillery"
+		texturefile = "gfx/event_pictures/news_event_bulgarian_heavy_artillery.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_bulgarian_siege_of_odrin"
+		texturefile = "gfx/event_pictures/news_event_bulgarian_siege_of_odrin.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_serbian_forces"
+		texturefile = "gfx/event_pictures/news_event_serbian_forces.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_first_balkan_aftermath"
+		texturefile = "gfx/event_pictures/news_event_first_balkan_aftermath.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_simeon_petrov_in_bleriot_1912"
+		texturefile = "gfx/event_pictures/news_event_simeon_petrov_in_bleriot_1912.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_bulgaria_joins_central_powers"
+		texturefile = "gfx/event_pictures/news_event_bulgaria_joins_central_powers.dds"
+	}
+}

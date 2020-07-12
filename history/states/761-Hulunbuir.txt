@@ -1,0 +1,25 @@
+state = {
+	id = 761
+	name = "STATE_761"
+	manpower = 136149	### For May 1910. Moved 100 000 population from South Serbia/Kosovo to here to achieve a more historical population distribution between the two neighboring states (after the First Balkan War the population of Montenegro rose significantly). 36 149 + 100 000 = 136 149. 1936: 50000, but this is seemingly way too low
+	state_category = rural
+	provinces = { 937 6913 3922 }
+	resources = {
+		wood = 0
+	}
+	history = {
+		victory_points = { 937 1 }
+		owner = TUR
+		add_core_of = MTN
+		add_core_of = TUR
+		1913.5.30 = { owner = MTN  }
+		1919.1.1 = {
+			owner = YUG
+			add_core_of = YUG
+		}
+		1936.1.1 = { owner=YUG }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+}

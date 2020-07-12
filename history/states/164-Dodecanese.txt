@@ -1,0 +1,39 @@
+state = {
+	id = 164
+	name = "STATE_164"
+	manpower = 97720	### For May 1910. Hard to find good statistics for the time, so here I assumed the Dodecanese had roughly the same total percentage growth rate as Crete from 1910 to 1936, and used this to find the May 1910 population for the Dodecanese from the 1936 number. 1936: 120000
+	state_category = small_island
+	provinces = {
+		7003 10007
+	}
+	resources = {
+		wood = 0
+	}
+	history = {
+		victory_points = {
+			10007 1
+		}
+		owner = TUR
+		add_core_of = GRE
+		add_core_of = TUR
+		1912.10.18 = { owner = ITA }
+		1936.1.1 = { 
+			owner = ITA
+			add_core_of = GRE
+			victory_points = {
+				10007 1
+			}
+			buildings = {
+				infrastructure = 5
+				air_base = 1
+				10007 = { naval_base = 4 }
+				7003 = { naval_base = 1 }
+			}
+		}
+		buildings = {
+			infrastructure = 5
+			10007 = { naval_base = 4 }
+			7003 = { naval_base = 1 }
+		}
+	}
+}

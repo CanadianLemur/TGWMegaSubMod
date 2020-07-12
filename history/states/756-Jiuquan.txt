@@ -1,0 +1,37 @@
+state={
+	id=756
+	name="STATE_756"
+	manpower = 93819	### For May 1910. 105 000 population moved back to Constantinople (198 819 - 105 000 = 93 819) to represent the historical population of the city at the time. 1936: 275000, but probably too high due to wrong population split used on the now split Istanbul state
+	state_category=town
+	provinces={
+		922 3893 11842 
+	}
+	resources={
+		wood=22
+		coal=8
+	}
+	history={
+		owner = TUR
+		add_core_of = TUR
+		add_core_of = BUL
+		add_claim_by = GRE
+		victory_points = {
+			11842 5
+		}
+		victory_points = {
+			922 1
+		}
+		1913.5.30 = { owner = BUL }
+		1913.8.10 = { owner = TUR }
+		1919.1.1 = {
+			owner = GRE
+			add_core_of = TUK
+		}
+		buildings={
+			infrastructure=4
+			11842 = {
+				trench = 2
+			}
+		}
+	}
+}

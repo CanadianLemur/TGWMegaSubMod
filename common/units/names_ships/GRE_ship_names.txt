@@ -1,0 +1,124 @@
+﻿#####--GREECE NAME LISTS--#####
+####--REGULAR DESTROYER NAMES--####
+####--Updated to fit the time period from 1910 (for the Balkans Ablaze submod) by Khanor--####
+
+GRE_TB_AND_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_TORPEDO_BOATS_AND_DESTROYERS
+	
+	for_countries = { GRE }
+	
+	type = ship
+	ship_types = { ship_hull_light destroyer }			
+	
+	prefix = "VP "	### VP (Vassilikón Ploíon), 'Royal Ship'; RHS (Royal Hellenic Ship) or HHMS (His Hellenic Majesty's Ship) in use by English-language authors and contemporary foreign navies (from the ship prefixes page of wikipedia.org). I chose to go with the ship prefixes the Greeks themselves would have used.
+	fallback_name = "Metafero %s"					
+	
+	unique = {
+		"Niki" "Doxa" "Aspis" "Velos" "Thyella" "Nafkratousa" "Lonchi" "Sfendoni" "Aetos" "Ierax" "Panthir" "Leon" "Nea Genea" "Keravnos" "Vasilefs Georgios I" "Vasilissa Olga" "Salamis" "Navarinon" "Kimon" "Nearchos" "Themistocles" "Kriti" 
+		"Kountouriotis" "Pindos" "Adrias" "Hastings" "Kanaris" "Miaoulis" 
+		"Themistokles" "Astings" "Kriti" "Aigaion" 
+	}
+}
+
+### LIGHT CRUISER NAMES###
+GRE_CL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CL
+
+	for_countries = { GRE }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	
+	prefix = "VP "
+	fallback_name = "Elafri Katadromiko %s"
+
+	unique = {
+		"Navarchos Miaoulis" "Elli" "Apostolis" "Kriezis" "Sakhtouris" "Tompazis" "Ellis" "Piraievs" "Kikladhes" "Alexandros" "Pátrai" 
+	}
+}
+
+### HEAVY CRUISER NAMES###
+GRE_CA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+
+	for_countries = { GRE }
+
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+	
+	prefix = "VP "
+	fallback_name = "Vari Katadromiko %s"
+
+	unique = {
+		"Hydra" "Spetsai" "Psara" "Georgios Averof" "Piraievs" "Kikladhes" "Alexandros" "Pátrai" "Kríti" "Nísoi Aiyaíou" "Kithira" "Kefallinia" 
+	}
+}
+
+### BATTLESHIP NAMES ###
+GRE_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+
+	for_countries = { GRE }
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+	
+	prefix = "VP "
+	fallback_name = "Thorikto %s"		
+
+	unique = {
+		"Kilkis" "Lemnos" "Athinai" "Thessalia" "Ipiros" "Peloponnisos" 
+	}
+}
+
+### BATTLECRUISER NAMES ###
+GRE_BC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BC
+
+	for_countries = { GRE }
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+	
+	prefix = "VP "
+	fallback_name = "Thoriktou %s"		
+
+	unique = {
+		"Kilkis" "Lemnos" "Athinai" "Thessalia" "Ipiros" "Peloponnisos" 
+	}
+}
+
+### AIRCRAFT CARRIER NAMES ###
+GRE_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+
+	for_countries = { GRE }
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	prefix = "VP "
+	fallback_name = "Aeroplanoforo %s"	
+
+	unique = {
+		"Ellas" "Socrates" "Vasilefs Georgios" "Vasilissa Olga" "Hydra" "Spetsai" "Psara" 
+	}
+}
+
+### SUBMARINES ###
+GRE_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { GRE }
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	
+	prefix = "VP "
+	fallback_name = "Ypobrychio %s"
+	
+	unique = {
+		"Delfin" "Xifias" "Katsonis" "Papanikolis" "Protefs" "Nirefs" "Triton" "Glafkos" "Mastrozos" "Pipinos" "Argonautis" "Triaina" "Amfitriti" 
+		"Poseidon" "Okeanos" 
+	}
+}

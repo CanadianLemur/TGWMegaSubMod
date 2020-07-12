@@ -1,0 +1,862 @@
+﻿l_english:
+ ####--Country Events--####
+ ##0-4: Early country and state modifier events##
+ balkans_ablaze.1.t:0 "Bulgarian Military Professionalism"
+ balkans_ablaze.1.d:0 "Skilled people have been working hard to build up our armed forces the last few decades. Now we can enjoy the fruition of this as our Army is more powerful than ever before. Few things short of a disastrous diplomatic blunder can stand between us and our rightful share of the Balkans now!"
+ balkans_ablaze.1.a:0 "Towards a Greater Bulgaria!"
+ 
+ balkans_ablaze.2.t:0 "Economic development of the Bulgarian region"
+ balkans_ablaze.2.d:0 "After the agricultural period of Ottoman suzerainty, the last few decades have seen significant investments into industry and education in Bulgaria. Now we reap those benefits as our resources are mined, our industries built, and our workers educated."
+ balkans_ablaze.2.a:0 "Drop by drop - a whole lake becomes."
+ 
+ balkans_ablaze.4.t:0 "Economic development of the Greek region"
+ balkans_ablaze.4.d:0 "Since the turn of the century, we've seen a steady economic growth here in Greece. Small industries and businesses has been established in Athens and other significant cities. For instance the last years have seen an expansion in textile industry, and our fishing is doing well enough. There's also some lumber industries and mines in the northernmost Greek inhabited lands which merit some expansion."
+ balkans_ablaze.4.a:0 "Naught without labor."
+ 
+ ##5-14: Army modifiers applied for/in war##
+ balkans_ablaze.5.t:0 "Bulgarian Nationalistic Fervor on the rise"
+ balkans_ablaze.5.d:0 "We now find ourselves in quite a lopsided and risky war, but the common Bulgarian soldier have been smitten by the patriotic promises of a \"Velika Bŭlgariya\" as promised by the Treaty of San Stefano. Could this even the score again?"
+ balkans_ablaze.5.a:0 "We will prevail!"
+ 
+ balkans_ablaze.6.t:0 "The Bulgarian Army is plagued by deserters and revolts!"
+ balkans_ablaze.6.d:0 "Seeing large losses for limited gains has seen common soldiers and officers deserting our cause, and even revolting against their high command. The tenacity and morale of our armed forces have taken a significant hit."
+ balkans_ablaze.6.a:0 "Hopefully, we will prevail..."
+ 
+ balkans_ablaze.7.t:0 "The Balkan League Mobilizes"
+ balkans_ablaze.7.d:0 "The Southern Balkan nations are united and ready to face their foes. We should ensure our troops are well equipped and ready to fight from the moment war breaks out. We'll do our part!"
+ balkans_ablaze.7.a:0 "We'll be ready for what comes."
+ 
+ balkans_ablaze.8.t:0 "The Black Mountain's Finest"
+ balkans_ablaze.8.d:0 "Once more we find ourselves at war with the Turks. The fierceness and bravery of our warriors has often defeated the Ottoman forces before through ambushing them in our mountain valleys. We shall now let the fierceness of old and the innovations of the current be molded into one impressive fighting force as we drive the Turks back alongside our allies!"
+ balkans_ablaze.8.a:0 "Attack!"
+ 
+ balkans_ablaze.9.t:0 "The Modern Hellenic Army"
+ balkans_ablaze.9.d:0 "The disaster of 1897 proved that our armies were not adequate. After this significant resources and foreign experts have been put to the task of improving the Hellenic Army. Now we finally see the results of this in our tenacious, well drilled troops, as well as a vastly improved mobilization system."
+ balkans_ablaze.9.a:0 "Let them come... Should they dare."
+ 
+ balkans_ablaze.10.t:0 "Serbian Fighting Spirit"
+ balkans_ablaze.10.d:0 "The Serbians have always been a proud warrior people, testing our mettle both against the Turks, and for them when under their suzerainty. But now this proud tradition can be seen once more after testing our mettle in the recent Balkan conflict. And maybe this revival of our old fighting spirit happened just in time, with tensions on the rise in the world..."
+ balkans_ablaze.10.a:0 "Good, it will be needed."
+ 
+ balkans_ablaze.11.t:0 "Aquiring Modern Armaments"
+ balkans_ablaze.11.d:0 "With the Italian invasion of Libya and the Dodecanese Islands, as well as the united Balkan League, it has become clear that the current Ottoman Military does not possess the capabilities to defend such widespread territories. As we have a good relationship with the German Empire, we could petition them for some new armament shipments to bolster our forces."
+ balkans_ablaze.11.a:0 "Yes, petition the German Empire for large armament shipments."
+ balkans_ablaze.11.b:0 "No, we can't afford that. Domestic weapons and current arms imports will have to do..."
+ 
+ balkans_ablaze.12.t:0 "The First Armament shipments have arrived"
+ balkans_ablaze.12.d:0 "The weapons we ordered from the German Empire have started to arrive. Mainly composed of modern German artillery pieces, this should drastically improve the firepower of our forces."
+ balkans_ablaze.12.a:0 "Good. Since we're at war it would probably be prudent to increase our conscription levels as well"
+ balkans_ablaze.12.b:0 "Good. These weapons should be enough for us to protect ourselves."
+ 
+ balkans_ablaze.13.t:0 "The Last Armament shipments are here"
+ balkans_ablaze.13.d:0 "The last batch of the artillery pieces and rifles we ordered from the German Empire have arrived. With all these weapons we should be able to field an impressive army."
+ balkans_ablaze.13.a:0 "Excellent. We may yet protect our Rumelian holdings"
+ balkans_ablaze.13.b:0 "Maybe if they'd been here earlier..."
+ 
+ balkans_ablaze.14.t:0 "The Ottoman Empire wants to buy German Armaments"
+ balkans_ablaze.14.d:0 "While we've already got deals and a good relationship with the Ottoman Empire, their recent war with Italy over Libya and the precarious position of Rumelia have suddenly left them wanting for a more powerful Army capable of defending their sprawling territories. As such they're looking to buy many of our modern and semi modern weapons to equip their forces. While they've purchased guns and artillery from us before, this would be at a very large scale. Their ambassadors claim they'll pay us well."
+ balkans_ablaze.14.a:0 "Of course we will sell armaments to our friends in need."
+ balkans_ablaze.14.b:0 "We must decline this deal."
+ 
+ ##15-19: First Balkan War (and immediate aftermath)##
+ balkans_ablaze.15.t:0 "Our grip on the Balkans is slipping"
+ balkans_ablaze.15.d:0 "Unfortunately, it would seem our Empire is in quite the decline with the British seizing Egypt, Italy attacking Libya, and the Balkan nations banding together and defeating us.\n\nNow that the Montenegrin, Serb, Bulgarian, and Greek populations have joined their respective ethnic states, it'd be hard to reintegrate these areas. Maybe a more pragmatic foreign policy aimed at retaking bordering regions would be more appropriate. The Eastern Aegean Islands and Eastern Thrace seem like good candidates. So does Cyprus and Kuwait should we ever find ourselves in a favourable war with Britain..."
+ balkans_ablaze.15.a:0 "Pragmatism seems appropriate. If we are to keep our Empire, this decline must be stopped or reversed!"
+ 
+ balkans_ablaze.16.t:0 "The Turks are losing their grip on the Balkans"
+ balkans_ablaze.16.d:0 "After their defeat in the recent War in the Balkans, the Turks have lost their grip on most of their former territory and the people living there, as they rejoice to once more be part of their respective ethnic states. Maybe this will signify a shift in their foreing policy to opportunistic reclamation of bordering territories instead? While the Montenegrin and Serbian states now have buffer states between them and the Turks, the Bulgarian and Greek Kingdoms still border the wounded, but powerful Empire."
+ balkans_ablaze.16.a:0 "Yes, yes. We'll all be careful. Now however, we celebrate!"
+ 
+ ##20-39: Second Balkan War (and immediate aftermath)##
+ balkans_ablaze.20.t:0 "The Montenegrins back out"
+ balkans_ablaze.20.d:0 "The Second Balkan war might be the greatest threat to our nation yet. Having to fight the former Balkan League could have proven disastrous, and the Montenegrins, though limited in number, are very competent warriors.\n\nLuckily, as we managed to defend our lands and push into Serbian held Macedonia, the Montenegrins saw that this war was not worth losing more Montenegrin lives to them. They've accepted peace with us, and have switched focus to the integration of their new territories instead. Now to deal with the Serbs and Greeks once and for all."
+ balkans_ablaze.20.a:0 "Every bit helps, and peace with the People of the Black Mountain is an important bit."
+ 
+ balkans_ablaze.21.t:0 "Peace with [From.GetName]"
+ balkans_ablaze.21.d:0 "While it initially seemed like the Bulgarians had let their power and ambitions go to their head, the fact that they're currently winning and advancing have shown the futility of taking Serbia's side here. Our leaders have sued for peace with Bulgaria. The Serbs will have to fight their own war from now on."
+ balkans_ablaze.21.a:0 "It's not like we had anything to gain from fighting Bulgaria anyways."
+ 
+ balkans_ablaze.22.t:0 "The Romanians defeated"
+ balkans_ablaze.22.d:0 "The Second Balkan war might be the greatest threat to our nation yet. Having to fight the former Balkan League and the Romanians in the North could have proven disastrous.\n\nLuckily, as we managed to defend our lands and push into Romanian territory, the Romanians have now sued for peace and given up their claims to Southern Dobrudzha, including the port city of Silistra and its fortress. In addition to this we have forced them to cede the small parts of Dobrudzha promised to us by the Treaty of San Stefano. We have been quite lenient, however, by letting them keep all of their populous cities and towns in Dobrudzha, only taking the small port town of Mangaliya. Now to deal with out former friends."
+ balkans_ablaze.22.a:0 "The situation is looking much better."
+ 
+ balkans_ablaze.23.t:0 "Peace with [From.GetName]"
+ balkans_ablaze.23.d:0 "While it initially seemed like the Bulgarians had let their power and ambitions go to their head, the fact that they're currently winning on their northern front, and even occupying our territory have lead us to believe otherwise. Our leaders have therefore sued for peace with the Bulgarians. The Serbs will have to handle this themselves, since it's clearly not in our interest anymore. We've given up our claim on the Quadrilateral, or Southern Dobrogea, as well as the small port town of Mangalia to get off without further losses."
+ balkans_ablaze.23.a:0 "Southern Dobrogea we can live without... Bessarabia and Transylvania are the real prizes."
+ 
+ balkans_ablaze.24.t:0 "The Turks defeated"
+ balkans_ablaze.24.d:0 "The Second Balkan war might be the greatest threat to our nation yet. Having to fight the former Balkan League and the Turks in the East could have proven disastrous. Luckily, as we managed to defend our lands and push into Turkish territory once more, the Turks have sued for peace and given up their claims to their former territory in Bulgarian Thrace. Now to deal with out former \"friends\"."
+ balkans_ablaze.24.a:0 "The situation may yet be salvaged."
+ 
+ balkans_ablaze.25.t:0 "Peace with [From.GetName]"
+ balkans_ablaze.25.d:0 "While it initially seemed like the Bulgarians had let their power and ambitions go to their head, the fact that they're currently winning on their eastern front, and even occupying our territory have lead us to believe otherwise. Our leaders have therefore sued for peace with the Bulgarians. The Serbs will have to handle this themselves, since it's clearly not in our interest anymore."
+ balkans_ablaze.25.a:0 "We'll have to find recompense for our losses elsewhere. Maybe the North Aegean Islands make a better target?"
+ 
+ balkans_ablaze.26.t:0 "The Greeks have offered us a deal"
+ balkans_ablaze.26.d:0 "The Greeks do not want to give up Thessalonika, but have finally realized they're beaten. They've offered to give up their claims to all of Bulgarian Thrace, as well as peace and a non-aggression pact if we let them keep Thessalonika. While Bulgarian patriots covet Solun and \"Velika Bŭlgariya\", maybe it's time to be pragmatic and focus on the Serbians?"
+ balkans_ablaze.26.a:0 "Let's have peace with the Greeks, the Serbs are the ones holding what we're after."
+ balkans_ablaze.26.b:0 "Why choose peace when war is about is about to give us Greater Bulgaria?"
+ 
+ balkans_ablaze.27.t:0 "[From.GetName] agreed to peace"
+ balkans_ablaze.27.d:0 "The Bulgarians, though initially outnumbered, managed to get the better of us to the extent where we had to sue for peace. Since the Bulgarians are still busy, we've gotten to keep our recently taken lands, by renouncing our claims to Bulgarian Thrace and signing a pact of peace, friendship and continued trade."
+ balkans_ablaze.27.a:0 "The Bulgarians are someone else's problem now. Well, presumably the Serbs'."
+ 
+ balkans_ablaze.28.t:0 "[From.GetName] refused our generous peace offer"
+ balkans_ablaze.28.d:0 "The Bulgarians, who surprisingly managed to get the upper hand on us in this war, have refused our generous peace offer. They're apparently obsessed with the idea of the Greater Bulgaria concept, calling for all of Macedonia. While war support has taken a solid hit at home, we have little choice but to continue the fight."
+ balkans_ablaze.28.a:0 "Their greed knows no bounds. The Turkish yoke apparently makes way for the Bulgarian yoke."
+ 
+ balkans_ablaze.29.t:0 "A Surprising Defeat"
+ balkans_ablaze.29.d:0 "The Bulgarians have actually managed beat all of their neighbors, including us, their initial target. While their diplomacy and behavior can be called nothing but crude, their Military seems to be the antipole to their diplomacy, a well managed and finely tuned entity. We have no choice but to sue for peace along with the remnants of the nations initially opposing the Bulgarians.\n\nAt least we'll keep some of our gains from the First of these Wars in the Balkans."
+ balkans_ablaze.29.a:0 "Macedonia is theirs, but they could have had it without this bloodshed if they'd just supported our claim to Northern Albania earlier..."
+ 
+ balkans_ablaze.30.t:0 "A Tremendous Victory"
+ balkans_ablaze.30.d:0 "The Serbs and their backstabbing allies are beaten. Macedonia is ours, Greater Bulgaria has been all but accomplished, and the Romanians and Turks have been forced to give up their claims on our territory forever, grateful that we didn't pursue further territorial gains on their countries.\n\nFinally we've also required the Serbs to pay war reparations to ensure they stay weakened, and can never again keep the Bulgarian people from staying united. The Austrians have also finally stopped meddling in our affairs, allowing us to keep our gains."
+ balkans_ablaze.30.a:0 "Long Live the Tsar, and God bless Velika Bŭlgariya!"
+ 
+ balkans_ablaze.40.t:0 "Bulgaro-Serbian Tensions"
+ balkans_ablaze.40.d:0 "The pieces have fallen into place, one by one, first there were tensions about giving credit to the Serbians that helped Bulgarians with their part of the burden in the Balkan War, which led to distrust between Serbia and Bulgaria. Then the Serbs were denied Albania by the major powers after atrocities were committed during the Balkan War. Thusly Serbia sought to keep non-agreed on parts of Macedonia from Bulgaria. The Bulgarians are now outraged, and war may erupt. Now where do the Montenegrin people and Government stand on such an issue?"
+ balkans_ablaze.40.a:0 "The Bulgarians are right, the Serbs have denied them their territory. In fact, we should get more too!"
+ balkans_ablaze.40.b:0 "We are done intervening, we have our own territory to integrate."
+ balkans_ablaze.40.c:0 "The Serbians were nice enough in their terms. Send the Bulgarian Government an ultimatum that we'll oppose their antics!"
+ 
+ balkans_ablaze.43.t:0 "A Call to Arms from [BUL.GetNameDef]"
+ balkans_ablaze.43.d:0 "The [BUL.GetAdjectiveCap]'s now find themselves in a war against [SER.GetNameDef] for their claims in Macedonia. With us siding with them diplomatically they'd apparently hoped we'd now step in with force too. There will probably be some small gains for us too if this results in a [BUL.GetAdjectiveCap] victory. How shall we respond?"
+ balkans_ablaze.43.a:0 "We're in, man the borders!"
+ balkans_ablaze.43.b:0 "Not now (they will not be able to ask again until §Y60 days§! have passed)."
+ MTN_sided_with_bulgaria_because:0 "[MTN.GetNameDefCap] backs [BUL.GetNameDef]'s Claims to Macedonia"
+ 
+ balkans_ablaze.44.t:0 "[MTN.GetNameDefCap] accepts the Call to Arms"
+ balkans_ablaze.44.d:0 "[MTN.GetName] backs the Bulgarian claims to Macedonia to the extent they've joined the war on the Bulgarian side. Now they too fight for the Bulgarian side!"
+ balkans_ablaze.44.a:0 "Excellent. Let's prepare for a joint strike!"
+ balkans_ablaze.44.b:0 "Most helpful."
+ balkans_ablaze.44.c:0 "Blast. What have these people been plotting?"
+ 
+ balkans_ablaze.45.t:0 "[MTN.GetNameDefCap] rejects the Call to Arms, for now"
+ balkans_ablaze.45.d:0 "[MTN.GetName] did not find the current situation on the ground to their liking. They've rejected our call to arms for now, and we may not ask again until at least §Y60 days§! have passed."
+ balkans_ablaze.45.a:0 "So we're on our own... Let's prepare for a grand defense!"
+ balkans_ablaze.45.b:0 "Most unsatisfactory... For now at least."
+ BAL_nothing_happens_tt:0 "Nothing happens."
+ 
+ balkans_ablaze.60.t:0 "Purchasing Farman III airplanes from [FRA.GetName]"
+ balkans_ablaze.60.d:0 "Aerial reconnaissance and dropping explosives from airplanes could be the next big arena for warfare. The French have recently been pioneering this new craft, and they've taken to training pilots and delivering planes to certain high bidding countries. The Farman III, also known as the Albatros F-2, then being among the most well regarded of these pioneering aircraft. Then it might stand to reason that we here in [Root.GetName] should get in on this too. Should we place an order for some of these new marvels of engineering?"
+ balkans_ablaze.60.a:0 "We'll take §Ya dozen§! of these Farman III airplanes!"
+ balkans_ablaze.60.b:0 "For us, §Yhalf a dozen§! of these Farman III airplanes will do."
+ balkans_ablaze.60.c:0 "We'll spend enough for §Ythree§! Farman III airplanes only."
+ balkans_ablaze.60.p:0 "On second thought, we won't buy any Farman III airplanes right now..."
+ 
+ balkans_ablaze.61.t:0 "Selling Farman III airplanes to [From.GetName]"
+ balkans_ablaze.61.d:0 "Aerial reconnaissance and dropping explosives from airplanes could be the next big arena for warfare. Since we've recently been pioneering this new craft, and we've also taken to training pilots and delivering planes to certain high bidding countries, it's obvious From.GetName is looking to become one of our said customers now. Henri Farman's Farman III airplane, also known as the Albatros F-2, maybe the most well regarded model of them all, is what they're looking to purchase [?Root.ba_airplane_amount|Y0] of now. Should we agree to fulfill this order of [?Root.ba_airplane_amount|Y0] of these new marvels of engineering for them?"
+ balkans_ablaze.61.a:0 "Oui, c'est acceptable. They can have some of our planes, as long as they pay."
+ balkans_ablaze.61.b:0 "Non, c'est inacceptable. They can't have our planes right now."
+ 
+ balkans_ablaze.62.t:0 "[From.GetName] agrees to sell us Farman III airplanes"
+ balkans_ablaze.62.d:0 "Just as we'd hoped, the French have agreed to sell us [?Root.ba_airplane_amount|Y0] Farman III airplanes like we ordered. Our enemies best watch their backs, and for that matter their aboves. Now we just need to wait for the planes being readied and delivered to us."
+ balkans_ablaze.62.a:0 "The sky is not the limit!"
+ 
+ balkans_ablaze.63.t:0 "The planes from [FRA.GetName] have arrived!"
+ balkans_ablaze.63.d:0 "The [?Root.ba_airplane_amount|Y0] Farman III airplanes we ordered from [FRA.GetName] are finally here! These marvels of engineering will surely show the world that [Root.GetName] is at the world forefront of technological advancements."
+ balkans_ablaze.63.a:0 "Great. Let's bring them into storage people, we want them ready for action."
+ 
+ balkans_ablaze.64.t:0 "[From.GetName] rejects to sell us Farman III airplanes"
+ balkans_ablaze.64.d:0 "Unfortunately, the French have rejected to sell us our desired [?Root.ba_airplane_amount|Y0] units of Farman III airplanes like we'd ordered. Our enemies will have to be vanquished on the ground and on the Seas still for now."
+ balkans_ablaze.64.a:0 "Ooof, that's a disappointing message they've winged us."
+ 
+ ##150-199: Non-Balkan events, historical##
+ balkans_ablaze.150.t:0 "Forces of [GER.GetNameDef] are crossing our borders"
+ balkans_ablaze.150.d:0 "[GER.GetNameDefCap] has sent troops across our border in a bid to further their war efforts agains [FRA.GetNameDef]. They seem poised to leave our country under some sort of military occupation unless we act immediately. How shall we respond?"
+ balkans_ablaze.150.a:0 "We must accept this for now. Maybe time will see [ROOT.GetName] independent again..."
+ balkans_ablaze.150.b:0 "Try to buy them off with military access and favourable diplomacy."
+ balkans_ablaze.150.c:0 "Let's immediately join [FRA.GetNameDef] and see if the situation can be salvaged."
+ 
+ balkans_ablaze.155.t:0 "The French Army Staff"
+ balkans_ablaze.155.d:0 "Recent developments among the Army Staff as well as the current situation with enemies at the gates and large forces to be administered calls for a unified High Command and finding the best possible commanders for the job. Parts of the high ranking Army Staff with the likes of Joseph Jacques Césaire Joffre have now stepped up to the plate to command our troops in this time of need."
+ balkans_ablaze.155.a:0 "Aux arms hommes!"
+ 
+ balkans_ablaze.156.t:0 "Lord Kitchener's Plan"
+ balkans_ablaze.156.d:0 "While we find ourselves in a big war, an important opposition to the notion that our troops will be home by this Christmas or the next one, is the current Secretary of State for War, Lord Horatio Herbert Kitchener. Lord Kitchener argues that the British Army is currently way to small for prolonged conflict, and that the territorial force would be pretty much useless if sent into battle. Instead of immediate deployment for the cause, he wants to use said force to train an impressive 70 divisions, enabling us to rival the likes of the European land powers of France and Germany. Already recruitment posters are being drawn up to encourage more volunteers, and should that not be enough, the hitherto unthinkable option of conscription could even be considered. Whatever happens, there's a distinct possibility that the British Army could reach its largest size ever at this rate."
+ balkans_ablaze.156.a:0 "To arms lads!"
+ 
+ ##1020-1099: Various mod-test events##
+ balkans_ablaze.1020.t:0 "Mod-test event - Threat Levels"
+ balkans_ablaze.1020.d:0 "For the current tag you can add to or subtract from the current threat level by one. The applicable tags (original tag = ) are SER, GRE, BUL and TUR. For others this does nothing.\n\nAs an addendum, as of 1.1.1, §YThreat Levels§! do nothing important."
+ balkans_ablaze.1020.a:0 "Add 1 §YThreat Level§!. We are §Rscary§!!"
+ balkans_ablaze.1020.b:0 "Subtract 1 §YThreat Level§!. We are §Gnot scary§!!"
+ balkans_ablaze.1020.c:0 "Get outta my face you mod test event(!!?!?!?!), I don't know you!"
+ 
+ balkans_ablaze.1030.t:0 "Mod-test event - Unit leaders"
+ balkans_ablaze.1030.d:0 "For the current tag you can add or remove the navy leaders currently filled in. Useful if you want to test something that's normally added in the history files."
+ balkans_ablaze.1030.a:0 "Add the current commanders in this option 'a' here."
+ balkans_ablaze.1030.b:0 "Remove the current commanders in this option 'b' here."
+ balkans_ablaze.1030.c:0 "Nothing to see, nothing to do. I see, do nothing, for there is nothing to 'c'."
+ 
+ balkans_ablaze.1040.t:0 "Mod-test event - Ideas"
+ balkans_ablaze.1040.d:0 "For the current tag you can add or remove the currently loaded ideas (timed or not). Useful if you want to test something that's normally added through earlier events or the like."
+ balkans_ablaze.1040.a:0 "An idea to add an idea."
+ balkans_ablaze.1040.b:0 "An idea to annul an idea."
+ balkans_ablaze.1040.c:0 "An idea to have another idea."
+ 
+ balkans_ablaze.1050.t:0 "Mod-test event - Claims/Cores"
+ balkans_ablaze.1050.d:0 "For certain ROOT-tags you can add or remove the currently loaded claims/cores. Useful if you want to test something that's normally added through earlier events or the like."
+ balkans_ablaze.1050.a:0 "I claim this option."
+ balkans_ablaze.1050.b:0 "This one is unclaimed for a reason."
+ balkans_ablaze.1050.c:0 "Cla(i)mor for an exit."
+ 
+ ####--News Events--####
+ ##First Balkan War News Events##
+ ba_news.10.t:0 "The Balkan League Mobilizes"
+ ba_news.10.d:0 "After entering into the alliance known as the Balkan League, the members have now started mobilizing rapidly in addition to conducting large troop movements. It seems more and more likely something big is going to happen."
+ ba_news.10.a:0 "What could the Balkan gang be up to?"
+ ba_news.10.b:0 "This is going to make us all great again!"
+ ba_news.10.c:0 "Surely it's not us they're after, with so little to gain?"
+ ba_news.10.p:0 "The Balkan League is mobilizing? Let's hope it's not against us, we're in enough trouble as is..."
+ 
+ ba_news.11.t:0 "The Fortress of Adrianople Falls to the Bulgarians"
+ ba_news.11.d:0 "After a lengthy siege, the famous fortress of Adrianople, called Adrianopol or Odrin by the Bulgarians, and Edirne by the Turks, has fallen to the besieging Bulgarians. All the artillery stored there were captured by the besieging Bulgarians, including 18 heavy artillery pieces.\n\nOn all accounts this is a great victory for the Balkan League in their war against the Ottoman Empire, including the city's symbolic value as the former Ottoman Capital."
+ ba_news.11.a:0 "A Great Victory for the League!"
+ ba_news.11.b:0 "We've got them now."
+ ba_news.11.c:0 "It needs to be retaken, or the League will have Rumelia blocked off from reinforcements."
+ 
+ ba_news.12.t:0 "Ottoman Armament Imports"
+ ba_news.12.d:0 "With the recent developments of Italy invading Libya and the Balkan League forming, the Ottoman Empire and Germany has signed an agreement where the Germans will ship modern rifles and artillery pieces to the Ottomans. It's been a turbulent decade for the Ottomans, and now their recent downscaling of the Military has had to be quickly reversed."
+ ba_news.12.a:0 "Will they arrive in time though?"
+ ba_news.12.b:0 "This is not to our advantage, we should act fast."
+ ba_news.12.c:0 "Good. Now these aggressors will pay for their insolence."
+ ba_news.12.p:0 "A good deal for them, and us. Will this be enough to save the Ottoman Empire, though?"
+ 
+ ba_news.13.t:0 "The Germans have declined to sell us Armaments"
+ ba_news.13.d:0 "Unfortunately, even with our previously good relations with the German Empire, they've declined us access to their armaments when we need them the most. We'll have to make do with what we have."
+ ba_news.13.a:0 "What kind of friends are they?"
+ 
+ ba_news.14.t:0 "A benefit among the struggles of War"
+ ba_news.14.d:0 "With aviation having advanced sufficiently to find a use on the battlefield, most states in the Balkans now find themselves pioneering aerial warfare, with military air reconnaissance and even aerial bombings showing up for the first time in history. Several of the pioneers of aviation have made their mark on history, and while the war may have been costly, maybe our newfound insights can make future wars go even more to our liking?"
+ ba_news.14.a:0 "While conflict oft bring suffering, innovation oft follow such suffering"
+ ba_news.14.b:0 "The Aviation Squad have brought us victory!"
+ ba_news.14.c:0 "The War has also shown that Christos Adamidis is no ordinary man!"
+ ba_news.14.p:0 "We may have lost territory, but the war has shown that we have some of the finest pilots in the world."
+ 
+ ##Second Balkan War News Events##
+ ba_news.20.t:0 "Peace in the Balkans?"
+ ba_news.20.d:0 "Though many prominent Bulgarians were unhappy with the London Conference, they've now seemingly accepted that Greater Bulgaria will see no immediate fruition. Preaching peace and cooperation, the Balkan League has dissolved, and Bulgaria, Serbia and Greece remain on relatively friendly terms. For now at least, the Balkans will see peace."
+ ba_news.20.a:0 "Maybe the maps shall stay unchanged for a while this time?"
+ ba_news.20.b:0 "While the Conference wasn't entirely satisfactory, we've still improved our standing in the Balkans."
+ ba_news.20.c:0 "It's very decent of the Bulgarians to settle for less than what was promised."
+ ba_news.20.p:0 "We will not praise those who tear our Empire asunder..."
+ ba_news.20.e:0 "Yet another Successful Conference held on British soil."
+ 
+ ba_news.21.t:0 "[From.GetName] Prevailed in the Second Balkan War"
+ ba_news.21.d:0 "In what has been called the greatest upstart victory since Napoleon's Invasion of Russia, the Bulgarians have managed to beat all of their neighbors at once, who ganged up on them after what one would have assumed was a foolhardy attack on the Serbian-Greek alliance by the Bulgarians.\n\nApparently the Bulgarians are more skilled in military matters than they are in diplomacy though, as they went from victory to victory, whether it be in the East, North or West, even managing to push into their enemies' territory. This has ensured Bulgaria a spot as one of the three Powers on the Balkan Peninsula, only exceeded by Austria-Hungary and possibly the Ottoman Empire."
+ ba_news.21.a:0 "We could all learn something from the will to sacrifice the Bulgarian People have shown"
+ ba_news.21.b:0 "From Principality to Great Kingdom in under a decade. Our People truly rose to the occasion!"
+ ba_news.21.c:0 "Let's just lick our wounds."
+ ba_news.21.p:0 "First they invent our alphabet and now they reinvent warfare? My, my, those Bulgarians..."
+ ba_news.21.e:0 "Well, I never."
+ ba_news.21.f:0 "Since Napoleon's Invasion? Scorched earth doesn't count, and you know it Russians!"
+ ba_news.21.g:0 "Prussia of the Balkans...? Well, why not?"
+ ba_news.21.h:0 "And we certainly helped. Now, let's put some work in at the negotiating table too!"
+ MTN_rewarded_after_SBW_tt:0 "\nWith [MTN.GetName] helping [BUL.GetName] win the Second Balkan War, they've added to their gains in the first one. Several villages and towns from the [SER.GetAdjectiveCap] gains have been added to [MTN.GetAdjectiveCap] lands.\n\n"
+ 
+ ba_news.22.t:0 "[From.GetName] Dominated in the Second Balkan War"
+ ba_news.22.d:0 "In what has been called one of the Greatest Upstart Victories in History, the Bulgarians have utterly crushed the Serbians and all their allies, fulfilling their dream of a Greater Bulgaria by resolutely fighting both the Greeks and the Serbians to the, for the Serbian side, bitter end.\n\nThe Serbians have been forced to pay reparations for denying the Bulgarians Macedonia after the First Balkan War, and Bulgaria now likely stands as the number two Power in the Balkans after Austria-Hungary, many speculating that they might be more powerful than the diminished Ottoman Empire."
+ ba_news.22.a:0 "Our Military should study the Balkan Wars. The Bulgarians devastated their opponents!"
+ ba_news.22.b:0 "A Victory to be remembered for Centuries! Let's celebrate our brave troops!"
+ ba_news.22.c:0 "This humiliation must never be repeated..."
+ ba_news.22.p:0 "Actually, let's send some military observers right away!"
+ ba_news.22.e:0 "Very impressive. And we were certainly part of it!"
+ 
+ ba_news.40.t:0 "[From.GetName] sides with [BUL.GetName]"
+ ba_news.40.d:0 "Border tensions between the Bulgarians, feeling they were denied their agreed territorial spoils after the War in the Balkans, and the Serbians, feeling they were cheated out their rightful gains in Albania after the treaty of London and seeking alternate gains, have been high recently. After some heated debating and Russians giving up on their former Bulgarian allies, war might be imminent. The Montenegrins were thus eventually forced to choose a side."
+ ba_news.40.a:0 "Let's hope we've chosen correctly, for now the Serbians grow wary of us."
+ ba_news.40.b:0 "They've made the right choice. Should they back us further they shall be compensated."
+ ba_news.40.c:0 "So our kin have turned against us. Muster the troops."
+ ba_news.40.p:0 "Somewhat unexpected, but where does [GRE.GetName] stand?"
+ 
+ ba_news.41.t:0 "[From.GetName] takes no sides in the Balkan dispute"
+ ba_news.41.d:0 "Border tensions between the Bulgarians, feeling they were denied their agreed territorial spoils after the War in the Balkans, and the Serbians, feeling they were cheated out their rightful gains in Albania after the treaty of London and seeking alternate gains, have been high recently. After some heated debating and Russians giving up on their former Bulgarian allies, war might be imminent. The Montenegrins were thus eventually forced to choose a side."
+ ba_news.41.a:0 "Best to stay out of it."
+ ba_news.41.b:0 "Very well, Serbia stands weaker without Montenegrin backing."
+ ba_news.41.c:0 "It's just the Bulgarians and us, or so they think. We've made sure Greece will have a say too."
+ ba_news.41.p:0 "The safest choice."
+ 
+ ba_news.42.t:0 "[From.GetName] sides with [SER.GetName]"
+ ba_news.42.d:0 "Border tensions between the Bulgarians, feeling they were denied their agreed territorial spoils after the War in the Balkans, and the Serbians, feeling they were cheated out their rightful gains in Albania after the treaty of London and seeking alternate gains, have been high recently. After some heated debating and Russians giving up on their former Bulgarian allies, war might be imminent. The Montenegrins were thus eventually forced to choose a side."
+ ba_news.42.a:0 "The Tsar is being a maximalist. One can't have everything one wants."
+ ba_news.42.b:0 "They see us aggressors, but the Serbians did not follow the deal!"
+ ba_news.42.c:0 "The Montenegrins rightfully stand behind us."
+ ba_news.42.p:0 "Somewhat expected, but where does [GRE.GetName] stand?"
+ 
+ ##100-149: Balkan nations in the Great War##
+ ba_news.100.t:0 "Bulgaria joins the Central Powers"
+ ba_news.100.d:0 "After some initial reluctance to taking sides with any of the Great Powers, the Tsardom of Bulgaria has now finally decided to take a side. More financial support and more possible territorial gains could well be the reason the Bulgarians chose to join forces with the Central Powers."
+ ba_news.100.a:0 "This could prove important for the Central Powers."
+ ba_news.100.b:0 "We expect to be handsomely rewarded for our efforts."
+ ba_news.100.c:0 "The bastards..."
+ ba_news.100.p:0 "This is a huge diplomatic victory!"
+ ba_news.100.e:0 "How could we let the Central Powers have this diplomatic victory?"
+ 
+ ####--Story Events--####
+ ##Starting Events and Introduction##
+ ba_story.0.t:0 "The Balkan Peninsula Enters the New Century"
+ ba_story.0.d:0 "The lasting peace and stability brought on by the Metternich system after the Napoleonic Wars have gotten shakier and shakier, with social upheavals across Europe such as the February Revolution in 1848, new independent nations across Europe such as Greece, Serbia, Belgium, Romania, Bulgaria and Norway, limited conflicts, unified nations and national awakenings. The Balkans with the Ottoman Empire in decline have perhaps seen one of the most significant amounts of change in Europe, and certainly the situation is shaky. The Serbians and Greeks have fought several wars with the Ottoman Empire, gaining territory bit by bit, until the Ottoman defeat of Greece in 1897 put a, temporary at least, halt and reversal to some of these fortunes.\n\nThe Tsardom (or Kingdom) of Bulgaria has played the times to the best of their abilities so far, with the Treaty of Berlin in 1878 securing their de facto independence, though it replaced the since sought after terms of the Treaty of San Stefano as the Russians and Serbians were against a large Bulgaria at the time. As Bulgaria vied for Eastern Rumelia less than ten years later, the Serbs, wanting gains for themselves and encouraged by Austria-Hungary (which wanted Serb nationalism directed south, for obvious reasons), attacked Bulgaria in a bid to gain territory, but were promptly beaten back in the Serbo-Bulgarian War as the Bulgarian forces were redeployed against the new threat. Bulgaria thusly unified with the Ottoman province of Eastern Rumelia at last, but the Austrians threatening war if the Bulgarians continued advancing into Serbia prevented gains against Serbia. The Principality of Montenegro, long independent and largely indomitable, have also seen some modest gains against the Ottomans, and might just decide to elevate their state to a Kingdom if the time seems right.\n\nWhether pledging loyalty to the Austrian Emperor, the Turkish Sultan, the Romanian King, the Bulgarian Tsar, or the Russian one, the Megali idea, the Albanian cause, or other, the Balkans is a place to look out for."
+ ba_story.0.a:0 "A land of conflict, but also opportunity..."
+ 
+ ba_story.1.t:0 "The Bulgarian Tsardom at the dawn of the 1900s"
+ ba_story.1.d:0 "By taking advantage of Ottoman instability and struggles between Great Powers (like the Austro-Hungarian annexation of Bosnia), Bulgaria has just recently elevated itself from a Principality to a Tsardom in October of 1908, shortly following the de jure integration of Eastern Rumelia into the Princedom. With this, Bulgaria has solidly cemented its status as an independent nation state. Indeed, opportunism might be the name of the game in the Balkans as developments happen quickly and erratically. And for the Bulgarian Tsardom, there is still much to do...\n\nIn addition to rapid industrialization, common education and population growth, one of the advantages the modern Bulgarian state has is its well developed Armament Industry, with Sofia Artillery Arsenal at the center of it all. While this should benefit the Bulgarian Military immensely, it might just be needed for whatever struggles lie ahead."
+ ba_story.1.a:0 "Good. Let's see what the century brings."
+ 
+ ####--Ideas--####
+ BUL_sofia_artillery_arsenal_designer:0 "Sofia Artillery Arsenal/Krupp AG"
+ BUL_sofia_artillery_arsenal_designer_desc:0 "Formerly known as Ruse Artillery Arsenal, before being moved from Ruse to Sofia in 1891, Sofia Artillery Arsenal is one of the most competent armament producers in Bulgaria and the Balkans.\n\nBulgarian arms industry has worked closely with German armament industries, especially Krupp AG, a German heavy industry concern and manufacturer of artillery. The results of this can be seen in the reliable, state of the art artillery utilized by the Bulgarian Military.\n"
+ BUL_mauser_designer:0 "Mauser"
+ BUL_mauser_designer_desc:0 "In cooperation with Germany, many German infantry weapons (and armaments in general) are in use in Bulgaria. The rifles of Mauser stand as one of the most important of these armament imports from Germany.\n"
+ BUL_sofia_artillery_arsenal:0 "Sofia Artillery Arsenal"
+ BUL_sofia_artillery_arsenal_desc:0 "The former Ruse Artillery Arsenal, known as Sofia Artillery Arsenal since its relocation in 1891 and the subsequent royal decree by (then) Knyaz Ferdinand in 1899, is the domestic armament producer of the Bulgarian Kingdom. Now, it's one of the most competent armament producers in the Balkans, equipping the Bulgarian Army with a plethora of guns and artillery pieces."
+ BUL_militarism:0 "Bulgarian Militarism"
+ BUL_militarism_desc:0 "Earning our nation the nickname \"Prussia of the Balkans\", the Bulgarian Army is one of the most professional armed forces in the region, and indeed, in the world. Being sizeable, well trained, well equipped, and enjoying a competent leadership, the Bulgarian Army is a force to be reckoned with."
+ BUL_glorious_militarism:0 "Bulgarian Militarism"
+ BUL_glorious_militarism_desc:0 "Earning our nation the nickname \"Prussia of the Balkans\", the Bulgarian Army is one of the most professional armed forces in the region, and indeed, in the world. Being sizeable, well trained, well equipped, and enjoying a competent leadership, the Bulgarian Army is a force to be reckoned with.\n\nThis was proven once and for all when the Bulgarian nation pulled off its incredible victory in the Second Balkan War, uniting almost all ethnic Bulgarians in a Greater Bulgarian nation."
+ BUL_aviation_squad:0 "The Army's Aviation Squad"
+ BUL_aviation_squad_desc:0 "The \"Vazduhoplavatelno Otdelenie\", or Aviation Squad, is the Bulgarian Army's Aerial Observation and Reconnaissance force of balloons, recently expanded with proper airplanes. While none can know how this new dimension of warfare might affect future conflicts, Bulgaria is at least keeping up with current developments for now."
+ BUL_nationalist_fervor:0 "Bulgarian Nationalistic Fervor"
+ BUL_nationalist_fervor_desc:0 "The Bulgarian national awakening was recent and very heartfelt, and the Bulgarians yearn for the borders promised by the treaty of San Stefano, reflecting upon the Bulgarian soldiers' morale and will to sacrifice. Can the will and sacrifice of the common Bulgarian carry them to victory against all odds?"
+ BUL_army_deserters:0 "Army Desertions and Revolts"
+ BUL_army_deserters_desc:0 "Pushed to the brink by careless war, some of the common soldiers and officers have had enough of the needless slaughter for little gain, and are revolting against their high command. The performance and tenacity of the armed forces have been reduced, and there's less willingness to serve."
+ BUL_bulgarian_army_staff:0 "Bulgarian Army Staff"
+ BUL_bulgarian_army_staff_desc:0 "The Bulgarian Army Staff has recently been expanded, with officers receiving training across Europe. With modern expertize the Bulgarian Army has aquired not only tactical and strategical insights, but also a balloon reconnaissance force, new guns, and not least, officers that understand their trade. The large scale tactics, movements and drafts of the Bulgarian Army are thusly generally well thought out."
+ TUR_ottoman_army_staff:0 "Ottoman Army Staff"
+ TUR_ottoman_army_staff_desc:0 "The Ottoman Empire has certainly seen some serious decline in the last few centuries, against both old adversaries, and new, such as the Austrian Empire, the Russian Empire, the Persian Empire, and more recently the Egyptian rebellion, the French and the British. Of course, a prestigious and Sublime State such as the Ottoman Empire should not go down willingly, and the 1800s have seen some serious, and often successful attempts at turning this troublesome downward spiral around. The first was the auspicious incident of June 1826, where the by then decadent and greedy Janissaries were thrown out as an institution altogether, though they did not go down without one last rebellion against the Sultan. Since then, instead of forced Christian convert soldiers (though with the later privileges, maybe it wasn't forced for all at that point?), the Ottoman Army has been made up of able and willing Muslim soldiers instead. Indeed, after modernizing with the French Army as a role model, during the Crimean War the Ottoman troops could finally hold their own against the Russian ones, once more earning the Ottoman Empire's soldiers the reputation of a decent fighting force, and also winning said war alongside France and the United Kingdom.\n\nHowever, as the Franco-Prussian War concluded, the now adaptable Ottoman administration started looking to the German and British Armed Forces for inspiration instead, as France had been shown to not necessarily be the pinnacle of the modern European armies. While these bold reforms seem to have paid off so far, are they happening fast enough to save the Empire from those who would seek to end it?"
+ FRA_french_army_staff:0 "French Army Staff"
+ FRA_french_army_staff_desc:0 "The modern French Army Staff know to base their ideas and plans on rational judgements of potential conflicts and their possible developments, but they're not entirely immune to influence from more abstract ideals either, such as the ideal of Élan, and maybe more crass but certainly not to be ignored, Revanchism. While it is true that since the 1870s and 1880s the French public has somewhat diminished in its uproar to get Alsace-Lorraine back, it still lingers there somewhat, and the revanchism could be reignited should the right happenstance occur. While the French Army Staff are influenced by both traditions, sciences, observance of other conflicts of the time, politicians and the public, within there are also disagreements, whether they be over uniforms or effective fighting. But, indeed, isn't there some strength and innate innovativeness in some discourse? Whatever may happen, the French Army's soldiers will fight hard should the situation demand it, and the French High Command almost always demands it as well."
+ ENG_empire_expeditionary_force:0 "Empire Expeditionary Force"
+ ENG_empire_expeditionary_force_desc:0 "With the Empire having the most powerful navy ever seen in the world, the British Army hasn't needed to be more than an extension of that force for hundreds of years now. While this leaves other powers with stronger land forces by far, the British Army has at least managed to make it one of the more professional and service-willing forces of the world, maybe in part due to the lack of conscription and similar pressures."
+ ENG_recruitment_drive:0 "Recruitment Drive"
+ ENG_recruitment_drive_desc:0 "While the British Army hasn't seen the need for being large ever since the holdings of England on the French coast were lost, and the English and later British Navy reigned supreme in Europe, the new massive conflicts across Europe and the world foretell of new requirements of the British Army. Indeed recruitment posters are being made, propaganda is being implemented and the British Expeditionary Force shall promptly be expanded to a larger force. Who knows, should the conflicts drag on, maybe general drafts may be deemed necessary? Do not misjudge these efforts, as the British will fight to honor their interests, they will fight to honor their friends' interests and in all likelihood they will fight to honor their word, be it written or spoken..."
+ ROM_balkan_intervention_plans:0 "Balkan Intervention Plans"
+ ROM_balkan_intervention_plans_desc:0 "As conflict stirs within the Balkan League, we should prepare to intervene in the conflict so that any one member doesn't get too strong. And the Bulgarians have been awfully stubborn in the negotiations over the fortress city of Silistra, or should we say \"Dârstor\"."
+ BAL_league_mobilization:0 "Balkan League Mobilization"
+ BAL_league_mobilization_desc:0 "Preparing for War against a strong enemy, the Balkan League members are mobilizing their forces. Their Armies are rapidly being equipped and deployed where they need to be."
+ BAL_ceasefire_with_bulgaria:0 "Ceasefire with Bulgaria"
+ BAL_ceasefire_with_bulgaria_desc:0 "As §Y[BUL.GetNameDef]§! managed to turn the war around, to the extent that they got the better of us, we had to sign a ceasefire with them. The stipulations were that we are to cease all armed conflict against them, and we are to end all support of §Y[SER.GetNameDef]§! until the conclusion of this war in the Balkans. We were also encouraged to take up arms against all Serbian troops seeking to launch attacks from our country into Bulgaria.\n\nLastly, they've also taken control of many of our institutions to ensure our non-interference in the near future, preventing us from forming alliances or justifying new wars."
+ BUL_receiving_reparations:0 "Receiving War Reparations"
+ BUL_receiving_reparations_desc:0 "After the Serbians denied us Macedonia and we defeated them in the Second Balkan War, we have demanded they pay us for the damage caused by them initially denying us our rightful territories. This should ensure they won't be able to threaten us again in the near future."
+ SER_paying_reparations:0 "Paying War Reparations"
+ SER_paying_reparations_desc:0 "After our defeat in the Second Balkan War, the Bulgarians demanded we pay them for denying them their rightful lands, which they cite as a just reason to attack us and start the Second Balkan War. While most Serbians deny this Bulgarian sentiment, they now agree it's better to just pay the reparations and integrate our other gains from the First Balkan War in peace. Maybe we'll get our hands on Northern Albania without the help of those violent, self serving Bulgarians."
+ BUL_balkan_war_revanchism:0 "Balkan War Revanchism"
+ BUL_balkan_war_revanchism_desc:0 "Revanchism among the Bulgarian middle and upper classes is heightened after losing out on many key gains from the First Balkan War and the subsequent Treaty of London. While militarism has been quenched as of the sobering defeat of the Second Balkan War, the people will still fight hard against the Serbs and their accomplices."
+ SER_balkan_war_revanchism:0 "Balkan War Revanchism"
+ SER_balkan_war_revanchism_desc:0 "Revanchism among the higher ups in Serbia is at an all time high after first being denied its rightful Albanian territories during the Treaty of London, and shortly thereafter Bulgaria seizing Serbia's alternative gains in Macedonia."
+ MTN_fierce_warriors:0 "Fierce Warriors of the Black Mountain"
+ MTN_fierce_warriors_desc:0 "The Fierce Warriors of the Black Mountain have had many impressive victories against the Ottoman Empire in the past. These proud traditions combined with the modernisation of our weapons, communication and tactics should ensure our troops can't be taken lightly by anyone."
+ GRE_tenacious_warriors:0 "The Tenacious Hellenic Army"
+ GRE_tenacious_warriors_desc:0 "The foreign experts have massively improved the Hellenic Army's performance after the disaster of 1897. The troops are well drilled, and we can mobilize more troops than ever before."
+ SER_fighting_spirit:0 "Serbian Fighting Spirit"
+ SER_fighting_spirit_desc:0 "While we have gone down before, we never do so without a fight. Our Army got its mettle tested in the South recently, so morale is high and our people are ready."
+ SER_military-technical_works:0 "Military-Technical Works, Kragujevac"
+ SER_military-technical_works_desc:0 "The Military-Technical Works is a Serbian arms manufacturer founded in Kragujevac in 1853. Intially they cast cannons and provided weaponry for the Serbian Armed forces, before later moving on to specialize in rifles and infantry equipment such as machine guns. A good example of their rifles being the Mauser Milovanović M. 1880 rifle, which was a Serbian derivative of the German Mauser Model 1871 rifle. With many foreign ties, production licenses and a competent workforce, the Serbian Army won't be short of good rifles."
+ GRE_air_warfare_innovations:0 "Greek Air Warfare Innovations"
+ GRE_air_warfare_innovations_desc:0 "The Balkan War has showed us the emerging importance of airplanes in war. Greek pilots conducted bombings on Ottoman ships and troops, and the reconnaissance operations didn't go amiss either. We should by all means continue exploring this new field of engineering, theoretics and warfare."
+ TUR_air_warfare_innovations:0 "Ottoman Air Warfare Innovations"
+ TUR_air_warfare_innovations_desc:0 "The Balkan War has showed us the emerging importance of airplanes in war. Ottoman pilots conducted reconnaissance operations and attempted to hold off the airplanes of the Balkan States. We should by all means continue exploring this new field of engineering, theoretics and warfare."
+ TUR_developing_agrarian_society:0 "Developing Agrarian Society"
+ TUR_developing_agrarian_society_desc:0 "While modernisation is happening at a steady pace, subsistence farming still is commonplace in the Ottoman Empire, so mass surpluses from agriculture and industry are still not commonplace. In addition, with the underdeveloped infrastructure and bureaucracy, mobilization for the military remains somewhat inefficient."
+ TUR_transitioning_agrarian_society:0 "Tranistioning Agrarian Society"
+ TUR_transitioning_agrarian_society_desc:0 "While modernisation is happening at a steady pace, subsistence farming still is somewhat commonplace in the Ottoman Empire, and mass surpluses from agriculture and industry are rather recent developments. Still, the factories, infrastructure and bureaucracy of the Empire are currently almost sufficient to get the goods to where they need to be, and the drafted soldiers to the training fields and frontlines."
+ TUR_armament_imports:0 "Armament Shipments from the German Empire"
+ TUR_armament_imports_desc:0 "Finding ourselves in dire need of modern weaponry, we have signed an armaments deal with our friends in the German Empire. Hopefully our weapons arrive swiftly so we can deal with the recent developments."
+ GER_armament_exports:0 "Armament Shipments to the Ottoman Empire"
+ GER_armament_exports_desc:0 "Finding themselves in dire need of modern weapons, the Ottoman Empire has signed a trade deal with us purchasing modern German armaments, in particular artillery. With so much going on in the Balkans, it might be handy for them."
+ PER_legacy_of_the_qizilbash:0 "Legacy of the Qizilbash"
+ PER_legacy_of_the_qizilbash_desc:0 "The Qizilbash were various Shia Militant Groups that thrived in Iranian Azerbaijan, and were pivotal to the establishment of the old Safavid Dynasty. Long a thorn in the side of the Ottoman Empire, they can still be found from Asia Minor to Pashtun Afghanistan."
+ PER_constitutional_revolution:0 "End of the Persian Constitutional Revolution"
+ PER_constitutional_revolution_desc:0 "A time of upheaval, but also innovativeness and economic development, is coming to an end in Persia, with the Shah having signed constitutional guarantees and the Russian Empire looking poised to put an end to it by force if necessary. Yet, in the long term, maybe it was for the better that Persia went through this?"
+ ALB_austro-hungarian_influence: "Austro-Hungarian Influences"
+ ALB_austro-hungarian_influence_desc: "In chasing down the Serbian Army the Austro-Hungarian Army is entering our territory. While the Serbians and Greeks had their own interest in the chaotic time since our newfound independence, the Austro-Hungarians do not (other than fighting their new enemies).\n\nAs such their \"friendly occupation\" might stand to benefit both sides as the Albanian language is free to be studied and they invest in our infrastructure. A lot of decisions are still left to autonomous Albanian institutions."
+ LUX_german_influence:0 "German Military Occupation"
+ LUX_german_influence_desc:0 "The Military Occupation put in place by [GER.GetNameDef] so that they could get to their enemies may mean we get to keep our autonomy to some extent, but in truth [GER.GetNameDef] holds control over our country's communication lines with the outside world. Let's just work towards our independence for now, in case the enemies of [GER.GetNameDef] can not bring about our liberation."
+ LUX_low_popular_support:0 "Low Popular Support"
+ LUX_low_popular_support_desc:0 "The current occupation and foreign troops and dignitaries stationed in the Grand Duchy of Luxemburg is not popular among many of the common people living there. There will be less support for the compliant leaders bowing to the Germans, and any military raised will not fight hard for the time being. At least with the lower risk taking they'll also take less damage in a combat situation. If the rulers and Government of Luxemburg want to see this through they'll just have to wait out the sentiments..."
+ MTN_neutral_interests:0 "Neutral Interests"
+ MTN_neutral_interests_desc:0 "Montenegro, torn between influences from other Balkan States, and in the process of integrating their recent gains, currently has little interest in joining a new conflict. That is, unless one party would have managed to get the edge diplomatically, and could promise further territorial gains at limited risk to the Montenegrin State."
+ MTN_peaceful_neutrality:0 "Peaceful Neutrality"
+ MTN_peaceful_neutrality_desc:0 "Having secured territorial gains two times in short succession, Montenegro has now started an era of peaceful neutrality to build their country. They will be hard to draw into any larger conflict for now, unless their lands and independence would be threatened directly."
+ ITA_tripolitanian_interests:0 "Tripolitanian Interests"
+ ITA_tripolitanian_interests_desc:0 "It's in Italy's interest to secure ourselves the North African colony of Ottoman Tripolitania. The Ottoman Empire is currently weak, so this should be a gain at a relatively cheap price if all goes right. There is little need to get involved in anything else for now, especially not in the Balkans, as we have our own ambitions there and in the Aegean Sea."
+ ITA_italian_libya_interests:0 "Tripolitanian Interests"
+ ITA_italian_libya_interests_desc:0 "It's in Italy's interest to secure ourselves the North African colony of Ottoman Tripolitania. The Ottoman Empire is currently weak, so this should be a gain at a relatively cheap price if all goes right. There is little need to get involved in anything else for now, especially not in the Balkans, as we have our own ambitions there and in the Aegean Sea."
+ FRA_indecisive_deployments:0 "Indecisive Army Deployments"
+ FRA_indecisive_deployments_desc:0 "The [FRA.GetAdjectiveCap] Army is combat ready as always, but the outbreak of something big so suddenly has prompted the [FRA.GetAdjectiveCap] military leadership to take a wait and see approach. This might be safer in the long run, but it does certainly hand the initial initiative of the War to the enemy..."
+ GER_army_staff_in_disbelief:0 "Army Staff in Disbelief"
+ GER_army_staff_in_disbelief_desc:0 "The sudden [FRA.GetAdjectiveCap] attack has left the German high command in shock at its unexpectedness. Even the middle and lower ranks will have to spend some time getting combat ready, leaving the initiative in the hands of the [FRA.GetAdjectiveCap] should they manage to engage the [GER.GetAdjectiveCap] forces fast enough."
+ BUL_integration_of_minorities:0 "Integration of Minorities"
+ BUL_expulsion_of_minorities:0 "Expulsion of Minorities"
+ GRE_integration_of_minorities:0 "Integration of Minorities"
+ GRE_expulsion_of_minorities:0 "Expulsion of Minorities"
+ TUR_integration_of_minorities:0 "Integration of Minorities"
+ TUR_expulsion_of_minorities:0 "Expulsion of Minorities"
+ BA_farman_iii_aircraft_purchase_expensive:0 "Recent Farman III airplane purchase from France"
+ BA_farman_iii_aircraft_purchase_expensive_desc:0 "Our recent airplane purchase from France will allow us to start exploring the use of these pioneering machines, but of course the purchase did also cost us a bit."
+ BA_farman_iii_aircraft_purchase_affordable:0 "Recent Farman III airplane purchase from France"
+ BA_farman_iii_aircraft_purchase_affordable_desc:0 "Our recent airplane purchase from France will allow us to start exploring the use of these pioneering machines, and luckily we can weather the costs too."
+ FRA_airplane_sale_to_bulgaria:0 "Recent Farman III airplane sale to Bulgaria"
+ FRA_airplane_sale_to_bulgaria_desc:0 "We've recently sold some of our pioneering Farman III airplanes to Bulgaria."
+ FRA_airplane_sale_to_ottomans:0 "Recent Farman III airplane sale to the Ottomans"
+ FRA_airplane_sale_to_ottomans_desc:0 "We've recently sold some of our pioneering Farman III airplanes to the Ottomans."
+ FRA_airplane_sale_to_greece:0 "Recent Farman III airplane sale to Greece"
+ FRA_airplane_sale_to_greece_desc:0 "We've recently sold some of our pioneering Farman III airplanes to Greece."
+ FRA_airplane_sale_to_montenegro:0 "Recent Farman III airplane sale to Montenegro"
+ FRA_airplane_sale_to_montenegro_desc:0 "We've recently sold some of our pioneering Farman III airplanes to Montenegro."
+ FRA_airplane_sale_to_serbia:0 "Recent Farman III airplane sale to Serbia"
+ FRA_airplane_sale_to_serbia_desc:0 "We've recently sold some of our pioneering Farman III airplanes to Serbia."
+ 
+ ####--Bulgarian Focuses--####
+ BUL_ww1_BalkansPolitics:0 "Balkan Politics"
+ #BUL_ww1_BalkansPolitics_desc:0 "More so than those who master warfare, those who master diplomacy stand to gain in the dynamic Balkan Peninsula. Indeed when then Knyaz Ferdinand elevated our Princedom to a Tsardom of similar status to the Kingdoms of Europe, it was timed with care; the Ottoman Empire busy with revolts and Austro-Hungarian interference. So let's keep going, §YGreater Bulgaria§! stands but a few good moves from our grasp..."
+ BUL_ww1_BalkansPolitics_tt:0 "\nEnables the §YMontenegrin Allegiance§! decisions for §G[BUL.GetName]§!, §Y[MTN.GetName]§! and §R[SER.GetName]§!.\n§R[SER.GetName]§! will start in an advantageous position.\n"
+ BUL_peace_and_neutrality:0 "Peace and Neutrality"
+ BUL_peace_and_neutrality_desc:0 "We've gained what territories we need. Even though many people of importance are pushing for further territorial gains, and maybe even a Greater Bulgaria, being careful has never been more important. While these policies may be unpopular, we can not risk an offensive war when there's four surrounding countries which covet our lands. Thus, let us preach peace and concentrate on what we have..."
+ BUL_deterrence_policy:0 "Deterrence Policy"
+ BUL_deterrence_policy_desc:0 "Preaching peace may not be enough. Let us therefore deter any would-be aggressors by military might and fortifications. If we plan on staying on our own, we must be able to defend ourselves."
+ BUL_second_balkan_tt:0 "\n\nWill lead to §RWar§! with Serbia and the other Balkan League members!"
+ BUL_second_balkan_victory:0 "Victory in the Second Balkan War"
+ BUL_second_balkan_victory_desc:0 "Having bested Serbia in the Second Balkan War, we're now free to pursue further gains in the Balkans while none of the former League Members are in any position to stop us..."
+ BUL_second_balkan_victory_tt:0 "§GVictory§! in §Ythe Second Balkan War§! will enable new political options."
+ BUL_expansionist_policy:0 "Expansionist Policy"
+ BUL_expansionist_policy_desc:0 "With our neighbors properly defeated, we're in a relative position of strength not seen since the medieval period. There are many within our Government and Military who wish to secure our Northern Flank once and for all. A decisive strike against Romania is planned, and if successful, the plan is to make them a proper satellite state."
+ BUL_second_balkan_defeat:0 "Defeat in the Second Balkan War"
+ BUL_second_balkan_defeat_desc:0 "Having been bested by Serbia and their allies, we're no longer in the position of power we were after the First Balkan War. As such we'll have to stay careful until we can find an opportunistic way to regain our integral Macedonian and Thracian lands. Maybe it's time to consider taking a side in the politics of the Great Powers?"
+ BUL_second_balkan_defeat_tt:0 "§RDefeat§! in §Ythe Second Balkan War§! will enable new political options."
+ BUL_revanchist_policy:0 "Revanchist Policy"
+ BUL_revanchist_policy_desc:0 "With our neighbors unjustly stealing our integral lands following the Second Balkan War, revanchism is ripe in Bulgaria. And while the defeat stings, it has finally taught our Military and Government the value of being careful and opportunistic. When the chance presents itself, we must strike, and strike hard!"
+ BUL_ww1_develop_bulgaria:0 "Develop the Country"
+ BUL_ww1_develop_bulgaria_desc:0 "We should keep up the rapid development of our country. Better services, roads and railroads would not go amiss."
+ BUL_ww1_bulgaria_first:0 "Bulgaria First"
+ BUL_ww1_bulgaria_first_desc:0 "With the rather recent Bulgarian national awakening, our people are easily swayed by nationalist propaganda. We should continue to push this for the benefit of our Government and Army."
+ 
+ ####--Decisions--####
+ ##Categories##
+ BA_statecraft:0 "Statecraft"
+ BA_statecraft_desc:0 "Sometimes the state and administration of a country has to take big decisions that might alter the future of the country. When these crossroads appear, it is the duty of the skilled statesmen to do what is best for the nation and its people."
+ BA_BUL_military_drills:0 "Military Drills"
+ BA_BUL_military_drills_desc:0 "The Bulgarian military did not reach its current state of professionalism in a day. Military drills and continuous inventiveness will be needed to stay ahead of potential adversaries. New drills will become available when new doctrines have been explored theoretically."
+ BA_BUL_prestigious_projects:0 "Prestigious Projects"
+ BA_BUL_prestigious_projects_desc:0 "Sometimes big expensive projects are undertaken for their symbolic value. This is useful to project the glory of the state to both the people and foreign onlookers, though actual practical value on the ground may vary."
+ ##Special localisation for the Montenegrin Allegiance Decisions##
+ ser_montenegrin_diplomatic_influence_full_breakdown:0 "[Root.GetNameDefCap] has [?Root.ser_montenegrin_diplomatic_influence|+0] §HDiplomatic Influence Points§!\n"
+ ser_montenegrin_diplomatic_influence_icon_value:0 "[?Root.ser_montenegrin_diplomatic_influence|0H]"
+ bul_montenegrin_diplomatic_influence_full_breakdown:0 "[Root.GetNameDefCap] has [?Root.bul_montenegrin_diplomatic_influence|+0] §HDiplomatic Influence Points§!\n"
+ bul_montenegrin_diplomatic_influence_icon_value:0 "[?Root.bul_montenegrin_diplomatic_influence|0H]"
+ MTN_montenegrin_allegiance_decisions_tt:0 "If [MTN.GetNameDef] can be influenced enough by our ambassadors and diplomats, we will receive an amount of §YPolitical Power§! equal to §Yhalf of the total amount§! invested by all §YMontenegrin Allegiance§! participants. The currently invested §YPolitical Power§! amount is,\n"
+ MTN_montenegrin_allegiance_payday_tt:0 "\n\nOur Ambassadors have proven the most §Yinfluential§! in Montenegro! Our Governmental prestige has been shown and our proven ambassadors and statesmen will be a boon to our country. We have thus gained: "
+ ##Special localisation for the Balkan Threat Levels Category##
+ BA_balkan_threat_levels_category:0 "Balkan Infamy"
+ BA_balkan_threat_levels_category_desc:0 "As the various Kingdoms and Empires of the Southern Balkans vie for power and influence, those from within and those from without will have opinions on what's going on.\nCurrent §YThreat Levels§! are as follows:\n\n\nGoing far beyond the borders of civility could have diplomatic repercussions or even destabilize the state. We best be careful.\n"
+ ser_balkan_threat_full_breakdown:0 "[Root.GetNameDefCap] has a current §YThreat Level§! of [?Root.ser_current_balkan_threat|-0]\n"
+ ser_balkan_threat_icon_value:0 "[?Root.ser_current_balkan_threat|0H]"
+ gre_balkan_threat_full_breakdown:0 "[Root.GetNameDefCap] has a current §YThreat Level§! of [?Root.gre_current_balkan_threat|-0]\n"
+ gre_balkan_threat_icon_value:0 "[?Root.gre_current_balkan_threat|0H]"
+ bul_balkan_threat_full_breakdown:0 "[Root.GetNameDefCap] has a current §YThreat Level§! of [?Root.bul_current_balkan_threat|-0]\n"
+ bul_balkan_threat_icon_value:0 "[?Root.bul_current_balkan_threat|0H]"
+ tur_balkan_threat_full_breakdown:0 "[Root.GetNameDefCap] has a current §YThreat Level§! of [?Root.tur_current_balkan_threat|-0]\n"
+ tur_balkan_threat_icon_value:0 "[?Root.tur_current_balkan_threat|0H]"
+ BA_threat_rises:0 "\n§YThreat Level§! will §Rrise§!.\n"
+ BA_threat_falls:0 "\n§YThreat Level§! will §Gfall§!.\n"
+ ##Bulgarian Decisions and Decision Categories##
+ BA_BUL_hold_army_drill:0 "Hold Army Drill"
+ BA_BUL_hold_army_drill_enable_tt:0 "\nEnables the §YHold Army Drill§! decision \n(with §YMilitarism§! present).\n"
+ BA_BUL_hold_naval_drill:0 "Hold Naval Drill"
+ BA_BUL_hold_naval_drill_enable_tt:0 "\nEnables the §YHold Naval Drill§! decision \n(with §YMilitarism§! present).\n"
+ BA_BUL_hold_air_drill:0 "Hold Air Drill"
+ BA_BUL_hold_air_drill_enable_tt:0 "\nEnables the §YHold Air Drill§! decision \n(with §YMilitarism§! present).\n"
+ MTN_montenegrin_allegiance_bul_category:0 "Montenegrin Allegiance"
+ MTN_montenegrin_allegiance_bul_category_desc:0 "The Montenegrins now lean diplomatically toward the Serbs. This could, and probably should, be rectified should we wish to keep them on our side if it comes to them having to choose sides between Balkan States.\n\n"
+ BUL_send_ambassadors_to_montenegro:0 "Send Ambassadors to Montenegro"
+ BUL_call_montenegro_to_arms:0 "Call Montenegro to Arms against Serbia"
+ BA_BUL_incorporate_solun:0 "Incorporate Solun"
+ BA_BUL_incorporate_dobrudzha:0 "Incorporate Dobrudzha"
+ BA_BUL_incorporate_odrin:0 "Incorporate Odrin and Eastern Trakiya"
+ ##Montenegrin Decisions and Decision Categories##
+ MTN_montenegrin_allegiance_mtn_category:0 "Montenegrin Allegiance"
+ MTN_montenegrin_allegiance_mtn_category_desc:0 "We may not be a large country, but our involvement could certainly tip the scales in a conflict between countries. While we may have much in common with the Serbians, neutrality might be safer, or we might stand to gain from aligning with Bulgaria.\n\n\n"
+ MTN_reassure_bulgarian_ambassadors:0 "Reassure Bulgarian Ambassadors"
+ MTN_reassure_serbian_ambassadors:0 "Reassure Serbian Ambassadors"
+ ##Serbian Decisions and Decision Categories##
+ MTN_montenegrin_allegiance_ser_category:0 "Montenegrin Allegiance"
+ MTN_montenegrin_allegiance_ser_category_desc:0 "With the Balkans shifting diplomatically, there might be something to gain by keeping the Montenegrins on our side. While they may have similar language and culture to us, continuous work to keep them in our sphere might be necessary.\n\n"
+ SER_send_ambassadors_to_montenegro:0 "Send Ambassadors to Montenegro"
+ ##Romanian Decisions##
+ BA_ROM_incorporate_dobrogea:0 "Incorporate Dobrogea"
+ ##Austro-Hungarian Decisions##
+ AUH_instate_friendly_occupation_of_albania:0 "Instate the Friendly Occupation of Albania"
+ AUH_instate_friendly_occupation_of_albania_desc:0 "The Serbian Army seems to be on the retreat. As large portions of their forces are escaping through Albania, limited infrastructure and bad weather has been slowing them down. We should follow and instate a \"friendly occupation\" of Albania to capture those of our enemies that we can, and furthermore prevent them from coming back from there.\n\nThe Abanian institutions can largely be allowed to continue as before, and maybe we'll invest somewhat in the freshly independent country as well."
+ ##Economic Decisions##
+ BA_purchase_french_farman_airplanes:0 "Purchase Farman III Airplanes from France"
+ TUR_modernize_the_infrastructure:0 "Modernize the Infrastructure"
+ 
+ ####--Unique Traits--####
+ ##For Country Leaders##
+ ba_balkan_hegemonist:0 "Balkan Hegemonist"
+ ba_balkan_maximalist:0 "Balkan Maximalist"
+ ba_defeated_balkan_hegemonist:0 "Quelled Ambitions"
+ ba_victorious_balkan_hegemonist:0 "Victorious Tsar"
+ ba_defender_of_montenegro:0 "Defender of Montenegro"
+ ba_bulgarian_ties:0 "Bulgarian Ties"
+ ba_cordial_to_germany:0 "Cordial to Germany"
+ 
+ ####--Country Leaders (and descriptions)--####
+ BUL_ferdinand_i_DESC:0 "Born Ferdinand Maximilian Karl Leopold Maria of Saxe-Coburg and Gotha, Ferdinand was born on the 26th of February 1861, in Vienna. Then a German Prince of a German and Hungarian noble family branch, he was baptized as such in St. Stephen's Cathedral. He grew up in a cosmopolitan setting among Austro-Hungarian nobility.\n\nWhen then Knyaz (Prince) of Bulgaria Alexander of Battenberg had abdicated in 1887 after a pro-Russian coup (having ruled only 7 years), Ferdinand, then an officer of the Austro-Hungarian Army was elected Knyaz of autonomous Bulgaria by its Grand National Assembly on the 7th of July 1887. While many detractors, even Queen Victoria herself (whom he was related to) found him unfit, and in Victoria's own words, eccentric and delicate, he generally did well for the following decades. Stefan Stambolov, the leader of the Liberal Party, did cool the relations with Russia during this period, but this turned around again after his death in 1894.\n\nThen, on October 5th 1908, Ferdinand proclaimed Bulgaria's de jure independence from the Ottoman Empire. He also proclaimed Bulgaria a Kingdom, and assumed the title of Tsar in a nod to the Bulgarian rulers of old. Thus the Tsardom of Bulgaria came to be. The declaration was proclaimed by him at the Holy Forty Martyrs Church in Tarnovo, and both the Ottoman Empire and the other European powers recognized the declaration. The smoothness with which this went through may have largely been due to the fact that Bulgaria was already de facto independent."
+ 
+ ####--Opinion Modifiers--####
+ BA_relations_warming:0 "Relations Warming"
+ BA_strategic_trading:0 "Strategic Trading Interests"
+ BA_turkophobia_amended:0 "Turkophobia Amended"
+ BA_hostile_relations_amended:0 "Hostile Relations Amended"
+ 
+ ####--Additional States--####
+ STATE_813:0 "Southern Macedonia"
+ STATE_814:0 "Pirot"
+ STATE_815:0 "Constanta"
+ STATE_816:0 "Northern Dobrudja"
+ 
+ ####--Additional Cities/Victory Points--####
+ # Cities/places in Austria-Hungary
+ VICTORY_POINTS_704:0 "St. Pölten"
+ VICTORY_POINTS_3673:0 "Klagenfurt"
+ VICTORY_POINTS_6680:0 "Bregenz"
+ VICTORY_POINTS_9598:0 "Trient"         ### Using German/Austrian name for now. Let Italy rename by decision if owner of the state?
+ VICTORY_POINTS_9630:0 "Bozen"          ### Was Bozen rather than Botzen in 1891 already on at least some maps, so that's what we're going with.
+ VICTORY_POINTS_9665:0 "Linz"
+ VICTORY_POINTS_11735:0 "Pola"          ### Main naval base of the Austro-Hungarian navy. Grew rapidly since the decision was made in 1859 by Hans Dahlerup, a Danish admiral in the service of Austria.
+ VICTORY_POINTS_6562:0 "Olmütz"
+ VICTORY_POINTS_6576:0 "Zlin"           ### Small town, but remarkably fast growing and prosperous. Supplied arms for the Austro-Hungarian Army. Worth 1 VP for those reasons combined.
+ VICTORY_POINTS_9541:0 "Budweis"
+ VICTORY_POINTS_9567:0 "Ostrau"
+ VICTORY_POINTS_11432:0 "Aussig"
+ VICTORY_POINTS_3537:0 "Schemnitz"
+ VICTORY_POINTS_3410:0 "Neu Sandec"
+ VICTORY_POINTS_3483:0 "Tarnopol"
+ VICTORY_POINTS_686:0 "Ödenburg"
+ VICTORY_POINTS_6700:0 "Szeged"
+ VICTORY_POINTS_11622:0 "Gyulafehérvár"
+ VICTORY_POINTS_3617:0 "Újvidék"        ### Going with German names for Cisleithania and Hungarian names for Transleithania unless a large number of Germans lived in the particular city (for example: Pressburg). Bosnia gets Croatian, Bosnian or Serbian names probably.
+ VICTORY_POINTS_3614:0 "Pancsova"       ### An Austro-Hungarian city/town so close to Belgrade that it was practically a district of it (on the other side of the border). Hungarian name used here.
+ VICTORY_POINTS_9606:0 "Temesvár"       ### Large multi ethnic city in the Banat region, home to Germans, Hungarians, Serbs and Romanians. Grew very fast around 1910.
+ VICTORY_POINTS_3943:0 "Zadar"          ### Called both Zadar and Zara at the time. Aquired its current form during the time of the Austrian Empire and A-H Empire, and this was also based on the older names. Still named Zadar today.
+ VICTORY_POINTS_9588:0 "Banja Luka"
+ VICTORY_POINTS_9894:0 "Mostar"         ### Decently sized city in Bosnia which had grown bigger and rather important culturally during the later stages of the Ottoman period. The Austro-Hungarian period brought on rapid modernisation.
+ VICTORY_POINTS_11572:0 "Zenica"
+ 
+ # Cities/places in Italy
+ VICTORY_POINTS_603:0 "Verona"          ### Large city close to the border zone of Italy against the Austro-Hungarian Empire. If they're at war, this should give the border skirmishes and battles some more flavor and something important to fight for.
+ 
+ # Cities/places in Montenegro
+ VICTORY_POINTS_937:0 "Pljevlja"
+ 
+ # Cities/places in Serbia
+ VICTORY_POINTS_6940:0 "Novi Pazar"
+ VICTORY_POINTS_6998:0 "Kragujevac"
+ VICTORY_POINTS_9906:0 "Leskovac"       ### Taken from the Ottoman Empire in the Serbian-Ottoman Wars of 1876-1878.
+ VICTORY_POINTS_9874:0 "Pristina"
+ VICTORY_POINTS_11583:0 "Smederevo"     ### A small town as of 1910, that had served as temporary capital for Serbia during the First Serbian Uprising in 1806.
+ VICTORY_POINTS_11868:0 "Pirot"         ### A mainly Bulgarian inhabited region/town that came under Serbia anyways as the Serbians and others complained about the Treaty of San Stefano, thus leading to the Treaty of Berlin instead. This was probably one difference the Bulgarians and Serbians would have to put aside before their cooperation in the Balkan League. While Morava also had significant numbers of Bulgarians, we limit the Bulgarian cores to just Pirot for now, as that was where they had a clear majority.
+ 
+ # Cities/places in Bulgaria
+ VICTORY_POINTS_935:0 "Pernik"          ### Coal mining industry was growing fast in the period.
+ VICTORY_POINTS_965:0 "Ferdinand"       ### Named for Tsar Ferdinand. Today named Montana (like the American state).
+ VICTORY_POINTS_3796:0 "Pleven"
+ VICTORY_POINTS_3833:0 "Štip"
+ VICTORY_POINTS_6814:0 "Stara Zagora"   ### First got renamed to Zheleznik in 1854, before it got its newer name, Stara Zagora, in 1870. It served as the headquarter of the Bulgarian Army staff during the First Balkan War.
+ VICTORY_POINTS_6842:0 "Tarnovo"        ### Historically important city of Bulgaria. Where Ferdinand I proclaimed Bulgaria's de jure independence in 1908, which further emphasized this. Just named Tarnovo back then before later getting its honorary 'Veliko' added before the name.
+ VICTORY_POINTS_6857:0 "Gorna Dzhumaya" ### Back then a Bulgarization of Turkish Yukarı Cuma; 'Gorna Dzhumaya' means 'Upper Dzhumaya' in Bulgarian. Renamed Blagoevgrad in 1950. 'Lower Dzhumaya' is a district of Ser/Serres/Sérres.
+ VICTORY_POINTS_9612:0 "Ruse"           ### Where Sofia Artillery Arsenal was located before it moved and became known as Sofia Artillery Arsenal.
+ VICTORY_POINTS_9614:0 "Silistra"       ### Important point of contestation between Bulgaria and Romania in the period after Bulgarian independence.
+ VICTORY_POINTS_9769:0 "Sliven"
+ VICTORY_POINTS_9771:0 "Vidin"
+ VICTORY_POINTS_9919:0 "Burgas"
+ VICTORY_POINTS_11597:0 "Dobrich"
+ 
+ # Cities/places in (Vardar) Macedonia
+ VICTORY_POINTS_11856:0 "Bitola"        ### Also known as Monastir at the time. The town starts with that name through a code/script line in the Ottoman history file, and is 'reset' to Bitola in a later event.
+ 
+ # Cities/places in Greece
+ VICTORY_POINTS_976:0 "Lamia"
+ VICTORY_POINTS_1205:0 "Agrinio"
+ VICTORY_POINTS_3844:0 "Katerini"
+ VICTORY_POINTS_3914:0 "Ioannina"
+ VICTORY_POINTS_3973:0 "Larissa"
+ VICTORY_POINTS_7127:0 "Chalkís"
+ VICTORY_POINTS_7211:0 "Patras"
+ VICTORY_POINTS_12058:0 "Chania"
+ 
+ # Cities/places in Albania
+ VICTORY_POINTS_9780:0 "Shkodër"
+ VICTORY_POINTS_9875:0 "Elbasan"
+ VICTORY_POINTS_11767:0 "Vlorë"
+ 
+ # Cities/places in the Ottoman Empire
+ VICTORY_POINTS_849:0 "Gelibolu"        ### Third largest city in the Adrianople Vilayet, after Tekfurdağı and Odrin/Edirne/Adrianople itself (as of 1905). Also important to represent with the historical invasion by the British Empire and their Dominions in 1915.
+ VICTORY_POINTS_11829:0 "Üsküdar"       ### Old, historical district of Constantinople, both in the Greek and Ottoman period, on the Asian side of the strait.
+ VICTORY_POINTS_6864:0 "Çanakkale"      ### Important town on the Anatolian side of the Dardannelles strait. The town and its surroundings became an important transit point for reinforcements and goods during the Gallipoli campaign.
+ VICTORY_POINTS_6895:0 "Tekfurdağı"     ### Second largest city in the Adrianople Vilayet, after Odrin/Edirne/Adrianople itself (as of 1905).
+ VICTORY_POINTS_11811:0 "Adapazarı"
+ VICTORY_POINTS_3951:0 "Eskişehir"
+ VICTORY_POINTS_10041:0 "Denizli"       ### Became an important Ottoman mining region. Therefore we added more steel and chromium to the relevant state.
+ 
+ # Cities/places in Romania
+ VICTORY_POINTS_657:0 "Constanta"       ### Rather big and important Romanian coastal city.
+ VICTORY_POINTS_660:0 "Târgoviste"      ### Derived from the Old Bulgarian name for marketplace (referring to the place of the market rather than the market itself).
+ VICTORY_POINTS_687:0 "Tulcea"          ### Awarded to Romania along with Northern Dobrudja by the 1878 Congress of Berlin.
+ VICTORY_POINTS_3639:0 "Pitesti"
+ VICTORY_POINTS_6652:0 "Craiova"        ### Rather big inland city of Romania, somewhat known for the Treaty of Craiova signed there in 1940.
+ VICTORY_POINTS_6706:0 "Galați"         ### Large city in the historical region of Moldavia.
+ VICTORY_POINTS_11636:0 "Brăila"
+ 
+ # Cities/places in the Russian Empire
+ VICTORY_POINTS_6600:0 "Beltsy"         ### The city's Russian name.
+ VICTORY_POINTS_11686:0 "Kishinev"      ### The city's Russian name (or one of the Russian variants at least).
+ 
+ # Ottoman/Bulgarian/Greek contested cities/places
+ VICTORY_POINTS_6990:0 "Ser"
+ VICTORY_POINTS_9791:0 "Drama"
+ VICTORY_POINTS_922:0 "Kırk Kilise"     ### Fourth largest city in the Adrianople Vilayet, after Gelibolu, Tekfurdağı and Odrin/Edirne/Adrianople itself (as of 1905).
+ VICTORY_POINTS_11842:0 "Edirne"
+ 
+ ####--Additional Cities/Victory Points (outside the Balkan Area)--####
+ #Cities/places in Northwestern Europe (Iceland, the Faroes, Norway, Denmark)#
+ VICTORY_POINTS_13003:0 "Tórshavn"
+ VICTORY_POINTS_9116:0 "Kirkenes"
+ VICTORY_POINTS_11050:0 "Tromsø"
+ VICTORY_POINTS_9126:0 "Bodø"
+ VICTORY_POINTS_9132:0 "Steinkjer"
+ VICTORY_POINTS_9216:0 "Kristiansund"
+ VICTORY_POINTS_9127:0 "Aalesund"
+ VICTORY_POINTS_11176:0 "Arendal"
+ VICTORY_POINTS_3171:0 "Fredrikstad"
+ VICTORY_POINTS_9204:0 "Drammen"
+ VICTORY_POINTS_9174:0 "Skien"
+ VICTORY_POINTS_14:0 "Tønsberg"
+ VICTORY_POINTS_3021:0 "Hamar"
+ VICTORY_POINTS_394:0 "Aalborg"
+ VICTORY_POINTS_6235:0 "Randers"
+ VICTORY_POINTS_3277:0 "Kolding"
+ VICTORY_POINTS_399:0 "Ribe"
+ 
+ ####--Base Country Names--####
+ BUL_neutrality:0 "Bulgaria"
+ BUL_neutrality_DEF:0 "the Tsardom of Bulgaria"
+ BUL_neutrality_ADJ:0 "Bulgarian"
+ MTN_neutrality:0 "Montenegro"
+ MTN_neutrality_DEF:0 "the Kingdom of Montenegro"
+ MTN_neutrality_ADJ:0 "Montenegrin"
+ SER_neutrality:0 "Serbia"
+ SER_neutrality_DEF:0 "the Kingdom of Serbia"
+ SER_neutrality_ADJ:0 "Serbian"
+ GER_neutrality:0 "Germany"
+ GER_neutrality_DEF:0 "the German Empire"
+ GER_neutrality_ADJ:0 "German"
+ LUX_neutrality:0 "Luxembourg"
+ LUX_neutrality_DEF:0 "the Grand Duchy of Luxembourg"
+ LUX_neutrality_ADJ:0 "Luxembourger"
+ LUX_GER_neutrality_autonomy_integrated_puppet:0 "Luxemburg"
+ LUX_GER_neutrality_autonomy_puppet:0 "Luxemburg"
+ LUX_GER_neutrality_autonomy_colony:0 "Luxemburg"
+ LUX_GER_neutrality_autonomy_dominion:0 "Luxemburg"
+ LUX_GER_neutrality_autonomy_integrated_puppet_DEF:0 "the Grand Duchy of Luxemburg"
+ LUX_GER_neutrality_autonomy_puppet_DEF:0 "the Grand Duchy of Luxemburg"
+ LUX_GER_neutrality_autonomy_colony_DEF:0 "the Grand Duchy of Luxemburg"
+ LUX_GER_neutrality_autonomy_dominion_DEF:0 "the Grand Duchy of Luxemburg"
+ LUX_GER_neutrality_autonomy_integrated_puppet_ADJ:0 "Luxemburger"
+ LUX_GER_neutrality_autonomy_puppet_ADJ:0 "Luxemburger"
+ LUX_GER_neutrality_autonomy_colony_ADJ:0 "Luxemburger"
+ LUX_GER_neutrality_autonomy_dominion_ADJ:0 "Luxemburger"
+ 
+ ####--Factions--####
+ BA_greater_bulgaria:0 "Greater Bulgaria"
+ BA_bulgarian_montenegrin_pact:0 "Pact of the Mountains"
+ 
+ ####--Units and Military Organization--####
+ ##General Stuff##
+ FLEET_NAME_BUL:0 "$NUMBER$-ta Flota"
+ ARMY_NAME_BUL:0 "$NUMBER$-ta Armiya"
+ ##Ship Name Lists##
+ NAME_THEME_PROVINCES:0 "Provinces"
+ BUL_PROVINCES:0 "Bulgarian Provinces"
+ NAME_THEME_HISTORICAL_TORPEDO_BOATS_AND_DESTROYERS:0 "Historical TB/Destroyers"
+ BUL_TB_AND_DD_HISTORICAL:0 "Historical TB/Destroyers"
+ GRE_TB_AND_DD_HISTORICAL:0 "Historical TB/Destroyers"
+ 
+ ####--Austro-Hungarian Equipment--####
+ ##Production Menu Descriptions##
+ AUH_light_field_gun_equipment_desc:0 "Light field guns are smaller artillery pieces meant to support the Army in battle."
+ AUH_heavy_field_gun_equipment_desc:0 "Heavy field guns are larger, more powerful artillery pieces meant to support sieges or soften the enemy lines before a decisive attack."
+ 
+ ####--Romanian Equipment--####
+ ##Production Menu Descriptions##
+ ROM_light_field_gun_equipment_desc:0 "Light field guns are smaller artillery pieces meant to support the Army in battle."
+ ROM_heavy_field_gun_equipment_desc:0 "Heavy field guns are larger, more powerful artillery pieces meant to support sieges or soften the enemy lines before a decisive attack."
+ 
+ ####--Bulgarian Equipment--####
+ ##Production Menu Descriptions##
+ BUL_light_field_gun_equipment_desc:0 "Light field guns are smaller artillery pieces meant to support the Army in battle."
+ BUL_heavy_field_gun_equipment_desc:0 "Heavy field guns are larger, more powerful artillery pieces meant to support sieges or soften the enemy lines before a decisive attack."
+ 
+ BUL_light_field_gun1:0 "Krupp 75mm M1903"
+ BUL_light_field_gun1_short:0 "Krupp 75mm M1903"
+ BUL_light_field_gun_equipment_1:0 "Krupp 75mm M1903"
+ BUL_light_field_gun_equipment_1_desc:0 "The Krupp 75mm M1903 was a quick-firing field gun designed by the German heavy industry concern Krupp. Employing a recoil system with hydraulic buffer and spring, these guns came with a protective shield of nickel hardened steel. They had a range of nearly 6 kilometers, and the improved models had a range of up to 8 kilometers.\n\nThe Bulgarian Army of the early 1900s utilized a mix of these, the older Krupp 75mm and 87mm models from the 1880s, as well as the French Schneider-Canet 75mm M1904/1905 quick-firing field guns."
+ 
+ BUL_light_field_gun2:0 "Krupp 75mm M1911"
+ BUL_light_field_gun2_short:0 "Krupp 75mm M1911"
+ BUL_light_field_gun_equipment_2:0 "Krupp 75mm M1911"
+ BUL_light_field_gun_equipment_2_desc:0 "The Krupp 75mm M1911 was a quick-firing field gun designed by the German heavy industry concern Krupp. Ordered by several Balkan nations, they especially found a part in Turkish and Bulgarian artillery batteries."
+ 
+ BUL_light_field_gun3:0 "Rheinmetall 77mm M1916"
+ BUL_light_field_gun3_short:0 "Rheinmetall 77mm M1916"
+ BUL_light_field_gun_equipment_3:0 "Rheinmetall 77mm M1916"
+ BUL_light_field_gun_equipment_3_desc:0 "The Rheinmetall 77mm M1916 quick-firing field gun was designed by the German metal and machinery concern Rheinmetall. It was introduced in 1916, could fire up to 10 kilometers and could be loaded with incendiary or gas shells if needed."
+ 
+ BUL_light_field_gun4:0 "8cm Feldkanone M. 17"
+ BUL_light_field_gun4_short:0 "8cm FK M. 17"
+ BUL_light_field_gun_equipment_4:0 "8cm FK M. 17"
+ BUL_light_field_gun_equipment_4_desc:0 "The 8cm Feldkanone M. 17 was a dual-purpose field and mountain gun used by Austria-Hungary and their allies, designed and produced by the Austro-Hungarian Škoda Works in Pilsen.\n\nIt's largely an artillery piece of conventional design for the time, but for a few unique characteristics, such as the carriage being mounted on a double-crank, curved axle which made it lower to the ground (and thus reducing visibility for enemies, while improving stability)."
+ 
+ BUL_heavy_field_gun1:0 "Schneider-Canet 120mm long gun M1897"
+ BUL_heavy_field_gun1_short:0 "Schneider-Canet 120mm M1897"
+ BUL_heavy_field_gun_equipment_1:0 "Schneider-Canet 120mm long gun M1897"
+ BUL_heavy_field_gun_equipment_1_desc:0 "Schneider-Canet 120mm long gun M1897 was a slow firing heavy gun designed by the French artillery manufacturer Schneider, with a maximum firing range of 8400 meters. Bulgaria ordered the guns in 1897, and received 24 pieces of them. The Bulgarian long gun type, L/28, had a somewhat different breech lock from the Serbian L/26 type, but were otherwise identical."
+ 
+ BUL_heavy_field_gun2:0 "Krupp 105mm long gun M1904"
+ BUL_heavy_field_gun2_short:0 "Krupp 105mm M1904"
+ BUL_heavy_field_gun_equipment_2:0 "Krupp 105mm long gun M1904"
+ BUL_heavy_field_gun_equipment_2_desc:0 "The Krupp 105mm long gun M1904 was a quick-firing heavy gun designed by the German heavy industry concern Krupp. It had a range of around 11 kilometers depending on the shells and the charge, and utilized a hydraulic recoil system."
+ 
+ BUL_heavy_field_gun3:0 "Krupp 105mm long gun M1914"
+ BUL_heavy_field_gun3_short:0 "Krupp 105mm M1914"
+ BUL_heavy_field_gun_equipment_3:0 "Krupp 105mm long gun M1914"
+ BUL_heavy_field_gun_equipment_3_desc:0 "The Krupp 105mm long gun M1914 was a quick-firing heavy gun designed by the German heavy industry concern Krupp. The 1914 model came with a protective shield and an increased range of 13 kilometers."
+ 
+ BUL_heavy_field_gun4:0 "Krupp 105mm Field Gun Model 1916"
+ BUL_heavy_field_gun4_short:0 "Krupp 105mm Field Gun Model 1916"
+ BUL_heavy_field_gun_equipment_4:0 "Krupp 105mm Field Gun Model 1916"
+ BUL_heavy_field_gun_equipment_4_desc:0 "Krupp 105mm Field Gun Model 1916"
+ 
+ BUL_ww1_fighter1:0 "Farman III Biplane"
+ BUL_ww1_fighter1_short:0 "Farman III"
+ BUL_ww1_fighter_equipment_1:0 "Farman III Biplane"
+ BUL_ww1_fighter_equipment_1_short:0 "Farman III"
+ BUL_ww1_fighter_equipment_1_desc:0 "The Farman III plane (known as the Albatros F-2 for the German produced version), initially designed and built by Henri Farman, was an early French plane which met with quite some commercial success in its time. The plane found customers in many different countries, such as Germany, Greece and Bulgaria. Furthermore, the design became widely acclaimed in Europe, and especially in England it inspired future airplanes."
+ 
+ BUL_ww1_fighter1b:0 "Blériot XXI Monoplane"
+ BUL_ww1_fighter1b_short:0 "Blériot XXI"
+ BUL_ww1_fighter_equipment_1b:0 "Blériot XXI Monoplane"
+ BUL_ww1_fighter_equipment_1b_short:0 "Blériot XXI"
+ BUL_ww1_fighter_equipment_1b_desc:0 "The Blériot XXI was an early French shoulder-wing aircraft built by Blériot Aéronautique. The plane was powered by the French designed 70 hp Gnome Gamma 7-cylinder rotary engine, which drove a two bladed propeller. The pilot and passenger were seated in side-by-side configuration, and it could be flown from either seat, as the control column was centrally mounted and there were two sets of rudder pedals."
+ 
+ ####--Ottoman Equipment--####
+ ##Production Menu Descriptions##
+ TUR_light_field_gun_equipment_desc:0 "Light field guns are smaller artillery pieces meant to support the Army in battle."
+ TUR_heavy_field_gun_equipment_desc:0 "Heavy field guns are larger, more powerful artillery pieces meant to support sieges or soften the enemy lines before a decisive attack."
+ 
+ TUR_light_field_gun1:0 "Krupp 75mm M1903"
+ TUR_light_field_gun1_short:0 "Krupp 75mm M1903"
+ TUR_light_field_gun_equipment_1:0 "Krupp 75mm M1903"
+ TUR_light_field_gun_equipment_1_desc:0 "The Krupp 75mm M1903 was a quick-firing field gun designed by the German heavy industry concern Krupp. Employing a recoil system with hydraulic buffer and spring, these guns came with a protective shield of nickel hardened steel. They had a range of nearly 6 kilometers, and the improved models had a range of up to 8 kilometers.\nThe Ottoman Army of the early 1900s utilized a mix of these, the older Krupp 75mm and 87mm models from the 1880s, as well as Krupp 75mm M1904 quick-firing guns organized in mountain artillery batteries. Lastly there were smaller numbers of assorted German produced horse artillery, siege guns and howitzers."
+ 
+ TUR_light_field_gun2:0 "Krupp 75mm M1911"
+ TUR_light_field_gun2_short:0 "Krupp 75mm M1911"
+ TUR_light_field_gun_equipment_2:0 "Krupp 75mm M1911"
+ TUR_light_field_gun_equipment_2_desc:0 "The Krupp 75mm M1911 was a quick-firing field gun designed by the German heavy industry concern Krupp. Ordered by several Balkan nations, they especially found a part in Turkish and Bulgarian artillery batteries."
+ 
+ TUR_heavy_field_gun2:0 "Krupp 105mm long gun M1904"
+ TUR_heavy_field_gun2_short:0 "Krupp 105mm M1904"
+ TUR_heavy_field_gun_equipment_2:0 "Krupp 105mm long gun M1904"
+ TUR_heavy_field_gun_equipment_2_desc:0 "The Krupp 105mm long gun M1904 was a quick-firing heavy gun designed by the German heavy industry concern Krupp. It had a range of around 11 kilometers depending on the shells and the charge, and utilized a hydraulic recoil system."
+ 
+ TUR_ww1_fighter1:0 "Farman III Biplane"
+ TUR_ww1_fighter1_short:0 "Farman III"
+ TUR_ww1_fighter_equipment_1:0 "Farman III Biplane"
+ TUR_ww1_fighter_equipment_1_short:0 "Farman III"
+ TUR_ww1_fighter_equipment_1_desc:0 "The Farman III plane (known as the Albatros F-2 for the German produced version), initially designed and built by Henri Farman, was an early French plane which met with quite some commercial success in its time. The plane found customers in many different countries, such as Germany, Greece and Bulgaria. Furthermore, the design became widely acclaimed in Europe, and especially in England it inspired future airplanes."
+ 
+ TUR_ww1_fighter1b:0 "DFW Mars"
+ TUR_ww1_fighter_equipment_1b:0 "DFW Mars"
+ TUR_ww1_fighter_equipment_1b_desc:0 "The DFW Mars was an early military utility plane developed by Germany in and around 1913. It was produced in both monoplane and biplane versions, which came with 90 horsepower NAG engines and 100 horsepower Mercedes engines respectively. The fuselage and empennage remained the same for both versions. The Ottoman Empire also aquired some of these."
+ 
+ ####--Greek Equipment--####
+ ##Production Menu Descriptions##
+ GRE_light_field_gun_equipment_desc:0 "Light field guns are smaller artillery pieces meant to support the Army in battle."
+ GRE_heavy_field_gun_equipment_desc:0 "Heavy field guns are larger, more powerful artillery pieces meant to support sieges or soften the enemy lines before a decisive attack."
+ 
+ GRE_light_field_gun1:0 "Schneider-Creusot 75mm M1906"
+ GRE_light_field_gun1_short:0 "Schneider-Creusot 75mm M1906"
+ GRE_light_field_gun_equipment_1:0 "Schneider-Creusot 75mm M1906"
+ GRE_light_field_gun_equipment_1_desc:0 "The Schneider-Creusot 75mm M1906 was a quick-firing field gun designed from the French iron- and steel mill turned arms manufacturer Schneider-Creusot. It employed a hydro-pneumatic recoil system, swinging block breech mechanism and traverse on axle. For the shells utilized by Greece, and depending on whether shrapnel- or high explosive shells were used, the maximum range was 5.5 kilometers and 6 kilometers respectively."
+ 
+ GRE_ww1_fighter1:0 "Farman III Biplane"
+ GRE_ww1_fighter1_short:0 "Farman III"
+ GRE_ww1_fighter_equipment_1:0 "Farman III Biplane"
+ GRE_ww1_fighter_equipment_1_short:0 "Farman III"
+ GRE_ww1_fighter_equipment_1_desc:0 "The Farman III plane (known as the Albatros F-2 for the German produced version), initially designed and built by Henri Farman, was an early French plane which met with quite some commercial success in its time. The plane found customers in many different countries, such as Germany, Greece and Bulgaria. Furthermore, the design became widely acclaimed in Europe, and especially in England it inspired future airplanes."
+ 
+ GRE_ww1_fighter1b:0 "Blériot XXI Monoplane"
+ GRE_ww1_fighter1b_short:0 "Blériot XXI"
+ GRE_ww1_fighter_equipment_1b:0 "Blériot XXI Monoplane"
+ GRE_ww1_fighter_equipment_1b_short:0 "Blériot XXI"
+ GRE_ww1_fighter_equipment_1b_desc:0 "The Blériot XXI was an early French shoulder-wing aircraft built by Blériot Aéronautique. The plane was powered by the French designed 70 hp Gnome Gamma 7-cylinder rotary engine, which drove a two bladed propeller. The pilot and passenger were seated in side-by-side configuration, and it could be flown from either seat, as the control column was centrally mounted and there were two sets of rudder pedals."
+ 
+ ####--Montenegrin Equipment--####
+ ##Production Menu Descriptions##
+ MTN_light_field_gun_equipment_desc:0 "Light field guns are smaller artillery pieces meant to support the Army in battle."
+ MTN_heavy_field_gun_equipment_desc:0 "Heavy field guns are larger, more powerful artillery pieces meant to support sieges or soften the enemy lines before a decisive attack."
+ 
+ MTN_ww1_fighter1:0 "Farman III Biplane"
+ MTN_ww1_fighter1_short:0 "Farman III"
+ MTN_ww1_fighter_equipment_1:0 "Farman III Biplane"
+ MTN_ww1_fighter_equipment_1_short:0 "Farman III"
+ MTN_ww1_fighter_equipment_1_desc:0 "The Farman III plane (known as the Albatros F-2 for the German produced version), initially designed and built by Henri Farman, was an early French plane which met with quite some commercial success in its time. The plane found customers in many different countries, such as Germany, Greece and Bulgaria. Furthermore, the design became widely acclaimed in Europe, and especially in England it inspired future airplanes."
+ 
+ MTN_ww1_fighter1b:0 "Blériot XXI Monoplane"
+ MTN_ww1_fighter1b_short:0 "Blériot XXI"
+ MTN_ww1_fighter_equipment_1b:0 "Blériot XXI Monoplane"
+ MTN_ww1_fighter_equipment_1b_short:0 "Blériot XXI"
+ MTN_ww1_fighter_equipment_1b_desc:0 "The Blériot XXI was an early French shoulder-wing aircraft built by Blériot Aéronautique. The plane was powered by the French designed 70 hp Gnome Gamma 7-cylinder rotary engine, which drove a two bladed propeller. The pilot and passenger were seated in side-by-side configuration, and it could be flown from either seat, as the control column was centrally mounted and there were two sets of rudder pedals."
+ 
+ ####--Serbian Equipment--####
+ ##Production Menu Descriptions##
+ SER_light_field_gun_equipment_desc:0 "Light field guns are smaller artillery pieces meant to support the Army in battle."
+ SER_heavy_field_gun_equipment_desc:0 "Heavy field guns are larger, more powerful artillery pieces meant to support sieges or soften the enemy lines before a decisive attack."
+ 
+ SER_light_field_gun1:0 "Schneider-Creusot 75mm M1907"
+ SER_light_field_gun1_short:0 "Schneider-Creusot 75mm M1907"
+ SER_light_field_gun_equipment_1:0 "Schneider-Creusot 75mm M1907"
+ SER_light_field_gun_equipment_1_desc:0 "The Schneider-Creusot 75mm M1907 was a quick-firing field gun designed by the Schneider-Creusot arms manufacturer near Le Creusot in Eastern France.\n\nThe Serbian army utilized a mix of these, the De Bange 80mm M1885 slow firing field guns as well as various other mountain guns, howitzers and other guns in the early 1900s."
+ 
+ SER_heavy_field_gun1:0 "Schneider-Canet 120mm long gun M1897"
+ SER_heavy_field_gun1_short:0 "Schneider-Canet 120mm M1897"
+ SER_heavy_field_gun_equipment_1:0 "Schneider-Canet 120mm long gun M1897"
+ SER_heavy_field_gun_equipment_1_desc:0 "Schneider-Canet 120mm long gun M1897 was a slow firing heavy gun designed by the French artillery manufacturer Schneider, with a maximum firing range of 8400 meters. Serbia ordered 17 pieces of the long gun in 1897, but only 16 were delivered in 1902. The Serbian long gun type, L/26, had a somewhat different breech lock from the Bulgarian L/28 type, but were otherwise identical."
+ 
+ SER_ww1_fighter1:0 "Farman III Biplane"
+ SER_ww1_fighter1_short:0 "Farman III"
+ SER_ww1_fighter_equipment_1:0 "Farman III Biplane"
+ SER_ww1_fighter_equipment_1_short:0 "Farman III"
+ SER_ww1_fighter_equipment_1_desc:0 "The Farman III plane (known as the Albatros F-2 for the German produced version), initially designed and built by Henri Farman, was an early French plane which met with quite some commercial success in its time. The plane found customers in many different countries, such as Germany, Greece and Bulgaria. Furthermore, the design became widely acclaimed in Europe, and especially in England it inspired future airplanes."
+ 
+ SER_ww1_fighter1b:0 "Blériot XXI Monoplane"
+ SER_ww1_fighter1b_short:0 "Blériot XXI"
+ SER_ww1_fighter_equipment_1b:0 "Blériot XXI Monoplane"
+ SER_ww1_fighter_equipment_1b_short:0 "Blériot XXI"
+ SER_ww1_fighter_equipment_1b_desc:0 "The Blériot XXI was an early French shoulder-wing aircraft built by Blériot Aéronautique. The plane was powered by the French designed 70 hp Gnome Gamma 7-cylinder rotary engine, which drove a two bladed propeller. The pilot and passenger were seated in side-by-side configuration, and it could be flown from either seat, as the control column was centrally mounted and there were two sets of rudder pedals."
+ 
+ ####--Important Interface Localisation--####
+ RESEARCH_PROGRESS_COMPACT:0 "§T$DAYS|H$ day(s)§!"
+ RESEARCH_PROGRESS_COMPACT_WITH_XP:0 "§T$DAYS|H$ day(s) ($XP_TEXT$)§!"
+ navy_doctrine_research:0 "Naval Doctrine Research Speed"
+ cas_equipment:0 "Close Air Support"
+ 
+ ####--Event Flags--####
+ kis_secondbalkanwar_victory:0 "Second Balkan War ended or avoided"
+ 
+ ####--Country Flags--####
+ MTN_backs_bulgaria:0 "§YMontenegro§! backs Bulgarian claims"
+ MTN_backs_neither_side:0 "§YMontenegro§! backs neither side"
+ MTN_backs_serbia:0 "§YMontenegro§! backs Serbian claims"
+ MTN_helped_bulgaria_in_second_balkan:0 "Montenegro helped Bulgaria in the Second Balkan War"

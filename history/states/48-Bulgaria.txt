@@ -1,0 +1,43 @@
+state={
+	id=48
+	name="STATE_48"
+	manpower = 1323944	### For May 1910 (total pop four starting states: 4 358 478 (4 337 513 January 1910)). May 1910 population calculated from the 1910 census pop and the Bulgarian yearly population growth rate in 1910 (1.45%) divided by three (4/12 months to May 1st). 1936: 1991500
+	state_category=city
+	provinces={ 793 935 949 965 3908 3971 9771 11754 }
+	resources = {
+		wood = 6
+		coal = 16	### Rich coal deposits near Pernik
+	}
+	history={
+		victory_points={
+			949 20
+		}
+		victory_points={
+			9771 3
+		}
+		victory_points={
+			935 1
+		}
+		victory_points={
+			965 1
+		}
+		owner=BUL
+		add_core_of=BUL
+		1936.1.1={
+			owner=BUL
+			add_core_of=BUL
+			buildings={
+				infrastructure=5
+				industrial_complex=5
+				air_base=2
+				arms_factory=1
+			}
+		}
+		buildings={
+			infrastructure=5
+			industrial_complex=2
+			arms_factory=1
+			air_base=1
+		}
+	}
+}

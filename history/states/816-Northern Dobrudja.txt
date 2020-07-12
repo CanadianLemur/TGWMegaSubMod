@@ -1,0 +1,24 @@
+state = {
+	id = 816
+	name = "STATE_816"
+	manpower = 86447	### For May 1910. Split off from Muntenia's May 1910 population. Combined with Constanta state this should give Northern Dobrudja the region exactly its historical May 1910 population. 1936: N/A
+	state_category = pastoral
+	provinces = {
+		687 3076 
+	}
+	
+	history = {
+		victory_points = {
+			687 3
+		}
+		owner = ROM
+		buildings = {
+			infrastructure = 3
+			687 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = ROM
+		##add_claim_by = BUL ### While there were Bulgarians here, it's probably better to give a claim/core to the closer Constanta region (which also had Bulgarians, and were partly claimed by the treaty of San Stefano) through certain focuses.
+	}
+}

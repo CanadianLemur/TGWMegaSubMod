@@ -1,0 +1,144 @@
+﻿#####--BULGARIA NAME LISTS--#####
+####--REGULAR DESTROYER NAMES--####
+####--Updated to fit the time period from 1910 (for the Balkans Ablaze submod) by Khanor--####
+
+BUL_TB_AND_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_TORPEDO_BOATS_AND_DESTROYERS
+	
+	for_countries = { BUL }
+	
+	type = ship
+	ship_types = { ship_hull_light destroyer }
+	
+	fallback_name = "%d-ta Razrushitel"
+	
+	unique = {
+		 "Drazki" "Letyashti" "Smeli" "Strogi" "Khrabri" "Shumniy" "Bodri" "Zheleznyakov" "Georgi Dimitrov" "Vasil Levski" "Khristo Botev" "Svetlina" "Prosto" "Ryazŭk" "Ostŭr" "Bŭrz" 
+	}
+}
+
+### LIGHT CRUISER NAMES###
+BUL_CL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CL
+	
+	for_countries = { BUL }
+	
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	
+	fallback_name = "%d-ta Lek Kraitser"	### No 'Svetlina' plz and ty. I put it towards the end of the destroyer list to commemorate the erroneous use instead.
+	
+	unique = {
+		"Nadezhda" "Sofija" "Pernik" "Svoge" "Slivnica" "Breznik" "Radomir" "Tsar Ferdinand" "Tsaritsa Maria Luisa" "Tsarevich Boris" "Nova Nadezhda" 
+	}
+}
+
+### HEAVY CRUISER NAMES###
+BUL_CA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+	
+	for_countries = { BUL }
+	
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+	
+	fallback_name = "%d-ta Tezhuk Kraitser"
+	
+	unique = {
+		"Nadezhda" "Sofija" "Pernik" "Svoge" "Slivnica" "Breznik" "Radomir" "Tsar Ferdinand" "Tsaritsa Maria Luisa" "Tsarevich Boris" "Nova Nadezhda" 
+	}
+}
+
+### BATTLESHIP NAMES ###
+BUL_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+	
+	for_countries = { BUL }
+	
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+	
+	fallback_name = "%d-ta Lineen Korab"		
+	
+	unique = {
+		"Zheleznjakov" "Sofija" "Plovdiv" "Varna" "Burgas" "Ruse" "Stara Zagora" "Pleven" "Smel" "Nov Drazki" 
+	}
+}
+
+### BATTLECRUISER NAMES ###
+BUL_BC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BC
+
+	for_countries = { BUL }
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+	
+	fallback_name = "%d-ta Boen Kraitser"		
+
+	unique = {
+		"Zheleznjakov" "Sofija" "Plovdiv" "Varna" "Burgas" "Ruse" "Stara Zagora" "Pleven" "Smel" "Nov Drazki" 
+	}
+}
+
+### AIRCRAFT CARRIER NAMES ###
+BUL_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+	
+	for_countries = { BUL }
+	
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	fallback_name = "%d-ta Samoletonosach"
+	
+	unique = {
+		"Krilata Nadezhda" "Struma" "Sofija" "Plovdiv" "Varna" "Burgas" "Ruse" "Stara Zagora" "Pleven" 
+	}
+}
+
+### SUBMARINES ###
+BUL_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+	
+	for_countries = { BUL }
+	
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	
+	fallback_name = "%d-ta Podvodnitsa"
+	
+	unique = {
+		"Podvodnik No. 18" "Podvodnik No. 19" "Podvodnik No. 20" "Slava" "Pobeda" "Drazki" "Smeli" "Khrabri" "Strogi" "Letyashchi" "Shumni" 
+	}
+}
+
+### THEME: BULGARIAN PROVINCES ###
+BUL_PROVINCES = {
+	name = NAME_THEME_PROVINCES
+
+	for_countries = { BUL }
+
+	type = ship
+
+	unique = {
+		"Sofija" "Plovdiv" "Varna" "Burgas" "Stara Zagora" "Pleven" "Haskovo" "Lovech" "Ferdinand" "Razgrad" "Guerrero" "Dzhumaya" 
+		"Pazardzhik" "Veliko Tarnovo" "Vratsa" "Sliven" "Sonora" "Dobrich" "Shumen" "Kardzhali" "Kyustendil" "Yambol" "Pernik" "Gabrovo" 
+		"Silistra" "Smolyan" "Targovishte" "Vidin" 
+	}
+}
+
+## THEME: BULGARIAN CITIES ###
+BUL_CITIES = {
+	name = NAME_THEME_CITIES	### Adapted for city names in 1910 (by Khanor). Of note Blagoevgrad --> Dzhumaya, Montana --> Ferdinand, and the adaptation of some cities that were Bulgarian at the time.
+
+	for_countries = { BUL }
+
+	type = ship
+
+	unique = {
+		"Sofija" "Plovdiv" "Varna" "Burgas" "Ruse" "Stara Zagora" "Pleven" "Dobrich" "Sliven" "Shumen" "Pernik" "Haskovo" "Yambol" "Pazardzhik" 
+		"Dzhumaya" "Dedeagach" "Veliko Tarnovo" "Vratsa" "Gabrovo" "Asenovgrad" "Vidin" "Kazanlak" "Kyustendil" "Kardzhali" "Ferdinand" "Dimitrovgrad" "Targovishte" "Lovech" 
+		"Silistra" "Dupnitsa" "Svishtov" "Razgrad" "Gorna Oryahovitsa" "Smolyan" "Petrich" "Sandanski" "Samokov" "Sevlievo" "Lom" "Štip" "Ser" "Odrin" "Solun" 
+	}
+}

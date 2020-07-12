@@ -1,0 +1,40 @@
+state={
+	id=47
+	name="STATE_47" # Thessaly
+	manpower = 1444348	### For May 1910 (total pop four starting states (excluding Crete): 2 711 314 (2 631 952 January 1907) based on 1907 census and average growth rate 1896-1907, about 0.9046% a year). 1936: 2312500
+	state_category=city
+	provinces={ 863 976 1109 3864 3973 3988 4109 6930 7127 }
+	resources={
+		wood=5
+		chromium=81
+		steel=2
+		tungsten=0
+	}
+	history={
+		victory_points={ 4109 20 }
+		victory_points={ 3973 3 }
+		victory_points={ 7127 3 }
+		victory_points={ 863 1 }
+		victory_points={ 976 1 }
+		owner=GRE
+		add_core_of=GRE
+		1936.1.1={
+			owner=GRE
+			add_core_of=GRE
+			victory_points={ 4109 20 }
+			buildings={
+				infrastructure=5
+				industrial_complex=4
+				air_base=4
+				arms_factory=2
+				4109={ naval_base=9  }
+			}
+		}
+		buildings={
+			infrastructure=5
+			industrial_complex=4
+			arms_factory=1
+			4109={ naval_base=9  }
+		}
+	}
+}

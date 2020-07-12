@@ -1,0 +1,23 @@
+state = {
+	id = 788
+	name = "STATE_788"
+	manpower = 289191	### For May 1910. 1936: 400000
+	state_category = town
+	provinces = { 878 893 3937 6857 9818 9862 9888 9902 11813 }
+	resources = {
+		wood = 9
+		coal = 4
+	}
+	history = {
+		victory_points = {
+			6857 1
+		}
+		owner = TUR
+		add_core_of = BUL
+		add_core_of = TUR
+		1913.5.30 = { owner = BUL }
+		buildings = {
+			infrastructure = 4
+		}
+	}
+}

@@ -1,0 +1,103 @@
+﻿l_english:
+ ####--Events--####
+ ww1_secondbalkan.1.a:0 "For Greater Bulgaria!"
+ 
+ ####--National Focuses--####
+ BUL_ww1_pro_rus:0 "Russo-Bulgarian Relations"
+ BUL_ww1_BalkansPolitics_desc:0 "More so than those who master warfare, those who master diplomacy stand to gain in the dynamic Balkan Peninsula. Indeed when then Knyaz Ferdinand elevated our Princedom to a Tsardom of similar status to the Kingdoms of Europe, it was timed with care; the Ottoman Empire busy with revolts and Austro-Hungarian interference. So let's keep going, §YGreater Bulgaria§! stands but a few good moves from our grasp..."
+ BUL_ww1_anti_ottoman_desc:0 "While we've accomplished the long sought after unification with Eastern Rumelia, the Ottoman Empire still holds important Bulgarian inhabited territories. We should not forget this, and work to get them back. After all, in this turbulent era an opportunity might eventually present itself..."
+ BUL_ww1_italo_turkish_opportunity_desc:0 "Indeed an opportunity has presented itself. The land grabs by the Italian Kingdom could be just what we need to weaken the Ottoman Empire sufficiently to make our dream of a truly united Bulgaria come true. Still, the Ottoman Empire is a formidable foe, so maybe some help is still needed?"
+ BUL_ww1_balkan_league_desc:0 "With the blessing of the Russian Empire (and no lack of active diplomatic efforts from said Russians) it seems possible that the Balkan states of Bulgaria and Serbia can put their differences aside for now to deal with other issues together. While this is a solid alliance in itself, maybe Montenegrin reinforcements and Greek ships could be put to good use too?"
+ BUL_first_balkan_desc:0 "The time to act is now, we should strike against our foe while they're still weak. To arms Bulgarians!"
+ BUL_ww1_aviation_effort:0 "Expand the Army's Aviation Squad"
+ BUL_ww1_aviation_effort_desc:0 "Bulgarian Military aviation dates back to the 1892 Plovdiv International Fair, where two lieutenants of the Bulgarian Army flew in Eugène Godard's balloon, 'La France'. Inspired by this they convinced the Bulgarian General Staff that the Army should build its own balloon force for reconnaissance purposes. In 1906, April 20th, the Aviation Squad was created to operate observation balloons for the Army."
+ BUL_ww1_aviation_effort_2:0 "Bulgarian Pilot Training"
+ BUL_ww1_aviation_effort_2_desc:0 "In 1910 the Russian aircraft engineer Boris Maslennikov was invited to Bulgaria, where he presented his aircraft, a modification of the French Farman III plane. This subsequently inspired the Bulgarian Government to start aquiring airplanes. Now, the Bulgarian Military personnel sent to undergo training in Russian and French Aviation Academies are soon to be ready for duty, bringing airplanes with them."
+ SER_ww1_anti_ottoman_desc:0 "While we've already fought against the Ottoman Empire for our Independence, and later for some territorial gains, we should not forget that there's more that should be ours to our south. We'll have to work towards getting them back still. After all, in this turbulent era an opportunity might eventually present itself..."
+ SER_ww1_italo_turkish_opportunity_desc:0 "Indeed an opportunity has presented itself. The land grabs by the Italian Kingdom could be just what we need to weaken the Ottoman Empire sufficiently to make our dream of a Great Serbia come true, maybe even with access to the Adriatic Sea. Still, the Ottoman Empire is a formidable foe, so maybe some help is still needed?"
+ SER_balkan_league_desc:0 "With the blessing of the Russian Empire (and no lack of active diplomatic efforts from said Russians) it seems possible that the Balkan states of Bulgaria and Serbia can put their differences aside for now to deal with other issues together. While this is a solid alliance in itself, maybe Montenegrin reinforcements and Greek ships could be put to good use too?"
+ SER_first_balkan_desc:0 "The time to act is now, we should strike against our foe while they're still weak. To arms Serbians!"
+ ITA_ww1_libyan_claims:0 "Tripolitanian Claims" ### Wasn't named Libya until 1934!
+ 
+ ####--Equipment--####
+ BUL_infantry_equipment_1_desc:0 "The Austro-Hungarian magazine rifles Mannlicher M95 and its submodels, mainly imported from the cities of Steyr or Budapest, were the primary service rifles of the Bulgarian Army. Their imports started in 1898, and combined with the other magazine rifles of Mannlicher, the 1888 model and 1890 model, they were by far the most numerous ones in the Bulgarian armed forces already from the early 1900s. The Bulgarian version of the Mannlicher M95 can be identified by the Bulgarian lion crest stamped on the chamber, and the manufacturer's name can be found on the left side of the receiver."
+ 
+ TUR_light_field_gun1:0 "Krupp 75mm M1903"
+ TUR_light_field_gun1_short:0 "Krupp 75mm M1903"
+ TUR_light_field_gun_equipment_1:0 "Krupp 75mm M1903"
+ TUR_light_field_gun_equipment_1_desc:0 "The Krupp 75mm M1903 was a quick-firing field gun designed by the German heavy industry concern Krupp. Employing a recoil system with hydraulic buffer and spring, these guns came with a protective shield of nickel hardened steel. They had a range of nearly 6 kilometers, and the improved models had a range of up to 8 kilometers.\nThe Ottoman Army of the early 1900s utilized a mix of these, the older Krupp 75mm and 87mm models from the 1880s, as well as Krupp 75mm M1904 quick-firing guns organized in mountain artillery batteries. Lastly there were smaller numbers of assorted German produced horse artillery, siege guns and howitzers."
+ 
+ TUR_light_field_gun2:0 "Krupp 75mm M1911"
+ TUR_light_field_gun2_short:0 "Krupp 75mm M1911"
+ TUR_light_field_gun_equipment_2:0 "Krupp 75mm M1911"
+ TUR_light_field_gun_equipment_2_desc:0 "The Krupp 75mm M1911 was a quick-firing field gun designed by the German heavy industry concern Krupp. Ordered by several Balkan nations, they especially found a part in Turkish and Bulgarian artillery batteries."
+ 
+ FRA_ww1_fighter1:0 "Farman III Biplane"        ### This plane is more fitting for the start of the game, and it was also used as a scouting plane by certain countries.
+ FRA_ww1_fighter1_short:0 "Farman III"
+ FRA_ww1_fighter_equipment_1:0 "Farman III Biplane"
+ FRA_ww1_fighter_equipment_1_short:0 "Farman III"
+ FRA_ww1_fighter_equipment_1_desc:0 "The Farman III plane (known as the Albatros F-2 for the German produced version), initially designed and built by Henri Farman, was an early French plane which met with quite some commercial success in its time. The plane found customers in many different countries, such as Germany, Greece and Bulgaria. Furthermore, the design became widely acclaimed in Europe, and especially in England it inspired future airplanes."
+ 
+ ####--States--####
+ STATE_28:0 "Elsass-Lothringen"                 ### German name much more appropriate both with the current owner at the time, as well as the demographics there.
+ STATE_45:0 "Vajdaság"                          ### Hungarian name
+ STATE_48:0 "Struma Valley"
+ STATE_69:0 "Bohemian Hills"                    ### Not really a historical region at the time, so tried to make the best of a name for the weirdly shaped state.
+ STATE_72:0 "Ostrau"                            ### German/Austrian name for Ostrava. Zaolzie is the Polish name of this region, so not quite appropriate in this historical context.
+ STATE_73:0 "Kárpátalja"                        ### Hungarian for the sub-Carpathians. Much more appropriate for the period.
+ STATE_74:0 "Sudeten Mountains"                 ### Eastern Sudetenland is easier to give an appropriate name as the mountains that came to name the later regions lie here.
+ STATE_77:0 "Southern Dobrudja"
+ STATE_80:0 "Bukowina"                          ### German/Austrian name more appropriate than the Romanian one at the time.
+ STATE_86:0 "Posen"
+ STATE_88:0 "Krakau"
+ STATE_89:0 "Galicia"                           ### WW1 literature generally refers to the Kingdom of Galicia and Lodomeria (or just Galicia and Lodomeria) rather than the HoI IV base game names.
+ STATE_91:0 "Lodomeria"
+ STATE_102:0 "Krain"
+ STATE_103:0 "Dalmatien"
+ STATE_106:0 "Northern Macedonia"
+ STATE_163:0 "Zadar"
+ STATE_184:0 "Kavala"                           ### Not even in the Thrace region, definitely needed renaming.
+ STATE_185:0 "Southern Epirus"
+ STATE_187:0 "Cyclades"
+ STATE_195:0 "Ingria"                           ### In early 1910 not yet Petrograd, or even worse, Leningrad. Let events (optionally combined with decisions) handle eventual renamings!
+ STATE_211:0 "Varna"
+ STATE_212:0 "Stara Planina"
+ STATE_273:0 "Desert of Tripoli"                ### Wasn't called Libya (thus Libyan Desert) before 1934.
+ STATE_341:0 "Constantinople"
+ STATE_664:0 "Northern Pannonia"
+ STATE_736:0 "Istrien"
+ STATE_751:0 "Northern Schleswig"
+ STATE_754:1 "Kufra" # South East of Libya (Golog in Vanilla)
+ STATE_756:1 "Eastern Thrace"
+ STATE_757:1 "Western Thrace"
+ STATE_759:1 "Štip"
+ STATE_760:0 "Raška-Kosovo Field"               ### Serbian names for the regions.
+ STATE_761:0 "Sandžak"                          ### Montenegrin name for the region.
+ STATE_762:1 "Kattowitz"
+ #STATE_788:1 "Northern Thrace"
+ STATE_790:1 "North Aegean"
+ 
+ ####--Cities/Victory Points--####
+ VICTORY_POINTS_678:0 "Mülhausen"
+ VICTORY_POINTS_690:0 "Brassó"
+ VICTORY_POINTS_3569:0 "Brünn"
+ VICTORY_POINTS_6418:0 "Pilsen"
+ VICTORY_POINTS_6464:1 "Kattowitz"
+ VICTORY_POINTS_6558:1 "Posen"
+ VICTORY_POINTS_6573:0 "Kassa"
+ VICTORY_POINTS_6626:0 "Triest"
+ VICTORY_POINTS_6711:0 "Kolozsvár"
+ VICTORY_POINTS_9427:0 "Krakau"
+ VICTORY_POINTS_9503:0 "Strassburg"
+ VICTORY_POINTS_9692:0 "Pressburg"
+ VICTORY_POINTS_9627:0 "Laibach"
+ VICTORY_POINTS_11401:0 "Reichenberg"
+ VICTORY_POINTS_11479:0 "Lemberg"
+ VICTORY_POINTS_11542:0 "Prag"
+ VICTORY_POINTS_11905:0 "Dedeagach"
+ 
+ ####--Political Parties--####
+ BUL_neutrality_party:0 "Tsarists"
+ BUL_neutrality_party_long:0 "Constitutional Tsarists"
+ BUL_democratic_party:0 "DP"
+ BUL_democratic_party_long:0 "Demokraticheska Partiya"

@@ -1,0 +1,21 @@
+on_actions = {
+	###--Startup events for TGW Balkans Ablaze--###
+    on_startup = {
+        effect = {
+			NOR = { country_event = { id = ba_story.2 } }
+			RUS = { country_event = { id = ba_story.2 } }
+			
+			ROM = { country_event = { id = ba_story.0 } }
+			BUL = { country_event = { id = ba_story.0 } }
+			TUR = {
+				country_event = { id = ba_story.2 }
+				country_event = { id = ba_story.0 }
+			}
+			GRE = { country_event = { id = ba_story.0 } }
+			MTN = { country_event = { id = ba_story.0 } }
+			SER = { country_event = { id = ba_story.0 } }
+			AUH = { country_event = { id = ba_story.0 } }
+			ITA = { country_event = { id = ba_story.0 } }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+state={
+	id=731
+	name="STATE_731"
+	manpower = 818916	### For May 1910. 1936: 1132700
+	state_category=town
+	provinces={
+		895 936 3936 10163 11818 
+	}
+	resources={
+		wood=4
+	}
+
+	history={
+		victory_points = {
+			11818 10 
+		}
+		owner = TUR
+		buildings = {
+			infrastructure = 4
+			11818 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = GRE
+		add_core_of = TUR
+		add_claim_by = BUL
+		1913.5.30 = {
+			owner = GRE
+		}
+	}
+}

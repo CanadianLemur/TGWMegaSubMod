@@ -1,0 +1,26 @@
+state = {
+	id = 337
+	name = "STATE_337"
+	manpower = 18020	### For May 1910. 1936: 25900
+	state_category = small_island
+	provinces = {
+		13003
+	}
+	resources = {
+		wood = 0
+	}
+	
+	history = {
+		victory_points = {
+			13003 1
+		}
+		owner = DEN
+		add_core_of = DEN
+		buildings = {
+			infrastructure = 3
+			13003 = {
+				naval_base = 1
+			}
+		}
+	}
+}

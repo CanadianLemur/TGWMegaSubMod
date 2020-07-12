@@ -1,0 +1,30 @@
+state = {
+	id = 815
+	name = "STATE_815"
+	manpower = 259342	### For May 1910. Split off from Muntenia's May 1910 population. Combined with Northern Dobrudja state this should give Northern Dobrudja the region exactly its historical May 1910 population. 1936: N/A
+	state_category = rural
+	provinces = {
+		657 9635 
+	}
+	
+	history = {
+		victory_points = {
+			657 3
+		}
+		owner = ROM
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			657 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = ROM
+		add_claim_by = BUL ### While the Treaty of San Stefano in the 1880s had promised part of this area to Bulgaria (probably around up to Mangalia, not including Constanta city itself), Romania was the one pushing for concessions in the Bulgaro-Romanian relationship before the start of WW1, thus only a Bulgarian claim for now.
+		1936.1.1 = {
+			buildings = {
+				dockyard = 1
+			}
+		}
+	}
+}

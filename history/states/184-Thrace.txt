@@ -1,0 +1,44 @@
+state = {
+	id = 184
+	name = "STATE_184"
+	manpower = 276539	### For May 1910. 1936: 382500
+	state_category = rural
+	provinces = {
+		3526 6990 9791 9930
+	}
+	resources = {
+		wood = 3
+		chromium = 16
+	}
+	history = {
+		victory_points = {
+			9930 3
+		}
+		victory_points = {
+			6990 1
+		}
+		victory_points = {
+			9791 1
+		}
+		owner = TUR
+		add_core_of = BUL
+		add_core_of = GRE
+		add_core_of = TUR
+		1913.5.30 = { owner = BUL }
+		1913.8.10 = { owner = GRE }
+		1936.1.1 = { 
+			owner = GRE
+			add_core_of = GRE
+			add_claim_by = BUL
+			buildings = {
+				infrastructure = 4
+			}
+		}
+		buildings = {
+			infrastructure = 4
+			9930 = {
+				naval_base = 1
+			}
+		}
+	}
+}

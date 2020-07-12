@@ -1,0 +1,35 @@
+state = {
+	id = 163
+	name = "STATE_163"
+	manpower = 27524	### For May 1910. Based on the municipal population statistics of 1900 (24 778) and 1910 (27 426). 1936: 18000 (from TGW/base game, but this is likely too low)
+	state_category = pastoral
+	provinces = {
+		3943
+	}
+	resources = {
+		wood = 0
+	}
+	history = {
+		victory_points = {
+			3943 3
+		}
+		owner = AUH
+		add_core_of = AUH
+		add_core_of = ITA
+		1919.1.1 = {
+			owner = YUG
+			add_core_of = YUG
+		}
+		1936.1.1 = {
+			owner = ITA
+			buildings = {
+				infrastructure = 5
+				3943 = { naval_base = 1 }
+			}
+		}
+		buildings = {
+			infrastructure = 5
+			3943 = { naval_base = 1 }
+		}
+	}
+}

@@ -1,0 +1,46 @@
+state = {
+	id = 341
+	name = "STATE_341"
+	manpower = 975832	### For May 1910. After converting to May 1910 populations an additional 105 000 have been transferred from Eastern Thrace to represent the historical population of Constantinople (870 832 + 105 000 = 975 832). 1936: 1204509
+	state_category = large_city
+	provinces = {
+		849 3879 6895 9833 11829
+	}
+	resources = {
+		wood = 18
+		coal = 12
+		steel = 4
+	}
+	history={
+		victory_points={ 9833 30 }
+		victory_points={ 11829 5 }
+		victory_points={ 6895 3 }
+		victory_points={ 849 1 }
+		owner=TUR
+		add_core_of=TUR
+		add_claim_by=GRE
+		1936.1.1={ 
+			owner=TUR
+			add_core_of=GRE
+			add_core_of=TUR
+			buildings={
+				infrastructure=5
+				industrial_complex=1
+				air_base=4
+				dockyard=1
+				arms_factory=2
+				9833={ naval_base=8 }
+			}
+		}
+		buildings={
+			infrastructure=5
+			dockyard = 2
+			industrial_complex=1
+			arms_factory=2
+			9833={ naval_base=8 }
+		}
+		1919.1.1 = {
+			add_core_of = TUK
+		}
+	}
+}

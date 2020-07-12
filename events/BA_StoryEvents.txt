@@ -1,0 +1,234 @@
+﻿####################################################################################################################################################################################
+# Balkan Story Events (Storytelling [report] events for Balkans Ablaze, a submod for HoI IV: The Great War, with additional flavor for Bulgaria and its neighbors. Made by Khanor) #
+####################################################################################################################################################################################
+
+add_namespace = ba_story
+
+##### Event 0-10: Starter events, with (his)story so far #####
+
+# Event with hidden effects setting up later gameplay, as well as some visible equipment gains for Serbia. An introduction to the Balkans is given, which further leads to a Bulgarian event giving an introduction to Bulgaria #
+#_______________________________________________________________________________________________________________________________________________________________________________________________________________________________#
+country_event = {
+	id = ba_story.0
+	title = ba_story.0.t
+	desc = ba_story.0.d
+	picture = GFX_report_event_balkan_crisis_1908
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = ba_story.0.a	### Informs of the state of the Balkans at the start of the game. Also adds some historical artillery to Serbia.
+		
+		if = {
+			limit = { original_tag = AUH }
+			
+			hidden_effect = {
+				set_variable = {
+					var = auh_current_balkan_threat
+					value = 0
+				}
+				add_to_variable = { var = auh_current_balkan_threat value = 1 }
+			}
+		}
+		
+		if = {
+			limit = { original_tag = SER }
+			
+			hidden_effect = {
+				set_variable = {
+					var = ser_current_balkan_threat
+					value = 0
+				}
+				add_to_variable = { var = ser_current_balkan_threat value = 1 }
+				add_to_variable = { var = ser_montenegrin_diplomatic_influence value = 20 }
+				if = {
+					limit = { date > 1914.1.1 }
+					add_to_variable = { var = ser_current_balkan_threat value = 2 }
+				}
+			}
+			
+			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 3600 producer = SER }
+			add_equipment_to_stockpile = { type = support_equipment_1 amount = 60 producer = SER }
+			add_equipment_to_stockpile = { type = heavy_field_gun_equipment_1 amount = 17 producer = SER }
+		}
+		
+		if = {
+			limit = { original_tag = GRE }
+			
+			hidden_effect = {
+				set_variable = {
+					var = gre_current_balkan_threat
+					value = 0
+				}
+				if = {
+					limit = { date > 1914.1.1 }
+					add_to_variable = { var = gre_current_balkan_threat value = 2 }
+				}
+			}
+		}
+		
+		if = {
+			limit = { original_tag = BUL }
+			
+			country_event = ba_story.1
+			
+			hidden_effect = {
+				set_variable = {
+					var = bul_current_balkan_threat
+					value = 0
+				}
+				if = {
+					limit = { date > 1914.1.1 }
+					add_to_variable = { var = bul_current_balkan_threat value = 2 }
+					if = {
+						limit = { ROOT = { is_guaranteed_by = RUS } }
+						
+						RUS = {
+							diplomatic_relation = {
+								country = ROOT
+								relation = guarantee
+								active = no
+							}
+						}
+					}
+					if = {
+						limit = {
+							has_country_leader = { ruling_only = yes name = "Ferdinand I" }
+						}
+						hidden_effect = {
+							remove_country_leader_trait = ba_balkan_hegemonist
+						}
+						add_country_leader_trait = ba_defeated_balkan_hegemonist
+					}
+				}
+			}
+		}
+		
+		if = {
+			limit = { original_tag = TUR }
+			
+			hidden_effect = {
+				set_variable = {
+					var = tur_current_balkan_threat
+					value = 0
+				}
+				add_to_variable = { var = tur_current_balkan_threat value = 5 }
+				if = {
+					limit = { date > 1914.1.1 }
+					subtract_from_variable = { var = tur_current_balkan_threat value = 1 }
+					ROOT = {
+						remove_state_core = 761
+						remove_state_core = 760
+						remove_state_core = 106
+						remove_state_core = 759
+						remove_state_core = 788
+						remove_state_core = 757
+						remove_state_core = 184
+						remove_state_core = 731
+						remove_state_core = 813
+						remove_state_core = 758
+						remove_state_claim = 182
+						add_state_core = 756
+						add_state_core = 790
+					}
+					set_province_name = { id = 6990 name = "Sérres" }
+					reset_province_name = 11856
+				}
+			}
+			
+			TUR = {
+				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 6000 producer = TUR }
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 1200 producer = TUR }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 60 producer = TUR }
+				add_equipment_to_stockpile = { type = light_field_gun_equipment_1 amount = 60 producer = TUR }
+				add_equipment_to_stockpile = { type = heavy_field_gun_equipment_1 amount = 12 producer = TUR }
+			}
+		}
+		
+		if = {
+			limit = { original_tag = ROM }
+			
+			hidden_effect = {
+				set_variable = {
+					var = rom_current_balkan_threat
+					value = 0
+				}
+			}
+		}
+	}
+}
+
+
+
+# The introduction to Bulgaria is given, and historical armaments stored are added #
+#__________________________________________________________________________________#
+country_event = {
+	id = ba_story.1
+	title = ba_story.1.t
+	desc = ba_story.1.d
+	picture = GFX_report_event_bulgarian_artillery_1910
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = ba_story.1.a	### This starting event informs of Bulgaria's starting position (before also instantly fixed some Bulgarian inaccuracies before the player could even read the event, but as of the September 2019 patches this has been relegated to history files and the likes). It also adds the Sofia Artillery Arsenal spirit allowing the Bulgarians to quickly ramp up their military equipment stores so they can, hopefully, have a historical Army by the time of the Balkan Wars.
+		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 9600 producer = BUL }
+		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2400 producer = BUL }
+		add_equipment_to_stockpile = { type = support_equipment_1 amount = 360 producer = BUL }
+		add_equipment_to_stockpile = { type = light_field_gun_equipment_1 amount = 240 producer = BUL }
+		add_equipment_to_stockpile = { type = heavy_field_gun_equipment_1 amount = 24 producer = BUL }
+	}
+}
+
+
+
+# Time appropriate city names and other historical accuracy stuff can be added through this hidden startup event #
+#________________________________________________________________________________________________________________#
+country_event = {
+	id = ba_story.2
+	title = ba_story.2.t
+	desc = ba_story.2.d
+	picture = GFX_report_event_balkan_crisis_1908
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	hidden = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				original_tag = NOR
+				date < 1931.3.6
+			}
+			set_province_name = { id = 3022 name = "Trondhjem" }
+		}
+		if = {
+			limit = {
+				original_tag = NOR
+				date < 1925.1.1
+			}
+			set_province_name = { id = 6115 name = "Kristiania" }
+		}
+		
+		if = {
+			limit = {
+				original_tag = TUR
+				date < 1913.1.1
+			}
+			set_province_name = { id = 6990 name = "Serres" }
+			set_province_name = { id = 11856 name = "Monastir" }
+		}
+		
+		if = {
+			limit = {
+				original_tag = RUS
+				date < 1913.1.1
+			}
+			RUS = {
+				give_guarantee = BUL ### The Russian Empire initially guaranteed the independence of Bulgaria - Russo-Bulgarian Alliance/Friendship
+			}
+		}
+	}
+}

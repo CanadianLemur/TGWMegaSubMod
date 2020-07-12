@@ -1,0 +1,183 @@
+﻿###################################################################
+
+division_template = {
+	name = "Pekhotna Divizija"
+	division_names_group = BUL_INF_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Pekhotna Brigada"
+	division_names_group = BUL_INF_02
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Konna Divizija"
+	division_names_group = BUL_CAV_01
+	
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Konna Brigada"
+	division_names_group = BUL_CAV_02
+	
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+###################################################################
+
+units = {
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Chernomorski Flot"
+		naval_base = 9783 # Varna
+		 
+		# 1910 strengths:
+		# 1 (20th century) torpedo gunboat (referred to as cruiser by the Bulgarians, and indeed comparable to small cruisers of other European countries), "Nadezhda".
+		# 6 "torpedo boats" aka small destroyers (of French, and pretty modern, design), "Drazki", "Letyashti", "Smeli", "Strogi", "Khrabri" and "Shumniy". Four enabled for the 1910 start, all six for the 1914 start. Modern, but small, thus represented as older destroyer models.
+		# One German submarine acquired in 1916.
+		# Possibly other small vessels and slower river gunboats.
+		
+		task_force = {					
+			name = "1-ta Flota"				
+			location = 9783 # Varna
+			ship = { name = "Nadezhda" definition = light_cruiser equipment = { light_cruiser_1900 = { amount = 1 owner = BUL version_name = "Nadezhda Class" } } } ### Largest warship ever possessed by the Royal Bulgarian Navy. Commissioned in October 1898, and often serving as the Royal Yacht of the Tsar. As it was in poor condition, it was disarmed during the First Balkan War, but it was rearmed at a later date.
+			
+			ship = { name = "Drazki" definition = destroyer equipment = { destroyer_1890 = { amount = 1 owner = BUL version_name = "Drazki Class" } } } ### Drazki incapacitated the Ottoman cruiser "Hamidiye", thus winning the battle of Kaliakra in November 1912, leading to the ease of the Ottoman blockade.
+			ship = { name = "Letyashti" definition = destroyer equipment = { destroyer_1890 = { amount = 1 owner = BUL version_name = "Drazki Class" } } } ### Lead the 4 ship convoy during the battle of Kaliakra.
+			ship = { name = "Smeli" definition = destroyer equipment = { destroyer_1890 = { amount = 1 owner = BUL version_name = "Drazki Class" } } } ### 3rd Bulgarian torpedo boat in the Battle of Kaliakra.
+			ship = { name = "Strogi" definition = destroyer equipment = { destroyer_1890 = { amount = 1 owner = BUL version_name = "Drazki Class" } } } ### 4th Bulgarian torpedo boat in the Battle of Kaliakra.
+			ship = { name = "Khrabri" definition = destroyer equipment = { destroyer_1890 = { amount = 1 owner = BUL version_name = "Drazki Class" } } }
+			ship = { name = "Shumniy" definition = destroyer equipment = { destroyer_1890 = { amount = 1 owner = BUL version_name = "Drazki Class" } } }
+		}
+	}
+	
+	##### LAND UNITS #####
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 949 # Sofiya
+		division_template = "Konna Brigada"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 9612 # Ruse
+		division_template = "Konna Brigada"
+		start_experience_factor = 0.3
+		# start_equipment_factor = 0.3 
+		# start_manpower_factor = 0.3
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 949 # Sofiya
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.3
+		# start_equipment_factor = 0.3 
+		# start_manpower_factor = 0.3
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location=6923 # Plovdiv
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.3
+		# start_equipment_factor = 0.3 
+		# start_manpower_factor = 0.3
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location=6923 # Plovdiv
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.3
+		# start_equipment_factor = 0.3 
+		# start_manpower_factor = 0.3
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 9612 # Ruse
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.3
+		# start_equipment_factor = 0.3 
+		# start_manpower_factor = 0.3
+	}
+}
+
+air_wings = { 
+}
+instant_effect = {
+	add_equipment_production = { equipment = { type = light_field_gun_equipment_1 creator = "BUL" } requested_factories = 2 progress = 0.1 efficiency = 50}
+	add_equipment_production = { equipment = { type = support_equipment_1 creator = "BUL" } requested_factories = 2 progress = 0.1 efficiency = 50}
+	add_equipment_production = { equipment = { type = infantry_equipment_1 creator = "BUL" } requested_factories = 2 progress = 0.1 efficiency = 50}
+	add_equipment_production = {
+		equipment = {
+			type = convoy_1
+			creator = "BUL"
+		}
+		requested_factories = 1
+		progress = 0
+		amount = -1
+	}
+}

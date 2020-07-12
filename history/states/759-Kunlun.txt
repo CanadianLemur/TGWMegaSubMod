@@ -1,0 +1,30 @@
+state = {
+	id = 759
+	name = "STATE_759"
+	manpower = 54223	### For May 1910. 1936: 75000
+	state_category = rural
+	provinces = {
+		907 3833 6886
+	}
+	resources = {
+		wood = 2
+	}
+	history = {
+		victory_points = {
+			3833 1
+		}
+		owner = TUR
+		add_core_of = BUL
+		add_core_of = TUR
+		1913.5.30 = { owner = BUL }
+		1913.8.10 = { owner = SER }
+		1919.1.1 = {
+			owner = YUG
+			add_core_of = YUG
+		}
+		1936.1.1 = { owner = YUG }
+		buildings = {
+			infrastructure = 4
+		}
+	}
+}

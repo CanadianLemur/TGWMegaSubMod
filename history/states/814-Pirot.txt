@@ -1,0 +1,30 @@
+state = {
+	id = 814
+	name = "STATE_814"	# Pirot
+	manpower = 39500	### Rough estimate for May 1910.
+	state_category = pastoral
+	provinces = {
+		11857 11868
+	}
+	resources = {
+		wood = 2
+	}
+	history = {
+		victory_points = {
+			11868 1
+		}
+		owner = SER
+		add_core_of = SER
+		add_core_of = BUL
+		1936.1.1 = { 
+			owner = YUG
+			add_core_of = YUG
+			buildings = {
+				infrastructure = 3
+			}
+		}
+		buildings = {
+			infrastructure = 4
+		}
+	}
+}

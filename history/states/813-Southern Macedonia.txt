@@ -1,0 +1,22 @@
+state = {
+	id = 813
+	name = "STATE_813"
+	manpower = 16628	### For May 1910. 1936: 23000
+	state_category = pastoral
+	provinces = {
+		966 3844 
+	}
+	
+	history={
+		victory_points = { 3844 1 }
+		owner = TUR
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = GRE
+		add_core_of = TUR
+		1913.5.30 = {
+			owner = GRE
+		}
+	}
+}

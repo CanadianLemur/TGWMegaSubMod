@@ -1,0 +1,26 @@
+state={
+	id=44
+	name="STATE_44"
+	manpower = 725146	### For May 1910 (total population for Ottoman held Balkans/Europe in 1911 was at slightly above 6.1 million [6 120 000 used here]. From this and the rough total growth rates around the period in the relevant area I got a May 1910 total for the Ottoman Empire's European holdings of 5 973 892 -Khanor). 1936:1003000
+	state_category=town
+	provinces={ 3884 3896 9780 9875 9914 11762 }
+	resources={
+		wood=12
+		chromium=7
+	}
+	history={
+		victory_points={ 9914 10 }
+		victory_points={ 9780 3 }
+		victory_points={ 9875 1 }
+		owner=TUR
+		add_core_of=ALB
+		#add_claim_by=ITA
+		1913.5.30={
+			owner=ALB
+			buildings={
+				infrastructure=1
+
+			}
+		}
+	}
+}
