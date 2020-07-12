@@ -1,0 +1,336 @@
+###################################################
+######--Balkans Ablaze, decision categories--######
+###################################################
+
+############################
+#### For Balkan nations ####
+############################
+BA_statecraft = {
+	icon = generic_political_actions
+	priority = 30
+	
+	allowed = {
+		OR = {
+			original_tag = AUH
+			original_tag = ROM
+			original_tag = BUL
+			original_tag = TUR
+			original_tag = GRE
+			original_tag = MTN
+			original_tag = SER
+		}
+	}
+}
+
+
+
+######################
+#### For Bulgaria ####
+######################
+BA_BUL_military_drills = {
+	icon = army_reform
+	priority = 20
+	
+	allowed = {
+		original_tag = BUL
+	}
+}
+
+BA_BUL_prestigious_projects = {
+	icon = generic_monarchism
+	priority = 10
+	
+	allowed = {
+		original_tag = BUL
+	}
+}
+
+
+
+###########################################
+#### For all starting Balkan countries ####
+###########################################
+BA_balkan_threat_levels_category = {
+	
+	icon = border_conflicts
+	
+	allowed = {
+		OR = {
+			original_tag = AUH
+			original_tag = MTN
+			original_tag = SER
+			original_tag = GRE
+			original_tag = BUL
+			original_tag = TUR
+			original_tag = ROM
+		}
+	}
+	
+	picture = GFX_decision_cat_picture_bulgarian_infantry_assault_fbw_1912-1913
+	priority = {
+		base = 90
+	}
+	
+	custom_icon = {
+		tag = SER
+		value = ser_balkan_threat_icon_value
+		desc = ser_balkan_threat_full_breakdown
+		
+		visible = {
+			country_exists = SER
+		}
+	}
+	
+	custom_icon = {
+		tag = GRE
+		value = gre_balkan_threat_icon_value
+		desc = gre_balkan_threat_full_breakdown
+		
+		visible = {
+			country_exists = GRE
+		}
+	}
+	
+	custom_icon = {
+		tag = BUL
+		value = bul_balkan_threat_icon_value
+		desc = bul_balkan_threat_full_breakdown
+		
+		visible = {
+			country_exists = BUL
+		}
+	}
+	
+	custom_icon = {
+		tag = TUR
+		value = tur_balkan_threat_icon_value
+		desc = tur_balkan_threat_full_breakdown
+		
+		visible = {
+			country_exists = TUR
+		}
+	}
+	
+	custom_icon = {
+		tag = TUR
+		value = tur_balkan_threat_icon_value
+		desc = tur_balkan_threat_full_breakdown
+		
+		visible = {
+			always = yes
+		}
+	}
+	
+	custom_icon = {
+		tag = TUR
+		value = tur_balkan_threat_icon_value
+		desc = tur_balkan_threat_full_breakdown
+		
+		visible = {
+			always = yes
+		}
+	}
+	
+	visible_when_empty = yes
+	
+	visible = {
+		OR = {
+			original_tag = AUH
+			original_tag = MTN
+			original_tag = SER
+			original_tag = GRE
+			original_tag = BUL
+			original_tag = TUR
+			original_tag = ROM
+		}
+	}
+}
+
+
+
+#############################################
+#### For Montenegro/Regarding Montenegro ####
+#############################################
+MTN_montenegrin_allegiance_mtn_category = {
+	
+	icon = hol_gateway_to_europe
+	
+	allowed = {
+		original_tag = MTN
+		NOT = {
+			ROOT = {
+				OR = {
+					has_country_flag = MTN_backs_bulgaria
+					has_country_flag = MTN_backs_neither_side
+					has_country_flag = MTN_backs_serbia
+				}
+			}
+		}
+	}
+	
+	picture = GFX_decision_cat_picture_kgd_of_montenegro
+	priority = {
+		base = 50
+	}
+	
+	custom_icon = {
+		tag = SER
+		value = ser_montenegrin_diplomatic_influence_icon_value
+		desc = ser_montenegrin_diplomatic_influence_full_breakdown
+
+		visible = {
+			country_exists = SER
+		}
+	}
+	
+	custom_icon = {
+		tag = BUL
+		value = bul_montenegrin_diplomatic_influence_icon_value
+		desc = bul_montenegrin_diplomatic_influence_full_breakdown
+
+		visible = {
+			country_exists = BUL
+		}
+	}
+	
+	visible_when_empty = yes
+	
+	visible = {
+		BUL = { has_completed_focus = BUL_ww1_BalkansPolitics }
+		NOT = { BUL = { has_completed_focus = BUL_peace_and_neutrality } }
+		NOT = { BUL = { has_completed_focus = BUL_second_balkan_victory } }
+		NOT = { BUL = { has_completed_focus = BUL_second_balkan_defeat } }
+		NOT = { MTN = { has_war_with = SER } }
+		NOT = { MTN = { has_war_with = BUL } }
+		MTN = {
+			exists = yes
+			is_subject = no
+		}
+	}
+}
+
+
+
+###########################################
+#### For Bulgaria/Regarding Montenegro ####
+###########################################
+MTN_montenegrin_allegiance_bul_category = {
+	
+	icon = hol_gateway_to_europe
+	
+	allowed = {
+		original_tag = BUL
+		NOT = {
+			MTN = {
+				OR = {
+					has_country_flag = MTN_backs_bulgaria
+					has_country_flag = MTN_backs_neither_side
+					has_country_flag = MTN_backs_serbia
+				}
+			}
+		}
+	}
+	
+	picture = GFX_decision_cat_picture_kgd_of_montenegro
+	priority = {
+		base = 50
+	}
+	
+	custom_icon = {
+		tag = SER
+		value = ser_montenegrin_diplomatic_influence_icon_value
+		desc = ser_montenegrin_diplomatic_influence_full_breakdown
+
+		visible = {
+			country_exists = SER
+		}
+	}
+	
+	custom_icon = {
+		tag = BUL
+		value = bul_montenegrin_diplomatic_influence_icon_value
+		desc = bul_montenegrin_diplomatic_influence_full_breakdown
+
+		visible = {
+			country_exists = BUL
+		}
+	}
+	
+	visible_when_empty = yes
+	
+	visible = {
+		BUL = { has_completed_focus = BUL_ww1_BalkansPolitics }
+		NOT = { BUL = { has_completed_focus = BUL_peace_and_neutrality } }
+		NOT = { BUL = { has_completed_focus = BUL_second_balkan_victory } }
+		NOT = { BUL = { has_completed_focus = BUL_second_balkan_defeat } }
+		NOT = { MTN = { has_war_with = SER } }
+		NOT = { MTN = { has_war_with = BUL } }
+		MTN = {
+			exists = yes
+			is_subject = no
+		}
+	}
+}
+
+
+
+#########################################
+#### For Serbia/Regarding Montenegro ####
+#########################################
+MTN_montenegrin_allegiance_ser_category = {
+	
+	icon = hol_gateway_to_europe
+	
+	allowed = {
+		original_tag = SER
+		NOT = {
+			MTN = {
+				OR = {
+					has_country_flag = MTN_backs_bulgaria
+					has_country_flag = MTN_backs_neither_side
+					has_country_flag = MTN_backs_serbia
+				}
+			}
+		}
+	}
+	
+	picture = GFX_decision_cat_picture_kgd_of_montenegro
+	priority = {
+		base = 50
+	}
+	
+	custom_icon = {
+		tag = SER
+		value = ser_montenegrin_diplomatic_influence_icon_value
+		desc = ser_montenegrin_diplomatic_influence_full_breakdown
+
+		visible = {
+			country_exists = SER
+		}
+	}
+	
+	custom_icon = {
+		tag = BUL
+		value = bul_montenegrin_diplomatic_influence_icon_value
+		desc = bul_montenegrin_diplomatic_influence_full_breakdown
+
+		visible = {
+			country_exists = BUL
+		}
+	}
+	
+	visible_when_empty = yes
+	
+	visible = {
+		BUL = { has_completed_focus = BUL_ww1_BalkansPolitics }
+		NOT = { BUL = { has_completed_focus = BUL_peace_and_neutrality } }
+		NOT = { BUL = { has_completed_focus = BUL_second_balkan_victory } }
+		NOT = { BUL = { has_completed_focus = BUL_second_balkan_defeat } }
+		NOT = { MTN = { has_war_with = SER } }
+		NOT = { MTN = { has_war_with = BUL } }
+		MTN = {
+			exists = yes
+			is_subject = no
+		}
+	}
+}

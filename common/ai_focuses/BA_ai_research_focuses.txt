@@ -1,0 +1,316 @@
+######################################################################################################################################################################
+#####--Balkans Ablaze's own Research Focuses for an attempt at accurate and sensible actions by Countries and Empires of the 1910s and onwards (made by Khanor)--#####
+######################################################################################################################################################################
+
+#### Generic Research Priorities ####
+## Tags: All countries. Infantry tech, industry and land doctrine are essential for all countries that want to accomplish something in war and on the battlefield.
+ba_generic_research_focuses = {
+	research = {
+        infantry_tech = 8.0
+		support_tech = 4.0
+		industry = 8.0
+		electronics = 2.0
+		land_doctrine = 4.0
+		air_doctrine = 2.0
+		naval_doctrine = -0.8
+		naval_equipment = -0.8
+    }
+}
+
+#### Fully Naval Focused Countries ####
+## Tags: GER, AUH, ITA, ENG.
+ba_fully_naval_prioritized_research_focuses_GER = {
+	research = {
+		naval_doctrine = 1.8
+		naval_equipment = 1.8
+    }
+}
+
+ba_fully_naval_prioritized_research_focuses_AUH = {
+	research = {
+		naval_doctrine = 1.8
+		naval_equipment = 1.8
+    }
+}
+
+ba_fully_naval_prioritized_research_focuses_ITA = {
+	research = {
+		naval_doctrine = 1.8
+		naval_equipment = 1.8
+    }
+}
+
+ba_fully_naval_prioritized_research_focuses_ENG = {
+	research = {
+		naval_doctrine = 1.8
+		naval_equipment = 1.8
+    }
+}
+
+#### Partly Naval Focused Countries ####
+## Tags: ICE, NOR, DEN, SWE, HOL, BEL, FRA, SPR, POR, CRO, RUS, SOV, BUL, GRE, TUR, PER, JAP, USA, BRA, ARG, AST.
+ba_partly_naval_prioritized_research_focuses_ICE = {
+	research = {
+		naval_doctrine = 1.0
+		naval_equipment = 1.0
+    }
+}
+
+ba_partly_naval_prioritized_research_focuses_NOR = {
+	research = {
+		naval_doctrine = 1.0
+		naval_equipment = 1.0
+    }
+}
+
+ba_partly_naval_prioritized_research_focuses_DEN = {
+	research = {
+		naval_doctrine = 1.0
+		naval_equipment = 1.0
+    }
+}
+
+ba_partly_naval_prioritized_research_focuses_SWE = {
+	research = {
+		naval_doctrine = 1.0
+		naval_equipment = 1.0
+    }
+}
+
+ba_partly_naval_prioritized_research_focuses_HOL = {
+	research = {
+		naval_doctrine = 1.0
+		naval_equipment = 1.0
+    }
+}
+
+ba_partly_naval_prioritized_research_focuses_BEL = {
+	research = {
+		naval_doctrine = 1.0
+		naval_equipment = 1.0
+    }
+}
+
+ba_partly_naval_prioritized_research_focuses_FRA = {
+	research = {
+		naval_doctrine = 1.0
+		naval_equipment = 1.0
+    }
+}
+
+ba_partly_naval_prioritized_research_focuses_SPR = {
+	research = {
+		naval_doctrine = 1.0
+		naval_equipment = 1.0
+    }
+}
+
+ba_partly_naval_prioritized_research_focuses_POR = {
+	research = {
+		naval_doctrine = 1.0
+		naval_equipment = 1.0
+    }
+}
+
+ba_partly_naval_prioritized_research_focuses_CRO = {
+	research = {
+		naval_doctrine = 1.0
+		naval_equipment = 1.0
+    }
+}
+
+ba_partly_naval_prioritized_research_focuses_RUS = {
+	research = {
+		naval_doctrine = 1.0
+		naval_equipment = 1.0
+    }
+}
+
+ba_partly_naval_prioritized_research_focuses_SOV = {
+	research = {
+		naval_doctrine = 1.0
+		naval_equipment = 1.0
+    }
+}
+
+ba_partly_naval_prioritized_research_focuses_BUL = {
+	research = {
+		naval_doctrine = 1.0
+		naval_equipment = 1.0
+    }
+}
+
+ba_partly_naval_prioritized_research_focuses_GRE = {
+	research = {
+		naval_doctrine = 1.0
+		naval_equipment = 1.0
+    }
+}
+
+ba_partly_naval_prioritized_research_focuses_TUR = {
+	research = {
+		naval_doctrine = 1.0
+		naval_equipment = 1.0
+    }
+}
+
+ba_partly_naval_prioritized_research_focuses_PER = {
+	research = {
+		naval_doctrine = 1.0
+		naval_equipment = 1.0
+    }
+}
+
+ba_partly_naval_prioritized_research_focuses_JAP = {
+	research = {
+		naval_doctrine = 1.0
+		naval_equipment = 1.0
+    }
+}
+
+ba_partly_naval_prioritized_research_focuses_USA = {
+	research = {
+		naval_doctrine = 1.0
+		naval_equipment = 1.0
+    }
+}
+
+ba_partly_naval_prioritized_research_focuses_BRA = {
+	research = {
+		naval_doctrine = 1.0
+		naval_equipment = 1.0
+    }
+}
+
+ba_partly_naval_prioritized_research_focuses_ARG = {
+	research = {
+		naval_doctrine = 1.0
+		naval_equipment = 1.0
+    }
+}
+
+ba_partly_naval_prioritized_research_focuses_AST = {
+	research = {
+		naval_doctrine = 1.0
+		naval_equipment = 1.0
+    }
+}
+
+#### Historical armor research to break the stalemate of trench warfare ####
+## Tags: ENG, GER. Ideally these shouldn't trigger instantly, and the UK should be the pioneer with the German Empire following shortly, but then trigger/enable statements will be needed.
+ba_historical_stalemate_breaker_research_focuses_ENG = {
+	
+	#enable = {
+	#	date > 1915.09.01
+	#	OR = {
+	#		original_tag = ENG
+	#		original_tag = GER
+	#	}
+	#	has_war = yes
+	#}
+	#
+	#abort = { has_war = no }
+	research = {
+		armor = 2.0
+    }
+}
+
+ba_historical_stalemate_breaker_research_focuses_GER = {
+	
+	#enable = {
+	#	date > 1916.01.01
+	#	OR = {
+	#		original_tag = ENG
+	#		original_tag = GER
+	#	}
+	#	has_war = yes
+	#}
+	#
+	#abort = { has_war = no }
+	research = {
+		armor = 2.0
+	}
+}
+
+#ba_historical_armor_catch_up_research_focuses = {
+#	
+	#enable = {
+	#	date > 1924.01.01
+	#	OR = {
+	#		original_tag = ENG
+	#		original_tag = GER
+	#		original_tag = FRA
+	#		original_tag = ITA
+	#		original_tag = SWE
+	#		original_tag = SPR
+	#		original_tag = USA
+	#		original_tag = RUS
+	#		original_tag = SOV
+	#	}
+	#}
+	#
+	#abort = { }
+#	research = {
+#		armor = 2.4
+#   }
+#}
+
+#ba_historical_armor_catch_up_new_zealand_style_research_focuses_NZL = {
+#	
+	#enable = {
+	#	date > 1939.07.01
+	#	date < 1943.01.01
+	#	original_tag = NZL
+	#}
+	#
+	#abort = { date > 1943.01.01 }
+#	research = {
+#		armor = 20.0
+#    }
+#}
+
+#### Bulgarian Artillery Focus ####
+## Tags: BUL. Ideally this would only kick off if they have their designer to boost research and researched artillery.
+ba_bulgarian_artillery_research_focuses_BUL = {
+	
+	#enable = {
+	#	date > 1910.01.01
+	#	original_tag = BUL
+	#	has_idea = BUL_sofia_artillery_arsenal_designer
+	#}
+	#
+	#abort = { NOT = { has_idea = BUL_sofia_artillery_arsenal_designer } }
+	research = {
+        artillery = 2.0
+		infantry_tech = 2.0
+    }
+}
+
+#### Serbian Infantry and Land Doctrine Focus ####
+## Tags: SER. Ideally this extra focus on only a few research categories would only kick off if they're at war with strong neighbors such as Austria-Hungary or Italy.
+ba_serbian_infantry_prioritized_research_focuses_SER = {
+	
+	#enable = {
+	#	date > 1910.01.01
+	#	original_tag = SER
+	#	OR = {
+	#		has_war_with = AUH
+	#		has_war_with = ITA
+	#		has_war_with = TUR
+	#	}
+	#}
+	#
+	#abort = {
+	#	NOT = {
+	#		OR = {
+	#			has_war_with = AUH
+	#			has_war_with = ITA
+	#			has_war_with = TUR
+	#		}
+	#	}
+	#}
+	research = {
+        infantry_tech = 3.0
+		land_doctrine = 3.0
+    }
+}

@@ -1,0 +1,34 @@
+#####################
+# OPINION MODIFIERS #
+#####################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+################################################################################
+### HOI4 Balkans Ablaze Opinion Modifiers, for Balkan countries or otherwise ###
+################################################################################
+
+opinion_modifiers = {
+### Balkan Stuff ###
+
+	BA_relations_warming = {
+		value = 15
+	}
+	
+	BA_strategic_trading = {
+		trade = yes
+		value = 75
+	}
+	
+	BA_turkophobia_amended = {
+		value = -20
+	}
+	
+	BA_hostile_relations_amended = {
+		value = -15
+	}
+}

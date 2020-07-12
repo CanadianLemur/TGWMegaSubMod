@@ -1,0 +1,832 @@
+ideas={
+	materiel_manufacturer = {
+		
+		designer = yes
+		
+		BUL_sofia_artillery_arsenal_designer = {
+			
+			allowed = {
+				original_tag = BUL
+			}
+			
+			research_bonus = {
+				artillery = 0.10
+			}
+			
+			equipment_bonus = {
+				### Very competent Artillery Manufacturer in the Balkans. Supplied Bulgaria with so much artillery this spirit is split between a country idea which decreases production costs, and this slightly more expensive designer which further emphasizes massed, reliable artillery.
+				artillery = {
+					reliability = 0.1
+					build_cost_ic = -0.1
+				}
+			}
+			
+			cost = 225
+			
+			traits = { artillery_manufacturer }
+			
+			ai_will_do = { factor = 4 }
+		}
+	}
+	
+	country = {
+		BUL_sofia_artillery_arsenal = {
+			removal_cost = -1
+			
+			modifier = {
+				license_purchase_cost = -0.50
+			}
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				support_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				artillery = {
+					build_cost_ic = -0.15 instant = yes
+				}
+			}
+		}
+		
+		BUL_militarism = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.04
+				army_defence_factor = 0.04
+				army_morale_factor = 0.04
+				conscription = 0.04
+			}
+		}
+		
+		BUL_glorious_militarism = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			
+			modifier = {
+				resistance_growth_on_our_occupied_states = 0.10
+				army_attack_factor = 0.04
+				army_defence_factor = 0.04
+				army_morale_factor = 0.04
+				conscription = 0.04
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+		
+		BUL_aviation_squad = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			
+			picture = strategic_bombing_focus
+			
+			modifier = {
+				air_ace_generation_chance_factor = 0.05
+				army_bonus_air_superiority_factor = 0.05
+			}
+		}
+		
+		BUL_nationalist_fervor = {
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.10
+				army_defence_factor = 0.05
+				army_morale_factor = 0.05
+			}
+		}
+		
+		BUL_army_deserters = {
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = -0.10
+				army_org_factor = -0.10
+				conscription = -0.01
+			}
+		}
+		
+		BUL_army_supply_shortages = {
+			removal_cost = -1
+			
+			picture = ba_can_wartime_prices_and_trade_board
+			
+			modifier = {
+				army_speed_factor = -0.05
+				army_attack_factor = -0.05
+				army_org_factor = -0.20
+				training_time_factor = 0.20
+			}
+		}
+		
+		BUL_food_shortages = {
+			removal_cost = -1
+			
+			picture = generic_grain_shortage
+			
+			modifier = {
+				army_org_factor = -0.25
+				army_morale_factor = -0.25
+				consumer_goods_factor = 0.05
+				conscription = -0.025
+			}
+		}
+		
+		BUL_worker_uprisings = {
+			removal_cost = -1
+			
+			picture = ba_eng_tackle_capitalism
+			
+			modifier = {
+				communism_drift = 0.02
+				industrial_capacity_factory = -0.10
+				consumer_goods_factor = 0.10
+			}
+		}
+		
+		BUL_bulgarian_army_staff = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_speed_factor = 0.05
+				conscription_factor = 0.15
+				planning_speed = 0.05
+				max_planning = 0.05
+				max_command_power = 15
+			}
+		}
+		
+		TUR_ottoman_army_staff = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.10
+				max_planning = 0.10
+				max_command_power = 10 ### +5, removed -partisan_effect
+				acclimatization_hot_climate_gain_factor = 0.10
+			}
+		}
+		
+		FRA_french_army_staff = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.10
+				army_org_factor = 0.05
+				max_planning = 0.05
+				max_command_power = 20
+			}
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+		
+		ENG_empire_expeditionary_force = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			
+			picture = eng_service_overseas
+			
+			modifier = {
+				army_org_factor = 0.10
+				mobilization_speed = -0.15
+				minimum_training_level = 0.05
+				conscription_factor = -0.15
+			}
+		}
+		
+		ENG_recruitment_drive = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = 0.10
+				mobilization_speed = 0.15
+				minimum_training_level = -0.05
+				conscription_factor = 0.15
+			}
+		}
+		
+		ROM_balkan_intervention_plans = {
+			removal_cost = -1
+			
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				planning_speed = 0.10
+				max_planning = 0.10
+				ai_focus_aggressive_factor = 0.40
+			}
+		}
+		
+		BAL_league_mobilization = {
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				mobilization_speed = 0.10
+				training_time_factor = -0.10
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				support_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				artillery = {
+					build_cost_ic = -0.10 instant = yes
+				}
+			}
+		}
+		
+		BAL_ceasefire_with_bulgaria = {
+			removal_cost = -1
+			
+			modifier = {
+				join_faction_tension = 0.50
+				generate_wargoal_tension = 0.50
+				ai_focus_defense_factor = 0.50
+				industry_repair_factor = 0.10
+			}
+		}
+		
+		BUL_receiving_reparations = {
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				monthly_population = 0.10
+			}
+		}
+		
+		SER_paying_reparations = {
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+			}
+		}
+		
+		BUL_balkan_war_revanchism = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			
+			picture = generic_morale_bonus
+			
+			modifier = {
+				war_support_factor = 0.05
+				conscription = 0.005
+			}
+			targeted_modifier = {
+				tag = SER
+				attack_bonus_against = 0.10
+				defense_bonus_against = -0.05
+			}
+			targeted_modifier = {
+				tag = ROM
+				attack_bonus_against = 0.10
+				defense_bonus_against = -0.05
+			}
+		}
+		
+		SER_balkan_war_revanchism = {
+			removal_cost = -1
+			
+			picture = generic_morale_bonus
+			
+			modifier = {
+				war_support_factor = 0.05
+				conscription = 0.005
+			}
+			targeted_modifier = {
+				tag = BUL
+				attack_bonus_against = 0.10
+				defense_bonus_against = -0.05
+			}
+			targeted_modifier = {
+				tag = ALB
+				attack_bonus_against = 0.10
+				defense_bonus_against = -0.05
+			}
+		}
+		
+		GRE_tenacious_warriors = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_defence_factor = 0.05
+				army_org_factor = 0.05
+				conscription = 0.03
+			}
+		}
+		
+		MTN_fierce_warriors = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.05
+				army_morale_factor = 0.05
+				conscription = 0.03
+			}
+		}
+		
+		SER_fighting_spirit = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_defence_factor = 0.05
+				army_morale_factor = 0.05
+				conscription = 0.03
+			}
+		}
+		
+		SER_military-technical_works = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			
+			picture = generic_infantry_equipment_manufacturer_2
+			
+			modifier = {
+				license_purchase_cost = -0.50
+			}
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+			}
+		}
+		
+		GRE_air_warfare_innovations = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			
+			picture = air_support_focus
+			
+			modifier = {
+				army_bonus_air_superiority_factor = 0.05
+				experience_gain_air_factor = 0.05
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.05
+			}
+		}
+		
+		TUR_air_warfare_innovations = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			
+			picture = air_support_focus
+			
+			modifier = {
+				army_bonus_air_superiority_factor = 0.05
+				experience_gain_air_factor = 0.05
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.05
+			}
+		}
+		
+		TUR_developing_agrarian_society = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			
+			picture = ba_generic_agrarian_society
+			
+			modifier = {
+				mobilization_speed = -0.05
+				conscription_factor = -0.05
+				consumer_goods_factor = 0.05
+			}
+		}
+		
+		TUR_transitioning_agrarian_society = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			
+			picture = ba_generic_build_infrastructure
+			
+			modifier = {
+				mobilization_speed = -0.03
+				conscription_factor = -0.03
+				consumer_goods_factor = 0.03
+			}
+		}
+		
+		TUR_armament_imports = {
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.10
+				industrial_capacity_factory = 0.05
+				training_time_factor = -0.05
+			}
+		}
+		
+		GER_armament_exports = {
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.03
+				industrial_capacity_factory = -0.03
+			}
+		}
+		
+		PER_legacy_of_the_qizilbash = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = 0.05
+				conscription = 0.03
+				generate_wargoal_tension = -0.15
+			}
+		}
+		
+		PER_constitutional_revolution = {
+			removal_cost = -1
+			
+			picture = ba_generic_constitutional_guarantees
+			
+			modifier = {
+				political_power_gain = -0.20
+				stability_factor = -0.20
+				war_support_factor = -0.05
+				army_org_factor = -0.20
+			}
+			
+			research_bonus = {
+				industry = 0.05
+				land_doctrine = 0.05
+				navy_doctrine = 0.05
+				air_doctrine = 0.05
+			}
+		}
+		
+		ALB_austro-hungarian_influence = {
+			removal_cost = -1
+			
+			modifier = {
+				autonomy_gain = 0.10
+				consumer_goods_factor = -0.02
+				ai_focus_defense_factor = 0.20
+			}
+		}
+		
+		LUX_german_influence = {
+			removal_cost = -1
+			
+			modifier = {
+				autonomy_gain = 0.10
+				ai_focus_defense_factor = 0.40
+			}
+		}
+		
+		LUX_low_popular_support = {
+			removal_cost = -1
+			
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				political_power_gain = -0.20
+				army_org_factor = -0.20
+				defence = 0.20
+				conscription = -0.02
+			}
+		}
+		
+		MTN_neutral_interests = {
+			removal_cost = -1
+			
+			picture = ba_hol_aloof_neutrality
+			
+			allowed = {
+				original_tag = MTN
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				ai_get_ally_desire_factor = -500
+				join_faction_tension = 0.20
+			}
+		}
+		
+		MTN_peaceful_neutrality = {
+			removal_cost = -1
+			
+			picture = ba_hol_aloof_neutrality
+			
+			allowed = {
+				original_tag = MTN
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				ai_get_ally_desire_factor = -250
+				join_faction_tension = 0.10
+			}
+		}
+		
+		ITA_tripolitanian_interests = {
+			removal_cost = -1
+			
+			picture = FRA_national_mobilization_focus
+			
+			allowed = {
+				original_tag = ITA
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				ai_get_ally_desire_factor = -500
+				join_faction_tension = 0.25
+			}
+		}
+		
+		ITA_italian_libya_interests = {
+			removal_cost = -1
+			
+			picture = FRA_national_mobilization_focus
+			
+			allowed = {
+				original_tag = ITA
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				ai_get_ally_desire_factor = -500
+				join_faction_tension = 0.25
+			}
+		}
+		
+		FRA_indecisive_deployments = {
+			removal_cost = -1
+			
+			picture = ba_generic_army_problems
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				army_speed_factor = -0.60
+				dig_in_speed_factor = -0.60
+				planning_speed = -0.60
+			}
+		}
+		
+		GER_army_staff_in_disbelief = {
+			removal_cost = -1
+			
+			picture = ba_generic_army_problems
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				army_org_factor = -0.20
+				dig_in_speed_factor = -0.20
+				max_planning = -0.20
+			}
+		}
+		
+		BA_farman_iii_aircraft_purchase_expensive = {
+			
+			picture = air_support_focus
+			
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.08
+				experience_gain_air = 0.04
+			}
+		}
+		
+		BA_farman_iii_aircraft_purchase_affordable = {
+			
+			picture = air_support_focus
+			
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.04
+				experience_gain_air = 0.04
+			}
+		}
+		
+		FRA_airplane_sale_to_bulgaria = {
+			
+			picture = generic_production_bonus
+			
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.01
+			}
+			
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = 0.10 instant = yes
+				}
+				cas_equipment = {
+					build_cost_ic = 0.10 instant = yes
+				}
+			}
+		}
+		
+		FRA_airplane_sale_to_ottomans = {
+			
+			picture = generic_production_bonus
+			
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.01
+			}
+			
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = 0.10 instant = yes
+				}
+				cas_equipment = {
+					build_cost_ic = 0.10 instant = yes
+				}
+			}
+		}
+		
+		FRA_airplane_sale_to_greece = {
+			
+			picture = generic_production_bonus
+			
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.01
+			}
+			
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = 0.10 instant = yes
+				}
+				cas_equipment = {
+					build_cost_ic = 0.10 instant = yes
+				}
+			}
+		}
+		
+		FRA_airplane_sale_to_montenegro = {
+			
+			picture = generic_production_bonus
+			
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.01
+			}
+			
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = 0.10 instant = yes
+				}
+				cas_equipment = {
+					build_cost_ic = 0.10 instant = yes
+				}
+			}
+		}
+		
+		FRA_airplane_sale_to_serbia = {
+			
+			picture = generic_production_bonus
+			
+			allowed = {
+				original_tag = FRA
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.01
+			}
+			
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = 0.10 instant = yes
+				}
+				cas_equipment = {
+					build_cost_ic = 0.10 instant = yes
+				}
+			}
+		}
+	}
+}
