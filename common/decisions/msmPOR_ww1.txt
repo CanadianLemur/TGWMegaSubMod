@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 portugal_revolution = {
      portugal_revolution = {                      
           allowed = { tag = POR }              
@@ -21,3 +22,28 @@ portugal_revolution = {
      }
 }
 			
+=======
+portugal_revolution = {
+     portugal_revolution = {                      
+          allowed = { tag = POR }              
+          available = {                          
+				NOT = {OR = {has_global_flag = kis_portugal_revolution_avoided has_global_flag = kis_portugal_revolution}}
+			   
+          }
+          activation = {
+				NOT = {OR = {has_global_flag = kis_portugal_revolution_avoided has_global_flag = kis_portugal_revolution}}          }
+          is_good = yes                           
+          days_mission_timeout = 160             
+          timeout_effect = {                     
+			country_event = {id = ww1_portugal.100}
+          }
+          complete_effect = {                   
+                add_political_power = 50  
+				set_global_flag = kis_portugal_revolution_avoided
+
+
+          }
+     }
+}
+			
+>>>>>>> 96dd644714d0ae4a49f15f1dedeace94873f58ad

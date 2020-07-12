@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 leader_traits = {
 	############################################################################################################
 	################################ --------For the Balkans Ablaze mod-------- ################################
@@ -105,4 +106,113 @@ leader_traits = {
 	##################################################
 	##### Glorious unique traits, made by Khanor #####
 	##################################################
+=======
+leader_traits = {
+	############################################################################################################
+	################################ --------For the Balkans Ablaze mod-------- ################################
+	############################################################################################################
+	
+	##### Country Leader & Advisor Traits #####
+	ba_balkan_hegemonist = {
+		random = no
+		
+		war_support_factor = 0.025
+		ai_focus_aggressive_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ba_balkan_maximalist = {
+		random = no
+		
+		stability_factor = -0.05
+		war_support_factor = 0.05
+		ai_focus_aggressive_factor = 0.20
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ba_defeated_balkan_hegemonist = {
+		random = no
+		
+		surrender_limit = 0.05
+		ai_focus_aggressive_factor = -0.20
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ba_victorious_balkan_hegemonist = {
+		random = no
+		
+		surrender_limit = 0.05
+		opinion_gain_monthly_factor = 0.25
+		ai_focus_aggressive_factor = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ba_defender_of_montenegro = {
+		random = no
+		
+		conscription = 0.005
+		opinion_gain_monthly_factor = 0.05
+		army_core_defence_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ba_bulgarian_ties = {
+		random = no
+		
+		ai_strategy = {
+			type = befriend
+			id = "BUL"
+			value = 25
+		}
+		ai_strategy = {
+			type = alliance
+			id = "BUL"
+			value = 25
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ba_cordial_to_germany = {
+		random = no
+		
+		ai_strategy = {
+			type = befriend
+			id = "GER"
+			value = 100
+		}
+		ai_strategy = {
+			type = alliance
+			id = "GER"
+			value = 10
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	##### Designer/Manufacturer Traits #####
+	
+	##################################################
+	##### Glorious unique traits, made by Khanor #####
+	##################################################
+>>>>>>> 96dd644714d0ae4a49f15f1dedeace94873f58ad
 }
