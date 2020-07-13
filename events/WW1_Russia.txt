@@ -559,12 +559,16 @@ country_event = {
 				transfer_state = 148
 				transfer_state = 146
 				transfer_state = 145	### Åland added (by Khanor)
+				transfer_state = 147	### Salla added (By Canadian Lemur)
+				transfer_state = 722 	### Petsamo added (Unhistorical but easier than integrating historical route for now)
 			}
 			EST = {
 				transfer_state = 13
 				transfer_state = 191
 				transfer_state = 12
 				transfer_state = 190
+				add_state_core = 12
+				add_state_core = 190
 				set_cosmetic_tag = UBD
 				create_country_leader = {
 				    name = "Adolf Friedrich, Duke of Mecklenburg-Schwerin"

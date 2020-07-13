@@ -6,3 +6,7 @@ portugal_revolution = {
 	icon = generic_political_actions
 	available = tag = POR
 }
+baltic_duchy = {
+	icon = generic_political_actions
+	available = tag = GER
+}
