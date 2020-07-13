@@ -25,7 +25,11 @@ if = {
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.4
 	}
-
+	set_autonomy = {
+		target = NEW
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+	}
 	set_autonomy = {
 		target = AST
 		autonomous_state = autonomy_dominion
@@ -48,6 +52,7 @@ if = {
 
 	add_to_tech_sharing_group = commonwealth_research
 }
+
 puppet = OMA
 puppet = NEP
 puppet = BHU
@@ -371,6 +376,7 @@ create_navy_leader={  name = "Tyrwhitt" portrait_path="gfx/admiral/ENG_tyrwhitt.
 		volunteer_only
 		#ENG_Staff
 		ENG_empire_expeditionary_force
+
 	}
 
 	set_country_flag = monroe_doctrine
@@ -689,8 +695,8 @@ create_navy_leader={  name = "Tyrwhitt" portrait_path="gfx/admiral/ENG_tyrwhitt.
 		ww1_Scramble_for_Africa
 		stiff_upper_lip
 		limited_conscription
-		#ENG_Staff
 		ENG_empire_expeditionary_force
+		#ENG_Staff
 	}
 create_equipment_variant={ name="Erin Class" type=battleship_1914 name_group = ENG_BB_HISTORICAL parent_version = 0 obsolete=yes upgrades={ ship_gun_upgrade=0 ship_armor_upgrade=0 ship_engine_upgrade=0 ship_reliability_upgrade=0           } }
 create_equipment_variant={ name="Agincourt Class" type=battleship_1914 name_group = ENG_BB_HISTORICAL parent_version = 0 obsolete=yes upgrades={ ship_gun_upgrade=0 ship_armor_upgrade=0 ship_engine_upgrade=0 ship_reliability_upgrade=0           } }

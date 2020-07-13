@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 german_poland = {
 	icon = generic_political_actions
 	available = {has_completed_focus = GER_ww1_polnische_wehrmacht}
@@ -6,13 +5,4 @@ german_poland = {
 portugal_revolution = {
 	icon = generic_political_actions
 	available = tag = POR
-=======
-german_poland = {
-	icon = generic_political_actions
-	available = {has_completed_focus = GER_ww1_polnische_wehrmacht}
-}
-portugal_revolution = {
-	icon = generic_political_actions
-	available = tag = POR
->>>>>>> 96dd644714d0ae4a49f15f1dedeace94873f58ad
 }

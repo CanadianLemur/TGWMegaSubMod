@@ -670,5 +670,4 @@ MTN_montenegrin_allegiance_ser_category = {
 			is_subject = no
 		}
 	}
->>>>>>> 96dd644714d0ae4a49f15f1dedeace94873f58ad
 }
