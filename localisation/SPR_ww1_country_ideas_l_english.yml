@@ -1,0 +1,116 @@
+﻿l_english:
+
+####################################
+######## Ideas - Ministers #########
+####################################
+
+ altos_hornos_vizcaya:0 "Vizcaya's Blast Furnaces"
+ hispano_suiza_coches:0 "Hispano Suiza - Motors"
+ ORBEA:0 "ORBEA"
+ tanques_importados:0 "Tank Imports"
+ tanques_trubia:0 "Tanques Trubia"
+ 
+####################################
+######## National Spirits ##########
+####################################
+
+ #--------------------------------------------------------------
+ SPR_ww1_flota:0 "La nueva armada"
+ SPR_ww1_flota_desc:0 "Aun teniendo en cuenta la crisis que azota el pais, el rey cree prioritario la creación de una nueva Armada"
+ #--------------------------------------------------------------
+ SPR_ww1_industria:0 "Industrialización"
+ SPR_ww1_industria_desc:0 "A pesar de los esfuerzos, España sigue siendo un pais en vias de industrialización, a la cola del resto de Europa"
+ #--------------------------------------------------------------
+ SPR_ww1_burguesia:0 "La burguesia catalana"
+ SPR_ww1_burguesia_desc:0 "Con el estallido de la gran guerra y las políticas de mercado, la burguesia catalana ha ganado fuerza las ultimas decadas"
+ #--------------------------------------------------------------
+ SPR_ww1_generacion98:0 "Generacion del 98"
+ SPR_ww1_generacion98_desc:0 "El fin de un imperio, con fecha conmemorativa incluida"
+ #--------------------------------------------------------------
+ SPR_ww1_semanatragica:0 "La semana Tragica"
+ SPR_ww1_semanatragica_desc:0 "Que el clero no duerma"
+ #--------------------------------------------------------------
+ SPR_ww1_quintas:0 "Quintas y 6000 reales"
+ SPR_ww1_quintas_desc:0 "La falta de profesionalidad y discriminación en el reclutamiento debilitan nuestras fuerzas armadas"
+ #--------------------------------------------------------------
+ SPR_ww1_juntaampliacion:0 "Junta Ampliacion Educacion"
+ SPR_ww1_juntaampliacion_desc:0 "El progreso encuentra el camino I"
+ #--------------------------------------------------------------
+ SPR_ww1_annual:0 "El desastre de Annual"
+ SPR_ww1_annual_desc:0 "El amor del rey a la tropa"
+ #--------------------------------------------------------------
+ SPR_ww1_instituto:0 "Instituto Nacional de Prevencion"
+ SPR_ww1_instituto_desc:0 "Organización de la riqueza en el pais"
+ #--------------------------------------------------------------
+ SPR_ww1_ile:0 "Instituto Libre Enseñanza"
+ SPR_ww1_ile_desc:0 "El progreso encuentra el camino II"
+ #--------------------------------------------------------------
+ SPR_ww1_tiempos:0 "Tiempos oscuros"
+ SPR_ww1_tiempos_desc:0 "No ha sido un buen siglo para España"
+ #--------------------------------------------------------------
+ SPR_ww1_estabilizando:0 "Estabilizando el pais"
+ SPR_ww1_estabilizando_desc:0 "El pais necesita unidad y estabilidad en tiempos tan dificiles como estos"
+ #--------------------------------------------------------------
+ SPR_ww1_planagricola:0 "Plan Agricola"
+ SPR_ww1_planagricola_desc:0 "La agricultura española deja mucho que desear en todos los aspectos. Debemos poner remedio a esto para poder ser un pais fuerte"
+ #--------------------------------------------------------------
+ SPR_ww1_turnismo:0 "Turnismo"
+ SPR_ww1_turnismo_desc:0 "Ahora tu, ahora yo, ahora tu, ahora yo,..."
+ #--------------------------------------------------------------  
+ SPR_ww1_legion:0 "La Legion"
+ SPR_ww1_legion_desc:0 "La Legion Española y su magnifica Cabra"
+ #--------------------------------------------------------------  
+ SPR_ww1_caciquismo:0 "Caciquismo"
+ SPR_ww1_caciquismo_desc:0 "Lo de las libertades siempre ha sido dificil de comprender en España"
+ #--------------------------------------------------------------   
+ SPR_jaime_borbon:0 "Jaime de Borbón y Borbón-Parma"
+ SPR_jaime_borbon_desc:0 "Ultimo Carlista"
+ #--------------------------------------------------------------   
+ SPR_ww1_uniones:0 "Sindicalismo"
+ SPR_ww1_uniones_desc:0 "UGT, CNT, FAI, siempre hay algún sindicatio al acecho"
+ #--------------------------------------------------------------   
+ SPR_ww1_africanismo:0 "Africanismo"
+ SPR_ww1_africanismo_desc:0 "El país se tambalea, y debemos mostrarnos fuertes ante el mundo. En Africa haremos nuestra demostración"
+ #--------------------------------------------------------------   
+ SPR_ww1_pistolerismo:0 "El Pistolerismo"
+ SPR_ww1_pistolerismo_desc:0 "El incremento de fuerza y apoyos de los sindicatos ha suscitado una reacción inesperada y violenta en los empresarios de nuestro país"
+ #-------------------------------------------------------------- 
+ SPR_ww1_ferrol:0 "Base naval del Ferrol"
+ SPR_ww1_ferrol_desc:0 "Una gran base para una pequeña flota"
+ #-------------------------------------------------------------- 
+ SPR_ww1_integracion:0 "Proceso de Integracion"
+ SPR_ww1_integracion_desc:0 "abcd"
+ #--------------------------------------------------------------
+ SPR_ww1_planibero:0 "El Plan Ibero"
+ SPR_ww1_planibero_desc:0 "abcd"
+ #--------------------------------------------------------------
+ SPR_ww1_armasmodernas:0 "Industria Militar Moderna"
+ SPR_ww1_armasmodernas_desc:0 "abcd"
+ #-------------------------------------------------------------- 
+ SPR_ww1_armascaseras:0 "Talleres Militares Caseros"
+ SPR_ww1_armascaseras_desc:0 "abcd"
+ #--------------------------------------------------------------
+ SPR_ww1_CNT:0 "Confederación Nacional del Trabajo"
+ SPR_ww1_CNT_desc:0 "abcd"
+ #--------------------------------------------------------------
+ SPR_ww1_SNI:0 "Servicio Nacional de Inteligencia"
+ SPR_ww1_SNI_desc:0 "abcd"
+ #--------------------------------------------------------------
+ SPR_ww1_antipistolerismo:0 "Anti-Pistolerismo"
+ SPR_ww1_antipistolerismo_desc:0 "abcd"
+ #--------------------------------------------------------------
+ SPR_ww1_inversion:0 "Inversiones Estatales"
+ SPR_ww1_inversion_desc:0 "abcd"
+ #--------------------------------------------------------------
+ SPR_ww1_expedientepicaso:0 "Expediente Picaso"
+ SPR_ww1_expedientepicaso_desc:0 "abcd"
+ #--------------------------------------------------------------
+ SPR_ww1_represion:0 "Represion"
+ SPR_ww1_represion_desc:0 "abcd"
+ #--------------------------------------------------------------
+ SPR_ww1_dictadura:0 "La Dictadura"
+ SPR_ww1_dictadura_desc:0 "abcd"
+ #--------------------------------------------------------------
+ SPR_ww1_anarcoterroristas:0 "Anarco-Terroristas"
+ SPR_ww1_anarcoterroristas_desc:0 ""
+ #--------------------------------------------------------------
