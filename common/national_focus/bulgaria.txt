@@ -972,7 +972,60 @@ add_extra_state_shared_building_slots=1 add_building_construction={ type=arms_fa
 		x = 7
 		y = 10
 	}
+
+	focus = {
+		id = BUL_tsargrad
+		prerequisite = { focus = BUL_expansionist_policy}
+		icon = GFX_focus_generic_little_entente
+		available = {
+			has_global_flag = kis_secondbalkanwar_victory
+			BUL = {
+				owns_state = 106
+				has_war = no
+			}
+			country_exists = ROM
+		}
+		
+		completion_reward = {
+			if = {
+				limit = { has_non_aggression_pact_with = ROM }
+				diplomatic_relation = {
+					country = ROM
+					relation = non_aggression_pact
+					active = no
+				}
+			}
+			if = {
+				limit = {
+					NOT = {341 = { is_claimed_by = ROOT }}
+				}
+				341= { add_claim_by = ROOT }
+			}
+			add_manpower = 10000
+			army_experience = 10
+			navy_experience = 10
+			air_experience = 10
+			start_border_war = {
+    change_state_after_war = yes
+    attacker = {
+        state = 756
+        num_provinces = 4
+    }
+				
+    defender = {
+        state = 341
+        num_provinces = 4
+    }
+}
+		}
+		
+		ai_will_do = { factor = 2 }
+		cost = 6
+		x = 7
+		y = 11
+	}
 	
+
 	focus = {
 		id = BUL_second_balkan_defeat
 		prerequisite = { focus = BUL_second_balkan }
