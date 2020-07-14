@@ -2,7 +2,7 @@ portugal_revolution = {
      portugal_revolution = {                      
           allowed = { tag = POR }              
           available = {                          
-				NOT = {OR = {has_global_flag = kis_portugal_revolution_avoided has_global_flag = kis_portugal_revolution}}
+				OR = {has_global_flag = kis_portugal_revolution_avoided has_global_flag = kis_portugal_revolution}
 			   
           }
           activation = {
