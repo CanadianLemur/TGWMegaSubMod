@@ -856,7 +856,7 @@ focus_tree = {
 
 
 	focus = {
-		id = army_effort
+		id = ww1_portugal_army_effort
 		icon = GFX_goal_generic_allies_build_infantry
 		completion_reward = { army_experience=15 add_tech_bonus={ name=land_doc_bonus bonus=0.2 uses=1 category=land_doctrine } }
 		cost = 10
@@ -866,8 +866,8 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = equipment_effort
-		prerequisite = { focus=army_effort }
+		id = ww1_portugal_equipment_effort
+		prerequisite = { focus=ww1_portugal_army_effort }
 		icon = GFX_goal_generic_small_arms
 		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=0.15 uses=1 category=infantry_weapons} }
 		cost = 10
@@ -878,7 +878,7 @@ focus_tree = {
 
 	focus = {
 		id = ww1_portugal_artillery_effort_1
-		prerequisite = { focus=army_effort }
+		prerequisite = { focus=ww1_portugal_army_effort }
 		icon = GFX_goal_generic_army_artillery2
 		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=0.15 uses=1 category=artillery } }
 		cost = 10
@@ -912,8 +912,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = doctrine_effort
-		prerequisite = { focus=army_effort }
+		id = ww1_portugal_doctrine_effort
+		prerequisite = { focus=ww1_portugal_army_effort }
 		available = { date > 1911.1.1 }
 		icon = GFX_goal_generic_army_doctrines
 		completion_reward = { army_experience=15 add_tech_bonus={ name=land_doc_bonus bonus=0.2 uses=1 category=land_doctrine } }
@@ -924,8 +924,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = equipment_effort_2
-		prerequisite = { focus=equipment_effort }
+		id = ww1_portugal_equipment_effort_2
+		prerequisite = { focus=ww1_portugal_equipment_effort }
 		available = { date > 1912.1.1 }
 		icon = GFX_goal_generic_small_arms
 		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_artillery_bonus bonus=0.15 uses=1 category=infantry_weapons } }
@@ -938,7 +938,7 @@ focus_tree = {
 
 	focus = {
 		id = ww1_portugal_trenchwarfare
-		prerequisite = { focus=equipment_effort }
+		prerequisite = { focus=ww1_portugal_equipment_effort }
 		available = { date > 1911.1.1 }
 		icon = GFX_goal_generic_military_sphere
 		completion_reward = { army_experience=10 add_tech_bonus={ name=trenchwarfare_bonus bonus=0.15 uses=1 technology=support_weapons technology=support_weapons2 technology=support_weapons3 } }
@@ -997,7 +997,7 @@ focus_tree = {
 
 	focus = {
 		id = ww1_portugal_doctrine_effort_2
-		prerequisite = { focus=doctrine_effort }
+		prerequisite = { focus=ww1_portugal_doctrine_effort }
 		available = { date > 1913.1.1 }
 		icon = GFX_goal_generic_army_doctrines
 		completion_reward = { army_experience=15 add_tech_bonus={ name=land_doc_bonus bonus=0.2 uses=1 category=land_doctrine } }
@@ -1009,7 +1009,7 @@ focus_tree = {
 
 	focus = {
 		id = ww1_portugal_equipment_effort_3
-		prerequisite = { focus=equipment_effort_2 }
+		prerequisite = { focus=ww1_portugal_equipment_effort_2 }
 		available = { date > 1914.1.1 }
 		icon = GFX_goal_generic_small_arms
 		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_artillery_bonus bonus=0.15 uses=1 category=infantry_weapons } }
