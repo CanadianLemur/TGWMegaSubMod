@@ -1,12 +1,19 @@
 german_poland = {
 	icon = generic_political_actions
+	priority = 30
 	available = {has_completed_focus = GER_ww1_polnische_wehrmacht}
 }
 portugal_revolution = {
 	icon = generic_political_actions
-	available = tag = POR
+	priority = 30
+	available = {
+		tag = POR
+	}
 }
-msm_baltic_duchy = {
+baltic_duchy = {
 	icon = generic_political_actions
-	available = tag = GER
+	priority = 30
+	available = {
+		tag = GER
+	}
 }

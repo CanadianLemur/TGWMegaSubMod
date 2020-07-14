@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 armored_BUL = {
 
 	available_for = {

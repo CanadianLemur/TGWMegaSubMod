@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 on_actions = {
 	###--Startup events for TGW Balkans Ablaze--###
     on_startup = {

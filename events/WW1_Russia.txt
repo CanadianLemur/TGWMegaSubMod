@@ -570,6 +570,7 @@ country_event = {
 				add_state_core = 12
 				add_state_core = 190
 				set_cosmetic_tag = UBD
+				set_capital = 12		### Riga added (by Ecrfour)
 				create_country_leader = {
 				    name = "Adolf Friedrich, Duke of Mecklenburg-Schwerin"
 				    picture = "gfx/leaders/hoi4tgw/Adolf_Friedrich.dds"			

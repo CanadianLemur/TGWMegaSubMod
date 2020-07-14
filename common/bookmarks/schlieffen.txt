@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 bookmarks = {
 	bookmark = {
 		name = "SCHLIEFFEN_NAME"

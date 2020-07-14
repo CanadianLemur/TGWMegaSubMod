@@ -1,62 +1,116 @@
+
 german_poland = {
-     form_polish_state = {                      
-          allowed = { tag = GER }              
-          available = {                          
-            controls_state = 90
+	form_polish_state = {                      
+		allowed = { tag = GER }              
+		available = {                          
+			controls_state = 90
 			controls_state = 10 	
 			controls_state = 92 
 			controls_state = 97 
-			   
-          }
-          activation = {
-               has_completed_focus = GER_ww1_polnische_wehrmacht
-          }
-          is_good = yes   
-		  fire_only_once = yes
-          selectable_mission = yes               
-          days_mission_timeout = 600             
-          timeout_effect = {                     
-               add_political_power = -50
-			   ##add resistance and reduce compliance in poland
-          }
-          complete_effect = {                   
-               add_political_power = 50  
+		}
+		activation = {
+		has_completed_focus = GER_ww1_polnische_wehrmacht
+		}
+		is_good = yes   
+		fire_only_once = yes
+		selectable_mission = yes               
+		days_mission_timeout = 600             
+		timeout_effect = {                     
+			add_political_power = -50
+			##add resistance and reduce compliance in poland
+		}
+		complete_effect = {                   
+			add_political_power = 50  
 				POL = {
-				transfer_state = 90
-				transfer_state = 10
-				transfer_state = 92
-				transfer_state = 97
-				transfer_state = 98
-				transfer_state = 87
-				load_focus_tree = POL_interwar_focus
+					transfer_state = 90
+					transfer_state = 10
+					transfer_state = 92
+					transfer_state = 97
+					transfer_state = 98
+					transfer_state = 87
+					transfer_state = 93
+					transfer_state = 94
+					load_focus_tree = POL_interwar_focus
 				}
 				puppet = POL
-
-          }
-     }
+				}
+			}
+			
+	integrate_east_poland = {
+		icon = generic_form_nation
+		cost = 25
+	
+		fire_only_once = yes
+		allowed = {
+			original_tag = GER
+		}
+		available = {
+			FROM = {is_controlled_by = GER}
+		}
+		visible = {
+			original_tag = GER
+			FROM = {is_controlled_by = GER}
+		}
+		state_target = yes
+		targets = { 784 95 96 }
+		complete_effect = {
+			FROM = {
+				add_core_of = POL
+			POL = {transfer_state = FROM}
+		}
+	}
 }
-msm_baltic_duchy = {
+}
+	
+baltic_duchy = {
 	integrate_lithuania = {
-		allowed = { tag = GER }    
+		available = {
+			AND = {
+				LIT = {is_subject_of = GER}
+				EST = {is_subject_of = GER}
+			}
+		}    
 		icon = generic_construction  
-		visible = {has_global_flag = kis_brestlitovsk}
+		visible = {
+			has_global_flag = kis_brestlitovsk
+			LIT = {is_subject_of = GER}
+		}
 		fire_only_once = yes      
-		available = { AND ={
-		LIT = {is_subject_of = GER}
-		EST = {is_subject_of = GER}
-		}
-		}
-		
 		cost = 50
 		complete_effect = {
-		EST = {add_state_core = 189 add_state_core = 11 add_state_core=784 
-		annex_country = {
-			target = LIT
-			transfer_troops = yes
-						}
-			}
-		
-		}
-		}
-		}
 			
+			EST = {
+				add_state_core = 189 
+				add_state_core = 11 
+				add_state_core=784
+				annex_country = {
+					target = LIT
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+	integrate_east_lithuania = {
+		icon = generic_form_nation
+		cost = 25
+	
+		fire_only_once = yes
+		allowed = {
+			original_tag = GER
+		}
+		available = {
+			FROM = {is_controlled_by = GER}
+		}
+		visible = {
+			original_tag = GER
+			FROM = {is_controlled_by = GER}
+		}
+		state_target = yes
+		targets = { 784 95 96 }
+		complete_effect = {
+			FROM = {
+				add_core_of = EST
+			EST = {transfer_state = FROM}
+		}
+	}
+}

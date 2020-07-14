@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 ba_infantry = {
 
 	blocked_for = {

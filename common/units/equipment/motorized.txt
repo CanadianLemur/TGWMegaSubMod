@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 equipments = {
 
 	motorized_equipment = {

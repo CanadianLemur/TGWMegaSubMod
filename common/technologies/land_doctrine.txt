@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 technologies = {
 
 	ww1_landdoctrine = {

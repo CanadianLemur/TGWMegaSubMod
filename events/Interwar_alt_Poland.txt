@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 add_namespace = interwar_alt_poland_events
 
 country_event = {

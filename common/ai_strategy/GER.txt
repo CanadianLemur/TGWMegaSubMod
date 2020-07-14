@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 no_one_gets_our_troops = {
 	enable = {
 		original_tag = GER
