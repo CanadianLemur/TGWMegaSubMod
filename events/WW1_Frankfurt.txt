@@ -477,6 +477,9 @@ country_event = {
 				ETH = {
 					transfer_state = 550		# ERITREA
 					transfer_state = 559		# SOMALILAND
+					transfer_state = 269		# British Somaliland
+					transfer_state = 559		# Italian Somaliland
+					
 				}
 			}
 			

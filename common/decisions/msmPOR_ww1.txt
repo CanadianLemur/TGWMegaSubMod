@@ -5,7 +5,7 @@ portugal_revolution = {
 				OR = {has_global_flag = kis_portugal_revolution_avoided has_global_flag = kis_portugal_revolution}
 			   
           }
-          activation = {
+          visible = {
 				NOT = {OR = {has_global_flag = kis_portugal_revolution_avoided has_global_flag = kis_portugal_revolution}}          }
           is_good = yes                           
           days_mission_timeout = 160             
@@ -18,4 +18,41 @@ portugal_revolution = {
 
 
           }
+		  }
+     portugal_revolution_army_loyalty = {                      
+          allowed = { tag = POR }              
+          available = {                          
+			NOT ={	OR = {has_global_flag = kis_portugal_revolution_avoided has_global_flag = kis_portugal_revolution}}
+			   
+          }
+	cost = 40
+	fire_only_once = yes
+          complete_effect = {                   
+                
+          }
      }
+     portugal_revolution_promise_revenge = {                      
+          allowed = { tag = POR }              
+          available = {                          
+			NOT ={	OR = {has_global_flag = kis_portugal_revolution_avoided has_global_flag = kis_portugal_revolution}}
+			   
+          }
+	cost = 40
+	fire_only_once = yes
+          complete_effect = {                   
+                
+          }
+     }
+     portugal_revolution_ban_republicanism = {                      
+          allowed = { tag = POR }              
+          available = {                          
+			NOT ={	OR = {has_global_flag = kis_portugal_revolution_avoided has_global_flag = kis_portugal_revolution}}
+			   
+          }
+	cost = 40
+	fire_only_once = yes
+          complete_effect = {                   
+                
+          }
+     }
+}
