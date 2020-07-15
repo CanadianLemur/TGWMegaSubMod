@@ -1,302 +1,300 @@
 focus_tree = {
-id = 'chinafocus'
-country = {
-factor=0
-modifier = {
-add = 10
-OR = {
-tag = QIN
-tag = CHI
-}
-}
-}
-default = no
+	id = 'chinafocus'
+	country = {
+		factor=0
+		modifier = {
+			add = 10
+			OR = {
+				tag = QIN
+				tag = CHI
+			}
+		}
+	}
+	default = no
 #Custom focuses start here
 
-continuous_focus_position = { x = 4500 y = 10 }
+	continuous_focus_position = { x = 4500 y = 10 }
 
 #### STARTING FOCUS AND INTERNAL ####
 
-#Cixi's Reforms
-		focus = { 
+	#Cixi's Reforms
+	focus = { 
 		id = cixireform
 		icon = GFX_focus_AST_rats_tobruk 
 		ai_will_do = { factor = 10} 
- x =7 
- y =0 
- mutually_exclusive = { } 
- prerequisite = { } 
- cost = 2  
- available_if_capitulated = yes  
- completion_reward = { 
-		add_political_power = 100
-		set_stability = 0.45
- } 
- }
+		x =7 
+		y =0 
+		mutually_exclusive = { } 
+		prerequisite = { } 
+		cost = 2  
+		available_if_capitulated = yes  
+		completion_reward = { 
+			add_political_power = 100
+			set_stability = 0.45
+		} 
+	}
  
- #Focus for More Reforms
-		focus = { 
+#Focus for More Reforms
+	focus = { 
 		id = morecixireform
 		icon = GFX_focus_generic_anti_fascist_diplomacy
 		ai_will_do = { factor = 10} 
- x =7
- y =1 
- mutually_exclusive = { } 
- prerequisite = { focus = cixireform} 
- cost = 10  
-  available_if_capitulated = yes  
-  completion_reward = {
-		add_political_power = 50
-		set_stability = 0.55
-  }
-
- }
+		x =7
+		y =1 
+		mutually_exclusive = { } 
+		prerequisite = { focus = cixireform} 
+		cost = 10  
+		available_if_capitulated = yes  
+		completion_reward = {
+			add_political_power = 50
+			set_stability = 0.55
+		}
+	}
  
  #Focus for Industria en el norte 
-		focus = { 
+	focus = { 
 		id = industriaenelnorte 
 		icon = GFX_goal_continuous_repairments 
 		ai_will_do = { factor = 10} 
- x =2 
- y =1 
- mutually_exclusive = { } 
- prerequisite = { focus = alfonsoxiii} 
- cost = 10  
-  available_if_capitulated = yes  
- completion_reward = { 
- 172 = { add_extra_state_shared_building_slots = 6 add_building_construction = { type = industrial_complex level = 3 instant_build = yes  } } 
- add_resource = { type = steel amount = 12 state = 172n}
-	} 
- }
+		x =2 
+		y =1 
+		mutually_exclusive = { } 
+		prerequisite = { focus = alfonsoxiii} 
+		cost = 10  
+		available_if_capitulated = yes  
+		completion_reward = { 
+			172 = { add_extra_state_shared_building_slots = 6 add_building_construction = { type = industrial_complex level = 3 instant_build = yes  } } 
+			add_resource = { type = steel amount = 12 state = 172n}
+		} 
+	}
  
  #Focus for Caciquismo 
-		focus = { 
+	focus = { 
 		id = caciquismo 
 		icon = GFX_focus_rom_handle_king 
 		ai_will_do = { factor = 10} 
- x =4 
- y =1 
- mutually_exclusive = { } 
- prerequisite = { focus = alfonsoxiii} 
- cost = 10
-  available_if_capitulated = yes  
-  completion_reward = { 
-  add_political_power = -100 
-  remove_ideas = SPR_ww1_caciquismo
-  }
- }
+		x =4 
+		y =1 
+		mutually_exclusive = { } 
+		prerequisite = { focus = alfonsoxiii} 
+		cost = 10
+		available_if_capitulated = yes  
+		completion_reward = { 
+			add_political_power = -100 
+			remove_ideas = SPR_ww1_caciquismo
+		}
+	}
  
  
  #Focus for Una nueva flota 
-		focus = { 
+	focus = { 
 		id = unanuevaflota 
 		icon = GFX_goal_generic_construct_naval_dockyard 
 		ai_will_do = { factor = 10} 
- x =10 
- y =1 
- mutually_exclusive = { } 
- prerequisite = { focus = alfonsoxiii } 
- cost = 20 
-  available_if_capitulated = yes  
-  completion_reward = {
-  add_ideas = SPR_ww1_flota 
-  168 = { add_extra_state_shared_building_slots = 3 add_building_construction = { type = dockyard level = 3 instant_build = yes  } }
-  }
-}
+		x =10 
+		y =1 
+		mutually_exclusive = { } 
+		prerequisite = { focus = alfonsoxiii } 
+		cost = 20 
+		available_if_capitulated = yes  
+		completion_reward = {
+			add_ideas = SPR_ww1_flota 
+			168 = { add_extra_state_shared_building_slots = 3 add_building_construction = { type = dockyard level = 3 instant_build = yes  } }
+		}
+	}
 
  #Focus for Plan agricola 
 	focus = { 
-	id = planagricola 
-	icon = GFX_goal_continuous_non_factory_construct 
-	ai_will_do = { factor = 10} 
- x =0 
- y =2 
- mutually_exclusive = { } 
- prerequisite = { focus = tiempososcuros } 
- cost = 10
-  available_if_capitulated = yes  
-  completion_reward = { add_ideas = SPR_ww1_planagricola } 
-
- }
+		id = planagricola 
+		icon = GFX_goal_continuous_non_factory_construct 
+		ai_will_do = { factor = 10} 
+		x =0 
+		y =2 
+		mutually_exclusive = { } 
+		prerequisite = { focus = tiempososcuros } 
+		cost = 10
+		available_if_capitulated = yes  
+		completion_reward = { 
+			add_ideas = SPR_ww1_planagricola 
+		} 		
+	}
  
  #Focus for Las Uniones 
-		focus = { 
+	focus = { 
 		id = lasuniones 
 		icon = GFX_goal_generic_dangerous_deal 
 		ai_will_do = { factor = 10} 
- x =2 
- y =2 
- mutually_exclusive = { } 
- prerequisite = { focus = industriaenelnorte} 
- cost = 10
-  available_if_capitulated = yes  
- completion_reward = {
- add_ideas = SPR_ww1_pistolerismo 
- remove_ideas = SPR_ww1_uniones
- add_stability = -0.3 
- add_popularity = {  
- ideology = communism  
- popularity = 0.15 
- } 
- } 
- }
+		x =2 
+		y =2 
+		mutually_exclusive = { } 
+		prerequisite = { focus = industriaenelnorte} 
+		cost = 10
+		available_if_capitulated = yes  
+		completion_reward = {
+			add_ideas = SPR_ww1_pistolerismo 
+			remove_ideas = SPR_ww1_uniones
+			add_stability = -0.3 
+			add_popularity = {  
+				ideology = communism  
+				popularity = 0.15 
+			} 
+		} 
+	}
  
  #Focus for Turnismo 
-		focus = { 
+	focus = { 
 		id = turnismo 
 		icon = GFX_goal_anschluss 
 		ai_will_do = { factor = 10} 
- x =4 
- y =2 
- mutually_exclusive = { } 
- prerequisite = { focus = caciquismo} 
- cost = 10
-  available_if_capitulated = yes  
-  completion_reward = { add_stability = -0.15 
-  remove_ideas = SPR_ww1_turnismo
-  }
-
- }
+		x =4 
+		y =2 
+		mutually_exclusive = { } 
+		prerequisite = { focus = caciquismo} 
+		cost = 10
+		available_if_capitulated = yes  
+		completion_reward = { 
+			add_stability = -0.15 
+			remove_ideas = SPR_ww1_turnismo
+		}
+	}
  
  #Focus for La semana tragica 
-		focus = { 
+	focus = { 
 		id = lasemanatragica 
 		icon = GFX_goal_generic_attack_allies 
 		ai_will_do = { factor = 10} 
- x =6 
- y =2 
- mutually_exclusive = { } 
- prerequisite = { focus = africanismo} 
- cost = 5
-  available_if_capitulated = yes  
- completion_reward = {
- 
- remove_idea = SPR_ww1_semanatragica
- add_stability = -0.25 
- add_popularity = {  
- ideology = fascism
- popularity = 0.15  
- }
- add_popularity = {  
- ideology = communism  
- popularity = 0.05  
- } 
- } 
- }
+		x =6 
+		y =2 
+		mutually_exclusive = { } 
+		prerequisite = { focus = africanismo} 
+		cost = 5
+		available_if_capitulated = yes  
+		completion_reward = {
+			remove_idea = SPR_ww1_semanatragica
+			add_stability = -0.25 
+			add_popularity = {  
+				ideology = fascism
+				popularity = 0.15  
+			}
+			add_popularity = {  
+				ideology = communism  
+				popularity = 0.05  
+			} 
+		} 
+	}
  
  #Focus for Expediente Picaso
-		focus = { 
+	focus = { 
 		id = expedientepicaso
 		icon = GFX_goal_continuous_suppression 
 		ai_will_do = { factor = 10} 
- x =8 
- y =2 
- mutually_exclusive = { } 
- prerequisite = { focus = africanismo} 
- cost = 5
-  available_if_capitulated = yes  
-   completion_reward = {   
-	add_ideas = SPR_ww1_expedientepicaso
-   } 
- }
+		x =8 
+		y =2 
+		mutually_exclusive = { } 
+		prerequisite = { focus = africanismo} 
+		cost = 5
+		available_if_capitulated = yes  
+		completion_reward = {   
+			add_ideas = SPR_ww1_expedientepicaso
+		} 
+	}
  
  #Focus for La experiencia de Africa 
-		focus = { 
+	focus = { 
 		id = laexperienciadeafrica 
 		icon = GFX_focus_secret_rearmament 
 		ai_will_do = { factor = 10} 
- x =10 
- y =2 
- mutually_exclusive = { } 
- prerequisite = { focus = unanuevaflota} 
- prerequisite = { focus = africanismo}
- cost = 5
-  available_if_capitulated = yes  
-  completion_reward = {   army_experience = 35 } 
- }
+		x =10 
+		y =2 
+		mutually_exclusive = { } 
+		prerequisite = { focus = unanuevaflota} 
+		prerequisite = { focus = africanismo}
+		cost = 5
+		available_if_capitulated = yes  
+		completion_reward = { 
+			army_experience = 35 
+		} 
+	}
  
  #Focus for La burguesia catalana 
-		focus = { 
+	focus = { 
 		id = laburguesiacatalana 
 		icon = GFX_focus_rom_parties_end 
 		ai_will_do = { factor = 10} 
- x =0 
- y =3 
- mutually_exclusive = { } 
- prerequisite = { focus = planagricola} 
- cost = 10
-  available_if_capitulated = yes  
- completion_reward = { 
- 165 = { add_extra_state_shared_building_slots = 3 add_building_construction = { type = industrial_complex level = 3 instant_build = yes  } } 
- add_ideas = SPR_ww1_burguesia
-	} 
- 
- }
+		x =0 
+		y =3 
+		mutually_exclusive = { } 
+		prerequisite = { focus = planagricola} 
+		cost = 10
+		available_if_capitulated = yes  
+		completion_reward = { 
+			165 = { add_extra_state_shared_building_slots = 3 add_building_construction = { type = industrial_complex level = 3 instant_build = yes  } } 
+			add_ideas = SPR_ww1_burguesia
+		}  
+	}
  
  #Focus for Instituto Nacional Prevision 
-		focus = { 
+	focus = { 
 		id = institutonacionalprevision 
 		icon = GFX_goal_generic_positive_trade_relations 
 		ai_will_do = { factor = 10} 
- x =2 
- y =3 
- mutually_exclusive = { } 
- prerequisite = { focus = lasuniones} 
- cost = 10
-  available_if_capitulated = yes  
-  completion_reward = { add_stability = 0.2 
-  add_ideas = SPR_ww1_instituto
-  }
- }
+		x =2 
+		y =3 
+		mutually_exclusive = { } 
+		prerequisite = { focus = lasuniones} 
+		cost = 10
+		available_if_capitulated = yes  
+		completion_reward = { add_stability = 0.2 
+			add_ideas = SPR_ww1_instituto
+		}
+	}
  
  #Focus for Estabilizando el pais 
-		focus = { 
+	focus = { 
 		id = estabilizandoelpais 
 		icon = GFX_goal_generic_neutrality_focus 
 		ai_will_do = { factor = 10} 
- x =4 
- y =3 
- mutually_exclusive = { } 
- prerequisite = { focus = turnismo} 
- cost = 5
-  available_if_capitulated = yes  
- completion_reward = { 
-	add_timed_idea = { idea = SPR_ww1_estabilizando days = 720 }
-	add_political_power = 50 
-		add_stability = 0.15 
-  
- } 
- }
+		x =4 
+		y =3 
+		mutually_exclusive = { } 
+		prerequisite = { focus = turnismo} 
+		cost = 5
+		available_if_capitulated = yes  
+		completion_reward = { 
+			add_timed_idea = { idea = SPR_ww1_estabilizando days = 720 }
+			add_political_power = 50 
+			add_stability = 0.15 
+		} 
+	}
  
  #Focus for Tratado de Fez 
-		focus = { 
+	focus = { 
 		id = tratadodefez 
 		icon = GFX_focus_rom_royal_dictatorship 
 		ai_will_do = { factor = 10} 
- x =7 
- y =3 
- mutually_exclusive = { } 
- available = {date > 1912.3.30}
- prerequisite = { focus = expedientepicaso} 
- prerequisite = { focus = lasemanatragica}  
- cost = 10
-  available_if_capitulated = yes
-completion_reward = {
-	ENG = { add_manpower = -25000}
-	FRA = {	add_manpower = -25000}
-	SPR = {	add_manpower = -20000}
-	MOR = {	add_manpower = -30000}
-	add_opinion_modifier = { target = GER modifier =  tratadofez.1}
-	add_opinion_modifier = { target = ENG modifier =  tratadofez.1}
-	add_opinion_modifier = { target = FRA modifier =  tratadofez.1}
-	SPR = {add_state_core = 290 }
-	290 = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes  } } 
-
- }  
- }
+		x =7 
+		y =3 
+		mutually_exclusive = { } 
+		available = {date > 1912.3.30}
+		prerequisite = { focus = expedientepicaso} 
+		prerequisite = { focus = lasemanatragica}  
+		cost = 10
+		available_if_capitulated = yes
+		completion_reward = {
+			ENG = { add_manpower = -25000}
+			FRA = {	add_manpower = -25000}
+			SPR = {	add_manpower = -20000}
+			MOR = {	add_manpower = -30000}
+			add_opinion_modifier = { target = GER modifier =  tratadofez.1}
+			add_opinion_modifier = { target = ENG modifier =  tratadofez.1}
+			add_opinion_modifier = { target = FRA modifier =  tratadofez.1}
+			SPR = {add_state_core = 290 }
+			290 = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes  } } 
+		}  
+	}
  
  #Focus for Reformando el ejercito 
-		focus = { 
+	focus = { 
 		id = reformandoelejercito 
 		icon = GFX_focus_generic_military_mission
 		ai_will_do = { factor = 10} 
