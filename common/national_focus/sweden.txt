@@ -349,33 +349,29 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SWE_ww1_interwar_scandinavian_position
-		icon = GFX_goal_generic_position_armies
-
-		prerequisite = { focus = SWE_ww1_interwar_Aftermath }
-		relative_position_id = SWE_ww1_interwar_Aftermath
+		id = SWE_ww1_interwar_Victory
+		icon = GFX_focus_generic_treaty
 
 		available = {
-	 		is_puppet = no
-			has_war = false
+			has_global_flag = kis_treaty_of_versailles
 		}
 
 		completion_reward = {
-			
+			add_stability = 0.1
 		}
 
 		cost = 3
-		x = 6
-		y = 1
-		ai_will_do = { factor = 0 }
+		x = 22
+		y = 10
+		ai_will_do = { factor = 1 }
 	}
 	
 	focus = {
-		id = SWE_ww1_interwar_nordic_dominance
-		icon = GFX_goal_molotov_ribbentrop_pact
+		id = SWE_ww1_interwar_scandinavian_position
+		icon = GFX_goal_generic_position_armies
 
-		prerequisite = { focus = SWE_ww1_interwar_scandinavian_position }
-		relative_position_id = SWE_ww1_interwar_scandinavian_position
+		prerequisite = { focus = SWE_ww1_interwar_Victory }
+		relative_position_id = SWE_ww1_interwar_Victory
 
 		available = {
 	 		is_puppet = no
@@ -387,10 +383,9 @@ focus_tree = {
 		}
 
 		cost = 3
-		x = 1
+		x = 0
 		y = 1
 		ai_will_do = { factor = 0 }
-		mutually_exclusive = { focus = SWE_ww1_interwar_regional_neutrality }
 	}
 	
 	focus = {
@@ -415,7 +410,58 @@ focus_tree = {
 		ai_will_do = { factor = 0 }
 		mutually_exclusive = { focus = SWE_ww1_interwar_nordic_dominance }
 	}
+	
+	focus = {
+		id = SWE_ww1_interwar_nordic_dominance
+		icon = GFX_goal_molotov_ribbentrop_pact
 
+		prerequisite = { focus = SWE_ww1_interwar_scandinavian_position }
+		relative_position_id = SWE_ww1_interwar_scandinavian_position
+
+		available = {
+	 		is_puppet = no
+			has_war = false
+		}
+
+		completion_reward = {
+			SWE = { add_opinion_modifier = { target = NOR modifier = large_increase }}
+			SWE = { add_opinion_modifier = { target = DEN modifier = nordic_leadership }}
+			SWE = { add_opinion_modifier = { target = FIN modifier = nordic_leadership }}
+			
+			NOR = { add_opinion_modifier = { target = SWE modifier = huge_increase }}
+			DEN = { add_opinion_modifier = { target = SWE modifier = nordic_leadership }}
+			FIN = { add_opinion_modifier = { target = SWE modifier = nordic_leadership }}
+		}
+
+		cost = 1
+		x = 1
+		y = 1
+		ai_will_do = { factor = 0 }
+		mutually_exclusive = { focus = SWE_ww1_interwar_regional_neutrality }
+	}
+	
+	focus = {
+		id = SWE_ww1_interwar_
+		icon = GFX_goal_molotov_ribbentrop_pact
+
+		prerequisite = { focus = SWE_ww1_interwar_nordic_dominance }
+		relative_position_id = SWE_ww1_interwar_nordic_dominance
+
+		available = {
+	 		is_puppet = no
+			has_war = false
+		}
+
+		completion_reward = {
+			
+		}
+
+		cost = 3
+		x = 0
+		y = 1
+		ai_will_do = { factor = 0 }
+		mutually_exclusive = { focus = SWE_ww1_interwar_regional_neutrality }
+	}
 
 
 
@@ -727,6 +773,7 @@ focus_tree = {
 	focus = {
 		id = SWE_ww1_FascistCoup # Fascist Coup
 		prerequisite = { focus = SWE_ww1_FascistManifesto }
+		relative_position_id = SWE_ww1_FascistManifesto
 
 		icon = GFX_focus_generic_little_entente
 
@@ -743,8 +790,8 @@ focus_tree = {
 		}
 
 		cost = 10
-		x = 1
-		y = 8
+		x = 0
+		y = 1
 
 		ai_will_do = { factor = 0 }
 	}
@@ -752,6 +799,7 @@ focus_tree = {
 	focus = {
 		id = SWE_ww1_MussoliniFascism # Mussolini's Fascism
 		prerequisite = { focus = SWE_ww1_FascistCoup }
+		relative_position_id = SWE_ww1_FascistCoup
 		mutually_exclusive = { focus=SWE_ww1_Hitlerism }
 
 		icon = GFX_focus_ger_assassinate_mussolini
@@ -775,8 +823,8 @@ focus_tree = {
 		}
 
 		cost = 10
-		x = 0
-		y = 9
+		x = -1
+		y = 1
 
 		ai_will_do = { factor = 0 }
 	}
@@ -784,6 +832,7 @@ focus_tree = {
 	focus = {
 		id = SWE_ww1_Hitlerism # Hitlerism
 		prerequisite = { focus = SWE_ww1_FascistCoup }
+		relative_position_id = SWE_ww1_FascistCoup
 		mutually_exclusive = { focus=SWE_ww1_MussoliniFascism }
 
 		icon = GFX_focus_ger_reichskommisariats
@@ -807,8 +856,8 @@ focus_tree = {
 		}
 
 		cost = 10
-		x = 2
-		y = 9
+		x = 1
+		y = 1
 
 		ai_will_do = { factor = 0 }
 	}
@@ -1081,7 +1130,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SWE_ww1_monarchies_together
+		id = SWE_ww1_support_austria
 		prerequisite = { focus=SWE_ww1_german_support }
 		relative_position_id = SWE_ww1_german_support
 		icon = GFX_hoi4tgw_austriahungary
@@ -1162,8 +1211,8 @@ focus_tree = {
 
 	focus = {
 		id = SWE_ww1_interventionism_focus
-		prerequisite = { focus=SWE_ww1_supportrussia focus=SWE_ww1_monarchies_together }
-		relative_position_id = SWE_ww1_monarchies_together
+		prerequisite = { focus=SWE_ww1_supportrussia focus=SWE_ww1_support_austria }
+		relative_position_id = SWE_ww1_support_austria
 		icon = GFX_goal_generic_political_pressure
 		completion_reward = { if={ limit={ has_idea=neutrality_idea } remove_ideas=neutrality_idea }	 set_rule={ can_send_volunteers=yes } add_political_power=150 }
 		ai_will_do = { factor = 10 }
@@ -1376,9 +1425,9 @@ focus_tree = {
 
 	focus = {
 		id = SWE_ww1_joingermany
-		prerequisite = { focus=SWE_ww1_monarchies_together  }
+		prerequisite = { focus=SWE_ww1_support_austria  }
 		prerequisite = { focus= SWE_ww1_foreign_expeditions }
-		relative_position_id = SWE_ww1_monarchies_together
+		relative_position_id = SWE_ww1_support_austria
 		icon = GFX_goal_generic_territory_or_war
 
 	 	available = {
