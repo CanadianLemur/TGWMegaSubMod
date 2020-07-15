@@ -659,6 +659,7 @@ country_event = {
 					add_state_core = 655
 					puppet = SIB
 					puppet = MON
+					unlock_national_focus = JAP_ww1_form_siberia
 				}
 			}
 			
