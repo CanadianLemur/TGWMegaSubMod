@@ -1,0 +1,28 @@
+state={
+	id=545
+	name="STATE_545"
+	manpower=4155400
+	state_category=rural
+	buildings_max_level_factor=1.000
+	provinces={ 1874 2151 2216 4851 7842 10929 }
+	resources={
+		wood=45
+		chromium=110
+		tungsten=8
+		}
+	history={
+		victory_points={ 10929 1 }
+		owner=ENG
+		add_core_of=ZIM
+		1936.1.1={ 
+			owner=ENG
+			victory_points={ 10929 1 }
+			buildings={
+				infrastructure=3
+				}
+			}
+		buildings={
+			infrastructure=3
+			}
+		}
+	}
