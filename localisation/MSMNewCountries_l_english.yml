@@ -1,0 +1,13 @@
+﻿l_english:
+ SIB_fascism:0 "Far East State"
+ SIB_fascism_DEF:0 "The Far East State"
+ SIB_democratic:0 "Siberian Republic"
+ SIB_democratic_DEF:0 "the Siberian Republic"
+ SIB_neutrality:1 "Siberia"
+ SIB_neutrality_DEF:1 "Siberia"
+ SIB_communism:0 "Siberian Independent SSR"
+ SIB_communism_DEF:0 "the Siberian Independent SSR"
+ SIB_fascism_ADJ:0 "Siberian"
+ SIB_democratic_ADJ:0 "Siberian"
+ SIB_neutrality_ADJ:0 "Siberian"
+ SIB_communism_ADJ:0 "Siberian"

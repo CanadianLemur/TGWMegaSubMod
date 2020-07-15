@@ -1,13 +1,13 @@
 state={
-	id=644
-	name="STATE_644"
-	manpower=68364
-	state_category="wasteland"
-	buildings_max_level_factor=1
-	impassable = yes
-	provinces={ 1722 1745 1819 2853 2877 3184 4006 4229 4455 4744 4878 5264 6211 12549 12592 12634 13061 13062 13063 13204 }
+	id=565
+	name="STATE_565" # Bodaybo
+	manpower = 195325
+	state_category=rural
+	provinces={ 1666 1761 4716 4762 4795 4835 4868 7736 7759 7854 10583 10654 12506 12538 12575 }
 	resources={
 		wood=0
+		chromium=18
+		steel=10
 		}
 	history={
 		owner=RUS

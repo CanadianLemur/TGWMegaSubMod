@@ -627,6 +627,41 @@ country_event = {
 				transfer_state = 189
 				load_oob = LIT_army
 			}
+			#Japanese Demands (By Canadian Lemur)
+			if = {
+				limit = {
+					JAP = {
+						has_war_with = ENG
+						is_in_faction_with = GER
+					}
+				}
+				SOV = {release = SIB}
+`				SIB = {
+					transfer_state = 408 #Vladivostok
+					transfer_state = 409 #Khabarovsk
+					transfer_state = 657 #Birobidzhan
+					transfer_state = 560 #Nikolayevsk
+					transfer_state = 562 #Okhotsk
+					transfer_state = 637 #Kamchatka
+					transfer_state = 644 #Northeast Siberia
+					transfer_state = 574 #Yahtusk
+					transfer_state = 575 #Kirensk
+					transfer_state = 565 #Bodaybo
+					transfer_state = 563 #Chita
+					transfer_state = 561 #Amur
+					transfer_state = 564 #Ulan Ude
+					transfer_state = 566 #Irkutsk
+
+				}
+				if = {limit = {SOV = {owns_state=329} } TAN= {transfer_state=329} JAP ={puppet=TAN }}
+				JAP = {
+					transfer_state = 655		# North Sakhalin
+					add_state_core = 655
+					puppet = SIB
+					puppet = MON
+				}
+			}
+			
 			GER = { puppet = LIT }
 			SOV = {
 				country_event = { days = 2 id = ww1_russia.10 }

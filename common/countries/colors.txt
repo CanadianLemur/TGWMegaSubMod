@@ -336,6 +336,10 @@ RUS = {
 color = rgb { 0 100 30 }
 color_ui = rgb { 0 110 33 }
 }
+SIB = {
+color = rgb { 0 132 31 }
+color_ui = rgb { 0 121 33 }
+}
 AUH = {
 color = rgb { 230 230 230 }
 color_ui = rgb { 253 253 253 }
