@@ -1,6 +1,6 @@
 focus_tree = {
 	id=portugal_ww1_portugal_focus
-	default=yes
+	default=no
 	reset_on_civilwar=no
 
 	country = {
@@ -363,6 +363,7 @@ focus_tree = {
 			add_political_power=-150
 			set_global_flag=kis_portugal_revolution_avoided
 		}
+		complete_tooltp = ww1_portugal_avoid
 		cost = 10
 		x = 3
 		y = 1
@@ -379,6 +380,32 @@ focus_tree = {
 		cost = 10
 		x = 5
 		y = 1
+		ai_will_do = { factor = 100 }
+	}
+	focus = {
+		id = ww1_portugal_communism
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = {focus = ww1_portugal_political_embrace_revolution}
+		mutually_exclusive = {focus=ww1_portugal_democracy}
+		completion_reward = {
+			add_political_power=50
+		}
+		cost = 10
+		x = 6
+		y = 2
+		ai_will_do = { factor = 100 }
+	}
+	focus = {
+		id = ww1_portugal_democracy
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = {focus = ww1_portugal_political_embrace_revolution}
+		mutually_exclusive = {focus=ww1_portugal_communism}
+		completion_reward = {
+			add_political_power=50
+		}
+		cost = 10
+		x = 4
+		y = 2
 		ai_will_do = { factor = 100 }
 	}
 
@@ -1865,7 +1892,7 @@ focus_tree = {
 
 	focus = {
 		id = ww1_portugal_newnavalcanons_1
-		prerequisite = { focus=naval_effort }
+		prerequisite = { focus=ww1_portugal_naval_effort }
 		icon = GFX_hoi4tgw_navalcanons
 		completion_reward = { navy_experience=15 add_tech_bonus={ name=newnavalcanons_1_bonus bonus=0.15 uses=1 category=naval_doctrine } }
 		cost = 10

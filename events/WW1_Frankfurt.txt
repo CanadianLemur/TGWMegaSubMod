@@ -622,6 +622,21 @@ country_event = {
 							}
 							add_state_core = 754
 						}
+					EGY = {
+						if = {
+							limit = { NOT = { owns_state = 551 } }
+							transfer_state = 551					# Sudan (Added by Canadian Lemur)
+						}
+					EGY = {
+						if = {
+							limit = { NOT = { owns_state = 549 } }
+							transfer_state = 549					# Khartoum (Added by Canadian Lemur)
+						}
+					EGY = {
+						if = {
+							limit = { NOT = { owns_state = 767 } }
+							transfer_state = 767					# North Darfur (Added by Canadian Lemur)
+						}
 					}
 					else = { TUR = { transfer_state = 754 } }		# Kufra (south-eastern Tripolitanian desert)
 				}
