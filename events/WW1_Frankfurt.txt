@@ -815,10 +815,11 @@ country_event = {
 					transfer_state = 442				# Peshawar
 					add_state_core = 445
 					add_state_core = 442
-				}
-				if = {{limit = NOT = {PER = {is_in_faction_with = GER}}}
-				transfer_state = 444 					#Baluchistan
-				add_state_core = 444
+					if = {
+						limit = { NOT = {PER = {is_in_faction_with = GER}}}
+						transfer_state = 444 					#Baluchistan
+						add_state_core = 444
+					}
 				}
 			}
 			
@@ -1209,16 +1210,15 @@ country_event = {
 			if = {
 				limit = {					
 					POR = {
-							has_war_with = ENG
-							BEL = { is_subject_of = GER }
+						has_war_with = ENG
 						is_in_faction_with = GER
 					}
-						}
-			POR = {
-			transfer_state = 770
-			transfer_state = 771
-			transfer_state = 545
-			}
+				}
+				POR = {
+					transfer_state = 770
+					transfer_state = 771
+					transfer_state = 545
+				}
 			}
 			#Sweden is in Central Powers
 			if = {
@@ -1231,6 +1231,7 @@ country_event = {
 
 				SWE = {
 					transfer_state = 308		# French Caribbean
+					transfer_state = 247		# Ghana (Added by Ecrfour)
 				}
 			}
 
@@ -1245,10 +1246,7 @@ country_event = {
 				SWE = {
 					#Puppet Bornholm, but Bornholm is not a state or even country
 				}
-
-				ICE = {
-					end_puppet = DEN #Liberate ICELAND
-				}
+				#Removed liberate Iceland
 			}
 			
 			#The United States is in Central Powers (by Khanor)

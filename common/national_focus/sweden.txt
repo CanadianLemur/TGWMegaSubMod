@@ -347,7 +347,7 @@ focus_tree = {
 		y = 1
 		ai_will_do = { factor = 0 }
 	}
-	
+	#--------------------Scandinavian Tree -------------------- (Added by Ecrfour)
 	focus = {
 		id = SWE_ww1_interwar_Victory
 		icon = GFX_focus_generic_treaty
@@ -444,7 +444,7 @@ focus_tree = {
 		id = SWE_ww1_interwar_mutual_defense
 		icon = GFX_goal_molotov_ribbentrop_pact
 
-		prerequisite = { focus = SWE_ww1_interwar_nordic_dominance }
+		prerequisite = { focus = SWE_ww1_interwar_nordic_dominance focus = SWE_ww1_interwar_regional_neutrality }
 		relative_position_id = SWE_ww1_interwar_nordic_dominance
 
 		available = {
@@ -472,7 +472,7 @@ focus_tree = {
 		}
 
 		cost = 3
-		x = 0
+		x = -1
 		y = 1
 		ai_will_do = { factor = 0 }
 		mutually_exclusive = { focus = SWE_ww1_interwar_regional_neutrality }
@@ -482,8 +482,8 @@ focus_tree = {
 		id = SWE_ww1_interwar_scandinavian_development
 		icon = GFX_goal_molotov_ribbentrop_pact
 
-		prerequisite = { focus = SWE_ww1_interwar_mutual_defense }
-		relative_position_id = SWE_ww1_interwar_mutual_defense
+		prerequisite = { focus = SWE_ww1_interwar_nordic_dominance }
+		relative_position_id = SWE_ww1_interwar_nordic_dominance
 
 		available = {
 	 		is_puppet = no
@@ -556,7 +556,7 @@ focus_tree = {
 		}
 
 		cost = 3
-		x = 0
+		x = 1
 		y = 1
 		ai_will_do = { factor = 0 }
 	}
@@ -566,6 +566,7 @@ focus_tree = {
 		icon = GFX_goal_molotov_ribbentrop_pact
 
 		prerequisite = { focus = SWE_ww1_interwar_scandinavian_development }
+		prerequisite = { focus = SWE_ww1_interwar_mutual_defense }
 		relative_position_id = SWE_ww1_interwar_scandinavian_development
 
 		available = {
@@ -589,7 +590,7 @@ focus_tree = {
 		}
 
 		cost = 1
-		x = 0
+		x = -1
 		y = 1
 		ai_will_do = { factor = 0 }
 	}
@@ -605,6 +606,30 @@ focus_tree = {
 		available = {
 	 		is_puppet = no
 			has_war = no
+			OR = {
+				NOR = {
+					is_puppet_of = SWE
+				}
+				110 = {
+					is_controlled_by = SWE
+				}
+			}
+			OR = {
+				DEN = {
+					is_puppet_of = SWE
+				}
+				37 = {
+					is_controlled_by = SWE
+				}
+			}
+			OR = {
+				FIN = {
+					is_puppet_of = SWE
+				}
+				111 = {
+					is_controlled_by = SWE
+				}
+			}
 		}
 
 		completion_reward = {
@@ -677,6 +702,8 @@ focus_tree = {
 		y = 1
 		ai_will_do = { factor = 0 }
 	}
+	
+	#------------------Finnish Tree-------------------- (Added by Ecrfour)
 	
 	focus = {
 		id = SWE_ww1_finnish_affairs
@@ -946,9 +973,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 2
 		}
-
 		available = {
-			country_exists = RUS
+			NOT = { country_exists = RUS }
 			has_global_flag = kis_whitesvsreds
 		}
 
@@ -959,11 +985,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			custom_effect_tooltip = "Unlocks decisions to integrate Ingria"
-			send_equipment = {
-				target = RUS
-				type = infantry_equipment
-				amount = 10000
-			}
 		}
 	}
 	
