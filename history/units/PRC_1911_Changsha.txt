@@ -32,98 +32,62 @@ division_template = {
 ###################################################################
 
 units = {
-	division= { 
-			name = "1. Hubei Revolutionary Army"
-			location=4619 # Wuhan
-			division_template="Infantry Division"
-			start_experience_factor=0
-			}
-	
-	
-	division= { 
-			name = "2. Hubei Revolutionary Army"
-			location = 4631 # Xianning
-			division_template="Infantry Division"
-			start_experience_factor=0
-			}
-			
-	division= { 
-			name = "3. Hubei Revolutionary Army"
-			location = 4631 # Xianning
+		division= { 
+			name = "1. Hunan Revolutionary Army"
+			location=7101 # Changde
 			division_template="Infantry Division"
 			start_experience_factor=0
 			}
 			
 		division= { 
-			name = "4. Hubei Revolutionary Army"
-			location=4619 # Wuhan
+			name = "2. Hunan Revolutionary Army"
+			location=7101 # Changde
 			division_template="Infantry Division"
 			start_experience_factor=0
 			}
 			
 		division= { 
-			name = "5. Hubei Revolutionary Army"
-			location=12467
-			division_template="Infantry Division"
-			start_experience_factor=0
-			}
-	
-	division= { 
-			name = "Hubei Militia"
-			location = 4631 # Jiayu
-			division_template="Infantry Brigade"
-			start_experience_factor=0
-			}
-	
-	
-	division= { 
-			name = "Wuchang Militia"
-			location=4619 # Wuhan
-			division_template="Infantry Brigade"
-			start_experience_factor=0
-			}
-			
-		division= { 
-			name = "1. Guangxi Revolutionary Army"
-			location=10404
+			name = "3. Hunan Revolutionary Army"
+			location=7097 # Changsha
 			division_template="Infantry Division"
 			start_experience_factor=0
 			}
 			
 		division= { 
-			name = "2. Guangxi Revolutionary Army"
-			location=10404
+			name = "4. Hunan Revolutionary Army"
+			location=7097 # Changsha
 			division_template="Infantry Division"
 			start_experience_factor=0
 			}
 			
 		division= { 
-			name = "3. Guangxi Revolutionary Army"
-			location=4628
+			name = "5. Hunan Revolutionary Army"
+			location=13143
 			division_template="Infantry Division"
 			start_experience_factor=0
 			}
 			
 		division= { 
-			name = "4. Guangxi Revolutionary Army"
-			location=10121
+			name = "6. Hunan Revolutionary Army"
+			location=12483
 			division_template="Infantry Division"
 			start_experience_factor=0
 			}
 			
 		division= { 
-			name = "1. Nanning Revolutionary Army"
-			location=7137
+			name = "7. Hunan Revolutionary Army"
+			location=9999
 			division_template="Infantry Division"
 			start_experience_factor=0
 			}
 			
 		division= { 
-			name = "2. Nanning Revolutionary Army"
-			location=7137
+			name = "8. Hunan Revolutionary Army"
+			location=4480
 			division_template="Infantry Division"
 			start_experience_factor=0
 			}
+			
 	
 	}
 air_wings = { 

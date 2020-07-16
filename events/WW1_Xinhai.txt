@@ -104,7 +104,6 @@ country_event = {
 					transfer_state = 599
 					transfer_state = 594
 					transfer_state = 592
-					transfer_state = 602
 					transfer_state = 620
 					transfer_state = 606
 					transfer_state = 749
@@ -115,7 +114,9 @@ country_event = {
 
 				set_stability = 0.2
 				add_manpower = -2200000
-
+				
+				load_oob = "PRC_1911_Wuchang"
+				
 				create_field_marshal = {
 					name = "Huang Xing"
 					portrait_path = "gfx/fieldmarshal/CHI_Huang_Xing.dds"
@@ -246,14 +247,15 @@ country_event = {
 	desc = MSMWuchang.3.d
 	id = MSMWuchang.3
 	picture = MSMWuchang_3
-	is_triggered_only = no
+	is_triggered_only = yes
+	fire_only_once = yes
 	mean_time_to_happen = {
 		days = 2
 	}
 	trigger = {
-		original_tag = QIN
-		has_government = democratic# date > 1911.10.11
-		date > 1911.9.27
+		tag = CHI
+		date > 1911.10.20
+		has_global_flag = xinhai_revolution
 	}
 	option = {
 		name = MSMWuchang.3.a
@@ -263,22 +265,9 @@ country_event = {
 		add_manpower = 800000
 		army_experience = 75
 		transfer_state = 602
-		transfer_state = 612
-		transfer_state = 714
-		transfer_state = 717
-		transfer_state = 616
-		transfer_state = 716
-		transfer_state = 604
-		load_oob = "PRC_1911_uprising2"
-		set_global_flag = second_uprising
-		random_country = {
-			limit = {
-				original_tag = QIN
-				has_government = neutrality
-			}
-			country_event = MSMWuchang.20
-			set_global_flag = second_uprising
-		}
+		
+		load_oob = "PRC_1911_Changsha"
+		set_global_flag = second_uprising	
 	}
 }
 
@@ -287,7 +276,8 @@ country_event = {
 	desc = MSMWuchang.4.d
 	id = MSMWuchang.4
 	picture = MSMWuchang_4
-	is_triggered_only = no
+	is_triggered_only = yes
+	fire_only_once = yes
 	mean_time_to_happen = {
 		days = 2
 	}
@@ -304,3 +294,35 @@ country_event = {
 	}
 }
 
+country_event = {
+	title = MSMWuchang.5.t
+	desc = MSMWuchang.5.d
+	id = MSMWuchang.5
+	picture = MSMWuchang_5
+	is_triggered_only = yes
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 2
+	}
+	trigger = {
+		tag = CHI
+		date > 1911.10.20
+		has_global_flag = second_uprising
+	}
+	option = {
+		name = MSMWuchang.5.a
+		ai_chance = {
+			factor = 100
+		}
+		CHI = {
+			transfer_state = 622
+			
+			hidden_effect = {
+				add_manpower = 400000
+				army_experience = 75
+				load_oob = "PRC_1911_Shaanxi"
+			}
+			
+		}
+	}
+}
