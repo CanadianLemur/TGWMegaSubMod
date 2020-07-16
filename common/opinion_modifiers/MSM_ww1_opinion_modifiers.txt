@@ -1,0 +1,8 @@
+opinion_modifiers = {
+### Nordic Stuff ###
+
+	nordic_leadership.1 = {
+		value = 100
+	}
+	
+}

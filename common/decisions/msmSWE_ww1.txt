@@ -1,0 +1,45 @@
+	
+ingria_integration = {
+	integrate_ingria = {
+		icon = generic_form_nation
+		cost = 25
+	
+		fire_only_once = yes
+		allowed = {
+			original_tag = SWE
+		}
+		available = {
+			IF = {
+				limit = {country_exists = FIN }
+				OR = {
+					FROM = {is_controlled_by = SWE}
+					FROM = {is_controlled_by = FIN}
+				}
+			}
+			IF = {
+				limit = {NOT = { country_exists = FIN } }
+				FROM = {is_controlled_by = SWE}
+			}
+		}
+		visible = {
+			original_tag = SWE
+			OR = {
+				FROM = {is_controlled_by = SWE}
+				FROM = {is_controlled_by = FIN}
+			}
+		}
+		state_target = yes
+		targets = { 208 195 }
+		complete_effect = {
+			IF = {
+				limit = { FROM = {is_controlled_by = FIN} }
+				add_core_of = FIN
+				add_core_of = SWE
+			}
+			IF = {
+				limit = { FROM = {is_controlled_by = SWE} }
+				add_core_of = SWE
+			}
+		}
+	}
+}
