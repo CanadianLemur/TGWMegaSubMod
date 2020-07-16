@@ -1,10 +1,10 @@
-﻿add_namespace = ww1_xinhai
+﻿add_namespace = MSMWuchang
 
 country_event = {
-	title = ww1_xinhai.1.t
-	desc = ww1_xinhai.1.d
-	id = ww1_xinhai.1
-	picture = ww1_xinhai_1
+	title = MSMWuchang.1.t
+	desc = MSMWuchang.1.d
+	id = MSMWuchang.1
+	picture = MSMWuchang_1
 	is_triggered_only = no
 	mean_time_to_happen = {
 		days = 2
@@ -19,7 +19,7 @@ country_event = {
 	}
 
 	option = {
-		name = ww1_xinhai.1.a
+		name = MSMWuchang.1.a
 		ai_chance = {
 			factor = 100
 		}
@@ -27,7 +27,7 @@ country_event = {
 		custom_effect_tooltip = rebels_support
 	}
 	option = {
-		name = ww1_xinhai.1.b
+		name = MSMWuchang.1.b
 		ai_chance = {
 			factor = 0
 		}
@@ -37,10 +37,10 @@ country_event = {
 }
 
 country_event = {
-	title = ww1_xinhai.2.t
-	desc = ww1_xinhai.2.d
-	id = ww1_xinhai.2
-	picture = ww1_xinhai_2
+	title = MSMWuchang.2.t
+	desc = MSMWuchang.2.d
+	id = MSMWuchang.2
+	picture = MSMWuchang_2
 	is_triggered_only = no
 	mean_time_to_happen = {
 		days = 0
@@ -55,7 +55,7 @@ country_event = {
 	}
 	# Support Qing
 	option = {
-		name = ww1_xinhai.2.a
+		name = MSMWuchang.2.a
 		trigger = {
 			is_ai = no
 		}
@@ -85,7 +85,7 @@ country_event = {
 	}
 	# Become China
 	option = {
-		name = ww1_xinhai.2.b
+		name = MSMWuchang.2.b
 		hidden_effect = {
 
 			release = MON # Release Mongolia
@@ -198,7 +198,7 @@ country_event = {
 			
 			
 			set_global_flag = xinhai_revolution
-			country_event = ww1_xinhai.10
+			country_event = MSMWuchang.10
 		}
 		custom_effect_tooltip = roc_chosen
 		
@@ -210,20 +210,12 @@ country_event = {
 					target = QIN
 					type = civil_war
 				}
-				load_oob = "PRC_1911_uprising2"
-				load_oob = "PRC_1911_uprising3"
-				load_oob = "PRC_1911_uprising4"
-				load_oob = "PRC_1911_uprising5"
-				load_oob = "PRC_1911_Wuchang"
-				load_oob = "PRC_1911_uprising2"
-				load_oob = "PRC_1911_uprising3"
-				load_oob = "PRC_1911_uprising4"
-				
+			
 				create_country_leader = {
 					name = "Sun Yat-sen"
 					desc = "POLITICS_SUN_YAT_SEN_DESC"
 					picture = "Sun_Yat_sen.dds"
-					expire = "1925.1.1"
+					expire = "1935.1.1"
 					ideology = neutrality
 					traits = { }
 				}
@@ -250,10 +242,10 @@ country_event = {
 	
 }
 country_event = {
-	title = ww1_xinhai.3.t
-	desc = ww1_xinhai.3.d
-	id = ww1_xinhai.3
-	picture = ww1_xinhai_3
+	title = MSMWuchang.3.t
+	desc = MSMWuchang.3.d
+	id = MSMWuchang.3
+	picture = MSMWuchang_3
 	is_triggered_only = no
 	mean_time_to_happen = {
 		days = 2
@@ -264,7 +256,7 @@ country_event = {
 		date > 1911.9.27
 	}
 	option = {
-		name = ww1_xinhai.3.a
+		name = MSMWuchang.3.a
 		ai_chance = {
 			factor = 100
 		}
@@ -278,38 +270,37 @@ country_event = {
 		transfer_state = 716
 		transfer_state = 604
 		load_oob = "PRC_1911_uprising2"
-		country_event = ww1_xinhai.11
 		set_global_flag = second_uprising
 		random_country = {
 			limit = {
 				original_tag = QIN
 				has_government = neutrality
 			}
-			country_event = ww1_xinhai.20
+			country_event = MSMWuchang.20
 			set_global_flag = second_uprising
 		}
 	}
 }
 
 country_event = {
-	title = ww1_xinhai.4.t
-	desc = ww1_xinhai.4.d
-	id = ww1_xinhai.4
-	picture = ww1_xinhai_4
+	title = MSMWuchang.4.t
+	desc = MSMWuchang.4.d
+	id = MSMWuchang.4
+	picture = MSMWuchang_4
 	is_triggered_only = no
 	mean_time_to_happen = {
 		days = 2
 	}
 	trigger = {
 		tag = QIN
-		date > 1910.2.1
+		date > 1911.4.20
 	}
 	option = {
-		name = ww1_xinhai.4.a
+		name = MSMWuchang.4.a
 		ai_chance = {
 			factor = 100
 		}
-		add_stability = -0.5
+		add_stability = -0.05
 	}
 }
 

@@ -1,4 +1,4 @@
-﻿l_spanish:
+﻿l_english:
  ww1_albania.1.a:0 "Crush the rebels!"
  ww1_albania.1.d:0 "In response to new taxes levied by the Ottoman government, the Albanians have risen up against our Sultan. Despite obvious help from Serbia, it's unlikely this will succeed."
  ww1_albania.1.t:0 "Albanian Uprising!"
@@ -997,20 +997,6 @@
  ww1_whiterussia.9.a:0 "Hell…"
  ww1_whiterussia.9.d:0 "Despite our report, the French decided to leave Janin as the leader of the Czechoslovak Legion. We'll be facing troubles very soon."
  ww1_whiterussia.9.t:0 "Janin remains in Russia"
- 
- ww1_xinhai.1.t:0 "Revolutionaries Name List"
- ww1_xinhai.1.d:0 "On 9th October 1911 a leader of Gongjinhui - Sun Wu - had an accidental explosion in Wuchang when he was making explosives. Governor-General of Hubei-Hunan Rui Cheng sent some soldiers to search the city and tried to find the cause of the explosion. ,At 21:00 they arrested five revolutionaries and killed three of them the next morning. The Government also got a name list of all the revolutionaries and Rui Cheng ordered the arrest of all of them and declared martial law in Wuchang."
- ww1_xinhai.1.a:0 "Arrest them all!"
- ww1_xinhai.1.b:0 "Execute them immediately!"
- qing_support:0 "This will set you down a Qing restoration path"
- rebels_support:0 "This will set you down the revolutionary path"
- ww1_xinhai.2.t:0 "Xinhai Revolution"
- ww1_xinhai.2.d:0 "The Xinhai Revolution or Hsinhai Revolution was a revolution that overthrew Chinas last imperial dynasty, the Qing, and established the Republic of China. The revolution was named Xinhai because it occurred in 1911, the year of the Xinhai stem-branch in the sexagenary cycle of the Chinese calendar. The revolution consisted of many revolts and uprisings. The turning point is the Wuchang Uprising on October 10 1911, that was a result of the mishandling of the Railway Protection Movement. The revolution ended with the abdication of the Last Emperor Puyi on February 12 1912, that marked the end of over 2000 years of Imperial China and the beginning of China's Republican era."
- ww1_xinhai.2.a:0 "Support the Emperor!"
- ww1_xinhai.2.b:0 "Side with the Rebels!"
- ww1_xinhat.4.t:0 "The 72 Martyrs"
- ww1_xinhai.4.d:0 "On 27 April 1911, an uprising occurred in Guangzhou, known as the Second Guangzhou Uprising. It ultimately failed and resulted in the deaths of 86 revolutionaries (of which only 72 could be identified). These 72 people were remembered as the 72 martyrs."
- ww1_xinhai.4.a:0 "Surely this is the end of the revolutionaries"
  
  ww1_usa.29.t:0 "Mexico joins the Central Powers"
  ww1_usa.29.d:0 "The Mexican government has announced today that they are joining the Central Powers in their war effort. Congress has overwhelmingly voiced their support for an immediate declaration of war on the state. After all, only the United States is allowed to join alliances!"
