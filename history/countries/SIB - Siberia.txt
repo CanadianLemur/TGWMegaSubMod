@@ -13,6 +13,11 @@ set_convoys = 20
 #					POLITICS & ARMY
 #-------------------------------------------------------
 1910.1.1 = {
+	create_country_leader={ name = "Anatoly Pepelyayev"  picture="gfx/leaders/Analolij_Piepielajew.dds" expire="1950.4.3" ideology=despotism  traits={army_chief_reform_1  } }
+	create_country_leader={ name = "Anatoly Pepelyayev"  picture="gfx/leaders/Analolij_Piepielajew.dds" expire="1950.4.3" ideology=autocracy  traits={army_chief_reform_1  } }
+	create_country_leader={ name = "Anatoly Pepelyayev"  picture="gfx/leaders/Analolij_Piepielajew.dds" expire="1950.4.3" ideology=conservatism  traits={ army_chief_reform_1 } }
+	create_country_leader={ name = "Anatoly Pepelyayev"  picture="gfx/leaders/Analolij_Piepielajew.dds" expire="1950.4.3" ideology=fascism_ideology  traits={ army_chief_reform_1 } }
+
 	set_technology = {
 
 		# Infantry

@@ -1314,6 +1314,7 @@ focus_tree = {
 				transfer_state = 561 #Amur
 				transfer_state = 564 #Ulan Ude
 				transfer_state = 566 #Irkutsk
+				transfer_state = 567 #Bratsk
 			}
 
             JAP = {
