@@ -816,6 +816,10 @@ country_event = {
 					add_state_core = 445
 					add_state_core = 442
 				}
+				if = {{limit = NOT = {PER = {is_in_faction_with = GER}}}
+				transfer_state = 444 					#Baluchistan
+				add_state_core = 444
+				}
 			}
 			
 			#Ethiopia is in Central Powers (by Khanor)
