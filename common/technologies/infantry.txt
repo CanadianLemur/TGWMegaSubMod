@@ -2301,9 +2301,15 @@ technologies = {
 		enable_equipments = {
 			motorized_equipment_1
 		}
-
+				enable_subunits = {
+			mot_recon
+		}
 		path = {
 			leads_to_tech = mechanised_infantry
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = armored_car1
 			research_cost_coeff = 1
 		}
 
@@ -2353,7 +2359,6 @@ technologies = {
 			mot_rockets
 		}
 	}
-	
 	mechanised_infantry = {
 
 		enable_equipments = {
