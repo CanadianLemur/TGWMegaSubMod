@@ -12,7 +12,7 @@ country_event = {
 
 	trigger = {
 		tag = QIN
-		date > 1911.1.1
+		date > 1911.4.1
 		not = {
 			has_global_flag = revolutionaries_name_list
 		}
@@ -47,7 +47,7 @@ country_event = {
 	}
 	trigger = {
 		tag = QIN
-		date > 1911.5.1
+		date > 1911.7.10
 		has_global_flag = revolutionaries_name_list
 		not = {
 			has_global_flag = xinhai_revolution
@@ -218,6 +218,15 @@ country_event = {
 				load_oob = "PRC_1911_uprising2"
 				load_oob = "PRC_1911_uprising3"
 				load_oob = "PRC_1911_uprising4"
+				
+				create_country_leader = {
+					name = "Sun Yat-sen"
+					desc = "POLITICS_SUN_YAT_SEN_DESC"
+					picture = "Sun_Yat_sen.dds"
+					expire = "1925.1.1"
+					ideology = neutrality
+					traits = { }
+				}
 			}
 		
 		IF = {
@@ -253,9 +262,6 @@ country_event = {
 		original_tag = QIN
 		has_government = democratic# date > 1911.10.11
 		date > 1911.9.27
-		not = {
-			has_global_flag = second_uprising
-		}
 	}
 	option = {
 		name = ww1_xinhai.3.a
@@ -284,438 +290,26 @@ country_event = {
 		}
 	}
 }
+
 country_event = {
-	title = ww1_xinhai.4.t# Return of Yuan Shikai
-	desc = ww1_xinhai.4.d# After the Wuchang uprising our soldiers were routed and the revolutionaries are getting stronger.It is time to recall Yuan Shikai to deal with these rebels or we will lose the loyalty of our armies.
+	title = ww1_xinhai.4.t
+	desc = ww1_xinhai.4.d
 	id = ww1_xinhai.4
 	picture = ww1_xinhai_4
-	is_triggered_only = no
-	mean_time_to_happen = {
-		days = 70
-	}
-	trigger = {
-		original_tag = QIN
-		has_government = neutrality# date > 1911.10.14
-		date > 1911.10.1
-		not = {
-			has_global_flag = yuan_shikai
-		}
-		not = {
-			controls_state = 602
-		}
-	}
-	option = {
-		name = ww1_xinhai.4.a
-		ai_chance = {
-			factor = 90
-		}
-		transfer_state = 715
-		transfer_state = 614
-		transfer_state = 598
-		add_manpower = 1200000
-		create_field_marshal = {
-			name = "Yuan Shikai"
-			portrait_path = "gfx/fieldmarshal/CHI_Yuan_Shikai.dds"
-			traits = {
-				defensive_doctrine offensive_doctrine old_guard
-			}
-			skill = 4
-		}
-		add_popularity = {
-			ideology = neutrality
-			popularity = -0.01
-		}
-		add_stability = -0.05
-		set_global_flag = yuan_shikai
-	}
-	option = {
-		name = ww1_xinhai.4.b
-		ai_chance = {
-			factor = 10
-		}
-		add_manpower = -100000
-	}
-}
-country_event = {
-	title = ww1_xinhai.5.t# Qing Empire provinces rise up!
-	desc = ww1_xinhai.5.d# Shaanxi - Shanxi - Yunnan uprising!
-	id = ww1_xinhai.5
-	picture = ww1_xinhai_5
-	is_triggered_only = no
-	mean_time_to_happen = {
-		days = 9
-	}
-	trigger = {
-		original_tag = QIN
-		has_government = democratic# date > 1911.10.22
-		date > 1911.11.28
-		not = {
-			has_global_flag = third_uprising
-		}
-	}
-	option = {
-		name = ww1_xinhai.5.a
-		ai_chance = {
-			factor = 100
-		}
-		add_manpower = 600000
-		transfer_state = 622
-		transfer_state = 615
-		transfer_state = 287
-
-		load_oob = "PRC_1911_uprising3"
-		country_event = ww1_xinhai.12
-		set_global_flag = third_uprising
-		random_country = {
-			limit = {
-				original_tag = QIN
-				has_government = neutrality
-			}
-
-			set_global_flag = third_uprising
-		}
-	}
-}
-country_event = {
-	title = ww1_xinhai.6.t# Qing Empire provinces rise up!
-	desc = ww1_xinhai.6.d# Nanchang - Shanghai - Zhejiang - Jiangsu uprising!
-	id = ww1_xinhai.6
-	picture = ww1_xinhai_6
-	is_triggered_only = no
-	mean_time_to_happen = {
-		days = 25
-	}
-	trigger = {
-		original_tag = QIN
-		has_government = democratic# date > 1911.11.2
-		date > 1911.12.9
-		not = {
-			has_global_flag = fourth_uprising
-		}
-	}
-	option = {
-		name = ww1_xinhai.6.a
-		ai_chance = {
-			factor = 100
-		}
-		transfer_state = 600
-		transfer_state = 613
-		transfer_state = 596
-		transfer_state = 598
-		load_oob = "PRC_1911_uprising4"
-		country_event = ww1_xinhai.13
-		set_global_flag = fourth_uprising
-		random_country = {
-			limit = {
-				original_tag = QIN
-				has_government = neutrality
-			}
-			set_global_flag = fourth_uprising
-		}
-	}
-}
-country_event = {
-	title = ww1_xinhai.7.t# Yuan Shikai as prime minister
-	desc = ww1_xinhai.7.d# The ambition of Yuan Shikai was getting stronger he threatened Manchu nobility that he wanted to be prime minister and forced Empress Dowager Longyu to appoint him as prime minister so he could negotiate with revolutionaries secretly.
-	id = ww1_xinhai.7
-	picture = ww1_xinhai_7
-	is_triggered_only = no
-	mean_time_to_happen = {
-		days = 10
-	}
-	trigger = {
-		original_tag = QIN
-		has_government = neutrality# date > 1911.11.8
-		date > 1911.11.22
-		has_global_flag = yuan_shikai
-		not = {
-			has_global_flag = prime_minister_yuan
-		}
-	}
-	option = {
-		name = ww1_xinhai.7.a
-		ai_chance = {
-			factor = 100
-		}
-		set_global_flag = prime_minister_yuan
-	}
-}
-country_event = {
-	title = ww1_xinhai.8.t
-	desc = ww1_xinhai.8.d
-	id = ww1_xinhai.8
-	picture = ww1_xinhai_8
 	is_triggered_only = no
 	mean_time_to_happen = {
 		days = 2
 	}
 	trigger = {
-		original_tag = QIN
-		has_government = democratic# date > 1911.11.4
-		date > 1911.12.28
-		not = {
-			has_global_flag = fifth_uprising
-		}
+		tag = QIN
+		date > 1910.2.1
 	}
 	option = {
-		name = ww1_xinhai.8.a
+		name = ww1_xinhai.4.a
 		ai_chance = {
 			factor = 100
 		}
-		transfer_state = 605
-		transfer_state = 603
-		transfer_state = 599
-		transfer_state = 593
-		transfer_state = 595
-		transfer_state = 325
-		transfer_state = 611
-		load_oob = "PRC_1911_uprising5"
-		country_event = ww1_xinhai.14
-		set_global_flag = fifth_uprising
-		random_country = {
-			limit = {
-				original_tag = QIN
-				has_government = neutrality
-			}
-			country_event = ww1_xinhai.23
-			set_global_flag = fifth_uprising
-		}
-	}
-}
-country_event = {
-	title = ww1_xinhai.9.t
-	desc = ww1_xinhai.9.d
-	id = ww1_xinhai.9
-	picture = ww1_xinhai_9
-	is_triggered_only = yes
-	option = {
-		name = ww1_xinhai.9.a
-		ai_chance = {
-			factor = 80
-		}
-
-		random_country = {
-			limit = {
-				original_tag = QIN
-				has_government = democratic
-			}
-			country_event = ww1_xinhai.17
-		}
-	}
-	option = {
-		name = ww1_xinhai.9.b
-		ai_chance = {
-			factor = 20
-		}
-		add_popularity = {
-			ideology = neutrality
-			popularity = 5
-		}
-		add_stability = 0.01
-		random_country = {
-			limit = {
-				original_tag = QIN
-				has_government = democratic
-			}
-			country_event = ww1_xinhai.18
-		}
-	}
-}
-country_event = {
-	title = ww1_xinhai.10.t
-	desc = ww1_xinhai.10.d
-	id = ww1_xinhai.10
-	picture = ww1_xinhai_10
-
-
-	is_triggered_only = yes
-	trigger = {
-		original_tag = QIN
-		has_government = democratic
-	}
-	option = {
-		name = ww1_xinhai.10.a
-		ai_chance = {
-			factor = 100
-		}
-
-		add_manpower = 200000
-		transfer_state = 610
-		transfer_state = 609
-		transfer_state = 592
-		transfer_state = 595
-		transfer_state = 621
-	}
-}
-country_event = {
-	title = ww1_xinhai.11.t
-	desc = ww1_xinhai.11.d
-	id = ww1_xinhai.11
-	picture = ww1_xinhai_11
-	is_triggered_only = yes
-	option = {
-		name = ww1_xinhai.11.a
-		ai_chance = {
-			factor = 100
-		}
-		add_manpower = 50
-		add_political_power = 100
-		add_stability = 0.01
-	}
-}
-country_event = {
-	title = ww1_xinhai.12.t
-	desc = ww1_xinhai.12.d
-	id = ww1_xinhai.12
-	picture = ww1_xinhai_12
-	is_triggered_only = yes
-	option = {
-		name = ww1_xinhai.12.a
-		ai_chance = {
-			factor = 100
-		}
-		add_manpower = 50
-		add_political_power = 100
-		add_stability = 0.01
-	}
-}
-country_event = {
-	title = ww1_xinhai.13.t
-	desc = ww1_xinhai.13.d
-	id = ww1_xinhai.13
-	picture = ww1_xinhai_13
-	is_triggered_only = yes
-	option = {
-		name = ww1_xinhai.13.a
-		ai_chance = {
-			factor = 100
-		}
-		add_manpower = 50
-		add_political_power = 100
-		add_stability = 0.01
-	}
-}
-country_event = {
-	title = ww1_xinhai.14.t
-	desc = ww1_xinhai.14.d
-	id = ww1_xinhai.14
-	picture = ww1_xinhai_14
-	is_triggered_only = yes
-	option = {
-		name = ww1_xinhai.14.a
-		ai_chance = {
-			factor = 100
-		}
-		transfer_state = 614
-		transfer_state = 597
-
-		add_manpower = 50000
-		add_political_power = 100
-		add_stability = 0.01
+		add_stability = -0.5
 	}
 }
 
-country_event = {
-	title = ww1_xinhai.16.t
-	desc = ww1_xinhai.16.d
-	id = ww1_xinhai.16
-	picture = ww1_xinhai_16
-	is_triggered_only = yes
-	option = {
-		name = ww1_xinhai.16.a
-		ai_chance = {
-			factor = 80
-		}
-
-		random_country = {
-			limit = {
-				original_tag = QIN
-				has_government = neutrality
-			}
-			country_event = ww1_xinhai.9
-		}
-	}
-	option = {
-		name = ww1_xinhai.16.b
-		ai_chance = {
-			factor = 20
-		}
-		add_political_power = -5
-		add_stability = -0.03
-	}
-}
-country_event = {
-	title = ww1_xinhai.17.t
-	desc = ww1_xinhai.17.d
-	id = ww1_xinhai.17
-	picture = ww1_xinhai_17
-	is_triggered_only = yes
-	option = {
-		name = ww1_xinhai.17.a
-		ai_chance = {
-			factor = 100
-		}
-		set_global_flag = yuan_accepted
-	}
-}
-country_event = {
-	title = ww1_xinhai.18.t
-	desc = ww1_xinhai.18.d
-	id = ww1_xinhai.18
-	picture = ww1_xinhai_18
-	is_triggered_only = yes
-	option = {
-		name = ww1_xinhai.18.a
-		ai_chance = {
-			factor = 100
-		}
-	}
-}
-country_event = {
-	title = ww1_xinhai.19.t
-	desc = ww1_xinhai.19.d
-	id = ww1_xinhai.19
-	picture = ww1_xinhai_19
-	is_triggered_only = yes
-	option = {
-		name = ww1_xinhai.19.a
-		ai_chance = {
-			factor = 100
-		}
-		# remove_brigade = "Di 21 Huncheng Xie"#
-		# remove_unit_leader = 73015
-		# remove_unit_leader = 73036
-		# remove_unit_leader = 73046
-		# remove_unit_leader = 73072
-	}
-}
-country_event = {
-	title = ww1_xinhai.20.t
-	desc = ww1_xinhai.20.d
-	id = ww1_xinhai.20
-	picture = ww1_xinhai_20
-	is_triggered_only = yes
-	option = {
-		name = ww1_xinhai.20.a
-		ai_chance = {
-			factor = 100
-		}
-		# remove_brigade = "Di 25 Huncheng Xie"
-	}
-}
-
-
-country_event = {
-	title = ww1_xinhai.23.t
-	desc = ww1_xinhai.23.d
-	id = ww1_xinhai.23
-	picture = ww1_xinhai_23
-	is_triggered_only = yes
-	option = {
-		name = ww1_xinhai.23.a
-		ai_chance = {
-			factor = 100
-		}
-		# remove_brigade = "Guizhou Lujun"
-	}
-}
