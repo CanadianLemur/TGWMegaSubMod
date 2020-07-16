@@ -164,10 +164,7 @@ news_event = {
 			SOV = {
 				create_faction = "Comintern"
 				
-				declare_war_on = {
-		            type = annex_everything
-		            target = RUS
-		        }
+
 		        #every_state={
 				#	limit={
 				#		# SOV will get the same core as RUS
@@ -208,6 +205,10 @@ news_event = {
 				
 				load_oob = SOV_Revolt_01
 				
+				declare_war_on = {
+		            type = annex_everything
+		            target = RUS
+		        }
 				country_event = { days = 1 id = ww1_soviet.999 }
 			}
 			RUS = {
@@ -392,6 +393,13 @@ news_event = {
 	immediate = {
 		hidden_effect = {
 			set_global_flag = kis_brestlitovsk
+			every_country = {
+			    limit = {
+				    has_war_with = MON
+					is_in_faction_with = GER
+				}
+				white_peace = MON
+			}
 			UKR = {
 				add_state_core = 93						### Have to add Ukrainian cores earlier so Russia/The Soviets can lose their cores properly on said area.
 				add_state_core = 192

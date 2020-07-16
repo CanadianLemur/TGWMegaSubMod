@@ -1266,7 +1266,7 @@ focus_tree = {
 			JAP = { controls_state = 566 controls_state = 408 }
 
 		}
-
+		bypass = {SIB = {is_subject_of=JAP}}
 		completion_reward = {
 
 			# SIB = Siberia
