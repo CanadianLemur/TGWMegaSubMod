@@ -1,4 +1,5 @@
 ﻿add_namespace = ww1_xinhai
+
 country_event = {
 	title = ww1_xinhai.1.t
 	desc = ww1_xinhai.1.d
@@ -11,7 +12,7 @@ country_event = {
 
 	trigger = {
 		tag = QIN
-		date > 1911.8.24
+		date > 1911.1.1
 		not = {
 			has_global_flag = revolutionaries_name_list
 		}
@@ -23,6 +24,7 @@ country_event = {
 			factor = 100
 		}
 		set_global_flag = revolutionaries_name_list
+		custom_effect_tooltip = rebels_support
 	}
 	option = {
 		name = ww1_xinhai.1.b
@@ -30,6 +32,7 @@ country_event = {
 			factor = 0
 		}
 		set_global_flag = revolutionaries_name_list
+		custom_effect_tooltip = qing_support
 	}
 }
 
@@ -44,7 +47,7 @@ country_event = {
 	}
 	trigger = {
 		tag = QIN
-		date > 1911.9.1
+		date > 1911.5.1
 		has_global_flag = revolutionaries_name_list
 		not = {
 			has_global_flag = xinhai_revolution
@@ -58,7 +61,6 @@ country_event = {
 		}
 		hidden_effect = {
 
-			set_global_flag = kis_xinhairenews
 			set_global_flag = xinhai_revolution
 
 			release = MON # Release Mongolia
@@ -69,124 +71,7 @@ country_event = {
 				puppet = TAN
 			}
 
-			start_civil_war = {
-				ruling_party = neutrality
-				ideology = democratic
-				size = 0.5
-				capital = 620
-				states = {
-					620
-				}
-			}
-			random_country = {
-				limit = {
-					original_tag = QIN
-					has_government = democratic
-				}
-
-				set_stability = 0.9
-				load_oob = "PRC_1911_Wuchang"
-
-				add_timed_idea = {
-					idea = hoi4tgw_idea_revolution
-					days = 150
-				}
-
-				create_field_marshal = {
-					name = "Huang Xing"
-					portrait_path = "gfx/fieldmarshal/CHI_Huang_Xing.dds"
-					traits = {
-						defensive_doctrine
-					}
-					skill = 3
-				}
-				create_corps_commander = {
-					name = "Song Jiaoren"
-					portrait_path = "gfx/generals/CHI_Song_Jiaoren.dds"
-					traits = {
-						fortress_buster
-					}
-					skill = 1
-				}
-				create_corps_commander = {
-					name = "Li Yuanhong"
-					portrait_path = "gfx/generals/CHI_Li_Yuanhong.dds"
-					traits = {}
-					skill = 1
-				}
-				create_corps_commander = {
-					name = "Xu Shichang"
-					id = 15144 portrait_path = "gfx/generals/CHI_xu_shichang.dds"
-					traits = {
-						old_guard
-					}
-					skill = 1
-				}
-				create_corps_commander = {
-					name = "Wang Shizen"
-					id = 15155 portrait_path = "gfx/generals/CHI_wang_shizen.dds"
-					traits = {
-						old_guard
-					}
-					skill = 1
-				}
-				create_corps_commander = {
-					name = "Yang Zengxin"
-					id = 15171 portrait_path = "gfx/generals/CHI_yang_zengxin.dds"
-					traits = {
-						old_guard
-					}
-					skill = 1
-				}
-				create_corps_commander = {
-					name = "Yin Chang"
-					id = 15172 portrait_path = "gfx/generals/CHI_yin_chang.dds"
-					traits = {
-						old_guard
-					}
-					skill = 1
-				}
-				create_corps_commander = {
-					name = "Zhang Huaizhi"
-					id = 15175 portrait_path = "gfx/generals/CHI_zhang_huaizhi.dds"
-					traits = {
-						old_guard
-					}
-					skill = 1
-				}
-				create_corps_commander = {
-					name = "Zhang Xun"
-					id = 15179 portrait_path = "gfx/generals/CHI_zhang_xun.dds"
-					traits = {
-						old_guard
-					}
-					skill = 2
-				}
-				create_navy_leader = {
-					name = "Cheng Biguang"
-					id = 15087 portrait_path = "gfx/admiral/CHI_cheng_biguang.dds"
-					traits = {}
-					skill = 3
-				}
-				create_navy_leader = {
-					name = "Du Henchen"
-					id = 15088 portrait_path = "gfx/admiral/CHI_du_henchen.dds"
-					traits = {}
-					skill = 1
-				}
-				create_navy_leader = {
-					name = "Du Xigui"
-					id = 15089 portrait_path = "gfx/admiral/CHI_du_xigui.dds"
-					traits = {}
-					skill = 2
-				}
-
-				add_popularity = {
-					ideology = democratic
-					popularity = 1
-				}
-				country_event = ww1_xinhai.10
-			}
+			
 
 			set_stability = 0.9
 			load_oob = "QIN_Civil_War"
@@ -209,9 +94,11 @@ country_event = {
 			RUS = {
 				puppet = TAN
 			}
-
+			
 				
 				CHI = {
+					set_cosmetic_tag = CHI_REV
+					set_politics = { ruling_party = neutrality }
 					set_capital = 620
 					transfer_state = 325
 					transfer_state = 599
@@ -225,14 +112,9 @@ country_event = {
 					transfer_state = 621
 					transfer_state = 609
 					transfer_state = 610
-					
-					change_tag_from = ROOT
 
 				set_stability = 0.2
 				add_manpower = -2200000
-				
-				load_oob = "PRC_1911_uprising2"
-				load_oob = "PRC_1911_uprising3"
 
 				create_field_marshal = {
 					name = "Huang Xing"
@@ -316,11 +198,47 @@ country_event = {
 			
 			
 			set_global_flag = xinhai_revolution
-			set_global_flag = kis_xinhairenews
 			country_event = ww1_xinhai.10
 		}
 		custom_effect_tooltip = roc_chosen
+		
+		QIN = {
+				drop_cosmetic_tag = yes
+			}
+			CHI = {
+				declare_war_on = {
+					target = QIN
+					type = civil_war
+				}
+				load_oob = "PRC_1911_uprising2"
+				load_oob = "PRC_1911_uprising3"
+				load_oob = "PRC_1911_uprising4"
+				load_oob = "PRC_1911_uprising5"
+				load_oob = "PRC_1911_Wuchang"
+				load_oob = "PRC_1911_uprising2"
+				load_oob = "PRC_1911_uprising3"
+				load_oob = "PRC_1911_uprising4"
+			}
+		
+		IF = {
+			limit = {
+				has_global_flag = qing_support
+			}
+			add_war_support = -0.2
+			add_stability = -0.1
+		}
+		
+		IF = {
+			limit = {
+				has_global_flag = rebels_support
+			}
+			add_war_support = 0.2
+			set_stability = 0.85
+			add_political_power = 140
+		}
+		
 	}
+	
 }
 country_event = {
 	title = ww1_xinhai.3.t
