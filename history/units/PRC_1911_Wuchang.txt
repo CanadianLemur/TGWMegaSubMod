@@ -67,6 +67,27 @@ units = {
 			division_template="Infantry Division"
 			start_experience_factor=0
 			}
+			
+		division= { 
+			name = "6. Hubei Revolutionary Army"
+			location=5030
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "7. Hubei Revolutionary Army"
+			location=4009
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "8. Hubei Revolutionary Army"
+			location=8072
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
 	
 	division= { 
 			name = "Hubei Militia"
@@ -77,6 +98,34 @@ units = {
 	
 	
 	division= { 
+			name = "Wuchang Militia"
+			location=4619 # Wuhan
+			division_template="Infantry Brigade"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "Wuchang Militia"
+			location=4619 # Wuhan
+			division_template="Infantry Brigade"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "Wuchang Militia"
+			location=4619 # Wuhan
+			division_template="Infantry Brigade"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "Wuchang Militia"
+			location=4619 # Wuhan
+			division_template="Infantry Brigade"
+			start_experience_factor=0
+			}
+			
+		division= { 
 			name = "Wuchang Militia"
 			location=4619 # Wuhan
 			division_template="Infantry Brigade"
@@ -112,6 +161,27 @@ units = {
 			}
 			
 		division= { 
+			name = "5. Guangxi Revolutionary Army"
+			location=10404
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "6. Guangxi Revolutionary Army"
+			location=10404
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "7. Guangxi Revolutionary Army"
+			location=10404
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+			
+		division= { 
 			name = "1. Nanning Revolutionary Army"
 			location=7137
 			division_template="Infantry Division"
@@ -121,6 +191,223 @@ units = {
 		division= { 
 			name = "2. Nanning Revolutionary Army"
 			location=7137
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "3. Nanning Revolutionary Army"
+			location=7137
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "4. Nanning Revolutionary Army"
+			location=7137
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "4. Nanning Revolutionary Army"
+			location=4023
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "5. Nanning Revolutionary Army"
+			location=7044
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "1. Yunnan Revolutionary Army"
+			location=1319
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "2. Yunnan Revolutionary Army"
+			location=1319
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "3. Yunnan Revolutionary Army"
+			location=7606
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "4. Yunnan Revolutionary Army"
+			location=7965
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+		
+		division= { 
+			name = "5. Yunnan Revolutionary Army"
+			location=7965
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "6. Yunnan Revolutionary Army"
+			location=12789
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "1. Hebei Revolutionary Army"
+			location=12043
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "2. Hebei Revolutionary Army"
+			location=3830
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "3. Hebei Revolutionary Army"
+			location=6969
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "1. Suiyuan Revolutionary Army"
+			location=7048
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "2. Suiyuan Revolutionary Army"
+			location=4960
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "3. Suiyuan Revolutionary Army"
+			location=10854
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "1. Anhui Revolutionary Army"
+			location=7222
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "2. Anhui Revolutionary Army"
+			location=7222
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "3. Anhui Revolutionary Army"
+			location=7222
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "4. Anhui Revolutionary Army"
+			location=7035
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "5. Anhui Revolutionary Army"
+			location=4079
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "6. Anhui Revolutionary Army"
+			location=4158
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "7. Anhui Revolutionary Army"
+			location=1146
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "1. Huangshan Revolutionary Army"
+			location=1146
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "1. Fujian  Revolutionary Army"
+			location=4196
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "2. Fujian  Revolutionary Army"
+			location=4196
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "3. Fujian  Revolutionary Army"
+			location=4196
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "4. Fujian  Revolutionary Army"
+			location=7071
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "5. Fujian  Revolutionary Army"
+			location=7071
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "6. Fujian  Revolutionary Army"
+			location=1094
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "7. Fujian  Revolutionary Army"
+			location=10010
 			division_template="Infantry Division"
 			start_experience_factor=0
 			}

@@ -243,15 +243,13 @@ country_event = {
 	
 }
 country_event = {
-	title = MSMWuchang.3.t
+	title = MSMWuchang.3.t#Changsha Restoration
 	desc = MSMWuchang.3.d
 	id = MSMWuchang.3
 	picture = MSMWuchang_3
 	is_triggered_only = yes
 	fire_only_once = yes
-	mean_time_to_happen = {
-		days = 2
-	}
+	
 	trigger = {
 		tag = CHI
 		date > 1911.10.20
@@ -265,6 +263,7 @@ country_event = {
 		add_manpower = 800000
 		army_experience = 75
 		transfer_state = 602
+		set_state_controller = 602
 		
 		load_oob = "PRC_1911_Changsha"
 		set_global_flag = second_uprising	
@@ -272,7 +271,7 @@ country_event = {
 }
 
 country_event = {
-	title = MSMWuchang.4.t
+	title = MSMWuchang.4.t#72 Martyrs
 	desc = MSMWuchang.4.d
 	id = MSMWuchang.4
 	picture = MSMWuchang_4
@@ -295,7 +294,7 @@ country_event = {
 }
 
 country_event = {
-	title = MSMWuchang.5.t
+	title = MSMWuchang.5.t#Shaanxi Uprising
 	desc = MSMWuchang.5.d
 	id = MSMWuchang.5
 	picture = MSMWuchang_5
@@ -306,7 +305,7 @@ country_event = {
 	}
 	trigger = {
 		tag = CHI
-		date > 1911.10.20
+		date > 1911.10.25
 		has_global_flag = second_uprising
 	}
 	option = {
@@ -315,7 +314,7 @@ country_event = {
 			factor = 100
 		}
 		CHI = {
-			transfer_state = 622
+			set_state_controller = 622
 			
 			hidden_effect = {
 				add_manpower = 400000
@@ -324,5 +323,38 @@ country_event = {
 			}
 			
 		}
+	}
+}
+
+country_event = {
+	title = MSMWuchang.6.t#Yuan Shikai Surrenders
+	desc = MSMWuchang.6.d
+	id = MSMWuchang.6
+	picture = MSMWuchang_6
+	is_triggered_only = yes
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 2
+	}
+	trigger = {
+		tag = CHI
+		QIN = { surrender_progress > 0.5 }
+		has_global_flag = xinhai_revolution
+	}
+	option = {
+		name = MSMWuchang.5.a
+		ai_chance = {
+			factor = 100
+		}
+		CHI = {
+			annex_country = {
+				target = QIN
+				transfer_troops = yes
+			}
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = CHI_REP
+		}
+			
+	}
 	}
 }

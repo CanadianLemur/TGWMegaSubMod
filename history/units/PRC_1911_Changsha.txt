@@ -88,6 +88,26 @@ units = {
 			start_experience_factor=0
 			}
 			
+		division= { 
+			name = "9. Hunan Revolutionary Army"
+			location=4480
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "10. Hunan Revolutionary Army"
+			location=7101 # Changde
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
+			
+		division= { 
+			name = "11. Hunan Revolutionary Army"
+			location=7101 # Changde
+			division_template="Infantry Division"
+			start_experience_factor=0
+			}
 	
 	}
 air_wings = { 
