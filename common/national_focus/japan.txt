@@ -769,8 +769,8 @@ focus_tree = {
 
 		ai_will_do = { factor = 0 }
 		cost = 10
-		x = 9
-		y = 7
+		x = 8
+		y = 8
 	}
 	#-----------------------------------------
 	focus = {
@@ -1058,12 +1058,11 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 
 	 	available = {
-
-	 			NOT={
-					GER = {
-						has_war_with = ENG
-	 				}
-				}
+		OR = {
+		has_global_flag = kis_treaty_of_versailles
+		has_global_flag = kis_second_treaty_frankfort
+		
+		}
 		}
 
 		completion_reward = {
@@ -1081,6 +1080,37 @@ focus_tree = {
 
 		cost = 10
 		x = 13
+		y = 7
+	}
+	focus = {
+		id = JAP_ww1_Leave_Central_Power
+		prerequisite = { focus =  JAP_ww1_Join_Central_Power }
+
+		icon = GFX_goal_generic_forceful_treaty
+
+	 	available = {
+		OR = {
+		has_global_flag = kis_treaty_of_versailles
+		has_global_flag = kis_second_treaty_frankfort
+		
+		}
+		}
+
+		completion_reward = {
+
+			GER = { remove_from_faction = JAP }
+		}
+
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 0
+				NOT = { has_global_flag = kis_treaty_of_versailles }
+			}
+		}
+
+		cost = 10
+		x = 9
 		y = 7
 	}
 	#-----------------------------------------------------------------------
@@ -1113,7 +1143,7 @@ focus_tree = {
 	#-----------------------------------------
 	focus = {
 		id = JAP_ww1_Fukoku_Kyohei # Open Beta 0.5
-		prerequisite = { focus =  JAP_ww1_Leave_Entente }
+		prerequisite = { focus =  JAP_ww1_Leave_Entente focus = JAP_ww1_Leave_Central_Power}
 		icon = GFX_goal_support_fascism
 
 	 	available = {
@@ -1219,7 +1249,6 @@ focus_tree = {
             	puppet = MAN
             }
 
-			hidden_effect = {
 
 				716 = { add_core_of = MAN }
 				328 = { add_core_of = MAN }
@@ -1233,7 +1262,7 @@ focus_tree = {
 					white_peace = CHI
 					white_peace = QIN
 				}
-			}
+			
 
 
 		}

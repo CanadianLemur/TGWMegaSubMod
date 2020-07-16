@@ -853,10 +853,7 @@ news_event = {
 						communism = 3
 					}
 
-					declare_war_on = {
-						type = annex_everything
-						target = SOV
-					}
+
 
 					transfer_state = 147
 
@@ -882,6 +879,10 @@ news_event = {
 					transfer_state = 652
 					transfer_state = 722
 					load_oob = "SOV_Civil_War"
+							declare_war_on = {
+					type = annex_everything
+					target = SOV
+					}
 				}
 				
 				if = {
