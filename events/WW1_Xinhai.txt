@@ -195,11 +195,25 @@ country_event = {
 				}
 				
 				change_tag_from = ROOT
+				
+				set_stability = 0.80
+				set_war_support = 0.85
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 20000
+					producer = QIN
+				}
 			}
 			
 			
+			QIN = {
+				set_war_support = 0.40
+				set_stability = 0.2
+			}
+			
 			set_global_flag = xinhai_revolution
-			country_event = MSMWuchang.10
+			
+			
 		}
 		custom_effect_tooltip = roc_chosen
 		
@@ -215,11 +229,12 @@ country_event = {
 				create_country_leader = {
 					name = "Sun Yat-sen"
 					desc = "POLITICS_SUN_YAT_SEN_DESC"
-					picture = "Sun_Yat_sen.dds"
+					picture = "gfx/leaders/Sun_Yat_sen.dds"
 					expire = "1935.1.1"
-					ideology = neutrality
+					ideology = despotism
 					traits = { }
 				}
+				
 			}
 		
 		IF = {
@@ -236,7 +251,7 @@ country_event = {
 			}
 			add_war_support = 0.2
 			set_stability = 0.85
-			add_political_power = 140
+			add_political_power = 145
 		}
 		
 	}
@@ -247,8 +262,8 @@ country_event = {
 	desc = MSMWuchang.3.d
 	id = MSMWuchang.3
 	picture = MSMWuchang_3
-	is_triggered_only = yes
 	fire_only_once = yes
+	is_triggered_only = no
 	
 	trigger = {
 		tag = CHI
@@ -275,8 +290,8 @@ country_event = {
 	desc = MSMWuchang.4.d
 	id = MSMWuchang.4
 	picture = MSMWuchang_4
-	is_triggered_only = yes
 	fire_only_once = yes
+	is_triggered_only = no
 	mean_time_to_happen = {
 		days = 2
 	}
@@ -298,7 +313,6 @@ country_event = {
 	desc = MSMWuchang.5.d
 	id = MSMWuchang.5
 	picture = MSMWuchang_5
-	is_triggered_only = yes
 	fire_only_once = yes
 	mean_time_to_happen = {
 		days = 2
@@ -331,18 +345,72 @@ country_event = {
 	desc = MSMWuchang.6.d
 	id = MSMWuchang.6
 	picture = MSMWuchang_6
+	fire_only_once = yes
+	is_triggered_only = no
+	mean_time_to_happen = {
+		days = 2
+	}
+	trigger = {
+		CHI = {
+			has_war_with = QIN
+			controls_state = 605
+			controls_state = 613
+			controls_state = 608
+			controls_state = 325
+			controls_state = 596
+			controls_state = 607
+			has_global_flag = xinhai_revolution
+		}
+	}
+	option = {
+		name = MSMWuchang.6.a
+		ai_chance = {
+			factor = 100
+		}
+		CHI = {
+			white_peace = {
+				tag = QIN
+				message = 
+			}
+			drop_cosmetic_tag = yes
+			set_cosmetic_tag = CHI_REP
+			
+			country_event = {
+				id = MSMWuchang.8
+				days = 3
+				random = 24
+			}
+			set_global_flag = shikai_surrenders
+			custom_effect_tooltip = beiyang_route
+		}
+	}
+	option = {
+		name = MSMWuchang.6.b
+		ai_chance = {
+			factor = 0
+		}
+		set_global_flag = shikai_no_surrender
+		custom_effect_tooltip = sunyatsen_route
+	}
+	}
+	}
+}
+
+country_event = {
+	title = MSMWuchang.7.t#Xuantong Emperor Abdicates SunYatSen
+	desc = MSMWuchang.7.d
+	id = MSMWuchang.7
+	picture = MSMWuchang_7
 	is_triggered_only = yes
 	fire_only_once = yes
 	mean_time_to_happen = {
 		days = 2
 	}
 	trigger = {
-		tag = CHI
-		QIN = { surrender_progress > 0.5 }
-		has_global_flag = xinhai_revolution
+
 	}
 	option = {
-		name = MSMWuchang.5.a
+		name = MSMWuchang.7.a
 		ai_chance = {
 			factor = 100
 		}
@@ -351,10 +419,94 @@ country_event = {
 				target = QIN
 				transfer_troops = yes
 			}
-		drop_cosmetic_tag = yes
-		set_cosmetic_tag = CHI_REP
 		}
+		clr_global_flag = xinhai_revolution
+		clr_global_flag = rebels_support
+		clr_global_flag = qing_support
+	
+	}
+	}
+	}
+}
+
+country_event = {
+	title = MSMWuchang.8.t#Xuantong Emperor Abdicates YuanShikai
+	desc = MSMWuchang.8.d
+	id = MSMWuchang.8
+	picture = MSMWuchang_8
+	is_triggered_only = yes
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 2
+	}
+	trigger = {
+
+	}
+	option = {
+		name = MSMWuchang.8.a
+		ai_chance = {
+			factor = 100
+		}
+		CHI = {
+			annex_country = {
+				target = QIN
+				transfer_troops = yes
+			}
+		}
+		clr_global_flag = xinhai_revolution
+		clr_global_flag = rebels_support
+		clr_global_flag = qing_support
+	
+	}
+	}
+	}
+}
+
+country_event = {
+	title = MSMWuchang.9.t#Yuan Shikai Surrenders
+	desc = MSMWuchang.9.d
+	id = MSMWuchang.9
+	picture = MSMWuchang_9
+	fire_only_once = yes
+	is_triggered_only = no
+	mean_time_to_happen = {
+		days = 2
+	}
+	trigger = {
+		CHI = {
+			has_war_with = QIN
+			controls_state = 605
+			controls_state = 613
+			controls_state = 608
+			controls_state = 325
+			controls_state = 596
+			controls_state = 607
+			controls_state = 622
+			controls_state = 283
+			has_global_flag = shikai_no_surrender
+		}
+	}
+	option = {
+		name = MSMWuchang.9.a
+		ai_chance = {
+			factor = 100
+		}
+		CHI = {
+			white_peace = {
+				tag = QIN
+				message = 
+			}
+			drop_cosmetic_tag = yes
+			set_cosmetic_tag = CHI_REP
 			
+			country_event = {
+				id = MSMWuchang.7
+				days = 2
+				random = 10
+			}
+			clr_global_flag = shikai_no_surrender
+		}
+	}
 	}
 	}
 }
