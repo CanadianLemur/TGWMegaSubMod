@@ -2,7 +2,7 @@
 oob="POL_1910"
 
 set_fuel_ratio = 0.20
-	create_country_leader={ name = "Regency Council"  picture="" expire="1935.1.1" ideology=despotism  traits={  } }
+	create_country_leader={ name = "Regency Council"  picture="Portrait_Poland_Regency_council.dds" expire="1935.1.1" ideology=despotism  traits={  } }
 set_research_slots = 4
 
 set_technology = { 
