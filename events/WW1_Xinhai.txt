@@ -6,6 +6,7 @@ country_event = {
 	id = MSMWuchang.1
 	picture = MSMWuchang_1
 	is_triggered_only = no
+	timeout_days = 20
 	mean_time_to_happen = {
 		days = 2
 	}
@@ -42,8 +43,9 @@ country_event = {
 	id = MSMWuchang.2
 	picture = MSMWuchang_2
 	is_triggered_only = no
+	timeout_days = 20
 	mean_time_to_happen = {
-		days = 0
+		days = 1
 	}
 	trigger = {
 		tag = QIN
@@ -53,39 +55,10 @@ country_event = {
 			has_global_flag = xinhai_revolution
 		}
 	}
-	# Support Qing
-	option = {
-		name = MSMWuchang.2.a
-		trigger = {
-			is_ai = no
-		}
-		hidden_effect = {
-
-			set_global_flag = xinhai_revolution
-
-			release = MON # Release Mongolia
-			release = TIB # Release Tibet
-			release = TAN # Release Tanu
-
-			RUS = {
-				puppet = TAN
-			}
-
-			
-
-			set_stability = 0.9
-			load_oob = "QIN_Civil_War"
-
-			add_popularity = {
-				ideology = neutrality
-				popularity = 100
-			}
-		}
-		custom_effect_tooltip = qing_chosen
-	}
+	
 	# Become China
 	option = {
-		name = MSMWuchang.2.b
+		name = MSMWuchang.2.a
 		hidden_effect = {
 
 			release = MON # Release Mongolia
@@ -256,6 +229,38 @@ country_event = {
 		
 	}
 	
+	# Support Qing
+	option = {
+		name = MSMWuchang.2.b
+		trigger = {
+			is_ai = no
+		}
+		hidden_effect = {
+
+			set_global_flag = xinhai_revolution
+
+			release = MON # Release Mongolia
+			release = TIB # Release Tibet
+			release = TAN # Release Tanu
+
+			RUS = {
+				puppet = TAN
+			}
+
+			
+
+			set_stability = 0.9
+			load_oob = "QIN_Civil_War"
+
+			add_popularity = {
+				ideology = neutrality
+				popularity = 100
+			}
+		}
+		custom_effect_tooltip = qing_chosen
+	}
+	
+	
 }
 country_event = {
 	title = MSMWuchang.3.t#Changsha Restoration
@@ -263,11 +268,15 @@ country_event = {
 	id = MSMWuchang.3
 	picture = MSMWuchang_3
 	fire_only_once = yes
+	timeout_days = 5
+	mean_time_to_happen = {
+		days = 10
+	}
 	is_triggered_only = no
 	
 	trigger = {
 		tag = CHI
-		date > 1911.10.20
+		date > 1911.9.20
 		has_global_flag = xinhai_revolution
 	}
 	option = {
@@ -275,12 +284,19 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
+		CHI = {
 		add_manpower = 800000
 		army_experience = 75
+		}
+		HNC = {
 		transfer_state = 602
-		set_state_controller = 602
-		
 		load_oob = "PRC_1911_Changsha"
+		add_to_war = { 
+			targeted_alliance = CHI 
+			enemy = QIN 
+			hostility_reason = asked_to_join
+		}
+		}
 		set_global_flag = second_uprising	
 	}
 }
@@ -314,6 +330,7 @@ country_event = {
 	id = MSMWuchang.5
 	picture = MSMWuchang_5
 	fire_only_once = yes
+	timeout_days = 5
 	mean_time_to_happen = {
 		days = 2
 	}
@@ -327,13 +344,23 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
+		
+		SHX = {
+			transfer_state = 622
+			load_oob = "PRC_1911_Shaanxi"
+			
+			add_to_war = { 
+				targeted_alliance = CHI
+				enemy = QIN 
+				hostility_reason = asked_to_join
+			}
+		
+		}
 		CHI = {
-			set_state_controller = 622
 			
 			hidden_effect = {
 				add_manpower = 400000
 				army_experience = 75
-				load_oob = "PRC_1911_Shaanxi"
 			}
 			
 		}
