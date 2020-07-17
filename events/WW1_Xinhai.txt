@@ -358,6 +358,7 @@ country_event = {
 			controls_state = 608
 			controls_state = 325
 			controls_state = 596
+			controls_state = 598
 			controls_state = 607
 			has_global_flag = xinhai_revolution
 		}
