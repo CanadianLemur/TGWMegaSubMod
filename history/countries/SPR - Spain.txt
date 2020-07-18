@@ -55,29 +55,20 @@ set_convoys = 150
 		# Industry
 	}
 
-	set_popularities{
-   	 democratic = 20
-   	 fascism = 10
-	communism = 5
-	neutrality = 65
+	set_popularities = {
+	    democratic = 10
+	    fascism = 5
+	    communism = 10
+	    neutrality = 75
 	}
-	set_politics = {
-		ruling_party = neutrality last_election = "1913.6.17"
-		election_frequency = 48 elections_allowed = yes
+	ruling_party = neutrality last_election = "1910.4.31"
+	election_frequency = 48 elections_allowed = yes
 	}
 	
 	add_ideas = {
 		ww1_Scramble_for_Africa
 		neutrality_idea
 		limited_conscription
-		SPR_ww1_tiempos
-		SPR_ww1_industria
-		SPR_ww1_quintas
-		SPR_ww1_generacion98
-		SPR_ww1_turnismo
-		SPR_ww1_caciquismo
-		SPR_ww1_uniones
-		SPR_ww1_semanatragica
 	}	
 }	
 
@@ -126,7 +117,6 @@ set_convoys = 150
 		ww1_destroyer1 = 1
 		ww1_light_cruiser1 = 1
 		ww1_light_cruiser0 = 1
-		ww1_heavy_cruiser0 = 1
 		ww1_battleship0 = 1
 		ww1_battleship1 = 1
 		ww1_submarine1 = 1
@@ -144,27 +134,27 @@ set_convoys = 150
 
 
 	set_politics = {
+		parties = {
+			neutrality = {
+				popularity = 65
+				}
+			democratic = {
+					popularity = 20
+				}
+			fascism = {
+					popularity = 10
+				}
+			communism = {
+					popularity = 5
+				}
+	    }
 		ruling_party = neutrality last_election = "1913.6.17"
 		election_frequency = 48 elections_allowed = yes
-	}
-	set_popularities{
-   	 democratic = 20
-   	 fascism = 10
-	communism = 5
-	neutrality = 65
 	}
 	
 	add_ideas = {
 		neutrality_idea
 		limited_conscription
-		SPR_ww1_africanismo
-		SPR_ww1_tiempos
-		SPR_ww1_industria
-		SPR_ww1_quintas
-		SPR_ww1_generacion98
-		SPR_ww1_turnismo
-		SPR_ww1_caciquismo
-		SPR_ww1_uniones
 	}	
 }
 
