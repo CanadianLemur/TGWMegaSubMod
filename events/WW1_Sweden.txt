@@ -5,8 +5,11 @@ country_event = {
 	desc = ww1_sweden.1.d
 	fire_only_once=yes
 	trigger = {
-	OR = {has_global_flag = swedenincp	has_completed_focus = ww1_joingermany}
-	has_global_flag = kis_brestlitovsk
+		OR = {
+			has_global_flag = swedenincp
+			has_completed_focus = ww1_joingermany}
+		has_global_flag = kis_brestlitovsk
+		tag = SWE
 	}
 	mean_time_to_happen = {
 		days = 1
