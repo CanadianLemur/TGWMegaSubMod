@@ -16,6 +16,7 @@ country_event = {
 		country_event = {
 		id = interwar_alt_poland_events.2
 		}
+		complete_national_focus = POL_interwar_a_german_king
 	}
 	# an austrian candidate
 	option = {
@@ -24,6 +25,8 @@ country_event = {
 		country_event = {
 		id = interwar_alt_poland_events.3
 		}
+		complete_national_focus = POL_interwar_an_austrian_king
+
 	}
 }
 country_event = {
@@ -45,6 +48,7 @@ country_event = {
 				    ideology = despotism
 				    traits = {}
 				}
+		complete_national_focus = POL_interwar_frederick_augustus
 	}
 	# wurttemburg duke albrecht
 	option = {
@@ -57,6 +61,7 @@ country_event = {
 				    ideology = despotism
 				    traits = {}
 				}
+		complete_national_focus = POL_interwar_duke_albrecht
 	}
 	# bavaria prince leopold
 	option = {
@@ -69,6 +74,8 @@ country_event = {
 				    ideology = despotism
 				    traits = {}
 				}
+			complete_national_focus = POL_interwar_prince_leopold
+
 	}
 }
 country_event = {
@@ -105,5 +112,66 @@ country_event = {
 
 	}
 }
+country_event = {
+	id = interwar_alt_poland_events.4
+	title = interwar_alt_poland_events.4.t
+	desc = interwar_alt_poland_events.4.d
 
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	# Give poland galicia
+	option = {
+		name = interwar_alt_poland_events.4.a
+		ai_chance = { factor = 80 }
+		POL = {country_event = {
+		id = interwar_alt_poland_events.5
+		}}
+	}
+	# refuse
+	option = {
+		name = interwar_alt_poland_events.4.b
+		ai_chance = { factor = 20 }
+		POL = {country_event = {
+		id = interwar_alt_poland_events.6
+		}}
+
+	}
+}
+country_event = {
+	id = interwar_alt_poland_events.5
+	title = interwar_alt_poland_events.5.t
+	desc = interwar_alt_poland_events.5.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	# gave poland galicia
+	option = {
+		name = interwar_alt_poland_events.5.a
+		POL = { transfer_state = 88
+				transfer_state = 89					
+				transfer_state = 91					
+				transfer_state = 80
+				add_state_core = 88
+				add_state_core = 89
+				add_state_core = 91
+				add_state_core = 80
+			}
+	}
+}
+country_event = {
+	id = interwar_alt_poland_events.4
+	title = interwar_alt_poland_events.4.t
+	desc = interwar_alt_poland_events.4.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	# refused galicia
+	option = {
+		name = interwar_alt_poland_events.4.a
+		ai_chance = { factor = 80 }
+	}
+}
 

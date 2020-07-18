@@ -37,24 +37,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = POL_interwar_choosing_a_king # given that the germans have won the war we should get around to deciding who will be king
-		icon = GFX_focus_generic_treaty
-		x = 14
-		y = 0
-		cost = 10
-		available = {has_global_flag = kis_second_treaty_frankfort}
-		ai_will_do = {
-			factor = 10
-		}
-
-		completion_reward = {
-			add_stability = 0.05
-			country_event = {
-			id = interwar_alt_poland_events.1
-			}
-		}
-	}
-	focus = {
 		id = POL_interwar_DisbandCouncil # Disband the Supreme People's Council
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = POL_interwar_Small_Constitution_of_1919 }
@@ -4584,5 +4566,123 @@ focus_tree = {
 			#As Per Generic Tree
 		}
 	}
+	#### New MSM Focuses below this line
+	focus = {
+		id = POL_interwar_choosing_a_king # given that the germans have won the war we should get around to deciding who will be king
+		icon = GFX_focus_generic_treaty
+		x = 34
+		y = 0
+		cost = 10
+		available = {has_global_flag = kis_second_treaty_frankfort}
+		ai_will_do = {
+			factor = 10
+		}
 
+		completion_reward = {
+			add_stability = 0.05
+			country_event = {
+			id = interwar_alt_poland_events.1
+			}
+		}
+	}
+	focus = {
+		id = POL_interwar_a_german_king 
+		icon = GFX_hoi4tgw_ironcross
+		prerequisite = {focus = POL_interwar_choosing_a_king}
+		mutually_exclusive = {focus =POL_interwar_an_austrian_king}
+		relative_position_id = POL_interwar_choosing_a_king
+		x = -2
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = POL_interwar_an_austrian_king
+		icon = GFX_hoi4tgw_austriahungary
+		prerequisite = {focus = POL_interwar_choosing_a_king}
+		mutually_exclusive = {focus =POL_interwar_a_german_king}
+		relative_position_id = POL_interwar_choosing_a_king
+		x = 2
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			}
+		}
+	focus = {
+		id = POL_interwar_request_galicia
+		icon = GFX_hoi4tgw_austriahungary
+		prerequisite = {focus = POL_interwar_an_austrian_king}
+		relative_position_id = POL_interwar_an_austrian_king
+		x = 2
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			AUH =  {country_event = {id = interwar_alt_poland_events.4}}
+			}
+		}
+	focus = {
+		id = POL_interwar_frederick_augustus
+		icon = GFX_hoi4tgw_ironcross
+		prerequisite = {focus = POL_interwar_a_german_king}
+		mutually_exclusive = {focus =POL_interwar_duke_albrecht}
+		mutually_exclusive = {focus =POL_interwar_prince_leopold}
+		relative_position_id = POL_interwar_a_german_king
+		x = -2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			}
+		}
+	focus = {
+		id = POL_interwar_duke_albrecht
+		icon = GFX_hoi4tgw_ironcross
+		prerequisite = {focus = POL_interwar_a_german_king}
+		mutually_exclusive = {focus =POL_interwar_frederick_augustus}
+		mutually_exclusive = {focus =POL_interwar_prince_leopold}
+		relative_position_id = POL_interwar_a_german_king
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			}
+		}
+	focus = {
+		id = POL_interwar_prince_leopold
+		icon = GFX_hoi4tgw_ironcross
+		prerequisite = {focus = POL_interwar_a_german_king}
+		mutually_exclusive = {focus =POL_interwar_frederick_augustus}
+		mutually_exclusive = {focus =POL_interwar_duke_albrecht}
+		relative_position_id = POL_interwar_a_german_king
+		x = 2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			}
+		}
+	}
 }		
