@@ -38,7 +38,7 @@ country_event = {
 }
 
 country_event = {
-	title = MSMWuchang.2.t
+	title = MSMWuchang.2.t #Xinhai Revolution
 	desc = MSMWuchang.2.d
 	id = MSMWuchang.2
 	picture = MSMWuchang_2
@@ -56,20 +56,12 @@ country_event = {
 		}
 	}
 	
-	# Become China
-	option = {
-		name = MSMWuchang.2.a
+	
+	immediate = {
 		hidden_effect = {
-
-			release = MON # Release Mongolia
-			release = TIB # Release Tibet
-			release = TAN # Release Tanu
-			RUS = {
-				puppet = TAN
-			}
-			
-				
-				CHI = {
+		set_global_flag = xinhai_revolution
+		
+			CHI = {
 					set_cosmetic_tag = CHI_REV
 					set_politics = { ruling_party = neutrality }
 					set_capital = 620
@@ -167,13 +159,31 @@ country_event = {
 				days = 250
 				}
 				
-				change_tag_from = ROOT
-				
-				set_stability = 0.80
-				set_war_support = 0.85
+			}
+		
+			release = MON # Release Mongolia
+			release = TIB # Release Tibet
+			release = TAN # Release Tanu
+			RUS = {
+				puppet = TAN
+			}
+		}
+		
+	}
+	
+	
+	# Become China
+	option = {
+		name = MSMWuchang.2.a
+		hidden_effect = {
+
+				CHI = {
+				change_tag_from = QIN
+				add_stability = 0.80
+				add_war_support = 0.85
 				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = 20000
+					type = infantry_equipment_0
+					amount = 50000
 					producer = QIN
 				}
 			}
@@ -184,7 +194,7 @@ country_event = {
 				set_stability = 0.2
 			}
 			
-			set_global_flag = xinhai_revolution
+			
 			
 			
 		}
@@ -237,17 +247,6 @@ country_event = {
 		}
 		hidden_effect = {
 
-			set_global_flag = xinhai_revolution
-
-			release = MON # Release Mongolia
-			release = TIB # Release Tibet
-			release = TAN # Release Tanu
-
-			RUS = {
-				puppet = TAN
-			}
-
-			
 
 			set_stability = 0.9
 			load_oob = "QIN_Civil_War"
@@ -279,6 +278,23 @@ country_event = {
 		date > 1911.9.20
 		has_global_flag = xinhai_revolution
 	}
+	
+	immediate = {
+		hidden_effect = {
+		HNC = {
+		transfer_state = 602
+		set_cosmetic_tag = HNC_REV
+		load_oob = "PRC_1911_Changsha"
+		add_to_war = { 
+			targeted_alliance = CHI 
+			enemy = QIN 
+			hostility_reason = asked_to_join
+			}
+		}
+		set_global_flag = changsha_restoration
+	}
+	}
+	
 	option = {
 		name = MSMWuchang.3.a
 		ai_chance = {
@@ -288,16 +304,8 @@ country_event = {
 		add_manpower = 800000
 		army_experience = 75
 		}
-		HNC = {
-		transfer_state = 602
-		load_oob = "PRC_1911_Changsha"
-		add_to_war = { 
-			targeted_alliance = CHI 
-			enemy = QIN 
-			hostility_reason = asked_to_join
-		}
-		}
-		set_global_flag = second_uprising	
+		
+			
 	}
 }
 
@@ -320,7 +328,7 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		add_stability = -0.05
+		add_stability = -0.25
 	}
 }
 
@@ -339,14 +347,12 @@ country_event = {
 		date > 1911.10.25
 		has_global_flag = second_uprising
 	}
-	option = {
-		name = MSMWuchang.5.a
-		ai_chance = {
-			factor = 100
-		}
-		
+	
+	immediate = {
+		hidden_effect = {
 		SHX = {
 			transfer_state = 622
+			set_cosmetic_tag = SHX_REV
 			load_oob = "PRC_1911_Shaanxi"
 			
 			add_to_war = { 
@@ -354,10 +360,17 @@ country_event = {
 				enemy = QIN 
 				hostility_reason = asked_to_join
 			}
-		
 		}
+		set_global_flag = shaanxi_uprising
+		}
+	}
+	option = {
+		name = MSMWuchang.5.a
+		ai_chance = {
+			factor = 100
+		}
+		
 		CHI = {
-			
 			hidden_effect = {
 				add_manpower = 400000
 				army_experience = 75
@@ -378,17 +391,10 @@ country_event = {
 		days = 2
 	}
 	trigger = {
-		CHI = {
-			has_war_with = QIN
-			controls_state = 605
-			controls_state = 613
-			controls_state = 608
-			controls_state = 325
-			controls_state = 596
-			controls_state = 598
-			controls_state = 607
-			has_global_flag = xinhai_revolution
-		}
+			CHI = {
+				any_war_score > 23
+			}
+		has_global_flag = xinhai_revolution
 	}
 	option = {
 		name = MSMWuchang.6.a
@@ -437,24 +443,45 @@ country_event = {
 	trigger = {
 
 	}
+	
+	immediate = {
+		hidden_effect = {
+			CHI = {
+			annex_country = {
+				target = QIN
+				transfer_troops = yes
+			}
+			}
+			clr_global_flag = xinhai_revolution
+			clr_global_flag = rebels_support
+			clr_global_flag = qing_support
+			
+			if = {
+				limit = {
+					has_global_flag = changsha_restoration
+				}
+				CHI = { annex_country = HNC }
+			}
+			
+			if = {
+				limit = {
+					has_global_flag = shaanxi_uprising
+				}
+				CHI = { annex_country = SHX }
+			}
+			
+		}
+	}
+	
 	option = {
 		name = MSMWuchang.7.a
 		ai_chance = {
 			factor = 100
 		}
-		CHI = {
-			annex_country = {
-				target = QIN
-				transfer_troops = yes
-			}
-		}
-		clr_global_flag = xinhai_revolution
-		clr_global_flag = rebels_support
-		clr_global_flag = qing_support
+		
+	}
 	
-	}
-	}
-	}
+	
 }
 
 country_event = {
@@ -470,25 +497,47 @@ country_event = {
 	trigger = {
 
 	}
+	
+	immediate = {
+		hidden_effect = {
+			CHI = {
+			annex_country = {
+				target = QIN
+				transfer_troops = yes
+			}
+			}
+			clr_global_flag = xinhai_revolution
+			clr_global_flag = rebels_support
+			clr_global_flag = qing_support
+			
+			if = {
+				limit = {
+					has_global_flag = changsha_restoration
+				}
+				CHI = { annex_country = HNC }
+			}
+			
+			if = {
+				limit = {
+					has_global_flag = shaanxi_uprising
+				}
+				CHI = { annex_country = SHX }
+			}
+			
+		}
+	}
+	
 	option = {
 		name = MSMWuchang.8.a
 		ai_chance = {
 			factor = 100
 		}
-		CHI = {
-			annex_country = {
-				target = QIN
-				transfer_troops = yes
-			}
-		}
-		clr_global_flag = xinhai_revolution
-		clr_global_flag = rebels_support
-		clr_global_flag = qing_support
-	
-	}
-	}
+		
+		
+		
 	}
 }
+	
 
 country_event = {
 	title = MSMWuchang.9.t#Yuan Shikai Surrenders
@@ -503,22 +552,13 @@ country_event = {
 	trigger = {
 		CHI = {
 			has_war_with = QIN
-			controls_state = 605
-			controls_state = 613
-			controls_state = 608
-			controls_state = 325
-			controls_state = 596
-			controls_state = 607
-			controls_state = 622
-			controls_state = 283
+			QIN = { has_capitulated = yes }
 			has_global_flag = shikai_no_surrender
 		}
 	}
-	option = {
-		name = MSMWuchang.9.a
-		ai_chance = {
-			factor = 100
-		}
+	
+	immediate = {
+	hidden_effect = {
 		CHI = {
 			white_peace = {
 				tag = QIN
@@ -536,5 +576,12 @@ country_event = {
 		}
 	}
 	}
+	
+	option = {
+		name = MSMWuchang.9.a
+		ai_chance = {
+			factor = 100
+		}
+		
 	}
 }
