@@ -7,7 +7,7 @@ country_event = {
 	trigger = {
 		OR = {
 			has_global_flag = swedenincp
-			has_completed_focus = ww1_joingermany}
+			has_completed_focus = SWE_ww1_joingermany}
 		has_global_flag = kis_brestlitovsk
 		tag = SWE
 	}
