@@ -422,13 +422,13 @@ country_event = {
 		
 			drop_cosmetic_tag = yes
 			set_cosmetic_tag = CHI_REP
-			
-			country_event = {
-				id = MSMWuchang.8
-				days = 3
-				random = 24
+			CHI = {
+				country_event = {
+					id = MSMWuchang.7
+					days = 3
+					random = 24
+				}
 			}
-			
 			set_global_flag = shikai_surrenders
 			custom_effect_tooltip = beiyang_route
 		}
@@ -469,29 +469,15 @@ country_event = {
 			clr_global_flag = rebels_support
 			clr_global_flag = qing_support
 			
-			if = {
-				limit = {
-					has_global_flag = changsha_restoration
-				}
 				CHI = { annex_country = HNC }
-			}
 			
-			if = {
-				limit = {
-					has_global_flag = shaanxi_uprising
-				}
 				CHI = { annex_country = SHX }
-			}
 			
-			if = {
-				limit = {
-					has_global_flag = juijiang_uprising
-				}
 				CHI = { annex_country = JNX }
 			}
 			
 		}
-	}
+
 	
 	option = {
 		name = MSMWuchang.7.a
