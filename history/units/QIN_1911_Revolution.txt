@@ -1,110 +1,104 @@
 ﻿###################################################################
 
 division_template = {
-	name = "Qing Brigade"
+	name = "Qing Infantry"
 	is_locked = yes
 	regiments = {
 		infantry = { x = 0 y = 0 }
-	}
-}
-
-division_template = {
-	name = "Qing Cavalry"
-	is_locked = yes
-	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 1 }
 	}
 }
 
 ###################################################################
 units = {
 	division = {
-		name = "Qing First Brigade"
+		name = "Qing First Army"
 		location = 9843#Beijing
-		division_template = "Qing Brigade"
+		division_template = "Qing Infantry"
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "Qing Second Brigade"
+		name = "Qing Second Army"
 		location = 10068#Tianjin
-		division_template = "Qing Brigade"
+		division_template = "Qing Infantry"
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "Qing Third Brigade"
+		name = "Qing Third Army"
 		location = 11913#Nanjing
-		division_template = "Qing Brigade"
+		division_template = "Qing Infantry"
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "Qing Fourth Brigade"
+		name = "Qing Fourth Army"
 		location = 1047#Guangzhou
-		division_template = "Qing Brigade"
+		division_template = "Qing Infantry"
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "Qing Fifth Brigade"
+		name = "Qing Fifth Army"
 		location = 6999#Chongqing
-		division_template = "Qing Brigade"
+		division_template = "Qing Infantry"
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "Qing Sixth Brigade"
+		name = "Qing Sixth Army"
 		location = 4925#Chengdu
-		division_template = "Qing Brigade"
+		division_template = "Qing Infantry"
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "Qing Seventh Brigade"
+		name = "Qing Seventh Army"
 		location = 8049#Yan'an
-		division_template = "Qing Brigade"
+		division_template = "Qing Infantry"
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "Qing Eight Brigade"
+		name = "Qing Eight Army"
 		location = 9958#Zhengzhou
 		division_template = "Qing Cavalry"
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "Qing Ninth Brigade"
+		name = "Qing Ninth Army"
 		location = 7101#Changde
-		division_template = "Qing Brigade"
+		division_template = "Qing Infantry"
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "Qing Tenth Brigade"
+		name = "Qing Tenth Army"
 		location = 3992#Nanchang
-		division_template = "Qing Brigade"
+		division_template = "Qing Infantry"
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "Qing Eleventh Brigade"
+		name = "Qing Eleventh Army"
 		location = 8049#Yan'an
-		division_template = "Qing Brigade"
+		division_template = "Qing Infantry"
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "Qing Thirteenth Brigade"
+		name = "Qing Thirteenth Army"
 		location = 3992#Nanchang
 		division_template = "Qing Cavalry"
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "Qing Fourteenth Brigade"
+		name = "Qing Fourteenth Army"
 		location = 9843#Beijing
-		division_template = "Qing Brigade"
+		division_template = "Qing Infantry"
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "Qing Fifteenth Brigade"
+		name = "Qing Fifteenth Army"
 		location = 7101#Changde
-		division_template = "Qing Brigade"
+		division_template = "Qing Infantry"
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "Qing Sixteenth Brigade"
+		name = "Qing Sixteenth Army"
 		location = 1047#Guangzhou
 		division_template = "Qing Cavalry"
 		start_experience_factor = 0.1

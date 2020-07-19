@@ -61,6 +61,14 @@ country_event = {
 		hidden_effect = {
 		set_global_flag = xinhai_revolution
 		
+			QIN = {
+				set_equipment_fraction = 0.2
+				delete_unit_template_and_units = { division_template = "Qing Brigade" }
+				delete_unit_template_and_units = { division_template = "Qing Cavalry" }
+				load_oob = "QIN_1911_Revolution"
+			}
+			
+		
 			CHI = {
 					set_cosmetic_tag = CHI_REV
 					set_politics = { ruling_party = neutrality }
@@ -81,78 +89,6 @@ country_event = {
 				add_manpower = -2200000
 				
 				load_oob = "PRC_1911_Wuchang"
-				
-				create_field_marshal = {
-					name = "Huang Xing"
-					portrait_path = "gfx/fieldmarshal/CHI_Huang_Xing.dds"
-					traits = {
-						defensive_doctrine
-					}
-					skill = 3
-				}
-				create_corps_commander = {
-					name = "Song Jiaoren"
-					portrait_path = "gfx/generals/CHI_Song_Jiaoren.dds"
-					traits = {
-						fortress_buster
-					}
-					skill = 1
-				}
-				create_corps_commander = {
-					name = "Li Yuanhong"
-					portrait_path = "gfx/generals/CHI_Li_Yuanhong.dds"
-					traits = {}
-					skill = 1
-				}
-				create_corps_commander = {
-					name = "Xu Shichang"
-					id = 150440 portrait_path = "gfx/generals/CHI_xu_shichang.dds"
-					traits = {
-						old_guard
-					}
-					skill = 1
-				}
-				create_corps_commander = {
-					name = "Wang Shizen"
-					id = 150550 portrait_path = "gfx/generals/CHI_wang_shizen.dds"
-					traits = {
-						old_guard
-					}
-					skill = 1
-				}
-				create_corps_commander = {
-					name = "Yang Zengxin"
-					id = 150710 portrait_path = "gfx/generals/CHI_yang_zengxin.dds"
-					traits = {
-						old_guard
-					}
-					skill = 1
-				}
-				create_corps_commander = {
-					name = "Yin Chang"
-					id = 150720 portrait_path = "gfx/generals/CHI_yin_chang.dds"
-					traits = {
-						old_guard
-					}
-					skill = 1
-				}
-				create_corps_commander = {
-					name = "Zhang Huaizhi"
-					id = 150750 portrait_path = "gfx/generals/CHI_zhang_huaizhi.dds"
-					traits = {
-						old_guard
-					}
-					skill = 1
-				}
-				create_corps_commander = {
-					name = "Zhang Xun"
-					id = 150790 portrait_path = "gfx/generals/CHI_zhang_xun.dds"
-					traits = {
-						old_guard
-					}
-					skill = 2
-				}
-				set_equipment_fraction = 0.1
 				
 				add_timed_idea = {
 				idea = hoi4tgw_idea_revolution
@@ -175,17 +111,49 @@ country_event = {
 	# Become China
 	option = {
 		name = MSMWuchang.2.a
-		hidden_effect = {
 
+		hidden_effect = {
 				CHI = {
+				if =  {
+					limit = {
+						QIN = {
+							has_tech = infantry_equipment_1
+						}
+					}
+					CHI = {
+						set_technology = {
+							infantry_equipment_1 = 1
+						}
+						add_equipment_to_stockpile = {
+							type = infantry_equipment_1
+							amount = 50000
+							producer = QIN
+						}
+					}
+				}
+				if =  {
+					limit = {
+						not = {
+						QIN = {
+							has_tech = infantry_equipment_1
+						}
+						}
+					}
+					CHI = {
+						set_technology = {
+							infantry_equipment_1 = 0
+						}
+						add_equipment_to_stockpile = {
+							type = infantry_equipment_0
+							amount = 50000
+							producer = QIN
+						}
+					}
+				}
 				change_tag_from = QIN
 				add_stability = 0.80
 				add_war_support = 0.85
-				add_equipment_to_stockpile = {
-					type = infantry_equipment_0
-					amount = 50000
-					producer = QIN
-				}
+				
 			}
 			
 			
@@ -213,7 +181,7 @@ country_event = {
 					name = "Sun Yat-sen"
 					desc = "POLITICS_SUN_YAT_SEN_DESC"
 					picture = "gfx/leaders/Sun_Yat_sen.dds"
-					expire = "1935.1.1"
+					expire = "1925.1.1"
 					ideology = despotism
 					traits = { }
 				}
@@ -451,7 +419,7 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 	mean_time_to_happen = {
-		days = 2
+		days = 15
 	}
 	trigger = {
 
@@ -468,6 +436,7 @@ country_event = {
 			
 			clr_global_flag = rebels_support
 			clr_global_flag = qing_support
+			clr_global_flag = xinhai_revolution
 			
 				CHI = { annex_country = HNC }
 			
@@ -484,7 +453,7 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		
+		CHI = { annex_country = HNC }
 		if = { #If Yuan Shikai surrendered  Create republic government loyal to yuan shikai in north and kmt in the south
 			limit = {
 				has_global_flag = shikai_surrenders
@@ -539,7 +508,6 @@ country_event = {
 				days = 2
 				random = 10
 			}
-			clr_global_flag = shikai_no_surrender
 		}
 	}
 	}
