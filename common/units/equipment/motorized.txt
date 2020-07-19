@@ -32,7 +32,7 @@ equipments = {
 	}
 
 	#1900
-	motorized_equipment_0 = {
+	tgwmotorized_equipment_0 = {
 		year = 1900
 		archetype = motorized_equipment
 		maximum_speed = 8
@@ -46,7 +46,7 @@ equipments = {
 	}
 
 	#1914
-	motorized_equipment_2 = {
+	tgwmotorized_equipment_1 = {
 		year = 1914
 		archetype = motorized_equipment
 		maximum_speed = 10
@@ -75,6 +75,24 @@ equipments = {
 		}
 		
 		fuel_consumption = 1.2			
+	}
+	motorized_equipment_2 = {
+		archetype = motorized_equipment
+		parent = motorized_equipment_1
+		priority = 30	
+		maximum_speed = 18
+		reliability = 0.85
+		hardness = 0.15
+	}
+	
+	motorized_equipment_3 = {
+		archetype = motorized_equipment
+		parent = motorized_equipment_2
+		priority = 30
+		maximum_speed = 22
+		reliability = 0.87
+		hardness = 0.17	
+		
 	}
 
 }

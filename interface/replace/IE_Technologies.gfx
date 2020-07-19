@@ -1,10 +1,6 @@
 spriteTypes = {	
 	### generic equipment tech ###
 	SpriteType = {
-		name = "GFX_gwtank_medium"
-		texturefile = "gfx/interface/technologies/FRA/LAND/GWT.dds"
-	}
-	SpriteType = {
 		name = "GFX_artillery4_medium"
 		texturefile = "gfx/interface/technologies/ENG/LAND/ART3.dds"
 	}	
@@ -392,11 +388,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/jap_suicide_craft_medium.dds"
 	}
 	### NAVAL TECH ###
-
-	SpriteType = {
-		name = "GFX_convoy_medium"
-		texturefile = "gfx/interface/technologies/GER/NAVAL/TRANS.dds"
-	}	
 	
 	SpriteType = {
 		name = "GFX_tank_landing_craft_medium"
