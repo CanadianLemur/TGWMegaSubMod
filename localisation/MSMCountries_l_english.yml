@@ -1,6 +1,8 @@
 ﻿l_english:
  SHX:0 "Shaanxi"
  HNC:0 "Hunan"
+ JNX:0 "Jiangxi"
+ 
  
  SHX_REV:0 "Revolutionary Shaanxi"
  SHX_REV_DEF:0 "the province of Shaanxi"
@@ -8,3 +10,6 @@
  HNC_REV:0 "Revolutionary Hunan"
  HNC_REV_DEF:0 "the province of Hunan"
  HNC_REV_ADJ:0 "Chinese"
+ JNX_REV:0 "Revolutionary Jiangxi"
+ JNX_REV_DEF:0 "the province of Jiangxi"
+ JNX_REV_ADJ:0 "Chinese"

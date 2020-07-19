@@ -49,7 +49,7 @@ country_event = {
 	}
 	trigger = {
 		tag = QIN
-		date > 1911.7.10
+		date > 1911.10.11
 		has_global_flag = revolutionaries_name_list
 		not = {
 			has_global_flag = xinhai_revolution
@@ -391,9 +391,10 @@ country_event = {
 		days = 2
 	}
 	trigger = {
-			CHI = {
-				any_war_score > 23
-			}
+		tag = CHI
+		QIN = {
+				surrender_progress > 0.6
+		}
 		has_global_flag = xinhai_revolution
 	}
 	option = {
@@ -404,8 +405,21 @@ country_event = {
 		CHI = {
 			white_peace = {
 				tag = QIN
-				message = 
+				message = YUAN_SHIKAI_SURR_MESSAGE
 			}
+			
+		SHX = {
+			white_peace = QIN
+			}
+			
+		HNC = {
+			white_peace = QIN
+			}
+			
+		JNX = {
+			white_peace = QIN
+		}
+		
 			drop_cosmetic_tag = yes
 			set_cosmetic_tag = CHI_REP
 			
@@ -414,10 +428,12 @@ country_event = {
 				days = 3
 				random = 24
 			}
+			
 			set_global_flag = shikai_surrenders
 			custom_effect_tooltip = beiyang_route
 		}
 	}
+
 	option = {
 		name = MSMWuchang.6.b
 		ai_chance = {
@@ -426,13 +442,10 @@ country_event = {
 		set_global_flag = shikai_no_surrender
 		custom_effect_tooltip = sunyatsen_route
 	}
-	}
-	}
 }
 
 country_event = {
-	title = MSMWuchang.7.t#Xuantong Emperor Abdicates SunYatSen
-	desc = MSMWuchang.7.d
+	title = MSMWuchang.7.t#Xuantong Emperor Abdicates 
 	id = MSMWuchang.7
 	picture = MSMWuchang_7
 	is_triggered_only = yes
@@ -447,12 +460,12 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			CHI = {
-			annex_country = {
-				target = QIN
-				transfer_troops = yes
+				annex_country = {
+					target = QIN
+					transfer_troops = yes
+				}
 			}
-			}
-			clr_global_flag = xinhai_revolution
+			
 			clr_global_flag = rebels_support
 			clr_global_flag = qing_support
 			
@@ -468,6 +481,13 @@ country_event = {
 					has_global_flag = shaanxi_uprising
 				}
 				CHI = { annex_country = SHX }
+			}
+			
+			if = {
+				limit = {
+					has_global_flag = juijiang_uprising
+				}
+				CHI = { annex_country = JNX }
 			}
 			
 		}
@@ -479,68 +499,28 @@ country_event = {
 			factor = 100
 		}
 		
-	}
-	
-	
-}
-
-country_event = {
-	title = MSMWuchang.8.t#Xuantong Emperor Abdicates YuanShikai
-	desc = MSMWuchang.8.d
-	id = MSMWuchang.8
-	picture = MSMWuchang_8
-	is_triggered_only = yes
-	fire_only_once = yes
-	mean_time_to_happen = {
-		days = 2
-	}
-	trigger = {
-
-	}
-	
-	immediate = {
-		hidden_effect = {
-			CHI = {
-			annex_country = {
-				target = QIN
-				transfer_troops = yes
-			}
-			}
-			clr_global_flag = xinhai_revolution
-			clr_global_flag = rebels_support
-			clr_global_flag = qing_support
-			
-			if = {
-				limit = {
-					has_global_flag = changsha_restoration
-				}
-				CHI = { annex_country = HNC }
-			}
-			
-			if = {
-				limit = {
-					has_global_flag = shaanxi_uprising
-				}
-				CHI = { annex_country = SHX }
+		if = { #If Yuan Shikai surrendered  Create republic government loyal to yuan shikai in north and kmt in the south
+			limit = {
+				has_global_flag = shikai_surrenders
 			}
 			
 		}
-	}
-	
-	option = {
-		name = MSMWuchang.8.a
-		ai_chance = {
-			factor = 100
+		
+		if = { #If Yuan Shikai's surrender was not accepted  Create unified china free of yuan shikai influence
+			limit = {
+				has_global_flag = shikai_no_surrender
+			}
+			
 		}
 		
-		
-		
 	}
+	
 }
+
 	
 
 country_event = {
-	title = MSMWuchang.9.t#Yuan Shikai Surrenders
+	title = MSMWuchang.9.t#Qing Capitulates
 	desc = MSMWuchang.9.d
 	id = MSMWuchang.9
 	picture = MSMWuchang_9
@@ -550,6 +530,7 @@ country_event = {
 		days = 2
 	}
 	trigger = {
+		tag = CHI
 		CHI = {
 			has_war_with = QIN
 			QIN = { has_capitulated = yes }
@@ -583,5 +564,47 @@ country_event = {
 			factor = 100
 		}
 		
+	}
+}
+
+country_event = {
+	title = MSMWuchang.10.t #Jiujiang Uprising
+	desc = MSMWuchang.10.d
+	id = MSMWuchang.10
+	picture = MSMWuchang_10
+	fire_only_once = yes
+	is_triggered_only = no
+	timeout_days = 5
+	mean_time_to_happen = {
+		days = 2
+	}
+	trigger = {
+		tag = CHI
+		date > 1911.10.23
+		has_global_flag = xinhai_revolution
+	}
+	
+	immediate = {
+		hidden_effect = {
+			JNX = {
+				transfer_state = 600
+				load_oob = "PRC_1911_Jiujiang"
+			}
+			set_global_flag = juijiang_uprising
+		}
+	}
+	
+	option = {
+		name = MSMWuchang.10.a
+		ai_chance = {
+			factor = 100
+		}
+		JNX = {
+			add_to_war = {
+				targeted_alliance = PREV
+				enemy = QIN
+				hostility_reason = asked_to_join
+			}
+		}
 	}
 }
