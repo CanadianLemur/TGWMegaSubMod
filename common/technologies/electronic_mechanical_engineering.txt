@@ -528,7 +528,15 @@ technologies = {
 		enable_building = {
 			building = radar_station
 			level = 6
+		}
+		path = {
+			leads_to_tech = radar55 
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = { 
+			ship_radar_4
 		}		
+		static_anti_air_hit_chance_factor = 0.2
 		
 		research_cost = 2.5
 		start_year = 1942
@@ -539,7 +547,205 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 1
+			factor = 1
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+				}
+				factor = 5
+			}
+			modifier = {
+				date < "1941.6.1"
+				factor = 0
+			}
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	radar55 = {
+		static_anti_air_hit_chance_factor = 0.2
+		path = {
+			leads_to_tech = radar60 
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = { 
+			ship_radar_5
+		}		
+		research_cost = 2.5
+		start_year = 1955
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+				}
+				factor = 5
+			}
+			modifier = {
+				date < "1952.6.1"
+				factor = 0
+			}
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	radar60 = {
+
+		enable_equipment_modules = { 
+			ship_radar_6
+		}
+		
+		static_anti_air_hit_chance_factor = 0.2
+		path = {
+			leads_to_tech = radar70 
+			research_cost_coeff = 1
+		}	
+		research_cost = 2.5
+		start_year = 1960
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 28 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+				}
+				factor = 5
+			}
+			modifier = {
+				date < "1957.6.1"
+				factor = 0
+			}
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	radar70 = {
+
+		enable_equipment_modules = { 
+			ship_radar_7
+		}
+		
+		static_anti_air_hit_chance_factor = 0.2
+		path = {
+			leads_to_tech = radar80 
+			research_cost_coeff = 1
+		}	
+		research_cost = 2.5
+		start_year = 1970
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+				}
+				factor = 5
+			}
+			modifier = {
+				date < "1967.6.1"
+				factor = 0
+			}
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	radar80 = {
+
+		static_anti_air_hit_chance_factor = 0.2
+		path = {
+			leads_to_tech = radar90 
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = { 
+			ship_radar_8
+		}		
+		research_cost = 2.5
+		start_year = 1980
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 32 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+				}
+				factor = 5
+			}
+			modifier = {
+				date < "1977.6.1"
+				factor = 0
+			}
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	radar90 = {
+
+		enable_equipment_modules = { 
+			ship_radar_9
+		}
+		
+		static_anti_air_hit_chance_factor = 0.2		
+		research_cost = 2.5
+		start_year = 1990	
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 36 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+				}
+				factor = 5
+			}
+			modifier = {
+				date < "1987.6.1"
+				factor = 0
+			}
 		}
 		
 		categories = {
@@ -1339,44 +1545,157 @@ technologies = {
 			rocketry
 		}
 	}
-	
 	advanced_rocket_engines = {
 
 		show_equipment_icon = yes
 
 		# can build ICBMs?
-		
+		path = {
+			leads_to_tech = rocketry60 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = aam50
+			research_cost_coeff = 1
+		}		
 		enable_equipments = {
 			rocket_interceptor_equipment_3
 			guided_missile_equipment_3
 		}
-		
+
 		rocket_artillery = {
 			soft_attack = 0.05
 		}
 		rocket_artillery_brigade = {
 			soft_attack = 0.05
 		}
+		mot_rocket_artillery_brigade = {
+			soft_attack = 0.05
+		}
 		motorized_rocket_brigade = {
 			soft_attack = 0.05
 		}
-		
+
 		research_cost = 1.5
-		start_year = 1946
-		
+		start_year = 1946	#OpO
+
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 16 }
 		}
 		
 		ai_will_do = {
-			base = 1
+			factor = 1
 		}
 		
 		categories = {
 			rocketry
 		}
 	}
+	
+	rocketry60 = {
+		
+		research_cost = 1.5
+		start_year = 1960
+		path = {
+			leads_to_tech = rocketry70 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = aam60 
+			research_cost_coeff = 1
+		}		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			#DATE
+			modifier = { factor = 0 date < 1959.6.1 }
+		}
+		
+		categories = {
+			rocketry
+		}
+	}
+	
+	rocketry70 = {
+		
+		research_cost = 1.5
+		start_year = 1970
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			#DATE
+			modifier = { factor = 0 date < 1969.6.1 }
+		}
+		
+		categories = {
+			rocketry
+		}
+	}
+	
+	aam50 = {
+		
+		research_cost = 1.5
+		start_year = 1950
+		air_intercept_efficiency = 0.2
+		air_superiority_efficiency = 0.2	
+		dependencies = {
+			ir_guide = 1
+		}		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 22 }
+		}
+		desc = "Allows the development of the 1955' fighter and interceptor jets."				
+		ai_will_do = {
+			factor = 1
+
+			#DATE
+			modifier = { factor = 0 date < 1949.6.1 }
+		}
+		
+		categories = {
+			rocketry
+		}
+	}
+	
+	aam60 = {
+		
+		research_cost = 1.5
+		start_year = 1960
+		air_intercept_efficiency = 0.3
+		air_superiority_efficiency = 0.3
+		dependencies = {
+			radar60 = 1
+		}		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 16 }
+		}
+		desc = "Allows the development of the 1965' fighter and interceptor jets."				
+		ai_will_do = {
+			factor = 1
+
+			#DATE
+			modifier = { factor = 0 date < 1959.6.1 }
+		}
+		
+		categories = {
+			rocketry
+		}
+	}
+	
 	
 	jet_engines = {
 	
@@ -1392,6 +1711,10 @@ technologies = {
 			name = air_techs_folder
 			position = { x = 2 y = 11 }
 		}
+		path = {	#OpO
+			leads_to_tech = heli_engines 
+			research_cost_coeff = 1
+		}
 		
 		desc = "JET_ENGINES_SPECIAL"
 
@@ -1401,6 +1724,32 @@ technologies = {
 		
 		ai_will_do = {
 			base = 1
+		}
+		
+		categories = {
+			rocketry
+			jet_technology
+		}
+	}
+	heli_engines = {
+	
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 14 }
+		}
+		
+		start_year = 1947
+		research_cost = 2
+
+		folder = {	#OpO
+			name = armour_folder_folder
+			position = { x = 12 y = 12 }
+		}
+		
+		desc = "The development of a rotor system is essential in the introduction and mass use of helicopters for military operations."
+		
+		ai_will_do = {
+			factor = 1
 		}
 		
 		categories = {
@@ -1475,11 +1824,92 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 16 }
+			position = { x = 0 y = 14 }
+		}
+		
+		path = {
+			leads_to_tech = naval_reactor 
+			research_cost_coeff = 1
 		}
 		
 		ai_will_do = {
-			base = 1
+			factor = 10
+		}
+		
+		nuclear_production = 1
+		
+		categories = {
+			nuclear
+		}
+	}
+	
+	naval_reactor = {
+	
+		start_year = 1955
+		research_cost = 5
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 18 }
+		}
+		path = {
+			leads_to_tech = naval_reactor_2 
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = { 
+			cruiser_nuclear_reactor_module
+		}
+		
+		enable_equipment_modules = { 
+			heavy_nuclear_reactor_module
+		}
+		
+		enable_equipment_modules = { 
+			carrier_nuclear_reactor_module
+		}
+		
+		enable_equipment_modules = { 
+			sub_nuclear_reactor_module
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		nuclear_production = 1
+		
+		categories = {
+			nuclear
+		}
+	}
+	naval_reactor_2 = {
+	
+		start_year = 1970
+		research_cost = 5
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 24 }
+		}
+
+		enable_equipment_modules = { 
+			cruiser_nuclear_reactor_module2
+		}
+		
+		enable_equipment_modules = { 
+			heavy_nuclear_reactor_module2
+		}
+		
+		enable_equipment_modules = { 
+			carrier_nuclear_reactor_module2
+		}
+		
+		enable_equipment_modules = { 
+			sub_nuclear_reactor_module2
+		}
+		
+		ai_will_do = {
+			factor = 10
 		}
 		
 		nuclear_production = 1
