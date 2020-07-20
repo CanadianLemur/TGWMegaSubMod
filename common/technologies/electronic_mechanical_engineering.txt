@@ -886,7 +886,10 @@ technologies = {
 			leads_to_tech = hoi4tgw_encryption
 			research_cost_coeff = 1
 		}
-
+		path = {
+			leads_to_tech = basic_fire_control_system
+			research_cost_coeff = 1 
+			}
 		research_cost = 1.0
 		start_year = 1907
 		
@@ -1269,6 +1272,10 @@ technologies = {
 			leads_to_tech = advanced_decryption 
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = basic_vacuum_computer 
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 2.5
 		start_year = 1942
@@ -1427,7 +1434,127 @@ technologies = {
 			decryption_tech
 		}
 	}
-	
+
+	basic_fire_control_system = {
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		enable_equipment_modules = { 
+			ship_fire_control_system_1
+		}
+		
+		research_cost = 1
+		#start_year = 1936
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 0.75
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = JAP
+				}
+				factor = 3
+			}
+			modifier = {
+				OR = {
+					can_research = improved_fire_control_system
+					has_tech = improved_fire_control_system
+				}
+				factor = 0
+			}
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+			naval_equipment
+		}
+	}
+
+	improved_fire_control_system = {
+
+		enable_equipment_modules = { 
+			ship_fire_control_system_2
+		}
+		
+		research_cost = 1
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 0.75
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = JAP
+				}
+				factor = 3
+			}
+			modifier = {
+				OR = {
+					can_research = advanced_fire_control_system
+					has_tech = advanced_fire_control_system
+				}
+				factor = 0
+			}
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+			naval_equipment
+		}
+	}
+
+	advanced_fire_control_system = {
+
+		enable_equipment_modules = { 
+			ship_fire_control_system_3
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 0.75
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = JAP
+				}
+				factor = 3
+			}
+			
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+			naval_equipment
+		}
+	}	
 	experimental_rockets = {
 
 		enable_building = {
@@ -1654,10 +1781,13 @@ technologies = {
 		research_cost = 1.5
 		start_year = 1950
 		air_intercept_efficiency = 0.2
-		air_superiority_efficiency = 0.2			
+		air_superiority_efficiency = 0.2	
+		dependencies = {
+			ir_guide = 1
+		}		
 		folder = {
 			name = electronics_folder
-			position = { x = 2 y = 22 }
+			position = { x = 2 y = 16 }
 		}
 		desc = "Allows the development of the 1955' fighter and interceptor jets."				
 		ai_will_do = {
@@ -1683,7 +1813,7 @@ technologies = {
 		}		
 		folder = {
 			name = electronics_folder
-			position = { x = 2 y = 16 }
+			position = { x = 2 y = 20 }
 		}
 		desc = "Allows the development of the 1965' fighter and interceptor jets."				
 		ai_will_do = {
@@ -1918,6 +2048,576 @@ technologies = {
 		
 		categories = {
 			nuclear
+		}
+	}
+#### NEW TECHS BELOW THIS LINE	#OpO 
+
+	basic_vacuum_computer = {
+
+		#small boost to research speed
+		research_speed_factor = 0.06
+		
+		path = {
+			leads_to_tech = improved_vacuum_computer 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = vacuum_encryption 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = vacuum_decryption 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1947
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 100
+
+			#DATE
+			modifier = { factor = 0 date < 1946.6.1 }
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+			decryption_tech
+			computing_tech
+		}
+	}
+	
+	improved_vacuum_computer = {
+
+		#small boost to research speed
+		research_speed_factor = 0.06
+		
+		path = {
+			leads_to_tech = basic_transistor_computer 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = vacuum2_encryption 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = vacuum2_decryption 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1951
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 28 }
+		}
+		
+		ai_will_do = {
+			factor = 100
+
+			#DATE
+			modifier = { factor = 0 date < 1950.6.1 }
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+			decryption_tech
+			computing_tech
+		}
+	}
+	
+	basic_transistor_computer = {
+
+		#small boost to research speed
+		research_speed_factor = 0.06
+		
+		path = {
+			leads_to_tech = transistor_encryption 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = transistor_decryption 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ir_guide 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = 1960_computing 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1955
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 100
+
+			#DATE
+			modifier = { factor = 0 date < 1954.6.1 }
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+			decryption_tech
+			computing_tech
+		}
+	}
+	comp60 = {
+	
+		# small boost to research speed
+		research_speed_factor = 0.08
+		path = {
+			leads_to_tech = comp65 
+			research_cost_coeff = 1
+		}		
+		research_cost = 2.5
+		start_year = 1960
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 34 }
+		}
+		
+		ai_will_do = {
+			factor = 3
+			
+			modifier = {
+				factor = 3
+				date > "1960.1.6"
+			}
+			modifier = {
+				date < "1958.6.1"
+				factor = 0
+			}
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+			decryption_tech
+			computing_tech
+		}
+	}
+	comp65 = {
+	
+		# small boost to research speed
+		research_speed_factor = 0.08
+		path = {
+			leads_to_tech = comp70 
+			research_cost_coeff = 1
+		}	
+		path = {
+			leads_to_tech = tv_guide
+			research_cost_coeff = 1
+		}		
+		research_cost = 2.5
+		start_year = 1960
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 38 }
+		}
+		
+		ai_will_do = {
+			factor = 3
+			
+			modifier = {
+				factor = 3
+				date > "1965.1.6"
+			}
+			modifier = {
+				date < "1963.6.1"
+				factor = 0
+			}
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+			decryption_tech
+			computing_tech
+		}
+	}
+	comp70 = {
+	
+		# small boost to research speed
+		research_speed_factor = 0.08
+		path = {
+			leads_to_tech = comp80 
+			research_cost_coeff = 1
+		}	
+		path = {
+			leads_to_tech = laser_guide
+			research_cost_coeff = 1
+		}		
+		research_cost = 2.5
+		start_year = 1960
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 42 }
+		}
+		
+		ai_will_do = {
+			factor = 3
+			
+			modifier = {
+				factor = 3
+				date > "1970.1.6"
+			}
+			modifier = {
+				date < "1968.6.1"
+				factor = 0
+			}
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+			decryption_tech
+			computing_tech
+		}
+	}
+	comp80 = {
+	
+		# small boost to research speed
+		research_speed_factor = 0.08
+		path = {
+			leads_to_tech = comp90 
+			research_cost_coeff = 1
+		}		
+		research_cost = 2.5
+		start_year = 1960
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 46 }
+		}
+		
+		ai_will_do = {
+			factor = 3
+			
+			modifier = {
+				factor = 3
+				date > "1980.1.6"
+			}
+			modifier = {
+				date < "1978.6.1"
+				factor = 0
+			}
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+			decryption_tech
+			computing_tech
+		}
+	}
+	comp90 = {
+	
+		# small boost to research speed
+		research_speed_factor = 0.08
+		
+		research_cost = 2.5
+		start_year = 1960
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 50 }
+		}
+		
+		ai_will_do = {
+			factor = 3
+			
+			modifier = {
+				factor = 3
+				date > "1990.1.6"
+			}
+			modifier = {
+				date < "1988.6.1"
+				factor = 0
+			}
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+			decryption_tech
+			computing_tech
+		}
+	}
+	ir_guide = {
+		
+		research_cost = 1.5
+		start_year = 1955
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 32 }
+		}
+		desc = "Allows the develpment of the early Air to Air missiles."		
+		ai_will_do = {
+			factor = 1
+
+			#DATE
+			modifier = { factor = 0 date < 1954.6.1 }
+		}
+		
+		categories = {
+			electronics
+			decryption_tech
+		}
+	}
+	tv_guide = {
+		air_cas_efficiency = 0.20		
+		research_cost = 1.5
+		start_year = 1965
+		desc = "Allows the development of the 1965' CAS and Strike jets."		
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 40 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			#DATE
+			modifier = { factor = 0 date < 1964.6.1 }
+		}
+		
+		categories = {
+			electronics
+			decryption_tech
+		}
+	}
+	laser_guide = {	
+		research_cost = 1.5
+		start_year = 1970
+		path = {
+			leads_to_tech = laser_guide_mun
+			research_cost_coeff = 1
+		}		
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 43 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			#DATE
+			modifier = { factor = 0 date < 1969.6.1 }
+		}
+		
+		categories = {
+			electronics
+			decryption_tech
+		}
+	}
+	laser_guide_mun = {
+		air_cas_efficiency = 0.30			
+		research_cost = 1.5
+		start_year = 1970
+		desc = "Allows the development of the 1970' CAS,Strike and fighter jets."				
+		folder = {
+			name = electronics_folder
+			position = { x = 6 y = 43 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			#DATE
+			modifier = { factor = 0 date < 1969.6.1 }
+		}
+		
+		categories = {
+			electronics
+			decryption_tech
+		}
+	}
+	vacuum_encryption = {
+
+		#encryption 3
+		encryption = 1
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}		
+		research_cost = 1
+		start_year = 1947
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 100
+
+			#DATE
+			modifier = { factor = 0 date < 1946.6.1 }
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+		}
+	}
+	
+	vacuum2_encryption = {
+
+		#encryption 3
+		encryption = 1
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}		
+		research_cost = 1
+		start_year = 1951
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 28 }
+		}
+		
+		ai_will_do = {
+			factor = 100
+
+			#DATE
+			modifier = { factor = 0 date < 1950.6.1 }
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+		}
+	}
+	
+	transistor_encryption = {
+
+		#encryption 3
+		encryption = 1
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}		
+		research_cost = 1
+		start_year = 1955
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 100
+
+			#DATE
+			modifier = { factor = 0 date < 1954.6.1 }
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+		}
+	}
+	
+	vacuum_decryption = {
+
+		#decryption 3
+		decryption = 1
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}		
+		research_cost = 1.5
+		start_year = 1947
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			#DATE
+			modifier = { factor = 0 date < 1946.6.1 }
+		}
+		
+		categories = {
+			electronics
+			decryption_tech
+		}
+	}
+	
+	vacuum2_decryption = {
+
+		#decryption 3
+		decryption = 1
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}		
+		research_cost = 1.5
+		start_year = 1951
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 28 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			#DATE
+			modifier = { factor = 0 date < 1950.6.1 }
+		}
+		
+		categories = {
+			electronics
+			decryption_tech
+		}
+	}
+	
+	transistor_decryption = {
+
+		#decryption 3
+		decryption = 1
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}		
+		research_cost = 1.5
+		start_year = 1955
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			#DATE
+			modifier = { factor = 0 date < 1954.6.1 }
+		}
+		
+		categories = {
+			electronics
+			decryption_tech
 		}
 	}
 }
