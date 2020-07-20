@@ -3,6 +3,7 @@ focus_tree = {
 	default=no
 	country={ factor=0 modifier={ add=10 or = { tag=QIN tag = CHI } } }
 	continuous_focus_position = { x = 20 y = 1200 }
+	reset_on_civil_war = yes
 	###########################################################################################################################
 	# POLITICAL
 	###########################################################################################################################
@@ -47,12 +48,17 @@ focus_tree = {
 			add_political_power=120 #Add decisions to exchange a lot of pp for stability and war support
 		}
 
+		historical_ai = {
+			is_historical_focus_on = no
+		}
+
 		ai_will_do = { factor = 80 }
 
 		cost = 10
 		
 		relative_position_id = CHI_first_reforms
 		prerequisite = { focus = CHI_first_reforms }
+		mutually_exclusive = { focus = CHI_appeal_revolutionaries focus = CHI_democratic_reforms }
 		
 		x = -4
 		y = 1
@@ -66,13 +72,18 @@ focus_tree = {
 		completion_reward = {
 			add_political_power=120 #Unlock decisions to exchange pp and war support for stability
 		}
-
+		
+		historical_ai = {
+			is_historical_focus_on = no
+		}
+		
 		ai_will_do = { factor = 80 }
 
 		cost = 10
 		
 		relative_position_id = CHI_first_reforms
 		prerequisite = { focus = CHI_first_reforms }
+		mutually_exclusive = { focus = CHI_appeal_revolutionaries focus = CHI_authoritarian_reforms }
 		
 		x = -1
 		y = 1
@@ -104,13 +115,18 @@ focus_tree = {
 		completion_reward = {
 			add_political_power=120 #Add support for all other ideologies
 		}
-
+		
+		historical_ai = {
+			is_historical_focus_on = yes
+		}
+		
 		ai_will_do = { factor = 80 }
 
 		cost = 10
 		
 		relative_position_id = CHI_first_reforms
 		prerequisite = { focus = CHI_first_reforms }
+		mutually_exclusive = { focus = CHI_democratic_reforms focus = CHI_authoritarian_reforms }
 		
 		x = 2
 		y = 1
@@ -157,6 +173,11 @@ focus_tree = {
 		icon = GFX_goal_generic_demand_territory
 		completion_reward = {
 			add_political_power=120 #Add more support for ideologies + possibly lower stability to encourage revolution
+			if = {
+				limit = {
+					
+				}
+			}
 		}
 
 		ai_will_do = { factor = 80 }

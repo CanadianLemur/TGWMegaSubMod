@@ -94,6 +94,54 @@ country_event = {
 				days = 250
 				}
 				
+				unlock_national_focus = CHI_looming_rebellion
+				unlock_national_focus = CHI_first_reforms
+				
+				if = {
+					limit = {
+						QIN = { has_completed_focus = CHI_authoritarian_reforms }
+					}
+					CHI = { unlock_national_focus = CHI_authoritarian_reforms }
+				}
+				
+				if = {
+					limit = {
+						QIN = { has_completed_focus = CHI_democratic_reforms }
+					}
+					CHI = { unlock_national_focus = CHI_democratic_reforms }
+				}
+				if = {
+					limit = {
+						QIN = { has_completed_focus = CHI_democratic_reforms_2 }
+					}
+					CHI = { unlock_national_focus = CHI_democratic_reforms_2 }
+				}
+				
+				if = {
+					limit = {
+						QIN = { has_completed_focus = CHI_appeal_revolutionaries }
+					}
+					CHI = { unlock_national_focus = CHI_appeal_revolutionaries }
+				}
+				if = {
+					limit = {
+						QIN = { has_completed_focus = CHI_revive_china }
+					}
+					CHI = { unlock_national_focus = CHI_revive_china }
+				}
+				if = {
+					limit = {
+						QIN = { has_completed_focus = CHI_abandon_the_empire }
+					}
+					CHI = { unlock_national_focus = CHI_abandon_the_empire }
+				}
+				if = {
+					limit = {
+						QIN = { has_completed_focus = CHI_father_of_the_revolution }
+					}
+					CHI = { unlock_national_focus = CHI_father_of_the_revolution }
+				}
+				
 			}
 		
 			release = MON # Release Mongolia
@@ -453,9 +501,13 @@ country_event = {
 			
 				CHI = { transfer_state = 602 }
 			
-				CHI = { annex_country = 622 }
+				CHI = { transfer_state = 622 }
 			
-				CHI = { annex_country = 600 }
+				CHI = { transfer_state = 600 }
+				
+				CHI = { transfer_state = 611 }
+				
+				CHI = { transfer_state = 612 }
 			}
 			
 		}
