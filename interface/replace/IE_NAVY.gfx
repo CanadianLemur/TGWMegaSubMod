@@ -515,7 +515,10 @@ spriteTypes = {
 		name = "GFX_SMI_cruiser_nuclear_reactor2_module"
 		textureFile = "gfx/interface/modules/NENG2.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_EMI_heavy_ship_engine_coal_2"
+		textureFile =gfx/interface/modules/heavy_ship_engine_coal_2.dds"
+	}
 	spriteType = {
 		name = "GFX_SMI_heavy_nuclear_reactor"
 		textureFile = "gfx/interface/modules/reactor_module.dds"

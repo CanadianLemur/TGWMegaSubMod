@@ -301,8 +301,8 @@ equipments = {
 		
 		default_modules = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = empty
+			fixed_ship_engine_slot = sub_ship_engine_gw
+			rear_1_custom_slot = ship_torpedo_sub_1
 		}
 
 		lg_armor_piercing = 0

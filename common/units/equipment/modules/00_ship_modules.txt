@@ -1151,6 +1151,7 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = 0.2
 			reliability = -0.2
+			fuel_consumption = -0.9
 		}
 		build_cost_resources = {
 			coal = 5
@@ -1164,6 +1165,7 @@ equipment_modules = {
 
 	light_ship_engine_1 = {
 		category = light_ship_engine
+		parent = light_ship_coal_boiler
 		sfx = sfx_ui_sd_module_engine
 
 		
@@ -1454,6 +1456,7 @@ equipment_modules = {
 	}
 	sub_ship_engine_1 = {
 		category = sub_ship_engine
+		parent = sub_ship_engine_gw
 		sfx = sfx_ui_sd_module_engine
 		
 		
@@ -1575,6 +1578,7 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = 0.2
 			reliability = -0.2
+			fuel_consumption = -0.9
 		}
 		build_cost_resources = {
 			coal = 10
@@ -1587,6 +1591,7 @@ equipment_modules = {
 	}
 	cruiser_ship_engine_1 = {
 		category = cruiser_ship_engine
+		parent = cruiser_ship_engine_gw
 		sfx = sfx_ui_sd_module_engine
 
 		
@@ -1865,6 +1870,7 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = 0.1
 			reliability = -0.3
+			fuel_consumption = - 0.9
 		}
 		
 		can_convert_from = {
@@ -1877,6 +1883,7 @@ equipment_modules = {
 	}
 	heavy_ship_engine_coal_2 = {
 		category = heavy_ship_engine
+		parent = heavy_ship_engine_coal_1
 		sfx = sfx_ui_sd_module_engine
 
 		
@@ -1889,6 +1896,7 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = 0.1
 			reliability = -0.2
+			fuel_consumption = -0.9
 		}
 		
 		can_convert_from = {
@@ -1901,6 +1909,7 @@ equipment_modules = {
 	}
 	heavy_ship_engine_1 = {
 		category = heavy_ship_engine
+		parent = heavy_ship_engine_coal_2
 		sfx = sfx_ui_sd_module_engine
 
 		

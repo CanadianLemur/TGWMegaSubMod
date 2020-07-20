@@ -128,6 +128,13 @@ equipments = {
 		naval_range = 1200
 		
 		max_strength = 25
+		default_modules = {
+				fixed_ship_battery_slot = ship_light_battery_1
+				fixed_ship_engine_slot = light_ship_coal_boiler
+				fixed_ship_torpedo_slot = ship_torpedo_1
+				mid_1_custom_slot = ship_torpedo_1
+				rear_1_custom_slot = ship_torpedo_1
+			}
 	}
 	ship_hull_light_1 = {
 		year = 1922

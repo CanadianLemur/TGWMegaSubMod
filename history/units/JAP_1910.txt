@@ -148,7 +148,7 @@ fleet = {
 		ship = { name = "IJN Tango" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = JAP version_name = "Petroplavsk Class" } } }
 		ship = { name = "IJN Fuji" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = JAP version_name = "Fuji Class" } } }
 		ship = { name = "IJN Ikoma" definition = heavy_cruiser equipment = { ship_hull_gwcruiser = { amount = 1 owner = JAP version_name = "Tsukuba Class" } } }
-		ship = { name = "IJN Ibuki" definition = battle_cruiser equipment = { ship_hull_dreadnought = { amount = 1 owner = JAP } } }
+		ship = { name = "IJN Ibuki" definition = battle_cruiser equipment = { ship_hull_dreadnought = { amount = 1 owner = JAP  version_name = "Ibuki Class" } } }
 		ship = { name = "IJN Iwate" definition = heavy_cruiser equipment = { ship_hull_gwcruiser = { amount = 1 owner = JAP version_name = "Asama Class" } } }
 		ship = { name = "IJN Tsugaru" definition = light_cruiser equipment = { ship_hull_gwcruiser = { amount = 1 owner = JAP version_name = "Pallada Class" } } }
 		ship = { name = "IJN Soya" definition = light_cruiser equipment = { ship_hull_gwcruiser = { amount = 1 owner = JAP version_name = "Varyag Class" } } }
@@ -373,10 +373,10 @@ instant_effect = {
 	
 	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought creator = "JAP" version_name = "Satsuma Class"  }  requested_factories = 1  progress = 0.9  amount = 1 } #IJN Satsuma LD:15-May-1905 Comp:15-Nov-1910
 add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought creator = "JAP" version_name = "Satsuma Class"  }  requested_factories = 1  progress = 0.83  amount = 1 } #IJN Aki LD:15-Mar-1906 Comp:11-Mar-1911
-add_equipment_production = { equipment = { type = ship_hull_dreadnought creator = "JAP"  }  requested_factories = 1  progress = 0.37  amount = 1 } #IJN Settsu LD:18-Jan-1909 Comp:01-Jul-1912
-add_equipment_production = { equipment = { type = ship_hull_dreadnought creator = "JAP"  }  requested_factories = 1  progress = 0.36  amount = 1 } #IJN Kawachi LD:01-Apr-1909 Comp:31-Mar-1912
-add_equipment_production = { equipment = { type = ship_hull_dreadnought creator = "JAP"  }  requested_factories = 1  progress = 0.85  amount = 1 } #IJN Kurama LD:23-Aug-1905 Comp:28-Feb-1911
+add_equipment_production = { equipment = { type = ship_hull_dreadnought creator = "JAP"  version_name = "Kawachi Class"}  requested_factories = 1  progress = 0.37  amount = 1 } #IJN Settsu LD:18-Jan-1909 Comp:01-Jul-1912
+add_equipment_production = { equipment = { type = ship_hull_dreadnought creator = "JAP"  version_name = "Kawachi Class"}  requested_factories = 1  progress = 0.36  amount = 1 } #IJN Kawachi LD:01-Apr-1909 Comp:31-Mar-1912
+add_equipment_production = { equipment = { type = ship_hull_dreadnought creator = "JAP"  version_name = "Ibuki Class"}  requested_factories = 1  progress = 0.85  amount = 1 } #IJN Kurama LD:23-Aug-1905 Comp:28-Feb-1911
 add_equipment_production = { equipment = { type = ship_hull_gwcruiser creator = "JAP" version_name = "Tone Class"  }  requested_factories = 1  progress = 0.99  amount = 1 } #IJN Tone LD:17-Nov-1905 Comp:15-May-1910
-add_equipment_production = { equipment = { type = ship_hull_gwcruiser creator = "JAP"  }  requested_factories = 1  progress = 0.35  amount = 1 } #IJN Chikuma LD:01-Apr-1909 Comp:17-May-1912
+add_equipment_production = { equipment = { type = ship_hull_gwcruiser creator = "JAP" version_name = "Tone Class" }  requested_factories = 1  progress = 0.35  amount = 1 } #IJN Chikuma LD:01-Apr-1909 Comp:17-May-1912
 
 }
