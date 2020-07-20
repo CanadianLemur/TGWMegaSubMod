@@ -8,7 +8,15 @@ set_convoys = 150
 1910.1.1 = {
 
 	oob = "SPR_1910"
-
+	create_country_leader={
+	name = "Alfonso XIII"
+	desc=SPR_alfonso_xiii_DESC
+	picture="gfx/leaders/SPR_alfonsoxiii.dds"
+	expire="1935.1.1"
+	ideology=centrism
+	traits={ 
+	}
+}
 
 	# Starting tech
 	set_technology = {
@@ -52,7 +60,17 @@ set_convoys = 150
 		# Engineering
 		electronic_mechanical_engineering = 1
 
-		# Industry
+		# Naval
+1910_ship_hull_submarine = 1
+ww1_ship_hull_light = 1
+gw_ship_hull_cruiser = 1
+pre_dreadnought_ship_hull_heavy = 1
+dreadnought_ship_hull_heavy = 1
+basic_torpedo = 1
+mtg_transport = 1
+basic_secondary_battery = 1
+basic_naval_mines = 1
+basic_battery = 1
 	}
 
 	set_popularities = {

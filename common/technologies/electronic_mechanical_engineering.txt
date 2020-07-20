@@ -405,7 +405,9 @@ technologies = {
 			leads_to_tech = improved_decimetric_radar 
 			research_cost_coeff = 1
 		}
-		
+		enable_equipment_modules = { 
+			ship_radar_1
+		}			
 		research_cost = 1.5
 		start_year = 1938
 		
@@ -436,7 +438,9 @@ technologies = {
 			building = radar_station
 			level = 3
 		}
-		
+		enable_equipment_modules = { 
+			ship_radar_2
+		}			
 		path = {
 			leads_to_tech = centimetric_radar 
 			research_cost_coeff = 1
@@ -467,7 +471,9 @@ technologies = {
 			building = radar_station
 			level = 4
 		}
-		
+		enable_equipment_modules = { 
+			ship_radar_3
+		}			
 		path = {
 			leads_to_tech = improved_centimetric_radar 
 			research_cost_coeff = 1
@@ -497,8 +503,7 @@ technologies = {
 		enable_building = {
 			building = radar_station
 			level = 5
-		}
-		
+		}		
 		path = {
 			leads_to_tech = advanced_centimetric_radar 
 			research_cost_coeff = 1
@@ -1649,10 +1654,7 @@ technologies = {
 		research_cost = 1.5
 		start_year = 1950
 		air_intercept_efficiency = 0.2
-		air_superiority_efficiency = 0.2	
-		dependencies = {
-			ir_guide = 1
-		}		
+		air_superiority_efficiency = 0.2			
 		folder = {
 			name = electronics_folder
 			position = { x = 2 y = 22 }

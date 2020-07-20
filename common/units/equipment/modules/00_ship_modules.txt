@@ -1137,7 +1137,30 @@ equipment_modules = {
 #   #  # #  #  #  #  # #   
 ### #  #  ##  ### #  # ### 
 
+	light_ship_coal_boiler = {
+		category = light_ship_engine
+		sfx = sfx_ui_sd_module_engine
 
+		
+		add_stats = {
+			naval_speed = 4
+			fuel_consumption = 0
+			build_cost_ic = 90
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.2
+			reliability = -0.2
+		}
+		build_cost_resources = {
+			coal = 5
+			}
+		can_convert_from = {
+			module_category = light_ship_engine
+			convert_cost_ic = 250
+		}
+
+	}
 
 	light_ship_engine_1 = {
 		category = light_ship_engine
@@ -1406,6 +1429,29 @@ equipment_modules = {
 			convert_cost_ic = 230
 		}
 	}
+	sub_ship_engine_gw = {
+		category = sub_ship_engine
+		sfx = sfx_ui_sd_module_engine
+		
+		
+		add_stats = {
+			naval_speed = 4
+			fuel_consumption = 7
+			build_cost_ic = 90
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.04
+			reliability = -0.3
+
+		}
+
+		
+		can_convert_from = {
+			module_category = sub_ship_engine
+			convert_cost_ic = 250
+		}
+	}
 	sub_ship_engine_1 = {
 		category = sub_ship_engine
 		sfx = sfx_ui_sd_module_engine
@@ -1513,6 +1559,30 @@ equipment_modules = {
 		can_convert_from = {
 			module = sub_ship_engine_3
 			convert_cost_ic = 230
+		}
+	}
+	cruiser_ship_engine_gw = {
+		category = cruiser_ship_engine
+		sfx = sfx_ui_sd_module_engine
+
+		
+		add_stats = {
+			naval_speed = 4
+			fuel_consumption = 0
+			build_cost_ic = 400
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.2
+			reliability = -0.2
+		}
+		build_cost_resources = {
+			coal = 10
+			}
+		
+		can_convert_from = {
+			module_category = cruiser_ship_engine
+			convert_cost_ic = 2500
 		}
 	}
 	cruiser_ship_engine_1 = {
@@ -1780,6 +1850,54 @@ equipment_modules = {
 			module = cruiser_ship_engine_9
 			convert_cost_ic = 2300
 		}
+	}
+	heavy_ship_engine_coal_1 = {
+		category = heavy_ship_engine
+		sfx = sfx_ui_sd_module_engine
+
+		
+		add_stats = {
+			naval_speed = 3
+			fuel_consumption = 0
+			build_cost_ic = 1800
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.1
+			reliability = -0.3
+		}
+		
+		can_convert_from = {
+			module_category = heavy_ship_engine
+			convert_cost_ic = 4800
+		}
+		build_cost_resources = {
+			coal = 15
+			}
+	}
+	heavy_ship_engine_coal_2 = {
+		category = heavy_ship_engine
+		sfx = sfx_ui_sd_module_engine
+
+		
+		add_stats = {
+			naval_speed = 4
+			fuel_consumption = 0
+			build_cost_ic = 1800
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.1
+			reliability = -0.2
+		}
+		
+		can_convert_from = {
+			module_category = heavy_ship_engine
+			convert_cost_ic = 4800
+		}
+		build_cost_resources = {
+			coal = 15
+			}
 	}
 	heavy_ship_engine_1 = {
 		category = heavy_ship_engine

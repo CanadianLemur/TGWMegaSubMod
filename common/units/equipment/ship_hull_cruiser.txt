@@ -120,7 +120,15 @@ equipments = {
 		
 		manpower = 600
 	}
-
+	ship_hull_gwcruiser = {
+		year = 1910
+		visual_level = 0
+		archetype = ship_hull_cruiser
+		priority = 1900
+		
+		
+		module_slots = inherit
+	}
 	ship_hull_cruiser_1 = {
 		year = 1922
 		visual_level = 0

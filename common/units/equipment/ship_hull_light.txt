@@ -111,7 +111,24 @@ equipments = {
 		
 		manpower = 250
 	}
+	gwship_hull_light_1 = {
+		year = 1910
 
+		archetype = ship_hull_light
+		priority = 2000
+		#alias = destroyer_1
+		
+		module_slots = inherit
+		surface_detection = 15
+		sub_detection = 1
+		surface_visibility = 10
+		naval_speed = 22
+		reliability = 0.80
+		
+		naval_range = 1200
+		
+		max_strength = 25
+	}
 	ship_hull_light_1 = {
 		year = 1922
 

@@ -1091,6 +1091,9 @@ technologies = {
 		enable_equipments = {
 			ww1_anti_air_equipment_1915
 		}
+		enable_equipment_modules = { 
+			ship_anti_air_GW_1
+		}
 		
 		path = {
 			leads_to_tech = antiair_1918
@@ -1153,6 +1156,9 @@ technologies = {
 		enable_equipments = {
 			ww1_anti_air_equipment_1922
 		}
+		enable_equipment_modules = { 
+			ship_anti_air_1
+		}
 		
 		path = {
 			leads_to_tech = interwar_antiair
@@ -1189,6 +1195,9 @@ technologies = {
 		enable_building = {
 			building = anti_air
 			level = 5
+		}
+		enable_equipment_modules = { 
+			ship_anti_air_2
 		}
 		
 		path = {
@@ -1250,6 +1259,9 @@ technologies = {
 	
 		enable_equipments = {
 			anti_air_equipment_2
+		}
+		enable_equipment_modules = { 
+			ship_anti_air_3
 		}
 
 		#anti_air = {
