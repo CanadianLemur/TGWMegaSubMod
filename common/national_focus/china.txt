@@ -1,0 +1,173 @@
+focus_tree = {
+	id=china_focus
+	default=no
+	country={ factor=0 modifier={ add=10 or = { tag=QIN tag = CHI } } }
+	continuous_focus_position = { x = 20 y = 1200 }
+	###########################################################################################################################
+	# POLITICAL
+	###########################################################################################################################
+	focus = {
+		id = CHI_looming_rebellion
+		icon = GFX_goal_generic_demand_territory
+		completion_reward = {
+			add_political_power=120
+		}
+
+		ai_will_do = { factor = 80 }
+
+		cost = 10
+		x = 10
+		y = 0
+	}
+	
+	focus = {
+		id = CHI_first_reforms
+		icon = GFX_goal_generic_demand_territory
+		completion_reward = {
+			add_political_power=120
+		}
+
+		ai_will_do = { factor = 80 }
+
+		cost = 10
+		
+		relative_position_id = CHI_looming_rebellion
+		prerequisite = { focus = CHI_looming_rebellion }
+		
+		x = 0
+		y = 1
+	}
+	
+#-------------------------------------------------------------------------------
+#Centralization/Imperial path    Qing win civil war through strength
+	focus = {
+		id = CHI_authoritarian_reforms
+		icon = GFX_goal_generic_demand_territory
+		completion_reward = 
+			add_political_power=120 #Add decisions to exchange a lot of pp for stability and war support
+		}
+
+		ai_will_do = { factor = 80 }
+
+		cost = 10
+		
+		relative_position_id = CHI_first_reforms
+		prerequisite = { focus = CHI_first_reforms }
+		
+		x = -4
+		y = 1
+	}
+	
+#-------------------------------------------------------------------------------
+#Decentralization/Democratic path  Bypass civil war entirely
+	focus = {
+		id = CHI_democratic_reforms
+		icon = GFX_goal_generic_demand_territory
+		completion_reward = {
+			add_political_power=120 #Unlock decisions to exchange pp and war support for stability
+		}
+
+		ai_will_do = { factor = 80 }
+
+		cost = 10
+		
+		relative_position_id = CHI_first_reforms
+		prerequisite = { focus = CHI_first_reforms }
+		
+		x = -1
+		y = 1
+	}
+		
+	focus = {
+		id = CHI_democratic_reforms_2
+		icon = GFX_goal_generic_demand_territory
+		completion_reward = {
+			add_political_power=120 #Increase democracy
+		}
+
+		ai_will_do = { factor = 80 }
+
+		cost = 10
+		
+		relative_position_id = CHI_democratic_reforms
+		prerequisite = { focus = CHI_democratic_reforms }
+		
+		x = 0
+		y = 1
+	}
+	
+#-------------------------------------------------------------------------------
+#Revolutionary    Revolutionaries win war through
+	focus = {
+		id = CHI_appeal_revolutionaries
+		icon = GFX_goal_generic_demand_territory
+		completion_reward = {
+			add_political_power=120 #Add support for all other ideologies
+		}
+
+		ai_will_do = { factor = 80 }
+
+		cost = 10
+		
+		relative_position_id = CHI_first_reforms
+		prerequisite = { focus = CHI_first_reforms }
+		
+		x = 2
+		y = 1
+	}
+	
+	focus = {
+		id = CHI_revive_china
+		icon = GFX_goal_generic_demand_territory
+		completion_reward = {
+			add_political_power=120 #Add more support for ideologies + possibly lower stability to encourage revolution
+		}
+
+		ai_will_do = { factor = 80 }
+
+		cost = 10
+		
+		relative_position_id = CHI_appeal_revolutionaries
+		prerequisite = { focus = CHI_appeal_revolutionaries }
+		
+		x = 0
+		y = 1
+	}
+	
+	focus = {
+		id = CHI_abandon_the_empire
+		icon = GFX_goal_generic_demand_territory
+		completion_reward = {
+			add_political_power=120 #Add more support for ideologies + possibly lower stability to encourage revolution
+		}
+
+		ai_will_do = { factor = 80 }
+
+		cost = 10
+		
+		relative_position_id = CHI_revive_china
+		prerequisite = { focus = CHI_revive_china }
+		
+		x = 0
+		y = 1
+	}
+	
+	focus = {
+		id = CHI_father_of_the_revolution
+		icon = GFX_goal_generic_demand_territory
+		completion_reward = {
+			add_political_power=120 #Add more support for ideologies + possibly lower stability to encourage revolution
+		}
+
+		ai_will_do = { factor = 80 }
+
+		cost = 10
+		
+		relative_position_id = CHI_abandon_the_empire
+		prerequisite = { focus = CHI_abandon_the_empire }
+		
+		x = 0
+		y = 1
+	}
+
+}

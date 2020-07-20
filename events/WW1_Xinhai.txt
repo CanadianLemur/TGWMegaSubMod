@@ -245,6 +245,11 @@ country_event = {
 		tag = CHI
 		date > 1911.9.20
 		has_global_flag = xinhai_revolution
+		not = {
+			CHI = {
+				controls_state = 602
+			}
+		}
 	}
 	
 	immediate = {
@@ -414,6 +419,7 @@ country_event = {
 
 country_event = {
 	title = MSMWuchang.7.t #Xuantong Emperor Abdicates 
+	desc = MSMWuchang.7.d
 	id = MSMWuchang.7
 	picture = MSMWuchang_7
 	is_triggered_only = no
@@ -460,7 +466,31 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		
+		add_stability = 0.1 #PLACEHOLDER EFFECT
 	}
 	
+}
+
+country_event = {
+	title = MSMWuchang.8.t #China Intro Event
+	desc = MSMWuchang.8.d
+	id = MSMWuchang.8
+	picture = MSMWuchang_8
+	fire_only_once = yes
+	timeout_days = 20
+	mean_time_to_happen = {
+		days = 2
+	}
+	trigger = {
+		tag = QIN
+		date > 1910.6.1
+	}
+	
+	option = {
+		name = MSMWuchang.8.a
+		ai_chance = {
+			factor = 100
+		}
+		add_political_power = 1
+	}
 }
