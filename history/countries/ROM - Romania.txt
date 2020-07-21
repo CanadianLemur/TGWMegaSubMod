@@ -1,0 +1,325 @@
+﻿capital = 46
+
+#-------------------------------------------------------
+#					GENERIC VALUES
+#-------------------------------------------------------
+set_fuel_ratio = 0.20
+set_research_slots = 3
+set_stability = 0.75
+set_war_support = 0.65
+set_convoys = 10
+
+#-------------------------------------------------------
+#					POLITICS & ARMY
+#-------------------------------------------------------
+create_country_leader={ name = "Ferdinand I" desc=ROM_ferdinand_i_DESC picture="gfx/leaders/ROM_ferdinand_i.dds" expire="1935.1.1" ideology=despotism  traits={  } }
+create_country_leader={ name = "Christian Rakovsky" desc=ROM_christian_rakovsky_DESC picture="gfx/leaders/ROM_christian_rakovsky.dds" expire="1935.1.1" ideology=stalinism traits={  } }
+create_country_leader={ name = "Carol I" desc=ROM_carol_i_DESC picture="gfx/leaders/ROM_carol_i.dds" expire="1935.1.1" ideology=conservatism traits={  } }
+
+#create_corps_commander={  name = "Barozzi" id=75040 portrait_path="gfx/generals/ROM_barozzi.dds" traits={ old_guard  } skill=2 }
+#create_corps_commander={  name = "Berindei" id=75044 portrait_path="gfx/generals/ROM_berindei.dds" traits={ old_guard  } skill=1 }
+#create_corps_commander={  name = "Lahovary" id=75045 portrait_path="gfx/generals/ROM_lahovary.dds" traits={ old_guard  } skill=2 }
+#create_corps_commander={  name = "Argetoianu" id=75046 portrait_path="gfx/generals/ROM_argetoianu.dds" traits={ old_guard  } skill=2 }
+#create_corps_commander={  name = "Anghelescu" id=75047 portrait_path="gfx/generals/ROM_anghelescu.dds" traits={ old_guard  } skill=2 }
+#create_corps_commander={  name = "Carol I" id=75049 portrait_path="gfx/generals/ROM_carol_i.dds" traits={ old_guard  } skill=3 }
+#create_corps_commander={  name = "Angelescu G." id=75050 portrait_path="gfx/generals/ROM_angelescu_g.dds" traits={ old_guard  } skill=2 }
+#create_corps_commander={  name = "Vladescu" id=75051 portrait_path="gfx/generals/ROM_vladescu.dds" traits={ old_guard  } skill=1 }
+#create_corps_commander={  name = "Manu" id=75054 portrait_path="gfx/generals/ROM_manu.dds" traits={ old_guard  } skill=2 }
+#create_corps_commander={  name = "Pencovici" id=75055 portrait_path="gfx/generals/ROM_pencovici.dds" traits={ old_guard  } skill=1 }
+
+#create_field_marshal={  name = "Falcoianu" id=75048 portrait_path="gfx/fieldmarshal/ROM_falcoianu.dds" traits={ old_guard  } skill=3 }
+
+create_field_marshal={  name = "Kliment Boyadzhiev" id=75048 portrait_path="gfx/hoi4tgw_portraits/ROM/army_generals/ROM_Kliment_Boyadzhiev.dds" traits={ fast_planner  } skill=3 }
+
+#-# The Great War 0.5.1 (2018) #----------------------------------------------------------------------------------------------------------#
+
+create_field_marshal={
+	name = "Constantin Prezan" id=92101
+	portrait_path="gfx/hoi4tgw_portraits/ROM/army_generals/ROM_Constantin_Prezan.dds"
+	traits={ offensive_doctrine old_guard }
+	skill=3
+}
+
+create_field_marshal={
+	name = "Alexandru Averescu" id=92102
+	portrait_path="gfx/hoi4tgw_portraits/ROM/army_generals/ROM_Alexandru_Averescu.dds"
+	traits={ offensive_doctrine }
+	skill=3
+}
+
+create_field_marshal={
+	name = "Grigore Crăiniceanu" id=92103
+	portrait_path="gfx/hoi4tgw_portraits/ROM/army_generals/ROM_Grigore_Crainiceanu.dds"
+	traits={ defensive_doctrine }
+	skill=2
+}
+
+create_field_marshal={
+	name = "Ioan_Culcer" id=92104
+	portrait_path="gfx/hoi4tgw_portraits/ROM/army_generals/ROM_Ioan_Culcer.dds"
+	traits={ defensive_doctrine old_guard }
+	skill=2
+}
+
+
+create_corps_commander={
+	name = "Artur Văitoianu" id=92105
+	portrait_path="gfx/hoi4tgw_portraits/ROM/army_generals/ROM_Artur_Vaitoianu.dds"
+	traits={ }
+	skill=3
+}
+
+create_corps_commander={
+	name = "Eremia Grigorescu" id=92106
+	portrait_path="gfx/hoi4tgw_portraits/ROM/army_generals/ROM_Eremia_Grigorescu.dds"
+	traits={ }
+	skill=2
+}
+
+create_corps_commander={
+	name = "Ion Dragalina" id=92107
+	portrait_path="gfx/hoi4tgw_portraits/ROM/army_generals/ROM_Ion_Dragalina.dds"
+	traits={ }
+	skill=2
+}
+
+create_corps_commander={
+	name = "Constantin Coandă" id=92108
+	portrait_path="gfx/hoi4tgw_portraits/ROM/army_generals/ROM_Constantin_Coanda.dds"
+	traits={ }
+	skill=2
+}
+
+#----------------------------------------------------------------------------------------------------------#
+
+
+create_navy_leader={  name = "Nigrescu" id=75021 portrait_path="gfx/admiral/ROM_nigrescu.dds" traits={   } skill=3 }
+create_navy_leader={  name = "Georgescu I." id=75033 portrait_path="gfx/admiral/ROM_georgescu_i.dds" traits={   } skill=3 }
+create_navy_leader={  name = "Sebestian" id=75034 portrait_path="gfx/admiral/ROM_sebestian.dds" traits={   } skill=3 }
+#create_navy_leader={  name = "Negru" id=75037 portrait_path="gfx/admiral/ROM_negru.dds" traits={   } skill=1 }
+create_navy_leader={  name = "Balescu" id=75038 portrait_path="gfx/admiral/ROM_balescu.dds" traits={   } skill=3 }
+create_navy_leader={  name = "Niculescu-Rizea" id=75039 portrait_path="gfx/admiral/ROM_niculescu_rizea.dds" traits={   } skill=2 }
+#create_navy_leader={  name = "Scodrea" id=75057 portrait_path="gfx/admiral/ROM_scodrea.dds" traits={   } skill=1 }
+
+set_technology = {
+	# Navy
+	###ww1_battleship0 = 0 #  ww1_battleship_1890 (Pre-Dreadnought I)
+	###ww1_battleship1 = 0 #  ww1_battleship_1900 (Pre-Dreadnought II)
+	###ww1_battleship2 = 0 #  ww1_battleship_1906 (Dreadnought I)
+	###ww1_battleship3 = 0 #  ww1_battleship_1910 (Dreadnought II)
+	###ww1_battleship4 = 0 #  ww1_battleship_1914 (Dreadnought III)
+
+	###ww1_battlecruiser1 = 0 # ww1_battlecruiser_1906 (Battlecruiser I)
+	###ww1_battlecruiser2 = 0 # ww1_battlecruiser_1910 (Battlecruiser II)
+	###ww1_battlecruiser3 = 0 # ww1_battlecruiser_1910 (Battlecruiser III)
+
+	ww1_heavy_cruiser0 = 1
+	ww1_heavy_cruiser0_mtg = 1 # heavy_cruiser_1890 (Armored Cruiser I)
+	###ww1_heavy_cruiser1 = 0 # heavy_cruiser_1900 (Armored Cruiser II)
+
+	ww1_light_cruiser0 = 1
+	ww1_light_cruiser0_mtg = 1 # light_cruiser_1890 (Protected Cruiser I)
+	###ww1_light_cruiser1 = 0 # light_cruiser_1900 (Protected Cruiser II)
+	###ww1_light_cruiser2 = 0 # light_cruiser_1906 (Light Cruiser I)
+	###ww1_light_cruiser3 = 0 # light_cruiser_1910 (Light Cruiser II)
+	###ww1_light_cruiser4 = 0 # light_cruiser_1914 (Light Cruiser III)
+
+	ww1_destroyer0 = 1
+	ww1_destroyer0_mtg = 1 # destroyer_1890 (Torpedo Boat I)
+	ww1_destroyer1 = 1
+	ww1_destroyer1_mtg = 1 # destroyer_1900 (Destroyer I)
+	###ww1_destroyer2 = 0 # destroyer_1906 (Destroyer II)
+	###ww1_destroyer3 = 0 # destroyer_1910 (Destroyer III)
+	###ww1_destroyer4 = 0 # destroyer_1914 (Destroyer IV)	
+
+	ww1_moduleMTG_mines = 1
+	ww1_moduleMTG_mines_mtg = 1 # Mines
+
+	ww1_submarine0 = 1
+	ww1_submarine0_mtg = 1 # coastal_submarine_1900 (Coastal Submarine 1900, first available Submarine)
+	###ww1_submarine1 = 0 # submarine_1906 (Submarine I)
+	###ww1_submarine2 = 0 # submarine_1910 (Submarine II)
+	###ww1_submarine3 = 0 # submarine_1914 (Submarine III)
+
+	transport = 1
+	transport_mtg = 1 # Naval Transport
+1910_ship_hull_submarine = 1
+ww1_ship_hull_light = 1
+gw_ship_hull_cruiser = 1
+pre_dreadnought_ship_hull_heavy = 1
+dreadnought_ship_hull_heavy = 1
+basic_torpedo = 1
+mtg_transport = 1
+basic_secondary_battery = 1
+basic_naval_mines = 1
+basic_battery = 1
+}
+
+1910.1.1 = {
+	oob = "ROM_1910"
+
+	#-------------------------------------------------------
+	#							NF
+	#-------------------------------------------------------
+
+	#-------------------------------------------------------
+
+	set_technology = {
+
+		# Infantry
+		infantry_weapons = 1
+		support_weapons = 1
+		infantry_binoculars = 1
+		motorised_infantry = 1
+		ww1_ambulance1 = 1
+
+
+		# Support
+		tech_support = 1
+		tech_engineers = 1
+		tech_recon = 1
+		#tech_military_police = 1
+		#tech_maintenance_company = 1
+		#tech_field_hospital = 1
+		#tech_logistics_company = 1
+
+		# Armor
+
+		# Artillery
+		light_field_gun1 = 1
+		heavy_field_gun1 = 1
+
+
+		# Air
+
+		# Engineering
+		electronic_mechanical_engineering = 1
+
+		# Industry		
+		ww1_fortification1 = 1
+	}
+
+	set_politics = {
+	    ruling_party = democratic
+	    last_election = "1907.1.1"
+	    election_frequency = 48
+	    elections_allowed = yes
+	}
+	set_popularities = {
+	    democratic = 85
+	    fascism = 3
+	    communism = 2
+	    neutrality = 10
+	}
+
+	add_ideas = {
+		limited_conscription
+	}	
+}
+
+1914.1.1 = {
+	oob = "ROM_1914"
+
+
+	#-------------------------------------------------------
+	#							NF
+	#-------------------------------------------------------
+
+	#Army
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = ww1_artillery_effort_1
+	complete_national_focus = doctrine_effort
+	complete_national_focus = ww1_trenchwarfare
+
+	#Industrial
+	complete_national_focus = industrial_effort
+	complete_national_focus = infrastructure_effort
+
+	#Political
+	complete_national_focus = political_effort
+
+	#Diplomatic
+	complete_national_focus = ww1_diplomatic_effort
+	complete_national_focus = ww1_takeposition	
+	complete_national_focus = ww1_supportfrance
+	complete_national_focus = ww1_supportrussia	
+	complete_national_focus = interventionism_focus
+	complete_national_focus = volunteer_corps
+	complete_national_focus = foreign_expeditions
+	
+
+	#-------------------------------------------------------
+
+	set_technology = {
+
+		# Infantry
+		infantry_weapons = 1
+		ww1infantry_weapons1 = 1
+		support_weapons = 1
+		infantry_binoculars = 1
+		infantry_grenade = 1
+		motorised_infantry = 1
+		ww1_ambulance1 = 1
+
+
+		# Support
+		tech_support = 1
+		tech_engineers = 1
+		tech_recon = 1
+		tech_military_police = 1
+		tech_maintenance_company = 1
+		tech_field_hospital = 1
+		tech_logistics_company = 1
+
+		# Armor
+		gwtank = 1 # 1910 Armored Car
+
+		# Artillery
+		light_field_gun1 = 1
+		bonus_artillery1 = 1
+		heavy_field_gun1 = 1
+		bonus_bertha1 = 1
+
+
+		# Air
+		ww1_fighter1 = 1
+
+		# Navy Doctrine
+		ww1_navaldoctrine = 1
+		ww1_navaldoctrine_2 = 1
+		ww1_navaldoctrine_3 = 1
+
+		# Engineering
+		electronic_mechanical_engineering = 1
+		mechanical_computing = 1
+		chemical_research = 1
+		tank_unlocker1 = 1
+		radio = 1
+		supertech1 = 1
+		tankaircraft1 = 1
+		torpedotech1 = 1
+
+		# Industry
+		ww1_tools1 = 1
+		ww1_medicine1 = 1
+		ww1_fortification1 = 1
+		ww1_fortification2 = 1
+	}
+
+	set_politics = {
+	    ruling_party = democratic last_election = "1912.1.1"
+	    election_frequency = 48 elections_allowed = yes
+	}
+
+	set_popularities = {
+		neutrality = 10
+		fascism = 3
+		democratic = 85
+		communism = 2
+	}	
+
+	add_ideas = {
+		limited_conscription
+	}
+}
