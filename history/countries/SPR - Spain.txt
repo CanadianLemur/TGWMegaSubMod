@@ -13,11 +13,19 @@ set_convoys = 150
 	desc=SPR_alfonso_xiii_DESC
 	picture="gfx/leaders/SPR_alfonsoxiii.dds"
 	expire="1935.1.1"
-	ideology=centrism
+	ideology=despotism
 	traits={ 
 	}
 }
-
+create_country_leader={
+	name = "Miguel Primo de Rivera"
+	desc=SPR_miguel_primo_de_rivera_DESC
+	picture="gfx/generals/SPR_primo_de_rivera_m.dds"
+	expire="1936.3.16"
+	ideology=fascism_ideology
+	traits={ 
+	}
+}
 	# Starting tech
 	set_technology = {
 		# Infantry
@@ -176,15 +184,7 @@ basic_battery = 1
 	}	
 }
 
-create_country_leader={
-	name = "Miguel Primo de Rivera"
-	desc=SPR_miguel_primo_de_rivera_DESC
-	picture="gfx/generals/SPR_primo_de_rivera_m.dds"
-	expire="1936.3.16"
-	ideology=fascism_ideology
-	traits={ 
-	}
-}
+
 
 	
 create_country_leader={

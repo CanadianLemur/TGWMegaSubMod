@@ -168,8 +168,26 @@ basic_battery = 1
 		neutrality_idea
 		limited_conscription
 	}	
-	create_equipment_variant={ name="São Gabriel Class" type=light_cruiser_1890 parent_version = 0 obsolete=yes upgrades={ ship_gun_upgrade=1  ship_engine_upgrade=2 ship_reliability_upgrade=3 ship_anti_air_upgrade=0          } }
-create_equipment_variant={ name="Dom Carlos I Class" type=light_cruiser_1890 parent_version = 1 obsolete=no upgrades={ ship_gun_upgrade=5  ship_engine_upgrade=5 ship_reliability_upgrade=5 ship_anti_air_upgrade=0          } }
+	create_equipment_variant={ name="São Gabriel Class" type=ship_hull_gwcruiser parent_version = 2 obsolete=yes modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_gw
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_torpedo_1
+		} }
+create_equipment_variant={ name="Dom Carlos I Class" type=ship_hull_gwcruiser parent_version = 2 obsolete=yes modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_gw
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_torpedo_1
+		} }
 
 }
 

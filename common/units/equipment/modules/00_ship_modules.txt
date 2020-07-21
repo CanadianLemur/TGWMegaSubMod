@@ -1870,12 +1870,6 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = 0.1
 			reliability = -0.3
-			fuel_consumption = - 0.9
-		}
-		
-		can_convert_from = {
-			module_category = heavy_ship_engine
-			convert_cost_ic = 4800
 		}
 		build_cost_resources = {
 			coal = 15
@@ -1896,12 +1890,6 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = 0.1
 			reliability = -0.2
-			fuel_consumption = -0.9
-		}
-		
-		can_convert_from = {
-			module_category = heavy_ship_engine
-			convert_cost_ic = 4800
 		}
 		build_cost_resources = {
 			coal = 15
