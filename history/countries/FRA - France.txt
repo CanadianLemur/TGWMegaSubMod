@@ -954,24 +954,96 @@ basic_battery = 1
 				mid_1_custom_slot = ship_torpedo_1
 				rear_1_custom_slot = ship_depth_charge_1
 			} }
-	create_equipment_variant={ name="Gymnote  Class" type=coastal_submarine_1900 parent_version = 0 obsolete=yes upgrades={    ship_reliability_upgrade=0       sub_torpedo_upgrade=3 sub_stealth_upgrade=0 sub_engine_upgrade=0  } }
-	create_equipment_variant={ name="Gustave Zede Class" type=coastal_submarine_1900 parent_version = 1 obsolete=yes upgrades={    ship_reliability_upgrade=4       sub_torpedo_upgrade=0 sub_stealth_upgrade=4 sub_engine_upgrade=4  } }
-	create_equipment_variant={ name="Morse Class" type=coastal_submarine_1900 parent_version = 2 obsolete=yes upgrades={    ship_reliability_upgrade=0       sub_torpedo_upgrade=0 sub_stealth_upgrade=0 sub_engine_upgrade=0  } }
-	create_equipment_variant={ name="Narvel Class" type=coastal_submarine_1900 parent_version = 3 obsolete=yes upgrades={    ship_reliability_upgrade=5       sub_torpedo_upgrade=5 sub_stealth_upgrade=5 sub_engine_upgrade=5  } }
-	create_equipment_variant={ name="Sirene Class" type=coastal_submarine_1900 parent_version = 4 obsolete=yes upgrades={    ship_reliability_upgrade=5       sub_torpedo_upgrade=5 sub_stealth_upgrade=5 sub_engine_upgrade=5  } }
-	create_equipment_variant={ name="Farfadet Class" type=coastal_submarine_1900 parent_version = 5 obsolete=yes upgrades={    ship_reliability_upgrade=0       sub_torpedo_upgrade=5 sub_stealth_upgrade=0 sub_engine_upgrade=0  } }
-	create_equipment_variant={ name="Morse Class" type=coastal_submarine_1900 parent_version = 6 obsolete=yes upgrades={    ship_reliability_upgrade=5       sub_torpedo_upgrade=5 sub_stealth_upgrade=5 sub_engine_upgrade=5  } }
-	create_equipment_variant={ name="Naiade Class" type=coastal_submarine_1900 parent_version = 7 obsolete=yes upgrades={    ship_reliability_upgrade=0       sub_torpedo_upgrade=5 sub_stealth_upgrade=0 sub_engine_upgrade=0  } }
-	create_equipment_variant={ name="X Class" type=coastal_submarine_1900 parent_version = 8 obsolete=yes upgrades={    ship_reliability_upgrade=1       sub_torpedo_upgrade=5 sub_stealth_upgrade=1 sub_engine_upgrade=1  } }
-	create_equipment_variant={ name="Z Class" type=coastal_submarine_1900 parent_version = 9 obsolete=yes upgrades={    ship_reliability_upgrade=4       sub_torpedo_upgrade=5 sub_stealth_upgrade=4 sub_engine_upgrade=4  } }
-	create_equipment_variant={ name="Omega Class" type=submarine_1910 parent_version = 0 obsolete=yes upgrades={    ship_reliability_upgrade=0       sub_torpedo_upgrade=0 sub_stealth_upgrade=0 sub_engine_upgrade=0  } }
-	create_equipment_variant={ name="Emeraude Class" type=submarine_1910 parent_version = 1 obsolete=yes upgrades={    ship_reliability_upgrade=0       sub_torpedo_upgrade=2 sub_stealth_upgrade=0 sub_engine_upgrade=0  } }
-	create_equipment_variant={ name="Circe Class" type=submarine_1910 parent_version = 2 obsolete=yes upgrades={    ship_reliability_upgrade=0       sub_torpedo_upgrade=2 sub_stealth_upgrade=0 sub_engine_upgrade=0  } }
-	create_equipment_variant={ name="Pluviose Class" type=submarine_1910 parent_version = 3 obsolete=yes upgrades={    ship_reliability_upgrade=0       sub_torpedo_upgrade=0 sub_stealth_upgrade=0 sub_engine_upgrade=0  } }
-	create_equipment_variant={ name="Mariotte Class" type=submarine_1906 parent_version = 0 obsolete=yes upgrades={    ship_reliability_upgrade=0       sub_torpedo_upgrade=3 sub_stealth_upgrade=0 sub_engine_upgrade=0  } }
-	create_equipment_variant={ name="Mariotte Class" type=submarine_1906 parent_version = 0 obsolete=yes upgrades={    ship_reliability_upgrade=0       sub_torpedo_upgrade=3 sub_stealth_upgrade=0 sub_engine_upgrade=0  } }
-	create_equipment_variant={ name="Amiral Bourgois Class" type=submarine_1906 parent_version = 1 obsolete=yes upgrades={    ship_reliability_upgrade=0       sub_torpedo_upgrade=3 sub_stealth_upgrade=0 sub_engine_upgrade=0  } }
-	create_equipment_variant={ name="Charles Brun Class" type=submarine_1906 parent_version = 2 obsolete=yes upgrades={    ship_reliability_upgrade=0       sub_torpedo_upgrade=0 sub_stealth_upgrade=0 sub_engine_upgrade=0  } }
+	create_equipment_variant={ name="Gymnote  Class" type=ship_hull_submarine_gw parent_version = 0 obsolete=no modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_gw
+			rear_1_custom_slot = ship_torpedo_sub_1
+		} }
+	create_equipment_variant={ name="Gustave Zede Class" type=ship_hull_submarine_gw parent_version = 0 obsolete=no modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_gw
+			rear_1_custom_slot = ship_torpedo_sub_1
+		} }
+	create_equipment_variant={ name="Morse Class" type=ship_hull_submarine_gw parent_version = 0 obsolete=no modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_gw
+			rear_1_custom_slot = ship_torpedo_sub_1
+		} }
+	create_equipment_variant={ name="Narvel Class" type=ship_hull_submarine_gw parent_version = 0 obsolete=no modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_gw
+			rear_1_custom_slot = ship_torpedo_sub_1
+		}}
+	create_equipment_variant={ name="Sirene Class" type=ship_hull_submarine_gw parent_version = 0 obsolete=no modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_gw
+			rear_1_custom_slot = ship_torpedo_sub_1
+		} }
+	create_equipment_variant={ name="Farfadet Class" type=ship_hull_submarine_gw parent_version = 0 obsolete=no modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_gw
+			rear_1_custom_slot = ship_torpedo_sub_1
+		}}
+	create_equipment_variant={ name="Morse Class" type=ship_hull_submarine_gw parent_version = 0 obsolete=no modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_gw
+			rear_1_custom_slot = ship_torpedo_sub_1
+		} }
+	create_equipment_variant={ name="Naiade Class" type=ship_hull_submarine_gw parent_version = 0 obsolete=no modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_gw
+			rear_1_custom_slot = ship_torpedo_sub_1
+		} }
+	create_equipment_variant={ name="X Class" type=ship_hull_submarine_gw parent_version = 0 obsolete=no modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_gw
+			rear_1_custom_slot = ship_torpedo_sub_1
+		} }
+	create_equipment_variant={ name="Z Class" type=ship_hull_submarine_gw parent_version = 0 obsolete=no modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_gw
+			rear_1_custom_slot = ship_torpedo_sub_1
+		} }
+	create_equipment_variant={ name="Omega Class" type=ship_hull_submarine_gw parent_version = 0 obsolete=no modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_gw
+			rear_1_custom_slot = ship_torpedo_sub_1
+		} }
+	create_equipment_variant={ name="Emeraude Class" type=ship_hull_submarine_gw parent_version = 0 obsolete=no modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_gw
+			rear_1_custom_slot = ship_torpedo_sub_1
+		} }
+	create_equipment_variant={ name="Circe Class" type=ship_hull_submarine_gw parent_version = 0 obsolete=no modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_gw
+			rear_1_custom_slot = ship_torpedo_sub_1
+		} }
+	create_equipment_variant={ name="Pluviose Class" type=ship_hull_submarine_gw parent_version = 0 obsolete=no modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_gw
+			rear_1_custom_slot = ship_torpedo_sub_1
+		} }
+	create_equipment_variant={ name="Mariotte Class" type=ship_hull_submarine_gw parent_version = 0 obsolete=no modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_gw
+			rear_1_custom_slot = ship_torpedo_sub_1
+		} }
+	create_equipment_variant={ name="Mariotte Class" type=ship_hull_submarine_gw parent_version = 0 obsolete=no modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_gw
+			rear_1_custom_slot = ship_torpedo_sub_1
+		} }
+	create_equipment_variant={ name="Amiral Bourgois Class" type=ship_hull_submarine_gw parent_version = 0 obsolete=no modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_gw
+			rear_1_custom_slot = ship_torpedo_sub_1
+		} }
+	create_equipment_variant={ name="Charles Brun Class" type=ship_hull_submarine_gw parent_version = 0 obsolete=no modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_gw
+			rear_1_custom_slot = ship_torpedo_sub_1
+		} }
 
 }
 

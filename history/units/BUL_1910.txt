@@ -82,14 +82,14 @@ units = {
 		task_force = {					
 			name = "1-ta Flota"				
 			location = 9783 # Varna
-			ship = { name = "Nadezhda" definition = light_cruiser equipment = { light_cruiser_1900 = { amount = 1 owner = BUL version_name = "Nadezhda Class" } } } ### Largest warship ever possessed by the Royal Bulgarian Navy. Commissioned in October 1898, and often serving as the Royal Yacht of the Tsar. As it was in poor condition, it was disarmed during the First Balkan War, but it was rearmed at a later date.
+			ship = { name = "Nadezhda" definition = light_cruiser equipment = { ship_hull_gwcruiser = { amount = 1 owner = BUL version_name = "Nadezhda Class" } } } ### Largest warship ever possessed by the Royal Bulgarian Navy. Commissioned in October 1898, and often serving as the Royal Yacht of the Tsar. As it was in poor condition, it was disarmed during the First Balkan War, but it was rearmed at a later date.
 			
-			ship = { name = "Drazki" definition = destroyer equipment = { destroyer_1890 = { amount = 1 owner = BUL version_name = "Drazki Class" } } } ### Drazki incapacitated the Ottoman cruiser "Hamidiye", thus winning the battle of Kaliakra in November 1912, leading to the ease of the Ottoman blockade.
-			ship = { name = "Letyashti" definition = destroyer equipment = { destroyer_1890 = { amount = 1 owner = BUL version_name = "Drazki Class" } } } ### Lead the 4 ship convoy during the battle of Kaliakra.
-			ship = { name = "Smeli" definition = destroyer equipment = { destroyer_1890 = { amount = 1 owner = BUL version_name = "Drazki Class" } } } ### 3rd Bulgarian torpedo boat in the Battle of Kaliakra.
-			ship = { name = "Strogi" definition = destroyer equipment = { destroyer_1890 = { amount = 1 owner = BUL version_name = "Drazki Class" } } } ### 4th Bulgarian torpedo boat in the Battle of Kaliakra.
-			###ship = { name = "Khrabri" definition = destroyer equipment = { destroyer_1890 = { amount = 1 owner = BUL version_name = "Drazki Class" } } }
-			###ship = { name = "Shumniy" definition = destroyer equipment = { destroyer_1890 = { amount = 1 owner = BUL version_name = "Drazki Class" } } }
+			ship = { name = "Drazki" definition = destroyer equipment = { gwship_hull_light_1 = { amount = 1 owner = BUL version_name = "Drazki Class" } } } ### Drazki incapacitated the Ottoman cruiser "Hamidiye", thus winning the battle of Kaliakra in November 1912, leading to the ease of the Ottoman blockade.
+			ship = { name = "Letyashti" definition = destroyer equipment = { gwship_hull_light_1 = { amount = 1 owner = BUL version_name = "Drazki Class" } } } ### Lead the 4 ship convoy during the battle of Kaliakra.
+			ship = { name = "Smeli" definition = destroyer equipment = { gwship_hull_light_1 = { amount = 1 owner = BUL version_name = "Drazki Class" } } } ### 3rd Bulgarian torpedo boat in the Battle of Kaliakra.
+			ship = { name = "Strogi" definition = destroyer equipment = { gwship_hull_light_1 = { amount = 1 owner = BUL version_name = "Drazki Class" } } } ### 4th Bulgarian torpedo boat in the Battle of Kaliakra.
+			###ship = { name = "Khrabri" definition = destroyer equipment = { gwship_hull_light_1 = { amount = 1 owner = BUL version_name = "Drazki Class" } } }
+			###ship = { name = "Shumniy" definition = destroyer equipment = { gwship_hull_light_1 = { amount = 1 owner = BUL version_name = "Drazki Class" } } }
 		}
 	}
 	
