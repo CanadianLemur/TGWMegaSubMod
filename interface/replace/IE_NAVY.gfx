@@ -46,8 +46,6 @@ spriteTypes = {
 		name = "GFX_SMI_ship_heavy_ASM_battery_5"
 		textureFile = "gfx/interface/modules/HMLS5.dds"
 	}
-	
-	
 	spriteType = {
 		name = "GFX_SMI_ship_heavy_ASM_battery"
 		textureFile = "gfx/interface/modules/ship_heavy_ASM_battery_1.dds"
@@ -517,7 +515,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_EMI_heavy_ship_engine_coal_2"
-		textureFile =gfx/interface/modules/heavy_ship_engine_coal_2.dds"
+		textureFile ="gfx/interface/modules/heavy_ship_engine_coal_2.dds"
 	}
 	spriteType = {
 		name = "GFX_SMI_heavy_nuclear_reactor"
