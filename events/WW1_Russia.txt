@@ -616,6 +616,35 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
+		###Persian And Afghanistan demands (by Canadian Lemur)
+	if = {
+				limit = {
+					AFG = {
+						has_war_with = ENG
+						is_in_faction_with = GER
+					}
+				}
+				AFG = {transfer_state = 742 
+					   add_state_core = 742
+				}
+				
+				
+				}
+	if = {
+				limit = {
+					PER = {
+						has_war_with = ENG
+						is_in_faction_with = GER
+					}
+				}
+				PER = {transfer_state = 584
+					   transfer_state = 229
+					   add_state_core = 229
+					   add_state_core = 584
+				}
+				
+				
+				}
 			GER = {
 				transfer_state = 10
 				transfer_state = 11
@@ -659,15 +688,16 @@ country_event = {
 					transfer_state = 561 #Amur
 					transfer_state = 564 #Ulan Ude
 					transfer_state = 566 #Irkutsk
+					
 
 				}
+				JAP = {unlock_national_focus = JAP_ww1_form_siberia}
 				if = {limit = {SOV = {owns_state=329} } TAN= {transfer_state=329} JAP ={puppet=TAN }}
 				JAP = {
 					transfer_state = 655		# North Sakhalin
 					add_state_core = 655
 					puppet = SIB
 					puppet = MON
-					unlock_national_focus = JAP_ww1_form_siberia
 				}
 			}
 			

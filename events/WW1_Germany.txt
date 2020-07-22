@@ -365,6 +365,33 @@ country_event = {
 #
 #  Niedermayer-Hentig Expedition
 country_event = {
+	id =  ww1_germany.240
+	title = ww1_germany.240.t
+	desc = ww1_germany.240.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_germany.240.a
+		ai_chance = { factor = 50 }
+		##offer Afghanistan equipment and advisors in addition to land claims
+		GER = {
+				country_event = ww1_germany.251
+			}
+	}
+	option = {
+		name = ww1_germany.240.b
+		ai_chance = { factor = 50 }
+		##land claims should be enough
+			GER = {
+				country_event = ww1_germany.250
+			}
+	}
+}
+#  Niedermayer-Hentig Expedition
+country_event = {
 	id =  ww1_germany.250
 	title = ww1_germany.250.t
 	desc = ww1_germany.250.d
@@ -375,7 +402,7 @@ country_event = {
 
 	option = {
 		name = ww1_germany.250.a
-		ai_chance = { factor = 50 }
+		ai_chance = { factor = 40 }
 		AFG={ add_opinion_modifier={ target=GER modifier=ger_tur_diplomacy_focus } if={ limit={ AFG={ is_ai=yes NOT={ is_in_faction=yes } NOT={ is_puppet=yes } } GER={ is_faction_leader=yes } } GER={ add_to_faction=AFG } } if={ limit={ GER={ has_government=fascism } } add_ideas=fascist_influence } if={ limit={ GER={ has_government=communism } } add_ideas=communist_influence } if={ limit={ GER={ has_government=democratic } } add_ideas=democratic_influence } country_event={ id=generic.1 } }
 		445 = { add_claim_by = AFG }
 		442 = { add_claim_by = AFG }
@@ -383,8 +410,55 @@ country_event = {
 	}
 	option = {
 		name = ww1_germany.250.b
-		ai_chance = { factor = 50 }
+		ai_chance = { factor = 60 }
 	}
 }
+#  Niedermayer-Hentig Expedition
+country_event = {
+	id =  ww1_germany.251
+	title = ww1_germany.251.t
+	desc = ww1_germany.251.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_germany.251.a
+		ai_chance = { factor = 80 }
+		AFG={ add_opinion_modifier={ target=GER modifier=ger_tur_diplomacy_focus } if={ limit={ AFG={ is_ai=yes NOT={ is_in_faction=yes } NOT={ is_puppet=yes } } GER={ is_faction_leader=yes } } GER={ add_to_faction=AFG } } if={ limit={ GER={ has_government=fascism } } add_ideas=fascist_influence } if={ limit={ GER={ has_government=communism } } add_ideas=communist_influence } if={ limit={ GER={ has_government=democratic } } add_ideas=democratic_influence } country_event={ id=generic.1 } }
+		445 = { add_claim_by = AFG }
+		442 = { add_claim_by = AFG }
+		444 = { add_claim_by = AFG }
+		GER = {send_equipment = {
+    equipment = infantry_equipment
+    amount = 4000
+    target = AFG
+}}}
+	
+	option = {
+		name = ww1_germany.251.b
+		ai_chance = { factor = 20 }
+	}}
+country_event = {
+	id =  ww1_germany.260
+	title = ww1_germany.260.t
+	desc = ww1_germany.260.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_germany.260.a
+		ai_chance = { factor = 90 }
+		PER={ add_opinion_modifier={ target=GER modifier=ger_tur_diplomacy_focus } if={ limit={ PER={ is_ai=yes NOT={ is_in_faction=yes } NOT={ is_puppet=yes } } GER={ is_faction_leader=yes } } GER={ add_to_faction=AFG } } if={ limit={ GER={ has_government=fascism } } add_ideas=fascist_influence } if={ limit={ GER={ has_government=communism } } add_ideas=communist_influence } if={ limit={ GER={ has_government=democratic } } add_ideas=democratic_influence } country_event={ id=generic.1 } }
+	}
+	option = {
+		name = ww1_germany.260.b
+		ai_chance = { factor = 10 }
+	}
+}
+
 
 __________________________________________________________

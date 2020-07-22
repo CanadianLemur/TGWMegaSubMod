@@ -881,8 +881,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			AFG = {
-				country_event = ww1_germany.250
+			GER {
+				country_event = ww1_germany.240
 			}
 		}
 
@@ -893,6 +893,40 @@ focus_tree = {
 		cost = 2
 		x = 11
 		y = 6
+	}
+	focus = {
+		id = GER_ww1_persia_friend
+		prerequisite = { focus=GER_ww1_afghanistan_friend }
+		icon = GFX_goal_generic_improve_relations
+
+		available = {
+			NOT = { 
+				has_global_flag = kis_treaty_of_versailles 
+			}
+			is_puppet = no 
+			NOT = { 
+				has_war_with = GER 
+			} 
+			GER = { 
+				exists=yes 
+				is_puppet=no 
+				is_in_faction_with = AFG
+			} 
+		}
+
+		completion_reward = {
+			GER = {
+				country_event = ww1_germany.240
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		cost = 2
+		x = 11
+		y = 7
 	}
 
 
@@ -2983,8 +3017,8 @@ focus_tree = {
 			FRA = { has_completed_focus = FRA_interwar_occupation_ruhr }
 		}
 
-		x = 11
-		y = 7
+		x = 17
+		y = 9
 
 		cost = 10
 
