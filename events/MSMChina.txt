@@ -1,0 +1,62 @@
+﻿add_namespace = MSMChina
+
+country_event = {
+	title = MSMChina.1.t #Enables Shikai power struggle in China
+	desc = MSMChina.1.d
+	id = MSMChina.1
+	picture = MSMChina_1
+	is_triggered_only = no
+	timeout_days = 20
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	trigger = {
+		date > 1912.1.1
+		has_global_flag = china_revolution_victory
+		has_global_flag = shikai_surrenders
+	}
+	
+	immediate = {
+			set_global_flag = shikai_power_struggle
+		}
+		
+	option = {
+		name =  MSMChina.1.a
+		ai_chance = {
+			factor = 100
+		}
+		
+	}
+}
+
+country_event = {
+	title = MSMChina.2.t #Enables Alternate power struggle in China
+	desc = MSMChina.2.d
+	id = MSMChina.2
+	picture = MSMChina_2
+	is_triggered_only = no
+	timeout_days = 20
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	trigger = {
+		date > 1912.1.1
+		has_global_flag = china_revolution_victory
+		has_global_flag = shikai_no_surrender
+	}
+	
+	immediate = {
+			set_global_flag = china_alt_power_struggle
+		}
+
+	option = {
+		name =  MSMChina.2.a
+		ai_chance = {
+			factor = 100
+		}
+		
+	}
+}
+

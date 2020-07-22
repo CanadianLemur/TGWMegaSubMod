@@ -1,0 +1,8 @@
+﻿l_english:
+ MSMChina.1.t:0 "A New Republic"
+ MSMChina.1.d:0 "After a bloody revolution, the Republic reigns supreme! As per the surrender deal we gave Yuan Shikai we must make him president of the Republic. He has begun a concerning buildup of power and influence. We must do whatever we can to limit his power or we may yet find ourselves living under an emperor."
+ MSMChina.1.a:0 "We must be wary of Shikai's actions!"
+ MSMChina.2.t:0 "A New Republic"
+ MSMChina.2.d:0 "After a bloody revolution, the Republic reigns supreme! Our new republic remains free of corruption and foreign influence, but for how long? Our new republic is weak to foreign influence. We must do whatever we can to protect our new republic or we may yet find ourselves living under a different emperor."
+ MSMChina.2.a:0 "We will be wary of disruptive influence!"
+ china_revolution_victory:0 "§+The Republic Is Triumphant!§W"

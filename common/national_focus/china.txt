@@ -3,9 +3,9 @@ focus_tree = {
 	default=no
 	country={ factor=0 modifier={ add=10 or = { tag=QIN tag = CHI } } }
 	continuous_focus_position = { x = 20 y = 1200 }
-	reset_on_civil_war = yes
+	reset_on_civil_war = no
 	###########################################################################################################################
-	# POLITICAL
+	# XINHAI
 	###########################################################################################################################
 	focus = {
 		id = CHI_looming_rebellion
@@ -14,10 +14,10 @@ focus_tree = {
 			add_political_power=120
 		}
 
-		ai_will_do = { factor = 80 }
+		ai_will_do = { factor = 60 }
 
 		cost = 10
-		x = 10
+		x = 6
 		y = 0
 	}
 	
@@ -49,10 +49,11 @@ focus_tree = {
 		}
 
 		historical_ai = {
-			is_historical_focus_on = no
+			always = no
+			is_historical_focus_on = yes
 		}
 
-		ai_will_do = { factor = 80 }
+		ai_will_do = { factor = 50 }
 
 		cost = 10
 		
@@ -74,10 +75,11 @@ focus_tree = {
 		}
 		
 		historical_ai = {
-			is_historical_focus_on = no
+			always = no
+			is_historical_focus_on = yes
 		}
 		
-		ai_will_do = { factor = 80 }
+		ai_will_do = { factor = 60 }
 
 		cost = 10
 		
@@ -108,7 +110,7 @@ focus_tree = {
 	}
 	
 #-------------------------------------------------------------------------------
-#Revolutionary    Revolutionaries win war through
+#Revolutionary    Revolutionaries win war
 	focus = {
 		id = CHI_appeal_revolutionaries
 		icon = GFX_goal_generic_demand_territory
@@ -117,10 +119,11 @@ focus_tree = {
 		}
 		
 		historical_ai = {
+			always = yes
 			is_historical_focus_on = yes
 		}
 		
-		ai_will_do = { factor = 80 }
+		ai_will_do = { factor = 100 }
 
 		cost = 10
 		
@@ -190,5 +193,45 @@ focus_tree = {
 		x = 0
 		y = 1
 	}
+	
+#---------------------------------------------------------------------------------------------
+
+focus = {
+		id = CHI_aftermath
+		icon = GFX_goal_generic_demand_territory
+		completion_reward = {
+			add_political_power=120
+		}
+
+		ai_will_do = { factor = 80 }
+		
+		available = {
+			has_global_flag = china_revolution_victory
+		}
+		
+		relative_position_id = CHI_looming_rebellion
+		cost = 10
+		x = 9
+		y = 0
+	}
+	
+	focus = {
+		id = CHI_power_struggle
+		icon = GFX_goal_generic_demand_territory
+		completion_reward = {
+			add_political_power=120
+		}
+
+		ai_will_do = { factor = 80 }
+
+		cost = 10
+		
+		relative_position_id = CHI_aftermath
+		prerequisite = { focus = CHI_aftermath }
+		
+		x = 0
+		y = 1
+	}
+	
 
 }
