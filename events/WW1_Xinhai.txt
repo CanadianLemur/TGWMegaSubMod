@@ -508,6 +508,8 @@ country_event = {
 				CHI = { transfer_state = 611 }
 				
 				CHI = { transfer_state = 612 }
+				
+				set_global_flag = china_revolution_victory
 			}
 			
 		}
@@ -524,7 +526,7 @@ country_event = {
 }
 
 country_event = {
-	title = MSMWuchang.8.t #China Intro Event
+	title = MSMWuchang.8.t #Qing Intro Event
 	desc = MSMWuchang.8.d
 	id = MSMWuchang.8
 	picture = MSMWuchang_8
