@@ -250,10 +250,11 @@ create_navy_leader={
 		# Artillery
 		light_field_gun1 = 1
 		heavy_field_gun1 = 1
-
+}
 		# Navy
 if = {
 	limit = { not = {has_dlc = "Man the Guns"} }
+		set_technology = {
 		ww1_heavy_cruiser0 = 1
 	ww1_heavy_cruiser0_mtg = 1
 		ww1_heavy_cruiser1 = 1
@@ -283,6 +284,7 @@ if = {
 	ww1_moduleMTG_mines_mtg = 1 # Mines
 		transport = 1
 	transport_mtg = 1}
+	}
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
@@ -298,6 +300,8 @@ if = {
 	basic_battery = 1
 	}
 }
+	set_technology = {
+
 		# Air
 		ww1_fighter1 = 1
 		ww1_fighter1b = 1
@@ -320,6 +324,7 @@ if = {
 		ww1_medicine1 = 1
 		ww1_fortification1 = 1
 	}
+	
 
 	set_politics = {
 	    ruling_party = democratic

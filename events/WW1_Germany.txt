@@ -430,6 +430,7 @@ country_event = {
 		445 = { add_claim_by = AFG }
 		442 = { add_claim_by = AFG }
 		444 = { add_claim_by = AFG }
+		add_ideas = {German_advisors_ww1}
 		GER = {send_equipment = {
     equipment = infantry_equipment
     amount = 4000

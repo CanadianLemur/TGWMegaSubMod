@@ -101,8 +101,27 @@ create_navy_leader = {  name = "Prince Fushimi H." portrait_path="gfx/admiral/JA
 		# Artillery
 		light_field_gun1 = 1
 		heavy_field_gun1 = 1
+		
+		# Air
+		ww1_fighter1 = 1
+		ww1_zeppelin1 = 1
 
-		# Navy
+		# Engineering
+		electronic_mechanical_engineering = 1
+		chemical_research = 1
+
+		# Industry
+		ww1_fortification1 = 1
+	
+
+	}	# Navy
+	if = {
+		limit = { 
+			not = {
+				has_dlc = "Man the Guns"
+			}
+		}
+		set_technology = {
 		ww1_heavy_cruiser0 = 1
 	ww1_heavy_cruiser0_mtg = 1
 		ww1_heavy_cruiser1 = 1
@@ -140,7 +159,12 @@ create_navy_leader = {  name = "Prince Fushimi H." portrait_path="gfx/admiral/JA
 		ww1_moduleMTG_mines = 1
 	ww1_moduleMTG_mines_mtg = 1 # Mines
 		transport = 1
-	transport_mtg = 1
+	transport_mtg = 1 }}
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+set_technology = {
 1910_ship_hull_submarine = 1
 ww1_ship_hull_light = 1
 gw_ship_hull_cruiser = 1
@@ -151,17 +175,8 @@ mtg_transport = 1
 basic_secondary_battery = 1
 basic_naval_mines = 1
 basic_battery = 1
-		# Air
-		ww1_fighter1 = 1
-		ww1_zeppelin1 = 1
-
-		# Engineering
-		electronic_mechanical_engineering = 1
-		chemical_research = 1
-
-		# Industry
-		ww1_fortification1 = 1
 	}
+}
 
 	set_politics = {
 	    ruling_party = neutrality

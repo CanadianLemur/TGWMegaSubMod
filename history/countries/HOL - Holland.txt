@@ -45,10 +45,11 @@ create_navy_leader={  name = "Ellis" id=39011 portrait_path="gfx/admiral/HOL_ell
 create_navy_leader={  name = "Tydeman" id=39014 portrait_path="gfx/admiral/HOL_tydeman.dds" traits={   } skill=2 }
 create_navy_leader={  name = "Conrad E. L. Helfrich" id=39031 portrait_path="gfx/admiral/HOL_conrad_e_l_helfrich.dds" traits={   } skill=1 }
 
-set_technology = {
+
 	# Navy
 if = {
 	limit = { not = {has_dlc = "Man the Guns"} }
+	set_technology = {
 	ww1_battleship0 = 1
 	ww1_battleship0_mtg = 1
 	
@@ -100,7 +101,9 @@ if = {
 
 	ww1_coastal_submarine1 = 1
 	ww1_coastal_submarine1_mtg = 1
-	ww1_coastal_submarine2 = 1}
+	ww1_coastal_submarine2 = 1
+		}
+	}
 	if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
@@ -117,7 +120,7 @@ if = {
 	}
 }
 
-}
+
 
 
 1910.1.1 = {

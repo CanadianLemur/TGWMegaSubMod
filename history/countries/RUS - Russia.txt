@@ -178,46 +178,74 @@ create_navy_leader={  name = "Aleksandr Rusin" id=77235 portrait_path="gfx/hoi4t
 		# Artillery
 		light_field_gun1 = 1
 		heavy_field_gun1 = 1
+		# Air
+		ww1_fighter1 = 1
+		ww1_zeppelin1 = 1
+
+		# Engineering
+		electronic_mechanical_engineering = 1
+		chemical_research = 1
+
+		# Industry
+		ww1_fortification1 = 1
+	}
 
 		# Navy
-if = {
-	limit = not = {{ has_dlc = "Man the Guns" }}
-		ww1_heavy_cruiser0 = 1
-	ww1_heavy_cruiser0_mtg = 1
-		ww1_heavy_cruiser1 = 1
-	ww1_heavy_cruiser1_mtg = 1
-		ww1_light_cruiser0 = 1
-	ww1_light_cruiser0_mtg = 1
-		ww1_light_cruiser1 = 1
-	ww1_light_cruiser1_mtg = 1
-		ww1_submarine0 = 1
-	ww1_submarine0_mtg = 1
-		ww1_submarine1 = 1
-	ww1_submarine1_mtg = 1
-		ww1_submarine2 = 1
-		ww1_coastal_submarine1 = 1
-	ww1_coastal_submarine1_mtg = 1
-		ww1_coastal_submarine2 = 1
-		ww1_battleship0 = 1
-	ww1_battleship0_mtg = 1
-		ww1_battleship1 = 1
-	ww1_battleship1_mtg = 1
-		ww1_battleship2 = 1
-	ww1_battleship2_mtg = 1
-		ww1_battleship3 = 1
-	ww1_battleship3_mtg = 1
-		ww1_destroyer0 = 1
-	ww1_destroyer0_mtg = 1
-		ww1_destroyer1 = 1
-	ww1_destroyer1_mtg = 1
-		ww1_destroyer2 = 1
-	ww1_destroyer2_mtg = 1
-		ww1_moduleMTG_mines = 1
-	ww1_moduleMTG_mines_mtg = 1 # Mines
-		transport = 1
-	transport_mtg = 1}
-if = {
-	limit = { has_dlc = "Man the Guns" }
+	if = {
+		limit = { 
+			not = {
+				has_dlc = "Man the Guns"
+			}
+		}
+		set_technology = {
+			ww1_heavy_cruiser0 = 1
+			ww1_heavy_cruiser0_mtg = 1
+			ww1_heavy_cruiser1 = 1
+			ww1_heavy_cruiser1_mtg = 1
+			ww1_battlecruiser0 = 1
+			ww1_battlecruiser0_mtg = 1
+			ww1_battlecruiser1 = 1
+			ww1_battlecruiser1_mtg = 1
+			ww1_light_cruiser0 = 1
+			ww1_light_cruiser0_mtg = 1
+			ww1_light_cruiser1 = 1
+			ww1_light_cruiser1_mtg = 1
+			ww1_light_cruiser2 = 1
+			ww1_light_cruiser2_mtg = 1
+			ww1_light_cruiser3 = 1
+			ww1_light_cruiser3_mtg = 1
+			ww1_submarine0 = 1
+			ww1_submarine0_mtg = 1
+			ww1_submarine1 = 1
+			ww1_submarine1_mtg = 1
+			ww1_coastal_submarine1 = 1
+			ww1_coastal_submarine1_mtg = 1
+			ww1_battleship0 = 1
+			ww1_battleship0_mtg = 1
+			ww1_battleship1 = 1
+			ww1_battleship1_mtg = 1
+			ww1_battleship2 = 1
+			ww1_battleship2_mtg = 1
+			ww1_battleship3 = 1
+			ww1_battleship3_mtg = 1
+			ww1_destroyer0 = 1
+			ww1_destroyer0_mtg = 1
+			ww1_destroyer1 = 1
+			ww1_destroyer1_mtg = 1
+			ww1_destroyer2 = 1
+			ww1_destroyer2_mtg = 1
+			ww1_destroyer3 = 1
+			ww1_destroyer3_mtg = 1
+			ww1_moduleMTG_mines = 1
+			ww1_moduleMTG_mines_mtg = 1 # Mines
+			transport = 1
+			transport_mtg = 1
+		}
+	}
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
 	set_technology = {
 	1910_ship_hull_submarine = 1
 	ww1_ship_hull_light = 1
@@ -231,17 +259,7 @@ if = {
 	basic_battery = 1
 	}
 }
-		# Air
-		ww1_fighter1 = 1
-		ww1_zeppelin1 = 1
 
-		# Engineering
-		electronic_mechanical_engineering = 1
-		chemical_research = 1
-
-		# Industry
-		ww1_fortification1 = 1
-	}
 
 	set_politics = {
 	    ruling_party = neutrality

@@ -87,6 +87,7 @@ basic_battery = 1
 	    communism = 10
 	    neutrality = 75
 	}
+	set_politics = {
 	ruling_party = neutrality last_election = "1910.4.31"
 	election_frequency = 48 elections_allowed = yes
 	}
