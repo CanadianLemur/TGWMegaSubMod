@@ -284,21 +284,6 @@ ideas = {
 				army_org_factor = -0.25
 			}
 		}
-		#KiS ======================================================
-		German_advisors_ww1 = {
-			allowed = { always = yes }
-			allowed_civil_war = { always = yes }
-			removal_cost = -1
-			picture = GFX_idea_German_staff_ww1
-		
-			modifier = {
-				army_speed_factor = 0.05
-				experience_gain_army = 0.01
-				conscription_factor = 0.05
-				planning_speed = 0.05
-				max_planning = 0.05
-			}
-		}
 
 		# 0.5.1
 		GER_mefo_bills_1 = {
