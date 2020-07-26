@@ -780,9 +780,9 @@ focus_tree = {
 		icon = GFX_goal_generic_major_alliance
 
 	 	available = {
-	 		has_war_with = ENG
+	 		NOT = {has_war_with = SIA}
 
-	 		ENG = {
+	 		SIA = {
 	 			exists = yes
 	 		}
 		}
@@ -796,6 +796,29 @@ focus_tree = {
 		ai_will_do = { factor = 0 }
 		cost = 10
 		x = 6
+		y = 9
+	}
+	#-----------------------------------------
+	focus = {
+		id = JAP_ww1_free_vietnam
+		prerequisite = { focus = JAP_ww1_Invade_Singapore}
+		icon = GFX_goal_generic_major_alliance
+
+	 	available = {
+	 		controls_state = 286
+			controls_state = 671
+		}
+
+		completion_reward = {
+			VNM = {
+				transfer_state = 286
+				transfer_state = 671
+			}		
+			}
+
+		ai_will_do = { factor = 0 }
+		cost = 10
+		x = 8
 		y = 9
 	}
 	#-----------------------------------------
