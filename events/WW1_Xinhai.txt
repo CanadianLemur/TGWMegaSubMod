@@ -70,7 +70,7 @@ country_event = {
 		
 			CHI = {
 					set_cosmetic_tag = CHI_REV
-					set_politics = { ruling_party = neutrality }
+					set_politics = { ruling_party = democracy }
 					set_capital = 620
 					transfer_state = 325
 					transfer_state = 599
@@ -83,7 +83,9 @@ country_event = {
 					transfer_state = 621
 					transfer_state = 609
 					transfer_state = 610
-
+				
+				add_ideas = neutrality_idea
+				
 				set_stability = 0.2
 				add_manpower = -2200000
 				
@@ -140,6 +142,15 @@ country_event = {
 						QIN = { has_completed_focus = CHI_father_of_the_revolution }
 					}
 					CHI = { unlock_national_focus = CHI_father_of_the_revolution }
+				}
+				
+				create_country_leader = {
+					name = "Sun Yat-sen"
+					desc = "POLITICS_SUN_YAT_SEN_DESC"
+					picture = "gfx/leaders/Sun_Yat_sen.dds"
+					expire = "1925.1.1"
+					ideology = socialism
+					traits = { }
 				}
 				
 			}
@@ -223,15 +234,6 @@ country_event = {
 				declare_war_on = {
 					target = QIN
 					type = civil_war
-				}
-			
-				create_country_leader = {
-					name = "Sun Yat-sen"
-					desc = "POLITICS_SUN_YAT_SEN_DESC"
-					picture = "gfx/leaders/Sun_Yat_sen.dds"
-					expire = "1925.1.1"
-					ideology = despotism
-					traits = { }
 				}
 				
 			}
