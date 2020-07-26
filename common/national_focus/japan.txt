@@ -2,7 +2,7 @@ focus_tree = {
 	id=japan_focus
 	default=no
 	country={ factor=0 modifier={ add=10 tag=JAP } }
-	continuous_focus_position = { x = 20 y = 1200 }
+	continuous_focus_position = { x = 2500 y = 1340 }
 	###########################################################################################################################
 	# POLITICAL
 	###########################################################################################################################
@@ -771,6 +771,32 @@ focus_tree = {
 		cost = 10
 		x = 8
 		y = 8
+	}
+	#-----------------------------------------
+	focus = {
+		id = JAP_ww1_alliance_with_siam
+		prerequisite = { focus = JAP_ww1_Invade_Singapore }
+		prerequisite = { focus = JAP_ww1_Diplomatic_Siam }
+		icon = GFX_goal_generic_major_alliance
+
+	 	available = {
+	 		has_war_with = ENG
+
+	 		ENG = {
+	 			exists = yes
+	 		}
+		}
+
+		completion_reward = {
+			SIA = {
+				country_event = MSMJapan.1
+			}		
+			}
+
+		ai_will_do = { factor = 0 }
+		cost = 10
+		x = 6
+		y = 9
 	}
 	#-----------------------------------------
 	focus = {

@@ -300,7 +300,7 @@
  
  ############Aftermath Victory Tree###########
  
- SWE_ww1_interwar_Victory:0 "Interwar Victory"
+ SWE_ww1_interwar_Victory:0 "Sweden Victorious"
  SWE_ww1_interwar_Victory_desc:0 ""
  
  SWE_ww1_interwar_scandinavian_position:0 "Scandinavian Question"
@@ -358,9 +358,10 @@
  SWE_ww1_greater_finland:0 "Greater Finland"
  SWE_ww1_greater_finland_desc:0 ""
  
- SWE_ww1_sweden_victorious:0 "Sweden Victorious"
+ SWE_ww1_sweden_victorious:0 "Our Goals Achieved"
  SWE_ww1_sweden_victorious_desc:0 ""
  
- 
+ SWE_ww1_haven_for_white_russian_refugees:0 "Haven for White Russian refugees"
+ SWE_ww1_haven_for_white_russian_refugees_desc:0 "" 
 
  #--------------------------------------------------------------

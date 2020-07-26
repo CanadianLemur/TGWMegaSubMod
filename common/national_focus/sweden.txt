@@ -961,7 +961,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SWE_ww1_support_the_white_army
+		id = SWE_ww1_haven_for_white_russian_refugees
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = SWE_ww1_sweden_victorious }
 		x = 0
