@@ -377,7 +377,7 @@ country_event = {
 		name = ww1_germany.240.a
 		ai_chance = { factor = 50 }
 		##offer Afghanistan equipment and advisors in addition to land claims
-		GER = {
+		AFG = {
 				country_event = ww1_germany.251
 			}
 	}
@@ -385,7 +385,7 @@ country_event = {
 		name = ww1_germany.240.b
 		ai_chance = { factor = 50 }
 		##land claims should be enough
-			GER = {
+			AFG = {
 				country_event = ww1_germany.250
 			}
 	}

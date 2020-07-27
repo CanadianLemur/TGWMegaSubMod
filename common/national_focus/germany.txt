@@ -870,7 +870,6 @@ focus_tree = {
 			NOT = { 
 				has_global_flag = kis_treaty_of_versailles 
 			}
-			is_puppet = no 
 			NOT = { 
 				has_war_with = AFG 
 			} 
