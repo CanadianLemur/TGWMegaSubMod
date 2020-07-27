@@ -1,3 +1,13 @@
+game_operation = {
+	icon = generic_political_actions
+	priority = 0
+	visible = {
+		tag = GER
+	}
+	available = {
+		tag = GER
+	}
+}
 german_poland = {
 	icon = generic_political_actions
 	priority = 30

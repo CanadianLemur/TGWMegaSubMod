@@ -1,0 +1,36 @@
+	
+game_operation = {
+	ic_pulse_one = {
+		
+		available = {
+			has_country_flag = ic_pulse_one_flag
+			#is_ai = yes
+		}
+
+		visible = {
+			always = no
+			#has_country_flag = ic_pulse_one_flag
+			#is_ai = yes
+		}
+
+		#is_good = yes
+
+		selectable_mission = yes
+		days_mission_timeout = 1
+		days_re_enable = 16
+		
+		timeout_effect = {
+			
+		}
+
+		complete_effect = {
+			every_country = {
+				
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+}
