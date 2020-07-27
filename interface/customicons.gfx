@@ -1,3 +1,8 @@
 spriteTypes = { 
- 
+
+	SpriteType = { #Sun Yat-sen Focus Icon
+		name = "GFX_father_of_the_nation_icon"
+		texturefile = "gfx/focusIcons/CHI_father_of_the_nation.dds"
+	}
+	
  }

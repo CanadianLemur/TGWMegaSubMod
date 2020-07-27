@@ -44,7 +44,7 @@ focus_tree = {
 	focus = {
 		id = CHI_authoritarian_reforms
 		icon = GFX_goal_generic_demand_territory
-		completion_reward = 
+		completion_reward = {
 			add_political_power=120 #Add decisions to exchange a lot of pp for stability and war support
 		}
 
@@ -53,9 +53,9 @@ focus_tree = {
 			is_historical_focus_on = yes
 		}
 
-		ai_will_do = { factor = 50 }
+		ai_will_do = { factor = 0 }
 
-		cost = 10
+		cost = 12
 		
 		relative_position_id = CHI_first_reforms
 		prerequisite = { focus = CHI_first_reforms }
@@ -79,9 +79,9 @@ focus_tree = {
 			is_historical_focus_on = yes
 		}
 		
-		ai_will_do = { factor = 60 }
+		ai_will_do = { factor = 0 }
 
-		cost = 10
+		cost = 12
 		
 		relative_position_id = CHI_first_reforms
 		prerequisite = { focus = CHI_first_reforms }
@@ -98,9 +98,9 @@ focus_tree = {
 			add_political_power=120 #Increase democracy
 		}
 
-		ai_will_do = { factor = 80 }
+		ai_will_do = { factor = 0 }
 
-		cost = 10
+		cost = 12
 		
 		relative_position_id = CHI_democratic_reforms
 		prerequisite = { focus = CHI_democratic_reforms }
@@ -125,7 +125,7 @@ focus_tree = {
 		
 		ai_will_do = { factor = 100 }
 
-		cost = 10
+		cost = 12
 		
 		relative_position_id = CHI_first_reforms
 		prerequisite = { focus = CHI_first_reforms }
@@ -144,7 +144,7 @@ focus_tree = {
 
 		ai_will_do = { factor = 80 }
 
-		cost = 10
+		cost = 12
 		
 		relative_position_id = CHI_appeal_revolutionaries
 		prerequisite = { focus = CHI_appeal_revolutionaries }
@@ -162,7 +162,7 @@ focus_tree = {
 
 		ai_will_do = { factor = 80 }
 
-		cost = 10
+		cost = 12
 		
 		relative_position_id = CHI_revive_china
 		prerequisite = { focus = CHI_revive_china }
@@ -172,8 +172,8 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_father_of_the_revolution
-		icon = GFX_goal_generic_demand_territory
+		id = CHI_father_of_the_nation
+		icon = GFX_father_of_the_nation_icon
 		completion_reward = {
 			add_political_power=120 #Add more support for ideologies + possibly lower stability to encourage revolution
 			if = {
@@ -185,7 +185,7 @@ focus_tree = {
 
 		ai_will_do = { factor = 80 }
 
-		cost = 10
+		cost = 12
 		
 		relative_position_id = CHI_abandon_the_empire
 		prerequisite = { focus = CHI_abandon_the_empire }
@@ -216,6 +216,33 @@ focus = {
 	}
 	
 	focus = {
+		id = CHI_sun_yat_sen_president
+		icon = GFX_goal_generic_demand_territory
+		completion_reward = {
+			add_political_power=120
+		}
+		
+		bypass = {
+			not = {
+				has_country_leader = {
+					name = "Sun Yat-sen"
+					ruling_only = yes
+				}
+			}
+		}
+		
+		ai_will_do = { factor = 80 }
+
+		cost = 10
+		
+		relative_position_id = CHI_aftermath
+		prerequisite = { focus = CHI_aftermath }
+		
+		x = 0
+		y = 1
+	}
+	
+	focus = {
 		id = CHI_power_struggle
 		icon = GFX_goal_generic_demand_territory
 		completion_reward = {
@@ -226,8 +253,33 @@ focus = {
 
 		cost = 10
 		
-		relative_position_id = CHI_aftermath
-		prerequisite = { focus = CHI_aftermath }
+		relative_position_id = CHI_sun_yat_sen_president
+		prerequisite = { focus = CHI_sun_yat_sen_president }
+		
+		x = 0
+		y = 1
+	}
+	
+	focus = {
+		id = CHI_yuan_first_act
+		icon = GFX_goal_generic_demand_territory
+		completion_reward = {
+			add_stability=-0.10
+		}
+		
+		available = {
+			has_country_leader = {
+				name = "Yuan Shikai"
+				ruling_only = yes
+			}
+		}
+		
+		ai_will_do = { factor = 80 }
+
+		cost = 10
+		
+		relative_position_id = CHI_power_struggle
+		prerequisite = { focus = CHI_power_struggle }
 		
 		x = 0
 		y = 1
