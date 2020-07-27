@@ -774,7 +774,7 @@ focus_tree = {
 	}
 	#-----------------------------------------
 	focus = {
-		id = JAP_ww1_alliance_with_siam
+		id = JAP_ww1_alliance_with_siam # Added by Canadian Lemur
 		prerequisite = { focus = JAP_ww1_Invade_Singapore }
 		prerequisite = { focus = JAP_ww1_Diplomatic_Siam }
 		icon = GFX_goal_generic_major_alliance
@@ -800,9 +800,9 @@ focus_tree = {
 	}
 	#-----------------------------------------
 	focus = {
-		id = JAP_ww1_free_vietnam
+		id = JAP_ww1_free_vietnam # Added by Canadian Lemur
 		prerequisite = { focus = JAP_ww1_Invade_Singapore}
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 
 	 	available = {
 	 		controls_state = 286
@@ -821,6 +821,209 @@ focus_tree = {
 		cost = 10
 		x = 8
 		y = 9
+	}
+	#-----------------------------------------
+	focus = {
+		id = JAP_ww1_southeast_asia_economic_dependence # Added by Canadian Lemur
+		prerequisite = { focus = JAP_ww1_alliance_with_siam focus = JAP_ww1_free_vietnam}
+		icon = GFX_focus_jap_pacific_guardian
+
+		available = {
+			is_subject = no
+				VNM = {
+					is_in_faction_with = ROOT
+					is_free_or_subject_of_root = yes
+				}
+				SIA = {
+					is_in_faction_with = ROOT
+					is_free_or_subject_of_root = yes
+				}
+			}
+
+		completion_reward = {
+					if = {
+						limit = { 
+							NOT = { VNM = {is_subject = yes }} 
+						}
+						puppet = VNM
+					}
+					if = {
+						limit = { 
+							NOT = { SIA = {is_subject = yes }} 
+						}
+						puppet = SIA
+					}
+					SIA = {					
+					random_owned_controlled_state = {
+						prioritize = { 289 } 
+						limit = {
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+							}
+						}
+					random_owned_controlled_state = {
+						prioritize = { 289 } 
+						limit = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+							}
+						}
+						}
+					VNM = {					
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+							}
+						}
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+							}
+						}
+						}
+			}
+
+
+		ai_will_do = { factor = 0 }
+		cost = 10
+		x = 7
+		y = 10
+	}
+	#-----------------------------------------
+	focus = {
+		id = JAP_ww1_indochinese_zaibatsu # Added by Canadian Lemur
+		prerequisite = { focus = JAP_ww1_southeast_asia_economic_dependence}
+		icon = GFX_focus_jap_zaibatsu
+
+	 	available = {
+			SIA = {is_subject_of = JAP}
+			VNM = {is_subject_of = JAP}
+		}
+
+		completion_reward = {
+		SIA = {add_ideas = foreign_zaibatsu}
+		VNM = {add_ideas = foreign_zaibatsu}
+		289 = {	
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+		add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}		
+				}
+		724 = {	
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+		add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}		
+				}
+		671 = {	
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+		add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}		
+				}
+		741 = {	
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+		add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}		
+				}
+		671 = {	
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+		add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}		
+				}
+		286 = {	
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+		add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}		
+				}
+		}
+		ai_will_do = { factor = 0 }
+		cost = 10
+		x = 7
+		y = 11
 	}
 	#-----------------------------------------
 	focus = {
@@ -1417,6 +1620,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		SIB = {add_ideas = foreign_zaibatsu}
 		408 = {	
 		add_extra_state_shared_building_slots = 2
 		add_building_construction = {

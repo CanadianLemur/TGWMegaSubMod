@@ -1295,10 +1295,10 @@ focus_tree = {
 	focus = {
 		id = SWE_ww1_fortify_the_border
 		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = SWE_ww1_the_manchurian_project }
-		x = 0
+		prerequisite = { focus = SWE_ww1_finnish_affairs }
+		x = 4
 		y = 1
-		relative_position_id = SWE_ww1_the_manchurian_project 
+		relative_position_id = SWE_ww1_finnish_affairs
 
 		cost = 10
 

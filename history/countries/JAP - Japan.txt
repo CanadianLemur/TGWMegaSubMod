@@ -195,6 +195,7 @@ basic_battery = 1
 		limited_conscription
 		partial_economic_mobilisation
 		state_shintoism
+		JAP_zaibatsus
 	}
 	
 	create_equipment_variant={ name="Admiral Ushakov Class" type=ship_hull_pre_dreadnought parent_version = 0 obsolete=yes 		modules = {
