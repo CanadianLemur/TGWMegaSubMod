@@ -692,7 +692,7 @@ country_event = {
 
 				}
 				JAP = {unlock_national_focus = JAP_ww1_form_siberia}
-				if = {limit = {SOV = {owns_state=329} } TAN= {transfer_state=329} JAP ={puppet=TAN }}
+				if = {limit = {SOV = {owns_state=329} } MON= {transfer_state=329 add_state_core=329}}
 				JAP = {
 					transfer_state = 655		# North Sakhalin
 					add_state_core = 655

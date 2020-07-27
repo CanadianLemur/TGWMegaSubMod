@@ -813,7 +813,8 @@ focus_tree = {
 			VNM = {
 				transfer_state = 286
 				transfer_state = 671
-			}		
+			}
+			puppet = VNM
 			}
 
 		ai_will_do = { factor = 0 }
