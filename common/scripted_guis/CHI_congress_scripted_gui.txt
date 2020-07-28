@@ -1,0 +1,17 @@
+scripted_gui = {
+
+	china_congress_decision_ui = {
+		context_type = decision_category
+		window_name = "china_congress_window"
+
+		properties = {
+			
+
+			house_icon = {
+				frame = current_china_house_frame
+			}
+		}
+	}
+	
+}
+

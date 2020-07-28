@@ -10,4 +10,10 @@ spriteTypes = {
 		texturefile = "gfx/decisionCategories/decision_category_china_icon.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_decision_category_china_house_ui"
+		texturefile = "gfx\interface\decisions/chinaHouseSeats_ui.tga"
+		noOfFrames = 20
+	}
+	
  }

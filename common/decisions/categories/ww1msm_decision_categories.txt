@@ -65,4 +65,7 @@ china_congress = {
 		#tag = CHI
 		tag = QIN
 	}
+	
+	scripted_gui = china_congress_decision_ui
+	
 }
