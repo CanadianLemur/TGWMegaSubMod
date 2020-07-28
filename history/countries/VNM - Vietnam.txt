@@ -47,6 +47,7 @@ add_ideas={ limited_conscription }
 set_stability=0.75
 
 create_country_leader={ name="Phan Châu Trinh" desc="phan_chau_trinh_desc" picture="gfx/leaders/hoi4tgw/VNM_phan_chau_trinh.dds" expire="1965.1.1" ideology=stalinism traits={  } }
+create_country_leader={ name="Phan Châu Trinh" desc="phan_chau_trinh_desc" picture="gfx/leaders/hoi4tgw/VNM_phan_chau_trinh.dds" expire="1965.1.1" ideology=liberaism traits={  } }
 create_country_leader={ name="Duy Tân" desc="" picture="gfx/leaders/VNM/DuyTan.dds" expire="1965.1.1" ideology=despotism traits={ MSM_freedom_agitator } }
 create_country_leader={ name="Duy Tân" desc="" picture="gfx/leaders/VNM/DuyTan.dds" expire="1965.1.1" ideology=fascism_ideology traits={ MSM_freedom_agitator } }
 }
