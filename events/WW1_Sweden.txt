@@ -7,7 +7,8 @@ country_event = {
 	trigger = {
 		OR = {
 			has_global_flag = swedenincp
-			has_completed_focus = SWE_ww1_joingermany}
+			has_completed_focus = SWE_ww1_joingermany
+		}
 		has_global_flag = kis_brestlitovsk
 		tag = SWE
 	}
@@ -114,5 +115,34 @@ country_event = {
 			transfer_state = 195
 			transfer_state = 208
 		}
+	}
+}
+
+#Scandinavia move capital
+country_event = {
+	id = ww1_sweden.7
+	title = ww1_sweden.7.t
+	desc = ww1_sweden.7.d
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_sweden.7.a #Keep capital in Stokholm
+		
+	}
+	option = {
+		name = ww1_sweden.7.b #Move capital to Goteborg
+		set_capital = 140
+	}
+	option = {
+		name = ww1_sweden.7.c #Move capital to Kristiania
+		set_capital = 110
+	}
+	option = {
+		name = ww1_sweden.7.d #Move capital to Copenhagen
+		set_capital = 37
+	}
+	option = {
+		name = ww1_sweden.7.e #Move capital to Helsingfors
+		set_capital = 111
 	}
 }

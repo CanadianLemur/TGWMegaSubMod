@@ -1,23 +1,22 @@
 ideas = {
-
-country = {
+	country = {
 		foreign_zaibatsu = {
 
 			picture = jap_zaibatsu
-			
+				
 			allowed = {
-			is_subject_of = JAP
+				is_subject_of = JAP
 			}
 
 			removal_cost = -1
-			
+				
 			modifier = {
 				political_power_gain = -0.50			
 				local_resources_factor = 0.05
 				consumer_goods_factor = -0.10
 				autonomy_gain = -0.5
 			}
-			
+				
 			targeted_modifier = { 
 				tag = JAP
 				trade_opinion_factor = 0.5
@@ -27,7 +26,15 @@ country = {
 				mic_to_target_factor = 0.10
 			}
 		}
+		msm_neutrality_idea = {
 
+			picture = "GFX_Generic_neutrality_focus"
 
-}
+			removal_cost = 0
+				
+			modifier = {
+				neutrality_drift = 0.1
+			}
+		}
+	}
 }
