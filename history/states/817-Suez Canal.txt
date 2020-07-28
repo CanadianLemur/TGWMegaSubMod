@@ -1,0 +1,26 @@
+state={
+	id=817
+	name="STATE_817"
+	manpower = 15359
+	state_category=wasteland
+	provinces={ 1155 9947 12049 4073 }
+	resources={
+		wood=0
+		}
+	history={
+		owner=ENG
+		add_core_of=EGY
+		1936.1.1={ 
+			owner=ENG
+			add_core_of=EGY
+			buildings={
+				infrastructure=2
+				1155={ naval_base=2 }
+				}
+			}
+		buildings={
+			infrastructure=2
+			1155={ naval_base=2 }
+			}
+		}
+	}

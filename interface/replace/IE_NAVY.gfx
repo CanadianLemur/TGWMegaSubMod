@@ -518,6 +518,18 @@ spriteTypes = {
 		textureFile ="gfx/interface/modules/heavy_ship_engine_coal_2.dds"
 	}
 	spriteType = {
+		name = "GFX_EMI_heavy_ship_engine_coal_1"
+		textureFile ="gfx/interface/modules/heavy_ship_engine_coal_1.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_light_ship_coal_boiler"
+		textureFile ="gfx/interface/modules/coal_boiler.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_cruiser_ship_engine_gw"
+		textureFile ="gfx/interface/modules/coal_boiler.dds"
+	}
+	spriteType = {
 		name = "GFX_SMI_heavy_nuclear_reactor"
 		textureFile = "gfx/interface/modules/reactor_module.dds"
 	}	

@@ -5,8 +5,8 @@ country = {
 
 			picture = jap_zaibatsu
 			
-			allowed_civil_war = {
-				always = yes
+			allowed = {
+			is_subject_of = JAP
 			}
 
 			removal_cost = -1

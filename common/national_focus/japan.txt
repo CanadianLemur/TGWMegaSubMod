@@ -785,6 +785,7 @@ focus_tree = {
 	 		SIA = {
 	 			exists = yes
 	 		}
+			controls_state = 336
 		}
 
 		completion_reward = {
@@ -1021,7 +1022,7 @@ focus_tree = {
 				}
 		}
 		ai_will_do = { factor = 0 }
-		cost = 10
+		cost = 20
 		x = 7
 		y = 11
 	}
@@ -1663,7 +1664,7 @@ focus_tree = {
 		}
 
 		ai_will_do = { factor = 100 }
-		cost = 10
+		cost = 20
 		x = 18
 		y = 10
 	}
