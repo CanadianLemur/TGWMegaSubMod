@@ -1,0 +1,13 @@
+china_congress = {
+	china_test = {
+		visible = {
+			tag = QIN
+			#tag = CHI
+		}
+		
+		available = {
+			#tag = CHI
+			tag = QIN
+		}
+	}
+}

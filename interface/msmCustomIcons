@@ -5,4 +5,9 @@ spriteTypes = {
 		texturefile = "gfx/focusIcons/CHI_father_of_the_nation.dds"
 	}
 	
+	SpriteType = { #China Congress Category Icon
+		name = "GFX_china_congress_icon"
+		texturefile = "gfx/decisionCategories/decision_category_china_icon.dds"
+	}
+	
  }
