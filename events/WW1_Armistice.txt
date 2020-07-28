@@ -148,6 +148,7 @@ country_event = {
   		}
   		hidden_effect = {
   			set_global_flag = kis_player_decided_ger_surrend
+			set_global_flag = msm_treaty_of_versailles
   		}
 	}
 
@@ -157,6 +158,7 @@ country_event = {
 		ai_chance = { factor = 0 }
 		hidden_effect = {
   			set_global_flag = kis_player_decided_ger_surrend
+			set_global_flag = msm_treaty_of_versailles
   		}
 	}
 }
@@ -189,7 +191,14 @@ country_event = {
 				transfer_state = 154
 
                 kill_country_leader = yes
-                create_country_leader={ name = "Miklós Horthy" desc=HUN_miklos_horothy_DESC picture="gfx/leaders/HUN_miklos_horthy.dds" expire="1935.1.1" ideology=despotism traits = { }}
+                create_country_leader={ 
+					name = "Miklós Horthy" 
+					desc=HUN_miklos_horothy_DESC 
+					picture="gfx/leaders/HUN_miklos_horthy.dds" 
+					expire="1935.1.1" 
+					ideology=despotism 
+					traits = { }
+				}
 			}
 
 			CZE = {
@@ -250,8 +259,10 @@ news_event = {
 			}
 			GER = {
 				set_politics = {
-				    ruling_party = democratic last_election = "1911.7.1"
-				    election_frequency = 48 elections_allowed = yes
+				    ruling_party = democratic 
+					last_election = "1911.7.1"
+				    election_frequency = 48 
+					elections_allowed = yes
 				}
 				set_popularities = {
 					neutrality = 10
@@ -749,8 +760,10 @@ country_event = {
 			#		traits = { }
 			#	}
 				set_politics = {
-				    ruling_party = democratic last_election = "1911.7.1"
-				    election_frequency = 48 elections_allowed = yes
+				    ruling_party = democratic 
+					last_election = "1911.7.1"
+				    election_frequency = 48 
+					elections_allowed = yes
 				}
 				set_popularities = {
 						neutrality = 10
