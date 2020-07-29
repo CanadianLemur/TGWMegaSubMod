@@ -142,7 +142,7 @@
  ww1_portugal_antisubmarine:0 "Anti-Submarine Warfare"
  ww1_portugal_antisubmarine_desc:0 "Submarines are a tricky vessel to catch, particularly when well-commandeered. If we don't intend to let all of our incoming cargo ships sink to the bottom of the ocean, our admirals have advised us to begin investing in depth charges, advanced torpedos, and other weapons that might be able to take out the unseen menace." 
  #--------------------------------------------------------------
- # [Generic] Political Effort
+ # [Generic] Republicanism or Monarchism
  ww1_portugal_political:0 "Address the Republican Movement"
  ww1_portugal_political_desc:0 "We can no longer ignore the Republican threat, we need to decide on a course of action"
  ww1_portugal_political_avoid_revolution:0"Take steps to curtail Revolution"
@@ -153,8 +153,16 @@
  ww1_portugal_democracy_desc:0""
  ww1_portugal_communism:0"Hijack the Revolution"
  ww1_portugal_communism_desc:0""
- 
- 
+ ww1_portugal_political_correctness:0"Political Correctness"
+ ww1_portugal_political_correctness_desc:0""
+ ww1_portugal_indoctrination_focus:0"Indoctrination"
+ ww1_portugal_indoctrination_focus_desc:0""
+ ww1_portugal_political_commissars:0"Political Commissars"
+ ww1_portugal_political_commissars_desc:0""
+ ww1_portugal_iberian_union_wargoal:0"Liberate Spanish Workers"
+ ww1_portugal_iberian_union_wargoal_desc:0"Our fellow workers in Spain are suffering, we must liberate them from their oppressors"
+ ww1_portugal_iberian_union_formation:0"Iberian Union"
+ ww1_portugal_iberian_union_formation_desc:0"Forming an Iberian Union will unite all of Iberia against Capitalist Oppression"
  #--------------------------------------------------------------
  # [Generic] Diplomatic Effort
  ww1_portugal_diplomatic_effort:0 "Diplomatic Effort"

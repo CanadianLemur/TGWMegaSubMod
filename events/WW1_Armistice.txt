@@ -148,7 +148,6 @@ country_event = {
   		}
   		hidden_effect = {
   			set_global_flag = kis_player_decided_ger_surrend
-			set_global_flag = msm_treaty_of_versailles
   		}
 	}
 
@@ -158,7 +157,6 @@ country_event = {
 		ai_chance = { factor = 0 }
 		hidden_effect = {
   			set_global_flag = kis_player_decided_ger_surrend
-			set_global_flag = msm_treaty_of_versailles
   		}
 	}
 }

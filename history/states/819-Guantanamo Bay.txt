@@ -2,15 +2,15 @@
 state={
 	id=819
 	name="STATE_819"
-	manpower = 20512
+	manpower = 512
 	
-	state_category = rural
+	state_category = enclave
 
 	history={
 		owner = USA
 		buildings = {
 			infrastructure = 3
-			naval_base = 5
+			13218 = {naval_base = 5}
 		}
 		victory_points = {
 			
