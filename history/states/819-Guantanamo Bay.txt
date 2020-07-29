@@ -1,0 +1,25 @@
+
+state={
+	id=819
+	name="STATE_819"
+	manpower = 20512
+	
+	state_category = rural
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 3
+			naval_base = 5
+		}
+		victory_points = {
+			
+		}
+
+		add_core_of = CUB
+	}
+
+	provinces={
+		13218
+	}
+}
