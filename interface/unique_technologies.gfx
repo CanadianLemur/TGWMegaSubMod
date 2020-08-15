@@ -5,6 +5,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_TUR_advanced_infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/BEL_infantry_equipment_7.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TUR_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
 	}	
 
 	SpriteType = {
@@ -47,6 +52,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_BRA_advanced_infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/BEL_infantry_equipment_7.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BRA_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
 	}	
 
 	SpriteType = {
@@ -89,8 +99,18 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_GER_advanced_infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/GER_infantry_equipment_7.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
 	}	
 
+	SpriteType = {
+		name = "GFX_GER_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
+	}
+	
 	SpriteType = {
 		name = "GFX_GER_advanced_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/GER_infantry_equipment_6.dds"
@@ -130,6 +150,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_BAV_advanced_infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/GER_infantry_equipment_7.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
 	}	
 
 	SpriteType = {
@@ -173,6 +198,11 @@ spriteTypes = {
 		name = "GFX_USA_advanced_infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/USA_infantry_equipment_7.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_USA_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
+	}
 	
 	SpriteType = {
 		name = "GFX_USA_advanced_infantry_weapons_medium"
@@ -214,6 +244,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_ENG_advanced_infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/ENG_infantry_equipment_7.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
 	}	
 	
 	SpriteType = {
@@ -256,6 +291,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_AUS_advanced_infantry_weapons3_medium"		
 		texturefile = "gfx/interface/technologies/GER_infantry_equipment_7.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_AUS_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
 	}	
 	
 	SpriteType = {
@@ -296,6 +336,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_AUH_advanced_infantry_weapons3_medium"		
 		texturefile = "gfx/interface/technologies/GER_infantry_equipment_7.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_AUH_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
 	}	
 	
 	SpriteType = {
@@ -339,6 +384,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_SOV_advanced_infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_7.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOV_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
 	}	
 	
 	SpriteType = {
@@ -379,6 +429,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_RUS_advanced_infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_7.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RUS_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
 	}	
 	
 	SpriteType = {
@@ -422,6 +477,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_FRA_advanced_infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/FRA_infantry_equipment_7.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
 	}	
 	
 	SpriteType = {
@@ -464,6 +524,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_ITA_advanced_infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/ITA_infantry_equipment_7.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
 	}	
 
 	SpriteType = {
@@ -509,6 +574,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+		name = "GFX_CHI_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_CHI_advanced_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/CZE_infantry_equipment_5.dds"
 	}
@@ -545,7 +615,12 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_QIN_advanced_infantry_weapons3_medium"
-		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_7.dds" 
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_7.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_QIN_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds" 
 	}
 
 	SpriteType = {
@@ -588,6 +663,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_JAP_advanced_infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/GER_infantry_equipment_7.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_JAP_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
 	}	
 	
 	SpriteType = {
@@ -630,6 +710,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_BUL_advanced_infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_7.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BUL_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
 	}
 	
 	SpriteType = {
@@ -675,6 +760,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+		name = "GFX_SER_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_SER_advanced_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_6.dds"
 	}
@@ -714,6 +804,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_AST_advanced_infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/ENG_infantry_equipment_7.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_AST_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
 	}	
 
 	SpriteType = {
@@ -756,6 +851,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_NZL_advanced_infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/ENG_infantry_equipment_7.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_NZL_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
 	}	
 
 	SpriteType = {
@@ -799,6 +899,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_CAN_advanced_infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/ENG_infantry_equipment_7.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CAN_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
 	}	
 
 	SpriteType = {
@@ -841,6 +946,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_MEX_advanced_infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/ENG_infantry_equipment_7.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MEX_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
 	}	
 
 	SpriteType = {
@@ -883,6 +993,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_ARG_advanced_infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/BEL_infantry_equipment_7.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ARG_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
 	}	
 
 	SpriteType = {
@@ -925,6 +1040,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_GRE_advanced_infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/ENG_infantry_equipment_7.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GRE_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
 	}	
 
 	SpriteType = {
@@ -970,6 +1090,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+		name = "GFX_ROM_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_ROM_advanced_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_6.dds"
 	}
@@ -1012,6 +1137,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+		name = "GFX_MNT_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_MNT_advanced_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_6.dds"
 	}
@@ -1049,6 +1179,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_MTN_advanced_infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_7.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MTN_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
 	}
 
 	SpriteType = {
@@ -1094,6 +1229,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+		name = "GFX_BOS_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_BOS_advanced_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_6.dds"
 	}
@@ -1133,6 +1273,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_BEL_advanced_infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/BEL_infantry_equipment_7.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BEL_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
 	}	
 
 	SpriteType = {
@@ -1175,6 +1320,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_HOL_advanced_infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/BEL_infantry_equipment_7.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOL_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
 	}	
 
 	SpriteType = {
@@ -1217,6 +1367,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_LUX_advanced_infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/BEL_infantry_equipment_7.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_LUX_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
 	}	
 
 	SpriteType = {
@@ -1259,6 +1414,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_SWI_advanced_infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/BEL_infantry_equipment_7.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SWI_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
 	}	
 
 	SpriteType = {
@@ -1301,6 +1461,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_SPR_advanced_infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/BEL_infantry_equipment_7.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SPR_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
 	}	
 
 	SpriteType = {
@@ -1343,6 +1508,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_POR_advanced_infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/BEL_infantry_equipment_7.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POR_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
 	}	
 
 	SpriteType = {
@@ -1385,6 +1555,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_SWE_advanced_infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/BEL_infantry_equipment_7.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SWE_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
 	}	
 	
 	SpriteType = {
@@ -1427,6 +1602,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_DEN_advanced_infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/BEL_infantry_equipment_7.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_DEN_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
 	}	
 
 	SpriteType = {
@@ -1469,6 +1649,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_NOR_advanced_infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/BEL_infantry_equipment_7.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_NOR_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
 	}	
 
 	SpriteType = {
@@ -1511,6 +1696,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_AFG_advanced_infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_7.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_AFG_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
 	}	
 
 	SpriteType = {
@@ -1553,6 +1743,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_PER_advanced_infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_7.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PER_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
 	}	
 
 	SpriteType = {
@@ -1595,6 +1790,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_RAJ_advanced_infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/ENG_infantry_equipment_7.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RAJ_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
 	}	
 
 	SpriteType = {
@@ -1637,6 +1837,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_ETH_advanced_infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_7.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ETH_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
 	}	
 
 	SpriteType = {

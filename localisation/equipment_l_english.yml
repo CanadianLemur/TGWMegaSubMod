@@ -339,9 +339,9 @@
  infantry_equipment_5_desc:0 "An assault rifle is a selective-fire rifle that uses an intermediate cartridge and a detachable magazine.Assault rifles were first put into mass production and accepted into widespread service during World War II.Though Western nations were slow to accept the assault rifle concept, by the end of the 20th century they had become the standard weapon in most of the world's armies, replacing full-powered rifles and sub-machine guns in most roles."
 
  motorized_equipment_1:0 "GMC CCKW"
- motorized_equipment_2:0 "M54 TRUCK"
+ motorized_equipment_2:0 "M54 Truck"
  motorized_equipment_2_desc:0 ""
- motorized_equipment_3:0 "M55 TRUCK"
+ motorized_equipment_3:0 "M55 Truck"
  motorized_equipment_3_desc:0 ""
  
  motorized_rocket_equipment_2:0 "Rocket Artillery 1950"
@@ -772,8 +772,8 @@
  USA_support_weapons4:0 "M1941 Johnson MG & M2 4.2 inch mortar"
 
  USA_motorized_equipment_1:0 "GMC CCKW"
- USA_motorized_equipment_2:0 "M54 TRUCK"
- USA_motorized_equipment_3:0 "M55 TRUCK"
+ USA_motorized_equipment_2:0 "M54 Truck"
+ USA_motorized_equipment_3:0 "M55 Truck"
  
  USA_motorized_rocket_equipment:0 "T27 Xylophone"
  USA_motorized_rocket_equipment_1:0 "T27 Xylophone"
@@ -964,10 +964,6 @@
  GER_infantry_equipment_2_desc:0 "Designed in 1938 by Heinrich Vollmer with inspiration from its predecessor the MP 38, it was heavily used by infantrymen (particularly platoon and squad leaders), and by paratroopers, on the Eastern and Western Fronts. Its advanced and modern features made it a favorite among soldiers and popular in countries from various parts of the world after the war."
  GER_infantry_equipment_3:0 "Sturmgewehr 44"
  GER_infantry_equipment_3_short:0 "Stg 44"
- GER_infantry_equipment_4:0 "Gewehr 3A2"
- GER_infantry_equipment_4_short:0 "G3A2"
- GER_infantry_equipment_5:0 "Gewehr 3A3"
- GER_infantry_equipment_5_short:0 "G3A3"
  GER_infantry_at:0 "Panzerfaust 30"
  GER_infantry_at2:0 "Panzerschreck"
  GER_support_weapons:0 "MG 08 & leichter Minenwerfer"
@@ -977,7 +973,7 @@
 
  GER_motorized_equipment_1:0 "Opel Blitz"
  GER_motorized_equipment_2:0 "Opel Blitz II"
- GER_motorized_equipment_3:0 "Opel Blitz"
+ GER_motorized_equipment_3:0 "Opel Blitz III"
  
  GER_mechanized_equipment_1:0 "Sd.Kfz. 250"
  GER_mechanized_equipment_1_short:0 "Sonderkraftfahrzeug 250"

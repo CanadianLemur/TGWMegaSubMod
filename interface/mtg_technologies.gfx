@@ -309,7 +309,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_HOL_motorised_infantry_medium"
+		name = "GFX_HOL_motorised_infantry2_medium"
 		texturefile = "gfx/interface/technologies/hol_motorized_equipment.dds"
 	}
 

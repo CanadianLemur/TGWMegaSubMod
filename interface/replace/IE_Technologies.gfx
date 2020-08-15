@@ -157,7 +157,7 @@ spriteTypes = {
 	}	
 	
 	SpriteType = {
-		name = "GFX_motorized_equipment_1_medium"
+		name = "GFX_motorized_equipment_2_medium"
 		texturefile = "gfx/interface/technologies/SOV/LAND/TRUCK.dds"
 	}	
 	SpriteType = {
@@ -196,15 +196,15 @@ spriteTypes = {
 	### infantry tech	###
 	
 	SpriteType = {
-		name = "GFX_motorised_infantry_medium"
+		name = "GFX_motorised_infantry2_medium"
 		texturefile = "gfx/interface/technologies/ITA/LAND/TRUCK.dds"
 	}
 	SpriteType = {
-		name = "GFX_motorised_infantry2_medium"
+		name = "GFX_motorised_infantry3_medium"
 		texturefile = "gfx/interface/technologies/USA/LAND/TRUCK2.dds"
 	}
 	SpriteType = {
-		name = "GFX_motorised_infantry3_medium"
+		name = "GFX_motorised_infantry4_medium"
 		texturefile = "gfx/interface/technologies/USA/LAND/TRUCK3.dds"
 	}	
 	
@@ -721,27 +721,27 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/GER/LAND/LWS2.dds"
 	}
 	SpriteType = {
-		name = "GFX_GER_motorised_infantry_medium"
-		texturefile = "gfx/interface/technologies/GER/LAND/TRUCK.dds"
-	}
-	SpriteType = {
 		name = "GFX_GER_motorised_infantry2_medium"
-		texturefile = "gfx/interface/technologies/GER/LAND/TRUCK2.dds"
+		texturefile = "gfx/interface/technologies/GER/LAND/TRUCK.dds"
 	}
 	SpriteType = {
 		name = "GFX_GER_motorised_infantry3_medium"
-		texturefile = "gfx/interface/technologies/USA/LAND/TRUCK3.dds"
-	}
-	SpriteType = {
-		name = "GFX_GER_motorized_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/GER/LAND/TRUCK.dds"
-	}
-	SpriteType = {
-		name = "GFX_GER_motorized_equipment_2_medium"
 		texturefile = "gfx/interface/technologies/GER/LAND/TRUCK2.dds"
 	}
 	SpriteType = {
+		name = "GFX_GER_motorised_infantry4_medium"
+		texturefile = "gfx/interface/technologies/USA/LAND/TRUCK3.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_motorized_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/TRUCK.dds"
+	}
+	SpriteType = {
 		name = "GFX_GER_motorized_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/TRUCK2.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_motorized_equipment_4_medium"
 		texturefile = "gfx/interface/technologies/USA/LAND/TRUCK3.dds"
 	}
 	SpriteType = {
@@ -1182,11 +1182,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/JAP/LAND/LWS2.dds"
 	}
 	SpriteType = {
-		name = "GFX_JAP_motorised_infantry_medium"
+		name = "GFX_JAP_motorised_infantry2_medium"
 		texturefile = "gfx/interface/technologies/JAP/LAND/TRUCK.dds"
 	}
 	SpriteType = {
-		name = "GFX_JAP_motorized_equipment_1_medium"
+		name = "GFX_JAP_motorized_equipment_2_medium"
 		texturefile = "gfx/interface/technologies/JAP/LAND/TRUCK.dds"
 	}
 
@@ -1742,27 +1742,27 @@ spriteTypes = {
 	}		
     ##MAIN TREES##
 	SpriteType = {
-		name = "GFX_SOV_motorized_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/SOV/LAND/TRUCK.dds"
-	}
-	SpriteType = {
 		name = "GFX_SOV_motorized_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/SOV/LAND/TRUCK2.dds"
+		texturefile = "gfx/interface/technologies/SOV/LAND/TRUCK.dds"
 	}
 	SpriteType = {
 		name = "GFX_SOV_motorized_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/SOV/LAND/TRUCK3.dds"
-	}
-	SpriteType = {
-		name = "GFX_SOV_motorised_infantry_medium"
-		texturefile = "gfx/interface/technologies/SOV/LAND/TRUCK.dds"
-	}
-	SpriteType = {
-		name = "GFX_SOV_motorised_infantry2_medium"
 		texturefile = "gfx/interface/technologies/SOV/LAND/TRUCK2.dds"
 	}
 	SpriteType = {
+		name = "GFX_SOV_motorized_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/TRUCK3.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_motorised_infantry2_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/TRUCK.dds"
+	}
+	SpriteType = {
 		name = "GFX_SOV_motorised_infantry3_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/TRUCK2.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_motorised_infantry4_medium"
 		texturefile = "gfx/interface/technologies/SOV/LAND/TRUCK3.dds"
 	}
 	SpriteType = {
@@ -2219,27 +2219,27 @@ spriteTypes = {
 	}		
     ##MAIN TREES##
 	SpriteType = {
-		name = "GFX_SPR_motorized_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/SOV/LAND/TRUCK.dds"
-	}
-	SpriteType = {
 		name = "GFX_SPR_motorized_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/SOV/LAND/TRUCK2.dds"
+		texturefile = "gfx/interface/technologies/SOV/LAND/TRUCK.dds"
 	}
 	SpriteType = {
 		name = "GFX_SPR_motorized_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/SOV/LAND/TRUCK3.dds"
-	}
-	SpriteType = {
-		name = "GFX_SPR_motorised_infantry_medium"
-		texturefile = "gfx/interface/technologies/SOV/LAND/TRUCK.dds"
-	}
-	SpriteType = {
-		name = "GFX_SPR_motorised_infantry2_medium"
 		texturefile = "gfx/interface/technologies/SOV/LAND/TRUCK2.dds"
 	}
 	SpriteType = {
+		name = "GFX_SPR_motorized_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/TRUCK3.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPR_motorised_infantry2_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/TRUCK.dds"
+	}
+	SpriteType = {
 		name = "GFX_SPR_motorised_infantry3_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/TRUCK2.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPR_motorised_infantry4_medium"
 		texturefile = "gfx/interface/technologies/SOV/LAND/TRUCK3.dds"
 	}
 	SpriteType = {
@@ -2637,27 +2637,27 @@ spriteTypes = {
 	}		
     ##MAIN TREES##
 	SpriteType = {
-		name = "GFX_RUS_motorized_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/SOV/LAND/TRUCK.dds"
-	}
-	SpriteType = {
 		name = "GFX_RUS_motorized_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/SOV/LAND/TRUCK2.dds"
+		texturefile = "gfx/interface/technologies/SOV/LAND/TRUCK.dds"
 	}
 	SpriteType = {
 		name = "GFX_RUS_motorized_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/SOV/LAND/TRUCK3.dds"
-	}
-	SpriteType = {
-		name = "GFX_RUS_motorised_infantry_medium"
-		texturefile = "gfx/interface/technologies/SOV/LAND/TRUCK.dds"
-	}
-	SpriteType = {
-		name = "GFX_RUS_motorised_infantry2_medium"
 		texturefile = "gfx/interface/technologies/SOV/LAND/TRUCK2.dds"
 	}
 	SpriteType = {
+		name = "GFX_RUS_motorized_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/TRUCK3.dds"
+	}
+	SpriteType = {
+		name = "GFX_RUS_motorised_infantry2_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/TRUCK.dds"
+	}
+	SpriteType = {
 		name = "GFX_RUS_motorised_infantry3_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/TRUCK2.dds"
+	}
+	SpriteType = {
+		name = "GFX_RUS_motorised_infantry4_medium"
 		texturefile = "gfx/interface/technologies/SOV/LAND/TRUCK3.dds"
 	}
 	SpriteType = {
@@ -3009,27 +3009,27 @@ spriteTypes = {
 	}		
     ##MAIN TREES##
 	SpriteType = {
-		name = "GFX_USA_motorised_infantry_medium"
-		texturefile = "gfx/interface/technologies/USA/LAND/TRUCK.dds"
-	}
-	SpriteType = {
 		name = "GFX_USA_motorised_infantry2_medium"
-		texturefile = "gfx/interface/technologies/USA/LAND/TRUCK2.dds"
+		texturefile = "gfx/interface/technologies/USA/LAND/TRUCK.dds"
 	}
 	SpriteType = {
 		name = "GFX_USA_motorised_infantry3_medium"
-		texturefile = "gfx/interface/technologies/USA/LAND/TRUCK3.dds"
-	}
-	SpriteType = {
-		name = "GFX_USA_motorized_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/USA/LAND/TRUCK.dds"
-	}
-	SpriteType = {
-		name = "GFX_USA_motorized_equipment_2_medium"
 		texturefile = "gfx/interface/technologies/USA/LAND/TRUCK2.dds"
 	}
 	SpriteType = {
+		name = "GFX_USA_motorised_infantry4_medium"
+		texturefile = "gfx/interface/technologies/USA/LAND/TRUCK3.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_motorized_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/USA/LAND/TRUCK.dds"
+	}
+	SpriteType = {
 		name = "GFX_USA_motorized_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/USA/LAND/TRUCK2.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_motorized_equipment_4_medium"
 		texturefile = "gfx/interface/technologies/USA/LAND/TRUCK3.dds"
 	}
 
@@ -3438,15 +3438,15 @@ spriteTypes = {
 	}		
     ##MAIN TREES##
 	SpriteType = {
-		name = "GFX_PRC_motorised_infantry_medium"
+		name = "GFX_PRC_motorised_infantry2_medium"
 		texturefile = "gfx/interface/technologies/SOV/LAND/TRUCK.dds"
 	}
 	SpriteType = {
-		name = "GFX_PRC_motorised_infantry2_medium"
+		name = "GFX_PRC_motorised_infantry3_medium"
 		texturefile = "gfx/interface/technologies/SOV/LAND/TRUCK2.dds"
 	}
 	SpriteType = {
-		name = "GFX_PRC_motorised_infantry3_medium"
+		name = "GFX_PRC_motorised_infantry4_medium"
 		texturefile = "gfx/interface/technologies/SOV/LAND/TRUCK3.dds"
 	}
 
@@ -3770,11 +3770,11 @@ spriteTypes = {
 	##SECRET WEAPONS##		
     ##MAIN TREES##
 	SpriteType = {
-		name = "GFX_ENG_motorised_infantry_medium"
+		name = "GFX_ENG_motorised_infantry2_medium"
 		texturefile = "gfx/interface/technologies/ENG/LAND/TRUCK.dds"
 	}
 	SpriteType = {
-		name = "GFX_ENG_motorized_equipment_1_medium"
+		name = "GFX_ENG_motorized_equipment_2_medium"
 		texturefile = "gfx/interface/technologies/ENG/LAND/TRUCK.dds"
 	}
 
@@ -4050,11 +4050,11 @@ spriteTypes = {
 	##SECRET WEAPONS##		
     ##MAIN TREES##
 	SpriteType = {
-		name = "GFX_QIE_motorised_infantry_medium"
+		name = "GFX_QIE_motorised_infantry2_medium"
 		texturefile = "gfx/interface/technologies/ENG/LAND/TRUCK.dds"
 	}
 	SpriteType = {
-		name = "GFX_QIE_motorized_equipment_1_medium"
+		name = "GFX_QIE_motorized_equipment_2_medium"
 		texturefile = "gfx/interface/technologies/ENG/LAND/TRUCK.dds"
 	}
 
@@ -4312,11 +4312,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/GEN/LAND/LWS2.dds"
 	}
 	SpriteType = {
-		name = "GFX_ITA_motorised_infantry_medium"
+		name = "GFX_ITA_motorised_infantry2_medium"
 		texturefile = "gfx/interface/technologies/ITA/LAND/TRUCK.dds"
 	}
 	SpriteType = {
-		name = "GFX_ITA_motorized_equipment_1_medium"
+		name = "GFX_ITA_motorized_equipment_2_medium"
 		texturefile = "gfx/interface/technologies/ITA/LAND/TRUCK.dds"
 	}
 	SpriteType = {
@@ -4638,27 +4638,27 @@ spriteTypes = {
 	##SECRET WEAPONS##		
     ##MAIN TREES##
 	SpriteType = {
-		name = "GFX_FRA_motorised_infantry_medium"
-		texturefile = "gfx/interface/technologies/FRA/LAND/TRUCK.dds"
-	}
-	SpriteType = {
 		name = "GFX_FRA_motorised_infantry2_medium"
-		texturefile = "gfx/interface/technologies/GEN/LAND/TRUCK2.dds"
+		texturefile = "gfx/interface/technologies/FRA/LAND/TRUCK.dds"
 	}
 	SpriteType = {
 		name = "GFX_FRA_motorised_infantry3_medium"
-		texturefile = "gfx/interface/technologies/GEN/LAND/TRUCK3.dds"
-	}
-	SpriteType = {
-		name = "GFX_FRA_motorized_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/FRA/LAND/TRUCK.dds"
-	}
-	SpriteType = {
-		name = "GFX_FRA_motorized_equipment_2_medium"
 		texturefile = "gfx/interface/technologies/GEN/LAND/TRUCK2.dds"
 	}
 	SpriteType = {
+		name = "GFX_FRA_motorised_infantry4_medium"
+		texturefile = "gfx/interface/technologies/GEN/LAND/TRUCK3.dds"
+	}
+	SpriteType = {
+		name = "GFX_FRA_motorized_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/FRA/LAND/TRUCK.dds"
+	}
+	SpriteType = {
 		name = "GFX_FRA_motorized_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/GEN/LAND/TRUCK2.dds"
+	}
+	SpriteType = {
+		name = "GFX_FRA_motorized_equipment_4_medium"
 		texturefile = "gfx/interface/technologies/GEN/LAND/TRUCK3.dds"
 	}
 	SpriteType = {
@@ -4961,27 +4961,27 @@ spriteTypes = {
 	##SECRET WEAPONS##		
     ##MAIN TREES##
 	SpriteType = {
-		name = "GFX_NFA_motorised_infantry_medium"
-		texturefile = "gfx/interface/technologies/FRA/LAND/TRUCK.dds"
-	}
-	SpriteType = {
 		name = "GFX_NFA_motorised_infantry2_medium"
-		texturefile = "gfx/interface/technologies/GEN/LAND/TRUCK2.dds"
+		texturefile = "gfx/interface/technologies/FRA/LAND/TRUCK.dds"
 	}
 	SpriteType = {
 		name = "GFX_NFA_motorised_infantry3_medium"
-		texturefile = "gfx/interface/technologies/GEN/LAND/TRUCK3.dds"
-	}
-	SpriteType = {
-		name = "GFX_NFA_motorized_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/FRA/LAND/TRUCK.dds"
-	}
-	SpriteType = {
-		name = "GFX_NFA_motorized_equipment_2_medium"
 		texturefile = "gfx/interface/technologies/GEN/LAND/TRUCK2.dds"
 	}
 	SpriteType = {
+		name = "GFX_NFA_motorised_infantry4_medium"
+		texturefile = "gfx/interface/technologies/GEN/LAND/TRUCK3.dds"
+	}
+	SpriteType = {
+		name = "GFX_NFA_motorized_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/FRA/LAND/TRUCK.dds"
+	}
+	SpriteType = {
 		name = "GFX_NFA_motorized_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/GEN/LAND/TRUCK2.dds"
+	}
+	SpriteType = {
+		name = "GFX_NFA_motorized_equipment_4_medium"
 		texturefile = "gfx/interface/technologies/GEN/LAND/TRUCK3.dds"
 	}
 	SpriteType = {
@@ -5269,11 +5269,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/GEN/LAND/LWS2.dds"
 	}
 	SpriteType = {
-		name = "GFX_POL_motorised_infantry_medium"
+		name = "GFX_POL_motorised_infantry2_medium"
 		texturefile = "gfx/interface/technologies/POL/LAND/TRUCK.dds"
 	}
 	SpriteType = {
-		name = "GFX_POL_motorized_equipment_1_medium"
+		name = "GFX_POL_motorized_equipment_2_medium"
 		texturefile = "gfx/interface/technologies/POL/LAND/TRUCK.dds"
 	}
 
@@ -5556,11 +5556,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/CZE/LAND/ART1.dds"
 	}
 	SpriteType = {
-		name = "GFX_CZE_motorised_infantry_medium"
+		name = "GFX_CZE_motorised_infantry2_medium"
 		texturefile = "gfx/interface/technologies/CZE/LAND/TRUCK.dds"
 	}
 	SpriteType = {
-		name = "GFX_CZE_motorized_equipment_1_medium"
+		name = "GFX_CZE_motorized_equipment_2_medium"
 		texturefile = "gfx/interface/technologies/CZE/LAND/TRUCK.dds"
 	}
 	
@@ -5580,11 +5580,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/GER/LAND/LWS2.dds"
 	}
 	SpriteType = {
-		name = "GFX_HUN_motorised_infantry_medium"
+		name = "GFX_HUN_motorised_infantry2_medium"
 		texturefile = "gfx/interface/technologies/HUN/LAND/TRUCK.dds"
 	}
 	SpriteType = {
-		name = "GFX_HUN_motorized_equipment_1_medium"
+		name = "GFX_HUN_motorized_equipment_2_medium"
 		texturefile = "gfx/interface/technologies/HUN/LAND/TRUCK.dds"
 	}
 
@@ -5840,11 +5840,11 @@ spriteTypes = {
 	### HOLLAND EQUIPMENT ###
     ##MAIN TREES##
 	SpriteType = {
-		name = "GFX_SOV_motorised_infantry_medium"
+		name = "GFX_SOV_motorised_infantry2_medium"
 		texturefile = "gfx/interface/technologies/SOV/LAND/TRUCK.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_motorized_equipment_1_medium"
+		name = "GFX_SOV_motorized_equipment_2_medium"
 		texturefile = "gfx/interface/technologies/SOV/LAND/TRUCK.dds"
 	}	
 	
@@ -6063,11 +6063,11 @@ spriteTypes = {
 	### YUGOSLAV EQUIPMENT ###
     ##MAIN TREES##
 	SpriteType = {
-		name = "GFX_YUG_motorised_infantry_medium"
+		name = "GFX_YUG_motorised_infantry2_medium"
 		texturefile = "gfx/interface/technologies/YUG/LAND/TRUCK.dds"
 	}
 	SpriteType = {
-		name = "GFX_YUG_motorized_equipment_1_medium"
+		name = "GFX_YUG_motorized_equipment_2_medium"
 		texturefile = "gfx/interface/technologies/YUG/LAND/TRUCK.dds"
 	}	
 	
@@ -6295,11 +6295,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/GER/LAND/LWS2.dds"
 	}
 	SpriteType = {
-		name = "GFX_GER_motorised_infantry_medium"
+		name = "GFX_GER_motorised_infantry2_medium"
 		texturefile = "gfx/interface/technologies/GER/LAND/TRUCK.dds"
 	}
 	SpriteType = {
-		name = "GFX_GER_motorized_equipment_1_medium"
+		name = "GFX_GER_motorized_equipment_2_medium"
 		texturefile = "gfx/interface/technologies/GER/LAND/TRUCK.dds"
 	}
 
@@ -6582,11 +6582,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/GER/LAND/LWS2.dds"
 	}
 	SpriteType = {
-		name = "GFX_GER_motorised_infantry_medium"
+		name = "GFX_GER_motorised_infantry2_medium"
 		texturefile = "gfx/interface/technologies/GER/LAND/TRUCK.dds"
 	}
 	SpriteType = {
-		name = "GFX_GER_motorized_equipment_1_medium"
+		name = "GFX_GER_motorized_equipment_2_medium"
 		texturefile = "gfx/interface/technologies/GER/LAND/TRUCK.dds"
 	}
 
@@ -6873,11 +6873,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/GER/LAND/LWS2.dds"
 	}
 	SpriteType = {
-		name = "GFX_CHI_motorised_infantry_medium"
+		name = "GFX_CHI_motorised_infantry2_medium"
 		texturefile = "gfx/interface/technologies/CHI/LAND/TRUCK.dds"
 	}
 	SpriteType = {
-		name = "GFX_CHI_motorized_equipment_1_medium"
+		name = "GFX_CHI_motorized_equipment_2_medium"
 		texturefile = "gfx/interface/technologies/CHI/LAND/TRUCK.dds"
 	}
 
@@ -7177,27 +7177,27 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/GER/LAND/LWS2.dds"
 	}
 	SpriteType = {
-		name = "GFX_SPA_motorised_infantry_medium"
-		texturefile = "gfx/interface/technologies/GER/LAND/TRUCK.dds"
-	}
-	SpriteType = {
 		name = "GFX_SPA_motorised_infantry2_medium"
-		texturefile = "gfx/interface/technologies/GER/LAND/TRUCK2.dds"
+		texturefile = "gfx/interface/technologies/GER/LAND/TRUCK.dds"
 	}
 	SpriteType = {
 		name = "GFX_SPA_motorised_infantry3_medium"
-		texturefile = "gfx/interface/technologies/USA/LAND/TRUCK3.dds"
-	}
-	SpriteType = {
-		name = "GFX_SPA_motorized_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/GER/LAND/TRUCK.dds"
-	}
-	SpriteType = {
-		name = "GFX_SPA_motorized_equipment_2_medium"
 		texturefile = "gfx/interface/technologies/GER/LAND/TRUCK2.dds"
 	}
 	SpriteType = {
+		name = "GFX_SPA_motorised_infantry4_medium"
+		texturefile = "gfx/interface/technologies/USA/LAND/TRUCK3.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPA_motorized_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/TRUCK.dds"
+	}
+	SpriteType = {
 		name = "GFX_SPA_motorized_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/TRUCK2.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPA_motorized_equipment_4_medium"
 		texturefile = "gfx/interface/technologies/USA/LAND/TRUCK3.dds"
 	}
 	SpriteType = {

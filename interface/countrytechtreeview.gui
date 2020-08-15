@@ -51,7 +51,7 @@ guiTypes = {
 				name = "techtree_stripes"
 				position = { x= 0 y= 0 }
 				size = { 
-					width = 2476 height = 1342
+					width = 3600 height = 1342
 					min = { width = 100%% height = 100%% }
 				}
 				clipping = no
@@ -78,7 +78,7 @@ guiTypes = {
 				
 				instantTextBoxType = {
 					name = "infantry_subtitle_specialists"
-					position = { x = 30 y = 990 }
+					position = { x = 30 y = 1050 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = { x = 0 y = 0}
@@ -91,7 +91,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "infantry_subtitle_motorized"
-					position = { x = 30 y = 660 }
+					position = { x = 30 y = 730 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = { x = 0 y = 0}
@@ -320,7 +320,7 @@ guiTypes = {
 				
 				instantTextBoxType = {
 					name = "infantry_year11"
-					position = { x = 2663 y = 50 }
+					position = { x = 2517 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1944"
@@ -332,7 +332,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "infantry_year12"
-					position = { x = 2805 y = 50 }
+					position = { x = 2655 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1945"
@@ -344,7 +344,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "infantry_year13"
-					position = { x = 2945 y = 50 }
+					position = { x = 2793 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1946"
@@ -353,12 +353,37 @@ guiTypes = {
 					format = left
 					Orientation = "UPPER_LEFT"
 				}
+				
+				instantTextBoxType = {
+					name = "infantry_year15"
+					position = { x = 3069 y = 50 }
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0}
+					text = "1950"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+				
+				instantTextBoxType = {
+					name = "infantry_year17"
+					position = { x = 3345 y = 50 }
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0}
+					text = "1960"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+				
 			}
 
 			containerWindowType = {
 				name = "tiled_research_tp_bg"
-				position = { x = 1295 y = 1226 }
-				size = { width = 1185 height = 118 }
+				position = { x = 1185 y = 1296 }
+				size = { width = 1295 height = 118 }
 				clipping = no
 			
 				background = {
@@ -615,7 +640,7 @@ guiTypes = {
 				name = "tiled_research_bg_2"
 				position = { x = 160 y = 920 }
 				size = { width = 1320 height = 140 }
-				clipping = no
+				clipping = yes
 			
 				background = {
 					name = "Background"

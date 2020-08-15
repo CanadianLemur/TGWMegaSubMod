@@ -1065,9 +1065,8 @@ technologies = {
 
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = 10 }
+			position = { x = 1 y = 10 }
 		}
-
 
 		enable_equipments = {
 			transport_plane_equipment_1

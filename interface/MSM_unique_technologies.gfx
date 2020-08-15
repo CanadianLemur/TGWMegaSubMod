@@ -1,0 +1,11 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_motorised_equipment_medium"
+		texturefile = "gfx/interface/technologies/truck_1900.dds"
+	}
+	SpriteType = {
+		name = "GFX_motorised_infantry_medium"
+		texturefile = "gfx/interface/technologies/truck_1900.dds"
+	}
+}
