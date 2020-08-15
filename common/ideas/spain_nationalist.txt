@@ -55,21 +55,13 @@ ideas={
 			}
 			
 		theorist={
-			AUH_august_urbanski={
-			allowed={ tag=SPR }
-			traits={ military_theorist } 
-			ai_will_do={ factor=1 } 
-			}
+			#AUH_august_urbanski={allowed={ tag=SPR }traits={ military_theorist } ai_will_do={ factor=1 } }
 		}
 
-	air_chief={
-			AUH_emil_uzelac={
-			allowed={ tag=SPR }
-			traits={ air_air_superiority_1 }
-			ai_will_do={ factor=1 } 
-			}
-	}
-	army_chief={
+		air_chief={
+			#AUH_emil_uzelac={allowed={ tag=SPR }traits={ air_air_superiority_1 }ai_will_do={ factor=1 } }
+		}
+		army_chief={
 			SPR_angel_aznar={
 			allowed={tag=SPR}	
 			available = {
