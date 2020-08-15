@@ -32,13 +32,21 @@ ingria_integration = {
 		targets = { 208 195 }
 		complete_effect = {
 			IF = {
-				limit = { FROM = {is_controlled_by = FIN} }
-				add_core_of = FIN
-				add_core_of = SWE
+				limit = { 
+					FROM = {
+						is_controlled_by = FIN
+					}
+				}
+				FROM = {
+					add_core_of = FIN
+					add_core_of = SWE
+				}
 			}
 			IF = {
 				limit = { FROM = {is_controlled_by = SWE} }
-				add_core_of = SWE
+				FROM = {
+					add_core_of = SWE
+				}
 			}
 		}
 	}

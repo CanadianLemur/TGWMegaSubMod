@@ -1,23 +1,27 @@
 portugal_revolution = {
-     portugal_revolution = {                      
-          allowed = { tag = POR }              
-          available = {                          
-				OR = {has_global_flag = kis_portugal_revolution_avoided has_global_flag = kis_portugal_revolution}
-			   
-          }
-          visible = {
-				NOT = {OR = {has_global_flag = kis_portugal_revolution_avoided has_global_flag = kis_portugal_revolution}}          }
-          is_good = yes                           
-          days_mission_timeout = 160             
-          timeout_effect = {                     
+	portugal_revolution = {                      
+		allowed = { tag = POR }              
+		available = {                          
+			OR = {
+				has_global_flag = kis_portugal_revolution_avoided
+				has_global_flag = kis_portugal_revolution}
+			}
+		visible = {
+			NOT = {
+				OR = {
+					has_global_flag = kis_portugal_revolution_avoided
+					has_global_flag = kis_portugal_revolution
+				}
+			}
+		}
+		is_good = yes                           
+		days_mission_timeout = 160             
+		timeout_effect = {                     
 			country_event = {id = ww1_portugal.100}
-          }
-          complete_effect = {                   
-                add_political_power = 50  
-				set_global_flag = kis_portugal_revolution_avoided
-
-
-          }
-		  }
-     }
+		}
+		complete_effect = {                   
+			add_political_power = 50  
+			set_global_flag = kis_portugal_revolution_avoided
+		}
+	}
 }

@@ -37,7 +37,7 @@ set_technology = {
 	ww1_battleship0 = 1
 	ww1_battleship0_mtg = 1
 	
-1910_ship_hull_submarine = 1
+ship_hull_submarine_1910 = 1
 ww1_ship_hull_light = 1
 gw_ship_hull_cruiser = 1
 pre_dreadnought_ship_hull_heavy = 1

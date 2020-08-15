@@ -4,15 +4,7 @@ technologies = {
 
 		enable_equipments = {
 			ww1_fighter_equipment_1
-		}
-
-		if = {
-			limit = {
-				has_dlc = "La Resistance"
-			}
-			enable_equipments = {
-				scout_plane_equipment_1
-			}
+			scout_plane_equipment_1
 		}
 
 		sub_technologies = sub_technologies={ ww1_fakefighter1 ww1_fighter1b }
@@ -32,6 +24,53 @@ technologies = {
 			leads_to_tech = ww1_seaplane1
 			research_cost_coeff = 1
 		}
+		
+		allow_branch = { has_dlc = "La Resistance" }
+		
+		research_cost = 2
+		start_year = 1912
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	ww1_fighter1 = {
+
+		enable_equipments = {
+			ww1_fighter_equipment_1
+		}
+
+		sub_technologies = sub_technologies={ ww1_fakefighter1 ww1_fighter1b }
+		#sub_technologies = sub_technologies={ ww1_fighter1b }
+	
+		path = {
+			leads_to_tech = ww1_fighter2
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = ww1_fighter2b
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = ww1_seaplane1
+			research_cost_coeff = 1
+		}
+		
+		allow_branch = { NOT = { has_dlc = "La Resistance" } }
 		
 		research_cost = 2
 		start_year = 1912

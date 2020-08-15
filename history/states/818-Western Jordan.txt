@@ -12,9 +12,6 @@ state={
 			infrastructure = 3
 			industrial_complex = 1
 		}
-		victory_points = {
-			
-		}
 
 		add_core_of = JOR
 		add_core_of = JBS

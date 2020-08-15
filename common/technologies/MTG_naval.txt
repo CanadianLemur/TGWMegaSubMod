@@ -2719,7 +2719,7 @@ early_ship_hull_carrier = {
 		}
 
 		path = {
-			leads_to_tech = 1910_ship_hull_submarine
+			leads_to_tech = ship_hull_submarine_1910
 			research_cost_coeff = 1
 		}
 
@@ -3247,7 +3247,7 @@ early_ship_hull_carrier = {
 			naval_equipment
 		}
 	}
-	1910_ship_hull_submarine = {
+	ship_hull_submarine_1910 = {
 
 		enable_equipments = {
 			ship_hull_submarine_gw

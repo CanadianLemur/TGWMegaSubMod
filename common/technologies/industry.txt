@@ -2492,7 +2492,7 @@ technologies = {
 			modifier = { factor = 0 date < 1944.8.1 }
 
 			#PRIORITISE MAIN INDUSTRY TECHS
-			modifier = { factor = 0 EAI_prioritise_main_industry = yes }
+			modifier = { factor = 0 EAI_prioritize_main_industry = yes }
 		}
 		
 		categories = {

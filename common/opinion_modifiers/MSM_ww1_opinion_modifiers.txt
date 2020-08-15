@@ -1,8 +1,58 @@
 opinion_modifiers = {
-### Nordic Stuff ###
+	### Nordic Stuff
 
 	nordic_leadership.1 = {
 		value = 100
+	}
+	
+	#Portugal
+	
+	POR_bought_guns = {
+		value = 25
+	}
+	
+	POR_sold_guns = {
+		value = 25
+	}
+	
+	POR_arms_trade = {
+		value = 25
+	}
+	
+	POR_bought_ships = {
+		value = 50
+	}
+	
+	POR_sold_ships = {
+		value = 50
+	}
+	
+	POR_ships_trade = {
+		value = 25
+	}
+	
+	POR_iberian_summit_diplomatic_approach = {
+		value = 25
+	}
+	
+	POR_iberian_summit_working_together = {
+		value = 25
+	}
+	
+	POR_rejected_the_iberian_unification = {
+		value = -100
+	}
+	
+	POR_anglo_portuguese_alliance = {
+		value = 50
+	}
+	
+	POR_helped_in_civil_war = {
+		value = 25
+	}
+	
+	POR_rejected_the_royal_iberian_alliance = {
+		value = -50
 	}
 	
 }

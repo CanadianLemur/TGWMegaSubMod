@@ -12,9 +12,6 @@ state={
 			infrastructure = 3
 			13218 = {naval_base = 5}
 		}
-		victory_points = {
-			
-		}
 
 		add_core_of = CUB
 	}

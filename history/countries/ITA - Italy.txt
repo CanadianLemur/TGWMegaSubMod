@@ -126,7 +126,7 @@ create_navy_leader={  name = "Marcello Amero d'Aste-Stella" id=46076 portrait_pa
 	ww1_moduleMTG_mines_mtg = 1 # Mines
 		transport = 1
 	transport_mtg = 1
-1910_ship_hull_submarine = 1
+ship_hull_submarine_1910 = 1
 ww1_ship_hull_light = 1
 gw_ship_hull_cruiser = 1
 pre_dreadnought_ship_hull_heavy = 1

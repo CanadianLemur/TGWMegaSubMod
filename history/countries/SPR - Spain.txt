@@ -69,7 +69,7 @@ create_country_leader={
 		electronic_mechanical_engineering = 1
 
 		# Naval
-1910_ship_hull_submarine = 1
+ship_hull_submarine_1910 = 1
 ww1_ship_hull_light = 1
 gw_ship_hull_cruiser = 1
 pre_dreadnought_ship_hull_heavy = 1
