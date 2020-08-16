@@ -1303,7 +1303,7 @@ equipments = {
 					ship_sam_missile_battery
 				}
 			}
-			fixed_ship_anti_air_slot = empty
+			#fixed_ship_anti_air_slot = empty
 			fixed_ship_fire_control_system_slot = inherit
 			fixed_ship_radar_slot = inherit
 			fixed_ship_engine_slot = {
@@ -1387,7 +1387,7 @@ equipments = {
 					ship_sam_missile_battery
 				}
 			}
-			fixed_ship_anti_air_slot = empty
+			#fixed_ship_anti_air_slot = empty
 			fixed_ship_fire_control_system_slot = inherit
 			fixed_ship_radar_slot = inherit
 			fixed_ship_engine_slot = {
@@ -1471,7 +1471,7 @@ equipments = {
 					ship_sam_missile_battery
 				}
 			}
-			fixed_ship_anti_air_slot = empty
+			#fixed_ship_anti_air_slot = empty
 			fixed_ship_fire_control_system_slot = inherit
 			fixed_ship_radar_slot = inherit
 			fixed_ship_engine_slot = {
@@ -1555,7 +1555,7 @@ equipments = {
 					ship_sam_missile_battery
 				}
 			}
-			fixed_ship_anti_air_slot = empty
+			#fixed_ship_anti_air_slot = empty
 			fixed_ship_fire_control_system_slot = inherit
 			fixed_ship_radar_slot = inherit
 			fixed_ship_engine_slot = {
