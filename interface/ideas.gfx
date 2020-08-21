@@ -7676,7 +7676,7 @@ spriteType = { name = "GFX_idea_GER_ludwig_von_estorff" texturefile = "gfx/hoi4t
 spriteType = { name = "GFX_idea_GER_burghard_von_oven" texturefile = "gfx/hoi4tgw_portraits/GER/advisor/GER_burghard_von_oven.dds" }
 spriteType = { name = "GFX_idea_GER_hermann_goring" texturefile = "gfx/hoi4tgw_portraits/GER/advisor/GER_hermann_goring.dds" }
 
-spriteType = { name = "GFX_idea_GER_paul_von_hindenburg" texturefile = "gfx/hoi4tgw_portraits/GER/advisor/GER_von_hindenburg.dds" }
+spriteType = { name = "GFX_idea_GER_paul_von_hindenburg" texturefile = "gfx/hoi4tgw_portraits/GER/advisor/GER_paul_von_hindenburg.dds" }
 
 #==================#==================#==================#==================#==================#==================#==================#
 
