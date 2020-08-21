@@ -1,0 +1,35 @@
+german_poland = {
+	icon = generic_political_actions
+	priority = 30
+	available = {
+		has_completed_focus = GER_ww1_polnische_wehrmacht
+	}
+	visible = {
+		tag = GER
+	}
+}
+
+baltic_duchy = {
+	icon = generic_political_actions
+	priority = 30
+	visible = {
+		tag = GER
+	}
+	available = {
+		tag = GER
+	}
+}
+
+schlieffen_military_access = {
+	icon = generic_political_actions
+	priority = 20
+	available = {
+		OR = {
+			has_completed_focus = GER_ww1_war_plans_deal_with_the_low_countries
+			has_completed_focus = GER_ww1_war_plans_dela_with_the_swiss
+		}
+	}
+	visible = {
+		tag = GER
+	}
+}

@@ -8,16 +8,6 @@ game_operation = {
 		tag = GER
 	}
 }
-german_poland = {
-	icon = generic_political_actions
-	priority = 30
-	available = {
-		has_completed_focus = GER_ww1_polnische_wehrmacht
-	}
-	visible = {
-		tag = GER
-	}
-}
 
 portugal_revolution = {
 	icon = generic_political_actions
@@ -27,17 +17,6 @@ portugal_revolution = {
 	}
 	available = {
 		tag = POR
-	}
-}
-
-baltic_duchy = {
-	icon = generic_political_actions
-	priority = 30
-	visible = {
-		tag = GER
-	}
-	available = {
-		tag = GER
 	}
 }
 

@@ -1271,49 +1271,17 @@ focus_tree = {
 		y = 0
 	}
 	
-	####Hindenberg Plan####
-	
-	focus = {
-		id = GER_ww1_war_plans_hindenberg_plan
-		relative_position_id = GER_ww1_war_plans_division_1
-		prerequisite = { focus=GER_ww1_war_plans_division_1 }
-		mutually_exclusive = { focus=GER_ww1_war_plans_schlieffen_plan }
-		icon = GFX_goal_generic_small_arms
-		completion_reward = {
-			#Give Hindenberg as Chief of Army
-			#Remove Hindenberg as General
-		}
-		ai_will_do = { factor = 10 }
-		cost = 10
-		x = 3
-		y = 1
-	}
-	
-	focus = {
-		id = GER_ww1_war_plans_falkenheim_plan
-		relative_position_id = GER_ww1_war_plans_hindenberg_plan
-		prerequisite = { focus=GER_ww1_war_plans_hindenberg_plan }
-		available = { date > 1914.1.1 }
-		icon = GFX_goal_generic_army_artillery2
-		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=0.15 uses=1 category=artillery } }
-		ai_will_do = { factor = 10 }
-		cost = 10
-		x = 0
-		y = 1
-	}
-	
 	####Schlieffen Plan####
 	
 	focus = {
 		id = GER_ww1_war_plans_schlieffen_plan
 		relative_position_id = GER_ww1_war_plans_division_1
 		prerequisite = { focus=GER_ww1_war_plans_division_1 }
-		mutually_exclusive = { focus=GER_ww1_war_plans_hindenberg_plan }
+		mutually_exclusive = { focus=GER_ww1_war_plans_hindenburg_plan }
 		icon = GFX_goal_generic_army_artillery2
 		completion_reward = { 
 			set_country_flag = MSM_GER_ww1_schlieffen
 			#doctrine research bonus
-			#Moltke as Chief of Army
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -1414,7 +1382,6 @@ focus_tree = {
 		prerequisite = { focus=GER_ww1_war_plans_fortify_the_eastern_front }
 		prerequisite = { focus=GER_ww1_war_plans_whip_up_the_reserves }
 		available = { 
-			date > 1911.1.1 
 			#Has fort tech unlocked
 		}
 		icon = GFX_goal_generic_army_artillery2
@@ -1431,7 +1398,6 @@ focus_tree = {
 		relative_position_id = GER_ww1_war_plans_front_line_reports
 		prerequisite = { focus=GER_ww1_war_plans_front_line_reports }
 		available = { 
-			date > 1911.1.1 
 			#Has fort tech unlocked
 		}
 		icon = GFX_goal_generic_army_artillery2
@@ -1449,7 +1415,6 @@ focus_tree = {
 		relative_position_id = GER_ww1_war_plans_front_line_reports
 		prerequisite = { focus=GER_ww1_war_plans_front_line_reports }
 		available = { 
-			date > 1911.1.1 
 			#Has fort tech unlocked
 		}
 		icon = GFX_goal_generic_army_artillery2
@@ -1525,15 +1490,11 @@ focus_tree = {
 			
 		}
 		completion_reward = { 
-			#Gives access to decisions that lead to events for each country (Belgium and Luxembourg as one entity)
-			#Allow for either attack or military access, with a failiure of military access giving a CB on them.
-			#HOL = {
-				#country_event = { days = 1 id = ww1_germany.21 }
-			#}
+			custom_effect_tooltip = "Unlocks decisions to ask the low countries for Military Access"
 		}
 		ai_will_do = { factor = 2000 }
 		cost = 10
-		x = -1
+		x = 1
 		y = 1
 	}
 	
@@ -1544,28 +1505,22 @@ focus_tree = {
 		icon = GFX_goal_generic_position_armies
 		available = { }
 		completion_reward = { 
-			#Gives access to decisions that lead to event for Switzerland like the low countries decisions
-			#HOL = {
-				#country_event = { days = 1 id = ww1_germany.21 }
-			#}
+			custom_effect_tooltip = "Unlocks decision to ask Switzerland for Military Access"
 		}
 		ai_will_do = { factor = 2000 }
 		cost = 10
-		x = 1
+		x = -1
 		y = 1
 	}
 	
 	focus = {
 		id = GER_ww1_war_plans_finalize_preparations
-		relative_position_id = GER_ww1_war_plans_deal_with_the_low_countries
+		relative_position_id = GER_ww1_war_plans_deal_with_the_swiss
 		prerequisite = { focus = GER_ww1_war_plans_deal_with_the_swiss focus = GER_ww1_war_plans_deal_with_the_low_countries }
 		icon = GFX_goal_generic_position_armies
 		available = { }
 		completion_reward = { 
-			#Gives access to decisions that lead to event for Switzerland like the low countries decisions
-			#HOL = {
-				#country_event = { days = 1 id = ww1_germany.21 }
-			#}
+			#Flat buff vs France
 		}
 		ai_will_do = { factor = 2000 }
 		cost = 10
@@ -1583,11 +1538,20 @@ focus_tree = {
 		}
 		
 		bypass = {
-			has_war_with = FRA
+			AND = {
+				has_war_with = FRA
+				has_war_with = LUX
+			}
 		}
 
 		completion_reward = {
 			add_named_threat = { threat = 15 name = "Schlieffen Plan" }
+
+			declare_war_on = { type = annex_everything    target = FRA }
+			
+			LUX = {		#Ask Luxembourg for integration
+				country_event = { days = 1 id = MSMGermany.4 }
+			}
 
 			hidden_effect = {
 				#news_event = { days = 1 id = kis_news.1 }		Doesn't actually exist, needs an event
@@ -1601,8 +1565,144 @@ focus_tree = {
 			factor = 500
 		}
 	}
+	####Offensive Failed Schlieffen (1916)####
+	focus = {
+		id = GER_ww1_war_plans_a_failed_offensive
+		relative_position_id = GER_ww1_war_with_france
+		prerequisite = { focus = GER_ww1_war_with_france }
+		icon = GFX_goal_generic_position_armies
+		available = { 
+			AND = {
+				NOT = {
+					has_global_flag = kis_second_treaty_frankfort
+				}
+				date > 1916.1.1
+				GER = {
+					NOT = {
+						controls_state = 16
+					}
+				}
+			}
+		}
+		completion_reward = { 
+			country_event = { days = 1 id = MSMGermany.5 }
+		}
+		ai_will_do = { factor = 2000 }
+		cost = 10
+		x = -2
+		y = 1
+	}
+	
+	focus = {
+		id = GER_ww1_war_plans_dig_in
+		relative_position_id = GER_ww1_war_plans_a_failed_offensive
+		prerequisite = { focus = GER_ww1_war_plans_a_failed_offensive }
+		icon = GFX_goal_generic_position_armies
+		available = { 
+			has_country_flag = MSM_GER_replaced_moltke
+		}
+		completion_reward = { 
+			#Improved logistics
+		}
+		ai_will_do = { factor = 2000 }
+		cost = 10
+		x = 1
+		y = 1
+	}
+	
+	focus = {
+		id = GER_ww1_war_plans_forward_march
+		relative_position_id = GER_ww1_war_plans_a_failed_offensive
+		prerequisite = { focus = GER_ww1_war_plans_a_failed_offensive }
+		icon = GFX_goal_generic_position_armies
+		available = { 
+			has_country_flag = MSM_GER_kept_moltke
+		}
+		completion_reward = { 
+			#Debuffs on attack
+		}
+		ai_will_do = { factor = 2000 }
+		cost = 10
+		x = -1
+		y = 1
+	}
+	
+	####Offensive Succeeded Schlieffen####
+	focus = {
+		id = GER_ww1_war_plans_a_successful_offensive
+		relative_position_id = GER_ww1_war_with_france
+		prerequisite = { focus = GER_ww1_war_with_france }
+		icon = GFX_goal_generic_position_armies
+		available = { 
+			OR = {
+				has_global_flag = kis_second_treaty_frankfort
+				AND = {
+					date < 1916.1.1
+					GER = {
+						controls_state = 16
+					}
+				}
+			}
+		}
+		completion_reward = { 
+			#Gives a buff to morale/war support/whatever
+		}
+		ai_will_do = { factor = 2000 }
+		cost = 10
+		x = 1
+		y = 1
+	}
+	
+	focus = {
+		id = GER_ww1_war_plans_turn_eastward
+		relative_position_id = GER_ww1_war_plans_a_successful_offensive
+		prerequisite = { focus = GER_ww1_war_plans_a_successful_offensive }
+		icon = GFX_goal_generic_position_armies
+		available = {}
+		bypass = {
+			has_global_flag = kis_brestlitovsk
+		}
+		completion_reward = { 
+			#Gives a buff to morale/war support/whatever
+		}
+		ai_will_do = { factor = 2000 }
+		cost = 10
+		x = 0
+		y = 1
+	}
+	
+	####Hindenburg Plan####
+	
+	focus = {
+		id = GER_ww1_war_plans_hindenburg_plan
+		relative_position_id = GER_ww1_war_plans_division_1
+		prerequisite = { focus=GER_ww1_war_plans_division_1 }
+		mutually_exclusive = { focus=GER_ww1_war_plans_schlieffen_plan }
+		icon = GFX_goal_generic_small_arms
+		completion_reward = {
+			#Give hindenburg as Chief of Army
+			#Remove hindenburg as General
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 3
+		y = 1
+	}
+	
+	focus = {
+		id = GER_ww1_war_plans_falkenheim_plan
+		relative_position_id = GER_ww1_war_plans_hindenburg_plan
+		prerequisite = { focus=GER_ww1_war_plans_hindenburg_plan }
+		available = { date > 1914.1.1 }
+		icon = GFX_goal_generic_army_artillery2
+		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=0.15 uses=1 category=artillery } }
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 0
+		y = 1
+	}
 
-	#focus = {			#Put in hindenberg tree
+	#focus = {			#Put in hindenburg tree
 	#	id = GER_ww1_den_militaryaccess
 	#	relative_position_id = GER_ww1_war_plans_fortify_the_eastern_front
 	#	prerequisite = { focus = GER_ww1_war_plans_fortify_the_eastern_front }
@@ -1618,31 +1718,11 @@ focus_tree = {
 	#	x = 3
 	#	y = 1
 	#}
-
-	
-	
-	focus = {		#Give option to replace Moltke if his attack sucks
-		id = GER_ww1_war_plans_moltkes_replacement
-		relative_position_id = GER_ww1_war_plans_division_1
-		#prerequisite = { focus=GER_ww1_war_plans_mobile_howitzer }
-		available = { 
-			date > 1915.1.1 
-			#Paris has not fallen AND no blitzkreig idea is present (From further up in the tree)
-		}
-		icon = GFX_goal_generic_army_artillery2
-		completion_reward = { 
-			#event - replace moltke with von falkenheim and buff his general OR keep moltke
-		}
-		ai_will_do = { factor = 10 }
-		cost = 10
-		x = -1
-		y = 8
-	}
 	
 	focus = {
 		id = GER_ww1_polnische_wehrmacht
 		relative_position_id = GER_ww1_war_plans_fortify_the_eastern_front
-		prerequisite = { focus = GER_ww1_war_plans_fortify_the_eastern_front } #Also future hindenberg plan
+		prerequisite = { focus = GER_ww1_war_plans_fortify_the_eastern_front } #Also future hindenburg plan
 		icon = GFX_hoi4tgw_poland  
 		available = {
 			if = {
@@ -1651,7 +1731,7 @@ focus_tree = {
 				has_war_with = RUS
 			}
 			if = {
-				limit = { has_country_flag = MSM_GER_ww1_hindenberg }
+				limit = { has_country_flag = MSM_GER_ww1_hindenburg }
 				date > 1914.1.1
 			}
 		}
@@ -1667,7 +1747,7 @@ focus_tree = {
 				92 = { add_core_of = POL }
 			}
 			if = {
-				limit = { has_country_flag = MSM_GER_ww1_hindenberg }
+				limit = { has_country_flag = MSM_GER_ww1_hindenburg }
 				#Gives future decision
 			}
 		}     

@@ -1,0 +1,116 @@
+﻿#######################################
+# New German Events, added by Ecrfour #
+#######################################
+add_namespace = MSMGermany
+
+####Military access events####
+country_event = {
+	id =  MSMGermany.1
+	title = MSMGermany.1.t
+	desc = MSMGermany.1.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = MSMGermany.1.a
+		ai_chance = { factor = 00 }
+		give_military_access = GER
+		GER = {
+			country_event = { days = 1 id = MSMGermany.2 }
+		}
+	}
+	option = {
+		name = MSMGermany.1.b
+		ai_chance = { factor = 100 }
+		GER = {
+			create_wargoal = { 
+				type = annex_everything 
+				target = ROOT 
+			}
+			country_event = { days = 1 id = MSMGermany.3 }
+		}
+	}
+}
+country_event = {
+	id =  MSMGermany.2
+	title = MSMGermany.2.t
+	desc = MSMGermany.2.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = MSMGermany.2.a
+	}
+}
+country_event = {
+	id =  MSMGermany.3
+	title = MSMGermany.3.t
+	desc = MSMGermany.3.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = MSMGermany.3.a
+	}
+}
+
+####Ask Luxembourg for integration####
+
+country_event = {
+	id =  MSMGermany.4
+	title = MSMGermany.4.t
+	desc = MSMGermany.4.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = MSMGermany.4.a
+		ai_chance = { factor = 100 }
+		GER = {
+			give_state_core = 8
+			annex_country = { target = LUX transfer_troops = no }
+			country_event = { days = 1 id = MSMGermany.2 }
+		}
+	}
+	option = {
+		name = MSMGermany.4.b
+		ai_chance = { factor = 00 }
+		GER = {
+			declare_war_on = { type = annex_everything    target = LUX }
+			give_state_core = 8
+			country_event = { days = 1 id = MSMGermany.3 }
+		}
+	}
+}
+
+####Failed Offensive Schlieffen####
+country_event = {
+	id =  MSMGermany.5
+	title = MSMGermany.5.t
+	desc = MSMGermany.5.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = MSMGermany.5.a
+		ai_chance = { factor = 100 }
+		set_country_flag = MSM_GER_replaced_moltke
+		#Replace Moltke
+	}
+	option = {
+		name = MSMGermany.5.b
+		ai_chance = { factor = 00 }
+		set_country_flag = MSM_GER_kept_moltke
+		#Keep Moltke
+	}
+}

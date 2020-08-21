@@ -80,6 +80,37 @@ ideas = {
 		GER_otto_von_lossow={ allowed={ tag=GER } traits={ army_chief_reform_1 } ai_will_do={ factor=1 } }
 		GER_oskar_von_hutier={ allowed={ tag=GER } traits={ army_chief_morale_1 } ai_will_do={ factor=1 } }
 		#GER_ludwig_von_estorff={ allowed={ tag=GER } traits={ army_chief_offensive_1 } ai_will_do={ factor=1 } }
+		
+		####War Plans Division Cheifs####
+		GER_helmuth_von_moltke={ 
+			allowed={
+				tag = GER
+			} 
+			available = {
+				has_completed_focus = GER_ww1_war_plans_schlieffen_plan
+			}
+			traits={ 
+				army_chief_maneuver_1 
+			} 
+			ai_will_do={ 
+				factor=100 
+			} 
+		}
+		
+		GER_paul_von_hindenburg={ 
+			allowed={
+				tag = GER
+			} 
+			available = {
+				has_completed_focus = GER_ww1_war_plans_hindenburg_plan
+			}
+			traits={ 
+				army_chief_maneuver_1 
+			} 
+			ai_will_do={ 
+				factor=100 
+			} 
+		}
 	}
 
 	navy_chief = {
@@ -112,10 +143,10 @@ ideas = {
 			ledger = navy
 			allowed = { tag = GER } traits = { navy_capital_ship_1 } ai_will_do={ factor=1 }
 		}
-		GER_helmuth_von_moltke = {
-			ledger = army
-			allowed = { tag = GER } traits = { army_cavalry_1 } ai_will_do={ factor=1 }
-		}
+		#GER_helmuth_von_moltke = {			Moved to Army Chief
+		#	ledger = army
+		#	allowed = { tag = GER } traits = { army_cavalry_1 } ai_will_do={ factor=1 }
+		#}
 
 		# Colmar von der Goltz
 		GER_colmar_von_der_goltz = {

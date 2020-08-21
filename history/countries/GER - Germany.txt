@@ -277,19 +277,19 @@ create_corps_commander = {
 	planning_skill = 1
 	logistics_skill = 1
 }
-create_corps_commander = {
-	name = "von Hindenburg" 
-	id = 34315
-	portrait_path = "gfx/generals/GER_von_hindenburg.dds"
-	traits = {
-
-	}
-	skill = 3
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 2
-}
+#create_corps_commander = {
+#	name = "von Hindenburg" 
+#	id = 34315
+#	portrait_path = "gfx/generals/GER_von_hindenburg.dds"
+#	traits = {
+#
+#	}
+#	skill = 3
+#	attack_skill = 4
+#	defense_skill = 3
+#	planning_skill = 3
+#	logistics_skill = 2
+#}
 create_corps_commander = {
 	name = "von dem Borne" 
 	id = 34321

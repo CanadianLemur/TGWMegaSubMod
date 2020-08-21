@@ -7516,7 +7516,7 @@ spriteType = { name = "GFX_idea_GER_albert_einstein" texturefile = "gfx/hoi4tgw_
 spriteType = { name = "GFX_idea_GER_erich_ludendorff" texturefile = "gfx/hoi4tgw_portraits/GER/advisor/GER_erich_ludendorff.dds" }
 spriteType = { name = "GFX_idea_GER_august_thyssen" texturefile = "gfx/hoi4tgw_portraits/GER/advisor/GER_august_thyssen.dds" }
 spriteType = { name = "GFX_idea_GER_anton_drexler" texturefile = "gfx/hoi4tgw_portraits/GER/advisor/GER_anton_drexler.dds" }
-spriteType = { name = "GFX_idea_GER_paul_von_hindenburg" texturefile = "gfx/hoi4tgw_portraits/GER/advisor/GER_paul_von_hindenburg.dds" }
+#spriteType = { name = "GFX_idea_GER_paul_von_hindenburg" texturefile = "gfx/hoi4tgw_portraits/GER/advisor/GER_paul_von_hindenburg.dds" }
 spriteType = { name = "GFX_idea_GER_erich_von_falkenhayn_chief" texturefile = "gfx/hoi4tgw_portraits/GER/advisor/GER_erich_von_falkenhayn.dds" }
 spriteType = { name = "GFX_idea_GER_august_wilhelm_heye" texturefile = "gfx/hoi4tgw_portraits/GER/advisor/GER_august_wilhelm_heye.dds" }
 spriteType = { name = "GFX_idea_GER_paul_behncke" texturefile = "gfx/hoi4tgw_portraits/GER/advisor/GER_paul_behncke.dds" }
@@ -7675,6 +7675,8 @@ spriteType = { name = "GFX_idea_GER_paul_von_lettow_vorbeck" texturefile = "gfx/
 spriteType = { name = "GFX_idea_GER_ludwig_von_estorff" texturefile = "gfx/hoi4tgw_portraits/GER/advisor/GER_ludwig_von_estorff.dds" }
 spriteType = { name = "GFX_idea_GER_burghard_von_oven" texturefile = "gfx/hoi4tgw_portraits/GER/advisor/GER_burghard_von_oven.dds" }
 spriteType = { name = "GFX_idea_GER_hermann_goring" texturefile = "gfx/hoi4tgw_portraits/GER/advisor/GER_hermann_goring.dds" }
+
+spriteType = { name = "GFX_idea_GER_paul_von_hindenburg" texturefile = "gfx/hoi4tgw_portraits/GER/advisor/GER_von_hindenburg.dds" }
 
 #==================#==================#==================#==================#==================#==================#==================#
 
