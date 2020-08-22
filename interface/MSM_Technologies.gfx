@@ -1,0 +1,32 @@
+spriteTypes = {	
+
+	####Ship Hulls####
+
+	SpriteType = {
+		name = "GFX_MSM_early_ship_hull_light_medium"
+		texturefile = "gfx/interface/technologies/early_destroyer.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MSM_basic_ship_hull_light_medium"
+		texturefile = "gfx/interface/technologies/basic_destroyer.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MSM_advanced_ship_hull_light_medium"
+		texturefile = "gfx/interface/technologies/advanced_destroyer.dds"
+	}
+	
+	####Auxillary####
+	
+	SpriteType = {
+		name = "GFX_improved_depth_charges_medium"
+		texturefile = "gfx/interface/technologies/improved_depth_charges.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MSM_improved_depth_charges_medium"
+		texturefile = "gfx/interface/technologies/MSM_improved_depth_charges.dds"
+	}
+	
+}
