@@ -70,7 +70,7 @@ country_event = {
 		
 			CHI = {
 					set_cosmetic_tag = CHI_REV
-					set_politics = { ruling_party = democracy }
+					set_politics = { ruling_party = democratic }
 					set_capital = 620
 					transfer_state = 325
 					transfer_state = 599
@@ -96,53 +96,6 @@ country_event = {
 				days = 250
 				}
 				
-				unlock_national_focus = CHI_looming_rebellion
-				unlock_national_focus = CHI_first_reforms
-				
-				if = {
-					limit = {
-						QIN = { has_completed_focus = CHI_authoritarian_reforms }
-					}
-					CHI = { unlock_national_focus = CHI_authoritarian_reforms }
-				}
-				
-				if = {
-					limit = {
-						QIN = { has_completed_focus = CHI_democratic_reforms }
-					}
-					CHI = { unlock_national_focus = CHI_democratic_reforms }
-				}
-				if = {
-					limit = {
-						QIN = { has_completed_focus = CHI_democratic_reforms_2 }
-					}
-					CHI = { unlock_national_focus = CHI_democratic_reforms_2 }
-				}
-				
-				if = {
-					limit = {
-						QIN = { has_completed_focus = CHI_appeal_revolutionaries }
-					}
-					CHI = { unlock_national_focus = CHI_appeal_revolutionaries }
-				}
-				if = {
-					limit = {
-						QIN = { has_completed_focus = CHI_revive_china }
-					}
-					CHI = { unlock_national_focus = CHI_revive_china }
-				}
-				if = {
-					limit = {
-						QIN = { has_completed_focus = CHI_abandon_the_empire }
-					}
-					CHI = { unlock_national_focus = CHI_abandon_the_empire }
-				}
-				if = {
-					limit = {
-						QIN = { has_completed_focus = CHI_father_of_the_revolution }
-					}
-					CHI = { unlock_national_focus = CHI_father_of_the_revolution }
-				}
 				
 				create_country_leader = {
 					name = "Sun Yat-sen"
@@ -453,8 +406,10 @@ country_event = {
 				}
 			}
 			set_global_flag = shikai_surrenders
-			custom_effect_tooltip = beiyang_route
+			#custom_effect_tooltip = beiyang_route
+		
 		}
+			QIN = { delete_unit_template_and_units = { division_template = "Qing Infantry" } }
 	}
 
 	option = {
@@ -463,7 +418,7 @@ country_event = {
 			factor = 0
 		}
 		set_global_flag = shikai_no_surrender
-		custom_effect_tooltip = sunyatsen_route
+		#custom_effect_tooltip = sunyatsen_route
 	}
 }
 
@@ -512,6 +467,9 @@ country_event = {
 				CHI = { transfer_state = 612 }
 				
 				set_global_flag = china_revolution_victory
+				QIN = {
+					
+				}
 			}
 			
 		}

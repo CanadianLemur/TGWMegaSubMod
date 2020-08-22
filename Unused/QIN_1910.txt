@@ -1,0 +1,156 @@
+﻿###################################################################
+
+division_template = {
+	name = "Qing Brigade"
+	is_locked = yes
+	regiments = {
+		infantry = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Qing Cavalry"
+	is_locked = yes
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+	}
+}
+
+###################################################################
+units = {
+	division = {
+		name = "Qing First Brigade"
+		location = 9843#Beijing
+		division_template = "Qing Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Qing Second Brigade"
+		location = 10068#Tianjin
+		division_template = "Qing Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Qing Third Brigade"
+		location = 11913#Nanjing
+		division_template = "Qing Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Qing Fourth Brigade"
+		location = 1047#Guangzhou
+		division_template = "Qing Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Qing Fifth Brigade"
+		location = 6999#Chongqing
+		division_template = "Qing Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Qing Sixth Brigade"
+		location = 4925#Chengdu
+		division_template = "Qing Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Qing Seventh Brigade"
+		location = 8049#Yan'an
+		division_template = "Qing Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Qing Eight Brigade"
+		location = 9958#Zhengzhou
+		division_template = "Qing Cavalry"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Qing Ninth Brigade"
+		location = 7101#Changde
+		division_template = "Qing Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Qing Tenth Brigade"
+		location = 3992#Nanchang
+		division_template = "Qing Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Qing Eleventh Brigade"
+		location = 8049#Yan'an
+		division_template = "Qing Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Qing Thirteenth Brigade"
+		location = 3992#Nanchang
+		division_template = "Qing Cavalry"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Qing Fourteenth Brigade"
+		location = 9843#Beijing
+		division_template = "Qing Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Qing Fifteenth Brigade"
+		location = 7101#Changde
+		division_template = "Qing Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Qing Sixteenth Brigade"
+		location = 1047#Guangzhou
+		division_template = "Qing Cavalry"
+		start_experience_factor = 0.1
+	}
+	
+
+fleet = {
+	name = "Changjiang Fleet Fleet"
+	naval_base = 7014 # Shanghai
+	task_force = {
+		name = "Xunyang Fleet"
+		location = 7014 # Shanghai
+		ship = { name = "Hai Yung" definition = light_cruiser equipment = { ship_hull_gwcruiser = { amount = 1 owner = QIN version_name = "Hai Yung Class" } } }
+		ship = { name = "Hai Chou" definition = light_cruiser equipment = { ship_hull_gwcruiser = { amount = 1 owner = QIN version_name = "Hai Yung Class" } } }
+		ship = { name = "Hai Tan" definition = light_cruiser equipment = { ship_hull_gwcruiser = { amount = 1 owner = QIN version_name = "Hai Yung Class" } } }
+		ship = { name = "Hai Chi" definition = light_cruiser equipment = { ship_hull_gwcruiser = { amount = 1 owner = QIN version_name = "Hai Tien Class" } } }
+		ship = { name = "Tung Chi" definition = light_cruiser equipment = { ship_hull_gwcruiser = { amount = 1 owner = QIN version_name = "Tung Chi Class" } } }
+		ship = { name = "Pao Min" definition = light_cruiser equipment = { ship_hull_gwcruiser = { amount = 1 owner = QIN version_name = "Pao Min Class" } } }
+	}
+	task_force = {
+		name = "Changjiang Fleet"
+		location = 7014 # Shanghai
+		ship = { name = "Chao Wu" definition = light_cruiser equipment = { ship_hull_gwcruiser = { amount = 1 owner = QIN } } }
+		ship = { name = "Fu Po" definition = light_cruiser equipment = { ship_hull_gwcruiser = { amount = 1 owner = QIN version_name = "Fu Po Class" } } }
+		ship = { name = "Yuan Kai" definition = light_cruiser equipment = { ship_hull_gwcruiser = { amount = 1 owner = QIN version_name = "Fu Po Class" } } }
+		ship = { name = "Teng Ying Chou" definition = light_cruiser equipment = { ship_hull_gwcruiser = { amount = 1 owner = QIN version_name = "Fu Po Class" } } }
+		ship = { name = "Tai An" definition = light_cruiser equipment = { ship_hull_gwcruiser = { amount = 1 owner = QIN version_name = "Fu Po Class" } } }
+		ship = { name = "Chen Hang" definition = light_cruiser equipment = { ship_hull_gwcruiser = { amount = 1 owner = QIN version_name = "Hai Ching Class" } } }
+		ship = { name = "Nan Jui" definition = light_cruiser equipment = { ship_hull_gwcruiser = { amount = 1 owner = QIN version_name = "Nan Tan Class" } } }
+		ship = { name = "King Ching" definition = light_cruiser equipment = { ship_hull_gwcruiser = { amount = 1 owner = QIN } } }
+		ship = { name = "Fu An" definition = light_cruiser equipment = { ship_hull_gwcruiser = { amount = 1 owner = QIN version_name = "Tung Chi Class" } } }
+		ship = { name = "Hu Peng" definition = destroyer equipment = { gwship_hull_light_1 = { amount = 1 owner = QIN } } }
+		ship = { name = "Hu Ngo" definition = destroyer equipment = { gwship_hull_light_1 = { amount = 1 owner = QIN } } }
+		ship = { name = "Hu Chung" definition = destroyer equipment = { gwship_hull_light_1 = { amount = 1 owner = QIN } } }
+		ship = { name = "Hu Ying" definition = destroyer equipment = { gwship_hull_light_1 = { amount = 1 owner = QIN } } }
+	}
+}
+	 
+	 
+	}
+air_wings = { 
+	}
+instant_effect = {
+add_equipment_production = { equipment = { type = infantry_equipment_0 creator = "QIN" } requested_factories = 1 progress = 0.1 efficiency = 50}
+
+add_equipment_production = { equipment = { type = support_equipment_1 creator = "QIN" } requested_factories = 1 progress = 0.1 efficiency = 50}
+add_equipment_production = { equipment = { type = light_field_gun_equipment_1 creator = "QIN" } requested_factories = 1 progress = 0.1 efficiency = 50}
+add_equipment_production = { equipment = { type = motorized_equipment_0 creator = "QIN" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	}

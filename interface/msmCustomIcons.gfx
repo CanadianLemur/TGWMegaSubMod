@@ -16,4 +16,9 @@ spriteTypes = {
 		noOfFrames = 20
 	}
 	
+	SpriteType = { #China Revolution Focus Icon
+		name = "GFX_china_revolution_icon"
+		texturefile = "gfx/focusIcons/CHI_revolution_focus_icon.dds"
+	}
+	
  }

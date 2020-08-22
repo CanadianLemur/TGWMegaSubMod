@@ -1,7 +1,7 @@
 ﻿l_english:
- CHI_REV_neutrality:0 "Chinese Revolution"
- CHI_REV_neutrality_DEF:0 "the Chinese Revolutionary Alliance"
- CHI_REV_neutrality_ADJ:0 "Chinese"
- CHI_REP_neutrality:0 "Republic of China"
- CHI_REP_neutrality_DEF:0 "the Republic of China"
- CHI_REP_neutrality_ADJ:0 "Chinese"
+ CHI_REV_democratic:0 "Chinese Revolution"
+ CHI_REV_democratic_DEF:0 "the Chinese Revolutionaries"
+ CHI_REV_democratic_ADJ:0 "Chinese"
+ CHI_REP_democratic:0 "Republic of China"
+ CHI_REP_democratic_DEF:0 "the Republic of China"
+ CHI_REP_democratic_ADJ:0 "Chinese"

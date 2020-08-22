@@ -1,202 +1,33 @@
 focus_tree = {
 	id=china_focus
 	default=no
-	country={ factor=0 modifier={ add=10 or = { tag=QIN tag = CHI } } }
+	country={ factor=0 modifier={ add=10 tag = CHI } }
 	continuous_focus_position = { x = 20 y = 1200 }
 	reset_on_civil_war = no
+	
+	
 	###########################################################################################################################
 	# XINHAI
 	###########################################################################################################################
 	focus = {
-		id = CHI_looming_rebellion
-		icon = GFX_goal_generic_demand_territory
+		id = CHI_revolution_one
+		icon = GFX_china_revolution_icon
 		completion_reward = {
-			add_political_power=120
+			add_political_power=50
 		}
 
-		ai_will_do = { factor = 60 }
-
-		cost = 10
-		x = 6
+		ai_will_do = { factor = 100 }
+		
+		available = {
+			has_global_flag = xinhai_revolution
+		}
+		x = 4
 		y = 0
 	}
 	
+
+
 	focus = {
-		id = CHI_first_reforms
-		icon = GFX_goal_generic_demand_territory
-		completion_reward = {
-			add_political_power=120
-		}
-
-		ai_will_do = { factor = 80 }
-
-		cost = 10
-		
-		relative_position_id = CHI_looming_rebellion
-		prerequisite = { focus = CHI_looming_rebellion }
-		
-		x = 0
-		y = 1
-	}
-	
-#-------------------------------------------------------------------------------
-#Centralization/Imperial path    Qing win civil war through strength
-	focus = {
-		id = CHI_authoritarian_reforms
-		icon = GFX_goal_generic_demand_territory
-		completion_reward = {
-			add_political_power=120 #Add decisions to exchange a lot of pp for stability and war support
-		}
-
-		historical_ai = {
-			always = no
-			is_historical_focus_on = yes
-		}
-
-		ai_will_do = { factor = 0 }
-
-		cost = 12
-		
-		relative_position_id = CHI_first_reforms
-		prerequisite = { focus = CHI_first_reforms }
-		mutually_exclusive = { focus = CHI_appeal_revolutionaries focus = CHI_democratic_reforms }
-		
-		x = -4
-		y = 1
-	}
-	
-#-------------------------------------------------------------------------------
-#Decentralization/Democratic path  Bypass civil war entirely
-	focus = {
-		id = CHI_democratic_reforms
-		icon = GFX_goal_generic_demand_territory
-		completion_reward = {
-			add_political_power=120 #Unlock decisions to exchange pp and war support for stability
-		}
-		
-		historical_ai = {
-			always = no
-			is_historical_focus_on = yes
-		}
-		
-		ai_will_do = { factor = 0 }
-
-		cost = 12
-		
-		relative_position_id = CHI_first_reforms
-		prerequisite = { focus = CHI_first_reforms }
-		mutually_exclusive = { focus = CHI_appeal_revolutionaries focus = CHI_authoritarian_reforms }
-		
-		x = -1
-		y = 1
-	}
-		
-	focus = {
-		id = CHI_democratic_reforms_2
-		icon = GFX_goal_generic_demand_territory
-		completion_reward = {
-			add_political_power=120 #Increase democracy
-		}
-
-		ai_will_do = { factor = 0 }
-
-		cost = 12
-		
-		relative_position_id = CHI_democratic_reforms
-		prerequisite = { focus = CHI_democratic_reforms }
-		
-		x = 0
-		y = 1
-	}
-	
-#-------------------------------------------------------------------------------
-#Revolutionary    Revolutionaries win war
-	focus = {
-		id = CHI_appeal_revolutionaries
-		icon = GFX_goal_generic_demand_territory
-		completion_reward = {
-			add_political_power=120 #Add support for all other ideologies
-		}
-		
-		historical_ai = {
-			always = yes
-			is_historical_focus_on = yes
-		}
-		
-		ai_will_do = { factor = 100 }
-
-		cost = 12
-		
-		relative_position_id = CHI_first_reforms
-		prerequisite = { focus = CHI_first_reforms }
-		mutually_exclusive = { focus = CHI_democratic_reforms focus = CHI_authoritarian_reforms }
-		
-		x = 2
-		y = 1
-	}
-	
-	focus = {
-		id = CHI_revive_china
-		icon = GFX_goal_generic_demand_territory
-		completion_reward = {
-			add_political_power=120 #Add more support for ideologies + possibly lower stability to encourage revolution
-		}
-
-		ai_will_do = { factor = 80 }
-
-		cost = 12
-		
-		relative_position_id = CHI_appeal_revolutionaries
-		prerequisite = { focus = CHI_appeal_revolutionaries }
-		
-		x = 0
-		y = 1
-	}
-	
-	focus = {
-		id = CHI_abandon_the_empire
-		icon = GFX_goal_generic_demand_territory
-		completion_reward = {
-			add_political_power=120 #Add more support for ideologies + possibly lower stability to encourage revolution
-		}
-
-		ai_will_do = { factor = 80 }
-
-		cost = 12
-		
-		relative_position_id = CHI_revive_china
-		prerequisite = { focus = CHI_revive_china }
-		
-		x = 0
-		y = 1
-	}
-	
-	focus = {
-		id = CHI_father_of_the_nation
-		icon = GFX_father_of_the_nation_icon
-		completion_reward = {
-			add_political_power=120 #Add more support for ideologies + possibly lower stability to encourage revolution
-			if = {
-				limit = {
-					
-				}
-			}
-		}
-
-		ai_will_do = { factor = 80 }
-
-		cost = 12
-		
-		relative_position_id = CHI_abandon_the_empire
-		prerequisite = { focus = CHI_abandon_the_empire }
-		
-		x = 0
-		y = 1
-	}
-	
-#---------------------------------------------------------------------------------------------
-
-focus = {
 		id = CHI_aftermath
 		icon = GFX_goal_generic_demand_territory
 		completion_reward = {
@@ -208,10 +39,7 @@ focus = {
 		available = {
 			has_global_flag = china_revolution_victory
 		}
-		
-		relative_position_id = CHI_looming_rebellion
-		cost = 10
-		x = 9
+		x = 10
 		y = 0
 	}
 	
