@@ -1,6 +1,15 @@
 spriteTypes = {	
 
-	####Ship Hulls####
+#====================================================#
+
+#     #  ####  #     #     #   # #   # #    #     ####
+##   ## #      ##   ##     #   # #   # #    #    #    
+# # # #  ###   # # # #     ##### #   # #    #     ### 
+#  #  #     #  #  #  #     #   # #   # #    #        #
+#     # ####   #     #     #   # ##### #### #### #### 
+
+#====================================================#
+
 
 	SpriteType = {
 		name = "GFX_MSM_early_ship_hull_light_medium"
@@ -15,6 +24,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_MSM_advanced_ship_hull_light_medium"
 		texturefile = "gfx/interface/technologies/advanced_destroyer.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MSM_early_ship_hull_dreadnought_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_dreadnought.dds"
 	}
 	
 	####Auxillary####
