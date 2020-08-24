@@ -983,7 +983,7 @@ technologies = {
 	early_ship_hull_heavy = {
 
 		enable_equipments = {
-			ship_hull_heavy_1
+			MSM_ship_hull_dreadnought1
 		}
 
 		enable_equipment_modules = { 
@@ -1037,7 +1037,7 @@ technologies = {
 	MSM_ship_hull_dreadnought_1 = {
 
 		enable_equipments = {
-			ship_hull_heavy_2
+			MSM_ship_hull_dreadnought2
 		}
 		enable_equipment_modules = { 
 			heavy_ship_engine_2
@@ -1060,7 +1060,7 @@ technologies = {
 		
 		research_cost = 1.5
 
-		start_year = 1936
+		start_year = 1914
 		
 		folder = {
 			name = mtgnavalfolder
@@ -1101,7 +1101,7 @@ technologies = {
 	MSM_ship_hull_dreadnought_2 = {
 
 		enable_equipments = {
-			ship_hull_heavy_2
+			ship_hull_heavy_1
 		}
 		enable_equipment_modules = { 
 			heavy_ship_engine_2
@@ -1118,7 +1118,7 @@ technologies = {
 		
 		research_cost = 1.5
 
-		start_year = 1936
+		start_year = 1922
 		
 		folder = {
 			name = mtgnavalfolder
@@ -1900,7 +1900,7 @@ technologies = {
 	early_ship_hull_submarine = {
 
 		enable_equipments = {
-			ship_hull_submarine_1
+			MSM_ship_hull_uboat_1
 		}
 
 		enable_equipment_modules = { 
@@ -1943,7 +1943,7 @@ technologies = {
 	MSM_basic_ship_hull_uboat = {
 
 		enable_equipments = {
-			ship_hull_submarine_2
+			MSM_ship_hull_uboat_2
 		}
 		enable_equipment_modules = { 
 			ship_torpedo_sub_2
@@ -1984,7 +1984,7 @@ technologies = {
 	MSM_improved_ship_hull_uboat = {
 
 		enable_equipments = {
-			ship_hull_submarine_2
+			ship_hull_submarine_1
 		}
 		enable_equipment_modules = { 
 			ship_torpedo_sub_2
