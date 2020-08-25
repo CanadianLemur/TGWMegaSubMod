@@ -1,0 +1,349 @@
+﻿capital = 500
+
+#-------------------------------------------------------
+#					GENERIC VALUES
+#-------------------------------------------------------
+set_fuel_ratio = 0.20
+set_research_slots = 3
+set_stability = 0.75
+set_convoys = 100
+
+#-------------------------------------------------------
+#					POLITICS & ARMY
+#-------------------------------------------------------
+create_country_leader={ name = "Afonso Augusto Moreira Pena" desc=BRA_afonso_augusto_moreira_pena_DESC picture="gfx/leaders/BRA_afonso_augusto_moreira_pena.dds" expire="1935.1.1" ideology=conservatism traits={  } }
+create_country_leader={ name = "Venceslau Brás Pereira Gomes" desc=BRA_venceslau_bras_pereira_gomes_DESC picture="gfx/leaders/BRA_venceslau_bras_pereira_gomes.dds" expire="1935.1.1" ideology=conservatism traits={  } }
+create_country_leader={ name = "Delfim Moreira da Costa Ribeiro" desc=BRA_delfim_moreira_da_costa_ribeiro_DESC picture="gfx/leaders/BRA_delfim_moreira_da_costa_ribeiro.dds" expire="1935.1.1" ideology=conservatism traits={  } }
+create_country_leader={ name = "Epitacio Lindolfo da Silva Pessoa" desc=BRA_epitacio_lindolfo_da_silva_pessoa_DESC picture="gfx/leaders/BRA_epitacio_lindolfo_da_silva_pessoa.dds" expire="1935.1.1" ideology=conservatism traits={  } }
+create_country_leader={ name = "Artur da Silva Bernardes" desc=BRA_artur_da_silva_bernardes_DESC picture="gfx/leaders/BRA_artur_da_silva_bernardes.dds" expire="1935.1.1" ideology=conservatism traits={  } }
+create_country_leader={ name = "Antonio Evaristo de Morais" desc=BRA_antonio_evaristo_de_morais_DESC picture="gfx/leaders/BRA_antonio_evaristo_de_morais.dds" expire="1935.1.1" ideology=marxism traits={  } }
+create_country_leader={ name = "Nilo Procópio Peçanha" desc=BRA_nilo_procopio_pecanha_DESC picture="gfx/leaders/BRA_nilo_procopio_pecanha.dds" expire="1935.1.1" ideology=centrism traits={  } }
+create_corps_commander={  name = "Morais" id=11002 portrait_path="gfx/generals/BRA_morais.dds" traits={   } skill=1 }
+create_corps_commander={  name = "Andrade Guimarães" id=11003 portrait_path="gfx/generals/BRA_andrade_guimaraes.dds" traits={   } skill=1 }
+create_corps_commander={  name = "Bormann" id=11004 portrait_path="gfx/generals/BRA_bormann.dds" traits={   } skill=1 }
+create_corps_commander={  name = "Dantas Barreto" id=11005 portrait_path="gfx/generals/BRA_dantas_barreto.dds" traits={   } skill=1 }
+create_corps_commander={  name = "Fontoura Mena Barreto" id=11006 portrait_path="gfx/generals/BRA_fontoura_mena_barreto.dds" traits={   } skill=1 }
+create_corps_commander={  name = "Albuquerque e Silva" id=11007 portrait_path="gfx/generals/BRA_albuquerque_e_silva.dds" traits={   } skill=3 }
+create_corps_commander={  name = "Faria" id=11008 portrait_path="gfx/generals/BRA_faria.dds" traits={   } skill=2 }
+create_corps_commander={  name = "Silva Rondon" id=11011 portrait_path="gfx/generals/BRA_silva_rondon.dds" traits={   } skill=3 }
+create_corps_commander={  name = "Passos" id=11012 portrait_path="gfx/generals/BRA_passos.dds" traits={   } skill=2 }
+create_corps_commander={  name = "Deus Mena Barreto" id=11013 portrait_path="gfx/generals/BRA_deus_mena_barreto.dds" traits={   } skill=1 }
+create_navy_leader={  name = "Leão" id=11014 portrait_path="gfx/admiral/BRA_leao.dds" traits={   } skill=1 }
+create_navy_leader={  name = "Gomes Pereira" id=11015 portrait_path="gfx/admiral/BRA_gomes_pereira.dds" traits={   } skill=2 }
+create_navy_leader={  name = "Alencar" id=11016 portrait_path="gfx/admiral/BRA_alencar.dds" traits={ seawolf  } skill=2 }
+
+if = {
+	limit = { not = {has_dlc = "Man the Guns"} }
+	set_technology = {
+		ww1_battleship0 = 1
+		ww1_battleship0_mtg = 1
+	
+		ww1_battleship1 = 1
+		ww1_battleship1_mtg = 1
+	
+		###ww1_battleship2 = 0 #  ww1_battleship_1906 (Dreadnought I)
+		###ww1_battleship3 = 0 #  ww1_battleship_1910 (Dreadnought II)
+		###ww1_battleship4 = 0 #  ww1_battleship_1914 (Dreadnought III)
+
+		###ww1_battlecruiser1 = 0 # ww1_battlecruiser_1906 (Battlecruiser I)
+		###ww1_battlecruiser2 = 0 # ww1_battlecruiser_1910 (Battlecruiser II)
+		###ww1_battlecruiser3 = 0 # ww1_battlecruiser_1910 (Battlecruiser III)
+
+		ww1_heavy_cruiser0 = 1
+		ww1_heavy_cruiser0_mtg = 1 # heavy_cruiser_1890 (Armored Cruiser I)
+		ww1_heavy_cruiser1 = 1
+		ww1_heavy_cruiser1_mtg = 1 # heavy_cruiser_1900 (Armored Cruiser II)
+
+		ww1_light_cruiser0 = 1
+		ww1_light_cruiser0_mtg = 1 # light_cruiser_1890 (Protected Cruiser I)
+		ww1_light_cruiser1 = 1
+		ww1_light_cruiser1_mtg = 1 # light_cruiser_1900 (Protected Cruiser II)
+		###ww1_light_cruiser2 = 0 # light_cruiser_1906 (Light Cruiser I)
+		###ww1_light_cruiser3 = 0 # light_cruiser_1910 (Light Cruiser II)
+		###ww1_light_cruiser4 = 0 # light_cruiser_1914 (Light Cruiser III)
+	
+		ww1_destroyer0 = 1
+		ww1_destroyer0_mtg = 1 # destroyer_1890 (Torpedo Boat I)
+		ww1_destroyer1 = 1
+		ww1_destroyer1_mtg = 1 # destroyer_1900 (Destroyer I)
+		ww1_destroyer2 = 1
+		ww1_destroyer2_mtg = 1 # destroyer_1906 (Destroyer II)
+		###ww1_destroyer3 = 0 # destroyer_1910 (Destroyer III)
+		###ww1_destroyer4 = 0 # destroyer_1914 (Destroyer IV)	
+
+		ww1_moduleMTG_mines = 1
+		ww1_moduleMTG_mines_mtg = 1 # Mines
+
+		ww1_submarine0 = 1
+		ww1_submarine0_mtg = 1 # coastal_submarine_1900 (Coastal Submarine 1900, first available Submarine)
+		ww1_submarine1 = 1
+		ww1_submarine1_mtg = 1 # submarine_1906 (Submarine I)
+		###ww1_submarine2 = 0 # submarine_1910 (Submarine II)
+		###ww1_submarine3 = 0 # submarine_1914 (Submarine III)
+
+		transport = 1
+		transport_mtg = 1 # Naval Transport
+
+		ww1_coastal_submarine1 = 1
+		ww1_coastal_submarine1_mtg = 1
+		ww1_coastal_submarine2 = 1
+	}
+}
+#if = {
+#	limit = { has_dlc = "Man the Guns" }
+#	set_technology = {
+#		ship_hull_submarine_1910 = 1
+#		ww1_ship_hull_light = 1
+#		gw_ship_hull_cruiser = 1
+#		pre_dreadnought_ship_hull_heavy = 1
+#		dreadnought_ship_hull_heavy = 1
+#		basic_torpedo = 1
+#		mtg_transport = 1
+#		basic_secondary_battery = 1
+#		basic_naval_mines = 1
+#		basic_battery = 1
+#	}
+#}
+
+1910.1.1 = {
+	oob = "BRA_1910"
+
+	#-------------------------------------------------------
+	#							NF
+	#-------------------------------------------------------
+
+	#-------------------------------------------------------
+
+	set_technology = {
+
+		# Infantry
+		infantry_weapons = 1
+		support_weapons = 1
+		infantry_binoculars = 1
+		motorised_infantry = 1
+		ww1_ambulance1 = 1
+
+
+		# Support
+		tech_support = 1
+		tech_engineers = 1
+		tech_recon = 1
+		#tech_military_police = 1
+		#tech_maintenance_company = 1
+		#tech_field_hospital = 1
+		#tech_logistics_company = 1
+
+		# Armor
+
+		# Artillery
+		light_field_gun1 = 1
+		heavy_field_gun1 = 1
+
+		# Air
+
+		# Engineering
+		electronic_mechanical_engineering = 1
+
+		# Industry
+	}
+
+	set_politics = {
+	    ruling_party = neutrality
+	    last_election = "1910.3.1"
+	    election_frequency = 48
+	    elections_allowed = yes
+	}
+	set_popularities = {
+	    democratic = 5
+	    fascism = 2
+	    communism = 3
+	    neutrality = 90
+	}
+
+	add_ideas = {
+		neutrality_idea
+		limited_conscription
+	}
+create_equipment_variant={ name="Aquidaban Class" type=ship_hull_pre_dreadnought parent_version = 0 obsolete=yes modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_coal_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}  }
+create_equipment_variant={ name="Guanabara Class" type=ship_hull_gwcruiser parent_version = 2 obsolete=yes modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_gw
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_torpedo_1
+		} }
+create_equipment_variant={ name="Parnaiba Class" type=ship_hull_gwcruiser parent_version = 2 obsolete=yes modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_gw
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_torpedo_1
+		} }
+create_equipment_variant={ name="Primiero De Marco Class" type=ship_hull_gwcruiser parent_version = 2 obsolete=yes modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_gw
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_torpedo_1
+		} }
+create_equipment_variant={ name="Almirante Tamandare Class" type=ship_hull_gwcruiser parent_version = 2 obsolete=yes modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_gw
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_torpedo_1
+		} }
+create_equipment_variant={ name="Republica Class" type=ship_hull_gwcruiser parent_version = 2 obsolete=yes modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_gw
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_torpedo_1
+		} }
+create_equipment_variant={ name="Barrozo Class" type=ship_hull_gwcruiser parent_version = 2 obsolete=yes modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_gw
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_torpedo_1
+		} }
+create_equipment_variant={ name="Gustavo Sampaio Class" type=gwship_hull_light_1 parent_version = 1 obsolete=no 			modules = {
+				fixed_ship_battery_slot = ship_light_battery_1
+				fixed_ship_engine_slot = light_ship_coal_boiler
+				fixed_ship_torpedo_slot = ship_torpedo_1
+				mid_1_custom_slot = ship_torpedo_1
+				rear_1_custom_slot = ship_torpedo_1
+			}  }
+create_equipment_variant={ name="Tupi Class" type=gwship_hull_light_1 parent_version = 1 obsolete=no 			modules = {
+				fixed_ship_battery_slot = ship_light_battery_1
+				fixed_ship_engine_slot = light_ship_coal_boiler
+				fixed_ship_torpedo_slot = ship_torpedo_1
+				mid_1_custom_slot = ship_torpedo_1
+				rear_1_custom_slot = ship_torpedo_1
+			}  }
+	
+}
+
+1914.1.1 = {
+	oob = "BRA_1914"
+
+	create_country_leader = { 
+		name = "Hermes da Fonseca" 
+		desc = BRA_Hermes_da_Fonseca_DESC 
+		picture = "gfx/hoi4tgw_portraits/BRA/country_leaders/BRA_Hermes_da_Fonseca.dds" 
+		expire = "1935.1.1" 
+		ideology = centrism 
+		traits = { } 
+	}
+
+
+	#-------------------------------------------------------
+	#							NF
+	#-------------------------------------------------------
+
+	#Army
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = ww1_artillery_effort_1
+	complete_national_focus = doctrine_effort
+	complete_national_focus = ww1_trenchwarfare
+
+	#Industrial
+	complete_national_focus = industrial_effort
+	complete_national_focus = infrastructure_effort
+
+	#Political
+	complete_national_focus = political_effort
+
+	#Diplomatic
+	complete_national_focus = ww1_diplomatic_effort
+	complete_national_focus = neutrality_focus
+	complete_national_focus = ww1_military_reserve
+	
+
+	#-------------------------------------------------------
+
+	set_technology = {
+
+		# Infantry
+		infantry_weapons = 1
+		ww1infantry_weapons1 = 1
+		support_weapons = 1
+		infantry_binoculars = 1
+		infantry_grenade = 1
+		motorised_infantry = 1
+		ww1_ambulance1 = 1
+
+
+		# Support
+		tech_support = 1
+		tech_engineers = 1
+		tech_recon = 1
+		tech_military_police = 1
+		tech_maintenance_company = 1
+		tech_field_hospital = 1
+		tech_logistics_company = 1
+
+		# Armor
+		gwtank = 1 # 1910 Armored Car
+
+		# Artillery
+		light_field_gun1 = 1
+		bonus_artillery1 = 1
+		heavy_field_gun1 = 1
+		bonus_bertha1 = 1
+
+		# Air
+		ww1_fighter1 = 1
+
+		# Engineering
+		electronic_mechanical_engineering = 1
+
+		# Industry
+	}
+
+	set_politics = {
+	    ruling_party = neutrality
+	    last_election = "1913.5.31"
+	    election_frequency = 36
+	    elections_allowed = yes
+	}
+	set_popularities = {
+	    democratic = 1
+	    fascism = 0
+	    communism = 2
+	    neutrality = 97
+	}
+
+	add_ideas = {
+		neutrality_idea
+		limited_conscription
+	}
+}

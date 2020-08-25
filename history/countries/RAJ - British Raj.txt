@@ -1,0 +1,154 @@
+﻿capital=439
+oob="RAJ_1910"
+
+set_cosmetic_tag = RAJ_UK
+
+set_technology = { 
+	light_field_gun1 = 1	 
+	heavy_field_gun1=1
+	motorised_infantry = 1 #KiS #siege_artillery1=1
+	electronic_mechanical_engineering=1
+	infantry_weapons=1
+	ww1_destroyer0 = 1
+	ww1_destroyer0_mtg = 1
+	ww1_destroyer1 = 1
+	ww1_destroyer1_mtg = 1
+	 
+	#KiS early_protected_cruiser=1
+	ww1_light_cruiser1 = 1
+	ww1_light_cruiser1_mtg = 1
+	ww1_light_cruiser0 = 1
+	ww1_light_cruiser0_mtg = 1
+	 
+	 
+	 
+	#KiS=1
+	ww1_battleship0 = 1
+	ww1_battleship0_mtg = 1
+	ww1_battleship1 = 1
+	ww1_battleship1_mtg = 1
+	#early_dreadnought=1
+	transport = 1
+	transport_mtg = 1
+	ww1_submarine1 = 1
+	ww1_submarine1_mtg = 1 ww1_coastal_submarine1=1
+	ww1_submarine2=1 ww1_coastal_submarine2=1
+	tech_support=1
+	tech_engineers=1
+	tech_recon=1
+	#tech_military_police=1
+	#tech_maintenance_company=1
+	#tech_field_hospital=1
+	#tech_logistics_company=1
+	#KiS #tech_signal_company=1
+	}
+
+if = {
+	limit = { not = {has_dlc = "Man the Guns"} }
+	set_technology = {
+		ww1_battleship0 = 1
+		ww1_battleship0_mtg = 1
+	
+		ww1_battleship1 = 1
+		ww1_battleship1_mtg = 1
+	
+		###ww1_battleship2 = 0 #  ww1_battleship_1906 (Dreadnought I)
+		###ww1_battleship3 = 0 #  ww1_battleship_1910 (Dreadnought II)
+		###ww1_battleship4 = 0 #  ww1_battleship_1914 (Dreadnought III)
+
+		###ww1_battlecruiser1 = 0 # ww1_battlecruiser_1906 (Battlecruiser I)
+		###ww1_battlecruiser2 = 0 # ww1_battlecruiser_1910 (Battlecruiser II)
+		###ww1_battlecruiser3 = 0 # ww1_battlecruiser_1910 (Battlecruiser III)
+
+		ww1_heavy_cruiser0 = 1
+		ww1_heavy_cruiser0_mtg = 1 # heavy_cruiser_1890 (Armored Cruiser I)
+		ww1_heavy_cruiser1 = 1
+		ww1_heavy_cruiser1_mtg = 1 # heavy_cruiser_1900 (Armored Cruiser II)
+
+		ww1_light_cruiser0 = 1
+		ww1_light_cruiser0_mtg = 1 # light_cruiser_1890 (Protected Cruiser I)
+		ww1_light_cruiser1 = 1
+		ww1_light_cruiser1_mtg = 1 # light_cruiser_1900 (Protected Cruiser II)
+		###ww1_light_cruiser2 = 0 # light_cruiser_1906 (Light Cruiser I)
+		###ww1_light_cruiser3 = 0 # light_cruiser_1910 (Light Cruiser II)
+		###ww1_light_cruiser4 = 0 # light_cruiser_1914 (Light Cruiser III)
+	
+		ww1_destroyer0 = 1
+		ww1_destroyer0_mtg = 1 # destroyer_1890 (Torpedo Boat I)
+		ww1_destroyer1 = 1
+		ww1_destroyer1_mtg = 1 # destroyer_1900 (Destroyer I)
+		ww1_destroyer2 = 1
+		ww1_destroyer2_mtg = 1 # destroyer_1906 (Destroyer II)
+		###ww1_destroyer3 = 0 # destroyer_1910 (Destroyer III)
+		###ww1_destroyer4 = 0 # destroyer_1914 (Destroyer IV)	
+
+		ww1_moduleMTG_mines = 1
+		ww1_moduleMTG_mines_mtg = 1 # Mines
+
+		ww1_submarine0 = 1
+		ww1_submarine0_mtg = 1 # coastal_submarine_1900 (Coastal Submarine 1900, first available Submarine)
+		ww1_submarine1 = 1
+		ww1_submarine1_mtg = 1 # submarine_1906 (Submarine I)
+		###ww1_submarine2 = 0 # submarine_1910 (Submarine II)
+		###ww1_submarine3 = 0 # submarine_1914 (Submarine III)
+
+		transport = 1
+		transport_mtg = 1 # Naval Transport
+
+		ww1_coastal_submarine1 = 1
+		ww1_coastal_submarine1_mtg = 1
+		ww1_coastal_submarine2 = 1
+	}
+}
+#if = {
+#	limit = { has_dlc = "Man the Guns" }
+#	set_technology = {
+#		ship_hull_submarine_1910 = 1
+#		ww1_ship_hull_light = 1
+#		gw_ship_hull_cruiser = 1
+#		pre_dreadnought_ship_hull_heavy = 1
+#		dreadnought_ship_hull_heavy = 1
+#		basic_torpedo = 1
+#		mtg_transport = 1
+#		basic_secondary_battery = 1
+#		basic_naval_mines = 1
+#		basic_battery = 1
+#	}
+#}
+
+set_politics = {
+    ruling_party = neutrality
+    last_election = "1910.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+set_popularities = {
+    democratic = 17
+    fascism = 2
+    communism = 1
+    neutrality = 80
+}
+set_stability=0.45
+set_convoys=20
+if = {
+	limit = { has_dlc = "Together for Victory" }
+
+	add_to_tech_sharing_group = commonwealth_research
+}
+
+
+1910.1.1 = {
+	create_country_leader={ name = "Earl of Minto" desc=RAJ_earl_of_minto_DESC picture="gfx/leaders/RAJ_earl_of_minto.dds" expire="1935.1.1" ideology=despotism traits={  } }
+}
+
+1914.1.1 = {
+	create_country_leader={ name = "Lord Hardinge of Penshurst" desc=RAJ_lord_hardinge_DESC picture="gfx/leaders/RAJ_lord_hardinge.dds" expire="1935.1.1" ideology=despotism traits={  } }
+	oob="RAJ_1914"
+}
+
+1919.1.1 = {
+	create_country_leader={ name = "Lord Chelmsford" desc=RAJ_lord_hardinge_DESC picture="gfx/hoi4tgw_portraits/RAJ/country_leaders/RAJ_Lord_Chelmsford.dds" expire="1935.1.1" ideology=despotism traits={  } }
+
+	oob = "RAJ_1919"
+
+}
