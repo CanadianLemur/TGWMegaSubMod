@@ -399,6 +399,11 @@ country_event = {
 			drop_cosmetic_tag = yes
 			set_cosmetic_tag = CHI_REP
 			CHI = {
+				delete_unit_template_and_units = { division_template = "Qing Brigade" }
+				delete_unit_template_and_units = { division_template = "Qing Infantry" }
+				delete_unit_template_and_units = { division_template = "Revolutionary Brigade" }
+				delete_unit_template_and_units = { division_template = "Revolutionary Army" }
+				
 				country_event = {
 					id = MSMWuchang.7
 					days = 3
@@ -409,7 +414,6 @@ country_event = {
 			#custom_effect_tooltip = beiyang_route
 		
 		}
-			QIN = { delete_unit_template_and_units = { division_template = "Qing Infantry" } }
 	}
 
 	option = {
@@ -454,7 +458,7 @@ country_event = {
 				delete_unit_template_and_units = { division_template = "Qing Brigade" }
 				delete_unit_template_and_units = { division_template = "Qing Infantry" }
 				delete_unit_template_and_units = { division_template = "Revolutionary Brigade" }
-				delete_unit_template_and_units = { division_template = "Revolutionary Ar,my" }
+				delete_unit_template_and_units = { division_template = "Revolutionary Army" }
 			}
 			
 			clr_global_flag = rebels_support
