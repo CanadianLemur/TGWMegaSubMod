@@ -450,6 +450,11 @@ country_event = {
 					target = QIN
 					transfer_troops = yes
 				}
+				
+				delete_unit_template_and_units = { division_template = "Qing Brigade" }
+				delete_unit_template_and_units = { division_template = "Qing Infantry" }
+				delete_unit_template_and_units = { division_template = "Revolutionary Brigade" }
+				delete_unit_template_and_units = { division_template = "Revolutionary Ar,my" }
 			}
 			
 			clr_global_flag = rebels_support
