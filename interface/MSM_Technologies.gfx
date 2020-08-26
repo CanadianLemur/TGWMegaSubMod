@@ -27,23 +27,23 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_early_ship_hull_heavy_medium"
-		texturefile = "gfx/interface/technologies/ship_hull_dreadnought.dds"
-	}
-	
-	SpriteType = {
 		name = "GFX_MSM_ship_hull_dreadnought_1_medium"
-		texturefile = "gfx/interface/technologies/ship_hull_dreadnought.dds"
+		texturefile = "gfx/interface/technologies/ship_hull_dreadnought1.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_MSM_ship_hull_dreadnought_2_medium"
-		texturefile = "gfx/interface/technologies/ship_hull_dreadnought.dds"
+		texturefile = "gfx/interface/technologies/ship_hull_dreadnought2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_early_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_battlecruiser.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_early_ship_hull_submarine_medium"
-		texturefile = "gfx/interface/technologies/GER_ww1_coastal_submarine1.dds"
+		texturefile = "gfx/interface/technologies/ww1_early_submarine.dds"
 	}
 	
 	SpriteType = {
