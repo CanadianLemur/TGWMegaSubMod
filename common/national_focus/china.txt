@@ -12,10 +12,8 @@ focus_tree = {
 	focus = {
 		id = CHI_revolution_one
 		icon = GFX_china_revolution_icon
-		cost = 2
 		completion_reward = {
 			add_political_power=50
-			create_faction = chinese_united_league
 		}
 
 		ai_will_do = { factor = 100 }
@@ -27,82 +25,11 @@ focus_tree = {
 		y = 0
 	}
 	
-	focus = {
-		id = CHI_revolution_two
-		icon = GFX_father_of_the_nation_icon
-		cost = 2
-		completion_reward = {
-			create_country_leader = {
-					name = "Sun Yat-sen"
-					desc = "POLITICS_SUN_YAT_SEN_DESC"
-					picture = "gfx/leaders/Sun_Yat_sen.dds"
-					expire = "1913.1.1"
-					ideology = socialism
-					traits = { }
-				}
-		}
-
-		ai_will_do = { factor = 100 }
-		
-		available = {
-			has_global_flag = xinhai_revolution
-		}
-		
-		bypass = {
-			has_country_leader = {
-				name = "Sun Yat-sen"
-				ruling_only = yes
-			}
-		}
-		
-		prerequisite = { focus = CHI_revolution_one }
-		
-		relative_position_id = CHI_revolution_one
-		x = 0
-		y = 1
-	}
-	
-	focus = {
-		id = CHI_revolution_three
-		icon = GFX_china_revolution_icon
-		cost = 3
-		completion_reward = {
-			hidden_effect = {
-				HNC = {
-					transfer_state = 602
-					set_cosmetic_tag = HNC_REV
-					load_oob = "PRC_1911_Changsha"
-					CHI = {
-						add_to_faction = HNC
-					}
-					add_to_war = { 
-						targeted_alliance = CHI 
-						enemy = QIN 
-						hostility_reason = asked_to_join
-					}
-				}
-				set_global_flag = changsha_restoration
-			}
-		}
-
-		ai_will_do = { factor = 100 }
-		
-		available = {
-			has_global_flag = xinhai_revolution
-		}
-		
-		prerequisite = { focus = CHI_revolution_two }
-		
-		relative_position_id = CHI_revolution_two
-		x = 0
-		y = 1
-	}
 
 
 	focus = {
 		id = CHI_aftermath
 		icon = GFX_goal_generic_demand_territory
-		cost = 15
 		completion_reward = {
 			add_political_power=120
 		}
@@ -119,7 +46,6 @@ focus_tree = {
 	focus = {
 		id = CHI_sun_yat_sen_president
 		icon = GFX_goal_generic_demand_territory
-		cost = 10
 		completion_reward = {
 			add_political_power=120
 		}
@@ -147,7 +73,6 @@ focus_tree = {
 	focus = {
 		id = CHI_power_struggle
 		icon = GFX_goal_generic_demand_territory
-		cost = 10
 		completion_reward = {
 			add_political_power=120
 		}

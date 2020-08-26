@@ -98,10 +98,10 @@ country_event = {
 				
 				
 				create_country_leader = {
-					name = "Huang Xing"
+					name = "Sun Yat-sen"
 					desc = "POLITICS_SUN_YAT_SEN_DESC"
-					picture = "gfx/leaders/PRC_huang_xing.dds"
-					expire = "1913.1.1"
+					picture = "gfx/leaders/Sun_Yat_sen.dds"
+					expire = "1925.1.1"
 					ideology = socialism
 					traits = { }
 				}
@@ -242,13 +242,14 @@ country_event = {
 	mean_time_to_happen = {
 		days = 10
 	}
-	is_triggered_only = yes
+	is_triggered_only = no
 	
 	trigger = {
 		tag = CHI
+		date > 1911.9.20
 		has_global_flag = xinhai_revolution
 		not = {
-			HNC = {
+			CHI = {
 				controls_state = 602
 			}
 		}
@@ -260,9 +261,6 @@ country_event = {
 		transfer_state = 602
 		set_cosmetic_tag = HNC_REV
 		load_oob = "PRC_1911_Changsha"
-		CHI = {
-			add_to_faction = HNC
-		}
 		add_to_war = { 
 			targeted_alliance = CHI 
 			enemy = QIN 
@@ -385,7 +383,7 @@ country_event = {
 				tag = QIN
 				message = YUAN_SHIKAI_SURR_MESSAGE
 			}
-		}
+			
 		SHX = {
 			white_peace = QIN
 			}
@@ -397,31 +395,25 @@ country_event = {
 		JNX = {
 			white_peace = QIN
 		}
-		ROOT = {
+		
 			drop_cosmetic_tag = yes
 			set_cosmetic_tag = CHI_REP
-		}
-		CHI = {
+			CHI = {
 				delete_unit_template_and_units = { division_template = "Qing Brigade" }
 				delete_unit_template_and_units = { division_template = "Qing Infantry" }
 				delete_unit_template_and_units = { division_template = "Revolutionary Brigade" }
 				delete_unit_template_and_units = { division_template = "Revolutionary Army" }
-				delete_unit_template_and_units = { division_template = "Cavalry Division" }
 				
-			QIN = {
-				delete_unit_template_and_units = { division_template = "Qing Brigade" }
-				delete_unit_template_and_units = { division_template = "Qing Infantry" }
-			}
-			
 				country_event = {
 					id = MSMWuchang.7
 					days = 3
 					random = 24
 				}
-		}
+			}
 			set_global_flag = shikai_surrenders
 			#custom_effect_tooltip = beiyang_route
 		
+		}
 	}
 
 	option = {
