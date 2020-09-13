@@ -9,13 +9,13 @@ state={
 	history={
 		1919.1.1 = {
             owner = SPR
-            add_core_of = SPR
         }
 		#1936.1.1 = {
 		#	owner = 
 		#	add_core_of = 
 		#}
 		owner = SPR
+		add_core_of = TNG
 		buildings = {
 			infrastructure = 5
 		}

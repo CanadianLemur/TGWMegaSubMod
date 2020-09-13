@@ -243,3 +243,14 @@ COR = "countries/Corsica.txt"
 TUK = "countries/Tuk.txt"
 HSR = "countries/Hungarian Soviet Republic.txt"
 CPM = "countries/Constitutional Protection Movement.txt"
+
+# American Breakaway States
+CAL = "countries/California.txt"
+NWN = "countries/New England.txt"
+DES = "countries/Deseret.txt"
+CLM = "countries/Columbia.txt"
+IUS = "countries/Industrial Union State.txt"
+
+# Free Cities
+TNG = "countries/Tangiers.txt"
+DZG = "countries/Danzig.txt"

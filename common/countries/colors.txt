@@ -441,6 +441,36 @@ JNX = {
 	color_ui = rgb { 255 255 122 }
 }
 
+CAL = {
+	color = rgb { 240  240  60}
+	color_ui = rgb { 240  240  60 }
+}
+NWN = {
+	color = rgb { 240  10  10 }
+	color_ui = rgb { 240  10  10 }
+}
+DES = {
+	color = rgb { 140  170  240 }
+	color_ui = rgb { 140  170  240 }
+}
+CLM = {
+	color = rgb { 0  120  0 }
+	color_ui = rgb { 0 120 0 }
+}
+IUS = {
+	color = rgb {130  130  130 }
+	color_ui = rgb { 130 130 130 }
+}
+TNG = {
+	color = rgb {  220  240  110 }
+	color_ui = rgb { 220 240 110 }
+}
+DZG = {
+	color = rgb {  90  90  70 }
+	color_ui = rgb { 90 90 70 }
+}
+
+
 
 
 

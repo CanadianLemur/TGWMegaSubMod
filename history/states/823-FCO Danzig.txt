@@ -11,7 +11,7 @@ state = {
 	}
 	history = {
 		owner = GER
-		# add_core_of = POL
+		add_core_of = DZG
 		add_core_of = GER
 
 		1936.1.1 = {
