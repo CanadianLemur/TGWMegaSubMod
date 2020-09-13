@@ -1,0 +1,47 @@
+state = {
+	id = 823
+	name = "STATE_823"
+	manpower = 580100
+	state_category = city
+	provinces = {
+		362
+	}
+	resources = {
+		wood = 15
+	}
+	history = {
+		owner = GER
+		# add_core_of = POL
+		add_core_of = GER
+
+		1936.1.1 = {
+			owner = POL
+			# add_core_of = POL
+			buildings = {
+				infrastructure = 8
+				industrial_complex = 1
+				dockyard = 1
+				arms_factory = 2
+				362 = {
+					naval_base = 5
+				}
+			}
+		}
+		buildings = {
+			infrastructure = 7
+			dockyard = 1
+			arms_factory = 1
+			362 = {
+				naval_base = 5
+			}
+			362 = {
+				coastal_bunker = 6
+			}
+		}
+
+		1919.1.1 = {
+            owner = POL
+            add_core_of = POL
+        }
+	}
+}
