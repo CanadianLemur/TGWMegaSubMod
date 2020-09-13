@@ -1,0 +1,12 @@
+state={
+	id=824
+	name="STATE_824"
+	manpower=12458
+	state_category=rural
+	buildings_max_level_factor=1.000
+	provinces={ 13221 }
+	history={
+		owner=ENG
+		add_core_of=TZN
+		}
+	}

@@ -11,10 +11,10 @@ state={
             owner = SPR
             add_core_of = SPR
         }
-		1936.1.1 = {
-			owner = 
-			add_core_of = 
-		}
+		#1936.1.1 = {
+		#	owner = 
+		#	add_core_of = 
+		#}
 		owner = SPR
 		buildings = {
 			infrastructure = 5
