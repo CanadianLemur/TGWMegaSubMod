@@ -1,0 +1,19 @@
+
+state={
+	id=820
+	name="STATE_820"
+	manpower = 1548953
+	
+	state_category = city
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 5
+		}
+	}
+
+	provinces={
+		6850 801 3975 10441 6971 4627 7466 7646 3941 6958 11888 9923 7588
+	}
+}
