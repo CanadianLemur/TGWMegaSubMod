@@ -1,0 +1,21 @@
+state={
+	id=825
+	name="STATE_825" # Shanghai
+	manpower = 14305100
+	state_category=large_city
+	provinces={ 12076 7014 }
+	resources={
+		wood=0
+		}
+	history={
+		victory_points={ 7014 10 }
+		owner=QIN
+		add_core_of=CHI
+		add_core_of=QIN
+		1912.2.12={ owner=CHI }
+		buildings={
+			infrastructure=8
+			7014={ naval_base=6 coastal_bunker=1 bunker=1 }
+			}
+		}
+	}
