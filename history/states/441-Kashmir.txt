@@ -1,0 +1,28 @@
+state={
+	id=441
+	name="STATE_441"
+	manpower = 3539500
+	state_category=rural
+	provinces={ 5042 7273 7316 8005 10905 12754 12884 }
+	resources={
+		wood=0
+		}
+	history={
+		owner=RAJ
+		add_core_of=PAK
+		add_core_of=RAJ
+		add_core_of=KAS
+		1936.1.1={ 
+			owner=RAJ
+			add_core_of=PAK
+			add_core_of=RAJ
+			add_core_of=KAS
+			buildings={
+				infrastructure=2
+				}
+			}
+		buildings={
+			infrastructure=2
+			}
+		}
+	}

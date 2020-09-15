@@ -436,43 +436,83 @@ PEN = {
 color = rgb { 31 213 144 }
 color_ui = rgb { 33 215 31 }
 }
-JNX = {
-	color = rgb { 82  2  15 }
-	color_ui = rgb { 255 255 122 }
-}
-
 CAL = {
-	color = rgb { 240  240  60}
-	color_ui = rgb { 240  240  60 }
+	color = rgb { 240 240 60}
+	color_ui = rgb { 250 250 60 }
 }
 NWN = {
-	color = rgb { 240  10  10 }
-	color_ui = rgb { 240  10  10 }
+	color = rgb { 240 10 10 }
+	color_ui = rgb { 250 10 10 }
 }
 DES = {
-	color = rgb { 140  170  240 }
-	color_ui = rgb { 140  170  240 }
+	color = rgb { 140 170 240 }
+	color_ui = rgb { 140 170 250 }
 }
 CLM = {
-	color = rgb { 0  120  0 }
-	color_ui = rgb { 0 120 0 }
+	color = rgb { 0 120 0 }
+	color_ui = rgb { 0 140 0 }
 }
 IUS = {
-	color = rgb {130  130  130 }
-	color_ui = rgb { 130 130 130 }
+	color = rgb { 130 130 130 }
+	color_ui = rgb { 140 140 140 }
+}
+CFS = {
+	color = rgb { 100 100 100 }
+	color_ui = rgb { 100 100 100 }
 }
 TNG = {
-	color = rgb {  220  240  110 }
-	color_ui = rgb { 220 240 110 }
+	color = rgb { 220 240 110 }
+	color_ui = rgb { 220 250 110 }
 }
 DZG = {
-	color = rgb {  90  90  70 }
-	color_ui = rgb { 90 90 70 }
+	color = rgb { 90 90 70 }
+	color_ui = rgb { 100 100 70 }
 }
 
-
-
-
+HYD = {
+	color = rgb { 90 90 70 }
+	color_ui = rgb { 100 100 70 }
+}
+MYS = {
+	color = rgb { 90 90 70 }
+	color_ui = rgb { 100 100 70 }
+}
+KAS = {
+	color = rgb { 90 90 70 }
+	color_ui = rgb { 100 100 70 }
+}
+TRA = {
+	color = rgb { 90 90 70 }
+	color_ui = rgb { 100 100 70 }
+}
+BAR = {
+	color = rgb { 90 90 70 }
+	color_ui = rgb { 100 100 70 }
+}
+PUN = {
+	color = rgb { 90 90 70 }
+	color_ui = rgb { 100 100 70 }
+}
+DEL = {
+	color = rgb { 90 90 70 }
+	color_ui = rgb { 100 100 70 }
+}
+SIN = {
+	color = rgb { 90 90 70 }
+	color_ui = rgb { 100 100 70 }
+}
+JAI = {
+	color = rgb { 90 90 70 }
+	color_ui = rgb { 100 100 70 }
+}
+IND = {
+	color = rgb { 90 90 70 }
+	color_ui = rgb { 100 100 70 }
+}
+ASM = {
+	color = rgb { 90 90 70 }
+	color_ui = rgb { 100 100 70 }
+}
 
 D01 = {
 	color = rgb { 187 80 86 }

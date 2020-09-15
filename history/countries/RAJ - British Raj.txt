@@ -2,7 +2,7 @@
 oob="RAJ_1910"
 
 set_cosmetic_tag = RAJ_UK
-
+	add_ideas = { RAJ_agrarian_society }
 set_technology = { 
 	light_field_gun1 = 1	 
 	heavy_field_gun1=1
