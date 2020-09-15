@@ -469,9 +469,50 @@ DZG = {
 	color_ui = rgb { 100 100 70 }
 }
 
-
-
-
+HYD = {
+	color = rgb { 90 90 70 }
+	color_ui = rgb { 100 100 70 }
+}
+MYS = {
+	color = rgb { 90 90 70 }
+	color_ui = rgb { 100 100 70 }
+}
+KAS = {
+	color = rgb { 90 90 70 }
+	color_ui = rgb { 100 100 70 }
+}
+TRA = {
+	color = rgb { 90 90 70 }
+	color_ui = rgb { 100 100 70 }
+}
+BAR = {
+	color = rgb { 90 90 70 }
+	color_ui = rgb { 100 100 70 }
+}
+PUN = {
+	color = rgb { 90 90 70 }
+	color_ui = rgb { 100 100 70 }
+}
+DEL = {
+	color = rgb { 90 90 70 }
+	color_ui = rgb { 100 100 70 }
+}
+SIN = {
+	color = rgb { 90 90 70 }
+	color_ui = rgb { 100 100 70 }
+}
+JAI = {
+	color = rgb { 90 90 70 }
+	color_ui = rgb { 100 100 70 }
+}
+IND = {
+	color = rgb { 90 90 70 }
+	color_ui = rgb { 100 100 70 }
+}
+ASM = {
+	color = rgb { 90 90 70 }
+	color_ui = rgb { 100 100 70 }
+}
 
 D01 = {
 	color = rgb { 187 80 86 }
