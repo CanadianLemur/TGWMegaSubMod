@@ -15,6 +15,7 @@ country_event = {
 	option = {
 		name = MSMIndia.1.a
 		ai_chance = { factor = 100 }
+	set_global_flag = nepalhasinvadedindia
 ENG = {end_puppet = NEP end_puppet = BHU}
 NEP = {puppet = BHU}
 		GER={ 
@@ -26,5 +27,338 @@ GER = {add_to_faction = NEP}
 NEP = {declare_war_on = {
     target = RAJ
     type = annex_everything
-}}}`
+}}}
 }
+# Indian Hegemony - Delhi (can be Nepal-Delhi)
+country_event = {
+	id =  MSMIndia.2
+	title = MSMIndia.2.t
+	desc = MSMIndia.2.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	trigger =  {  OR = {has_cosmetic_tag = NEP_DEL tag = DEL} date > 1919.1.1  country_exists = HYD has_global_flag = indiacollapsed } 
+	option = {
+		name = MSMIndia.2.a
+		ai_chance = { factor = 100 }
+	create_wargoal = {
+    type = annex_everything
+    target = HYD
+}	
+	}
+}
+# Indian Hegemony - Hyderabad
+country_event = {
+	id =  MSMIndia.3
+	title = MSMIndia.2.t
+	desc = MSMIndia.2.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	trigger =  { tag = HYD date > 1919.1.1 has_global_flag = indiacollapsed} 
+	option = {
+		name = MSMIndia.2.a
+		ai_chance = { factor = 100 }
+	if = {
+    limit = {
+    NEP = { has_cosmetic_tag = NEP_DEL}
+    }
+	create_wargoal = {
+    type = annex_everything
+    target = NEP
+}
+    else = {
+		create_wargoal = {
+    type = annex_everything
+    target = DEL
+}
+		}
+		}
+	}	
+}
+# Collapse of British Rule in India
+country_event = {
+	id =  MSMIndia.4
+	title = MSMIndia.4.t
+	desc = MSMIndia.4.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	trigger =  {original_tag = RAJ surrender_progress >0.7} 
+	option = {
+		name = MSMIndia.4.a
+		ai_chance = { factor = 100 }
+	BRM = {
+	transfer_state = 640
+	transfer_state = 288
+	inherit_technology = RAJ
+	add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 500
+    producer = RAJ
+	}
+	}
+	AFG = {
+	transfer_state = 445
+	transfer_state = 442
+	add_state_core = 445
+	add_state_core = 442
+	add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 200
+    producer = RAJ
+	}
+	}
+	PER = {
+	add_state_core = 444
+	transfer_state = 444
+	add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 200
+    producer = RAJ
+	}
+	}
+	KAS = {
+	transfer_state = 441
+	transfer_state = 787
+	inherit_technology = RAJ
+	add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 500
+    producer = RAJ
+	}
+	}
+	PUN = {
+	transfer_state = 440
+	inherit_technology = RAJ
+	add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 500
+    producer = RAJ
+	}
+	}
+	SIN = {
+	transfer_state = 443
+	inherit_technology = RAJ
+	add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 500
+    producer = RAJ
+	}
+	}
+	JAI = {
+	transfer_state = 433
+	inherit_technology = RAJ
+	add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 500
+    producer = RAJ
+	}
+	}
+	BAR = {
+	transfer_state = 428
+	inherit_technology = RAJ
+	add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 500
+    producer = RAJ
+	}
+	}
+	IDO = {
+	transfer_state = 437
+	inherit_technology = RAJ
+	add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 500
+    producer = RAJ
+	}
+	}
+	BAN = {
+	transfer_state = 430
+	inherit_technology = RAJ
+	add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 500
+    producer = RAJ
+	}
+	}
+	ASM = {
+	transfer_state = 432
+	inherit_technology = RAJ
+	add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 500
+    producer = RAJ
+	}
+	}
+	MYS = {
+	transfer_state = 425
+	inherit_technology = RAJ
+	add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 500
+    producer = RAJ
+	}
+	}
+	TRA = {
+	transfer_state = 423
+	inherit_technology = RAJ
+	add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 500
+    producer = RAJ
+	}
+	}
+	DEL = {
+	transfer_state = 439
+	transfer_state = 438
+	transfer_state = 435
+	transfer_state = 431
+	inherit_technology = RAJ
+	load_oob = "DEL"
+	add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 500
+    producer = RAJ
+	}
+	}
+	RAJ = {
+	transfer_units_fraction= {
+    target = DEL
+    size = 0.5
+    stockpile_ratio = 0.5
+    army_ratio = 0.5
+    navy_ratio = 0.5
+    air_ratio = 0.5
+    }
+	}
+
+	HYD = {
+	transfer_state = 436
+	transfer_state = 426
+	transfer_state = 427
+	transfer_state = 424
+	transfer_state = 429
+	inherit_technology = RAJ
+	change_tag_from = RAJ
+	load_oob = "HYD"
+	add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 500
+    producer = RAJ
+	}
+	}
+	RAJ = {
+			every_unit_leader = {
+				set_nationality = HYD
+			}
+		}
+	if = { limit = {
+	has_global_flag = nepalhasinvadedindia
+		}
+	NEP = {	
+	add_state_core = 439
+	add_state_core = 438
+	add_state_core = 435
+	add_state_core = 431
+	white_peace = ENG 
+	leave_faction = yes
+	annex_country = {
+    target = DEL
+    transfer_troops = yes
+    }
+	set_cosmetic_tag = NEP_DEL
+		}
+	}else = {
+set_autonomy = {
+    target = NEP
+    autonomy_state = autonomy_free
+}
+set_autonomy = {
+    target = BHU
+    autonomy_state = autonomy_free
+}
+
+
+}
+	HYD = {
+	annex_country = {
+    target = RAJ
+    transfer_troops = yes
+    }
+	}
+	set_global_flag = indiacollapsed
+	}
+    }
+# Seizure of Arunachal Pradesh
+country_event = {
+	id =  MSMIndia.5
+	title = MSMIndia.5.t
+	desc = MSMIndia.5.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	trigger =  { owns_state = 322
+	has_global_flag = indiacollapsed
+	}	
+	option = {
+		name = MSMIndia.5.a
+		ai_chance = { factor = 100 }
+		transfer_state = 434
+	}	
+}
+# Indian Hegemony Achieved - Delhi(can be Nepal-Delhi)
+country_event = {
+	id =  MSMIndia.6
+	title = MSMIndia.6.t
+	desc = MSMIndia.6.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	trigger =  { OR = {has_cosmetic_tag = NEP_DEL tag = DEL} owns_state = 427 has_global_flag = indiacollapsed }	
+	option = {
+		name = MSMIndia.6.a #Chhatrapati!
+		ai_chance = { factor = 100 }
+		set_cosmetic_tag = India
+		add_country_leader_trait = MSM_Chhatrapati
+		every_state = {limit = {or = {is_core_of = RAJ is_core_of = PAK is_core_of = BRM}} add_claim_by = Root}
+		every_state = {limit = {is_core_of = HYD} add_core_of = Root}
+		set_country_flag = indianhegemon
+	}	
+}
+# Indian Hegemony Achieved - Hyderabad
+country_event = {
+	id =  MSMIndia.7
+	title = MSMIndia.7.t
+	desc = MSMIndia.7.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	trigger =  { tag = HYD owns_state = 439 has_global_flag = indiacollapsed}	
+	option = {
+		name = MSMIndia.7.a #Chhatrapati!
+		ai_chance = { factor = 100 }
+		set_cosmetic_tag = India
+		add_country_leader_trait = MSM_Chhatrapati
+		every_state = {limit = {or = {is_core_of = RAJ is_core_of = PAK is_core_of = BRM}} add_claim_by = Root}
+		every_state = {limit = {is_core_of = DEL} add_core_of = Root}
+		set_country_flag = indianhegemon
+	}	
+}
+# Indian Hegemon Demands Vassalization
+country_event = {
+	id =  MSMIndia.8
+	title = MSMIndia.8.t
+	desc = MSMIndia.8.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = MSMIndia.8.a
+		ai_chance = { factor = 80 }
+		FROM = {puppet = ROOT}
+	}
+	option = {
+		name = MSMIndia.8.b
+		ai_chance = { factor = 20 }
+		FROM = { create_wargoal = {
+    type = annex_everything
+    target = ROOT
+	}
+}
+	}		
+}
+

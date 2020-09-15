@@ -1,0 +1,48 @@
+indian_affairs = {
+	demand_vassalization = {
+			allowed = {tag = NEP} #change to a focus requirement at some point
+			cost = 20
+			visible = {is_subject=no}
+			fire_only_once = yes
+			target_trigger = {
+				FROM = {OR = { tag = KAS tag = SIN tag = PUN tag = JAI tag = BAR tag = IDO tag = MYS tag = TRA tag = NEP tag = BHU tag = BAN tag = ASM }}
+			}
+			    available = {
+				FROM = { has_war = no }
+				}
+			complete_effect = {
+			FROM = {country_event = {
+			id =  MSMIndia.8
+			}
+			}
+			}
+          }
+	integrate_vassal = {
+			allowed = {tag = NEP} #change to a focus requirement at some point
+			cost = 20
+			d
+			visible = {FROM = is_subject_of=ROOT}
+			fire_only_once = yes
+			target_trigger = {
+				FROM = {OR = { tag = KAS tag = SIN tag = PUN tag = JAI tag = BAR tag = IDO tag = MYS tag = TRA tag = NEP tag = BHU tag = BAN tag = ASM }}
+			}
+			    available = {
+				FROM = { has_war = yes }
+				}
+			days = 120
+			complete_effect = {
+			annex_country = {
+			target = FROM
+			transfer_troops = yes
+			}
+			FROM = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+			every_state = {limit = {is_core_of = FROM} add_core_of = Root}
+			}
+			}
+          }
+		  }
+	

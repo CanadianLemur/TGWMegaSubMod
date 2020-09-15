@@ -1,0 +1,10 @@
+indian_affairs = {
+	icon = generic_political_actions
+	priority = 30
+	available = {
+		has_country_flag = indianhegemon
+	}
+	visible = {
+		has_country_flag = indianhegemon
+	}
+}

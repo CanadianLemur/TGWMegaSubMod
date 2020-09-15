@@ -1,0 +1,48 @@
+division_template = {
+	name = "Sultans Infantry"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	#
+	division = { 
+		division_name = {
+		}
+		location = 2086
+		division_template = "Sultans Infantry"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division = { 
+		division_name = {
+		}
+		location = 2086
+		division_template = "1st Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = { 
+		division_name = {
+		}
+		location = 2086
+		division_template = "2nd Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = { 
+		division_name = {
+		}
+		location = 2086
+		division_template = "3rd Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+}

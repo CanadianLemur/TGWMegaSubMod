@@ -470,12 +470,12 @@ DZG = {
 }
 
 HYD = {
-	color = rgb { 90 90 70 }
-	color_ui = rgb { 100 100 70 }
+	color = rgb { 220 230 40 }
+	color_ui = rgb { 220 230 40 }
 }
 MYS = {
-	color = rgb { 90 90 70 }
-	color_ui = rgb { 100 100 70 }
+	color = rgb { 150 20 30 }
+	color_ui = rgb { 150 20 30 }
 }
 KAS = {
 	color = rgb { 90 90 70 }

@@ -10,7 +10,19 @@ leader_traits = {
 			factor = 1
 		}
 	}
-
-
+	MSM_Chhatrapati = {
+		random = no
+		stability_factor = 0.15
+		subjects_autonomy_gain = -0.1
+	}
+	MSM_unifier_of_india = {
+		stability_factor = 0.10
+		war_support_weekly =  0.001
+		stability_weekly = 0.001
+		political_power_gain = 0.25
+		political_power_factor = 0.10
+		subjects_autonomy_gain = -0.5
+	}
+	
 
 }
