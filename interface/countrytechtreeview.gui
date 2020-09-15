@@ -2772,7 +2772,7 @@ guiTypes = {
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
-				text = "AIR_TITLE_SCOUT"
+				text = "Fighter"
 				maxWidth = 700
 				maxHeight = 62
 				format = center
@@ -2810,11 +2810,11 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "airtech_subtitle_triplane"
-				position = { x = 175 y = 210 }
+				position = { x = 110 y = 210 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
-				text = "AIR_TITLE_TRIPLANE"
+				text = "Scout"
 				maxWidth = 300
 				maxHeight = 62
 				format = center
