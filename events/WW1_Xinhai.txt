@@ -459,6 +459,7 @@ country_event = {
 				delete_unit_template_and_units = { division_template = "Qing Infantry" }
 				delete_unit_template_and_units = { division_template = "Revolutionary Brigade" }
 				delete_unit_template_and_units = { division_template = "Revolutionary Army" }
+				set_cosmetic_tag = CHI_REP
 			}
 			
 			clr_global_flag = rebels_support

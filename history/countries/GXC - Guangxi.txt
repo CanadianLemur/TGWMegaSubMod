@@ -1,0 +1,16 @@
+﻿capital=594
+
+create_country_leader={ name = "Lu Rongting" desc=GXC_LU_RONGTING picture="gfx/leaders/GXC_portait_lu_rongting.dds" expire="1935.1.1" ideology=despotism traits={  } }
+
+set_politics = {
+	    ruling_party = neutrality
+	    last_election = "1915.12.1"
+	    election_frequency = 60
+	    elections_allowed = no
+	}
+	set_popularities = {
+	    democratic = 30
+	    fascism = 5
+	    communism = 3
+	    neutrality = 62
+	}
