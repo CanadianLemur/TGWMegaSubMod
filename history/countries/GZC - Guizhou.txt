@@ -1,0 +1,16 @@
+﻿capital=613
+
+create_country_leader={ name = "Liu Xianshi" desc=GXC_LIU_XIANSHI picture="gfx/leaders/GZC_portait_liu_xianshi.dds" expire="1935.1.1" ideology=despotism traits={  } }
+
+set_politics = {
+	    ruling_party = neutrality
+	    last_election = "1915.12.1"
+	    election_frequency = 60
+	    elections_allowed = no
+	}
+	set_popularities = {
+	    democratic = 30
+	    fascism = 5
+	    communism = 3
+	    neutrality = 62
+	}

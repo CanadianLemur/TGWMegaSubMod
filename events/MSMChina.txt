@@ -85,14 +85,12 @@ country_event = {
 			factor = 100
 		}
 		set_capital = 608
-		
 		set_politics = {
 			ruling_party = neutrality
-			last_election = "1912.2.14
+			last_election = 1912.2.14
 			election_frequency = 48
 			elections_allowed = no
 		}
-		
 		create_country_leader = {
 			name = "Yuan Shikai"
 			desc = "POLITICS_YUAN_SHIKAI_DESC"
@@ -100,11 +98,9 @@ country_event = {
 			expire = "1925.1.1"
 			ideology = despotism
 			traits = {
-				
 			}
 		}
 	}
-	
 	option = {
 		name =  MSMChina.3.b #(Alt-History)Keeps Sun Yat-sen president   Possible civil war event
 		ai_chance = {
@@ -124,7 +120,7 @@ country_event = {
 	mean_time_to_happen = {
 		days = 4
 	}
-
+	
 	trigger = {
 		tag = CHI
 		date > 1913.2.1
@@ -132,13 +128,12 @@ country_event = {
 	}
 		
 	option = {
-		name =  MSMChina.4.a #
+		name =  MSMChina.4.a #Bruhbruh
 		ai_chance = {
 			factor = 100
 		}
-		
+		add_political_power =1
 	}
-	
 }
 
 country_event = {
@@ -151,19 +146,122 @@ country_event = {
 	mean_time_to_happen = {
 		days = 4
 	}
-
 	trigger = {
 		tag = CHI
 		date > 1913.2.20
 		has_global_flag = shikai_power_struggle
 	}
-		
 	option = {
-		name =  MSMChina.4.a #
+		name =  MSMChina.5.a
 		ai_chance = {
 			factor = 100
 		}
-		
+		add_political_power = 1
+	}
+	
+}
+
+country_event = {
+	title = MSMChina.6.t #Empire of China Declaration
+	desc = MSMChina.6.d
+	id = MSMChina.6
+	picture = MSMChina_6
+	is_triggered_only = no
+	timeout_days = 30
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	trigger = {
+		tag = CHI
+		date > 1915.12.11
+	}
+	
+	immediate = {
+		YUN = { transfer_state = 325 }
+	}
+	
+	option = {
+		name =  MSMChina.6.a #The People will not stand for this // Creates Empire of china with player playing as KMT
+		ai_chance = {
+			factor = 100
+		}
+		CHI = {
+			drop_cosmetic_tag = yes
+			
+		}
+	}
+	
+	option = {
+		name =  MSMChina.6.b #Perhaps a new empire wouldn't be a bad idea // Changes CHI to empire of China with KMT tag created for KMT territory
+		ai_chance = {
+			factor = 0
+		}
+		add_political_power = 1
+	}
+	
+}
+
+country_event = {
+	title = MSMChina.7.t #
+	desc = MSMChina.7.d
+	id = MSMChina.7
+	picture = MSMChina_7
+	is_triggered_only = no
+	timeout_days = 6
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	trigger = {
+		tag = CHI
+		date > 1916.2.15
+	}
+	
+	immediate = {
+		GZC = { transfer_state = 603 }
+		GXC = { transfer_state = 599 }
+	}
+	
+	option = {
+		name =  MSMChina.7.a #So it happens
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}
+
+country_event = {
+	title = MSMChina.8.t #
+	desc = MSMChina.8.d
+	id = MSMChina.8
+	picture = MSMChina_8
+	is_triggered_only = no
+	timeout_days = 6
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	trigger = {
+		tag = CHI
+		date > 1916.2.22
+	}
+	
+	immediate = {
+		GDC = { transfer_state = 593 }
+		GDC = { transfer_state = 592 }
+		GDC = { transfer_state = 594 }
+		GDC = { transfer_state = 591 }
+		HNC = { drop_cosmetic_tag = yes set_cosmetic_tag = HNC_WAR }
+		HNC = { transfer_state = 602 }
+	}
+	
+	option = {
+		name =  MSMChina.8.a #So it happens
+		ai_chance = {
+			factor = 100
+		}
 	}
 	
 }
