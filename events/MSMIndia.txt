@@ -1,0 +1,30 @@
+add_namespace = MSMIndia
+# Falling Confidence in the British
+country_event = {
+	id =  MSMIndia.1
+	title = MSMIndia.1.t
+	desc = MSMIndia.1.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	trigger =  { RAJ = {any_enemy_country = {OR = {controls_state = 440 controls_state = 430 }}} } #can fire if an enemy of the raj controls either east bengal or the punjab
+	option = {
+		name = MSMIndia.1.b
+		ai_chance = { factor = 0 }
+		
+	}
+	option = {
+		name = MSMIndia.1.a
+		ai_chance = { factor = 100 }
+ENG = {end_puppet = NEP end_puppet = BHU}
+NEP = {puppet = BHU}
+		GER={ 
+		white_peace = NEP } 
+		NEP = {leave_faction = yes}
+	
+GER = {add_to_faction = NEP}
+	
+NEP = {declare_war_on = {
+    target = RAJ
+    type = annex_everything
+}}}`
+}

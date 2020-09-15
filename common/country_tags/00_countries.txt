@@ -250,7 +250,15 @@ NWN = "countries/New England.txt"
 DES = "countries/Deseret.txt"
 CLM = "countries/Columbia.txt"
 IUS = "countries/Industrial Union State.txt"
-
+CFS = "countries/Confederate States.txt"
+# Indian Breakaway States
+HYD = "countries/Hyderabad.txt"
+MYS = "countries/Mysore.txt"
+KAS = "countries/Jammu and Kashmir.txt"
+TRA = "countries/Tranvancore.txt"
+BAR = "countries/Baroda.txt"
+PUN = "countries/Punjab.txt"
+DEL = "countries/Delhi.txt"
 # Free Cities
 TNG = "countries/Tangiers.txt"
 DZG = "countries/Danzig.txt"
