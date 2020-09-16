@@ -5,13 +5,14 @@ indian_affairs = {
 			visible = {is_subject=no}
 			fire_only_once = yes
 			target_trigger = {
-				FROM = {OR = { tag = KAS tag = SIN tag = PUN tag = JAI tag = BAR tag = IDO tag = MYS tag = TRA tag = NEP tag = BHU tag = BAN tag = ASM }}
+				FROM = {	is_subject = NO		OR = { tag = KAS tag = SIN tag = PUN tag = JAI tag = BAR tag = IDO tag = MYS tag = TRA tag = NEP tag = BHU tag = BAN tag = ASM }}
 			}
 			    available = {
 				FROM = { has_war = no }
 				}
 			complete_effect = {
 			FROM = {country_event = {
+			days = 3
 			id =  MSMIndia.8
 			}
 			}
@@ -20,17 +21,17 @@ indian_affairs = {
 	integrate_vassal = {
 			allowed = {tag = NEP} #change to a focus requirement at some point
 			cost = 20
-			d
+			
 			visible = {FROM = is_subject_of=ROOT}
 			fire_only_once = yes
 			target_trigger = {
-				FROM = {OR = { tag = KAS tag = SIN tag = PUN tag = JAI tag = BAR tag = IDO tag = MYS tag = TRA tag = NEP tag = BHU tag = BAN tag = ASM }}
+				FROM = {is_subject_of=ROOT	OR = { tag = KAS tag = SIN tag = PUN tag = JAI tag = BAR tag = IDO tag = MYS tag = TRA tag = BAN tag = ASM }}
 			}
 			    available = {
-				FROM = { has_war = yes }
+				FROM = { has_war = NO 	compare_autonomy_state < autonomy_puppet	}
 				}
 			days = 120
-			complete_effect = {
+			remove_effect = {
 			annex_country = {
 			target = FROM
 			transfer_troops = yes
@@ -43,6 +44,42 @@ indian_affairs = {
 			every_state = {limit = {is_core_of = FROM} add_core_of = Root}
 			}
 			}
+	integrate_indian_state = {
+	
+	icon = generic_form_nation
+	cost = 60
+	state_target = yes
+	fire_only_once = yes
+	days_remove = 90
+	visible = {
+	original_tag = NEP
+	OR = {FROM = {is_core_of=RAJ} FROM = {is_core_of=PAK}}
+	FROM = {is_owned_and_controlled_by = ROOT}	
+	}
+	allowed = {
+		original_tag = NEP
+		OR = {FROM = {is_core_of=RAJ} FROM = {is_core_of=PAK}}
+		FROM = {is_owned_and_controlled_by = ROOT}
+	}
+	available = {
+	has_stability >0.5
+	FROM ={compliance > 80 }
+	}
+	complete_effect = {
+	add_stability = -0.05 
+	}
+	remove_effect = {
+		FROM = {
+		add_core_of = ROOT
+		}
+	}
+	}
+			
+			
+			
+			
+			
+			
           }
 		  }
 	

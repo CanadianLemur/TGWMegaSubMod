@@ -243,7 +243,7 @@ country_event = {
     type = infantry_equipment
     amount = 500
     producer = RAJ
-	}
+	} 
 	}
 	RAJ = {
 			every_unit_leader = {
@@ -314,11 +314,12 @@ country_event = {
 	option = {
 		name = MSMIndia.6.a #Chhatrapati!
 		ai_chance = { factor = 100 }
-		set_cosmetic_tag = India
+		if { limit ={tag = NEP} set_cosmetic_tag = NEP_IND}
 		add_country_leader_trait = MSM_Chhatrapati
-		every_state = {limit = {or = {is_core_of = RAJ is_core_of = PAK is_core_of = BRM}} add_claim_by = Root}
+		every_state = {limit = {or = {is_core_of = RAJ is_core_of = PAK }} add_claim_by = Root}
 		every_state = {limit = {is_core_of = HYD} add_core_of = Root}
 		set_country_flag = indianhegemon
+		load_focus_tree = indianhegemon_focus
 	}	
 }
 # Indian Hegemony Achieved - Hyderabad

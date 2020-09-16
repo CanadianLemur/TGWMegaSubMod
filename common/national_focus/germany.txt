@@ -3738,7 +3738,7 @@ focus_tree = {
 		id = GER_interwar_beer_hall_putsch
 
 		icon = GFX_goal_generic_political_pressure
-
+		allow_branch = {NOT = {has_global_flag = kis_second_treaty_frankfort}}
 		available = {
 			date > 1922.1.1
 			has_war = no
