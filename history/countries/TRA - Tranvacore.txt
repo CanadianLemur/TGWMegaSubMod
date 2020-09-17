@@ -127,5 +127,8 @@ set_popularities = {
 set_stability=0.45
 set_convoys=20
 1910.1.1 = {
-	create_country_leader={ name = "Mulam Thirunal Rama Varma" desc= picture="gfx/leaders/" expire="1924.8.7" ideology=despotism traits={  } }
+	create_country_leader={ name = "Mulam Thirunal Rama Varma" 
+	picture="gfx/leaders/TRA_Mulam_Thirunal_Rama_Varma.dds" 
+	expire="1924.8.7" 
+	ideology=despotism traits={  } }
 }

@@ -1,4 +1,5 @@
 add_namespace = MSMIndia
+add_namespace = MSMIndiaNews
 # Falling Confidence in the British
 country_event = {
 	id =  MSMIndia.1
@@ -15,6 +16,7 @@ country_event = {
 	option = {
 		name = MSMIndia.1.a
 		ai_chance = { factor = 100 }
+		news_event = {id = MSMIndiaNews.1}
 	set_global_flag = nepalhasinvadedindia
 ENG = {end_puppet = NEP end_puppet = BHU}
 NEP = {puppet = BHU}
@@ -102,6 +104,10 @@ country_event = {
     producer = RAJ
 	}
 	}
+	640 = {create_unit = {
+    division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = BRM
+}}
 	AFG = {
 	transfer_state = 445
 	transfer_state = 442
@@ -132,6 +138,10 @@ country_event = {
     producer = RAJ
 	}
 	}
+	441 = {create_unit = {
+    division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = KAS
+}}
 	PUN = {
 	transfer_state = 440
 	inherit_technology = RAJ
@@ -141,6 +151,10 @@ country_event = {
     producer = RAJ
 	}
 	}
+	440 = {create_unit = {
+    division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = PUN
+}}
 	SIN = {
 	transfer_state = 443
 	inherit_technology = RAJ
@@ -150,6 +164,10 @@ country_event = {
     producer = RAJ
 	}
 	}
+	443 = {create_unit = {
+    division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = SIN
+}}
 	JAI = {
 	transfer_state = 433
 	inherit_technology = RAJ
@@ -159,6 +177,10 @@ country_event = {
     producer = RAJ
 	}
 	}
+	433 = {create_unit = {
+    division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = JAI
+}}
 	BAR = {
 	transfer_state = 428
 	inherit_technology = RAJ
@@ -168,6 +190,10 @@ country_event = {
     producer = RAJ
 	}
 	}
+	428 = {create_unit = {
+    division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = BAR
+}}
 	IDO = {
 	transfer_state = 437
 	inherit_technology = RAJ
@@ -177,6 +203,10 @@ country_event = {
     producer = RAJ
 	}
 	}
+	437 = {create_unit = {
+    division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = IDO
+}}
 	BAN = {
 	transfer_state = 430
 	inherit_technology = RAJ
@@ -186,6 +216,10 @@ country_event = {
     producer = RAJ
 	}
 	}
+	430 = {create_unit = {
+    division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = BAN
+}}
 	ASM = {
 	transfer_state = 432
 	inherit_technology = RAJ
@@ -195,6 +229,10 @@ country_event = {
     producer = RAJ
 	}
 	}
+	432 = {create_unit = {
+    division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = ASM
+}}
 	MYS = {
 	transfer_state = 425
 	inherit_technology = RAJ
@@ -204,6 +242,10 @@ country_event = {
     producer = RAJ
 	}
 	}
+	425 = {create_unit = {
+    division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = MYS
+}}
 	TRA = {
 	transfer_state = 423
 	inherit_technology = RAJ
@@ -212,6 +254,10 @@ country_event = {
     amount = 500
     producer = RAJ
 	}
+	423 = {create_unit = {
+    division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = TRA
+}}
 	}
 	DEL = {
 	transfer_state = 439
@@ -245,12 +291,6 @@ country_event = {
 	transfer_state = 429
 	inherit_technology = RAJ
 	change_tag_from = RAJ
-	load_oob = "HYD"
-	add_equipment_to_stockpile = {
-    type = infantry_equipment
-    amount = 500
-    producer = RAJ
-	} 
 	}
 	RAJ = {
 			every_unit_leader = {
@@ -290,6 +330,12 @@ set_autonomy = {
     target = RAJ
     transfer_troops = yes
     }
+	load_oob = "HYD"
+	add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 500
+    producer = RAJ
+	} 
 	}
 	set_global_flag = indiacollapsed
 	}
@@ -342,7 +388,7 @@ country_event = {
 		ai_chance = { factor = 100 }
 		set_cosmetic_tag = India
 		add_country_leader_trait = MSM_Chhatrapati
-		every_state = {limit = {or = {is_core_of = RAJ is_core_of = PAK is_core_of = BRM}} add_claim_by = Root}
+		every_state = {limit = {or = {is_core_of = RAJ is_core_of = PAK }} add_claim_by = Root}
 		every_state = {limit = {is_core_of = DEL} add_core_of = Root}
 		set_country_flag = indianhegemon
 		custom_effect_tooltip = newfocus
@@ -519,3 +565,31 @@ country_event = {
 		ai_chance = { factor = 0 }
 }
 }
+news_event = {
+	id = MSMIndiaNews.1 #Nepal Leaves Britain
+	title = MSMIndiaNews.1.t
+	desc = MSMIndiaNews.1.d
+	picture = 
+	is_triggered_only = yes
+	option = {
+		name = MSMIndiaNews.1.a # Entente Response
+		ai_chance = { factor = 100 }
+		trigger = {is_in_faction_with = ENG}
+	}
+	option = {
+		name = MSMIndiaNews.1.b # Nepalese Response
+		ai_chance = { factor = 100 }
+		trigger = { tag = NEP }
+	}
+	option = {
+		name = MSMIndiaNews.1.c # Central Powers Response
+		ai_chance = { factor = 100 }
+		trigger = {is_in_faction_with = GER not = {tag = NEP}}
+	}
+	option = {
+		name = MSMIndiaNews.1.d # World Response
+		ai_chance = { factor = 100 }
+		trigger = {not = { is_in_faction_with = ENG is_in_faction_with = GER tag = NEP}}}
+	}
+	
+

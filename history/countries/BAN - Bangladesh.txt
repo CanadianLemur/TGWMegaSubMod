@@ -1,4 +1,4 @@
-﻿capital=425
+﻿capital=430
 set_technology = { 
 	light_field_gun1 = 1	 
 	heavy_field_gun1=1
@@ -127,9 +127,8 @@ set_popularities = {
 set_stability=0.45
 set_convoys=20
 1910.1.1 = {
-	create_country_leader={ name = "Krishnaraja Wadiyar IV"
-	picture="gfx/leaders/MYS_Krishnaraja_Wadiyar.dds" 
-	expire="1940.7.3" 
-	ideology=despotism 
-	traits={  } }
+	create_country_leader={ name = "Khwaja Habibullah Bahadur" 
+	picture="gfx/leaders/BAN_habibullah_khwaja.dds" 
+	expire="1958.1.1" 
+	ideology=despotism traits={  } }
 }

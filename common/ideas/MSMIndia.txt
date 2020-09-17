@@ -2,7 +2,7 @@ ideas={
 	country = {
 		MSM_grand_coalition = {
 
-			picture = 
+			picture = neutrality_idea
 				
 			allowed = {
 			has_country_flag = recruited_muhammad_ali_jinnah

@@ -24,7 +24,6 @@ focus_tree = {
 		id = MSM_IND_indian_diet
 		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = MSM_IND_indian_hegemon }
-		allow_branch = {has_country_flag = indianhegemon}
 		completion_reward = {
 		add_stability = 0.1
 		}

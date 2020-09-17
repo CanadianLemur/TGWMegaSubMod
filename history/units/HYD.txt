@@ -22,27 +22,27 @@ units = {
 		division_name = {
 		}
 		location = 8087
-		division_template = "1st Infantry"
+		division_template = "Nizams Infantry"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
 
 	}
 	division = { 
 		division_name = {
 		}
 		location = 8087
-		division_template = "2nd Infantry"
+		division_template = "Nizams Infantry"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
 
 	}
 	division = { 
 		division_name = {
 		}
 		location = 8087
-		division_template = "3rd Infantry"
+		division_template = "Nizams Infantry"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
 
 	}
 }

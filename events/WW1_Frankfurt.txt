@@ -439,19 +439,19 @@ country_event = {
 					transfer_state = 634		# Solomon Islands, part of the state was actually part of Germany before the war too (By Khanor)
 				}
 			}
-
-			#Austria-Hungary is in Central Powers
 			if = {
 				limit = {
+					ENG = { owns_state = 333 }	### If North Borneo is owned by the UK
 					ENG = {
-						has_war_with = AUH
+						has_war_with = GER
 					}
 				}
-				AUH = {
+				GER = {
 					transfer_state = 333		# North Borneo
 				}
 			}
 
+			#Austria-Hungary is in Central Powers
 			if = {
 				limit = {
 					AUH = {
