@@ -10,6 +10,7 @@ state={
 		}
 	history={
 		owner=RAJ
+		victory_points={ 2054 1 }
 		add_core_of=RAJ
 		add_core_of=JAI
 		1936.1.1={ 

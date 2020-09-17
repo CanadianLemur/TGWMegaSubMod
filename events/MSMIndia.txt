@@ -85,6 +85,13 @@ country_event = {
 	option = {
 		name = MSMIndia.4.a
 		ai_chance = { factor = 100 }
+	ENG = {
+	add_timed_idea = {
+    idea = MSM_loss_of_india
+    days = 360
+}
+	
+	}
 	BRM = {
 	transfer_state = 640
 	transfer_state = 288
@@ -319,7 +326,7 @@ country_event = {
 		every_state = {limit = {or = {is_core_of = RAJ is_core_of = PAK }} add_claim_by = Root}
 		every_state = {limit = {is_core_of = HYD} add_core_of = Root}
 		set_country_flag = indianhegemon
-		load_focus_tree = indianhegemon_focus
+		custom_effect_tooltip = newfocus
 	}	
 }
 # Indian Hegemony Achieved - Hyderabad
@@ -338,6 +345,7 @@ country_event = {
 		every_state = {limit = {or = {is_core_of = RAJ is_core_of = PAK is_core_of = BRM}} add_claim_by = Root}
 		every_state = {limit = {is_core_of = DEL} add_core_of = Root}
 		set_country_flag = indianhegemon
+		custom_effect_tooltip = newfocus
 	}	
 }
 # Indian Hegemon Demands Vassalization
@@ -362,4 +370,152 @@ country_event = {
 }
 	}		
 }
-
+#AIML Negotiations
+country_event = {
+	id =  MSMIndia.500
+	title = MSMIndia.500.t
+	desc = MSMIndia.500.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = MSMIndia.500.a # accept muslim demands
+		ai_chance = { factor = 100 }
+		set_country_flag=recruited_muhammad_ali_jinnah
+		add_ideas = MSMIND_muhammad_ali_jinnah
+	}
+	option = {
+		name = MSMIndia.500.b # refuse muslim demands
+		ai_chance = { factor = 0 }
+}
+}
+#SAD Negotiations
+country_event = {
+	id =  MSMIndia.501
+	title = MSMIndia.501.t
+	desc = MSMIndia.501.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = MSMIndia.501.a # accept sikh demands
+		ai_chance = { factor = 100 }
+		set_country_flag=recruited_tara_singh
+		add_ideas = MSMIND_tara_singh
+	}
+	option = {
+		name = MSMIndia.501.b # refuse sikh demands
+		ai_chance = { factor = 0 }
+}
+}
+#INC Negotiations
+country_event = {
+	id =  MSMIndia.502
+	title = MSMIndia.502.t
+	desc = MSMIndia.502.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = MSMIndia.502.a # accept hindu demands
+		ai_chance = { factor = 100 }
+		set_country_flag=recruited_gandhi
+		add_ideas = MSMIND_gandhi
+	}
+	option = {
+		name = MSMIndia.502.b # refuse hindu demands
+		ai_chance = { factor = 0 }
+}
+}
+# Indian Hegemon decides approach to european ports
+country_event = {
+	id =  MSMIndia.9
+	title = MSMIndia.9.t
+	desc = MSMIndia.9.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = MSMIndia.9.a # offer to purchase them
+		ai_chance = { factor = 100 }
+	}
+	option = {
+		name = MSMIndia.9.b # prepare operations to seize them and risk war
+		ai_chance = { factor = 0 }
+}
+}
+# Indian Hegemon offers to buy european port
+country_event = {
+	id =  MSMIndia.10
+	title = MSMIndia.10.t
+	desc = MSMIndia.10.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = MSMIndia.10.a # accept to sell the port
+		ai_chance = { factor = 50 }
+		FROM = {country_event = {id = MSMIndia.11}}
+	}
+	option = {
+		name = MSMIndia.10.a # use the port as leverage in a trade agreement
+		ai_chance = { factor = 40 }
+		FROM = {country_event = {id = MSMIndia.12}}
+	}
+	option = {
+		name = MSMIndia.10.b # refuse to sell the port
+		ai_chance = { factor = 10 }
+		FROM = {country_event = {id = MSMIndia.13}}
+}
+}
+# european power accepts purchase
+country_event = {
+	id =  MSMIndia.11
+	title = MSMIndia.11.t
+	desc = MSMIndia.11.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = MSMIndia.11.a 
+		ai_chance = { factor = 100 }
+	}
+}
+# european power uses purchase as leverage
+country_event = {
+	id =  MSMIndia.12
+	title = MSMIndia.12.t
+	desc = MSMIndia.12.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = MSMIndia.12.a 
+		ai_chance = { factor = 100 }
+	}
+}
+# european power refuses to sell port
+country_event = {
+	id =  MSMIndia.13
+	title = MSMIndia.13.t
+	desc = MSMIndia.13.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = MSMIndia.13.a #pursue alternative solutions
+		ai_chance = { factor = 50 }
+	}
+	option = {
+		name = MSMIndia.13.b #we will pester them no longer
+		ai_chance = { factor = 50 }
+	}
+}
+# Indian Hegemon decides approach to southern islands
+country_event = {
+	id =  MSMIndia.15
+	title = MSMIndia.15.t
+	desc = MSMIndia.15.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = MSMIndia.15.a # offer to purchase them
+		ai_chance = { factor = 100 }
+	}
+	option = {
+		name = MSMIndia.15.b # prepare operations to seize them and almost certainly end up at war
+		ai_chance = { factor = 0 }
+}
+}

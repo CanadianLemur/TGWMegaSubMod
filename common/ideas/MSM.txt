@@ -26,6 +26,7 @@ ideas = {
 				mic_to_target_factor = 0.10
 			}
 		}
+
 		msm_neutrality_idea = {
 
 			picture = "GFX_Generic_neutrality_focus"

@@ -30,7 +30,7 @@ indian_affairs = {
 			    available = {
 				FROM = { has_war = NO 	compare_autonomy_state < autonomy_puppet	}
 				}
-			days = 120
+			days_remove = 120
 			remove_effect = {
 			annex_country = {
 			target = FROM
@@ -54,7 +54,7 @@ indian_affairs = {
 	visible = {
 	original_tag = NEP
 	OR = {FROM = {is_core_of=RAJ} FROM = {is_core_of=PAK}}
-	FROM = {is_owned_and_controlled_by = ROOT}	
+	FROM = {is_owned_and_controlled_by = ROOT NOT = {is_core_of=ROOT}}	
 	}
 	allowed = {
 		original_tag = NEP
@@ -65,7 +65,7 @@ indian_affairs = {
 	has_stability >0.5
 	FROM ={compliance > 80 }
 	}
-	complete_effect = {
+	complete_effect = { 
 	add_stability = -0.05 
 	}
 	remove_effect = {

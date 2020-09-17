@@ -1,0 +1,37 @@
+scripted_gui = {
+    MSMAchievements = {
+        window_name = Achievements
+        context_type = <type>
+        parent_window_token = <string>
+         
+        visible = {
+            <triggers>
+        }
+        
+        effects = {
+            <element>_click = {
+                <effects>
+            }
+            <element>_<modifier>_click = {
+                <effects>
+            }
+        }
+        
+        triggers = {
+            <element>_click_enabled = {
+                <triggers>
+            }
+            <element>_visible = {
+                <triggers>
+            }
+        }
+        
+        properties = {
+            <element> = {
+                image = 
+                x = 500
+                y = 500
+            }
+        }
+    }
+}

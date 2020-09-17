@@ -11,6 +11,7 @@ state={
 		owner=RAJ
 		add_core_of = PAK
 		add_core_of=PUN
+		victory_points={ 12005 5 }
 		1936.1.1={ 
 			owner=RAJ
 			add_core_of = PAK

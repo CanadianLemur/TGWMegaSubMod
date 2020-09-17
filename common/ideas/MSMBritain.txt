@@ -1,0 +1,18 @@
+ideas={
+	country = {
+		MSM_loss_of_india = {
+
+			picture = 
+				
+			removal_cost = -1
+				
+			modifier = {
+				political_power_gain = -2.50
+				war_support_weekly = -0.001
+				stability_weekly = -0.003
+				resistance_target = 0.10
+			}
+				
+		}
+	}
+}
