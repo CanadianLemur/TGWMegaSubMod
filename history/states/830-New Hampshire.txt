@@ -1,0 +1,30 @@
+state={
+	id=830
+	name="STATE_830"
+	manpower=8404713
+	state_category=metropolis
+	buildings_max_level_factor=1.000
+	provinces={ 3715 3712 733 10481 }
+	resources={
+		wood=0
+		steel=30
+	}
+	history={
+		owner=USA
+		add_core_of=USA
+		add_core_of=NWN
+		1936.1.1={ 
+			owner=USA
+			add_core_of=USA
+			add_core_of=NWN
+			buildings={
+				infrastructure=6
+				industrial_complex=1
+			}
+		}
+		buildings={
+			infrastructure=7
+			industrial_complex=1
+		}
+	}
+}
