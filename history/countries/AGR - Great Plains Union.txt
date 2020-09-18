@@ -1,0 +1,31 @@
+﻿capital = 393
+
+#-------------------------------------------------------
+#					GENERIC VALUES
+#-------------------------------------------------------
+set_fuel_ratio = 0.33
+set_research_slots = 3
+set_stability = 0.6
+set_war_support = 0.75
+set_convoys = 20
+
+#-------------------------------------------------------
+#					POLITICS & ARMY
+#-------------------------------------------------------
+1910.1.1 = {
+create_country_leader={ name = "John J. Pershing" 
+traits = {MSM_great_plains_protector}
+picture="gfx/hoi4tgw_portraits/USA/army_generals/USA_John_Pershing.dds" expire="1948.1.1" ideology=despotism traits={  } }
+	set_politics = {
+	    ruling_party = neutrality
+	    last_election = "1910.1.1"
+	    election_frequency = 48
+	    elections_allowed = no
+	}
+	set_popularities = {
+	    democratic = 10
+	    fascism = 10
+	    communism = 0
+	    neutrality = 80
+	}
+}

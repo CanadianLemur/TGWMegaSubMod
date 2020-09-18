@@ -569,7 +569,6 @@ news_event = {
 	id = MSMIndiaNews.1 #Nepal Leaves Britain
 	title = MSMIndiaNews.1.t
 	desc = MSMIndiaNews.1.d
-	picture = 
 	is_triggered_only = yes
 	option = {
 		name = MSMIndiaNews.1.a # Entente Response

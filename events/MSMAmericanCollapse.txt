@@ -1,14 +1,309 @@
 add_namespace = MSMAmericanCollapse
-# American Collapse
+# American Collapse 1 Western States Secede
 country_event = {
 	id =  MSMAmericanCollapse.1
 	title = MSMAmericanCollapse.1.t
 	desc = MSMAmericanCollapse.1.d
 	picture = GFX_report_event_generic_read_write
 	fire_only_once = yes
-	trigger =  USA = {has_stability > 0.3}
+	trigger =  {USA = {has_stability > 0.3}}
+	immediate = {
+	CAL = {inherit_technology = USA}
+	CLM = {inherit_technology = USA}
+	DES = {inherit_technology = USA}
+	if = {limit {USA = {owns_state = 378}} CAL = {transfer_state =378} }
+	if = {limit {USA = {owns_state = 379}} DES = {transfer_state =379} }
+	if = {limit {USA = {owns_state = 380}} DES = {transfer_state =380} }
+	if = {limit {USA = {owns_state = 386}} CLM = {transfer_state =386} }
+	if = {limit {USA = {owns_state = 385}} CLM = {transfer_state =385} }
+	if = {limit {USA = {owns_state = 387}} CLM = {transfer_state =387} }
+	if = { limit = {country_exists = CAL} USA = {
+	transfer_units_fraction= {
+    target = CAL
+    size = 0.5
+    stockpile_ratio = 0.1
+    army_ratio = 0.1
+    navy_ratio = 0.2
+    air_ratio = 0.1
+    }}}
+	if = { limit = {country_exists = CLM} USA = {
+	transfer_units_fraction= {
+    target = CLM
+    size = 0.5
+    stockpile_ratio = 0.1
+    army_ratio = 0.1
+    navy_ratio = 0.1
+    air_ratio = 0.1
+    }}}
+	if = { limit = {country_exists = DES} USA = {
+	transfer_units_fraction= {
+    target = DES
+    size = 0.5
+    stockpile_ratio = 0.1
+    army_ratio = 0.1
+    navy_ratio = 0
+    air_ratio = 0.1
+    }}}
+	
+
+	USA = {country_event = {id = MSMAmericanCollapse.2 days = 3}}
+	}
 	option = {
 		name = MSMAmericanCollapse.1.a
+		ai_chance = { factor = 0 }
+		CAL = {change_tag_from = USA}
+	}
+	option = {
+		name = MSMAmericanCollapse.1.b
+		ai_chance = { factor = 0 }
+		DES = {change_tag_from = USA}
+	}
+	option = {
+		name = MSMAmericanCollapse.1.c
+		ai_chance = { factor = 0 }
+		CLM = {change_tag_from = USA}
+	}
+	option = {
+		name = MSMAmericanCollapse.1.d
+		ai_chance = { factor = 100 }
+	}
+	}
+	
+# American Collapse 2 Natives and Texas Secede
+country_event = {
+	id =  MSMAmericanCollapse.2
+	title = MSMAmericanCollapse.2.t
+	desc = MSMAmericanCollapse.2.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+	USA = {country_event = {id = MSMAmericanCollapse.3 days = 3}}
+			if = {limit {USA = {owns_state = 374}} CHK = {transfer_state =374} }
+			if = {limit {USA = {owns_state = 375}} TEX = {transfer_state =375} }
+			if = {limit {USA = {owns_state = 376}} NVJ = {transfer_state =376} }
+			if = {limit {USA = {owns_state = 377}} NVJ = {transfer_state =377} }
+			if = { limit = {country_exists = TEX} USA = {
+	transfer_units_fraction= {
+    target = TEX
+    size = 0.5
+    stockpile_ratio = 0.1
+    army_ratio = 0.1
+    navy_ratio = 0.1
+    air_ratio = 0.1
+    }}}
+	CHK = {inherit_technology = USA}
+	TEX = {inherit_technology = USA}
+	NVJ = {inherit_technology = USA}
+		}
+	option = {
+		name = MSMAmericanCollapse.2.a
+		ai_chance = { factor = 0 }
+		CHK = {change_tag_from = USA}
+		}
+	option = {
+		name = MSMAmericanCollapse.2.b
+		ai_chance = { factor = 0 }
+		NVJ = {change_tag_from = USA}
+		}
+	option = {
+		name = MSMAmericanCollapse.2.c
+		ai_chance = { factor = 0 }
+		TEX = {change_tag_from = USA}
+		}
+	option = {
+		name = MSMAmericanCollapse.2.d
+		ai_chance = { factor = 100 }
+		}
+		}
+# American Collapse 3 Phillipines Hawaii, and Puerto Rico Declare Independence 
+# Japanese Seize Guam
+country_event = {
+	id =  MSMAmericanCollapse.3
+	title = MSMAmericanCollapse.3.t
+	desc = MSMAmericanCollapse.3.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+	USA = {country_event = {id = MSMAmericanCollapse.4 days = 3}}
+	if = {limit {USA = {owns_state = 638}} JAP = {transfer_state =638} }
+	if = {limit {USA = {owns_state = 623}} PHI = {transfer_state =623} }
+	if = {limit {USA = {owns_state = 327}} PHI = {transfer_state =327} }
+	if = {limit {USA = {owns_state = 624}} PHI = {transfer_state =624} }
+	if = {limit {USA = {owns_state = 625}} PHI = {transfer_state =625} }
+	if = {limit {USA = {owns_state = 627}} PHI = {transfer_state =627} }
+	if = {limit {USA = {owns_state = 628}} PHI = {transfer_state =628} }
+	if = {limit {USA = {owns_state = 626}} PHI = {transfer_state =626} }
+	if = {limit {USA = {owns_state = 632}} HAW = {transfer_state =632} }	
+	if = {limit {USA = {owns_state = 630}} HAW = {transfer_state =630} }	
+	if = {limit {USA = {owns_state = 631}} HAW = {transfer_state =631} }	
+	if = {limit {USA = {owns_state = 629}} HAW = {transfer_state =629} }	
+	if = {limit {USA = {owns_state = 642}} HAW = {transfer_state =642} }
+	if = {limit {USA = {owns_state = 727}} HAW = {transfer_state =727} }
+	if = {limit {USA = {owns_state = 686}} PUE = {transfer_state =686} }
+	if = {limit {USA = {owns_state = 750}} PUE = {transfer_state =750} }		
+	PHI = {inherit_technology = USA}
+	HAW = {inherit_technology = USA}
+	}
+	option = {
+		name = MSMAmericanCollapse.3.a
 		ai_chance = { factor = 100 }
 		
+	}
+	}
+# American Collapse 4 Alaskan Governor Joins Canada and New England Secedes
+country_event = {
+	id =  MSMAmericanCollapse.4
+	title = MSMAmericanCollapse.4.t
+	desc = MSMAmericanCollapse.4.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+	USA = {country_event = {id = MSMAmericanCollapse.5 days = 3}}
+	if = {limit {USA = {owns_state = 463}} CAN = {transfer_state =463} }
+	if = {limit {USA = {owns_state = 650}} CAN = {transfer_state =650} }
+	if = {limit {USA = {owns_state = 832}} NWN = {transfer_state =832} }
+	if = {limit {USA = {owns_state = 831}} NWN = {transfer_state =831} }
+	if = {limit {USA = {owns_state = 830}} NWN = {transfer_state =830} }
+	if = {limit {USA = {owns_state = 829}} NWN = {transfer_state =829} }
+	if = {limit {USA = {owns_state = 357}} NWN = {transfer_state =357} }
+	if = {limit {USA = {owns_state = 827}} NWN = {transfer_state =827} }
+	if = {limit {USA = {owns_state = 828}} NWN = {transfer_state =828} }
+	NWN = {inherit_technology = USA}
+				if = { limit = {country_exists = NWN} USA = {
+	transfer_units_fraction= {
+    target = NWN
+    size = 0.5
+    stockpile_ratio = 0.1
+    army_ratio = 0.2
+    navy_ratio = 0.2
+    air_ratio = 0.2
+    }}}
+	}
+	option = {
+		name = MSMAmericanCollapse.4.a
+		ai_chance = { factor = 100 }
+		
+	}
+	}
+# American Collapse 5 Guantanamo Bay Lease Revoked and Panama Canal Seized
+country_event = {
+	id =  MSMAmericanCollapse.5
+	title = MSMAmericanCollapse.5.t
+	desc = MSMAmericanCollapse.5.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+	USA = {country_event = {id = MSMAmericanCollapse.6 days = 3}}
+	if = {limit {USA = {owns_state = 819}} CUB = {transfer_state =819} }
+	}
+	option = {
+		name = MSMAmericanCollapse.5.a
+		ai_chance = { factor = 100 }
+		
+	}
+	}
+# American Collapse 6 Plains States Secede
+country_event = {
+	id =  MSMAmericanCollapse.6
+	title = MSMAmericanCollapse.6.t
+	desc = MSMAmericanCollapse.6.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+	USA = {country_event = {id = MSMAmericanCollapse.7 days = 3}}
+	if = {limit {USA = {owns_state = 373}} AGR = {transfer_state =373} }
+	if = {limit {USA = {owns_state = 392}} AGR = {transfer_state =392} }
+	if = {limit {USA = {owns_state = 391}} AGR = {transfer_state =391} }
+	if = {limit {USA = {owns_state = 383}} AGR = {transfer_state =383} }
+	if = {limit {USA = {owns_state = 384}} AGR = {transfer_state =384} }
+	if = {limit {USA = {owns_state = 390}} AGR = {transfer_state =390} }
+	if = {limit {USA = {owns_state = 389}} AGR = {transfer_state =389} }
+	if = {limit {USA = {owns_state = 388}} AGR = {transfer_state =388} }
+	if = {limit {USA = {owns_state = 381}} AGR = {transfer_state =381} }
+	if = {limit {USA = {owns_state = 382}} AGR = {transfer_state =382} }
+				if = { limit = {country_exists = AGR} USA = {
+	transfer_units_fraction= {
+    target = AGR
+    size = 0.5
+    stockpile_ratio = 0.3
+    army_ratio = 0.3
+    navy_ratio = 0.0
+    air_ratio = 0.3
+    }}}
+	AGR = {inherit_technology = USA}
+	}
+	option = {
+		name = MSMAmericanCollapse.6.a
+		ai_chance = { factor = 100 }
+		
+	}
+	}
+# American Collapse 7 South Secedes and Ford Declares the Industrial Union State
+country_event = {
+	id =  MSMAmericanCollapse.7
+	title = MSMAmericanCollapse.7.t
+	desc = MSMAmericanCollapse.7.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+	if = {limit {USA = {owns_state = 372}} CFS = {transfer_state =372} }
+	if = {limit {USA = {owns_state = 371}} CFS = {transfer_state =371} }
+	if = {limit {USA = {owns_state = 370}} CFS = {transfer_state =370} }
+	if = {limit {USA = {owns_state = 368}} CFS = {transfer_state =368} }
+	if = {limit {USA = {owns_state = 367}} CFS = {transfer_state =367} }
+	if = {limit {USA = {owns_state = 363}} CFS = {transfer_state =363} }
+	if = {limit {USA = {owns_state = 362}} CFS = {transfer_state =362} }
+	if = {limit {USA = {owns_state = 364}} CFS = {transfer_state =364} }
+	if = {limit {USA = {owns_state = 365}} CFS = {transfer_state =365} }
+	if = {limit {USA = {owns_state = 366}} CFS = {transfer_state =366} }
+	if = {limit {USA = {owns_state = 394}} IUS = {transfer_state =394} }
+	if = {limit {USA = {owns_state = 395}} IUS = {transfer_state =395} }
+	if = {limit {USA = {owns_state = 396}} IUS = {transfer_state =396} }
+	if = {limit {USA = {owns_state = 369}} IUS = {transfer_state =369} }
+	if = {limit {USA = {owns_state = 261}} IUS = {transfer_state =261} }
+	CFS = {inherit_technology = USA}
+	IUS = {inherit_technology = USA}
+	USA = {
+			every_unit_leader = {
+				set_nationality = IUS
+			}
+		}
+	if = { limit = {country_exists = CFS} USA = {
+	transfer_units_fraction= {
+    target = CFS
+    size = 0.5
+    stockpile_ratio = 0.5
+    army_ratio = 0.5
+    navy_ratio = 0.5
+    air_ratio = 0.5
+    }}}}
+	option = {
+		name = MSMAmericanCollapse.7.a
+		ai_chance = { factor = 100 }
+		IUS = {change_tag_from = USA}
+		
+		
+		IUS = {annex_country = {
+			target = USA
+			transfer_troops = yes
+			} 
+		}
+	}
+	option = {
+		name = MSMAmericanCollapse.7.b
+		ai_chance = { factor = 100 }
+		CFS = {change_tag_from = USA}
+		IUS = {	annex_country = {
+			target = USA
+			transfer_troops = yes
+			} 
+		}
+
+	}
 	}
