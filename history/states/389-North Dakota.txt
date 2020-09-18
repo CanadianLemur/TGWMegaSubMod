@@ -1,29 +1,27 @@
 state={
-	id=377
-	name="STATE_377"
-	manpower = 435572
+	id=389
+	name="STATE_389"
+	manpower = 680844
 	state_category=rural
-	provinces={ 850 853 1793 3834 4796 6897 7747 7821 7920 8115 10573 10783 11814 12765 }
+	provinces={ 1752 1836 1870 3719 4759 4772 6722 7877 10685 10709 12566 12685 }
 	resources={
 		wood=0
 		oil=10
-		aluminium=31
-		steel=61
+		steel=37
 		}
 	history={
-		victory_points={ 853 3 }
+		victory_points={ 1836 1 }
 		owner=USA
 		add_core_of=USA
-		add_core_of=NVJ
+		add_core_of=AGR
 		1936.1.1={ 
 			owner=USA
 			add_core_of=USA
-			add_core_of=NVJ
-			victory_points={ 853 3 }
+			add_core_of=AGR
+			victory_points={ 1836 1 }
 			buildings={
 				infrastructure=4
 				industrial_complex=1
-				air_base=2
 				}
 			}
 		buildings={

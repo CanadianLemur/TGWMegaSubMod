@@ -1,4 +1,4 @@
-﻿capital = 363
+﻿capital = 362
 
 #-------------------------------------------------------
 #					GENERIC VALUES
@@ -13,4 +13,16 @@ set_convoys = 20
 #					POLITICS & ARMY
 #-------------------------------------------------------
 1910.1.1 = {
+	set_politics = {
+	    ruling_party = fascism
+	    last_election = "1912.11.5"
+	    election_frequency = 48
+	    elections_allowed = yes
+	}
+	set_popularities = {
+	    democratic = 10
+	    fascism = 80
+	    communism = 10
+	    neutrality = 0
+	}
 }
