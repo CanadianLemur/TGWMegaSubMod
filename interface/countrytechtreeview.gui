@@ -78,7 +78,7 @@ guiTypes = {
 				
 				instantTextBoxType = {
 					name = "infantry_subtitle_specialists"
-					position = { x = 30 y = 990 }
+					position = { x = 30 y = 1095 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = { x = 0 y = 0}
@@ -96,6 +96,20 @@ guiTypes = {
 					font = "hoi_33"
 					borderSize = { x = 0 y = 0}
 					text = "INFANTRY_TITLE_MOTORISED"
+
+					maxWidth = 600
+					maxHeight = 62
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+				
+				instantTextBoxType = {
+					name = "infantry_subtitle_armored_car"
+					position = { x = 30 y = 970 }
+					textureFile = ""
+					font = "hoi_33"
+					borderSize = { x = 0 y = 0}
+					text = "ARMORED CARS"
 
 					maxWidth = 600
 					maxHeight = 62
@@ -406,28 +420,37 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "marines_tree"
-				position = { x = 140 y = 1075 }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
-			}
-
-			gridboxtype = {
-				name = "tech_mountaineers_tree"
 				position = { x = 140 y = 1180 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 
 			gridboxtype = {
+				name = "tech_mountaineers_tree"
+				position = { x = 140 y = 1285 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+
+			gridboxtype = {
 				name = "ww1_bomber1_tree"
-				position = { x = 560 y = 1285 }
+				position = { x = 560 y = 1390 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 
 			gridboxtype = {
 				name = "paratroopers_tree"
-				position = { x = 140 y = 1285 }
+				position = { x = 140 y = 1390 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+			
+			####MSM Armored Cars####
+			
+			gridboxtype = {
+				name = "ww1_armored_car_1_tree"
+				position = { x = 140 y = 750 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
@@ -1109,8 +1132,8 @@ guiTypes = {
 			}
 
 			gridboxtype = {
-				name = "gwtank_tree"
-				position = { x = 10% y = 172 }
+				name = "ww1_light_tank_tree"
+				position = { x = 10% y = 165 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
