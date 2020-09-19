@@ -1,10 +1,10 @@
 state={
-	id=740
-	name="STATE_740"
-	manpower = 259612
-	state_category=rural
+	id=739
+	name="STATE_739"
+	manpower=12684
+	state_category="small_island"
 	buildings_max_level_factor=1	
-	provinces={ 7259 1214 12259 12272 1420 }
+	provinces={ 1869 }
 	resources={
 		wood=0
 		}
@@ -12,17 +12,18 @@ state={
 		owner=CAN
 		add_core_of=CAN
 		add_core_of=CLM
-		victory_points= {7259 1}
 		1936.1.1={ 
 			owner=CAN
 			add_core_of=CAN
 			add_core_of=CLM
 			buildings={
-				infrastructure=2
+				infrastructure=1
+				1869={ naval_base=1  }
 				}
 			}
 		buildings={
-			infrastructure=2
+			infrastructure=1
+			1869={ naval_base=1  }
 			}
 		}
 	}

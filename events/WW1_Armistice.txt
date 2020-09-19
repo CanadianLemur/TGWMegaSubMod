@@ -418,7 +418,9 @@ news_event = {
 				add_state_core = 656
 				add_state_core = 676
 			}
-
+			DZG = {
+			transfer_state = 823
+			}
 			POL = {
 				transfer_state = 85
 				transfer_state = 86
@@ -437,6 +439,7 @@ news_event = {
 				add_state_core = 98
 				add_state_core = 10
 				add_state_core = 90
+				puppet = DZG
 			}
 
 			AUH = {
@@ -669,7 +672,9 @@ news_event = {
 				add_state_core = 184
 				add_state_core = 757
 			}
-
+			DZG = {
+			transfer_state = 823
+			}
 			POL = {
 				transfer_state = 90
 				transfer_state = 89
@@ -692,10 +697,69 @@ news_event = {
 				add_state_core = 97
 				add_state_core = 95
 				add_state_core = 96
+				puppet = DZG
 			}
-			
+			BAV = {
+			transfer_state = 52
+			}
 			GER = {
-				dismantle_faction = yes
+				dismantle_faction = yes	
+			transfer_units_fraction= {
+			target = BAV
+			size = 0.5
+			stockpile_ratio = 0
+			army_ratio = 1
+			navy_ratio = 0
+			air_ratio = 0
+			keep_unit_leaders_trigger = {
+			always = yes
+			}
+			}
+			annex_country = {
+			target = BAV
+			}
+			transfer_units_fraction= {
+			target = ENG
+			size = 0.5
+			stockpile_ratio = 0
+			army_ratio = 0
+			navy_ratio = 0.5
+			air_ratio = 0
+			keep_unit_leaders_trigger = {
+			always = yes
+			}
+		}
+		transfer_navy = {
+		target = FRA
+		}
+			transfer_units_fraction= {
+			target = ENG
+			size = 0.5
+			stockpile_ratio = 0.5
+			army_ratio = 0
+			navy_ratio = 0
+			air_ratio = 0.5
+			keep_unit_leaders_trigger = {
+			always = yes
+			}
+		}
+			transfer_units_fraction= {
+			target = ENG
+			size = 0.5
+			stockpile_ratio = 1
+			army_ratio = 0
+			navy_ratio = 0
+			air_ratio = 1
+			keep_unit_leaders_trigger = {
+			always = yes
+			}
+		}
+		add_ideas = { GER_interwar_spirit_BannedConscription		
+		disarmed_nation
+		civilian_economy
+		
+		
+		}
 			}
 			FRA = {
 				dismantle_faction = yes
