@@ -1,0 +1,51 @@
+add_namespace = MSMNewEngland
+# MSMNewEngland 1 New Englander Victory in Maritimes
+country_event = {
+	id =  MSMNewEngland.1
+	title = MSMNewEngland.1.t
+	desc = MSMNewEngland.1.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = MSMNewEngland.1.a 
+		ai_chance = { factor = 100 }
+		ROOT = {transfer_state = 465 transfer_state = 464}
+		}
+# MSMNewEngland 2 New Englander Defeat in Maritimes
+country_event = {
+	id =  MSMNewEngland.2
+	title = MSMNewEngland.2.t
+	desc = MSMNewEngland.2.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = MSMNewEngland.2.a 
+		ai_chance = { factor = 100 }
+		}
+# MSMNewEngland 3 Canadian Victory in Maritimes
+country_event = {
+	id =  MSMNewEngland.3
+	title = MSMNewEngland.3.t
+	desc = MSMNewEngland.3.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = MSMNewEngland.3.a 
+		ai_chance = { factor = 100 }
+		ROOT = { transfer_state = 832}
+		}
+# MSMNewEngland 4 Canadian Defeat in Maritimes
+country_event = {
+	id =  MSMNewEngland.4
+	title = MSMNewEngland.4.t
+	desc = MSMNewEngland.4.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = MSMNewEngland.4.a 
+		ai_chance = { factor = 100 }
+		}

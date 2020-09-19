@@ -29,6 +29,12 @@ leader_traits = {
 		army_core_attack_factor = 0.1
 		army_core_defence_factor = 0.1
 	}
-	
-
+	MSM_phillipines_dictator = {
+		stability_factor = 0.10
+		political_power_gain = 0.10
+	}
+	MSM_foreign_ruler = {
+		stability_factor = -0.20
+		political_power_gain = -0.50
+	}
 }

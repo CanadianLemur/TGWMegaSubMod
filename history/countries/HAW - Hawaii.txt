@@ -1,0 +1,45 @@
+﻿capital = 629
+
+#oob = ""
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_convoys = 20
+
+1910.1.1 = {
+create_country_leader = {
+	name = "David Kalakaua Kawananakoa"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_5.dds"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "David Kalakaua Kawananakoa"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_5.dds"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+	
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 38
+	fascism = 6
+	communism = 6
+	neutrality = 50
+}
+}

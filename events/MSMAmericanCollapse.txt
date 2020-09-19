@@ -8,6 +8,20 @@ country_event = {
 	fire_only_once = yes
 	trigger =  {USA = {has_stability > 0.3}}
 	immediate = {
+	 USA = {
+	 	random_unit_leader = {
+			limit = {
+				has_id = 93020
+			}
+			set_nationality = PHI
+		}
+	 	random_unit_leader = {
+			limit = {
+				has_id = 93284
+			}
+			set_nationality = AGR
+		}
+	 }
 	CAL = {inherit_technology = USA}
 	CLM = {inherit_technology = USA}
 	DES = {inherit_technology = USA}
@@ -143,8 +157,44 @@ country_event = {
 	if = {limit {USA = {owns_state = 727}} HAW = {transfer_state =727} }
 	if = {limit {USA = {owns_state = 686}} PUE = {transfer_state =686} }
 	if = {limit {USA = {owns_state = 750}} PUE = {transfer_state =750} }		
-	PHI = {inherit_technology = USA}
+	PHI = {inherit_technology = USA 
+	set_politics = {
+	ruling_party = neutrality
+	}
+	add_popularity = {
+    ideology = neutrality
+    popularity = 0.5
+}
+	create_country_leader = {
+	name = "Douglas MacArthur"
+	picture ="gfx/hoi4tgw_portraits/USA/army_generals/USA_Douglas_MacArthur.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = { MSM_phillipines_dictator MSM_foreign_ruler
+		
+	}
+}
+	}
+
 	HAW = {inherit_technology = USA}
+				if = { limit = {country_exists = HAW} USA = {
+	transfer_units_fraction= {
+    target = HAW
+    size = 0.5
+    stockpile_ratio = 0.1
+    army_ratio = 0.1
+    navy_ratio = 0.1
+    air_ratio = 0.1
+    }}}
+				if = { limit = {country_exists = PHI} USA = {
+	transfer_units_fraction= {
+    target = PHI
+    size = 0.5
+    stockpile_ratio = 0.1
+    army_ratio = 0.1
+    navy_ratio = 0.1
+    air_ratio = 0.1
+    }}}
 	}
 	option = {
 		name = MSMAmericanCollapse.3.a
@@ -199,6 +249,7 @@ country_event = {
 	immediate = {
 	USA = {country_event = {id = MSMAmericanCollapse.6 days = 3}}
 	if = {limit {USA = {owns_state = 819}} CUB = {transfer_state =819} }
+	if = {limit {USA = {owns_state = 685}} PAN = {transfer_state =685} }
 	}
 	option = {
 		name = MSMAmericanCollapse.5.a
@@ -269,6 +320,7 @@ country_event = {
 	if = {limit {USA = {owns_state = 261}} IUS = {transfer_state =261} }
 	CFS = {inherit_technology = USA}
 	IUS = {inherit_technology = USA}
+	CFS = {country_event = {id = MSMAmericanCollapse.8 days = 3}}
 	USA = {
 			every_unit_leader = {
 				set_nationality = IUS
@@ -305,5 +357,44 @@ country_event = {
 			} 
 		}
 
+	}
+	}
+# American Collapse 8 New Afrikan Peoples Republic Secedes
+country_event = {
+	id =  MSMAmericanCollapse.8
+	title = MSMAmericanCollapse.8.t
+	desc = MSMAmericanCollapse.8.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+	if = {limit {CFS = {owns_state = 372}} NAF = {transfer_state =372} }
+	if = {limit {CFS = {owns_state = 371}} NAF = {transfer_state =371} }
+	if = {limit {CFS = {owns_state = 370}} NAF = {transfer_state =370} }
+	NAF = {inherit_technology = CFS load_oob = "NAF"}
+	}
+	option = {
+		name = MSMAmericanCollapse.8.a
+		ai_chance = { factor = 80}
+		declare_war_on = {
+		target = NAF
+		type = annex_everything
+		}
+}
+	option = {
+		name = MSMAmericanCollapse.8.b
+		ai_chance = { factor = 0}
+		declare_war_on = {
+		target = NAF
+		type = annex_everything
+		}
+		NAF = {change_tag_from = CFS}
+
+
+	}
+	option = {
+		name = MSMAmericanCollapse.8.c #seek a compromise
+		ai_chance = { factor = 20}
+		puppet = NAF
 	}
 	}

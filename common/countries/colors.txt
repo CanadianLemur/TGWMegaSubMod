@@ -529,6 +529,14 @@ AGR = {
 	color = rgb { 130  40  130 }
 	color_ui = rgb { 130  40  130 }
 }
+NAF = {
+	color = rgb { 20  90  0 }
+	color_ui = rgb { 20  90  0 }
+}
+INS = {
+	color = rgb { 40  50  120 }
+	color_ui = rgb { 40  50  120 }
+}
 D01 = {
 	color = rgb { 187 80 86 }
 	color_ui = rgb { 243 103 112 }

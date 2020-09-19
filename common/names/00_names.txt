@@ -194,6 +194,7 @@ USA = {
 	callsigns = { "Goose" "Iceman" "Maverick" "Apollo" "Animal" "Boom-Boom" "Badger" "Brick" "Cajun" "Challenger" "Chip" "Eagle" "Ghost" "Hawk" "Jaws" "Moses" "Mad Dog"}
 }
 
+
 JAP = {
 	male = {
 		names = { 
@@ -2454,6 +2455,199 @@ BAN = {
 	surnames = { Nazimuddin Suhrawardy Huq Mujib Rahman Nazrul Ahmad Sattar Khan Chowdhury Ahmed Zia }
 	callsigns = { }	
 }
+
+#Maldives
+MLD = {
+	male = {
+		names = { 
+			Abbas Abdulla Ahmed Azneem Bodufenvalhuge Fathulla Hassan Husain Hussain Ibrahim Ilyas Imad Ismail Koimala Maumoon Mohamed Mohammed Moosa Muhammad Naushad Qasim Qazi Reeko Saikuraa Saleem Sultan Ustaz Visam
+		}
+	}
+	female = {
+		names = {
+			Afa Amina Aminath Dunya Fathimath Ilham Jennifer Laila Mariyam Naseema Nasrenna
+		}
+	}
+	surnames = {
+		Abdulla Ahmed Ali "Al Auzam" Deen Didi Faiz Faiza Faseeh Gayoom Hameed Hussain Ibrahim Ismail Jaleel Jameel "Kabafa'anu" Kilege Kilegefan Latheef Manik Marzooq Maumoon MOhamed Moosa Munawar Naeem Nasheed Nazim
+		Rasheed Saeed Salaahuddin Shaheed Shamaal Shamsuddin Shareef Shibab Shiyam Sidi Thukkala Ugail Waheed Zahir Zaki
+	}
+	callsigns = { }
+}
+
+#Fiji
+FIJ = {
+	male = {
+		names = { 
+			Anirudh Ballu Brij Dixon Epeli Faraz George Hari Imran Isikia Jeremaia Jesoni Josateki Lokeshani Kaliopate Paresh Poseci Rajesh Rajnesh Ram Sangeeta Satya Savenaca Sarojini Shivlal Taito Angelita Christine Gabrissa Greta Joanne Lanja Lovelite Margaret Marlene Millicent Olympia Reanna Sheba Sheeva Kaingaue Kaitinano Karitaake Keina Maere Makurita Nei Norma Taoriba Teekoa Tekarei Teresia Tessie Tio
+			Aleki Aputi Enele Haych Laini Laki Malosi Peleki Peniamina Petelo Semis Sinalei Taito Tuala Tusitala Uaine Uati Vaea Apisai Bikenibeu Faimalaga Fiatau Filoimea Ionatana Kamuta Koloa Lagitupu Maatia Saufatu Seve Solofa Toaripi Tomasi Tomu Tulaga Tupua 
+		}
+	}
+	female = {
+		names = {
+			Alamea Alaula Alika Elikapeka Halia Iokina Iolana Kailani Kalea Kamaile Kamea Kanoa Kawena Keala Keola Keona Kiele Kina
+			Kinipela Konane Lahela Lanai Lani Leiko Leilani Liliha Lilo Luana Mahina Maile Makana Makelina Malana Maleah Malia Mana
+			Miliani Moana Nalanie Napua Noelani Nohealani Okalani Onaona Palila Pilialoha Ulani
+		}
+	}
+	surnames = {
+		Ali "Bhagwan-Rolls" Bune Chandra Heffernan Iqbal Khan Konrote Kumar Lal Luveni Nagindas Nailatikau Nandan Narayan Nawalowalo Niranjan Pillay Punja Samisoni Savua Seeto Singh Siwatibau Tavola Toganivalu Vitusagavulu Waradi Adeang Aroi Brechtefeld Dagiero Deireragea Detenamo Detudamo Dowabobo Doweiya Dowiyogo Fritz Fusi Garabwan Gobure Hartman Harris Hendrie Kam Kun Moses Peo Peter Solomon Starr Stephen Thomas Uera Waibeiya Zacharias Baaro Baiteke Biniati Breckterfield Christopher David Dowiyogo Etita Iuta Karianako Katoatau Lambourne Makin Meme Mwemweata Nariki Nawai Russell Ruuka Tabaroua Takooa Tatonga Teaiwa Tekanene Tewaaki Thomas Tito Toromon Faapo Tino Vui Aveau Iusitinio Kini Keil Malielegaoi Lauofo Ropati Mauiliu Liuga Tultama Mataafa Tumaalii Pinati Lameko Leiataua Posala Apinelu Ielemia Ionatana Latasi Lauti Leupena Luka Manuella Paeniu Puapua Sione Sopoanga Talake Telito Teo Toafa Tuilimu Uota
+		Uan Yeeting
+		Waqanisau
+	}
+	callsigns = { }
+}
+
+#Tahiti
+TAH = {
+	male = {
+		names = { 
+			Aalona Ahulani Ainalani Akeakamai Alani Aluala Alealani Alohilani Anakalia Anuenue "'Ehukai" "'Ewalani" "Ha'aheo" Heleakala
+			Hanalei Hanohano "Hau'oli" "Hi'iaka" "Ho'okano" Hualani Ikepela "Ka'aukai" Kahananui Kaheleha Kaikea Kainalu Kalauokalani
+			Kaleoikaika Kamehu "Kameha'o" Kamehameha Kawaiola Kehaulani Kelupaina Keonoana Lanakila Lehuanani Lokelani Lono
+			Makaleka Makikonu Mauna Momilani Nohealani Polola Sanoe Ualani Uluwehi Wailani Waipuna Pili
+		}
+	}
+	female = {
+		names = {
+			Alamea Alaula Alika Elikapeka Halia Iokina Iolana Kailani Kalea Kamaile Kamea Kanoa Kawena Keala Keola Keona Kiele Kina
+			Kinipela Konane Lahela Lanai Lani Leiko Leilani Liliha Lilo Luana Mahina Maile Makana Makelina Malana Maleah Malia Mana
+			Miliani Moana Nalanie Napua Noelani Nohealani Okalani Onaona Palila Pilialoha Ulani
+		}
+	}
+	surnames = {
+		Aalona Ahulani Ainalani Akeakamai Alani Aluala Alealani Alohilani Anakalia Anuenue "'Ehukai" "'Ewalani" "Ha'aheo" Heleakala
+		Hanalei Hanohano "Hau'oli" "Hi'iaka" "Ho'okano" Hualani Ikepela "Ka'aukai" Kahananui Kaheleha Kaikea Kainalu Kalauokalani
+		Kaleoikaika Kamehu "Kameha'o" Kamehameha Kawaiola Kehaulani Kelupaina Keonoana Lanakila Lehuanani Lokelani Lono
+		Makaleka Makikonu Mauna Momilani Nohealani Polola Sanoe Ualani Uluwehi Wailani Waipuna Pili
+	}
+	callsigns = { }
+}
+
+#Micronesia
+FSM = {
+	male = {
+		names = { 
+			Akamu Aloha Alohilani Analu Aolani Aulani Aulii Feleti Inoke Iolani Ipo Iwalani Kai Kaili Kaipo Kalani Kale Kalei Kapena
+			Kapono Keahi Kealii Keani Keanu Keiki Kelii Keon Keoni Kimo Konala Liko Loe Lulani Makaio Makani Malo Mauli Mele Moke
+			Nalani Oke Palani Pekelo
+		}
+	}
+	female = {
+		names = {
+			Alamea Alaula Alika Elikapeka Halia Iokina Iolana Kailani Kalea Kamaile Kamea Kanoa Kawena Keala Keola Keona Kiele Kina
+			Kinipela Konane Lahela Lanai Lani Leiko Leilani Liliha Lilo Luana Mahina Maile Makana Makelina Malana Maleah Malia Mana
+			Miliani Moana Nalanie Napua Noelani Nohealani Okalani Onaona Palila Pilialoha Ulani
+		}
+	}
+	surnames = {
+			Aalona Ahulani Ainalani Akeakamai Alani Aluala Alealani Alohilani Anakalia Anuenue "'Ehukai" "'Ewalani" "Ha'aheo" Heleakala
+			Hanalei Hanohano "Hau'oli" "Hi'iaka" "Ho'okano" Hualani Ikepela "Ka'aukai" Kahananui Kaheleha Kaikea Kainalu Kalauokalani
+			Kaleoikaika Kamehu "Kameha'o" Kamehameha Kawaiola Kehaulani Kelupaina Keonoana Lanakila Lehuanani Lokelani Lono
+			Makaleka Makikonu Mauna Momilani Nohealani Polola Sanoe Ualani Uluwehi Wailani Waipuna 
+	}
+	callsigns = { }
+}
+
+#Guam
+GUM = {
+	male = {
+		names = { 
+			Akamu Aloha Alohilani Analu Aolani Aulani Aulii Feleti Inoke Iolani Ipo Iwalani Kai Kaili Kaipo Kalani Kale Kalei Kapena
+			Kapono Keahi Kealii Keani Keanu Keiki Kelii Keon Keoni Kimo Konala Liko Loe Lulani Makaio Makani Malo Mauli Mele Moke
+			Nalani Oke Palani Pekelo
+		}
+	}
+	female = {
+		names = {
+			Alamea Alaula Alika Elikapeka Halia Iokina Iolana Kailani Kalea Kamaile Kamea Kanoa Kawena Keala Keola Keona Kiele Kina
+			Kinipela Konane Lahela Lanai Lani Leiko Leilani Liliha Lilo Luana Mahina Maile Makana Makelina Malana Maleah Malia Mana
+			Miliani Moana Nalanie Napua Noelani Nohealani Okalani Onaona Palila Pilialoha Ulani
+		}
+	}
+	surnames = {
+			Aalona Ahulani Ainalani Akeakamai Alani Aluala Alealani Alohilani Anakalia Anuenue "'Ehukai" "'Ewalani" "Ha'aheo" Heleakala
+			Hanalei Hanohano "Hau'oli" "Hi'iaka" "Ho'okano" Hualani Ikepela "Ka'aukai" Kahananui Kaheleha Kaikea Kainalu Kalauokalani
+			Kaleoikaika Kamehu "Kameha'o" Kamehameha Kawaiola Kehaulani Kelupaina Keonoana Lanakila Lehuanani Lokelani Lono
+			Makaleka Makikonu Mauna Momilani Nohealani Polola Sanoe Ualani Uluwehi Wailani Waipuna 
+	}
+	callsigns = { }
+}
+
+#Solomon Islands
+SOL = {
+	male = {
+		names = { 
+			Akamu Aloha Alohilani Analu Aolani Aulani Aulii Feleti Inoke Iolani Ipo Iwalani Kai Kaili Kaipo Kalani Kale Kalei Kapena
+			Kapono Keahi Kealii Keani Keanu Keiki Kelii Keon Keoni Kimo Konala Liko Loe Lulani Makaio Makani Malo Mauli Mele Moke
+			Nalani Oke Palani Pekelo
+		}
+	}
+	female = {
+		names = {
+			Alamea Alaula Alika Elikapeka Halia Iokina Iolana Kailani Kalea Kamaile Kamea Kanoa Kawena Keala Keola Keona Kiele Kina
+			Kinipela Konane Lahela Lanai Lani Leiko Leilani Liliha Lilo Luana Mahina Maile Makana Makelina Malana Maleah Malia Mana
+			Miliani Moana Nalanie Napua Noelani Nohealani Okalani Onaona Palila Pilialoha Ulani
+		}
+	}
+	surnames = {
+			Aalona Ahulani Ainalani Akeakamai Alani Aluala Alealani Alohilani Anakalia Anuenue "'Ehukai" "'Ewalani" "Ha'aheo" Heleakala
+			Hanalei Hanohano "Hau'oli" "Hi'iaka" "Ho'okano" Hualani Ikepela "Ka'aukai" Kahananui Kaheleha Kaikea Kainalu Kalauokalani
+			Kaleoikaika Kamehu "Kameha'o" Kamehameha Kawaiola Kehaulani Kelupaina Keonoana Lanakila Lehuanani Lokelani Lono
+			Makaleka Makikonu Mauna Momilani Nohealani Polola Sanoe Ualani Uluwehi Wailani Waipuna 
+	}
+	callsigns = { }
+}
+
+#Samoa
+SAM = {
+	male = {
+		names = { 
+			Akamu Aloha Alohilani Analu Aolani Aulani Aulii Feleti Inoke Iolani Ipo Iwalani Kai Kaili Kaipo Kalani Kale Kalei Kapena
+			Kapono Keahi Kealii Keani Keanu Keiki Kelii Keon Keoni Kimo Konala Liko Loe Lulani Makaio Makani Malo Mauli Mele Moke
+			Nalani Oke Palani Pekelo
+		}
+	}
+	female = {
+		names = {
+			Alamea Alaula Alika Elikapeka Halia Iokina Iolana Kailani Kalea Kamaile Kamea Kanoa Kawena Keala Keola Keona Kiele Kina
+			Kinipela Konane Lahela Lanai Lani Leiko Leilani Liliha Lilo Luana Mahina Maile Makana Makelina Malana Maleah Malia Mana
+			Miliani Moana Nalanie Napua Noelani Nohealani Okalani Onaona Palila Pilialoha Ulani
+		}
+	}
+	surnames = {
+			Aalona Ahulani Ainalani Akeakamai Alani Aluala Alealani Alohilani Anakalia Anuenue "'Ehukai" "'Ewalani" "Ha'aheo" Heleakala
+			Hanalei Hanohano "Hau'oli" "Hi'iaka" "Ho'okano" Hualani Ikepela "Ka'aukai" Kahananui Kaheleha Kaikea Kainalu Kalauokalani
+			Kaleoikaika Kamehu "Kameha'o" Kamehameha Kawaiola Kehaulani Kelupaina Keonoana Lanakila Lehuanani Lokelani Lono
+			Makaleka Makikonu Mauna Momilani Nohealani Polola Sanoe Ualani Uluwehi Wailani Waipuna 
+	}
+	callsigns = { }
+}
+
+#Hawaii
+HAW = {
+	male = {
+		names = { 
+			Kamehameha Ahe Aheahe Ailani Akamu Akela Bane Elta Etana Eusebui Haleigha Halia Haulani Hikialani Hilo Kaeo Kahawai Kahiau
+			Kahikilani Kahikina Kahili Kahil Kahoku Kaholo Kahoni Kaikane Kaimee Kaimi Kainoa Kupe Kalino Kalon Kanuha Kanoa Kaua Kapula
+			Kepler Koa Kimo Malo Makani Mele Mililani Moke Nainoa Nana Nani Aloha Kakae Kihanuilulumoku Kai
+		}
+	}
+	female = {
+		names = {
+			Alamea Alaula Alika Elikapeka Halia Iokina Iolana Kailani Kalea Kamaile Kamea Kanoa Kawena Keala Keola Keona Kiele Kina
+			Kinipela Konane Lahela Lanai Lani Leiko Leilani Liliha Lilo Luana Mahina Maile Makana Makelina Malana Maleah Malia Mana
+			Miliani Moana Nalanie Napua Noelani Nohealani Okalani Onaona Palila Pilialoha Ulani
+		}
+	}
+	surnames = {
+			Aalona Ahulani Ainalani Akeakamai Alani Aluala Alealani Alohilani Anakalia Anuenue "'Ehukai" "'Ewalani" "Ha'aheo" Heleakala
+			Hanalei Hanohano "Hau'oli" "Hi'iaka" "Ho'okano" Hualani Ikepela "Ka'aukai" Kahananui Kaheleha Kaikea Kainalu Kalauokalani
+			Kaleoikaika Kamehu "Kameha'o" Kamehameha Kawaiola Kehaulani Kelupaina Keonoana Lanakila Lehuanani Lokelani Lono
+			Makaleka Makikonu Mauna Momilani Nohealani Polola Po'okela Sanoe Ualani Uluwehi Wailani Waipuna Pili
+	}
+	callsigns = { }
+}
 PHI = {
 	male = {
 		names = { Emilio Apolinario Andrés José Hermano Jacinto Mariano Deodato Ladislao Teodoro Valentíne Antonio León Simeón Arcadio Artemio Manuel  }
@@ -2758,6 +2952,307 @@ SAF = {
 ###############################################################
 # North America
 ###############################################################
+CFS = {
+	male = {
+		names = { 
+		
+			Adam Alexander William Henry Michael Samuel Joshua George John Matthew Mark Luke Lucas Jeffrey Ulysses 
+			Joseph Charles Russell Benjamin Robert Christopher Richard Chester Lafayette Nathaniel Francis James Donald Cyrus Ambrose
+			Edward Eugene Augustus Norton Abner Isaac Amos Thomas Randolph
+			Robert Jesse James Nathan George Joseph John Patrick Albert Braxton William Ambrose Jubal Richard 
+			Lewis Edmund Leonida Benjamin Wade Daniel Thomas Jonathan Stonewall Lemual Sterling Raphael Kirby Pierre 
+			Jonas Frank Charles Peter Rand Leslie Howard Malvin Oscar Henry Simon Edward Gideon Isaac Evander Jerome Alfred Cadmus
+			Carnot Ezra Wilton Hamilton Matthew Richard Hiram Thomas Elkanah John William James Albert Wilburn Walter Hinchie Samuel Benjamin 
+			Henry Allison Horace Felix Jerome Lawrence Alexander Louis Steven Zach
+		
+		  }
+	}
+	female = {
+		names = { Mary Jane }
+	}
+	surnames = { 
+		Smith Washington Grant Sherman Chamberlain Powell Clemens Abbott Abercrombie Allen Ames Anderson Barkhauer Andrews Appleton
+		Armstrong Arthur Atkins Asboth Babcock Baker Pope Banks Barnard Barnes Barnum Barry Barstow Bartlett Bates 
+		Baxter Beatty Belknap Benton Blair Blunt Bradley Brown Buell Buford Burnside Butler Caldwell Campbell Carr
+		Chapman Chipman Clayton Coburn Connor Conrad Cook Cooper Crittenden Custer Davies Davis Doubleday Ewing Farnsworth 
+		Ford Forsyth Foster Franklin Fry Gilbert Gregg Griffin Halleck Hamlin Hancock Harrison Hatch Hayes Heintzelman
+		Hooker Howard Hunter Jackson Johnson Jones Keyes Kimball Lyon McArthur McClellan McCook McDowell Meade Mitchell
+		Morgan Paine Phelps Porter Potter Reynolds Rice Rhodes Robinson Rosencrans Saloman Schenck Schofield Scott Sedgwick
+		Seward Sheridan Sickles Sprague Stevens Stevenson Stone Sullivan Taylor Tyler Wade Wadsworth Wallace Ward Warner
+		Wilson Wright Young Lee Jackson Johnson Beauregard Stuart Longstreet Forrest Pickett Mosby Cleburne Hood Breckenridge Bragg 
+		Barksdale Early Hill Ewell Morgan Armistead Semmes Smith Hampton Polk Cheatham Wheeler Pemberton Gordon Hardee Floyd Price 
+		Wise "Van Dorn" Loring Buckner Taylor Williams French Gibbs Hindman Anderson Sibley Garnett Magruder Pillow McLaws Rodes Heth 
+		Pender Trimble Kershaw Wofford Kemper Law Robertson Benning Hays Walker Iverson Wilcox Mahone Wright Pettigrew Archer 
+		Davis Lane Posey Scales Warner Imboden Jenkins Bee Ector Gano Granbury Green Greer Gregg Hardeman Harrison Hood Johnston King Lane Mabry Maxey McCulloch Moore 
+		Nelson Randal Robertson Ross Rosser Scurry Steele Terrell Waterhouse Waul Wharton Whitfield Wigfall Young Bowie Travis Houston
+		Wells Holmgren
+
+	}
+	callsigns = { "Goose" "Iceman" "Maverick" "Apollo" "Animal" "Boom-Boom" "Badger" "Brick" "Cajun" "Challenger" "Chip" "Eagle" "Ghost" "Hawk" "Jaws" "Moses" "Mad Dog"}
+}
+IUS = {
+	male = {
+		names = { 
+		
+			Adam Alexander William Henry Michael Samuel Joshua George John Matthew Mark Luke Lucas Jeffrey Ulysses 
+			Joseph Charles Russell Benjamin Robert Christopher Richard Chester Lafayette Nathaniel Francis James Donald Cyrus Ambrose
+			Edward Eugene Augustus Norton Abner Isaac Amos Thomas Randolph
+			Robert Jesse James Nathan George Joseph John Patrick Albert Braxton William Ambrose Jubal Richard 
+			Lewis Edmund Leonida Benjamin Wade Daniel Thomas Jonathan Stonewall Lemual Sterling Raphael Kirby Pierre 
+			Jonas Frank Charles Peter Rand Leslie Howard Malvin Oscar Henry Simon Edward Gideon Isaac Evander Jerome Alfred Cadmus
+			Carnot Ezra Wilton Hamilton Matthew Richard Hiram Thomas Elkanah John William James Albert Wilburn Walter Hinchie Samuel Benjamin 
+			Henry Allison Horace Felix Jerome Lawrence Alexander Louis Steven Zach
+		
+		  }
+	}
+	female = {
+		names = { Mary Jane }
+	}
+	surnames = { 
+		Smith Washington Grant Sherman Chamberlain Powell Clemens Abbott Abercrombie Allen Ames Anderson Barkhauer Andrews Appleton
+		Armstrong Arthur Atkins Asboth Babcock Baker Pope Banks Barnard Barnes Barnum Barry Barstow Bartlett Bates 
+		Baxter Beatty Belknap Benton Blair Blunt Bradley Brown Buell Buford Burnside Butler Caldwell Campbell Carr
+		Chapman Chipman Clayton Coburn Connor Conrad Cook Cooper Crittenden Custer Davies Davis Doubleday Ewing Farnsworth 
+		Ford Forsyth Foster Franklin Fry Gilbert Gregg Griffin Halleck Hamlin Hancock Harrison Hatch Hayes Heintzelman
+		Hooker Howard Hunter Jackson Johnson Jones Keyes Kimball Lyon McArthur McClellan McCook McDowell Meade Mitchell
+		Morgan Paine Phelps Porter Potter Reynolds Rice Rhodes Robinson Rosencrans Saloman Schenck Schofield Scott Sedgwick
+		Seward Sheridan Sickles Sprague Stevens Stevenson Stone Sullivan Taylor Tyler Wade Wadsworth Wallace Ward Warner
+		Wilson Wright Young Lee Jackson Johnson Beauregard Stuart Longstreet Forrest Pickett Mosby Cleburne Hood Breckenridge Bragg 
+		Barksdale Early Hill Ewell Morgan Armistead Semmes Smith Hampton Polk Cheatham Wheeler Pemberton Gordon Hardee Floyd Price 
+		Wise "Van Dorn" Loring Buckner Taylor Williams French Gibbs Hindman Anderson Sibley Garnett Magruder Pillow McLaws Rodes Heth 
+		Pender Trimble Kershaw Wofford Kemper Law Robertson Benning Hays Walker Iverson Wilcox Mahone Wright Pettigrew Archer 
+		Davis Lane Posey Scales Warner Imboden Jenkins Bee Ector Gano Granbury Green Greer Gregg Hardeman Harrison Hood Johnston King Lane Mabry Maxey McCulloch Moore 
+		Nelson Randal Robertson Ross Rosser Scurry Steele Terrell Waterhouse Waul Wharton Whitfield Wigfall Young Bowie Travis Houston
+		Wells Holmgren
+
+	}
+	callsigns = { "Goose" "Iceman" "Maverick" "Apollo" "Animal" "Boom-Boom" "Badger" "Brick" "Cajun" "Challenger" "Chip" "Eagle" "Ghost" "Hawk" "Jaws" "Moses" "Mad Dog"}
+}
+NWN = {
+	male = {
+		names = { 
+		
+			Adam Alexander William Henry Michael Samuel Joshua George John Matthew Mark Luke Lucas Jeffrey Ulysses 
+			Joseph Charles Russell Benjamin Robert Christopher Richard Chester Lafayette Nathaniel Francis James Donald Cyrus Ambrose
+			Edward Eugene Augustus Norton Abner Isaac Amos Thomas Randolph
+			Robert Jesse James Nathan George Joseph John Patrick Albert Braxton William Ambrose Jubal Richard 
+			Lewis Edmund Leonida Benjamin Wade Daniel Thomas Jonathan Stonewall Lemual Sterling Raphael Kirby Pierre 
+			Jonas Frank Charles Peter Rand Leslie Howard Malvin Oscar Henry Simon Edward Gideon Isaac Evander Jerome Alfred Cadmus
+			Carnot Ezra Wilton Hamilton Matthew Richard Hiram Thomas Elkanah John William James Albert Wilburn Walter Hinchie Samuel Benjamin 
+			Henry Allison Horace Felix Jerome Lawrence Alexander Louis Steven Zach
+		
+		  }
+	}
+	female = {
+		names = { Mary Jane }
+	}
+	surnames = { 
+		Smith Washington Grant Sherman Chamberlain Powell Clemens Abbott Abercrombie Allen Ames Anderson Barkhauer Andrews Appleton
+		Armstrong Arthur Atkins Asboth Babcock Baker Pope Banks Barnard Barnes Barnum Barry Barstow Bartlett Bates 
+		Baxter Beatty Belknap Benton Blair Blunt Bradley Brown Buell Buford Burnside Butler Caldwell Campbell Carr
+		Chapman Chipman Clayton Coburn Connor Conrad Cook Cooper Crittenden Custer Davies Davis Doubleday Ewing Farnsworth 
+		Ford Forsyth Foster Franklin Fry Gilbert Gregg Griffin Halleck Hamlin Hancock Harrison Hatch Hayes Heintzelman
+		Hooker Howard Hunter Jackson Johnson Jones Keyes Kimball Lyon McArthur McClellan McCook McDowell Meade Mitchell
+		Morgan Paine Phelps Porter Potter Reynolds Rice Rhodes Robinson Rosencrans Saloman Schenck Schofield Scott Sedgwick
+		Seward Sheridan Sickles Sprague Stevens Stevenson Stone Sullivan Taylor Tyler Wade Wadsworth Wallace Ward Warner
+		Wilson Wright Young Lee Jackson Johnson Beauregard Stuart Longstreet Forrest Pickett Mosby Cleburne Hood Breckenridge Bragg 
+		Barksdale Early Hill Ewell Morgan Armistead Semmes Smith Hampton Polk Cheatham Wheeler Pemberton Gordon Hardee Floyd Price 
+		Wise "Van Dorn" Loring Buckner Taylor Williams French Gibbs Hindman Anderson Sibley Garnett Magruder Pillow McLaws Rodes Heth 
+		Pender Trimble Kershaw Wofford Kemper Law Robertson Benning Hays Walker Iverson Wilcox Mahone Wright Pettigrew Archer 
+		Davis Lane Posey Scales Warner Imboden Jenkins Bee Ector Gano Granbury Green Greer Gregg Hardeman Harrison Hood Johnston King Lane Mabry Maxey McCulloch Moore 
+		Nelson Randal Robertson Ross Rosser Scurry Steele Terrell Waterhouse Waul Wharton Whitfield Wigfall Young Bowie Travis Houston
+		Wells Holmgren
+
+	}
+	callsigns = { "Goose" "Iceman" "Maverick" "Apollo" "Animal" "Boom-Boom" "Badger" "Brick" "Cajun" "Challenger" "Chip" "Eagle" "Ghost" "Hawk" "Jaws" "Moses" "Mad Dog"}
+}
+AGR = {
+	male = {
+		names = { 
+		
+			Adam Alexander William Henry Michael Samuel Joshua George John Matthew Mark Luke Lucas Jeffrey Ulysses 
+			Joseph Charles Russell Benjamin Robert Christopher Richard Chester Lafayette Nathaniel Francis James Donald Cyrus Ambrose
+			Edward Eugene Augustus Norton Abner Isaac Amos Thomas Randolph
+			Robert Jesse James Nathan George Joseph John Patrick Albert Braxton William Ambrose Jubal Richard 
+			Lewis Edmund Leonida Benjamin Wade Daniel Thomas Jonathan Stonewall Lemual Sterling Raphael Kirby Pierre 
+			Jonas Frank Charles Peter Rand Leslie Howard Malvin Oscar Henry Simon Edward Gideon Isaac Evander Jerome Alfred Cadmus
+			Carnot Ezra Wilton Hamilton Matthew Richard Hiram Thomas Elkanah John William James Albert Wilburn Walter Hinchie Samuel Benjamin 
+			Henry Allison Horace Felix Jerome Lawrence Alexander Louis Steven Zach
+		
+		  }
+	}
+	female = {
+		names = { Mary Jane }
+	}
+	surnames = { 
+		Smith Washington Grant Sherman Chamberlain Powell Clemens Abbott Abercrombie Allen Ames Anderson Barkhauer Andrews Appleton
+		Armstrong Arthur Atkins Asboth Babcock Baker Pope Banks Barnard Barnes Barnum Barry Barstow Bartlett Bates 
+		Baxter Beatty Belknap Benton Blair Blunt Bradley Brown Buell Buford Burnside Butler Caldwell Campbell Carr
+		Chapman Chipman Clayton Coburn Connor Conrad Cook Cooper Crittenden Custer Davies Davis Doubleday Ewing Farnsworth 
+		Ford Forsyth Foster Franklin Fry Gilbert Gregg Griffin Halleck Hamlin Hancock Harrison Hatch Hayes Heintzelman
+		Hooker Howard Hunter Jackson Johnson Jones Keyes Kimball Lyon McArthur McClellan McCook McDowell Meade Mitchell
+		Morgan Paine Phelps Porter Potter Reynolds Rice Rhodes Robinson Rosencrans Saloman Schenck Schofield Scott Sedgwick
+		Seward Sheridan Sickles Sprague Stevens Stevenson Stone Sullivan Taylor Tyler Wade Wadsworth Wallace Ward Warner
+		Wilson Wright Young Lee Jackson Johnson Beauregard Stuart Longstreet Forrest Pickett Mosby Cleburne Hood Breckenridge Bragg 
+		Barksdale Early Hill Ewell Morgan Armistead Semmes Smith Hampton Polk Cheatham Wheeler Pemberton Gordon Hardee Floyd Price 
+		Wise "Van Dorn" Loring Buckner Taylor Williams French Gibbs Hindman Anderson Sibley Garnett Magruder Pillow McLaws Rodes Heth 
+		Pender Trimble Kershaw Wofford Kemper Law Robertson Benning Hays Walker Iverson Wilcox Mahone Wright Pettigrew Archer 
+		Davis Lane Posey Scales Warner Imboden Jenkins Bee Ector Gano Granbury Green Greer Gregg Hardeman Harrison Hood Johnston King Lane Mabry Maxey McCulloch Moore 
+		Nelson Randal Robertson Ross Rosser Scurry Steele Terrell Waterhouse Waul Wharton Whitfield Wigfall Young Bowie Travis Houston
+		Wells Holmgren
+
+	}
+	callsigns = { "Goose" "Iceman" "Maverick" "Apollo" "Animal" "Boom-Boom" "Badger" "Brick" "Cajun" "Challenger" "Chip" "Eagle" "Ghost" "Hawk" "Jaws" "Moses" "Mad Dog"}
+}TEX = {
+	male = {
+		names = { 
+		
+			Adam Alexander William Henry Michael Samuel Joshua George John Matthew Mark Luke Lucas Jeffrey Ulysses 
+			Joseph Charles Russell Benjamin Robert Christopher Richard Chester Lafayette Nathaniel Francis James Donald Cyrus Ambrose
+			Edward Eugene Augustus Norton Abner Isaac Amos Thomas Randolph
+			Robert Jesse James Nathan George Joseph John Patrick Albert Braxton William Ambrose Jubal Richard 
+			Lewis Edmund Leonida Benjamin Wade Daniel Thomas Jonathan Stonewall Lemual Sterling Raphael Kirby Pierre 
+			Jonas Frank Charles Peter Rand Leslie Howard Malvin Oscar Henry Simon Edward Gideon Isaac Evander Jerome Alfred Cadmus
+			Carnot Ezra Wilton Hamilton Matthew Richard Hiram Thomas Elkanah John William James Albert Wilburn Walter Hinchie Samuel Benjamin 
+			Henry Allison Horace Felix Jerome Lawrence Alexander Louis Steven Zach
+		
+		  }
+	}
+	female = {
+		names = { Mary Jane }
+	}
+	surnames = { 
+		Smith Washington Grant Sherman Chamberlain Powell Clemens Abbott Abercrombie Allen Ames Anderson Barkhauer Andrews Appleton
+		Armstrong Arthur Atkins Asboth Babcock Baker Pope Banks Barnard Barnes Barnum Barry Barstow Bartlett Bates 
+		Baxter Beatty Belknap Benton Blair Blunt Bradley Brown Buell Buford Burnside Butler Caldwell Campbell Carr
+		Chapman Chipman Clayton Coburn Connor Conrad Cook Cooper Crittenden Custer Davies Davis Doubleday Ewing Farnsworth 
+		Ford Forsyth Foster Franklin Fry Gilbert Gregg Griffin Halleck Hamlin Hancock Harrison Hatch Hayes Heintzelman
+		Hooker Howard Hunter Jackson Johnson Jones Keyes Kimball Lyon McArthur McClellan McCook McDowell Meade Mitchell
+		Morgan Paine Phelps Porter Potter Reynolds Rice Rhodes Robinson Rosencrans Saloman Schenck Schofield Scott Sedgwick
+		Seward Sheridan Sickles Sprague Stevens Stevenson Stone Sullivan Taylor Tyler Wade Wadsworth Wallace Ward Warner
+		Wilson Wright Young Lee Jackson Johnson Beauregard Stuart Longstreet Forrest Pickett Mosby Cleburne Hood Breckenridge Bragg 
+		Barksdale Early Hill Ewell Morgan Armistead Semmes Smith Hampton Polk Cheatham Wheeler Pemberton Gordon Hardee Floyd Price 
+		Wise "Van Dorn" Loring Buckner Taylor Williams French Gibbs Hindman Anderson Sibley Garnett Magruder Pillow McLaws Rodes Heth 
+		Pender Trimble Kershaw Wofford Kemper Law Robertson Benning Hays Walker Iverson Wilcox Mahone Wright Pettigrew Archer 
+		Davis Lane Posey Scales Warner Imboden Jenkins Bee Ector Gano Granbury Green Greer Gregg Hardeman Harrison Hood Johnston King Lane Mabry Maxey McCulloch Moore 
+		Nelson Randal Robertson Ross Rosser Scurry Steele Terrell Waterhouse Waul Wharton Whitfield Wigfall Young Bowie Travis Houston
+		Wells Holmgren
+
+	}
+	callsigns = { "Goose" "Iceman" "Maverick" "Apollo" "Animal" "Boom-Boom" "Badger" "Brick" "Cajun" "Challenger" "Chip" "Eagle" "Ghost" "Hawk" "Jaws" "Moses" "Mad Dog"}
+}DES = {
+	male = {
+		names = { 
+		
+			Adam Alexander William Henry Michael Samuel Joshua George John Matthew Mark Luke Lucas Jeffrey Ulysses 
+			Joseph Charles Russell Benjamin Robert Christopher Richard Chester Lafayette Nathaniel Francis James Donald Cyrus Ambrose
+			Edward Eugene Augustus Norton Abner Isaac Amos Thomas Randolph
+			Robert Jesse James Nathan George Joseph John Patrick Albert Braxton William Ambrose Jubal Richard 
+			Lewis Edmund Leonida Benjamin Wade Daniel Thomas Jonathan Stonewall Lemual Sterling Raphael Kirby Pierre 
+			Jonas Frank Charles Peter Rand Leslie Howard Malvin Oscar Henry Simon Edward Gideon Isaac Evander Jerome Alfred Cadmus
+			Carnot Ezra Wilton Hamilton Matthew Richard Hiram Thomas Elkanah John William James Albert Wilburn Walter Hinchie Samuel Benjamin 
+			Henry Allison Horace Felix Jerome Lawrence Alexander Louis Steven Zach
+		
+		  }
+	}
+	female = {
+		names = { Mary Jane }
+	}
+	surnames = { 
+		Smith Washington Grant Sherman Chamberlain Powell Clemens Abbott Abercrombie Allen Ames Anderson Barkhauer Andrews Appleton
+		Armstrong Arthur Atkins Asboth Babcock Baker Pope Banks Barnard Barnes Barnum Barry Barstow Bartlett Bates 
+		Baxter Beatty Belknap Benton Blair Blunt Bradley Brown Buell Buford Burnside Butler Caldwell Campbell Carr
+		Chapman Chipman Clayton Coburn Connor Conrad Cook Cooper Crittenden Custer Davies Davis Doubleday Ewing Farnsworth 
+		Ford Forsyth Foster Franklin Fry Gilbert Gregg Griffin Halleck Hamlin Hancock Harrison Hatch Hayes Heintzelman
+		Hooker Howard Hunter Jackson Johnson Jones Keyes Kimball Lyon McArthur McClellan McCook McDowell Meade Mitchell
+		Morgan Paine Phelps Porter Potter Reynolds Rice Rhodes Robinson Rosencrans Saloman Schenck Schofield Scott Sedgwick
+		Seward Sheridan Sickles Sprague Stevens Stevenson Stone Sullivan Taylor Tyler Wade Wadsworth Wallace Ward Warner
+		Wilson Wright Young Lee Jackson Johnson Beauregard Stuart Longstreet Forrest Pickett Mosby Cleburne Hood Breckenridge Bragg 
+		Barksdale Early Hill Ewell Morgan Armistead Semmes Smith Hampton Polk Cheatham Wheeler Pemberton Gordon Hardee Floyd Price 
+		Wise "Van Dorn" Loring Buckner Taylor Williams French Gibbs Hindman Anderson Sibley Garnett Magruder Pillow McLaws Rodes Heth 
+		Pender Trimble Kershaw Wofford Kemper Law Robertson Benning Hays Walker Iverson Wilcox Mahone Wright Pettigrew Archer 
+		Davis Lane Posey Scales Warner Imboden Jenkins Bee Ector Gano Granbury Green Greer Gregg Hardeman Harrison Hood Johnston King Lane Mabry Maxey McCulloch Moore 
+		Nelson Randal Robertson Ross Rosser Scurry Steele Terrell Waterhouse Waul Wharton Whitfield Wigfall Young Bowie Travis Houston
+		Wells Holmgren
+
+	}
+	callsigns = { "Goose" "Iceman" "Maverick" "Apollo" "Animal" "Boom-Boom" "Badger" "Brick" "Cajun" "Challenger" "Chip" "Eagle" "Ghost" "Hawk" "Jaws" "Moses" "Mad Dog"}
+}CLM = {
+	male = {
+		names = { 
+		
+			Adam Alexander William Henry Michael Samuel Joshua George John Matthew Mark Luke Lucas Jeffrey Ulysses 
+			Joseph Charles Russell Benjamin Robert Christopher Richard Chester Lafayette Nathaniel Francis James Donald Cyrus Ambrose
+			Edward Eugene Augustus Norton Abner Isaac Amos Thomas Randolph
+			Robert Jesse James Nathan George Joseph John Patrick Albert Braxton William Ambrose Jubal Richard 
+			Lewis Edmund Leonida Benjamin Wade Daniel Thomas Jonathan Stonewall Lemual Sterling Raphael Kirby Pierre 
+			Jonas Frank Charles Peter Rand Leslie Howard Malvin Oscar Henry Simon Edward Gideon Isaac Evander Jerome Alfred Cadmus
+			Carnot Ezra Wilton Hamilton Matthew Richard Hiram Thomas Elkanah John William James Albert Wilburn Walter Hinchie Samuel Benjamin 
+			Henry Allison Horace Felix Jerome Lawrence Alexander Louis Steven Zach
+		
+		  }
+	}
+	female = {
+		names = { Mary Jane }
+	}
+	surnames = { 
+		Smith Washington Grant Sherman Chamberlain Powell Clemens Abbott Abercrombie Allen Ames Anderson Barkhauer Andrews Appleton
+		Armstrong Arthur Atkins Asboth Babcock Baker Pope Banks Barnard Barnes Barnum Barry Barstow Bartlett Bates 
+		Baxter Beatty Belknap Benton Blair Blunt Bradley Brown Buell Buford Burnside Butler Caldwell Campbell Carr
+		Chapman Chipman Clayton Coburn Connor Conrad Cook Cooper Crittenden Custer Davies Davis Doubleday Ewing Farnsworth 
+		Ford Forsyth Foster Franklin Fry Gilbert Gregg Griffin Halleck Hamlin Hancock Harrison Hatch Hayes Heintzelman
+		Hooker Howard Hunter Jackson Johnson Jones Keyes Kimball Lyon McArthur McClellan McCook McDowell Meade Mitchell
+		Morgan Paine Phelps Porter Potter Reynolds Rice Rhodes Robinson Rosencrans Saloman Schenck Schofield Scott Sedgwick
+		Seward Sheridan Sickles Sprague Stevens Stevenson Stone Sullivan Taylor Tyler Wade Wadsworth Wallace Ward Warner
+		Wilson Wright Young Lee Jackson Johnson Beauregard Stuart Longstreet Forrest Pickett Mosby Cleburne Hood Breckenridge Bragg 
+		Barksdale Early Hill Ewell Morgan Armistead Semmes Smith Hampton Polk Cheatham Wheeler Pemberton Gordon Hardee Floyd Price 
+		Wise "Van Dorn" Loring Buckner Taylor Williams French Gibbs Hindman Anderson Sibley Garnett Magruder Pillow McLaws Rodes Heth 
+		Pender Trimble Kershaw Wofford Kemper Law Robertson Benning Hays Walker Iverson Wilcox Mahone Wright Pettigrew Archer 
+		Davis Lane Posey Scales Warner Imboden Jenkins Bee Ector Gano Granbury Green Greer Gregg Hardeman Harrison Hood Johnston King Lane Mabry Maxey McCulloch Moore 
+		Nelson Randal Robertson Ross Rosser Scurry Steele Terrell Waterhouse Waul Wharton Whitfield Wigfall Young Bowie Travis Houston
+		Wells Holmgren
+
+	}
+	callsigns = { "Goose" "Iceman" "Maverick" "Apollo" "Animal" "Boom-Boom" "Badger" "Brick" "Cajun" "Challenger" "Chip" "Eagle" "Ghost" "Hawk" "Jaws" "Moses" "Mad Dog"}
+}
+CAL = {
+	male = {
+		names = { 
+		
+			Adam Alexander William Henry Michael Samuel Joshua George John Matthew Mark Luke Lucas Jeffrey Ulysses 
+			Joseph Charles Russell Benjamin Robert Christopher Richard Chester Lafayette Nathaniel Francis James Donald Cyrus Ambrose
+			Edward Eugene Augustus Norton Abner Isaac Amos Thomas Randolph
+			Robert Jesse James Nathan George Joseph John Patrick Albert Braxton William Ambrose Jubal Richard 
+			Lewis Edmund Leonida Benjamin Wade Daniel Thomas Jonathan Stonewall Lemual Sterling Raphael Kirby Pierre 
+			Jonas Frank Charles Peter Rand Leslie Howard Malvin Oscar Henry Simon Edward Gideon Isaac Evander Jerome Alfred Cadmus
+			Carnot Ezra Wilton Hamilton Matthew Richard Hiram Thomas Elkanah John William James Albert Wilburn Walter Hinchie Samuel Benjamin 
+			Henry Allison Horace Felix Jerome Lawrence Alexander Louis Steven Zach
+		
+		  }
+	}
+	female = {
+		names = { Mary Jane }
+	}
+	surnames = { 
+		Smith Washington Grant Sherman Chamberlain Powell Clemens Abbott Abercrombie Allen Ames Anderson Barkhauer Andrews Appleton
+		Armstrong Arthur Atkins Asboth Babcock Baker Pope Banks Barnard Barnes Barnum Barry Barstow Bartlett Bates 
+		Baxter Beatty Belknap Benton Blair Blunt Bradley Brown Buell Buford Burnside Butler Caldwell Campbell Carr
+		Chapman Chipman Clayton Coburn Connor Conrad Cook Cooper Crittenden Custer Davies Davis Doubleday Ewing Farnsworth 
+		Ford Forsyth Foster Franklin Fry Gilbert Gregg Griffin Halleck Hamlin Hancock Harrison Hatch Hayes Heintzelman
+		Hooker Howard Hunter Jackson Johnson Jones Keyes Kimball Lyon McArthur McClellan McCook McDowell Meade Mitchell
+		Morgan Paine Phelps Porter Potter Reynolds Rice Rhodes Robinson Rosencrans Saloman Schenck Schofield Scott Sedgwick
+		Seward Sheridan Sickles Sprague Stevens Stevenson Stone Sullivan Taylor Tyler Wade Wadsworth Wallace Ward Warner
+		Wilson Wright Young Lee Jackson Johnson Beauregard Stuart Longstreet Forrest Pickett Mosby Cleburne Hood Breckenridge Bragg 
+		Barksdale Early Hill Ewell Morgan Armistead Semmes Smith Hampton Polk Cheatham Wheeler Pemberton Gordon Hardee Floyd Price 
+		Wise "Van Dorn" Loring Buckner Taylor Williams French Gibbs Hindman Anderson Sibley Garnett Magruder Pillow McLaws Rodes Heth 
+		Pender Trimble Kershaw Wofford Kemper Law Robertson Benning Hays Walker Iverson Wilcox Mahone Wright Pettigrew Archer 
+		Davis Lane Posey Scales Warner Imboden Jenkins Bee Ector Gano Granbury Green Greer Gregg Hardeman Harrison Hood Johnston King Lane Mabry Maxey McCulloch Moore 
+		Nelson Randal Robertson Ross Rosser Scurry Steele Terrell Waterhouse Waul Wharton Whitfield Wigfall Young Bowie Travis Houston
+		Wells Holmgren
+
+	}
+	callsigns = { "Goose" "Iceman" "Maverick" "Apollo" "Animal" "Boom-Boom" "Badger" "Brick" "Cajun" "Challenger" "Chip" "Eagle" "Ghost" "Hawk" "Jaws" "Moses" "Mad Dog"}
+}
 CAN = {
 	male = {
 		names = { 
