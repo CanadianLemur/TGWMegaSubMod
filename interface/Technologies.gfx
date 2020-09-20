@@ -4928,7 +4928,7 @@ spriteTypes = {
 
 
 	SpriteType = {
-		name = "GFX_gwtank_medium"
+		name = "GFX_ww1_armored_car_1_medium"
 		texturefile = "gfx/interface/technologies/hoi4tgw/tank/ww1_armored_car_1.dds"
 	}
 
@@ -4978,7 +4978,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_ww1_heavy_tank_medium"
+		name = "GFX_ww1_heavy_tank_1_medium"
 		texturefile = "gfx/interface/technologies/hoi4tgw/tank/ww1_heavy_tank_1.dds"
 	}
 	SpriteType = {

@@ -1,3 +1,88 @@
 ﻿l_english:
- MSM_ship_hull_dreadnought_1:0 "1910 Dreadnought Hull"
- MSM_ship_hull_dreadnought_1_desc:0 ""
+ MSM_ship_hull_dreadnought1:0 "1910 Dreadnought Hull"
+ MSM_ship_hull_dreadnought1_desc:0 ""
+ 
+ MSM_ship_hull_dreadnought2:0 "1914 Dreadnought Hull"
+ MSM_ship_hull_dreadnought2_desc:0 ""
+ 
+ MSM_ship_hull_light_1:0 "1914 Destroyer Hull"
+ MSM_ship_hull_light_1_desc:0 ""
+ 
+ MSM_ship_hull_light_2:0 "1922 Destroyer Hull"
+ MSM_ship_hull_light_2_desc:0 ""
+ 
+ MSM_ship_hull_uboat_1:0 "1910 Submarine Hull"
+ MSM_ship_hull_uboat_1_desc:0 ""
+ 
+ MSM_ship_hull_uboat_2:0 "1914 Submarine Hull"
+ MSM_ship_hull_uboat_2_desc:0 ""
+ 
+ ####Armored Cars####
+ MSM_armored_car_equipment_1:0 "Armored Car"
+ MSM_armored_car_equipment_2:0 "Armored Car I"
+ MSM_armored_car_equipment_3:0 "Armored Car II"
+ MSM_armored_car_equipment_4:0 "Armored Car III"
+ MSM_armored_car_equipment_1_desc:0 "While the Automobile is still young technology, it is already being considered for military purposes. A design as simple as putting a machine gun on one of these new automobiles and attaching some more metal to act as armor could give us an interesting new weapon to use in battle."
+ MSM_armored_car_equipment_2_desc:0 "The Armored Car is still capable of evolving. By putting our main Machine Gun into a rotating turret, we can ensure that all of our crewmen are protected, increasing the efficiency of the vehicle, and its practicality in battle."
+ MSM_armored_car_equipment_3_desc:0 "As Cavalry play less and less of a role on the battlefield, Armored Cars seem to be the logical way to fill the same role in a much more safe manner. Upgrading the engine and suspension systems of our Armored Cars to give them an increase in speed and mobility may be a good way to help them in this endeavor."
+ MSM_armored_car_equipment_4_desc:0 "With the Tank beginning to arrive on the battlefield, our Armored Cars may seem obsolete, but these cheaper and easier to produce models can still serve our military well. Minor upgrades to the armor of these vehicles, to be able to at least survive minor blasts, should help keep them competitive."
+ 
+ BEL_MSM_armored_car_equipment_2_short:0 "Minerva"
+ BEL_MSM_armored_car_equipment_2:0 "Minerva Armoured Car"
+ BEL_MSM_armored_car_equipment_2_desc:0 "The Minerva Armoured Car (Automitrailleuse Minerva) was a military armoured car expediently developed from Minerva civilian automobiles by Belgium at the start of the First World War. The Minerva's use in combat in August 1914 made Belgium one of the first nations to employ armoured cars in World War I."
+ BEL_MSM_armored_car_equipment_3_short:0 "SAVA"
+ BEL_MSM_armored_car_equipment_3:0 "SAVA Armoured Car"
+ 
+ FRA_MSM_armored_car_equipment_1:0 "Charron AM"
+ FRA_MSM_armored_car_equipment_2:0 "Peugeot AM"
+ FRA_MSM_armored_car_equipment_3:0 "Peugeot AC-2"
+ FRA_MSM_armored_car_equipment_4:0 "AMC P 16"
+ 
+ ITA_MSM_armored_car_equipment_1:0 "FIAT Arsenale"
+ ITA_MSM_armored_car_equipment_2_short:0 "Lancia IZ"
+ ITA_MSM_armored_car_equipment_2:0 "Lancia-Ansaldo IZ"
+ ITA_MSM_armored_car_equipment_3_short:0 "FIAT Tripoli"
+ ITA_MSM_armored_car_equipment_3:0 "FIAT-Terni Tripoli"
+ ITA_MSM_armored_car_equipment_4_short:0 "AB 611"
+ ITA_MSM_armored_car_equipment_4:0 "Autoblinda AB 611"
+ 
+ GER_MSM_armored_car_equipment_1:0 "Kraftwagen BAK"
+ GER_MSM_armored_car_equipment_2:0 "Ehrhardt E-V/4"
+ GER_MSM_armored_car_equipment_3:0 "Büssig A5P"
+ GER_MSM_armored_car_equipment_4:0 "Daimler DZVR"
+ 
+ USA_MSM_armored_car_equipment_2:0 "Jeffrey No.1"
+ USA_MSM_armored_car_equipment_3:0 "White AEF"
+ USA_MSM_armored_car_equipment_4:0 "M1 Armoured Car"
+ 
+ ENG_MSM_armored_car_equipment_1_short:0 "Silver Ghost"
+ ENG_MSM_armored_car_equipment_1:0 "Rolls-Royce Silver Ghost"
+ ENG_MSM_armored_car_equipment_2:0 "Austin"
+ ENG_MSM_armored_car_equipment_3:0 "Rolls Royce Mk.I"
+ ENG_MSM_armored_car_equipment_4:0 "Lanchester 6×4"
+ 
+ RUS_MSM_armored_car_equipment_1:0 "Nakashidze-Charron"
+ RUS_MSM_armored_car_equipment_2:0 "Austin"
+ RUS_MSM_armored_car_equipment_3:0 "Mgebrov-Renault"
+ RUS_MSM_armored_car_equipment_4:0 "Austin-Putilov"
+ 
+ SOV_MSM_armored_car_equipment_1:0 "Nakashidze-Charron"
+ SOV_MSM_armored_car_equipment_2:0 "Austin"
+ SOV_MSM_armored_car_equipment_3:0 "Mgebrov-Renault"
+ SOV_MSM_armored_car_equipment_4:0 "Austin-Putilov"
+ 
+ AUH_MSM_armored_car_equipment_1_short:0 "Austro-Daimler"
+ AUH_MSM_armored_car_equipment_1:0 "Austro-Daimler Panzerwagen"
+ AUH_MSM_armored_car_equipment_2:0 "Junovicz P.A.1"
+ AUH_MSM_armored_car_equipment_3:0 "Romfell P.A.2"
+ 
+ JAP_MSM_armored_car_equipment_4:0 "Chiyoda Armoured Car"
+ 
+ TUR_MSM_armored_car_equipment_1_short:0 "Hotchkiss"
+ TUR_MSM_armored_car_equipment_1:0 "Hotchkiss"
+ TUR_MSM_armored_car_equipment_2:0 "Panhard-Genty"
+ 
+ MSM_armored_car_equipment_desc:0 "Armored Car I"
+ 
+ 
+ 
