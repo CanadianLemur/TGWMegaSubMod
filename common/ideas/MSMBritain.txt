@@ -2,7 +2,7 @@ ideas={
 	country = {
 		MSM_loss_of_india = {
 
-			picture = idea_raj_quit_india_movement
+			picture = GFX_idea_raj_quit_india_movement
 				
 			removal_cost = -1
 				

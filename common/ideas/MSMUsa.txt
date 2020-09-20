@@ -1,0 +1,17 @@
+ideas={
+	country = {
+		MSM_USA_war_loss = {
+
+			picture = GFX_idea_spr_political_violence
+				
+			removal_cost = -1
+				
+			modifier = {
+				political_power_gain = -2
+				war_support_weekly = -0.001
+				stability_weekly = -0.005
+			}
+				
+		}
+	}
+}

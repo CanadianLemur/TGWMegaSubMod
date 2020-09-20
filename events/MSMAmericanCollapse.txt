@@ -6,7 +6,7 @@ country_event = {
 	desc = MSMAmericanCollapse.1.d
 	picture = GFX_report_event_generic_read_write
 	fire_only_once = yes
-	trigger =  {USA = {has_stability < 0.3}}
+	trigger =  {USA = {has_stability < 0.3} has_ideas = {MSM_USA_war_loss}}
 	immediate = {
 	 USA = {
 	 	random_unit_leader = {
