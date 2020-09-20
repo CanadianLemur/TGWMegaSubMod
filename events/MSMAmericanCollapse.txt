@@ -6,7 +6,7 @@ country_event = {
 	desc = MSMAmericanCollapse.1.d
 	picture = GFX_report_event_generic_read_write
 	fire_only_once = yes
-	trigger =  {USA = {has_stability < 0.3} has_ideas = {MSM_USA_war_loss}}
+	trigger =  {USA = {has_stability < 0.3} has_idea = MSM_USA_war_loss}
 	immediate = {
 	 USA = {
 	 	random_unit_leader = {
@@ -20,6 +20,102 @@ country_event = {
 				has_id = 93284
 			}
 			set_nationality = AGR
+		}
+	 	random_unit_leader = {
+			limit = {
+				has_id = 93065
+			}
+			set_nationality = IUS
+		}
+	 	random_unit_leader = {
+			limit = {
+				has_id = 93006
+			}
+			set_nationality = IUS
+		}
+	 	random_unit_leader = {
+			limit = {
+				has_id = 93007
+			}
+			set_nationality = CFS
+		}
+	 	random_unit_leader = {
+			limit = {
+				has_id = 93009
+			}
+			set_nationality = IUS
+		}
+	 	random_unit_leader = {
+			limit = {
+				has_id = 93010
+			}
+			set_nationality = IUS
+		}
+	 	random_unit_leader = {
+			limit = {
+				has_id = 93010
+			}
+			set_nationality = IUS
+		}
+	 	random_unit_leader = {
+			limit = {
+				has_id = 93012
+			}
+			set_nationality = CFS
+		}
+	 	random_unit_leader = {
+			limit = {
+				has_id = 93045
+			}
+			set_nationality = IUS
+		}
+	 	random_unit_leader = {
+			limit = {
+				has_id = 93296
+			}
+			set_nationality = CFS
+		}
+	 	random_unit_leader = {
+			limit = {
+				has_id = 93117
+			}
+			set_nationality = IUS
+		}
+	 	random_unit_leader = {
+			limit = {
+				has_id = 93112
+			}
+			set_nationality = CFS
+		}
+	 	random_unit_leader = {
+			limit = {
+				has_id = 93116
+			}
+			set_nationality = NWN
+		}
+	 	random_unit_leader = {
+			limit = {
+				has_id = 93407
+			}
+			set_nationality = CFS
+		}
+	 	random_unit_leader = {
+			limit = {
+				has_id = 93121
+			}
+			set_nationality = IUS
+		}
+	 	random_unit_leader = {
+			limit = {
+				has_id = 93396
+			}
+			set_nationality = CFS
+		}
+	 	random_unit_leader = {
+			limit = {
+				has_id = 93552
+			}
+			set_nationality = IUS
 		}
 	 }
 	CAL = {inherit_technology = USA}
@@ -375,7 +471,7 @@ country_event = {
 	}
 	option = {
 		name = MSMAmericanCollapse.8.a
-		ai_chance = { factor = 80}
+		ai_chance = { factor = 100}
 		declare_war_on = {
 		target = NAF
 		type = annex_everything
@@ -394,7 +490,8 @@ country_event = {
 	}
 	option = {
 		name = MSMAmericanCollapse.8.c #seek a compromise
-		ai_chance = { factor = 20}
-		puppet = NAF
+		ai_chance = { factor = 0}
+		give_guarantee = NAF
+		NAF = {give_guarantee = CFS}
 	}
 	}
