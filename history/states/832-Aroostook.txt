@@ -1,7 +1,7 @@
 state={
 	id=832
 	name="STATE_832"
-	manpower=8404713
+	manpower=30000
 	state_category=metropolis
 	buildings_max_level_factor=1.000
 	provinces={ 10247 4287 }
