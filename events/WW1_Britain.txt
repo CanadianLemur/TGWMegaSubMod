@@ -82,7 +82,6 @@ news_event = {
 			SAF = {
 				transfer_state = 681
 				transfer_state = 719
-				transfer_state = 275
 			}
 			ENG = {
 			    set_autonomy = {
@@ -95,6 +94,7 @@ news_event = {
 				add_manpower=20000
 				load_oob="SAF_1910"
 				set_country_flag=saf_release
+				set_cosmetic_tag=SAFENG
 			}
 		}
 	}

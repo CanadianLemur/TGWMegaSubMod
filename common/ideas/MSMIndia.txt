@@ -23,7 +23,7 @@ ideas={
 			allowed={ has_country_flag=recruited_gandhi }
 			traits={ prince_of_terror } 
 			ai_will_do={ factor=1 } 
-			picture = generic_political_advisor_arab_3
+			picture = raj_quit_india_movement
 			}
 		MSMIND_tara_singh={ 
 			allowed={ has_country_flag=recruited_tara_singh }

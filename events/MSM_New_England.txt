@@ -12,6 +12,7 @@ country_event = {
 		ai_chance = { factor = 100 }
 		ROOT = {transfer_state = 465 transfer_state = 464}
 		}
+		}
 # MSMNewEngland 2 New Englander Defeat in Maritimes
 country_event = {
 	id =  MSMNewEngland.2
@@ -23,6 +24,7 @@ country_event = {
 	option = {
 		name = MSMNewEngland.2.a 
 		ai_chance = { factor = 100 }
+		}
 		}
 # MSMNewEngland 3 Canadian Victory in Maritimes
 country_event = {
@@ -37,6 +39,7 @@ country_event = {
 		ai_chance = { factor = 100 }
 		ROOT = { transfer_state = 832}
 		}
+		}
 # MSMNewEngland 4 Canadian Defeat in Maritimes
 country_event = {
 	id =  MSMNewEngland.4
@@ -49,3 +52,58 @@ country_event = {
 		name = MSMNewEngland.4.a 
 		ai_chance = { factor = 100 }
 		}
+	}
+# MSMNewEngland 5 New Englander Defeat in New York
+country_event = {
+	id =  MSMNewEngland.5
+	title = MSMNewEngland.5.t
+	desc = MSMNewEngland.5.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = MSMNewEngland.5.a 
+		ai_chance = { factor = 100 }
+		}
+	}
+# MSMNewEngland 6 New Englander Victory in New York
+country_event = {
+	id =  MSMNewEngland.6
+	title = MSMNewEngland.6.t
+	desc = MSMNewEngland.6.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = MSMNewEngland.6.a 
+		ai_chance = { factor = 100 }
+		ROOT = { transfer_state = 358}
+		}
+	}
+# MSMNewEngland 7 IUS Victory in New York
+country_event = {
+	id =  MSMNewEngland.7
+	title = MSMNewEngland.7.t
+	desc = MSMNewEngland.7.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = MSMNewEngland.7.a 
+		ai_chance = { factor = 100 }
+		ROOT = { transfer_state = 827 transfer_state = 828 }
+		}
+	}
+# MSMNewEngland 8 IUS Defeat in New York
+country_event = {
+	id =  MSMNewEngland.8
+	title = MSMNewEngland.8.t
+	desc = MSMNewEngland.8.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = MSMNewEngland.8.a 
+		ai_chance = { factor = 100 }
+		}
+	}
