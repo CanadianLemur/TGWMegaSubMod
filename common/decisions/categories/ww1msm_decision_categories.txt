@@ -32,6 +32,16 @@ ingria_integration = {
 		has_completed_focus = SWE_ww1_support_the_white_army
 	}
 }
+USA_power_vacuum = {
+	icon = generic_political_actions
+	priority = 30
+	visible = {
+	has_country_flag = american_contender
+	}
+	available = {
+	has_country_flag = american_contender
+	}
+}
 
 china_congress = {
 	icon = GFX_china_congress_icon

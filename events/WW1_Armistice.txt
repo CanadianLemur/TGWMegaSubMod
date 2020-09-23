@@ -524,7 +524,6 @@ news_event = {
 				    white_peace = TUR
 			    }
 			}
-
 			news_event = { days = 3 id = ww1_armistice.2 }
 		}
 	}

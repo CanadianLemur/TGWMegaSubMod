@@ -525,7 +525,7 @@ NVJ = {
 	color = rgb { 100 85 0 }
 	color_ui = rgb { 100 85 0 }
 }
-AGR = {
+SIO = {
 	color = rgb { 130  40  130 }
 	color_ui = rgb { 130  40  130 }
 }

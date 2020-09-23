@@ -13,5 +13,21 @@ ideas={
 			}
 				
 		}
+		MSM_USA_collapsed_government = {
+
+			picture = GFX_idea_spr_political_violence
+				
+			removal_cost = -1
+				
+			modifier = {
+				political_power_gain = -5
+				consumer_goods_factor = 1
+				industrial_capacity_factory = -1
+				industrial_capacity_dockyard = -1
+				local_resources_factor = -1
+				training_time_factor = 3000 
+			}
+				
+		}
 	}
 }

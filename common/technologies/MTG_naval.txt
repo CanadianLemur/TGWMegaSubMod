@@ -4053,20 +4053,20 @@ technologies = {
 			always = no
 		}
 	}
-#	pre_dreadnoughts = {
-#
-#		enable_equipments = { 
-#			ship_hull_pre_dreadnought
-#		}
-#
-#		research_cost = 1
-#		start_year = 1936
-#
-#		#set at gamestart
-#		allow = {
-#			always = no
-#		}
-#	}
+	pre_dreadnoughts = {
+
+		enable_equipments = { 
+			ship_hull_pre_dreadnought
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		#set at gamestart
+		allow = {
+			always = no
+		}
+	}
 	coastal_defense_ships = {
 
 		enable_equipments = { 

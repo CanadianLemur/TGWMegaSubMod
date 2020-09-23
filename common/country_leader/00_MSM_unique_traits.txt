@@ -37,4 +37,10 @@ leader_traits = {
 		stability_factor = -0.20
 		political_power_gain = -0.50
 	}
+	MSM_american_warlord = {
+		stability_factor = -0.05
+		army_attack_factor = 0.05
+		conscription_factor = 0.3
+		MONTHLY_POPULATION = -0.1
+	}
 }

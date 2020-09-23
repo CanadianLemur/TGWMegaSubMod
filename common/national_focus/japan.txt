@@ -359,6 +359,26 @@ focus_tree = {
 		x = 1
 		y = 7
 	}
+	# INTERWAR JAPAN - OTHERS
+
+	focus = {
+		id = JAP_interwar_MELCO # Mitsubishi Electric Corporation
+		prerequisite = { focus = JAP_ww1_massive_effort }
+		icon = GFX_goal_generic_radar
+
+	 	available = {
+			date > 1920.1.1
+		}
+
+		completion_reward = {
+			add_ideas = JAP_Idea_MELCO
+		}
+
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 0
+		y = 8
+	}
 
 
 	#-----------------------------------------------------------------------

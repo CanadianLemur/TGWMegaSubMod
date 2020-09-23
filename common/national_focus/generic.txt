@@ -3,7 +3,62 @@ focus_tree = {
 	default=yes
 	reset_on_civilwar=no
 	country={ factor=1 }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+#MacArthurs Fillipino Adventures
+	focus = {
+		id = MSM_PHI_cementing_power
+		icon = GFX_goal_generic_forceful_treaty
+		allow_branch = {has_country_leader = {
+    name = "Douglas MacArthur"
+    ruling_only = yes
+}
+tag = PHI
+}
+		completion_reward = {
+		add_political_power = 100
+		}
 
+		cost = 5
+		x = 17
+		y = 10
+		ai_will_do = { factor = 1 }
+	}
+	focus = {
+		id = MSM_PHI_fight_colonialism
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = MSM_PHI_cementing_power }
+		completion_reward = {
+		
+		}
+
+		cost = 5
+		x = 17
+		y = 11
+		ai_will_do = { factor = 1 }
+	}
+	focus = {
+		id = MSM_fund_indonesian_nationalists
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = MSM_PHI_fight_colonialism }
+		completion_reward = {
+		
+		}
+
+		cost = 5
+		x = 17
+		y = 12
+		ai_will_do = { factor = 1 }
+	}
 
 ##############################################################################
 #Special Indian Focuses Here
@@ -769,6 +824,7 @@ focus_tree = {
 		id = political_effort
 		icon = GFX_goal_generic_demand_territory
 		completion_reward = { add_political_power=100 }
+		allow_branch ={not={tag=SAF}}
 		cost = 10
 		x = 3
 		y = 0
@@ -1322,6 +1378,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power=50
 		}
+		allow_branch ={not={tag=SAF}}
 		cost = 10
 		x = 11
 		y = 0

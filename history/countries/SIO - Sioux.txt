@@ -1,4 +1,4 @@
-﻿capital = 386
+﻿capital = 393
 
 #-------------------------------------------------------
 #					GENERIC VALUES
@@ -12,15 +12,20 @@ set_convoys = 20
 #-------------------------------------------------------
 #					POLITICS & ARMY
 #-------------------------------------------------------
+1910.1.1 = {
+create_country_leader={ name = "Flying Hawk" 
+traits = {}
+picture="gfx/leaders/SIO_Flying_Hawk.dds" expire="1931.1.1" ideology=despotism traits={  } }
 	set_politics = {
 	    ruling_party = neutrality
-	    last_election = "1912.11.5"
+	    last_election = "1910.1.1"
 	    election_frequency = 48
-	    elections_allowed = yes
+	    elections_allowed = no
 	}
 	set_popularities = {
 	    democratic = 10
-	    fascism = 0
-	    communism = 10
+	    fascism = 10
+	    communism = 0
 	    neutrality = 80
 	}
+}
