@@ -24,7 +24,7 @@ country_event = {
 	if = {limit {USA = {owns_state = 386}} CLM = {transfer_state =386} }
 	if = {limit {USA = {owns_state = 385}} CLM = {transfer_state =385} }
 	if = {limit {USA = {owns_state = 387}} CLM = {transfer_state =387} }
-	if = {limit {USA = {owns_state = 638}} JAP = {transfer_state =638} }
+	if = {limit {USA = {owns_state = 638}} PHI = {transfer_state =638} }
 	if = {limit {USA = {owns_state = 623}} PHI = {transfer_state =623} }
 	if = {limit {USA = {owns_state = 327}} PHI = {transfer_state =327} }
 	if = {limit {USA = {owns_state = 624}} PHI = {transfer_state =624} }
@@ -45,15 +45,18 @@ country_event = {
 	if = {limit {USA = {owns_state = 357}} NWN = {transfer_state =357} }
 	if = {limit {USA = {owns_state = 827}} NWN = {transfer_state =827} }
 	if = {limit {USA = {owns_state = 828}} NWN = {transfer_state =828} }
+	if = {limit {USA = {owns_state = 831}} NWN = {transfer_state =831} }
 
 if = {limit {USA = {owns_state = 381}} SIO = {transfer_state =381} }
 if = {limit {USA = {owns_state = 390}} SIO = {transfer_state =390} }
 if = {limit {USA = {owns_state = 384}} SIO = {transfer_state =384} }
-if = {limit {USA = {owns_state = 392}} SIO = {transfer_state =392} }
-if = {limit {USA = {owns_state = 375}} TEX = {transfer_state =375} 
-if = {limit {USA = {owns_state = 376}} TEX = {transfer_state =376} }
-if = {limit {USA = {owns_state = 374}} TEX = {transfer_state =374} }
-}
+if = {limit {USA = {owns_state = 388}} SIO = {transfer_state =388} }
+if = {limit {USA = {owns_state = 389}} SIO = {transfer_state =389} }
+if = {limit {USA = {owns_state = 382}} SIO = {transfer_state =382} }
+if = {limit {USA = {owns_state = 375}} TEX = {transfer_state =375} }
+if = {limit {USA = {owns_state = 376}} NVJ = {transfer_state =376} }
+if = {limit {USA = {owns_state = 377}} NVJ = {transfer_state =377} }
+if = {limit {USA = {owns_state = 374}} CHK = {transfer_state =374} }
 if = {limit {USA = {owns_state = 366}} CFS = {transfer_state =366} }
 if = {limit {USA = {owns_state = 365}} CFS = {transfer_state =365} }
 if = {limit {USA = {owns_state = 367}} CFS = {transfer_state =367} }
@@ -62,14 +65,25 @@ if = {limit {USA = {owns_state = 368}} CFS = {transfer_state =368} }
 if = {limit {USA = {owns_state = 363}} CFS = {transfer_state =363} }
 if = {limit {USA = {owns_state = 362}} CFS = {transfer_state =362} }
 if = {limit {USA = {owns_state = 370}} CFS = {transfer_state =370} }
+if = {limit {USA = {owns_state = 372}} NAF = {transfer_state =372} }
+if = {limit {USA = {owns_state = 371}} NAF = {transfer_state =371} }
+if = {limit {USA = {owns_state = 370}} NAF = {transfer_state =370} }
 if = {limit {USA = {owns_state = 358}} MET = {transfer_state =358} }
 if = {limit {USA = {owns_state = 360}} MET = {transfer_state =360} }
 if = {limit {USA = {owns_state = 359}} MET = {transfer_state =359} }
+if = {limit {USA = {owns_state = 821}} MET = {transfer_state =821} }
+if = {limit {USA = {owns_state = 361}} MET = {transfer_state =361} }
 if = {limit {USA = {owns_state = 261}} IUS = {transfer_state =261} }
 if = {limit {USA = {owns_state = 393}} IUS = {transfer_state =393} }
 if = {limit {USA = {owns_state = 396}} IUS = {transfer_state =396} }
 if = {limit {USA = {owns_state = 395}} IUS = {transfer_state =395} }
 if = {limit {USA = {owns_state = 394}} IUS = {transfer_state =394} }
+if = {limit {USA = {owns_state = 369}} IUS = {transfer_state =369} }
+if = {limit {USA = {owns_state = 820}} IUS = {transfer_state =820} }
+if = {limit {USA = {owns_state = 383}} AGR = {transfer_state =383} }
+if = {limit {USA = {owns_state = 373}} AGR = {transfer_state =373} }
+if = {limit {USA = {owns_state = 392}} AGR = {transfer_state =392} }
+if = {limit {USA = {owns_state = 391}} AGR = {transfer_state =391} }
 transfer_units_fraction= {
     target = NWN
     size = 0.5
@@ -103,10 +117,20 @@ transfer_units_fraction= {
    transfer_units_fraction= {
     target = CAL
     size = 0.5
-    stockpile_ratio = 0.8
+    stockpile_ratio = 0.3
     army_ratio = 0.3
     navy_ratio = 0.3
     air_ratio = 0.3
+    keep_unit_leaders_trigger = {
+   }
+   }
+   transfer_units_fraction= {
+    target = AGR
+    size = 0.5
+    stockpile_ratio = 0.3
+    army_ratio = 0.3
+    navy_ratio = 0
+    air_ratio = 0.1
     keep_unit_leaders_trigger = {
    }
    }
@@ -150,6 +174,7 @@ transfer_units_fraction= {
     keep_unit_leaders_trigger = {
    }
    }
+
    transfer_units_fraction= {
     target = PHI
     size = 0.5
@@ -180,6 +205,7 @@ NWN = {inherit_technology = USA
 		MSM_american_warlord
 		}
 	}
+add_offsite_building = { type = arms_factory level = 1 }
 set_country_flag = american_contender
 }
 CFS = {inherit_technology = USA
@@ -192,6 +218,7 @@ CFS = {inherit_technology = USA
 	MSM_american_warlord
 	}
 }
+add_offsite_building = { type = arms_factory level = 1 }
 set_country_flag = american_contender
 }
 MET = {inherit_technology = USA
@@ -204,6 +231,7 @@ MET = {inherit_technology = USA
 	MSM_american_warlord
 	}
 }
+add_offsite_building = { type = arms_factory level = 1 }
 set_country_flag = american_contender
 }
 HAW = {
@@ -215,13 +243,24 @@ HAW = {
 	traits = {  MSM_foreign_ruler MSM_american_warlord
 	}
 }
+add_offsite_building = { type = arms_factory level = 1 }
 inherit_technology = USA
 }
 IUS = {inherit_technology = USA
 set_country_flag = american_contender
+add_offsite_building = { type = arms_factory level = 1 }
 }
 SIO = {inherit_technology = USA
 set_country_flag = american_contender
+add_offsite_building = { type = arms_factory level = 1 }
+}
+NVJ = {inherit_technology = USA
+set_country_flag = american_contender
+add_offsite_building = { type = arms_factory level = 1 }
+}
+AGR = {inherit_technology = USA
+set_country_flag = american_contender
+add_offsite_building = { type = arms_factory level = 1 }
 }
 CLM = {inherit_technology = USA
 	create_country_leader = {
@@ -233,10 +272,12 @@ CLM = {inherit_technology = USA
 	MSM_american_warlord
 	}
 }
+add_offsite_building = { type = arms_factory level = 1 }
 set_country_flag = american_contender
 }
 DES = {inherit_technology = USA
 set_country_flag = american_contender
+add_offsite_building = { type = arms_factory level = 1 }
 }
 CAL = {inherit_technology = USA
 	create_country_leader = {
@@ -248,6 +289,7 @@ CAL = {inherit_technology = USA
 	MSM_american_warlord
 	}
 }
+add_offsite_building = { type = arms_factory level = 1 }
 set_country_flag = american_contender
 }
 TEX = {inherit_technology = USA
@@ -260,10 +302,13 @@ TEX = {inherit_technology = USA
 	MSM_american_warlord
 	}
 }
+add_offsite_building = { type = arms_factory level = 1 }
 set_country_flag = american_contender
 }
 }
-CHK = {inherit_technology = USA}
+CHK = {inherit_technology = USA
+add_offsite_building = { type = arms_factory level = 1 }
+}
 PHI = {
 	inherit_technology = USA
 	set_politics = {
@@ -287,9 +332,24 @@ set_party_name = {
     long_name = PHI_neutrality_party_macarthur 
     name = PHI_neutrality_party_macarthur 
 }
+add_offsite_building = { type = arms_factory level = 1 }
 	}
-USA = {add_ideas= {MSM_USA_collapsed_government}}
-CAN = {country_event = {id = MSMAmericanCollapse.2}}
+NAF = {load_oob = "NAF"
+add_offsite_building = { type = arms_factory level = 1 }
+inherit_technology = USA
+declare_war_on = {
+    target = CFS
+    type = annex_everything
+}}
+SIO = {load_oob = "SIO"
+declare_war_on = {
+    target = AGR
+    type = annex_everything
+}
+}
+465 = {owner = {country_event = {id = MSMAmericanCollapse.2}}}
+315 = {owner = {country_event = {id = MSMAmericanCollapse.3}}}
+304 = {owner = {country_event = {id = MSMAmericanCollapse.4}}}
 	}
 	
 
@@ -335,7 +395,36 @@ country_event = {
 		transfer_state = 832
 		transfer_state = 463
 		transfer_state = 650
-		transfer_state = 391
 		set_country_flag = american_contender
 	}
+	}
+# American Collapse Cuba Seizes Guantanamo
+country_event = {
+	id =  MSMAmericanCollapse.3
+	title = MSMAmericanCollapse.3.t
+	desc = MSMAmericanCollapse.3.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = MSMAmericanCollapse.3.a #take aroostook and alaska but don't get any further involved
+		ai_chance = { factor = 0}
+		transfer_state = 819
+		
+		}
+	}
+# American Collapse Panama Seizes the Canal
+country_event = {
+	id =  MSMAmericanCollapse.4
+	title = MSMAmericanCollapse.4.t
+	desc = MSMAmericanCollapse.4.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = MSMAmericanCollapse.4.a #take aroostook and alaska but don't get any further involved
+		ai_chance = { factor = 0}
+		transfer_state = 685
+		
+		}
 	}

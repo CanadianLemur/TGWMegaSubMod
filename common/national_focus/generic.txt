@@ -3060,4 +3060,28 @@ tag = PHI
 		x = 36
 		y = 9
 	}
+	focus = {
+		id = SAF_aftermath_of_national_convention
+		icon = GFX_goal_generic_intelligence_exchange
+		completion_reward = {
+			add_political_power=50
+		}
+		allow_branch ={tag=SAF}
+		cost = 1.5
+		x = 11
+		y = 0
+		ai_will_do = { factor = 100 }
+	}
+	focus = {
+		id = SAF_rhodesia
+		icon = GFX_goal_generic_intelligence_exchange
+		completion_reward = {
+			set_country_flag = SAF_rhodesia
+		}
+		prerequisite = {focus = SAF_aftermath_of_national_convention}
+		cost = 1.5
+		x = 13
+		y = 1
+		ai_will_do = { factor = 100 }
+	}
 }

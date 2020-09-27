@@ -1,0 +1,18 @@
+units = {
+
+fleet = {
+	name = "Bulgarian Fleet"
+	naval_base = 9783
+	task_force = {
+		name = "1st Fleet"
+		location = 9783
+		ship = { name = "Nadezhda" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BUL } } }
+		ship = { name = "1. Torpedo Boat" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BUL } } }
+		ship = { name = "2. Torpedo Boat" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BUL } } }
+		ship = { name = "3. Torpedo Boat" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BUL } } }
+		ship = { name = "4. Torpedo Boat" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BUL } } }
+		ship = { name = "5. Torpedo Boat" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BUL } } }
+		ship = { name = "6. Torpedo Boat" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BUL } } }
+	}
+}
+}

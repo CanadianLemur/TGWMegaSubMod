@@ -972,7 +972,6 @@ add_extra_state_shared_building_slots=1 add_building_construction={ type=arms_fa
 		x = 7
 		y = 10
 	}
-
 	focus = {
 		id = BUL_tsargrad
 		prerequisite = { focus = BUL_expansionist_policy}
@@ -980,52 +979,125 @@ add_extra_state_shared_building_slots=1 add_building_construction={ type=arms_fa
 		available = {
 			has_global_flag = kis_secondbalkanwar_victory
 			BUL = {
-				owns_state = 106
-				has_war = no
+				owns_state = 756
 			}
-			country_exists = ROM
 		}
 		
 		completion_reward = {
-			if = {
-				limit = { has_non_aggression_pact_with = ROM }
-				diplomatic_relation = {
-					country = ROM
-					relation = non_aggression_pact
-					active = no
-				}
-			}
 			if = {
 				limit = {
 					NOT = {341 = { is_claimed_by = ROOT }}
 				}
 				341= { add_claim_by = ROOT }
 			}
-			add_manpower = 10000
-			army_experience = 10
-			navy_experience = 10
-			air_experience = 10
-			start_border_war = {
-    change_state_after_war = yes
-    attacker = {
-        state = 756
-        num_provinces = 4
-    }
-				
-    defender = {
-        state = 341
-        num_provinces = 4
-    }
-}
 		}
 		
 		ai_will_do = { factor = 2 }
 		cost = 6
-		x = 7
+		x = 8
 		y = 11
 	}
-	
-
+	focus = {
+		id = BUL_making_amends
+		prerequisite = { focus = BUL_expansionist_policy}
+		icon = GFX_goal_generic_improve_relations
+		available = {
+			NOT = {has_war_with = SER}
+		}
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = { factor = 2 }
+		cost = 5
+		x = 6
+		y = 11
+	}
+	focus = {
+		id = BUL_pact_with_serbia
+		prerequisite = { focus = BUL_making_amends}
+		icon = GFX_goal_generic_improve_relations
+		available = {
+			NOT = {has_war_with = SER}
+		}
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = { factor = 2 }
+		cost = 5
+		x = 7
+		y = 12
+	}
+	focus = {
+		id = BUL_pact_with_montenegro
+		prerequisite = { focus = BUL_making_amends}
+		icon = GFX_goal_generic_improve_relations
+		available = {
+			NOT = {has_war_with = MTN}
+		}
+		
+		completion_reward = {
+		}
+		bypass = {has_country_flag = MTN_backs_bulgaria}
+		
+		ai_will_do = { factor = 2 }
+		cost = 5
+		x = 5
+		y = 12
+	}		
+	focus = {
+		id = BUL_pact_with_greece
+		prerequisite = { focus = BUL_making_amends}
+		icon = GFX_goal_generic_improve_relations
+		available = {
+			NOT = {has_war_with = GRE}
+		}
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = { factor = 2 }
+		cost = 5
+		x = 9
+		y = 12
+	}
+		focus = {
+		id = BUL_leader_of_south_slavs
+		prerequisite = { focus = BUL_pact_with_serbia}
+		prerequisite = { focus = BUL_pact_with_montenegro}
+		icon = GFX_goal_generic_improve_relations
+		available = {
+			NOT = {has_war_with = SER}
+			NOT = {has_war_with = MTN}
+		}
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = { factor = 2 }
+		cost = 5
+		x = 6
+		y = 13
+	}
+	focus = {
+		id = BUL_partition_of_albania
+		prerequisite = { focus = BUL_pact_with_serbia}
+		prerequisite = { focus = BUL_pact_with_greece}
+		icon = GFX_goal_generic_territory_or_war
+		available = {
+			NOT = {has_war_with = SER}
+			NOT = {has_war_with = GRE}
+		}
+		
+		completion_reward = {
+		}
+		
+		ai_will_do = { factor = 2 }
+		cost = 5
+		x = 8
+		y = 13
+	}
 	focus = {
 		id = BUL_second_balkan_defeat
 		prerequisite = { focus = BUL_second_balkan }

@@ -1,0 +1,23 @@
+﻿add_namespace = MSMSouthAfrica
+
+country_event = {
+	title = MSMSouthAfrica.1.t
+	desc = MSMSouthAfrica.1.d
+	id = MSMSouthAfrica.1
+	is_triggered_only = yes
+	option = {
+		name =  MSMSouthAfrica.1.a
+		ai_chance = {
+			factor = 100
+			add_political_power = 100
+		}
+		ai_chance = {
+			factor = 0
+			add_political_power = -100
+			transfer_state = 545
+			add_state_core = 545
+			transfer_state = 542
+		}
+		
+	}
+}

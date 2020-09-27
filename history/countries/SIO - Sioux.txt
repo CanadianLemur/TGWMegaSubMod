@@ -28,4 +28,14 @@ picture="gfx/leaders/SIO_Flying_Hawk.dds" expire="1931.1.1" ideology=despotism t
 	    communism = 0
 	    neutrality = 80
 	}
+	create_field_marshal={
+	name = "Flying Hawk" id=9000
+	portrait_path="gfx/leaders/SIO_Flying_Hawk.dds"
+	traits={ cavalry_leader old_guard }
+	skill=3
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 5
+}
 }

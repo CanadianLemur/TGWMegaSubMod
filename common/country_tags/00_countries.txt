@@ -257,6 +257,7 @@ CHK = "countries/Cherokee.txt"
 NAF = "countries/New Afrika.txt"
 SIO = "countries/Sioux"
 MET = "countries/Metropolitan Union"
+AGR = "countries/Agricultural Union"
 # Indian Breakaway States
 HYD = "countries/Hyderabad.txt"
 MYS = "countries/Mysore.txt"

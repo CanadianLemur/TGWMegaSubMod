@@ -26,3 +26,4 @@ set_popularities = {
 	communism = 0
 	neutrality = 95
 }
+create_country_leader={ name = "Herber J. Grant" picture="gfx/leaders/DES_Heber_J_Grant.dds" expire="1945.1.1" ideology=despotism  traits={  } }

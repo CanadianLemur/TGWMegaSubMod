@@ -259,7 +259,7 @@ if = {
 	# Ship Variants #
 	create_equipment_variant = {
 		name = "Drazki Class"
-		type = ship_hull_light
+		type = ship_hull_light_1
 		name_group = BUL_TB_AND_DD_HISTORICAL
 		parent_version = 0
 		modules = {
@@ -277,7 +277,7 @@ if = {
 	
 	create_equipment_variant = {
 		name = "Nadezhda Class"
-		type = ship_hull_cruiser
+		type = ship_hull_light_1
 		name_group = BUL_CL_HISTORICAL
 		parent_version = 0
 		modules = {
@@ -296,7 +296,15 @@ if = {
 
 1910.1.1 = {
 	oob = "BUL_1910"
-
+	if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_naval_oob = "USA_1910_naval_mtg"
+	else = {
+		set_naval_oob = "USA_1910_naval_legacy"
+	}
+}
 	#-------------------------------------------------------
 	#							NF
 	#-------------------------------------------------------
