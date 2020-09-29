@@ -1,5 +1,5 @@
 #####################################################
-######--"Balkans Ablaze" decisions, by Khanor--######
+######--"Balkans Ablaze" decisions, by Khanor expanded upon by MSM Team--######
 #####################################################
 
 BA_statecraft = {
@@ -473,6 +473,73 @@ BA_statecraft = {
 			}
 			hidden_effect = {
 				77 = { set_state_flag = BA_ROM_has_incorporated }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 15
+		}
+	}
+	BA_BUL_incorporate_tsargrad = {
+		
+		icon = generic_operation
+		
+		allowed = {
+			original_tag = BUL
+		}
+		
+		available = {
+			original_tag = BUL
+			controls_state = 341
+			owns_state = 341
+		}
+		
+		visible = {
+			OR = {
+				controls_state = 341
+				owns_state = 341
+				any_other_country = {
+					owns_state = 341
+					has_war_with = ROOT
+				}
+			}
+			NOT = {
+				341 = { has_state_flag = BA_BUL_has_incorporated }
+			}
+		}
+		
+		highlight_states = {
+			state = 341
+		}
+		
+		fire_only_once = no
+		
+		cost = 0
+		days_remove = 45
+		days_re_enable = 270
+		
+		remove_effect = {
+			add_political_power = 15
+			set_province_name = { id = 9833 name = "Tsargrad" }
+			set_province_name = { id = 6895 name = "Bisánthe" } 
+			set_province_name = { id = 849  name = "Krasivgrad" } 
+			341 = { set_state_name = "Tsargrad" }
+			if = {
+				limit = {
+					341 = { is_claimed_by = ROOT }
+				}
+				341 = { remove_claim_by = ROOT }
+			}
+			if = {
+				limit = {
+					341 = {
+						NOT = { is_core_of = ROOT }
+					}
+				}
+				341 = { add_core_of = ROOT }
+			}
+			hidden_effect = {
+				341 = { set_state_flag = BA_BUL_has_incorporated }
 			}
 		}
 		

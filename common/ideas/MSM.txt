@@ -37,5 +37,62 @@ ideas = {
 				neutrality_drift = 0.1
 			}
 		}
+		reparations_to_france = {
+
+
+				
+			allowed = {
+				not = {has_war_with = FRA}
+			}
+
+			removal_cost = -1
+				
+			modifier = {
+				political_power_gain = -0.25			
+			}
+				
+			targeted_modifier = { 
+				tag = FRA
+				cic_to_target_factor = 0.10	
+			}
+		}
+		reparations_to_britain = {
+
+
+				
+			allowed = {
+				not = {has_war_with = ENG}
+			}
+
+			removal_cost = -1
+				
+			modifier = {
+				political_power_gain = -0.25			
+			}
+				
+			targeted_modifier = { 
+				tag = ENG
+				cic_to_target_factor = 0.10	
+			}
+		}
+		reparations_to_russia = {
+
+
+				
+			allowed = {
+				not = {has_war_with = RUS}
+			}
+
+			removal_cost = -1
+				
+			modifier = {
+				political_power_gain = -0.25			
+			}
+				
+			targeted_modifier = { 
+				tag = RUS
+				cic_to_target_factor = 0.10	
+			}
+		}
 	}
 }

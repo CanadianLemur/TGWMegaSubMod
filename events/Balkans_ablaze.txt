@@ -1,5 +1,5 @@
 ﻿########################################################################################################################################################
-# Balkan Events (Events for Balkans Ablaze, a submod for HoI IV: The Great War, with additional flavor for Bulgaria and its neighbors. Made by Khanor) #
+# Balkan Events (Events for Balkans Ablaze, a submod for HoI IV: The Great War, with additional flavor for Bulgaria and its neighbors. Made by Khanor Expanded upon by MSM team) #
 ########################################################################################################################################################
 
 add_namespace = balkans_ablaze
@@ -430,7 +430,7 @@ country_event = {
 	}
 
 	option = {
-		name = balkans_ablaze.10.a	### Adds the "Fighting Spirit" national spirit for Serbia, preparing them for historical early (1914) success against the Austro-Hungarian Empire, and comes with a hefty morale bonus which will maybe let a historical reconquest of Belgrade happen. No excessive bonuses so Serbia (in AI hands) should eventually fall like in history (especially when low on equipment). Also ups their conscription law for free to account for their high historical mobilization (the manpower from this and the Serbian unique idea itself should also save Serbia from having no troops in the case of very bloody Balkan Wars).
+		name = balkans_ablaze.10.a	### Adds the "Fighting Spirit" national spirit for Serbia, preparing them for historical early (1914) success against the Austro-Hungarian Empire, and comes with a hefty morale bonus which will maybe let a historical reconquest of Belgrade happen. No excessive bonuses so Serbia (in AI hands) should eventually fall like in history (especially when low on equipment). Also ups their conscription law for free to account for their high historical mobilization (the manpower from this and t/he Serbian unique idea itself should also save Serbia from having no troops in the case of very bloody Balkan Wars).
 		add_ideas = {
 			SER_fighting_spirit
 		}
