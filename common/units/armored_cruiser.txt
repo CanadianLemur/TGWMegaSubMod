@@ -12,6 +12,8 @@ sub_units = {
 				ship_medium_battery_2 = 1
 				ship_medium_battery_3 = 1
 				ship_medium_battery_4 = 1
+				MSM_ship_medium_battery_1 = 1
+				MSM_ship_medium_battery_2 = 1
 			}
 		}
 		max_organisation = 40

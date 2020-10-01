@@ -7,7 +7,50 @@ equipment_modules = {
 #    #  #  # #  #  #      #  # #  #  #   #  #   #  #   #   
 ### ###  ##  #  #  #      ###  #  #  #   #  ### #  #   #   
 
+	MSM_ship_light_battery_1 = {
+		category = ship_light_battery
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			lg_attack = 0.5
+			build_cost_ic = 30	
+		}
+		multiply_stats = {
+			naval_speed = -0.01
+		}
+		add_average_stats = {
+			lg_armor_piercing = 0.5
+		}
+		
+		can_convert_from = {
+			module_category = ship_light_battery
+			convert_cost_ic = 60
+		}
 
+		critical_parts = { damaged_light_guns }
+	}
+	MSM_ship_light_battery_2 = {
+		category = ship_light_battery
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			lg_attack = 0.75
+			build_cost_ic = 60	
+		}
+		multiply_stats = {
+			naval_speed = -0.01
+		}
+		add_average_stats = {
+			lg_armor_piercing = 0.75
+		}
+		
+		can_convert_from = {
+			module_category = ship_light_battery
+			convert_cost_ic = 60
+		}
+
+		critical_parts = { damaged_light_guns }
+	}
 
 	ship_light_battery_1 = {
 		category = ship_light_battery
@@ -154,7 +197,56 @@ equipment_modules = {
 #  # ### #  #   #     #       ###  #  #  #   #  ### #  #   #   
 
 
-
+	MSM_ship_heavy_battery_1 = {
+		category = ship_heavy_battery
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		
+		add_stats = {
+			
+			hg_attack = 8
+			build_cost_ic = 1050
+		}
+		multiply_stats = {
+			naval_speed = -0.03
+		}
+		add_average_stats = {
+			hg_armor_piercing = 21
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_heavy_battery
+			convert_cost_ic = 700
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	MSM_ship_heavy_battery_2 = {
+		category = ship_heavy_battery
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		
+		add_stats = {
+			
+			hg_attack = 10
+			build_cost_ic = 1150
+		}
+		multiply_stats = {
+			naval_speed = -0.04
+		}
+		add_average_stats = {
+			hg_armor_piercing = 26
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_heavy_battery
+			convert_cost_ic = 700
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
 	ship_heavy_battery_1 = {
 		category = ship_heavy_battery
 		sfx = sfx_ui_sd_module_turret
@@ -307,7 +399,64 @@ equipment_modules = {
 #   # #   #  #  #  #  # #   #     #  # #  #  #   #  #   #  #   #   
 #   # ### ###  ###  ##  #   #     ###  #  #  #   #  ### #  #   #   
 
-
+	MSM_ship_medium_battery_1 = {
+		category = ship_medium_battery
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 6.0
+			build_cost_ic = 700
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.02
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 16
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_light_battery
+			convert_cost_ic = 400
+		}
+		can_convert_from = {
+			module_category = ship_medium_battery
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	MSM_ship_medium_battery_2 = {
+		category = ship_medium_battery
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 7.0
+			build_cost_ic = 725
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.03
+			max_strength = 0.4
+		}
+		add_average_stats = {
+			hg_armor_piercing = 19
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		can_convert_from = {
+			module_category = ship_light_battery
+			convert_cost_ic = 400
+		}
+		can_convert_from = {
+			module_category = ship_medium_battery
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
 	ship_medium_battery_1 = {
 		category = ship_medium_battery
 		sfx = sfx_ui_sd_module_turret
@@ -439,6 +588,52 @@ equipment_modules = {
 		}
 		critical_parts = { damaged_heavy_guns }
 	}
+	MSM_ship_light_medium_battery_1 = {
+		category = ship_light_medium_battery
+		gui_category = ship_light_battery
+
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {	
+			lg_attack = 2
+			build_cost_ic = 125
+		}
+		multiply_stats = {
+			naval_speed = -0.03
+		}
+		add_average_stats = {
+			lg_armor_piercing = 3.5
+			max_strength = 20
+		}
+		can_convert_from = {
+			module_category = ship_light_medium_battery
+			convert_cost_ic = 500
+		}
+		critical_parts = { damaged_light_guns }
+	}
+	MSM_ship_light_medium_battery_2 = {
+		category = ship_light_medium_battery
+		gui_category = ship_light_battery
+
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {	
+			lg_attack = 3
+			build_cost_ic = 175
+		}
+		multiply_stats = {
+			naval_speed = -0.03
+		}
+		add_average_stats = {
+			lg_armor_piercing = 4.5
+			max_strength = 20
+		}
+		can_convert_from = {
+			module_category = ship_light_medium_battery
+			convert_cost_ic = 500
+		}
+		critical_parts = { damaged_light_guns }
+	}
 	ship_light_medium_battery_1 = {
 		category = ship_light_medium_battery
 		gui_category = ship_light_battery
@@ -568,7 +763,54 @@ equipment_modules = {
 ##  ###  ##   ##  #  # ###  #  # #  # ### ### ##  
 
 
+	MSM_ship_secondaries_1 = {
+		category = ship_secondaries
+		sfx = sfx_ui_sd_module_turret
 
+		
+		add_stats = {
+			lg_attack = 1
+			build_cost_ic = 80
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.02
+		}
+
+		add_average_stats = {
+			lg_armor_piercing = 2.5
+		}
+		
+		can_convert_from = {
+			module_category = ship_secondaries
+			convert_cost_ic = 100
+		}
+		critical_parts = { damaged_secondaries }
+	}
+	MSM_ship_secondaries_2 = {
+		category = ship_secondaries
+		sfx = sfx_ui_sd_module_turret
+
+		
+		add_stats = {
+			lg_attack = 2
+			build_cost_ic = 120
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.02
+		}
+
+		add_average_stats = {
+			lg_armor_piercing = 4
+		}
+		
+		can_convert_from = {
+			module_category = ship_secondaries
+			convert_cost_ic = 100
+		}
+		critical_parts = { damaged_secondaries }
+	}
 	ship_secondaries_1 = {
 		category = ship_secondaries
 		sfx = sfx_ui_sd_module_turret
@@ -650,7 +892,26 @@ equipment_modules = {
 #  # #  #  #   #      #  #  #  #  # 
 #  # #  #  #  ###     #  # ### #  # 
 
+	MSM_ship_anti_air_1 = {
+		category = ship_anti_air
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			anti_air_attack = 1.0
+			build_cost_ic = 70
+		}
+		
+		multiply_stats = {
+			build_cost_ic = 0.025
+			anti_air_attack = 0.1
+		}
 
+		can_convert_from = {
+			module_category = ship_anti_air
+			convert_cost_ic = 60
+		}
+	}
 
 	ship_anti_air_1 = {
 		category = ship_anti_air
@@ -665,7 +926,6 @@ equipment_modules = {
 		multiply_stats = {
 			build_cost_ic = 0.025
 			anti_air_attack = 0.1
-			naval_speed = -0.01
 		}
 
 		can_convert_from = {
@@ -686,7 +946,7 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			naval_speed = -0.01
+			naval_speed = -0.025
 			build_cost_ic = 0.025
 			anti_air_attack = 0.1
 		}
@@ -712,7 +972,7 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			naval_speed = -0.01
+			naval_speed = -0.025
 			build_cost_ic = 0.025
 			anti_air_attack = 0.125
 		}
@@ -739,7 +999,7 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			naval_speed = -0.01
+			naval_speed = -0.05
 			build_cost_ic = 0.025
 			anti_air_attack = 0.15
 		}
@@ -937,9 +1197,56 @@ equipment_modules = {
 ##  # ## # ##  #  # ## ##  
 #   #  # #  #  #  #  # #   
 ### #  #  ##  ### #  # ### 
+	MSM_light_ship_engine_1 = {
+		category = light_ship_engine
+		sfx = sfx_ui_sd_module_engine
 
+		
+		add_stats = {
+			naval_speed = 5
+			fuel_consumption = 0
+			build_cost_ic = 90
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.15
+			reliability = -0.4
+		}
+		
+		can_convert_from = {
+			module_category = light_ship_engine
+			convert_cost_ic = 250
+		}
+		build_cost_resources = {
+			coal = 10
+		}
 
+	}
+	MSM_light_ship_engine_2 = {
+		category = light_ship_engine
+		sfx = sfx_ui_sd_module_engine
 
+		
+		add_stats = {
+			naval_speed = 5
+			fuel_consumption = 0
+			build_cost_ic = 90
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.18
+			reliability = -0.3
+		}
+		
+		can_convert_from = {
+			module_category = light_ship_engine
+			convert_cost_ic = 250
+		}
+		build_cost_resources = {
+			coal = 10
+		}
+
+	}
 	light_ship_engine_1 = {
 		category = light_ship_engine
 		sfx = sfx_ui_sd_module_engine
@@ -1043,6 +1350,52 @@ equipment_modules = {
 		can_convert_from = {
 			module = light_ship_engine_3
 			convert_cost_ic = 230
+		}
+	}
+	MSM_sub_ship_engine_1 = {
+		category = sub_ship_engine
+		sfx = sfx_ui_sd_module_engine
+		
+		
+		add_stats = {
+			naval_speed = 3
+			fuel_consumption = 6
+			build_cost_ic = 90
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.05
+			reliability = -0.2
+
+		}
+
+		
+		can_convert_from = {
+			module_category = sub_ship_engine
+			convert_cost_ic = 250
+		}
+	}
+	MSM_sub_ship_engine_2 = {
+		category = sub_ship_engine
+		sfx = sfx_ui_sd_module_engine
+		
+		
+		add_stats = {
+			naval_speed = 4
+			fuel_consumption = 7
+			build_cost_ic = 90
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.05
+			reliability = -0.2
+
+		}
+
+		
+		can_convert_from = {
+			module_category = sub_ship_engine
+			convert_cost_ic = 250
 		}
 	}
 	sub_ship_engine_1 = {
@@ -1257,6 +1610,79 @@ equipment_modules = {
 			module = cruiser_ship_engine_3
 			convert_cost_ic = 2300
 		}
+	}
+	MSM_heavy_ship_engine_1 = {
+		category = heavy_ship_engine
+		sfx = sfx_ui_sd_module_engine
+
+		
+		add_stats = {
+			naval_speed = 6
+			fuel_consumption = 0
+			build_cost_ic = 1500
+		}
+		
+		multiply_stats = {
+			reliability = -0.3
+		}
+		
+		can_convert_from = {
+			module_category = heavy_ship_engine
+			convert_cost_ic = 4800
+		}
+		build_cost_resources = {
+			coal = 20
+		}
+
+	}
+	MSM_heavy_ship_engine_2 = {
+		category = heavy_ship_engine
+		sfx = sfx_ui_sd_module_engine
+
+		
+		add_stats = {
+			naval_speed = 7
+			fuel_consumption = 0
+			build_cost_ic = 1800
+		}
+		
+		multiply_stats = {
+			reliability = -0.3
+		}
+		
+		can_convert_from = {
+			module_category = heavy_ship_engine
+			convert_cost_ic = 4800
+		}
+		build_cost_resources = {
+			coal = 20
+		}
+
+	}
+	MSM_heavy_ship_engine_3 = {
+		category = heavy_ship_engine
+		sfx = sfx_ui_sd_module_engine
+
+		
+		add_stats = {
+			naval_speed = 7
+			fuel_consumption = 0
+			build_cost_ic = 1800
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.1
+			reliability = -0.3
+		}
+		
+		can_convert_from = {
+			module_category = heavy_ship_engine
+			convert_cost_ic = 4800
+		}
+		build_cost_resources = {
+			coal = 20
+		}
+
 	}
 	heavy_ship_engine_1 = {
 		category = heavy_ship_engine
@@ -1478,8 +1904,40 @@ equipment_modules = {
  #  #  # #  # #    #   #  # #  # 
  #   ##  #  # #    ### ###   ##  
 
+	MSM_ship_torpedo_1 = {
+		category = ship_torpedo
+		sfx = sfx_ui_sd_module_turret
 
+		
+		add_stats = {
+			torpedo_attack = 10
+			build_cost_ic = 40
+		}
+		multiply_stats = {
+			naval_speed = -0.01			
+		}
+		build_cost_resources = {
+			steel = 0
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+	MSM_ship_torpedo_2 = {
+		category = ship_torpedo
+		sfx = sfx_ui_sd_module_turret
 
+		
+		add_stats = {
+			torpedo_attack = 14
+			build_cost_ic = 60
+		}
+		multiply_stats = {
+			naval_speed = -0.01			
+		}
+		build_cost_resources = {
+			steel = 0
+		}
+		critical_parts = { damaged_torpedoes }
+	}
 	ship_torpedo_1 = {
 		category = ship_torpedo
 		sfx = sfx_ui_sd_module_turret
@@ -1573,7 +2031,36 @@ equipment_modules = {
 		}
 		critical_parts = { damaged_torpedoes }
 	}
+	MSM_ship_torpedo_sub_1 = {
+		category = ship_torpedo_sub
+		sfx = sfx_ui_sd_module_turret
 
+		
+		add_stats = {
+			torpedo_attack = 6
+			build_cost_ic = 40
+		}
+		
+		build_cost_resources = {
+			steel = 0
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+	MSM_ship_torpedo_sub_2 = {
+		category = ship_torpedo_sub
+		sfx = sfx_ui_sd_module_turret
+
+		
+		add_stats = {
+			torpedo_attack = 10
+			build_cost_ic = 60
+		}
+		
+		build_cost_resources = {
+			steel = 0
+		}
+		critical_parts = { damaged_torpedoes }
+	}
 	ship_torpedo_sub_1 = {
 		category = ship_torpedo_sub
 		sfx = sfx_ui_sd_module_turret
@@ -1929,7 +2416,6 @@ equipment_modules = {
 		category = ship_sonar
 		gfx = ship_sonar_2
 		sfx = sfx_ui_sd_module_sonar
-		
 		add_stats = {
 			sub_detection = 7.0
 			build_cost_ic = 60
@@ -1944,7 +2430,114 @@ equipment_modules = {
 #### ###  # # # #  # ###       #  #    #### ##  # # # ##   #  
 #  # #  # #   # #  # #  #       # #  # #  # #   #   # #     # 
 #  # #  # #   #  ##  #  #     ##   ##  #  # ### #   # ### ##  
+	MSM_ship_armor_bb_1 = {
+		category = ship_heavy_armor
+		gfx = ship_armor_thick_1
+		
+		multiply_stats = {
+			build_cost_ic = 0.2
+			naval_speed = -0.2
+			max_strength = 0.05
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		add_stats = {
+			armor_value = 20
+			surface_visibility = 10
+		}
+		dismantle_cost_ic = 5500
+		
+	}
+	MSM_ship_armor_bc_1 = {
+		category = ship_heavy_armor
+		gfx = ship_armor_1
+		
+		multiply_stats = {
+			build_cost_ic = 0.075
+			naval_speed = -0.1
+			max_strength = 0.05
+		}
 
+		add_stats = {
+			armor_value = 14
+			surface_visibility = 8
+		}
+		dismantle_cost_ic = 4500
+		
+	}
+	MSM_ship_armor_bb_2 = {
+		category = ship_heavy_armor
+		gfx = ship_armor_thick_1
+		
+		multiply_stats = {
+			build_cost_ic = 0.2
+			naval_speed = -0.2
+			max_strength = 0.05
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		add_stats = {
+			armor_value = 22
+			surface_visibility = 10
+		}
+		dismantle_cost_ic = 5500
+		
+	}
+	MSM_ship_armor_bc_2 = {
+		category = ship_heavy_armor
+		gfx = ship_armor_1
+		
+		multiply_stats = {
+			build_cost_ic = 0.075
+			naval_speed = -0.1
+			max_strength = 0.05
+		}
+
+		add_stats = {
+			armor_value = 16
+			surface_visibility = 8
+		}
+		dismantle_cost_ic = 4500
+		
+	}
+	MSM_ship_armor_bb_3 = {
+		category = ship_heavy_armor
+		gfx = ship_armor_thick_1
+		
+		multiply_stats = {
+			build_cost_ic = 0.2
+			naval_speed = -0.2
+			max_strength = 0.05
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		add_stats = {
+			armor_value = 24
+			surface_visibility = 10
+		}
+		dismantle_cost_ic = 5500
+		
+	}
+	MSM_ship_armor_bc_3 = {
+		category = ship_heavy_armor
+		gfx = ship_armor_1
+		
+		multiply_stats = {
+			build_cost_ic = 0.075
+			naval_speed = -0.1
+			max_strength = 0.05
+		}
+
+		add_stats = {
+			armor_value = 18
+			surface_visibility = 8
+		}
+		dismantle_cost_ic = 4500
+		
+	}
 	ship_armor_bb_1 = {
 		category = ship_heavy_armor
 		gfx = ship_armor_thick_1

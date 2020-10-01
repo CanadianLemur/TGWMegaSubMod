@@ -50,11 +50,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		path =
-		{
-			leads_to_tech = ww1_heavy_tank2
-			research_cost_coeff = 0.9
-		}
+
 
 		sub_technologies = {
 			ww1_light_tank_b
@@ -152,11 +148,6 @@ technologies = {
 		#	research_cost_coeff = 0.9
 		#}
 
-		path =
-		{
-			leads_to_tech = ww1_light_tank
-			research_cost_coeff = 0.9
-		}
 
 		research_cost = 2
 		folder =
@@ -232,12 +223,36 @@ technologies = {
 			leads_to_tech = ww1_heavy_tank_interwar
 			research_cost_coeff = 0.9
 		}
+		path =
+		{
+			leads_to_tech = MSM_light_tank_recon
+			research_cost_coeff = 0.9
+		}
 	
 		research_cost = 2
 		folder =
 		{
 			name = armour_folder
 			position = { x = -4 y = 8 }
+		}
+		categories = {
+			armor
+			cat_light_armor
+		}
+		ai_will_do = { factor=1 }
+		start_year = 1928
+	}
+	MSM_light_tank_recon =
+	{
+				enable_subunits = {
+			light_tank_recon
+		}
+		
+		research_cost = 1
+		folder =
+		{
+			name = armour_folder
+			position = { x = -7 y = 8 }
 		}
 		categories = {
 			armor

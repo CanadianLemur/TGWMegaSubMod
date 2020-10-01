@@ -55,9 +55,24 @@ spriteTypes = {
 		name = "GFX_MSM_improved_ship_hull_uboat_medium"
 		texturefile = "gfx/interface/technologies/early_submarine.dds"
 	}
-	
+
 	####Auxillary####
-	
+	SpriteType = {
+		name = "GFX_EMI_MSM_light_ship_engine_1"
+		texturefile = "gfx/interface/equipmentdesigner/naval/modules/icons/coal_engine_1.dds"
+	}
+		SpriteType = {
+		name = "GFX_EMI_MSM_light_ship_engine_2"
+		texturefile = "gfx/interface/equipmentdesigner/naval/modules/icons/coal_engine_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_EMI_MSM_heavy_ship_engine_1"
+		texturefile = "gfx/interface/equipmentdesigner/naval/modules/icons/coal_engine_1.dds"
+	}
+		SpriteType = {
+		name = "GFX_EMI_MSM_heavy_ship_engine_2"
+		texturefile = "gfx/interface/equipmentdesigner/naval/modules/icons/coal_engine_2.dds"
+	}
 	SpriteType = {
 		name = "GFX_improved_depth_charges_medium"
 		texturefile = "gfx/interface/technologies/improved_depth_charges.dds"

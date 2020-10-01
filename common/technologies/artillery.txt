@@ -894,7 +894,7 @@ technologies = {
 			ww1_anti_air_equipment_1915
 		}
 		enable_equipment_modules = { 
-			ship_anti_air_GW_1
+			MSM_ship_anti_air_1
 		}
 		
 		path = {

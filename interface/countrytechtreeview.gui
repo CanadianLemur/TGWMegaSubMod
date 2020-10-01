@@ -2170,7 +2170,7 @@ guiTypes = {
 			
 				instantTextBoxType = {
 					name = "naval_subtitle_destroyer"
-					position = { x = 30 y = 55 }
+					position = { x = 300 y = 55 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -2184,7 +2184,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "naval_subtitle_cruiser"
-					position = { x = 30 y = 310 }
+					position = { x = 1060 y = 310 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -2212,7 +2212,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "naval_subtitle_carrier"
-					position = { x = 30 y = 725 }
+					position = { x = 1060 y = 725 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -2226,7 +2226,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "naval_subtitle_sub"
-					position = { x = 30 y = 830 }
+					position = { x = 300 y = 850 }
 					textureFile = "" 
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -2239,7 +2239,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "naval_subtitle_armaments"
-					position = { x = 30 y = 1370 }
+					position = { x = 200 y = 1350 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -2251,7 +2251,7 @@ guiTypes = {
 				}	
 				instantTextBoxType = {
 					name = "naval_subtitle_damage_control"
-					position = { x = 30 y = 1770 }
+					position = { x = 1060 y = 1770 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -2263,7 +2263,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "naval_subtitle_fire_control"
-					position = { x = 30 y = 1910 }
+					position = { x = 1060 y = 1910 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -2275,7 +2275,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "naval_subtitle_transport"
-					position = { x = 30 y = 2030 }
+					position = { x = 200 y = 2030 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -2288,7 +2288,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "naval_subtitle_mines"
-					position = { x = 30 y = 2170 }
+					position = { x = 200 y = 2170 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -2331,7 +2331,7 @@ guiTypes = {
 			}
 
 			gridboxtype = {
-				name = "early_ship_hull_heavy_tree"
+				name = "pre_dreadnoughts_tree"
 				position = { x = 150 y = 590 }
 				size = { width = 100 height = 140 }
 				slotsize = { width = 70 height = 70 }
@@ -2368,7 +2368,7 @@ guiTypes = {
 				format = "LEFT"
 			}
 			gridboxtype = {
-				name = "mtg_transport_tree"
+				name = "mtg_early_transport_tree"
 				position = { x = 150 y = 2050 }
 				size = { width = 100 height = 140 }
 				slotsize = { width = 70 height = 70 }
@@ -6212,7 +6212,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "techtree_mtgnavalfolder_item"
-		position = { x=-131 y=1 }
+		position = { x=0 y=1 }
 		size = { width = 204 height = 72 }
 		clipping = no
 

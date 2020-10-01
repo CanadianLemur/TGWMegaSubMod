@@ -2154,6 +2154,7 @@ technologies = {
 
 		enable_subunits = {
 			motorized
+			mot_recon
 		}
 
 		enable_equipments = {
@@ -2190,8 +2191,6 @@ technologies = {
 			}
 		}
 	}
-
-
 	infantry_ww1_suspension1 = {
 
 		motorized = {
@@ -2442,7 +2441,7 @@ technologies = {
 	
 	ww1_armored_car_1 = { # First Armored Car
 
-		enable_equipments = { MSM_armored_car_equipment_1 }
+		enable_equipments = { ww1_armored_car_equipment_1 }
 		
 		enable_subunits = {
 			armored_car
@@ -2497,7 +2496,7 @@ technologies = {
 
 	ww1_armored_car_2 =
 	{
-		enable_equipments = { MSM_armored_car_equipment_2 }
+		enable_equipments = { ww1_armored_car_equipment_2 }
 
 		research_cost = 2
 		folder = {
@@ -2515,7 +2514,7 @@ technologies = {
 
 	ww1_armored_car_3 =
 	{
-		enable_equipments = { MSM_armored_car_equipment_3 }
+		enable_equipments = { ww1_armored_car_equipment_3 }
 
 		research_cost = 2
 		folder = {
@@ -2533,7 +2532,7 @@ technologies = {
 
 	ww1_armored_car_4 =
 	{
-		enable_equipments = { MSM_armored_car_equipment_4 }
+		enable_equipments = { ww1_armored_car_equipment_4 }
 
 		research_cost = 2
 		folder = {
@@ -2544,26 +2543,30 @@ technologies = {
 			motorized_equipment
 			armor
 		}
-		path = { leads_to_tech=armored_car_1 research_cost_coeff=1 }
-		ai_will_do = { factor=1 }
-		start_year = 1927
-	}
-
-	armored_car_1 = {
-
-		enable_equipments = {
-			gw_armored_car_equipment
-		}
 		path = {
 			leads_to_tech = armored_car2
 			research_cost_coeff = 1
 		}
-
+		path = {
+			leads_to_tech = MSM_new_armored_car_role
+			research_cost_coeff = 1
+		}
+		ai_will_do = { factor=1 }
+		start_year = 1927
+	}
+	MSM_new_armored_car_role = {
+		allow_branch = { has_dlc = "La Resistance" }
+		enable_subunits = {
+		armored_car_recon
+		}
+		armored_car = {
+			suppression = 2.5
+		}
 		research_cost = 2
 		start_year = 1936
 		folder = {
 			name = infantry_folder
-			position = { x = 4 y = @1936 }
+			position = { x = 2 y = @1936 }
 		}
 		
 		categories = {
@@ -2594,9 +2597,8 @@ technologies = {
 			}
 		}
 	}
-
 	armored_car2 = {
-
+		allow_branch = { has_dlc = "La Resistance" }
 		enable_equipments = {
 			armored_car_equipment_1
 		}

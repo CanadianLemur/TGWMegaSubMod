@@ -35,9 +35,9 @@ fleet = {
 		ship = { name = "USS Connecticut" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA } } }
 		ship = { name = "USS Kansas" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA version_name = "Vermont Class" } } }
 		ship = { name = "USS Michigan" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA version_name = "South Carolina Class" } } }
-		ship = { name = "USS Chester" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA } } }
-		ship = { name = "USS Birmingham" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA } } }
-		ship = { name = "USS Salem" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA } } }
+		ship = { name = "USS Chester" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = USA } } }
+		ship = { name = "USS Birmingham" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = USA } } }
+		ship = { name = "USS Salem" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = USA } } }
 	}
 }
 
@@ -47,15 +47,15 @@ fleet = {
 	task_force = {
 		name = "Pacific Fleet"
 		location = 9814 # Los Angeles
-		ship = { name = "USS California" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA } } }
-		ship = { name = "USS South Dakota" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA } } }
-		ship = { name = "USS Tennessee" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA version_name = "Tennessee Class" } } }
-		ship = { name = "USS Washington" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA version_name = "Tennessee Class" } } }
-		ship = { name = "USS West Virginia" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA } } }
-		ship = { name = "USS Colorado" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA } } }
-		ship = { name = "USS St. Louis" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "St. Louis Class" } } }
-		ship = { name = "USS Milwaukee" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "St. Louis Class" } } }
-		ship = { name = "USS Charleston" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "St. Louis Class" } } }
+		ship = { name = "USS California" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA } } }
+		ship = { name = "USS South Dakota" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA } } }
+		ship = { name = "USS Tennessee" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA version_name = "Tennessee Class" } } }
+		ship = { name = "USS Washington" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA version_name = "Tennessee Class" } } }
+		ship = { name = "USS West Virginia" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA } } }
+		ship = { name = "USS Colorado" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA } } }
+		ship = { name = "USS St. Louis" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "St. Louis Class" } } }
+		ship = { name = "USS Milwaukee" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "St. Louis Class" } } }
+		ship = { name = "USS Charleston" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "St. Louis Class" } } }
 	}
 }
 
@@ -65,9 +65,9 @@ fleet = {
 	task_force = {
 		name = "Asiatic Fleet"
 		location = 10265 # Manila
-		ship = { name = "USS Saratoga" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA } } }
-		ship = { name = "USS Pittsburgh" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA } } }
-		ship = { name = "USS Denver" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA } } }
+		ship = { name = "USS Saratoga" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA } } }
+		ship = { name = "USS Pittsburgh" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA } } }
+		ship = { name = "USS Denver" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = USA } } }
 	}
 }
 
@@ -89,27 +89,27 @@ fleet = {
 		ship = { name = "USS Minnesota" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA version_name = "Vermont Class" } } }
 		ship = { name = "USS South Carolina" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA version_name = "South Carolina Class" } } }
 		ship = { name = "USS New Hampshire" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA version_name = "Vermont Class" } } }
-		ship = { name = "USS North Carolina" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA version_name = "Tennessee Class" } } }
-		ship = { name = "USS Montana" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA version_name = "Tennessee Class" } } }
-		ship = { name = "USS Maryland" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA } } }
-		ship = { name = "USS Des Moines" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA } } }
-		ship = { name = "USS Chattanooga" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA } } }
-		ship = { name = "USS Galveston" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA } } }
-		ship = { name = "USS Tacoma" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA } } }
-		ship = { name = "USS Cleveland" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA } } }
-		ship = { name = "USS Cincinnati" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Cincinnati Class" } } }
-		ship = { name = "USS Atlanta" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA } } }
-		ship = { name = "USS Boston" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA } } }
-		ship = { name = "USS Chicago" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Chicago Class" } } }
-		ship = { name = "USS Newark" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Newark Class" } } }
-		ship = { name = "USS Baltimore" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Baltimore Class" } } }
-		ship = { name = "USS Philadelphia" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Philadelphia Class" } } }
-		ship = { name = "USS San Francisco" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "San Francisco Class" } } }
-		ship = { name = "USS Olympia" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Olympia Class" } } }
-		ship = { name = "USS Raleigh" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Cincinnati Class" } } }
-		ship = { name = "USS Montgomery" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Montgomery Class" } } }
-		ship = { name = "USS New Orleans" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "New Orleans Class" } } }
-		ship = { name = "USS Albany" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "New Orleans Class" } } }
+		ship = { name = "USS North Carolina" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA version_name = "Tennessee Class" } } }
+		ship = { name = "USS Montana" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA version_name = "Tennessee Class" } } }
+		ship = { name = "USS Maryland" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA } } }
+		ship = { name = "USS Des Moines" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = USA } } }
+		ship = { name = "USS Chattanooga" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = USA } } }
+		ship = { name = "USS Galveston" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = USA } } }
+		ship = { name = "USS Tacoma" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = USA } } }
+		ship = { name = "USS Cleveland" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = USA } } }
+		ship = { name = "USS Cincinnati" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Cincinnati Class" } } }
+		ship = { name = "USS Atlanta" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = USA } } }
+		ship = { name = "USS Boston" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = USA } } }
+		ship = { name = "USS Chicago" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Chicago Class" } } }
+		ship = { name = "USS Newark" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Newark Class" } } }
+		ship = { name = "USS Baltimore" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Baltimore Class" } } }
+		ship = { name = "USS Philadelphia" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Philadelphia Class" } } }
+		ship = { name = "USS San Francisco" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "San Francisco Class" } } }
+		ship = { name = "USS Olympia" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Olympia Class" } } }
+		ship = { name = "USS Raleigh" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Cincinnati Class" } } }
+		ship = { name = "USS Montgomery" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Montgomery Class" } } }
+		ship = { name = "USS New Orleans" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "New Orleans Class" } } }
+		ship = { name = "USS Albany" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "New Orleans Class" } } }
 		ship = { name = "USS Bainbridge" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA } } }
 		ship = { name = "USS Barry" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA } } }
 		ship = { name = "USS Chauncey" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA } } }
@@ -151,10 +151,10 @@ fleet = {
 		ship = { name = "USS Wisconsin" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA version_name = "Illinois Class" } } }
 		ship = { name = "USS Mississippi" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA version_name = "Mississippi Class" } } }
 		ship = { name = "USS Idaho" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA version_name = "Mississippi Class" } } }
-		ship = { name = "USS Brooklyn" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA version_name = "Brooklyn Class" } } }
-		ship = { name = "USS Marblehead" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Montgomery Class" } } }
-		ship = { name = "USS Colombia" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Colombia Class" } } }
-		ship = { name = "USS Minneapolis" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Colombia Class" } } }
+		ship = { name = "USS Brooklyn" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA version_name = "Brooklyn Class" } } }
+		ship = { name = "USS Marblehead" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Montgomery Class" } } }
+		ship = { name = "USS Colombia" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Colombia Class" } } }
+		ship = { name = "USS Minneapolis" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Colombia Class" } } }
 	}
 }
 
