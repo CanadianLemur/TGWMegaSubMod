@@ -221,6 +221,7 @@ if = {
 
 			BEL = {
 				transfer_state = 768
+				transfer_state = 769
 				transfer_state = 6
 				transfer_state = 34
 			}
@@ -388,14 +389,23 @@ news_event = {
 				ITA = {
 					transfer_state = 39
 					transfer_state = 736
-
+					transfer_state = 163
 					add_state_core = 39
 					add_state_core = 736
+					add_state_core = 163
 				}
 
 				# Can be removed with ITA NF
 				39 = { 
 					set_demilitarized_zone = yes 
+				}
+				else = {
+				SCS = {
+				transfer_state = 736
+				transfer_state = 163
+				add_state_core = 736
+				add_state_core = 163
+				}
 				}
 			}
 
@@ -406,40 +416,22 @@ news_event = {
 					}
 				}
 				SER = {
-					transfer_state = 107
-					transfer_state = 108
-					transfer_state = 760
-					transfer_state = 106
-					transfer_state = 759
-					transfer_state = 104
-					transfer_state = 103
-					transfer_state = 109
 					transfer_state = 764 # https://en.wikipedia.org/wiki/Banat#The_Banat_Question_at_the_end_of_First_World_War
-
-					add_state_core = 107
-					add_state_core = 108
-					add_state_core = 760
-					add_state_core = 106
-					add_state_core = 759
-					add_state_core = 104
-					add_state_core = 103
-					add_state_core = 109
 					add_state_core = 764
-
-					if = {
-						limit = {
-							MTN = {
-								is_ai = yes
-							}
-						}
-						transfer_state = 105
-						transfer_state = 761
-
-						add_state_core = 105
-						add_state_core = 761
-					}
 					country_event = { days = 1 id = ww1_russian_armistice.101 }
-				}
+				}	
+			}
+			SCS = {
+			transfer_state = 45
+			transfer_state = 109
+			transfer_state = 104
+			transfer_state = 103
+			transfer_state = 102
+			add_state_core = 45
+			add_state_core = 109
+			add_state_core = 104
+			add_state_core = 103
+			add_state_core = 102
 			}
 			DZG = {
 			transfer_state = 823
@@ -471,6 +463,9 @@ news_event = {
 				add_state_core = 153
 				add_state_core = 152
 				add_state_core = 4
+				transfer_navy = {
+				target = SCS
+				}
 			}
 
 			BUL = {
@@ -598,18 +593,11 @@ news_event = {
 				add_state_core = 76
 			}
 
-			ITA = {
-				transfer_state = 163
-
-				add_state_core = 163
-			}
 
 			SER = {
-				transfer_state = 102
-				transfer_state = 45
+				transfer_state = 764
 
-				add_state_core = 102
-				add_state_core = 45
+				add_state_core = 764
 			}
 
 			ENG = {
@@ -714,7 +702,7 @@ news_event = {
 			target = HAN
 			size = 0.5
 			stockpile_ratio = 0
-			army_ratio = 0.1
+			army_ratio = 0.05
 			navy_ratio = 0.1
 			air_ratio = 0.1
 			keep_unit_leaders_trigger = {

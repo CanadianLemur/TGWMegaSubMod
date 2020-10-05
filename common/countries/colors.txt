@@ -545,6 +545,11 @@ MET = {
 	color = rgb { 40  50  40 }
 	color_ui = rgb { 40  50  40 }
 }
+SCS = {
+	color = rgb {224 200 150}
+	color_ui = rgb {224 200 150}
+}
+
 D01 = {
 	color = rgb { 187 80 86 }
 	color_ui = rgb { 243 103 112 }

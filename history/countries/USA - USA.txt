@@ -248,6 +248,18 @@ create_navy_leader={  name = "Richmond P. Hobson" id=93396 portrait_path="gfx/ho
 			mid_1_custom_slot = empty
 			rear_1_custom_slot = empty
 		}  }
+	create_equipment_variant={ name="Texas Class" type=ship_hull_pre_dreadnought parent_version = 0 obsolete=yes modules = {
+			fixed_ship_battery_slot = MSM_ship_heavy_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+			fixed_ship_secondaries_slot = MSM_ship_secondaries_1
+			fixed_ship_armor_slot = MSM_ship_armor_bb_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}  }
 	create_equipment_variant={ name="Iowa Class" type=ship_hull_pre_dreadnought parent_version = 1 obsolete=yes modules = {
 			fixed_ship_battery_slot = MSM_ship_heavy_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -356,6 +368,18 @@ create_navy_leader={  name = "Richmond P. Hobson" id=93396 portrait_path="gfx/ho
 			mid_1_custom_slot = empty
 			rear_1_custom_slot = empty
 		}  }
+	create_equipment_variant={ name="Wyoming Class" type=MSM_ship_hull_dreadnought1 parent_version = 0 obsolete=no modules = {
+			fixed_ship_battery_slot = MSM_ship_heavy_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_heavy_ship_engine_2
+			fixed_ship_secondaries_slot = MSM_ship_secondaries_1
+			fixed_ship_armor_slot = MSM_ship_armor_bb_2
+			front_1_custom_slot = empty/
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}  }
 	create_equipment_variant={ name="Brooklyn Class" type=ship_hull_pre_dreadnought parent_version = 0 obsolete=yes modules = {
 			fixed_ship_battery_slot = MSM_ship_medium_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -380,6 +404,18 @@ create_navy_leader={  name = "Richmond P. Hobson" id=93396 portrait_path="gfx/ho
 			mid_1_custom_slot = empty
 			rear_1_custom_slot = empty
 		}  }
+	create_equipment_variant={ name="Pennsylvania Class" type=ship_hull_pre_dreadnought parent_version = 0 obsolete=no modules = {
+			fixed_ship_battery_slot = MSM_ship_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+			fixed_ship_secondaries_slot = MSM_ship_secondaries_1
+			fixed_ship_armor_slot = MSM_ship_armor_bc_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}  }
 	create_equipment_variant={ name="Chicago Class" type=ship_hull_light_1 parent_version = 0 obsolete=yes 		modules = {
 			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -387,7 +423,7 @@ create_navy_leader={  name = "Richmond P. Hobson" id=93396 portrait_path="gfx/ho
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = MSM_light_ship_engine_1
 			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
-			rear_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
 		} }
 	create_equipment_variant={ name="Newark Class" type=ship_hull_light_1 parent_version = 1 obsolete=yes 		modules = {
 			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
@@ -396,7 +432,7 @@ create_navy_leader={  name = "Richmond P. Hobson" id=93396 portrait_path="gfx/ho
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = MSM_light_ship_engine_1
 			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
-			rear_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
 		} }
 	create_equipment_variant={ name="Baltimore Class" type=ship_hull_light_1 parent_version = 2 obsolete=yes 		modules = {
 			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
@@ -405,7 +441,7 @@ create_navy_leader={  name = "Richmond P. Hobson" id=93396 portrait_path="gfx/ho
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = MSM_light_ship_engine_1
 			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
-			rear_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
 		} }
 	create_equipment_variant={ name="Philadelphia Class" type=ship_hull_light_1 parent_version = 3 obsolete=yes 		modules = {
 			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
@@ -414,7 +450,7 @@ create_navy_leader={  name = "Richmond P. Hobson" id=93396 portrait_path="gfx/ho
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = MSM_light_ship_engine_1
 			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
-			rear_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
 		}}
 	create_equipment_variant={ name="San Francisco Class" type=ship_hull_light_1 parent_version = 4 obsolete=yes 		modules = {
 			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
@@ -423,7 +459,7 @@ create_navy_leader={  name = "Richmond P. Hobson" id=93396 portrait_path="gfx/ho
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = MSM_light_ship_engine_1
 			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
-			rear_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
 		} }
 	create_equipment_variant={ name="Olympia Class" type=ship_hull_light_1 parent_version = 5 obsolete=yes 		modules = {
 			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
@@ -432,7 +468,7 @@ create_navy_leader={  name = "Richmond P. Hobson" id=93396 portrait_path="gfx/ho
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = MSM_light_ship_engine_1
 			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
-			rear_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
 		}}
 	create_equipment_variant={ name="Cincinnati Class" type=ship_hull_light_1 parent_version = 6 obsolete=yes 		modules = {
 			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
@@ -441,7 +477,7 @@ create_navy_leader={  name = "Richmond P. Hobson" id=93396 portrait_path="gfx/ho
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = MSM_light_ship_engine_1
 			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
-			rear_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
 		} }
 	create_equipment_variant={ name="Montgomery Class" type=ship_hull_light_1 parent_version = 7 obsolete=yes 		modules = {
 			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
@@ -450,7 +486,25 @@ create_navy_leader={  name = "Richmond P. Hobson" id=93396 portrait_path="gfx/ho
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = MSM_light_ship_engine_1
 			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
-			rear_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+		} }
+	create_equipment_variant={ name="Boston Class" type=ship_hull_light_1 parent_version = 7 obsolete=yes 		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+		} }
+	create_equipment_variant={ name="Denver Class" type=ship_hull_light_1 parent_version = 7 obsolete=yes 		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
 		} }
 	create_equipment_variant={ name="Colombia Class" type=ship_hull_light_1 parent_version = 8 obsolete=yes 		modules = {
 			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
@@ -459,7 +513,7 @@ create_navy_leader={  name = "Richmond P. Hobson" id=93396 portrait_path="gfx/ho
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = MSM_light_ship_engine_1
 			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
-			rear_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
 		} }
 	create_equipment_variant={ name="New Orleans Class" type=ship_hull_light_1 parent_version = 9 obsolete=yes 		modules = {
 			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
@@ -468,7 +522,7 @@ create_navy_leader={  name = "Richmond P. Hobson" id=93396 portrait_path="gfx/ho
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = MSM_light_ship_engine_1
 			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
-			rear_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
 		}}
 	create_equipment_variant={ name="St. Louis Class" type=ship_hull_light_1 parent_version = 0 obsolete=no 		modules = {
 			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
@@ -477,7 +531,7 @@ create_navy_leader={  name = "Richmond P. Hobson" id=93396 portrait_path="gfx/ho
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = MSM_light_ship_engine_1
 			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
-			rear_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
 		} }
 	create_equipment_variant={ name="Hopkins Class" type=ship_hull_light_1 parent_version = 0 obsolete=yes 		modules = {
 			fixed_ship_battery_slot = MSM_ship_light_battery_1
@@ -486,7 +540,7 @@ create_navy_leader={  name = "Richmond P. Hobson" id=93396 portrait_path="gfx/ho
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = MSM_light_ship_engine_1
 			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
-			rear_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
 		} }
 	create_equipment_variant={ name="Lawrence Class" type=ship_hull_light_1 parent_version = 1 obsolete=yes 		modules = {
 			fixed_ship_battery_slot = MSM_ship_light_battery_1
@@ -495,7 +549,7 @@ create_navy_leader={  name = "Richmond P. Hobson" id=93396 portrait_path="gfx/ho
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = MSM_light_ship_engine_1
 			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
-			rear_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
 		} }
 	create_equipment_variant={ name="Paul Jones Class" type=ship_hull_light_1 parent_version = 2 obsolete=yes 		modules = {
 			fixed_ship_battery_slot = MSM_ship_light_battery_1
@@ -504,7 +558,7 @@ create_navy_leader={  name = "Richmond P. Hobson" id=93396 portrait_path="gfx/ho
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = MSM_light_ship_engine_1
 			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
-			rear_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
 		} }=====
 	create_equipment_variant={ name="Stewart Class" type=ship_hull_light_1 parent_version = 3 obsolete=yes 		modules = {
 			fixed_ship_battery_slot = MSM_ship_light_battery_1
@@ -513,7 +567,7 @@ create_navy_leader={  name = "Richmond P. Hobson" id=93396 portrait_path="gfx/ho
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = MSM_light_ship_engine_1
 			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
-			rear_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
 		} }
 	create_equipment_variant={ name="Smith Class" type=ship_hull_light_1 parent_version = 0 obsolete=yes 		modules = {
 			fixed_ship_battery_slot = MSM_ship_light_battery_1
@@ -522,7 +576,7 @@ create_navy_leader={  name = "Richmond P. Hobson" id=93396 portrait_path="gfx/ho
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = MSM_light_ship_engine_1
 			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
-			rear_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
 		} }
 	create_equipment_variant={ name="Monaghan Class" type=ship_hull_light_1 parent_version = 0 obsolete=no 		modules = {
 			fixed_ship_battery_slot = MSM_ship_light_battery_1
@@ -531,7 +585,7 @@ create_navy_leader={  name = "Richmond P. Hobson" id=93396 portrait_path="gfx/ho
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = MSM_light_ship_engine_1
 			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
-			rear_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
 		} }
 	create_equipment_variant={ name="A Class" type=MSM_ship_hull_uboat_1 parent_version = 0 obsolete=yes 	modules = {
 			fixed_ship_torpedo_slot = MSM_ship_torpedo_sub_1
