@@ -6,4 +6,4 @@ tags={
 	"Fixes"
 }
 name="TGW Megasubmod"
-supported_version="1.9.3"
+supported_version="1.10.*"
