@@ -303,14 +303,18 @@ news_event = {
 					transfer_state = 344
 					transfer_state = 345
 				}
+				KUR = {
+				transfer_state = 352
+				transfer_state = 350
+				}
 				ENG = {
 					transfer_state = 675
+					transfer_state = 676
 					transfer_state = 291
 					transfer_state = 455
 					transfer_state = 454
 					transfer_state = 818
-					transfer_state = 352
-
+					give_guarantee = KUR
 				}
 				RUS = {
 				transfer_state = 354
