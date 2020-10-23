@@ -1,0 +1,13 @@
+ideas={
+	country = {
+		TUR_ottomanism = {
+			removal_cost = -1
+			
+			modifier = {
+				non_core_manpower = 0.15
+			}
+		}
+
+
+	}
+

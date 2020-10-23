@@ -14,7 +14,6 @@ state = {
 		victory_points = { 6940 1 }
 		owner = TUR
 		add_core_of = SER
-		add_core_of = TUR
 		1913.5.30 = { owner = SER }
 		1919.1.1 = {
 			owner = YUG

@@ -372,6 +372,7 @@ if = {
 		partial_economic_mobilisation
 		limited_exports
 		TUR_ottoman_army_staff
+		TUR_ottomanism
 		ww1_Faith_Allah
 		TUR_developing_agrarian_society
 	}
@@ -619,6 +620,7 @@ if = {
 		partial_economic_mobilisation
 		limited_exports
 		TUR_ottoman_army_staff
+		TUR_ottomanism
 		ww1_Faith_Allah
 		TUR_developing_agrarian_society
 		german_advisors
