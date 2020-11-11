@@ -1,0 +1,73 @@
+add_namespace = MSMRussia
+# MSMRussia 1 Decision on Korea
+country_event = {
+	id =  MSMRussia.1
+	title = MSMRussia.1.t
+	desc = MSMRussia.1.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = MSMRussia.1.a 
+		ai_chance = { factor = 65 }
+		add_political_power = -200
+		}
+	option = {
+		name = MSMRussia.1.b 
+		ai_chance = { factor = 30 }
+		release_puppet = KOR
+		give_guarantee = KOR
+		add_political_power = -50
+		}
+	option = {
+		name = MSMRussia.1.c 
+		ai_chance = { factor = 5 }
+		release_puppet = KOR
+		}
+	}
+# MSMRussia 2 Russo Japanese War, Russian Terms
+country_event = {
+	id =  MSMRussia.2
+	title = MSMRussia.2.t
+	desc = MSMRussia.2.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = MSMRussia.2.a 
+		ai_chance = { factor = 100 }
+		add_political_power = -200
+		transfer_units_fraction= {
+		target = RUS
+		size = 1
+		stockpile_ratio = 0
+		army_ratio = 0
+		navy_ratio = 0.2
+		air_ratio = 0
+		keep_unit_leaders_trigger = {
+		always = yes
+		}
+		KOR = {
+		transfer_state = 799
+		transfer_state = 527
+		transfer_state = 797
+		transfer_state = 798
+		transfer_state = 800
+		transfer_state = 796
+		transfer_state = 801
+		transfer_state = 802
+		transfer_state = 525
+		}
+		RUS = {
+		transfer_state = 744
+		transfer_state = 537
+		transfer_state = 555
+		puppet = KOR
+		country_event = {
+		id = MSMRussia.1
+		days = 4
+			}
+		}
+		
+		}
+	}

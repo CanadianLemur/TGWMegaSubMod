@@ -1,0 +1,164 @@
+units = {
+
+fleet = {
+	name = "5 Sentai Fleet"
+	naval_base = 9859 # Tokyo
+	task_force = {
+		name = "1 Sentai"
+		location = 9859 # Tokyo
+		ship = { name = "IJN Sagami" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = JAP version_name = "Peresviet Class" } } }
+		ship = { name = "IJN Katori" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = JAP version_name = "Kashima Class" } } }
+		ship = { name = "IJN Iki" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = JAP version_name = "Imperator Alexander II Class" } } }
+		ship = { name = "IJN Kasuga" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = JAP version_name = "Kasuga Class" } } }
+		ship = { name = "IJN Nisshin" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = JAP version_name = "Kasuga Class"} } }
+		ship = { name = "IJN Tsushima" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Niitaka Class" } } }
+		ship = { name = "IJN Akebono" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Ikazuchi Class"} } }
+		ship = { name = "IJN Ikazuchi" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Ikazuchi Class"} } }
+		ship = { name = "IJN Oboro" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Ikazuchi Class"} } }
+		ship = { name = "IJN Sazanami" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Ikazuchi Class"} } }
+		ship = { name = "IJN Murakumo" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Murakumo Class" } } }
+		ship = { name = "IJN Kagero" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Murakumo Class" } } }
+		ship = { name = "IJN Shinonome" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Murakumo Class" } } }
+		ship = { name = "IJN Shiranui" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Murakumo Class" } } }
+		ship = { name = "IJN Usugumo" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Murakumo Class" } } }
+		ship = { name = "IJN Yugiri" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Murakumo Class" } } }
+		ship = { name = "IJN Kasumi" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Akatsuki Class" } } }
+	}
+	task_force = {
+		name = "2 Sentai"
+		location = 9859 # Tokyo
+		ship = { name = "IJN Iwami" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = RUS version_name = "Borodino Class"} } }
+		ship = { name = "IJN Suwo" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = JAP version_name = "Peresviet Class" } } }
+		ship = { name = "IJN Aso" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = JAP version_name = "Bayan Class" } } }
+		ship = { name = "IJN Tsukuba" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = JAP version_name = "Tsukuba Class" } } }
+		ship = { name = "IJN Niitaka" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Niitaka Class"} } }
+		ship = { name = "IJN Chitose" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Chitose Class" } } }
+		ship = { name = "IJN Kasagi" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Chitose Class" } } }
+		ship = { name = "IJN Shirakumo" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Shirakumo Class" } } }
+		ship = { name = "IJN Asashio" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Shirakumo Class" } } }
+		ship = { name = "IJN Harusame" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Harusame Class" } } }
+		ship = { name = "IJN Asagiri" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Harusame Class" } } }
+		ship = { name = "IJN Murasame" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Harusame Class" } } }
+		ship = { name = "IJN Ariake" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Harusame Class" } } }
+		ship = { name = "IJN Arare" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Harusame Class" } } }
+		ship = { name = "IJN Fubuki" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Harusame Class" } } }
+	}
+	task_force = {
+		name = "5 Sentai"
+		location = 9859 # Tokyo
+		ship = { name = "IJN Shikishima" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = JAP version_name = "Shikishima Class" } } }
+		ship = { name = "IJN Asahi" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = JAP version_name = "Shikishima Class" } } }
+		ship = { name = "IJN Hizen" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = JAP version_name = "Retvisan Class" } } }
+		ship = { name = "IJN Akashi" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Suma Class" } } }
+		ship = { name = "IJN Hatsushimo" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Asakaze Class" } } }
+		ship = { name = "IJN Yugure" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Asakaze Class" } } }
+		ship = { name = "IJN Harukaze" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Asakaze Class" } } }
+		ship = { name = "IJN Yayoi" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Asakaze Class" } } }
+		ship = { name = "IJN Oite" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Asakaze Class" } } }
+		ship = { name = "IJN Hibiki" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Asakaze Class" } } }
+		ship = { name = "IJN Hatsuyuki" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Asakaze Class" } } }
+		ship = { name = "IJN Yudachi" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Asakaze Class" } } }
+		ship = { name = "IJN Nowaki" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Asakaze Class" } } }
+		ship = { name = "IJN Mikazuki" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Asakaze Class" } } }
+		ship = { name = "IJN Shigure" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Asakaze Class" } } }
+		ship = { name = "IJN Hatsuharu" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Asakaze Class" } } }
+		ship = { name = "IJN Asatsuyu" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Asakaze Class" } } }
+		ship = { name = "IJN Shirotae" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Asakaze Class" } } }
+		ship = { name = "IJN Shiratsuyu" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Asakaze Class" } } }
+		ship = { name = "IJN Shirayuki" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Asakaze Class" } } }
+		ship = { name = "IJN Matsukaze" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Asakaze Class" } } }
+		ship = { name = "IJN Nagatsuki" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Asakaze Class" } } }
+		ship = { name = "IJN Yunagi" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Asakaze Class" } } }
+		ship = { name = "IJN Uzuki" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Asakaze Class" } } }
+		ship = { name = "IJN Minazuki" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Asakaze Class" } } }
+		ship = { name = "IJN Hayate" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Asakaze Class" } } }
+		ship = { name = "IJN Kikuzuki" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Asakaze Class" } } }
+		ship = { name = "IJN Uranami" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Asakaze Class" } } }
+		ship = { name = "IJN Isonami" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Asakaze Class" } } }
+		ship = { name = "IJN Ayanami" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Asakaze Class" } } }
+	}
+}
+
+fleet = {
+	name = "3 Sentai Fleet"
+	naval_base = 1136 # Kanazawa
+	task_force = {
+		name = "3 Sentai"
+		location = 1136 # Kanazawa
+		ship = { name = "IJN Kashima" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = JAP version_name = "Kashima Class" } } }
+		ship = { name = "IJN Mikasa" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = JAP version_name = "Mikasa Class" } } }
+		ship = { name = "IJN Okinoshima" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = JAP version_name = "Admiral Ushakov Class" } } }
+		ship = { name = "IJN Chin Yen" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = JAP version_name = "Chin Yen Class" } } }
+		ship = { name = "IJN Mishima" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = JAP version_name = "Admiral Ushakov Class" } } }
+		ship = { name = "IJN Yakumo" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = JAP version_name = "Yakumo Class" } } }
+		ship = { name = "IJN Adzumo" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = JAP version_name = "Adzumo Class" } } }
+		ship = { name = "IJN Chiyoda" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = JAP version_name = "Chiyoda Class"} } }
+		ship = { name = "IJN Asama" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = JAP version_name = "Asama Class" } } }
+		ship = { name = "IJN Tokiwa" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = JAP version_name = "Asama Class" } } }
+		ship = { name = "IJN Idzumo" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = JAP version_name = "Asama Class" } } }
+	}
+}
+
+fleet = {
+	name = "4 Sentai Fleet"
+	naval_base = 1092 # Hiroshima
+	task_force = {
+		name = "4 Sentai"
+		location = 1092 # Hiroshima
+		ship = { name = "IJN Tango" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = JAP version_name = "Petroplavsk Class" } } }
+		ship = { name = "IJN Fuji" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = JAP version_name = "Fuji Class" } } }
+		ship = { name = "IJN Ikoma" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = JAP version_name = "Tsukuba Class" } } }
+		ship = { name = "IJN Ibuki" definition = battle_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = JAP version_name = "Ibuki Class" } } }
+		ship = { name = "IJN Iwate" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = JAP version_name = "Asama Class" } } }
+		ship = { name = "IJN Tsugaru" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Pallada Class" } } }
+		ship = { name = "IJN Soya" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Varyag Class" } } }
+		ship = { name = "IJN Naniwa" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Naniwa Class"} } }
+		ship = { name = "IJN Takachicho" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Naniwa Class"} } }
+		ship = { name = "IJN Itsukushima" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Matshushima Class" } } }
+		ship = { name = "IJN Hashidate" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Matshushima Class" } } }
+		ship = { name = "IJN Akitsushima" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Akitsushima Class" } } }
+		ship = { name = "IJN Suma" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Suma Class" } } }
+		ship = { name = "IJN Fumizuki" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP } } }
+		ship = { name = "IJN Yamabiko" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP } } }
+		ship = { name = "IJN Satsuki" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Boiki Class" } } }
+		ship = { name = "IJN Asakaze" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Asakaze Class" } } }
+		ship = { name = "IJN Wakaba" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Asakaze Class" } } }
+		ship = { name = "IJN Ushio" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Asakaze Class" } } }
+		ship = { name = "IJN Ne-no-hi" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Asakaze Class" } } }
+		ship = { name = "IJN Kisaragi" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Asakaze Class" } } }
+		ship = { name = "IJN Kamikaze" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Asakaze Class" } } }
+	}
+}
+
+fleet = {
+	name = "6 Sentai Fleet"
+	naval_base = 12068 # Gaoxiong
+	task_force = {
+		name = "6 Sentai"
+		location = 12068 # Gaoxiong
+		ship = { name = "IJN Otowa" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Otowa Class" } } }
+		ship = { name = "IJN Suzya" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Novik Class" } } }
+		ship = { name = "IJN Yodo" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Yodo Class" } } }
+		ship = { name = "IJN Mogami" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Yodo Class"} } }
+		ship = { name = "IJN No. 1" definition = submarine equipment = { MSM_ship_hull_uboat_1 = { amount = 1 owner = JAP } } }
+		ship = { name = "IJN No. 2" definition = submarine equipment = { MSM_ship_hull_uboat_1 = { amount = 1 owner = JAP } } }
+		ship = { name = "IJN No. 3" definition = submarine equipment = { MSM_ship_hull_uboat_1 = { amount = 1 owner = JAP } } }
+		ship = { name = "IJN No. 4" definition = submarine equipment = { MSM_ship_hull_uboat_1 = { amount = 1 owner = JAP } } }
+		ship = { name = "IJN No. 5" definition = submarine equipment = { MSM_ship_hull_uboat_1 = { amount = 1 owner = JAP } } }
+		ship = { name = "IJN No. 6" definition = submarine equipment = { MSM_ship_hull_uboat_1 = { amount = 1 owner = JAP version_name = "Kaigun-Holland Class" } } }
+		ship = { name = "IJN No. 7" definition = submarine equipment = { MSM_ship_hull_uboat_1 = { amount = 1 owner = JAP version_name = "Kaigun-Holland Class" } } }
+		ship = { name = "IJN No. 8" definition = submarine equipment = { MSM_ship_hull_uboat_1 = { amount = 1 owner = JAP } } }
+		ship = { name = "IJN No. 9" definition = submarine equipment = { MSM_ship_hull_uboat_1 = { amount = 1 owner = JAP } } }
+	}
+}
+}
+instant_effect = {
+add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought creator = "JAP" version_name = "Satsuma Class"  }  requested_factories = 1  progress = 0.9  amount = 1 } #IJN Satsuma LD:15-May-1905 Comp:15-Nov-1910
+add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought creator = "JAP" version_name = "Satsuma Class"  }  requested_factories = 1  progress = 0.83  amount = 1 } #IJN Aki LD:15-Mar-1906 Comp:11-Mar-1911
+add_equipment_production = { equipment = { type = MSM_ship_hull_dreadnought1 creator = "JAP"  version_name = "Kawachi Class"}  requested_factories = 1  progress = 0.37  amount = 1 } #IJN Settsu LD:18-Jan-1909 Comp:01-Jul-1912
+add_equipment_production = { equipment = { type = MSM_ship_hull_dreadnought1 creator = "JAP"  version_name = "Kawachi Class"}  requested_factories = 1  progress = 0.36  amount = 1 } #IJN Kawachi LD:01-Apr-1909 Comp:31-Mar-1912
+add_equipment_production = { equipment = { type = MSM_ship_hull_dreadnought1 creator = "JAP"  version_name = "Ibuki Class" }  requested_factories = 1  progress = 0.85  amount = 1 } #IJN Kurama LD:23-Aug-1905 Comp:28-Feb-1911
+add_equipment_production = { equipment = { type = ship_hull_light_1 creator = "JAP" version_name = "Tone Class"  }  requested_factories = 1  progress = 0.99  amount = 1 } #IJN Tone LD:17-Nov-1905 Comp:15-May-1910
+add_equipment_production = { equipment = { type = ship_hull_light_1 creator = "JAP" version_name = "Chikuma Class" }  requested_factories = 1  progress = 0.35  amount = 1 } #IJN Chikuma LD:01-Apr-1909 Comp:17-May-1912
+
+}

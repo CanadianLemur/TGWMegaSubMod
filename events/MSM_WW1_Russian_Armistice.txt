@@ -561,6 +561,7 @@ news_event = {
 
 	immediate = {
 		set_global_flag = kis_treaty_of_versailles
+		set_global_flag = russian_versailles
 		hidden_effect = {
 			DEN = {
 				transfer_state = 751
