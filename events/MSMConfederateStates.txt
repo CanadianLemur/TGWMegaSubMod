@@ -1,0 +1,41 @@
+﻿add_namespace = MSMConfederateStates
+
+country_event = {
+	title = MSMConfederateStates.1.t # Confederate election 1: Long vs Rockenbach
+	desc = MSMConfederateStates.1.d
+	id = MSMConfederateStates.1
+	picture = 
+	is_triggered_only = yes
+	immediate = {
+			
+		}
+		
+	option = {
+		name =  MSMConfederateStates.1.a # Huey Long
+		ai_chance = {
+			factor = 60
+		}
+			create_country_leader = {
+			name = "Huey Long"
+			picture =""
+			expire = "1960.1.1"
+			ideology = socialism
+			traits = {
+	}
+}
+	}
+	option = {
+		name =  MSMConfederateStates.1.b # Samuel Rockenbach
+		ai_chance = {
+			factor = 40
+		}
+			create_country_leader = {
+			name = "Samuel Rockenbach"
+			picture ="gfx/hoi4tgw_portraits/USA/army_generals/USA_Samuel_Rockenbach.dds"
+			expire = "1952.1.1"
+			ideology = conservatism
+			traits = {
+	}
+}
+	}
+}

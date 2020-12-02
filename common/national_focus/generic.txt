@@ -13,52 +13,6 @@ focus_tree = {
 	
 	
 	
-	
-#MacArthurs Fillipino Adventures
-	focus = {
-		id = MSM_PHI_cementing_power
-		icon = GFX_goal_generic_forceful_treaty
-		allow_branch = {has_country_leader = {
-    name = "Douglas MacArthur"
-    ruling_only = yes
-}
-tag = PHI
-}
-		completion_reward = {
-		add_political_power = 100
-		}
-
-		cost = 5
-		x = 17
-		y = 10
-		ai_will_do = { factor = 1 }
-	}
-	focus = {
-		id = MSM_PHI_fight_colonialism
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = MSM_PHI_cementing_power }
-		completion_reward = {
-		
-		}
-
-		cost = 5
-		x = 17
-		y = 11
-		ai_will_do = { factor = 1 }
-	}
-	focus = {
-		id = MSM_fund_indonesian_nationalists
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = MSM_PHI_fight_colonialism }
-		completion_reward = {
-		
-		}
-
-		cost = 5
-		x = 17
-		y = 12
-		ai_will_do = { factor = 1 }
-	}
 
 ##############################################################################
 #Special Indian Focuses Here

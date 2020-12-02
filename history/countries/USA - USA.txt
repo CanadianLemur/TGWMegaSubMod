@@ -376,7 +376,7 @@ create_navy_leader={  name = "Richmond P. Hobson" id=93396 portrait_path="gfx/ho
 			fixed_ship_engine_slot = MSM_heavy_ship_engine_2
 			fixed_ship_secondaries_slot = MSM_ship_secondaries_1
 			fixed_ship_armor_slot = MSM_ship_armor_bb_2
-			front_1_custom_slot = empty/
+			front_1_custom_slot = empty
 			mid_1_custom_slot = empty
 			rear_1_custom_slot = empty
 		}  }

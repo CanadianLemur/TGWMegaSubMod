@@ -1,0 +1,287 @@
+focus_tree = {
+	id = CFS_focus
+	default = no
+	country = { factor=0 modifier = { add = 10 tag = CFS } }	
+
+	###########################################################################################################################
+	# POLITICAL
+	###########################################################################################################################
+
+	focus = {
+		id = CFS_dixie_rises_again
+		icon = GFX_focus_usa_honor_the_confederacy
+		completion_reward = { add_political_power = 50 }
+		ai_will_do = { factor = 1 }
+		cost = 5
+		x = 3
+		y = 0
+	}	
+
+	focus = {
+		id = CFS_victory_over_communists
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = CFS_dixie_rises_again }
+		available = {
+		NOT = {country_exists = NAF}
+		owns_state = 372
+		owns_state = 370
+		owns_state = 371
+		}
+		
+		completion_reward = { add_political_power = 200 }
+		ai_will_do = { factor = 1 }
+		cost = 2
+		x = 3
+		y = 1
+	}
+
+	focus = {
+		id = CFS_purge_communist_remnants
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = { focus = CFS_victory_over_communists }
+		available = {
+		owns_state = 372
+		owns_state = 370
+		owns_state = 371
+		370 = {compliance > 30}
+		371 = {compliance > 30}
+		372 = {compliance > 30}
+		}
+		completion_reward = { add_state_core = 370 add_state_core = 371 add_state_core = 372 }
+		ai_will_do = { factor = 1 }
+		cost = 10
+		x = 1
+		y = 2
+	}
+	focus = {
+		id = CFS_texas_policy
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = CFS_victory_over_communists }
+		available = {
+		NOT = {country_exists = NAF}
+		owns_state = 372
+		owns_state = 370
+		owns_state = 371
+		}
+		
+		completion_reward = { add_political_power = 200 }
+		ai_will_do = { factor = 1 }
+		cost = 10
+		x = 5
+		y = 2
+	}
+	focus = {
+		id = CFS_dixies_fate
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = CFS_victory_over_communists }
+		available = {
+		NOT = {country_exists = NAF}
+		owns_state = 372
+		owns_state = 370
+		owns_state = 371
+		}
+		
+		completion_reward = { add_political_power = 200 }
+		ai_will_do = { factor = 1 }
+		cost = 10
+		x = 3
+		y = 2
+	}
+	focus = {
+		id = CFS_revive_the_knights_of_the_golden_circle
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = CFS_dixies_fate }
+		completion_reward = { add_political_power = 200 }
+		ai_will_do = { factor = 1 }
+		mutually_exclusive = { focus=CFS_solidify_military_rule focus=CFS_make_election_preparations}
+		cost = 10
+		x = 6
+		y = 3
+	}
+	focus = {
+		id = CFS_claim_greater_antilles
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = CFS_revive_the_knights_of_the_golden_circle }
+		completion_reward = {
+		create_wargoal = {
+				type = annex_everything
+				target = CUB
+			}
+		create_wargoal = {
+				type = annex_everything
+				target = HAI
+			}
+		create_wargoal = {
+				type = annex_everything
+				target = DOM
+			}
+		create_wargoal = {
+				type = annex_everything
+				target = PUE
+			}
+		}
+		ai_will_do = { factor = 1 }
+		cost = 10
+		x = 8
+		y = 4
+	}
+	focus = {
+		id = CFS_cross_the_rio_grande
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = CFS_revive_the_knights_of_the_golden_circle }
+		completion_reward = {			create_wargoal = {
+				type = annex_everything
+				target = MEX
+			} }
+		ai_will_do = { factor = 1 }
+		cost = 10
+		x = 6
+		y = 4
+	}
+	focus = {
+		id = CFS_legacy_of_william_walker
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = CFS_cross_the_rio_grande }
+		completion_reward = {			
+		create_wargoal = {
+				type = annex_everything
+				target = GUA
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = ELS
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = HON
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = NIC
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = COS
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = PAN
+			}
+			}
+		ai_will_do = { factor = 1 }
+		cost = 10
+		x = 6
+		y = 5
+	}
+	focus = {
+		id = CFS_south_america
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = CFS_claim_greater_antilles }
+		completion_reward = {			
+		create_wargoal = {
+				type = annex_everything
+				target = COL
+			}
+		create_wargoal = {
+				type = annex_everything
+				target = VEN
+			}
+			}
+		ai_will_do = { factor = 1 }
+		cost = 10
+		x = 8
+		y = 5
+	}
+	focus = {
+		id = CFS_solidify_military_rule
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = CFS_dixies_fate }
+		completion_reward = { add_political_power = 200 }
+		ai_will_do = { factor = 1 }
+		mutually_exclusive = { focus=CFS_revive_the_knights_of_the_golden_circle focus=CFS_make_election_preparations}
+		cost = 10
+		x = 3
+		y = 3
+	}
+	focus = {
+		id = CFS_confederate_irredentism
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = CFS_solidify_military_rule focus = CFS_revive_the_knights_of_the_golden_circle }
+		completion_reward = { add_state_claim = 369 add_state_claim = 820 add_state_claim = 361 add_state_claim = 821 add_state_claim = 373}
+		ai_will_do = { factor = 1 }
+		cost = 10
+		x = 4
+		y = 4
+	}
+	focus = {
+		id = CFS_dealing_with_the_natives
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = CFS_confederate_irredentism }
+		completion_reward = {}###Event to set native policy
+		ai_will_do = { factor = 1 }
+		cost = 10
+		x = 4
+		y = 5
+	}
+	focus = {
+		id = CFS_access_to_the_pacific
+		icon = GFX_goal_generic_construct_naval_dockyard
+		available = {owns_state = 375}
+		prerequisite = { focus = CFS_solidify_military_rule }
+		completion_reward = {}###event to demand sonora and chihuahua
+		ai_will_do = { factor = 1 }
+		cost = 10
+		x = 2
+		y = 4
+	}
+	focus = {
+		id = CFS_make_election_preparations
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = CFS_dixies_fate }
+		completion_reward = { set_politics = {
+		ruling_party = democratic
+		} 
+		create_country_leader = {
+			name = "Transition Council"
+			picture =""
+			expire = "1960.1.1"
+			ideology = liberalism
+			traits = {}
+}
+		}
+		ai_will_do = { factor = 1 }
+		mutually_exclusive = { focus=CFS_revive_the_knights_of_the_golden_circle focus=CFS_solidify_military_rule}
+		cost = 10
+		x = 0
+		y = 3
+	}
+	focus = {
+		id = CFS_hold_election
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = CFS_make_election_preparations }
+		completion_reward = { country_event = {id = MSMConfederateStates.1} }
+		ai_will_do = { factor = 1 }
+		cost = 10
+		x = 0
+		y = 4
+	}
+	focus = {
+		id = CFS_rockenbach_tank_corp
+		icon = GFX_hoi4tgw_renaultft
+		prerequisite = { focus = CFS_hold_election }
+		completion_reward = { load_oob = "CFS_Rockenbach_tanks" }
+		ai_will_do = { factor = 1 }
+		cost = 10
+		x = 2
+		y = 5
+	}
+	focus = {
+		id = CFS_every_man_a_king
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = CFS_hold_election }
+		completion_reward = { load_oob = "CFS_Rockenbach_tanks" }
+		ai_will_do = { factor = 1 }
+		cost = 10
+		x = 0
+		y = 5
+	}

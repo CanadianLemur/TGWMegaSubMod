@@ -47,6 +47,8 @@ country_event = {
 		keep_unit_leaders_trigger = {
 		always = yes
 		}
+		}
+		RUS = {complete_national_focus = RUS_second_russo_japanese_war_victory}
 		KOR = {
 		transfer_state = 799
 		transfer_state = 527
@@ -68,6 +70,158 @@ country_event = {
 		days = 4
 			}
 		}
-		
+		every_country = {news_event = {
+		id = MSMRussia.5
+		days = 2
+		}
+		}
 		}
 	}
+# MSMRussia 3 Russo Japanese War, Japanese Terms
+country_event = {
+	id =  MSMRussia.3
+	title = MSMRussia.3.t
+	desc = MSMRussia.3.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = MSMRussia.3.a 
+		ai_chance = { factor = 100 }
+		add_political_power = -200
+		SIB = {
+			transfer_state = 408 #Vladivostok
+			transfer_state = 409 #Khabarovsk
+			transfer_state = 657 #Birobidzhan
+			transfer_state = 560 #Nikolayevsk
+			transfer_state = 562 #Okhotsk
+			transfer_state = 637 #Kamchatka
+			transfer_state = 644 #Northeast Siberia
+			transfer_state = 574 #Yahtusk
+			transfer_state = 575 #Kirensk
+			transfer_state = 565 #Bodaybo
+			transfer_state = 563 #Chita
+			transfer_state = 561 #Amur
+			transfer_state = 564 #Ulan Ude
+			transfer_state = 566 #Irkutsk
+			transfer_state = 567 #Bratsk
+		}
+		if = {
+		limit = {MON = {is_subject_of = RUS} RUS = {owns_state = 329}}
+		MON = {transfer_state = 329 add_state_core = 329 transfer_state = 330}
+		JAP = {puppet = MON}
+		}
+		RUS = {complete_national_focus = RUS_second_russo_japanese_war_defeat}
+		JAP = {
+		transfer_state = 655
+		add_state_core = 655
+		puppet = SIB
+		unlock_national_focus = JAP_ww1_form_siberia
+		if = {
+		limit = {RUS = {owns_state = 328}}
+		transfer_state =328
+		}
+		if = {
+		limit = {RUS = {owns_state = 717}}
+		transfer_state = 717
+		}
+		if = {
+		limit = {RUS = {owns_state = 714}}
+		transfer_state =714
+		}
+		if = {
+		limit = {RUS = {owns_state = 716}}
+		transfer_state =716
+		}
+		}
+		every_country = {news_event = {
+		id = MSMRussia.6
+		days = 2
+		}
+		}
+	}
+	}
+# MSMRussia 4 Manchurian Puppet
+country_event = {
+	id =  MSMRussia.4
+	title = MSMRussia.4.t
+	desc = MSMRussia.4.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	is_triggered_only = yes
+	### Puyi
+	option = {
+		name = MSMRussia.4.a 
+		ai_chance = { factor = 100 }
+		MAN = {
+		transfer_state = 714
+		add_state_core = 714
+		transfer_state = 716
+		add_state_core = 716
+		transfer_state = 717
+		add_state_core = 717
+		transfer_state = 328
+		add_state_core = 328}
+		puppet = MAN
+	}
+	### Local Warlord
+	option = {
+		name = MSMRussia.4.b
+		ai_chance = { factor = 100 }
+		MAN = {
+		transfer_state = 714
+		add_state_core = 714
+		transfer_state = 716
+		add_state_core = 716
+		transfer_state = 717
+		add_state_core = 717
+		transfer_state = 328
+		add_state_core = 328}
+		puppet = MAN
+	}
+	
+	}
+news_event  = {
+	id =  MSMRussia.5
+	title = MSMRussia.5.t
+	desc = MSMRussia.5.d
+	picture = GFX_report_event_generic_rifles
+	is_triggered_only = yes
+	option = {
+		name = MSMRussia.5.a 
+		ai_chance = { factor = 100 }
+		trigger = {NOT = {OR = {tag = RUS tag = JAP}}}
+}
+	option = {
+		name = MSMRussia.5.b 
+		ai_chance = { factor = 100 }
+		trigger = {tag = JAP}
+}
+	option = {
+		name = MSMRussia.5.c 
+		ai_chance = { factor = 100 }
+		trigger = {tag = RUS}
+}
+}
+news_event  = {
+	id =  MSMRussia.6
+	title = MSMRussia.6.t
+	desc = MSMRussia.6.d
+	picture = GFX_report_event_generic_rifles
+	is_triggered_only = yes
+	option = {
+		name = MSMRussia.6.a 
+		ai_chance = { factor = 100 }
+		trigger = {NOT = {OR = {tag = RUS tag = JAP}}}
+}
+	option = {
+		name = MSMRussia.6.b 
+		ai_chance = { factor = 100 }
+		trigger = {tag = JAP}
+}
+	option = {
+		name = MSMRussia.6.c 
+		ai_chance = { factor = 100 }
+		trigger = {tag = RUS}
+}
+}
