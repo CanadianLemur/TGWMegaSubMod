@@ -1,0 +1,40 @@
+units = {
+
+fleet = {
+	name = "Svenska Flottan Fleet"
+	naval_base = 11215 # Karlskrona
+	task_force = {
+		name = "Svenska Flottan"
+		location = 11215 # Karlskrona
+		ship = { name = "HMS Svea" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = SWE version_name = "Svea Class"} } }
+		ship = { name = "HMS Göta" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = SWE version_name = "Svea Class"} } }
+		ship = { name = "HMS Thule" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = SWE version_name = "Svea Class"} } }
+		ship = { name = "HMS Oden" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = SWE version_name = "Oden Class" } } }
+		ship = { name = "HMS Thor" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = SWE version_name = "Oden Class" } } }
+		ship = { name = "HMS Niord" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = SWE version_name = "Oden Class" } } }
+		ship = { name = "HMS Dristigheten" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = SWE version_name = "Dristigheten Class" } } }
+		ship = { name = "HMS Äran" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = SWE version_name = "Äran Class"} } }
+		ship = { name = "HMS Wasa" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = SWE version_name = "Äran Class"} } }
+		ship = { name = "HMS Tapperheten" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = SWE version_name = "Äran Class"} } }
+		ship = { name = "HMS Manligheten" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = SWE version_name = "Äran Class"} } }
+		ship = { name = "HMS Oscar II" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = SWE version_name = "Oscar II Class" } } }
+		ship = { name = "HMS Fylgia" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = SWE version_name = "Fylgia Class"} } }
+		ship = { name = "HMS Örnen" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "Örnen Class"} } }
+		ship = { name = "HMS Claes Horn" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "Örnen Class"} } }
+		ship = { name = "HMS Jacob Bagge" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "Örnen Class"} } }
+		ship = { name = "HMS Psilander" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "Örnen Class" } }  }
+		ship = { name = "HMS Claes Uggla" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "Örnen Class"} } }
+		ship = { name = "HMS Mode" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "Mode Class"} } }
+		ship = { name = "HMS Magne" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "Magne Class" } } }
+		ship = { name = "HMS Wale" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "Wale Class" } } }
+		ship = { name = "HMS Ragnar" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "Ragnar Class"} } }
+		ship = { name = "HMS Sigurd" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "Ragnar Class"} } }
+		ship = { name = "HMS Vidar" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "Ragnar Class"} } }
+		ship = { name = "HMS Hajen" definition = submarine equipment = { MSM_ship_hull_uboat_1 = { amount = 1 owner = SWE version_name = "Hajen Class"} } }
+		ship = { name = "HMS Hvalen" definition = submarine equipment = { MSM_ship_hull_uboat_1 = { amount = 1 owner = SWE version_name = "Hvalen Class"} } }
+		ship = { name = "HMS U2" definition = submarine equipment = { MSM_ship_hull_uboat_1 = { amount = 1 owner = SWE version_name = "U2 Class" } } }
+		ship = { name = "HMS U3" definition = submarine equipment = { MSM_ship_hull_uboat_1 = { amount = 1 owner = SWE version_name = "U2 Class" } } }
+		ship = { name = "HMS U4" definition = submarine equipment = { MSM_ship_hull_uboat_1 = { amount = 1 owner = SWE version_name = "U2 Class" } } }
+	}
+}
+}
