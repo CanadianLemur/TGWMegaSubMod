@@ -1,0 +1,10 @@
+SPR_viceroyalties = {
+	icon = generic_political_actions
+	priority = 30
+	available = {
+		tag = SPR
+	}
+	visible = {
+		tag = SPR
+	}
+}

@@ -1,0 +1,553 @@
+﻿capital = 41
+
+set_research_slots = 3
+set_stability = 0.85
+set_war_support = 0.60
+set_convoys = 150
+
+1910.1.1 = {
+
+	oob = "SPR_1910"
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_naval_oob = "SPR_1910_naval_mtg"
+	else = {
+		set_naval_oob = "SPR_1910_naval_legacy"
+	}
+}
+
+	# Starting tech
+	set_technology = {
+		# Infantry
+		infantry_weapons = 1
+		support_weapons = 1
+		infantry_binoculars = 1
+		motorised_infantry = 1
+		ww1_ambulance1 = 1
+
+
+		# Support
+		tech_support = 1
+		tech_engineers = 1
+		tech_recon = 1
+		#tech_military_police = 1
+		#tech_maintenance_company = 1
+		#tech_field_hospital = 1
+		#tech_logistics_company = 1
+
+		# Armor
+
+		# Artillery
+		light_field_gun1 = 1
+		heavy_field_gun1 = 1
+		
+		# Air
+
+		# Engineering
+		electronic_mechanical_engineering = 1
+		chemical_research = 1
+
+		# Industry
+		ww1_tools1 = 1
+		ww1_fortification1 = 1
+	}
+	
+	if = {
+	limit = { not = {has_dlc = "Man the Guns"} }
+		set_technology = {
+			# Navy
+		ww1_destroyer0 = 1
+		ww1_destroyer0_mtg = 1
+		ww1_destroyer1 = 1
+		ww1_destroyer1_mtg = 1
+
+		ww1_light_cruiser0 = 1
+		ww1_light_cruiser0_mtg = 1
+		ww1_light_cruiser1 = 1
+		ww1_light_cruiser1_mtg = 1
+
+		ww1_heavy_cruiser0 = 1
+		ww1_heavy_cruiser0_mtg = 1
+
+		ww1_battleship0 = 1
+		ww1_battleship0_mtg = 1
+		ww1_battleship1 = 1
+		ww1_battleship1_mtg = 1
+		ww1_battleship2 = 1
+		ww1_battleship2_mtg = 1
+
+		ww1_submarine0 = 1
+		ww1_submarine0_mtg = 1
+		ww1_submarine1 = 1
+		ww1_submarine1_mtg = 1
+		ww1_coastal_submarine1 = 1
+		ww1_coastal_submarine1_mtg = 1
+
+		transport = 1
+		transport_mtg = 1
+		}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+	basic_battery = 1
+	early_ship_hull_submarine = 1
+	basic_torpedo = 1 
+	pre_dreadnoughts = 1
+	early_ship_hull_heavy = 1 
+	early_ship_hull_light = 1
+	mtg_early_transport = 1 
+	basic_secondary_battery = 1
+	basic_naval_mines = 1
+	submarine_mine_laying = 1
+	}
+	}
+	set_popularities{
+   	 democratic = 20
+   	 fascism = 10
+	communism = 5
+	neutrality = 65
+	}
+	set_politics = {
+		ruling_party = neutrality last_election = "1913.6.17"
+		election_frequency = 48 elections_allowed = yes
+	}
+	
+	add_ideas = {
+		ww1_Scramble_for_Africa
+		neutrality_idea
+		limited_conscription
+		SPR_ww1_idea_tiempos
+		SPR_ww1_idea_industria
+		SPR_ww1_idea_quintas
+		SPR_ww1_idea_generacion98
+		SPR_ww1_idea_turnismo
+		SPR_ww1_idea_caciquismo
+		SPR_ww1_idea_uniones
+		SPR_ww1_idea_semanatragica
+	}	
+}	
+
+1914.1.1 = {
+	remove_unit_leader = 86089 # Basilio Augustín ( Death 7/8/1910 )
+	oob = "SPR_1914"
+	
+	complete_national_focus = SPR_ww1_alfonsoxiii
+	complete_national_focus = SPR_ww1_tratadodefez
+	complete_national_focus = SPR_ww1_africanismo
+	complete_national_focus = SPR_ww1_lasemanatragica
+
+		
+	set_technology = {
+
+		# Infantry
+		infantry_weapons = 1
+		ww1infantry_weapons1 = 1
+		support_weapons = 1
+		infantry_binoculars = 1
+		infantry_grenade = 1
+		motorised_infantry = 1
+		ww1_ambulance1 = 1
+
+		# Support
+		tech_support = 1
+		tech_engineers = 1
+		tech_recon = 1
+		tech_military_police = 1
+		tech_maintenance_company = 1
+		tech_field_hospital = 1
+		tech_logistics_company = 1
+
+		# Armor
+		gwtank = 1 # 1910 Armored Car
+
+		# Artillery
+		light_field_gun1 = 1
+		bonus_artillery1 = 1
+		heavy_field_gun1 = 1
+		bonus_bertha1 = 1
+
+		# Air
+		ww1_fighter1 = 1
+
+		# Engineering
+		electronic_mechanical_engineering = 1
+
+		# Industry
+	}
+	
+	if = {
+	limit = { not = {has_dlc = "Man the Guns"} }
+		set_technology = {
+		# Navy
+		ww1_destroyer0 = 1
+		ww1_destroyer0_mtg = 1
+		ww1_destroyer1 = 1
+		ww1_destroyer1_mtg = 1
+		ww1_light_cruiser1 = 1
+		ww1_light_cruiser1_mtg = 1
+		ww1_light_cruiser0 = 1
+		ww1_light_cruiser0_mtg = 1
+		ww1_heavy_cruiser0 = 1
+		ww1_heavy_cruiser0_mtg = 1
+		ww1_battlecruiser0 = 1
+		ww1_battlecruiser0_mtg = 1
+		ww1_battleship0 = 1
+		ww1_battleship0_mtg = 1
+		ww1_battleship1 = 1
+		ww1_battleship1_mtg = 1
+		ww1_battleship2 = 1
+		ww1_battleship2_mtg = 1
+		ww1_battleship3 = 1
+		ww1_battleship3_mtg = 1
+		ww1_submarine0 = 1
+		ww1_submarine0_mtg = 1
+		ww1_submarine1 = 1
+		ww1_submarine1_mtg = 1
+		ww1_coastal_submarine1 = 1
+		ww1_coastal_submarine1_mtg = 1
+		transport = 1
+		transport_mtg = 1
+		}
+}
+	set_politics = {
+		ruling_party = neutrality last_election = "1913.6.17"
+		election_frequency = 48 elections_allowed = yes
+	}
+	set_popularities{
+   	 democratic = 20
+   	 fascism = 10
+	communism = 5
+	neutrality = 65
+	}
+	
+	add_ideas = {
+		neutrality_idea
+		limited_conscription
+		SPR_ww1_idea_africanismo
+		SPR_ww1_idea_tiempos
+		SPR_ww1_idea_industria
+		SPR_ww1_idea_quintas
+		SPR_ww1_idea_generacion98
+		SPR_ww1_idea_turnismo
+		SPR_ww1_idea_caciquismo
+		SPR_ww1_idea_uniones
+	}	
+}
+
+#-------------------------------------------------------------------------------
+
+create_country_leader={
+	name = "Primo de Rivera M."
+	desc=SPR_miguel_primo_de_rivera_DESC
+	picture="gfx/hoi4tgw_portraits/SPR/army_generals/SPR_primo_de_rivera_m.dds"
+	expire="1936.3.16"
+	ideology=fascism_ideology
+	traits = { }
+}
+
+create_country_leader={
+	name = "Antonio García Quejido"
+	desc=SPR_antonio_garcia_quejido_DESC
+	picture="gfx/hoi4tgw_portraits/SPR/country_leaders/SPR_antonio_garcia_quejido.dds"
+	expire="1935.1.1"
+	ideology=leninism
+	traits = { }
+}
+
+create_country_leader={
+	name = "Julián Besteiro"
+	desc=SPR_julian_besteiro_DESC
+	picture="gfx/hoi4tgw_portraits/SPR/country_leaders/SPR_julian_besteiro.dds"
+	expire="1935.1.1"
+	ideology=leninism
+	traits = { }
+}
+
+create_country_leader={
+	name = "Ramón Lamoneda"
+	desc=SPR_ramon_lamoneda_DESC
+	picture="gfx/hoi4tgw_portraits/SPR/country_leaders/SPR_ramon_lamoneda.dds"
+	expire="1935.1.1"
+	ideology=stalinism
+	traits = { }
+}
+
+create_country_leader={
+	name = "Alejandro Lerroux"
+	desc=SPR_alejandro_lerroux_DESC
+	picture="gfx/hoi4tgw_portraits/SPR/country_leaders/SPR_alejandro_lerroux.dds"
+	expire="1935.1.1"
+	ideology=liberalism
+	traits = { }
+}
+
+create_country_leader={
+	name = "Pablo Iglesias"
+	desc=SPR_pablo_iglesias_DESC
+	picture="gfx/hoi4tgw_portraits/SPR/country_leaders/SPR_pablo_iglesias.dds"
+	expire="1935.1.1"
+	ideology=leninism
+	traits = { }
+}
+
+create_country_leader={
+	name = "Alfonso XIII"
+	desc=SPR_alfonso_xiii_DESC
+	picture="gfx/hoi4tgw_portraits/SPR/country_leaders/SPR_alfonso_xiii.dds"
+	expire="1935.1.1"
+	ideology=centrism
+	traits = { }
+}
+
+#-------------------------------------------------------------------------------
+
+create_corps_commander={
+	name = "Berenguer D."
+	id=86009
+	portrait_path="gfx/hoi4tgw_portraits/SPR/army_generals/SPR_berenguer_d.dds"
+	traits = { old_guard }
+	skill = 2
+}
+
+create_corps_commander={
+	name = "Cavalcanti"
+	id=86011
+	portrait_path="gfx/hoi4tgw_portraits/SPR/army_generals/SPR_cavalcanti.dds"
+	traits = { commando old_guard }
+	skill=3
+}
+
+create_corps_commander={
+	name = "Martínez Anido"
+	id=86021
+	portrait_path="gfx/hoi4tgw_portraits/SPR/army_generals/SPR_martinez_anido.dds"
+	traits = { }
+	skill=1
+}
+
+create_corps_commander={
+	name = "Joaquín Milans del Bosch"
+	id=86023
+	portrait_path="gfx/hoi4tgw_portraits/SPR/army_generals/SPR_milans_del_bosch.dds"
+	traits = { }
+	skill=1
+}
+
+create_corps_commander={
+	name = "Navarro"
+	id=86026
+	portrait_path="gfx/hoi4tgw_portraits/SPR/army_generals/SPR_Navarro.dds"
+	traits = { }
+	skill=2
+}
+
+create_corps_commander={
+	name = "Primo de Rivera F."
+	id=86029
+	portrait_path="gfx/hoi4tgw_portraits/SPR/army_generals/SPR_primo_de_rivera_f.dds"
+	traits = { old_guard }
+	skill=2
+}
+
+create_corps_commander={
+	name = "Primo de Rivera M."
+	id=86030
+	portrait_path="gfx/hoi4tgw_portraits/SPR/army_generals/SPR_primo_de_rivera_m.dds"
+	traits = { }
+	skill=3
+}
+
+create_field_marshal={
+	name = "Silvestre"
+	id=86037
+	portrait_path="gfx/hoi4tgw_portraits/SPR/army_generals/SPR_silvestre.dds"
+	traits = {   
+	}
+	skill=1
+}
+
+create_corps_commander={
+	name = "José Villalba Riquelme"
+	id=86040
+	portrait_path="gfx/hoi4tgw_portraits/SPR/army_generals/SPR_Jose_Villalba_Riquelme.dds"
+	traits = { old_guard }
+	skill=2
+}
+
+create_corps_commander={
+	name = "Manuel Macías Casado"
+	id=86067
+	portrait_path="gfx/hoi4tgw_portraits/SPR/army_generals/SPR_Manuel_Macias_Casado.dds"
+	traits = { }
+	skill=2
+}
+
+create_corps_commander={
+	name = "Weyler"
+	id=86069
+	portrait_path="gfx/hoi4tgw_portraits/SPR/army_generals/SPR_weyler.dds"
+	traits = { }
+	skill=3
+}
+
+create_corps_commander={
+	name = "Basilio Augustín"
+	id=86089
+	portrait_path="gfx/hoi4tgw_portraits/SPR/army_generals/SPR_augustin.dds"
+	traits = { }
+	skill=2
+}
+
+#-------------------------------------------------------------------------------
+
+create_navy_leader={
+	name = "Víctor María Concas" 
+	id=86042 
+	portrait_path="gfx/hoi4tgw_portraits/SPR/navy_admirals/SPR_Victor_Maria_Concas.dds" 
+	traits = { old_guard }
+	skill=2
+}
+
+create_navy_leader={
+	name = "Aznar Cabañas" 
+	id=86043 
+	portrait_path="gfx/hoi4tgw_portraits/SPR/navy_admirals/SPR_aznar_cabanas.dds" 
+	traits = { blockade_runner }
+	skill=2
+}
+
+create_navy_leader={
+	name = "Miranda y Godoy"
+	id=86049
+	portrait_path="gfx/hoi4tgw_portraits/SPR/navy_admirals/SPR_miranda_y_godoy.dds"
+	traits = { blockade_runner }
+	skill=2
+}
+
+create_navy_leader={
+	name = "Rodriguez"
+	id=86051
+	portrait_path="gfx/hoi4tgw_portraits/SPR/navy_admirals/SPR_rodriguez.dds"
+	traits = { }
+	skill=1
+}
+
+#-------------------------------------------------------------------------------
+	if = {
+	limit = { not = {has_dlc = "Man the Guns"} }
+create_equipment_variant = { 
+	name = "Cataluna Class" 
+	type = heavy_cruiser_1890 
+	parent_version = 0 
+	obsolete = yes 
+	upgrades = { 
+		ship_gun_upgrade = 0 
+		ship_armor_upgrade = 0 
+		ship_engine_upgrade = 1 
+		ship_reliability_upgrade = 1
+	}
+}
+create_equipment_variant = { 
+	name = "Reina Regente Class" 
+	type = light_cruiser_1890 
+	parent_version = 0 
+	obsolete = yes 
+	upgrades = { 
+		ship_gun_upgrade = 0  
+		ship_engine_upgrade = 5 
+		ship_reliability_upgrade = 5 
+		ship_anti_air_upgrade = 0
+	} 
+}
+create_equipment_variant = { 
+	name = "Rio De La Plata Class" 
+	type = light_cruiser_1890 
+	parent_version = 0 
+	obsolete = yes 
+	upgrades = { 
+		ship_gun_upgrade = 0
+		ship_engine_upgrade = 5
+		ship_reliability_upgrade = 5
+		ship_anti_air_upgrade = 0
+	}
+}
+create_equipment_variant = { 
+	name = "Reina Regente II Class" 
+	type = light_cruiser_1900 
+	parent_version = 0 
+	obsolete = yes 
+	upgrades = { 
+		ship_gun_upgrade = 0
+		ship_engine_upgrade = 5
+		ship_reliability_upgrade = 5
+		ship_anti_air_upgrade = 0
+	}
+}
+}else = {
+create_equipment_variant = { 
+	name = "Cataluna Class" 
+	type = ship_hull_pre_dreadnought 
+	parent_version = 0 
+	obsolete = yes 
+	modules = {
+			fixed_ship_battery_slot = MSM_ship_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+			fixed_ship_secondaries_slot = MSM_ship_secondaries_1
+			fixed_ship_armor_slot = MSM_ship_armor_bc_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+}
+create_equipment_variant = { 
+	name = "Reina Regente Class" 
+	type = ship_hull_light_1 
+	parent_version = 0 
+	obsolete = yes 
+	modules = {
+			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+		}
+}
+create_equipment_variant = { 
+	name = "Rio De La Plata Class" 
+	type = ship_hull_light_1 
+	parent_version = 0 
+	obsolete = yes 
+	modules = {
+			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+		}
+}
+create_equipment_variant = { 
+	name = "Reina Regente II Class" 
+	type = ship_hull_light_1 
+	parent_version = 0 
+	obsolete = yes 
+	modules = {
+			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+		}
+}
+}

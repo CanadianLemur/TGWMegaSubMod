@@ -276,3 +276,11 @@ ASM = "countries/Assam.txt"
 # Free Cities
 TNG = "countries/Tangiers.txt"
 DZG = "countries/Danzig.txt"
+# Viceroyalties
+NSP = "countries/New Spain.txt"
+NGD = "countries/New Granada.txt"
+VPR = "countries/Viceroyalty of Peru.txt"
+CPH = "countires/Captaincy General of the Phillipines.txt"
+CRB = "countires/Captaincy General of the Carribean.txt"
+RDP = "countries/Viceroyalty of Rio de Plata"
+CCL = "countries/Captaincy General of Chile"

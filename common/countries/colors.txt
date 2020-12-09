@@ -57,6 +57,34 @@ SPR = {
 	color = rgb { 242 205 94 }
 	color_ui = rgb { 255 255 122 }
 }
+NSP = {
+	color = rgb { 220 205 94 }
+	color_ui = rgb { 220 255 122 }
+}
+NGD = {
+	color = rgb { 220 205 94 }
+	color_ui = rgb { 220 255 122 }
+}
+VPR = {
+	color = rgb { 220 205 94 }
+	color_ui = rgb { 220 255 122 }
+}
+CRB = {
+	color = rgb { 220 205 94 }
+	color_ui = rgb { 220 255 122 }
+}
+CPH = {
+	color = rgb { 220 205 94 }
+	color_ui = rgb { 220 255 122 }
+}
+RDP = {
+	color = rgb { 220 205 94 }
+	color_ui = rgb { 220 255 122 }
+}
+CCL = {
+	color = rgb { 220 205 94 }
+	color_ui = rgb { 220 255 122 }
+}
 ITA = {
 	color = rgb { 67 127 63 }
 	color_ui = rgb { 87 165 82 }

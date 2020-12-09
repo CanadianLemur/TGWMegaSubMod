@@ -2,18 +2,23 @@
  CHI_REV_democratic:0 "Chinese Revolution"
  CHI_REV_democratic_DEF:0 "the Chinese Revolutionaries"
  CHI_REV_democratic_ADJ:0 "Chinese"
+ 
  CHI_REP_democratic:0 "Republic of China"
  CHI_REP_democratic_DEF:0 "the Republic of China"
  CHI_REP_democratic_ADJ:0 "Chinese"
+ 
  CHI_KMT_democratic:0 "Kuomintang"
  CHI_KMT_democratic_DEF:0 "the Kuomintang"
  CHI_KMT_democratic_ADJ:0 "Chinese"
+ 
  CHI_EMP_neutrality:0 "Empire of China"
  CHI_EMP_neutrality_DEF:0 "the Empire of China"
  CHI_EMP_neutrality_ADJ:0 "Chinese"
+ 
  CHI_BEI_neutrality:0 "Beiyang Government"
  CHI_BEI_neutrality_DEF:0 "the Beiyang Government"
  CHI_BEI_neutrality_ADJ:0 "Chinese"
+ 
  NEP_DEL_democratic:0 "Republic of Nepal-Delhi"
  NEP_DEL_democratic_DEF:0 "The Republic of Nepal-Delhi"
  NEP_DEL_democratic_ADJ:0 "Nepalese"
@@ -42,3 +47,4 @@
  
  Transvaal_democratic:0"Transvaal Colony"
  Transvaal_democratic_desc:0"Transvaal Colony"
+ 
