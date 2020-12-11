@@ -1,10 +1,9 @@
 ﻿add_namespace = MSMConfederateStates
 
 country_event = {
+	id = MSMConfederateStates.1
 	title = MSMConfederateStates.1.t # Confederate election 1: Long vs Rockenbach
 	desc = MSMConfederateStates.1.d
-	id = MSMConfederateStates.1
-	picture = 
 	is_triggered_only = yes
 	immediate = {
 			

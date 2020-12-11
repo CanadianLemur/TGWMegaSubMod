@@ -63,7 +63,7 @@ indian_affairs = {
 	}
 	available = {
 	has_stability >0.5
-	FROM ={compliance > 80 }
+	FROM ={compliance > 60 }
 	}
 	complete_effect = { 
 	add_stability = -0.05 

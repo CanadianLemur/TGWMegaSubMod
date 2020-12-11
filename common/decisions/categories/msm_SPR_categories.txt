@@ -8,3 +8,18 @@ SPR_viceroyalties = {
 		tag = SPR
 	}
 }
+SPR_viceroyalties_integration = {
+	icon = generic_political_actions
+	priority = 30
+	visible = {
+		OR = {
+		tag = NSP
+		tag = NGD
+		tag = VPR
+		tag = CPH
+		tag = CRB
+		tag = RDP
+		tag = CCL
+		}
+	}
+}

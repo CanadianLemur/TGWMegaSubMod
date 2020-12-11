@@ -5,6 +5,9 @@ SPR_viceroyalties = {
 
 		available = {
 			controls_state = 277
+			has_equipment = {
+			infantry_equipment > 7000
+			}
 		}
 
 		cost = 0
@@ -26,6 +29,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 316
 				}
+				add_state_claim = 316
 			if = {
 					limit = {
 						317 = {  is_owned_by = SPR }
@@ -33,6 +37,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 317
 				}
+				add_state_claim = 317
 			if = {
 					limit = {
 						311 = {  is_owned_by = SPR }
@@ -40,6 +45,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 311
 				}
+				add_state_claim = 311
 			if = {
 					limit = {
 						312 = {  is_owned_by = SPR }
@@ -47,6 +53,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 312
 				}
+				add_state_claim = 312
 				if = {
 					limit = {
 						314 = {  is_owned_by = SPR }
@@ -54,6 +61,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 314
 				}
+				add_state_claim = 314
 			if = {
 					limit = {
 						313 = {  is_owned_by = SPR }
@@ -61,6 +69,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 313
 				}
+				add_state_claim = 313
 			if = {
 					limit = {
 						474 = {  is_owned_by = SPR }
@@ -68,6 +77,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 474
 				}
+				add_state_claim = 474
 			if = {
 					limit = {
 						475 = {  is_owned_by = SPR }
@@ -75,6 +85,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 475
 				}
+				add_state_claim = 475
 			if = {
 					limit = {
 						476 = {  is_owned_by = SPR }
@@ -82,6 +93,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 476
 				}
+				add_state_claim = 476
 			if = {
 					limit = {
 						477 = {  is_owned_by = SPR }
@@ -89,6 +101,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 477
 				}
+				add_state_claim = 477
 			transfer_state = 277
 			if = {
 					limit = {
@@ -97,6 +110,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 485
 				}
+				add_state_claim = 485
 			if = {
 					limit = {
 						478 = {  is_owned_by = SPR }
@@ -104,6 +118,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 478
 				}
+				add_state_claim = 478
 			if = {
 					limit = {
 						479 = {  is_owned_by = SPR }
@@ -111,6 +126,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 479
 				}
+				add_state_claim = 479
 			if = {
 					limit = {
 						480 = {  is_owned_by = SPR }
@@ -118,6 +134,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 480
 				}
+				add_state_claim = 480
 			if = {
 					limit = {
 						481 = {  is_owned_by = SPR }
@@ -125,6 +142,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 481
 				}
+				add_state_claim = 481
 			if = {
 					limit = {
 						482 = {  is_owned_by = SPR }
@@ -132,6 +150,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 482
 				}
+				add_state_claim = 482
 			if = {
 					limit = {
 						483 = {  is_owned_by = SPR }
@@ -139,6 +158,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 483
 				}
+				add_state_claim = 483
 			if = {
 					limit = {
 						484 = {  is_owned_by = SPR }
@@ -146,6 +166,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 484
 				}
+				add_state_claim = 484
 			if = {
 					limit = {
 						375 = {  is_owned_by = SPR }
@@ -153,6 +174,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 375
 				}
+				add_state_claim = 375
 			if = {
 					limit = {
 						376 = {  is_owned_by = SPR }
@@ -160,6 +182,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 376
 				}
+				add_state_claim = 376
 			if = {
 					limit = {
 						377 = {  is_owned_by = SPR }
@@ -167,6 +190,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 377
 				}
+				add_state_claim = 377
 			if = {
 					limit = {
 						378 = {  is_owned_by = SPR }
@@ -174,6 +198,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 378
 				}
+				add_state_claim = 378
 			if = {
 					limit = {
 						379 = {  is_owned_by = SPR }
@@ -181,6 +206,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 379
 				}
+				add_state_claim = 379
 			if = {
 					limit = {
 						380 = {  is_owned_by = SPR }
@@ -188,6 +214,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 380
 				}
+				add_state_claim = 380
 			if = {
 					limit = {
 						311 = {  is_owned_by = SPR }
@@ -195,9 +222,15 @@ SPR_viceroyalties = {
 					
 					transfer_state = 311
 				}
+				add_state_claim = 311
 			add_state_core = 277
 				}
 				set_autonomy = { target = NSP autonomy_state = autonomy_colony }
+				send_equipment = {
+					equipment = infantry_equipment
+					amount = 7000
+					target = NSP
+			}
 			}
 		}
 	SPR_carribean_captaincy = {
@@ -206,6 +239,9 @@ SPR_viceroyalties = {
 
 		available = {
 			controls_state = 315
+			has_equipment = {
+			infantry_equipment > 2000
+			}
 		}
 
 		cost = 0
@@ -228,6 +264,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 319
 				}
+				add_state_claim = 319
 			if = {
 					limit = {
 						686 = {  is_owned_by = SPR }
@@ -235,6 +272,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 686
 				}
+				add_state_claim = 686
 			if = {
 					limit = {
 						318 = {  is_owned_by = SPR }
@@ -242,6 +280,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 318
 				}
+				add_state_claim = 318
 			if = {
 					limit = {
 						690 = {  is_owned_by = SPR }
@@ -249,6 +288,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 690
 				}
+				add_state_claim = 690
 			if = {
 					limit = {
 						693 = {  is_owned_by = SPR }
@@ -256,6 +296,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 693
 				}
+				add_state_claim = 693
 			if = {
 					limit = {
 						689 = {  is_owned_by = SPR }
@@ -263,6 +304,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 689
 				}
+				add_state_claim = 689
 			if = {
 					limit = {
 						750 = {  is_owned_by = SPR }
@@ -270,6 +312,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 750
 				}
+				add_state_claim = 750
 			if = {
 					limit = {
 						694 = {  is_owned_by = SPR }
@@ -277,6 +320,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 694
 				}
+				add_state_claim = 694
 			if = {
 					limit = {
 						308 = {  is_owned_by = SPR }
@@ -284,6 +328,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 308
 				}
+				add_state_claim = 308
 			if = {
 					limit = {
 						692 = {  is_owned_by = SPR }
@@ -291,6 +336,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 692
 				}
+				add_state_claim = 692
 			if = {
 					limit = {
 						691 = {  is_owned_by = SPR }
@@ -298,6 +344,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 691
 				}
+				add_state_claim = 691
 			if = {
 					limit = {
 						695 = {  is_owned_by = SPR }
@@ -305,8 +352,14 @@ SPR_viceroyalties = {
 					
 					transfer_state = 695
 				}
+				add_state_claim = 695
 				}
 				set_autonomy = { target = CRB autonomy_state = autonomy_colony }
+				send_equipment = {
+					equipment = infantry_equipment
+					amount = 2000
+					target = CRB
+			}
 			}
 		}
 	SPR_new_granada = {
@@ -315,6 +368,9 @@ SPR_viceroyalties = {
 
 		available = {
 			controls_state = 306
+			has_equipment = {
+			infantry_equipment > 4000
+			}
 		}
 
 		cost = 0
@@ -337,6 +393,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 304
 				}
+				add_state_claim = 304
 			if = {
 					limit = {
 						486 = {  is_owned_by = SPR }
@@ -344,6 +401,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 486
 				}
+				add_state_claim = 486
 			if = {
 					limit = {
 						795 = {  is_owned_by = SPR }
@@ -351,6 +409,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 795
 				}
+				add_state_claim = 795
 			if = {
 					limit = {
 						304 = {  is_owned_by = SPR }
@@ -358,6 +417,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 304
 				}
+				add_state_claim = 304
 			if = {
 					limit = {
 						493 = {  is_owned_by = SPR }
@@ -365,6 +425,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 493
 				}
+				add_state_claim = 493
 			if = {
 					limit = {
 						490 = {  is_owned_by = SPR }
@@ -372,6 +433,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 490
 				}
+				add_state_claim = 490
 			if = {
 					limit = {
 						305 = {  is_owned_by = SPR }
@@ -379,6 +441,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 305
 				}
+				add_state_claim = 305
 			if = {
 					limit = {
 						645 = {  is_owned_by = SPR }
@@ -386,6 +449,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 645
 				}
+				add_state_claim = 645
 			if = {
 					limit = {
 						489 = {  is_owned_by = SPR }
@@ -393,6 +457,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 489
 				}
+				add_state_claim = 489
 			if = {
 					limit = {
 						307 = {  is_owned_by = SPR }
@@ -400,6 +465,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 307
 				}
+				add_state_claim = 307
 			if = {
 					limit = {
 						488 = {  is_owned_by = SPR }
@@ -407,6 +473,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 488
 				}
+				add_state_claim = 488
 			if = {
 					limit = {
 						687 = {  is_owned_by = SPR }
@@ -414,6 +481,7 @@ SPR_viceroyalties = {
 					
 					transfer_state = 687
 				}
+				add_state_claim = 687
 			if = {
 					limit = {
 						649 = {  is_owned_by = SPR }
@@ -421,9 +489,15 @@ SPR_viceroyalties = {
 					
 					transfer_state = 649
 				}
+				add_state_claim = 649
 			add_state_core = 306
 				}
 				set_autonomy = { target = NGD autonomy_state = autonomy_colony }
+				send_equipment = {
+					equipment = infantry_equipment
+					amount = 4000
+					target = NGD
+			}
 			}
 		}
 SPR_peru = {
@@ -432,6 +506,9 @@ SPR_peru = {
 
 		available = {
 			controls_state = 303
+			has_equipment = {
+			infantry_equipment > 2000
+			}
 		}
 
 		cost = 0
@@ -444,6 +521,7 @@ SPR_peru = {
 		}
 
 		complete_effect = {
+		
 			VPR = {
 			inherit_technology = SPR
 			transfer_state = 303
@@ -455,6 +533,7 @@ SPR_peru = {
 					
 					transfer_state = 491
 				}
+				add_state_claim = 491
 			if = {
 					limit = {
 						492 = {  is_owned_by = SPR }
@@ -462,6 +541,7 @@ SPR_peru = {
 					
 					transfer_state = 492
 				}
+				add_state_claim = 492
 			if = {
 					limit = {
 						748 = {  is_owned_by = SPR }
@@ -469,6 +549,7 @@ SPR_peru = {
 					
 					transfer_state = 748
 				}
+				add_state_claim = 748
 			if = {
 					limit = {
 						494 = {  is_owned_by = SPR }
@@ -476,6 +557,7 @@ SPR_peru = {
 					
 					transfer_state = 494
 				}
+				add_state_claim = 494
 			if = {
 					limit = {
 						302 = {  is_owned_by = SPR }
@@ -483,6 +565,7 @@ SPR_peru = {
 					
 					transfer_state = 302
 				}
+				add_state_claim = 302
 			if = {
 					limit = {
 						487 = {  is_owned_by = SPR }
@@ -490,6 +573,7 @@ SPR_peru = {
 					
 					transfer_state = 487
 				}
+				add_state_claim = 487
 			if = {
 					limit = {
 						688 = {  is_owned_by = SPR }
@@ -497,8 +581,14 @@ SPR_peru = {
 					
 					transfer_state = 688
 				}
+				add_state_claim = 688
 			add_state_core = 303
 				}
+				send_equipment = {
+			equipment = infantry_equipment
+			amount = 2000
+			target = VPR
+			}
 				set_autonomy = { target = VPR autonomy_state = autonomy_colony }
 			}
 		}
@@ -508,6 +598,9 @@ SPR_chile = {
 
 		available = {
 			controls_state = 279
+			has_equipment = {
+			infantry_equipment > 2000
+			}
 		}
 
 		cost = 0
@@ -538,10 +631,18 @@ SPR_chile = {
 					
 					transfer_state = 506
 				}
+			add_state_claim = 506
+			add_state_claim = 507
 			add_state_core = 279
 				}
+			send_equipment = {
+			equipment = infantry_equipment
+			amount = 2000
+			target = CCL
+			}
 				set_autonomy = { target = CCL autonomy_state = autonomy_colony }
 			}
+
 		}
 
 SPR_rio_de_la_plata = {
@@ -550,6 +651,9 @@ SPR_rio_de_la_plata = {
 
 		available = {
 			controls_state = 278
+			has_equipment = {
+			infantry_equipment > 6000
+			}
 		}
 
 		cost = 0
@@ -573,6 +677,7 @@ SPR_rio_de_la_plata = {
 					
 					transfer_state = 510
 				}
+				add_state_claim = 510
 			if = {
 					limit = {
 						300 = {  is_owned_by = SPR }
@@ -580,6 +685,7 @@ SPR_rio_de_la_plata = {
 					
 					transfer_state = 300
 				}
+				add_state_claim = 300
 			if = {
 					limit = {
 						301 = {  is_owned_by = SPR }
@@ -587,6 +693,7 @@ SPR_rio_de_la_plata = {
 					
 					transfer_state = 301
 				}
+				add_state_claim = 301
 			if = {
 					limit = {
 						509 = {  is_owned_by = SPR }
@@ -594,6 +701,7 @@ SPR_rio_de_la_plata = {
 					
 					transfer_state = 509
 				}
+				add_state_claim = 509
 			if = {
 					limit = {
 						508 = {  is_owned_by = SPR }
@@ -601,6 +709,7 @@ SPR_rio_de_la_plata = {
 					
 					transfer_state = 508
 				}
+				add_state_claim = 508
 			if = {
 					limit = {
 						511 = {  is_owned_by = SPR }
@@ -608,6 +717,7 @@ SPR_rio_de_la_plata = {
 					
 					transfer_state = 511
 				}
+				add_state_claim = 511
 			if = {
 					limit = {
 						512 = {  is_owned_by = SPR }
@@ -615,6 +725,7 @@ SPR_rio_de_la_plata = {
 					
 					transfer_state = 512
 				}
+				add_state_claim = 512
 			if = {
 					limit = {
 						299 = {  is_owned_by = SPR }
@@ -622,6 +733,7 @@ SPR_rio_de_la_plata = {
 					
 					transfer_state = 299
 				}
+				add_state_claim = 299
 			if = {
 					limit = {
 						720 = {  is_owned_by = SPR }
@@ -629,9 +741,15 @@ SPR_rio_de_la_plata = {
 					
 					transfer_state = 720
 				}
+				add_state_claim = 720
 			add_state_core = 278
 				}
 				set_autonomy = { target = RDP autonomy_state = autonomy_colony }
+			send_equipment = {
+			equipment = infantry_equipment
+			amount = 6000
+			target = RDP
+			}
 			}
 		}
 SPR_phillipines = {
@@ -640,6 +758,9 @@ SPR_phillipines = {
 
 		available = {
 			controls_state = 327
+			has_equipment = {
+			infantry_equipment > 3000
+			}
 		}
 
 		cost = 0
@@ -663,6 +784,7 @@ SPR_phillipines = {
 					
 					transfer_state = 623
 				}
+				add_state_claim = 623
 			if = {
 					limit = {
 						624 = {  is_owned_by = SPR }
@@ -670,6 +792,7 @@ SPR_phillipines = {
 					
 					transfer_state = 624
 				}
+				add_state_claim = 624
 			if = {
 					limit = {
 						625 = {  is_owned_by = SPR }
@@ -677,6 +800,7 @@ SPR_phillipines = {
 					
 					transfer_state = 625
 				}
+				add_state_claim = 625
 			if = {
 					limit = {
 						626 = {  is_owned_by = SPR }
@@ -684,6 +808,7 @@ SPR_phillipines = {
 					
 					transfer_state = 626
 				}
+				add_state_claim = 626
 			if = {
 					limit = {
 						627 = {  is_owned_by = SPR }
@@ -691,6 +816,7 @@ SPR_phillipines = {
 					
 					transfer_state = 627
 				}
+				add_state_claim = 627
 			if = {
 					limit = {
 						628 = {  is_owned_by = SPR }
@@ -698,9 +824,243 @@ SPR_phillipines = {
 					
 					transfer_state = 628
 				}
+				add_state_claim = 628
 			add_state_core = 327
 				}
 				set_autonomy = { target = CPH autonomy_state = autonomy_colony }
+				send_equipment = {
+			equipment = infantry_equipment
+			amount = 3000
+			target = CPH
+			}
 			}
 		}
 	}
+SPR_viceroyalties_integration = { 
+	integrate_carribean_state = {
+	
+	icon = generic_form_nation
+	cost = 60
+	state_target = yes
+	targets = { 319 686 }
+	fire_only_once = yes
+	days_remove = 90
+		ai_will_do = {
+			factor = 10
+		}
+	visible = {
+	original_tag = CRB
+	}	
+	
+	allowed = {
+		original_tag = CRB
+	}
+	available = {
+	has_stability >0.5
+	FROM ={compliance > 60 
+	is_owned_by = ROOT}
+	}
+	complete_effect = { 
+	add_stability = -0.01 
+	}
+	remove_effect = {
+		FROM = {
+		add_core_of = ROOT
+		}
+	}
+}
+	integrate_new_spanish_state = {
+	
+	icon = generic_form_nation
+	cost = 60
+	state_target = yes
+	targets = { 316 317 311 312 313 314 474 475 476 477 478 479 480 481 482 483 484 485 375 376 377 378 379 380}
+	fire_only_once = yes
+	days_remove = 90
+	ai_will_do = {
+			factor = 10
+		}
+	visible = {
+	original_tag = NSP
+	}	
+	
+	allowed = {
+		original_tag = NSP
+	}
+	available = {
+	has_stability >0.5
+	FROM ={compliance > 60 
+	is_owned_by = ROOT}
+	}
+	complete_effect = { 
+	add_stability = -0.01 
+	}
+	remove_effect = {
+		FROM = {
+		add_core_of = ROOT
+		}
+	}
+}
+	integrate_new_granadan_state = {
+	
+	icon = generic_form_nation
+	cost = 60
+	state_target = yes
+	targets = { 304 493 305 490 486 795 489 307 488 687 649 }
+	fire_only_once = yes
+	days_remove = 90
+		ai_will_do = {
+			factor = 10
+		}
+	visible = {
+	original_tag = NGD
+	}	
+	
+	allowed = {
+		original_tag = NGD
+	}
+	available = {
+	has_stability >0.5
+	FROM ={compliance > 60 
+	is_owned_by = ROOT}
+	}
+	complete_effect = { 
+	add_stability = -0.01 
+	}
+	remove_effect = {
+		FROM = {
+		add_core_of = ROOT
+		}
+	}
+}
+	integrate_peruvian_state = {
+	
+	icon = generic_form_nation
+	cost = 60
+	state_target = yes
+	targets = { 491 494 492 302 487 688 748}
+	fire_only_once = yes
+	days_remove = 90
+		ai_will_do = {
+			factor = 10
+		}
+	visible = {
+	original_tag = VPR
+	}	
+	
+	allowed = {
+		original_tag = VPR
+	}
+	available = {
+	has_stability >0.5
+	FROM ={compliance > 60 
+	is_owned_by = ROOT}
+	}
+	complete_effect = { 
+	add_stability = -0.01 
+	}
+	remove_effect = {
+		FROM = {
+		add_core_of = ROOT
+		}
+	}
+}
+	integrate_chilean_state = {
+	
+	icon = generic_form_nation
+	cost = 60
+	state_target = yes
+	targets = { 506 507}
+	fire_only_once = yes
+	days_remove = 90
+		ai_will_do = {
+			factor = 10
+		}
+	visible = {
+	original_tag = CCL
+	}	
+	
+	allowed = {
+		original_tag = CCL
+	}
+	available = {
+	has_stability >0.5
+	FROM ={compliance > 60 
+	is_owned_by = ROOT}
+	}
+	complete_effect = { 
+	add_stability = -0.01 
+	}
+	remove_effect = {
+		FROM = {
+		add_core_of = ROOT
+		}
+	}
+}
+	integrate_rio_de_la_plata_state = {
+	
+	icon = generic_form_nation
+	cost = 60
+	state_target = yes
+	targets = { 508 509 301 510 511 300 512}
+	fire_only_once = yes
+	days_remove = 90
+		ai_will_do = {
+			factor = 10
+		}
+	visible = {
+	original_tag = RDP
+	}	
+	
+	allowed = {
+		original_tag = RDP
+	}
+	available = {
+	has_stability >0.5
+	FROM ={compliance > 60 
+	is_owned_by = ROOT}
+	}
+	complete_effect = { 
+	add_stability = -0.01 
+	}
+	remove_effect = {
+		FROM = {
+		add_core_of = ROOT
+		}
+	}
+}
+	integrate_phillipines_state = {
+	
+	icon = generic_form_nation
+	cost = 60
+	state_target = yes
+	targets = { 623 624 625 626 627 628}
+	fire_only_once = yes
+	days_remove = 90
+		ai_will_do = {
+			factor = 10
+		}
+	visible = {
+	original_tag = CPH
+	}	
+	
+	allowed = {
+		original_tag = CPH
+	}
+	available = {
+	has_stability >0.5
+	FROM ={compliance > 60 
+	is_owned_by = ROOT
+	}
+	}
+	complete_effect = { 
+	add_stability = -0.01 
+	}
+	remove_effect = {
+		FROM = {
+		add_core_of = ROOT
+		}
+	}
+}
+}
+
