@@ -246,7 +246,7 @@ country_event = {
     division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
     owner = MYS
 }}
-	TRA = {
+	TRV = {
 	transfer_state = 423
 	inherit_technology = RAJ
 	add_equipment_to_stockpile = {
@@ -256,7 +256,7 @@ country_event = {
 	}
 	423 = {create_unit = {
     division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
-    owner = TRA
+    owner = TRV
 }}
 	}
 	DEL = {

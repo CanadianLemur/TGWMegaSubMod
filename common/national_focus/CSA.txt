@@ -279,7 +279,7 @@ focus_tree = {
 		id = CFS_every_man_a_king
 		icon = GFX_goal_generic_consumer_goods
 		prerequisite = { focus = CFS_hold_election }
-		completion_reward = { load_oob = "CFS_Rockenbach_tanks" }
+		completion_reward = {  }
 		ai_will_do = { factor = 1 }
 		cost = 10
 		x = 0

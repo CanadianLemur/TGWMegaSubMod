@@ -227,7 +227,29 @@ technologies = {
 
 	}
 
+	interwar_heavy_artillery = {
 
+		enable_equipments = {
+			heavy_field_gun_equipment_4
+		}
+		
+		start_year = 1930
+		
+		research_cost = 1.5
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 14 y = 12 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
 	bonus_bertha3 = {
 
 		heavy_artillery_brigade = {

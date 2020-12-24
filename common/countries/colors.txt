@@ -506,36 +506,36 @@ MYS = {
 	color_ui = rgb { 150 20 30 }
 }
 KAS = {
-	color = rgb { 90 90 70 }
-	color_ui = rgb { 100 100 70 }
+	color = rgb { 90 90 200 }
+	color_ui = rgb { 100 100 200 }
 }
-TRA = {
-	color = rgb { 90 90 70 }
-	color_ui = rgb { 100 100 70 }
+TRV = {
+	color = rgb { 200 90 70 }
+	color_ui = rgb { 200 100 70 }
 }
 BAR = {
-	color = rgb { 90 90 70 }
-	color_ui = rgb { 100 100 70 }
+	color = rgb { 220 90 70 }
+	color_ui = rgb { 210 100 70 }
 }
 PUN = {
-	color = rgb { 90 90 70 }
-	color_ui = rgb { 100 100 70 }
+	color = rgb { 300 90 70 }
+	color_ui = rgb { 300 100 70 }
 }
 DEL = {
-	color = rgb { 90 90 70 }
-	color_ui = rgb { 100 100 70 }
+	color = rgb { 100 200 70 }
+	color_ui = rgb { 100 200 70 }
 }
 SIN = {
-	color = rgb { 90 90 70 }
-	color_ui = rgb { 100 100 70 }
+	color = rgb { 90 200 70 }
+	color_ui = rgb { 100 200 70 }
 }
 JAI = {
-	color = rgb { 90 90 70 }
+	color = rgb { 90 300 70 }
 	color_ui = rgb { 100 100 70 }
 }
 IDO = {
-	color = rgb { 90 90 70 }
-	color_ui = rgb { 100 100 70 }
+	color = rgb { 200 200 70 }
+	color_ui = rgb { 200 200 70 }
 }
 ASM = {
 	color = rgb { 255 42 0 }

@@ -1,0 +1,31 @@
+ideas = {
+	country = {
+			local_viceroyalty_recruitment = {
+			picture = GFX_idea_SPR_ww1_legion
+			name = local_viceroyalty_recruitment
+			allowed = {
+				OR = {original_tag = NSP original_tag = NGD original_tag = CRB original_tag = VPR original_tag = CPH original_tag = CCL original_tag = RDP}
+			}
+			removal_cost = -1
+			
+			modifier = {
+			non_core_manpower = 0.05
+			conscription_factor = 0.15
+			} 
+		}
+		viceroyalty_exports = {
+			picture = GFX_idea_SPR_ww1_legion
+			name = viceroyalty_exports
+			allowed = {
+				OR = {original_tag = NSP original_tag = NGD original_tag = CRB original_tag = VPR original_tag = CPH original_tag = CCL original_tag = RDP}
+			}
+			removal_cost = -1
+			
+			modifier = {
+			min_export = 0.10
+			local_resources_factor = 0.15
+			} 
+		}
+	}
+
+}

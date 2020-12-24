@@ -5,7 +5,7 @@ indian_affairs = {
 			visible = {is_subject=no}
 			fire_only_once = yes
 			target_trigger = {
-				FROM = {	is_subject = NO		OR = { tag = KAS tag = SIN tag = PUN tag = JAI tag = BAR tag = IDO tag = MYS tag = TRA tag = NEP tag = BHU tag = BAN tag = ASM }}
+				FROM = {	is_subject = NO		OR = { tag = KAS tag = SIN tag = PUN tag = JAI tag = BAR tag = IDO tag = MYS tag = TRV tag = NEP tag = BHU tag = BAN tag = ASM }}
 			}
 			    available = {
 				FROM = { has_war = no }
@@ -25,7 +25,7 @@ indian_affairs = {
 			visible = {FROM = is_subject_of=ROOT}
 			fire_only_once = yes
 			target_trigger = {
-				FROM = {is_subject_of=ROOT	OR = { tag = KAS tag = SIN tag = PUN tag = JAI tag = BAR tag = IDO tag = MYS tag = TRA tag = BAN tag = ASM }}
+				FROM = {is_subject_of=ROOT	OR = { tag = KAS tag = SIN tag = PUN tag = JAI tag = BAR tag = IDO tag = MYS tag = TRV tag = NEP tag = BHU tag = BAN tag = ASM }}
 			}
 			    available = {
 				FROM = { has_war = NO 	compare_autonomy_state < autonomy_puppet	}

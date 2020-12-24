@@ -3,9 +3,11 @@ SPR_viceroyalties = {
 	priority = 30
 	available = {
 		tag = SPR
+		has_completed_focus = SPR_restore_the_viceroyalties
 	}
 	visible = {
 		tag = SPR
+		has_completed_focus = SPR_restore_the_viceroyalties
 	}
 }
 SPR_viceroyalties_integration = {

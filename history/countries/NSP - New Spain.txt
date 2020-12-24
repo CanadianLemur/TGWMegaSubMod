@@ -98,6 +98,7 @@ if = {
 	communism = 5
 	neutrality = 65
 	}
+		create_country_leader={ name = "Colonial Administration"  expire="2200.1.1" ideology=despotism  traits={  } }
 	set_politics = {
 		ruling_party = neutrality last_election = "1913.6.17"
 		election_frequency = 48 elections_allowed = yes

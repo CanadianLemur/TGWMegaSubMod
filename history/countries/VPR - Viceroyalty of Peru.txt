@@ -103,5 +103,5 @@ if = {
 		election_frequency = 48 elections_allowed = yes
 	}
 	
-	
+		create_country_leader={ name = "Colonial Administration"  expire="2200.1.1" ideology=despotism  traits={  } }
 }	

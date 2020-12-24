@@ -8,6 +8,7 @@ SPR_viceroyalties = {
 			has_equipment = {
 			infantry_equipment > 7000
 			}
+			has_war = no
 		}
 
 		cost = 0
@@ -17,6 +18,7 @@ SPR_viceroyalties = {
 
 		visible = {
 		tag = SPR
+		NOT = {country_exists = NSP}
 		}
 
 		complete_effect = {
@@ -225,7 +227,7 @@ SPR_viceroyalties = {
 				add_state_claim = 311
 			add_state_core = 277
 				}
-				set_autonomy = { target = NSP autonomy_state = autonomy_colony }
+				set_autonomy = { target = NSP autonomy_state = autonomy_viceroyalty }
 				send_equipment = {
 					equipment = infantry_equipment
 					amount = 7000
@@ -233,6 +235,204 @@ SPR_viceroyalties = {
 			}
 			}
 		}
+	SPR_transfer_to_new_spain = {
+	icon = ger_reichskommissariats
+	visible = {any_owned_state = {is_claimed_by = NSP}}
+	available = {has_war = no}
+	complete_effect = {
+	NSP = {		
+			if = {
+					limit = {
+						316 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 316
+				}
+			if = {
+					limit = {
+						317 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 317
+				}
+			if = {
+					limit = {
+						311 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 311
+				}
+			if = {
+					limit = {
+						312 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 312
+				}
+				if = {
+					limit = {
+						314 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 314
+				}
+			if = {
+					limit = {
+						313 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 313
+				}
+			if = {
+					limit = {
+						474 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 474
+				}
+			if = {
+					limit = {
+						475 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 475
+				}
+			if = {
+					limit = {
+						476 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 476
+				}
+			if = {
+					limit = {
+						477 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 477
+				}
+			if = {
+					limit = {
+						485 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 485
+				}
+
+			if = {
+					limit = {
+						478 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 478
+				}
+
+			if = {
+					limit = {
+						479 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 479
+				}
+
+			if = {
+					limit = {
+						480 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 480
+				}
+
+			if = {
+					limit = {
+						481 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 481
+				}
+
+			if = {
+					limit = {
+						482 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 482
+				}
+
+			if = {
+					limit = {
+						483 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 483
+				}
+
+			if = {
+					limit = {
+						484 = {  is_owned_by = SPR }
+					}
+					
+
+				}
+
+			if = {
+					limit = {
+						375 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 375
+				}
+
+			if = {
+					limit = {
+						376 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 376
+				}
+				
+			if = {
+					limit = {
+						377 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 377
+				}
+				
+			if = {
+					limit = {
+						378 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 378
+				}
+
+			if = {
+					limit = {
+						379 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 379
+				}
+				
+			if = {
+					limit = {
+						380 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 380
+				}
+				
+			if = {
+					limit = {
+						311 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 311
+				}
+				}
+	}
+	}
 	SPR_carribean_captaincy = {
 
 		icon = ger_reichskommissariats
@@ -242,6 +442,7 @@ SPR_viceroyalties = {
 			has_equipment = {
 			infantry_equipment > 2000
 			}
+			has_war = no
 		}
 
 		cost = 0
@@ -251,6 +452,7 @@ SPR_viceroyalties = {
 
 		visible = {
 		tag = SPR
+		NOT = {country_exists = CRB}
 		}
 
 		complete_effect = {
@@ -354,7 +556,7 @@ SPR_viceroyalties = {
 				}
 				add_state_claim = 695
 				}
-				set_autonomy = { target = CRB autonomy_state = autonomy_colony }
+				set_autonomy = { target = CRB autonomy_state = autonomy_viceroyalty }
 				send_equipment = {
 					equipment = infantry_equipment
 					amount = 2000
@@ -362,6 +564,100 @@ SPR_viceroyalties = {
 			}
 			}
 		}
+	SPR_transfer_to_carribean = {
+	icon = ger_reichskommissariats
+	visible = {any_owned_state = {is_claimed_by = CRB}}
+	available = {has_war = no}
+	complete_effect = {
+	CRB = {
+	if = {
+					limit = {
+						319 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 319
+				}
+			if = {
+					limit = {
+						686 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 686
+				}
+			if = {
+					limit = {
+						318 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 318
+				}
+			if = {
+					limit = {
+						690 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 690
+				}
+			if = {
+					limit = {
+						693 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 693
+				}
+			if = {
+					limit = {
+						689 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 689
+				}
+			if = {
+					limit = {
+						750 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 750
+				}
+			if = {
+					limit = {
+						694 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 694
+				}
+			if = {
+					limit = {
+						308 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 308
+				}
+			if = {
+					limit = {
+						692 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 692
+				}
+			if = {
+					limit = {
+						691 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 691
+				}
+			if = {
+					limit = {
+						695 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 695
+				}
+	
+	}
+	}
+	}
 	SPR_new_granada = {
 
 		icon = ger_reichskommissariats
@@ -371,6 +667,7 @@ SPR_viceroyalties = {
 			has_equipment = {
 			infantry_equipment > 4000
 			}
+			has_war = no
 		}
 
 		cost = 0
@@ -380,6 +677,7 @@ SPR_viceroyalties = {
 
 		visible = {
 		tag = SPR
+		NOT = {country_exists = NGD}
 		}
 
 		complete_effect = {
@@ -492,7 +790,7 @@ SPR_viceroyalties = {
 				add_state_claim = 649
 			add_state_core = 306
 				}
-				set_autonomy = { target = NGD autonomy_state = autonomy_colony }
+				set_autonomy = { target = NGD autonomy_state = autonomy_viceroyalty }
 				send_equipment = {
 					equipment = infantry_equipment
 					amount = 4000
@@ -500,6 +798,104 @@ SPR_viceroyalties = {
 			}
 			}
 		}
+	SPR_transfer_to_new_granada = {
+	icon = ger_reichskommissariats
+	visible = {any_owned_state = {is_claimed_by = NGD}}
+	available = {has_war = no}
+	complete_effect = {
+	NGD = {			if = {
+					limit = {
+						304 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 304
+				}
+			if = {
+					limit = {
+						486 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 486
+				}
+			if = {
+					limit = {
+						795 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 795
+				}
+			if = {
+					limit = {
+						304 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 304
+				}
+			if = {
+					limit = {
+						493 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 493
+				}
+			if = {
+					limit = {
+						490 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 490
+				}
+			if = {
+					limit = {
+						305 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 305
+				}
+			if = {
+					limit = {
+						645 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 645
+				}
+			if = {
+					limit = {
+						489 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 489
+				}
+			if = {
+					limit = {
+						307 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 307
+				}
+			if = {
+					limit = {
+						488 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 488
+				}
+			if = {
+					limit = {
+						687 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 687
+				}
+			if = {
+					limit = {
+						649 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 649
+				}}
+	}
+	}
 SPR_peru = {
 
 		icon = ger_reichskommissariats
@@ -509,6 +905,7 @@ SPR_peru = {
 			has_equipment = {
 			infantry_equipment > 2000
 			}
+			has_war = no
 		}
 
 		cost = 0
@@ -518,6 +915,7 @@ SPR_peru = {
 
 		visible = {
 		tag = SPR
+		NOT = {country_exists = VPR}
 		}
 
 		complete_effect = {
@@ -589,9 +987,67 @@ SPR_peru = {
 			amount = 2000
 			target = VPR
 			}
-				set_autonomy = { target = VPR autonomy_state = autonomy_colony }
+				set_autonomy = { target = VPR autonomy_state = autonomy_viceroyalty }
 			}
 		}
+	SPR_transfer_to_peru = {
+	icon = ger_reichskommissariats
+	visible = {any_owned_state = {is_claimed_by = VPR}}
+	available = {has_war = no}
+	complete_effect = {
+	VPR = {	
+				if = {
+					limit = {
+						491 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 491
+				}
+			if = {
+					limit = {
+						492 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 492
+				}
+			if = {
+					limit = {
+						748 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 748
+				}
+			if = {
+					limit = {
+						494 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 494
+				}
+			if = {
+					limit = {
+						302 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 302
+				}
+			if = {
+					limit = {
+						487 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 487
+				}
+			if = {
+					limit = {
+						688 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 688
+				}
+	}
+	}
+	}
 SPR_chile = {
 
 		icon = ger_reichskommissariats
@@ -601,6 +1057,7 @@ SPR_chile = {
 			has_equipment = {
 			infantry_equipment > 2000
 			}
+			has_war = no
 		}
 
 		cost = 0
@@ -610,6 +1067,7 @@ SPR_chile = {
 
 		visible = {
 		tag = SPR
+		NOT = {country_exists = CCL}
 		}
 
 		complete_effect = {
@@ -640,11 +1098,31 @@ SPR_chile = {
 			amount = 2000
 			target = CCL
 			}
-				set_autonomy = { target = CCL autonomy_state = autonomy_colony }
+				set_autonomy = { target = CCL autonomy_state = autonomy_viceroyalty }
 			}
 
 		}
-
+	SPR_transfer_to_chile = {
+	icon = ger_reichskommissariats
+	visible = {any_owned_state = {is_claimed_by = CCL}}
+	available = {has_war = no}
+	complete_effect = {
+	CCL = {				if = {
+					limit = {
+						507 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 507
+				}
+			if = {
+					limit = {
+						506 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 506
+				}}
+}
+}
 SPR_rio_de_la_plata = {
 
 		icon = ger_reichskommissariats
@@ -654,8 +1132,9 @@ SPR_rio_de_la_plata = {
 			has_equipment = {
 			infantry_equipment > 6000
 			}
+			has_war = no
 		}
-
+		
 		cost = 0
 		ai_will_do = {
 			factor = 1
@@ -663,6 +1142,7 @@ SPR_rio_de_la_plata = {
 
 		visible = {
 		tag = SPR
+		NOT = {country_exists = RDP}
 		}
 
 		complete_effect = {
@@ -744,7 +1224,7 @@ SPR_rio_de_la_plata = {
 				add_state_claim = 720
 			add_state_core = 278
 				}
-				set_autonomy = { target = RDP autonomy_state = autonomy_colony }
+				set_autonomy = { target = RDP autonomy_state = autonomy_viceroyalty }
 			send_equipment = {
 			equipment = infantry_equipment
 			amount = 6000
@@ -752,6 +1232,78 @@ SPR_rio_de_la_plata = {
 			}
 			}
 		}
+	SPR_transfer_to_rio_de_la_plata = {
+	icon = ger_reichskommissariats
+	visible = {any_owned_state = {is_claimed_by = RDP}}
+	available = {has_war = no}
+	complete_effect = {
+	RDP = {
+				if = {
+					limit = {
+						510 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 510
+				}
+			if = {
+					limit = {
+						300 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 300
+				}
+			if = {
+					limit = {
+						301 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 301
+				}
+			if = {
+					limit = {
+						509 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 509
+				}
+			if = {
+					limit = {
+						508 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 508
+				}
+			if = {
+					limit = {
+						511 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 511
+				}
+			if = {
+					limit = {
+						512 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 512
+				}
+			if = {
+					limit = {
+						299 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 299
+				}
+			if = {
+					limit = {
+						720 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 720
+				}
+}
+}
+}
 SPR_phillipines = {
 
 		icon = ger_reichskommissariats
@@ -761,6 +1313,7 @@ SPR_phillipines = {
 			has_equipment = {
 			infantry_equipment > 3000
 			}
+			has_war = no
 		}
 
 		cost = 0
@@ -770,6 +1323,7 @@ SPR_phillipines = {
 
 		visible = {
 		tag = SPR
+		NOT = {country_exists = CPH}
 		}
 
 		complete_effect = {
@@ -827,7 +1381,7 @@ SPR_phillipines = {
 				add_state_claim = 628
 			add_state_core = 327
 				}
-				set_autonomy = { target = CPH autonomy_state = autonomy_colony }
+				set_autonomy = { target = CPH autonomy_state = autonomy_viceroyalty` }
 				send_equipment = {
 			equipment = infantry_equipment
 			amount = 3000
@@ -835,7 +1389,60 @@ SPR_phillipines = {
 			}
 			}
 		}
+	SPR_transfer_to_phillipines = {
+	icon = ger_reichskommissariats
+	visible = {any_owned_state = {is_claimed_by = CPH}}
+	available = {has_war = no}
+	complete_effect = {
+	CPH = {
+				if = {
+					limit = {
+						623 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 623
+				}
+			if = {
+					limit = {
+						624 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 624
+				}
+			if = {
+					limit = {
+						625 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 625
+				}
+			if = {
+					limit = {
+						626 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 626
+				}
+			if = {
+					limit = {
+						627 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 627
+				}
+			if = {
+					limit = {
+						628 = {  is_owned_by = SPR }
+					}
+					
+					transfer_state = 628
+				}
 	}
+	}
+	}
+	}
+	
+
 SPR_viceroyalties_integration = { 
 	integrate_carribean_state = {
 	
