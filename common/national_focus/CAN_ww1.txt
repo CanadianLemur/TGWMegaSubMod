@@ -1,0 +1,101 @@
+focus_tree = {
+	id = ww1_canadian_focus
+	
+	country = {
+		factor = 0
+		#modifier = {
+		#	add = 10
+		#	original_tag = CAN
+		#}
+		#not ready for release
+	}
+	focus = {
+		id = ww1_CAN_expanding_confederation
+		icon = GFX_goal_generic_demand_territory
+		completion_reward = { add_political_power=100 }
+		cost = 10
+		x = 3
+		y = 0
+		ai_will_do = { factor = 10 }
+	}
+	focus = {
+		id = ww1_CAN_carribean
+		prerequisite = {focus = ww1_CAN_expanding_confederation}
+		icon = GFX_goal_generic_demand_territory
+		completion_reward = { add_political_power=100 }
+		cost = 10
+		x = 7
+		y = 1
+		ai_will_do = { factor = 10 }
+	}
+	focus = {
+		id = ww1_CAN_newfoundland
+		prerequisite = {focus = ww1_CAN_expanding_confederation}
+		icon = GFX_goal_generic_demand_territory
+		completion_reward = { add_political_power=100 }
+		cost = 10
+		x = 5
+		y = 1
+		ai_will_do = { factor = 10 }
+	}
+	focus = {
+		id = ww1_CAN_greenland_purchase
+		prerequisite = {focus = ww1_CAN_expanding_confederation}
+		icon = GFX_goal_generic_demand_territory
+		completion_reward = { add_political_power=100 }
+		cost = 10
+		x = 1
+		y = 1
+		ai_will_do = { factor = 10 }
+	}
+	focus = {
+		id = ww1_CAN_american_opportunities
+		prerequisite = {focus = ww1_CAN_expanding_confederation}
+		icon = GFX_goal_generic_demand_territory
+		completion_reward = { add_political_power=100 }
+		cost = 10
+		x = 3
+		y = 2
+		ai_will_do = { factor = 10 }
+	}
+	focus = {
+		id = ww1_CAN_columbia
+		prerequisite = {focus = ww1_CAN_american_opportunities}
+		icon = GFX_goal_generic_demand_territory
+		completion_reward = { add_political_power=100 }
+		cost = 10
+		x = 1
+		y = 3
+		ai_will_do = { factor = 10 }
+	}
+	focus = {
+		id = ww1_CAN_new_dominions
+		prerequisite = {focus = ww1_CAN_american_opportunities}
+		icon = GFX_goal_generic_demand_territory
+		completion_reward = { add_political_power=100 }
+		cost = 10
+		x = 3
+		y = 3
+		ai_will_do = { factor = 10 }
+	}
+	focus = {
+		id = ww1_CAN_philadelphia_conference
+		prerequisite = {focus = ww1_CAN_new_dominions}
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		completion_reward = { add_political_power=100 }
+		cost = 10
+		x = 3
+		y = 4
+		ai_will_do = { factor = 10 }
+	}
+	focus = {
+		id = ww1_CAN_one_nation_under_god_and_king
+		prerequisite = {focus = ww1_CAN_philadelphia_conference}
+		icon = GFX_goal_generic_demand_territory
+		completion_reward = { add_political_power=100 }
+		cost = 10
+		x = 3
+		y = 5
+		ai_will_do = { factor = 10 }
+	}
+}

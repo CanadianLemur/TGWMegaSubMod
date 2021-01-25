@@ -258,9 +258,9 @@ TEX = "countries/Texas.txt"
 NVJ = "countries/Navajo.txt"
 CHK = "countries/Cherokee.txt"
 NAF = "countries/New Afrika.txt"
-SIO = "countries/Sioux"`
-MET = "countries/Metropolitan Union"
-AGR = "countries/Agricultural Union"
+SIO = "countries/Sioux.txt"
+MET = "countries/Metropolitan Union.txt"
+AGR = "countries/Agricultural Union.txt"
 # Indian Breakaway States
 HYD = "countries/Hyderabad.txt"
 MYS = "countries/Mysore.txt"

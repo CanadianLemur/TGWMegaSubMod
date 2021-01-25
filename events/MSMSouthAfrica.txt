@@ -8,16 +8,20 @@ country_event = {
 	option = {
 		name =  MSMSouthAfrica.1.a
 		ai_chance = {
-			factor = 100
+			factor = 80
 			add_political_power = 100
 		}
-		ai_chance = {
-			factor = 0
-			add_political_power = -100
-			transfer_state = 545
-			add_state_core = 545
-			transfer_state = 542
 		}
-		
+	option = {
+		name =  MSMSouthAfrica.1.b
+		ai_chance = {
+			factor = 20
+		}
+		add_political_power = -100
+		SAF = {transfer_state = 545
+		add_state_core = 545
+		transfer_state = 542
+		}
+		}
 	}
-}
+

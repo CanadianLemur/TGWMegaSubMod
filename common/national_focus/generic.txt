@@ -2584,7 +2584,7 @@ focus_tree = {
 			add_political_power=50
 		}
 		allow_branch ={tag=SAF}
-		cost = 1.5
+		cost = 10
 		x = 11
 		y = 0
 		ai_will_do = { factor = 100 }
@@ -2593,10 +2593,10 @@ focus_tree = {
 		id = SAF_rhodesia
 		icon = GFX_goal_generic_intelligence_exchange
 		completion_reward = {
-			set_country_flag = SAF_rhodesia
+			ENG = {country_event = MSMSouthAfrica.1}
 		}
 		prerequisite = {focus = SAF_aftermath_of_national_convention}
-		cost = 1.5
+		cost = 10
 		x = 13
 		y = 1
 		ai_will_do = { factor = 100 }

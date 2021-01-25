@@ -515,14 +515,15 @@ BA_statecraft = {
 		fire_only_once = no
 		
 		cost = 0
-		days_remove = 45
+		days_remove = 120
 		days_re_enable = 270
 		
 		remove_effect = {
-			add_political_power = 15
+			add_political_power = 50
 			set_province_name = { id = 9833 name = "Tsargrad" }
 			set_province_name = { id = 6895 name = "Bisánthe" } 
 			set_province_name = { id = 849  name = "Krasivgrad" } 
+			set_province_name = { id = 11829 name = "Skoutarion"}
 			341 = { set_state_name = "Tsargrad" }
 			if = {
 				limit = {

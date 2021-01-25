@@ -666,7 +666,10 @@ focus_tree = {
 			add_state_core = 722
 			add_state_core = 146
 			if ={
-				limit = {has_completed_focus = SWE_ww1_sweden_victorious`}
+				limit = {has_completed_focus = SWE_ww1_sweden_victorious}
+				add_state_core = 213
+				add_state_core = 215
+				add_state_core = 216
 			}
 			if = {
 				limit = { NOR = { is_puppet_of = SWE } } 
@@ -735,17 +738,6 @@ focus_tree = {
 		relative_position_id = SWE_ww1_finnish_affairs
 
 		available = {
-			OR = {
-				AND = {
-					country_exists = SOV
-					has_war_with = SOV
-				}
-
-				AND = {
-					country_exists = RUS
-					has_war_with = RUS
-				}
-			}
 			NOT={
 				GER = {
 					has_war_with = FRA
@@ -954,8 +946,6 @@ focus_tree = {
 				add_state_core = 213
 				add_state_core = 215
 				add_state_core = 216
-				transfer_state = 195
-				transfer_state = 208
 				transfer_state = 213
 				transfer_state = 215
 				transfer_state = 216
@@ -1378,10 +1368,15 @@ focus_tree = {
 		available = { }
 
 		completion_reward = { 
-			add_timed_idea = {
-				idea = SWE_reinforced_konung_authority
-				days = 180
-			}
+		add_stability = -0.05
+		add_popularity = {
+		ideology = fascism
+		popularity = 0.1
+		}
+		add_popularity = {
+		ideology = neutrality
+		popularity = 0.1
+		}
 		}
 
 		cost = 10
@@ -1425,10 +1420,15 @@ focus_tree = {
 		icon = GFX_goal_anschluss
 		available = { }
 		completion_reward = { 
-			add_timed_idea = {
-				idea = SWE_contested_konung_authority
-				days = 180
-			}
+		add_stability = 0.05
+		add_popularity = {
+		ideology = communism
+		popularity = 0.1
+		}
+		add_popularity = {
+		ideology = democratic
+		popularity = 0.1
+		}
 		}
 		cost = 10
 		x = 1

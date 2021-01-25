@@ -145,7 +145,7 @@
  # Political Effort
  SWE_ww1_political_effort:0 "Political Effort"
  SWE_ww1_political_effort_desc:0 "The time for reform is now. While the nation has been fine under the guidance of the system of old for years, these turbulent times require a government that is in position to respond to them. Whether we choose to change our ways as a nation, or bolster our existing government to stand up to new external threats, political change can do nothing but benefit our nation and people's future."
- SWE_ww1_reinforce_kejsare_authority:0 "Reinforce the Konung's Authority"
+ SWE_ww1_reinforce_kejsare_authority:0 "The King!"
  SWE_ww1_reinforce_kejsare_authority_desc:0 "The authority of the state has been too split for too long. By reducing the powers of our substates compared to our central government, we will overcome regionalism and factionalism to make a stronger nation, which will inevitably open the door to enact further measures."
  SWE_ww1_monarchy:0 "Authoritarianism Focus"
  SWE_ww1_monarchy_desc:0 "The powers exercised by the parliament and people can be dangerous. The only true way to keep control of our nation, particularly in such trying times, would be to adopt a generally authoritarian position, and rule over our country as it's meant to be ruled."
@@ -161,7 +161,7 @@
  SWE_ww1_limited_rearmament_desc:0 "With food shortages seemingly a fact of life in the near future, it's important that no one hogs more than their fair share of goods. Of course, with limited Rearmament, civilians will still be able to enjoy themselves- possibly at the expense of our military members, however."
  SWE_ww1_full_rearmament:0 "Full Rearmament"
  SWE_ww1_full_rearmament_desc:0 "With our brave heroes actively defending the nation, they should have top priority for food and materials! Of course, the civilian population may resort to literally counting their beans and we might have a more restless population on our hands because of it, but if nothing else, our boys in uniform won't go hungry anytime soon." 
- SWE_ww1_contest_kejsare_authority:0 "Contest the Konung's Authority"
+ SWE_ww1_contest_kejsare_authority:0 "The People!"
  SWE_ww1_contest_kejsare_authority_desc:0 "With the shifting times, our King is vying for more power, and trying to take power away from the people. We have fought for far too long to allow the King to simply take power back. We must contest his authority, and keep our democracy strong."
  SWE_ww1_nationalistic_fervor:0 "Nationalistic Fervor"
  SWE_ww1_nationalism_focus_desc:0 "National pride for our great home country is swelling thanks to recent events. Some of our country's political experts have even come up with a new form of government, known as Fascism, which may take root in our nation. Perhaps this government form could lead our esteemed empire to further glory!"
@@ -340,6 +340,9 @@
  SWE_ww1_develop_chromium_sources:0 "Develop Chromium Sources"
  SWE_ww1_develop_chomium_sources_desc:0 ""
  
+ SWE_ww1_fortify_the_border:0"Fortify the Border"
+ SWE_ww1_fortify_the_border_desc:0"The Russian is a constant threat that we should prepare against, the bear is never down forever"
+ 
  SWE_ww1_expand_karjalan_railways:0 "Expand the Karjalan Railways"
  SWE_ww1_expand_karjalan_railways_desc:0 ""
  
@@ -358,7 +361,7 @@
  SWE_ww1_greater_finland:0 "Greater Finland"
  SWE_ww1_greater_finland_desc:0 ""
  
- SWE_ww1_sweden_victorious:0 "Our Goals Achieved"
+ SWE_ww1_sweden_victorious:0 "Victory in the East"
  SWE_ww1_sweden_victorious_desc:0 ""
  
  SWE_ww1_haven_for_white_russian_refugees:0 "Haven for White Russian refugees"
