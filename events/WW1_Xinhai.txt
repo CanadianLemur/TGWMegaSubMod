@@ -1,223 +1,185 @@
-﻿add_namespace = MSMWuchang
-
+﻿add_namespace = ww1_xinhai
 country_event = {
-	title = MSMWuchang.1.t
-	desc = MSMWuchang.1.d
-	id = MSMWuchang.1
-	picture = MSMWuchang_1
+	title = ww1_xinhai.1.t
+	desc = ww1_xinhai.1.d
+	id = ww1_xinhai.1
+	picture = ww1_xinhai_1
 	is_triggered_only = no
-	timeout_days = 20
 	mean_time_to_happen = {
 		days = 2
 	}
 
 	trigger = {
 		tag = QIN
-		date > 1911.4.1
+		date > 1911.8.24
 		not = {
 			has_global_flag = revolutionaries_name_list
 		}
 	}
 
 	option = {
-		name = MSMWuchang.1.a
+		name = ww1_xinhai.1.a
 		ai_chance = {
 			factor = 100
 		}
 		set_global_flag = revolutionaries_name_list
-		custom_effect_tooltip = rebels_support
-	}
-	option = {
-		name = MSMWuchang.1.b
-		ai_chance = {
-			factor = 0
-		}
-		set_global_flag = revolutionaries_name_list
-		custom_effect_tooltip = qing_support
 	}
 }
 
 country_event = {
-	title = MSMWuchang.2.t #Xinhai Revolution
-	desc = MSMWuchang.2.d
-	id = MSMWuchang.2
-	picture = MSMWuchang_2
+	title = ww1_xinhai.2.t
+	desc = ww1_xinhai.2.d
+	id = ww1_xinhai.2
+	picture = ww1_xinhai_2
 	is_triggered_only = no
-	timeout_days = 20
 	mean_time_to_happen = {
-		days = 5
+		days = 0
 	}
 	trigger = {
 		tag = QIN
-		date > 1911.10.11
+		date > 1911.9.1
 		has_global_flag = revolutionaries_name_list
 		not = {
 			has_global_flag = xinhai_revolution
 		}
 	}
-	
-	
-	immediate = {
-		hidden_effect = {
-		
-			QIN = {
-				set_equipment_fraction = 0.2
-				delete_unit_template_and_units = { division_template = "Qing Brigade" }
-				delete_unit_template_and_units = { division_template = "Qing Cavalry" }
-				load_oob = "QIN_1911_Revolution"
-			}
-			
-		
-			CHI = {
-					set_cosmetic_tag = CHI_REV
-					set_politics = { ruling_party = democratic }
-					set_capital = 620
-					transfer_state = 325
-					transfer_state = 599
-					transfer_state = 594
-					transfer_state = 592
-					transfer_state = 620
-					transfer_state = 606
-					transfer_state = 749
-					transfer_state = 595
-					transfer_state = 621
-					transfer_state = 609
-					transfer_state = 610
-				
-				add_ideas = neutrality_idea
-				
-				set_stability = 0.2
-				add_manpower = -2200000
-				
-				load_oob = "PRC_1911_Wuchang"
-				
-				add_timed_idea = {
-				idea = hoi4tgw_idea_revolution
-				days = 250
-				}
-				
-				
-				create_country_leader = {
-					name = "Sun Yat-sen"
-					desc = "POLITICS_SUN_YAT_SEN_DESC"
-					picture = "gfx/leaders/Sun_Yat_sen.dds"
-					expire = "1925.1.1"
-					ideology = socialism
-					traits = { }
-				}
-				
-			}
-		
-			release = MON # Release Mongolia
-			release = TIB # Release Tibet
-			release = TAN # Release Tanu
-			RUS = {
-				puppet = TAN
-			}
-		}
-		
-	}
-	
-	
-	# Become China
-	option = {
-		name = MSMWuchang.2.a
-
-		hidden_effect = {
-			set_global_flag = xinhai_revolution
-				CHI = {
-				if =  {
-					limit = {
-						QIN = {
-							has_tech = infantry_equipment_1
-						}
-					}
-					CHI = {
-						set_technology = {
-							infantry_equipment_1 = 1
-						}
-						add_equipment_to_stockpile = {
-							type = infantry_equipment_1
-							amount = 50000
-							producer = QIN
-						}
-					}
-				}
-				if =  {
-					limit = {
-						not = {
-						QIN = {
-							has_tech = infantry_equipment_1
-						}
-						}
-					}
-					CHI = {
-						set_technology = {
-							infantry_equipment_1 = 0
-						}
-						add_equipment_to_stockpile = {
-							type = infantry_equipment_0
-							amount = 50000
-							producer = QIN
-						}
-					}
-				}
-				change_tag_from = QIN
-				add_stability = 0.80
-				add_war_support = 0.85
-				
-			}
-			
-			
-			QIN = {
-				set_war_support = 0.40
-				set_stability = 0.2
-			}
-			
-			
-			
-			
-		}
-		custom_effect_tooltip = roc_chosen
-		
-		QIN = {
-				drop_cosmetic_tag = yes
-			}
-			CHI = {
-				declare_war_on = {
-					target = QIN
-					type = civil_war
-				}
-				
-			}
-		
-		IF = {
-			limit = {
-				has_global_flag = qing_support
-			}
-			add_war_support = -0.2
-			add_stability = -0.1
-		}
-		
-		IF = {
-			limit = {
-				has_global_flag = rebels_support
-			}
-			add_war_support = 0.2
-			set_stability = 0.85
-			add_political_power = 145
-		}
-		
-	}
-	
 	# Support Qing
 	option = {
-		name = MSMWuchang.2.b
+		name = ww1_xinhai.2.a
 		trigger = {
 			is_ai = no
 		}
 		hidden_effect = {
+
+			set_global_flag = kis_xinhairenews
 			set_global_flag = xinhai_revolution
+
+			release = MON # Release Mongolia
+			release = TIB # Release Tibet
+			release = TAN # Release Tanu
+
+			RUS = {
+				puppet = TAN
+			}
+
+			start_civil_war = {
+				ruling_party = neutrality
+				ideology = democratic
+				size = 0.5
+				capital = 620
+				states = {
+					620
+				}
+			}
+			random_country = {
+				limit = {
+					original_tag = QIN
+					has_government = democratic
+				}
+
+				set_stability = 0.9
+				load_oob = "PRC_1911_Wuchang"
+
+				add_timed_idea = {
+					idea = hoi4tgw_idea_revolution
+					days = 150
+				}
+
+				create_field_marshal = {
+					name = "Huang Xing"
+					portrait_path = "gfx/fieldmarshal/CHI_Huang_Xing.dds"
+					traits = {
+						defensive_doctrine
+					}
+					skill = 3
+				}
+				create_corps_commander = {
+					name = "Song Jiaoren"
+					portrait_path = "gfx/generals/CHI_Song_Jiaoren.dds"
+					traits = {
+						fortress_buster
+					}
+					skill = 1
+				}
+				create_corps_commander = {
+					name = "Li Yuanhong"
+					portrait_path = "gfx/generals/CHI_Li_Yuanhong.dds"
+					traits = {}
+					skill = 1
+				}
+				create_corps_commander = {
+					name = "Xu Shichang"
+					id = 15144 portrait_path = "gfx/generals/CHI_xu_shichang.dds"
+					traits = {
+						old_guard
+					}
+					skill = 1
+				}
+				create_corps_commander = {
+					name = "Wang Shizen"
+					id = 15155 portrait_path = "gfx/generals/CHI_wang_shizen.dds"
+					traits = {
+						old_guard
+					}
+					skill = 1
+				}
+				create_corps_commander = {
+					name = "Yang Zengxin"
+					id = 15171 portrait_path = "gfx/generals/CHI_yang_zengxin.dds"
+					traits = {
+						old_guard
+					}
+					skill = 1
+				}
+				create_corps_commander = {
+					name = "Yin Chang"
+					id = 15172 portrait_path = "gfx/generals/CHI_yin_chang.dds"
+					traits = {
+						old_guard
+					}
+					skill = 1
+				}
+				create_corps_commander = {
+					name = "Zhang Huaizhi"
+					id = 15175 portrait_path = "gfx/generals/CHI_zhang_huaizhi.dds"
+					traits = {
+						old_guard
+					}
+					skill = 1
+				}
+				create_corps_commander = {
+					name = "Zhang Xun"
+					id = 15179 portrait_path = "gfx/generals/CHI_zhang_xun.dds"
+					traits = {
+						old_guard
+					}
+					skill = 2
+				}
+				create_navy_leader = {
+					name = "Cheng Biguang"
+					id = 15087 portrait_path = "gfx/admiral/CHI_cheng_biguang.dds"
+					traits = {}
+					skill = 3
+				}
+				create_navy_leader = {
+					name = "Du Henchen"
+					id = 15088 portrait_path = "gfx/admiral/CHI_du_henchen.dds"
+					traits = {}
+					skill = 1
+				}
+				create_navy_leader = {
+					name = "Du Xigui"
+					id = 15089 portrait_path = "gfx/admiral/CHI_du_xigui.dds"
+					traits = {}
+					skill = 2
+				}
+
+				add_popularity = {
+					ideology = democratic
+					popularity = 1
+				}
+				country_event = ww1_xinhai.10
+			}
 
 			set_stability = 0.9
 			load_oob = "QIN_Civil_War"
@@ -229,292 +191,618 @@ country_event = {
 		}
 		custom_effect_tooltip = qing_chosen
 	}
-	
-	
+	# Support PRC
+	option = {
+		name = ww1_xinhai.2.b
+		hidden_effect = {
+
+			release = MON # Release Mongolia
+			release = TIB # Release Tibet
+			release = TAN # Release Tanu
+			RUS = {
+				puppet = TAN
+			}
+
+			set_capital = 620
+			start_civil_war = {
+				ruling_party = democratic
+				ideology = neutrality
+				size = 0.99
+				capital = 613
+				states = {
+					283 287 322 325 328 330 591 592 593 594 595 596 597 598 599 600 601 602 603 604 605 606 607 608 609 610 611 612 613 614 615 616 617 618 619 621 622 714 715 716 717
+				}
+		
+				# states = {
+				#	283 287 322 325 328 330 592 593 595 596 597 598 600 603 604 605 607 608 609 610 611 612 613 614 615 616 617 621 622 714 715 716 717
+				# }
+			}
+			random_country = {
+				limit = {
+					original_tag = QIN
+					has_government = neutrality
+				}
+
+				set_stability = 0.1
+				add_manpower = -2200000
+				load_oob = "QIN_Civil_War"
+
+				create_field_marshal = {
+					name = "Huang Xing"
+					portrait_path = "gfx/fieldmarshal/CHI_Huang_Xing.dds"
+					traits = {
+						defensive_doctrine
+					}
+					skill = 3
+				}
+				create_corps_commander = {
+					name = "Song Jiaoren"
+					portrait_path = "gfx/generals/CHI_Song_Jiaoren.dds"
+					traits = {
+						fortress_buster
+					}
+					skill = 1
+				}
+				create_corps_commander = {
+					name = "Li Yuanhong"
+					portrait_path = "gfx/generals/CHI_Li_Yuanhong.dds"
+					traits = {}
+					skill = 1
+				}
+				create_corps_commander = {
+					name = "Xu Shichang"
+					id = 150440 portrait_path = "gfx/generals/CHI_xu_shichang.dds"
+					traits = {
+						old_guard
+					}
+					skill = 1
+				}
+				create_corps_commander = {
+					name = "Wang Shizen"
+					id = 150550 portrait_path = "gfx/generals/CHI_wang_shizen.dds"
+					traits = {
+						old_guard
+					}
+					skill = 1
+				}
+				create_corps_commander = {
+					name = "Yang Zengxin"
+					id = 150710 portrait_path = "gfx/generals/CHI_yang_zengxin.dds"
+					traits = {
+						old_guard
+					}
+					skill = 1
+				}
+				create_corps_commander = {
+					name = "Yin Chang"
+					id = 150720 portrait_path = "gfx/generals/CHI_yin_chang.dds"
+					traits = {
+						old_guard
+					}
+					skill = 1
+				}
+				create_corps_commander = {
+					name = "Zhang Huaizhi"
+					id = 150750 portrait_path = "gfx/generals/CHI_zhang_huaizhi.dds"
+					traits = {
+						old_guard
+					}
+					skill = 1
+				}
+				create_corps_commander = {
+					name = "Zhang Xun"
+					id = 150790 portrait_path = "gfx/generals/CHI_zhang_xun.dds"
+					traits = {
+						old_guard
+					}
+					skill = 2
+				}
+				set_equipment_fraction = 0.1
+			}
+
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+
+
+
+			set_stability = 0.9
+			add_manpower = 900000
+			load_oob = "PRC_1911_Wuchang"
+
+			add_timed_idea = {
+				idea = hoi4tgw_idea_revolution
+				days = 250
+			}
+			set_equipment_fraction = 0.9
+			add_popularity = {
+				ideology = democratic
+				popularity = 98
+			}
+			set_global_flag = xinhai_revolution
+			set_global_flag = kis_xinhairenews
+			country_event = ww1_xinhai.10
+		}
+		custom_effect_tooltip = roc_chosen
+	}
 }
 country_event = {
-	title = MSMWuchang.3.t#Changsha Restoration
-	desc = MSMWuchang.3.d
-	id = MSMWuchang.3
-	picture = MSMWuchang_3
-	fire_only_once = yes
-	timeout_days = 5
+	title = ww1_xinhai.3.t
+	desc = ww1_xinhai.3.d
+	id = ww1_xinhai.3
+	picture = ww1_xinhai_3
+	is_triggered_only = no
+	mean_time_to_happen = {
+		days = 2
+	}
+	trigger = {
+		original_tag = QIN
+		has_government = democratic# date > 1911.10.11
+		date > 1911.9.27
+		not = {
+			has_global_flag = second_uprising
+		}
+	}
+	option = {
+		name = ww1_xinhai.3.a
+		ai_chance = {
+			factor = 100
+		}
+		add_manpower = 800000
+		army_experience = 75
+		transfer_state = 602
+		transfer_state = 612
+		transfer_state = 714
+		transfer_state = 717
+		transfer_state = 616
+		transfer_state = 716
+		transfer_state = 604
+		load_oob = "PRC_1911_uprising2"
+		country_event = ww1_xinhai.11
+		set_global_flag = second_uprising
+		random_country = {
+			limit = {
+				original_tag = QIN
+				has_government = neutrality
+			}
+			country_event = ww1_xinhai.20
+			set_global_flag = second_uprising
+		}
+	}
+}
+country_event = {
+	title = ww1_xinhai.4.t# Return of Yuan Shikai
+	desc = ww1_xinhai.4.d# After the Wuchang uprising our soldiers were routed and the revolutionaries are getting stronger.It is time to recall Yuan Shikai to deal with these rebels or we will lose the loyalty of our armies.
+	id = ww1_xinhai.4
+	picture = ww1_xinhai_4
+	is_triggered_only = no
+	mean_time_to_happen = {
+		days = 70
+	}
+	trigger = {
+		original_tag = QIN
+		has_government = neutrality# date > 1911.10.14
+		date > 1911.10.1
+		not = {
+			has_global_flag = yuan_shikai
+		}
+		not = {
+			controls_state = 602
+		}
+	}
+	option = {
+		name = ww1_xinhai.4.a
+		ai_chance = {
+			factor = 90
+		}
+		transfer_state = 715
+		transfer_state = 614
+		transfer_state = 598
+		add_manpower = 1200000
+		create_field_marshal = {
+			name = "Yuan Shikai"
+			portrait_path = "gfx/fieldmarshal/CHI_Yuan_Shikai.dds"
+			traits = {
+				defensive_doctrine offensive_doctrine old_guard
+			}
+			skill = 4
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.01
+		}
+		add_stability = -0.05
+		set_global_flag = yuan_shikai
+	}
+	option = {
+		name = ww1_xinhai.4.b
+		ai_chance = {
+			factor = 10
+		}
+		add_manpower = -100000
+	}
+}
+country_event = {
+	title = ww1_xinhai.5.t# Qing Empire provinces rise up!
+	desc = ww1_xinhai.5.d# Shaanxi - Shanxi - Yunnan uprising!
+	id = ww1_xinhai.5
+	picture = ww1_xinhai_5
+	is_triggered_only = no
+	mean_time_to_happen = {
+		days = 9
+	}
+	trigger = {
+		original_tag = QIN
+		has_government = democratic# date > 1911.10.22
+		date > 1911.11.28
+		not = {
+			has_global_flag = third_uprising
+		}
+	}
+	option = {
+		name = ww1_xinhai.5.a
+		ai_chance = {
+			factor = 100
+		}
+		add_manpower = 600000
+		transfer_state = 622
+		transfer_state = 615
+		transfer_state = 287
+
+		load_oob = "PRC_1911_uprising3"
+		country_event = ww1_xinhai.12
+		set_global_flag = third_uprising
+		random_country = {
+			limit = {
+				original_tag = QIN
+				has_government = neutrality
+			}
+
+			set_global_flag = third_uprising
+		}
+	}
+}
+country_event = {
+	title = ww1_xinhai.6.t# Qing Empire provinces rise up!
+	desc = ww1_xinhai.6.d# Nanchang - Shanghai - Zhejiang - Jiangsu uprising!
+	id = ww1_xinhai.6
+	picture = ww1_xinhai_6
+	is_triggered_only = no
+	mean_time_to_happen = {
+		days = 25
+	}
+	trigger = {
+		original_tag = QIN
+		has_government = democratic# date > 1911.11.2
+		date > 1911.12.9
+		not = {
+			has_global_flag = fourth_uprising
+		}
+	}
+	option = {
+		name = ww1_xinhai.6.a
+		ai_chance = {
+			factor = 100
+		}
+		transfer_state = 600
+		transfer_state = 613
+		transfer_state = 596
+		transfer_state = 598
+		load_oob = "PRC_1911_uprising4"
+		country_event = ww1_xinhai.13
+		set_global_flag = fourth_uprising
+		random_country = {
+			limit = {
+				original_tag = QIN
+				has_government = neutrality
+			}
+			set_global_flag = fourth_uprising
+		}
+	}
+}
+country_event = {
+	title = ww1_xinhai.7.t# Yuan Shikai as prime minister
+	desc = ww1_xinhai.7.d# The ambition of Yuan Shikai was getting stronger he threatened Manchu nobility that he wanted to be prime minister and forced Empress Dowager Longyu to appoint him as prime minister so he could negotiate with revolutionaries secretly.
+	id = ww1_xinhai.7
+	picture = ww1_xinhai_7
+	is_triggered_only = no
 	mean_time_to_happen = {
 		days = 10
 	}
-	is_triggered_only = no
-	
 	trigger = {
-		tag = CHI
-		date > 1911.9.20
-		has_global_flag = xinhai_revolution
+		original_tag = QIN
+		has_government = neutrality# date > 1911.11.8
+		date > 1911.11.22
+		has_global_flag = yuan_shikai
 		not = {
-			CHI = {
-				controls_state = 602
-			}
+			has_global_flag = prime_minister_yuan
 		}
 	}
-	
-	immediate = {
-		hidden_effect = {
-		HNC = {
-		transfer_state = 602
-		set_cosmetic_tag = HNC_REV
-		load_oob = "PRC_1911_Changsha"
-		add_to_war = { 
-			targeted_alliance = CHI 
-			enemy = QIN 
-			hostility_reason = asked_to_join
-			}
-		}
-		set_global_flag = changsha_restoration
-	}
-	}
-	
 	option = {
-		name = MSMWuchang.3.a
+		name = ww1_xinhai.7.a
 		ai_chance = {
 			factor = 100
 		}
-		CHI = {
-		add_manpower = 800000
-		army_experience = 75
-		}
-		
-			
+		set_global_flag = prime_minister_yuan
 	}
 }
-
 country_event = {
-	title = MSMWuchang.4.t#72 Martyrs
-	desc = MSMWuchang.4.d
-	id = MSMWuchang.4
-	picture = MSMWuchang_4
-	fire_only_once = yes
+	title = ww1_xinhai.8.t
+	desc = ww1_xinhai.8.d
+	id = ww1_xinhai.8
+	picture = ww1_xinhai_8
 	is_triggered_only = no
 	mean_time_to_happen = {
 		days = 2
 	}
 	trigger = {
-		tag = QIN
-		date > 1911.4.20
+		original_tag = QIN
+		has_government = democratic# date > 1911.11.4
+		date > 1911.12.28
+		not = {
+			has_global_flag = fifth_uprising
+		}
 	}
 	option = {
-		name = MSMWuchang.4.a
+		name = ww1_xinhai.8.a
 		ai_chance = {
 			factor = 100
 		}
-		add_stability = -0.25
+		transfer_state = 605
+		transfer_state = 603
+		transfer_state = 599
+		transfer_state = 593
+		transfer_state = 595
+		transfer_state = 325
+		transfer_state = 611
+		load_oob = "PRC_1911_uprising5"
+		country_event = ww1_xinhai.14
+		set_global_flag = fifth_uprising
+		random_country = {
+			limit = {
+				original_tag = QIN
+				has_government = neutrality
+			}
+			country_event = ww1_xinhai.23
+			set_global_flag = fifth_uprising
+		}
+	}
+}
+country_event = {
+	title = ww1_xinhai.9.t
+	desc = ww1_xinhai.9.d
+	id = ww1_xinhai.9
+	picture = ww1_xinhai_9
+	is_triggered_only = yes
+	option = {
+		name = ww1_xinhai.9.a
+		ai_chance = {
+			factor = 80
+		}
+
+		random_country = {
+			limit = {
+				original_tag = QIN
+				has_government = democratic
+			}
+			country_event = ww1_xinhai.17
+		}
+	}
+	option = {
+		name = ww1_xinhai.9.b
+		ai_chance = {
+			factor = 20
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 5
+		}
+		add_stability = 0.01
+		random_country = {
+			limit = {
+				original_tag = QIN
+				has_government = democratic
+			}
+			country_event = ww1_xinhai.18
+		}
+	}
+}
+country_event = {
+	title = ww1_xinhai.10.t
+	desc = ww1_xinhai.10.d
+	id = ww1_xinhai.10
+	picture = ww1_xinhai_10
+
+
+	is_triggered_only = yes
+	trigger = {
+		original_tag = QIN
+		has_government = democratic
+	}
+	option = {
+		name = ww1_xinhai.10.a
+		ai_chance = {
+			factor = 100
+		}
+
+		add_manpower = 200000
+		transfer_state = 610
+		transfer_state = 609
+		transfer_state = 592
+		transfer_state = 595
+		transfer_state = 621
+	}
+}
+country_event = {
+	title = ww1_xinhai.11.t
+	desc = ww1_xinhai.11.d
+	id = ww1_xinhai.11
+	picture = ww1_xinhai_11
+	is_triggered_only = yes
+	option = {
+		name = ww1_xinhai.11.a
+		ai_chance = {
+			factor = 100
+		}
+		add_manpower = 50
+		add_political_power = 100
+		add_stability = 0.01
+	}
+}
+country_event = {
+	title = ww1_xinhai.12.t
+	desc = ww1_xinhai.12.d
+	id = ww1_xinhai.12
+	picture = ww1_xinhai_12
+	is_triggered_only = yes
+	option = {
+		name = ww1_xinhai.12.a
+		ai_chance = {
+			factor = 100
+		}
+		add_manpower = 50
+		add_political_power = 100
+		add_stability = 0.01
+	}
+}
+country_event = {
+	title = ww1_xinhai.13.t
+	desc = ww1_xinhai.13.d
+	id = ww1_xinhai.13
+	picture = ww1_xinhai_13
+	is_triggered_only = yes
+	option = {
+		name = ww1_xinhai.13.a
+		ai_chance = {
+			factor = 100
+		}
+		add_manpower = 50
+		add_political_power = 100
+		add_stability = 0.01
+	}
+}
+country_event = {
+	title = ww1_xinhai.14.t
+	desc = ww1_xinhai.14.d
+	id = ww1_xinhai.14
+	picture = ww1_xinhai_14
+	is_triggered_only = yes
+	option = {
+		name = ww1_xinhai.14.a
+		ai_chance = {
+			factor = 100
+		}
+		transfer_state = 614
+		transfer_state = 597
+
+		add_manpower = 50000
+		add_political_power = 100
+		add_stability = 0.01
 	}
 }
 
 country_event = {
-	title = MSMWuchang.5.t#Shaanxi Uprising
-	desc = MSMWuchang.5.d
-	id = MSMWuchang.5
-	picture = MSMWuchang_5
-	fire_only_once = yes
-	timeout_days = 5
-	mean_time_to_happen = {
-		days = 2
-	}
-	trigger = {
-		tag = CHI
-		date > 1911.10.25
-		has_global_flag = second_uprising
-	}
-	
-	immediate = {
-		hidden_effect = {
-		SHX = {
-			transfer_state = 622
-			set_cosmetic_tag = SHX_REV
-			load_oob = "PRC_1911_Shaanxi"
-			
-			add_to_war = { 
-				targeted_alliance = CHI
-				enemy = QIN 
-				hostility_reason = asked_to_join
-			}
+	title = ww1_xinhai.16.t
+	desc = ww1_xinhai.16.d
+	id = ww1_xinhai.16
+	picture = ww1_xinhai_16
+	is_triggered_only = yes
+	option = {
+		name = ww1_xinhai.16.a
+		ai_chance = {
+			factor = 80
 		}
-		set_global_flag = shaanxi_uprising
+
+		random_country = {
+			limit = {
+				original_tag = QIN
+				has_government = neutrality
+			}
+			country_event = ww1_xinhai.9
 		}
 	}
 	option = {
-		name = MSMWuchang.5.a
+		name = ww1_xinhai.16.b
+		ai_chance = {
+			factor = 20
+		}
+		add_political_power = -5
+		add_stability = -0.03
+	}
+}
+country_event = {
+	title = ww1_xinhai.17.t
+	desc = ww1_xinhai.17.d
+	id = ww1_xinhai.17
+	picture = ww1_xinhai_17
+	is_triggered_only = yes
+	option = {
+		name = ww1_xinhai.17.a
 		ai_chance = {
 			factor = 100
 		}
-		
-		CHI = {
-			hidden_effect = {
-				add_manpower = 400000
-				army_experience = 75
-			}
-			
+		set_global_flag = yuan_accepted
+	}
+}
+country_event = {
+	title = ww1_xinhai.18.t
+	desc = ww1_xinhai.18.d
+	id = ww1_xinhai.18
+	picture = ww1_xinhai_18
+	is_triggered_only = yes
+	option = {
+		name = ww1_xinhai.18.a
+		ai_chance = {
+			factor = 100
 		}
 	}
 }
-
 country_event = {
-	title = MSMWuchang.6.t#Yuan Shikai Surrenders
-	desc = MSMWuchang.6.d
-	id = MSMWuchang.6
-	picture = MSMWuchang_6
-	fire_only_once = yes
-	is_triggered_only = no
-	mean_time_to_happen = {
-		days = 2
-	}
-	trigger = {
-		tag = CHI
-		QIN = {
-				surrender_progress > 0.6
-		}
-		has_global_flag = xinhai_revolution
-	}
+	title = ww1_xinhai.19.t
+	desc = ww1_xinhai.19.d
+	id = ww1_xinhai.19
+	picture = ww1_xinhai_19
+	is_triggered_only = yes
 	option = {
-		name = MSMWuchang.6.a
+		name = ww1_xinhai.19.a
 		ai_chance = {
 			factor = 100
 		}
-		CHI = {
-			white_peace = {
-				tag = QIN
-				message = YUAN_SHIKAI_SURR_MESSAGE
-			}
-			
-		SHX = {
-			white_peace = QIN
-			}
-			
-		HNC = {
-			white_peace = QIN
-			}
-			
-		JNX = {
-			white_peace = QIN
-		}
-		
-			drop_cosmetic_tag = yes
-			set_cosmetic_tag = CHI_REP
-			CHI = {
-				delete_unit_template_and_units = { division_template = "Qing Brigade" }
-				delete_unit_template_and_units = { division_template = "Qing Infantry" }
-				delete_unit_template_and_units = { division_template = "Revolutionary Brigade" }
-				delete_unit_template_and_units = { division_template = "Revolutionary Army" }
-				
-				country_event = {
-					id = MSMWuchang.7
-					days = 3
-					random = 24
-				}
-			}
-			set_global_flag = shikai_surrenders
-			#custom_effect_tooltip = beiyang_route
-		
-		}
+		# remove_brigade = "Di 21 Huncheng Xie"#
+		# remove_unit_leader = 73015
+		# remove_unit_leader = 73036
+		# remove_unit_leader = 73046
+		# remove_unit_leader = 73072
 	}
-
+}
+country_event = {
+	title = ww1_xinhai.20.t
+	desc = ww1_xinhai.20.d
+	id = ww1_xinhai.20
+	picture = ww1_xinhai_20
+	is_triggered_only = yes
 	option = {
-		name = MSMWuchang.6.b
+		name = ww1_xinhai.20.a
 		ai_chance = {
-			factor = 0
+			factor = 100
 		}
-		set_global_flag = shikai_no_surrender
-		#custom_effect_tooltip = sunyatsen_route
+		# remove_brigade = "Di 25 Huncheng Xie"
 	}
 }
 
-country_event = {
-	title = MSMWuchang.7.t #Xuantong Emperor Abdicates 
-	desc = MSMWuchang.7.d
-	id = MSMWuchang.7
-	picture = MSMWuchang_7
-	is_triggered_only = no
-	fire_only_once = yes
-	mean_time_to_happen = {
-		days = 20
-	}
-	trigger = {
-		tag = CHI
-		has_global_flag = xinhai_revolution
-		QIN = {
-			not = {
-				has_war_with = CHI
-			}
-		}
-		
-	}
-	
-	immediate = {
-		hidden_effect = {
-			CHI = {
-				annex_country = {
-					target = QIN
-					transfer_troops = yes
-				}
-				
-				delete_unit_template_and_units = { division_template = "Qing Brigade" }
-				delete_unit_template_and_units = { division_template = "Qing Infantry" }
-				delete_unit_template_and_units = { division_template = "Revolutionary Brigade" }
-				delete_unit_template_and_units = { division_template = "Revolutionary Army" }
-				set_cosmetic_tag = CHI_REP
-			}
-			
-			clr_global_flag = rebels_support
-			clr_global_flag = qing_support
-			clr_global_flag = xinhai_revolution
-			
-				CHI = { transfer_state = 602 }
-			
-				CHI = { transfer_state = 622 }
-			
-				CHI = { transfer_state = 600 }
-				
-				CHI = { transfer_state = 611 }
-				
-				CHI = { transfer_state = 612 }
-				
-				set_global_flag = china_revolution_victory
-				QIN = {
-					
-				}
-			}
-			
-		}
 
-	
+country_event = {
+	title = ww1_xinhai.23.t
+	desc = ww1_xinhai.23.d
+	id = ww1_xinhai.23
+	picture = ww1_xinhai_23
+	is_triggered_only = yes
 	option = {
-		name = MSMWuchang.7.a
+		name = ww1_xinhai.23.a
 		ai_chance = {
 			factor = 100
 		}
-		add_stability = 0.1 #PLACEHOLDER EFFECT
-	}
-	
-}
-
-country_event = {
-	title = MSMWuchang.8.t #Qing Intro Event
-	desc = MSMWuchang.8.d
-	id = MSMWuchang.8
-	picture = MSMWuchang_8
-	fire_only_once = yes
-	timeout_days = 20
-	mean_time_to_happen = {
-		days = 2
-	}
-	trigger = {
-		tag = QIN
-		date > 1910.6.1
-	}
-	
-	option = {
-		name = MSMWuchang.8.a
-		ai_chance = {
-			factor = 100
-		}
-		add_political_power = 1
+		# remove_brigade = "Guizhou Lujun"
 	}
 }
