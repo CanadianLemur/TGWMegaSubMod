@@ -1940,6 +1940,133 @@ focus_tree = {
 		y = 1
 	}
 	
+	focus = {
+		id = GER_ww1_war_plans_political_presence
+		relative_position_id = GER_ww1_war_plans_autonomous_military
+		prerequisite = { focus=GER_ww1_war_plans_autonomous_military }
+		icon = GFX_goal_generic_small_arms
+		completion_reward = {
+			#Make available as political advisor
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 0
+		y = 2
+	}
+	
+	focus = {
+		id = GER_ww1_war_plans_new_campaign
+		relative_position_id = GER_ww1_war_plans_political_presence
+		prerequisite = { focus=GER_ww1_war_plans_political_presence }
+		icon = GFX_goal_generic_small_arms
+		completion_reward = {
+			#Make Ludendorff leader of the fascist party
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 0
+		y = 2
+	}
+	
+	focus = {
+		id = GER_ww1_war_plans_third_party_funding
+		relative_position_id = GER_ww1_war_plans_political_presence
+		prerequisite = { focus=GER_ww1_war_plans_political_presence }
+		icon = GFX_goal_generic_small_arms
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 2
+		y = 1
+	}
+	
+	focus = {
+		id = GER_ww1_war_plans_necessary_changes
+		relative_position_id = GER_ww1_war_plans_third_party_funding
+		prerequisite = { focus=GER_ww1_war_plans_third_party_funding }
+		icon = GFX_goal_generic_small_arms
+		completion_reward = {
+			#Add daily fascism
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 0
+		y = 1
+	}
+	
+	focus = {
+		id = GER_ww1_war_plans_the_way_forward
+		relative_position_id = GER_ww1_war_plans_necessary_changes
+		prerequisite = { focus=GER_ww1_war_plans_necessary_changes }
+		prerequisite = { focus = GER_ww1_war_plans_new_campaign }
+		icon = GFX_goal_generic_small_arms
+		completion_reward = {
+			#IDK bro, figure it out
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = -1
+		y = 1
+	}
+	
+	focus = {
+		id = GER_ww1_war_plans_liberate_berlin
+		relative_position_id = GER_ww1_war_plans_the_way_forward
+		prerequisite = { focus=GER_ww1_war_plans_the_way_forward }
+		icon = GFX_goal_generic_small_arms
+		completion_reward = {
+			#Force an ideology flip
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 0
+		y = 1
+	}
+	
+	focus = {
+		id = GER_ww1_war_plans_great_german_state
+		relative_position_id = GER_ww1_war_plans_liberate_berlin
+		prerequisite = { focus=GER_ww1_war_plans_liberate_berlin }
+		icon = GFX_goal_generic_small_arms
+		completion_reward = {
+			#make event that asks austria-hungary to be puppeted, only agrees 10% of the time
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 1
+		y = 1
+	}
+	
+	focus = {
+		id = GER_ww1_war_plans_our_natural_ally
+		relative_position_id = GER_ww1_war_plans_liberate_berlin
+		prerequisite = { focus=GER_ww1_war_plans_liberate_berlin }
+		icon = GFX_goal_generic_small_arms
+		completion_reward = {
+			#Get russia as an ally, at the cost of austria-hungary
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 0
+		y = 2
+	}
+	
+	focus = {
+		id = GER_ww1_war_plans_germany_for_germans
+		relative_position_id = GER_ww1_war_plans_great_german_state
+		prerequisite = { focus=GER_ww1_war_plans_great_german_state }
+		icon = GFX_goal_generic_small_arms
+		completion_reward = {
+			#Gives options to send settlers out to austro-hungarian states to get cores over time
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 0
+		y = 2
+	}
+	
 	###Falkenhayn's Reform Path###
 	##Moltke's Successor Tree##
 	
@@ -2005,7 +2132,7 @@ focus_tree = {
 		prerequisite = { focus=GER_ww1_war_plans_those_great_mechanisms }
 		icon = GFX_goal_generic_small_arms
 		completion_reward = {
-			#Air tech boost
+			#Air tech boost, give red barron
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -2297,7 +2424,7 @@ focus_tree = {
 		completion_reward = { army_experience=15 add_tech_bonus={ name=land_doc_bonus bonus=0.2 uses=1 category=land_doctrine } }
 		ai_will_do = { factor = 10 }
 		cost = 10
-		x = 20
+		x = 25
 		y = 0
 		}
 	
