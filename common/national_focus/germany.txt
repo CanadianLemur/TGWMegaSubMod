@@ -1281,7 +1281,12 @@ focus_tree = {
 		icon = GFX_goal_generic_army_artillery2
 		completion_reward = { 
 			set_country_flag = MSM_GER_ww1_schlieffen
-			#doctrine research bonus
+			add_tech_bonus = {
+				name = schlieffen_plan_doctrine_research_boost
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -1313,7 +1318,12 @@ focus_tree = {
 		}
 		icon = GFX_goal_generic_army_artillery2
 		completion_reward = { 
-			#artillery research bonus
+			add_tech_bonus = {
+				name = schlieffen_plan_doctrine_research_boost
+				bonus = 1
+				uses = 1
+				category = artillery
+			}
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -1329,7 +1339,7 @@ focus_tree = {
 		}
 		icon = GFX_goal_generic_army_artillery2
 		completion_reward = { 
-			#Western front generals get buffed
+			add_ideas = idea = MSM_GER_ww1_war_games
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
