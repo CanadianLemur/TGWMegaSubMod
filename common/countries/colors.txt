@@ -577,7 +577,30 @@ SCS = {
 	color = rgb {224 200 150}
 	color_ui = rgb {224 200 150}
 }
-
+AZT  = {
+	color = rgb { 240 200 60 }
+	color_ui = rgb { 100 120 100 }
+	}
+DIX = {
+	color = rgb { 100 120 100 }
+	color_ui = rgb { 100 120 100 }
+}
+DNW = {
+	color = rgb { 240 20 20 }
+	color_ui = rgb { 240 20 20 }
+}
+OHI = {
+	color = rgb { 80 190 135 }
+	color_ui = rgb { 80 190 135 }
+}
+GPL = {
+	color = rgb { 130 40 130 }
+	color_ui = rgb { 130 40 130 }
+}
+FRB = {
+	color = rgb { 140 140 240 }
+	color_ui = rgb { 140 140 240 }
+}
 D01 = {
 	color = rgb { 187 80 86 }
 	color_ui = rgb { 243 103 112 }

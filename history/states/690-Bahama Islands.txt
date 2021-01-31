@@ -9,11 +9,11 @@ state={
 		}
 	history={
 		owner=ENG
-		add_core_of=ENG
+		add_core_of=FRB
 		victory_points={ 10254 1 }	
 		1936.1.1={ 
 			owner=ENG
-			add_core_of=ENG
+			add_core_of=FRB
 			buildings={
 				infrastructure=4
 				10254={ naval_base=1 }

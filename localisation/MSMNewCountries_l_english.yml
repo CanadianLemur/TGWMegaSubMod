@@ -415,3 +415,27 @@
  CPH:0 "Captaincy General of the Phillipines"
  CPH_DEF:0 "The Captaincy General of the Phillipines"
  CPH_ADJ:0 "Chilean"
+ 
+ AZT:0"Dominion of California"
+ AZT_DEF:0"The Dominion of California"
+ AZT_ADJ:0"Californian"
+ 
+ DIX:0"Dominion of Dixie"
+ DIX_DEF:0"The Dominion of Dixie"
+ DIX_ADJ:0"Dixie"
+ 
+ DNW:0"Dominion of New England"
+ DNW_DEF:0"The Dominion of New England"
+ DNW_ADJ:0"New Englander"
+ 
+ OHI:0"Dominion of the Great Lakes"
+ OHI_DEF:0"The Dominion of the Great Lakes"
+ OHI_ADJ:0"Laker"
+ 
+ GPL:0"Dominion of The Great Plains"
+ GPL_DEF:0"The Dominion of The Great Plains"
+ GPL_ADJ:0"Great Plains"
+ 
+ FRB:0"West Indies Federation"
+ FRB_DEF:0"The West Indies Federation"
+ FRB_ADJ:0"West Indian"

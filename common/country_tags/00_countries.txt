@@ -261,6 +261,13 @@ NAF = "countries/New Afrika.txt"
 SIO = "countries/Sioux.txt"
 MET = "countries/Metropolitan Union.txt"
 AGR = "countries/Agricultural Union.txt"
+# New American Dominions
+AZT = "countries/Aztlan.txt"
+DIX = "countries/Dixie.txt"
+DNW = "countries/Dominion of New England.txt"
+OHI = "countries/Ohio.txt"
+GPL = "countries/Great Plains.txt"
+FRB = "countries/Federation of Carribean"
 # Indian Breakaway States
 HYD = "countries/Hyderabad.txt"
 MYS = "countries/Mysore.txt"

@@ -345,7 +345,15 @@ create_navy_leader={  name = "Max von Fischel" id=34314 portrait_path="gfx/admir
 
 1910.1.1 = {
 	oob = "GER_1910"
-
+	if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_naval_oob = "GER_1910_naval_mtg"
+	else = {
+		set_naval_oob = "GER_1910_naval_legacy"
+	}
+}
 	#-------------------------------------------------------
 	#							NF
 	#-------------------------------------------------------
@@ -465,6 +473,22 @@ create_navy_leader={  name = "Max von Fischel" id=34314 portrait_path="gfx/admir
 		limited_conscription
 		partial_economic_mobilisation
 	}
+	if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+	basic_battery = 1
+	early_ship_hull_submarine = 1
+	basic_torpedo = 1 
+	pre_dreadnoughts = 1
+	early_ship_hull_heavy = 1 
+	early_ship_hull_light = 1
+	mtg_early_transport = 1 
+	basic_secondary_battery = 1
+	basic_naval_mines = 1
+	submarine_mine_laying = 1
+	}
 	create_equipment_variant={ name="Sachsen Class" type=battleship_1890 name_group = GER_BB_HISTORICAL parent_version = 0 obsolete=yes upgrades={ ship_gun_upgrade=2 ship_armor_upgrade=0 ship_engine_upgrade=0 ship_reliability_upgrade=2           } }
 	create_equipment_variant={ name="Oldenburg Class" type=battleship_1890 name_group = GER_BB_HISTORICAL parent_version = 1 obsolete=yes upgrades={ ship_gun_upgrade=4 ship_armor_upgrade=1 ship_engine_upgrade=0 ship_reliability_upgrade=5           } }
 	create_equipment_variant={ name="Siegfried Class" type=battleship_1890 name_group = GER_BB_HISTORICAL parent_version = 2 obsolete=yes upgrades={ ship_gun_upgrade=0 ship_armor_upgrade=0 ship_engine_upgrade=0 ship_reliability_upgrade=0           } }
@@ -511,9 +535,493 @@ create_navy_leader={  name = "Max von Fischel" id=34314 portrait_path="gfx/admir
 	create_equipment_variant={ name="U3 Class" type=coastal_submarine_1906 parent_version = 1 obsolete=yes upgrades={    ship_reliability_upgrade=0       sub_torpedo_upgrade=5 sub_stealth_upgrade=0 sub_engine_upgrade=0  } }
 	create_equipment_variant={ name="U5 Class" type=coastal_submarine_1906 parent_version = 2 obsolete=yes upgrades={    ship_reliability_upgrade=1       sub_torpedo_upgrade=5 sub_stealth_upgrade=1 sub_engine_upgrade=1  } }
 	create_equipment_variant={ name="U9 Class" type=coastal_submarine_1906 parent_version = 3 obsolete=yes upgrades={    ship_reliability_upgrade=3       sub_torpedo_upgrade=5 sub_stealth_upgrade=3 sub_engine_upgrade=3  } }
+	
+		else = {
+		set_technology = {
+				ww1_heavy_cruiser0 = 1
+	ww1_heavy_cruiser0_mtg = 1
+		ww1_heavy_cruiser1 = 1
+	ww1_heavy_cruiser1_mtg = 1
+		ww1_light_cruiser0 = 1
+	ww1_light_cruiser0_mtg = 1
+		ww1_light_cruiser1 = 1
+	ww1_light_cruiser1_mtg = 1
+		ww1_light_cruiser2 = 1
+	ww1_light_cruiser2_mtg = 1
+		ww1_submarine0 = 1
+	ww1_submarine0_mtg = 1
+		ww1_submarine1 = 1
+	ww1_submarine1_mtg = 1
+		ww1_submarine2 = 1
+		ww1_coastal_submarine1 = 1
+	ww1_coastal_submarine1_mtg = 1
+		ww1_coastal_submarine2 = 1
+		ww1_battleship0 = 1
+	ww1_battleship0_mtg = 1
+		ww1_battleship1 = 1
+	ww1_battleship1_mtg = 1
+		ww1_battleship2 = 1
+	ww1_battleship2_mtg = 1
+		ww1_battleship3 = 1
+	ww1_battleship3_mtg = 1
+		ww1_destroyer0 = 1
+	ww1_destroyer0_mtg = 1
+		ww1_destroyer1 = 1
+	ww1_destroyer1_mtg = 1
+		ww1_destroyer2 = 1
+	ww1_destroyer2_mtg = 1
+		ww1_moduleMTG_mines = 1
+	ww1_moduleMTG_mines_mtg = 1 # Mines
+		transport = 1
+	transport_mtg = 1
+		
+		}
+	create_equipment_variant={ name="Sachsen Class" type=ship_hull_pre_dreadnought parent_version = 0 obsolete=yes modules = {
+			fixed_ship_battery_slot = MSM_ship_heavy_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+			fixed_ship_secondaries_slot = MSM_ship_secondaries_1
+			fixed_ship_armor_slot = MSM_ship_armor_bb_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		} }
+	create_equipment_variant={ name="Oldenburg Class" type=ship_hull_pre_dreadnought parent_version = 0 obsolete=yes modules = {
+			fixed_ship_battery_slot = MSM_ship_heavy_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+			fixed_ship_secondaries_slot = MSM_ship_secondaries_1
+			fixed_ship_armor_slot = MSM_ship_armor_bb_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		} }
+	create_equipment_variant={ name="Siegfried Class" type=ship_hull_pre_dreadnought parent_version = 0 obsolete=yes modules = {
+			fixed_ship_battery_slot = MSM_ship_heavy_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+			fixed_ship_secondaries_slot = MSM_ship_secondaries_1
+			fixed_ship_armor_slot = MSM_ship_armor_bb_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		} }
+	create_equipment_variant={ name="Brandenburg Class" type=ship_hull_pre_dreadnought parent_version = 0 obsolete=yes modules = {
+			fixed_ship_battery_slot = MSM_ship_heavy_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+			fixed_ship_secondaries_slot = MSM_ship_secondaries_1
+			fixed_ship_armor_slot = MSM_ship_armor_bb_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		} }
+	create_equipment_variant={ name="Kaiser Friedrich III Class" type=ship_hull_pre_dreadnought parent_version = 0 obsolete=yes modules = {
+			fixed_ship_battery_slot = MSM_ship_heavy_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+			fixed_ship_secondaries_slot = MSM_ship_secondaries_1
+			fixed_ship_armor_slot = MSM_ship_armor_bb_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		} }
+	create_equipment_variant={ name="Wittelsbach Class" type=ship_hull_pre_dreadnought parent_version = 0 obsolete=yes modules = {
+			fixed_ship_battery_slot = MSM_ship_heavy_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+			fixed_ship_secondaries_slot = MSM_ship_secondaries_1
+			fixed_ship_armor_slot = MSM_ship_armor_bb_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		} }
+	create_equipment_variant={ name="Deutschland Class" type=ship_hull_pre_dreadnought parent_version = 0 obsolete=yes modules = {
+			fixed_ship_battery_slot = MSM_ship_heavy_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+			fixed_ship_secondaries_slot = MSM_ship_secondaries_1
+			fixed_ship_armor_slot = MSM_ship_armor_bb_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		} }
+	create_equipment_variant={ name="Helgoland Class" type=MSM_ship_hull_dreadnought1 parent_version = 0 obsolete=no modules = {
+			fixed_ship_battery_slot = MSM_ship_heavy_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_heavy_ship_engine_2
+			fixed_ship_secondaries_slot = MSM_ship_secondaries_1
+			fixed_ship_armor_slot = MSM_ship_armor_bb_2
+			front_1_custom_slot = empty/
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}   }
+	create_equipment_variant={ name="Victoria Luise Class" type=ship_hull_pre_dreadnought parent_version = 0 obsolete=no modules = {
+			fixed_ship_battery_slot = MSM_ship_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+			fixed_ship_secondaries_slot = MSM_ship_secondaries_1
+			fixed_ship_armor_slot = MSM_ship_armor_bc_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		} }
+	create_equipment_variant={ name="Fürst Bismarck Class" type=ship_hull_pre_dreadnought parent_version = 0 obsolete=no modules = {
+			fixed_ship_battery_slot = MSM_ship_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+			fixed_ship_secondaries_slot = MSM_ship_secondaries_1
+			fixed_ship_armor_slot = MSM_ship_armor_bc_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		} }
+	create_equipment_variant={ name="Prinz Heinrich Class" type=ship_hull_pre_dreadnought parent_version = 0 obsolete=no modules = {
+			fixed_ship_battery_slot = MSM_ship_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+			fixed_ship_secondaries_slot = MSM_ship_secondaries_1
+			fixed_ship_armor_slot = MSM_ship_armor_bc_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		} }
+	create_equipment_variant={ name="Roon Class" type=ship_hull_pre_dreadnought parent_version = 0 obsolete=no modules = {
+			fixed_ship_battery_slot = MSM_ship_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+			fixed_ship_secondaries_slot = MSM_ship_secondaries_1
+			fixed_ship_armor_slot = MSM_ship_armor_bc_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		} }
+	create_equipment_variant={ name="Scharnhorst Class" type=ship_hull_pre_dreadnought parent_version = 0 obsolete=no modules = {
+			fixed_ship_battery_slot = MSM_ship_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+			fixed_ship_secondaries_slot = MSM_ship_secondaries_1
+			fixed_ship_armor_slot = MSM_ship_armor_bc_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		} }
+	create_equipment_variant={ name="Blücher Class" type=ship_hull_pre_dreadnought parent_version = 0 obsolete=no modules = {
+			fixed_ship_battery_slot = MSM_ship_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+			fixed_ship_secondaries_slot = MSM_ship_secondaries_1
+			fixed_ship_armor_slot = MSM_ship_armor_bc_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		} }
+	create_equipment_variant={ name="Hela Class" type=ship_hull_light_1 parent_version = 0 obsolete=yes 		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+		} }
+	create_equipment_variant={ name="Irene Class" type=ship_hull_light_1 parent_version = 0 obsolete=yes 		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+		} }
+	create_equipment_variant={ name="Gazelle Class" type=ship_hull_light_1 parent_version = 0 obsolete=yes 		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+		} }
+	create_equipment_variant={ name="Bremen Class" type=ship_hull_light_1 parent_version = 0 obsolete=yes 		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+		} }
+	create_equipment_variant={ name="Königsberg Class" type=ship_hull_light_1 parent_version = 0 obsolete=yes 		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+		} }
+	create_equipment_variant={ name="Dresden Class" type=ship_hull_light_1 parent_version = 0 obsolete=yes 		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+		} }
+	create_equipment_variant={ name="Kolberg Class" type=ship_hull_light_1 parent_version = 0 obsolete=yes 		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+		} }
+	create_equipment_variant={ name="D3 Class" type=ship_hull_light_1 parent_version = 0 obsolete=no 		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+		}  }
+	create_equipment_variant={ name="D5 Class" type=ship_hull_light_1 parent_version = 0 obsolete=no 		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+		}  }
+	create_equipment_variant={ name="D7 Class" type=ship_hull_light_1 parent_version = 0 obsolete=no 		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+		}  }
+	create_equipment_variant={ name="D9 Class" type=ship_hull_light_1 parent_version = 0 obsolete=no 		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+		}  }
+	create_equipment_variant={ name="D10 Class" type=ship_hull_light_1 parent_version = 0 obsolete=no 		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+		}  }
+	create_equipment_variant={ name="S90 Class" type=ship_hull_light_1 parent_version = 0 obsolete=no 		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+		}  }
+	create_equipment_variant={ name="S114 Class" type=ship_hull_light_1 parent_version = 0 obsolete=no 		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+		} }
+	create_equipment_variant={ name="S120 Class" type=ship_hull_light_1 parent_version = 0 obsolete=no 		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+		}  }
+	create_equipment_variant={ name="S126 Class" type=ship_hull_light_1 parent_version = 0 obsolete=no 		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+		}  }
+	create_equipment_variant={ name="G132 Class" type=ship_hull_light_1 parent_version = 0 obsolete=no 		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+		}  }
+	create_equipment_variant={ name="S138 Class" type=ship_hull_light_1 parent_version = 0 obsolete=no 		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+		}  }
+	create_equipment_variant={ name="V150 Class" type=ship_hull_light_1 parent_version = 0 obsolete=no 		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+		}  }
+	create_equipment_variant={ name="V161 Class" type=ship_hull_light_1 parent_version = 0 obsolete=no 		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+		}  }
+	create_equipment_variant={ name="V162 Class" type=ship_hull_light_1 parent_version = 0 obsolete=no 		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+		}  }
+	create_equipment_variant={ name="S165 Class" type=ship_hull_light_1 parent_version = 0 obsolete=no 		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+		}  }
+	create_equipment_variant={ name="G169 Class" type=ship_hull_light_1 parent_version = 0 obsolete=no 		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+		}  }
+	create_equipment_variant={ name="S176 Class" type=ship_hull_light_1 parent_version = 0 obsolete=no 		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+		}  }
+	create_equipment_variant={ name="V180 Class" type=ship_hull_light_1 parent_version = 0 obsolete=no 		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+		}  }
+	create_equipment_variant={ name="G192 Class" type=ship_hull_light_1 parent_version = 0 obsolete=no 		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+		}  }
+	create_equipment_variant={ name="G7 Class" type=ship_hull_light_1 parent_version = 0 obsolete=no 		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+		}  }
+	create_equipment_variant={ name="S13 Class" type=ship_hull_light_1 parent_version = 0 obsolete=no 		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+		}  }
+	create_equipment_variant={ name="U2 Class" type=MSM_ship_hull_uboat_1 parent_version = 1 obsolete=yes 		modules = {
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_sub_1
+			fixed_ship_engine_slot = MSM_sub_ship_engine_1
+			rear_1_custom_slot = empty
+		} }
+	create_equipment_variant={ name="U3 Class" type=MSM_ship_hull_uboat_1 parent_version = 1 obsolete=yes 		modules = {
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_sub_1
+			fixed_ship_engine_slot = MSM_sub_ship_engine_1
+			rear_1_custom_slot = empty
+		} }
+	create_equipment_variant={ name="U5 Class" type=MSM_ship_hull_uboat_1 parent_version = 1 obsolete=yes 		modules = {
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_sub_1
+			fixed_ship_engine_slot = MSM_sub_ship_engine_1
+			rear_1_custom_slot = empty
+		} }
+	create_equipment_variant={ name="U9 Class" type=MSM_ship_hull_uboat_1 parent_version = 1 obsolete=yes 		modules = {
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_sub_1
+			fixed_ship_engine_slot = MSM_sub_ship_engine_1
+			rear_1_custom_slot = empty
+		} }
 
 
-
+		
+		}
+	}
+}
 }
 
 1914.1.1 = {

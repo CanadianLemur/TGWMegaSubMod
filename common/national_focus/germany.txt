@@ -1339,7 +1339,7 @@ focus_tree = {
 		}
 		icon = GFX_goal_generic_army_artillery2
 		completion_reward = { 
-			add_ideas = idea = MSM_GER_ww1_war_games
+			add_ideas = MSM_GER_ww1_war_games
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10

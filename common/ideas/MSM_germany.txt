@@ -3,10 +3,8 @@ ideas={
 		MSM_GER_ww1_war_games = {
 			allowed = {
 				original_tag = GER
-				always = no
 			}
 			
-			picture = bruh
 			
 			removal_cost = -1 
 			

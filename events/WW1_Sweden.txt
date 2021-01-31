@@ -83,7 +83,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = ww1_sweden.3.a #Accept closer ties
+		name = ww1_sweden.3.a #Accepted closer ties
 	}
 }
 country_event = {
@@ -93,7 +93,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = ww1_sweden.4.a #Accept closer ties
+		name = ww1_sweden.4.a #Denied closer ties
 	}
 }
 country_event = {
@@ -138,7 +138,7 @@ country_event = {
 		set_capital = 110
 	}
 	option = {
-		name = ww1_sweden.7.d #Move capital to Copenhagen
+		name = ww1_sweden.7.f #Move capital to Copenhagen
 		set_capital = 37
 	}
 	option = {

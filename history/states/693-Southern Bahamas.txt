@@ -9,10 +9,10 @@ state={
 		}
 	history={
 		owner=ENG
-		add_core_of=ENG
+		add_core_of=FRB
 		1936.1.1={ 
 			owner=ENG
-			add_core_of=ENG
+			add_core_of=FRB
 			buildings={
 				infrastructure=4
 				10440={ naval_base=1 }
