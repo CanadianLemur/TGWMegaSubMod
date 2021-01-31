@@ -1,7 +1,13 @@
 focus_tree = {
 	id=india_emergent_focus
 	default=no
-	country={ factor=0 }
+	country={ factor=0 
+	modifier = {
+			add = 10
+			has_country_flag = indianhegemon
+	
+	}
+	}
 	focus = {
 		id = MSM_IND_indian_hegemon
 		icon = GFX_focus_generic_little_entente
@@ -422,4 +428,5 @@ focus_tree = {
 		y = 16
 		ai_will_do = { factor = 1 }
 	}		
+}
 }

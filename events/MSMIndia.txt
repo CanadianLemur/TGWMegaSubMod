@@ -372,7 +372,7 @@ country_event = {
 		every_state = {limit = {or = {is_core_of = RAJ is_core_of = PAK }} add_claim_by = Root}
 		every_state = {limit = {is_core_of = HYD} add_core_of = Root}
 		set_country_flag = indianhegemon
-		custom_effect_tooltip = newfocus
+		load_focus_tree = india_emergent_focus
 	}	
 }
 # Indian Hegemony Achieved - Hyderabad
@@ -391,7 +391,7 @@ country_event = {
 		every_state = {limit = {or = {is_core_of = RAJ is_core_of = PAK }} add_claim_by = Root}
 		every_state = {limit = {is_core_of = DEL} add_core_of = Root}
 		set_country_flag = indianhegemon
-		custom_effect_tooltip = newfocus
+		load_focus_tree = india_emergent_focus
 	}	
 }
 # Indian Hegemon Demands Vassalization
