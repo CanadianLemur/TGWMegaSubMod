@@ -7,7 +7,6 @@ state = {
 		362
 	}
 	resources = {
-		wood = 15
 	}
 	history = {
 		victory_points = {
@@ -16,6 +15,15 @@ state = {
 		owner = GER
 		add_core_of = DZG
 		add_core_of = GER
+		buildings = {
+			infrastructure = 7
+			dockyard = 1
+			arms_factory = 1
+			362 = {
+				naval_base = 5
+				coastal_bunker = 6
+			}
+		}
 
 		1936.1.1 = {
 			owner = POL
@@ -30,18 +38,6 @@ state = {
 				}
 			}
 		}
-		buildings = {
-			infrastructure = 7
-			dockyard = 1
-			arms_factory = 1
-			362 = {
-				naval_base = 5
-			}
-			362 = {
-				coastal_bunker = 6
-			}
-		}
-
 		1919.1.1 = {
             owner = POL
             add_core_of = POL

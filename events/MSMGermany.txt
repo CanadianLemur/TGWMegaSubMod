@@ -114,3 +114,21 @@ country_event = {
 		#Keep Moltke
 	}
 }
+####Germany Victory in the Weltkrieg####
+country_event = {
+	id =  MSMGermany.6
+	title = MSMGermany.6.t
+	desc = MSMGermany.6.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = MSMGermany.6.a
+		ai_chance = { factor = 100 }
+		GER = {
+		mark_focus_tree_layout_dirty = yes #reloads focus tree use sparingly
+		}
+	}
+}
