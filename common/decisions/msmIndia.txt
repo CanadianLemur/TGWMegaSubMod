@@ -1,8 +1,8 @@
 indian_affairs = {
 	demand_vassalization = {
-			allowed = {tag = NEP} #change to a focus requirement at some point
+			allowed = {has_completed_focus = MSM_IND_vassalize_princely_states}
 			cost = 20
-			visible = {is_subject=no}
+			visible = {is_subject=no has_completed_focus = MSM_IND_vassalize_princely_states}
 			fire_only_once = yes
 			target_trigger = {
 				FROM = {	is_subject = NO		OR = { tag = KAS tag = SIN tag = PUN tag = JAI tag = BAR tag = IDO tag = MYS tag = TRV tag = NEP tag = BHU tag = BAN tag = ASM }}
@@ -19,10 +19,10 @@ indian_affairs = {
 			}
           }
 	integrate_vassal = {
-			allowed = {tag = NEP} #change to a focus requirement at some point
+			allowed = {has_completed_focus = MSM_IND_integrate_princely_states}
 			cost = 20
 			
-			visible = {FROM = is_subject_of=ROOT}
+			visible = {FROM = is_subject_of=ROOT has_completed_focus = MSM_IND_integrate_princely_states }
 			fire_only_once = yes
 			target_trigger = {
 				FROM = {is_subject_of=ROOT	OR = { tag = KAS tag = SIN tag = PUN tag = JAI tag = BAR tag = IDO tag = MYS tag = TRV tag = NEP tag = BHU tag = BAN tag = ASM }}
@@ -52,12 +52,11 @@ indian_affairs = {
 	fire_only_once = yes
 	days_remove = 90
 	visible = {
-	original_tag = NEP
+	has_completed_focus = MSM_IND_integrate_india
 	OR = {FROM = {is_core_of=RAJ} FROM = {is_core_of=PAK}}
 	FROM = {is_owned_and_controlled_by = ROOT NOT = {is_core_of=ROOT}}	
 	}
 	allowed = {
-		original_tag = NEP
 		OR = {FROM = {is_core_of=RAJ} FROM = {is_core_of=PAK}}
 		FROM = {is_owned_and_controlled_by = ROOT}
 	}

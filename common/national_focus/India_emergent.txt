@@ -100,7 +100,7 @@ focus_tree = {
 		id = MSM_IND_eastern_policy
 		icon = GFX_goal_generic_position_armies
 		completion_reward = {
-			add_stability = 0.1
+			add_political_power = 30
 		}
 		prerequisite = { focus = MSM_IND_coalition }
 		cost = 10
@@ -116,7 +116,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = MSM_IND_eastern_policy }
 		cost = 10
-		x = 16
+		x = 15
 		y = 15
 		ai_will_do = { factor = 1 }
 	}
@@ -126,17 +126,17 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.1
 		}
-		prerequisite = { focus = MSM_IND_eastern_policy }
+		prerequisite = { focus = MSM_IND_burma }
 		cost = 10
-		x = 14
-		y = 15
+		x = 15
+		y = 16
 		ai_will_do = { factor = 1 }
 	}
 	focus = {
 		id = MSM_IND_northern_policy
 		icon = GFX_goal_generic_position_armies
 		completion_reward = {
-			add_stability = 0.1
+			add_political_power = 30
 		}
 		prerequisite = { focus = MSM_IND_coalition }
 		cost = 10
@@ -172,7 +172,7 @@ focus_tree = {
 		id = MSM_IND_western_policy
 		icon = GFX_goal_generic_position_armies
 		completion_reward = {
-			add_stability = 0.1
+			add_political_power = 30
 		}
 		prerequisite = { focus = MSM_IND_coalition }
 		cost = 10
@@ -208,7 +208,7 @@ focus_tree = {
 		id = MSM_IND_southern_policy
 		icon = GFX_goal_generic_position_armies
 		completion_reward = {
-			add_stability = 0.1
+			add_political_power = 30
 		}
 		prerequisite = { focus = MSM_IND_coalition }
 		cost = 10
@@ -268,7 +268,7 @@ focus_tree = {
 		id = MSM_IND_integrate_india
 		icon = GFX_goal_generic_propaganda
 		completion_reward = {
-			add_stability = 0.1
+			custom_effect_tooltip = core_states
 		}
 		prerequisite = { focus = MSM_IND_coalition }
 		cost = 10
@@ -375,7 +375,7 @@ focus_tree = {
 		id = MSM_IND_indian_officer_corps
 		icon = GFX_focus_RAJ_indianisation_of_army
 		completion_reward = {
-			add_stability = 0.1
+			add_ideas = MSM_independent_indian_staff
 		}
 		prerequisite = { focus = MSM_IND_india_united }
 		cost = 10
