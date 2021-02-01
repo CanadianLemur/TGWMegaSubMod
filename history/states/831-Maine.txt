@@ -14,6 +14,7 @@ state={
 		add_core_of=USA
 		add_core_of=NWN
 		victory_points={ 12459 1 }
+		victory_points={ 3732 2 }
 		1936.1.1={ 
 			owner=USA
 			add_core_of=USA

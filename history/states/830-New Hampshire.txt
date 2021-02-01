@@ -10,6 +10,7 @@ state={
 		steel=30
 	}
 	history={
+	victory_points={ 3712 2 }
 		owner=USA
 		add_core_of=USA
 		add_core_of=NWN
