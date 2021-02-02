@@ -55,4 +55,10 @@ opinion_modifiers = {
 		value = -50
 	}
 	
+	#Germany
+	
+	GER_joint_military_exercises = {
+		value = 25
+	}
+	
 }

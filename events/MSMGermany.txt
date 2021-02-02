@@ -130,7 +130,135 @@ country_event = {
 		name = MSMGermany.6.a
 		ai_chance = { factor = 100 }
 		GER = {
-		mark_focus_tree_layout_dirty = yes #reloads focus tree use sparingly
+			mark_focus_tree_layout_dirty = yes #reloads focus tree use sparingly
 		}
+	}
+}
+
+####Lowland Military Exercises####
+country_event = {
+	id =  MSMGermany.7
+	title = MSMGermany.7.t
+	desc = MSMGermany.7.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = MSMGermany.7.a
+		ai_chance = { factor = 100 }
+		add_opinion_modifier = {
+			target = GER
+			modifier = GER_joint_military_exercises
+		}
+	}
+}
+
+####French aggression in the Benelux####
+news_event = {
+	id = MSMGermany.8
+	title = MSMGermany.8.t
+	desc = MSMGermany.8.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+	major = yes
+
+	trigger = {
+		GER = {
+			has_completed_focus = GER_ww1_war_plans_regional_threat
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			HOL = {
+				give_military_access = GER
+			}
+			BEL = {
+				give_military_access = GER
+			}
+			LUX = {
+				give_military_access = GER
+			}
+			SWI = {
+				give_military_access = GER
+			}
+		}
+	}
+
+	option = {
+		name = MSMGermany.8.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+news_event = {
+	id = MSMGermany.9
+	title = MSMGermany.9.t
+	desc = MSMGermany.9.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+	major = yes
+
+	trigger = {
+		GER = {
+			has_completed_focus = GER_ww1_war_plans_neutral_no_longer
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			HOL = {
+				country_event = MSMGermany.10
+			}
+			BEL = {
+				country_event = MSMGermany.10
+			}
+			LUX = {
+				country_event = MSMGermany.10
+			}
+			SWI = {
+				country_event = MSMGermany.10
+			}
+		}
+	}
+
+	option = {
+		name = MSMGermany.9.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id =  MSMGermany.10
+	title = MSMGermany.10.t
+	desc = MSMGermany.10.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = MSMGermany.10.a
+		ai_chance = { factor = 100 }
+		add_ai_strategy = {
+			type = alliance
+			id = GER
+			value = 1000
+		}
+		GER = {
+			add_to_faction = ROOT
+		}
+	}
+	option = {
+		name = MSMGermany.10.b
+		ai_chance = { factor = 0 }
 	}
 }

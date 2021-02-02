@@ -1287,6 +1287,7 @@ focus_tree = {
 				uses = 2
 				category = land_doctrine
 			}
+			add_ideas = GER_helmuth_von_moltke
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -1760,8 +1761,7 @@ focus_tree = {
 		mutually_exclusive = { focus=GER_ww1_war_plans_schlieffen_plan }
 		icon = GFX_goal_generic_small_arms
 		completion_reward = {
-			#Give hindenburg as Chief of Army
-			#Remove hindenburg as General
+			add_ideas = GER_paul_von_hindenburg
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -1791,7 +1791,19 @@ focus_tree = {
 		prerequisite = { focus=GER_ww1_war_plans_assure_northern_border }
 		icon = GFX_goal_generic_small_arms
 		completion_reward = {
-			#Ask the low countries to do joint military exercises
+			custom_effect_tooltip = "Undertake in joint military exercises with the lowland countries"
+			#hidden_effect = {
+				HOL = {
+					country_event = MSMGermany.8
+				}
+				BEL = {
+					country_event = MSMGermany.8
+				}
+				LUX = {
+					country_event = MSMGermany.8
+				}
+			#}
+			
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -1805,7 +1817,10 @@ focus_tree = {
 		prerequisite = { focus=GER_ww1_war_plans_lowland_cooperation }
 		icon = GFX_goal_generic_small_arms
 		completion_reward = {
-			#Guarentee lowland and swiss independence
+			give_guarantee = SWI
+			give_guarantee = HOL
+			give_guarantee = BEL
+			give_guarantee = LUX
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -1819,7 +1834,12 @@ focus_tree = {
 		prerequisite = { focus=GER_ww1_war_plans_protect_neutrality }
 		icon = GFX_goal_generic_small_arms
 		completion_reward = {
-			#Stage French aggression towards Netherlands and Belgium
+			custom_effect_tooltip = "Creates a situation that convinces the lowcountries and Switzerland to accept German support of their independence"
+			hidden_effect = {
+				news_event = {
+					id = MSMGermany.8
+				}
+			}
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -1833,7 +1853,13 @@ focus_tree = {
 		prerequisite = { focus=GER_ww1_war_plans_regional_threat }
 		icon = GFX_goal_generic_small_arms
 		completion_reward = {
-			#Invite the Netherlands and Belgium to the Central Powers
+			add_political_power = 100
+			custom_effect_tooltip = "Invite the countries threatened by France to the Central Powers to ensure their protection"
+			hidden_effect = {
+				news_event = {
+					id = MSMGermany.9
+				}
+			}
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -7332,7 +7358,7 @@ focus_tree = {
 			factor = 1
 			modifier = {
 				is_in_faction_with = JAP
-				factor = 0 #GER-sempai has already noticed you!
+				factor = 0 #GER-senpai has already noticed you!
 			}
 		}	
 		completion_reward = {
@@ -9737,7 +9763,7 @@ focus_tree = {
 				if = {
 					limit = {
 						GER = {
-							has_government = communism
+							has_government = communism 
 						}
 					}
 					add_timed_idea = { idea = communist_influence days = 1095 }
