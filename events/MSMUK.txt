@@ -73,11 +73,13 @@ country_event = {
 		}
 		add_political_power = -100
 		ZIM = {transfer_state = 545	transfer_state = 771 transfer_state = 770
+			add_state_core = 771 add_state_core = 770
 		if = {
 		limit = { has_dlc = "Together for Victory" }
 
 		add_to_tech_sharing_group = commonwealth_research
 		}
+		set_cosmetic_tag = CAF
 		}
 		set_autonomy = {
 		target = ZIM
@@ -108,7 +110,7 @@ country_event = {
 		add_political_power = -100
 		release = FRB
 		set_autonomy = {
-		target = FSB
+		target = FRB
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.2
 	}

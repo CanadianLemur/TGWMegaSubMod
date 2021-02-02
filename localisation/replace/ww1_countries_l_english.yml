@@ -458,4 +458,8 @@
  ZHC_neutrality_ADJ:0 "Chinese"
  ZHC_fascism_ADJ:0 "Chinese"
  ZHC_communism_ADJ:0 "Chinese"
+ 
+ ZIM_democratic:0"Southern Rhodesia"
+ ZIM_democratic_ADJ:0"Southern Rhodesian"
+ ZIM_democratic_DEF:0"Southern Rhodesia"
  # ===================================================================================================

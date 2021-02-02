@@ -58,4 +58,7 @@
  HYD_IND_fascism_ADJ:0 "Indian"
  Transvaal_democratic:0"Transvaal Colony"
  Transvaal_democratic_desc:0"Transvaal Colony"
- 
+
+ CAF_democratic:0"Federation of Rhodesia and Nyasaland"
+ CAF_democratic_DEF:0"The Federation of Rhodesia and Nyasaland"
+ CAF_democratic_ADJ:0"Rhodesian"
