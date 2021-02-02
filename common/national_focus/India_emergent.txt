@@ -87,6 +87,7 @@ focus_tree = {
 			add_stability = 0.05 
 			add_ideas= {MSM_grand_coalition} 
 			}else = {add_stability = -0.1}
+			custom_effect_tooltip = grand_coalition
 		}
 		prerequisite = { focus = MSM_IND_negotiate_with_all_india_muslim_league }
 		prerequisite = { focus = MSM_IND_negotiate_with_indian_national_congress }
@@ -101,6 +102,7 @@ focus_tree = {
 		icon = GFX_goal_generic_position_armies
 		completion_reward = {
 			add_political_power = 30
+			custom_effect_tooltip = eastern_policy
 		}
 		prerequisite = { focus = MSM_IND_coalition }
 		cost = 10
@@ -109,63 +111,16 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 	}
 	focus = {
-		id = MSM_IND_burma
-		icon = GFX_goal_generic_position_armies
-		completion_reward = {
-			add_stability = 0.1
-		}
-		prerequisite = { focus = MSM_IND_eastern_policy }
-		cost = 10
-		x = 15
-		y = 15
-		ai_will_do = { factor = 1 }
-	}
-	focus = {
-		id = MSM_IND_siam
-		icon = GFX_goal_generic_position_armies
-		completion_reward = {
-			add_stability = 0.1
-		}
-		prerequisite = { focus = MSM_IND_burma }
-		cost = 10
-		x = 15
-		y = 16
-		ai_will_do = { factor = 1 }
-	}
-	focus = {
 		id = MSM_IND_northern_policy
 		icon = GFX_goal_generic_position_armies
 		completion_reward = {
 			add_political_power = 30
+			custom_effect_tooltip = northern_policy
 		}
 		prerequisite = { focus = MSM_IND_coalition }
 		cost = 10
 		x = 13
-		y = 17
-		ai_will_do = { factor = 1 }
-	}
-	focus = {
-		id = MSM_IND_tibet
-		icon = GFX_goal_generic_position_armies
-		completion_reward = {
-			add_stability = 0.1
-		}
-		prerequisite = { focus = MSM_IND_northern_policy }
-		cost = 10
-		x = 12
-		y = 18
-		ai_will_do = { factor = 1 }
-	}
-	focus = {
-		id = MSM_IND_himalayan_minors
-		icon = GFX_goal_generic_position_armies
-		completion_reward = {
-			add_stability = 0.1
-		}
-		prerequisite = { focus = MSM_IND_northern_policy }
-		cost = 10
-		x = 14
-		y = 18
+		y = 14
 		ai_will_do = { factor = 1 }
 	}
 	focus = {
@@ -173,6 +128,7 @@ focus_tree = {
 		icon = GFX_goal_generic_position_armies
 		completion_reward = {
 			add_political_power = 30
+			custom_effect_tooltip = western_policy
 		}
 		prerequisite = { focus = MSM_IND_coalition }
 		cost = 10
@@ -181,63 +137,16 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 	}
 	focus = {
-		id = MSM_IND_afghanistan
-		icon = GFX_goal_generic_position_armies
-		completion_reward = {
-			add_stability = 0.1
-		}
-		prerequisite = { focus = MSM_IND_western_policy }
-		cost = 10
-		x = 12
-		y = 15
-		ai_will_do = { factor = 1 }
-	}
-	focus = {
-		id = MSM_IND_recover_baluchistan
-		icon = GFX_goal_generic_position_armies
-		completion_reward = {
-			add_stability = 0.1
-		}
-		prerequisite = { focus = MSM_IND_western_policy }
-		cost = 10
-		x = 10
-		y = 15
-		ai_will_do = { factor = 1 }
-	}
-	focus = {
 		id = MSM_IND_southern_policy
 		icon = GFX_goal_generic_position_armies
 		completion_reward = {
 			add_political_power = 30
+			custom_effect_tooltip = southern_policy
 		}
 		prerequisite = { focus = MSM_IND_coalition }
 		cost = 10
 		x = 9
-		y = 17
-		ai_will_do = { factor = 1 }
-	}
-	focus = {
-		id = MSM_IND_european_ports
-		icon = GFX_goal_generic_position_armies
-		completion_reward = {
-		country_event = {id = MSMIndia.9}		
-		}
-		prerequisite = { focus = MSM_IND_southern_policy }
-		cost = 10
-		x = 8
-		y = 18
-		ai_will_do = { factor = 1 }
-	}
-	focus = {
-		id = MSM_IND_southern_islands
-		icon = GFX_goal_generic_position_armies
-		completion_reward = {
-			country_event = {id = MSMIndia.15}
-		}
-		prerequisite = { focus = MSM_IND_southern_policy }
-		cost = 10
-		x = 10
-		y = 18
+		y = 14
 		ai_will_do = { factor = 1 }
 	}
 	focus = {
@@ -311,6 +220,16 @@ focus_tree = {
 		not = {has_war_with = JAP}
 		}
 		completion_reward = {
+		add_opinion_modifier = {
+		target = JAP
+		modifier = HOI4TGW_Opinion_improved_diplomatic_relations
+		}
+		JAP = {
+		add_opinion_modifier = {
+		target = ROOT
+			modifier = HOI4TGW_Opinion_improved_diplomatic_relations
+				}
+			}
 		}
 		prerequisite = { focus = MSM_IND_coalition }
 		cost = 10
@@ -325,6 +244,7 @@ focus_tree = {
 		not = {has_war_with = JAP}
 		}
 		completion_reward = {
+		add_ideas = foreign_zaibatsu_small_influence
 		random_owned_controlled_state = {
 		add_building_construction = {
 		type = industrial_complex

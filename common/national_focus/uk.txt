@@ -1964,7 +1964,7 @@ focus_tree = {
 		completion_reward = { SER={ add_opinion_modifier={ target=ENG modifier=balkan_strategy_good } } GRE={ add_opinion_modifier={ target=ENG modifier=balkan_strategy_good } } ROM={ add_opinion_modifier={ target=ENG modifier=balkan_strategy_good } } BUL={ add_opinion_modifier={ target=ENG modifier=balkan_strategy_bad } } GER={ add_opinion_modifier={ target=ENG modifier=balkan_strategy_bad } } AUH={ add_opinion_modifier={ target=ENG modifier=balkan_strategy_bad } } TUR={ add_opinion_modifier={ target=ENG modifier=balkan_strategy_bad } } }
 		ai_will_do = { factor = 20 }
 		cost = 10
-		x = 15
+		x = 14
 		y = 2
 	}
 
@@ -2030,6 +2030,28 @@ focus_tree = {
 		x = 18
 		y = 1
 	}
+	focus = {
+		id = ENG_MSM_rhodesia
+		prerequisite = { focus = ENG_ww1_bureau_colonies }
+		icon = GFX_goal_generic_position_armies
+		available = {}
+		completion_reward = { country_event = MSMUK.1 }
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 16
+		y = 2
+	}
+	focus = {
+		id = ENG_MSM_carribean
+		prerequisite = { focus = ENG_ww1_bureau_colonies }
+		icon = GFX_goal_generic_position_armies
+		available = {}
+		completion_reward = { country_event = MSMUK.2 }
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 18
+		y = 2
+	}
 
 	#-----------------------------------------
 	focus = {
@@ -2044,7 +2066,7 @@ focus_tree = {
 		ai_will_do = { factor = 20 }
 		cost = 10
 		x = 17
-		y = 2
+		y = 3
 	}
 
 	focus = {
@@ -2056,7 +2078,7 @@ focus_tree = {
 		ai_will_do = { factor = 20 }
 		cost = 10
 		x = 17
-		y = 3
+		y = 4
 	}
 
 	focus = {
@@ -2068,7 +2090,7 @@ focus_tree = {
 		ai_will_do = { factor = 20 }
 		cost = 10
 		x = 17
-		y = 4
+		y = 5
 	}
 
 	focus = {
@@ -2080,7 +2102,7 @@ focus_tree = {
 		ai_will_do = { factor = 20 }
 		cost = 10
 		x = 17
-		y = 5
+		y = 6
 	}
 	#-----------------------------------------
 	focus = {
@@ -2093,7 +2115,7 @@ focus_tree = {
 		ai_will_do = { factor = 20 }
 		cost = 10
 		x = 19
-		y = 2
+		y = 3
 	}
 
 	focus = {
@@ -2105,7 +2127,7 @@ focus_tree = {
 		ai_will_do = { factor = 20 }
 		cost = 10
 		x = 19
-		y = 3
+		y = 4
 	}
 
 	focus = {
@@ -2117,7 +2139,7 @@ focus_tree = {
 		ai_will_do = { factor = 20 }
 		cost = 10
 		x = 19
-		y = 4
+		y = 5
 	}
 
 	focus = {
@@ -2132,7 +2154,7 @@ focus_tree = {
 		ai_will_do = { factor = 10 }
 		cost = 10
 		x = 19
-		y = 5
+		y = 6
 	}
 	#-----------------------------------------
 

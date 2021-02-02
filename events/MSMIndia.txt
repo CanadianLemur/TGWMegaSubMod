@@ -5,7 +5,7 @@ country_event = {
 	id =  MSMIndia.1
 	title = MSMIndia.1.t
 	desc = MSMIndia.1.d
-	picture = GFX_report_event_generic_read_write
+	picture = news_event_india
 	fire_only_once = yes
 	trigger =  { RAJ = {any_enemy_country = {OR = {controls_state = 440 controls_state = 430 }}} } #can fire if an enemy of the raj controls either east bengal or the punjab
 	option = {
@@ -36,7 +36,7 @@ country_event = {
 	id =  MSMIndia.2
 	title = MSMIndia.2.t
 	desc = MSMIndia.2.d
-	picture = GFX_report_event_generic_read_write
+	picture = news_event_india
 	fire_only_once = yes
 	trigger =  {  OR = {has_cosmetic_tag = NEP_DEL tag = DEL} date > 1919.1.1  country_exists = HYD has_global_flag = indiacollapsed } 
 	option = {
@@ -53,7 +53,7 @@ country_event = {
 	id =  MSMIndia.3
 	title = MSMIndia.2.t
 	desc = MSMIndia.2.d
-	picture = GFX_report_event_generic_read_write
+	picture = news_event_india
 	fire_only_once = yes
 	trigger =  { tag = HYD date > 1919.1.1 has_global_flag = indiacollapsed} 
 	option = {
@@ -81,7 +81,7 @@ country_event = {
 	id =  MSMIndia.4
 	title = MSMIndia.4.t
 	desc = MSMIndia.4.d
-	picture = GFX_report_event_generic_read_write
+	picture = news_event_india
 	fire_only_once = yes
 	trigger =  {original_tag = RAJ surrender_progress >0.7} 
 	option = {
@@ -386,7 +386,7 @@ country_event = {
 	option = {
 		name = MSMIndia.7.a #Chhatrapati!
 		ai_chance = { factor = 100 }
-		set_cosmetic_tag = India
+		set_cosmetic_tag = HYD_IND
 		add_country_leader_trait = MSM_Chhatrapati
 		every_state = {limit = {or = {is_core_of = RAJ is_core_of = PAK }} add_claim_by = Root}
 		every_state = {limit = {is_core_of = DEL} add_core_of = Root}
@@ -470,22 +470,6 @@ country_event = {
 		ai_chance = { factor = 0 }
 }
 }
-# Indian Hegemon decides approach to european ports
-country_event = {
-	id =  MSMIndia.9
-	title = MSMIndia.9.t
-	desc = MSMIndia.9.d
-	picture = GFX_report_event_generic_read_write
-	is_triggered_only = yes
-	option = {
-		name = MSMIndia.9.a # offer to purchase them
-		ai_chance = { factor = 100 }
-	}
-	option = {
-		name = MSMIndia.9.b # prepare operations to seize them and risk war
-		ai_chance = { factor = 0 }
-}
-}
 # Indian Hegemon offers to buy european port
 country_event = {
 	id =  MSMIndia.10
@@ -549,27 +533,11 @@ country_event = {
 		ai_chance = { factor = 50 }
 	}
 }
-# Indian Hegemon decides approach to southern islands
-country_event = {
-	id =  MSMIndia.15
-	title = MSMIndia.15.t
-	desc = MSMIndia.15.d
-	picture = GFX_report_event_generic_read_write
-	is_triggered_only = yes
-	option = {
-		name = MSMIndia.15.a # offer to purchase them
-		ai_chance = { factor = 100 }
-	}
-	option = {
-		name = MSMIndia.15.b # prepare operations to seize them and almost certainly end up at war
-		ai_chance = { factor = 0 }
-}
-}
 news_event = {
 	id = MSMIndiaNews.1 #Nepal Leaves Britain
 	title = MSMIndiaNews.1.t
 	desc = MSMIndiaNews.1.d
-	picture = GFX_news_event_033
+	picture = news_event_india
 	is_triggered_only = yes
 	option = {
 		name = MSMIndiaNews.1.a # Entente Response

@@ -10,6 +10,7 @@ New_provinces = {
 		original_tag = CAN
 	}
 	available = {
+    has_global_flag = canadacaribbean
 	is_subject = yes ##Britain wouldn't give their colonies away to just anyone
 	has_stability >0.5
 	}
@@ -28,6 +29,9 @@ New_provinces = {
 		ROOT = {transfer_state = FROM}
 		}
 	}
+	ai_will_do = {
+	factor = 80
+		}
 	}
 
 }

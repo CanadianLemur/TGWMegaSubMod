@@ -1,0 +1,131 @@
+﻿add_namespace = MSMUK
+##MSMUK 1 Decision on Central Africa
+country_event = {
+	title = MSMUK.1.t
+	desc = MSMUK.1.d
+	id = MSMUK.1
+	is_triggered_only = yes
+	option = {
+		name =  MSMUK.1.a## do nothing
+		ai_chance = {
+			factor = 60
+			add_political_power = 100
+		}
+		}
+	option = {
+		name =  MSMUK.1.b## transfer rhodesia and bechuanaland to SAF
+		ai_chance = {
+			factor = 10
+		}
+		add_political_power = -100
+		SAF = {transfer_state = 545
+		add_state_core = 545
+		transfer_state = 542
+		}
+		}
+	option = {
+		name =  MSMUK.1.c## Release rhodesia and bechuanaland to SAF
+		ai_chance = {
+			factor = 10
+		}
+		add_political_power = -100
+		ZIM = {
+		transfer_state = 545
+		if = {
+		limit = { has_dlc = "Together for Victory" }
+
+		add_to_tech_sharing_group = commonwealth_research
+		}
+		}
+		set_autonomy = {
+		target = ZIM
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+
+		SAF = {
+		transfer_state = 542
+		}
+		}
+	option = {
+		name =  MSMUK.1.e## release Rhodesia
+		ai_chance = {
+			factor = 10
+		}
+		add_political_power = -100
+		ZIM = {transfer_state = 545	
+		if = {
+		limit = { has_dlc = "Together for Victory" }
+
+		add_to_tech_sharing_group = commonwealth_research
+		}
+		}
+		set_autonomy = {
+		target = ZIM
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+		}
+	option = {
+		name =  MSMUK.1.f## release CAF and transfer Bechuanaland to SAF
+		ai_chance = {
+			factor = 10
+		}
+		add_political_power = -100
+		ZIM = {transfer_state = 545	transfer_state = 771 transfer_state = 770
+		if = {
+		limit = { has_dlc = "Together for Victory" }
+
+		add_to_tech_sharing_group = commonwealth_research
+		}
+		}
+		set_autonomy = {
+		target = ZIM
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+		SAF = {transfer_state = 542}
+		}
+	}
+##MSMUK 2 Decision on Carribean
+country_event = {
+	title = MSMUK.2.t
+	desc = MSMUK.2.d
+	id = MSMUK.2
+	is_triggered_only = yes
+	option = {
+		name =  MSMUK.2.a## do nothing
+		ai_chance = {
+			factor = 60
+			add_political_power = 100
+		}
+		}
+	option = {
+		name =  MSMUK.2.b## release federation of west indies
+		ai_chance = {
+			factor = 20
+		}
+		add_political_power = -100
+		release = FRB
+		set_autonomy = {
+		target = FSB
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+	FRB = {
+	if = {
+		limit = { has_dlc = "Together for Victory" }
+
+		add_to_tech_sharing_group = commonwealth_research
+		}
+	}
+		}
+	option = {
+		name =  MSMUK.2.c## Put pressure on Canada and colonial governments to confederate
+		ai_chance = {
+			factor = 20
+		}
+		add_political_power = -100
+		set_global_flag = canadacaribbean
+		}
+	}

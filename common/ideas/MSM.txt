@@ -26,7 +26,30 @@ ideas = {
 				mic_to_target_factor = 0.10
 			}
 		}
+		foreign_zaibatsu_small_influence = {
 
+			picture = jap_zaibatsu
+				
+			allowed = {
+				NOT = {has_war_with = JAP}
+			}
+
+			removal_cost = -1
+				
+			modifier = {
+				political_power_gain = -0.25			
+				local_resources_factor = 0.05
+				consumer_goods_factor = -0.02
+			}
+				
+			targeted_modifier = { 
+				tag = JAP
+				trade_opinion_factor = 0.10
+				extra_trade_to_target_factor = 0.05
+				trade_cost_for_target_factor = -0.05
+				cic_to_target_factor = 0.05	
+			}
+		}
 		msm_neutrality_idea = {
 
 			picture = "GFX_Generic_neutrality_focus"

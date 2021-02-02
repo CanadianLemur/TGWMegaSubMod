@@ -341,7 +341,6 @@ focus_tree = {
 		id = political_effort
 		icon = GFX_goal_generic_demand_territory
 		completion_reward = { add_political_power=100 }
-		allow_branch ={not={tag=SAF}}
 		cost = 10
 		x = 3
 		y = 0
@@ -895,7 +894,6 @@ focus_tree = {
 		completion_reward = {
 			add_political_power=50
 		}
-		allow_branch ={not={tag=SAF}}
 		cost = 10
 		x = 11
 		y = 0
@@ -2576,29 +2574,5 @@ focus_tree = {
 		cost = 10
 		x = 36
 		y = 9
-	}
-	focus = {
-		id = SAF_aftermath_of_national_convention
-		icon = GFX_goal_generic_intelligence_exchange
-		completion_reward = {
-			add_political_power=50
-		}
-		allow_branch ={tag=SAF}
-		cost = 10
-		x = 11
-		y = 0
-		ai_will_do = { factor = 100 }
-	}
-	focus = {
-		id = SAF_rhodesia
-		icon = GFX_goal_generic_intelligence_exchange
-		completion_reward = {
-			ENG = {country_event = MSMSouthAfrica.1}
-		}
-		prerequisite = {focus = SAF_aftermath_of_national_convention}
-		cost = 10
-		x = 13
-		y = 1
-		ai_will_do = { factor = 100 }
 	}
 }

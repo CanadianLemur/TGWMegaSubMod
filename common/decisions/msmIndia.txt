@@ -18,6 +18,25 @@ indian_affairs = {
 			}
 			}
           }
+	demand_vassalization_TIB = {
+			allowed = {has_completed_focus = MSM_IND_northern_policy}
+			cost = 100
+			visible = {is_subject=no has_completed_focus = MSM_IND_northern_policy}
+			fire_only_once = yes
+			target_trigger = {
+				FROM = {	is_subject = NO	 tag = TIB}
+			}
+			    available = {
+				FROM = { has_war = no }
+				}
+			complete_effect = {
+			FROM = {country_event = {
+			days = 3
+			id =  MSMIndia.8
+			}
+			}
+			}
+          }
 	integrate_vassal = {
 			allowed = {has_completed_focus = MSM_IND_integrate_princely_states}
 			cost = 20
