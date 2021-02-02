@@ -105,13 +105,15 @@ country_event = {
 		name = MSMGermany.5.a
 		ai_chance = { factor = 100 }
 		set_country_flag = MSM_GER_replaced_moltke
-		#Replace Moltke
+		swap_ideas = {
+			remove_idea = GER_helmuth_von_moltke
+			add_idea = GER_erich_von_falkenhayn
+		}
 	}
 	option = {
 		name = MSMGermany.5.b
 		ai_chance = { factor = 00 }
 		set_country_flag = MSM_GER_kept_moltke
-		#Keep Moltke
 	}
 }
 ####Germany Victory in the Weltkrieg####

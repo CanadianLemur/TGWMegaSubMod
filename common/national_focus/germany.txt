@@ -1302,7 +1302,7 @@ focus_tree = {
 		}
 		icon = GFX_goal_generic_army_artillery2
 		completion_reward = { 
-			#infantry production bonus
+			add_ideas = MSM_GER_ww1_g88_replaced
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -1353,13 +1353,70 @@ focus_tree = {
 		relative_position_id = GER_ww1_war_plans_mobile_howitzer
 		prerequisite = { focus=GER_ww1_war_plans_mobile_howitzer focus=GER_ww1_war_plans_replace_the_g88 focus=GER_ww1_war_plans_war_games }
 		available = { 
-			date > 1911.1.1 
-			#Has fort tech unlocked
+			has_tech = ww1_fortification3b
 		}
 		icon = GFX_goal_generic_army_artillery2
 		completion_reward = { 
-			#Gives level 3 forts in Prussia proper
-			#Gives level 1 forts along Polish border
+			custom_effect_tooltip = "Builds forts along the Russian border"
+			hidden_effect = {
+				5 = {
+					add_building_construction = {
+						type = bunker
+						province = 9327
+						level = 3
+					}
+				}
+				85 = {
+					add_building_construction = {
+						type = bunker
+						province = 6347
+						level = 3
+					}
+					add_building_construction = {
+						type = bunker
+						province = 3295
+						level = 3
+					}
+				}
+				86 = {
+					add_building_construction = {
+						type = bunker
+						province = 243
+						level = 1
+					}
+					add_building_construction = {
+						type = bunker
+						province = 17
+						level = 1
+					}
+					add_building_construction = {
+						type = bunker
+						province = 9532
+						level = 1
+					}
+				}
+				66 = {
+					add_building_construction = {
+						type = bunker
+						province = 11558
+						level = 1
+					}
+				}
+				67 = {
+					add_building_construction = {
+						type = bunker
+						province = 479
+						level = 1
+					}
+				}
+				762 = {
+					add_building_construction = {
+						type = bunker
+						province = 506
+						level = 1
+					}
+				}
+			}
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -1370,13 +1427,13 @@ focus_tree = {
 		id = GER_ww1_war_plans_whip_up_the_reserves
 		relative_position_id = GER_ww1_war_plans_mobile_howitzer
 		prerequisite = { focus=GER_ww1_war_plans_mobile_howitzer focus=GER_ww1_war_plans_replace_the_g88 focus=GER_ww1_war_plans_war_games }
-		available = { 
-			date > 1911.1.1 
-		}
+		available = {}
 		icon = GFX_goal_generic_army_artillery2
 		completion_reward = { 
-			#Gives level 3 forts in Prussia proper
-			#Gives level 1 forts along Polish border
+			add_timed_idea = {
+				idea = MSM_GER_ww1_reserves
+				days = 240
+			}
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -1392,11 +1449,15 @@ focus_tree = {
 		prerequisite = { focus=GER_ww1_war_plans_fortify_the_eastern_front }
 		prerequisite = { focus=GER_ww1_war_plans_whip_up_the_reserves }
 		available = { 
-			#Has fort tech unlocked
+			has_tech = ww1_fortification3b
+			has_tech = ww1_fighter2b
 		}
 		icon = GFX_goal_generic_army_artillery2
 		completion_reward = { 
-			#Gives buff against the French for a little bit
+			add_timed_idea = {
+				idea = MSM_GER_ww1_front_line_reports
+				days = 720
+			}
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -1407,13 +1468,14 @@ focus_tree = {
 		id = GER_ww1_war_plans_prepare_for_arial_combat
 		relative_position_id = GER_ww1_war_plans_front_line_reports
 		prerequisite = { focus=GER_ww1_war_plans_front_line_reports }
-		available = { 
-			#Has fort tech unlocked
-		}
+		available = {}
 		icon = GFX_goal_generic_army_artillery2
 		completion_reward = { 
-			#Gives level 3 forts in Prussia proper
-			#Gives level 1 forts along Polish border
+			add_tech_bonus = {
+				ahead_reduction = 1.0
+				uses = 1
+				category = air_equipment
+			}
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -1425,11 +1487,11 @@ focus_tree = {
 		relative_position_id = GER_ww1_war_plans_front_line_reports
 		prerequisite = { focus=GER_ww1_war_plans_front_line_reports }
 		available = { 
-			#Has fort tech unlocked
+			has_tech = ww1_fortification3b
 		}
 		icon = GFX_goal_generic_army_artillery2
 		completion_reward = { 
-			#Gives bonus vs forts
+			add_ideas = MSM_GER_ww1_feuerwalze
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -1440,14 +1502,12 @@ focus_tree = {
 		id = GER_ww1_war_plans_prepare_for_rapid_advance
 		relative_position_id = GER_ww1_war_plans_front_line_reports
 		prerequisite = { focus=GER_ww1_war_plans_front_line_reports }
-		available = { 
-			date > 1911.1.1 
-			#Has fort tech unlocked
-		}
+		available = {}
 		icon = GFX_goal_generic_army_artillery2
 		completion_reward = { 
-			#Gives level 3 forts in Prussia proper
-			#Gives level 1 forts along Polish border
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_political_power = 50
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -1530,7 +1590,10 @@ focus_tree = {
 		icon = GFX_goal_generic_position_armies
 		available = { }
 		completion_reward = { 
-			#Flat buff vs France
+			add_timed_idea = {
+				idea = MSM_GER_ww1_final_preperations_made
+				days = 180
+			}
 		}
 		ai_will_do = { factor = 2000 }
 		cost = 10
@@ -1598,7 +1661,7 @@ focus_tree = {
 			country_event = { days = 1 id = MSMGermany.5 }
 		}
 		ai_will_do = { factor = 2000 }
-		cost = 10
+		cost = 5
 		x = -2
 		y = 1
 	}
@@ -1612,7 +1675,7 @@ focus_tree = {
 			has_country_flag = MSM_GER_replaced_moltke
 		}
 		completion_reward = { 
-			#Improved logistics
+			add_ideas = MSM_GER_ww1_solidify_the_front
 		}
 		ai_will_do = { factor = 2000 }
 		cost = 10
@@ -1629,7 +1692,10 @@ focus_tree = {
 			has_country_flag = MSM_GER_kept_moltke
 		}
 		completion_reward = { 
-			#Debuffs on attack
+			add_timed_idea = {
+				idea = MSM_GER_ww1_forward_march
+				days = 180
+			}
 		}
 		ai_will_do = { factor = 2000 }
 		cost = 10
@@ -1655,10 +1721,13 @@ focus_tree = {
 			}
 		}
 		completion_reward = { 
-			#Gives a buff to morale/war support/whatever
+			add_timed_idea = {
+				idea = MSM_GER_ww1_we_have_the_upper_hand
+				days = 180
+			}
 		}
 		ai_will_do = { factor = 2000 }
-		cost = 10
+		cost = 5
 		x = 1
 		y = 1
 	}
@@ -1673,7 +1742,8 @@ focus_tree = {
 			has_global_flag = kis_brestlitovsk
 		}
 		completion_reward = { 
-			#Gives a buff to morale/war support/whatever
+			add_war_support = 0.2
+			add_political_power = 100
 		}
 		ai_will_do = { factor = 2000 }
 		cost = 10
