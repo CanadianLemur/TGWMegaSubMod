@@ -190,4 +190,15 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4331;3588;impassable;-1;-1;-1;-1;-1;;sierra nevada mountains
 4331;6665;impassable;-1;-1;-1;-1;-1;;sierra nevada mountains
 941;10387;impassable;-1;-1;-1;-1;-1;;sierra nevada mountains
+4347;6665;impassable;-1;-1;-1;-1;-1;;sierra nevada mountains
+4347;3471;impassable;-1;-1;-1;-1;-1;;sierra nevada mountains
+4347;10151;impassable;-1;-1;-1;-1;-1;;sierra nevada mountains
+4347;4274;impassable;-1;-1;-1;-1;-1;;sierra nevada mountains
+4347;4274;impassable;-1;-1;-1;-1;-1;;sierra nevada mountains
+1414;4274;impassable;-1;-1;-1;-1;-1;;sierra nevada mountains
+1414;7398;impassable;-1;-1;-1;-1;-1;;sierra nevada mountains
+12183;7398;impassable;-1;-1;-1;-1;-1;;sierra nevada mountains
+850;7821;impassable;-1;-1;-1;-1;-1;;grand canyon
+850;12765;impassable;-1;-1;-1;-1;-1;;grand canyon
+850;11814;impassable;-1;-1;-1;-1;-1;;grand canyon
 -1;-1;;-1;-1;-1;-1;-1;-1
