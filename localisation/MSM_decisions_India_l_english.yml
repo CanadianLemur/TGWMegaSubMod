@@ -1,5 +1,10 @@
 ﻿l_english:
  indian_affairs:0 "Indian Affairs"
  demand_vassalization:0 "Demand Vassalization of [From.GetName]"
+ demand_vassalization_BRM:0 "Demand Vassalization of [From.GetName]"
+ demand_vassalization_AFG:0 "Demand Vassalization of [From.GetName]"
+ demand_baluchistan:0"Demand Baluchistan"
+ purchase_port:0"Purchase European Port"
+ purchase_indian_ocean_islands:0"Purchase Indian Ocean Islands"
  integrate_vassal:0 "Integrate [From.GetName] "
  integrate_indian_state:0 "Integrate [From.GetName] "

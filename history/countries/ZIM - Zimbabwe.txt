@@ -1,0 +1,2 @@
+﻿capital = 545
+create_country_leader={ name = "Sir Charles Coghlan" desc=ENG_charles_coghlan_desc picture="gfx/leaders/ZIM_CharlesCoghlan.dds" expire="1928.1.1" ideology=conservatism traits={  } }

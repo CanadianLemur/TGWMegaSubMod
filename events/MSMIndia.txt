@@ -271,6 +271,7 @@ country_event = {
     amount = 500
     producer = RAJ
 	}
+	add_ideas = RAJ_agrarian_society
 	}
 	RAJ = {
 	transfer_units_fraction= {
@@ -301,6 +302,7 @@ country_event = {
 	has_global_flag = nepalhasinvadedindia
 		}
 	NEP = {	
+	add_ideas = RAJ_agrarian_society
 	add_state_core = 439
 	add_state_core = 438
 	add_state_core = 435
@@ -336,8 +338,10 @@ set_autonomy = {
     amount = 500
     producer = RAJ
 	} 
+	add_ideas = RAJ_agrarian_society
 	}
 	set_global_flag = indiacollapsed
+	set_global_flag = arunachal_pradesh_opportunity
 	}
     }
 # Seizure of Arunachal Pradesh
@@ -348,13 +352,14 @@ country_event = {
 	picture = GFX_report_event_generic_read_write
 	fire_only_once = yes
 	trigger =  { owns_state = 322
-	has_global_flag = indiacollapsed
+	has_global_flag = arunachal_pradesh_opportunity
 	}	
 	option = {
 		name = MSMIndia.5.a
 		ai_chance = { factor = 100 }
 		transfer_state = 434
-	}	
+		clr_global_flag = arunachal_pradesh_opportunity
+	}
 }
 # Indian Hegemony Achieved - Delhi(can be Nepal-Delhi)
 country_event = {
@@ -480,15 +485,31 @@ country_event = {
 	option = {
 		name = MSMIndia.10.a # accept to sell the port
 		ai_chance = { factor = 50 }
-		FROM = {country_event = {id = MSMIndia.11}}
+		FROM = {country_event = {id = MSMIndia.11} 
+		if = {limit = {ROOT = {owns_state = 321}}
+		transfer_state  = 321
+		}
+		if = {limit = {ROOT = {owns_state = 320}}
+		transfer_state  = 320
+		}
+		}
+	add_political_power = 100
 	}
 	option = {
-		name = MSMIndia.10.a # use the port as leverage in a trade agreement
+		name = MSMIndia.10.b # use the port as leverage in a trade agreement
 		ai_chance = { factor = 40 }
-		FROM = {country_event = {id = MSMIndia.12}}
-	}
+		FROM = {country_event = {id = MSMIndia.12}
+		if = {limit = {ROOT = {owns_state = 321}}
+		FROM = {transfer_state  = 321}
+		}
+		if = {limit = {ROOT = {owns_state = 320}}
+		FROM = {transfer_state  = 320}
+		}
+		}
+		add_political_power = 100
+		}
 	option = {
-		name = MSMIndia.10.b # refuse to sell the port
+		name = MSMIndia.10.c # refuse to sell the port
 		ai_chance = { factor = 10 }
 		FROM = {country_event = {id = MSMIndia.13}}
 }
@@ -503,6 +524,7 @@ country_event = {
 	option = {
 		name = MSMIndia.11.a 
 		ai_chance = { factor = 100 }
+		
 	}
 }
 # european power uses purchase as leverage
@@ -515,6 +537,7 @@ country_event = {
 	option = {
 		name = MSMIndia.12.a 
 		ai_chance = { factor = 100 }
+		
 	}
 }
 # european power refuses to sell port
@@ -527,11 +550,116 @@ country_event = {
 	option = {
 		name = MSMIndia.13.a #pursue alternative solutions
 		ai_chance = { factor = 50 }
+		add_political_power = 100
 	}
 	option = {
 		name = MSMIndia.13.b #we will pester them no longer
 		ai_chance = { factor = 50 }
+		add_political_power = 100
 	}
+}
+# Indian Hegemon Demands Vassalization of afghanistan
+country_event = {
+	id =  MSMIndia.14
+	title = MSMIndia.14.t
+	desc = MSMIndia.14.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = MSMIndia.14.a
+		ai_chance = { factor = 80 }
+		FROM = {set_autonomy = {
+    target = ROOT
+    autonomy_state = autonomy_dominion
+}}
+	}
+	option = {
+		name = MSMIndia.14.b
+		ai_chance = { factor = 20 }
+		FROM = { create_wargoal = {
+    type = annex_everything
+    target = ROOT
+	}
+}
+	}		
+}
+# Indian Hegemon Demands Baluchistan
+country_event = {
+	id =  MSMIndia.15
+	title = MSMIndia.15.t
+	desc = MSMIndia.15.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = MSMIndia.15.a
+		ai_chance = { factor = 80 }
+		if = {
+			limit = {
+			owns_state = 444
+			}
+		FROM = {transfer_state = 444}
+		}
+		if = {
+			limit = {
+			owns_state = 410
+			}
+		FROM = {transfer_state = 410}
+		}
+	}
+	option = {
+		name = MSMIndia.15.b
+		ai_chance = { factor = 20 }
+		FROM = { create_wargoal = {
+    type = puppet_wargoal_focus
+    target = ROOT
+	}
+}
+	}		
+}
+# Indian Hegemon offers to buy indian ocean islands
+country_event = {
+	id =  MSMIndia.16
+	title = MSMIndia.16.t
+	desc = MSMIndia.16.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = MSMIndia.16.a # accept to sell the islands
+		ai_chance = { factor = 50 }
+		FROM = {country_event = {id = MSMIndia.11} 
+		if = {limit = {ROOT = {owns_state = 422}}
+		transfer_state  = 422
+		}
+		if = {limit = {ROOT = {owns_state = 733}}
+		transfer_state  = 733
+		}
+		if = {limit = {ROOT = {owns_state = 281}}
+		transfer_state  = 281
+		}
+		}
+	add_political_power = 100
+	}
+	option = {
+		name = MSMIndia.16.b # use the islands as leverage in a trade agreement
+		ai_chance = { factor = 40 }
+		FROM = {country_event = {id = MSMIndia.12}
+		if = {limit = {ROOT = {owns_state = 422}}
+		transfer_state  = 422
+		}
+		if = {limit = {ROOT = {owns_state = 733}}
+		transfer_state  = 733
+		}
+		if = {limit = {ROOT = {owns_state = 281}}
+		transfer_state  = 281
+		}
+		}
+		add_political_power = 100
+		}
+	option = {
+		name = MSMIndia.10.c # refuse to sell the Islands
+		ai_chance = { factor = 10 }
+		FROM = {country_event = {id = MSMIndia.13}}
+}
 }
 news_event = {
 	id = MSMIndiaNews.1 #Nepal Leaves Britain

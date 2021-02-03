@@ -2253,7 +2253,6 @@ add_extra_state_shared_building_slots = 3
 		prerequisite = { focus=ENG_MSM_newfoundland_focus }
 		icon = GFX_goal_generic_construct_civ_factory
 		available = { OR = {is_in_faction_with=ZIM ZIM = {is_subject_of = ROOT} AND = {545 = {is_owned_by = SAF} OR = {is_in_faction_with=SAF SAF = {is_subject_of = ROOT} }} }}
-		bypass = { ZIM={ custom_trigger_tooltip={ tooltip=construction_effort_tt all_owned_state={ free_building_slots={ building=industrial_complex size < 1 include_locked=yes } } } custom_trigger_tooltip={ tooltip=naval_effort_tt all_owned_state={ free_building_slots={ building=dockyard size < 1 include_locked=yes } } } } }
 		completion_reward = { 545 = {add_building_construction = {
     type = industrial_complex
     level = 2
@@ -2276,7 +2275,7 @@ add_extra_state_shared_building_slots = 3
 		prerequisite = { focus=ENG_MSM_newfoundland_focus }
 		icon = GFX_goal_generic_construct_civ_factory
 		available = { OR = {is_in_faction_with=FRB FRB = {is_subject_of = ROOT} AND = {689 = {is_owned_by = CAN} OR = {is_in_faction_with=CAN CAN = {is_subject_of = ROOT} }}}}
-		bypass = { FRB={ custom_trigger_tooltip={ tooltip=construction_effort_tt all_owned_state={ free_building_slots={ building=industrial_complex size < 1 include_locked=yes } } } custom_trigger_tooltip={ tooltip=naval_effort_tt all_owned_state={ free_building_slots={ building=dockyard size < 1 include_locked=yes } } } } }
+		bypass = { }
 		completion_reward = { 689 = {add_building_construction = {
     type = industrial_complex
     level = 2

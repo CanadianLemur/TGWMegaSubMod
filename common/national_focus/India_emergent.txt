@@ -87,7 +87,6 @@ focus_tree = {
 			add_stability = 0.05 
 			add_ideas= {MSM_grand_coalition} 
 			}else = {add_stability = -0.1}
-			custom_effect_tooltip = grand_coalition
 		}
 		prerequisite = { focus = MSM_IND_negotiate_with_all_india_muslim_league }
 		prerequisite = { focus = MSM_IND_negotiate_with_indian_national_congress }
