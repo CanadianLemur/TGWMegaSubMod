@@ -1751,7 +1751,7 @@ focus_tree = {
 		x = 0
 		y = 1
 	}
-	
+
 	####Hindenburg Plan####
 	
 	focus = {
@@ -4692,8 +4692,39 @@ focus_tree = {
 
 	################ INTERWAR END
 
-
-
+	focus = {
+		id = GER_load_kaiser_tree
+		icon = GFX_goal_generic_construction
+		x = 10
+		y = 12
+		cost = 0
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			set_global_flag = kis_second_treaty_frankfort
+			country_event = MSMGermany.6
+		}
+		
+	}
+	
+	focus = {
+		id = GER_load_hitler_tree 
+		icon = GFX_goal_generic_construction
+		x = 12
+		y = 12
+		cost = 0
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			clr_global_flag = kis_second_treaty_frankfort
+			country_event = MSMGermany.6
+		}
+		
+	}
 
 	################ VANILLA START
 
@@ -10569,7 +10600,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_focus_on_the_true_enemy
+		id = GER_focus_on_the_true_threat
 		icon = GFX_goal_generic_occupy_states_coastal
 		prerequisite = { focus = GER_return_of_the_kaiser }
 		prerequisite = { focus = GER_naval_effort }
@@ -10598,14 +10629,14 @@ focus_tree = {
 	focus = {
 		id = GER_rebuild_the_high_seas_fleet
 		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = GER_focus_on_the_true_enemy }
+		prerequisite = { focus = GER_focus_on_the_true_threat }
 		mutually_exclusive = { focus = GER_plan_z focus = GER_u_boat_effort focus = GER_accept_british_naval_dominance }
 		available = {
 			is_puppet = no
 		}
 		x = 0
 		y = 2
-		relative_position_id = GER_focus_on_the_true_enemy
+		relative_position_id = GER_focus_on_the_true_threat
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -11359,7 +11390,7 @@ focus_tree = {
 		id = GER_expatriate_the_communists
 		icon = GFX_goal_anti_comintern_pact
 		prerequisite = { focus = GER_return_of_the_kaiser }
-		mutually_exclusive = { focus = GER_focus_on_the_true_enemy }
+		mutually_exclusive = { focus = GER_focus_on_the_true_threat }
 		available = {
 			is_puppet = no
 			NOT = { has_war_with = FRA }
@@ -11376,10 +11407,10 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.05
 			add_timed_idea = {
-				idea = GER_expatriate_the_communists
+				idea = GER_expatriate_the_communists_idea
 				days = 720
 			}
-			add_named_threat = { threat = 5 name = GER_expatriate_the_communists }
+			add_named_threat = { threat = 5 name = GER_expatriate_the_communists_threat }
 			FRA = { 
 				add_timed_idea = {
 					idea = GER_communist_refugees
