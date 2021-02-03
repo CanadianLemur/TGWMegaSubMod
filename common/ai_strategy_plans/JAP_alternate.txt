@@ -1,0 +1,119 @@
+JAP_ENTENTE = {
+	name = "Japan joins Entente"
+	desc = "The safe bet"
+
+	allowed = {
+		original_tag = JAP	
+		}
+	enable = {
+			has_game_rule = {
+				rule = JAP_AI_BEHAVIOR
+				option = JOIN_ENTENTE
+			}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+	JAP_ww1_diplomatic_effort
+	JAP_ww1_Japan_Korea_Treaty
+	JAP_ww1_assert_position_pacific
+	JAP_ww1_Support_USA
+	JAP_ww1_Diplomatic_Siam
+	warrior_traditions_focus
+	JAP_ww1_ready_country
+	JAP_ww1_War_in_Europe_Opportunity
+	JAP_ww1_Pro_British
+	JAP_ww1_Join_Entente
+	JAP_ww1_Xinhai_Revolution_Opportunity
+	JAP_ww1_Thirteen_Demands
+	JAP_ww1_political_effort
+	JAP_ww1_contest_republic
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+JAP_CENTRAL_POWERS = {
+	name = "Japan joins Central Powers"
+	desc = "TORA TORA TORA"
+
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+			has_game_rule = {
+				rule = JAP_AI_BEHAVIOR
+				option = JOIN_CENTRAL_POWERS
+			}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+	JAP_ww1_diplomatic_effort
+	JAP_ww1_Japan_Korea_Treaty
+	JAP_ww1_assert_position_pacific
+	JAP_ww1_Support_Filipinos_Separatists
+	JAP_ww1_Diplomatic_Siam
+	warrior_traditions_focus
+	JAP_ww1_ready_country
+	JAP_ww1_War_in_Europe_Opportunity
+	JAP_ww1_Pro_German
+	JAP_ww1_Join_Central_Power
+	JAP_ww1_Xinhai_Revolution_Opportunity
+	JAP_ww1_Twenty_One_Demands
+	JAP_ww1_political_effort
+	JAP_ww1_support_republic
+	}
+
+	research = {
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
