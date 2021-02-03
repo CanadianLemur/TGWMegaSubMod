@@ -13,9 +13,7 @@ ideas={
 			removal_cost = -1
 				
 			modifier = {
-				political_power_gain = -0.50		
-				join_faction_tension = 0.80	
-				generate_wargoal_tension = 0.80				
+				political_power_gain = -0.50				
 			}
 				
 		}
@@ -40,21 +38,21 @@ ideas={
 	political_advisor={
 		MSMIND_gandhi={ 
 			allowed={ has_country_flag=recruited_gandhi }
-			traits={ prince_of_terror } 
+			traits={ MSM_Pacifist MSM_hindu_leader } 
 			ai_will_do={ factor=1 } 
 			picture = raj_quit_india_movement
 			}
 		MSMIND_tara_singh={ 
 			allowed={ has_country_flag=recruited_tara_singh }
-			traits={ prince_of_terror } 
+			traits={ MSM_sikh_leader } 
 			ai_will_do={ factor=1 } 
 			picture = generic_political_advisor_arab_3
 			}
 		MSMIND_muhammad_ali_jinnah={ 
 			allowed={ has_country_flag=recruited_muhammad_ali_jinnah }
-			traits={ prince_of_terror } 
+			traits={ MSM_muslim_leader } 
 			ai_will_do={ factor=1 } 
-			picture = generic_political_advisor_arab_3
+			picture = generic_political_advisor_arab_2
 			}
 		}
 		}

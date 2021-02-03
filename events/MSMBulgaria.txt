@@ -1,0 +1,175 @@
+﻿add_namespace = MSMBulgaria
+##MSMBulgaria 1 Montenegro Pact
+country_event = {
+	title = MSMBulgaria.1.t
+	desc = MSMBulgaria.1.d
+	id = MSMBulgaria.1
+	is_triggered_only = yes
+	option = {
+		name =  MSMBulgaria.1.a## accept Pact
+		ai_chance = {
+			factor = 100
+			}
+		diplomatic_relation = {
+		country = BUL
+		relation = guarantee
+		active = yes
+		}
+		BUL = {
+		diplomatic_relation = {
+		country = MTN
+		relation = guarantee
+		active = yes
+		}
+		diplomatic_relation = {
+		country = MTN
+		relation = military_access
+		active = yes
+		}
+		}
+		diplomatic_relation = {
+		country = BUL
+		relation = non_aggression_pact
+		active = yes
+		}
+		diplomatic_relation = {
+		country = BUL
+		relation = military_access
+		active = yes
+		}
+		}
+	option = {
+		name =  MSMBulgaria.1.b## refuse pact
+		ai_chance = {
+			factor = 0
+		}
+		}
+		}
+##MSMBulgaria 2 Serbia Pact
+country_event = {
+	title = MSMBulgaria.2.t
+	desc = MSMBulgaria.2.d
+	id = MSMBulgaria.2
+	is_triggered_only = yes
+	option = {
+		name =  MSMBulgaria.2.a## accept Pact
+		ai_chance = {
+			factor = 100
+			}
+		diplomatic_relation = {
+		country = BUL
+		relation = guarantee
+		active = yes
+		}
+		BUL = {
+		diplomatic_relation = {
+		country = SER
+		relation = guarantee
+		active = yes
+		}
+		diplomatic_relation = {
+		country = SER
+		relation = military_access
+		active = yes
+		}
+		}
+		diplomatic_relation = {
+		country = BUL
+		relation = non_aggression_pact
+		active = yes
+		}
+		diplomatic_relation = {
+		country = BUL
+		relation = military_access
+		active = yes
+		}
+		}
+	option = {
+		name =  MSMBulgaria.2.b## refuse pact
+		ai_chance = {
+			factor = 0
+		}
+		}
+		}
+##MSMBulgaria 3 Greece Pact
+country_event = {
+	title = MSMBulgaria.3.t
+	desc = MSMBulgaria.3.d
+	id = MSMBulgaria.3
+	is_triggered_only = yes
+	option = {
+		name =  MSMBulgaria.3.a## accept Pact
+		ai_chance = {
+			factor = 100
+			}
+		diplomatic_relation = {
+		country = BUL
+		relation = guarantee
+		active = yes
+		}
+		BUL = {
+		diplomatic_relation = {
+		country = GRE
+		relation = guarantee
+		active = yes
+		}
+		diplomatic_relation = {
+		country = GRE
+		relation = military_access
+		active = yes
+		}
+		}
+		diplomatic_relation = {
+		country = BUL
+		relation = non_aggression_pact
+		active = yes
+		}
+		diplomatic_relation = {
+		country = BUL
+		relation = military_access
+		active = yes
+		}
+		}
+	option = {
+		name =  MSMBulgaria.3.b## refuse pact
+		ai_chance = {
+			factor = 0
+		}
+		}
+		}
+##MSMBulgaria 4 Albania Partition
+country_event = {
+	title = MSMBulgaria.4.t
+	desc = MSMBulgaria.4.d
+	id = MSMBulgaria.4
+	is_triggered_only = yes
+	option = {
+		name =  MSMBulgaria.4.a## accept demands
+		ai_chance = {
+			factor = 100
+			}
+		GRE = {transfer_state  = 803}
+		SER = {annex_country = {
+    target = ALB
+    transfer_troops = no
+}}
+		}
+	option = {
+		name =  MSMBulgaria.4.b## refuse demands
+		ai_chance = {
+			factor = 0
+		}
+		GRE = {declare_war_on = {
+		target = ALB
+		type = annex_everything
+		}}
+		SER = {declare_war_on = {
+		target = ALB
+		type = annex_everything
+		}}
+		BUL = {declare_war_on = {
+		target = ALB
+		type = annex_everything
+		}}
+		}
+		}

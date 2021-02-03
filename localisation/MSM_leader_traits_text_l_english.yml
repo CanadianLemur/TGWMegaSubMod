@@ -6,3 +6,7 @@
  MSM_phillipines_dictator:0 "Dictator of the Phillipines"
  MSM_foreign_ruler:0"Foreign Ruler"
  MSM_american_warlord:0"American Warlord"
+ MSM_Pacifist:0"Pacifist"
+ MSM_hindu_leader:0"Hindu Leader"
+ MSM_sikh_leader:0"Sikh Leader"
+ MSM_muslim_leader:0"Muslim Leader"

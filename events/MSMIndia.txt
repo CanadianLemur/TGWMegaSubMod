@@ -485,27 +485,27 @@ country_event = {
 	option = {
 		name = MSMIndia.10.a # accept to sell the port
 		ai_chance = { factor = 50 }
-		FROM = {country_event = {id = MSMIndia.11} 
-		if = {limit = {ROOT = {owns_state = 321}}
-		transfer_state  = 321
+		FROM = {country_event = {id = MSMIndia.11}} 
+		if = {limit = {owns_state = 321}
+		FROM = {transfer_state  = 321}
 		}
-		if = {limit = {ROOT = {owns_state = 320}}
-		transfer_state  = 320
+		if = {limit = {owns_state = 320}
+		FROM = {transfer_state  = 320}
 		}
-		}
+		
 	add_political_power = 100
 	}
 	option = {
 		name = MSMIndia.10.b # use the port as leverage in a trade agreement
 		ai_chance = { factor = 40 }
-		FROM = {country_event = {id = MSMIndia.12}
-		if = {limit = {ROOT = {owns_state = 321}}
+		FROM = {country_event = {id = MSMIndia.12}}
+		if = {limit = {owns_state = 321}
 		FROM = {transfer_state  = 321}
 		}
-		if = {limit = {ROOT = {owns_state = 320}}
+		if = {limit = {owns_state = 320}
 		FROM = {transfer_state  = 320}
 		}
-		}
+		
 		add_political_power = 100
 		}
 	option = {

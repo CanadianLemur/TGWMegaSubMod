@@ -132,4 +132,5 @@ set_convoys=20
 	expire="1939.1.1" 
 	ideology=despotism 
 	traits={  } }
+add_ideas = ww1_Faith_Allah
 }

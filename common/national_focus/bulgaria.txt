@@ -1021,6 +1021,7 @@ add_extra_state_shared_building_slots=1 add_building_construction={ type=arms_fa
 		}
 		
 		completion_reward = {
+		SER = {country_event = MSMBulgaria.2}
 		}
 		
 		ai_will_do = { factor = 2 }
@@ -1037,6 +1038,7 @@ add_extra_state_shared_building_slots=1 add_building_construction={ type=arms_fa
 		}
 		
 		completion_reward = {
+		MTN = {country_event = MSMBulgaria.1}
 		}
 		bypass = {has_country_flag = MTN_backs_bulgaria}
 		
@@ -1054,6 +1056,7 @@ add_extra_state_shared_building_slots=1 add_building_construction={ type=arms_fa
 		}
 		
 		completion_reward = {
+		GRE = {country_event = MSMBulgaria.3}
 		}
 		
 		ai_will_do = { factor = 2 }
@@ -1065,13 +1068,29 @@ add_extra_state_shared_building_slots=1 add_building_construction={ type=arms_fa
 		id = BUL_leader_of_south_slavs
 		prerequisite = { focus = BUL_pact_with_serbia}
 		prerequisite = { focus = BUL_pact_with_montenegro}
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_focus_invite_yugoslavia
 		available = {
 			NOT = {has_war_with = SER}
 			NOT = {has_war_with = MTN}
+			NOT = {has_war_with = SCS}
+			country_exists = SER
+			country_exists = MTN
+			country_exists = SCS
 		}
 		
 		completion_reward = {
+		set_autonomy = {
+		target = SER
+		autonomy_state = autonomy_colony
+		}
+		set_autonomy = {
+		target = MTN
+		autonomy_state = autonomy_colony
+		}
+		set_autonomy = {
+		target = SCS
+		autonomy_state = autonomy_colony
+		}
 		}
 		
 		ai_will_do = { factor = 2 }
@@ -1090,6 +1109,7 @@ add_extra_state_shared_building_slots=1 add_building_construction={ type=arms_fa
 		}
 		
 		completion_reward = {
+		ALB = {country_event = MSMBulgaria.4}
 		}
 		
 		ai_will_do = { factor = 2 }

@@ -5,10 +5,22 @@ leader_traits = {
 		autonomy_gain = 0.5
 		stability_factor = 0.05
 		army_core_defence_factor = 0.05
-		
-		ai_will_do = {
-			factor = 1
-		}
+	}
+	MSM_Pacifist= {
+	join_faction_tension = 0.80	
+	generate_wargoal_tension = 0.80		
+	}
+	MSM_hindu_leader = {
+	political_power_gain = 0.25
+	stability_factor = 0.10
+	}
+	MSM_sikh_leader = {
+	political_power_gain = 0.25
+	army_attack_factor = 0.02
+	}
+	MSM_muslim_leader = {
+	political_power_gain = 0.25
+	army_org_factor = 0.02
 	}
 	MSM_Chhatrapati = {
 		random = no

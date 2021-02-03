@@ -131,4 +131,5 @@ set_convoys=20
 	picture="gfx/leaders/BAN_habibullah_khwaja.dds" 
 	expire="1958.1.1" 
 	ideology=despotism traits={  } }
+add_ideas = ww1_Faith_Allah
 }
