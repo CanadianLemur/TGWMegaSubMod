@@ -299,7 +299,7 @@ create_navy_leader={  name = "Miklós Horthy" id=6394 portrait_path="gfx/hoi4tgw
 				rear_1_custom_slot = empty
 			}
 		}
-		create_equipment_variant={ name="Novara Class" type=ship_hull_light_1 parent_version = 5 obsolete = no 
+		create_equipment_variant={ name="Novara Class" type=ship_hull_light_1 parent_version = 0 obsolete = no 
 			modules = {
 				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
 				fixed_ship_anti_air_slot = empty
@@ -310,7 +310,7 @@ create_navy_leader={  name = "Miklós Horthy" id=6394 portrait_path="gfx/hoi4tgw
 				rear_1_custom_slot = MSM_ship_light_battery_1
 			} 
 		}
-		create_equipment_variant={ name="Zenta Class" type=ship_hull_light_1 parent_version = 2 obsolete = no
+		create_equipment_variant={ name="Zenta Class" type=ship_hull_light_1 parent_version = 0 obsolete = no 
 			modules = {
 				fixed_ship_battery_slot = MSM_ship_light_battery_1
 				fixed_ship_anti_air_slot = empty
@@ -321,7 +321,7 @@ create_navy_leader={  name = "Miklós Horthy" id=6394 portrait_path="gfx/hoi4tgw
 				rear_1_custom_slot = MSM_ship_light_battery_1
 			}
 		}
-		create_equipment_variant={ name="Kaiser Franz Joseph I Class" type=ship_hull_light_1 parent_version = 2 obsolete = no
+		create_equipment_variant={ name="Kaiser Franz Joseph I Class" type=ship_hull_light_1 parent_version = 0 obsolete = no 
 			modules = {
 				fixed_ship_battery_slot = MSM_ship_light_battery_1
 				fixed_ship_anti_air_slot = empty
@@ -332,7 +332,7 @@ create_navy_leader={  name = "Miklós Horthy" id=6394 portrait_path="gfx/hoi4tgw
 				rear_1_custom_slot = MSM_ship_light_battery_1
 			}
 		}
-		create_equipment_variant={ name="Panther Class" type=ship_hull_light_1 parent_version = 2 obsolete = no
+		create_equipment_variant={ name="Panther Class" type=ship_hull_light_1 parent_version = 0 obsolete = no 
 			modules = {
 				fixed_ship_battery_slot = MSM_ship_light_battery_1
 				fixed_ship_anti_air_slot = empty
@@ -343,7 +343,7 @@ create_navy_leader={  name = "Miklós Horthy" id=6394 portrait_path="gfx/hoi4tgw
 				rear_1_custom_slot = MSM_ship_light_battery_1
 			}
 		}
-		create_equipment_variant={ name="Tiger Class" type=ship_hull_light_1 parent_version = 2 obsolete = no
+		create_equipment_variant={ name="Tiger Class" type=ship_hull_light_1 parent_version = 0 obsolete = no 
 			modules = {
 				fixed_ship_battery_slot = MSM_ship_light_battery_1
 				fixed_ship_anti_air_slot = empty
@@ -354,7 +354,7 @@ create_navy_leader={  name = "Miklós Horthy" id=6394 portrait_path="gfx/hoi4tgw
 				rear_1_custom_slot = MSM_ship_light_battery_1
 			}
 		}
-		create_equipment_variant={ name="Zara Class" type=ship_hull_light_1 parent_version = 2 obsolete = no
+		create_equipment_variant={ name="Zara Class" type=ship_hull_light_1 parent_version = 0 obsolete = no 
 			modules = {
 				fixed_ship_battery_slot = MSM_ship_light_battery_1
 				fixed_ship_anti_air_slot = empty
@@ -365,7 +365,7 @@ create_navy_leader={  name = "Miklós Horthy" id=6394 portrait_path="gfx/hoi4tgw
 				rear_1_custom_slot = MSM_ship_light_battery_1
 			}
 		}
-		create_equipment_variant={ name="Blitz Class" type=ship_hull_light_1 parent_version = 2 obsolete = no
+		create_equipment_variant={ name="Blitz Class" type=ship_hull_light_1 parent_version = 0 obsolete = no 
 			modules = {
 				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
 				fixed_ship_anti_air_slot = empty
@@ -376,7 +376,7 @@ create_navy_leader={  name = "Miklós Horthy" id=6394 portrait_path="gfx/hoi4tgw
 				rear_1_custom_slot = MSM_ship_light_battery_1
 			}
 		}
-		create_equipment_variant={ name="Huszar Class" type=ship_hull_light_1 parent_version = 2 obsolete = no
+		create_equipment_variant={ name="Huszar Class" type=ship_hull_light_1 parent_version = 0 obsolete = no 
 			modules = {
 				fixed_ship_battery_slot = MSM_ship_light_battery_1
 				fixed_ship_anti_air_slot = empty
@@ -387,21 +387,21 @@ create_navy_leader={  name = "Miklós Horthy" id=6394 portrait_path="gfx/hoi4tgw
 				rear_1_custom_slot = MSM_ship_light_battery_1
 			}
 		}
-		create_equipment_variant={ name="U1 Class" type=MSM_ship_hull_uboat_1 parent_version = 0 obsolete = no
+		create_equipment_variant={ name="U1 Class" type=MSM_ship_hull_uboat_1 parent_version = 0 obsolete = no 
 			modules = {
 				fixed_ship_torpedo_slot = MSM_ship_torpedo_sub_1
 				fixed_ship_engine_slot = MSM_sub_ship_engine_1
 				rear_1_custom_slot = empty
 			}
 		}
-		create_equipment_variant={ name="U3 Class" type=MSM_ship_hull_uboat_1 parent_version = 0 obsolete = no
+		create_equipment_variant={ name="U3 Class" type=MSM_ship_hull_uboat_1 parent_version = 0 obsolete = no 
 			modules = {
 				fixed_ship_torpedo_slot = MSM_ship_torpedo_sub_1
 				fixed_ship_engine_slot = MSM_sub_ship_engine_1
 				rear_1_custom_slot = empty
 			}
 		}
-		create_equipment_variant={ name="U5 Class" type=MSM_ship_hull_uboat_1 parent_version = 0 obsolete = no
+		create_equipment_variant={ name="U5 Class" type=MSM_ship_hull_uboat_1 parent_version = 0 obsolete = no 
 			modules = {
 				fixed_ship_torpedo_slot = MSM_ship_torpedo_sub_1
 				fixed_ship_engine_slot = MSM_sub_ship_engine_1
