@@ -34,7 +34,7 @@
  MSM_secondary_battery_2:0"1922 Secondary Battery"
  MSM_secondary_battery_2_desc:0""
  mtg_early_transport:0"Early Transport"
- mtg_early_transport_desc:0""
+ mtg_early_transport_desc:0"In a manner that would be familiar to a soldier from the age of sail, we use rowboats to land in enemy territory"
  ####Armored Cars####
  ww1_armored_car_equipment_1:0 "Armored Car I"
  ww1_armored_car_equipment_2:0 "Armored Car II"

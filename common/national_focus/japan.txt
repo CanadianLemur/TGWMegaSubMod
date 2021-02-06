@@ -457,14 +457,14 @@ focus_tree = {
 
 			completion_reward = {
 
-					# Philippines gain Cores so they can revolt
-					623 = { add_core_of = PHI }
-					327 = { add_core_of = PHI }
-					624 = { add_core_of = PHI }
-					625 = { add_core_of = PHI }
-					627 = { add_core_of = PHI }
-					626 = { add_core_of = PHI }
-					628 = { add_core_of = PHI }
+					# Phillipines resistance increase from japanese support
+					623 = { add_resistance = 30 add_compliance = -30 }
+					327 = { add_resistance = 30 add_compliance = -30 }
+					624 = { add_resistance = 30 add_compliance = -30 }
+					625 = { add_resistance = 30 add_compliance = -30 }
+					627 = { add_resistance = 30 add_compliance = -30 }
+					626 = { add_resistance = 30 add_compliance = -30 }
+					628 = { add_resistance = 30 add_compliance = -30 }
 
 					# USA disagree :'(
 					add_opinion_modifier = {
@@ -529,6 +529,15 @@ focus_tree = {
 		icon = GFX_goal_demand_sudetenland
 		completion_reward = {
 			add_manpower = 100000
+			if = {
+			limit = {
+				has_tech = marines
+			}
+			load_oob = "JAP_marines"
+		else = {
+			custom_effect_tooltip = researchmarinestooltip
+		}
+}
 		}
 		ai_will_do = { factor = 1000 }
 		cost = 10

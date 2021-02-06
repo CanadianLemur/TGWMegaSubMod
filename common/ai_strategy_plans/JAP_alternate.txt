@@ -33,7 +33,7 @@ JAP_ENTENTE = {
 	}
 
 	research = {
-
+	marine_tech
 	}
 
 	ideas = {
@@ -91,11 +91,16 @@ JAP_CENTRAL_POWERS = {
 	JAP_ww1_Twenty_One_Demands
 	JAP_ww1_political_effort
 	JAP_ww1_support_republic
+	JAP_ww1_Invade_Singapore
+	JAP_ww1_free_vietnam
+	JAP_ww1_alliance_with_siam
+	spiritual_mobilization_focus
+	JAP_ww1_indoctrination_focus
+	jap_improved_sprit_focus
 	}
-
 	research = {
+	marine_tech
 	}
-
 	ideas = {
 		
 	}
@@ -115,5 +120,5 @@ JAP_CENTRAL_POWERS = {
 	focus_factors = {
 		
 	}
-
+	
 }

@@ -144,13 +144,6 @@ country_event = {
 		}
 		ROM = {
 			set_country_flag = kis_secondbalkanwar_romanian_intervention
-			create_wargoal = {
-	            type = take_state_focus 
-	            target = BUL 
-	            generator = {
-					77
-	            }
-	        }
 	        if = {
 				limit = {
 					SER = { has_war_with = BUL }

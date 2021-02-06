@@ -3,3 +3,7 @@
  RULE_OPTION_JOIN_ENTENTE_JAP_AI_DESC:0"Japan will join the entente and implement the Taisho Democracy"
  RULE_OPTION_JOIN_CENTRAL_POWERS:0"Join Central Powers"
  RULE_OPTION_JOIN_CENTRAL_POWERS_JAP_AI_DESC:0"Japan will go on a more militaristic path and join the Central Powers"
+ RULE_OPTION_JOIN_ENTENTE_MEX:0"Join Entente"
+ RULE_OPTION_JOIN_ENTENTE_MEX_AI_DESC:0"Mexico will go through its revolution and join the Entente afterwards"
+ RULE_OPTION_JOIN_CENTRAL_POWERS_MEX:0"Join Central Powers"
+ RULE_OPTION_JOIN_CENTRAL_POWERS_MEX_AI_DESC:0"Mexico will avoid its revolution and join the Central Powers"

@@ -177,6 +177,7 @@ create_corps_commander={
 		limited_conscription
 		partial_economic_mobilisation
 		SER_ww1_zduhac
+		SER_ww1_blackhand
 		SER_military-technical_works
 	}
 

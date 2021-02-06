@@ -605,3 +605,22 @@ JAP_ai_behavior = {
 		desc = "RULE_OPTION_JOIN_CENTRAL_POWERS_JAP_AI_DESC"
 	}
 }
+MEX_ai_behavior = {
+	name = "MEX_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name =  JOIN_ENTENTE
+		text = "RULE_OPTION_JOIN_ENTENTE_MEX"
+		desc = "RULE_OPTION_JOIN_ENTENTE_MEX_AI_DESC"
+	}
+	option = {
+		name = JOIN_CENTRAL_POWERS
+		text = "RULE_OPTION_JOIN_CENTRAL_POWERS_MEX"
+		desc = "RULE_OPTION_JOIN_CENTRAL_POWERS_MEX_AI_DESC"
+	}
+}

@@ -1218,7 +1218,7 @@ equipment_modules = {
 			convert_cost_ic = 250
 		}
 		build_cost_resources = {
-			coal = 10
+			coal = 1
 		}
 
 	}
@@ -1243,7 +1243,7 @@ equipment_modules = {
 			convert_cost_ic = 250
 		}
 		build_cost_resources = {
-			coal = 10
+			coal = 1
 		}
 
 	}
@@ -1631,7 +1631,7 @@ equipment_modules = {
 			convert_cost_ic = 4800
 		}
 		build_cost_resources = {
-			coal = 20
+			coal = 5
 		}
 
 	}
@@ -1655,7 +1655,7 @@ equipment_modules = {
 			convert_cost_ic = 4800
 		}
 		build_cost_resources = {
-			coal = 20
+			coal = 5
 		}
 
 	}
@@ -1680,7 +1680,7 @@ equipment_modules = {
 			convert_cost_ic = 4800
 		}
 		build_cost_resources = {
-			coal = 20
+			coal = 5
 		}
 
 	}

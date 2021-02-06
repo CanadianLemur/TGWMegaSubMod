@@ -9,8 +9,8 @@ country_event = {
 		name =  MSMUK.1.a## do nothing
 		ai_chance = {
 			factor = 60
-			add_political_power = 100
 		}
+		add_political_power = 100
 		}
 	option = {
 		name =  MSMUK.1.b## transfer rhodesia and bechuanaland to SAF
@@ -99,8 +99,8 @@ country_event = {
 		name =  MSMUK.2.a## do nothing
 		ai_chance = {
 			factor = 60
-			add_political_power = 100
 		}
+		add_political_power = 100
 		}
 	option = {
 		name =  MSMUK.2.b## release federation of west indies

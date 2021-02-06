@@ -1,0 +1,123 @@
+JAP_ENTENTE = {
+	name = "Mexico joins Entente"
+	desc = "American Amigo"
+
+	allowed = {
+		original_tag = MEX	
+		}
+	enable = {
+			has_game_rule = {
+				rule = MEX_AI_BEHAVIOR
+				option = JOIN_ENTENTE
+			}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+	mex_support_revolucionary_forces
+	mex_ww1_sovereignist_ethos
+	mex_ww1_Stabilize_the_country
+	mex_ww1_freespeech
+	mex_ww1_reorganization_act
+	mex_ww1_full_rearmament
+	mex_ww1_Support_the_democracy
+	mex_ww1_Save_Madero
+	mex_ww1_takeposition
+	mex_ww1_supportfrance
+	mex_ww1_supportrussia
+	mex_interventionism_focus
+	mex_volunteer_corps
+	mex_foreign_expeditions
+	mex_ww1_joinfrance
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+JAP_CENTRAL_POWERS = {
+	name = "Mexico joins Central Powers"
+	desc = "Nice Telegram"
+
+	allowed = {
+		original_tag = MEX
+	}
+	enable = {
+			has_game_rule = {
+				rule = MEX_AI_BEHAVIOR
+				option = JOIN_CENTRAL_POWERS
+			}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+	MEX_ww1_support_diaz
+	MEX_ww1_supress_the_rebels
+	mex_ww1_takeposition
+	mex_ww1_supportgermany
+	mex_ww1_supportaustria
+	mex_interventionism_focus
+	mex_volunteer_corps
+	mex_foreign_expeditions
+	MEX_ww1_Renew_the_republic
+	MEX_ww1_Rebuild_Mexico
+	MEX_ww1_Recluting_the_rebels
+	MEX_ww1_Strengthen_military_forces
+	mex_ww1_Prepare_the_reconquista
+	mex_ww1_joingermany
+	mex_ww1_Plan_of_San_Diego
+	mex_ww1_Support_the_columbus_raid
+	mex_ww1_2nd_Mexican_American_war
+	}
+
+	research = {
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
