@@ -713,7 +713,7 @@ focus_tree = {
 	
 	focus = {
 		id = SWE_ww1_finnish_affairs
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_invite_finland
 
 		available = {
 			OR = { 
