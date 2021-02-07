@@ -1,0 +1,141 @@
+﻿add_namespace = MSMSomalia
+##MSMSomalia 1 Dervish Victory in Raid on British Somaliland
+country_event = {
+	title = MSMSomalia.1.t
+	desc = MSMSomalia.1.d
+	id = MSMSomalia.1
+	is_triggered_only = yes
+	option = {
+		name =  MSMSomalia.1.a## Victory!
+		trigger = {tag = SOM}
+		ai_chance = {
+			factor = 60
+		}
+		add_political_power = 100
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 100
+			producer = ENG
+		}
+		269 = {
+		add_resistance = 15 
+		add_compliance = -5
+		}
+		}
+	option = {
+		name =  MSMSomalia.1.b## Shameful Defeat!
+		trigger = {tag = ENG}
+		ai_chance = {
+			factor = 60
+		}
+		add_political_power = -100
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -100
+			producer = ENG
+		}
+		}
+}
+##MSMSomalia 2 British Victory in Raid on British Somaliland
+country_event = {
+	title = MSMSomalia.2.t
+	desc = MSMSomalia.2.d
+	id = MSMSomalia.2
+	is_triggered_only = yes
+	option = {
+		name =  MSMSomalia.2.a## Victory!
+		trigger = {tag = ENG}
+		ai_chance = {
+			factor = 60
+		}
+		add_political_power = -100
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 100
+			producer = SOM
+		}
+		}
+	option = {
+		name =  MSMSomalia.2.b## Shameful Defeat!
+		trigger = {tag = SOM}
+		ai_chance = {
+			factor = 60
+		}
+		add_political_power = 100
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -100
+			producer = SOM
+		}
+		}
+}
+##MSMSomalia 3 Dervish Victory in Raid on Italian Somalia
+country_event = {
+	title = MSMSomalia.3.t
+	desc = MSMSomalia.3.d
+	id = MSMSomalia.3
+	is_triggered_only = yes
+	option = {
+		name =  MSMSomalia.3.a## Victory!
+		trigger = {tag = SOM}
+		ai_chance = {
+			factor = 60
+		}
+		add_political_power = 100
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 100
+			producer = ITA
+		}
+		559 = {
+		add_resistance = 15 
+		add_compliance = -5
+		}
+		}
+	option = {
+		name =  MSMSomalia.3.b## Shameful Defeat!
+		trigger = {tag = ITA}
+		ai_chance = {
+			factor = 60
+		}
+		add_political_power = -100
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -100
+			producer = ITA
+		}
+		}
+}
+##MSMSomalia 4 Italian Victory in Raid on Italian Somalia
+country_event = {
+	title = MSMSomalia.4.t
+	desc = MSMSomalia.4.d
+	id = MSMSomalia.4
+	is_triggered_only = yes
+	option = {
+		name =  MSMSomalia.4.a## Victory!
+		trigger = {tag = ITA}
+		ai_chance = {
+			factor = 60
+		}
+		add_political_power = 100
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 100
+			producer = SOM
+		}
+		}
+	option = {
+		name =  MSMSomalia.4.b## Shameful Defeat!
+		trigger = {tag = SOM}
+		ai_chance = {
+			factor = 60
+		}
+		add_political_power = -100
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -100
+			producer = SOM
+		}
+		}
+}

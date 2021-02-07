@@ -1,0 +1,70 @@
+Dervish_ENG = {
+	enable = {
+		original_tag = ENG
+		country_exists = SOM
+		}
+	abort = {
+	
+	OR = {
+	NOT = {country_exists = SOM}
+	has_global_flag = MSM_somali_victory
+	}
+	}
+ai_strategy = {
+	type = put_unit_buffers
+ 	
+	# ratio of total armeis in country to be buffered
+ 	ratio = 0.1
+
+	# you can specify an order id. ratio of same orders ids will be share same ratio
+ 	order_id = 2
+ 	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = { 
+ 		269
+ 	}
+ 	
+	# ai areas that the orders will use these buffers in
+ 	area = africa
+ 	
+ 	# by default if you have orders in target areas, the buffer will request less units. 
+	# you can override this to disable the feature
+ 	subtract_invasions_from_need = yes
+ 	subtract_fronts_from_need = yes }
+
+}
+Dervish_ITA = {
+	enable = {
+		original_tag = ITA
+		country_exists = SOM
+		}
+	abort = {
+	
+	OR = {
+	NOT = {country_exists = SOM}
+	has_global_flag = MSM_somali_victory
+	}
+	}
+ai_strategy = {
+	type = put_unit_buffers
+ 	
+	# ratio of total armeis in country to be buffered
+ 	ratio = 0.1
+
+	# you can specify an order id. ratio of same orders ids will be share same ratio
+ 	order_id = 2
+ 	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = { 
+ 		559
+ 	}
+ 	
+	# ai areas that the orders will use these buffers in
+ 	area = africa
+ 	
+ 	# by default if you have orders in target areas, the buffer will request less units. 
+	# you can override this to disable the feature
+ 	subtract_invasions_from_need = yes
+ 	subtract_fronts_from_need = yes }
+
+}

@@ -1,0 +1,33 @@
+﻿capital = 559
+
+create_country_leader={ name = "Mohammed Abdullah Hassan" desc=SOM_mohammedabdullahhassan_DESC picture="gfx/leaders/SAU/Portrait_Arabia_Generic_2.dds" expire="1920.12.21" ideology=despotism  traits={  } }
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+if = {
+	limit = {
+		has_dlc = "Battle for the Bosporus"
+	}
+	set_technology = { camelry = 1 }
+}
+oob = "SOM_1910"
+add_ideas = {
+ww1_Faith_Allah
+SOM_dervishes
+}
+set_convoys = 10
+add_manpower = 40000
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1910.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 0
+	fascism = 0
+	communism = 0
+	neutrality = 100
+}

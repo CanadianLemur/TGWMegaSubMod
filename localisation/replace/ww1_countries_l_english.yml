@@ -383,6 +383,8 @@
  SOV_democratic_DEF:0 "The Russian Federation"
  SOV_communism:0 "Soviet Russia"
  SOV_communism_DEF:0 "The Soviet Russia"
+ SOM_neutrality:0"Dervish Somalia" 
+ SOM_neutrality_DEF:0"The Dervish State"
  # ===================================================================================================
  # T
  TAN_fascism_DEF:0 "The Tuvan Nationalist Republic"

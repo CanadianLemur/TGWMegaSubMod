@@ -11,6 +11,9 @@
  MSM_ship_hull_light_2:0 "1922 Destroyer Hull"
  MSM_ship_hull_light_2_desc:0 ""
  
+ MSM_ship_hull_carrier_1:0 "1922 Carrier Hull"
+ MSM_ship_hull_carrier_1_desc:0""
+ 
  MSM_ship_hull_uboat_1:0 "1910 Submarine Hull"
  MSM_ship_hull_uboat_1_desc:0 ""
  

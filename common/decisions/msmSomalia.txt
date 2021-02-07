@@ -1,0 +1,67 @@
+dervish_war = {
+	raid_british_somaliland = {
+			allowed = {has_idea = SOM_dervishes}
+			cost = 50
+			visible = {has_idea = SOM_dervishes}
+			state_target = yes
+			targets = { 269 }
+			available = {
+				FROM = {  }
+				}
+			complete_effect = {
+			start_border_war = {
+			change_state_after_war = no
+			attacker = {
+				state = 834
+				num_provinces = 1
+				on_win = MSMSomalia.1
+				on_lose = MSMSomalia.2
+			}
+				
+			defender = {
+				state = 269
+				num_provinces = 1
+				on_win = MSMSomalia.2
+				on_lose = MSMSomalia.1
+			}
+			}
+			}
+			ai_will_do = {
+				factor = 30
+			}
+			days_remove = 90
+			}
+	raid_italian_somalia = {
+			allowed = {has_idea = SOM_dervishes}
+			cost = 50
+			visible = {has_idea = SOM_dervishes}
+			state_target = yes
+			targets = { 559 }
+			available = {
+				FROM = {  }
+				}
+			complete_effect = {
+			start_border_war = {
+			change_state_after_war = no
+			attacker = {
+				state = 834
+				num_provinces = 1
+				on_win = MSMSomalia.3
+				on_lose = MSMSomalia.4
+			}
+				
+			defender = {
+				state = 559
+				num_provinces = 1
+				on_win = MSMSomalia.4
+				on_lose = MSMSomalia.3
+			}
+			}
+			}
+				ai_will_do = {
+				factor = 30
+				}
+				days_remove = 90
+			}
+          }
+	}

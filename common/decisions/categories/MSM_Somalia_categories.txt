@@ -1,0 +1,18 @@
+dervish_war = {
+	icon = generic_political_actions
+	priority = 30
+	available = {
+		OR = {
+		AND = {owns_state = 559 tag = ITA}
+		AND = {owns_state = 269 tag = ENG}
+		tag = SOM
+		}
+	}
+	visible = {
+		OR = {
+		AND = {owns_state = 559 tag = ITA}
+		AND = {owns_state = 269 tag = ENG}
+		tag = SOM
+		}
+	}
+}
