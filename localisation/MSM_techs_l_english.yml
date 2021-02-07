@@ -35,6 +35,12 @@
  MSM_secondary_battery_2_desc:0""
  mtg_early_transport:0"Early Transport"
  mtg_early_transport_desc:0"In a manner that would be familiar to a soldier from the age of sail, we use rowboats to land in enemy territory"
+ MSM_ww1_heavy_art:0"Experimental SPG"
+ MSM_ww1_heavy_art_desc:0""
+ ENG_MSM_ww1_heavy_art:0"Gun Carrier Mk. I"
+ MSM_heavy_tank_artillery_equipment_0:0"Experimental SPG"
+ MSM_heavy_tank_artillery_equipment_0:0""
+ ENG_MSM_heavy_tank_artillery_equipment_0:0"Gun Carrier Mk. I"
  ####Armored Cars####
  ww1_armored_car_equipment_1:0 "Armored Car I"
  ww1_armored_car_equipment_2:0 "Armored Car II"

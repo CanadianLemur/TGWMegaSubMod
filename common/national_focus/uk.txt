@@ -2328,6 +2328,20 @@ add_extra_state_shared_building_slots = 3
 		y = 1
 	}
 	focus = {
+		id = ENG_MSM_gun_carrier_mk1
+		prerequisite = { focus=ENG_ww1_army_effort }
+		available = {has_tech = ww1_heavy_tank_1}
+		icon = GFX_goal_generic_army_artillery2
+		completion_reward = { set_technology = {
+								MSM_ww1_heavy_art = 1
+							} 
+}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 28
+		y = 1
+	}
+	focus = {
 		id = ENG_ww1_artillery_effort_2
 		prerequisite = { focus=ENG_ww1_artillery_effort_1 }
 		available = { date > 1912.1.1 }

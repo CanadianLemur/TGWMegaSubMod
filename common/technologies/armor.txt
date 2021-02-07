@@ -1137,7 +1137,36 @@ technologies = {
 			armor
 		}
 	}
+	MSM_ww1_heavy_art = {
+
+		enable_equipments = {
+			MSM_heavy_tank_artillery_equipment_0
+		}
 	
+		research_cost = 0.5
+		start_year = 1916
+		
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				factor = 0
+				can_research = improved_heavy_art
+			}
+
+			modifier = {
+				factor = 0
+				has_tech = improved_heavy_art
+			}
+		}
+		
+		categories = {
+			armor
+		}
+		allow = {
+			always = no
+		}
+	}	
 	basic_heavy_art = {
 
 		enable_equipments = {

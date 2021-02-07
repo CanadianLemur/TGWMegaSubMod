@@ -10,4 +10,14 @@
  STATE_750:0 "Virgin Islands"
  VICTORY_POINTS_8039:0 "Tamale"
  VICTORY_POINTS_11752:0 "Zhangbei"
- 
+ ###Gun Carrier Mark I is used earlier, so cannot be used later 
+ AST_heavy_tank_artillery_equipment_1:0 "Heavy SP Artillery I"
+ AST_heavy_tank_artillery_equipment_1_short:0 "H. SPG I"
+ ENG_heavy_tank_artillery_equipment_1:0 "Heavy SP Artillery I"
+ ENG_heavy_tank_artillery_equipment_1_short:0 "H. SPG I"
+ NZL_heavy_tank_artillery_equipment_1:0 "Heavy SP Artillery I"
+ NZL_heavy_tank_artillery_equipment_1_short:0 "H. SPG I"
+ CAN_heavy_tank_artillery_equipment_1:0 "Heavy SP Artillery I"
+ CAN_heavy_tank_artillery_equipment_1_short:0 "H. SPG I"
+ SAF_heavy_tank_artillery_equipment_1:0 "Heavy SP Artillery I"
+ SAF_heavy_tank_artillery_equipment_1_short:0 "H. SPG I"
