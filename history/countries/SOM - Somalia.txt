@@ -1,6 +1,6 @@
 ﻿capital = 559
 
-create_country_leader={ name = "Mohammed Abdullah Hassan" desc=SOM_mohammedabdullahhassan_DESC picture="gfx/leaders/SAU/Portrait_Arabia_Generic_2.dds" expire="1920.12.21" ideology=despotism  traits={  } }
+create_country_leader={ name = "Mohammed Abdullah Hassan" desc=SOM_mohammedabdullahhassan_DESC picture="gfx/leaders/SOM/MAH.dds" expire="1920.12.21" ideology=despotism  traits={  } }
 
 # Starting tech
 set_technology = {
@@ -25,9 +25,20 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
+
 set_popularities = {
 	democratic = 0
 	fascism = 0
 	communism = 0
 	neutrality = 100
+}
+create_field_marshal = {
+	name = "Mohammed Abdullah Hassan"
+	picture = "MAH.dds"
+	traits = { offensive_doctrine inspirational_leader brilliant_strategist desert_fox cavalry_expert }
+	skill = 5
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
 }

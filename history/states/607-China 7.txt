@@ -12,6 +12,7 @@ state={
 		victory_points={ 9958 1 }
 		owner=QIN
 		add_core_of=QIN
+		add_core_of =CHI
 		1912.2.12={ owner=CHI }
 
 		1919.1.1 = {
