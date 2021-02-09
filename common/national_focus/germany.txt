@@ -2029,6 +2029,118 @@ focus_tree = {
 		y = 1
 	}
 	
+	focus = {
+		id = GER_ww1_war_plans_rapid_mobilization
+		relative_position_id = GER_ww1_war_plans_dramatic_reform
+		prerequisite = { focus=GER_ww1_war_plans_dramatic_reform}
+		icon = GFX_goal_generic_small_arms
+		completion_reward = {
+			#give one-time doctrine research bonus
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 0
+		y = 1
+	}
+	
+	focus = {
+		id = GER_ww1_war_plans_battlefield_mobility
+		relative_position_id = GER_ww1_war_plans_dramatic_reform
+		prerequisite = { focus=GER_ww1_war_plans_dramatic_reform}
+		icon = GFX_goal_generic_small_arms
+		completion_reward = {
+			#give infantry speed upgrade
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = -1
+		y = 2
+	}
+	
+	focus = {
+		id = GER_ww1_war_plans_experimental_warfare
+		relative_position_id = GER_ww1_war_plans_battlefield_mobility
+		prerequisite = { focus=GER_ww1_war_plans_battlefield_mobility}
+		icon = GFX_goal_generic_small_arms
+		completion_reward = {
+			#something something gas or flamethrower, something something infantry boost
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 1
+		y = 1
+	}
+	
+	focus = {
+		id = GER_ww1_war_plans_upgrade_the_national_stockpile
+		relative_position_id = GER_ww1_war_plans_battlefield_mobility
+		prerequisite = { focus=GER_ww1_war_plans_battlefield_mobility}
+		icon = GFX_goal_generic_small_arms
+		completion_reward = {
+			#give one-time infantry equipment research boost
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 0
+		y = 2
+	}
+	
+	focus = {
+		id = GER_ww1_war_plans_german_gunmetal
+		relative_position_id = GER_ww1_war_plans_rapid_mobilization
+		prerequisite = { focus=GER_ww1_war_plans_rapid_mobilization}
+		icon = GFX_goal_generic_small_arms
+		completion_reward = {
+			#make rifles cheaper to produce
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 1
+		y = 1
+	}
+	
+	focus = {
+		id = GER_ww1_war_plans_indominable_firepower
+		relative_position_id = GER_ww1_war_plans_german_gunmetal
+		prerequisite = { focus=GER_ww1_war_plans_german_gunmetal}
+		icon = GFX_goal_generic_small_arms
+		completion_reward = {
+			#give one-time arty research bonus
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 0
+		y = 2
+	}
+	
+	focus = {
+		id = GER_ww1_war_plans_kaiser_william_gun
+		relative_position_id = GER_ww1_war_plans_experimental_warfare
+		prerequisite = { focus=GER_ww1_war_plans_experimental_warfare focus=GER_ww1_war_plans_indominable_firepower }
+		icon = GFX_goal_generic_small_arms
+		completion_reward = {
+			#give special division type "Paris gun", was created in 1918 IRL, so maybe make this one available in 1915 or 1916
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 0
+		y = 2
+	}
+	
+	focus = {
+		id = GER_ww1_war_plans_mechanical_horses
+		relative_position_id = GER_ww1_war_plans_upgrade_the_national_stockpile
+		prerequisite = { focus=GER_ww1_war_plans_upgrade_the_national_stockpile }
+		icon = GFX_goal_generic_small_arms
+		completion_reward = {
+			#give bonus for motorized research
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 0
+		y = 2
+	}
+	
 	###Ludendorff's Coup Path###
 	
 	focus = {
