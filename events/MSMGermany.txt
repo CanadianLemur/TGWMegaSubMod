@@ -60,36 +60,6 @@ country_event = {
 	}
 }
 
-####Ask Luxembourg for integration####
-
-country_event = {
-	id =  MSMGermany.4
-	title = MSMGermany.4.t
-	desc = MSMGermany.4.d
-	picture = GFX_report_event_generic_read_write
-	
-	fire_only_once = no
-	is_triggered_only = yes
-
-	option = {
-		name = MSMGermany.4.a
-		ai_chance = { factor = 100 }
-		GER = {
-			give_state_core = 8
-			annex_country = { target = LUX transfer_troops = no }
-			country_event = { days = 1 id = MSMGermany.2 }
-		}
-	}
-	option = {
-		name = MSMGermany.4.b
-		ai_chance = { factor = 00 }
-		GER = {
-			declare_war_on = { type = annex_everything    target = LUX }
-			give_state_core = 8
-			country_event = { days = 1 id = MSMGermany.3 }
-		}
-	}
-}
 
 ####Failed Offensive Schlieffen####
 country_event = {
@@ -260,5 +230,53 @@ country_event = {
 	option = {
 		name = MSMGermany.10.b
 		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id =  MSMGermany.11
+	title = MSMGermany.11.t
+	desc = MSMGermany.11.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = MSMGermany.11.a
+		ai_chance = { factor = 2 }
+		add_ai_strategy = {
+			type = alliance
+			id = GER
+			value = 1000
+		}
+		GER = {
+			add_to_faction = ROOT
+		}
+	}
+	option = {
+		name = MSMGermany.11.b
+		ai_chance = { factor = 4 }
+		add_ai_strategy = {
+			type = befriend
+			id = GER
+			value = 1000
+		}
+		give_military_access = GER
+		GER = {
+		diplomatic_relation = {
+		country = DEN
+		relation = guarantee
+		active = yes
+		}
+		diplomatic_relation = {
+		country = DEN
+		relation = non_aggression_pact
+		active = yes
+		}
+		}
+	}
+	option = {
+		name = MSMGermany.11.c
+		ai_chance = { factor = 1 }
 	}
 }

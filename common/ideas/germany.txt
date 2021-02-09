@@ -2,7 +2,7 @@ ideas = {
 
 	political_advisor = {
 		GER_bernhard_von_bulow = {
-			allowed = { tag=GER } traits={ prince_of_terror } ai_will_do={ factor=1 }
+			allowed = { tag=GER date < 1929.01.01} traits={ prince_of_terror } ai_will_do={ factor=1 }
 		}
 		GER_theobald_von_bethmann_hollweg = {
 			allowed = { tag=GER } traits={ compassionate_gentleman } ai_will_do={ factor=1 }
@@ -230,11 +230,11 @@ ideas = {
 			#messerschmitt={ allowed={ TAG=GER } research_bonus={ air_equipment=0.10 } traits={ light_aircraft_manufacturer } }
 			#focke_wulf={ allowed={ TAG=GER } research_bonus={ air_equipment=0.10 } traits={ medium_aircraft_manufacturer } }
 
-			#Fokker Aeroplanbau
-			fokker={ allowed={ TAG=GER } research_bonus={ air_equipment=0.10 } traits={ light_aircraft_manufacturer } }
+			#Fokker Aeroplanbau moves to the netherlands if germany loses ww1
+			fokker={ allowed={ TAG=GER NOT = {has_global_flag = kis_treaty_of_versailles}} research_bonus={ air_equipment=0.10 } traits={ light_aircraft_manufacturer } }
 
-			#Luftschiffbau Zeppelin
-			luftschiffbau_zeppelin={ allowed={ TAG=GER } research_bonus={ air_equipment=0.10 } traits={ heavy_aircraft_manufacturer } }
+			#Luftschiffbau Zeppelin not allowed after 1925 as use of zeppelins in warfare fades
+			luftschiffbau_zeppelin={ allowed={ TAG=GER date < 1925.01.01} research_bonus={ air_equipment=0.10 } traits={ heavy_aircraft_manufacturer } }
 
 			#Allgemeine Elektricitäts-Gesellschaft
 			allgemeine_elektricitats_gesellschaft={ allowed={ TAG=GER } research_bonus={ air_equipment=0.10 } traits={ medium_aircraft_manufacturer } }
@@ -269,7 +269,7 @@ ideas = {
 			designer = yes
 			#MAN={ allowed={ TAG=GER } research_bonus={ armor=0.10 } traits={ medium_tank_manufacturer } }
 			opel={ allowed={ TAG=GER } research_bonus={ armor=0.10 } traits={ fast_tank_manufacturer } picture=generic_tank_manufacturer_3 }
-			daimler_motoren_gesellschaft={ allowed={ TAG=GER } research_bonus={ armor=0.10 } traits={ medium_tank_manufacturer } }
+			daimler_motoren_gesellschaft={ allowed={ TAG=GER NOT = {has_global_flag = kis_treaty_of_versailles}} research_bonus={ armor=0.10 } traits={ medium_tank_manufacturer } }
 			}
 
 	country={

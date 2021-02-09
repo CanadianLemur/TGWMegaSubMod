@@ -548,10 +548,14 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			factor = 800
+			factor = 0
 			modifier = {
 				factor = 0
 				FRA = {	is_ai = no	}
+			}
+			modifier = {
+				factor = 1000
+				FRA = {	NOT = {controls_state = 17}	}
 			}
 		}
 

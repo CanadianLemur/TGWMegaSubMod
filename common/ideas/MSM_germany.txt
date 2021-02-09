@@ -134,4 +134,97 @@ ideas={
 			}
 		}
 	}
+		country = {
+		MSM_GER_ww1_heavy_artillery = {
+			allowed = {
+				original_tag = GER
+			}
+			
+			
+			removal_cost = -1 
+			equipment_bonus = {
+				heavy_field_gun_equipment = {
+					soft_attack = 0.1
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}				
+			
+		}
+	}
+country = {
+		MSM_GER_ww1_german_gunmetal = {
+			allowed = {
+				original_tag = GER
+			}
+			
+			
+			removal_cost = -1 
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}				
+			
+		}
+	}
+country = {
+		MSM_GER_ww1_battlefield_mobility	= {
+			allowed = {
+				original_tag = GER
+			}
+			
+			
+			removal_cost = -1 
+			modifier = {
+			army_speed_factor = 0.10
+			}
+			
+		}
+	}
+country = {
+		MSM_GER_ww1_military_industrial_complex	= {
+			allowed = {
+				original_tag = GER
+			}
+			
+			
+			removal_cost = -1 
+			modifier = {
+			state_production_speed_buildings_factor = 0.1
+			industrial_capacity_factory = 0.05
+			}
+			
+		}
+	}
+country = {
+		MSM_GER_ww1_compulsory_service	= {
+			allowed = {
+				original_tag = GER
+			}
+			
+			
+			removal_cost = -1 
+			modifier = {
+			conscription_factor = -0.10
+			industrial_capacity_factory = 0.15
+			}
+			
+		}
+	}
+country = {
+		MSM_GER_ww1_will_of_the_people	= {
+			allowed = {
+				original_tag = GER
+			}
+			
+			
+			removal_cost = -1 
+			modifier = {
+			conscription_factor = 0.20
+			}
+			
+		}
+	}
 }

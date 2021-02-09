@@ -724,24 +724,20 @@ focus_tree = {
 		id = GER_ww1_us_assistance
 		relative_position_id = GER_ww1_send_advisor
 		prerequisite = { focus=GER_ww1_send_advisor }
-		icon = GFX_goal_generic_forceful_treaty
-		bypass = {
-			USA = {
-				OR = {
-					is_in_faction = yes
-					has_war_with = GER
-				}
-			}
-		}
+		icon = GFX_focus_chi_mission_to_the_us
 		available = { 
-			#Come up with something, nerd
+			USA = {
+				exists = yes
+				NOT = { has_war_with = USA }
+				has_civil_war = no 
+			}
 		}
 		completion_reward = {
 			#Make an event or something, I don't know
 		}
 
 		ai_will_do = {
-			factor = 1000
+			factor = 0
 		}
 		cost = 10
 		x = -3
@@ -847,7 +843,7 @@ focus_tree = {
 			factor = 800
 		}
 
-		cost = 2
+		cost = 5
 		x = 1
 		y = 2
 	}
@@ -855,6 +851,42 @@ focus_tree = {
 		id = GER_ww1_persia_friend
 		relative_position_id = GER_ww1_afghanistan_friend
 		prerequisite = { focus=GER_ww1_afghanistan_friend }
+		icon = GFX_goal_generic_improve_relations
+
+		available = {
+			NOT = { 
+				has_global_flag = kis_treaty_of_versailles 
+			}
+			is_puppet = no 
+			NOT = { 
+				has_war_with = PER
+			} 
+			GER = { 
+				exists=yes 
+				is_puppet=no 
+				is_in_faction_with = AFG
+				has_war_with = PER
+			} 
+		}
+
+		completion_reward = {
+			GER = {
+				country_event = ww1_germany.241
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		cost = 5
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = GER_ww1_mission_to_somalia
+		relative_position_id = GER_ww1_turkey_friend
+		prerequisite = { focus=GER_ww1_turkey_friend }
 		icon = GFX_goal_generic_improve_relations
 
 		available = {
@@ -874,7 +906,7 @@ focus_tree = {
 
 		completion_reward = {
 			GER = {
-				country_event = ww1_germany.241
+				
 			}
 		}
 
@@ -882,11 +914,10 @@ focus_tree = {
 			factor = 10
 		}
 
-		cost = 2
-		x = 0
-		y = 1
+		cost = 5
+		x = -1
+		y = 3
 	}
-
 
 
 	focus = {
@@ -970,8 +1001,8 @@ focus_tree = {
 
 		ai_will_do = { factor = 10 }
 		cost = 10
-		x = 0
-		y = 4
+		x = -5
+		y = 1
 	}
 
 
@@ -1278,7 +1309,7 @@ focus_tree = {
 		relative_position_id = GER_ww1_war_plans_division_1
 		prerequisite = { focus=GER_ww1_war_plans_division_1 }
 		mutually_exclusive = { focus=GER_ww1_war_plans_hindenburg_plan }
-		icon = GFX_goal_generic_army_artillery2
+		icon = GFX_goal_generic_army_doctrines
 		completion_reward = { 
 			set_country_flag = MSM_GER_ww1_schlieffen
 			add_tech_bonus = {
@@ -1301,7 +1332,7 @@ focus_tree = {
 		available = { 
 
 		}
-		icon = GFX_goal_generic_army_artillery2
+		icon = GFX_goal_generic_small_arms
 		completion_reward = { 
 			add_ideas = MSM_GER_ww1_g88_replaced
 		}
@@ -1338,7 +1369,7 @@ focus_tree = {
 		available = { 
 
 		}
-		icon = GFX_goal_generic_army_artillery2
+		icon = GFX_goal_generic_army_doctrines
 		completion_reward = { 
 			add_ideas = MSM_GER_ww1_war_games
 		}
@@ -1356,7 +1387,8 @@ focus_tree = {
 		available = { 
 			has_tech = ww1_fortification3b
 		}
-		icon = GFX_goal_generic_army_artillery2
+		icon = GFX_goal_generic_construct_military
+		icon = GFX_goal_generic_construct_military
 		completion_reward = { 
 			custom_effect_tooltip = "Builds forts along the Russian border"
 			hidden_effect = {
@@ -1429,7 +1461,7 @@ focus_tree = {
 		relative_position_id = GER_ww1_war_plans_mobile_howitzer
 		prerequisite = { focus=GER_ww1_war_plans_mobile_howitzer focus=GER_ww1_war_plans_replace_the_g88 focus=GER_ww1_war_plans_war_games }
 		available = {}
-		icon = GFX_goal_generic_army_artillery2
+		icon = GFX_focus_generic_little_entente
 		completion_reward = { 
 			add_timed_idea = {
 				idea = MSM_GER_ww1_reserves
@@ -1453,7 +1485,7 @@ focus_tree = {
 			has_tech = ww1_fortification3b
 			has_tech = ww1_fighter2b
 		}
-		icon = GFX_goal_generic_army_artillery2
+		icon = GFX_focus_generic_manpower
 		completion_reward = { 
 			add_timed_idea = {
 				idea = MSM_GER_ww1_front_line_reports
@@ -1470,7 +1502,7 @@ focus_tree = {
 		relative_position_id = GER_ww1_war_plans_front_line_reports
 		prerequisite = { focus=GER_ww1_war_plans_front_line_reports }
 		available = {}
-		icon = GFX_goal_generic_army_artillery2
+		icon = GFX_goal_generic_air_fighter
 		completion_reward = { 
 			add_tech_bonus = {
 				ahead_reduction = 1.0
@@ -1504,7 +1536,7 @@ focus_tree = {
 		relative_position_id = GER_ww1_war_plans_front_line_reports
 		prerequisite = { focus=GER_ww1_war_plans_front_line_reports }
 		available = {}
-		icon = GFX_goal_generic_army_artillery2
+		icon = GFX_goal_generic_army_doctrines
 		completion_reward = { 
 			add_stability = 0.1
 			add_war_support = 0.1
@@ -1588,7 +1620,7 @@ focus_tree = {
 		id = GER_ww1_war_plans_finalize_preparations
 		relative_position_id = GER_ww1_war_plans_deal_with_the_swiss
 		prerequisite = { focus = GER_ww1_war_plans_deal_with_the_swiss focus = GER_ww1_war_plans_deal_with_the_low_countries }
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_focus_generic_military_mission
 		available = { }
 		completion_reward = { 
 			add_timed_idea = {
@@ -1623,10 +1655,6 @@ focus_tree = {
 
 			declare_war_on = { type = annex_everything    target = FRA }
 			
-			LUX = {		#Ask Luxembourg for integration
-				country_event = { days = 1 id = MSMGermany.4 }
-			}
-
 			hidden_effect = {
 				#news_event = { days = 1 id = kis_news.1 }		Doesn't actually exist, needs an event
 			}
@@ -1671,7 +1699,7 @@ focus_tree = {
 		id = GER_ww1_war_plans_dig_in
 		relative_position_id = GER_ww1_war_plans_a_failed_offensive
 		prerequisite = { focus = GER_ww1_war_plans_a_failed_offensive }
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_goal_generic_fortify_city
 		available = { 
 			has_country_flag = MSM_GER_replaced_moltke
 		}
@@ -1688,7 +1716,7 @@ focus_tree = {
 		id = GER_ww1_war_plans_forward_march
 		relative_position_id = GER_ww1_war_plans_a_failed_offensive
 		prerequisite = { focus = GER_ww1_war_plans_a_failed_offensive }
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_goal_generic_occupy_start_war
 		available = { 
 			has_country_flag = MSM_GER_kept_moltke
 		}
@@ -1709,7 +1737,7 @@ focus_tree = {
 		id = GER_ww1_war_plans_a_successful_offensive
 		relative_position_id = GER_ww1_war_with_france
 		prerequisite = { focus = GER_ww1_war_with_france }
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_goal_demand_sudetenland
 		available = { 
 			OR = {
 				has_global_flag = kis_second_treaty_frankfort
@@ -1759,7 +1787,7 @@ focus_tree = {
 		relative_position_id = GER_ww1_war_plans_division_1
 		prerequisite = { focus=GER_ww1_war_plans_division_1 }
 		mutually_exclusive = { focus=GER_ww1_war_plans_schlieffen_plan }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_position_armies
 		completion_reward = {
 			add_ideas = GER_paul_von_hindenburg
 		}
@@ -1775,9 +1803,9 @@ focus_tree = {
 		id = GER_ww1_war_plans_assure_northern_border
 		relative_position_id = GER_ww1_war_plans_hindenburg_plan
 		prerequisite = { focus=GER_ww1_war_plans_hindenburg_plan }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_focus_generic_diplomatic_treaty
 		completion_reward = {
-			#Diplomatic mission to denmark
+			DEN = {country_event = MSMGermany.11}
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -1789,7 +1817,7 @@ focus_tree = {
 		id = GER_ww1_war_plans_lowland_cooperation
 		relative_position_id = GER_ww1_war_plans_assure_northern_border
 		prerequisite = { focus=GER_ww1_war_plans_assure_northern_border }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_focus_generic_little_entente
 		completion_reward = {
 			custom_effect_tooltip = "Undertake in joint military exercises with the lowland countries"
 			#hidden_effect = {
@@ -1815,7 +1843,7 @@ focus_tree = {
 		id = GER_ww1_war_plans_protect_neutrality
 		relative_position_id = GER_ww1_war_plans_lowland_cooperation
 		prerequisite = { focus=GER_ww1_war_plans_lowland_cooperation }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_defence
 		completion_reward = {
 			give_guarantee = SWI
 			give_guarantee = HOL
@@ -1832,7 +1860,7 @@ focus_tree = {
 		id = GER_ww1_war_plans_regional_threat
 		relative_position_id = GER_ww1_war_plans_protect_neutrality
 		prerequisite = { focus=GER_ww1_war_plans_protect_neutrality }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_attack_allies
 		completion_reward = {
 			custom_effect_tooltip = "Creates a situation that convinces the lowcountries and Switzerland to accept German support of their independence"
 			hidden_effect = {
@@ -1851,7 +1879,7 @@ focus_tree = {
 		id = GER_ww1_war_plans_neutral_no_longer
 		relative_position_id = GER_ww1_war_plans_regional_threat
 		prerequisite = { focus=GER_ww1_war_plans_regional_threat }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_focus_hol_war_on_pacifism
 		completion_reward = {
 			add_political_power = 100
 			custom_effect_tooltip = "Invite the countries threatened by France to the Central Powers to ensure their protection"
@@ -1873,9 +1901,9 @@ focus_tree = {
 		id = GER_ww1_war_plans_military_industrial_complex
 		relative_position_id = GER_ww1_war_plans_hindenburg_plan
 		prerequisite = { focus=GER_ww1_war_plans_hindenburg_plan }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_construct_civilian
 		completion_reward = {
-			#Give construction boost
+			add_ideas = MSM_GER_ww1_military_industrial_complex
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -1887,9 +1915,35 @@ focus_tree = {
 		id = GER_ww1_war_plans_a_modern_economy
 		relative_position_id = GER_ww1_war_plans_military_industrial_complex
 		prerequisite = { focus=GER_ww1_war_plans_military_industrial_complex }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_construct_mil_factory
 		completion_reward = {
-			#Add military factories to states
+			random_owned_state = {
+			prioritize = {51}
+			add_building_construction = {
+			type = arms_factory
+			level = 2
+			instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 2
+			}
+			random_owned_state = {
+			prioritize = {42}
+			add_building_construction = {
+			type = arms_factory
+			level = 2
+			instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 2
+			}
+			random_owned_state = {
+			prioritize = {57}
+			add_building_construction = {
+			type = arms_factory
+			level = 2
+			instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 2
+			}
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -1901,9 +1955,9 @@ focus_tree = {
 		id = GER_ww1_war_plans_compulsory_service
 		relative_position_id = GER_ww1_war_plans_a_modern_economy
 		prerequisite = { focus=GER_ww1_war_plans_a_modern_economy }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_production
 		completion_reward = {
-			#Give spirit that boosts production efficiency at a cost of manpower
+			add_ideas = MSM_GER_ww1_compulsory_service
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -1915,7 +1969,7 @@ focus_tree = {
 		id = GER_ww1_war_plans_men_for_material
 		relative_position_id = GER_ww1_war_plans_compulsory_service
 		prerequisite = { focus=GER_ww1_war_plans_compulsory_service }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_political_pressure
 		completion_reward = {
 			#Give a spirit called slave labor that adds production efficiency boost and ups resistance in belgium the netherlands and poland in the areas that are conquered
 		}
@@ -1929,10 +1983,29 @@ focus_tree = {
 		id = GER_ww1_war_plans_dutch_exploitation
 		relative_position_id = GER_ww1_war_plans_men_for_material
 		prerequisite = { focus=GER_ww1_war_plans_men_for_material focus = GER_ww1_war_plans_neutral_no_longer }
-		#Bypassed if not at war with the netherlands
-		icon = GFX_goal_generic_small_arms
+		available = {controls_state = 7 controls_state = 36 controls_state = 35}
+		icon = GFX_focus_hol_gateway_to_europe
 		completion_reward = {
-			#Add Civilian factories in east germany, add resistance to the netherlands
+						random_owned_state = {
+			prioritize = {86}
+			add_building_construction = {
+			type = industrial_complex
+			level = 2
+			instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 2
+			}
+			random_owned_state = {
+			prioritize = {5}
+			add_building_construction = {
+			type = industrial_complex
+			level = 2
+			instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 2
+			}
+			every_controlled_state = { limit = { is_core_of = HOL } 	
+			add_resistance_target = 30 }
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -1944,9 +2017,9 @@ focus_tree = {
 		id = GER_ww1_war_plans_the_bare_necessities
 		relative_position_id = GER_ww1_war_plans_compulsory_service
 		prerequisite = { focus=GER_ww1_war_plans_compulsory_service focus = GER_ww1_war_plans_the_currency_of_warfare}
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_consumer_goods
 		completion_reward = {
-			#Set economy law to war economy
+			add_ideas = war_economy
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -1958,9 +2031,9 @@ focus_tree = {
 		id = GER_ww1_war_plans_will_of_the_people
 		relative_position_id = GER_ww1_war_plans_the_bare_necessities
 		prerequisite = { focus=GER_ww1_war_plans_the_bare_necessities }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_focus_generic_manpower
 		completion_reward = {
-			#Add 2.5% conscription
+			add_ideas = MSM_GER_ww1_will_of_the_people
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -1975,7 +2048,7 @@ focus_tree = {
 		relative_position_id = GER_ww1_war_plans_hindenburg_plan
 		prerequisite = { focus=GER_ww1_war_plans_hindenburg_plan }
 		mutually_exclusive = { focus = GER_ww1_war_plans_falkenhayn_remains}
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_focus_generic_military_mission
 		completion_reward = {
 			#Make ludendorff available as military high command, disable falkenhayn
 		}
@@ -1990,12 +2063,12 @@ focus_tree = {
 		relative_position_id = GER_ww1_war_plans_hindenburg_plan
 		prerequisite = { focus=GER_ww1_war_plans_hindenburg_plan }
 		mutually_exclusive = { focus = GER_ww1_war_plans_ludendorffs_appointment}
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_demand_territory
 		completion_reward = {
 			add_political_power = 150
 		}
 		ai_will_do = { factor = 10 }
-		cost = 10
+		cost = 5
 		x = 5
 		y = 1
 	}
@@ -2005,7 +2078,7 @@ focus_tree = {
 		relative_position_id = GER_ww1_war_plans_ludendorffs_appointment
 		prerequisite = { focus=GER_ww1_war_plans_ludendorffs_appointment }
 		mutually_exclusive = { focus = GER_ww1_war_plans_autonomous_military }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_military_deal
 		completion_reward = {
 			add_political_power = 150
 		}
@@ -2019,7 +2092,7 @@ focus_tree = {
 		id = GER_ww1_war_plans_dramatic_reform
 		relative_position_id = GER_ww1_war_plans_begrudging_cooperation
 		prerequisite = { focus=GER_ww1_war_plans_begrudging_cooperation focus = GER_ww1_war_plans_autonomous_military }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_focus_generic_military_academy
 		completion_reward = {
 			add_political_power = 150
 		}
@@ -2033,9 +2106,13 @@ focus_tree = {
 		id = GER_ww1_war_plans_rapid_mobilization
 		relative_position_id = GER_ww1_war_plans_dramatic_reform
 		prerequisite = { focus=GER_ww1_war_plans_dramatic_reform}
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_focus_generic_manpower
 		completion_reward = {
-			#give one-time doctrine research bonus
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = land_doctrine
+			}
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -2047,9 +2124,9 @@ focus_tree = {
 		id = GER_ww1_war_plans_battlefield_mobility
 		relative_position_id = GER_ww1_war_plans_dramatic_reform
 		prerequisite = { focus=GER_ww1_war_plans_dramatic_reform}
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_demand_sudetenland
 		completion_reward = {
-			#give infantry speed upgrade
+		add_ideas = MSM_GER_ww1_battlefield_mobility
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -2061,9 +2138,20 @@ focus_tree = {
 		id = GER_ww1_war_plans_experimental_warfare
 		relative_position_id = GER_ww1_war_plans_battlefield_mobility
 		prerequisite = { focus=GER_ww1_war_plans_battlefield_mobility}
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_hoi4tgw_gasmask
 		completion_reward = {
-			#something something gas or flamethrower, something something infantry boost
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 2
+				technology = chemical_research2  
+				technology = chemical_research3
+				technology = infantry_gasmask
+			}
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = armor
+			}
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -2077,7 +2165,11 @@ focus_tree = {
 		prerequisite = { focus=GER_ww1_war_plans_battlefield_mobility}
 		icon = GFX_goal_generic_small_arms
 		completion_reward = {
-			#give one-time infantry equipment research boost
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = infantry_tech
+			}
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -2091,7 +2183,7 @@ focus_tree = {
 		prerequisite = { focus=GER_ww1_war_plans_rapid_mobilization}
 		icon = GFX_goal_generic_small_arms
 		completion_reward = {
-			#make rifles cheaper to produce
+			add_ideas = MSM_GER_ww1_german_gunmetal
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -2103,9 +2195,13 @@ focus_tree = {
 		id = GER_ww1_war_plans_indominable_firepower
 		relative_position_id = GER_ww1_war_plans_german_gunmetal
 		prerequisite = { focus=GER_ww1_war_plans_german_gunmetal}
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_army_artillery
 		completion_reward = {
-			#give one-time arty research bonus
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -2114,12 +2210,17 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = GER_ww1_war_plans_kaiser_william_gun
+		id = GER_ww1_war_plans_heavy_artillery
 		relative_position_id = GER_ww1_war_plans_experimental_warfare
 		prerequisite = { focus=GER_ww1_war_plans_experimental_warfare focus=GER_ww1_war_plans_indominable_firepower }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_army_artillery2
 		completion_reward = {
-			#give special division type "Paris gun", was created in 1918 IRL, so maybe make this one available in 1915 or 1916
+			add_equipment_to_stockpile = {
+			type = heavy_field_gun_equipment_1
+			amount = 100
+			producer = GER
+		}
+		add_ideas = MSM_GER_ww1_heavy_artillery
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -2131,9 +2232,13 @@ focus_tree = {
 		id = GER_ww1_war_plans_mechanical_horses
 		relative_position_id = GER_ww1_war_plans_upgrade_the_national_stockpile
 		prerequisite = { focus=GER_ww1_war_plans_upgrade_the_national_stockpile }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_army_motorized
 		completion_reward = {
-			#give bonus for motorized research
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = motorized_equipment
+			}
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -2148,9 +2253,12 @@ focus_tree = {
 		relative_position_id = GER_ww1_war_plans_ludendorffs_appointment
 		prerequisite = { focus=GER_ww1_war_plans_ludendorffs_appointment }
 		mutually_exclusive = { focus = GER_ww1_war_plans_begrudging_cooperation }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_support_fascism
 		completion_reward = {
-			#Add spirit that increases proto-fascism monthly
+			add_timed_idea = {
+			idea = nationalism
+			days = 200
+			}
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -2162,7 +2270,7 @@ focus_tree = {
 		id = GER_ww1_war_plans_political_presence
 		relative_position_id = GER_ww1_war_plans_autonomous_military
 		prerequisite = { focus=GER_ww1_war_plans_autonomous_military }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_propaganda
 		completion_reward = {
 			#Make available as political advisor
 		}
@@ -2176,7 +2284,7 @@ focus_tree = {
 		id = GER_ww1_war_plans_new_campaign
 		relative_position_id = GER_ww1_war_plans_political_presence
 		prerequisite = { focus=GER_ww1_war_plans_political_presence }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_hoi4tgw_ironcross
 		completion_reward = {
 			#Make Ludendorff leader of the fascist party
 		}
@@ -2190,7 +2298,7 @@ focus_tree = {
 		id = GER_ww1_war_plans_third_party_funding
 		relative_position_id = GER_ww1_war_plans_political_presence
 		prerequisite = { focus=GER_ww1_war_plans_political_presence }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_focus_mex_privatisation
 		completion_reward = {
 			add_political_power = 100
 		}
@@ -2204,7 +2312,7 @@ focus_tree = {
 		id = GER_ww1_war_plans_necessary_changes
 		relative_position_id = GER_ww1_war_plans_third_party_funding
 		prerequisite = { focus=GER_ww1_war_plans_third_party_funding }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_support_fascism
 		completion_reward = {
 			#Add daily fascism
 		}
@@ -2219,7 +2327,7 @@ focus_tree = {
 		relative_position_id = GER_ww1_war_plans_necessary_changes
 		prerequisite = { focus=GER_ww1_war_plans_necessary_changes }
 		prerequisite = { focus = GER_ww1_war_plans_new_campaign }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_focus_ger_oppose_hitler
 		completion_reward = {
 			#IDK bro, figure it out
 		}
@@ -2233,7 +2341,7 @@ focus_tree = {
 		id = GER_ww1_war_plans_liberate_berlin
 		relative_position_id = GER_ww1_war_plans_the_way_forward
 		prerequisite = { focus=GER_ww1_war_plans_the_way_forward }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_demand_sudetenland
 		completion_reward = {
 			#Force an ideology flip
 		}
@@ -2247,7 +2355,7 @@ focus_tree = {
 		id = GER_ww1_war_plans_great_german_state
 		relative_position_id = GER_ww1_war_plans_liberate_berlin
 		prerequisite = { focus=GER_ww1_war_plans_liberate_berlin }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_hoi4tgw_germanempire
 		completion_reward = {
 			#make event that asks austria-hungary to be puppeted, only agrees 10% of the time
 		}
@@ -2261,7 +2369,7 @@ focus_tree = {
 		id = GER_ww1_war_plans_our_natural_ally
 		relative_position_id = GER_ww1_war_plans_liberate_berlin
 		prerequisite = { focus=GER_ww1_war_plans_liberate_berlin }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_hoi4tgw_russianempire
 		completion_reward = {
 			#Get russia as an ally, at the cost of austria-hungary
 		}
@@ -2275,13 +2383,39 @@ focus_tree = {
 		id = GER_ww1_war_plans_germany_for_germans
 		relative_position_id = GER_ww1_war_plans_great_german_state
 		prerequisite = { focus=GER_ww1_war_plans_great_german_state }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_hoi4tgw_ironcross
 		completion_reward = {
 			#Gives options to send settlers out to austro-hungarian states to get cores over time
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
 		x = 0
+		y = 2
+	}
+	focus = {
+		id = GER_ww1_war_plans_association_with_habsburg_lands
+		relative_position_id = GER_ww1_war_plans_great_german_state
+		prerequisite = { focus=GER_ww1_war_plans_great_german_state }
+		icon = GFX_hoi4tgw_ironcross
+		completion_reward = {
+			#releases hungary as a puppet with lands outside the german confederation, croatia as well if AH has adopted trialism
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 2
+		y = 2
+	}
+	focus = {
+		id = GER_ww1_war_plans_cooperation_with_habsburg_lands
+		relative_position_id = GER_ww1_war_plans_great_german_state
+		prerequisite = { focus=GER_ww1_war_plans_great_german_state }
+		icon = GFX_hoi4tgw_ironcross
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 2
 		y = 2
 	}
 	
@@ -2292,9 +2426,13 @@ focus_tree = {
 		id = GER_ww1_war_plans_moltkes_successor
 		relative_position_id = GER_ww1_war_plans_falkenhayn_remains
 		prerequisite = { focus=GER_ww1_war_plans_falkenhayn_remains }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_army_doctrines
 		completion_reward = {
-			#Add doctrine research boost
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = land_doctrine
+			}
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -2308,7 +2446,11 @@ focus_tree = {
 		prerequisite = { focus=GER_ww1_war_plans_moltkes_successor }
 		icon = GFX_goal_generic_small_arms
 		completion_reward = {
-			#Add infantry equipment research boost
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = infantry_tech
+			}
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -2320,7 +2462,7 @@ focus_tree = {
 		id = GER_ww1_war_plans_strategic_deployment
 		relative_position_id = GER_ww1_war_plans_the_currency_of_warfare
 		prerequisite = { focus=GER_ww1_war_plans_the_currency_of_warfare }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_construct_infrastructure
 		completion_reward = {
 			#Add infrastructure going from berlin to the northeast and northwest
 		}
@@ -2334,9 +2476,13 @@ focus_tree = {
 		id = GER_ww1_war_plans_those_great_mechanisms
 		relative_position_id = GER_ww1_war_plans_the_currency_of_warfare
 		prerequisite = { focus=GER_ww1_war_plans_the_currency_of_warfare }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_army_artillery2
 		completion_reward = {
-			#Add research boost to artillery
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = artillery
+			}
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -2348,9 +2494,20 @@ focus_tree = {
 		id = GER_ww1_war_plans_the_flying_deutchman
 		relative_position_id = GER_ww1_war_plans_those_great_mechanisms
 		prerequisite = { focus=GER_ww1_war_plans_those_great_mechanisms }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_air_fighter
 		completion_reward = {
-			#Air tech boost, give red barron
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = air_equipment
+			}
+			add_ace = {
+			name = "Manfred"
+			surname = "von Richthofen"
+			callsign = "Red Baron"
+			type = fighter_genius
+			is_female = no
+}
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -2364,7 +2521,7 @@ focus_tree = {
 		id = GER_ww1_war_plans_strategic_interests
 		relative_position_id = GER_ww1_war_plans_falkenhayn_remains
 		prerequisite = { focus=GER_ww1_war_plans_falkenhayn_remains }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_hoi4tgw_austriahungary
 		completion_reward = {
 			add_political_power = 150
 			#Do some cooperation thing with Italy and Austria-Hungary
@@ -2379,9 +2536,13 @@ focus_tree = {
 		id = GER_ww1_war_plans_our_grand_strategy
 		relative_position_id = GER_ww1_war_plans_strategic_interests
 		prerequisite = { focus=GER_ww1_war_plans_strategic_interests focus = GER_ww1_war_plans_begrudging_cooperation }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_army_doctrines
 		completion_reward = {
-			#Doctrine research bonus
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = land_doctrine
+			}
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -2396,7 +2557,7 @@ focus_tree = {
 		relative_position_id = GER_ww1_war_plans_our_grand_strategy
 		prerequisite = { focus=GER_ww1_war_plans_our_grand_strategy }
 		mutually_exclusive = { focus = GER_ww1_war_plans_the_eastern_bear }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
 		completion_reward = {
 			#Bonus vs french
 		}
@@ -2410,9 +2571,18 @@ focus_tree = {
 		id = GER_ww1_war_plans_a_great_wall
 		relative_position_id = GER_ww1_war_plans_the_western_menace
 		prerequisite = { focus=GER_ww1_war_plans_the_western_menace }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_construct_military
 		completion_reward = {
-			#Build forts along french line
+			28 = {add_building_construction = {
+			type = bunker
+			level = 3
+			instant_build = yes
+			province = {
+				all_provinces = yes
+				limit_to_border = yes
+			}		
+			}
+		}
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -2424,7 +2594,7 @@ focus_tree = {
 		id = GER_ww1_war_plans_within_striking_distance
 		relative_position_id = GER_ww1_war_plans_a_great_wall
 		prerequisite = { focus=GER_ww1_war_plans_a_great_wall }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_army_artillery2
 		completion_reward = {
 			#Build airfields close to french line, add artillery buff
 		}
@@ -2438,7 +2608,7 @@ focus_tree = {
 		id = GER_ww1_war_plans_a_cousins_appeal
 		relative_position_id = GER_ww1_war_plans_the_western_menace
 		prerequisite = { focus=GER_ww1_war_plans_the_western_menace }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_hoi4tgw_russianempire
 		completion_reward = {
 			#Get the russians to become neutral
 		}
@@ -2452,7 +2622,7 @@ focus_tree = {
 		id = GER_ww1_war_plans_the_question_of_allegiance
 		relative_position_id = GER_ww1_war_plans_a_cousins_appeal
 		prerequisite = { focus=GER_ww1_war_plans_a_cousins_appeal }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_tripartite_pact
 		completion_reward = {
 			#Get the russians to become neutral
 		}
@@ -2467,7 +2637,7 @@ focus_tree = {
 		relative_position_id = GER_ww1_war_plans_the_question_of_allegiance
 		prerequisite = { focus=GER_ww1_war_plans_the_question_of_allegiance }
 		mutually_exclusive = { focus = GER_ww1_war_plans_a_falling_out }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_focus_generic_little_entente
 		completion_reward = {
 			#Get the russians to become neutral
 		}
@@ -2482,7 +2652,7 @@ focus_tree = {
 		relative_position_id = GER_ww1_war_plans_the_question_of_allegiance
 		prerequisite = { focus=GER_ww1_war_plans_the_question_of_allegiance }
 		mutually_exclusive = { focus = }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_occupy_start_war
 		completion_reward = {
 			#Get the russians to become neutral
 		}
@@ -2499,7 +2669,7 @@ focus_tree = {
 		relative_position_id = GER_ww1_war_plans_our_grand_strategy
 		prerequisite = { focus=GER_ww1_war_plans_our_grand_strategy }
 		mutually_exclusive = { focus = GER_ww1_war_plans_the_western_menace }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_focus_ger_strike_at_the_source
 		completion_reward = {
 			#Bonus vs russians
 		}
@@ -2513,9 +2683,68 @@ focus_tree = {
 		id = GER_ww1_war_plans_steel_ourselves
 		relative_position_id = GER_ww1_war_plans_the_eastern_bear
 		prerequisite = { focus=GER_ww1_war_plans_the_eastern_bear }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_construct_military
 		completion_reward = {
-			#Build forts along Russian border
+			custom_effect_tooltip = "Builds forts along the Russian border"
+			hidden_effect = {
+				5 = {
+					add_building_construction = {
+						type = bunker
+						province = 9327
+						level = 3
+					}
+				}
+				85 = {
+					add_building_construction = {
+						type = bunker
+						province = 6347
+						level = 3
+					}
+					add_building_construction = {
+						type = bunker
+						province = 3295
+						level = 3
+					}
+				}
+				86 = {
+					add_building_construction = {
+						type = bunker
+						province = 243
+						level = 1
+					}
+					add_building_construction = {
+						type = bunker
+						province = 17
+						level = 1
+					}
+					add_building_construction = {
+						type = bunker
+						province = 9532
+						level = 1
+					}
+				}
+				66 = {
+					add_building_construction = {
+						type = bunker
+						province = 11558
+						level = 1
+					}
+				}
+				67 = {
+					add_building_construction = {
+						type = bunker
+						province = 479
+						level = 1
+					}
+				}
+				762 = {
+					add_building_construction = {
+						type = bunker
+						province = 506
+						level = 1
+					}
+				}
+			}
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -2527,7 +2756,7 @@ focus_tree = {
 		id = GER_ww1_war_plans_keep_them_asleep
 		relative_position_id = GER_ww1_war_plans_steel_ourselves
 		prerequisite = { focus=GER_ww1_war_plans_steel_ourselves }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_occupy_states_ongoing_war
 		completion_reward = {
 			#Hit russia with covert effort to slow their mobilization
 		}
@@ -2541,7 +2770,7 @@ focus_tree = {
 		id = GER_ww1_war_plans_poke_the_beast
 		relative_position_id = GER_ww1_war_plans_keep_them_asleep
 		prerequisite = { focus=GER_ww1_war_plans_keep_them_asleep }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
 		completion_reward = {
 			#Raise resistance in polish part of russia, lower russian stability
 		}
@@ -2555,7 +2784,7 @@ focus_tree = {
 		id = GER_ww1_war_plans_the_right_moment
 		relative_position_id = GER_ww1_war_plans_within_striking_distance
 		prerequisite = { focus=GER_ww1_war_plans_poke_the_beast focus=GER_ww1_war_plans_within_striking_distance focus = GER_ww1_war_plans_a_falling_out }
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_focus_attack_france
 		completion_reward = {
 			#Declare war on France
 		}
@@ -2601,19 +2830,11 @@ focus_tree = {
 		prerequisite = { focus = GER_ww1_war_plans_fortify_the_eastern_front focus = GER_ww1_war_plans_neutral_no_longer }
 		icon = GFX_hoi4tgw_poland  
 		available = {
-			if = {
-				limit = { has_country_flag = MSM_GER_ww1_schlieffen }
-				date > 1915.1.1
-				has_war_with = RUS
-			}
-			if = {
-				limit = { has_country_flag = MSM_GER_ww1_hindenburg }
-				date > 1914.1.1
-			}
+				OR = {has_war_with = RUS
+				controls_state = 10
+				}
 		}
 		completion_reward = {
-			if = {
-				limit = { has_country_flag = MSM_GER_ww1_schlieffen }
 				add_manpower = 100000
 				87 = { add_core_of = POL }
 				98 = { add_core_of = POL }
@@ -2621,14 +2842,9 @@ focus_tree = {
 				90 = { add_core_of = POL }
 				88 = { add_core_of = POL }
 				92 = { add_core_of = POL }
-			}
-			if = {
-				limit = { has_country_flag = MSM_GER_ww1_hindenburg }
-				#Gives future decision
-			}
 		}     
 		ai_will_do = { factor = 20 }
-		cost = 10
+		cost = 5
 		x = 2
 		y = 4
 	}
