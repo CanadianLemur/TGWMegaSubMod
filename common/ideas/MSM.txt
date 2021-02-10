@@ -117,5 +117,17 @@ ideas = {
 				cic_to_target_factor = 0.10	
 			}
 		}
+		# BY JINGO, used to make democratic allies of germany join their wars, Sweden, Romania, etc
+		jingoism = {	
+			allowed = {
+				has_ruling_party = democratic
+			}
+
+			removal_cost = -1
+				
+			modifier = {
+				ai_join_ally_desire_factor = 70			
+			}
+		}
 	}
 }

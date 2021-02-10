@@ -1,0 +1,72 @@
+﻿##############################################
+# New German Events, added by Canadian Lemur #
+##############################################
+add_namespace = MSMSecondBrothersWar
+
+####Romania Offer####
+country_event = {
+	id =  MSMSecondBrothersWar.1
+	title = MSMSecondBrothersWar.1.t
+	desc = MSMSecondBrothersWar.1.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = MSMSecondBrothersWar.1.a
+		ai_chance = { factor = 100 }
+		GER = {
+			add_to_faction = ROM
+			country_event = { days = 1 id = MSMSecondBrothersWar.2 }
+		}
+		hidden_effect = {set_global_flag = MSM_transylvania_for_romania
+		add_ai_strategy = {
+		type = alliance
+		id = GER
+		value = 200
+		}
+		add_ideas = {jingoism}
+		GER = {
+		add_ai_strategy = {
+		type = alliance
+		id = ROM
+		value = 200
+		}
+		
+		}
+		}
+	}
+	option = {
+		name = MSMSecondBrothersWar.1.b
+		ai_chance = { factor = 0 }
+			country_event = { days = 1 id = MSMSecondBrothersWar.3 }
+		}
+	}
+}
+country_event = {
+	id =  MSMSecondBrothersWar.2
+	title = MSMSecondBrothersWar.2.t
+	desc = MSMSecondBrothersWar.2.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = MSMSecondBrothersWar.2.a
+	}
+}
+country_event = {
+	id =  MSMSecondBrothersWar.3
+	title = MSMSecondBrothersWar.3.t
+	desc = MSMSecondBrothersWar.3.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = MSMSecondBrothersWar.3.a
+	}
+}
