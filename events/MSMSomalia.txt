@@ -48,7 +48,7 @@ country_event = {
 		ai_chance = {
 			factor = 60
 		}
-		add_political_power = -100
+		add_political_power = 100
 		add_equipment_to_stockpile = {
 			type = infantry_equipment
 			amount = 100
@@ -61,7 +61,7 @@ country_event = {
 		ai_chance = {
 			factor = 60
 		}
-		add_political_power = 100
+		add_political_power = -100
 		add_equipment_to_stockpile = {
 			type = infantry_equipment
 			amount = -100
@@ -136,6 +136,76 @@ country_event = {
 			type = infantry_equipment
 			amount = -100
 			producer = SOM
+		}
+		}
+}
+##MSMSomalia 5 Dervish Victory in Conquest of British Somaliland
+country_event = {
+	title = MSMSomalia.5.t
+	desc = MSMSomalia.5.d
+	id = MSMSomalia.5
+	is_triggered_only = yes
+	option = {
+		name =  MSMSomalia.5.a## Victory!
+		trigger = {tag = SOM}
+		ai_chance = {
+			factor = 60
+		}
+		add_political_power = 150
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 100
+			producer = ENG
+		}
+		transfer_state = 269
+		}
+	option = {
+		name =  MSMSomalia.5.b## Shameful Defeat!
+		trigger = {tag = ENG}
+		ai_chance = {
+			factor = 60
+		}
+		add_political_power = -100
+		add_stability = -0.2
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -100
+			producer = ENG
+		}
+		}
+}
+##MSMSomalia 6 Dervish Victory in Conquest of Italian Somalia
+country_event = {
+	title = MSMSomalia.6.t
+	desc = MSMSomalia.6.d
+	id = MSMSomalia.6
+	is_triggered_only = yes
+	option = {
+		name =  MSMSomalia.6.a## Victory!
+		trigger = {tag = SOM}
+		ai_chance = {
+			factor = 60
+		}
+		add_political_power = 150
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 100
+			producer = ITA
+		}
+		transfer_state = 559
+		}
+	option = {
+		name =  MSMSomalia.6.b## Shameful Defeat!
+		trigger = {tag = ITA}
+		ai_chance = {
+			factor = 60
+		}
+		add_political_power = -100
+		add_stability = -0.2
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -100
+			producer = ITA
 		}
 		}
 }

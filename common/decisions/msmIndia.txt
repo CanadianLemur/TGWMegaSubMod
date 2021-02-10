@@ -140,7 +140,7 @@ indian_affairs = {
 			allowed = {has_completed_focus = MSM_IND_integrate_princely_states}
 			cost = 20
 			
-			visible = {FROM = is_subject_of=ROOT has_completed_focus = MSM_IND_integrate_princely_states }
+			visible = { FROM = {is_subject_of=ROOT} has_completed_focus = MSM_IND_integrate_princely_states }
 			fire_only_once = yes
 			target_trigger = {
 				FROM = {is_subject_of=ROOT	OR = { tag = KAS tag = SIN tag = PUN tag = JAI tag = BAR tag = IDO tag = MYS tag = TRV tag = NEP tag = BHU tag = BAN tag = ASM tag = AFG tag = BRM tag = TIB }}
