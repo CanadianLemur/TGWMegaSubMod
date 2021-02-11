@@ -375,6 +375,10 @@ AUH = {
 color = rgb { 230 230 230 }
 color_ui = rgb { 253 253 253 }
 }
+LMV = {
+color = rgb { 200 250 200 }
+color_ui = rgb { 220 260 220 }
+}
 SER = {
 color = rgb { 12 64 118 }
 color_ui = rgb { 13 70 130 }

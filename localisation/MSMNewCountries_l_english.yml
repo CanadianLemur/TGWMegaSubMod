@@ -386,7 +386,17 @@
  GXC:0 "Guangxi"
  GXC_neutrality:0 "Guangxi Clique"
  GDC:0 "Guangdong"
+ GDC_DEF:0"Guangdong"
+ GDC_ADJ:0"Guangdong"
  GDC_neutrality:0 "Guangdong Clique"
+ GDC_neutrality_DEF:0"Guangdong Clique"
+ GDC_neutrality_ADJ:0"Guangdong Clique"
+ LMV:0"Lombardy Venetia"
+ LMV_DEF:0"The Kingdom of Lombardy-Venetia"
+ LMV_ADJ:0"Lombardy-Venetian"
+ 
+ 
+ 
  
  NSP:0 "Viceroyalty of New Spain"
  NSP_DEF:0 "The Viceroyalty of New Spain"

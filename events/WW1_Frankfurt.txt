@@ -458,9 +458,21 @@ country_event = {
 						has_war_with = ITA
 					}
 				}
-				AUH = {
+				LMV = {
 					transfer_state = 160		# VENETIA
+					transfer_state = 159		# LOMBARDY
+					create_country_leader = {
+						name = "Maximillian Eugen"
+						desc = "MAXIMILLIAN_EUGEN_DESC"
+						picture = "gfx/leaders/LMV_Maximilian_Eugen.dds"
+						expire = "1952.1.1"
+						ideology = despotism
+						traits = {
+							
+						}
+					}
 				}
+				AUH = {puppet = LMV}
 				every_state = {
 					limit = {
 						AND = {
@@ -476,10 +488,11 @@ country_event = {
 				
 				ETH = {
 					transfer_state = 550		# ERITREA
-					transfer_state = 559		# SOMALILAND
+					transfer_state = 268		# SOMALILAND
+				}
+				SOM = {
 					transfer_state = 269		# British Somaliland
 					transfer_state = 559		# Italian Somaliland
-					
 				}
 			}
 			
