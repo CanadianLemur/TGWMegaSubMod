@@ -959,12 +959,12 @@ technologies = {
 			position = { x = 0 y = @1930 }
 		}
 		
-		on_research_complete = {
-			limit = {
-				NOT = {
-					has_template_containing_unit = paratrooper
-				}
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = paratrooper
 			}
+		}
+		on_research_complete = {
 			hidden_effect = {
 				load_oob = "unlock_paratroopers"
 			}
@@ -1037,15 +1037,15 @@ technologies = {
 			marine
 		}
 		
-		on_research_complete = {
-			limit = {
-				NOT = {
-					has_template_containing_unit = marine
-				}
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = marine
 			}
+		}
+		on_research_complete = {
 			hidden_effect = {
 				load_oob = "unlock_marines"
-			}			
+			}
 			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 
@@ -1185,12 +1185,12 @@ technologies = {
 			mountaineers
 		}
 
-		on_research_complete = {
-			limit = {
-				NOT = {
-					has_template_containing_unit = mountaineers
-				}
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = mountaineers
 			}
+		}
+		on_research_complete = {
 			hidden_effect = {
 				load_oob = "unlock_mountaineers"
 			}

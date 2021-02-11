@@ -1,138 +1,136 @@
-dervish_war = {
+dervish_war = { 
 	raid_british_somaliland = {
-			allowed = {has_idea = SOM_dervishes}
-			cost = 50
-			visible = {has_idea = SOM_dervishes NOT = {owns_state = 269}}
-			available = {NOT = {has_global_flag = somalia_raid_underway}}
-			state_target = yes
-			targets = { 269 }
-			complete_effect = {
-			start_border_war = {
-			change_state_after_war = no
-			attacker = {
-				state = 834
-				num_provinces = 1
-				on_win = MSMSomalia.1
-				on_lose = MSMSomalia.2
-			}
-				
-			defender = {
-				state = 269
-				num_provinces = 1
-				on_win = MSMSomalia.2
-				on_lose = MSMSomalia.1
-			}
+		cost = 50
+		visible = { has_idea = SOM_dervishes NOT = { owns_state = 269 } }
+		available = { NOT = { has_global_flag = somalia_raid_underway } }
+		state_target = yes
+		targets = { 269 }
+		complete_effect = { 
+			start_border_war = { 
+				change_state_after_war = no
+				attacker = { 
+					state = 834
+					num_provinces = 1
+					on_win = MSMSomalia.1
+					on_lose = MSMSomalia.2
+				}
+
+				defender = { 
+					state = 269
+					num_provinces = 1
+					on_win = MSMSomalia.2
+					on_lose = MSMSomalia.1
+				}
 			}
 			set_global_flag = somalia_raid_underway
-			}
-			ai_will_do = {
-				factor = 30
-			}
-			days_remove = 90
-			remove_effect = {
+		}
+		ai_will_do = { 
+			factor = 30
+		}
+		days_remove = 90
+		remove_effect = { 
 			clr_global_flag = somalia_raid_underway
-			}
-			}
+		}
+	}
+
 	conquer_british_somaliland = {
-			allowed = {has_idea = SOM_dervishes}
-			cost = 50
-			visible = {has_idea = SOM_dervishes NOT = {owns_state = 269}}
-			available = {NOT = {has_global_flag = somalia_raid_underway  FROM = {resistance < 80}}}
-			state_target = yes
-			targets = { 269 }
-			complete_effect = {
-			start_border_war = {
-			change_state_after_war = no
-			attacker = {
-				state = 834
-				num_provinces = 1
-				on_win = MSMSomalia.5
-				on_lose = MSMSomalia.2
-			}
-				
-			defender = {
-				state = 269
-				num_provinces = 1
-				on_win = MSMSomalia.5
-				on_lose = MSMSomalia.1
-			}
+		cost = 50
+		visible = { has_idea = SOM_dervishes NOT = { owns_state = 269 } }
+		available = { NOT = { has_global_flag = somalia_raid_underway  FROM = { resistance < 80 } } }
+		state_target = yes
+		targets = { 269 }
+		complete_effect = { 
+			start_border_war = { 
+				change_state_after_war = no
+				attacker = { 
+					state = 834
+					num_provinces = 1
+					on_win = MSMSomalia.5
+					on_lose = MSMSomalia.2
+				}
+				defender = { 
+					state = 269
+					num_provinces = 1
+					on_win = MSMSomalia.5
+					on_lose = MSMSomalia.1
+				}
 			}
 			set_global_flag = somalia_raid_underway
-			}
-			ai_will_do = {
-				factor = 30
-			}
-			days_remove = 90
-			remove_effect = {
+		}
+		ai_will_do = { 
+			factor = 30
+		}
+		days_remove = 90
+		remove_effect = { 
 			clr_global_flag = somalia_raid_underway
-			}
-			}
+		}
+	}
+
 	raid_italian_somalia = {
-			allowed = {has_idea = SOM_dervishes}
-			cost = 50
-			visible = {has_idea = SOM_dervishes NOT = {owns_state = 559}}
-			available = {NOT = {has_global_flag = somalia_raid_underway}}
-			state_target = yes
-			targets = { 559 }
-			complete_effect = {
-			start_border_war = {
-			change_state_after_war = no
-			attacker = {
-				state = 834
-				num_provinces = 1
-				on_win = MSMSomalia.3
-				on_lose = MSMSomalia.4
-			}
-				
-			defender = {
-				state = 559
-				num_provinces = 1
-				on_win = MSMSomalia.4
-				on_lose = MSMSomalia.3
-			}
+		cost = 50
+		visible = { has_idea = SOM_dervishes NOT = { owns_state = 559 } }
+		available = { NOT = { has_global_flag = somalia_raid_underway } }
+		state_target = yes
+		targets = { 559 }
+		complete_effect = { 
+			start_border_war = { 
+				change_state_after_war = no
+				attacker = { 
+					state = 834
+					num_provinces = 1
+					on_win = MSMSomalia.3
+					on_lose = MSMSomalia.4
+				}
+
+				defender = { 
+					state = 559
+					num_provinces = 1
+					on_win = MSMSomalia.4
+					on_lose = MSMSomalia.3
+				}
 			}
 			set_global_flag = somalia_raid_underway
-			}
-				ai_will_do = {
-				factor = 30
-				}
-				days_remove = 90
-							remove_effect = {
+		}
+		ai_will_do = { 
+			factor = 30
+		}
+		days_remove = 90
+		remove_effect = { 
 			clr_global_flag = somalia_raid_underway
-			}
-			}
+		}
+	}
+
 	conquer_italian_somalia = {
-			allowed = {has_idea = SOM_dervishes}
-			cost = 50
-			visible = {has_idea = SOM_dervishes NOT = {owns_state = 559}}
-			available = {NOT = {has_global_flag = somalia_raid_underway FROM = {resistance < 80}}}
-			state_target = yes
-			targets = { 559 }
-			complete_effect = {
-			start_border_war = {
-			change_state_after_war = no
-			attacker = {
-				state = 834
-				num_provinces = 1
-				on_win = MSMSomalia.3
-				on_lose = MSMSomalia.4
-			}
-				
-			defender = {
-				state = 559
-				num_provinces = 1
-				on_win = MSMSomalia.4
-				on_lose = MSMSomalia.3
-			}
+		cost = 50
+		visible = { has_idea = SOM_dervishes NOT = { owns_state = 559 } }
+		available = { NOT = { has_global_flag = somalia_raid_underway FROM = { resistance < 80 } } }
+		state_target = yes
+		targets = { 559 }
+		complete_effect = { 
+			start_border_war = { 
+				change_state_after_war = no
+				attacker = { 
+					state = 834
+					num_provinces = 1
+					on_win = MSMSomalia.3
+					on_lose = MSMSomalia.4
+				}
+
+				defender = { 
+					state = 559
+					num_provinces = 1
+					on_win = MSMSomalia.4
+					on_lose = MSMSomalia.3
+				}
 			}
 			set_global_flag = somalia_raid_underway
-			}
-				ai_will_do = {
-				factor = 30
-				}
-				days_remove = 90
-							remove_effect = {
+		}
+		ai_will_do = { 
+			factor = 30
+		}
+		days_remove = 90
+		remove_effect = { 
 			clr_global_flag = somalia_raid_underway
-			}
-			}
-          }
+		}
+	}
+}

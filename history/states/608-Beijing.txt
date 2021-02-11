@@ -1,32 +1,21 @@
-state={
-	id=608
-	name="STATE_608"
+state = {
+	id = 608
+	name = "STATE_608"
 	manpower = 9648400
-	state_category=large_city
-	provinces={ 1134 4137 4140 6828 9843 9969 11761 12026 }
-	resources={
-		wood=1
-		steel=1
-		}
-	history={
-		victory_points={ 9843 20 }
-		owner=QIN
-		add_core_of=CHI
-		add_core_of=QIN
-		buildings={
-			infrastructure=5
-		}
-		1912.2.12={ owner=CHI }
-		1936.1.1={ 
-			owner=CHI
-			add_core_of=CHI
-			#add_core_of=PRC
-			victory_points={ 9843 20 }
-			buildings={
-				infrastructure=5
-				industrial_complex=1
-				air_base=3
-				arms_factory=3
-			}
-		1938.10.25={ controller=JAP }
+	state_category = large_city
+	provinces = { 1134 4137 4140 6828 9843 9969 11761 12026 }
+	resources = {
+		wood = 1
+		steel = 1
 	}
+	history = {
+		victory_points = { 9843 20 }
+		owner = QIN
+		add_core_of = CHI
+		add_core_of = QIN
+		buildings = {
+			infrastructure = 5
+		}
+		1912.2.12 = { owner = CHI }
+	}
+}

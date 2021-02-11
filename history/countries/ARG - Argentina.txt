@@ -76,10 +76,6 @@ if = {
 		ww1_coastal_submarine1_mtg = 1
 		ww1_coastal_submarine2 = 1
 	}
-	create_equipment_variant={ name="Almirante Brown Class" type=battleship_1890 parent_version = 0 obsolete=yes upgrades={ ship_gun_upgrade=0 ship_armor_upgrade=3 ship_engine_upgrade=0 ship_reliability_upgrade=3           } }
-	create_equipment_variant={ name="Libertad Class" type=battleship_1890 parent_version = 1 obsolete=no upgrades={ ship_gun_upgrade=0 ship_armor_upgrade=0 ship_engine_upgrade=0 ship_reliability_upgrade=0           } }
-	create_equipment_variant={ name="25 De Mayo Class" type=light_cruiser_1890 parent_version = 0 obsolete=yes upgrades={ ship_gun_upgrade=5  ship_engine_upgrade=5 ship_reliability_upgrade=5 ship_anti_air_upgrade=0          } }
-	create_equipment_variant={ name="9 De Julio Class" type=light_cruiser_1890 parent_version = 1 obsolete=no upgrades={ ship_gun_upgrade=5  ship_engine_upgrade=5 ship_reliability_upgrade=5 ship_anti_air_upgrade=0          } }
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }

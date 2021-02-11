@@ -674,11 +674,14 @@ focus_tree = {
 			}
 			if = {
 				limit = { NOR = { is_puppet_of = SWE } } 
-				annex_country = { target = NOR 
-				transfer_troops = yes
-				NOR = {	every_unit_leader = {
-				set_nationality = SWE
-			}}
+				annex_country = { 
+					target = NOR
+					transfer_troops = yes
+				}
+				NOR = {	
+					every_unit_leader = {
+						set_nationality = SWE
+					}
 				}
 			}
 			if = {
@@ -1388,6 +1391,30 @@ focus_tree = {
 	}
 
 	focus = {
+		id = SWE_ww1_contest_kejsare_authority
+		prerequisite = { focus=SWE_ww1_political_effort }
+		relative_position_id = SWE_ww1_political_effort
+		icon = GFX_goal_anschluss
+		available = { }
+		completion_reward = { 
+		add_stability = 0.05
+		add_popularity = {
+		ideology = communism
+		popularity = 0.1
+		}
+		add_popularity = {
+		ideology = democratic
+		popularity = 0.1
+		}
+		}
+		cost = 10
+		x = 1
+		y = 1
+		mutually_exclusive = { focus=SWE_ww1_reinforce_kejsare_authority }
+		ai_will_do = { factor = 0 }
+	}
+
+	focus = {
 		id = SWE_ww1_internationalism_focus
 		prerequisite = { focus=SWE_ww1_contest_kejsare_authority }
 		relative_position_id = SWE_ww1_contest_kejsare_authority
@@ -1412,30 +1439,6 @@ focus_tree = {
 		x = 2
 		y = 1
 		mutually_exclusive = { focus=SWE_ww1_democracy }
-	}
-
-	focus = {
-		id = SWE_ww1_contest_kejsare_authority
-		prerequisite = { focus=SWE_ww1_political_effort }
-		relative_position_id = SWE_ww1_political_effort
-		icon = GFX_goal_anschluss
-		available = { }
-		completion_reward = { 
-		add_stability = 0.05
-		add_popularity = {
-		ideology = communism
-		popularity = 0.1
-		}
-		add_popularity = {
-		ideology = democratic
-		popularity = 0.1
-		}
-		}
-		cost = 10
-		x = 1
-		y = 1
-		mutually_exclusive = { focus=SWE_ww1_reinforce_kejsare_authority }
-		ai_will_do = { factor = 0 }
 	}
 
 	focus = {

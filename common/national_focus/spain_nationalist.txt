@@ -3304,8 +3304,8 @@ focus = {
 			focus = {
 		id = SPR_direct_control_of_venezuelan_oil
 		icon = GFX_goal_generic_oil_refinery
-		available = {489 = {owner = {is_subject_of = SPR = yes}}
-		307 = {owner = {is_subject_of = SPR = yes}}
+		available = {489 = {owner = {is_subject_of = SPR}}
+		307 = {owner = {is_subject_of = SPR}}
 		}
 		prerequisite = { focus = SPR_encourage_exports}
 
@@ -3324,9 +3324,9 @@ focus = {
 			focus = {
 		id = SPR_the_benefits_of_conquest
 		icon = GFX_goal_generic_positive_trade_relations
-		available = {378 = {owner = {is_subject_of = SPR = yes}}
-		375 = {owner = {is_subject_of = SPR = yes}}
-		379 = {owner = {is_subject_of = SPR = yes}}
+		available = {378 = {owner = {is_subject_of = SPR}}
+		375 = {owner = {is_subject_of = SPR}}
+		379 = {owner = {is_subject_of = SPR}}
 		}
 		prerequisite = { focus = SPR_encourage_exports}
 

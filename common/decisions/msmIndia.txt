@@ -1,203 +1,237 @@
-indian_affairs = {
-	demand_vassalization = {
-			allowed = {has_completed_focus = MSM_IND_vassalize_princely_states}
-			cost = 20
-			visible = {is_subject=no has_completed_focus = MSM_IND_vassalize_princely_states}
-			fire_only_once = yes
-			target_trigger = {
-				FROM = {	is_subject = NO		OR = { tag = KAS tag = SIN tag = PUN tag = JAI tag = BAR tag = IDO tag = MYS tag = TRV tag = NEP tag = BHU tag = BAN tag = ASM }}
-			}
-			    available = {
-				FROM = { has_war = no }
+indian_affairs = { 
+	demand_vassalization = { 
+		visible = { has_completed_focus = MSM_IND_vassalize_princely_states }
+		cost = 20
+		visible = { is_subject = no has_completed_focus = MSM_IND_vassalize_princely_states }
+		fire_only_once = yes
+		target_trigger = { 
+			FROM = { 
+				is_subject = NO	
+				OR = { 
+					tag = KAS 
+					tag = SIN 
+					tag = PUN 
+					tag = JAI 
+					tag = BAR 
+					tag = IDO 
+					tag = MYS 
+					tag = TRV 
+					tag = NEP 
+					tag = BHU 
+					tag = BAN 
+					tag = ASM 
 				}
-			complete_effect = {
-			FROM = {country_event = {
-			days = 3
-			id =  MSMIndia.8
-			}
-			}
-			}
-          }
-	demand_vassalization_TIB = {
-			allowed = {has_completed_focus = MSM_IND_northern_policy}
-			cost = 100
-			visible = {is_subject=no has_completed_focus = MSM_IND_northern_policy}
-			fire_only_once = yes
-			target_trigger = {
-				FROM = {	is_subject = NO	 tag = TIB}
-			}
-			    available = {
-				FROM = { has_war = no }
-				}
-			complete_effect = {
-			FROM = {country_event = {
-			days = 3
-			id =  MSMIndia.8
-			}
-			}
-			}
-          }
-	demand_vassalization_BRM = {
-			allowed = {has_completed_focus = MSM_IND_eastern_policy}
-			cost = 100
-			visible = {is_subject=no has_completed_focus = MSM_IND_eastern_policy}
-			fire_only_once = yes
-			target_trigger = {
-				FROM = {	is_subject = NO	 tag = BRM}
-			}
-			    available = {
-				FROM = { has_war = no }
-				}
-			complete_effect = {
-			FROM = {country_event = {
-			days = 3
-			id =  MSMIndia.8
-			}
-			}
-			}
-          }
-	demand_vassalization_AFG = {
-			allowed = {has_completed_focus = MSM_IND_western_policy}
-			cost = 200
-			visible = {is_subject=no has_completed_focus = MSM_IND_western_policy}
-			fire_only_once = yes
-			target_trigger = {
-				FROM = {	is_subject = NO	 tag = AFG}
-			}
-			    available = {
-				FROM = { has_war = no }
-				}
-			complete_effect = {
-			FROM = {country_event = {
-			days = 3
-			id =  MSMIndia.14
-			}
-			}
-			}
-          }
-	demand_baluchistan = {
-			allowed = {has_completed_focus = MSM_IND_western_policy}
-			cost = 150
-			visible = {is_subject=no has_completed_focus = MSM_IND_western_policy}
-			fire_only_once = yes
-			target_trigger = {
-				FROM = { OR = {owns_state = 410 owns_state = 444 }tag = PER}
-			}
-			    available = {
-				FROM = { has_war = no }
-				}
-			complete_effect = {
-			FROM = {country_event = {
-			days = 3
-			id =  MSMIndia.15
-			}
-			410 = {
-			add_core_of = PAK
-			add_claim_by = ROOT
-			}
-			}
-			}
-          }
-	purchase_port = {
-			allowed = {has_completed_focus = MSM_IND_southern_policy}
-			cost = 100
-			visible = {is_subject=no has_completed_focus = MSM_IND_southern_policy}
-			fire_only_once = yes
-			target_trigger = {
-				FROM = { OR = {owns_state = 321 owns_state = 320 }}
-			}
-			    available = {
-				FROM = { NOT = {has_war_with = ROOT} }
-				}
-			complete_effect = {
-			FROM = {country_event = {
-			days = 3
-			id =  MSMIndia.10
-			}
-			}
-			}
-          }
-	purchase_indian_ocean_islands = {
-			allowed = {has_completed_focus = MSM_IND_southern_policy}
-			cost = 100
-			visible = {is_subject=no has_completed_focus = MSM_IND_southern_policy}
-			fire_only_once = yes
-			target_trigger = {
-				FROM = { OR = {owns_state = 422 owns_state = 281 owns_state = 733 }}
-			}
-			    available = {
-				FROM = { NOT = {has_war_with = ROOT} }
-				}
-			complete_effect = {
-			FROM = {country_event = {
-			days = 3
-			id =  MSMIndia.16
-			}
-			}
-			}
-          }
-	integrate_vassal = {
-			allowed = {has_completed_focus = MSM_IND_integrate_princely_states}
-			cost = 20
-			
-			visible = { FROM = {is_subject_of=ROOT} has_completed_focus = MSM_IND_integrate_princely_states }
-			fire_only_once = yes
-			target_trigger = {
-				FROM = {is_subject_of=ROOT	OR = { tag = KAS tag = SIN tag = PUN tag = JAI tag = BAR tag = IDO tag = MYS tag = TRV tag = NEP tag = BHU tag = BAN tag = ASM tag = AFG tag = BRM tag = TIB }}
-			}
-			    available = {
-				FROM = { has_war = NO 	compare_autonomy_state < autonomy_puppet	}
-				}
-			days_remove = 120
-			remove_effect = {
-			annex_country = {
-			target = FROM
-			transfer_troops = yes
-			}
-			FROM = {
-			every_unit_leader = {
-				set_nationality = ROOT
 			}
 		}
-			every_state = {limit = {is_core_of = FROM} add_core_of = Root}
+		available = { 
+			FROM = { has_war = no }
+		}
+		complete_effect = { 
+			FROM = { 
+				country_event = { 
+					days = 3
+					id =  MSMIndia.8
+				}
 			}
+		}
+    }
+	demand_vassalization_TIB = { 
+		visible = { has_completed_focus = MSM_IND_northern_policy }
+		cost = 100
+		visible = { 
+			is_subject = no 
+			has_completed_focus = MSM_IND_northern_policy
+		}
+		fire_only_once = yes
+		target_trigger = { FROM = { is_subject = NO	 tag = TIB } }
+		available = { FROM = { has_war = no } }
+		complete_effect = { 
+			FROM = { 
+				country_event = { 
+					days = 3
+					id =  MSMIndia.8
+				}
 			}
-	integrate_indian_state = {
-	
-	icon = generic_form_nation
-	cost = 60
-	state_target = yes
-	fire_only_once = yes
-	days_remove = 90
-	visible = {
-	NOT = { FROM = {is_core_of = ROOT }}	
-	has_completed_focus = MSM_IND_integrate_india
-	OR = { FROM = {is_core_of=RAJ} FROM = {is_core_of=PAK} FROM = {is_core_of = BRM} FROM = {is_core_of = MLD} FROM = {is_core_of = SRL } FROM = {is_core_of = AFG } }
-	FROM = { is_owned_and_controlled_by = ROOT }
-	}
-	allowed = {
-		OR = {FROM = {is_core_of=RAJ} FROM = {is_core_of=PAK}}
-		FROM = {is_owned_and_controlled_by = ROOT}
-	}
-	available = {
-	has_stability >0.5
-	FROM ={compliance > 60 }
-	}
-	complete_effect = { 
-	add_stability = -0.05 
-	}
-	remove_effect = {
-		FROM = {
-		add_core_of = ROOT
 		}
 	}
+	demand_vassalization_BRM = { 
+		visible = { has_completed_focus = MSM_IND_eastern_policy }
+		cost = 100
+		visible = { is_subject = no has_completed_focus = MSM_IND_eastern_policy }
+		fire_only_once = yes
+		target_trigger = { 
+			FROM = { is_subject = NO tag = BRM }
+		}
+		available = { FROM = { has_war = no } }
+		complete_effect = { 
+			FROM = { 
+				country_event = { 
+					days = 3
+					id =  MSMIndia.8
+				}
+			}
+		}
+    }
+	demand_vassalization_AFG = { 
+		visible = { has_completed_focus = MSM_IND_western_policy }
+		cost = 200
+		visible = { 
+			is_subject = no 
+			has_completed_focus = MSM_IND_western_policy
+		}
+		fire_only_once = yes
+		target_trigger = { FROM = { is_subject = NO	tag = AFG } }
+		available = { FROM = { has_war = no } }
+		complete_effect = { 
+			FROM = { 
+				country_event = { 
+					days = 3
+					id =  MSMIndia.14
+				}
+			}
+		}
+    }
+	demand_baluchistan = { 
+		visible = { has_completed_focus = MSM_IND_western_policy }
+		cost = 150
+		visible = { 
+			is_subject = no 
+			has_completed_focus = MSM_IND_western_policy
+		}
+		fire_only_once = yes
+		target_trigger = { FROM = { OR = { owns_state = 410 owns_state = 444 }tag = PER } }
+		available = { FROM = { has_war = no } }
+		complete_effect = { 
+			FROM = { 
+				country_event = { 
+					days = 3
+					id =  MSMIndia.15
+				}
+				410 = { 
+					add_core_of = PAK
+					add_claim_by = ROOT
+				}
+			}
+		}
 	}
-			
-			
-			
-			
-			
-			
-          }
-		  }
+	purchase_port = { 
+		visible = { has_completed_focus = MSM_IND_southern_policy }
+		cost = 100
+		visible = { 
+			is_subject = no 
+			has_completed_focus = MSM_IND_southern_policy
+		}
+		fire_only_once = yes
+		target_trigger = { FROM = { OR = { owns_state = 321 owns_state = 320 } } }
+		available = { FROM = { NOT = { has_war_with = ROOT } } }
+		complete_effect = { 
+			FROM = { 
+				country_event = { 
+					days = 3
+					id =  MSMIndia.10
+				}
+			}
+		}
+	}
+	purchase_indian_ocean_islands = { 
+		visible = { has_completed_focus = MSM_IND_southern_policy }
+		cost = 100
+		visible = { 
+			is_subject = no 
+			has_completed_focus = MSM_IND_southern_policy
+		}
+		fire_only_once = yes
+		target_trigger = { FROM = { OR = { owns_state = 422 owns_state = 281 owns_state = 733 } } }
+		available = { FROM = { NOT = { has_war_with = ROOT } } }
+		complete_effect = { 
+			FROM = { 
+				country_event = { 
+					days = 3
+					id =  MSMIndia.16
+				}
+			}
+		}
+	}
+	integrate_vassal = { 
+		visible = { has_completed_focus = MSM_IND_integrate_princely_states }
+		cost = 20
+		
+		visible = { 
+			FROM = { is_subject_of = ROOT } 
+			has_completed_focus = MSM_IND_integrate_princely_states 
+		}
+		fire_only_once = yes
+		target_trigger = { 
+			FROM = { 
+				is_subject_of = ROOT	
+				OR = { 
+					tag = KAS 
+					tag = SIN 
+					tag = PUN 
+					tag = JAI 
+					tag = BAR 
+					tag = IDO 
+					tag = MYS 
+					tag = TRV 
+					tag = NEP 
+					tag = BHU 
+					tag = BAN 
+					tag = ASM 
+					tag = AFG 
+					tag = BRM 
+					tag = TIB
+				}
+			}
+		}
+		available = { FROM = { has_war = NO compare_autonomy_state < autonomy_puppet } }
+		days_remove = 120
+		remove_effect = { 
+			annex_country = { 
+				target = FROM
+				transfer_troops = yes
+			}
+			FROM = { 
+				every_unit_leader = { 
+					set_nationality = ROOT
+				}
+			}
+			every_state = { 
+				limit = { is_core_of = FROM } 
+				add_core_of = ROOT
+			}
+		}
+	}
 	
+	integrate_indian_state = { 
+		icon = generic_form_nation
+		cost = 60
+		state_target = yes
+		fire_only_once = yes
+		days_remove = 90
+		visible = { 
+			NOT = { FROM = { is_core_of = ROOT } }	
+			has_completed_focus = MSM_IND_integrate_india
+			OR = { 
+				FROM = { is_core_of = RAJ } 
+				FROM = { is_core_of = PAK } 
+				FROM = { is_core_of = BRM } 
+				FROM = { is_core_of = MLD } 
+				FROM = { is_core_of = SRL } 
+				FROM = { is_core_of = AFG }
+			}
+			FROM = { is_owned_and_controlled_by = ROOT }
+		}
+		available = { 
+			has_stability >0.5
+			FROM = { compliance > 60 }
+		}
+		complete_effect = { 
+			add_stability = -0.05 
+		}
+		remove_effect = { 
+			FROM = { 
+				add_core_of = ROOT
+			}
+		}
+	}
+}

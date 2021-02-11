@@ -2444,7 +2444,7 @@ focus_tree = {
 				controls_state = 87
 				controls_state = 98
 				controls_state = 10
-		`		controls_state = 90
+				controls_state = 90
 				controls_state = 88
 				controls_state = 92
 				controls_state = 93
@@ -2743,7 +2743,7 @@ focus_tree = {
 		id = GER_ww1_war_plans_a_falling_out
 		relative_position_id = GER_ww1_war_plans_the_question_of_allegiance
 		prerequisite = { focus=GER_ww1_war_plans_the_question_of_allegiance }
-		mutually_exclusive = { focus = }
+		mutually_exclusive = { focus = GER_ww1_war_plans_an_eastern_ally }
 		icon = GFX_goal_generic_occupy_start_war
 		completion_reward = {
 			#Get the russians to become neutral
@@ -3245,20 +3245,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_ww1_fighter_focus
-		relative_position_id = GER_ww1_aviation_effort_3
-		prerequisite = { focus=GER_ww1_aviation_effort_2 }
-		available = { date > 1911.1.1 }
-		icon = GFX_goal_generic_air_fighter
-		completion_reward = { add_tech_bonus={ name=fighter_bonus bonus=0.15 uses=1 technology=ww1_fighter1 technology=ww1_fighter1b technology=ww1_fighter2 technology=ww1_fighter2b } }
-		ai_will_do = { factor = 10 }
-		cost = 10
-		x = -2
-		y = 1
-		mutually_exclusive = { focus=GER_ww1_bomber_focus }
-	}
-
-	focus = {
 		id = GER_ww1_bomber_focus
 		relative_position_id = GER_ww1_aviation_effort_2
 		prerequisite = { focus=GER_ww1_aviation_effort_2 }
@@ -3283,6 +3269,20 @@ focus_tree = {
 		cost = 10
 		x = 0
 		y = 1
+	}
+	
+	focus = {
+		id = GER_ww1_fighter_focus
+		relative_position_id = GER_ww1_aviation_effort_3
+		prerequisite = { focus=GER_ww1_aviation_effort_2 }
+		available = { date > 1911.1.1 }
+		icon = GFX_goal_generic_air_fighter
+		completion_reward = { add_tech_bonus={ name=fighter_bonus bonus=0.15 uses=1 technology=ww1_fighter1 technology=ww1_fighter1b technology=ww1_fighter2 technology=ww1_fighter2b } }
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = -2
+		y = 1
+		mutually_exclusive = { focus=GER_ww1_bomber_focus }
 	}
 
 	focus = {
@@ -4516,26 +4516,6 @@ focus_tree = {
 		y = 1
 	}
 
-
-	focus = {
-		id = GER_ww1_Constantinopolis #341
-		icon = GFX_focus_hol_war_on_pacifism
-		relative_position_id = GER_ww1_Hierusalem
-
-		available = { 
-			has_global_flag = kis_teutonic_order_has_been_restored
-		}
-
-		completion_reward = {
-               add_state_claim = 341
-        }
-
-		ai_will_do = {	factor = 0	}
-		cost = 10
-		x = 2
-		y = 0
-	}
-
 	focus = {
 		id = GER_ww1_Hierusalem
 		icon = GFX_goal_demand_sudetenland
@@ -4556,6 +4536,25 @@ focus_tree = {
 		cost = 10
 		x = 0
 		y = 2
+	}
+	
+	focus = {
+		id = GER_ww1_Constantinopolis #341
+		icon = GFX_focus_hol_war_on_pacifism
+		relative_position_id = GER_ww1_Hierusalem
+
+		available = { 
+			has_global_flag = kis_teutonic_order_has_been_restored
+		}
+
+		completion_reward = {
+               add_state_claim = 341
+        }
+
+		ai_will_do = {	factor = 0	}
+		cost = 10
+		x = 2
+		y = 0
 	}
 
 	focus = {
@@ -4589,6 +4588,37 @@ focus_tree = {
 	################ INTERWAR START (Treaty of Versailles)
 	
 	# 0.5.1 (03/2018)
+
+	focus = {
+		id = GER_interwar_beer_AntiSpartacists # Crush the Spartacists
+
+		icon = GFX_goal_generic_secret_weapon
+		mutually_exclusive = { focus = GER_interwar_beer_ProSpartacists focus = GER_interwar_easing_tensions focus = GER_interwar_beer_hall_putsch }
+		relative_position_id = GER_interwar_easing_tensions
+
+		available = {
+			has_war = no
+			is_puppet = no		
+			NOT = { has_government = fascism }
+			NOT = { has_government = communism }
+			has_global_flag = kis_treaty_of_versailles
+		}
+
+		x = -2
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 0	
+		}
+
+		completion_reward = {
+			add_popularity = { ideology = communism popularity = -0.15 }
+			add_political_power = -30
+			add_stability = -0.15
+		}
+	}
 
 	# The Locarno Treaties
 	focus = {
@@ -4813,37 +4843,6 @@ focus_tree = {
 			add_to_war = { targeted_alliance = SOV enemy = POL hostility_reason = asked_to_join }
 		}
 	}
-
-	focus = {
-		id = GER_interwar_beer_AntiSpartacists # Crush the Spartacists
-
-		icon = GFX_goal_generic_secret_weapon
-		mutually_exclusive = { focus = GER_interwar_beer_ProSpartacists focus = GER_interwar_easing_tensions focus = GER_interwar_beer_hall_putsch }
-		relative_position_id = GER_interwar_easing_tensions
-
-		available = {
-			has_war = no
-			is_puppet = no		
-			NOT = { has_government = fascism }
-			NOT = { has_government = communism }
-			has_global_flag = kis_treaty_of_versailles
-		}
-
-		x = -2
-		y = 0
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 0	
-		}
-
-		completion_reward = {
-			add_popularity = { ideology = communism popularity = -0.15 }
-			add_political_power = -30
-			add_stability = -0.15
-		}
-	}
 	
 	focus = {
 		id = GER_interwar_rightful_leader # Crush the Spartacists
@@ -4907,19 +4906,10 @@ focus_tree = {
 		}
 	}
 
-
-
-
-
-
-
-
-
-
 	# Beer Hall Putsch - IRL: 8-9 November 1923
 	focus = {
 		id = GER_interwar_beer_hall_putsch
-
+		mutually_exclusive = { focus = GER_interwar_beer_ProSpartacists focus = GER_interwar_beer_AntiSpartacists focus = GER_interwar_easing_tensions }
 		icon = GFX_goal_generic_political_pressure
 		allow_branch = {NOT = {has_global_flag = kis_second_treaty_frankfort}}
 		available = {
@@ -4981,39 +4971,6 @@ focus_tree = {
 		}
 	}
 
-	# Mein Kampf
-	focus = {
-		id = GER_interwar_Reichstag_Fire_Decree # Reichstag Fire Decree
-
-		icon = GFX_focus_ger_reichskommisariats
-
-		relative_position_id = GER_interwar_hitler_chancellor
-		prerequisite = { focus = GER_interwar_hitler_chancellor }
-
-		available = {
-			has_government = fascism
-		}
-
-		x = 0
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1	
-		}
-		completion_reward = {
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.10
-			}
-			add_popularity = {
-				ideology = communism
-				popularity = -0.20
-			}
-		}
-	}
-	
 	# Name Hitler Chancellor of Germany (IRL : Jan 30, 1933)
 	focus = {
 		id = GER_interwar_hitler_chancellor
@@ -5068,12 +5025,39 @@ focus_tree = {
 		}
 	}
 
+	# Mein Kampf
+	focus = {
+		id = GER_interwar_Reichstag_Fire_Decree # Reichstag Fire Decree
 
+		icon = GFX_focus_ger_reichskommisariats
+
+		relative_position_id = GER_interwar_hitler_chancellor
+		prerequisite = { focus = GER_interwar_hitler_chancellor }
+
+		available = {
+			has_government = fascism
+		}
+
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1	
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.10
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.20
+			}
+		}
+	}
 	
-
-
-
-
 	# Night of the Long Knives (IRL: June 30 – July 2, 1934)
 	focus = {
 		id = GER_interwar_night_long_knives
@@ -7744,8 +7728,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_rhineland
-		icon = GFX_goal_generic_military_sphere
-		mutually_exclusive = { focus = GER_oppose_hitler }
+		icon = GFX_goal_generic_military_sphere 
 		prerequisite = { focus = GER_interwar_night_long_knives }
 		relative_position_id = GER_interwar_night_long_knives
 		x = 0

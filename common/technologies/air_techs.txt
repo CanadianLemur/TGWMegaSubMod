@@ -6,15 +6,6 @@ technologies = {
 			ww1_fighter_equipment_1
 		}
 
-		if = {
-			limit = {
-				has_dlc = "La Resistance"
-			}
-			enable_equipments = {
-				scout_plane_equipment_1
-			}
-		}
-
 		sub_technologies = sub_technologies={ ww1_fakefighter1 ww1_fighter1b }
 		#sub_technologies = sub_technologies={ ww1_fighter1b }
 	
@@ -51,7 +42,7 @@ technologies = {
 			factor = 2
 		}
 	}
-
+	
 	ww1_fakefighter1 = {	
 		research_cost = 1	
 		categories = {			light_air			light_fighter			air_equipment		}

@@ -1,0 +1,15 @@
+opinion_modifiers = {
+
+	GER_align_hungary = { value = 15 }
+
+	GER_align_romania = { value = 15 }
+
+	GER_accept_british_naval_dominance_opinion = { value = 25 }
+
+	GER_netherlands_kaiser_accept_opinion = { value = 15 }
+
+	GER_netherlands_kaiser_decline_opinion = { value = -60 }
+
+	GER_our_place_in_the_sun = { value = -50 }
+
+}

@@ -39,6 +39,19 @@ ideas = {
 			traits={ fascist_demagogue }
 			ai_will_do={ factor=1 }
 		}
+		GER_albert_einstein = {
+			allowed = { tag = GER }
+			cost = 250
+			research_bonus = {
+				electronics = 0.1
+			}
+			traits = { nuclear_scientist }
+			available = {
+				NOT = { has_government = fascism } 
+				has_completed_focus = GER_ww1_imperial_research_department
+			}
+			ai_will_do = { factor = 10 }
+		}
 		#GER_georg_von_hertling={ allowed={ tag=GER } traits={ backroom_backstabber } ai_will_do={ factor=1 } }
 		#GER_hermann_kuhn={ allowed={ tag=GER } traits={ armaments_organizer } ai_will_do={ factor=1 } }
 		#GER_gustav_bauer={ allowed={ tag=GER } traits={ democratic_reformer } ai_will_do={ factor=1 } }

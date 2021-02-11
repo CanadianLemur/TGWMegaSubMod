@@ -1,5 +1,5 @@
 focus_tree = {
-	id=portugal_ww1_portugal_focus
+	id=portugal_POR_ww1_focus
 	default=no
 	reset_on_civilwar=no
 
@@ -15,7 +15,7 @@ focus_tree = {
 
 
 	focus = {
-		id = ww1_portugal_interwar_Aftermath
+		id = POR_ww1_interwar_Aftermath
 		icon = GFX_focus_generic_treaty
 
 		available = {
@@ -33,10 +33,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ww1_portugal_interwar_Position_RussianCivilWar
+		id = POR_ww1_interwar_Position_RussianCivilWar
 		icon = GFX_goal_generic_army_doctrines
 
-		prerequisite = { focus = ww1_portugal_interwar_Aftermath }
+		prerequisite = { focus = POR_ww1_interwar_Aftermath }
 
 		completion_reward = {
 			add_political_power = 50
@@ -49,11 +49,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ww1_portugal_interwar_Position_RussianCivilWar_SupportWhite
+		id = POR_ww1_interwar_Position_RussianCivilWar_SupportWhite
 		icon = GFX_focus_eng_expose_the_belly_of_the_bear
-		mutually_exclusive = { focus = ww1_portugal_interwar_Position_RussianCivilWar_SupportRed }
+		mutually_exclusive = { focus = POR_ww1_interwar_Position_RussianCivilWar_SupportRed }
 
-		prerequisite = { focus = ww1_portugal_interwar_Position_RussianCivilWar }
+		prerequisite = { focus = POR_ww1_interwar_Position_RussianCivilWar }
 
 		available = {
 			NOT = {
@@ -82,8 +82,8 @@ focus_tree = {
 		ai_will_do = { factor = 0 }
 	}
 	focus = {
-		id = ww1_portugal_SovietFriend # Celebrate Soviet Fraternal Friendship
-		prerequisite = { focus = ww1_portugal_iberian_union_formation }
+		id = POR_ww1_SovietFriend # Celebrate Soviet Fraternal Friendship
+		prerequisite = { focus = POR_ww1_iberian_union_formation }
 
 		icon = GFX_focus_chi_mission_to_the_soviet_union
 
@@ -112,9 +112,9 @@ focus_tree = {
 		ai_will_do = { factor = 0 }
 	}
 	focus = {
-		id = ww1_portugal_interwar_Position_RussianCivilWar_SupportRed
+		id = POR_ww1_interwar_Position_RussianCivilWar_SupportRed
 		icon = GFX_focus_ger_great_red_menace
-		mutually_exclusive = { focus = ww1_portugal_interwar_Position_RussianCivilWar_SupportWhite }
+		mutually_exclusive = { focus = POR_ww1_interwar_Position_RussianCivilWar_SupportWhite }
 
 		available = {
 			has_government = communism
@@ -137,8 +137,8 @@ focus_tree = {
 			}
 		}
 
-		prerequisite = { focus = ww1_portugal_SovietFriend }
-		prerequisite = { focus = ww1_portugal_interwar_Position_RussianCivilWar }
+		prerequisite = { focus = POR_ww1_SovietFriend }
+		prerequisite = { focus = POR_ww1_interwar_Position_RussianCivilWar }
 
 
 		cost = 3
@@ -152,10 +152,10 @@ focus_tree = {
 
 
 	focus = {
-		id = ww1_portugal_interwar_Position_TurkeyCivilWar
+		id = POR_ww1_interwar_Position_TurkeyCivilWar
 		icon = GFX_goal_generic_position_armies
 
-		prerequisite = { focus = ww1_portugal_interwar_Aftermath }
+		prerequisite = { focus = POR_ww1_interwar_Aftermath }
 
 		# Interwar, disabled for Greece, Ottoman Empire and Turkish Republic
 		allow_branch = { 
@@ -179,11 +179,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ww1_portugal_interwar_Position_TurkeyCivilWar_AntiGREECE
+		id = POR_ww1_interwar_Position_TurkeyCivilWar_AntiGREECE
 		icon = GFX_focus_renounce_the_treaty_of_trianon
-		mutually_exclusive = { focus = ww1_portugal_interwar_Position_TurkeyCivilWar_ProGREECE }
+		mutually_exclusive = { focus = POR_ww1_interwar_Position_TurkeyCivilWar_ProGREECE }
 
-		prerequisite = { focus = ww1_portugal_interwar_Position_TurkeyCivilWar }
+		prerequisite = { focus = POR_ww1_interwar_Position_TurkeyCivilWar }
 
 		available = {
 			country_exists = GRE
@@ -206,11 +206,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ww1_portugal_interwar_Position_TurkeyCivilWar_ProGREECE
+		id = POR_ww1_interwar_Position_TurkeyCivilWar_ProGREECE
 		icon = GFX_goal_molotov_ribbentrop_pact
-		mutually_exclusive = { focus = ww1_portugal_interwar_Position_TurkeyCivilWar_AntiGREECE }
+		mutually_exclusive = { focus = POR_ww1_interwar_Position_TurkeyCivilWar_AntiGREECE }
 
-		prerequisite = { focus = ww1_portugal_interwar_Position_TurkeyCivilWar }
+		prerequisite = { focus = POR_ww1_interwar_Position_TurkeyCivilWar }
 
 
 		available = {
@@ -240,10 +240,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ww1_portugal_interwar_Position_Constantinople
+		id = POR_ww1_interwar_Position_Constantinople
 		icon = GFX_goal_generic_cavalry
 
-		prerequisite = { focus = ww1_portugal_interwar_Position_TurkeyCivilWar_ProGREECE }
+		prerequisite = { focus = POR_ww1_interwar_Position_TurkeyCivilWar_ProGREECE }
 
 
 		available = {
@@ -274,11 +274,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ww1_portugal_interwar_Position_TurkeyCivilWar_ProTUR
+		id = POR_ww1_interwar_Position_TurkeyCivilWar_ProTUR
 		icon = GFX_focus_generic_little_entente
-		mutually_exclusive = { focus = ww1_portugal_interwar_Position_TurkeyCivilWar_ProTUK }
+		mutually_exclusive = { focus = POR_ww1_interwar_Position_TurkeyCivilWar_ProTUK }
 
-		prerequisite = { focus = ww1_portugal_interwar_Position_TurkeyCivilWar_AntiGREECE }
+		prerequisite = { focus = POR_ww1_interwar_Position_TurkeyCivilWar_AntiGREECE }
 
 		available = {
 			NOT = { has_war_with = TUR }
@@ -300,9 +300,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ww1_portugal_interwar_Position_TurkeyCivilWar_ProTUK
+		id = POR_ww1_interwar_Position_TurkeyCivilWar_ProTUK
 		icon = GFX_goal_generic_major_alliance
-		mutually_exclusive = { focus = ww1_portugal_interwar_Position_TurkeyCivilWar_ProTUR }
+		mutually_exclusive = { focus = POR_ww1_interwar_Position_TurkeyCivilWar_ProTUR }
 
 		available = {
 			NOT = { has_war_with = TUK }
@@ -317,7 +317,7 @@ focus_tree = {
 			}
 		}
 
-		prerequisite = { focus = ww1_portugal_interwar_Position_TurkeyCivilWar_AntiGREECE }
+		prerequisite = { focus = POR_ww1_interwar_Position_TurkeyCivilWar_AntiGREECE }
 
 		completion_reward = {
 			add_political_power = 50
@@ -331,10 +331,10 @@ focus_tree = {
 
 
 	focus = {
-		id = ww1_portugal_interwar_Position_Poland
+		id = POR_ww1_interwar_Position_Poland
 		icon = GFX_focus_generic_polish_deal
 
-		prerequisite = { focus = ww1_portugal_interwar_Aftermath }
+		prerequisite = { focus = POR_ww1_interwar_Aftermath }
 
 		available = {
 	 		is_puppet = no
@@ -373,7 +373,7 @@ focus_tree = {
 	########################################################################################################################### 
 	
 	focus = {
-		id = ww1_portugal_political
+		id = POR_ww1_political
 		icon = GFX_focus_generic_treaty
 		completion_reward = {
 			add_political_power=50
@@ -384,10 +384,10 @@ focus_tree = {
 		ai_will_do = { factor = 100 }
 	}
 	focus = {
-		id = ww1_portugal_political_avoid_revolution
+		id = POR_ww1_political_avoid_revolution
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		prerequisite = {focus = ww1_portugal_political}
-		mutually_exclusive = {focus=ww1_portugal_political_embrace_revolution}
+		prerequisite = {focus = POR_ww1_political}
+		mutually_exclusive = {focus=POR_ww1_political_embrace_revolution}
 		completion_reward = {
 			add_political_power=-150
 			set_global_flag=kis_portugal_revolution_avoided
@@ -398,9 +398,9 @@ focus_tree = {
 		ai_will_do = { factor = 0 }
 	}
 	focus = {
-		id = ww1_portugal_political_claim_brazil
+		id = POR_ww1_political_claim_brazil
 		icon = GFX_focus_por_reclaim_crown_jewel
-		prerequisite = {focus = ww1_portugal_political_avoid_revolution}
+		prerequisite = {focus = POR_ww1_political_avoid_revolution}
 		completion_reward = {
 	create_wargoal = {
     type = puppet_wargoal_focus
@@ -413,8 +413,8 @@ focus_tree = {
 		ai_will_do = { factor = 100 }
 	}
 	focus = {
-		id = ww1_portugal_centralizedpower
-		prerequisite = { focus=ww1_portugal_political_claim_brazil }
+		id = POR_ww1_centralizedpower
+		prerequisite = { focus=POR_ww1_political_claim_brazil }
 		icon = GFX_goal_molotov_ribbentrop_pact
 
 		completion_reward = {
@@ -431,8 +431,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ww1_portugal_freespeech
-		prerequisite = { focus=ww1_portugal_democracy }
+		id = POR_ww1_freespeech
+		prerequisite = { focus=POR_ww1_democracy }
 		icon = GFX_goal_generic_propaganda
 
 		completion_reward = { add_tech_bonus={ name=industrial_bonus bonus=0.15 uses=1 category=industry } add_political_power=30 }
@@ -444,8 +444,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ww1_portugal_reorganization_act
-		prerequisite = { focus=ww1_portugal_centralizedpower focus=ww1_portugal_freespeech }
+		id = POR_ww1_reorganization_act
+		prerequisite = { focus=POR_ww1_centralizedpower focus=POR_ww1_freespeech }
 		icon = GFX_goal_generic_production2
 		x = 3
 		y = 4
@@ -458,20 +458,20 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ww1_portugal_limited_rearmament
-		prerequisite = { focus=ww1_portugal_reorganization_act }
+		id = POR_ww1_limited_rearmament
+		prerequisite = { focus=POR_ww1_reorganization_act }
 		icon = GFX_goal_generic_consumer_goods
 		completion_reward = { army_experience=10 add_political_power=50 }
 		cost = 10
 		x = 2
 		y = 5
-		mutually_exclusive = { focus=ww1_portugal_full_rearmament }
+		mutually_exclusive = { focus=POR_ww1_full_rearmament }
 		ai_will_do = { factor = 10 }
 	}
 
 	focus = {
-		id = ww1_portugal_full_rearmament
-		prerequisite = { focus=ww1_portugal_reorganization_act }
+		id = POR_ww1_full_rearmament
+		prerequisite = { focus=POR_ww1_reorganization_act }
 		icon = GFX_goal_generic_build_tank
 
 		completion_reward = { army_experience=20 add_political_power=25 }
@@ -479,14 +479,14 @@ focus_tree = {
 		cost = 10
 		x = 4
 		y = 5
-		mutually_exclusive = { focus=ww1_portugal_limited_rearmament }
+		mutually_exclusive = { focus=POR_ww1_limited_rearmament }
 		ai_will_do = { factor = 10 }
 	}
 	focus = {
-		id = ww1_portugal_political_embrace_revolution
+		id = POR_ww1_political_embrace_revolution
 		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = {focus = ww1_portugal_political}
-		mutually_exclusive = {focus=ww1_portugal_political_avoid_revolution}
+		prerequisite = {focus = POR_ww1_political}
+		mutually_exclusive = {focus=POR_ww1_political_avoid_revolution}
 		completion_reward = {
 			add_political_power=50
 		}
@@ -496,10 +496,10 @@ focus_tree = {
 		ai_will_do = { factor = 100 }
 	}
 	focus = {
-		id = ww1_portugal_communism
+		id = POR_ww1_communism
 		icon = GFX_goal_support_communism
-		prerequisite = {focus = ww1_portugal_political_embrace_revolution}
-		mutually_exclusive = {focus=ww1_portugal_democracy}
+		prerequisite = {focus = POR_ww1_political_embrace_revolution}
+		mutually_exclusive = {focus=POR_ww1_democracy}
 		completion_reward = {
 		set_politics = {
 			ruling_party = communism
@@ -515,8 +515,8 @@ focus_tree = {
 		ai_will_do = { factor = 0 }
 	}
 	focus = {
-		id = ww1_portugal_political_correctness
-		prerequisite = { focus=ww1_portugal_communism }
+		id = POR_ww1_political_correctness
+		prerequisite = { focus=POR_ww1_communism }
 		icon = GFX_goal_generic_dangerous_deal
 		completion_reward = { if={ limit={ has_idea=neutrality_idea } remove_ideas=neutrality_idea }		 add_political_power=200 add_ideas=idea_political_correctness }
 		cost = 10
@@ -525,8 +525,8 @@ focus_tree = {
 		ai_will_do = { factor = 10 }
 	}
 	focus = {
-		id = ww1_portugal_indoctrination_focus
-		prerequisite = { focus=ww1_portugal_political_correctness }
+		id = POR_ww1_indoctrination_focus
+		prerequisite = { focus=POR_ww1_political_correctness }
 		icon = GFX_goal_generic_propaganda
 		completion_reward = { add_ideas=indoctrination_focus add_political_power=150 }
 		cost = 10
@@ -536,8 +536,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ww1_portugal_political_commissars
-		prerequisite = { focus=ww1_portugal_indoctrination_focus }
+		id = POR_ww1_political_commissars
+		prerequisite = { focus=POR_ww1_indoctrination_focus }
 		icon = GFX_goal_generic_forceful_treaty
 		available = { }
 		completion_reward = { add_ideas=political_commissars_focus if={ limit={ has_government=fascism } add_popularity={ ideology=fascism popularity=0.2 } } if={ limit={ has_government=communism } add_popularity={ ideology=communism popularity=0.2 } } add_political_power=200 }
@@ -547,8 +547,8 @@ focus_tree = {
 		ai_will_do = { factor = 10 }
 	}
 	focus = {
-		id = ww1_portugal_iberian_union_wargoal
-		prerequisite = { focus=ww1_portugal_political_commissars }
+		id = POR_ww1_iberian_union_wargoal
+		prerequisite = { focus=POR_ww1_political_commissars }
 		icon = GFX_goal_generic_forceful_treaty
 		available = { }
 		completion_reward = {create_wargoal = {
@@ -561,8 +561,8 @@ focus_tree = {
 		ai_will_do = { factor = 10 }
 	}
 	focus = {
-		id = ww1_portugal_iberian_union_formation
-		prerequisite = { focus=ww1_portugal_iberian_union_wargoal }
+		id = POR_ww1_iberian_union_formation
+		prerequisite = { focus=POR_ww1_iberian_union_wargoal }
 		icon = GFX_focus_por_workers_of_iberia
 		available = {SPR = {is_subject_of = ROOT}}
 		completion_reward = {annex_country = {
@@ -592,10 +592,10 @@ unlock_national_focus = POR_the_iberian_socialist_union
 		ai_will_do = { factor = 10 }
 	}
 	focus = {
-		id = ww1_portugal_democracy
+		id = POR_ww1_democracy
 		icon = GFX_goal_support_democracy
-		prerequisite = {focus = ww1_portugal_political_embrace_revolution}
-		mutually_exclusive = {focus=ww1_portugal_communism}
+		prerequisite = {focus = POR_ww1_political_embrace_revolution}
+		mutually_exclusive = {focus=POR_ww1_communism}
 		completion_reward = {
 			add_political_power=50
 		}
@@ -610,7 +610,7 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	########################################################################################################################### 
 
 	focus = {
-		id = ww1_portugal_diplomatic_effort
+		id = POR_ww1_diplomatic_effort
 		icon = GFX_goal_generic_intelligence_exchange
 		completion_reward = {
 			add_political_power=50
@@ -622,8 +622,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_takeposition
-		prerequisite = { focus=ww1_portugal_diplomatic_effort }
+		id = POR_ww1_takeposition
+		prerequisite = { focus=POR_ww1_diplomatic_effort }
 		icon = GFX_goal_generic_propaganda
 		completion_reward = { add_political_power=20 }
 		ai_will_do = { factor = 0 }
@@ -634,8 +634,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_supportgermany
-		prerequisite = { focus=ww1_portugal_takeposition }
+		id = POR_ww1_supportgermany
+		prerequisite = { focus=POR_ww1_takeposition }
 		icon = GFX_hoi4tgw_ironcross
 
 		 	available = {
@@ -662,12 +662,12 @@ unlock_national_focus = POR_the_iberian_socialist_union
 		cost = 10
 		x = 8
 		y = 2
-		mutually_exclusive = { focus=ww1_portugal_supportfrance }
+		mutually_exclusive = { focus=POR_ww1_supportfrance }
 	}
 
 	focus = {
-		id = ww1_portugal_supportfrance
-		prerequisite = { focus=ww1_portugal_takeposition }
+		id = POR_ww1_supportfrance
+		prerequisite = { focus=POR_ww1_takeposition }
 		icon = GFX_hoi4tgw_marianne
 
 		 	available = {
@@ -695,12 +695,12 @@ unlock_national_focus = POR_the_iberian_socialist_union
 		cost = 10
 		x = 10
 		y = 2
-		mutually_exclusive = { focus=ww1_portugal_supportgermany }
+		mutually_exclusive = { focus=POR_ww1_supportgermany }
 	}
 
 	focus = {
-		id = ww1_portugal_supportaustria
-		prerequisite = { focus=ww1_portugal_supportgermany }
+		id = POR_ww1_supportaustria
+		prerequisite = { focus=POR_ww1_supportgermany }
 		icon = GFX_hoi4tgw_austriahungary
 
 		 	available = {
@@ -731,8 +731,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_supportrussia
-		prerequisite = { focus=ww1_portugal_supportfrance }
+		id = POR_ww1_supportrussia
+		prerequisite = { focus=POR_ww1_supportfrance }
 		icon = GFX_hoi4tgw_russianempire
 
 		 	available = {
@@ -763,8 +763,9 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_neutrality_focus
-		prerequisite = { focus=ww1_portugal_diplomatic_effort }
+		id = POR_ww1_neutrality_focus
+		prerequisite = { focus=POR_ww1_diplomatic_effort }
+		mutually_exclusive = { focus = POR_ww1_interventionism_focus }
 		icon = GFX_goal_generic_neutrality_focus
 		completion_reward = { if={ limit={ NOT={ has_idea=neutrality_idea } } add_ideas=neutrality_idea } add_political_power=120 }
 		cost = 10
@@ -773,25 +774,24 @@ unlock_national_focus = POR_the_iberian_socialist_union
 
 		ai_will_do = { factor = 10 }
 
-		# mutually_exclusive = { focus=ww1_portugal_takeposition }
-		mutually_exclusive = { focus=interventionism_focus }
+		# mutually_exclusive = { focus=POR_ww1_takeposition }
 	}
 
 	focus = {
-		id = ww1_portugal_interventionism_focus
-		prerequisite = { focus=ww1_portugal_supportrussia focus=ww1_portugal_supportaustria }
+		id = POR_ww1_interventionism_focus
+		prerequisite = { focus=POR_ww1_supportrussia focus=POR_ww1_supportaustria }
+		mutually_exclusive = { focus=POR_ww1_neutrality_focus }
 		icon = GFX_goal_generic_political_pressure
 		completion_reward = { if={ limit={ has_idea=neutrality_idea } remove_ideas=neutrality_idea }	 set_rule={ can_send_volunteers=yes } add_political_power=150 }
 		ai_will_do = { factor = 10 }
 		cost = 10
 		x = 9
 		y = 4
-		mutually_exclusive = { focus=neutrality_focus }
 	}
 
 	focus = {
-		id = ww1_portugal_military_reserve
-		prerequisite = { focus=ww1_portugal_neutrality_focus }
+		id = POR_ww1_military_reserve
+		prerequisite = { focus=POR_ww1_neutrality_focus }
 		icon = GFX_goal_generic_military_sphere
 
 		completion_reward = {
@@ -807,8 +807,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 
 
 	focus = {
-		id = ww1_portugal_deterrence
-		prerequisite = { focus=ww1_portugal_military_reserve }
+		id = POR_ww1_deterrence
+		prerequisite = { focus=POR_ww1_military_reserve }
 		icon = GFX_goal_generic_defence
 		completion_reward = { add_ideas=deterrence }
 		cost = 10
@@ -818,8 +818,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_volunteer_corps
-		prerequisite = { focus=ww1_portugal_interventionism_focus }
+		id = POR_ww1_volunteer_corps
+		prerequisite = { focus=POR_ww1_interventionism_focus }
 		icon = GFX_goal_generic_allies_build_infantry
 		completion_reward = { add_ideas=volunteer_corps_focus }
 		cost = 10
@@ -829,8 +829,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_foreign_expeditions
-		prerequisite = { focus=ww1_portugal_volunteer_corps }
+		id = POR_ww1_foreign_expeditions
+		prerequisite = { focus=POR_ww1_volunteer_corps }
 		icon = GFX_goal_generic_more_territorial_claims
 		completion_reward = { add_ideas=foreign_expeditions_focus }
 		cost = 10
@@ -840,8 +840,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_embargo_germany
-		prerequisite = { focus = ww1_portugal_deterrence }
+		id = POR_ww1_embargo_germany
+		prerequisite = { focus = POR_ww1_deterrence }
 		available = {
 			GER = {
 				exists = yes
@@ -859,8 +859,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_embargo_france
-		prerequisite = { focus = ww1_portugal_deterrence }
+		id = POR_ww1_embargo_france
+		prerequisite = { focus = POR_ww1_deterrence }
 		available = {
 			FRA = {
 				exists = yes
@@ -878,8 +878,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_sellweapons
-		prerequisite = { focus=ww1_portugal_deterrence }
+		id = POR_ww1_sellweapons
+		prerequisite = { focus=POR_ww1_deterrence }
 		icon = GFX_goal_generic_small_arms
 		available = { threat > 0.50 }
 
@@ -900,8 +900,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 
 
 	focus = {
-		id = ww1_portugal_appeasement
-		prerequisite = { focus=ww1_portugal_sellweapons }
+		id = POR_ww1_appeasement
+		prerequisite = { focus=POR_ww1_sellweapons }
 		icon = GFX_goal_generic_national_unity
 
 		completion_reward = { 
@@ -933,13 +933,13 @@ unlock_national_focus = POR_the_iberian_socialist_union
 		x = 11
 		y = 6
 
-		mutually_exclusive = { focus=ww1_portugal_aggressive_foreign_policy }
+		mutually_exclusive = { focus=POR_ww1_aggressive_foreign_policy }
 		ai_will_do = { factor = 10 }
 	}
 
 	focus = {
-		id = ww1_portugal_aggressive_foreign_policy
-		prerequisite = { focus=ww1_portugal_sellweapons }
+		id = POR_ww1_aggressive_foreign_policy
+		prerequisite = { focus=POR_ww1_sellweapons }
 		icon = GFX_goal_anti_comintern_pact
 
 		completion_reward = {
@@ -969,14 +969,14 @@ unlock_national_focus = POR_the_iberian_socialist_union
 		cost = 10
 		x = 13
 		y = 6
-		mutually_exclusive = { focus=ww1_portugal_appeasement }
+		mutually_exclusive = { focus=POR_ww1_appeasement }
 		ai_will_do = { factor = 0 }
 	}
 
 
 	focus = {
-		id = ww1_portugal_why_we_fight
-		prerequisite = { focus=ww1_portugal_aggressive_foreign_policy }
+		id = POR_ww1_why_we_fight
+		prerequisite = { focus=POR_ww1_aggressive_foreign_policy }
 		icon = GFX_goal_generic_propaganda
 		available = { threat > 0.75 }
 		completion_reward = { if={ limit={ NOT={ has_idea=neutrality_idea } } set_rule={ can_create_factions=yes } } add_ideas=why_we_fight_focus }
@@ -987,9 +987,9 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_joingermany
-		prerequisite = { focus=ww1_portugal_supportaustria  }
-		prerequisite = { focus=ww1_portugal_foreign_expeditions }
+		id = POR_ww1_joingermany
+		prerequisite = { focus=POR_ww1_supportaustria  }
+		prerequisite = { focus=POR_ww1_foreign_expeditions }
 		icon = GFX_goal_generic_territory_or_war
 
 	 	available = {
@@ -1019,9 +1019,9 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_joinfrance
-		prerequisite = { focus=ww1_portugal_supportrussia }
-		prerequisite = { focus=ww1_portugal_foreign_expeditions }
+		id = POR_ww1_joinfrance
+		prerequisite = { focus=POR_ww1_supportrussia }
+		prerequisite = { focus=POR_ww1_foreign_expeditions }
 		icon = GFX_goal_support_democracy
 	 	available = {
 	 		date > 1915.1.1
@@ -1050,8 +1050,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_war_effort
-		prerequisite = { focus=why_we_fight focus=ww1_portugal_joinfrance focus=ww1_portugal_joingermany }
+		id = POR_ww1_war_effort
+		prerequisite = { focus=why_we_fight focus=POR_ww1_joinfrance focus=POR_ww1_joingermany }
 		icon = GFX_goal_generic_army_doctrines
 		available = { has_war=yes is_in_faction=yes }
 
@@ -1066,8 +1066,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_technology_sharing
-		prerequisite = { focus= ww1_portugal_war_effort }
+		id = POR_ww1_technology_sharing
+		prerequisite = { focus= POR_ww1_war_effort }
 		icon = GFX_goal_generic_scientific_exchange
 		available = { has_war=yes is_in_faction=yes }
 		completion_reward = { if={ limit={ original_research_slots < 3 } add_research_slot=1 } if={ limit={ original_research_slots > 2 } add_tech_bonus={ name=electronics_bonus bonus=0.5 uses=1 category=electronics } add_tech_bonus={ name=industrial_bonus bonus=0.15 uses=1 category=industry }	 add_tech_bonus={ name=infantry_weapons_bonus bonus=0.5 uses=1 category=infantry_weapons category=artillery }				 }			 }
@@ -1079,7 +1079,7 @@ unlock_national_focus = POR_the_iberian_socialist_union
 
 
 	focus = {
-		id = ww1_portugal_army_effort
+		id = POR_ww1_army_effort
 		icon = GFX_goal_generic_allies_build_infantry
 		completion_reward = { army_experience=15 add_tech_bonus={ name=land_doc_bonus bonus=0.2 uses=1 category=land_doctrine } }
 		cost = 10
@@ -1089,8 +1089,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 	
 	focus = {
-		id = ww1_portugal_equipment_effort
-		prerequisite = { focus=ww1_portugal_army_effort }
+		id = POR_ww1_equipment_effort
+		prerequisite = { focus=POR_ww1_army_effort }
 		icon = GFX_goal_generic_small_arms
 		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=0.15 uses=1 category=infantry_weapons} }
 		cost = 10
@@ -1100,8 +1100,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_artillery_effort_1
-		prerequisite = { focus=ww1_portugal_army_effort }
+		id = POR_ww1_artillery_effort_1
+		prerequisite = { focus=POR_ww1_army_effort }
 		icon = GFX_goal_generic_army_artillery2
 		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=0.15 uses=1 category=artillery } }
 		cost = 10
@@ -1111,8 +1111,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_artillery_effort_2
-		prerequisite = { focus=ww1_portugal_artillery_effort_1 }
+		id = POR_ww1_artillery_effort_2
+		prerequisite = { focus=POR_ww1_artillery_effort_1 }
 		available = { date > 1912.1.1 }
 		icon = GFX_goal_generic_army_artillery2
 		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=0.15 uses=1 category=artillery } }
@@ -1123,8 +1123,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_artillery_effort_3
-		prerequisite = { focus=ww1_portugal_artillery_effort_2 }
+		id = POR_ww1_artillery_effort_3
+		prerequisite = { focus=POR_ww1_artillery_effort_2 }
 		available = { date > 1914.1.1 }
 		icon = GFX_goal_generic_army_artillery2
 		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=0.15 uses=1 category=artillery } }
@@ -1135,8 +1135,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_doctrine_effort
-		prerequisite = { focus=ww1_portugal_army_effort }
+		id = POR_ww1_doctrine_effort
+		prerequisite = { focus=POR_ww1_army_effort }
 		available = { date > 1911.1.1 }
 		icon = GFX_goal_generic_army_doctrines
 		completion_reward = { army_experience=15 add_tech_bonus={ name=land_doc_bonus bonus=0.2 uses=1 category=land_doctrine } }
@@ -1147,8 +1147,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_equipment_effort_2
-		prerequisite = { focus=ww1_portugal_equipment_effort }
+		id = POR_ww1_equipment_effort_2
+		prerequisite = { focus=POR_ww1_equipment_effort }
 		available = { date > 1912.1.1 }
 		icon = GFX_goal_generic_small_arms
 		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_artillery_bonus bonus=0.15 uses=1 category=infantry_weapons } }
@@ -1160,8 +1160,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 
 
 	focus = {
-		id = ww1_portugal_trenchwarfare
-		prerequisite = { focus=ww1_portugal_equipment_effort }
+		id = POR_ww1_trenchwarfare
+		prerequisite = { focus=POR_ww1_equipment_effort }
 		available = { date > 1911.1.1 }
 		icon = GFX_goal_generic_military_sphere
 		completion_reward = { army_experience=10 add_tech_bonus={ name=trenchwarfare_bonus bonus=0.15 uses=1 technology=support_weapons technology=support_weapons2 technology=support_weapons3 } }
@@ -1173,8 +1173,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 
 
 	focus = {
-		id = ww1_portugal_gasmask_focus
-		prerequisite = { focus=ww1_portugal_trenchwarfare }
+		id = POR_ww1_gasmask_focus
+		prerequisite = { focus=POR_ww1_trenchwarfare }
 		available = { date > 1913.1.1 }
 		icon = GFX_hoi4tgw_gasmask
 		completion_reward = { army_experience=15 add_tech_bonus={ name=gasmask_bonus bonus=0.15 uses=1 technology=infantry_gasmask technology=chemical_research2 technology=chemical_research3 } }
@@ -1185,8 +1185,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_special_forces
-		prerequisite = { focus=ww1_portugal_gasmask_focus }
+		id = POR_ww1_special_forces
+		prerequisite = { focus=POR_ww1_gasmask_focus }
 		available = { date > 1915.1.1 }
 		icon = GFX_goal_generic_special_forces
 		completion_reward = { army_experience=15 add_tech_bonus={ name=special_forces_bonus bonus=0.15 uses=1 technology=marines technology=marines2 technology=tech_mountaineers technology=tech_mountaineers2 } }
@@ -1198,10 +1198,10 @@ unlock_national_focus = POR_the_iberian_socialist_union
 
 
 	focus = {
-		id = ww1_portugal_army_motorization_focus
+		id = POR_ww1_army_motorization_focus
 		available = { date > 1917.1.1 }
 		icon = GFX_goal_generic_army_motorized
-		prerequisite = { focus = ww1_portugal_special_forces }
+		prerequisite = { focus = POR_ww1_special_forces }
 		x = 15
 		y = 8
 		cost = 10
@@ -1213,14 +1213,14 @@ unlock_national_focus = POR_the_iberian_socialist_union
 				bonus = 0.2
 				uses = 1
 				technology = early_motorised
-				technology = ww1_portugal_ambulance2
+				technology = POR_ww1_ambulance2
 			}
 		}
 	}
 
 	focus = {
-		id = ww1_portugal_doctrine_effort_2
-		prerequisite = { focus=ww1_portugal_doctrine_effort }
+		id = POR_ww1_doctrine_effort_2
+		prerequisite = { focus=POR_ww1_doctrine_effort }
 		available = { date > 1913.1.1 }
 		icon = GFX_goal_generic_army_doctrines
 		completion_reward = { army_experience=15 add_tech_bonus={ name=land_doc_bonus bonus=0.2 uses=1 category=land_doctrine } }
@@ -1231,8 +1231,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_equipment_effort_3
-		prerequisite = { focus=ww1_portugal_equipment_effort_2 }
+		id = POR_ww1_equipment_effort_3
+		prerequisite = { focus=POR_ww1_equipment_effort_2 }
 		available = { date > 1914.1.1 }
 		icon = GFX_goal_generic_small_arms
 		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_artillery_bonus bonus=0.15 uses=1 category=infantry_weapons } }
@@ -1243,8 +1243,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_doctrine_effort_3
-		prerequisite = { focus=ww1_portugal_doctrine_effort_2 }
+		id = POR_ww1_doctrine_effort_3
+		prerequisite = { focus=POR_ww1_doctrine_effort_2 }
 		available = { date > 1915.1.1 }
 		icon = GFX_goal_generic_army_doctrines
 		completion_reward = { army_experience=15 add_tech_bonus={ name=land_doc_bonus bonus=0.2 uses=1 category=land_doctrine } }
@@ -1256,8 +1256,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 
 
 	focus = {
-		id = ww1_portugal_equipment_effort_4
-		prerequisite = { focus=ww1_portugal_equipment_effort_3 }
+		id = POR_ww1_equipment_effort_4
+		prerequisite = { focus=POR_ww1_equipment_effort_3 }
 		available = { date > 1916.1.1 }
 		icon = GFX_goal_generic_small_arms
 		completion_reward = { army_experience=20 add_tech_bonus={ name=infantry_artillery_bonus bonus=0.2 uses=1 category=infantry_weapons } }
@@ -1268,8 +1268,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_artillery_effort_4
-		prerequisite = { focus=ww1_portugal_artillery_effort_3 }
+		id = POR_ww1_artillery_effort_4
+		prerequisite = { focus=POR_ww1_artillery_effort_3 }
 		available = { date > 1916.1.1 }
 		icon = GFX_goal_generic_army_artillery2
 		completion_reward = { army_experience=20 add_tech_bonus={ name=infantry_artillery_bonus bonus=0.2 uses=1 category=artillery } }
@@ -1281,10 +1281,10 @@ unlock_national_focus = POR_the_iberian_socialist_union
 
 
 	focus = {
-		id = ww1_portugal_armor_effort_1
-		prerequisite = { focus=ww1_portugal_equipment_effort_4 }
-		prerequisite = { focus=ww1_portugal_doctrine_effort_3 }
-		prerequisite = { focus=ww1_portugal_artillery_effort_4 }
+		id = POR_ww1_armor_effort_1
+		prerequisite = { focus=POR_ww1_equipment_effort_4 }
+		prerequisite = { focus=POR_ww1_doctrine_effort_3 }
+		prerequisite = { focus=POR_ww1_artillery_effort_4 }
 		available = { date > 1917.1.1 }
 		icon = GFX_hoi4tgw_renaultft
 		completion_reward = { army_experience=50 add_tech_bonus={ name=armor_bonus bonus=0.15 uses=2 category=armor } }
@@ -1295,9 +1295,9 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_armor_effort_2
-		prerequisite = { focus=ww1_portugal_armor_effort_1 }
-		prerequisite = { focus=ww1_portugal_army_motorization_focus }
+		id = POR_ww1_armor_effort_2
+		prerequisite = { focus=POR_ww1_armor_effort_1 }
+		prerequisite = { focus=POR_ww1_army_motorization_focus }
 		available = { date > 1918.1.1 }
 		icon = GFX_goal_generic_army_tanks
 		completion_reward = { army_experience=75 add_tech_bonus={ name=armor_bonus bonus=0.1 uses=2 category=armor } }
@@ -1310,7 +1310,7 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	#############################################################################
 
 	focus = {
-		id = ww1_portugal_aviation_effort
+		id = POR_ww1_aviation_effort
 		icon = GFX_goal_generic_build_airforce
 		completion_reward = { air_experience=25 if={ limit={ capital_scope={ NOT={ free_building_slots={ building=air_base size > 1 } } } } random_owned_state={ limit={ free_building_slots={ building=air_base size > 1 } } add_building_construction={ type=air_base level=2 instant_build=yes } ROOT={ set_country_flag=aviation_effort_AB } } } if={ limit={ capital_scope={ free_building_slots={ building=air_base size > 1 } } } capital_scope={ add_building_construction={ type=air_base level=2 instant_build=yes } ROOT={ set_country_flag=aviation_effort_AB } } } add_tech_bonus={ name=air_doc_bonus bonus=0.15 uses=1 category=air_doctrine } }
 		complete_tooltip = { air_experience=25 if={ limit={ has_country_flag=aviation_effort_AB } add_building_construction={ type=air_base level=2 instant_build=yes } }			 add_tech_bonus={ name=air_doc_bonus bonus=0.15 uses=1 category=air_doctrine }			 }
@@ -1322,8 +1322,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 
 
 	focus = {
-		id = ww1_portugal_aviation_effort_2
-		prerequisite = { focus=ww1_portugal_aviation_effort }
+		id = POR_ww1_aviation_effort_2
+		prerequisite = { focus=POR_ww1_aviation_effort }
 		icon = GFX_goal_generic_air_doctrine
 		completion_reward = { air_experience=15 add_tech_bonus={ name=air_doc_bonus bonus=0.15 uses=1 category=air_doctrine } }
 		cost = 10
@@ -1334,11 +1334,11 @@ unlock_national_focus = POR_the_iberian_socialist_union
 
 
 	focus = {
-		id = ww1_portugal_airship_focus
-		prerequisite = { focus=ww1_portugal_aviation_effort_2 }
+		id = POR_ww1_airship_focus
+		prerequisite = { focus=POR_ww1_aviation_effort_2 }
 		available = { date > 1911.1.1 }
 		icon = GFX_hoi4tgw_zeppelin
-		completion_reward = { add_tech_bonus={ name=fighter_bonus bonus=0.15 uses=1 technology=ww1_portugal_zeppelin1 technology=ww1_portugal_zeppelin2 } }
+		completion_reward = { add_tech_bonus={ name=fighter_bonus bonus=0.15 uses=1 technology=POR_ww1_zeppelin1 technology=POR_ww1_zeppelin2 } }
 		cost = 10
 		x = 24
 		y = 2
@@ -1346,34 +1346,34 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_fighter_focus
-		prerequisite = { focus=ww1_portugal_aviation_effort_2 }
+		id = POR_ww1_fighter_focus
+		prerequisite = { focus=POR_ww1_aviation_effort_2 }
+		mutually_exclusive = { focus=POR_ww1_bomber_focus }
 		available = { date > 1911.1.1 }
 		icon = GFX_goal_generic_air_fighter
-		completion_reward = { add_tech_bonus={ name=fighter_bonus bonus=0.15 uses=1 technology=ww1_portugal_fighter1 technology=ww1_portugal_fighter1b technology=ww1_portugal_fighter2 technology=ww1_portugal_fighter2b } }
+		completion_reward = { add_tech_bonus={ name=fighter_bonus bonus=0.15 uses=1 technology=POR_ww1_fighter1 technology=POR_ww1_fighter1b technology=POR_ww1_fighter2 technology=POR_ww1_fighter2b } }
 		cost = 10
 		x = 20
 		y = 2
-		mutually_exclusive = { focus=bomber_focus }
 		ai_will_do = { factor = 10 }
 	}
 
 	focus = {
-		id = ww1_portugal_bomber_focus
-		prerequisite = { focus=ww1_portugal_aviation_effort_2 }
+		id = POR_ww1_bomber_focus
+		prerequisite = { focus=POR_ww1_aviation_effort_2 }
+		mutually_exclusive = { focus=POR_ww1_fighter_focus }
 		available = { date > 1911.1.1 }
 		icon = GFX_goal_generic_air_bomber
 		completion_reward = { add_tech_bonus={ name=bomber_bonus bonus=0.15 uses=1 category=tactical_bomber } }
 		cost = 10
 		x = 22
 		y = 2
-		mutually_exclusive = { focus=fighter_focus }
 		ai_will_do = { factor = 10 }
 	}
 
 	focus = {
-		id = ww1_portugal_aviation_effort_3
-		prerequisite = { focus=ww1_portugal_bomber_focus focus=ww1_portugal_fighter_focus focus=ww1_portugal_airship_focus }
+		id = POR_ww1_aviation_effort_3
+		prerequisite = { focus=POR_ww1_bomber_focus focus=POR_ww1_fighter_focus focus=POR_ww1_airship_focus }
 		available = { date > 1912.1.1 }
 		icon = GFX_goal_generic_air_doctrine
 		completion_reward = { air_experience=15 add_tech_bonus={ name=air_doc_bonus bonus=0.15 uses=1 category=air_doctrine } }
@@ -1384,8 +1384,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_pilotformation_1
-		prerequisite = { focus=ww1_portugal_aviation_effort_3 }
+		id = POR_ww1_pilotformation_1
+		prerequisite = { focus=POR_ww1_aviation_effort_3 }
 		available = { date > 1913.1.1 }
 		icon = GFX_goal_generic_CAS
 		completion_reward = { add_tech_bonus={ name=pilotformation1_bonus bonus=0.15 uses=1 technology=dogfighting_experience technology=fighter_ace_initiative technology=dispersed_fighting } }
@@ -1396,8 +1396,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_aircraftprod_1
-		prerequisite = { focus=ww1_portugal_aviation_effort_3 }
+		id = POR_ww1_aircraftprod_1
+		prerequisite = { focus=POR_ww1_aviation_effort_3 }
 		available = { date > 1913.1.1 }
 		icon = GFX_goal_generic_air_production
 		completion_reward = { add_tech_bonus={ name=aircraftprod_1_bonus bonus=0.15 uses=1 category=air_equipment } }
@@ -1408,8 +1408,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_airbomb_1
-		prerequisite = { focus=ww1_portugal_aviation_effort_3 }
+		id = POR_ww1_airbomb_1
+		prerequisite = { focus=POR_ww1_aviation_effort_3 }
 		available = { date > 1913.1.1 }
 		icon = GFX_goal_poland_goal
 		completion_reward = { add_tech_bonus={ name=pilotformation2_bonus bonus=0.15 uses=1 technology=infrastructure_destruction technology=dive_bombing technology=operational_destruction } }
@@ -1421,8 +1421,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 
 
 	focus = {
-		id = ww1_portugal_aviation_effort_4
-		prerequisite = { focus=ww1_portugal_pilotformation_1 focus=ww1_portugal_aircraftprod_1 focus=ww1_portugal_airbomb_1 }
+		id = POR_ww1_aviation_effort_4
+		prerequisite = { focus=POR_ww1_pilotformation_1 focus=POR_ww1_aircraftprod_1 focus=POR_ww1_airbomb_1 }
 		available = { date > 1914.1.1 }
 		icon = GFX_goal_generic_air_doctrine
 		completion_reward = { air_experience=15 add_tech_bonus={ name=air_doc_bonus bonus=0.15 uses=1 category=air_doctrine } }
@@ -1433,8 +1433,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_pilotformation_2
-		prerequisite = { focus=ww1_portugal_aviation_effort_4 }
+		id = POR_ww1_pilotformation_2
+		prerequisite = { focus=POR_ww1_aviation_effort_4 }
 		available = { date > 1915.1.1 }
 		icon = GFX_goal_generic_CAS
 		completion_reward = { add_tech_bonus={ name=pilotformation2_bonus bonus=0.15 uses=1 technology=multialtitude_flying technology=hunt_and_destroy technology=fighter_veteran_initiative } }
@@ -1445,8 +1445,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_aircraftprod_2
-		prerequisite = { focus=ww1_portugal_aviation_effort_4 }
+		id = POR_ww1_aircraftprod_2
+		prerequisite = { focus=POR_ww1_aviation_effort_4 }
 		available = { date > 1915.1.1 }
 		icon = GFX_goal_generic_air_production
 		completion_reward = { add_tech_bonus={ name=aircraftprod_2_bonus bonus=0.2 uses=1 category=air_equipment } }
@@ -1457,8 +1457,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_airbomb_2
-		prerequisite = { focus=ww1_portugal_aviation_effort_4 }
+		id = POR_ww1_airbomb_2
+		prerequisite = { focus=POR_ww1_aviation_effort_4 }
 		available = { date > 1915.1.1 }
 		icon = GFX_goal_generic_occupy_start_war
 		completion_reward = { add_tech_bonus={ name=pilotformation2_bonus bonus=0.2 uses=1 technology=logistical_bombing technology=strategic_destruction technology=infiltration_bombing } }
@@ -1469,8 +1469,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_aviation_effort_5
-		prerequisite = { focus=ww1_portugal_pilotformation_2 focus=ww1_portugal_aircraftprod_2  focus=ww1_portugal_airbomb_2 }
+		id = POR_ww1_aviation_effort_5
+		prerequisite = { focus=POR_ww1_pilotformation_2 focus=POR_ww1_aircraftprod_2  focus=POR_ww1_airbomb_2 }
 		available = { date > 1916.1.1 }
 		icon = GFX_goal_generic_air_doctrine
 		completion_reward = { air_experience=15 add_tech_bonus={ name=air_doc_bonus bonus=0.15 uses=1 category=air_doctrine } }
@@ -1482,11 +1482,11 @@ unlock_national_focus = POR_the_iberian_socialist_union
 
 
 	focus = {
-		id = ww1_portugal_air_innovation
-		prerequisite = { focus=ww1_portugal_aviation_effort_5 }
+		id = POR_ww1_air_innovation
+		prerequisite = { focus=POR_ww1_aviation_effort_5 }
 		available = { date > 1917.1.1 }
 		icon = GFX_goal_generic_air_fighter2
-		completion_reward = { air_experience=20 add_tech_bonus={ name=ww1_portugal_air_innovation_bonus bonus=0.2 uses=1 technology=ww1_portugal_fighter3 technology=ww1_portugal_fighter4 technology=early_fighter } }
+		completion_reward = { air_experience=20 add_tech_bonus={ name=POR_ww1_air_innovation_bonus bonus=0.2 uses=1 technology=POR_ww1_fighter3 technology=POR_ww1_fighter4 technology=early_fighter } }
 		ai_will_do = { factor=1 }
 		cost = 10
 		x = 21
@@ -1495,8 +1495,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_navalair
-		prerequisite = { focus=ww1_portugal_aviation_effort_5 }
+		id = POR_ww1_navalair
+		prerequisite = { focus=POR_ww1_aviation_effort_5 }
 		available = { date > 1917.1.1 }
 		icon = GFX_goal_generic_air_naval_bomber
 		completion_reward = { add_tech_bonus={ name=nav_bomber_bonus bonus=0.15 ahead_reduction=1 uses=1 category=naval_bomber } }
@@ -1509,7 +1509,7 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	###########################################################################################################################
 
 	focus = {
-		id = ww1_portugal_industrial_effort
+		id = POR_ww1_industrial_effort
 		icon = GFX_goal_generic_production
 		completion_reward = { add_tech_bonus={ name=industrial_bonus bonus=0.15 uses=1 category=industry } }
 		cost = 10
@@ -1519,8 +1519,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_infrastructure_effort
-		prerequisite = { focus=ww1_portugal_industrial_effort }
+		id = POR_ww1_infrastructure_effort
+		prerequisite = { focus=POR_ww1_industrial_effort }
 		icon = GFX_goal_generic_construct_infrastructure
 		bypass = { custom_trigger_tooltip={ tooltip=infrastructure_effort_tt all_owned_state={			 free_building_slots={ building=infrastructure size < 1 } } } }
 		completion_reward = {
@@ -1536,8 +1536,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_construction_effort
-		prerequisite = { focus=ww1_portugal_infrastructure_effort }
+		id = POR_ww1_construction_effort
+		prerequisite = { focus=POR_ww1_infrastructure_effort }
 		available = { date > 1911.1.1 }
 		icon = GFX_goal_generic_construct_civ_factory
 		bypass = { custom_trigger_tooltip={ tooltip=construction_effort_tt all_owned_state={ free_building_slots={ building=industrial_complex size < 1 include_locked=yes }					 } } }
@@ -1550,8 +1550,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_production_effort
-		prerequisite = { focus=ww1_portugal_infrastructure_effort }
+		id = POR_ww1_production_effort
+		prerequisite = { focus=POR_ww1_infrastructure_effort }
 		available = { date > 1911.1.1 }
 		icon = GFX_goal_generic_construct_mil_factory
 		bypass = { custom_trigger_tooltip={ tooltip=production_effort_tt all_owned_state={ free_building_slots={ building=arms_factory size < 1 include_locked=yes } } } }
@@ -1565,9 +1565,9 @@ unlock_national_focus = POR_the_iberian_socialist_union
 
 
 	focus = {
-		id = ww1_portugal_dockyard_effort_1
-		prerequisite = { focus=ww1_portugal_infrastructure_effort }
-		prerequisite = { focus=ww1_portugal_naval_effort }
+		id = POR_ww1_dockyard_effort_1
+		prerequisite = { focus=POR_ww1_infrastructure_effort }
+		prerequisite = { focus=POR_ww1_naval_effort }
 		available = { date > 1911.1.1 }
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 32
@@ -1624,11 +1624,11 @@ unlock_national_focus = POR_the_iberian_socialist_union
 
 
 	focus = {
-		id = ww1_portugal_airfield_expansion_1
+		id = POR_ww1_airfield_expansion_1
 		available = { date > 1911.1.1 }
 		icon = GFX_goal_generic_construction
-		prerequisite = { focus=ww1_portugal_infrastructure_effort }
-		prerequisite = { focus=ww1_portugal_aviation_effort }
+		prerequisite = { focus=POR_ww1_infrastructure_effort }
+		prerequisite = { focus=POR_ww1_aviation_effort }
 		x = 26
 		y = 2
 		cost = 10
@@ -1690,8 +1690,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_infrastructure_effort_2
-		prerequisite = { focus=ww1_portugal_construction_effort focus=ww1_portugal_production_effort focus=ww1_portugal_dockyard_effort_1 focus=ww1_portugal_airfield_expansion_1}
+		id = POR_ww1_infrastructure_effort_2
+		prerequisite = { focus=POR_ww1_construction_effort focus=POR_ww1_production_effort focus=POR_ww1_dockyard_effort_1 focus=POR_ww1_airfield_expansion_1}
 		available = { date > 1912.1.1 }
 		icon = GFX_goal_generic_construct_infrastructure
 		bypass = { custom_trigger_tooltip={ tooltip=infrastructure_effort_tt all_owned_state={			 free_building_slots={ building=infrastructure size < 1 } } } }
@@ -1704,9 +1704,9 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_construction_effort_2
-		prerequisite = { focus=ww1_portugal_infrastructure_effort_2 }
-		prerequisite = { focus=ww1_portugal_construction_effort }
+		id = POR_ww1_construction_effort_2
+		prerequisite = { focus=POR_ww1_infrastructure_effort_2 }
+		prerequisite = { focus=POR_ww1_construction_effort }
 		available = { date > 1913.1.1 }
 		icon = GFX_goal_generic_construct_civ_factory
 		bypass = { custom_trigger_tooltip={ tooltip=construction_effort_tt all_owned_state={ free_building_slots={ building=industrial_complex size < 1 include_locked=yes } } } }
@@ -1719,9 +1719,9 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_production_effort_2
-		prerequisite = { focus=ww1_portugal_infrastructure_effort_2 }
-		prerequisite = { focus=ww1_portugal_production_effort }
+		id = POR_ww1_production_effort_2
+		prerequisite = { focus=POR_ww1_infrastructure_effort_2 }
+		prerequisite = { focus=POR_ww1_production_effort }
 		available = { date > 1913.1.1 }
 		icon = GFX_goal_generic_construct_mil_factory
 		bypass = { custom_trigger_tooltip={ tooltip=production_effort_tt all_owned_state={ free_building_slots={ building=arms_factory size < 1 include_locked=yes } } } }
@@ -1735,9 +1735,9 @@ unlock_national_focus = POR_the_iberian_socialist_union
 
 
 	focus = {
-		id = ww1_portugal_dockyard_effort_2
-		prerequisite = { focus=ww1_portugal_infrastructure_effort_2 }
-		prerequisite = { focus=ww1_portugal_dockyard_effort_1 }
+		id = POR_ww1_dockyard_effort_2
+		prerequisite = { focus=POR_ww1_infrastructure_effort_2 }
+		prerequisite = { focus=POR_ww1_dockyard_effort_1 }
 		available = { date > 1913.1.1 }
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 32
@@ -1792,11 +1792,11 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_airfield_expansion_2
+		id = POR_ww1_airfield_expansion_2
 		available = { date > 1913.1.1 }
 		icon = GFX_goal_generic_construction
-		prerequisite = { focus=ww1_portugal_infrastructure_effort_2 }
-		prerequisite = { focus=ww1_portugal_airfield_expansion_1 }
+		prerequisite = { focus=POR_ww1_infrastructure_effort_2 }
+		prerequisite = { focus=POR_ww1_airfield_expansion_1 }
 		x = 26
 		y = 4
 		cost = 10
@@ -1862,8 +1862,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 
 
 	focus = {
-		id = ww1_portugal_infrastructure_effort_3
-		prerequisite = { focus=ww1_portugal_construction_effort_2 focus=ww1_portugal_production_effort_2 focus=ww1_portugal_dockyard_effort_2 focus= ww1_portugal_airfield_expansion_2}
+		id = POR_ww1_infrastructure_effort_3
+		prerequisite = { focus=POR_ww1_construction_effort_2 focus=POR_ww1_production_effort_2 focus=POR_ww1_dockyard_effort_2 focus= POR_ww1_airfield_expansion_2}
 		available = { date > 1914.1.1 }
 		icon = GFX_goal_generic_construct_infrastructure
 		bypass = { custom_trigger_tooltip={ tooltip=infrastructure_effort_tt all_owned_state={			 free_building_slots={ building=infrastructure size < 1 } } } }
@@ -1876,9 +1876,9 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_construction_effort_3
-		prerequisite = { focus=ww1_portugal_infrastructure_effort_3 }
-		prerequisite = { focus=ww1_portugal_construction_effort_2 }
+		id = POR_ww1_construction_effort_3
+		prerequisite = { focus=POR_ww1_infrastructure_effort_3 }
+		prerequisite = { focus=POR_ww1_construction_effort_2 }
 		available = { date > 1915.1.1 }
 		icon = GFX_goal_generic_construct_civ_factory
 		bypass = { custom_trigger_tooltip={ tooltip=construction_effort_tt all_owned_state={ free_building_slots={ building=industrial_complex size < 2 include_locked=yes } } } }
@@ -1891,9 +1891,9 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_production_effort_3
-		prerequisite = { focus=ww1_portugal_infrastructure_effort_3 }
-		prerequisite = { focus=ww1_portugal_production_effort_2 }
+		id = POR_ww1_production_effort_3
+		prerequisite = { focus=POR_ww1_infrastructure_effort_3 }
+		prerequisite = { focus=POR_ww1_production_effort_2 }
 		available = { date > 1915.1.1 }
 		icon = GFX_goal_generic_construct_mil_factory
 		bypass = { custom_trigger_tooltip={ tooltip=production_effort_tt all_owned_state={ free_building_slots={ building=arms_factory size < 1 include_locked=yes }					 } } }
@@ -1908,9 +1908,9 @@ unlock_national_focus = POR_the_iberian_socialist_union
 
 
 	focus = {
-		id = ww1_portugal_dockyard_effort_3
-		prerequisite = { focus=ww1_portugal_infrastructure_effort_3 }
-		prerequisite = { focus=ww1_portugal_dockyard_effort_2 }
+		id = POR_ww1_dockyard_effort_3
+		prerequisite = { focus=POR_ww1_infrastructure_effort_3 }
+		prerequisite = { focus=POR_ww1_dockyard_effort_2 }
 		available = { date > 1915.1.1 }
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 32
@@ -1965,11 +1965,11 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_airfield_expansion_3
+		id = POR_ww1_airfield_expansion_3
 		available = { date > 1915.1.1 }
 		icon = GFX_goal_generic_construction
-		prerequisite = { focus=ww1_portugal_infrastructure_effort_3 }
-		prerequisite = { focus=ww1_portugal_airfield_expansion_2 }
+		prerequisite = { focus=POR_ww1_infrastructure_effort_3 }
+		prerequisite = { focus=POR_ww1_airfield_expansion_2 }
 		x = 26
 		y = 6
 		cost = 10
@@ -2032,8 +2032,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 
 
 	focus = {
-		id = ww1_portugal_extra_tech_slot
-		prerequisite = { focus=ww1_portugal_airfield_expansion_3 focus=ww1_portugal_construction_effort_3 focus=ww1_portugal_production_effort_3 focus=ww1_portugal_dockyard_effort_3}
+		id = POR_ww1_extra_tech_slot
+		prerequisite = { focus=POR_ww1_airfield_expansion_3 focus=POR_ww1_construction_effort_3 focus=POR_ww1_production_effort_3 focus=POR_ww1_dockyard_effort_3}
 		available = { date > 1916.1.1 }
 		icon = GFX_focus_research
 		completion_reward = { add_research_slot=1 }
@@ -2045,8 +2045,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 
 
 	focus = {
-		id = ww1_portugal_infrastructure_effort_4
-		prerequisite = { focus=ww1_portugal_extra_tech_slot }
+		id = POR_ww1_infrastructure_effort_4
+		prerequisite = { focus=POR_ww1_extra_tech_slot }
 		available = { date > 1917.1.1 }
 		icon = GFX_goal_generic_construct_infrastructure
 		bypass = { custom_trigger_tooltip={ tooltip=infrastructure_effort_tt all_owned_state={			 free_building_slots={ building=infrastructure size < 1 } } } }
@@ -2059,8 +2059,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_extra_tech_slot_2
-		prerequisite = { focus=ww1_portugal_infrastructure_effort_4 }
+		id = POR_ww1_extra_tech_slot_2
+		prerequisite = { focus=POR_ww1_infrastructure_effort_4 }
 		available = { date > 1918.1.1 }
 		icon = GFX_focus_research
 		available = { num_of_factories > 50 }
@@ -2075,7 +2075,7 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	###########################################################################################################################
 
 	focus = {
-		id = ww1_portugal_naval_effort
+		id = POR_ww1_naval_effort
 		icon = GFX_goal_generic_build_navy 
 		available = { any_state={ is_coastal=yes is_controlled_by=ROOT } }
 		completion_reward = { navy_experience=25 if={ limit={ NOT={ any_owned_state={ dockyard > 0 free_building_slots={ building=dockyard size > 2 include_locked=yes } } } any_owned_state={ is_coastal=yes } } random_owned_state={ limit={ is_coastal=yes free_building_slots={ building=dockyard size > 2 include_locked=yes } } add_extra_state_shared_building_slots=3 add_building_construction={ type=dockyard level=3 instant_build=yes } } set_country_flag=naval_effort_built } if={ limit={ NOT={ has_country_flag=naval_effort_built } any_owned_state={ dockyard > 0 free_building_slots={ building=dockyard size > 2 include_locked=yes } } } random_owned_state={ limit={ dockyard > 0 free_building_slots={ building=dockyard size > 2 include_locked=yes } } add_extra_state_shared_building_slots=3 add_building_construction={ type=dockyard level=3 instant_build=yes } } set_country_flag=naval_effort_built } if={ limit={ NOT={ has_country_flag=naval_effort_built } NOT={ any_owned_state={ free_building_slots={ building=dockyard size > 2 include_locked=yes } } } } random_state={ limit={ controller={ tag=ROOT } free_building_slots={ building=dockyard size > 2 include_locked=yes } } add_extra_state_shared_building_slots=3 add_building_construction={ type=dockyard level=3 instant_build=yes } } }			 }
@@ -2087,8 +2087,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_newnavalcanons_1
-		prerequisite = { focus=ww1_portugal_naval_effort }
+		id = POR_ww1_newnavalcanons_1
+		prerequisite = { focus=POR_ww1_naval_effort }
 		icon = GFX_hoi4tgw_navalcanons
 		completion_reward = { navy_experience=15 add_tech_bonus={ name=newnavalcanons_1_bonus bonus=0.15 uses=1 category=naval_doctrine } }
 		cost = 10
@@ -2099,11 +2099,11 @@ unlock_national_focus = POR_the_iberian_socialist_union
 
 
 	focus = {
-		id = ww1_portugal_dreadnought_effort
-		prerequisite = { focus=ww1_portugal_newnavalcanons_1 }
+		id = POR_ww1_dreadnought_effort
+		prerequisite = { focus=POR_ww1_newnavalcanons_1 }
 		available = { date > 1911.1.1 }
 		icon = GFX_goal_generic_navy_battleship
-		completion_reward = { add_tech_bonus={ name=cr_bonus bonus=0.15 uses=1 technology=ww1_portugal_battleship0 technology=ww1_portugal_battleship1 technology=ww1_portugal_battleship2 } }
+		completion_reward = { add_tech_bonus={ name=cr_bonus bonus=0.15 uses=1 technology=POR_ww1_battleship0 technology=POR_ww1_battleship1 technology=POR_ww1_battleship2 } }
 		ai_will_do = { factor=10 modifier={ factor=0 all_owned_state={ OR={ is_coastal=no dockyard < 1 } } } }
 		cost = 10
 		x = 35
@@ -2111,8 +2111,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_newnavalcanons_2
-		prerequisite = { focus=ww1_portugal_dreadnought_effort }
+		id = POR_ww1_newnavalcanons_2
+		prerequisite = { focus=POR_ww1_dreadnought_effort }
 		available = { date > 1912.1.1 }
 		icon = GFX_goal_generic_army_artillery
 		completion_reward = { navy_experience=15 add_tech_bonus={ name=newnavalcanons_2_bonus bonus=0.15 uses=1 category=naval_doctrine } }
@@ -2123,8 +2123,9 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_flexible_navy
-		prerequisite = { focus=ww1_portugal_newnavalcanons_2 }
+		id = POR_ww1_flexible_navy
+		prerequisite = { focus=POR_ww1_newnavalcanons_2 }
+		mutually_exclusive = { focus=POR_ww1_large_navy }
 		available = { date > 1913.1.1 }
 		icon = GFX_goal_generic_occupy_states_coastal
 		completion_reward = { add_tech_bonus={ name=sub_op_bonus bonus=0.2 uses=1 technology=convoy_interdiction_ti technology=unrestricted_submarine_warfare technology=wolfpacks technology=advanced_submarine_warfare } }
@@ -2132,13 +2133,13 @@ unlock_national_focus = POR_the_iberian_socialist_union
 		cost = 10
 		x = 34
 		y = 4
-		mutually_exclusive = { focus=ww1_portugal_large_navy }
 	}
 
 
 	focus = {
-		id = ww1_portugal_large_navy
-		prerequisite = { focus=ww1_portugal_newnavalcanons_2 }
+		id = POR_ww1_large_navy
+		prerequisite = { focus=POR_ww1_newnavalcanons_2 }
+		mutually_exclusive = { focus=POR_ww1_flexible_navy }
 		available = { date > 1913.1.1 }
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		completion_reward = { add_tech_bonus={ name=fleet_in_being_bonus bonus=0.2 uses=1 category=fleet_in_being_tree } }
@@ -2146,12 +2147,11 @@ unlock_national_focus = POR_the_iberian_socialist_union
 		cost = 10
 		x = 36
 		y = 4
-		mutually_exclusive = { focus=flexible_navy }
 	}
 
 	focus = {
-		id = ww1_portugal_submarine_effort
-		prerequisite = { focus=flexible_navy focus=ww1_portugal_large_navy }
+		id = POR_ww1_submarine_effort
+		prerequisite = { focus=flexible_navy focus=POR_ww1_large_navy }
 		available = { date > 1914.1.1 }
 		icon = GFX_goal_generic_navy_submarine
 		completion_reward = {
@@ -2159,13 +2159,13 @@ unlock_national_focus = POR_the_iberian_socialist_union
 				limit = { 
 					has_dlc = "Man the Guns"
 				}
-				add_tech_bonus={ name=ss_bonus bonus=0.2 uses=1 technology=ww1_portugal_submarine1_mtg technology=ww1_portugal_submarine2_mtg }
+				add_tech_bonus={ name=ss_bonus bonus=0.2 uses=1 technology=POR_ww1_submarine1_mtg technology=POR_ww1_submarine2_mtg }
 			}
 			if = { 
 				limit = { 
 					not = { has_dlc = "Man the Guns" }
 				}
-				add_tech_bonus={ name=ss_bonus bonus=0.2 uses=1 technology=ww1_portugal_submarine1 technology=ww1_portugal_submarine2 }
+				add_tech_bonus={ name=ss_bonus bonus=0.2 uses=1 technology=POR_ww1_submarine1 technology=POR_ww1_submarine2 }
 			}
 		}
 		ai_will_do = { factor=10 modifier={ factor=0 all_owned_state={ OR={ is_coastal=no dockyard < 1 } } } }
@@ -2175,8 +2175,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_cruiser_effort
-		prerequisite = { focus=ww1_portugal_flexible_navy focus=ww1_portugal_large_navy }
+		id = POR_ww1_cruiser_effort
+		prerequisite = { focus=POR_ww1_flexible_navy focus=POR_ww1_large_navy }
 		available = { date > 1914.1.1 }
 		icon = GFX_goal_generic_navy_cruiser
 		completion_reward = {
@@ -2184,13 +2184,13 @@ unlock_national_focus = POR_the_iberian_socialist_union
 				limit = { 
 					has_dlc = "Man the Guns"
 				}
-				add_tech_bonus={ name=cr_bonus bonus=0.2 uses=1 technology=ww1_portugal_light_cruiser0_mtg technology=ww1_portugal_light_cruiser1_mtg technology=ww1_portugal_light_cruiser2_mtg }
+				add_tech_bonus={ name=cr_bonus bonus=0.2 uses=1 technology=POR_ww1_light_cruiser0_mtg technology=POR_ww1_light_cruiser1_mtg technology=POR_ww1_light_cruiser2_mtg }
 			}
 			if = { 
 				limit = { 
 					not = { has_dlc = "Man the Guns" }
 				}
-				add_tech_bonus={ name=cr_bonus bonus=0.2 uses=1 technology=ww1_portugal_light_cruiser0 technology=ww1_portugal_light_cruiser1 technology=ww1_portugal_light_cruiser2 }
+				add_tech_bonus={ name=cr_bonus bonus=0.2 uses=1 technology=POR_ww1_light_cruiser0 technology=POR_ww1_light_cruiser1 technology=POR_ww1_light_cruiser2 }
 			}
 		}
 		ai_will_do = { factor=10 modifier={ factor=0 all_owned_state={ OR={ is_coastal=no dockyard < 1 } } } }
@@ -2200,8 +2200,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_destroyer_effort
-		prerequisite = { focus=ww1_portugal_submarine_effort }
+		id = POR_ww1_destroyer_effort
+		prerequisite = { focus=POR_ww1_submarine_effort }
 		available = { date > 1915.1.1 }
 		icon = GFX_goal_generic_wolf_pack
 		completion_reward = {
@@ -2209,13 +2209,13 @@ unlock_national_focus = POR_the_iberian_socialist_union
 				limit = { 
 					has_dlc = "Man the Guns"
 				}
-				add_tech_bonus={ name=dd_bonus bonus=0.2 uses=1 technology=ww1_portugal_destroyer0_mtg technology=ww1_portugal_destroyer1_mtg technology=ww1_portugal_destroyer2_mtg }
+				add_tech_bonus={ name=dd_bonus bonus=0.2 uses=1 technology=POR_ww1_destroyer0_mtg technology=POR_ww1_destroyer1_mtg technology=POR_ww1_destroyer2_mtg }
 			}
 			if = { 
 				limit = { 
 					not = { has_dlc = "Man the Guns" }
 				}
-				add_tech_bonus={ name=dd_bonus bonus=0.2 uses=1 technology=ww1_portugal_destroyer0 technology=ww1_portugal_destroyer1 technology=ww1_portugal_destroyer2 }
+				add_tech_bonus={ name=dd_bonus bonus=0.2 uses=1 technology=POR_ww1_destroyer0 technology=POR_ww1_destroyer1 technology=POR_ww1_destroyer2 }
 			}
 		}
 		ai_will_do = { factor=10 modifier={ factor=0 all_owned_state={ OR={ is_coastal=no dockyard < 1 } } } }
@@ -2225,8 +2225,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_capital_ships_effort
-		prerequisite = { focus=ww1_portugal_cruiser_effort }
+		id = POR_ww1_capital_ships_effort
+		prerequisite = { focus=POR_ww1_cruiser_effort }
 		available = { date > 1915.1.1 }
 		icon = GFX_goal_generic_navy_battleship
 		completion_reward = {
@@ -2234,13 +2234,13 @@ unlock_national_focus = POR_the_iberian_socialist_union
 				limit = { 
 					has_dlc = "Man the Guns"
 				}
-				 navy_experience=25 add_tech_bonus={ name=capital_ships_bonus bonus=0.2 uses=1 technology=ww1_portugal_battlecruiser0_mtg technology=ww1_portugal_battlecruiser1_mtg technology=ww1_portugal_battlecruiser2_mtg technology=early_battleship_mtg technology=seaplane_carrier_mtg }
+				 navy_experience=25 add_tech_bonus={ name=capital_ships_bonus bonus=0.2 uses=1 technology=POR_ww1_battlecruiser0_mtg technology=POR_ww1_battlecruiser1_mtg technology=POR_ww1_battlecruiser2_mtg technology=early_battleship_mtg technology=seaplane_carrier_mtg }
 			}
 			if = { 
 				limit = { 
 					not = { has_dlc = "Man the Guns" }
 				}
-				 navy_experience=25 add_tech_bonus={ name=capital_ships_bonus bonus=0.2 uses=1 technology=ww1_portugal_battlecruiser0 technology=ww1_portugal_battlecruiser1 technology=ww1_portugal_battlecruiser2 technology=early_battleship technology=seaplane_carrier }
+				 navy_experience=25 add_tech_bonus={ name=capital_ships_bonus bonus=0.2 uses=1 technology=POR_ww1_battlecruiser0 technology=POR_ww1_battlecruiser1 technology=POR_ww1_battlecruiser2 technology=early_battleship technology=seaplane_carrier }
 			}
 		}
 		ai_will_do = { factor=10 modifier={ factor=0 all_owned_state={ OR={ is_coastal=no dockyard < 1 } } } }
@@ -2251,9 +2251,9 @@ unlock_national_focus = POR_the_iberian_socialist_union
 
 
 	focus = {
-		id = ww1_portugal_newnavalcanons_3
-		prerequisite = { focus=ww1_portugal_capital_ships_effort }
-		prerequisite = { focus=ww1_portugal_destroyer_effort }
+		id = POR_ww1_newnavalcanons_3
+		prerequisite = { focus=POR_ww1_capital_ships_effort }
+		prerequisite = { focus=POR_ww1_destroyer_effort }
 		available = { date > 1916.1.1 }
 		icon = GFX_goal_generic_army_artillery
 		completion_reward = { navy_experience=15 add_tech_bonus={ name=newnavalcanons_3_bonus bonus=0.2 uses=1 category=naval_doctrine } }
@@ -2264,8 +2264,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_navyreform
-		prerequisite = { focus=ww1_portugal_newnavalcanons_3 }
+		id = POR_ww1_navyreform
+		prerequisite = { focus=POR_ww1_newnavalcanons_3 }
 		available = { date > 1917.1.1 }
 		icon = GFX_goal_generic_amphibious_assault
 		completion_reward = { navy_experience=25 }
@@ -2276,8 +2276,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_carrier_focus
-		prerequisite = { focus=ww1_portugal_navyreform }
+		id = POR_ww1_carrier_focus
+		prerequisite = { focus=POR_ww1_navyreform }
 		available = { date > 1918.1.1 }
 		icon = GFX_goal_generic_navy_carrier
 		completion_reward = { navy_experience=25 add_tech_bonus={ name=uk_carrier_focus bonus=0.3 uses=2 category=cv_tech } }
@@ -2288,8 +2288,8 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	}
 
 	focus = {
-		id = ww1_portugal_antisubmarine
-		prerequisite = { focus=ww1_portugal_navyreform }
+		id = POR_ww1_antisubmarine
+		prerequisite = { focus=POR_ww1_navyreform }
 		available = { date > 1918.1.1 }
 		icon = GFX_goal_generic_navy_anti_submarine
 		completion_reward = { navy_experience=15 add_tech_bonus={ name=newnavalcanons_3_bonus bonus=0.3 uses=1 category=naval_doctrine } }
@@ -2778,7 +2778,7 @@ unlock_national_focus = POR_the_iberian_socialist_union
 		bypass = {		
 		}
 		prerequisite = {
-		focus = ww1_portugal_extra_tech_slot_2
+		focus = POR_ww1_extra_tech_slot_2
 		}
 		icon = GFX_focus_generic_industry_2
 		x = 9
@@ -3741,10 +3741,10 @@ unlock_national_focus = POR_the_iberian_socialist_union
 		bypass = {		
 		}
 		prerequisite = {
-		focus = ww1_portugal_carrier_focus
+		focus = POR_ww1_carrier_focus
 		}		
 		prerequisite = {
-		focus = ww1_portugal_antisubmarine
+		focus = POR_ww1_antisubmarine
 		}			
 		icon = GFX_goal_generic_build_navy
 		x = 9
@@ -4350,7 +4350,7 @@ unlock_national_focus = POR_the_iberian_socialist_union
 		bypass = {		
 		}
 		prerequisite = {
-		focus = ww1_portugal_armor_effort_2
+		focus = POR_ww1_armor_effort_2
 		}
 		icon = GFX_focus_generic_combined_arms
 		x = 7	
@@ -4683,7 +4683,7 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	focus = {
 		id = POR_popular_front
 		available = {		
-		date = 1936.1.1
+		date > 1936.1.1
 		}
 		allow_branch = { has_dlc = "La Resistance" }
 		bypass = {		
@@ -6593,7 +6593,7 @@ unlock_national_focus = POR_the_iberian_socialist_union
 	focus = {
 		id = POR_estado_novo
 		available = {
-		date = 1936.1.1
+		date > 1936.1.1
 		}
 		allow_branch = { has_dlc = "La Resistance" }
 		bypass = {		
