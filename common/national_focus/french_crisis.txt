@@ -1,0 +1,27 @@
+focus_tree = {
+	id = france_crisis
+	default = no
+	country = { factor=0 modifier = { add = 15 tag = FRA } }
+
+	###########################################################################################################################
+	# POLITICAL
+	###########################################################################################################################
+
+	focus = {
+		id = FRA_crisis_shame_of_defeat
+		icon = GFX_goal_generic_demand_territory
+		completion_reward = {  }
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 10
+		y = 0
+	}
+	focus = {
+		id = FRA_crisis_petain_takes_control
+		icon = GFX_goal_generic_demand_territory
+		completion_reward = {  }
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 10
+		y = 0
+	}

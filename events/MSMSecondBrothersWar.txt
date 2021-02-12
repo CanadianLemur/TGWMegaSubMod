@@ -44,7 +44,7 @@ country_event = {
 		}
 	}
 }
-country_event = {
+country_event = {  #### Romania Offer accepted ####
 	id =  MSMSecondBrothersWar.2
 	title = MSMSecondBrothersWar.2.t
 	desc = MSMSecondBrothersWar.2.d
@@ -57,7 +57,7 @@ country_event = {
 		name = MSMSecondBrothersWar.2.a
 	}
 }
-country_event = {
+country_event = {  #### Romania Offer Refused ####
 	id =  MSMSecondBrothersWar.3
 	title = MSMSecondBrothersWar.3.t
 	desc = MSMSecondBrothersWar.3.d
@@ -68,5 +68,61 @@ country_event = {
 
 	option = {
 		name = MSMSecondBrothersWar.3.a
+	}
+}
+####Russia Offer####
+country_event = {
+	id =  MSMSecondBrothersWar.4
+	title = MSMSecondBrothersWar.4.t
+	desc = MSMSecondBrothersWar.4.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = MSMSecondBrothersWar.4.a
+		ai_chance = { factor = 100 }
+		country_event = { days = 1 id = MSMSecondBrothersWar.5 }
+		hidden_effect = {set_global_flag = MSM_galicia_for_russia
+		}
+		diplomatic_relation = {
+		country = GER
+		relation = non_aggression_pact
+		active = yes
+		}		
+		
+		}
+	option = {
+		name = MSMSecondBrothersWar.4.b
+		ai_chance = { factor = 0 }
+			country_event = { days = 1 id = MSMSecondBrothersWar.6 }
+		}
+	}
+}
+country_event = {  #### Russia Offer accepted ####
+	id =  MSMSecondBrothersWar.5
+	title = MSMSecondBrothersWar.5.t
+	desc = MSMSecondBrothersWar.5.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = MSMSecondBrothersWar.5.a
+	}
+}
+country_event = {  #### Russia Offer Refused ####
+	id =  MSMSecondBrothersWar.6
+	title = MSMSecondBrothersWar.6.t
+	desc = MSMSecondBrothersWar.6.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = MSMSecondBrothersWar.6.a
 	}
 }

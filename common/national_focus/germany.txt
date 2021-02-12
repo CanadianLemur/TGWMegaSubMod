@@ -2370,7 +2370,7 @@ focus_tree = {
 		prerequisite = { focus=GER_ww1_war_plans_liberate_berlin }
 		icon = GFX_hoi4tgw_russianempire
 		completion_reward = {
-			#Ensure russian neutrality in the coming conflict by offering them galica-lodmeria
+			RUS = {country_event = MSMSecondBrothersWar.4}
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
