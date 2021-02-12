@@ -605,6 +605,10 @@ FRB = {
 	color = rgb { 140 140 240 }
 	color_ui = rgb { 140 140 240 }
 }
+ETK = {
+	color = rgb { 85 158 226 }
+	color_ui = rgb { 17 73 224 }
+}
 D01 = {
 	color = rgb { 187 80 86 }
 	color_ui = rgb { 243 103 112 }

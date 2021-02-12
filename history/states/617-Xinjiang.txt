@@ -13,6 +13,7 @@ state={
 		add_core_of=CHI
 		add_core_of=QIN
 		add_core_of=SIK
+		add_core_of=ETK
 		1912.2.12={ owner=CHI }
 		1936.1.1={ 
 			owner=SIK
