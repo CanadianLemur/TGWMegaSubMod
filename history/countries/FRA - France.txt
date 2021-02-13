@@ -50,7 +50,7 @@ if = {
 #-------------------------------------------------------
 create_country_leader={ name = "Charles Jonnart" desc=FRA_charles_jonnart_DESC picture="gfx/hoi4tgw_portraits/FRA/country_leaders/FRA_charles_jonnart.dds" expire="1935.1.1" ideology=liberalism traits={  } }
 create_country_leader={ name = "Gaston Doumergue" desc=FRA_gaston_doumergue_DESC picture="gfx/hoi4tgw_portraits/FRA/country_leaders/FRA_gaston_doumergue.dds" expire="1935.1.1" ideology=liberalism traits={  } }
-create_country_leader={ name = "Louis Frossard" desc=FRA_louis_frossard_DESC picture="gfx/hoi4tgw_portraits/FRA/country_leaders/FRA_louis_frossard.dds" expire="1935.1.1" ideology=stalinism traits={  } }
+create_country_leader={ name = "Oscar Frossard" desc=FRA_louis_frossard_DESC picture="gfx/hoi4tgw_portraits/FRA/country_leaders/FRA_louis_frossard.dds" expire="1935.1.1" ideology=stalinism traits={  } }
 create_country_leader={ name = "Alexandre Millerand" desc=FRA_alexandre_millerand_DESC picture="gfx/hoi4tgw_portraits/FRA/country_leaders/FRA_alexandre_millerand.dds" expire="1935.1.1" ideology=liberalism traits={  } }
 create_country_leader={ name = "Georges Clemenceau" desc=FRA_georges_clemenceau_DESC picture="gfx/hoi4tgw_portraits/FRA/country_leaders/FRA_georges_clemenceau.dds" expire="1935.1.1" ideology=liberalism traits={  } }
 create_country_leader={ name = "Paul Painlevé" desc=FRA_paul_painleve_DESC picture="gfx/hoi4tgw_portraits/FRA/country_leaders/FRA_paul_painleve.dds" expire="1935.1.1" ideology=liberalism traits={  } }

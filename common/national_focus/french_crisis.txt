@@ -9,19 +9,230 @@ focus_tree = {
 
 	focus = {
 		id = FRA_crisis_shame_of_defeat
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_generic_strike_at_democracy1
 		completion_reward = {  }
 		ai_will_do = { factor = 20 }
-		cost = 10
+		cost = 2
 		x = 10
 		y = 0
 	}
 	focus = {
 		id = FRA_crisis_petain_takes_control
-		icon = GFX_goal_generic_demand_territory
-		completion_reward = {  }
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = {focus = FRA_crisis_shame_of_defeat}
+		completion_reward = {  
+		set_politics = {
+			ruling_party = neutrality
+		}
+		set_party_name = { 
+		ideology = neutrality 
+		long_name = FRA_crisis_name_long 
+		name = FRA_crisis_name 
+		}
+		add_popularity = {
+				ideology = neutrality
+				popularity = 0.50
+			}
+		set_cosmetic_tag =  FRA_petain
+		create_country_leader = {
+		name = "Phillipe Pétain"
+		desc = "POLITICS_phillipe_petain_DESC"
+		picture = "gfx/hoi4tgw_portraits/FRA/army_generals/FRA_philippe_petain.dds"
+		expire = "1965.1.1"
+		ideology = despotism
+		traits = {
+		
+		}
+		}
+		}
 		ai_will_do = { factor = 20 }
-		cost = 10
+		cost = 3
 		x = 10
-		y = 0
+		y = 1
+	}
+	focus = {
+		id = FRA_crisis_no_alliances_with_fascists
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		prerequisite = {focus = FRA_crisis_petain_takes_control}
+		completion_reward = {  
+		add_stability = -0.1 #make AF an extra faction in the civil war
+		}
+		mutually_exclusive = {focus = FRA_crisis_alliance_with_action_francaise}
+		ai_will_do = { factor = 20 }
+		cost = 1
+		x = 8
+		y = 3
+	}
+	focus = {
+		id = FRA_crisis_alliance_with_action_francaise
+		icon = GFX_goal_support_fascism
+		prerequisite = {focus = FRA_crisis_petain_takes_control}
+		completion_reward = { 
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			add_stability = 0.1 #adds AF strength and units to petains government in civil war
+		}
+		mutually_exclusive = {focus = FRA_crisis_no_alliances_with_fascists}
+		ai_will_do = { factor = 20 }
+		cost = 1
+		x = 12
+		y = 3
+	}
+	focus = {
+		id = FRA_crisis_crack_down_on_communists
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = {focus = FRA_crisis_no_alliances_with_fascists focus = FRA_crisis_alliance_with_action_francaise}
+		completion_reward = {  
+		custom_effect_tooltip = start_civil_war
+		hidden_effect ={
+		if = {
+		limit = {owns_state = 29}
+	ACF = {	transfer_state = 29 
+		add_state_core = 29
+		}
+		}
+		if = {
+		limit = {owns_state = 785}
+	ACF = {	transfer_state = 785
+		add_state_core = 785
+		}
+		}
+		if = {
+		limit = {owns_state = 18}
+	ACF = {	transfer_state = 18 
+		add_state_core = 18
+		}
+		}
+		if = {
+		limit = {owns_state = 16}
+	ACF = {	transfer_state = 16 
+		add_state_core = 16
+		}
+		}
+		if = {
+		limit = {owns_state = 15}
+	ACF = {	transfer_state = 15 
+		add_state_core = 15
+		}
+		}
+	if = { limit = {NOT = {has_completed_focus = FRA_crisis_alliance_with_action_francaise}}
+	if = {
+		limit = {owns_state = 14}
+	AFA = {	transfer_state = 14
+		add_state_core = 14
+		}
+		}
+	if = {
+		limit = {owns_state = 30}
+	AFA = {	transfer_state = 30
+		add_state_core = 30
+		}
+		}
+			if = {
+		limit = {owns_state = 23}
+	AFA = {	transfer_state = 23
+		add_state_core = 23
+		}
+		}
+	if = {
+		limit = {owns_state = 19}
+	AFA = {	transfer_state = 19
+		add_state_core = 19
+		}
+		}
+		}
+		if = {
+		limit = {owns_state = 24}
+	AFL = {	transfer_state = 24
+		add_state_core = 24
+		}
+		}
+			if = {
+		limit = {owns_state = 33}
+	AFL = {	transfer_state = 33
+		add_state_core = 33
+		}
+		}
+			if = {
+		limit = {owns_state = 27}
+	AFL = {	transfer_state = 27
+		add_state_core = 27
+		}
+		}
+		declare_war_on = {
+		target = AFL 
+		type = civil_war
+		}
+		declare_war_on = {
+		target = ACF
+		type = civil_war
+		}
+		if = {
+		limit = {AFA = {exists = yes}}
+		AFA = {declare_war_on = {
+		target = AFL 
+		type = civil_war
+		}
+		declare_war_on = {
+		target = ACF 
+		type = civil_war
+		}
+		declare_war_on = {
+		target = FRA 
+		type = civil_war
+		}
+		}
+		}
+		AFL = {
+		declare_war_on = {
+		target = ACF 
+		type = civil_war
+		}
+		}
+		transfer_units_fraction= {
+		target = ACF
+		size = 1.0
+		stockpile_ratio = 0.3
+		army_ratio = 0.3
+		navy_ratio = 0.3
+		air_ratio = 0.3
+		keep_unit_leaders_trigger = {
+			always = yes
+			}
+		}
+		transfer_units_fraction= {
+		target = AFL
+		size = 1.0
+		stockpile_ratio = 0.2
+		army_ratio = 0.2
+		navy_ratio = 0.2
+		air_ratio = 0.2
+		keep_unit_leaders_trigger = {
+			always = yes
+			}
+		}
+		if = {
+		limit = {AFA = {exists = yes}}
+				transfer_units_fraction= {
+		target = AFA
+		size = 1.0
+		stockpile_ratio = 0.2
+		army_ratio = 0.5
+		navy_ratio = 0.5
+		air_ratio = 0.5
+		keep_unit_leaders_trigger = {
+			always = yes
+			}
+		}
+		}
+		}
+		}
+		
+		ai_will_do = { factor = 20 }
+		cost = 3
+		x = 10
+		y = 4
+		}
 	}

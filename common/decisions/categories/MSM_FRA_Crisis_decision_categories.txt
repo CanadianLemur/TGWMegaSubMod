@@ -1,0 +1,9 @@
+French_civil_unrest = {
+	icon = generic_political_actions
+	priority = 30
+	available = {
+	}
+	visible = {
+		tag = FRA
+	}
+}

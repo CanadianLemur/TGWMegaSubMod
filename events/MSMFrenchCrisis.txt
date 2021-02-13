@@ -1,0 +1,19 @@
+add_namespace = MSMFrenchCrisis
+#  Alliance With AF?
+country_event = {
+	id =  MSMFrenchCrisis.1
+	title = MSMFrenchCrisis.1.t
+	desc = MSMFrenchCrisis.1.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+
+	option = {
+		name = MSMFrenchCrisis.1.a
+		ai_chance = { factor = 100 }
+	}
+	option = {
+		name = MSMFrenchCrisis.1.b
+		ai_chance = { factor = 00 }
+	}
+}

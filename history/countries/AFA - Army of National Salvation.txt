@@ -1,0 +1,21 @@
+﻿capital = 16
+
+#-------------------------------------------------------
+#					GENERIC VALUES
+#-------------------------------------------------------
+set_fuel_ratio = 0.44
+set_research_slots = 4
+
+
+	set_politics = {
+	    ruling_party = fascism
+	    last_election = "1910.4.30"
+	    election_frequency = 48
+	    elections_allowed = no
+	}
+	set_popularities = {
+	    democratic = 2
+	    fascism = 95
+	    communism = 2
+	    neutrality = 1
+	}

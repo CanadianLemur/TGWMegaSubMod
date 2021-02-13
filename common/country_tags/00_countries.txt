@@ -292,4 +292,9 @@ CPH = "countires/Captaincy General of the Phillipines.txt"
 CRB = "countires/Captaincy General of the Carribean.txt"
 RDP = "countries/Viceroyalty of Rio de Plata"
 CCL = "countries/Captaincy General of Chile"
+# East Turkestan
 ETK = "countries/East Turkestan.txt"
+# French Civil War
+AFL = "countries/French Freedom Army.txt"
+ACF = "countries/French Communist Army.txt"
+AFA = "countries/Army of National Salvation.txt"

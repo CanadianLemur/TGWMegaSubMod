@@ -1,0 +1,5 @@
+#French Communist Army
+
+graphical_culture = western_european_gfx
+
+color = { 200  20  20 }

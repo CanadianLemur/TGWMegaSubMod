@@ -3173,4 +3173,13 @@
  vojvodina:0 "Vojvodina"
  vojvodina_DEF:0 "Vojvodina"
  vojvodina_ADJ:0 "Vojvodinian"
+ AFL:0"French Army of Liberty"
+ AFL_DEF:0"The French Army of Liberty"
+ AFL_ADJ:0"Free French"
+ ACF:0"French Communist Army"
+ ACF_DEF:0"The French Communist Army"
+ ACF_ADJ:0"Communard"
+ AFA:0"Army of National Salvation"
+ AFA_DEF:0"The Army of National Salvation"
+ AFA_ADJ:0"Action Francaise"
  
