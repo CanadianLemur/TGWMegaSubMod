@@ -15,3 +15,63 @@ music = {
 	file = "byorderoftheking.ogg"
 	volume = 0.30
 }
+
+music = {
+	name = "imperialechoes"
+	file = "imperialechoes.ogg"
+	volume = 0.30
+}
+
+music = {
+	name = "britishgrenadiers"
+	file = "britishgrenadiers.ogg"
+	volume = 0.30
+}
+
+music = {
+	name = "belgiumputthekibashonthekiaser"
+	file = "belgiumputthekibashonthekiaser.ogg"
+	volume = 0.30
+}
+
+music = {
+	name = "hasanybodyhereseenkelly"
+	file = "hasanybodyhereseenkelly.ogg"
+	volume = 0.30
+}
+
+music = {
+	name = "iliveintrafalgarsquare"
+	file = "iliveintrafalgarsquare.ogg"
+	volume = 0.30
+}
+
+music = {
+	name = "itsalongwaytotipperary"
+	file = "itsalongwaytotipperary.ogg"
+	volume = 0.30
+}
+
+music = {
+	name = "takemebacktodearoldblighty"
+	file = "takemebacktodearoldblighty.ogg"
+	volume = 0.30
+}
+
+music = {
+	name = "thelowestoftboat"
+	file = "thelowestoftboat.ogg"
+	volume = 0.30
+}
+
+music = {
+	name = "thetanksthatbroketheranks"
+	file = "thetanksthatbroketheranks.ogg"
+	volume = 0.30
+}
+
+music = {
+	name = "colonelbogeymarch"
+	file = "colonelbogeymarch.ogg"
+	volume = 0.30
+}

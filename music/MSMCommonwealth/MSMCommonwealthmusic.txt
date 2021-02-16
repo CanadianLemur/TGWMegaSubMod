@@ -36,3 +36,123 @@ music = {
 		}
 	}
 }
+music = {
+	song = "belgiumputthekibashonthekaiser" 
+
+	chance = {
+		modifier = {
+			factor = 3
+			tag = ENG
+
+
+		}
+	}
+}
+music = {
+	song = "britishgrenadiers" 
+
+	chance = {
+		modifier = {
+			factor = 3
+			tag = ENG
+
+
+		}
+	}
+}
+music = {
+	song = "colonelbogeymarch" 
+
+	chance = {
+		modifier = {
+			factor = 3
+			tag = ENG
+
+
+		}
+	}
+}
+music = {
+	song = "hasanybodyhereseenkelly" 
+
+	chance = {
+		modifier = {
+			factor = 3
+			tag = ENG
+
+
+		}
+	}
+}
+music = {
+	song = "iliveintrafalgersquare" 
+
+	chance = {
+		modifier = {
+			factor = 3
+			tag = ENG
+
+
+		}
+	}
+}
+music = {
+	song = "imperialechoes" 
+
+	chance = {
+		modifier = {
+			factor = 3
+			tag = ENG
+
+
+		}
+	}
+}
+music = {
+	song = "itsalongwaytotipperary" 
+
+	chance = {
+		modifier = {
+			factor = 3
+			tag = ENG
+
+
+		}
+	}
+}
+music = {
+	song = "takemebacktodearoldblighty" 
+
+	chance = {
+		modifier = {
+			factor = 3
+			tag = ENG
+
+
+		}
+	}
+}
+music = {
+	song = "thelowestoftboat" 
+
+	chance = {
+		modifier = {
+			factor = 3
+			tag = ENG
+
+
+		}
+	}
+}
+music = {
+	song = "thetanksthatbroketheranks" 
+
+	chance = {
+		modifier = {
+			factor = 3
+			tag = ENG
+
+
+		}
+	}
+}
