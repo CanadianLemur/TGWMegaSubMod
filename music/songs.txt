@@ -39,20 +39,6 @@ music = {
 }
 
 music = {
-	song = "GERmainsong"
-
-	chance = {
-		modifier = {
-			factor = 3
-			tag = GER
-
-			has_war = no
-
-		}
-	}
-}
-
-music = {
 	song = "ITAmainsong"
 
 	chance = {

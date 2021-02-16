@@ -1,0 +1,17 @@
+music = {
+	name = "godsavetheking"
+	file = "godsavetheking.ogg"
+	volume = 0.30
+}
+
+music = {
+	name = "wellneverlettheoldflagfall"
+	file = "wellneverlettheoldflagfall.ogg"
+	volume = 0.30
+}
+
+music = {
+	name = "byorderoftheking"
+	file = "byorderoftheking.ogg"
+	volume = 0.30
+}

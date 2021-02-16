@@ -44,6 +44,7 @@ focus_tree = {
 		
 		}
 		}
+		country_event = MSMFrenchCrisis.1
 		}
 		ai_will_do = { factor = 20 }
 		cost = 3

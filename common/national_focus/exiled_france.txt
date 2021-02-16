@@ -1,0 +1,211 @@
+focus_tree = {
+	id = france_exiled
+	default = no
+	country = { factor=0 modifier = { add = 30 has_country_flag = exiled_france } }
+
+	###########################################################################################################################
+	# POLITICAL
+	###########################################################################################################################
+	focus = {
+		id = FRA_exiled_rally_exiles
+		icon = GFX_Generic_French_Volunteers
+		completion_reward = {  
+		459 = {
+		add_building_construction = {
+		type = industrial_complex
+		level = 1
+		instant_build = yes
+		}
+		add_building_construction = {
+		type = arms_factory
+		level = 1 
+		instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 2
+		add_manpower = 7000
+		}
+		460 = {
+		add_building_construction = {
+		type = industrial_complex
+		level = 1
+		instant_build = yes
+		}
+		add_building_construction = {
+		type = arms_factory
+		level = 1 
+		instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 2
+		add_manpower = 7000
+		}
+		513 = {
+		add_building_construction = {
+		type = industrial_complex
+		level = 1
+		instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 1
+		add_manpower = 7000
+		}
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 5
+		y = 0
+	}
+	focus = {
+		id = FRA_exiled_foreign_legion_expansion
+		icon = GFX_u_fra_foreign_legion
+		prerequisite = {focus = FRA_exiled_rally_exiles}
+		mutually_exclusive = {focus = FRA_exiled_maintain_balance}
+		mutually_exclusive = {focus = FRA_sideline_AF}
+		completion_reward = {  
+		
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 12
+		y = 1
+	}
+	focus = {
+		id = FRA_exiled_AF_dominance
+		icon = GFX_u_fra_fleur_de_lys
+		prerequisite = {focus = FRA_exiled_rally_exiles}
+		mutually_exclusive = {focus = FRA_exiled_maintain_balance}
+		mutually_exclusive = {focus = FRA_exiled_sideline_AF}
+		completion_reward = {  
+		add_stability = 0.1
+		add_popularity = {
+		ideology = fascism
+		popularity = 0.40
+		}	
+		set_politics = {
+		ruling_party = fascism
+		}
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 7
+		y = 1
+	}
+	focus = {
+		id = FRA_exiled_maintain_balance
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = {focus = FRA_exiled_rally_exiles}
+		mutually_exclusive = {focus = FRA_exiled_AF_dominance}
+		mutually_exclusive = {focus = FRA_exiled_sideline_AF}
+		completion_reward = {  
+		add_stability = -0.15
+		add_popularity = {
+		ideology = fascism
+		popularity = 0.05
+		}
+		add_popularity = {
+		ideology = neutrality
+		popularity = 0.05
+		}
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 5
+		y = 1
+	}
+	focus = {
+		id = FRA_exiled_restore_the_kingdom
+		icon = GFX_u_fra_bourbon_france2
+		prerequisite = {focus = FRA_exiled_AF_dominance focus = FRA_exiled_maintain_balance}
+		mutually_exclusive = {focus = FRA_exiled_restore_the_kingdom }
+		completion_reward = {  
+		set_cosmetic_tag = FRAROI
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 6
+		y = 2
+	}
+	focus = {
+		id = FRA_exiled_sideline_AF
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		prerequisite = {focus = FRA_exiled_rally_exiles}
+		mutually_exclusive = {focus = FRA_exiled_maintain_balance}
+		mutually_exclusive = {focus = FRA_exiled_AF_dominance}
+		completion_reward = {  
+		add_stability = 0.1
+		add_popularity = {
+		ideology = neutrality
+		popularity = 0.10
+		}
+		
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 3
+		y = 1
+	}
+	focus = {
+		id = FRA_exiled_maintain_military_dictatorship
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = {focus = FRA_exiled_sideline_AF focus = FRA_exiled_maintain_balance}
+		mutually_exclusive = {focus = FRA_exiled_restore_the_kingdom}
+		completion_reward = {  
+		add_stability = 0.1
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 4
+		y = 2
+	}
+	focus = {
+		id = FRA_exiled_return_to_continent
+		icon = GFX_u_fra_european_france
+		prerequisite = {focus = FRA_exiled_restore_the_kingdom focus = FRA_exiled_maintain_military_dictatorship}
+		available = {owns_state = 16}
+		completion_reward = {  
+		if = {
+		limit = {AFL = {exists = yes}}
+		create_wargoal = {
+		type = annex_everything
+		target = AFL
+		}
+		}
+		if = {
+		limit = {AFA = {exists = yes}}
+		create_wargoal = {
+		type = annex_everything
+		target = AFA
+		}
+		}
+		if = {
+		limit = {ACF = {exists = yes}}
+		create_wargoal = {
+		type = annex_everything
+		target = ACF
+		}
+		}
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 5
+		y = 3
+	}
+	focus = {
+		id = FRA_exiled_return_to_paris
+		icon = GFX_u_fra_paris
+		prerequisite = {focus = FRA_exiled_return_to_continent }
+		available = {owns_state = 16}
+		completion_reward = {  
+		add_stability = 0.1
+		set_capital = 16
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 5
+		y = 4
+	}
+	}

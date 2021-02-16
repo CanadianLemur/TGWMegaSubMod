@@ -160,3 +160,35 @@ French_civil_unrest = {
 		
 		}
 	}
+	}
+	
+
+French_civil_war = {
+	FRA_flee_to_africa = {                      
+		allowed = { tag = FRA }              
+		available = {     
+		or = {has_war_with = AFL has_war_with = AFA has_war_with = ACF}
+		}
+		activation = {
+			has_focus_tree = france_crisis
+			has_global_flag = kis_second_treaty_frankfort
+		}
+		is_good = yes    
+		fire_only_once = yes
+		ai_will_do = { factor = 100 } 
+		complete_effect = {                   
+		add_state_core = 459
+		add_state_core = 460
+		add_state_core = 513
+		add_state_core = 272
+		set_capital = 459
+		set_country_flag = exiled_france
+		26 = {controller = {country_event = MSMFrenchCrisis.2}}
+		add_timed_idea = {
+		idea = MSM_FRA_recovering_from_exile
+		days = 200
+		}
+		load_focus_tree = france_exiled
+		}
+		}
+		}

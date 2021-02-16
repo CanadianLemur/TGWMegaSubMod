@@ -1,0 +1,38 @@
+music_station = "king_and_country"
+
+music = {
+	song = "godsavetheking" 
+
+	chance = {
+		modifier = {
+			factor = 3
+			tag = ENG
+
+
+		}
+	}
+}
+music = {
+	song = "byorderoftheking" 
+
+	chance = {
+		modifier = {
+			factor = 3
+			tag = ENG
+
+
+		}
+	}
+}
+music = {
+	song = "wellneverlettheoldflagfall" 
+
+	chance = {
+		modifier = {
+			factor = 3
+			tag = ENG
+
+
+		}
+	}
+}

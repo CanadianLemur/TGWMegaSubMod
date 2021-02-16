@@ -11,9 +11,119 @@ country_event = {
 	option = {
 		name = MSMFrenchCrisis.1.a
 		ai_chance = { factor = 100 }
+		complete_national_focus = FRA_crisis_no_alliances_with_fascists
 	}
 	option = {
 		name = MSMFrenchCrisis.1.b
 		ai_chance = { factor = 00 }
+		complete_national_focus = FRA_crisis_alliance_with_action_francaise
+	}
+}
+#  French Government Flees to Africa
+country_event = {
+	id =  MSMFrenchCrisis.2
+	title = MSMFrenchCrisis.2.t
+	desc = MSMFrenchCrisis.2.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+
+	option = {
+		name = MSMFrenchCrisis.2.a
+		ai_chance = { factor = 100 }
+		
+		FRA = {
+		white_peace = AFA
+		white_peace = ACF
+		white_peace = AFL	
+		}
+		if = {
+		limit = {14 = {is_owned_by = FRA}}
+		transfer_state = 14
+		}
+		if = {
+		limit = {30 = {is_owned_by = FRA}}
+		transfer_state = 30
+		}
+		if = {
+		limit = {15 = {is_owned_by = FRA}}
+		transfer_state = 15
+		}
+		if = {
+		limit = {16 = {is_owned_by = FRA}}
+		transfer_state = 16
+		}
+		if = {
+		limit = {14 = {is_owned_by = FRA}}
+		transfer_state = 14
+		}
+		if = {
+		limit = {785 = {is_owned_by = FRA}}
+		transfer_state = 785
+		}
+		if = {
+		limit = {29 = {is_owned_by = FRA}}
+		transfer_state = 29
+		}
+		if = {
+		limit = {18 = {is_owned_by = FRA}}
+		transfer_state = 18
+		}
+		if = {
+		limit = {33 = {is_owned_by = FRA}}
+		transfer_state = 33
+		}
+		if = {
+		limit = {23 = {is_owned_by = FRA}}
+		transfer_state = 23
+		}
+		if = {
+		limit = {24 = {is_owned_by = FRA}}
+		transfer_state = 24
+		}
+		if = {
+		limit = {27 = {is_owned_by = FRA}}
+		transfer_state = 27
+		}
+		if = {
+		limit = {17 = {is_owned_by = FRA}}
+		transfer_state = 17
+		}
+		if = {
+		limit = {20 = {is_owned_by = FRA}}
+		transfer_state = 20
+		}
+		if = {
+		limit = {26 = {is_owned_by = FRA}}
+		transfer_state = 26
+		}
+		if = {
+		limit = {25 = {is_owned_by = FRA}}
+		transfer_state = 25
+		}
+		if = {
+		limit = {19 = {is_owned_by = FRA}}
+		transfer_state = 19
+		}
+		if = {
+		limit = {31 = {is_owned_by = FRA}}
+		transfer_state = 31
+		}
+		if = {
+		limit = {22 = {is_owned_by = FRA}}
+		transfer_state = 22
+		}
+		if = {
+		limit = {32 = {is_owned_by = FRA}}
+		transfer_state = 32
+		}
+		if = {
+		limit = {21 = {is_owned_by = FRA}}
+		transfer_state = 21
+		}
+		if = {
+		limit = {735 = {is_owned_by = FRA}}
+		transfer_state = 735
+		}
 	}
 }

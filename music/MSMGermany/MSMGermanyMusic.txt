@@ -1,0 +1,26 @@
+music_station = "radio_deutschland"
+
+music = {
+	song = "GERmainsong" #what is it? ask edward or the kaiser, they will know
+
+	chance = {
+		modifier = {
+			factor = 3
+			tag = GER
+
+
+		}
+	}
+}
+music = {
+	song = "GERmainsong" #
+
+	chance = {
+		modifier = {
+			factor = 3
+			tag = GER
+
+
+		}
+	}
+}

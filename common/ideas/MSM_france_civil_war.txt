@@ -1,0 +1,18 @@
+ideas={
+	country = {
+		MSM_FRA_recovering_from_exile = {
+			allowed = {
+				always = no
+			}
+			
+			
+			removal_cost = -1 
+			
+			modifier = {
+				monthly_population = 0.1
+				weekly_manpower = 300
+				army_org_factor = -0.3
+			}
+		}
+	}
+	}
