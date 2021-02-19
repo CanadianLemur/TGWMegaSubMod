@@ -687,10 +687,17 @@ news_event = {
 			HAN = {
 			transfer_state = 59
 			transfer_state = 56
-			transfer_state = 57
 			add_state_core = 59
 			add_state_core = 56
-			add_state_core = 57
+			create_country_leader = {
+			name = "Prince Edward"
+			desc = "POLITICS_PRINCE_EDWARD_DESC"
+			picture = "gfx/leaders/HAN_Prince_Edward.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+	}
+}
 			}
 			ENG = {
 			set_autonomy = {
