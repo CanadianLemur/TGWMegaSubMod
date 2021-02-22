@@ -1,0 +1,37 @@
+units = {
+	fleet = {
+		name = "Kongelige Danske Marine Fleet"
+		naval_base = 6287 # Copenhagen#ship = { name = "KDM Herluf Trolle" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = DEN version_name = "Herluf Trolle Class" } } }
+		task_force = {
+			name = "Kongelige Danske Marine"
+			location = 6287 # Copenhagen#ship = { name = "KDM Herluf Trolle B" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = DEN version_name = "Herluf Trolle Class" } } }
+			ship = { name = "KDM Herluf Trolle C" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = DEN version_name = "Herluf Trolle Class" } } }
+			ship = { name = "KDM Herluf Trolle D" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = DEN version_name = "Herluf Trolle Class" } } }
+			ship = { name = "KDM Olfert Fischer" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = DEN version_name = "Herluf Trolle Class" } } }
+			ship = { name = "KDM Peder Skram" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = DEN version_name = "Herluf Trolle Class" } } }
+			ship = { name = "KDM Skjold" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = DEN version_name = "Skjold Class" } } }
+			ship = { name = "KDM Iver Hvitfeldt" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = DEN version_name = "Iver Hvitfeldt Class" } } }
+			ship = { name = "KDM Heimdal" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = DEN version_name = "Heimdal Class" } } }
+			ship = { name = "KDM Geiser" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = DEN version_name = "Heimdal Class" } } }
+			ship = { name = "KDM Valkyrien" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = DEN version_name = "Valkyrien Class" } } }
+		}
+	}
+	fleet = {
+		name = "Ubaatsflottiljen Fleet"
+		naval_base = 6287 # Copenhagen
+		task_force = {
+			name = "Ubaatsflottiljen"
+			location = 6287 # Copenhagen
+			ship = { name = "KDM Dykkeren" definition = submarine equipment = { MSM_ship_hull_uboat_1 { amount = 1 owner = DEN version_name = "Dykkeren Class" } } }
+			ship = { name = "KDM Havmanden" definition = submarine equipment = { MSM_ship_hull_uboat_1 { amount = 1 owner = DEN version_name = "Dykkeren Class" } } }
+			ship = { name = "KDM Havfruen" definition = submarine equipment = { MSM_ship_hull_uboat_1 { amount = 1 owner = DEN version_name = "Dykkeren Class" } } }
+			ship = { name = "KDM Thetis" definition = submarine equipment = { MSM_ship_hull_uboat_1 { amount = 1 owner = DEN version_name = "Dykkeren Class" } } }
+			ship = { name = "KDM Triton" definition = submarine equipment = { MSM_ship_hull_uboat_1 { amount = 1 owner = DEN version_name = "Dykkeren Class" } } }
+			ship = { name = "KDM Najaden" definition = submarine equipment = { MSM_ship_hull_uboat_1 { amount = 1 owner = DEN version_name = "Dykkeren Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = { equipment = { type = infantry_equipment_0 creator = "DEN" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	}

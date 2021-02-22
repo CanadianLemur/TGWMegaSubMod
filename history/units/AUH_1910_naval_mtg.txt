@@ -1,105 +1,101 @@
-﻿
-###################################################################
-
 units = {
-
 	fleet = {
 		name = "1. Linienschiffschwadron Fleet"
 		naval_base = 11735 # Pola
 		task_force = {
 			name = "1. Linienschiffschwadron"
 			location = 11735 # Pola
-			ship = { name = "SMS Kronprinzessin Erzherzogin Stephanie" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = AUH version_name = "Kronprinzessin Class"} } }
-			ship = { name = "SMS Kronprinz Erzherzogin Rudolf" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = AUH version_name = "Kronprinz Class" } } }
-			ship = { name = "SMS Blitz" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AUH version_name = "Blitz Class" } } }
-			ship = { name = "SMS Komet" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AUH version_name = "Blitz Class" } } }
-			ship = { name = "SMS Planet" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AUH version_name = "Blitz Class" } } }
-			ship = { name = "SMS Trabant" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AUH version_name = "Blitz Class" } } }
-			ship = { name = "SMS Satellit" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AUH version_name = "Blitz Class" } } }
-			ship = { name = "SMS Magnet" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AUH version_name = "Blitz Class" } } }
-			ship = { name = "SMS Ulan" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AUH version_name = "Huszar Class"} } }
-			ship = { name = "SMS Streiter" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AUH version_name = "Huszar Class" } } }
-			ship = { name = "SMS Wildfang" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AUH version_name = "Huszar Class" } } }
-			ship = { name = "SMS Scharfschütze" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AUH version_name = "Huszar Class" } } }
+			ship = { name = "SMS Kronprinzessin Erzherzogin Stephanie" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = AUH version_name = "Kronprinzessin Class" } } }
+			ship = { name = "SMS Kronprinz Erzherzogin Rudolf" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = AUH version_name = "Kronprinz Erzherzogin Rudolf Class" } } }
+			ship = { name = "SMS Meteor" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = AUH version_name = "Meteor Class" } } }
+			ship = { name = "SMS Blitz" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = AUH version_name = "Blitz Class" } } }
+			ship = { name = "SMS Komet" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = AUH version_name = "Blitz Class" } } }
+			ship = { name = "SMS Planet" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = AUH version_name = "Blitz Class" } } }
+			ship = { name = "SMS Trabant" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = AUH version_name = "Blitz Class" } } }
+			ship = { name = "SMS Satellit" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = AUH version_name = "Blitz Class" } } }
+			ship = { name = "SMS Magnet" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = AUH version_name = "Blitz Class" } } }
+			ship = { name = "SMS Ulan" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = AUH version_name = "Huszar Class" } } }
+			ship = { name = "SMS Streiter" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = AUH version_name = "Huszar Class" } } }
+			ship = { name = "SMS Wildfang" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = AUH version_name = "Huszar Class" } } }
+			ship = { name = "SMS Scharfschütze" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = AUH version_name = "Huszar Class" } } }
 		}
 		task_force = {
 			name = "2. Linienschiffschwadron"
 			location = 11735 # Pola
-			ship = { name = "SMS Habsburg" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = AUH version_name = "Habsburg Class" } } }
-			ship = { name = "SMS Árpád" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = AUH version_name = "Habsburg Class" } } }
-			ship = { name = "SMS Babenberg" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = AUH version_name = "Habsburg Class" } } }
-			ship = { name = "SMS Erzherzog Karl" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = AUH version_name = "Erzherzog Karl Class" } } }
-			ship = { name = "SMS Erzherzog Friedrich" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = AUH version_name = "Erzherzog Karl Class" } } }
-			ship = { name = "SMS Erzherzog Ferdinand Max" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = AUH version_name = "Erzherzog Karl Class" } } }
-			ship = { name = "SMS Uskoke" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AUH version_name = "Huszar Class" } } }
-			ship = { name = "SMS Turul" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AUH version_name = "Huszar Class" } } }
-			ship = { name = "SMS Pandur" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AUH version_name = "Huszar Class" } } }
-			ship = { name = "SMS Csikos" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AUH version_name = "Huszar Class" } } }
-			ship = { name = "SMS Reka" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AUH version_name = "Huszar Class" } } }
-			ship = { name = "SMS Dinara" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AUH version_name = "Huszar Class" } } }
-			ship = { name = "SMS Velebit" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AUH version_name = "Huszar Class" } } }
+			ship = { name = "SMS Habsburg" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = AUH version_name = "Habsburg Class" } } }
+			ship = { name = "SMS Árpád" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = AUH version_name = "Habsburg Class" } } }
+			ship = { name = "SMS Babenberg" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = AUH version_name = "Habsburg Class" } } }
+			ship = { name = "SMS Erzherzog Karl" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = AUH version_name = "Erzherzog Karl Class" } } }
+			ship = { name = "SMS Erzherzog Friedrich" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = AUH version_name = "Erzherzog Karl Class" } } }
+			ship = { name = "SMS Erzherzog Ferdinand Max" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = AUH version_name = "Erzherzog Karl Class" } } }
+			ship = { name = "SMS Uskoke" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = AUH version_name = "Huszar Class" } } }
+			ship = { name = "SMS Turul" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = AUH version_name = "Huszar Class" } } }
+			ship = { name = "SMS Pandur" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = AUH version_name = "Huszar Class" } } }
+			ship = { name = "SMS Csikos" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = AUH version_name = "Huszar Class" } } }
+			ship = { name = "SMS Reka" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = AUH version_name = "Huszar Class" } } }
+			ship = { name = "SMS Dinara" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = AUH version_name = "Huszar Class" } } }
+			ship = { name = "SMS Velebit" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = AUH version_name = "Huszar Class" } } }
 		}
 		task_force = {
 			name = "3. Linienschiffschwadron"
 			location = 11735 # Pola
-			ship = { name = "SMS Monarch" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = AUH version_name = "Monarch Class" } } }
-			ship = { name = "SMS Wien" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = AUH version_name = "Monarch Class" } } }
-			ship = { name = "SMS Budapest" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = AUH version_name = "Monarch Class" } } }
-			ship = { name = "SMS Kaiserin und Königin Maria Theresia" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = AUH version_name = "Maria Theresia Class" } } }
+			ship = { name = "SMS Monarch" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = AUH version_name = "Monarch Class" } } }
+			ship = { name = "SMS Wien" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = AUH version_name = "Monarch Class" } } }
+			ship = { name = "SMS Budapest" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = AUH version_name = "Monarch Class" } } }
+			ship = { name = "SMS Kaiserin und Königin Maria Theresia" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought { amount = 1 owner = AUH version_name = "Kaiserin Maria Theresia Class" } } }
 		}
 		task_force = {
 			name = "1. Kreuzerdivision"
 			location = 11735 # Pola
-			ship = { name = "SMS Kaiser Karl VI" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = AUH version_name = "Erzherzog Karl Class" } } }
-			ship = { name = "SMS Zenta" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = AUH version_name = "Zenta Class" } } }
-			ship = { name = "SMS Kaiser Franz Joseph I" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = AUH version_name = "Kaiser Franz Joseph I Class" } } }
-			ship = { name = "SMS Panther" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = AUH version_name = "Panther Class" } } }
-			ship = { name = "SMS Leopard" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = AUH version_name = "Panther Class" } } }
-			ship = { name = "SMS Tiger" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = AUH version_name = "Tiger Class" } } }
-			ship = { name = "SMS Zara" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = AUH version_name = "Zara Class" } } }
-			ship = { name = "SMS Spalato" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = AUH version_name = "Zara Class" } } }
-			ship = { name = "SMS Sebenico" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = AUH version_name = "Zara Class" } } }
-			ship = { name = "SMS Lussin" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = AUH version_name = "Zara Class" } } }
+			ship = { name = "SMS Kaiser Karl VI" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought { amount = 1 owner = AUH version_name = "Kaiser Karl Class" } } }
+			ship = { name = "SMS Zenta" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = AUH version_name = "Zenta Class" } } }
+			ship = { name = "SMS Kaiser Franz Joseph I" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = AUH version_name = "Kaiser Franz Joseph I Class" } } }
+			ship = { name = "SMS Panther" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = AUH version_name = "Panther Class" } } }
+			ship = { name = "SMS Leopard" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = AUH version_name = "Panther Class" } } }
+			ship = { name = "SMS Tiger" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = AUH version_name = "Tiger Class" } } }
+			ship = { name = "SMS Zara" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = AUH version_name = "Zara Class" } } }
+			ship = { name = "SMS Spalato" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = AUH version_name = "Zara Class" } } }
+			ship = { name = "SMS Sebenico" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = AUH version_name = "Zara Class" } } }
+			ship = { name = "SMS Lussin" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = AUH version_name = "Zara Class" } } }
 		}
 		task_force = {
 			name = "2. Kreuzerdivision"
 			location = 11735 # Pola
-			ship = { name = "SMS Sankt Georg" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = AUH version_name = "Sankt Georg Class" } } }
-			ship = { name = "SMS Aspern" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = AUH version_name = "Zenta Class" } } }
-			ship = { name = "SMS Szigetvár" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = AUH version_name = "Zenta Class" } } }
+			ship = { name = "SMS Sankt Georg" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought { amount = 1 owner = AUH version_name = "Sankt Georg Class" } } }
+			ship = { name = "SMS Aspern" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = AUH version_name = "Zenta Class" } } }
+			ship = { name = "SMS Szigetvár" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = AUH version_name = "Zenta Class" } } }
 		}
 		task_force = {
 			name = "U-bootdivision"
 			location = 11735 # Pola
-			ship = { name = "SMS SM U-1" definition = submarine equipment = { MSM_ship_hull_uboat_1 = { amount = 1 owner = AUH version_name = "U1 Class" } } }
-			ship = { name = "SMS SM U-2" definition = submarine equipment = { MSM_ship_hull_uboat_1 = { amount = 1 owner = AUH version_name = "U1 Class" } } }
-			ship = { name = "SMS SM U-3" definition = submarine equipment = { MSM_ship_hull_uboat_1 = { amount = 1 owner = AUH version_name = "U3 Class" } } }
-			ship = { name = "SMS SM U-4" definition = submarine equipment = { MSM_ship_hull_uboat_1 = { amount = 1 owner = AUH version_name = "U3 Class" } } }
-			ship = { name = "SMS SM U-5" definition = submarine equipment = { MSM_ship_hull_uboat_1 = { amount = 1 owner = AUH version_name = "U5 Class" } } }
-			ship = { name = "SMS SM U-6" definition = submarine equipment = { MSM_ship_hull_uboat_1 = { amount = 1 owner = AUH version_name = "U5 Class" } } }
+			ship = { name = "SMS SM U-1" definition = submarine equipment = { MSM_ship_hull_uboat_1 { amount = 1 owner = AUH version_name = "U-1 Class" } } }
+			ship = { name = "SMS SM U-2" definition = submarine equipment = { MSM_ship_hull_uboat_1 { amount = 1 owner = AUH version_name = "U-1 Class" } } }
+			ship = { name = "SMS SM U-3" definition = submarine equipment = { MSM_ship_hull_uboat_1 { amount = 1 owner = AUH version_name = "U3 Class" } } }
+			ship = { name = "SMS SM U-4" definition = submarine equipment = { MSM_ship_hull_uboat_1 { amount = 1 owner = AUH version_name = "U3 Class" } } }
+			ship = { name = "SMS SM U-5" definition = submarine equipment = { MSM_ship_hull_uboat_1 { amount = 1 owner = AUH version_name = "U-1 Class" } } }
+			ship = { name = "SMS SM U-6" definition = submarine equipment = { MSM_ship_hull_uboat_1 { amount = 1 owner = AUH version_name = "U-1 Class" } } }
 		}
 	}
-
 	fleet = {
 		name = "Chinastation Fleet"
 		naval_base = 5246 # Qingdao
 		task_force = {
 			name = "Chinastation"
 			location = 5246 # Qingdao
-			ship = { name = "SMS Kaiserin Elisabeth" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = AUH version_name = "Kaiser Franz Joseph I Class" } } }
+			ship = { name = "SMS Kaiserin Elisabeth" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = AUH version_name = "Kaiser Franz Joseph I Class" } } }
 		}
 	}
 }
 
 instant_effect = {
-	create_equipment_variant={ name="Kronprinz Erzherzogin Rudolf Class" type=ship_hull_pre_dreadnought parent_version = 0 obsolete=yes upgrades={ ship_gun_upgrade=0 ship_armor_upgrade=2 ship_engine_upgrade=1 ship_reliability_upgrade=3           } }
-	create_equipment_variant={ name="Monarch Class" type=ship_hull_pre_dreadnought parent_version = 1 obsolete=yes upgrades={ ship_gun_upgrade=0 ship_armor_upgrade=1 ship_engine_upgrade=4 ship_reliability_upgrade=5           } }
-	create_equipment_variant={ name="Habsburg Class" type=ship_hull_pre_dreadnought parent_version = 2 obsolete=yes upgrades={ ship_gun_upgrade=0 ship_armor_upgrade=0 ship_engine_upgrade=5 ship_reliability_upgrade=5           } }
-	create_equipment_variant={ name="Radetzky Class" type=ship_hull_pre_dreadnought parent_version = 0 obsolete=yes upgrades={ ship_gun_upgrade=5 ship_armor_upgrade=2 ship_engine_upgrade=3 ship_reliability_upgrade=5           } }
-	create_equipment_variant={ name="Sankt Georg Class" type=ship_hull_pre_dreadnought parent_version = 0 obsolete=no upgrades={ ship_gun_upgrade=0 ship_armor_upgrade=0 ship_engine_upgrade=1 ship_reliability_upgrade=1           } }
-	create_equipment_variant={ name="Panther Class" type=ship_hull_light_1 parent_version = 0 obsolete=yes upgrades={ ship_gun_upgrade=0  ship_engine_upgrade=3 ship_reliability_upgrade=5 ship_anti_air_upgrade=0          } }
-	create_equipment_variant={ name="Tiger Class" type=ship_hull_light_1 parent_version = 1 obsolete=yes upgrades={ ship_gun_upgrade=0  ship_engine_upgrade=3 ship_reliability_upgrade=3 ship_anti_air_upgrade=0          } }
-	create_equipment_variant={ name="Kaiser Franz Joseph I Class" type=ship_hull_light_1 parent_version = 2 obsolete=yes upgrades={ ship_gun_upgrade=5  ship_engine_upgrade=4 ship_reliability_upgrade=5 ship_anti_air_upgrade=0          } }
-	create_equipment_variant={ name="Blitz Class" type=ship_hull_light_1 parent_version = 0 obsolete=yes upgrades={     ship_anti_air_upgrade=0    ship_ASW_upgrade=0 destroyer_engine_upgrade=0    ship_torpedo_upgrade=3 } }
-	create_equipment_variant={ name="U3 Class" type=MSM_ship_hull_uboat_1 parent_version = 0 obsolete=yes upgrades={    ship_reliability_upgrade=0       sub_torpedo_upgrade=0 sub_stealth_upgrade=0 sub_engine_upgrade=0  } }
+	
+	add_equipment_production = { equipment = { type = infantry_equipment_1 creator = "AUH" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	add_equipment_production = { equipment = { type = support_equipment_1 creator = "AUH" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	add_equipment_production = { equipment = { type = light_field_gun_equipment_1 creator = "AUH" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	add_equipment_production = { equipment = { type = motorized_equipment_0 creator = "AUH" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought "AUH" version_name = "Radetzky Class"  }  requested_factories = 1  progress = 0.96  amount = 1 } #SMS Erzherzog Franz Ferdinand LD:12-Sep-1907 Comp:05-Jun-1910
+	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought "AUH" version_name = "Radetzky Class"  }  requested_factories = 1  progress = 0.77  amount = 1 } #SMS Radetzky LD:26-Nov-1907 Comp:15-Jan-1911
+	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought "AUH" version_name = "Radetzky Class"  }  requested_factories = 1  progress = 0.48  amount = 1 } #SMS Zristi LD:20-Jan-1909 Comp:15-Sep-1911
+	add_equipment_production = { equipment = { type = ship_hull_light_1 "AUH"  version_name = "Radetzky Class" } } }
+	
 }

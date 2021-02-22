@@ -1,15 +1,16 @@
-﻿
 units = {
-
-fleet = {
-	name = "Royal Canadian Navy Fleet"
-	naval_base = 7361 # Halifax
-	task_force = {
-		name = "Royal Canadian Navy"
-		location = 7361 # Halifax
-		ship = { name = "HMS Niobe" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = ENG version_name = "Diadem Class" } } }
-		ship = { name = "HMS Rainbow" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Apollo Class" } } }
+	fleet = {
+		name = "Royal Canadian Navy Fleet"
+		naval_base = 7361 # Halifax
+		task_force = {
+			name = "Royal Canadian Navy"
+			location = 7361 # Halifax
+			ship = { name = "HMS Niobe" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought { amount = 1 owner = ENG version_name = "Diadem Class" } } }
+			ship = { name = "HMS Rainbow" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "Apollo Class" } } }
+		}
 	}
 }
 
-}
+instant_effect = {
+	add_equipment_production = { equipment = { type = infantry_equipment_0 creator = "CAN" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	}

@@ -8,6 +8,9 @@ sub_units = {
 		need_equipment = { ship_hull_heavy = 1 }
 		need_equipment_modules = {
 			any = {
+				MSM_ship_armor_bb_1 = 1
+				MSM_ship_armor_bb_2 = 1
+				MSM_ship_armor_bb_3 = 1
 				ship_armor_bb_1 = 1
 				ship_armor_bb_2 = 1
 				ship_armor_bb_3 = 1

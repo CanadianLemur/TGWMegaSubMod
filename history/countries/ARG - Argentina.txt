@@ -11,37 +11,60 @@ set_convoys = 120
 #-------------------------------------------------------
 #					POLITICS & ARMY
 #-------------------------------------------------------
-create_country_leader={ name = "Agustín P. Justo" desc=ARG_agustin_p_justo_DESC picture="gfx/leaders/ARG_agustin_p_justo.dds" expire="1935.1.1" ideology=despotism  traits={  } }
-create_country_leader={ name = "Hipólito Yrigoyen" desc=ARG_hipolito_yrigoyen_DESC picture="gfx/leaders/ARG_hipolito_yrigoyen.dds" expire="1935.1.1" ideology=marxism traits={  } }
-create_country_leader={ name = "Victorino de la Plaza" desc=ARG_victorino_de_la_plaza_DESC picture="gfx/leaders/ARG_victorino_de_la_plaza.dds" expire="1935.1.1" ideology=liberalism traits={  } }
-create_country_leader={ name = "Marcelo Torcuato de Alvear" desc=ARG_marcelo_torcuato_de_alvear_DESC picture="gfx/leaders/ARG_marcelo_torcuato_de_alvear.dds" expire="1935.1.1" ideology=liberalism traits={  } }
-create_country_leader={ name = "Manuel Quintana" desc=ARG_manuel_quintana_DESC picture="gfx/leaders/ARG_manuel_quintana.dds" expire="1935.1.1" ideology=despotism  traits={  } }
-create_country_leader={ name = "José Figueroa Alcorta" desc=ARG_jose_figueroa_alcorta_DESC picture="gfx/leaders/ARG_jose_figueroa_alcorta.dds" expire="1935.1.1" ideology=despotism  traits={  } }
+create_country_leader = { name = "Agustín P. Justo" desc=ARG_agustin_p_justo_DESC picture="gfx/leaders/ARG_agustin_p_justo.dds" expire="1935.1.1" ideology=despotism  traits={  } }
+create_country_leader = { name = "Hipólito Yrigoyen" desc=ARG_hipolito_yrigoyen_DESC picture="gfx/leaders/ARG_hipolito_yrigoyen.dds" expire="1935.1.1" ideology=marxism traits={  } }
+create_country_leader = { name = "Victorino de la Plaza" desc=ARG_victorino_de_la_plaza_DESC picture="gfx/leaders/ARG_victorino_de_la_plaza.dds" expire="1935.1.1" ideology=liberalism traits={  } }
+create_country_leader = { name = "Marcelo Torcuato de Alvear" desc=ARG_marcelo_torcuato_de_alvear_DESC picture="gfx/leaders/ARG_marcelo_torcuato_de_alvear.dds" expire="1935.1.1" ideology=liberalism traits={  } }
+create_country_leader = { name = "Manuel Quintana" desc=ARG_manuel_quintana_DESC picture="gfx/leaders/ARG_manuel_quintana.dds" expire="1935.1.1" ideology=despotism  traits={  } }
+create_country_leader = { name = "José Figueroa Alcorta" desc=ARG_jose_figueroa_alcorta_DESC picture="gfx/leaders/ARG_jose_figueroa_alcorta.dds" expire="1935.1.1" ideology=despotism  traits={  } }
 
 create_corps_commander={  name = "Uriburu" id=3004 portrait_path="gfx/generals/ARG_uriburu.dds" traits={   } skill=2 }
 
+set_technology = {
+	# Navy
+	
+	
+
+
+
+
+
+
+
+}
+
 if = {
-	limit = { not = {has_dlc = "Man the Guns"} }
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_battery = 1
+		early_ship_hull_submarine = 1
+		basic_torpedo = 1 
+		pre_dreadnoughts = 1
+		early_ship_hull_light = 1
+		mtg_early_transport = 1 
+		basic_secondary_battery = 1
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+	}
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
 		ww1_battleship0 = 1
 		ww1_battleship0_mtg = 1
-	
 		ww1_battleship1 = 1
 		ww1_battleship1_mtg = 1
-	
 		###ww1_battleship2 = 0 #  ww1_battleship_1906 (Dreadnought I)
 		###ww1_battleship3 = 0 #  ww1_battleship_1910 (Dreadnought II)
 		###ww1_battleship4 = 0 #  ww1_battleship_1914 (Dreadnought III)
-
 		###ww1_battlecruiser1 = 0 # ww1_battlecruiser_1906 (Battlecruiser I)
 		###ww1_battlecruiser2 = 0 # ww1_battlecruiser_1910 (Battlecruiser II)
 		###ww1_battlecruiser3 = 0 # ww1_battlecruiser_1910 (Battlecruiser III)
-
 		ww1_heavy_cruiser0 = 1
 		ww1_heavy_cruiser0_mtg = 1 # heavy_cruiser_1890 (Armored Cruiser I)
 		ww1_heavy_cruiser1 = 1
 		ww1_heavy_cruiser1_mtg = 1 # heavy_cruiser_1900 (Armored Cruiser II)
-
 		ww1_light_cruiser0 = 1
 		ww1_light_cruiser0_mtg = 1 # light_cruiser_1890 (Protected Cruiser I)
 		ww1_light_cruiser1 = 1
@@ -49,7 +72,6 @@ if = {
 		###ww1_light_cruiser2 = 0 # light_cruiser_1906 (Light Cruiser I)
 		###ww1_light_cruiser3 = 0 # light_cruiser_1910 (Light Cruiser II)
 		###ww1_light_cruiser4 = 0 # light_cruiser_1914 (Light Cruiser III)
-	
 		ww1_destroyer0 = 1
 		ww1_destroyer0_mtg = 1 # destroyer_1890 (Torpedo Boat I)
 		ww1_destroyer1 = 1
@@ -57,120 +79,17 @@ if = {
 		ww1_destroyer2 = 1
 		ww1_destroyer2_mtg = 1 # destroyer_1906 (Destroyer II)
 		###ww1_destroyer3 = 0 # destroyer_1910 (Destroyer III)
-		###ww1_destroyer4 = 0 # destroyer_1914 (Destroyer IV)	
-
+		###ww1_destroyer4 = 0 # destroyer_1914 (Destroyer IV)
 		ww1_moduleMTG_mines = 1
 		ww1_moduleMTG_mines_mtg = 1 # Mines
-
 		ww1_submarine0 = 1
 		ww1_submarine0_mtg = 1 # coastal_submarine_1900 (Coastal Submarine 1900, first available Submarine)
-		ww1_submarine1 = 1
-		ww1_submarine1_mtg = 1 # submarine_1906 (Submarine I)
+		###ww1_submarine1 = 0 # submarine_1906 (Submarine I)
 		###ww1_submarine2 = 0 # submarine_1910 (Submarine II)
 		###ww1_submarine3 = 0 # submarine_1914 (Submarine III)
-
 		transport = 1
 		transport_mtg = 1 # Naval Transport
-
-		ww1_coastal_submarine1 = 1
-		ww1_coastal_submarine1_mtg = 1
-		ww1_coastal_submarine2 = 1
 	}
-}
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	set_technology = {
-	basic_battery = 1
-	early_ship_hull_submarine = 1
-	basic_torpedo = 1 
-	pre_dreadnoughts = 1
-	early_ship_hull_light = 1
-	mtg_early_transport = 1 
-	basic_secondary_battery = 1
-	basic_naval_mines = 1
-	submarine_mine_laying = 1
-	}
-		create_equipment_variant={ name="La Plata Class" type=ship_hull_pre_dreadnought parent_version = 0 obsolete=yes modules = {
-			fixed_ship_battery_slot = MSM_ship_heavy_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = MSM_heavy_ship_engine_1
-			fixed_ship_secondaries_slot = MSM_ship_secondaries_1
-			fixed_ship_armor_slot = MSM_ship_armor_bb_1
-			front_1_custom_slot = empty
-			mid_1_custom_slot = empty
-			rear_1_custom_slot = empty
-		}  }
-		create_equipment_variant={ name="Almirante Brown Class" type=ship_hull_pre_dreadnought parent_version = 0 obsolete=yes modules = {
-			fixed_ship_battery_slot = MSM_ship_heavy_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = MSM_heavy_ship_engine_1
-			fixed_ship_secondaries_slot = MSM_ship_secondaries_1
-			fixed_ship_armor_slot = MSM_ship_armor_bb_1
-			front_1_custom_slot = empty
-			mid_1_custom_slot = empty
-			rear_1_custom_slot = empty
-		}  }
-	create_equipment_variant={ name="Libertad Class" type=ship_hull_pre_dreadnought parent_version = 0 obsolete=yes modules = {
-			fixed_ship_battery_slot = MSM_ship_heavy_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = MSM_heavy_ship_engine_1
-			fixed_ship_secondaries_slot = MSM_ship_secondaries_1
-			fixed_ship_armor_slot = MSM_ship_armor_bb_1
-			front_1_custom_slot = empty
-			mid_1_custom_slot = empty
-			rear_1_custom_slot = empty
-		}  }
-			create_equipment_variant={ name="Patagonia Class" type=ship_hull_light_1 parent_version = 2 obsolete=yes modules = {
-			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = MSM_light_ship_engine_1
-			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
-			rear_1_custom_slot = MSM_ship_light_battery_1
-		} }
-			create_equipment_variant={ name="Buenos Aires Class" type=ship_hull_light_1 parent_version = 2 obsolete=yes modules = {
-			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = MSM_light_ship_engine_1
-			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
-			rear_1_custom_slot = MSM_ship_light_battery_1
-		} }
-	create_equipment_variant={ name="25 De Mayo Class" type=ship_hull_light_1 parent_version = 2 obsolete=yes modules = {
-			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = MSM_light_ship_engine_1
-			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
-			rear_1_custom_slot = MSM_ship_light_battery_1
-		} }
-	create_equipment_variant={ name="9 De Julio Class" type=ship_hull_light_1 parent_version = 2 obsolete=yes modules = {
-			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = MSM_light_ship_engine_1
-			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
-			rear_1_custom_slot = MSM_ship_light_battery_1
-		} }
-	create_equipment_variant={ name="Corrientes Class" type=ship_hull_light_1 parent_version = 2 obsolete=yes modules = {
-			fixed_ship_battery_slot = MSM_ship_light_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = MSM_light_ship_engine_1
-			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
-			rear_1_custom_slot = MSM_ship_light_battery_1
-		} }
 }
 
 set_politics = {
@@ -179,6 +98,7 @@ set_politics = {
     election_frequency = 72
     elections_allowed = yes
 }
+
 set_popularities = {
     democratic = 5
     fascism = 5
@@ -189,20 +109,20 @@ set_popularities = {
 1910.1.1 = {
 	oob = "ARG_1910"
 
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "ARG_1910_naval_mtg"
+		else = {
+			set_naval_oob = "ARG_1910_naval_legacy"
+		}
+	}
+
 	#-------------------------------------------------------
 	#							NF
 	#-------------------------------------------------------
 
 	#-------------------------------------------------------
-	if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	set_naval_oob = "ARG_1910_naval_mtg"
-	else = {
-		set_naval_oob = "ARG_1910_naval_legacy"
-	}
-}
+
 	set_technology = {
 
 		# Infantry
@@ -244,6 +164,134 @@ set_popularities = {
 	set_country_flag = monroe_doctrine
 
 
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			basic_battery = 1
+			early_ship_hull_submarine = 1
+			basic_torpedo = 1 
+			pre_dreadnoughts = 1
+			early_ship_hull_light = 1
+			mtg_early_transport = 1 
+			basic_secondary_battery = 1
+			basic_naval_mines = 1
+			submarine_mine_laying = 1
+		}
+	create_equipment_variant = { name = "El Plata Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = no 
+		modules = {
+			fixed_ship_battery_slot = MSM_ship_heavy_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+			fixed_ship_secondaries_slot = empty
+			fixed_ship_armor_slot = MSM_ship_armor_bb_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+			}
+	}
+	create_equipment_variant = { name = "Almirante Brown Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = no 
+		modules = {
+			fixed_ship_battery_slot = MSM_ship_heavy_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+			fixed_ship_secondaries_slot = empty
+			fixed_ship_armor_slot = MSM_ship_armor_bb_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+			}
+	}
+	create_equipment_variant = { name = "Libertad Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = no 
+		modules = {
+			fixed_ship_battery_slot = MSM_ship_heavy_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+			fixed_ship_secondaries_slot = empty
+			fixed_ship_armor_slot = MSM_ship_armor_bb_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+			}
+	}
+	create_equipment_variant = { name = "Patagonia Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+	}
+	create_equipment_variant = { name = "25 De Mayo Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+	}
+	create_equipment_variant = { name = "9 De Julio Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+	}
+	create_equipment_variant = { name = "Buenos Aires Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+	}
+	create_equipment_variant = { name = "Giuseppe Garibaldi Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = no 
+		modules = {
+			fixed_ship_battery_slot = MSM_ship_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+			fixed_ship_secondaries_slot = empty
+			fixed_ship_armor_slot = MSM_ship_armor_bb_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+			}
+	}
+	create_equipment_variant = { name = "Guiseppe Garibaldi Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = no 
+		modules = {
+			fixed_ship_battery_slot = MSM_ship_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+			fixed_ship_secondaries_slot = empty
+			fixed_ship_armor_slot = MSM_ship_armor_bb_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+			}
+	}
+	}
 }
 1910.10.12 = {
     create_country_leader = {
@@ -256,6 +304,14 @@ set_popularities = {
 }
 1914.1.1 = {
 	oob = "ARG_1910"
+
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "ARG_1914_naval_mtg"
+		else = {
+			set_naval_oob = "ARG_1914_naval_legacy"
+		}
+	}
 
 
 	#-------------------------------------------------------
@@ -329,6 +385,175 @@ set_popularities = {
 	}
 
 	set_country_flag = monroe_doctrine
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_battery = 1
+		early_ship_hull_submarine = 1
+		basic_torpedo = 1 
+		pre_dreadnoughts = 1
+		early_ship_hull_light = 1
+		mtg_early_transport = 1 
+		basic_secondary_battery = 1
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		MSM_early_ship_hull_light = 1
+		early_ship_hull_heavy = 1
+		MSM_GW_ship_torpedo_launcher = 1
+		MSM_basic_ship_hull_uboat = 1
+		MSM_improved_battery = 1
+		MSM_basic_early_shell = 1
+		MSM_secondary_battery_1 = 1
+		MSM_ship_hull_dreadnought_1 = 1
+	}
+	create_equipment_variant = { name = "El Plata Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
+		modules = {
+			fixed_ship_battery_slot = MSM_ship_heavy_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+			fixed_ship_secondaries_slot = empty
+			fixed_ship_armor_slot = MSM_ship_armor_bb_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+			}
+	}
+	create_equipment_variant = { name = "Almirante Brown Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
+		modules = {
+			fixed_ship_battery_slot = MSM_ship_heavy_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+			fixed_ship_secondaries_slot = empty
+			fixed_ship_armor_slot = MSM_ship_armor_bb_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+			}
+	}
+	create_equipment_variant = { name = "Libertad Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
+		modules = {
+			fixed_ship_battery_slot = MSM_ship_heavy_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+			fixed_ship_secondaries_slot = empty
+			fixed_ship_armor_slot = MSM_ship_armor_bb_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+			}
+	}
+	create_equipment_variant = { name = "Patagonia Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+	}
+	create_equipment_variant = { name = "25 De Mayo Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+	}
+	create_equipment_variant = { name = "9 De Julio Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+	}
+	create_equipment_variant = { name = "Buenos Aires Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+	}
+	create_equipment_variant = { name = "Giuseppe Garibaldi Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
+		modules = {
+			fixed_ship_battery_slot = MSM_ship_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+			fixed_ship_secondaries_slot = empty
+			fixed_ship_armor_slot = MSM_ship_armor_bb_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+			}
+	}
+	create_equipment_variant = { name = "Guiseppe Garibaldi Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
+		modules = {
+			fixed_ship_battery_slot = MSM_ship_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+			fixed_ship_secondaries_slot = empty
+			fixed_ship_armor_slot = MSM_ship_armor_bb_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+			}
+	}
+	create_equipment_variant = { name = "Catamarca Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+			}
+	}
+	create_equipment_variant = { name = "La Plata Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_1
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+			}
+	}
+	create_equipment_variant = { name = "San Luis Class" type = MSM_ship_hull_light_1 parent_version = 0 obsolete = no 
+		modules = {
+			fixed_ship_battery_slot = MSM_ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_light_ship_engine_2
+			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+			rear_1_custom_slot = MSM_ship_light_battery_1
+			}
+	}
+	}
 }
 
 1919.1.1 = {

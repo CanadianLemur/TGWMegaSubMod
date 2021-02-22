@@ -1,0 +1,27 @@
+﻿capital = 286 #Phnom Penh NOT on the map as VP!
+
+set_politics = {
+    ruling_party = democratic
+    last_election = "1903.2.16"
+    election_frequency = 36
+    elections_allowed = yes
+}
+set_popularities = {
+    democratic = 59
+    fascism = 1
+    communism = 20
+    neutrality = 20
+}
+
+create_country_leader = {
+	name = "Norodom Sihanouk" 
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_2.dds"
+	expire = "1953.3.1"
+	ideology = conservatism
+	traits = {
+		
+	}
+}
+
+#couldnt find anything historical on fascism

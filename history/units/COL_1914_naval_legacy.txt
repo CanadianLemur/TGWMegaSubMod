@@ -1,0 +1,15 @@
+units = {
+	fleet = {
+		name = "Armada de Colombia Fleet"
+		naval_base = 12790 # Barranquilla
+		task_force = {
+			name = "Armada de Colombia"
+			location = 12790 # Barranquilla
+			ship = { name = "Cartagena" definition = light_cruiser equipment = { light_cruiser_1900 = { amount = 1 owner = COL } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = { equipment = { type = infantry_equipment_0 creator = "COL" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	}

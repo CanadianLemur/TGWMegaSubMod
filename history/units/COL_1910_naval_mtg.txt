@@ -1,0 +1,15 @@
+units = {
+	fleet = {
+		name = "Armada de Colombia Fleet"
+		naval_base = 12790 # Barranquilla
+		task_force = {
+			name = "Armada de Colombia"
+			location = 12790 # Barranquilla
+			ship = { name = "Cartagena" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = COL version_name = "Cartagena Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = { equipment = { type = infantry_equipment_0 creator = "COL" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	}
