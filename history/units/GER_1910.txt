@@ -1,6 +1,5 @@
 ﻿
 ###################################################################
-
 division_template = {
 	name = "Infanterie Division"	# Infantry
 	regiments = {
@@ -20,7 +19,6 @@ division_template = {
 		artillery = { x = 0 y = 2 }
 	}
 }
-
 division_template = {
 	name = "Stoßtruppen Division"		# Elite
 	regiments = {
@@ -43,7 +41,6 @@ division_template = {
 	}
 	priority = 2
 }
-
 division_template = {
 	name = "Schutztruppe Division"		# Special
 	regiments = {
@@ -57,7 +54,6 @@ division_template = {
 		engineer = { x = 0 y = 1 }		
 	}
 }
-
 division_template = {
 	name = "Gebirgsjäger Division"		# Mountain Division
 	regiments = {
@@ -82,7 +78,6 @@ division_template = {
 	}
 	priority = 0
 }
-
 division_template = {
 	name = "Hussars"		# Cavalry
 	regiments = {
@@ -96,27 +91,21 @@ division_template = {
 		engineer = { x = 0 y = 1 }
 	}
 }
-
 division_template = {
     name = "Straßenpanzerwagen"
-
     regiments = {
         armored_car = { x = 0 y = 0 }
         armored_car = { x = 0 y = 1 }       
         infantry = { x = 1 y = 0 }
         infantry = { x = 1 y = 1 }
     }
-
     support = {
         recon = { x = 0 y = 0 }
         engineer = { x = 0 y = 1 }
     }
 }
-
 ###################################################################
-
 units = {
-
     division = {
         name = "1. Straßenpanzerwagen"
         location = 9575
@@ -793,7 +782,6 @@ units = {
         division_template = "Infanterie Division"
         start_experience_factor = 0.1
     }
-
     division = {
         name = "16. Infanterie-Division"
         location = 6488#Frankfurt am Main
@@ -997,37 +985,9 @@ units = {
         # start_manpower_factor = 0.3
     }
 }
-
 air_wings = {
     55 = {
         ww1_fighter_equipment_1 = { owner = "GER" amount = 7 }
         ww1_zeppelin_equipment_1 = { owner = "GER" amount = 5 }
-    }
-}
-
-instant_effect = {
-    add_equipment_production = {
-        equipment = {
-            type = infantry_equipment_1 creator = "GER"
-        }
-        requested_factories = 1 progress = 0.1 efficiency = 50
-    }
-    add_equipment_production = {
-        equipment = {
-            type = support_equipment_1 creator = "GER"
-        }
-        requested_factories = 1 progress = 0.1 efficiency = 50
-    }
-    add_equipment_production = {
-        equipment = {
-            type = light_field_gun_equipment_1 creator = "GER"
-        }
-        requested_factories = 1 progress = 0.1 efficiency = 50
-    }
-    add_equipment_production = {
-        equipment = {
-            type = motorized_equipment_0 creator = "GER"
-        }
-        requested_factories = 1 progress = 0.1 efficiency = 50
     }
 }

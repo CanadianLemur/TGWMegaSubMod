@@ -1,6 +1,5 @@
 ﻿
 ###################################################################
-
 division_template = {
 	name = "Infantry Division"	# Infantry
 	regiments = {
@@ -16,7 +15,6 @@ division_template = {
 		artillery = { x = 0 y = 2 }
 	}
 }
-
 division_template = {
 	name = "Royal Guards"		# Elite
 	regiments = {
@@ -36,7 +34,6 @@ division_template = {
 	}
 	priority = 2
 }
-
 division_template = {
 	name = "Colonial Troops"		# Special
 	regiments = {
@@ -50,7 +47,6 @@ division_template = {
 		engineer = { x = 0 y = 1 }		
 	}
 }
-
 division_template = {
 	name = "Reserve Brigade"	# Militia
 	regiments = {
@@ -61,7 +57,6 @@ division_template = {
 	}
 	priority = 0
 }
-
 division_template = {
 	name = "Cavalry Division"		# Cavalry
 	regiments = {
@@ -75,24 +70,20 @@ division_template = {
 		engineer = { x = 0 y = 1 }
 	}
 }
-
 division_template = {
     name = "Armored Recon"
-
     regiments = {
         armored_car = { x = 0 y = 0 }
         armored_car = { x = 0 y = 1 }       
         infantry = { x = 1 y = 0 }
         infantry = { x = 1 y = 1 }
     }
-
     support = {
         recon = { x = 0 y = 0 }
         engineer = { x = 0 y = 1 }
     }
 }
 ###################################################################
-
 units = {
 	division= { 
 			name = "1st Infantry Division"
@@ -399,7 +390,6 @@ units = {
 			start_manpower_factor = 0.3
 			}
 	
-
 division= { 
 	name = "The Nigeria Regiment"
 	location=2050 # Lagos
@@ -408,54 +398,10 @@ division= {
 	start_equipment_factor = 0.3 
 	start_manpower_factor = 0.3
 	}
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
- 
- 
- 
- 
- 
- 
-
-
 }
-
 air_wings = { 
 	126 = {
         ww1_fighter_equipment_1 = { owner = "ENG" amount = 4 }
         ww1_zeppelin_equipment_1 = { owner = "ENG" amount = 2 }
     }
-}
-
-instant_effect = {
-	add_equipment_production = { equipment = { type = infantry_equipment_0 creator = "ENG" } requested_factories = 1 progress = 0.1 efficiency = 50}
-	add_equipment_production = { equipment = { type = support_equipment_1 creator = "ENG" } requested_factories = 1 progress = 0.1 efficiency = 50}
-	add_equipment_production = { equipment = { type = light_field_gun_equipment_1 creator = "ENG" } requested_factories = 1 progress = 0.1 efficiency = 50}
-	add_equipment_production = { equipment = { type = motorized_equipment_0 creator = "ENG" } requested_factories = 1 progress = 0.1 efficiency = 50}
-
-
-
 }

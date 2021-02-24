@@ -1,145 +1,148 @@
 units = {
-fleet = {
-	name = "1a Squadra Navale Fleet"
-	naval_base = 11837 # Taranto
-	task_force = {
-		name = "1a Squadra Navale"
-		location = 11837 # Taranto
-		ship = { name = "RN Napoli" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = ITA version_name = "Regina Elena Class" } } }
-		ship = { name = "RN Regina Elena" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = ITA version_name = "Regina Elena Class" } } }
-		ship = { name = "RN Roma" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = ITA version_name = "Regina Elena Class" } } }
-		ship = { name = "RN Vittorio Emanuele" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = ITA version_name = "Regina Elena Class" } } }
-		ship = { name = "RN Pisa" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = ITA version_name = "Pisa Class" } } }
-		ship = { name = "RN Amalfi" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = ITA version_name = "Pisa Class" } } }
-		ship = { name = "RN Tripoli" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Tripoli Class"} } }
-		ship = { name = "RN Goito" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Goito Class" } } }
-		ship = { name = "RN Montebello" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Goito Class" } } }
-		ship = { name = "RN Aretusa" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Partenope Class" } } }
-		ship = { name = "RN Caprera" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Partenope Class" } } }
-		ship = { name = "RN Euridice" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Partenope Class" } } }
-		ship = { name = "RN Iride" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Partenope Class" } } }
-		ship = { name = "RN Minerva" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Partenope Class" } } }
-		ship = { name = "RN Partenope" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Partenope Class" } } }
-		ship = { name = "RN Urania" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Partenope Class" } } }
-		ship = { name = "RN Agortdat" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ITA } } }
-		ship = { name = "RN Giovanni Bausan" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Bausan Class" } } }
+	fleet = {
+		name = "1a Squadra Navale Fleet"
+		naval_base = 11837 # Taranto
+		task_force = {
+			name = "1a Squadra Navale"
+			location = 11837 # Taranto
+			ship = { name = "RN Napoli" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = ITA version_name = "Regina Elena Class" } } }
+			ship = { name = "RN Regina Elena" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = ITA version_name = "Regina Elena Class" } } }
+			ship = { name = "RN Roma" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = ITA version_name = "Regina Elena Class" } } }
+			ship = { name = "RN Vittorio Emanuele" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = ITA version_name = "Regina Elena Class" } } }
+			ship = { name = "RN Pisa" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought { amount = 1 owner = ITA version_name = "Pisa Class" } } }
+			ship = { name = "RN Amalfi" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought { amount = 1 owner = ITA version_name = "Pisa Class" } } }
+			ship = { name = "RN Tripoli" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Tripoli Class" } } }
+			ship = { name = "RN Goito" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Goito Class" } } }
+			ship = { name = "RN Montebello" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Goito Class" } } }
+			ship = { name = "RN Aretusa" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Partenope Class" } } }
+			ship = { name = "RN Caprera" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Partenope Class" } } }
+			ship = { name = "RN Euridice" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Partenope Class" } } }
+			ship = { name = "RN Iride" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Partenope Class" } } }
+			ship = { name = "RN Minerva" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Partenope Class" } } }
+			ship = { name = "RN Partenope" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Partenope Class" } } }
+			ship = { name = "RN Urania" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Partenope Class" } } }
+			ship = { name = "RN Agortdat" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Agordat Class" } } }
+			ship = { name = "RN Giovanni Bausan" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Bausan Class" } } }
+		}
+		task_force = {
+			name = "2a Squadra Navale"
+			location = 11837 # Taranto
+			ship = { name = "RN Ammiraglio di Saint Bon" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = ITA version_name = "Ammiraglio di Saint Bon Class" } } }
+			ship = { name = "RN Emanuele Filiberto" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = ITA version_name = "Ammiraglio di Saint Bon Class" } } }
+			ship = { name = "RN Benedetto Brin" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = ITA version_name = "Regina Margherita Class" } } }
+			ship = { name = "RN Regina Margherita" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = ITA version_name = "Regina Margherita Class" } } }
+			ship = { name = "RN Giuseppe Garibaldi" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought { amount = 1 owner = ITA version_name = "Garibaldi Class" } } }
+			ship = { name = "RN Varese" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought { amount = 1 owner = ITA version_name = "Garibaldi Class" } } }
+			ship = { name = "RN Francesco Ferruccio" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought { amount = 1 owner = ITA version_name = "Garibaldi Class" } } }
+			ship = { name = "RN Marco Polo" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought { amount = 1 owner = ITA version_name = "Marco Polo Class" } } }
+			ship = { name = "RN Coatit" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Agordat Class" } } }
+		}
+		task_force = {
+			name = "Divisione Navi Scuola"
+			location = 11837 # Taranto
+			ship = { name = "RN Re Umberto" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = ITA version_name = "Re Umberto Class" } } }
+			ship = { name = "RN Sardegna" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = ITA version_name = "Re Umberto Class" } } }
+			ship = { name = "RN Sicilia" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = ITA version_name = "Re Umberto Class" } } }
+			ship = { name = "RN Carlo Alberto" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought { amount = 1 owner = ITA version_name = "Vittor Pisani Class" } } }
+		}
+		task_force = {
+			name = "1a Squadra Sommergibili"
+			location = 11837 # Taranto
+			ship = { name = "RN Delfino" definition = submarine equipment = { MSM_ship_hull_uboat_1 { amount = 1 owner = ITA version_name = "Squalo Class" } } }
+			ship = { name = "RN Glauco" definition = submarine equipment = { MSM_ship_hull_uboat_1 { amount = 1 owner = ITA version_name = "Glauco Class" } } }
+			ship = { name = "RN Narvalo" definition = submarine equipment = { MSM_ship_hull_uboat_1 { amount = 1 owner = ITA version_name = "Glauco Class" } } }
+			ship = { name = "RN Otaria" definition = submarine equipment = { MSM_ship_hull_uboat_1 { amount = 1 owner = ITA version_name = "Glauco Class" } } }
+			ship = { name = "RN Squalo" definition = submarine equipment = { MSM_ship_hull_uboat_1 { amount = 1 owner = ITA version_name = "Glauco Class" } } }
+			ship = { name = "RN Tricheco" definition = submarine equipment = { MSM_ship_hull_uboat_1 { amount = 1 owner = ITA version_name = "Glauco Class" } } }
+			ship = { name = "RN Foca" definition = submarine equipment = { MSM_ship_hull_uboat_1 { amount = 1 owner = ITA version_name = "Squalo Class" } } }
+		}
+		task_force = {
+			name = "RN Calabria"
+			location = 11837 # Taranto
+			ship = { name = "RN Calabria" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Calabria Class" } } }
+		}
+		task_force = {
+			name = "RN Etruria"
+			location = 11837 # Taranto
+			ship = { name = "RN Etruria" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Umbria Class" } } }
+		}
 	}
-	task_force = {
-		name = "2a Squadra Navale"
-		location = 11837 # Taranto
-		ship = { name = "RN Ammiraglio di Saint Bon" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = ITA version_name = "Ammiraglio di Saint Bon Class" } } }
-		ship = { name = "RN Emanuele Filiberto" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = ITA version_name = "Ammiraglio di Saint Bon Class" } } }
-		ship = { name = "RN Benedetto Brin" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = ITA version_name = "Regina Margherita Class"} } }
-		ship = { name = "RN Regina Margherita" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = ITA version_name = "Regina Margherita Class"} } }
-		ship = { name = "RN Giuseppe Garibaldi" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = ITA version_name = "Garibaldi Class" } } }
-		ship = { name = "RN Varese" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = ITA version_name = "Garibaldi Class" } } }
-		ship = { name = "RN Francesco Ferruccio" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = ITA version_name = "Garibaldi Class" } } }
-		ship = { name = "RN Marco Polo" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = ITA version_name = "Marco Polo Class"} } }
-		ship = { name = "RN Coatit" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ITA } } }
+	fleet = {
+		name = "Divisione Torpediniere Fleet"
+		naval_base = 925 # Venezia
+		task_force = {
+			name = "Divisione Torpediniere"
+			location = 925 # Venezia
+			ship = { name = "RN Vittor Pisani" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought { amount = 1 owner = ITA version_name = "Vittor Pisani Class" } } }
+			ship = { name = "RN Fulmine" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Folgore Class" } } }
+			ship = { name = "RN Lampo" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Lampo Class" } } }
+			ship = { name = "RN Freccia" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Lampo Class" } } }
+			ship = { name = "RN Dardo" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Lampo Class" } } }
+			ship = { name = "RN Strale" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Lampo Class" } } }
+			ship = { name = "RN Euro" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Lampo Class" } } }
+			ship = { name = "RN Ostro" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Lampo Class" } } }
+			ship = { name = "RN Nembo" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Nembo Class" } } }
+			ship = { name = "RN Turbine" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Nembo Class" } } }
+			ship = { name = "RN Aquilone" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Nembo Class" } } }
+			ship = { name = "RN Borea" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Nembo Class" } } }
+			ship = { name = "RN Zeffiro" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Nembo Class" } } }
+			ship = { name = "RN Espero" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Nembo Class" } } }
+		}
 	}
-	task_force = {
-		name = "Divisione Navi Scuola"
-		location = 11837 # Taranto
-		ship = { name = "RN Re Umberto" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = ITA version_name = "Re Umberto Class" } } }
-		ship = { name = "RN Sardegna" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = ITA version_name = "Re Umberto Class" } } }
-		ship = { name = "RN Sicilia" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = ITA version_name = "Re Umberto Class" } } }
-		ship = { name = "RN Carlo Alberto" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = ITA version_name = "Vittor Pisani Class" } } }
+	fleet = {
+		name = "1o Gruppo di Riserva Fleet"
+		naval_base = 925 # La Spezia
+		task_force = {
+			name = "1o Gruppo di Riserva"
+			location = 925 # La Spezia
+			ship = { name = "RN Artigliere" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Soldati Class" } } }
+			ship = { name = "RN Bersagliere" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Soldati Class" } } }
+			ship = { name = "RN Corazziere" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Soldati Class" } } }
+			ship = { name = "RN Garibaldino" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Soldati Class" } } }
+			ship = { name = "RN Granatiere" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Soldati Class" } } }
+			ship = { name = "RN Lanciere" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Soldati Class" } } }
+			ship = { name = "RN Alpino" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Soldati Class" } } }
+			ship = { name = "RN Caribiniere" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Soldati Class" } } }
+			ship = { name = "RN Fuciliere" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Soldati Class" } } }
+			ship = { name = "RN Pontiere" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Soldati Class" } } }
+		}
 	}
-	task_force = {
-		name = "1a Squadra Sommergibili"
-		location = 11837 # Taranto
-		ship = { name = "RN Delfino" definition = submarine equipment = { MSM_ship_hull_uboat_1 = { amount = 1 owner = ITA } } }
-		ship = { name = "RN Glauco" definition = submarine equipment = { MSM_ship_hull_uboat_1 = { amount = 1 owner = ITA version_name = "Glauco Class" } } }
-		ship = { name = "RN Narvalo" definition = submarine equipment = { MSM_ship_hull_uboat_1 = { amount = 1 owner = ITA version_name = "Glauco Class" } } }
-		ship = { name = "RN Otaria" definition = submarine equipment = { MSM_ship_hull_uboat_1 = { amount = 1 owner = ITA version_name = "Glauco Class" } } }
-		ship = { name = "RN Squalo" definition = submarine equipment = { MSM_ship_hull_uboat_1 = { amount = 1 owner = ITA version_name = "Glauco Class" } } }
-		ship = { name = "RN Tricheco" definition = submarine equipment = { MSM_ship_hull_uboat_1 = { amount = 1 owner = ITA version_name = "Glauco Class" } } }
-		ship = { name = "RN Foca" definition = submarine equipment = { MSM_ship_hull_uboat_1 = { amount = 1 owner = ITA } } }
+	fleet = {
+		name = "Squadra del Mar Rosso Fleet"
+		naval_base = 925 # Edd
+		task_force = {
+			name = "Squadra del Mar Rosso"
+			location = 925 # Edd
+			ship = { name = "RN Elba" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Umbria Class" } } }
+			ship = { name = "RN Puglia" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Umbria Class" } } }
+			ship = { name = "RN Etna" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Etna Class" } } }
+			ship = { name = "RN Stromboli" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Etna Class" } } }
+			ship = { name = "RN Piemonte" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Piemonte Class" } } }
+			ship = { name = "RN Liguria" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Umbria Class" } } }
+			ship = { name = "RN Lombardia" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ITA version_name = "Umbria Class" } } }
+		}
 	}
-	task_force = {
-		name = "RN Calabria"
-		location = 11837 # Taranto
-		ship = { name = "RN Calabria" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Calabria Class" } } }
-	}
-	task_force = {
-		name = "RN Etruria"
-		location = 11837 # Taranto
-		ship = { name = "RN Etruria" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Umbria Class" } } }
-	}
-}
-
-fleet = {
-	name = "Divisione Torpediniere Fleet"
-	naval_base = 925 # Venezia
-	task_force = {
-		name = "Divisione Torpediniere"
-		location = 925 # Venezia
-		ship = { name = "RN Vittor Pisani" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = ITA version_name = "Vittor Pisani Class" } } }
-		ship = { name = "RN Fulmine" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA } } }
-		ship = { name = "RN Lampo" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Lampo Class" } } }
-		ship = { name = "RN Freccia" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Lampo Class" } } }
-		ship = { name = "RN Dardo" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Lampo Class" } } }
-		ship = { name = "RN Strale" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Lampo Class" } } }
-		ship = { name = "RN Euro" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Lampo Class" } } }
-		ship = { name = "RN Ostro" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Lampo Class" } } }
-		ship = { name = "RN Nembo" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Nembo Class"} } }
-		ship = { name = "RN Turbine" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Nembo Class"} } }
-		ship = { name = "RN Aquilone" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Nembo Class"} } }
-		ship = { name = "RN Borea" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Nembo Class"} } }
-		ship = { name = "RN Zeffiro" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Nembo Class"} } }
-		ship = { name = "RN Espero" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Nembo Class"} } }
-	}
-}
-
-fleet = {
-	name = "1o Gruppo di Riserva Fleet"
-	naval_base = 925 # La Spezia
-	task_force = {
-		name = "1o Gruppo di Riserva"
-		location = 925 # La Spezia
-		ship = { name = "RN Artigliere" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Soldati Class" } } }
-		ship = { name = "RN Bersagliere" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Soldati Class" } } }
-		ship = { name = "RN Corazziere" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Soldati Class" } } }
-		ship = { name = "RN Garibaldino" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Soldati Class" } } }
-		ship = { name = "RN Granatiere" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Soldati Class" } } }
-		ship = { name = "RN Lanciere" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Soldati Class" } } }
-		ship = { name = "RN Alpino" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Soldati Class" } } }
-		ship = { name = "RN Caribiniere" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Soldati Class" } } }
-		ship = { name = "RN Fuciliere" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Soldati Class" } } }
-		ship = { name = "RN Pontiere" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Soldati Class" } } }
-	}
-}
-
-fleet = {
-	name = "Squadra del Mar Rosso Fleet"
-	naval_base = 925 # Edd
-	task_force = {
-		name = "Squadra del Mar Rosso"
-		location = 925 # Edd
-		ship = { name = "RN Elba" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Umbria Class" } } }
-		ship = { name = "RN Puglia" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Umbria Class" } } }
-		ship = { name = "RN Etna" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Etna Class" } } }
-		ship = { name = "RN Stromboli" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Etna Class" } } }
-		ship = { name = "RN Piemonte" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Piemonte Class" } } }
-		ship = { name = "RN Liguria" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Umbria Class" } } }
-		ship = { name = "RN Lombardia" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Umbria Class" } } }
-	}
-}
-
-fleet = {
-	name = "5a Divisione Navale Fleet"
-	naval_base = 10074 # Palermo
-	task_force = {
-		name = "5a Divisione Navale"
-		location = 10074 # Palermo
-		ship = { name = "RN Dandalo" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = ITA version_name = "Caio Duillio Class" } } }
-		ship = { name = "RN Italia" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = ITA version_name = "Italia Class" } } }
-		ship = { name = "RN Lepanto" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = ITA version_name = "Italia Class" } } }
-		ship = { name = "RN Ruggiero di Lauria" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = ITA version_name = "Ruggiero di Lauria Class" } } }
+	fleet = {
+		name = "5a Divisione Navale Fleet"
+		naval_base = 10074 # Palermo
+		task_force = {
+			name = "5a Divisione Navale"
+			location = 10074 # Palermo
+			ship = { name = "RN Dandalo" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = ITA version_name = "Caio Duilio Class" } } }
+			ship = { name = "RN Italia" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = ITA version_name = "Italia Class" } } }
+			ship = { name = "RN Lepanto" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = ITA version_name = "Italia Class" } } }
+			ship = { name = "RN Ruggiero di Lauria" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = ITA version_name = "Ruggiero di Lauria Class" } } }
+		}
 	}
 }
 
-
-
-
+instant_effect = {
+	add_equipment_production = { equipment = { type = infantry_equipment_1 creator = "ITA" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	add_equipment_production = { equipment = { type = support_equipment_1 creator = "ITA" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	add_equipment_production = { equipment = { type = light_field_gun_equipment_1 creator = "ITA" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	add_equipment_production = { equipment = { type = motorized_equipment_0 creator = "ITA" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	
+	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought "ITA" version_name = "San Giorgio Class"  }  requested_factories = 1  progress = 0.97  amount = 1 } #RN San Giorgio LD:04-Jul-1905 Comp:01-Jul-1910
+	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought "ITA" version_name = "San Giorgio Class"  }  requested_factories = 1  progress = 0.81  amount = 1 } #RN San Marco LD:02-Jan-1907 Comp:07-Feb-1911
+	
 }

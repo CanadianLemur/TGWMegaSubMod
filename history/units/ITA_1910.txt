@@ -1,6 +1,5 @@
 ﻿
 ###################################################################
-
 division_template = {
 	name = "Fanteria Divisione"	# Infantry
 	regiments = {
@@ -17,7 +16,6 @@ division_template = {
 		artillery = { x = 0 y = 2 }
 	}
 }
-
 division_template = {
 	name = "Bersaglieri Division"		# Elite
 	regiments = {
@@ -37,7 +35,6 @@ division_template = {
 	}
 	priority = 2
 }
-
 division_template = {
 	name = "Coloniali Troops"		# Special
 	regiments = {
@@ -51,7 +48,6 @@ division_template = {
 		engineer = { x = 0 y = 1 }		
 	}
 }
-
 division_template = {
 	name = "Alpini Division"		# Alpini Division
 	regiments = {
@@ -66,7 +62,6 @@ division_template = {
         logistics_company = { x = 0 y = 2 }
 	}
 }
-
 division_template = {
 	name = "Fanteria Brigata"	# Militia
 	regiments = {
@@ -77,7 +72,6 @@ division_template = {
 	}
 	priority = 0
 }
-
 division_template = {
 	name = "Cavalleria di Linea"		# Cavalry
 	regiments = {
@@ -91,9 +85,7 @@ division_template = {
 		engineer = { x = 0 y = 1 }
 	}
 }
-
 ###################################################################
-
 units = {
 	division= { 
 			name = "1a Brigada Alpini"
@@ -549,14 +541,4 @@ air_wings = {
         ww1_fighter_equipment_1 = { owner = "ITA" amount = 4 }
         ww1_zeppelin_equipment_1 = { owner = "ITA" amount = 8 }
     }
-}
-instant_effect = {
-	add_equipment_production = { equipment = { type = infantry_equipment_1 creator = "ITA" } requested_factories = 1 progress = 0.1 efficiency = 50}
-	add_equipment_production = { equipment = { type = support_equipment_1 creator = "ITA" } requested_factories = 1 progress = 0.1 efficiency = 50}
-	add_equipment_production = { equipment = { type = light_field_gun_equipment_1 creator = "ITA" } requested_factories = 1 progress = 0.1 efficiency = 50}
-	add_equipment_production = { equipment = { type = motorized_equipment_0 creator = "ITA" } requested_factories = 1 progress = 0.1 efficiency = 50}
-
-	add_equipment_production = { equipment = { type = heavy_cruiser_1890 creator = "ITA" version_name = "San Giorgio Class"  }  requested_factories = 1  progress = 0.97  amount = 1 } #RN San Giorgio LD:04-Jul-1905 Comp:01-Jul-1910
-	add_equipment_production = { equipment = { type = heavy_cruiser_1890 creator = "ITA" version_name = "San Giorgio Class"  }  requested_factories = 1  progress = 0.81  amount = 1 } #RN San Marco LD:02-Jan-1907 Comp:07-Feb-1911
-
 }

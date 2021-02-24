@@ -1,0 +1,86 @@
+﻿
+###################################################################
+division_template = {
+	name = "Infantry Division"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "Infantry Brigade"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "Cavalry Division"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+###################################################################
+units = {
+	division= { 
+			name = "1e Divisie"
+			location=391 # Amsterdam
+			division_template="Infantry Division"
+			start_experience_factor=0.1
+			}
+	
+	
+	division= { 
+			name = "2e Divisie"
+			location=391 # Amsterdam
+			division_template="Infantry Division"
+			start_experience_factor=0.1
+			}
+	
+	
+	division= { 
+			name = "3e Divisie"
+			location = 9363 # Arnhem
+			division_template="Infantry Division"
+			start_experience_factor=0.1
+			}
+	
+	
+	division= { 
+			name = "4e Divisie"
+			location = 9363 # Arnhem
+			division_template="Infantry Division"
+			start_experience_factor=0.1
+			}
+	
+	
+	division= { 
+			name = "Ie Divisie 'Java'"
+			location = 4406 # Bandung
+			division_template="Infantry Brigade"
+			start_experience_factor=0
+			# start_equipment_factor = 0.3 
+			# start_manpower_factor = 0.3
+			}
+	
+	
+	division= { 
+			name = "IIe Divisie 'Java'"
+			location = 4434 # Tjilatjap
+			division_template="Infantry Brigade"
+			start_experience_factor=0
+			# start_equipment_factor = 0.3 
+			# start_manpower_factor = 0.3
+			}
+	 
+	 
+	 
+	}
+air_wings = { 
+	}

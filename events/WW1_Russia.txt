@@ -587,7 +587,13 @@ country_event = {
 				    traits = {}
 				}
 				set_politics = { ruling_party = neutrality elections_allowed = no }
-				load_oob = EST_army
+				if = {
+					limit = { has_dlc = "Man the Guns" }
+					load_oob = "EST_army_mtg"
+					else = {
+						load_oob = "EST_army_legacy"
+					}
+				}
 			}
 			GER = { puppet = EST }
 			SOV = {

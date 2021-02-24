@@ -1,0 +1,15 @@
+units = {
+	fleet = {
+		name = "Ecuadorian Fleet Fleet"
+		naval_base = 8252 # Manta
+		task_force = {
+			name = "Ecuadorian Fleet"
+			location = 8252 # Manta
+			ship = { name = "1st Flotilla" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ECU version_name = "Libertador Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = { equipment = { type = infantry_equipment_0 creator = "ECU" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	}

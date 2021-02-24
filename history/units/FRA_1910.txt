@@ -1,6 +1,5 @@
 ﻿
 ###################################################################
-
 division_template = {
 	name = "Division d'Infanterie"	# Infantry
 	regiments = {
@@ -20,7 +19,6 @@ division_template = {
 		artillery = { x = 0 y = 2 }
 	}
 }
-
 division_template = {
 	name = "Légion Etrangère"		# Elite
 	regiments = {
@@ -43,7 +41,6 @@ division_template = {
 	}
 	priority = 2
 }
-
 division_template = {
 	name = "Troupes Coloniales"		# Special
 	regiments = {
@@ -57,7 +54,6 @@ division_template = {
 		engineer = { x = 0 y = 1 }		
 	}
 }
-
 division_template = {
 	name = "Chasseurs Alpins"		# Mountain Division
 	regiments = {
@@ -67,9 +63,9 @@ division_template = {
 		mountaineers = { x = 1 y = 1 }
 	}
 	support = {
-        recon = { x = 0 y = 0 }
-   		engineer = { x = 0 y = 1 }
-        logistics_company = { x = 0 y = 2 }
+    recon = { x = 0 y = 0 }
+  		engineer = { x = 0 y = 1 }
+    logistics_company = { x = 0 y = 2 }
 	}
 }
 division_template = {
@@ -82,7 +78,6 @@ division_template = {
 	}
 	priority = 0
 }
-
 division_template = {
 	name = "Hussards"		# Cavalry
 	regiments = {
@@ -96,30 +91,25 @@ division_template = {
 		engineer = { x = 0 y = 1 }
 	}
 }
-
 division_template = {
-    name = "Reconnaissance Blindée"
-
-    regiments = {
-        armored_car = { x = 0 y = 0 }
-        armored_car = { x = 0 y = 1 }       
-        infantry = { x = 1 y = 0 }
-        infantry = { x = 1 y = 1 }
-    }
-
-    support = {
-        recon = { x = 0 y = 0 }
-        engineer = { x = 0 y = 1 }
-    }
+  name = "Reconnaissance Blindée"
+  regiments = {
+    armored_car = { x = 0 y = 0 }
+    armored_car = { x = 0 y = 1 }    
+    infantry = { x = 1 y = 0 }
+    infantry = { x = 1 y = 1 }
+  }
+  support = {
+    recon = { x = 0 y = 0 }
+    engineer = { x = 0 y = 1 }
+  }
 }
 ###################################################################
-
 units = {
-
 	division= { 
 			name = "81eme Division d'Infanterie territoriale"
 			location=11548 # Calais
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -129,7 +119,7 @@ units = {
 	division= { 
 			name = "82eme Division d'Infanterie territoriale"
 			location = 11535 # Caen
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -139,7 +129,7 @@ units = {
 	division= { 
 			name = "87eme Division d'Infanterie territoriale"
 			location = 11508 # St. Malo
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -149,7 +139,7 @@ units = {
 	division= { 
 			name = "15e Division de Gendarmerie"
 			location = 9510 # St. Nazaire
-			division_template="Brigade de Gendarmerie"
+			division_template = "Brigade de Gendarmerie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -159,7 +149,7 @@ units = {
 	division= { 
 			name = "86eme Division d'Infanterie territoriale"
 			location=6536 # Lorient
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -169,7 +159,7 @@ units = {
 	division= { 
 			name = "88eme Division d'Infanterie territoriale"
 			location=11506 # Paris
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -179,7 +169,7 @@ units = {
 	division= { 
 			name = "85eme Division d'Infanterie territoriale"
 			location=6657 # La Rochelle
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -189,7 +179,7 @@ units = {
 	division= { 
 			name = "90eme Division Territoriale"
 			location=11506 # Paris
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -199,7 +189,7 @@ units = {
 	division= { 
 			name = "58eme Division d'Infanterie de reserve"
 			location=11506 # Paris
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -209,7 +199,7 @@ units = {
 	division= { 
 			name = "63eme Division d'Infanterie de reserve"
 			location=11506 # Paris
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -219,7 +209,7 @@ units = {
 	division= { 
 			name = "66eme Division d'Infanterie de reserve"
 			location=11506 # Paris
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -229,7 +219,7 @@ units = {
 	division= { 
 			name = "61eme Division d'Infanterie de reserve"
 			location=11506 # Paris
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -239,7 +229,7 @@ units = {
 	division= { 
 			name = "62eme Division d'Infanterie de reserve"
 			location=11506 # Paris
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -249,7 +239,7 @@ units = {
 	division= { 
 			name = "67eme Division d'Infanterie de reserve"
 			location=11506 # Paris
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			}
 	
@@ -257,7 +247,7 @@ units = {
 	division= { 
 			name = "51eme Division d'Infanterie de reserve"
 			location=11506 # Paris
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -267,7 +257,7 @@ units = {
 	division= { 
 			name = "53eme Division d'Infanterie de reserve"
 			location=11506 # Paris
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			}
 	
@@ -275,7 +265,7 @@ units = {
 	division= { 
 			name = "69eme Division d'Infanterie de reserve"
 			location=11506 # Paris
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			}
 	
@@ -283,7 +273,7 @@ units = {
 	division= { 
 			name = "1re Division de Cavalerie"
 			location=11506 # Paris
-			division_template="Hussards"
+			division_template = "Hussards"
 			start_experience_factor=0.1
 			}
 	
@@ -291,7 +281,7 @@ units = {
 	division= { 
 			name = "3eme Division de Cavalerie"
 			location=11506 # Paris
-			division_template="Hussards"
+			division_template = "Hussards"
 			start_experience_factor=0.1
 			}
 	
@@ -299,7 +289,7 @@ units = {
 	division= { 
 			name = "5eme Division de Cavalerie"
 			location=11506 # Paris
-			division_template="Hussards"
+			division_template = "Hussards"
 			start_experience_factor=0.1
 			}
 	
@@ -307,7 +297,7 @@ units = {
 	division= { 
 			name = "1re Division d'Infanterie"
 			location=11483 # Lille
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.1
 			}
 	
@@ -315,7 +305,7 @@ units = {
 	division= { 
 			name = "2eme Division d'Infanterie"
 			location=11483 # Lille
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.1
 			}
 	
@@ -323,7 +313,7 @@ units = {
 	division= { 
 			name = "1re Corps d'Infanterie Reserve"
 			location=11483 # Lille
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -333,7 +323,7 @@ units = {
 	division= { 
 			name = "3eme Division d'Infanterie"
 			location = 3402 # Amiens
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.1
 			}
 	
@@ -341,7 +331,7 @@ units = {
 	division= { 
 			name = "4eme Division d'Infanterie"
 			location = 3402 # Amiens
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.1
 			}
 	
@@ -349,7 +339,7 @@ units = {
 	division= { 
 			name = "2e Corps d'Infanterie reserve"
 			location = 3402 # Amiens
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -359,7 +349,7 @@ units = {
 	division= { 
 			name = "12eme Division d'Infanterie"
 			location = 6545 # Ste Menehould
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.1
 			}
 	
@@ -367,7 +357,7 @@ units = {
 	division= { 
 			name = "40eme Division d'Infanterie"
 			location = 6545 # Ste Menehould
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.1
 			}
 	
@@ -375,7 +365,7 @@ units = {
 	division= { 
 			name = "42eme Division d'Infanterie"
 			location = 6545 # Ste Menehould
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.1
 			}
 	
@@ -383,7 +373,7 @@ units = {
 	division= { 
 			name = "7eme Division d'Infanterie"
 			location = 11463 # Le Mans
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.1
 			}
 	
@@ -391,7 +381,7 @@ units = {
 	division= { 
 			name = "8eme Division d'Infanterie"
 			location = 11463 # Le Mans
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.1
 			}
 	
@@ -399,7 +389,7 @@ units = {
 	division= { 
 			name = "9eme Division d'Infanterie"
 			location = 512 # Orléans
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.1
 			}
 	
@@ -407,7 +397,7 @@ units = {
 	division= { 
 			name = "10eme Division d'Infanterie"
 			location = 512 # Orléans
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.1
 			}
 	
@@ -415,7 +405,7 @@ units = {
 	division= { 
 			name = "7eme Division de Cavalerie"
 			location = 512 # Orléans
-			division_template="Hussards"
+			division_template = "Hussards"
 			start_experience_factor=0.1
 			}
 	
@@ -423,7 +413,7 @@ units = {
 	division= { 
 			name = "54eme Division d'Infanterie de reserve"
 			location = 9644 # Montargis
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -433,7 +423,7 @@ units = {
 	division= { 
 			name = "55eme Division d'Infanterie de reserve"
 			location = 9644 # Montargis
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -443,7 +433,7 @@ units = {
 	division= { 
 			name = "56eme Division d'Infanterie de reserve"
 			location = 9644 # Montargis
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -453,7 +443,7 @@ units = {
 	division= { 
 			name = "17eme Division d'Infanterie"
 			location = 9492 # Blois
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.1
 			}
 	
@@ -461,7 +451,7 @@ units = {
 	division= { 
 			name = "18eme Division d'Infanterie"
 			location = 9492 # Blois
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.1
 			}
 	
@@ -469,7 +459,7 @@ units = {
 	division= { 
 			name = "9eme Corps d'infanterie reserve"
 			location = 9492 # Blois
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -479,7 +469,7 @@ units = {
 	division= { 
 			name = "57eme Division d'Infanterie de reserve"
 			location = 11488 # Épinal
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -489,7 +479,7 @@ units = {
 	division= { 
 			name = "73eme Division d'Infanterie de reserve"
 			location = 11488 # Épinal
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -499,7 +489,7 @@ units = {
 	division= { 
 			name = "71eme Division d'Infanterie de reserve"
 			location = 11488 # Épinal
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -509,7 +499,7 @@ units = {
 	division= { 
 			name = "72eme Division d'Infanterie de reserve"
 			location = 11488 # Épinal
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -519,7 +509,7 @@ units = {
 	division= { 
 			name = "13eme Division d'Infanterie"
 			location = 5291 # Verdun
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.1
 			}
 	
@@ -527,7 +517,7 @@ units = {
 	division= { 
 			name = "43eme Division d'Infanterie"
 			location = 5291 # Verdun
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.1
 			}
 	
@@ -535,7 +525,7 @@ units = {
 	division= { 
 			name = "8eme Division de Cavalerie"
 			location = 5291 # Verdun
-			division_template="Hussards"
+			division_template = "Hussards"
 			start_experience_factor=0.1
 			}
 	
@@ -543,7 +533,7 @@ units = {
 	division= { 
 			name = "14eme Division d'Infanterie"
 			location = 698 # Belfort
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.1
 			}
 	
@@ -551,7 +541,7 @@ units = {
 	division= { 
 			name = "41eme Division d'Infanterie"
 			location = 698 # Belfort
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.1
 			}
 	
@@ -559,7 +549,7 @@ units = {
 	division= { 
 			name = "7eme Corps d'Infanterie reserve"
 			location = 698 # Belfort
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -569,7 +559,7 @@ units = {
 	division= { 
 			name = "6eme Division de Cavalerie"
 			location = 698 # Belfort
-			division_template="Hussards"
+			division_template = "Hussards"
 			start_experience_factor=0.1
 			}
 	
@@ -577,7 +567,7 @@ units = {
 	division= { 
 			name = "15eme Division d'Infanterie"
 			location = 11611 # Dun sur Auron
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.1
 			}
 	
@@ -585,7 +575,7 @@ units = {
 	division= { 
 			name = "16eme Division d'Infanterie"
 			location = 11611 # Dun sur Auron
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.1
 			}
 	
@@ -593,7 +583,7 @@ units = {
 	division= { 
 			name = "8eme Corps d'infanterie reserve"
 			location = 11611 # Dun sur Auron
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -603,7 +593,7 @@ units = {
 	division= { 
 			name = "11eme Division d'Infanterie"
 			location=11516 # Nancy
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.1
 			}
 	
@@ -611,7 +601,7 @@ units = {
 	division= { 
 			name = "39eme Division d'Infanterie"
 			location=11516 # Nancy
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.1
 			}
 	
@@ -619,7 +609,7 @@ units = {
 	division= { 
 			name = "10eme Division de Cavalerie"
 			location=11516 # Nancy
-			division_template="Hussards"
+			division_template = "Hussards"
 			start_experience_factor=0.1
 			}
 	
@@ -627,7 +617,7 @@ units = {
 	division= { 
 			name = "25e Division de Gendarmerie"
 			location=9642 # Besancon
-			division_template="Brigade de Gendarmerie"
+			division_template = "Brigade de Gendarmerie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -637,7 +627,7 @@ units = {
 	division= { 
 			name = "92eme Division d'Infanterie territoriale"
 			location=9737 # Bordeaux
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -647,7 +637,7 @@ units = {
 	division= { 
 			name = "91eme Division d'Infanterie territoriale"
 			location=6766 # Toulouse
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -657,7 +647,7 @@ units = {
 	division= { 
 			name = "89eme Division d'Infanterie territoriale"
 			location=620 # Limoges
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -667,7 +657,7 @@ units = {
 	division= { 
 			name = "16e Division de Gendarmerie"
 			location=9737 # Bordeaux
-			division_template="Brigade de Gendarmerie"
+			division_template = "Brigade de Gendarmerie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -677,7 +667,7 @@ units = {
 	division= { 
 			name = "17e Division de Gendarmerie"
 			location = 3946 # Perpignan
-			division_template="Brigade de Gendarmerie"
+			division_template = "Brigade de Gendarmerie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -687,7 +677,7 @@ units = {
 	division= { 
 			name = "18e Division de Gendarmerie"
 			location=11834 # Marseille
-			division_template="Brigade de Gendarmerie"
+			division_template = "Brigade de Gendarmerie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -697,7 +687,7 @@ units = {
 	division= { 
 			name = "19e Division de Gendarmerie"
 			location = 911 # Toulon
-			division_template="Brigade de Gendarmerie"
+			division_template = "Brigade de Gendarmerie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -707,7 +697,7 @@ units = {
 	division= { 
 			name = "21e Division de Gendarmerie"
 			location=9909 # Nice
-			division_template="Brigade de Gendarmerie"
+			division_template = "Brigade de Gendarmerie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -717,7 +707,7 @@ units = {
 	division= { 
 			name = "20e Division de Gendarmerie"
 			location = 911 # Cannes
-			division_template="Brigade de Gendarmerie"
+			division_template = "Brigade de Gendarmerie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -727,7 +717,7 @@ units = {
 	division= { 
 			name = "24e Division de Gendarmerie"
 			location = 6609 # Albertville
-			division_template="Brigade de Gendarmerie"
+			division_template = "Brigade de Gendarmerie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -737,7 +727,7 @@ units = {
 	division= { 
 			name = "23e Division de Gendarmerie"
 			location = 3764 # Briancon
-			division_template="Brigade de Gendarmerie"
+			division_template = "Brigade de Gendarmerie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -747,7 +737,7 @@ units = {
 	division= { 
 			name = "22e Division de Gendarmerie"
 			location = 3764 # Barcelonnette
-			division_template="Brigade de Gendarmerie"
+			division_template = "Brigade de Gendarmerie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -757,7 +747,7 @@ units = {
 	division= { 
 			name = "1er Division de Gendarmerie"
 			location = 9710 # Bayonne
-			division_template="Brigade de Gendarmerie"
+			division_template = "Brigade de Gendarmerie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -766,8 +756,8 @@ units = {
 	
 	division= { 
 			name = "2e Division de Gendarmerie"
-			location = 943 # Lannemezan
-			division_template="Brigade de Gendarmerie"
+			location = 943 # Lannemezan 
+			division_template = "Brigade de Gendarmerie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -777,7 +767,7 @@ units = {
 	division= { 
 			name = "4e Division de Gendarmerie"
 			location = 6639 # Annecy
-			division_template="Brigade de Gendarmerie"
+			division_template = "Brigade de Gendarmerie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -787,7 +777,7 @@ units = {
 	division= { 
 			name = "3e Division de Gendarmerie"
 			location=9909 # Nice
-			division_template="Brigade de Gendarmerie"
+			division_template = "Brigade de Gendarmerie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -797,7 +787,7 @@ units = {
 	division= { 
 			name = "5e Division de Gendarmerie"
 			location = 3764 # Briancon
-			division_template="Brigade de Gendarmerie"
+			division_template = "Brigade de Gendarmerie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -807,7 +797,7 @@ units = {
 	division= { 
 			name = "6e Division de Gendarmerie"
 			location = 3838 # Ajàccio
-			division_template="Brigade de Gendarmerie"
+			division_template = "Brigade de Gendarmerie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -817,7 +807,7 @@ units = {
 	division= { 
 			name = "7e Division de Gendarmerie"
 			location = 3764 # Barcelonnette
-			division_template="Brigade de Gendarmerie"
+			division_template = "Brigade de Gendarmerie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -827,7 +817,7 @@ units = {
 	division= { 
 			name = "10e Division de Gendarmerie"
 			location = 6609 # Albertville
-			division_template="Brigade de Gendarmerie"
+			division_template = "Brigade de Gendarmerie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -837,7 +827,7 @@ units = {
 	division= { 
 			name = "8e Division de Gendarmerie"
 			location = 6639 # Annecy
-			division_template="Brigade de Gendarmerie"
+			division_template = "Brigade de Gendarmerie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -847,7 +837,7 @@ units = {
 	division= { 
 			name = "64eme Division d'Infanterie de reserve"
 			location = 9728 # Romans sur Isere
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -857,7 +847,7 @@ units = {
 	division= { 
 			name = "74eme Division d'Infanterie de reserve"
 			location = 9728 # Romans sur Isere
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -867,7 +857,7 @@ units = {
 	division= { 
 			name = "65eme Division d'Infanterie de reserve"
 			location = 9728 # Romans sur Isere
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -877,7 +867,7 @@ units = {
 	division= { 
 			name = "75eme Division d'Infanterie de reserve"
 			location = 9728 # Romans sur Isere
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -887,7 +877,7 @@ units = {
 	division= { 
 			name = "Alpins d'territoriale"
 			location = 9728 # Romans sur Isere
-			division_template="Chasseurs Alpins"
+			division_template = "Chasseurs Alpins"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -897,7 +887,7 @@ units = {
 	division= { 
 			name = "23eme Division d'Infanterie"
 			location=620 # Limoges
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.1
 			}
 	
@@ -905,7 +895,7 @@ units = {
 	division= { 
 			name = "24eme Division d'Infanterie"
 			location=620 # Limoges
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.1
 			}
 	
@@ -913,7 +903,7 @@ units = {
 	division= { 
 			name = "33eme Division d'Infanterie"
 			location=6766 # Toulouse
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.1
 			}
 	
@@ -921,7 +911,7 @@ units = {
 	division= { 
 			name = "34eme Division d'Infanterie"
 			location=6766 # Toulouse
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.1
 			}
 	
@@ -929,7 +919,7 @@ units = {
 	division= { 
 			name = "1re Division d'infanterie coloniale"
 			location = 9909 # Villefranche
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			}
 	
@@ -937,7 +927,7 @@ units = {
 	division= { 
 			name = "2eme Division d'infanterie coloniale"
 			location = 9909 # Villefranche
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			}
 	
@@ -945,7 +935,7 @@ units = {
 	division= { 
 			name = "3eme Division d'infanterie coloniale"
 			location = 9909 # Villefranche
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			}
 	
@@ -953,7 +943,7 @@ units = {
 	division= { 
 			name = "9eme Division de Cavalerie"
 			location = 9909 # Villefranche
-			division_template="Hussards"
+			division_template = "Hussards"
 			start_experience_factor=0.1
 			}
 	
@@ -961,7 +951,7 @@ units = {
 	division= { 
 			name = "31eme Division d'Infanterie"
 			location=9898 # Montpellier
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.1
 			}
 	
@@ -969,7 +959,7 @@ units = {
 	division= { 
 			name = "32eme Division d'Infanterie"
 			location=9898 # Montpellier
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.1
 			}
 	
@@ -977,7 +967,7 @@ units = {
 	division= { 
 			name = "90eme Division d'Infanterie territoriale"
 			location=9898 # Montpellier
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -987,7 +977,7 @@ units = {
 	division= { 
 			name = "29eme Division d'Infanterie"
 			location=11834 # Marseille
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.1
 			}
 	
@@ -995,7 +985,7 @@ units = {
 	division= { 
 			name = "30eme Division d'Infanterie"
 			location=11834 # Marseille
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.1
 			}
 	
@@ -1003,7 +993,7 @@ units = {
 	division= { 
 			name = "2eme Division de Cavalerie"
 			location=11834 # Marseille
-			division_template="Hussards"
+			division_template = "Hussards"
 			start_experience_factor=0.1
 			}
 	
@@ -1011,7 +1001,7 @@ units = {
 	division= { 
 			name = "35eme Division d'Infanterie"
 			location=9737 # Bordeaux
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.1
 			}
 	
@@ -1019,7 +1009,7 @@ units = {
 	division= { 
 			name = "36eme Division d'Infanterie"
 			location=9737 # Bordeaux
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.1
 			}
 	
@@ -1027,7 +1017,7 @@ units = {
 	division= { 
 			name = "25eme Division d'Infanterie"
 			location = 9748 # Clermont Ferrand
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.1
 			}
 	
@@ -1035,7 +1025,7 @@ units = {
 	division= { 
 			name = "26eme Division d'Infanterie"
 			location = 9748 # Clermont Ferrand
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.1
 			}
 	
@@ -1043,7 +1033,7 @@ units = {
 	division= { 
 			name = "27eme Division d'Infanterie"
 			location=6613 # Lyon
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.1
 			}
 	
@@ -1051,7 +1041,7 @@ units = {
 	division= { 
 			name = "28eme Division d'Infanterie"
 			location=6613 # Lyon
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.1
 			}
 	
@@ -1059,7 +1049,7 @@ units = {
 	division= { 
 			name = "70eme Division d'Infanterie de reserve"
 			location = 911 # Cannes
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -1069,7 +1059,7 @@ units = {
 	division= { 
 			name = "59eme Division d'Infanterie de reserve"
 			location = 911 # Cannes
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -1079,7 +1069,7 @@ units = {
 	division= { 
 			name = "68eme Division d'Infanterie de reserve"
 			location = 911 # Cannes
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -1089,7 +1079,7 @@ units = {
 	division= { 
 			name = "d'Infanterie coloniale du Toulon"
 			location = 911 # Toulon
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			}
 	
@@ -1097,7 +1087,7 @@ units = {
 	division= { 
 			name = "Legion d'Infanterie Foreign"
 			location = 911 # Toulon
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.15
 			}
 	
@@ -1105,7 +1095,7 @@ units = {
 	division= { 
 			name = "Division d'Alger"
 			location = 1145 # Alger
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -1115,7 +1105,7 @@ units = {
 	division= { 
 			name = "Division d'Oran"
 			location = 7132 # Oran
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -1125,7 +1115,7 @@ units = {
 	division= { 
 			name = "Division de Constantine"
 			location = 7081 # Constantine
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			}
 	
@@ -1133,7 +1123,7 @@ units = {
 	division= { 
 			name = "Division d'occupation de Tunisie"
 			location=11969 # Tunis
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -1143,7 +1133,7 @@ units = {
 	division= { 
 			name = "2eme brigade d'occupation de Tunisie"
 			location = 11921 # Sousse
-			division_template="Division d'Infanterie"
+			division_template = "Division d'Infanterie"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -1153,7 +1143,7 @@ units = {
 	division= { 
 			name = "d'infanterie coloniale do Saigon"
 			location=4401 # Saigon
-			division_template="Troupes Coloniales"
+			division_template = "Troupes Coloniales"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -1163,7 +1153,7 @@ units = {
 	division= { 
 			name = "d'infanterie coloniale do Annam"
 			location = 10137 # Quang Ngai
-			division_template="Troupes Coloniales"
+			division_template = "Troupes Coloniales"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -1173,7 +1163,7 @@ units = {
 	division= { 
 			name = "d'infanterie coloniale du Tonkin"
 			location=4075 # Hanoi
-			division_template="Troupes Coloniales"
+			division_template = "Troupes Coloniales"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -1183,7 +1173,7 @@ units = {
 	division= { 
 			name = "Brigade indigene de la cote francaise des Somalis"
 			location = 5222 # Antananarivo
-			division_template="Troupes Coloniales"
+			division_template = "Troupes Coloniales"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -1193,7 +1183,7 @@ units = {
 	division= { 
 			name = "1re brigade de tirailleurs malgaches"
 			location = 5222 # Antananarivo
-			division_template="Troupes Coloniales"
+			division_template = "Troupes Coloniales"
 			start_experience_factor=0.05
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
@@ -1203,7 +1193,7 @@ units = {
 	division= { 
 			name = "1re Brigade de tirailleurs senegalais"
 			location = 698 # St. Louis
-			division_template="Troupes Coloniales"
+			division_template = "Troupes Coloniales"
 			start_experience_factor=0.05
 			}
 	
@@ -1211,7 +1201,7 @@ units = {
 	division= { 
 			name = "2eme Brigade de tirailleurs senegalais"
 			location=4948 # Dakar
-			division_template="Troupes Coloniales"
+			division_template = "Troupes Coloniales"
 			start_experience_factor=0.05
 			}
 	
@@ -1219,37 +1209,16 @@ units = {
 	division= { 
 			name = "Regiments indigini du Gabon et Tchad"
 			location=5139 # Libreville
-			division_template="Troupes Coloniales"
+			division_template = "Troupes Coloniales"
 			start_experience_factor=0.05
 			}
 	 
 	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-
 	}
-air_wings = { 
-	18 = {
-        ww1_fighter_equipment_1 = { owner = "FRA" amount = 8 }
-        ww1_zeppelin_equipment_1 = { owner = "FRA" amount = 4 }
-    }
-}
-instant_effect = {
-	add_equipment_production = { equipment = { type = infantry_equipment_1 creator = "FRA" } requested_factories = 1 progress = 0.1 efficiency = 50}
-	add_equipment_production = { equipment = { type = support_equipment_1 creator = "FRA" } requested_factories = 1 progress = 0.1 efficiency = 50}
-	add_equipment_production = { equipment = { type = light_field_gun_equipment_1 creator = "FRA" } requested_factories = 1 progress = 0.1 efficiency = 50}
-	add_equipment_production = { equipment = { type = motorized_equipment_0 creator = "FRA" } requested_factories = 1 progress = 0.1 efficiency = 50}
-add_equipment_production = { equipment = { type = battleship_1900 creator = "FRA" version_name = "Danton Class"  }  requested_factories = 1  progress = 0.85  amount = 1 } #Condorcet Comp:25-Jul-1911
-add_equipment_production = { equipment = { type = battleship_1900 creator = "FRA" version_name = "Danton Class"  }  requested_factories = 1  progress = 0.85  amount = 1 } #Danton Comp:01-Jun-1911
-add_equipment_production = { equipment = { type = battleship_1900 creator = "FRA" version_name = "Danton Class"  }  requested_factories = 1  progress = 0.85  amount = 1 } #Diderot Comp:01-Aug-1911
-add_equipment_production = { equipment = { type = battleship_1900 creator = "FRA" version_name = "Danton Class"  }  requested_factories = 1  progress = 0.85  amount = 1 } #Mirabeau Comp:01-Aug-1911
-add_equipment_production = { equipment = { type = battleship_1900 creator = "FRA" version_name = "Danton Class"  }  requested_factories = 1  progress = 0.85  amount = 1 } #Vergniaud Comp:22-Sep-1911
-add_equipment_production = { equipment = { type = battleship_1900 creator = "FRA" version_name = "Danton Class"  }  requested_factories = 1  progress = 0.85  amount = 1 } #Voltaire Comp:01-Aug-1911
-
+	air_wings = { 
+		18 = {
+		ww1_fighter_equipment_1 = { owner = "FRA" amount = 8 }
+		ww1_zeppelin_equipment_1 = { owner = "FRA" amount = 4 }
+	}
+	
 }

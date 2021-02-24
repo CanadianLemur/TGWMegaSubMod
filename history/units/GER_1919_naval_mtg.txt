@@ -1,0 +1,59 @@
+units = {
+	    fleet = {
+			name = "Reichsmarine"
+			naval_base = 6389 #Kiel
+			task_force = {
+				name = "Reichsmarine"
+				location = 6389 #Kiel
+	
+				ship = { name = "SMS Schleswig-Holstein" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GER version_name = "Deutschland Class" } } }
+				ship = { name = "SMS Hannover" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GER version_name = "Deutschland Class" } } }
+				ship = { name = "SMS Schlesien" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GER version_name = "Deutschland Class" } } }
+				ship = { name = "SMS Braunschweig" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GER version_name = "Braunschweig Class" } } }
+				ship = { name = "SMS Elsaß" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GER version_name = "Braunschweig Class" } } }
+				ship = { name = "SMS Hessen" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GER version_name = "Braunschweig Class" } } }
+				ship = { name = "SMS Berlin" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = GER version_name = "Bremen Class" } } }
+				ship = { name = "SMS Hamburg" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = GER version_name = "Bremen Class" } } }
+				ship = { name = "SMS Nymphe" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = GER version_name = "Gazelle Class" } } }
+				ship = { name = "SMS Niobe" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = GER version_name = "Gazelle Class" } } }
+				ship = { name = "SMS Thetis" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = GER version_name = "Gazelle Class" } } }
+				ship = { name = "SMS Amazone" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = GER version_name = "Gazelle Class" } } }
+				ship = { name = "SMS Medusa" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = GER version_name = "Gazelle Class" } } }
+				ship = { name = "SMS Arcona" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = GER version_name = "Gazelle Class" } } }
+				ship = { name = "SMS Emden" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = GER version_name = "Dresden Class" } } }
+				ship = { name = "SMS Stettin" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = GER version_name = "Königsberg Class" } } }
+				ship = { name = "SMS Deutschland" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GER version_name = "Deutschland Class" } } }
+				ship = { name = "SMS Seeadler" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = GER version_name = "Bussard Class" } } }
+				ship = { name = "SMS Zähringen" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GER version_name = "Wittelsbach Class" } } }
+	
+			}
+		}    
+	}
+}
+
+instant_effect = {
+	    add_equipment_production = {
+	        equipment = {
+	            type = infantry_equipment_0 creator = "GER"
+	        }
+	        requested_factories = 1 progress = 0.1 efficiency = 50
+	    }
+	    add_equipment_production = {
+	        equipment = {
+	            type = support_equipment_1 creator = "GER"
+	        }
+	        requested_factories = 1 progress = 0.1 efficiency = 50
+	    }
+	    add_equipment_production = {
+	        equipment = {
+	            type = light_field_gun_equipment_1 creator = "GER"
+	        }
+	        requested_factories = 1 progress = 0.1 efficiency = 50
+	    }
+	    add_equipment_production = {
+	        equipment = {
+	            type = motorized_equipment_0 creator = "GER"
+	        }
+	        requested_factories = 1 progress = 0.1 efficiency = 50
+	    }
+	}

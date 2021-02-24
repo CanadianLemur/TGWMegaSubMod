@@ -1,0 +1,29 @@
+units = {
+	fleet = {
+		name = "Basilikos Stolos Ellenas Fleet"
+		naval_base = 4109 # Athina
+		task_force = {
+			name = "Basilikos Stolos Ellenas"
+			location = 4109 # Athina
+			ship = { name = "EBN Baseleos Georgios" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GRE version_name = "Georgios Class" } } }
+			ship = { name = "EBN Basilissa Olga" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GRE version_name = "Basilissa Olga Class" } } }
+			ship = { name = "EBN Hydra" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GRE version_name = "Hydra Class" } } }
+			ship = { name = "EBN Spetsai" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GRE version_name = "Hydra Class" } } }
+			ship = { name = "EBN Psara" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GRE version_name = "Hydra Class" } } }
+			ship = { name = "EBN Navarchos Miaoulis" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = GRE version_name = "Miaoulis Class" } } }
+			ship = { name = "EBN Niki" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = GRE version_name = "Niki Class" } } }
+			ship = { name = "EBN Doxa" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = GRE version_name = "Niki Class" } } }
+			ship = { name = "EBN Aspis" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = GRE version_name = "Niki Class" } } }
+			ship = { name = "EBN Velos" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = GRE version_name = "Niki Class" } } }
+			ship = { name = "EBN Thyella" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = GRE version_name = "Thyella Class" } } }
+			ship = { name = "EBN Nafkratousa" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = GRE version_name = "Thyella Class" } } }
+			ship = { name = "EBN Lonchi" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = GRE version_name = "Thyella Class" } } }
+			ship = { name = "EBN Sfendoni" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = GRE version_name = "Thyella Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = { equipment = { type = infantry_equipment_0 creator = "ROM" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	add_equipment_production = { equipment = { type = support_equipment_1 creator = "ROM" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	}
