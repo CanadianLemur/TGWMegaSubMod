@@ -589,9 +589,9 @@ country_event = {
 				set_politics = { ruling_party = neutrality elections_allowed = no }
 				if = {
 					limit = { has_dlc = "Man the Guns" }
-					load_oob = "EST_army_mtg"
+					load_oob = EST_army_mtg
 					else = {
-						load_oob = "EST_army_legacy"
+						load_oob = EST_army_legacy
 					}
 				}
 			}
