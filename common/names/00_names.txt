@@ -1703,7 +1703,29 @@ CRO = {
 	 }
 	callsigns = { }
 }
-
+SCS = {
+	male = {
+		names = { 
+			Mario Andrija Antun Bazilije Breno Dragutin Dzivo Filip Franjo Gaspar Ivan
+			Janko Jero Jerolim Josip Juraj Karlo Kresimir Krsto Ljudevit Lucijan
+			Luka Marijan Marin Matej Matko Maximiliam Medo Mihajlo Mirko Miroslav
+			Niko Nikola Orsat Pavle Petar Rafo Sebastijan Sismundo Slavko Stjepan
+			Svetoslav Svetozar Teo Teodor Toma Tomislav Vicko Vladimir Vlaho Zlatan
+		  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = {
+		Lasan Alapic Bakaric Bettera Bilic Blazevic Bondic Boroevic Bosnajk Bunic Crnkovic
+		Cuvaj Draskovic Dzamanjic Eltz Erdödy Frankopan Gaj Getaldic Gradic Gregoric
+		Gucetic Gundulic Haulik Jelacic Kabuzic Keglevic Kostrencic Krstulovic Lagimja Mazuranic
+		Mihailovic Mohorovicic Mrazovic Natali Nazor Njegovan Palecek Pejacevic Philippovic Preradovic
+		Pucic Ranjina Sarkotic Sokcevic Sorkocevic Stankovaci Tomasic Tomlejnovic Vakanovic Vlasic
+	
+	 }
+	callsigns = { }
+}
 
 SLO = {
 	male = {
@@ -1763,6 +1785,23 @@ LMV = {
 	 }
 	callsigns = { Buzzard Dusty Falcon Hawk Hammer Viper Banshee "The Baron" Lightning Duce Raven "Two Shot" Rosso }
 }
+HAN = {
+	male = {
+		names = {  Maximilian Felix Erich Gerhard Gunther Otto Walter Wilhelm Heinz Hermann Heinrich 
+			Theodor Hans Anton Joachim Max Emil Peter Fritz Otto Adolf Tobias Staffan Marco Karl
+		}
+	}
+	female = {
+		names = { Jessica Emma Hanna Sofia Marie }
+	}
+	surnames = { 
+		Muller Schmidt Schneider Fischer Meyer Weber Schulz Wagner Hartmann Rall Barkhorn 
+		Becker Hoffmann Graf Erhler Hafner Lipfert Brendel Stotz Kirschner Lang Sturm 
+		Beisswenger Duttmann Wilbs Berglen Behrmann 
+		}
+	callsigns = { "Bubi" "Assi" "The Black Devil" "The Blond Knight Of Germany" "Dolfo" "Fighter of Libau" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red knight" "Reeste" }
+}
+
 LUX = {
 	male = {
 		names = { 

@@ -1,0 +1,61 @@
+
+german_influence_in_america = {
+	support_NGAA = {                      
+		allowed = { tag = GER 
+		has_completed_focus = GER_ww1_us_assistance
+		}              
+		available = {                           
+		}
+		targets = { USA }
+
+		target_trigger = {
+			FROM = {
+				tag = USA
+			}
+		}
+
+		is_good = yes   
+		ai_will_do = { factor = 100 } 
+		cost = 100
+		complete_effect = {                   
+		add_to_variable = {
+			var = GERUSAinfluence
+			value = 10
+			}
+		}
+	}
+		NGAA_lobby_for_pacifism = {                      
+		allowed = { tag = GER 
+		has_completed_focus = GER_ww1_us_assistance
+		}              
+		available = {                           
+		check_variable = {
+		var = GERUSAinfluence
+		value = 15 
+		compare = greater_than_or_equals
+		}}
+		days_remove = 20
+		targets = { USA }
+
+		target_trigger = {
+			FROM = {
+				tag = USA
+			}
+		}
+
+		is_good = yes   
+		ai_will_do = { factor = 100 } 
+		cost = 50
+		remove_effect = {
+               USA = {add_war_support = -0.05}
+          }
+		complete_effect = {                   
+		subtract_from_variable = {
+			var = GERUSAinfluence
+			value = 15
+			}
+		}
+	}
+}
+
+		

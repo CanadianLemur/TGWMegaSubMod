@@ -155,6 +155,10 @@ French_civil_unrest = {
 			}
 		}
 		}
+		ACF = {inherit_technology = FRA}
+		AFA = {inherit_technology = FRA}
+		AFL = {inherit_technology = FRA}
+		
 		}
 		complete_effect = {                   
 		
@@ -168,6 +172,7 @@ French_civil_war = {
 		allowed = { tag = FRA }              
 		available = {     
 		or = {has_war_with = AFL has_war_with = AFA has_war_with = ACF}
+		surrender_progress > 0.5
 		}
 		activation = {
 			has_focus_tree = france_crisis
@@ -183,7 +188,10 @@ French_civil_war = {
 		add_state_core = 272
 		set_capital = 459
 		set_country_flag = exiled_france
-		26 = {controller = {country_event = MSMFrenchCrisis.2}}
+		if = {
+		limit = {not = {controls_state = 26}}
+		26 = {controller = {country_event = MSMFrenchCrisis.2}}		}
+		else = {16 = {controller = {country_event = MSMFrenchCrisis.2}}}
 		add_timed_idea = {
 		idea = MSM_FRA_recovering_from_exile
 		days = 200
@@ -192,3 +200,148 @@ French_civil_war = {
 		}
 		}
 		}
+French_collapse_opportunities = {
+	seize_madagascar = {                      
+		allowed = { tag = GER }              
+		visible = {
+			FRA = {has_idea = MSM_FRA_recovering_from_exile}
+			has_global_flag = kis_second_treaty_frankfort
+		}
+		is_good = yes    
+		fire_only_once = yes
+		ai_will_do = { factor = 100 } 
+		complete_effect = {
+		if = {
+		limit = {FRA = {owns_state = 543}}
+		transfer_state = 543
+		}
+		if = {
+		limit = {FRA = {owns_state = 706}}
+		transfer_state = 706
+		}
+		if = {
+		limit = {FRA = {owns_state = 708}}
+		transfer_state = 708
+		}
+		if = {
+		limit = {FRA = {owns_state = 713}}
+		transfer_state = 713
+		}
+}
+}
+	seize_french_somaliland = {                      
+		allowed = { tag = GER }              
+		visible = {
+			FRA = {has_idea = MSM_FRA_recovering_from_exile}
+			has_global_flag = kis_second_treaty_frankfort
+		}
+		is_good = yes    
+		fire_only_once = yes
+		ai_will_do = { factor = 100 } 
+		complete_effect = {
+		if = {
+		limit = {FRA = {owns_state = 268}}
+		transfer_state = 268
+		}
+}
+}
+	seize_dahomey = {                      
+		allowed = { tag = GER }              
+		visible = {
+			FRA = {has_idea = MSM_FRA_recovering_from_exile}
+			has_global_flag = kis_second_treaty_frankfort
+		}
+		is_good = yes    
+		fire_only_once = yes
+		ai_will_do = { factor = 100 } 
+		complete_effect = {
+		if = {
+		limit = {FRA = {owns_state = 776}}
+		transfer_state = 776
+		}
+}
+}
+	seize_ivory_coast = {                      
+		allowed = { tag = GER }              
+		visible = {
+			FRA = {has_idea = MSM_FRA_recovering_from_exile}
+			has_global_flag = kis_second_treaty_frankfort
+		}
+		is_good = yes    
+		fire_only_once = yes
+		ai_will_do = { factor = 100 } 
+		complete_effect = {
+		if = {
+		limit = {FRA = {owns_state = 779}}
+		transfer_state = 779
+		}
+}
+}
+	seize_equatorial_africa = {                      
+		allowed = { tag = GER }              
+		visible = {
+			FRA = {has_idea = MSM_FRA_recovering_from_exile}
+			has_global_flag = kis_second_treaty_frankfort
+		}
+		is_good = yes    
+		fire_only_once = yes
+		ai_will_do = { factor = 100 } 
+		complete_effect = {
+		if = {
+		limit = {FRA = {owns_state = 660}}
+		transfer_state = 660
+		}
+}
+}
+	seize_french_guiana = {                      
+		allowed = { OR = {	tag = CAN  tag = ENG tag = FRB tag = HOL}}              
+		visible = {
+			owns_state = 687
+			FRA = {has_idea = MSM_FRA_recovering_from_exile}
+			has_global_flag = kis_second_treaty_frankfort
+		}
+		is_good = yes    
+		fire_only_once = yes
+		ai_will_do = { factor = 100 } 
+		complete_effect = {
+		if = {
+		limit = {FRA = {owns_state = 310}}
+		transfer_state = 310
+		}
+}
+}
+	seize_french_carribean = {                      
+		allowed = { OR = {	tag = CAN  tag = ENG tag = FRB }}              
+		visible = {
+			owns_state = 308
+			FRA = {has_idea = MSM_FRA_recovering_from_exile}
+			has_global_flag = kis_second_treaty_frankfort
+		}
+		is_good = yes    
+		fire_only_once = yes
+		ai_will_do = { factor = 100 } 
+		complete_effect = {
+		if = {
+		limit = {FRA = {owns_state = 694}}
+		transfer_state = 694
+		}
+}			
+}
+	seize_st_pierre_and_miquelon = {                      
+		allowed = { OR = {	tag = CAN  tag = ENG tag = NEW }}              
+		visible = {
+			owns_state = 331
+			FRA = {has_idea = MSM_FRA_recovering_from_exile}
+			has_global_flag = kis_second_treaty_frankfort
+		}
+		is_good = yes    
+		fire_only_once = yes
+		ai_will_do = { factor = 100 } 
+		complete_effect = {
+		if = {
+		limit = {FRA = {owns_state = 730}}
+		transfer_state = 730
+		}
+}
+}
+}

@@ -10,12 +10,12 @@ country_event = {
 
 	option = {
 		name = MSMFrenchCrisis.1.a
-		ai_chance = { factor = 100 }
+		ai_chance = { factor = 50 }
 		complete_national_focus = FRA_crisis_no_alliances_with_fascists
 	}
 	option = {
 		name = MSMFrenchCrisis.1.b
-		ai_chance = { factor = 00 }
+		ai_chance = { factor = 50 }
 		complete_national_focus = FRA_crisis_alliance_with_action_francaise
 	}
 }

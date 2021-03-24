@@ -55,4 +55,6 @@ leader_traits = {
 		conscription_factor = 0.3
 		MONTHLY_POPULATION = -0.1
 	}
+	MSM_regent_of_hannover= {
+	}
 }

@@ -1,0 +1,80 @@
+focus_tree = {
+	id = french_communist_army
+	default = no
+	country = { factor=0 modifier = { add = 0 tag = ACF } }
+	#disabled for now
+	###########################################################################################################################
+	# POLITICAL
+	###########################################################################################################################
+
+	focus = {
+		id = ACF_legacy_of_the_paris_commune
+		icon = GFX_goal_support_communism
+		completion_reward = {  }
+		ai_will_do = { factor = 20 }
+		cost = 2
+		x = 10
+		y = 0
+	}
+	focus = {
+		id = ACF_revolution_triumphant
+		icon = GFX_goal_support_communism
+		prerequisite = {focus = ACF_legacy_of_the_paris_commune}
+		completion_reward = {  }
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 10
+		y = 1
+	}
+	focus = {
+		id = ACF_chase_the_enemies_of_the_revolution
+		icon = GFX_goal_generic_major_war
+		prerequisite = {focus = ACF_revolution_triumphant}
+		completion_reward = {  
+		create_wargoal = {
+		type = annex_everything 
+		target = FRA
+		}
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 14
+		y = 2
+	}
+	focus = {
+		id = ACF_african_situation
+		icon = GFX_goal_generic_major_war
+		prerequisite = {focus = ACF_chase_the_enemies_of_the_revolution}
+		available = {owns_state = 459}
+		completion_reward = {  
+		add_political_power = 100
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 14
+		y = 3
+	}
+	focus = {
+		id = ACF_communist_decolonization
+		icon = GFX_goal_generic_major_war
+		prerequisite = {focus = ACF_african_situation}
+		available = {owns_state = 459}
+		completion_reward = {  
+		add_political_power = 100
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 14
+		y = 4
+	}
+	focus = {
+		id = ACF_purge_the_anti_revolutionaries
+		icon = GFX_goal_generic_major_war
+		prerequisite = {focus = ACF_revolution_triumphant}
+		completion_reward = {  }
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 12
+		y = 2
+	}
+	}

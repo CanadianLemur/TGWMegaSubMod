@@ -1,0 +1,163 @@
+focus_tree = {
+	id = hannover_focus
+	default = no
+	country = { factor=0 modifier = { add = 10 tag = HAN } }
+
+	###########################################################################################################################
+	# POLITICAL
+	###########################################################################################################################
+	focus = {
+		id = HAN_viceroy_edwards_temporary_measures
+		icon = GFX_goal_generic_demand_territory
+		completion_reward = { add_political_power=120 }
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 12
+		y = 0
+		}
+	focus = {
+		id = HAN_a_loyal_dominion
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		prerequisite = {focus = HAN_viceroy_edwards_temporary_measures}
+		completion_reward = { add_political_power=120 }
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 8
+		y = 1
+		}
+	focus = {
+		id = HAN_invite_british_investors
+		icon = GFX_focus_mex_privatisation
+		prerequisite = {focus = HAN_viceroy_edwards_temporary_measures}
+		completion_reward = { add_political_power=50 
+	59 = {
+	add_extra_state_shared_building_slots = 2
+	add_building_construction = {
+    type = industrial_complex
+    level = 1
+    instant_build = yes
+}
+add_building_construction = {
+    type = dockyard
+    level = 1
+    instant_build = yes
+}
+}
+add_ideas = {MSM_HAN_british_investment}
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 8
+		y = 2
+		}
+	focus = {
+		id = HAN_join_imperial_tech_sharing_programs
+		icon = GFX_goal_tfv_generic_tech_sharing
+		prerequisite = {focus = HAN_invite_british_investors}
+		completion_reward = { 
+		add_to_tech_sharing_group = commonwealth_research
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 10
+		y = 3
+		}
+	focus = {
+		id = HAN_encourage_imperial_trade
+		icon = GFX_goal_generic_trade
+		prerequisite = {focus = HAN_invite_british_investors}
+		completion_reward = { 
+		add_political_power=25
+		add_ideas = {MSM_HAN_imperial_trade}
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 8
+		y = 3
+		}
+
+	###########################################################################################################################
+	# ARMY
+	###########################################################################################################################
+	focus = {
+		id = HAN_restore_hannoverian_army
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = {focus = HAN_viceroy_edwards_temporary_measures}
+		completion_reward = { add_manpower = 10000 army_experience = 10 }
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 15
+		y = 1
+		}
+	focus = {
+		id = HAN_license_british_equipment
+		icon = GFX_goal_generic_air_production
+		prerequisite = {focus = HAN_restore_hannoverian_army}
+		completion_reward = { add_ideas = MSM_HAN_license_agreement }
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 15
+		y = 2
+		}
+	focus = {
+		id = HAN_purchase_british_equipment
+		icon = GFX_goal_generic_small_arms
+		prerequisite = {focus = HAN_license_british_equipment}
+		completion_reward = { 
+		add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 500
+		producer = ENG
+		}
+		add_equipment_to_stockpile = {
+		type = light_field_gun_equipment
+		amount = 120
+		producer = ENG
+		}
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 17
+		y = 3
+		}
+	focus = {
+		id = HAN_defensive_posture
+		icon = GFX_goal_generic_construct_military
+		prerequisite = {focus = HAN_license_british_equipment}
+		completion_reward = { 59 = {add_building_construction = {
+    type = bunker
+    level = 3
+    instant_build = yes
+    province = {
+        all_provinces = yes
+        limit_to_border = yes
+    }
+	}
+}
+56 = {add_building_construction = {
+    type = bunker
+    level = 3
+    instant_build = yes
+    province = {
+        all_provinces = yes
+        limit_to_border = yes
+    }
+	}
+} }
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 15
+		y = 3
+		}
+	focus = {
+		id = HAN_glorify_the_legacy_of_the_kings_german_legion
+		icon = GFX_focus_generic_military_mission
+		prerequisite = {focus = HAN_restore_hannoverian_army }
+		prerequisite = {focus = HAN_a_loyal_dominion}
+		completion_reward = { add_political_power=25 
+		add_ideas ={MSM_HAN_glorified_kings_german_legion}}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 12
+		y = 2
+		}

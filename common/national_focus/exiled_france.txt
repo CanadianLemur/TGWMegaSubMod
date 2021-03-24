@@ -142,6 +142,9 @@ focus_tree = {
 		
 		
 		}
+		bypass = {
+		has_country_flag = alliance_with_action_francaise
+		}
 		ai_will_do = { factor = 20 }
 		cost = 10
 		x = 3
@@ -165,7 +168,6 @@ focus_tree = {
 		id = FRA_exiled_return_to_continent
 		icon = GFX_u_fra_european_france
 		prerequisite = {focus = FRA_exiled_restore_the_kingdom focus = FRA_exiled_maintain_military_dictatorship}
-		available = {owns_state = 16}
 		completion_reward = {  
 		if = {
 		limit = {AFL = {exists = yes}}

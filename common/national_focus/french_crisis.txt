@@ -1,7 +1,7 @@
 focus_tree = {
 	id = france_crisis
 	default = no
-	country = { factor=0 modifier = { add = 15 tag = FRA } }
+	country = { factor=0  }
 
 	###########################################################################################################################
 	# POLITICAL
@@ -74,6 +74,7 @@ focus_tree = {
 				popularity = 0.05
 			}
 			add_stability = 0.1 #adds AF strength and units to petains government in civil war
+			set_country_flag = alliance_with_action_francaise
 		}
 		mutually_exclusive = {focus = FRA_crisis_no_alliances_with_fascists}
 		ai_will_do = { factor = 20 }
@@ -228,6 +229,9 @@ focus_tree = {
 			}
 		}
 		}
+		ACF = {inherit_technology = FRA}
+		AFA = {inherit_technology = FRA}
+		AFL = {inherit_technology = FRA}
 		}
 		}
 		

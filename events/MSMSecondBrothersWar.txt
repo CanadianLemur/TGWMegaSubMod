@@ -126,3 +126,245 @@ country_event = {  #### Russia Offer Refused ####
 		name = MSMSecondBrothersWar.6.a
 	}
 }
+country_event = {  #### Ultimatum to AUH ####
+	id =  MSMSecondBrothersWar.7
+	title = MSMSecondBrothersWar.7.t
+	desc = MSMSecondBrothersWar.7.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = no
+	is_triggered_only = yes
+	## refuse dismantlement
+	option = {
+		name = MSMSecondBrothersWar.7.a
+	}
+	## accept dismantlement
+	option = {
+		name = MSMSecondBrothersWar.7.b
+	}
+}
+country_event = {  #### dismantlement refused! ####
+	id =  MSMSecondBrothersWar.8
+	title = MSMSecondBrothersWar.8.t
+	desc = MSMSecondBrothersWar.8.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = no
+	is_triggered_only = yes
+	## To Arms!
+	option = {
+		name = MSMSecondBrothersWar.8.a
+		declare_war_on = {
+		target = AUH
+		type = annex_everything
+		}
+	}
+}
+country_event = {  #### dismantlement accepted! ####
+	id =  MSMSecondBrothersWar.9
+	title = MSMSecondBrothersWar.9.t
+	desc = MSMSecondBrothersWar.9.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = no
+	is_triggered_only = yes
+	## hurrah!
+	option = {
+		name = MSMSecondBrothersWar.9.a
+		puppet = AUH
+	}
+}
+country_event = {  #### AUH surrenders! ####
+	id =  MSMSecondBrothersWar.10
+	title = MSMSecondBrothersWar.10.t
+	desc = MSMSecondBrothersWar.10.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = no
+	is_triggered_only = yes
+	## hurrah!
+	option = {
+		name = MSMSecondBrothersWar.10.a
+		puppet = AUH
+	}
+}
+country_event = {  #### dismantlement of AUH ####
+	id =  MSMSecondBrothersWar.11
+	title = MSMSecondBrothersWar.11.t
+	desc = MSMSecondBrothersWar.11.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = no
+	is_triggered_only = yes
+	## split AUH accordingly
+	option = {
+		name = MSMSecondBrothersWar.11.a
+		transfer_state = 69
+		add_state_core = 69
+		transfer_state = 74
+		add_state_core = 74
+		transfer_state = 153
+		add_state_core = 153
+		transfer_state = 152
+		add_state_core = 152
+		transfer_state = 39
+		add_state_core = 39
+		transfer_state = 4
+		add_state_core = 4
+		transfer_state = 102
+		transfer_state = 736
+		transfer_state = 9
+		transfer_state = 75
+		if = {
+		limit = {has_global_flag = MSM_transylvania_for_romania}
+		ROM = {
+		transfer_state = 80
+		transfer_state = 76
+		transfer_state = 84
+		transfer_state = 83
+		transfer_state = 82
+		}
+		}
+		if = {
+		limit = {has_global_flag = MSM_galicia_for_russia}
+		RUS = {
+		transfer_state = 91
+		transfer_state = 89
+		transfer_state = 88
+		transfer_state = 72
+		}
+		}
+	CRO = {
+	transfer_state = 103
+	add_state_core = 103
+	transfer_state = 109
+	add_state_core = 109
+	transfer_state = 163
+	add_state_core = 163
+	add_state_core = 104
+	if = {
+	limit = {BOS = {exists = yes}}
+	annex_country = {
+    target = BOS
+    transfer_troops = yes
+	}
+	else = {transfer_state = 104
+	}
+	}
+	}
+	AUH = {
+	transfer_navy = {
+    target = GER
+	}
+	transfer_units_fraction= {
+	target = GER
+	size = 0.5
+	stockpile_ratio = 0.3
+	army_ratio = 0.3
+	navy_ratio = 0
+	air_ratio = 0.3
+	keep_unit_leaders_trigger = {
+		always = no
+	}
+}
+	transfer_units_fraction= {
+	target = CRO
+	size = 0.5
+	stockpile_ratio = 0.3
+	army_ratio = 0.3
+	navy_ratio = 0
+	air_ratio = 0.3
+	keep_unit_leaders_trigger = {
+		always = no
+	}
+}
+	}
+	HUN = {annex_country = {
+    target = AUH
+    transfer_troops = yes
+	}}
+	puppet = HUN
+	puppet = CRO
+	HUN = {
+		create_country_leader={ name = "Franz Joseph I" desc=AUH_franz_joseph_i_DESC picture="gfx/hoi4tgw_portraits/AUH/country_leaders/AUH_franz_joseph_i.dds" expire="1935.1.1" ideology=autocracy traits={  } }
+		add_popularity = {
+    ideology = neutrality
+    popularity = 0.8
+}
+set_politics = {
+	ruling_party = neutrality
+        elections_allowed = no
+        last_election = "1910.1.1"
+        election_frequency = 48
+}
+set_party_name = { 
+    ideology = neutrality 
+    long_name = AUH_neutrality_party_long 
+    name = AUH_neutrality_party 
+}
+		}
+	CRO = {
+		create_country_leader={ name = "Franz Joseph I" desc=AUH_franz_joseph_i_DESC picture="gfx/hoi4tgw_portraits/AUH/country_leaders/AUH_franz_joseph_i.dds" expire="1935.1.1" ideology=autocracy traits={  } }
+		add_popularity = {
+    ideology = neutrality
+    popularity = 0.8
+}
+set_politics = {
+	ruling_party = neutrality
+        elections_allowed = no
+        last_election = "1910.1.1"
+        election_frequency = 48
+}
+set_party_name = { 
+    ideology = neutrality 
+    long_name = AUH_neutrality_party_long 
+    name = AUH_neutrality_party 
+}
+		}
+	}
+	### annex everything!
+	option = {
+		name = MSMSecondBrothersWar.11.b
+		transfer_state = 69
+		add_state_core = 69
+		transfer_state = 74
+		add_state_core = 74
+		transfer_state = 153
+		add_state_core = 153
+		transfer_state = 152
+		add_state_core = 152
+		transfer_state = 39
+		add_state_core = 39
+		transfer_state = 4
+		add_state_core = 4
+		transfer_state = 102
+		transfer_state = 736
+		transfer_state = 9
+		transfer_state = 75
+		if = {
+		limit = {has_global_flag = MSM_transylvania_for_romania}
+		ROM = {
+		transfer_state = 80
+		transfer_state = 76
+		transfer_state = 84
+		transfer_state = 83
+		transfer_state = 82
+		}
+		}
+		if = {
+		limit = {has_global_flag = MSM_galicia_for_russia}
+		RUS = {
+		transfer_state = 91
+		transfer_state = 89
+		transfer_state = 88
+		transfer_state = 72
+		}
+		}
+		AUH = {transfer_navy = {
+    target = GER
+}}
+		annex_country = {
+    target = AUH
+    transfer_troops = no
+	}
+}

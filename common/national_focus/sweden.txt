@@ -392,7 +392,7 @@ focus_tree = {
 			add_political_power = 50
 		}
 
-		cost = 3
+		cost = 10
 		x = 0
 		y = 1
 		ai_will_do = { factor = 0 }
@@ -443,7 +443,7 @@ focus_tree = {
 			FIN = { add_opinion_modifier = { target = SWE modifier = nordic_leadership.1 }}
 		}
 
-		cost = 1
+		cost = 5
 		x = 1
 		y = 1
 		ai_will_do = { factor = 0 }
@@ -481,7 +481,7 @@ focus_tree = {
 			
 		}
 
-		cost = 3
+		cost = 10
 		x = -1
 		y = 1
 		ai_will_do = { factor = 0 }
@@ -566,7 +566,7 @@ focus_tree = {
 			}					
 		}
 
-		cost = 3
+		cost = 10
 		x = 1
 		y = 1
 		ai_will_do = { factor = 0 }
@@ -604,7 +604,7 @@ focus_tree = {
 			}
 		}
 
-		cost = 1
+		cost = 10
 		x = -1
 		y = 1
 		ai_will_do = { factor = 0 }
@@ -707,7 +707,7 @@ focus_tree = {
 			country_event = ww1_sweden.7 #Choose Capital
 		}
 
-		cost = 3
+		cost = 15
 		x = 0
 		y = 1
 		ai_will_do = { factor = 0 }

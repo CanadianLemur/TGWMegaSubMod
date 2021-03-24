@@ -225,3 +225,40 @@ news_event  = {
 		trigger = {tag = RUS}
 }
 }
+# MSMRussia 7 Zapadoslavia?
+country_event = {
+	id =  MSMRussia.7
+	title = MSMRussia.7.t
+	desc = MSMRussia.7.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	is_triggered_only = yes
+	### Zapadoslavia
+	option = {
+		name = MSMRussia.7.a 
+		ai_chance = { factor = 100 }
+		POL = {
+		annex_country = {
+    target = CZE
+    transfer_troops = yes
+}
+add_state_core = 71
+add_state_core = 664
+add_state_core = 70
+add_state_core = 72
+add_state_core = 74
+add_state_core = 75
+add_state_core = 9
+add_state_core = 69
+set_cosmetic_tag = ZPS
+
+}
+	}
+	### no Zapadoslavia
+	option = {
+		name = MSMRussia.7.b
+		ai_chance = { factor = 0 }
+
+	}
+	
+	}

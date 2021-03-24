@@ -1,0 +1,12 @@
+german_influence_in_america = {
+	icon = generic_propaganda
+	priority = 100
+	available = {
+		NOT = {has_war_with = USA}
+	}
+	visible = {
+		tag = GER
+		has_completed_focus = GER_ww1_us_assistance
+	}
+}
+

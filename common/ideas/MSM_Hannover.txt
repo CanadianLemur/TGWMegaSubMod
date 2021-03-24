@@ -1,0 +1,66 @@
+ideas = {
+	country = {
+		MSM_HAN_british_investment = {
+			allowed = {
+				always = no
+			}
+			
+			
+			removal_cost = -1 
+			
+			modifier = {
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		MSM_HAN_glorified_kings_german_legion = {
+			allowed = {
+				always = no
+			}
+			
+			
+			removal_cost = -1 
+			
+			modifier = {
+				conscription_factor = 0.25
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = 0.05
+			}
+		}
+		MSM_HAN_imperial_trade = {
+			allowed = {
+				always = no
+			}
+			
+			
+			removal_cost = -1 
+			
+			modifier = {
+				production_speed_buildings_factor = 0.03
+				political_power_factor = 0.1
+				consumer_goods_factor = -0.03
+				}
+			targeted_modifier = { 
+				tag = ENG
+				trade_opinion_factor = 0.2
+				extra_trade_to_target_factor = 0.10
+				trade_cost_for_target_factor = -0.10
+			}
+		}
+		MSM_HAN_license_agreement = {
+			allowed = {
+				always = no
+			}
+			
+			
+			removal_cost = -1 
+			
+			modifier = {
+				license_subject_master_purchase_cost = -0.2
+				}
+			targeted_modifier = { 
+				tag = ENG
+				ai_license_acceptance = 50
+			}
+		}
+	}
+}

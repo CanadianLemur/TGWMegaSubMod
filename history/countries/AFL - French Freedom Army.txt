@@ -12,6 +12,7 @@ set_research_slots = 4
 	    election_frequency = 48
 	    elections_allowed = yes
 	}
+	create_country_leader={ name = "Georges Clemenceau" desc=FRA_georges_clemenceau_DESC picture="gfx/hoi4tgw_portraits/FRA/country_leaders/FRA_georges_clemenceau.dds" expire="1935.1.1" ideology=liberalism traits={  } }
 	set_popularities = {
 	    democratic = 100
 	    fascism = 0

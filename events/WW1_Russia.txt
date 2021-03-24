@@ -812,6 +812,14 @@ country_event = {
 					transfer_state = 93 # Wolyn
 				}
 			}
+			if = {
+				limit = { AUH = {exists = no}}
+				if = {limit = {72 = {is_owned_by = RUS}} GER = {transfer_state = 72}}
+				if = {limit = {88 = {is_owned_by = RUS}} GER = {transfer_state = 88}}
+				if = {limit = {89 = {is_owned_by = RUS}} GER = {transfer_state = 89}}
+				if = {limit = {91 = {is_owned_by = RUS}} GER = {transfer_state = 91}}
+				if = {limit = {93 = {is_owned_by = RUS}} GER = {transfer_state = 93}}
+				}
 
 		}
 	}

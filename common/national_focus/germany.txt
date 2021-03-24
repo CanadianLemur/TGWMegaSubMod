@@ -2,7 +2,6 @@ focus_tree = {
 	id = german_focus
 	default = no
 	country = { factor=0 modifier = { add = 10 tag = GER } }	
-
 	###########################################################################################################################
 	# POLITICAL
 	###########################################################################################################################
@@ -686,6 +685,7 @@ focus_tree = {
 		relative_position_id = GER_ww1_send_advisor
 		prerequisite = { focus=GER_ww1_send_advisor }
 		icon = GFX_goal_generic_forceful_treaty
+		mutually_exclusive = {focus = GER_ww1_us_assistance}
 		bypass = {
 			MEX = {
 				OR = {
@@ -732,8 +732,13 @@ focus_tree = {
 				has_civil_war = no 
 			}
 		}
+		mutually_exclusive = {focus = GER_ww1_zimmermann_telegram}
 		completion_reward = {
-			#Make an event or something, I don't know
+			set_variable = {
+			var = GERUSAinfluence
+			value = 15
+		}
+		custom_effect_tooltip = NGAA_influence
 		}
 
 		ai_will_do = {
@@ -899,6 +904,13 @@ focus_tree = {
 				has_war_with = GER 
 			} 
 			}
+				OR = {
+					GER = { controls_state = 817 }
+					any_other_country = {
+						is_in_faction_with = GER
+						controls_state = 817
+					}
+				}
 		}
 
 		completion_reward = {
@@ -2342,7 +2354,18 @@ focus_tree = {
 		prerequisite = { focus=GER_ww1_war_plans_the_way_forward }
 		icon = GFX_goal_demand_sudetenland
 		completion_reward = {
-			#Force an ideology flip
+			set_cosmetic_tag = GER_MIL
+			add_political_power=-150
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.8`
+			}
+			add_timed_idea = { idea = reign_of_terror days = 730 }
+
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -2356,7 +2379,7 @@ focus_tree = {
 		prerequisite = { focus=GER_ww1_war_plans_liberate_berlin }
 		icon = GFX_hoi4tgw_germanempire
 		completion_reward = {
-			#make event that asks austria-hungary to be puppeted, only agrees 10% of the time
+			AUH = {country_event = MSMSecondBrothersWar.7}
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -2585,7 +2608,7 @@ focus_tree = {
 	focus = {
 		id = GER_ww1_war_plans_the_flying_deutchman
 		relative_position_id = GER_ww1_war_plans_those_great_mechanisms
-		prerequisite = { focus=GER_ww1_war_plans_those_great_mechanisms }
+		prerequisite = { focus=GER_ww1_war_plans_those_great_mechanisms focus = GER_ww1_war_plans_finalize_preparations}
 		icon = GFX_goal_generic_air_fighter
 		completion_reward = {
 			add_tech_bonus = {
@@ -4586,7 +4609,116 @@ focus_tree = {
 
 
 	################ INTERWAR START (Treaty of Versailles)
-	
+		# Defeat in ww1 gatekeeping focus
+	focus = {
+		id = GER_interwar_loss_in_ww1
+
+		icon = GFX_goal_generic_national_unity
+		
+		available = {
+			has_global_flag = kis_treaty_of_versailles
+		}
+
+		x = 25
+		y = 10
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10	
+		}
+		completion_reward = {
+			add_political_power= -50
+
+		}
+	}
+	focus = {
+		id = GER_interwar_quietly_break_disarmament_treaties
+
+		icon = GFX_focus_secret_rearmament
+		prerequisite = {focus = GER_interwar_loss_in_ww1}
+		available = {
+		}
+
+		x = 15
+		y = 12
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10	
+		}
+		completion_reward = {
+			add_political_power= -100
+		}
+	}
+	focus = {
+		id = GER_interwar_rename_the_reichsmarine
+
+		icon = GFX_focus_secret_rearmament
+		prerequisite = {focus = GER_interwar_quietly_break_disarmament_treaties}
+		available = {
+		}
+
+		x = 22
+		y = 13
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10	
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_interwar_air_training_in_the_soviet_union
+
+		icon = GFX_focus_secret_rearmament
+		prerequisite = {focus = GER_interwar_quietly_break_disarmament_treaties}
+		available = {
+		date > 1924.01.01
+		}
+
+		x = 16		
+		y = 14
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10	
+		}
+		completion_reward = {
+			air_experience = 15
+			add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = air_equipment
+		}
+		}
+	}
+	focus = {
+		id = GER_interwar_anglo_german_navy_agreement
+
+		icon = GFX_focus_secret_rearmament
+		prerequisite = {focus = GER_interwar_rename_the_reichsmarine}
+		available = {
+		date > 1935.01.01
+		}
+
+		x = 22
+		y = 14
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10	
+		}
+		completion_reward = {
+			
+		}
+	}
 	# 0.5.1 (03/2018)
 
 	focus = {
@@ -4595,7 +4727,7 @@ focus_tree = {
 		icon = GFX_goal_generic_secret_weapon
 		mutually_exclusive = { focus = GER_interwar_beer_ProSpartacists focus = GER_interwar_easing_tensions focus = GER_interwar_beer_hall_putsch }
 		relative_position_id = GER_interwar_easing_tensions
-
+		prerequisite = {focus = GER_interwar_loss_in_ww1}
 		available = {
 			has_war = no
 			is_puppet = no		
@@ -4623,7 +4755,7 @@ focus_tree = {
 	# The Locarno Treaties
 	focus = {
 		id = GER_interwar_locarno_treaties
-
+		prerequisite = {focus = GER_interwar_loss_in_ww1}
 		icon = GFX_goal_generic_national_unity
 		relative_position_id = GER_interwar_beer_AntiSpartacists
 		
@@ -4669,7 +4801,7 @@ focus_tree = {
 
 		icon = GFX_focus_YUG_pan_slavic_congress
 		mutually_exclusive = { focus = GER_interwar_beer_AntiSpartacists focus = GER_interwar_easing_tensions focus = GER_interwar_beer_hall_putsch }
-
+		prerequisite = {focus = GER_interwar_loss_in_ww1}
 		available = {
 			has_war = no
 			is_puppet = no
@@ -4756,7 +4888,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_interwar_easing_tensions
-
+		prerequisite = {focus = GER_interwar_loss_in_ww1}
 		icon = GFX_focus_YUG_pan_slavic_congress
 		mutually_exclusive = { focus = GER_interwar_beer_AntiSpartacists focus = GER_interwar_beer_ProSpartacists focus = GER_interwar_beer_hall_putsch }
 
@@ -4909,6 +5041,7 @@ focus_tree = {
 	# Beer Hall Putsch - IRL: 8-9 November 1923
 	focus = {
 		id = GER_interwar_beer_hall_putsch
+		prerequisite = {focus = GER_interwar_loss_in_ww1}
 		mutually_exclusive = { focus = GER_interwar_beer_ProSpartacists focus = GER_interwar_beer_AntiSpartacists focus = GER_interwar_easing_tensions }
 		icon = GFX_goal_generic_political_pressure
 		allow_branch = {NOT = {has_global_flag = kis_second_treaty_frankfort}}
@@ -7170,6 +7303,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		prerequisite = {focus = GER_interwar_air_training_in_the_soviet_union}
 
 		available_if_capitulated = yes
 		complete_tooltip = {
@@ -7401,7 +7535,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -9535,7 +9668,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		prerequisite = {focus = GER_interwar_anglo_german_navy_agreement}
 		bypass = {
 			custom_trigger_tooltip =  {
 				tooltip = naval_effort_tt

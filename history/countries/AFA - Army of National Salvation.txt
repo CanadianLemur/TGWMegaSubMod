@@ -19,3 +19,13 @@ set_research_slots = 4
 	    communism = 2
 	    neutrality = 1
 	}
+	create_country_leader = {
+	name = "Charles Maurras"
+	desc = "CHARLES_MAURRAS_DESC"
+	picture = "gfx/leaders/FRA_Charles_Maurras.dds"
+	expire = "1965.1.1"
+	ideology = rexism
+	traits = {
+		
+	}
+}

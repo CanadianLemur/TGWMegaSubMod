@@ -26,7 +26,7 @@ focus_tree = {
 		x = 11
 		y = 0
 		cost = 10
-		available = {has_global_flag = kis_treaty_of_versailles}
+		available = {has_global_flag = kis_treaty_of_versailles NOT = {has_global_flag = russian_versailles}}
 
 		ai_will_do = {
 			factor = 10
@@ -1940,7 +1940,7 @@ focus_tree = {
 	focus = {
 		id = POL_interwar_PolishArmy
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = POL_interwar_Small_Constitution_of_1919 focus = POL_interwar_choosing_a_king }
+		prerequisite = { focus = POL_interwar_Small_Constitution_of_1919 focus = POL_interwar_choosing_a_king focus = POL_interwar_under_the_russian_boot}
 		x = 24
 		y = 1
 		cost = 10
@@ -4567,6 +4567,54 @@ focus_tree = {
 		}
 	}
 	#### New MSM Focuses below this line
+	focus = {
+		id = POL_interwar_under_the_russian_boot
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		x = 40
+		y = 0
+		cost = 10
+		available = {has_global_flag = russian_versailles}
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			add_stability = -0.03
+		}
+	}
+	focus = {
+		id = POL_interwar_zapadoslavia
+		icon = GFX_goal_generic_propaganda
+		prerequisite = {focus =POL_interwar_under_the_russian_boot}
+		x = 40
+		y = 1
+		cost = 10
+		available = {NOT = {has_war_with = CZE} is_subject_of = RUS}
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			RUS = {country_event = MSMRussia.7}
+		}
+	}
+	focus = {
+		id = POL_interwar_claim_old_slavic_lands
+		icon = GFX_goal_generic_propaganda
+		prerequisite = {focus = POL_interwar_zapadoslavia}
+		x = 40
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+		add_state_claim = 67
+		add_state_claim = 66
+		add_state_claim = 63
+		}
+	}
 	focus = {
 		id = POL_interwar_choosing_a_king # given that the germans have won the war we should get around to deciding who will be king
 		icon = GFX_focus_generic_treaty

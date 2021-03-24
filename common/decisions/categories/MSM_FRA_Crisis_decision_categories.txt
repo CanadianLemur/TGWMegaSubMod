@@ -16,3 +16,12 @@ French_civil_war = {
 		tag = FRA
 	}
 }
+French_collapse_opportunities = {
+	icon = generic_political_actions
+	priority = 30
+	available = {
+	}
+	visible = {
+		NOT = {tag = FRA}
+	}
+}
