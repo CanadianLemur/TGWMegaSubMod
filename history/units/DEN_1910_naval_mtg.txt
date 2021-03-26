@@ -12,9 +12,9 @@ units = {
 			ship = { name = "KDM Iver Hvitfeldt" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = DEN version_name = "Iver Hvitfeldt Class" } } }
 			ship = { name = "KDM Odin" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = DEN version_name = "Odin Class" } } }
 			ship = { name = "KDM Gorm" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = DEN version_name = "Gorm Class" } } }
-			ship = { name = "KDM Heimdal" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = DEN version_name = "Heimdal Class" } } }
-			ship = { name = "KDM Geiser" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = DEN version_name = "Heimdal Class" } } }
-			ship = { name = "KDM Hekla" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = DEN version_name = "Heimdal Class" } } }
+			ship = { name = "KDM Heimdal" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = DEN version_name = "Hekla Class" } } }
+			ship = { name = "KDM Geiser" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = DEN version_name = "Hekla Class" } } }
+			ship = { name = "KDM Hekla" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = DEN version_name = "Hekla Class" } } }
 			ship = { name = "KDM Valkyrien" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = DEN version_name = "Valkyrien Class" } } }
 		}
 		task_force = {

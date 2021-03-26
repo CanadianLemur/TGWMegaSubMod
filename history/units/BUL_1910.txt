@@ -1,5 +1,4 @@
 ﻿###################################################################
-
 division_template = {
 	name = "Infantry Division"
 	regiments = {
@@ -12,7 +11,6 @@ division_template = {
 		engineer = { x = 0 y = 0 }
 	}
 }
-
 division_template = {
 	name = "Infantry Brigade"
 	regiments = {
@@ -21,7 +19,6 @@ division_template = {
 	}
 	priority = 0
 }
-
 division_template = {
 	name = "Cavalry Division"
 	regiments = {
@@ -34,12 +31,8 @@ division_template = {
 		engineer = { x = 0 y = 0 }
 	}
 }
-
 ###################################################################
-
 units = {
-
-
 	division= { 
 			name = "4-a Konna brigada"
 			location=9783 # Varna
@@ -196,14 +189,7 @@ units = {
 			# start_equipment_factor = 0.3 
 			# start_manpower_factor = 0.3
 			}
-
 		
 	}
-
 air_wings = { 
 	}
-
-instant_effect = {
-	add_equipment_production = { equipment = { type = infantry_equipment_1 creator = "BUL" } requested_factories = 1 progress = 0.1 efficiency = 50}
-	add_equipment_production = { equipment = { type = support_equipment_1 creator = "BUL" } requested_factories = 1 progress = 0.1 efficiency = 50}
-}

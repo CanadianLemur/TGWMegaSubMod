@@ -11,7 +11,7 @@ set_convoys = 0
 #-------------------------------------------------------
 #					POLITICS & ARMY
 #-------------------------------------------------------
-create_country_leader={ name = "Muhammad ibn Ali al-Idrisi" desc=ASR_muhammad_ibn_ali_al_idrisi_DESC picture="gfx/leaders/ASR_muhammad_ibn_ali_al_idrisi.dds" expire="1935.1.1" ideology=despotism traits={  } }
+create_country_leader={ name = "Muhammad ibn Ali al-Idrisi" desc=ASR_muhammad_ibn_ali_al_idrisi_DESC picture="gfx/hoi4tgw_portraits/ASR/country_leaders/ASR_muhammad_ibn_ali_al_idrisi.dds" expire="1935.1.1" ideology=despotism traits={  } }
 
 set_politics = {
     ruling_party = neutrality
@@ -34,63 +34,6 @@ set_popularities = {
 	#-------------------------------------------------------
 
 	#-------------------------------------------------------
-
-
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	set_technology = {
-		basic_battery = 1
-		early_ship_hull_submarine = 1
-		basic_torpedo = 1 
-		pre_dreadnoughts = 1
-		early_ship_hull_light = 1
-		mtg_early_transport = 1 
-		basic_secondary_battery = 1
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
-	}
-}
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	set_technology = {
-		ww1_destroyer0 = 1
-		ww1_destroyer0_mtg = 1
-		ww1_destroyer1 = 1
-		ww1_destroyer1_mtg = 1
-		ww1_light_cruiser1 = 1
-		ww1_light_cruiser1_mtg = 1
-		ww1_light_cruiser0 = 1
-		ww1_light_cruiser0_mtg = 1
-		ww1_battlecruiser0 = 1
-		ww1_battlecruiser0_mtg = 1
-		ww1_battleship0 = 1
-		ww1_battleship0_mtg = 1
-		ww1_submarine1 = 1
-		ww1_submarine1_mtg = 1
-		ww1_coastal_submarine1 = 1
-		ww1_coastal_submarine1_mtg = 1
-		transport = 1
-		transport_mtg = 1
-		ww1_destroyer0 = 1
-		ww1_destroyer0_mtg = 1
-		ww1_destroyer1 = 1
-		ww1_destroyer1_mtg = 1
-		ww1_light_cruiser1 = 1
-		ww1_light_cruiser1_mtg = 1
-		ww1_light_cruiser0 = 1
-		ww1_light_cruiser0_mtg = 1
-		ww1_battleship0 = 1
-		ww1_battleship0_mtg = 1
-		ww1_battleship1 = 1
-		ww1_battleship1_mtg = 1
-		ww1_submarine1 = 1
-		ww1_submarine1_mtg = 1
-		ww1_coastal_submarine1 = 1
-		ww1_coastal_submarine1_mtg = 1
-		transport = 1
-		transport_mtg = 1
-	}
-}
 
 	set_technology = {
 
@@ -119,6 +62,45 @@ if = {
 
 		# Navy
 
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+    		set_technology = {
+    			basic_battery = 1
+    			early_ship_hull_submarine = 1
+    			basic_torpedo = 1 
+    			pre_dreadnoughts = 1
+    			early_ship_hull_light = 1
+    			mtg_early_transport = 1 
+    			basic_secondary_battery = 1
+    			basic_naval_mines = 1
+    			submarine_mine_laying = 1
+    		}
+    	}
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		set_technology = {
+			ww1_destroyer0 = 1
+			ww1_destroyer0_mtg = 1
+			ww1_destroyer1 = 1
+			ww1_destroyer1_mtg = 1
+			ww1_light_cruiser1 = 1
+			ww1_light_cruiser1_mtg = 1
+			ww1_light_cruiser0 = 1
+			ww1_light_cruiser0_mtg = 1
+			ww1_battlecruiser0 = 1
+			ww1_battlecruiser0_mtg = 1
+			ww1_battleship0 = 1
+			ww1_battleship0_mtg = 1
+			ww1_submarine1 = 1
+			ww1_submarine1_mtg = 1
+			ww1_coastal_submarine1 = 1
+			ww1_coastal_submarine1_mtg = 1
+			transport = 1
+			transport_mtg = 1
+		}
+	}
+	set_technology = {
+
 		# Air
 
 		# Engineering
@@ -127,7 +109,7 @@ if = {
 		# Industry
 	}
 
-	add_ideas={ ww1_Faith_Allah }
+	add_ideas = { ww1_Faith_Allah }
 }
 
 
@@ -204,6 +186,45 @@ if = {
 
 		# Navy
 
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+    		set_technology = {
+    			basic_battery = 1
+    			early_ship_hull_submarine = 1
+    			basic_torpedo = 1 
+    			pre_dreadnoughts = 1
+    			early_ship_hull_light = 1
+    			mtg_early_transport = 1 
+    			basic_secondary_battery = 1
+    			basic_naval_mines = 1
+    			submarine_mine_laying = 1
+    		}
+    	}
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		set_technology = {
+			ww1_destroyer0 = 1
+			ww1_destroyer0_mtg = 1
+			ww1_destroyer1 = 1
+			ww1_destroyer1_mtg = 1
+			ww1_light_cruiser1 = 1
+			ww1_light_cruiser1_mtg = 1
+			ww1_light_cruiser0 = 1
+			ww1_light_cruiser0_mtg = 1
+			ww1_battleship0 = 1
+			ww1_battleship0_mtg = 1
+			ww1_battleship1 = 1
+			ww1_battleship1_mtg = 1
+			ww1_submarine1 = 1
+			ww1_submarine1_mtg = 1
+			ww1_coastal_submarine1 = 1
+			ww1_coastal_submarine1_mtg = 1
+			transport = 1
+			transport_mtg = 1
+		}
+	}
+	set_technology = {
+
 		# Air
 		ww1_fighter1 = 1
 
@@ -216,4 +237,3 @@ if = {
 	add_ideas = {
 		ww1_Faith_Allah
 	}
-}

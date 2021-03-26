@@ -37,22 +37,22 @@ set_technology = {
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
-	set_technology = {
-		basic_battery = 1
-		early_ship_hull_submarine = 1
-		basic_torpedo = 1 
-		pre_dreadnoughts = 1
-		early_ship_hull_light = 1
-		mtg_early_transport = 1 
-		basic_secondary_battery = 1
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
-	}
+		set_technology = {
+			basic_battery = 1
+			early_ship_hull_submarine = 1
+			basic_torpedo = 1 
+			pre_dreadnoughts = 1
+			early_ship_hull_light = 1
+			mtg_early_transport = 1 
+			basic_secondary_battery = 1
+			basic_naval_mines = 1
+			submarine_mine_laying = 1
+		}
 }
 
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	set_technology = {
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		set_technology = {
 		ww1_battleship0 = 1
 		ww1_battleship0_mtg = 1
 		ww1_battleship1 = 1
@@ -91,8 +91,8 @@ if = {
 		###ww1_submarine3 = 0 # submarine_1914 (Submarine III)
 		transport = 1
 		transport_mtg = 1 # Naval Transport
+		}
 	}
-}
 
 1910.1.1 = {
 	oob = "COL_1910"
@@ -174,17 +174,17 @@ if = {
 			basic_naval_mines = 1
 			submarine_mine_laying = 1
 		}
-	create_equipment_variant = { name = "Cartagena Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
-		modules = {
-			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = MSM_light_ship_engine_1
-			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
-			rear_1_custom_slot = MSM_ship_light_battery_1
+		create_equipment_variant = { name = "Cartagena Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
 			} 
-	}
+		}
 	}
 }
 
@@ -285,37 +285,38 @@ if = {
 	add_ideas = {
 
 	}
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	set_technology = {
-		basic_battery = 1
-		early_ship_hull_submarine = 1
-		basic_torpedo = 1 
-		pre_dreadnoughts = 1
-		early_ship_hull_light = 1
-		mtg_early_transport = 1 
-		basic_secondary_battery = 1
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
-		MSM_early_ship_hull_light = 1
-		early_ship_hull_heavy = 1
-		MSM_GW_ship_torpedo_launcher = 1
-		MSM_basic_ship_hull_uboat = 1
-		MSM_improved_battery = 1
-		MSM_basic_early_shell = 1
-		MSM_secondary_battery_1 = 1
-		MSM_ship_hull_dreadnought_1 = 1
-	}
-	create_equipment_variant = { name = "Cartagena Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
-		modules = {
-			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = MSM_light_ship_engine_1
-			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
-			rear_1_custom_slot = MSM_ship_light_battery_1
+
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			basic_battery = 1
+			early_ship_hull_submarine = 1
+			basic_torpedo = 1 
+			pre_dreadnoughts = 1
+			early_ship_hull_light = 1
+			mtg_early_transport = 1 
+			basic_secondary_battery = 1
+			basic_naval_mines = 1
+			submarine_mine_laying = 1
+			MSM_early_ship_hull_light = 1
+			early_ship_hull_heavy = 1
+			MSM_GW_ship_torpedo_launcher = 1
+			MSM_basic_ship_hull_uboat = 1
+			MSM_improved_battery = 1
+			MSM_basic_early_shell = 1
+			MSM_secondary_battery_1 = 1
+			MSM_ship_hull_dreadnought_1 = 1
+		}
+		create_equipment_variant = { name = "Cartagena Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
 			} 
-	}
+		}
 	}
 }

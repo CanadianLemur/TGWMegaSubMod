@@ -14,7 +14,7 @@ set_convoys = 40
 		create_country_leader={
 			name="Sun Wen"
 			desc=PRC_sun_wen_DESC
-			picture="gfx/leaders/PRC_sun_wen.dds"
+			picture="gfx/hoi4tgw_portraits/PRC/country_leaders/PRC_sun_wen.dds"
 			expire="1935.1.1"
 			ideology=conservatism
 			traits={
@@ -22,15 +22,15 @@ set_convoys = 40
 			}
 
 
-create_country_leader={ name = "Hsuan Tung" desc=CHI_hsuan_tung_DESC picture="gfx/leaders/CHI_hsuan_tung.dds" expire="1935.1.1" ideology=nazism traits={  } }
+create_country_leader={ name = "Hsuan Tung" desc=CHI_hsuan_tung_DESC picture="gfx/hoi4tgw_portraits/CHI/country_leaders/CHI_hsuan_tung.dds" expire="1935.1.1" ideology=nazism traits={  } }
 create_country_leader={ name = "Ts'ao K'un" desc=CHI_ts_ao_k_un_DESC picture="gfx/leaders/CHI_ts_ao_k_un.dds" expire="1935.1.1" ideology=despotism  traits={  } }
-create_country_leader={ name = "Chang Tso-lin" desc=CHI_chang_tso_lin_DESC picture="gfx/leaders/CHI_chang_tso_lin.dds" expire="1935.1.1" ideology=fascism_ideology traits={  } }
+create_country_leader={ name = "Chang Tso-lin" desc=CHI_chang_tso_lin_DESC picture="gfx/hoi4tgw_portraits/CHI/country_leaders/CHI_chang_tso_lin.dds" expire="1935.1.1" ideology=fascism_ideology traits={  } }
 create_country_leader={ name = "Wu P'ei-fu" desc=CHI_wu_p_ei_fu_DESC picture="gfx/leaders/CHI_wu_p_ei_fu.dds" expire="1935.1.1" ideology=fascism_ideology traits={  } }
-create_country_leader={ name = "Feng Kuo-chang" desc=CHI_feng_kuo_chang_DESC picture="gfx/leaders/CHI_feng_kuo_chang.dds" expire="1935.1.1" ideology=despotism  traits={  } }
+create_country_leader={ name = "Feng Kuo-chang" desc=CHI_feng_kuo_chang_DESC picture="gfx/hoi4tgw_portraits/CHI/country_leaders/CHI_feng_kuo_chang.dds" expire="1935.1.1" ideology=despotism  traits={  } }
 create_country_leader={ name = "Hung Hsien" desc=CHI_hung_hsien_DESC picture="gfx/leaders/CHI_hung_hsien.dds" expire="1935.1.1" ideology=despotism  traits={  } }
 create_country_leader={ name = "Li Yuan-hung" desc=CHI_li_yuan_hung_DESC picture="gfx/leaders/CHI_li_yuan_hung.dds" expire="1935.1.1" ideology=despotism  traits={  } }
 create_country_leader={ name = "Li Yuanhong" desc=CHI_li_yuanhong_DESC picture="gfx/leaders/CHI_li_yuanhong.dds" expire="1935.1.1" ideology=conservatism traits={  } }
-create_country_leader={ name = "Yuan Shikai" desc=CHI_yuan_shikai_DESC picture="gfx/leaders/CHI_yuan_shikai.dds" expire="1935.1.1" ideology=despotism  traits={  } }
+create_country_leader={ name = "Yuan Shikai" desc=CHI_yuan_shikai_DESC picture="gfx/hoi4tgw_portraits/CHI/country_leaders/CHI_yuan_shikai.dds" expire="1935.1.1" ideology=despotism  traits={  } }
 create_field_marshal={  name = "Huang Xing"  portrait_path="gfx/fieldmarshal/CHI_Huang_Xing.dds" traits={ defensive_doctrine } skill= 3 }
 create_corps_commander={  name = "Song Jiaoren" portrait_path="gfx/generals/CHI_Song_Jiaoren.dds" traits={ fortress_buster  } skill=1 }
 create_corps_commander={  name = "Li Yuanhong"  portrait_path="gfx/generals/CHI_Li_Yuanhong.dds" traits={   } skill=1 }
@@ -72,22 +72,22 @@ set_technology = {
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
-	set_technology = {
-		basic_battery = 1
-		early_ship_hull_submarine = 1
-		basic_torpedo = 1 
-		pre_dreadnoughts = 1
-		early_ship_hull_light = 1
-		mtg_early_transport = 1 
-		basic_secondary_battery = 1
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
-	}
+		set_technology = {
+			basic_battery = 1
+			early_ship_hull_submarine = 1
+			basic_torpedo = 1 
+			pre_dreadnoughts = 1
+			early_ship_hull_light = 1
+			mtg_early_transport = 1 
+			basic_secondary_battery = 1
+			basic_naval_mines = 1
+			submarine_mine_laying = 1
+		}
 }
 
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	set_technology = {
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		set_technology = {
 		ww1_battleship0 = 1
 		ww1_battleship0_mtg = 1
 		ww1_battleship1 = 1
@@ -131,8 +131,8 @@ if = {
 		ww1_coastal_submarine1 = 1
 		ww1_coastal_submarine1_mtg = 1
 		ww1_coastal_submarine2 = 1
+		}
 	}
-}
 
 set_politics = {
     ruling_party = neutrality
@@ -193,6 +193,31 @@ set_popularities = {
 
 	}
 	
+
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			basic_battery = 1
+			early_ship_hull_submarine = 1
+			basic_torpedo = 1 
+			pre_dreadnoughts = 1
+			early_ship_hull_light = 1
+			mtg_early_transport = 1 
+			basic_secondary_battery = 1
+			basic_naval_mines = 1
+			submarine_mine_laying = 1
+		}
+
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		create_equipment_variant={ name="Fu Po Class" type=light_cruiser_1890 parent_version = 0 obsolete=yes upgrades={ ship_gun_upgrade=0  ship_engine_upgrade=0 ship_reliability_upgrade=0 ship_anti_air_upgrade=0          } }
+		create_equipment_variant={ name="Hai Ching Class" type=light_cruiser_1890 parent_version = 1 obsolete=yes upgrades={ ship_gun_upgrade=0  ship_engine_upgrade=0 ship_reliability_upgrade=0 ship_anti_air_upgrade=0          } }
+		create_equipment_variant={ name="Nan Tan Class" type=light_cruiser_1890 parent_version = 2 obsolete=yes upgrades={ ship_gun_upgrade=5  ship_engine_upgrade=0 ship_reliability_upgrade=5 ship_anti_air_upgrade=0          } }
+		create_equipment_variant={ name="Pao Min Class" type=light_cruiser_1890 parent_version = 3 obsolete=yes upgrades={ ship_gun_upgrade=4  ship_engine_upgrade=0 ship_reliability_upgrade=4 ship_anti_air_upgrade=0          } }
+		create_equipment_variant={ name="Tung Chi Class" type=light_cruiser_1900 parent_version = 0 obsolete=yes upgrades={ ship_gun_upgrade=0  ship_engine_upgrade=0 ship_reliability_upgrade=0 ship_anti_air_upgrade=0          } }
+		create_equipment_variant={ name="Hai Yung Class" type=light_cruiser_1900 parent_version = 1 obsolete=yes upgrades={ ship_gun_upgrade=0  ship_engine_upgrade=0 ship_reliability_upgrade=5 ship_anti_air_upgrade=0          } }
+		create_equipment_variant={ name="Hai Tien Class" type=light_cruiser_1900 parent_version = 2 obsolete=no upgrades={ ship_gun_upgrade=5  ship_engine_upgrade=5 ship_reliability_upgrade=5 ship_anti_air_upgrade=0          } }
+	}
 }
 
 1914.1.1 = {
@@ -205,6 +230,7 @@ set_popularities = {
 			set_naval_oob = "CHI_1914_naval_legacy"
 		}
 	}
+
 
 	#-------------------------------------------------------
 	#							NF
@@ -265,14 +291,187 @@ set_popularities = {
 		# Air
 		ww1_fighter1 = 1
 
-		ww1_destroyer3 = 1
-	ww1_destroyer3_mtg = 1
-		ww1_light_cruiser2 = 1
-	ww1_light_cruiser2_mtg = 1
-		ww1_light_cruiser3 = 1
-	ww1_light_cruiser3_mtg = 1
+	}
 
-		# Engineering
+	#Navy
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		set_technology = {
+			ww1_destroyer3 = 1
+			ww1_destroyer3_mtg = 1
+			ww1_light_cruiser2 = 1
+			ww1_light_cruiser2_mtg = 1
+			ww1_light_cruiser3 = 1
+			ww1_light_cruiser3_mtg = 1
+			
+		}
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			basic_battery = 1
+			early_ship_hull_submarine = 1
+			basic_torpedo = 1 
+			pre_dreadnoughts = 1
+			early_ship_hull_light = 1
+			mtg_early_transport = 1 
+			basic_secondary_battery = 1
+			basic_naval_mines = 1
+			submarine_mine_laying = 1
+			MSM_early_ship_hull_light = 1
+			early_ship_hull_heavy = 1
+			MSM_GW_ship_torpedo_launcher = 1
+			MSM_basic_ship_hull_uboat = 1
+			MSM_improved_battery = 1
+			MSM_basic_early_shell = 1
+			MSM_secondary_battery_1 = 1
+			MSM_ship_hull_dreadnought_1 = 1
+		}
+		create_equipment_variant = { name = "Hai Yung Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+		}
+		create_equipment_variant = { name = "Chao Ho Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+		}
+		create_equipment_variant = { name = "Hai Ching Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+		}
+		create_equipment_variant = { name = "Nan Tan Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+		}
+		create_equipment_variant = { name = "Pao Min Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+		}
+		create_equipment_variant = { name = "Wei Yuen Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+		}
+		create_equipment_variant = { name = "Fu Po Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+		}
+		create_equipment_variant = { name = "Chang Feng Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			}
+		}
+		create_equipment_variant = { name = "Flower Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			}
+		}
+		create_equipment_variant = { name = "Hu Peng Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			}
+		}
+		create_equipment_variant = { name = "Hai Tien Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+		}
+		create_equipment_variant = { name = "King Yuen Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+		}
+		create_equipment_variant = { name = "Tung Chi Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+		}
+	}
+	set_technology = {
 		electronic_mechanical_engineering = 1
 
 		# Industry
@@ -293,12 +492,178 @@ set_popularities = {
 	puppet = ZHC # Zhili Clique (Feng Guozhang)
 
 	oob = "CHI_1919"
-	
+
 	if = {
 		limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "CHI_1919_naval_mtg"
 		else = {
 			set_naval_oob = "CHI_1919_naval_legacy"
+		}
+	}
+
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			basic_battery = 1
+			early_ship_hull_submarine = 1
+			basic_torpedo = 1 
+			pre_dreadnoughts = 1
+			early_ship_hull_light = 1
+			mtg_early_transport = 1 
+			basic_secondary_battery = 1
+			basic_naval_mines = 1
+			submarine_mine_laying = 1
+			MSM_early_ship_hull_light = 1
+			early_ship_hull_heavy = 1
+			MSM_GW_ship_torpedo_launcher = 1
+			MSM_basic_ship_hull_uboat = 1
+			MSM_improved_battery = 1
+			MSM_basic_early_shell = 1
+			MSM_secondary_battery_1 = 1
+			MSM_ship_hull_dreadnought_1 = 1
+		}
+		create_equipment_variant = { name = "Hai Yung Class" type = ship_hull_light_1 parent_version = 0 obsolete = yes 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+		}
+		create_equipment_variant = { name = "Chao Ho Class" type = ship_hull_light_1 parent_version = 0 obsolete = yes 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+		}
+		create_equipment_variant = { name = "Hai Ching Class" type = ship_hull_light_1 parent_version = 0 obsolete = yes 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+		}
+		create_equipment_variant = { name = "Nan Tan Class" type = ship_hull_light_1 parent_version = 0 obsolete = yes 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+		}
+		create_equipment_variant = { name = "Pao Min Class" type = ship_hull_light_1 parent_version = 0 obsolete = yes 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+		}
+		create_equipment_variant = { name = "Wei Yuen Class" type = ship_hull_light_1 parent_version = 0 obsolete = yes 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+		}
+		create_equipment_variant = { name = "Fu Po Class" type = ship_hull_light_1 parent_version = 0 obsolete = yes 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+		}
+		create_equipment_variant = { name = "Chang Feng Class" type = ship_hull_light_1 parent_version = 0 obsolete = yes 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			}
+		}
+		create_equipment_variant = { name = "Flower Class" type = ship_hull_light_1 parent_version = 0 obsolete = yes 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			}
+		}
+		create_equipment_variant = { name = "Hu Peng Class" type = ship_hull_light_1 parent_version = 0 obsolete = yes 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			}
+		}
+		create_equipment_variant = { name = "Hai Tien Class" type = ship_hull_light_1 parent_version = 0 obsolete = yes 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+		}
+		create_equipment_variant = { name = "King Yuen Class" type = ship_hull_light_1 parent_version = 0 obsolete = yes 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+		}
+		create_equipment_variant = { name = "Tung Chi Class" type = ship_hull_light_1 parent_version = 0 obsolete = yes 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
 		}
 	}
 }

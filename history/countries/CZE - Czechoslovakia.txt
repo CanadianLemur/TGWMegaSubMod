@@ -1,23 +1,23 @@
-﻿capital=9
-oob="CZE_1910"
+﻿capital = 9
+oob = "CZE_1910"
 set_fuel_ratio = 0.20
-set_research_slots=3
+set_research_slots = 3
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
-	set_technology = {
-		basic_battery = 1
-		early_ship_hull_submarine = 1
-		basic_torpedo = 1 
-		pre_dreadnoughts = 1
-		early_ship_hull_light = 1
-		mtg_early_transport = 1 
-		basic_secondary_battery = 1
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
-	}
-}
-if = {
+    		set_technology = {
+    			basic_battery = 1
+    			early_ship_hull_submarine = 1
+    			basic_torpedo = 1 
+    			pre_dreadnoughts = 1
+    			early_ship_hull_light = 1
+    			mtg_early_transport = 1 
+    			basic_secondary_battery = 1
+    			basic_naval_mines = 1
+    			submarine_mine_laying = 1
+    		}
+    	}
+    if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
 		ww1_destroyer0 = 1
@@ -67,21 +67,16 @@ if = {
 	}
 }
 
-set_technology={ 
-	light_field_gun1=1
+set_technology = { 
+	light_field_gun1 = 1
 	 
-	heavy_field_gun1=1
-	#KiS #heavy_howitzer1=1
-	motorised_infantry = 1 #KiS #siege_artillery1=1
-	electronic_mechanical_engineering=1
-	infantry_weapons=1
-	#KiS=1
-	#KiS=1
+	heavy_field_gun1 = 1
+	motorised_infantry = 1
+	electronic_mechanical_engineering = 1
+	infantry_weapons = 1
 	 
 	 
-	 
-	 
-	#KiS=1
+
 	tech_support=1
 	tech_engineers=1
 	tech_recon=1
@@ -107,7 +102,7 @@ set_popularities = {
 
 set_stability=0.75
 1914.1.1 = { oob="CZE_1914" }
-1914.1.1 = { set_technology={ 
+1914.1.1 = { set_technology = { 
 		#KiS #Scout1=1
 		#naval_bomber1=1
 
@@ -165,7 +160,7 @@ create_country_leader={ name = "Tomáš Garrigue Masaryk" desc=CZE_tomas_garrigu
 capital=9
 
 #oob="CZE_1936"
-#set_technology={ infantry_weapons=1 ww1infantry_weapons1=1 tech_support=1 tech_recon=1 tech_mountaineers=1 gw_artillery=1 gwtank=1 basic_light_tank=1 improved_light_tank=1 interwar_antiair=1 early_fighter=1 early_bomber=1 CAS1=1 }
+#set_technology = { infantry_weapons=1 ww1infantry_weapons1=1 tech_support=1 tech_recon=1 tech_mountaineers=1 gw_artillery=1 gwtank=1 basic_light_tank=1 improved_light_tank=1 interwar_antiair=1 early_fighter=1 early_bomber=1 CAS1=1 }
 #
 create_country_leader={ name="Edvard Beneš"  desc="POLITICS_EDVARD_BENES_DESC" picture="Portrait_Czech_Edvard_Benes.dds" expire="1965.1.1" ideology=conservatism traits={  } }
 create_country_leader={ name="Jaroslav Krejčí" desc="POLITICS_JAROSLAV_KREJCI_DESC" picture="Portrait_Czech_Jaroslav_Krejci.dds" expire="1965.1.1" ideology=nazism traits={  } }

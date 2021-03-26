@@ -19,19 +19,19 @@ create_navy_leader={  name = "Carricarte" id=21046 portrait_path="gfx/admiral/CU
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
-	set_technology = {
-		basic_battery = 1
-		early_ship_hull_submarine = 1
-		basic_torpedo = 1 
-		pre_dreadnoughts = 1
-		early_ship_hull_light = 1
-		mtg_early_transport = 1 
-		basic_secondary_battery = 1
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
-	}
-}
-if = {
+    		set_technology = {
+    			basic_battery = 1
+    			early_ship_hull_submarine = 1
+    			basic_torpedo = 1 
+    			pre_dreadnoughts = 1
+    			early_ship_hull_light = 1
+    			mtg_early_transport = 1 
+    			basic_secondary_battery = 1
+    			basic_naval_mines = 1
+    			submarine_mine_laying = 1
+    		}
+    	}
+    if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
 		ww1_battleship0 = 1

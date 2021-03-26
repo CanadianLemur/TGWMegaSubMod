@@ -7,7 +7,7 @@ units = {
 			location = 7361 # Halifax
 			ship = { name = "HMS Rainbow" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "Apollo Class" } } }
 			ship = { name = "HMS Niobe" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought { amount = 1 owner = ENG version_name = "Diadem Class" } } }
-			ship = { name = "Destroyer Flotilla 1" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = CAN version_name = "Tribal Class" } } }
+			ship = { name = "Destroyer Flotilla 1" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = CAN version_name = "Destroyer Class" } } }
 		}
 	}
 }
