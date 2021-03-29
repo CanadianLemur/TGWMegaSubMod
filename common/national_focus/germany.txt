@@ -2469,7 +2469,7 @@ focus_tree = {
 		completion_reward = {
 			add_to_tech_sharing_group = ger_association_group
 			HUN = {add_to_tech_sharing_group = ger_association_group}
-			if = {limit = {CRO = {is_subject_of = GER}} CRO = {add_to_tech_sharing_group = ger_association_groupa}}
+			if = {limit = {CRO = {is_subject_of = GER}} CRO = {add_to_tech_sharing_group = ger_association_group}}
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -2522,6 +2522,7 @@ focus_tree = {
 				}
 				ROM = {transfer_state = 80}
 				puppet = POL
+				if = {limit = {POL = {is_subject_of = GER } has_completed_focus = GER_ww1_war_plans_research_cooperation_with_habsburg_lands} POL = {add_to_tech_sharing_group = ger_association_group}}
 	POL = {
 				set_politics = {
 	ruling_party = neutrality
