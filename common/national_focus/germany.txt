@@ -5,7 +5,7 @@ focus_tree = {
 	###########################################################################################################################
 	# POLITICAL
 	###########################################################################################################################
-
+	continuous_focus_position = { x = 50 y = 1500 }
 	focus = {
 		id = GER_ww1_political_effort
 		icon = GFX_goal_generic_demand_territory
@@ -915,8 +915,8 @@ focus_tree = {
 
 		completion_reward = {
 			GER = {
-				
-			}
+				country_event = {id = ww1_germany.270}
+				}
 		}
 
 		ai_will_do = {
@@ -1676,7 +1676,8 @@ focus_tree = {
 			factor = 500
 		}
 	}
-	####Offensive Failed Schlieffen (1916)####
+	####Offensive Failed Schlieffen (1916)#### 
+	#### maybe autocomplete
 	focus = {
 		id = GER_ww1_war_plans_a_failed_offensive
 		relative_position_id = GER_ww1_war_with_france
@@ -1981,8 +1982,11 @@ focus_tree = {
 		relative_position_id = GER_ww1_war_plans_compulsory_service
 		prerequisite = { focus=GER_ww1_war_plans_compulsory_service }
 		icon = GFX_goal_generic_political_pressure
+		available = {
+		has_war = yes
+		}
 		completion_reward = {
-			#Give a spirit called slave labor that adds production efficiency boost and ups resistance in belgium the netherlands and poland in the areas that are conquered
+			add_ideas = MSM_GER_ww1_pow_labour
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -2362,7 +2366,7 @@ focus_tree = {
 			}
 			add_popularity = {
 				ideology = fascism
-				popularity = 0.8`
+				popularity = 0.2
 			}
 			add_timed_idea = { idea = reign_of_terror days = 730 }
 
@@ -2418,7 +2422,7 @@ focus_tree = {
 		relative_position_id = GER_ww1_war_plans_great_german_state
 		prerequisite = { focus=GER_ww1_war_plans_great_german_state }
 		mutually_exclusive = {focus = GER_ww1_war_plans_association_with_habsburg_lands}
-		available = {owns_state = 43 HUN = {exists = no}}
+		available = {owns_state = 43 HUN = {exists = no} always = no}
 		icon = GFX_hoi4tgw_ironcross
 		completion_reward = {
 			#Gives options to send settlers out to austro-hungarian states to get cores over time
@@ -2452,6 +2456,7 @@ focus_tree = {
 		completion_reward = {
 			add_to_tech_sharing_group = ger_association_group
 			HUN = {add_to_tech_sharing_group = ger_association_group}
+			if = {limit = {CRO = {is_subject_of = GER}} CRO = {add_to_tech_sharing_group = ger_association_groupa}}
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -2498,13 +2503,29 @@ focus_tree = {
 				add_state_core = 89
 				transfer_state = 72
 				add_state_core = 72
-				add_state_core = 80
 				unlock_national_focus = POL_interwar_choosing_a_king
 				complete_national_focus = POL_interwar_an_austrian_king
 				unlock_national_focus = POL_interwar_request_galicia
 				}
+				ROM = {transfer_state = 80}
 				puppet = POL
-		}     
+	POL = {
+				set_politics = {
+	ruling_party = neutrality
+        elections_allowed = no
+        last_election = "1910.1.1"
+        election_frequency = 48
+		}
+		add_popularity = {
+		ideology = neutrality popularity = 0.7
+		}
+set_party_name = { 
+    ideology = neutrality 
+    long_name = AUH_neutrality_party_long 
+    name = AUH_neutrality_party 
+		}
+		}  
+		}
 		ai_will_do = { factor = 20 }
 		cost = 5
 		x = 0
@@ -2519,15 +2540,10 @@ focus_tree = {
 				OR = {has_war_with = RUS
 				controls_state = 10
 				}
+				always = NO
 		}
 		completion_reward = {
 				### extend_germanization decisions to poland
-				87 = { add_core_of = POL }
-				98 = { add_core_of = POL }
-				10 = { add_core_of = POL }
-				90 = { add_core_of = POL }
-				88 = { add_core_of = POL }
-				92 = { add_core_of = POL }
 		}     
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -2579,7 +2595,14 @@ focus_tree = {
 		prerequisite = { focus=GER_ww1_war_plans_the_currency_of_warfare }
 		icon = GFX_goal_generic_construct_infrastructure
 		completion_reward = {
-			#Add infrastructure going from berlin to the northeast and northwest
+			    every_owned_state = {
+				limit = {is_core_of = ROOT}
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+				}
+				}
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -2674,7 +2697,10 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_ww1_war_plans_the_eastern_bear }
 		icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
 		completion_reward = {
-			#Bonus vs french
+			add_timed_idea = {
+			days = 1000
+			idea = MSM_GER_ww1_the_western_menace
+			}
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -2711,7 +2737,14 @@ focus_tree = {
 		prerequisite = { focus=GER_ww1_war_plans_a_great_wall }
 		icon = GFX_goal_generic_army_artillery2
 		completion_reward = {
-			#Build airfields close to french line, add artillery buff
+			28 = {
+			add_building_construction = {
+			type = air_base
+			level = 3
+			instant_build = yes
+			}
+			}
+			
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
@@ -2786,14 +2819,17 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_ww1_war_plans_the_western_menace }
 		icon = GFX_focus_ger_strike_at_the_source
 		completion_reward = {
-			#Bonus vs russians
+			add_timed_idea = {
+			days = 1000
+			idea = MSM_GER_ww1_the_eastern_bear
+			}
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
 		x = 1
 		y = 1
 	}
-	
+
 	focus = {
 		id = GER_ww1_war_plans_steel_ourselves
 		relative_position_id = GER_ww1_war_plans_the_eastern_bear
@@ -4618,9 +4654,10 @@ focus_tree = {
 		available = {
 			has_global_flag = kis_treaty_of_versailles
 		}
+		allow_branch = {NOT = {has_global_flag = kis_second_treaty_frankfort}}
 
 		x = 25
-		y = 10
+		y = 11
 
 		cost = 10
 
@@ -4640,7 +4677,7 @@ focus_tree = {
 		available = {
 		}
 
-		x = 15
+		x = 16
 		y = 12
 
 		cost = 10
@@ -4695,6 +4732,32 @@ focus_tree = {
 			bonus = 0.5
 			uses = 1
 			category = air_equipment
+		}
+		}
+	}
+	focus = {
+		id = GER_interwar_kama_tank_school
+
+		icon = GFX_focus_secret_rearmament
+		prerequisite = {focus = GER_interwar_quietly_break_disarmament_treaties}
+		available = {
+		date > 1924.01.01
+		}
+
+		x = 19		
+		y = 14
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10	
+		}
+		completion_reward = {
+			army_experience = 15
+			add_tech_bonus = {
+			bonus = 0.3
+			uses = 1
+			category = armor
 		}
 		}
 	}
@@ -4810,7 +4873,7 @@ focus_tree = {
 		}
 
 		x = 50
-		y = 14
+		y = 15
 
 		cost = 10
 
@@ -4887,9 +4950,9 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = GER_interwar_easing_tensions
+		id = GER_interwar_easing_tensions # lowers extremist support
 		prerequisite = {focus = GER_interwar_loss_in_ww1}
-		icon = GFX_focus_YUG_pan_slavic_congress
+		icon = GFX_
 		mutually_exclusive = { focus = GER_interwar_beer_AntiSpartacists focus = GER_interwar_beer_ProSpartacists focus = GER_interwar_beer_hall_putsch }
 
 		available = {
@@ -4900,7 +4963,7 @@ focus_tree = {
 		}
 
 		x = 48
-		y = 14
+		y = 15
 
 		cost = 10
 
@@ -4908,19 +4971,12 @@ focus_tree = {
 			factor = 0	
 		}
 		completion_reward = {
-			set_politics = {
-				ruling_party = communism
-				elections_allowed = no
-			}
-
-			start_civil_war = {
-				ideology = democratic
-			}
+			
 		}
 	}
 
 	focus = {
-		id = GER_interwar_accept_new_philosophy
+		id = GER_interwar_accept_new_philosophy #
 
 		icon = GFX_focus_fra_loyalty_trotzky
 		relative_position_id = GER_interwar_easing_tensions
@@ -4977,7 +5033,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = GER_interwar_rightful_leader # Crush the Spartacists
+		id = GER_interwar_rightful_leader # von mackensen coup
 
 		icon = GFX_goal_generic_secret_weapon
 		relative_position_id = GER_interwar_beer_AntiSpartacists
@@ -5001,15 +5057,29 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_popularity = { ideology = communism popularity = -0.15 }
-			add_political_power = -30
-			add_stability = -0.15
+		create_country_leader = {
+			name = "August von Mackensen"
+			desc = "POLITICS_AUGUST_VON_MACKENSEN_DESC"
+			picture = GFX_portrait_ger_august_von_mackensen
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+				great_war_hero
+			}
+		}
+		set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+		add_popularity = {
+				ideology = neutrality
+				popularity = 0.35
+			}
 		}
 	}
 	
 	focus = {
-		id = GER_interwar_monarchist_push # Crush the Spartacists
-
+		id = GER_interwar_monarchist_push # removal of republican elements
 		icon = GFX_goal_generic_secret_weapon
 		relative_position_id = GER_interwar_rightful_leader
 		prerequisite = { focus = GER_interwar_rightful_leader }
@@ -5044,7 +5114,6 @@ focus_tree = {
 		prerequisite = {focus = GER_interwar_loss_in_ww1}
 		mutually_exclusive = { focus = GER_interwar_beer_ProSpartacists focus = GER_interwar_beer_AntiSpartacists focus = GER_interwar_easing_tensions }
 		icon = GFX_goal_generic_political_pressure
-		allow_branch = {NOT = {has_global_flag = kis_second_treaty_frankfort}}
 		available = {
 			date > 1922.1.1
 			has_war = no
@@ -5058,7 +5127,7 @@ focus_tree = {
 		}
 
 		x = 25
-		y = 11
+		y = 12
 
 		cost = 10
 
@@ -5227,52 +5296,18 @@ focus_tree = {
 	}
 
 	################ INTERWAR END
-
-	focus = {
-		id = GER_load_kaiser_tree
-		icon = GFX_goal_generic_construction
-		x = 10
-		y = 12
-		cost = 0
-		ai_will_do = {
-			factor = 12
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			set_global_flag = kis_second_treaty_frankfort
-			country_event = MSMGermany.6
-		}
-		
-	}
-	
-	focus = {
-		id = GER_load_hitler_tree 
-		icon = GFX_goal_generic_construction
-		x = 12
-		y = 12
-		cost = 0
-		ai_will_do = {
-			factor = 12
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			clr_global_flag = kis_second_treaty_frankfort
-			country_event = MSMGermany.6
-		}
-		
-	}
-
 	################ VANILLA START
 
 	focus = {
 		id = GER_four_year_plan
 		icon = GFX_goal_generic_construction
 		x = 6
-		y = 15
+		y = 16
 		cost = 10
 		ai_will_do = {
 			factor = 12
 		}
+		prerequisite = {focus = GER_interwar_quietly_break_disarmament_treaties}
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_tech_bonus = {
@@ -7298,7 +7333,7 @@ focus_tree = {
 		text = air_innovation
 		icon = GFX_goal_generic_build_airforce
 		x = 16
-		y = 15
+		y = 16
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -7530,11 +7565,12 @@ focus_tree = {
 		id = GER_army_innovation
 		icon = GFX_goal_generic_axis_build_infantry
 		x = 19
-		y = 15
+		y = 16
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
+		prerequisite = {focus = GER_interwar_kama_tank_school}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -9661,7 +9697,7 @@ focus_tree = {
 		id = GER_naval_rearmament
 		icon = GFX_goal_generic_build_navy
 		x = 35
-		y = 16
+		y = 17
 		cost = 5
 		ai_will_do = {
 			factor = 1

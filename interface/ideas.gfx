@@ -6759,6 +6759,10 @@ spriteTypes = {
 		name = "GFX_idea_hideo_itokawa"
 		texturefile = "gfx/interface/ideas/idea_hideo_itokawa.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_graveyard_of_empires"
+		texturefile = "gfx/interface/ideas/idea_AFG_graveyard_of_empires.dds"
+	}
 	spriteType = { name = "GFX_idea_AFG_muhammad_sulaiman_khan" texturefile = "gfx/interface/ideas/idea_AFG_muhammad_sulaiman_khan.dds" }
 spriteType = { name = "GFX_idea_AFG_nadir_shah" texturefile = "gfx/interface/ideas/idea_AFG_nadir_shah.dds" }
 spriteType = { name = "GFX_idea_AFG_sardar_mahmud_tarzi" texturefile = "gfx/interface/ideas/idea_AFG_sardar_mahmud_tarzi.dds" }

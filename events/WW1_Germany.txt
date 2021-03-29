@@ -526,6 +526,84 @@ country_event = {
 		ai_chance = { factor = 20 }
 	}
 }
+#  Mission to the Dervishes
+country_event = {
+	id =  ww1_germany.270
+	title = ww1_germany.270.t
+	desc = ww1_germany.270.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = yes
+	is_triggered_only = yes
 
+	option = {
+		name = ww1_germany.270.a
+		ai_chance = { factor = 50 }
+		##offer Somalis equipment and advisors in addition to alliance
+		SOM = {
+				country_event = ww1_germany.271
+			}
+	}
+	option = {
+		name = ww1_germany.270.b
+		ai_chance = { factor = 0 }
+		##alliance and opportunity to gain lands should be enough
+			SOM = {
+				country_event = ww1_germany.272
+			}
+	}
+}
+#  Mission to the Dervishes equipment sent
+country_event = {
+	id =  ww1_germany.271
+	title = ww1_germany.271.t
+	desc = ww1_germany.271.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = yes
+	is_triggered_only = yes
 
+	option = {
+		name = ww1_germany.271.a
+		ai_chance = { factor = 100 }
+		##Yes!
+		GER={ add_to_faction=SOM }
+		add_ideas = {german_advisors}
+		GER = {send_equipment = {
+    equipment = infantry_equipment
+    amount = 2000
+    target = SOM
+}}
+	}
+	option = {
+		name = ww1_germany.271.b
+		ai_chance = { factor = 0 }
+		##No!
+			
+	}
+}
+
+#  Mission to the Dervishes no equipment
+country_event = {
+	id =  ww1_germany.272
+	title = ww1_germany.272.t
+	desc = ww1_germany.272.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_germany.272.a
+		ai_chance = { factor = 50 }
+		##Yes!
+		GER={ add_to_faction=SOM }
+	}
+	option = {
+		name = ww1_germany.272.b
+		ai_chance = { factor = 50 }
+		##No!
+			
+	}
+}
 __________________________________________________________

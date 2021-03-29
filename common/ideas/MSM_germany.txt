@@ -170,6 +170,50 @@ country = {
 		}
 	}
 country = {
+		MSM_GER_ww1_pow_labour = {
+			allowed = {
+				original_tag = GER
+				has_war = yes
+			}
+			
+			
+			removal_cost = -1 
+			modifier = {production_factory_max_efficiency_factor = 0.05
+				occupation_cost = 0.1
+		}
+	}
+	}
+country = {
+		MSM_GER_ww1_the_eastern_bear = {
+			allowed = {
+				original_tag = GER
+			}
+			
+			
+			removal_cost = -1 
+			targeted_modifier = {
+			tag = RUS
+			attack_bonus_against = 0.05
+			breakthrough_bonus_against = 0.05
+			} 
+	}
+	}
+country = {
+		MSM_GER_ww1_the_western_menace = {
+			allowed = {
+				original_tag = GER
+			}
+			
+			
+			removal_cost = -1 
+			targeted_modifier = {
+			tag = FRA
+			attack_bonus_against = 0.05
+			breakthrough_bonus_against = 0.05
+			} 
+	}
+	}
+country = {
 		MSM_GER_ww1_battlefield_mobility	= {
 			allowed = {
 				original_tag = GER

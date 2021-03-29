@@ -137,10 +137,12 @@ country_event = {  #### Ultimatum to AUH ####
 	## refuse dismantlement
 	option = {
 		name = MSMSecondBrothersWar.7.a
+		GER = {country_event = MSMSecondBrothersWar.8}
 	}
 	## accept dismantlement
 	option = {
 		name = MSMSecondBrothersWar.7.b
+		GER = {country_event = MSMSecondBrothersWar.9}
 	}
 }
 country_event = {  #### dismantlement refused! ####
@@ -172,6 +174,7 @@ country_event = {  #### dismantlement accepted! ####
 	option = {
 		name = MSMSecondBrothersWar.9.a
 		puppet = AUH
+		country_event = MSMSecondBrothersWar.11
 	}
 }
 country_event = {  #### AUH surrenders! ####
@@ -186,6 +189,7 @@ country_event = {  #### AUH surrenders! ####
 	option = {
 		name = MSMSecondBrothersWar.10.a
 		puppet = AUH
+		country_event = MSMSecondBrothersWar.11
 	}
 }
 country_event = {  #### dismantlement of AUH ####
@@ -367,4 +371,5 @@ set_party_name = {
     target = AUH
     transfer_troops = no
 	}
+}
 }
