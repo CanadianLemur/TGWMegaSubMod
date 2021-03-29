@@ -7,8 +7,8 @@ focus_tree = {
 		factor = 0
 		
 		modifier = {
-			add = 10
-			tag = POR
+		#	add = 10
+		#	tag = POR
 		}
 	}
 
