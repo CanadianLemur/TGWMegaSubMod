@@ -5,16 +5,16 @@ units = {
 		task_force = {
 			name = "Chilean Fleet"
 			location = 8222 # Santiago
-			ship = { name = "Huascar" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = CHL version_name = "Huascar Class" } } }
+			ship = { name = "Huascar" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = CHL version_name = "Huscar Class" } } }
 			ship = { name = "Almirante Cochrane" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = CHL version_name = "Almirante Cochrane Class" } } }
 			ship = { name = "Capitan Prat" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = CHL version_name = "Capitan Prat Class" } } }
-			ship = { name = "Esmeralda" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought { amount = 1 owner = CHL version_name = "Huascar Class" } } }
+			ship = { name = "Esmeralda" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought { amount = 1 owner = CHL version_name = "Huscar Class" } } }
 			ship = { name = "O'Higgins" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought { amount = 1 owner = CHL version_name = "O'Higgins Class" } } }
-			ship = { name = "Presidente Errauriz" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = CHL version_name = "Presidente Errazuriz Class" } } }
+			ship = { name = "Presidente Errauriz" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = CHL version_name = "Errauriz Class" } } }
 			ship = { name = "Blanco Encalada" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = CHL version_name = "Blanco Encalada Class" } } }
 			ship = { name = "Ministro Zenteno" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = CHL version_name = "Ministro Zenteno Class" } } }
-			ship = { name = "Chacabuco" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = CHL version_name = "Chacabuco Class" } } }
-			ship = { name = "Almirante Lynch" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = CHL version_name = "Almirante Lynch Class" } } }
+			ship = { name = "Chacabuco" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = CHL version_name = "Errauriz Class" } } }
+			ship = { name = "Almirante Lynch" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = CHL version_name = "Errauriz Class" } } }
 			ship = { name = "Almirante Condell" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = CHL version_name = "Almirante Lynch Class" } } }
 			ship = { name = "Capitan Orella" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = CHL version_name = "Capitan Orella Class" } } }
 			ship = { name = "Capitan Munez Gamero" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = CHL version_name = "Capitan Orella Class" } } }

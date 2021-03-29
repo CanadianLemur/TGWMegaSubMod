@@ -11,12 +11,12 @@ set_convoys = 5
 #-------------------------------------------------------
 #					POLITICS & ARMY
 #-------------------------------------------------------
-create_country_leader = { name = "Esat Toptani" desc=ALB_esat_toptani_DESC picture="gfx/hoi4tgw_portraits/ALB/country_leaders/ALB_esat_toptani.dds" expire="1935.1.1" ideology=despotism  traits={  } }
-create_country_leader = { name = "Ahmed Izzet" desc=ALB_ahmed_izzet_DESC picture="gfx/hoi4tgw_portraits/ALB/country_leaders/ALB_ahmed_izzet.dds" expire="1935.1.1" ideology=despotism  traits={  } }
-create_country_leader = { name = "Prenk Bib Doda" desc=ALB_prenk_doda_DESC picture="gfx/hoi4tgw_portraits/ALB/country_leaders/ALB_prenk_doda.dds" expire="1935.1.1" ideology=despotism  traits={  } }
+create_country_leader = { name = "Esat Toptani" desc=ALB_esat_toptani_DESC picture="gfx/leaders/ALB_esat_toptani.dds" expire="1935.1.1" ideology=despotism  traits={  } }
+create_country_leader = { name = "Ahmed Izzet" desc=ALB_ahmed_izzet_DESC picture="gfx/leaders/ALB_ahmed_izzet.dds" expire="1935.1.1" ideology=despotism  traits={  } }
+create_country_leader = { name = "Prenk Bib Doda" desc=ALB_prenk_doda_DESC picture="gfx/leaders/ALB_prenk_doda.dds" expire="1935.1.1" ideology=despotism  traits={  } }
 create_corps_commander = {  name = "Rushedi Pashë Dërralla" id=2002 portrait_path="gfx/generals/ALB_rushedi_pashe_derralla.dds" traits={   } skill=2 }
 create_corps_commander = {  name = "Prenk Pasha" id=2003 portrait_path="gfx/generals/ALB_prenk_pasha.dds" traits={   } skill=2 }
-create_country_leader = { name = "Vidi I" desc=ALB_vidit_i_DESC picture="gfx/hoi4tgw_portraits/ALB/country_leaders/ALB_vidit_i.dds" expire="1935.1.1" ideology=despotism  traits={  } }
+create_country_leader = { name = "Vidi I" desc=ALB_vidit_i_DESC picture="gfx/leaders/ALB_vidit_i.dds" expire="1935.1.1" ideology=despotism  traits={  } }
 
 set_politics = {
     ruling_party = neutrality
@@ -36,6 +36,63 @@ set_popularities = {
 	oob = "ALB_1910"
 
 	#-------------------------------------------------------
+
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_battery = 1
+		early_ship_hull_submarine = 1
+		basic_torpedo = 1 
+		pre_dreadnoughts = 1
+		early_ship_hull_light = 1
+		mtg_early_transport = 1 
+		basic_secondary_battery = 1
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+	}
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		ww1_destroyer0 = 1
+		ww1_destroyer0_mtg = 1
+		ww1_destroyer1 = 1
+		ww1_destroyer1_mtg = 1
+		ww1_light_cruiser1 = 1
+		ww1_light_cruiser1_mtg = 1
+		ww1_light_cruiser0 = 1
+		ww1_light_cruiser0_mtg = 1
+		ww1_battlecruiser0 = 1
+		ww1_battlecruiser0_mtg = 1
+		ww1_battleship0 = 1
+		ww1_battleship0_mtg = 1
+		ww1_submarine1 = 1
+		ww1_submarine1_mtg = 1
+		ww1_coastal_submarine1 = 1
+		ww1_coastal_submarine1_mtg = 1
+		transport = 1
+		transport_mtg = 1
+		ww1_destroyer0 = 1
+		ww1_destroyer0_mtg = 1
+		ww1_destroyer1 = 1
+		ww1_destroyer1_mtg = 1
+		ww1_light_cruiser1 = 1
+		ww1_light_cruiser1_mtg = 1
+		ww1_light_cruiser0 = 1
+		ww1_light_cruiser0_mtg = 1
+		ww1_battleship0 = 1
+		ww1_battleship0_mtg = 1
+		ww1_battleship1 = 1
+		ww1_battleship1_mtg = 1
+		ww1_submarine1 = 1
+		ww1_submarine1_mtg = 1
+		ww1_coastal_submarine1 = 1
+		ww1_coastal_submarine1_mtg = 1
+		transport = 1
+		transport_mtg = 1
+	}
+}
 
 	set_technology = {
 
@@ -63,45 +120,6 @@ set_popularities = {
 		heavy_field_gun1 = 1
 
 		# Navy
-
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-    		set_technology = {
-    			basic_battery = 1
-    			early_ship_hull_submarine = 1
-    			basic_torpedo = 1 
-    			pre_dreadnoughts = 1
-    			early_ship_hull_light = 1
-    			mtg_early_transport = 1 
-    			basic_secondary_battery = 1
-    			basic_naval_mines = 1
-    			submarine_mine_laying = 1
-    		}
-    	}
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-			ww1_destroyer0 = 1
-			ww1_destroyer0_mtg = 1
-			ww1_destroyer1 = 1
-			ww1_destroyer1_mtg = 1
-			ww1_light_cruiser1 = 1
-			ww1_light_cruiser1_mtg = 1
-			ww1_light_cruiser0 = 1
-			ww1_light_cruiser0_mtg = 1
-			ww1_battlecruiser0 = 1
-			ww1_battlecruiser0_mtg = 1
-			ww1_battleship0 = 1
-			ww1_battleship0_mtg = 1
-			ww1_submarine1 = 1
-			ww1_submarine1_mtg = 1
-			ww1_coastal_submarine1 = 1
-			ww1_coastal_submarine1_mtg = 1
-			transport = 1
-			transport_mtg = 1
-		}
-	}
-	set_technology = {
 
 		# Air
 
@@ -172,45 +190,6 @@ set_popularities = {
 		bonus_bertha1 = 1
 
 		# Navy
-
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-    		set_technology = {
-    			basic_battery = 1
-    			early_ship_hull_submarine = 1
-    			basic_torpedo = 1 
-    			pre_dreadnoughts = 1
-    			early_ship_hull_light = 1
-    			mtg_early_transport = 1 
-    			basic_secondary_battery = 1
-    			basic_naval_mines = 1
-    			submarine_mine_laying = 1
-    		}
-    	}
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-			ww1_destroyer0 = 1
-			ww1_destroyer0_mtg = 1
-			ww1_destroyer1 = 1
-			ww1_destroyer1_mtg = 1
-			ww1_light_cruiser1 = 1
-			ww1_light_cruiser1_mtg = 1
-			ww1_light_cruiser0 = 1
-			ww1_light_cruiser0_mtg = 1
-			ww1_battleship0 = 1
-			ww1_battleship0_mtg = 1
-			ww1_battleship1 = 1
-			ww1_battleship1_mtg = 1
-			ww1_submarine1 = 1
-			ww1_submarine1_mtg = 1
-			ww1_coastal_submarine1 = 1
-			ww1_coastal_submarine1_mtg = 1
-			transport = 1
-			transport_mtg = 1
-		}
-	}
-	set_technology = {
 
 		# Air
 		ww1_fighter1 = 1

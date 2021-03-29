@@ -5,16 +5,16 @@ units = {
 		task_force = {
 			name = "Armada Argentina"
 			location = 12364 # Buenos Aires
-			ship = { name = "ARA La Plata" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = ARG version_name = "Independencia Class" } } }
-			ship = { name = "ARA Los Andes" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = ARG version_name = "Independencia Class" } } }
+			ship = { name = "ARA La Plata" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = ARG version_name = "El Plata Class" } } }
+			ship = { name = "ARA Los Andes" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = ARG version_name = "El Plata Class" } } }
 			ship = { name = "ARA Almirante Brown" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = ARG version_name = "Almirante Brown Class" } } }
 			ship = { name = "ARA Independencia" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = ARG version_name = "Libertad Class" } } }
 			ship = { name = "ARA Libertad" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = ARG version_name = "Libertad Class" } } }
 			ship = { name = "ARA Patagonia" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ARG version_name = "Patagonia Class" } } }
 			ship = { name = "ARA Veinticinco de Mayo" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ARG version_name = "25 De Mayo Class" } } }
 			ship = { name = "ARA Nueve de Julio" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ARG version_name = "9 De Julio Class" } } }
-			ship = { name = "ARA Buenos Aires" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ARG version_name = "Patagonia Class" } } }
-			ship = { name = "ARA General Garibaldi" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought { amount = 1 owner = ARG version_name = "Guiseppe Garibaldi Class" } } }
+			ship = { name = "ARA Buenos Aires" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ARG version_name = "Buenos Aires Class" } } }
+			ship = { name = "ARA General Garibaldi" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought { amount = 1 owner = ARG version_name = "Giuseppe Garibaldi Class" } } }
 			ship = { name = "ARA General Belgrano" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought { amount = 1 owner = ARG version_name = "Guiseppe Garibaldi Class" } } }
 			ship = { name = "ARA General Pueyrredón" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought { amount = 1 owner = ARG version_name = "Guiseppe Garibaldi Class" } } }
 			ship = { name = "ARA General San Martín" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought { amount = 1 owner = ARG version_name = "Guiseppe Garibaldi Class" } } }

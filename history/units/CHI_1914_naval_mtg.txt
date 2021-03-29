@@ -11,14 +11,14 @@ units = {
 			ship = { name = "Nan Jui" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = CHI version_name = "Nan Tan Class" } } }
 			ship = { name = "Pao Min" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = CHI version_name = "Pao Min Class" } } }
 			ship = { name = "Fei Hung" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = CHI version_name = "Chao Ho Class" } } }
-			ship = { name = "Chao Wu" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = CHI version_name = "Wei Yuen Class" } } }
+			ship = { name = "Chao Wu" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = CHI version_name = "Chao Ho Class" } } }
 			ship = { name = "Fu Po" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = CHI version_name = "Fu Po Class" } } }
 			ship = { name = "Teng Ying Chou" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = CHI version_name = "Fu Po Class" } } }
 			ship = { name = "Tai An" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = CHI version_name = "Fu Po Class" } } }
 			ship = { name = "Yuan Kai" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = CHI version_name = "Fu Po Class" } } }
-			ship = { name = "Chang Feng" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = CHI version_name = "Chang Feng Class" } } }
-			ship = { name = "Fu Po B" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = CHI version_name = "Flower Class" } } }
-			ship = { name = "Fei Hung B" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = CHI version_name = "Chao Ho Class" } } }
+			ship = { name = "Chang Feng" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = CHI version_name = "Hu Peng Class" } } }
+			ship = { name = "Fu Po B" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = CHI version_name = "Hu Peng Class" } } }
+			ship = { name = "Fei Hung B" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = CHI version_name = "Hu Peng Class" } } }
 			ship = { name = "Hu Peng" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = CHI version_name = "Hu Peng Class" } } }
 			ship = { name = "Hu Ngo" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = CHI version_name = "Hu Peng Class" } } }
 			ship = { name = "Hu Chung" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = CHI version_name = "Hu Peng Class" } } }
@@ -27,23 +27,23 @@ units = {
 	}
 	fleet = {
 		name = "Central Fleet Fleet"
-		naval_base = 9974 # Ningbo
+		naval_base = 10068
 		task_force = {
 			name = "Central Fleet"
-			location = 9974 # Ningbo
+			location = 10068
 			ship = { name = "Hai Tan" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = CHI version_name = "Hai Yung Class" } } }
 			ship = { name = "Hai Chi" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = CHI version_name = "Hai Tien Class" } } }
-			ship = { name = "King Ching" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = CHI version_name = "King Yuen Class" } } }
+			ship = { name = "King Ching" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = CHI version_name = "Jingyuan Class" } } }
 			ship = { name = "Tung Chi" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = CHI version_name = "Tung Chi Class" } } }
 		}
 	}
 	fleet = {
 		name = "Southern Fleet Fleet"
-		naval_base = 1047 # Guangzhou
+		naval_base = 10068
 		task_force = {
 			name = "Southern Fleet"
-			location = 1047 # Guangzhou
-			ship = { name = "Ying Swei" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = CHI version_name = "Chao Ho Class" } } }
+			location = 10068
+			ship = { name = "Ying Swei" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = CHI version_name = "Jingyuan Class" } } }
 			ship = { name = "Fu An" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = CHI version_name = "Tung Chi Class" } } }
 			ship = { name = "Hai Yung" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = CHI version_name = "Hai Yung Class" } } }
 		}

@@ -14,7 +14,97 @@ set_convoys = 5
 #-------------------------------------------------------
 create_country_leader={ name = "Aleksandar Stamboliyski" desc=BUL_aleksandar_stamboliyski_DESC picture="gfx/leaders/BUL_aleksandar_stamboliyski.dds" expire="1935.1.1" ideology=marxism traits={  } }
 create_country_leader={ name = "Dimitar Blagoev" desc=BUL_dimitar_blagoev_DESC picture="gfx/leaders/BUL_dimitar_blagoev.dds" expire="1935.1.1" ideology=stalinism traits={  } }
-create_country_leader={ name = "Ferdinand I" desc=BUL_ferdinand_i_DESC picture="gfx/hoi4tgw_portraits/BUL/country_leaders/BUL_ferdinand_i.dds" expire="1935.1.1" ideology=despotism  traits={  } }
+
+if = {
+	limit = { not = {has_dlc = "Man the Guns"} }
+	set_technology = {
+		ww1_battleship0 = 1
+		ww1_battleship0_mtg = 1
+	
+		ww1_battleship1 = 1
+		ww1_battleship1_mtg = 1
+	
+		###ww1_battleship2 = 0 #  ww1_battleship_1906 (Dreadnought I)
+		###ww1_battleship3 = 0 #  ww1_battleship_1910 (Dreadnought II)
+		###ww1_battleship4 = 0 #  ww1_battleship_1914 (Dreadnought III)
+
+		###ww1_battlecruiser1 = 0 # ww1_battlecruiser_1906 (Battlecruiser I)
+		###ww1_battlecruiser2 = 0 # ww1_battlecruiser_1910 (Battlecruiser II)
+		###ww1_battlecruiser3 = 0 # ww1_battlecruiser_1910 (Battlecruiser III)
+
+		ww1_heavy_cruiser0 = 1
+		ww1_heavy_cruiser0_mtg = 1 # heavy_cruiser_1890 (Armored Cruiser I)
+		ww1_heavy_cruiser1 = 1
+		ww1_heavy_cruiser1_mtg = 1 # heavy_cruiser_1900 (Armored Cruiser II)
+
+		ww1_light_cruiser0 = 1
+		ww1_light_cruiser0_mtg = 1 # light_cruiser_1890 (Protected Cruiser I)
+		ww1_light_cruiser1 = 1
+		ww1_light_cruiser1_mtg = 1 # light_cruiser_1900 (Protected Cruiser II)
+		###ww1_light_cruiser2 = 0 # light_cruiser_1906 (Light Cruiser I)
+		###ww1_light_cruiser3 = 0 # light_cruiser_1910 (Light Cruiser II)
+		###ww1_light_cruiser4 = 0 # light_cruiser_1914 (Light Cruiser III)
+	
+		ww1_destroyer0 = 1
+		ww1_destroyer0_mtg = 1 # destroyer_1890 (Torpedo Boat I)
+		ww1_destroyer1 = 1
+		ww1_destroyer1_mtg = 1 # destroyer_1900 (Destroyer I)
+		ww1_destroyer2 = 1
+		ww1_destroyer2_mtg = 1 # destroyer_1906 (Destroyer II)
+		###ww1_destroyer3 = 0 # destroyer_1910 (Destroyer III)
+		###ww1_destroyer4 = 0 # destroyer_1914 (Destroyer IV)	
+
+		ww1_moduleMTG_mines = 1
+		ww1_moduleMTG_mines_mtg = 1 # Mines
+
+		ww1_submarine0 = 1
+		ww1_submarine0_mtg = 1 # coastal_submarine_1900 (Coastal Submarine 1900, first available Submarine)
+		ww1_submarine1 = 1
+		ww1_submarine1_mtg = 1 # submarine_1906 (Submarine I)
+		###ww1_submarine2 = 0 # submarine_1910 (Submarine II)
+		###ww1_submarine3 = 0 # submarine_1914 (Submarine III)
+
+		transport = 1
+		transport_mtg = 1 # Naval Transport
+
+		ww1_coastal_submarine1 = 1
+		ww1_coastal_submarine1_mtg = 1
+		ww1_coastal_submarine2 = 1
+	}
+}
+#if = {
+#	limit = { has_dlc = "Man the Guns" }
+#	set_technology = {
+#		ship_hull_submarine_1910 = 1
+#		ww1_ship_hull_light = 1
+#		gw_ship_hull_cruiser = 1
+#		pre_dreadnought_ship_hull_heavy = 1
+#		dreadnought_ship_hull_heavy = 1
+#		basic_torpedo = 1
+#		mtg_transport = 1
+#		basic_secondary_battery = 1
+#		basic_naval_mines = 1
+#		basic_battery = 1
+#	}
+#}
+
+create_country_leader = {
+	name = "Ferdinand I"
+	desc = BUL_ferdinand_i_DESC
+	picture = "gfx/leaders/BUL_ferdinand_i.dds"
+	expire = "1935.1.1"
+	ideology = centrism
+	traits = { ba_balkan_hegemonist }	### Expansionist politics were big in Bulgaria at the time, and both the Tsar and other people of power within the Bulgarian Tsardom would eventually go even further in their maximalist ideals after the success of the First Balkan War...
+}
+
+create_country_leader = {
+	name = "Aleksandar Pavlov Malinov"
+	desc = BUL_aleksandar_pavlov_malinov_DESC
+	picture = "Portrait_Bulgaria_Aleksandar_Pavlov_Malinov.dds"
+	expire = "1935.1.1"
+	ideology = liberalism
+	traits = { dealbroker }
+}
 
 #create_corps_commander={  name = "Dimitriev I." id=12014 portrait_path="gfx/generals/BUL_dimitriev_i.dds" traits={   } skill=1 }
 #create_corps_commander={  name = "Genev" id=12019 portrait_path="gfx/generals/BUL_genev.dds" traits={ winter_specialist commando } skill=2 }
@@ -39,25 +129,59 @@ create_country_leader={ name = "Ferdinand I" desc=BUL_ferdinand_i_DESC picture="
 #create_corps_commander={  name = "Tzenov" id=12069 portrait_path="gfx/generals/BUL_tzenov.dds" traits={ fortress_buster  } skill=1 }
 #create_corps_commander={  name = "Vazov G." id=12071 portrait_path="gfx/generals/BUL_vazov_g.dds" traits={ fortress_buster  } skill=2 }
 
-create_corps_commander={  name = "Vladimir Vazov" id=75049 portrait_path="gfx/hoi4tgw_portraits/BUL/army_generals/BUL_Vladimir_Vazov.dds" traits={ commando } skill=3 
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 1
-}
-create_corps_commander={  name = "Lukov H." id=12032 portrait_path="gfx/hoi4tgw_portraits/BUL/army_generals/BUL_Ivan_Lukov.dds" traits={   } skill=1 
-	attack_skill = 2
+create_field_marshal = {
+	name = "Ivan Fichev"
+	id = 12018 portrait_path="gfx/fieldmarshal/BUL_fichev.dds"
+	traits = { inflexible_strategist infantry_officer offensive_doctrine organizer } ### REDACTED as of the update for 1.6.0/1.6.1 MtG. (Previous versions: Now starts with +1 defense and +1 logistics from inflexible_strategist trait. Redact changes if PDX fixes starting skills from these traits.)
+	skill = 3
+	attack_skill = 3
 	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
 }
-create_corps_commander={  name = "Zhekov" id=12077 portrait_path="gfx/hoi4tgw_portraits/BUL/army_generals/BUL_Nikola_Zhekov.dds" traits={   } skill=3 
-	attack_skill = 1
-	defense_skill = 1
+
+create_corps_commander = {
+	name = "Vladimir Vazov"
+	id = 75049
+	portrait_path = "gfx/hoi4tgw_portraits/BUL/army_generals/BUL_Vladimir_Vazov.dds"
+	traits = { brilliant_strategist infantry_officer career_officer hill_fighter trait_engineer } ### REDACTED as of the update for 1.6.0/1.6.1 MtG. (Previous versions: Now starts with +1 attack and +1 planning from brilliant_strategist trait. Redact changes if PDX fixes starting skills from these traits.)
+	skill = 3
+	attack_skill = 2
+	defense_skill = 4
 	planning_skill = 2
 	logistics_skill = 2
 }
-create_corps_commander={  name = "Kolev" id=12028 portrait_path="gfx/hoi4tgw_portraits/BUL/army_generals/BUL_Ivan_Kolev.dds" traits={ cavalry_officer } skill=4 
+
+create_corps_commander = {
+	name = "Ivan Lukov"
+	id = 12032
+	portrait_path = "gfx/hoi4tgw_portraits/BUL/army_generals/BUL_Ivan_Lukov.dds"
+	traits = { career_officer organizer }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Nikola Zhekov"
+	id = 12077
+	portrait_path = "gfx/hoi4tgw_portraits/BUL/army_generals/BUL_Nikola_Zhekov.dds"
+	traits = { infantry_officer career_officer hill_fighter }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Ivan Kolev"
+	id=12028
+	portrait_path="gfx/hoi4tgw_portraits/BUL/army_generals/BUL_Ivan_Kolev.dds"
+	traits = { cavalry_officer career_officer organizer }
+	skill = 2
 	attack_skill = 2
 	defense_skill = 1
 	planning_skill = 2
@@ -68,95 +192,119 @@ create_corps_commander={  name = "Kolev" id=12028 portrait_path="gfx/hoi4tgw_por
 #create_corps_commander={  name = "Zagorski" id=12076 portrait_path="gfx/generals/BUL_zagorski.dds" traits={ trait_engineer  } skill=1 }
 #create_corps_commander={  name = "Zhostov" id=12078 portrait_path="gfx/generals/BUL_zhostov.dds" traits={   } skill=2 }
 
-create_field_marshal={  name = "Fichev" id=12018 portrait_path="gfx/fieldmarshal/BUL_fichev.dds" traits={ offensive_doctrine } skill=3 
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 1
+create_navy_leader = {
+	name = "Dimitar Dobrev"
+	id = 12080
+	picture = "Portrait_Bulgaria_Dimitar_Dobrev.dds"
+	traits = { bold navy_career_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	maneuvering_skill = 2
+	coordination_skill = 2
 }
 
-create_navy_leader={  name = "Dobrev" id=12080 portrait_path="gfx/admiral/BUL_dobrev.dds" traits={   } skill=2 }
-create_navy_leader={  name = "Serafimov" id=12081 portrait_path="gfx/admiral/BUL_serafimov.dds" traits={   } skill=1 }
-
-set_technology = {
-	# Navy
-
-
-
-
-
-
-
-
-		# Naval Modules Techs
-		light_navalmodule_1890 = 1
-	light_navalmodule_1890_mtg = 1
-
+create_navy_leader = {
+	name = "Rashko Serafimov"
+	id = 12081
+	portrait_path = "gfx/admiral/BUL_serafimov.dds"
+	traits = { navy_career_officer }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
 }
 
+
+
+###################################
+####--Bulgarian Ship Variants--####
+###################################
 if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_technology = {
-			basic_battery = 1
-			early_ship_hull_submarine = 1
-			basic_torpedo = 1 
-			pre_dreadnoughts = 1
-			early_ship_hull_light = 1
-			mtg_early_transport = 1 
-			basic_secondary_battery = 1
-			basic_naval_mines = 1
-			submarine_mine_laying = 1
-		}
-}
-
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-		###ww1_battleship0 = 0 #  ww1_battleship_1890 (Pre-Dreadnought I)
-		###ww1_battleship1 = 0 #  ww1_battleship_1900 (Pre-Dreadnought II)
-		###ww1_battleship2 = 0 #  ww1_battleship_1906 (Dreadnought I)
-		###ww1_battleship3 = 0 #  ww1_battleship_1910 (Dreadnought II)
-		###ww1_battleship4 = 0 #  ww1_battleship_1914 (Dreadnought III)
-		###ww1_battlecruiser1 = 0 # ww1_battlecruiser_1906 (Battlecruiser I)
-		###ww1_battlecruiser2 = 0 # ww1_battlecruiser_1910 (Battlecruiser II)
-		###ww1_battlecruiser3 = 0 # ww1_battlecruiser_1910 (Battlecruiser III)
-		###ww1_heavy_cruiser0 = 0 # heavy_cruiser_1890 (Armored Cruiser I)
-		###ww1_heavy_cruiser1 = 0 # heavy_cruiser_1900 (Armored Cruiser II)
-		ww1_light_cruiser0 = 1
-		ww1_light_cruiser0_mtg = 1 # light_cruiser_1890 (Protected Cruiser I)
-		###ww1_light_cruiser1 = 0 # light_cruiser_1900 (Protected Cruiser II)
-		###ww1_light_cruiser2 = 0 # light_cruiser_1906 (Light Cruiser I)
-		###ww1_light_cruiser3 = 0 # light_cruiser_1910 (Light Cruiser II)
-		###ww1_light_cruiser4 = 0 # light_cruiser_1914 (Light Cruiser III)
-		ww1_destroyer0 = 1
-		ww1_destroyer0_mtg = 1 # destroyer_1890 (Torpedo Boat I)
-		ww1_destroyer1 = 1
-		ww1_destroyer1_mtg = 1 # destroyer_1900 (Destroyer I)
-		###ww1_destroyer2 = 0 # destroyer_1906 (Destroyer II)
-		###ww1_destroyer3 = 0 # destroyer_1910 (Destroyer III)
-		###ww1_destroyer4 = 0 # destroyer_1914 (Destroyer IV)
-		ww1_moduleMTG_mines = 1
-		ww1_moduleMTG_mines_mtg = 1 # Mines
-		###ww1_submarine0 = 0 # coastal_submarine_1900 (Coastal Submarine 1900, first available Submarine)
-		###ww1_submarine1 = 0 # submarine_1906 (Submarine I)
-		###ww1_submarine2 = 0 # submarine_1910 (Submarine II)
-		###ww1_submarine3 = 0 # submarine_1914 (Submarine III)
-		transport = 1
-		transport_mtg = 1 # Naval Transport
+	limit = { not = { has_dlc = "Man the Guns" } }
+	
+	### Ship Variants ###
+	create_equipment_variant = {
+		name = "Drazki Class"
+		type = destroyer_1
+		name_group = BUL_TB_AND_DD_HISTORICAL
+		parent_version = 0
+		obsolete = no
+		upgrades = {
+			ship_gun_upgrade = 0
+			ship_engine_upgrade = 2
+			ship_reliability_upgrade = 1
+			ship_anti_air_upgrade = 0
 		}
 	}
+	
+	create_equipment_variant = {
+		name = "Nadezhda Class"
+		type = light_cruiser_1
+		name_group = BUL_CL_HISTORICAL
+		parent_version = 0
+		obsolete = no
+		upgrades = {
+			ship_gun_upgrade = 0
+			ship_engine_upgrade = 1
+			ship_reliability_upgrade = 1
+			ship_anti_air_upgrade = 0
+		}
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	
+	# Ship Variants #
+	create_equipment_variant = {
+		name = "Drazki Class"
+		type = ship_hull_light_1
+		name_group = BUL_TB_AND_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_mine_layer_1
+		}
+		obsolete = no
+	}
+	
+	create_equipment_variant = {
+		name = "Nadezhda Class"
+		type = ship_hull_light_1
+		name_group = BUL_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = empty	### Light ships like cruisers need to have this slot as opposed to "fixed_ship_torpedo_slot" to avoid errors (or CTDs if neither slots are present).
+			rear_1_custom_slot = ship_light_medium_battery_1
+		}
+		obsolete = no
+	}
+}
 
 1910.1.1 = {
 	oob = "BUL_1910"
-
 	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "BUL_1910_naval_mtg"
-		else = {
-			set_naval_oob = "BUL_1910_naval_legacy"
-		}
+	limit = {
+		has_dlc = "Man the Guns"
 	}
-
+	set_naval_oob = "BUL_1910_naval_mtg"
+	else = {
+		set_naval_oob = "BUL_1910_naval_legacy"
+	}
+}
 	#-------------------------------------------------------
 	#							NF
 	#-------------------------------------------------------
@@ -209,64 +357,21 @@ if = {
 	    elections_allowed = yes
 	}
 	set_popularities = {
-	    democratic = 5
-	    fascism = 14
-	    communism = 1
-	    neutrality = 80
+		democratic = 11
+		fascism = 6
+		communism = 1
+		neutrality = 82
 	}
 
 	add_ideas = {
 		limited_conscription
 		partial_economic_mobilisation
-	}
-
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_technology = {
-			basic_battery = 1
-			early_ship_hull_submarine = 1
-			basic_torpedo = 1 
-			pre_dreadnoughts = 1
-			early_ship_hull_light = 1
-			mtg_early_transport = 1 
-			basic_secondary_battery = 1
-			basic_naval_mines = 1
-			submarine_mine_laying = 1
-		}
-		create_equipment_variant = { name = "Nadezhda Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
-			modules = {
-				fixed_ship_battery_slot = MSM_ship_light_battery_1
-				fixed_ship_anti_air_slot = empty
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = MSM_light_ship_engine_1
-				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
-				rear_1_custom_slot = MSM_ship_light_battery_1
-			}
-		}
-		create_equipment_variant = { name = "Topnedo Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
-			modules = {
-				fixed_ship_battery_slot = MSM_ship_light_battery_1
-				fixed_ship_anti_air_slot = empty
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = MSM_light_ship_engine_1
-				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
-				rear_1_custom_slot = MSM_ship_light_battery_1
-			}
-		}
+		BUL_bulgarian_army_staff
+		BUL_sofia_artillery_arsenal
 	}
 }
 1914.1.1 = {
 	oob = "BUL_1914"
-
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "BUL_1914_naval_mtg"
-		else = {
-			set_naval_oob = "BUL_1914_naval_legacy"
-		}
-	}
 
 	#-------------------------------------------------------
 	#							NF
@@ -289,6 +394,8 @@ if = {
 	complete_national_focus = BUL_ww1_construction_effort
 	complete_national_focus = BUL_ww1_production_effort
 	complete_national_focus = BUL_ww1_dockyard_effort_1
+	complete_national_focus = BUL_ww1_infrastructure_effort_2
+	complete_national_focus = BUL_ww1_construction_effort_2
 	
 	# Naval
 	complete_national_focus = BUL_ww1_naval_effort
@@ -309,11 +416,11 @@ if = {
 	unlock_national_focus = BUL_first_balkan
 	unlock_national_focus = BUL_ww1_balkan_war_propaganda
 	unlock_national_focus = BUL_second_balkan
+	unlock_national_focus = BUL_second_balkan_defeat
 	complete_national_focus = BUL_ww1_assert_position_west
-	complete_national_focus = BUL_ww1_pro_ger
-	complete_national_focus = BUL_ww1_pro_auh
-	complete_national_focus = BUL_ww1_equip_ger
 	complete_national_focus = BUL_ww1_assert_position_east
+	complete_national_focus = BUL_ww1_develop_bulgaria
+	complete_national_focus = BUL_ww1_bulgaria_first
 	#-------------------------------------------------------
 
 	set_technology = {
@@ -363,6 +470,7 @@ if = {
 		ww1_airdoctrine_2 = 1
 		ww1_airdoctrine_3 = 1
 
+		# Navy Doctrine
 		ww1_navaldoctrine = 1
 		ww1_navaldoctrine_2 = 1
 		ww1_navaldoctrine_3 = 1
@@ -392,81 +500,31 @@ if = {
 	    elections_allowed = yes
 	}
 	set_popularities = {
-	    democratic = 5
-	    fascism = 14
-	    communism = 1
-	    neutrality = 80
+		democratic = 12
+		fascism = 6
+		communism = 1
+		neutrality = 81
 	}
 
 	add_ideas = {
 		limited_conscription
 		partial_economic_mobilisation
+		BUL_bulgarian_army_staff
+		BUL_sofia_artillery_arsenal
+		BUL_militarism
 	}
 
 	set_country_flag = second_balkan_war
-
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_technology = {
-			basic_battery = 1
-			early_ship_hull_submarine = 1
-			basic_torpedo = 1 
-			pre_dreadnoughts = 1
-			early_ship_hull_light = 1
-			mtg_early_transport = 1 
-			basic_secondary_battery = 1
-			basic_naval_mines = 1
-			submarine_mine_laying = 1
-			MSM_early_ship_hull_light = 1
-			early_ship_hull_heavy = 1
-			MSM_GW_ship_torpedo_launcher = 1
-			MSM_basic_ship_hull_uboat = 1
-			MSM_improved_battery = 1
-			MSM_basic_early_shell = 1
-			MSM_secondary_battery_1 = 1
-			MSM_ship_hull_dreadnought_1 = 1
-		}
-		create_equipment_variant = { name = "Nadezhda Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
-			modules = {
-				fixed_ship_battery_slot = MSM_ship_light_battery_1
-				fixed_ship_anti_air_slot = empty
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = MSM_light_ship_engine_1
-				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
-				rear_1_custom_slot = MSM_ship_light_battery_1
-			}
-		}
-		create_equipment_variant = { name = "Topnedo Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
-			modules = {
-				fixed_ship_battery_slot = MSM_ship_light_battery_1
-				fixed_ship_anti_air_slot = empty
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = MSM_light_ship_engine_1
-				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
-				rear_1_custom_slot = MSM_ship_light_battery_1
-			}
-		}
-	}
 }
 
 1919.1.1 = {
 	oob = "BUL_1919"
 
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "BUL_1919_naval_mtg"
-		else = {
-			set_naval_oob = "BUL_1919_naval_legacy"
-		}
-	}
-
 	create_country_leader = { 
 		name = "Boris III" 
 		picture="gfx/hoi4tgw_portraits/BUL/country_leaders/BUL_boris_iii.dds" 
 		expire="1935.1.1" 
-		ideology = despotism
+		ideology = centrism
 		traits = { }
 	}
 
@@ -478,50 +536,13 @@ if = {
 	unlock_national_focus = BUL_ww1_EmbargoRussia
 	unlock_national_focus = BUL_ww1_join_centralpower
 	#-------------------------------------------------------
-
-
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_technology = {
-			basic_battery = 1
-			early_ship_hull_submarine = 1
-			basic_torpedo = 1 
-			pre_dreadnoughts = 1
-			early_ship_hull_light = 1
-			mtg_early_transport = 1 
-			basic_secondary_battery = 1
-			basic_naval_mines = 1
-			submarine_mine_laying = 1
-			MSM_early_ship_hull_light = 1
-			early_ship_hull_heavy = 1
-			MSM_GW_ship_torpedo_launcher = 1
-			MSM_basic_ship_hull_uboat = 1
-			MSM_improved_battery = 1
-			MSM_basic_early_shell = 1
-			MSM_secondary_battery_1 = 1
-			MSM_ship_hull_dreadnought_1 = 1
-		}
-		create_equipment_variant = { name = "Nadezhda Class" type = ship_hull_light_1 parent_version = 0 obsolete = yes 
-			modules = {
-				fixed_ship_battery_slot = MSM_ship_light_battery_1
-				fixed_ship_anti_air_slot = empty
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = MSM_light_ship_engine_1
-				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
-				rear_1_custom_slot = MSM_ship_light_battery_1
-			}
-		}
-		create_equipment_variant = { name = "Topnedo Class" type = ship_hull_light_1 parent_version = 0 obsolete = yes 
-			modules = {
-				fixed_ship_battery_slot = MSM_ship_light_battery_1
-				fixed_ship_anti_air_slot = empty
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = MSM_light_ship_engine_1
-				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
-				rear_1_custom_slot = MSM_ship_light_battery_1
-			}
-		}
+	
+	add_ideas = {
+		limited_conscription
+		partial_economic_mobilisation
+		BUL_bulgarian_army_staff
+		BUL_sofia_artillery_arsenal
 	}
+	
+	set_country_flag = second_balkan_war
 }
