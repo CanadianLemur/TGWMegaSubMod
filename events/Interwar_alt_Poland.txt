@@ -92,7 +92,7 @@ country_event = {
 		ai_chance = { factor = 50 }
 				create_country_leader = {
 				    name = "Charles Stephen I"
-				    picture = 			
+				    picture = "Portrait_Poland_Charles_Stephen_I.dds"		
 				    expire = "1965.1.1"
 				    ideology = despotism
 				    traits = {}

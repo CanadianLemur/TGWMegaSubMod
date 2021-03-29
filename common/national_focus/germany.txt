@@ -2529,6 +2529,13 @@ focus_tree = {
 				unlock_national_focus = POL_interwar_choosing_a_king
 				complete_national_focus = POL_interwar_an_austrian_king
 				unlock_national_focus = POL_interwar_request_galicia
+				create_country_leader = {
+				    name = "Charles Stephen I"
+				    picture = "Portrait_Poland_Charles_Stephen_I.dds"			
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {}
+				}
 				}
 				ROM = {transfer_state = 80}
 				puppet = POL
