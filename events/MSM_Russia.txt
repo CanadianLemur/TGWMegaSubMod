@@ -153,6 +153,7 @@ country_event = {
 	option = {
 		name = MSMRussia.4.a 
 		ai_chance = { factor = 100 }
+		trigger = {QIN = {exists = no}}
 		MAN = {
 		transfer_state = 714
 		add_state_core = 714
@@ -161,8 +162,19 @@ country_event = {
 		transfer_state = 717
 		add_state_core = 717
 		transfer_state = 328
-		add_state_core = 328}
+		add_state_core = 328
+		create_country_leader = {
+	name = "Aisin Gioro Puyi"
+	
+	picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
+	expire = "1960.1.1"
+	ideology = despotism
+	traits = {
+		warrior_code
+	}
+}}
 		puppet = MAN
+		
 	}
 	### Local Warlord
 	option = {
