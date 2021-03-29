@@ -33,3 +33,25 @@ schlieffen_military_access = {
 		tag = GER
 	}
 }
+
+germanization = {
+	icon = generic_political_actions
+	priority = 10
+	available = {
+		has_completed_focus = GER_ww1_war_plans_germany_for_germans
+	}
+	visible = {
+		tag = GER
+	}
+}
+
+germanization_integration = {
+	icon = generic_political_actions
+	priority = 10
+	available = {
+		has_completed_focus = GER_ww1_war_plans_germany_for_germans
+	}
+	visible = {
+		tag = GER
+	}
+}

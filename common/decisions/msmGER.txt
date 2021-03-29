@@ -162,4 +162,213 @@ schlieffen_military_access = {
 		}
 	}
 }
+
+germanization = {
+	germanize_german_lands = {
+		icon = generic_form_nation
+		cost = 25
+	
+		fire_only_once = no
+		visible = {
+			original_tag = GER
+			FROM = { 
+				is_controlled_by = GER
+				NOT = { is_core_of = GER }
+			}
+		}
+		allowed = {
+			original_tag = GER
+		}
+		state_target = yes
+		targets = { 153 39 152 69 74 4 82 764 }
+		modifier = {
+			civilian_factory_use = 1
+		}
+		remove_effect = {
+			FROM = {
+				add_compliance = 10
+			}
+		}
+		days_remove = 120
+	}
+	germanize_transylvanian_lands = {
+		icon = generic_form_nation
+		cost = 25
+	
+		fire_only_once = no
+		visible = {
+			original_tag = GER
+			FROM = { 
+				is_controlled_by = GER
+				NOT = { is_core_of = GER }
+			}
+		}
+		allowed = {
+			original_tag = GER
+		}
+		state_target = yes
+		targets = { 84 83 76 }
+		modifier = {
+			civilian_factory_use = 1
+		}
+		remove_effect = {
+			FROM = {
+				add_compliance = 8
+			}
+		}
+		days_remove = 120
+	}
+	germanize_habsburg_lands = {
+		icon = generic_form_nation
+		cost = 25
+	
+		fire_only_once = no
+		visible = {
+			original_tag = GER
+			FROM = { 
+				is_controlled_by = GER
+				NOT = { is_core_of = GER }
+			}
+		}
+		allowed = {
+			original_tag = GER
+		}
+		state_target = yes
+		targets = { 9 75 102 736 }
+		modifier = {
+			civilian_factory_use = 2
+		}
+		remove_effect = {
+			FROM = {
+				add_compliance = 10
+			}
+		}
+		days_remove = 120
+	}
+	germanize_hungarian_lands = {
+		icon = generic_form_nation
+		cost = 25
+	
+		fire_only_once = no
+		visible = {
+			original_tag = GER
+			FROM = { 
+				is_controlled_by = GER
+				NOT = { is_core_of = GER }
+			}
+		}
+		allowed = {
+			original_tag = GER
+		}
+		state_target = yes
+		targets = { 70 71 73 664 155 43 154 45 82 109 103 163 }
+		modifier = {
+			civilian_factory_use = 4
+		}
+		remove_effect = {
+			FROM = {
+				add_compliance = 8
+			}
+		}
+		days_remove = 120
+	}
+}
+germanization_integration = {
+	integrate_german_lands = {
+		icon = generic_form_nation
+		cost = 25
+	
+		fire_only_once = no
+		visible = {
+			original_tag = GER
+			FROM = { 
+				is_controlled_by = GER
+				NOT = { is_core_of = GER }
+				compliance > 10
+			}
+		}
+		allowed = {
+			original_tag = GER
+		}
+		state_target = yes
+		targets = { 153 39 152 69 74 4 82 764 }
+		complete_effect = {
+			FROM = {
+				add_core_of = GER
+			}
+		}
+	}
+	integrate_transylvanian_lands = {
+		icon = generic_form_nation
+		cost = 25
+	
+		fire_only_once = no
+		visible = {
+			original_tag = GER
+			FROM = { 
+				is_controlled_by = GER
+				NOT = { is_core_of = GER }
+				compliance > 12
+			}
+		}
+		allowed = {
+			original_tag = GER
+		}
+		state_target = yes
+		targets = { 84 83 76 }
+		complete_effect = {
+			FROM = {
+				add_core_of = GER
+			}
+		}
+	}
+	integrate_habsburg_lands = {
+		icon = generic_form_nation
+		cost = 25
+	
+		fire_only_once = no
+		visible = {
+			original_tag = GER
+			FROM = { 
+				is_controlled_by = GER
+				NOT = { is_core_of = GER }
+				compliance > 20
+			}
+		}
+		allowed = {
+			original_tag = GER
+		}
+		state_target = yes
+		targets = { 9 75 102 736 }
+		complete_effect = {
+			FROM = {
+				add_core_of = GER
+			}
+		}
+	}
+	integrate_hungarian_lands = {
+		icon = generic_form_nation
+		cost = 25
+	
+		fire_only_once = no
+		visible = {
+			original_tag = GER
+			FROM = { 
+				is_controlled_by = GER
+				NOT = { is_core_of = GER }
+				compliance > 45
+			}
+		}
+		allowed = {
+			original_tag = GER
+		}
+		state_target = yes
+		targets = { 70 71 73 664 155 43 154 45 82 109 103 163 }
+		complete_effect = {
+			FROM = {
+				add_core_of = GER
+			}
+		}
+	}
+}
 		
