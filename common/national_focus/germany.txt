@@ -1834,13 +1834,13 @@ focus_tree = {
 			custom_effect_tooltip = "Undertake in joint military exercises with the lowland countries"
 			#hidden_effect = {
 				HOL = {
-					country_event = MSMGermany.8
+					country_event = MSMGermany.7
 				}
 				BEL = {
-					country_event = MSMGermany.8
+					country_event = MSMGermany.7
 				}
 				LUX = {
-					country_event = MSMGermany.8
+					country_event = MSMGermany.7
 				}
 			#}
 			
@@ -1896,10 +1896,20 @@ focus_tree = {
 			add_political_power = 100
 			custom_effect_tooltip = "Invite the countries threatened by France to the Central Powers to ensure their protection"
 			hidden_effect = {
-				news_event = {
-					id = MSMGermany.9
-				}
+			HOL = {
+				country_event = MSMGermany.10
 			}
+			BEL = {
+				country_event = MSMGermany.10
+			}
+			LUX = {
+				country_event = MSMGermany.10
+			}
+			SWI = {
+				country_event = MSMGermany.10
+			}
+			}
+			
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10

@@ -166,46 +166,6 @@ news_event = {
 	}
 }
 
-news_event = {
-	id = MSMGermany.9
-	title = MSMGermany.9.t
-	desc = MSMGermany.9.d
-	picture = GFX_report_event_generic_read_write
-
-	is_triggered_only = yes
-	major = yes
-
-	trigger = {
-		GER = {
-			has_completed_focus = GER_ww1_war_plans_neutral_no_longer
-		}
-	}
-
-	immediate = {
-		hidden_effect = {
-			HOL = {
-				country_event = MSMGermany.10
-			}
-			BEL = {
-				country_event = MSMGermany.10
-			}
-			LUX = {
-				country_event = MSMGermany.10
-			}
-			SWI = {
-				country_event = MSMGermany.10
-			}
-		}
-	}
-
-	option = {
-		name = MSMGermany.9.a
-		ai_chance = {
-			factor = 100
-		}
-	}
-}
-
 country_event = {
 	id =  MSMGermany.10
 	title = MSMGermany.10.t

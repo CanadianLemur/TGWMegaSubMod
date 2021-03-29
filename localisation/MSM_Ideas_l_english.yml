@@ -21,6 +21,7 @@
  local_viceroyalty_recruitment_desc:0"increased recruitment of Locals improves our manpower situation signifigantly"
  viceroyalty_exports:0"Increased Exports"
  viceroyalty_exports_desc:0"with much prodding from our colonial overlord, our resource extraction and exports are higher than ever"
+ SOM_dervishes:0"Dervishes"
  MSM_HAN_british_investment:0"British Investment"
  MSM_HAN_british_investment_desc:0"British Investment provides ample funds for the expansion of our economy"
  MSM_HAN_glorified_kings_german_legion:0"Glorification of the Kings German Legion"
@@ -57,3 +58,4 @@
  MSM_GER_ww1_the_eastern_bear:0"The Eastern Bear"
  MSM_GER_ww1_the_western_menace:0"The Western Menace"
  MSM_GER_ww1_german_infiltration:0"German Infiltration"
+ MSM_GER_ww1_necessary_changes:0"Necessary Changes"
