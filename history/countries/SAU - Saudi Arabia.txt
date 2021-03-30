@@ -1,6 +1,5 @@
 ﻿capital = 292
 oob = "SAU_1910"
-	}
 if = {
 	limit = { has_dlc = "Man the Guns" }
     		set_technology = {
