@@ -49,7 +49,7 @@ create_country_leader={ name = "Khedive Abbas Hilmi II" desc=EGY_AbbasII_DESC pi
 		heavy_field_gun1 = 1
 
 		# Navy
-
+}
 	if = {
 		limit = { has_dlc = "Man the Guns" }
     		set_technology = {

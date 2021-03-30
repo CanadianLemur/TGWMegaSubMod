@@ -1186,7 +1186,7 @@ if = {
 		ww1_directfire = 1
 
 		# Navy
-
+}
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
@@ -1989,7 +1989,7 @@ if = {
 			fixed_ship_engine_slot = MSM_light_ship_engine_1
 			fixed_ship_torpedo_slot = MSM_ship_torpedo_1
 			rear_1_custom_slot = MSM_ship_light_battery_1
-			}
+		}
 	}
 }
 	set_technology = {

@@ -49,7 +49,7 @@ create_corps_commander={  name = "Theslöf" id=31003 portrait_path="gfx/generals
 		heavy_field_gun1 = 1
 
 		# Navy
-
+}
 	if = {
 		limit = { has_dlc = "Man the Guns" }
     		set_technology = {

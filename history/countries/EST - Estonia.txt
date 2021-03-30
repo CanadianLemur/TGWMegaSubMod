@@ -58,7 +58,7 @@ create_corps_commander={  name = "Kuperjanov" id=29010 portrait_path="gfx/genera
 		heavy_field_gun1 = 1
 
 		# Navy
-
+}
 	if = {
 		limit = { has_dlc = "Man the Guns" }
     		set_technology = {

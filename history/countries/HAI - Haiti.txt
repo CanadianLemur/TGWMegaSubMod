@@ -59,7 +59,6 @@ create_navy_leader={  name = "Oreste Zamor" id=37005 portrait_path="gfx/hoi4tgw_
 			#transport = 1
 		}
 	}
-	set_technology = {
 
 1910.1.1 = {
 	oob = "HAI_1910"

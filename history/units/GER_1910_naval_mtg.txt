@@ -283,47 +283,47 @@ units = {
 }
 
 instant_effect = {
-	    add_equipment_production = {
-	        equipment = {
-	            type = infantry_equipment_1 creator = "GER"
-	        }
-	        requested_factories = 1 progress = 0.1 efficiency = 50
-	    }
-	    add_equipment_production = {
-	        equipment = {
-	            type = support_equipment_1 creator = "GER"
-	        }
-	        requested_factories = 1 progress = 0.1 efficiency = 50
-	    }
-	    add_equipment_production = {
-	        equipment = {
-	            type = light_field_gun_equipment_1 creator = "GER"
-	        }
-	        requested_factories = 1 progress = 0.1 efficiency = 50
-	    }
-	    add_equipment_production = {
-	        equipment = {
-	            type = motorized_equipment_0 creator = "GER"
-	        }
-	        requested_factories = 1 progress = 0.1 efficiency = 50
-	    }
-	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought "GER"  }  requested_factories = 1  progress = 0.88  amount = 1 } #SMS Rheinland LD:01-Jun-1907 Comp:21-Sep-1910
-	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought "GER"  }  requested_factories = 1  progress = 0.88  amount = 1 } #SMS Posen LD:11-Jun-1907 Comp:21-Sep-1910
-	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought "GER" version_name = "Helgoland Class"  }  requested_factories = 1  progress = 0.45  amount = 1 } #SMS Helgoland LD:24-Dec-1908 Comp:19-Dec-1911
-	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought "GER" version_name = "Helgoland Class"  }  requested_factories = 1  progress = 0.53  amount = 1 } #SMS Ostfriesland LD:19-Oct-1908 Comp:15-Sep-1911
-	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought "GER" version_name = "Helgoland Class"  }  requested_factories = 1  progress = 0.52  amount = 1 } #SMS Thüringen LD:07-Nov-1908 Comp:10-Sep-1911
-	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought "GER" version_name = "Helgoland Class"  }  requested_factories = 1  progress = 0.35  amount = 1 } #SMS Oldenburg LD:01-Mar-1909 Comp:01-Jul-1912
-	add_equipment_production = { equipment = { type = MSM_ship_hull_dreadnought1 "GER"  version_name = "Helgoland Class" } } }
-	add_equipment_production = { equipment = { type = MSM_ship_hull_dreadnought1 "GER"  version_name = "Helgoland Class" } } }
-	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought "GER"  version_name = "Helgoland Class" } } }
-	add_equipment_production = { equipment = { type = MSM_ship_hull_dreadnought1 "GER"  version_name = "Helgoland Class" } } }
-	add_equipment_production = { equipment = { type = MSM_ship_hull_dreadnought1 "GER"  version_name = "Helgoland Class" } } }
-	add_equipment_production = { equipment = { type = ship_hull_light_1 "GER" version_name = "Kolberg Class"  }  requested_factories = 1  progress = 0.94  amount = 1 } #SMS Kolberg LD:01-Jan-1908 Comp:21-Jun-1910
-	add_equipment_production = { equipment = { type = ship_hull_light_1 "GER" version_name = "Kolberg Class"  }  requested_factories = 1  progress = 0.67  amount = 1 } #SMS Cöln LD:01-Jan-1908 Comp:16-Jun-1911
-	add_equipment_production = { equipment = { type = ship_hull_light_1 "GER" version_name = "Kolberg Class"  }  requested_factories = 1  progress = 0.82  amount = 1 } #SMS Augsburg LD:01-Jan-1908 Comp:01-Nov-1910
-	add_equipment_production = { equipment = { type = ship_hull_light_1 "GER"  version_name = "Helgoland Class" } } }
-	add_equipment_production = { equipment = { type = ship_hull_light_1 "GER"  version_name = "Helgoland Class" } } }
-	add_equipment_production = { equipment = { type = ship_hull_light_1 "GER"  version_name = "Helgoland Class" } } }
-	add_equipment_production = { equipment = { type = ship_hull_light_1 "GER"  version_name = "Helgoland Class" } } }
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1 creator = "GER"
+		}
+		requested_factories = 1 progress = 0.1 efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1 creator = "GER"
+		}
+		requested_factories = 1 progress = 0.1 efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_field_gun_equipment_1 creator = "GER"
+		}
+		requested_factories = 1 progress = 0.1 efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_0 creator = "GER"
+		}
+		requested_factories = 1 progress = 0.1 efficiency = 50
+	}
+	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought "GER"  }  requested_factories = 1  progress = 0.88 } #SMS Rheinland LD:01-Jun-1907 Comp:21-Sep-1910
+	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought "GER"  }  requested_factories = 1  progress = 0.88 } #SMS Posen LD:11-Jun-1907 Comp:21-Sep-1910
+	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought "GER" version_name = "Helgoland Class"  }  requested_factories = 1  progress = 0.45 } #SMS Helgoland LD:24-Dec-1908 Comp:19-Dec-1911
+	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought "GER" version_name = "Helgoland Class"  }  requested_factories = 1  progress = 0.53 } #SMS Ostfriesland LD:19-Oct-1908 Comp:15-Sep-1911
+	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought "GER" version_name = "Helgoland Class"  }  requested_factories = 1  progress = 0.52 } #SMS Thüringen LD:07-Nov-1908 Comp:10-Sep-1911
+	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought "GER" version_name = "Helgoland Class"  }  requested_factories = 1  progress = 0.35 } #SMS Oldenburg LD:01-Mar-1909 Comp:01-Jul-1912
+	add_equipment_production = { equipment = { type = MSM_ship_hull_dreadnought1 "GER"  version_name = "Helgoland Class" } }
+	add_equipment_production = { equipment = { type = MSM_ship_hull_dreadnought1 "GER"  version_name = "Helgoland Class" } }
+	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought "GER"  version_name = "Helgoland Class" } }
+	add_equipment_production = { equipment = { type = MSM_ship_hull_dreadnought1 "GER"  version_name = "Helgoland Class" } }
+	add_equipment_production = { equipment = { type = MSM_ship_hull_dreadnought1 "GER"  version_name = "Helgoland Class" } }
+	add_equipment_production = { equipment = { type = ship_hull_light_1 "GER" version_name = "Kolberg Class"  }  requested_factories = 1  progress = 0.94 } #SMS Kolberg LD:01-Jan-1908 Comp:21-Jun-1910
+	add_equipment_production = { equipment = { type = ship_hull_light_1 "GER" version_name = "Kolberg Class"  }  requested_factories = 1  progress = 0.67 } #SMS Cöln LD:01-Jan-1908 Comp:16-Jun-1911
+	add_equipment_production = { equipment = { type = ship_hull_light_1 "GER" version_name = "Kolberg Class"  }  requested_factories = 1  progress = 0.82 } #SMS Augsburg LD:01-Jan-1908 Comp:01-Nov-1910
+	add_equipment_production = { equipment = { type = ship_hull_light_1 "GER"  version_name = "Helgoland Class" } }
+	add_equipment_production = { equipment = { type = ship_hull_light_1 "GER"  version_name = "Helgoland Class" } }
+	add_equipment_production = { equipment = { type = ship_hull_light_1 "GER"  version_name = "Helgoland Class" } }
+	add_equipment_production = { equipment = { type = ship_hull_light_1 "GER"  version_name = "Helgoland Class" } }
 	
 }

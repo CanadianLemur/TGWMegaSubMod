@@ -1306,10 +1306,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 10
-				has_completed_focus = SWE_ww1_technological_exchange
-			}
 		}
 
 		available = {

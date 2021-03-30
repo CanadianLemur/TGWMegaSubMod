@@ -1303,7 +1303,7 @@ if = {
 		ww1_directfire = 1
 
 		# Navy
-
+}
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
