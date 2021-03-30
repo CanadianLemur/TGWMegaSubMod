@@ -12,8 +12,8 @@ set_convoys = 5
 #-------------------------------------------------------
 #					POLITICS & ARMY
 #-------------------------------------------------------
-create_country_leader={ name = "Aleksandar Stamboliyski" desc=BUL_aleksandar_stamboliyski_DESC picture="gfx/leaders/BUL_aleksandar_stamboliyski.dds" expire="1935.1.1" ideology=marxism traits={  } }
-create_country_leader={ name = "Dimitar Blagoev" desc=BUL_dimitar_blagoev_DESC picture="gfx/leaders/BUL_dimitar_blagoev.dds" expire="1935.1.1" ideology=stalinism traits={  } }
+create_country_leader={ name = "Aleksandar Stamboliyski" desc=BUL_aleksandar_stamboliyski_DESC picture="gfx/hoi4tgw_portraits/BUL/country_leaders/BUL_aleksandar_stamboliyski.dds" expire="1935.1.1" ideology=marxism traits={  } }
+create_country_leader={ name = "Dimitar Blagoev" desc=BUL_dimitar_blagoev_DESC picture="gfx/hoi4tgw_portraits/BUL/country_leaders/BUL_dimitar_blagoev.dds" expire="1935.1.1" ideology=stalinism traits={  } }
 
 if = {
 	limit = { not = {has_dlc = "Man the Guns"} }
@@ -91,7 +91,7 @@ if = {
 create_country_leader = {
 	name = "Ferdinand I"
 	desc = BUL_ferdinand_i_DESC
-	picture = "gfx/leaders/BUL_ferdinand_i.dds"
+	picture = "gfx/hoi4tgw_portraits/BUL/country_leaders/BUL_ferdinand_i.dds"
 	expire = "1935.1.1"
 	ideology = centrism
 	traits = { ba_balkan_hegemonist }	### Expansionist politics were big in Bulgaria at the time, and both the Tsar and other people of power within the Bulgarian Tsardom would eventually go even further in their maximalist ideals after the success of the First Balkan War...
