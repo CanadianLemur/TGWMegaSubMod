@@ -8,27 +8,7 @@ set_technology={
 	motorised_infantry = 1 #KiS #siege_artillery1=1
 	electronic_mechanical_engineering=1
 	infantry_weapons=1
-	ww1_destroyer0 = 1
-	ww1_destroyer0_mtg = 1
-	ww1_destroyer1 = 1
-	ww1_destroyer1_mtg = 1
-	 
-	#KiS early_protected_cruiser=1
-	ww1_light_cruiser1 = 1
-	ww1_light_cruiser1_mtg = 1
-	ww1_light_cruiser0 = 1
-	ww1_light_cruiser0_mtg = 1
-	 
-	ww1_battleship0 = 1
-	ww1_battleship0_mtg = 1
-	ww1_battleship1 = 1
-	ww1_battleship1_mtg = 1
-	#early_dreadnought=1
-	transport = 1
-	transport_mtg = 1
-	ww1_submarine1 = 1
-	ww1_submarine1_mtg = 1 ww1_coastal_submarine1=1
-	ww1_submarine2=1 ww1_coastal_submarine2=1
+	
 	tech_support=1
 	tech_engineers=1
 	tech_recon=1
@@ -38,7 +18,45 @@ set_technology={
 	#tech_field_hospital=1
 	#tech_logistics_company=1
 	#tech_signal_company=1
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_battery = 1
+		early_ship_hull_submarine = 1
+		basic_torpedo = 1 
+		pre_dreadnoughts = 1
+		early_ship_hull_light = 1
+		mtg_early_transport = 1 
+		basic_secondary_battery = 1
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
 	}
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		ww1_destroyer0 = 1
+		ww1_destroyer0_mtg = 1
+		ww1_destroyer1 = 1
+		ww1_destroyer1_mtg = 1
+		#KiS early_protected_cruiser=1
+		ww1_light_cruiser1 = 1
+		ww1_light_cruiser1_mtg = 1
+		ww1_light_cruiser0 = 1
+		ww1_light_cruiser0_mtg = 1
+		ww1_battleship0 = 1
+		ww1_battleship0_mtg = 1
+		ww1_battleship1 = 1
+		ww1_battleship1_mtg = 1
+		#early_dreadnought=1
+		transport = 1
+		transport_mtg = 1
+		ww1_submarine1 = 1
+		ww1_submarine1_mtg = 1 ww1_coastal_submarine1=1
+		ww1_submarine2=1 ww1_coastal_submarine2=1
+	}
+}
 
 set_politics = {
     ruling_party = neutrality
@@ -59,15 +77,13 @@ set_stability=0.75
 	create_country_leader={ name = "Tribhuvana" desc=NEP_tribhuvana_DESC picture="gfx/leaders/NEP_tribhuvana.dds" expire="1935.1.1" ideology=despotism  traits={  } }
 	set_country_flag=prithvi_dead
 	}
-1914.1.1 = { set_technology={ 
+1914.1.1 = { 
+	set_technology={ 
 		#KiS #Scout1=1
 		#naval_bomber1=1
-
 		#KiS #airship1=1
 		light_field_gun1=1
 		light_field_gun2=1
-		 
-		 
 		heavy_field_gun1=1
 		heavy_field_gun2=1
 		#KiS #heavy_howitzer1=1
@@ -94,41 +110,6 @@ set_stability=0.75
 		ww1infantry_weapons1=1
 		marines=1
 		tech_mountaineers=1
-		ww1_destroyer0 = 1
-	ww1_destroyer0_mtg = 1
-		#KiS #basic_machinegun=1
-		ww1_destroyer1 = 1
-	ww1_destroyer1_mtg = 1
-		#KiS=1
-		#KiS=1
-		ww1_destroyer2 = 1
-	ww1_destroyer2_mtg = 1
-		 
-		basic_light_cruiser=1
-		#KiS early_protected_cruiser=1
-		ww1_light_cruiser1 = 1
-	ww1_light_cruiser1_mtg = 1
-		ww1_light_cruiser0 = 1
-	ww1_light_cruiser0_mtg = 1
-		 
-		 
-		 
-		early_battlecruiser=1
-		#KiS=1
-		ww1_battleship0 = 1
-	ww1_battleship0_mtg = 1
-		ww1_battleship1 = 1
-	ww1_battleship1_mtg = 1
-		#early_dreadnought=1
-		ww1_battleship0 = 1
-	ww1_battleship0_mtg = 1
-		transport = 1
-	transport_mtg = 1
-		early_submarine=1
-		ww1_submarine1 = 1
-	ww1_submarine1_mtg = 1 ww1_coastal_submarine1=1
-		ww1_submarine2=1 ww1_coastal_submarine2=1
-		#KiS #improved_coastal_submarine=1
 		tech_support=1
 		tech_engineers=1
 		tech_recon=1
@@ -137,7 +118,58 @@ set_stability=0.75
 		tech_field_hospital=1
 		tech_logistics_company=1
 		#KiS #tech_signal_company=1
-		} }
+	} 
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+    	set_technology = {
+			basic_battery = 1
+			early_ship_hull_submarine = 1
+			basic_torpedo = 1 
+			pre_dreadnoughts = 1
+			early_ship_hull_light = 1
+			mtg_early_transport = 1 
+			basic_secondary_battery = 1
+			basic_naval_mines = 1
+			submarine_mine_laying = 1
+    	}
+    }
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		set_technology = {
+			ww1_destroyer0 = 1
+			ww1_destroyer0_mtg = 1
+			#KiS #basic_machinegun=1
+			ww1_destroyer1 = 1
+			ww1_destroyer1_mtg = 1
+			#KiS=1
+			#KiS=1
+			ww1_destroyer2 = 1
+			ww1_destroyer2_mtg = 1
+			basic_light_cruiser=1
+			#KiS early_protected_cruiser=1
+			ww1_light_cruiser1 = 1
+			ww1_light_cruiser1_mtg = 1
+			ww1_light_cruiser0 = 1
+			ww1_light_cruiser0_mtg = 1
+			early_battlecruiser=1
+			#KiS=1
+			ww1_battleship0 = 1
+			ww1_battleship0_mtg = 1
+			ww1_battleship1 = 1
+			ww1_battleship1_mtg = 1
+			#early_dreadnought=1
+			ww1_battleship0 = 1
+			ww1_battleship0_mtg = 1
+			transport = 1
+			transport_mtg = 1
+			early_submarine=1
+			ww1_submarine1 = 1
+			ww1_submarine1_mtg = 1 ww1_coastal_submarine1=1
+			ww1_submarine2=1 ww1_coastal_submarine2=1
+			#KiS #improved_coastal_submarine=1
+		}
+	}
+}
 create_country_leader={ name = "Prithvi of Nepal" desc=NEP_prithvi_of_nepal_DESC picture="gfx/leaders/NEP_prithvi_of_nepal.dds" expire="1935.1.1" ideology=despotism  traits={  } }
 
 1936.1.1={ 

@@ -53,7 +53,7 @@ create_country_leader={ name = "Damat Ferid Pasha" picture="gfx/hoi4tgw_portrait
 	}
 }
 
-create_corps_commander={  name = "Mustafa Kemal" id=90013 portrait_path="gfx/fieldmarshal/TUR_mustafa_kemal.dds" traits={ fast_planner defensive_doctrine } skill=4 
+create_corps_commander={  name = "Mustafa Kemal" id=90013 portrait_path="gfx/hoi4tgw_portraits/TUR/army_generals/TUR_mustafa_kemal.dds" traits={ fast_planner defensive_doctrine } skill=4 
 	attack_skill = 2
 	defense_skill = 2
 	planning_skill = 2
@@ -155,23 +155,12 @@ create_navy_leader={  name = "Ahmed Ramiz Bey" id=90159 portrait_path="gfx/hoi4t
 
 create_navy_leader={  name = "Arif Paşa" id=90097 portrait_path="gfx/hoi4tgw_portraits/TUR/navy_admirals/TUR_Arif_Pasa.dds" traits={ old_guard  } skill=2 }
 
-
 if = {
-	limit = { not = {has_dlc = "Man the Guns"} }
+	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
+		# Navy
 		ww1_battleship0 = 1
-		ww1_battleship0_mtg = 1
-	
-		ww1_battleship1 = 1
-		ww1_battleship1_mtg = 1
-	
-		###ww1_battleship2 = 0 #  ww1_battleship_1906 (Dreadnought I)
-		###ww1_battleship3 = 0 #  ww1_battleship_1910 (Dreadnought II)
-		###ww1_battleship4 = 0 #  ww1_battleship_1914 (Dreadnought III)
-
-		###ww1_battlecruiser1 = 0 # ww1_battlecruiser_1906 (Battlecruiser I)
-		###ww1_battlecruiser2 = 0 # ww1_battlecruiser_1910 (Battlecruiser II)
-		###ww1_battlecruiser3 = 0 # ww1_battlecruiser_1910 (Battlecruiser III)
+		ww1_battleship0_mtg = 1 #  ww1_battleship_1890 (Pre-Dreadnought I)
 
 		ww1_heavy_cruiser0 = 1
 		ww1_heavy_cruiser0_mtg = 1 # heavy_cruiser_1890 (Armored Cruiser I)
@@ -182,48 +171,50 @@ if = {
 		ww1_light_cruiser0_mtg = 1 # light_cruiser_1890 (Protected Cruiser I)
 		ww1_light_cruiser1 = 1
 		ww1_light_cruiser1_mtg = 1 # light_cruiser_1900 (Protected Cruiser II)
-		###ww1_light_cruiser2 = 0 # light_cruiser_1906 (Light Cruiser I)
-		###ww1_light_cruiser3 = 0 # light_cruiser_1910 (Light Cruiser II)
-		###ww1_light_cruiser4 = 0 # light_cruiser_1914 (Light Cruiser III)
-	
+
 		ww1_destroyer0 = 1
 		ww1_destroyer0_mtg = 1 # destroyer_1890 (Torpedo Boat I)
 		ww1_destroyer1 = 1
 		ww1_destroyer1_mtg = 1 # destroyer_1900 (Destroyer I)
 		ww1_destroyer2 = 1
 		ww1_destroyer2_mtg = 1 # destroyer_1906 (Destroyer II)
-		###ww1_destroyer3 = 0 # destroyer_1910 (Destroyer III)
-		###ww1_destroyer4 = 0 # destroyer_1914 (Destroyer IV)	
 
 		ww1_moduleMTG_mines = 1
 		ww1_moduleMTG_mines_mtg = 1 # Mines
 
 		ww1_submarine0 = 1
 		ww1_submarine0_mtg = 1 # coastal_submarine_1900 (Coastal Submarine 1900, first available Submarine)
-		ww1_submarine1 = 1
-		ww1_submarine1_mtg = 1 # submarine_1906 (Submarine I)
-		###ww1_submarine2 = 0 # submarine_1910 (Submarine II)
-		###ww1_submarine3 = 0 # submarine_1914 (Submarine III)
 
 		transport = 1
 		transport_mtg = 1 # Naval Transport
 
-		ww1_coastal_submarine1 = 1
-		ww1_coastal_submarine1_mtg = 1
-		ww1_coastal_submarine2 = 1
+			# Naval Modules Techs
+			heavy_navalmodule_1890 = 1
+		heavy_navalmodule_1890_mtg = 1
+			medium_navalmodule_1890 = 1
+		medium_navalmodule_1890_mtg = 1
+			light_navalmodule_1890 = 1
+		light_navalmodule_1890_mtg = 1
+
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_battery = 1
+		early_ship_hull_submarine = 1
+		basic_torpedo = 1 
+		pre_dreadnoughts = 1
+		early_ship_hull_light = 1
+		mtg_early_transport = 1 
+		basic_secondary_battery = 1
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
 	}
 }
 
 1910.1.1 = {
 	oob = "TUR_1910"
-
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "TUR_1910_naval_mtg"
-		else = {
-			set_naval_oob = "TUR_1910_naval_legacy"
-		}
-	}
 
 	#-------------------------------------------------------
 	#							NF
@@ -236,203 +227,15 @@ if = {
 	#Diplomatic
 	complete_national_focus = TUR_ww1_diplomatic_effort
 	#-------------------------------------------------------
-	if = {
-		limit = { not = {has_dlc = "Man the Guns"} }
-		set_technology = {
-			ww1_battleship0 = 1
-			ww1_battleship0_mtg = 1
-		
-			ww1_battleship1 = 1
-			ww1_battleship1_mtg = 1
-		
-			###ww1_battleship2 = 0 #  ww1_battleship_1906 (Dreadnought I)
-			###ww1_battleship3 = 0 #  ww1_battleship_1910 (Dreadnought II)
-			###ww1_battleship4 = 0 #  ww1_battleship_1914 (Dreadnought III)
 
-			###ww1_battlecruiser1 = 0 # ww1_battlecruiser_1906 (Battlecruiser I)
-			###ww1_battlecruiser2 = 0 # ww1_battlecruiser_1910 (Battlecruiser II)
-			###ww1_battlecruiser3 = 0 # ww1_battlecruiser_1910 (Battlecruiser III)
-
-			ww1_heavy_cruiser0 = 1
-			ww1_heavy_cruiser0_mtg = 1 # heavy_cruiser_1890 (Armored Cruiser I)
-			ww1_heavy_cruiser1 = 1
-			ww1_heavy_cruiser1_mtg = 1 # heavy_cruiser_1900 (Armored Cruiser II)
-
-			ww1_light_cruiser0 = 1
-			ww1_light_cruiser0_mtg = 1 # light_cruiser_1890 (Protected Cruiser I)
-			ww1_light_cruiser1 = 1
-			ww1_light_cruiser1_mtg = 1 # light_cruiser_1900 (Protected Cruiser II)
-			###ww1_light_cruiser2 = 0 # light_cruiser_1906 (Light Cruiser I)
-			###ww1_light_cruiser3 = 0 # light_cruiser_1910 (Light Cruiser II)
-			###ww1_light_cruiser4 = 0 # light_cruiser_1914 (Light Cruiser III)
-		
-			ww1_destroyer0 = 1
-			ww1_destroyer0_mtg = 1 # destroyer_1890 (Torpedo Boat I)
-			ww1_destroyer1 = 1
-			ww1_destroyer1_mtg = 1 # destroyer_1900 (Destroyer I)
-			ww1_destroyer2 = 1
-			ww1_destroyer2_mtg = 1 # destroyer_1906 (Destroyer II)
-			###ww1_destroyer3 = 0 # destroyer_1910 (Destroyer III)
-			###ww1_destroyer4 = 0 # destroyer_1914 (Destroyer IV)	
-
-			ww1_moduleMTG_mines = 1
-			ww1_moduleMTG_mines_mtg = 1 # Mines
-
-			ww1_submarine0 = 1
-			ww1_submarine0_mtg = 1 # coastal_submarine_1900 (Coastal Submarine 1900, first available Submarine)
-			ww1_submarine1 = 1
-			ww1_submarine1_mtg = 1 # submarine_1906 (Submarine I)
-			###ww1_submarine2 = 0 # submarine_1910 (Submarine II)
-			###ww1_submarine3 = 0 # submarine_1914 (Submarine III)
-
-			transport = 1
-			transport_mtg = 1 # Naval Transport
-
-			ww1_coastal_submarine1 = 1
-			ww1_coastal_submarine1_mtg = 1
-			ww1_coastal_submarine2 = 1
-		}
-	}
 	if = {
 		limit = { has_dlc = "Man the Guns" }
-		set_technology = {
-			ship_hull_submarine_1910 = 1
-			ww1_ship_hull_light = 1
-			gw_ship_hull_cruiser = 1
-			pre_dreadnought_ship_hull_heavy = 1
-			dreadnought_ship_hull_heavy = 1
-			basic_torpedo = 1
-			mtg_transport = 1
-			basic_secondary_battery = 1
-			basic_naval_mines = 1
-			basic_battery = 1
-		}
-		
-		create_equipment_variant={ name="Mesûdiye Class" type=ship_hull_pre_dreadnought parent_version = 0 obsolete = no 
-			modules = {
-				fixed_ship_battery_slot = MSM_ship_medium_battery_1
-				fixed_ship_anti_air_slot = empty
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = MSM_heavy_ship_engine_1
-				fixed_ship_secondaries_slot = MSM_ship_secondaries_1
-				fixed_ship_armor_slot = MSM_ship_armor_bb_1
-				front_1_custom_slot = empty
-				mid_1_custom_slot = empty
-				rear_1_custom_slot = empty
-			}
-		}
-		create_equipment_variant={ name="Avni Illah Class" type=ship_hull_pre_dreadnought parent_version = 0 obsolete = no 
-			modules = {
-				fixed_ship_battery_slot = MSM_ship_medium_battery_1
-				fixed_ship_anti_air_slot = empty
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = MSM_heavy_ship_engine_1
-				fixed_ship_secondaries_slot = MSM_ship_secondaries_1
-				fixed_ship_armor_slot = MSM_ship_armor_bb_1
-				front_1_custom_slot = empty
-				mid_1_custom_slot = empty
-				rear_1_custom_slot = empty
-			}
-		}
-		create_equipment_variant={ name="İclaliye Class" type=ship_hull_pre_dreadnought parent_version = 0 obsolete = no 
-			modules = {
-				fixed_ship_battery_slot = MSM_ship_medium_battery_1
-				fixed_ship_anti_air_slot = empty
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = MSM_heavy_ship_engine_1
-				fixed_ship_secondaries_slot = MSM_ship_secondaries_1
-				fixed_ship_armor_slot = MSM_ship_armor_bb_1
-				front_1_custom_slot = empty
-				mid_1_custom_slot = empty
-				rear_1_custom_slot = empty
-			}
-		}
-		create_equipment_variant={ name="Feth-i Bülend Class" type=ship_hull_pre_dreadnought parent_version = 0 obsolete = no 
-			modules = {
-				fixed_ship_battery_slot = MSM_ship_medium_battery_1
-				fixed_ship_anti_air_slot = empty
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = MSM_heavy_ship_engine_1
-				fixed_ship_secondaries_slot = MSM_ship_secondaries_1
-				fixed_ship_armor_slot = MSM_ship_armor_bb_1
-				front_1_custom_slot = empty
-				mid_1_custom_slot = empty
-				rear_1_custom_slot = empty
-			}
-		}
-		
-		create_equipment_variant={ name="Hamidiye Class" type=ship_hull_light_1 parent_version = 0 obsolete = no 
-			modules = {
-				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
-				fixed_ship_anti_air_slot = empty
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = MSM_light_ship_engine_1
-				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
-				rear_1_custom_slot = MSM_ship_light_battery_1
-			} 
-		}
-		create_equipment_variant={ name="Medjidieh Class" type=ship_hull_light_1 parent_version = 0 obsolete = no 
-			modules = {
-				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
-				fixed_ship_anti_air_slot = empty
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = MSM_light_ship_engine_1
-				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
-				rear_1_custom_slot = MSM_ship_light_battery_1
-			} 
-		}
-		create_equipment_variant={ name="Peleng-i Deryâ Class" type=ship_hull_light_1 parent_version = 0 obsolete = no 
-			modules = {
-				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
-				fixed_ship_anti_air_slot = empty
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = MSM_light_ship_engine_1
-				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
-				rear_1_custom_slot = MSM_ship_light_battery_1
-			} 
-		}
-		
-		create_equipment_variant={ name="Samsun Class" type=ship_hull_light_1 parent_version = 0 obsolete = no 
-			modules = {
-				fixed_ship_battery_slot = MSM_ship_light_battery_1
-				fixed_ship_anti_air_slot = empty
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = MSM_light_ship_engine_1
-				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
-				rear_1_custom_slot = MSM_ship_light_battery_1
-			}
-		}
-		create_equipment_variant={ name="S165 Class" type=ship_hull_light_1 parent_version = 0 obsolete = no 
-			modules = {
-				fixed_ship_battery_slot = MSM_ship_light_battery_1
-				fixed_ship_anti_air_slot = empty
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = MSM_light_ship_engine_1
-				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
-				rear_1_custom_slot = MSM_ship_light_battery_1
-			}
-		}
-		create_equipment_variant={ name="Şevket Class" type=ship_hull_light_1 parent_version = 0 obsolete = no 
-			modules = {
-				fixed_ship_battery_slot = MSM_ship_light_battery_1
-				fixed_ship_anti_air_slot = empty
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = MSM_light_ship_engine_1
-				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
-				rear_1_custom_slot = MSM_ship_light_battery_1
-			}
+		set_naval_oob = "TUR_1910_naval_mtg"
+		else = {
+			set_naval_oob = "TUR_1910_naval_legacy"
 		}
 	}
+
 	set_technology = {
 
 		# Infantry
@@ -486,112 +289,149 @@ if = {
 	}
 
 	add_ideas = {
+		ww1_Faith_Allah
 		limited_conscription
 		partial_economic_mobilisation
 		limited_exports
-		TUR_ottoman_army_staff
-		TUR_ottomanism
-		ww1_Faith_Allah
-		TUR_developing_agrarian_society
 	}
-	create_equipment_variant={ name="Assari Tewfik Class" type=ship_hull_gwcruiser parent_version = 2 obsolete=yes modules = {
-			fixed_ship_battery_slot = ship_medium_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_gw
-			mid_1_custom_slot = ship_torpedo_1
-			mid_2_custom_slot = ship_torpedo_1
-			rear_1_custom_slot = ship_torpedo_1
-		}  }
-	create_equipment_variant={ name="Assari Shevket Class" type=ship_hull_gwcruiser parent_version = 2 obsolete=yes modules = {
-			fixed_ship_battery_slot = ship_medium_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_gw
-			mid_1_custom_slot = ship_torpedo_1
-			mid_2_custom_slot = ship_torpedo_1
-			rear_1_custom_slot = ship_torpedo_1
-		}  }
-	create_equipment_variant={ name="Avni Illah Class" type=ship_hull_gwcruiser parent_version = 2 obsolete=yes modules = {
-			fixed_ship_battery_slot = ship_medium_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_gw
-			mid_1_custom_slot = ship_torpedo_1
-			mid_2_custom_slot = ship_torpedo_1
-			rear_1_custom_slot = ship_torpedo_1
-		}  }
-	create_equipment_variant={ name="İclaliye Class" type=ship_hull_gwcruiser parent_version = 2 obsolete=yes modules = {
-			fixed_ship_battery_slot = ship_medium_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_gw
-			mid_1_custom_slot = ship_torpedo_1
-			mid_2_custom_slot = ship_torpedo_1
-			rear_1_custom_slot = ship_torpedo_1
-		}  }
-	create_equipment_variant={ name="Feth-i Bülend Class" type=ship_hull_gwcruiser parent_version = 2 obsolete=yes modules = {
-			fixed_ship_battery_slot = ship_medium_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_gw
-			mid_1_custom_slot = ship_torpedo_1
-			mid_2_custom_slot = ship_torpedo_1
-			rear_1_custom_slot = ship_torpedo_1
-		}  }
-	create_equipment_variant={ name="Hamidieh Class" type=ship_hull_gwcruiser parent_version = 2 obsolete=yes modules = {
-			fixed_ship_battery_slot = ship_medium_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_gw
-			mid_1_custom_slot = ship_torpedo_1
-			mid_2_custom_slot = ship_torpedo_1
-			rear_1_custom_slot = ship_torpedo_1
-		} }
-	create_equipment_variant={ name="Heibetnuma Class" type=ship_hull_gwcruiser parent_version = 2 obsolete=yes modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_gw
-			mid_1_custom_slot = ship_torpedo_1
-			mid_2_custom_slot = ship_torpedo_1
-			rear_1_custom_slot = ship_torpedo_1
-		}}
-	create_equipment_variant={ name="Lutfi Humayun Class" type=ship_hull_gwcruiser parent_version = 2 obsolete=yes modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_gw
-			mid_1_custom_slot = ship_torpedo_1
-			mid_2_custom_slot = ship_torpedo_1
-			rear_1_custom_slot = ship_torpedo_1
-		} }
-	create_equipment_variant={ name="Medjidieh Class" type=ship_hull_gwcruiser parent_version = 2 obsolete=yes modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_gw
-			mid_1_custom_slot = ship_torpedo_1
-			mid_2_custom_slot = ship_torpedo_1
-			rear_1_custom_slot = ship_torpedo_1
-		}}
-	create_equipment_variant={ name="S165 Class" type=gwship_hull_light_1 parent_version = 1 obsolete=no 			modules = {
-				fixed_ship_battery_slot = ship_light_battery_1
-				fixed_ship_engine_slot = light_ship_coal_boiler
-				fixed_ship_torpedo_slot = ship_torpedo_1
-				mid_1_custom_slot = ship_torpedo_1
-				rear_1_custom_slot = ship_torpedo_1
-			} }
-
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		create_equipment_variant={ name="Assari Tewfik Class" type=heavy_cruiser_1890 parent_version = 0 obsolete=yes upgrades={ ship_gun_upgrade=1 ship_armor_upgrade=4 ship_engine_upgrade=0 ship_reliability_upgrade=5           } }
+		create_equipment_variant={ name="Assari Shevket Class" type=heavy_cruiser_1890 parent_version = 1 obsolete=yes upgrades={ ship_gun_upgrade=0 ship_armor_upgrade=0 ship_engine_upgrade=0 ship_reliability_upgrade=0           } }
+		create_equipment_variant={ name="Avni Illah Class" type=heavy_cruiser_1890 parent_version = 2 obsolete=yes upgrades={ ship_gun_upgrade=0 ship_armor_upgrade=0 ship_engine_upgrade=0 ship_reliability_upgrade=0           } }
+		create_equipment_variant={ name="İclaliye Class" type=heavy_cruiser_1890 parent_version = 3 obsolete=yes upgrades={ ship_gun_upgrade=0 ship_armor_upgrade=0 ship_engine_upgrade=0 ship_reliability_upgrade=0           } }
+		create_equipment_variant={ name="Feth-i Bülend Class" type=heavy_cruiser_1890 parent_version = 4 obsolete=yes upgrades={ ship_gun_upgrade=0 ship_armor_upgrade=5 ship_engine_upgrade=0 ship_reliability_upgrade=5           } }
+		create_equipment_variant={ name="Hamidieh Class" type=heavy_cruiser_1900 parent_version = 0 obsolete=no upgrades={ ship_gun_upgrade=0 ship_armor_upgrade=0 ship_engine_upgrade=0 ship_reliability_upgrade=0           } }
+		create_equipment_variant={ name="Heibetnuma Class" type=light_cruiser_1890 parent_version = 0 obsolete=yes upgrades={ ship_gun_upgrade=5  ship_engine_upgrade=0 ship_reliability_upgrade=5 ship_anti_air_upgrade=0          } }
+		create_equipment_variant={ name="Lutfi Humayun Class" type=light_cruiser_1890 parent_version = 1 obsolete=yes upgrades={ ship_gun_upgrade=5  ship_engine_upgrade=0 ship_reliability_upgrade=5 ship_anti_air_upgrade=0          } }
+		create_equipment_variant={ name="Medjidieh Class" type=light_cruiser_1900 parent_version = 0 obsolete=no upgrades={ ship_gun_upgrade=1  ship_engine_upgrade=3 ship_reliability_upgrade=4 ship_anti_air_upgrade=0          } }
+		create_equipment_variant={ name="S165 Class" type=destroyer_1906 parent_version = 0 obsolete=no upgrades={     ship_anti_air_upgrade=0    ship_ASW_upgrade=0 destroyer_engine_upgrade=2    ship_torpedo_upgrade=1 } }
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		create_equipment_variant = { name = "Mesûdiye Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+				fixed_ship_secondaries_slot = empty
+				fixed_ship_armor_slot = MSM_ship_armor_bb_1
+				front_1_custom_slot = empty
+				mid_1_custom_slot = empty
+				rear_1_custom_slot = empty
+			}
+		}
+		create_equipment_variant = { name = "Hamidiye Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+		}
+		create_equipment_variant = { name = "Medjidieh Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+		}
+		create_equipment_variant = { name = "Yarhisar Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			}
+		}
+		create_equipment_variant = { name = "Muâvenet-i Millîye Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			}
+		}
+		create_equipment_variant = { name = "S165 Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			}
+		}
+		create_equipment_variant = { name = "Peyk-i Şevket Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			}
+		}
+		create_equipment_variant = { name = "İclaliye Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+				fixed_ship_secondaries_slot = empty
+				fixed_ship_armor_slot = MSM_ship_armor_bb_1
+				front_1_custom_slot = empty
+				mid_1_custom_slot = empty
+				rear_1_custom_slot = empty
+			}
+		}
+		create_equipment_variant = { name = "Feth-i Bülend Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+				fixed_ship_secondaries_slot = empty
+				fixed_ship_armor_slot = MSM_ship_armor_bb_1
+				front_1_custom_slot = empty
+				mid_1_custom_slot = empty
+				rear_1_custom_slot = empty
+			}
+		}
+		create_equipment_variant = { name = "Avni Illah Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+				fixed_ship_secondaries_slot = empty
+				fixed_ship_armor_slot = MSM_ship_armor_bb_1
+				front_1_custom_slot = empty
+				mid_1_custom_slot = empty
+				rear_1_custom_slot = empty
+			}
+		}
+	}
 }
 
 1914.1.1 = {
@@ -604,6 +444,14 @@ if = {
 	}
 
 	oob = "TUR_1914"
+	
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "TUR_1914_naval_mtg"
+		else = {
+			set_naval_oob = "TUR_1914_naval_legacy"
+		}
+	}
 
 	#-------------------------------------------------------
 	#							NF
@@ -734,17 +582,245 @@ if = {
 	}
 
 	add_ideas = {
+		ww1_Faith_Allah
 		limited_conscription
 		partial_economic_mobilisation
 		limited_exports
-		TUR_ottoman_army_staff
-		TUR_ottomanism
-		ww1_Faith_Allah
-		TUR_developing_agrarian_society
 		german_advisors
 	}
 
 	add_timed_idea = { idea = building_dreadnoughts days = 200 }
+	
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			basic_battery = 1
+			early_ship_hull_submarine = 1
+			basic_torpedo = 1 
+			pre_dreadnoughts = 1
+			early_ship_hull_light = 1
+			mtg_early_transport = 1 
+			basic_secondary_battery = 1
+			basic_naval_mines = 1
+			submarine_mine_laying = 1
+			MSM_early_ship_hull_light = 1
+			early_ship_hull_heavy = 1
+			MSM_GW_ship_torpedo_launcher = 1
+			MSM_basic_ship_hull_uboat = 1
+			MSM_improved_battery = 1
+			MSM_basic_early_shell = 1
+			MSM_secondary_battery_1 = 1
+			MSM_ship_hull_dreadnought_1 = 1
+		}
+		create_equipment_variant = { name = "Mesûdiye Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+				fixed_ship_secondaries_slot = empty
+				fixed_ship_armor_slot = MSM_ship_armor_bb_1
+				front_1_custom_slot = empty
+				mid_1_custom_slot = empty
+				rear_1_custom_slot = empty
+			}
+		}
+		create_equipment_variant = { name = "Hamidiye Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+		}
+		create_equipment_variant = { name = "Medjidieh Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+		}
+		create_equipment_variant = { name = "Yarhisar Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			}
+		}
+		create_equipment_variant = { name = "Muâvenet-i Millîye Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			}
+		}
+		create_equipment_variant = { name = "S165 Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			}
+		}
+		create_equipment_variant = { name = "Peyk-i Şevket Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			}
+		}
+		create_equipment_variant = { name = "İclaliye Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+				fixed_ship_secondaries_slot = empty
+				fixed_ship_armor_slot = MSM_ship_armor_bb_1
+				front_1_custom_slot = empty
+				mid_1_custom_slot = empty
+				rear_1_custom_slot = empty
+			}
+		}
+		create_equipment_variant = { name = "Feth-i Bülend Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+				fixed_ship_secondaries_slot = empty
+				fixed_ship_armor_slot = MSM_ship_armor_bb_1
+				front_1_custom_slot = empty
+				mid_1_custom_slot = empty
+				rear_1_custom_slot = empty
+			}
+		}
+		create_equipment_variant = { name = "Avni Illah Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+				fixed_ship_secondaries_slot = empty
+				fixed_ship_armor_slot = MSM_ship_armor_bb_1
+				front_1_custom_slot = empty
+				mid_1_custom_slot = empty
+				rear_1_custom_slot = empty
+			}
+		}
+		create_equipment_variant = { name = "Turgut Reis Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_heavy_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+				fixed_ship_secondaries_slot = empty
+				fixed_ship_armor_slot = MSM_ship_armor_bb_1
+				front_1_custom_slot = empty
+				mid_1_custom_slot = empty
+				rear_1_custom_slot = empty
+			}
+		}
+		create_equipment_variant = { name = "Brandenburg Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_heavy_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+				fixed_ship_secondaries_slot = empty
+				fixed_ship_armor_slot = MSM_ship_armor_bb_1
+				front_1_custom_slot = empty
+				mid_1_custom_slot = empty
+				rear_1_custom_slot = empty
+			}
+		}
+		create_equipment_variant = { name = "Mesûdiye B Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+				fixed_ship_secondaries_slot = empty
+				fixed_ship_armor_slot = MSM_ship_armor_bb_1
+				front_1_custom_slot = empty
+				mid_1_custom_slot = empty
+				rear_1_custom_slot = empty
+			}
+		}
+		create_equipment_variant = { name = "Al Basara Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			}
+		}
+		create_equipment_variant = { name = "Samsun Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			}
+		}
+		create_equipment_variant = { name = "Gayret-i Vatâniye Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			}
+		}
+		create_equipment_variant = { name = "Muavenet-i Milliye Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			}
+		}
+	}
 }
 
 1919.1.1 = {
@@ -754,6 +830,15 @@ if = {
 	remove_unit_leader = 90147 # Otto Liman von Sanders (Arrested in Malta in February 1919, retired from the German army in 1919)
 
 	oob = "TUR_1919"
+
+	TUR = {
+		diplomatic_relation = {
+			country = TUK
+			relation = military_access
+			active = yes
+		}
+	}
+
 
 	remove_ideas = {
 		building_dreadnoughts
@@ -778,6 +863,7 @@ if = {
 	complete_national_focus = TUR_ww1_centralizedpower
 	complete_national_focus = TUR_ww1_limited_rearmament
 	complete_national_focus = TUR_ww1_full_rearmament
+	complete_national_focus = TUR_interwar_ParisPeaceConference
 
 	#Diplomatic
 	unlock_national_focus = TUR_ww1_war_hejaz
@@ -893,6 +979,5 @@ if = {
         ww1_oil2 = 1
         ww1_fortification3 = 1
         ww1_fortification3b = 1
-
     }
 }

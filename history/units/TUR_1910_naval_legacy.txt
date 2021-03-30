@@ -1,20 +1,19 @@
-﻿units = {
+units = {
 	fleet = {
 		name = "Osmanli Donanmasi Fleet"
 		naval_base = 4112 # Smyrna
 		task_force = {
 			name = "Osmanli Donanmasi"
 			location = 4112 # Smyrna
-			# ships "Barbaros Hayreddin", "Turgut Reis", acquired 12 September 1910, excluded for 1910 scenario
+			# sh ips "Barbaros Hayreddin", "Turgut Reis", acquired 12 September 1910, excluded for 1910 scenario
 			# 1 cruiser "Midili" (former SMS Breslau) acquired 16 August 1914, excluded for 1910 scenario
 			# 2 "torpedo cruisers" (aka destroyers) "Peyk-i Şevket", "Berk-i Şevket"  both available 1910
-			# 1 coastal defence ship "Mesûdiye" - class as really old cruiser, both available 1910
+			# 1 coastal defence sh ip "Mesûdiye" - class as really old cruiser, both available 1910
 			# 2 Protected Cruisers "Hamidiye", "Mecidiye", both available 1910
 			# 8 destroyers "Basra", "Samsun", "Taşoz", "Yarhisar",  "Gayret-i Vatâniye", "Yâdigâr-ı Millet", "Muâvenet-i Millîye" , "Nümûne-i Hamiyet", some available 1910, assume all?
 			# 8 "torpedo boats" aka small destroyers, "Draç","Kütahya","Mûsul","Akhisar","Sultanhisar","Demirhisar","Sivrihisar","Hamidâbad"
 			# some minelayers, also excluded
-			
-			#ship = { name = "Mesûdiye" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = TUR } } }
+			#sh ip = { name = "Mesûdiye" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = TUR } } }
 			ship = { name = "Mesûdiye" definition = heavy_cruiser equipment = { heavy_cruiser_1900 = { amount = 1 owner = TUR } } }
 			ship = { name = "1.Hamidiye" definition = light_cruiser equipment = { light_cruiser_1900 = { amount = 1 owner = TUR } } }
 			ship = { name = "2.Hamidiye" definition = light_cruiser equipment = { light_cruiser_1900 = { amount = 1 owner = TUR } } }
@@ -45,4 +44,11 @@
 			ship = { name = "Peleng-i Derya" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = TUR } } }
 		}
 	}
+}
+
+instant_effect = {
+	add_equipment_production = { equipment = { type = infantry_equipment_1 creator = "TUR" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	add_equipment_production = { equipment = { type = support_equipment_1 creator = "TUR" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	add_equipment_production = { equipment = { type = light_field_gun_equipment_1 creator = "TUR" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	add_equipment_production = { equipment = { type = motorized_equipment_0 creator = "TUR" } requested_factories = 1 progress = 0.1 efficiency = 50}
 }

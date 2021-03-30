@@ -1,0 +1,41 @@
+units = {
+	fleet = {
+		name = "Changjiang Fleet Fleet"
+		naval_base = 7014 # Shanghai
+		task_force = {
+			name = "Xunyang Fleet"
+			location = 7014 # Shanghai
+			ship = { name = "Hai Yung" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = QIN version_name = "Hai Yung Class" } } }
+			ship = { name = "Hai Chou" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = QIN version_name = "Hai Yung Class" } } }
+			ship = { name = "Hai Tan" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = QIN version_name = "Hai Yung Class" } } }
+			ship = { name = "Hai Chi" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = QIN version_name = "Hai Tien Class" } } }
+			ship = { name = "Tung Chi" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = QIN version_name = "Tung Chi Class" } } }
+			ship = { name = "Pao Min" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = QIN version_name = "Pao Min Class" } } }
+		}
+		task_force = {
+			name = "Changjiang Fleet"
+			location = 7014 # Shanghai
+			ship = { name = "Chao Wu" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = QIN version_name = "Chao Ho Class" } } }
+			ship = { name = "Fu Po" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = QIN version_name = "Fu Po Class" } } }
+			ship = { name = "Yuan Kai" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = QIN version_name = "Fu Po Class" } } }
+			ship = { name = "Teng Ying Chou" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = QIN version_name = "Fu Po Class" } } }
+			ship = { name = "Tai An" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = QIN version_name = "Fu Po Class" } } }
+			ship = { name = "Chen Hang" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = QIN version_name = "Hai Ching Class" } } }
+			ship = { name = "Nan Jui" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = QIN version_name = "Nan Tan Class" } } }
+			ship = { name = "King Ching" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = QIN version_name = "Chao Ho Class" } } }
+			ship = { name = "Fu An" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = QIN version_name = "Tung Chi Class" } } }
+			ship = { name = "Hu Peng" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = QIN version_name = "Chao Ho Class" } } }
+			ship = { name = "Hu Ngo" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = QIN version_name = "Chao Ho Class" } } }
+			ship = { name = "Hu Chung" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = QIN version_name = "Chao Ho Class" } } }
+			ship = { name = "Hu Ying" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = QIN version_name = "Chao Ho Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = { equipment = { type = infantry_equipment_0 creator = "QIN" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	
+	add_equipment_production = { equipment = { type = support_equipment_1 creator = "QIN" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	add_equipment_production = { equipment = { type = light_field_gun_equipment_1 creator = "QIN" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	add_equipment_production = { equipment = { type = motorized_equipment_0 creator = "QIN" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	}

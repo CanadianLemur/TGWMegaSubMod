@@ -1,0 +1,23 @@
+units = {
+	fleet = {
+		name = "Sjøforsvaret Fleet"
+		naval_base = 9296 # Kristiansand
+		task_force = {
+			name = "Sjøforsvaret"
+			location = 9296 # Kristiansand
+			ship = { name = "KNM Norge" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = NOR version_name = "Eidsvold Class" } } }
+			ship = { name = "KNM Eidsvold" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = NOR version_name = "Eidsvold Class" } } }
+			ship = { name = "KNM Harald Haarfagre" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = NOR version_name = "Eidsvold Class" } } }
+			ship = { name = "KNM Tordenskjold" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = NOR version_name = "Eidsvold Class" } } }
+			ship = { name = "KNM Frithjof" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = NOR version_name = "Frithjof Class" } } }
+			ship = { name = "KNM Viking" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = NOR version_name = "Viking Class" } } }
+			ship = { name = "KNM Valkyrjen" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = NOR version_name = "Valkyrjen Class" } } }
+			ship = { name = "KNM Draug" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = NOR version_name = "Valkyrjen Class" } } }
+			ship = { name = "KNM Kobben" definition = submarine equipment = { MSM_ship_hull_uboat_1 { amount = 1 owner = NOR version_name = "Kobben Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = { equipment = { type = infantry_equipment_0 creator = "NOR" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	}

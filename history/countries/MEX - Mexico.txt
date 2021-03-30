@@ -234,28 +234,50 @@ create_navy_leader={  name = "Hilario"  portrait_path="gfx/admiral/MEX_Hilario.d
 create_navy_leader={  name = "Salinas Camiña"  portrait_path="gfx/admiral/MEX_Salinas.dds" traits={   } skill=1 
 }
 
+set_technology = {
+	# Navy
+	
+	
+
+
+
+
+
+
+
+}
 if = {
-	limit = { not = {has_dlc = "Man the Guns"} }
-	set_technology = {
+	limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			basic_battery = 1
+			early_ship_hull_submarine = 1
+			basic_torpedo = 1 
+			pre_dreadnoughts = 1
+			early_ship_hull_light = 1
+			mtg_early_transport = 1 
+			basic_secondary_battery = 1
+			basic_naval_mines = 1
+			submarine_mine_laying = 1
+		}
+}
+
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		set_technology = {
 		ww1_battleship0 = 1
 		ww1_battleship0_mtg = 1
-	
 		ww1_battleship1 = 1
 		ww1_battleship1_mtg = 1
-	
 		###ww1_battleship2 = 0 #  ww1_battleship_1906 (Dreadnought I)
 		###ww1_battleship3 = 0 #  ww1_battleship_1910 (Dreadnought II)
 		###ww1_battleship4 = 0 #  ww1_battleship_1914 (Dreadnought III)
-
 		###ww1_battlecruiser1 = 0 # ww1_battlecruiser_1906 (Battlecruiser I)
 		###ww1_battlecruiser2 = 0 # ww1_battlecruiser_1910 (Battlecruiser II)
 		###ww1_battlecruiser3 = 0 # ww1_battlecruiser_1910 (Battlecruiser III)
-
 		ww1_heavy_cruiser0 = 1
 		ww1_heavy_cruiser0_mtg = 1 # heavy_cruiser_1890 (Armored Cruiser I)
 		ww1_heavy_cruiser1 = 1
 		ww1_heavy_cruiser1_mtg = 1 # heavy_cruiser_1900 (Armored Cruiser II)
-
 		ww1_light_cruiser0 = 1
 		ww1_light_cruiser0_mtg = 1 # light_cruiser_1890 (Protected Cruiser I)
 		ww1_light_cruiser1 = 1
@@ -263,7 +285,6 @@ if = {
 		###ww1_light_cruiser2 = 0 # light_cruiser_1906 (Light Cruiser I)
 		###ww1_light_cruiser3 = 0 # light_cruiser_1910 (Light Cruiser II)
 		###ww1_light_cruiser4 = 0 # light_cruiser_1914 (Light Cruiser III)
-	
 		ww1_destroyer0 = 1
 		ww1_destroyer0_mtg = 1 # destroyer_1890 (Torpedo Boat I)
 		ww1_destroyer1 = 1
@@ -271,44 +292,29 @@ if = {
 		ww1_destroyer2 = 1
 		ww1_destroyer2_mtg = 1 # destroyer_1906 (Destroyer II)
 		###ww1_destroyer3 = 0 # destroyer_1910 (Destroyer III)
-		###ww1_destroyer4 = 0 # destroyer_1914 (Destroyer IV)	
-
+		###ww1_destroyer4 = 0 # destroyer_1914 (Destroyer IV)
 		ww1_moduleMTG_mines = 1
 		ww1_moduleMTG_mines_mtg = 1 # Mines
-
 		ww1_submarine0 = 1
 		ww1_submarine0_mtg = 1 # coastal_submarine_1900 (Coastal Submarine 1900, first available Submarine)
-		ww1_submarine1 = 1
-		ww1_submarine1_mtg = 1 # submarine_1906 (Submarine I)
+		###ww1_submarine1 = 0 # submarine_1906 (Submarine I)
 		###ww1_submarine2 = 0 # submarine_1910 (Submarine II)
 		###ww1_submarine3 = 0 # submarine_1914 (Submarine III)
-
 		transport = 1
 		transport_mtg = 1 # Naval Transport
-
-		ww1_coastal_submarine1 = 1
-		ww1_coastal_submarine1_mtg = 1
-		ww1_coastal_submarine2 = 1
+		}
 	}
-}
-#if = {
-#	limit = { has_dlc = "Man the Guns" }
-#	set_technology = {
-#		ship_hull_submarine_1910 = 1
-#		ww1_ship_hull_light = 1
-#		gw_ship_hull_cruiser = 1
-#		pre_dreadnought_ship_hull_heavy = 1
-#		dreadnought_ship_hull_heavy = 1
-#		basic_torpedo = 1
-#		mtg_transport = 1
-#		basic_secondary_battery = 1
-#		basic_naval_mines = 1
-#		basic_battery = 1
-#	}
-#}
 
 1910.1.1 = {
 	oob = "MEX_1910"
+
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "MEX_1910_naval_mtg"
+		else = {
+			set_naval_oob = "MEX_1910_naval_legacy"
+		}
+	}
 
 	#-------------------------------------------------------
 	#							NF
@@ -369,6 +375,32 @@ if = {
 
 	add_ideas = {
 		MEX_ww1_mexico_prerevolution
+	}
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			basic_battery = 1
+			early_ship_hull_submarine = 1
+			basic_torpedo = 1 
+			pre_dreadnoughts = 1
+			early_ship_hull_light = 1
+			mtg_early_transport = 1 
+			basic_secondary_battery = 1
+			basic_naval_mines = 1
+			submarine_mine_laying = 1
+		}
+		create_equipment_variant = { name = "Zaragoza Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+		}
 	}
 }
 
@@ -474,4 +506,26 @@ if = {
 	set_global_flag = SUPER_GLOBAL_Mexican_Revolution_1910
 	set_global_flag = SUPER_GLOBAL_Adios_Francisco_Madero_1913
 	set_global_flag = FLAG_MEX_adios_porfirio_diaz
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			basic_battery = 1
+			early_ship_hull_submarine = 1
+			basic_torpedo = 1 
+			pre_dreadnoughts = 1
+			early_ship_hull_light = 1
+			mtg_early_transport = 1 
+			basic_secondary_battery = 1
+			basic_naval_mines = 1
+			submarine_mine_laying = 1
+			MSM_early_ship_hull_light = 1
+			early_ship_hull_heavy = 1
+			MSM_GW_ship_torpedo_launcher = 1
+			MSM_basic_ship_hull_uboat = 1
+			MSM_improved_battery = 1
+			MSM_basic_early_shell = 1
+			MSM_secondary_battery_1 = 1
+			MSM_ship_hull_dreadnought_1 = 1
+		}
 }

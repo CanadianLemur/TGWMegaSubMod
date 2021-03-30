@@ -1,0 +1,16 @@
+units = {
+	fleet = {
+		name = "Royal Siamese Navy Fleet"
+		naval_base = 7408 # Phet Buri
+		task_force = {
+			name = "Royal Siamese Navy"
+			location = 7408 # Phet Buri
+			ship = { name = "Maha Chakri" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = SIA version_name = "Maha Chakri Class" } } }
+			ship = { name = "Sua Thaymon Chon" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = SIA version_name = "Sua Thaymon Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = { equipment = { type = infantry_equipment_0 creator = "SIA" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	}

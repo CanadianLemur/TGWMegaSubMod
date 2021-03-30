@@ -22,7 +22,6 @@ create_country_leader = {
 create_country_leader={ name = "Aloys Kaiser" desc=LUX_aloys_kaiser_DESC picture="gfx/leaders/LUX_aloys_kaiser.dds" expire="1935.1.1" ideology=stalinism traits={  } }
 create_country_leader={ name = "William IV" desc=LUX_william_iv_DESC picture="gfx/leaders/LUX_william_iv.dds" expire="1935.1.1" ideology=conservatism traits={  } }
 
-
 1910.1.1 = {
 	oob = "LUX_1910"
 
@@ -58,24 +57,45 @@ create_country_leader={ name = "William IV" desc=LUX_william_iv_DESC picture="gf
 		heavy_field_gun1 = 1
 
 		# Navy
-		ww1_destroyer0 = 1
-	ww1_destroyer0_mtg = 1
-		ww1_destroyer1 = 1
-	ww1_destroyer1_mtg = 1
-		ww1_light_cruiser1 = 1
-	ww1_light_cruiser1_mtg = 1
-		ww1_light_cruiser0 = 1
-	ww1_light_cruiser0_mtg = 1
-		ww1_battlecruiser0 = 1
-	ww1_battlecruiser0_mtg = 1
-		ww1_battleship0 = 1
-	ww1_battleship0_mtg = 1
-		ww1_submarine1 = 1
-	ww1_submarine1_mtg = 1
-		ww1_coastal_submarine1 = 1
-	ww1_coastal_submarine1_mtg = 1
-		transport = 1
-	transport_mtg = 1
+
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+    		set_technology = {
+    			basic_battery = 1
+    			early_ship_hull_submarine = 1
+    			basic_torpedo = 1 
+    			pre_dreadnoughts = 1
+    			early_ship_hull_light = 1
+    			mtg_early_transport = 1 
+    			basic_secondary_battery = 1
+    			basic_naval_mines = 1
+    			submarine_mine_laying = 1
+    		}
+    	}
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		set_technology = {
+			ww1_destroyer0 = 1
+			ww1_destroyer0_mtg = 1
+			ww1_destroyer1 = 1
+			ww1_destroyer1_mtg = 1
+			ww1_light_cruiser1 = 1
+			ww1_light_cruiser1_mtg = 1
+			ww1_light_cruiser0 = 1
+			ww1_light_cruiser0_mtg = 1
+			ww1_battlecruiser0 = 1
+			ww1_battlecruiser0_mtg = 1
+			ww1_battleship0 = 1
+			ww1_battleship0_mtg = 1
+			ww1_submarine1 = 1
+			ww1_submarine1_mtg = 1
+			ww1_coastal_submarine1 = 1
+			ww1_coastal_submarine1_mtg = 1
+			transport = 1
+			transport_mtg = 1
+		}
+	}
+	set_technology = {
 
 		# Air
 
@@ -167,24 +187,45 @@ create_country_leader={ name = "William IV" desc=LUX_william_iv_DESC picture="gf
 		bonus_bertha1 = 1
 
 		# Navy
-		ww1_destroyer0 = 1
-	ww1_destroyer0_mtg = 1
-		ww1_destroyer1 = 1
-	ww1_destroyer1_mtg = 1
-		ww1_light_cruiser1 = 1
-	ww1_light_cruiser1_mtg = 1
-		ww1_light_cruiser0 = 1
-	ww1_light_cruiser0_mtg = 1
-		ww1_battleship0 = 1
-	ww1_battleship0_mtg = 1
-		ww1_battleship1 = 1
-	ww1_battleship1_mtg = 1
-		ww1_submarine1 = 1
-	ww1_submarine1_mtg = 1
-		ww1_coastal_submarine1 = 1
-	ww1_coastal_submarine1_mtg = 1
-		transport = 1
-	transport_mtg = 1
+
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+    		set_technology = {
+    			basic_battery = 1
+    			early_ship_hull_submarine = 1
+    			basic_torpedo = 1 
+    			pre_dreadnoughts = 1
+    			early_ship_hull_light = 1
+    			mtg_early_transport = 1 
+    			basic_secondary_battery = 1
+    			basic_naval_mines = 1
+    			submarine_mine_laying = 1
+    		}
+    	}
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		set_technology = {
+			ww1_destroyer0 = 1
+			ww1_destroyer0_mtg = 1
+			ww1_destroyer1 = 1
+			ww1_destroyer1_mtg = 1
+			ww1_light_cruiser1 = 1
+			ww1_light_cruiser1_mtg = 1
+			ww1_light_cruiser0 = 1
+			ww1_light_cruiser0_mtg = 1
+			ww1_battleship0 = 1
+			ww1_battleship0_mtg = 1
+			ww1_battleship1 = 1
+			ww1_battleship1_mtg = 1
+			ww1_submarine1 = 1
+			ww1_submarine1_mtg = 1
+			ww1_coastal_submarine1 = 1
+			ww1_coastal_submarine1_mtg = 1
+			transport = 1
+			transport_mtg = 1
+		}
+	}
+	set_technology = {
 
 		# Air
 		ww1_fighter1 = 1

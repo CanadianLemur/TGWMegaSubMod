@@ -1,0 +1,181 @@
+﻿capital = 322
+oob = "TIB_1910"
+	}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+    		set_technology = {
+    			basic_battery = 1
+    			early_ship_hull_submarine = 1
+    			basic_torpedo = 1 
+    			pre_dreadnoughts = 1
+    			early_ship_hull_light = 1
+    			mtg_early_transport = 1 
+    			basic_secondary_battery = 1
+    			basic_naval_mines = 1
+    			submarine_mine_laying = 1
+    		}
+    	}
+    if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		ww1_destroyer0 = 1
+		ww1_destroyer0_mtg = 1
+		ww1_destroyer1 = 1
+		ww1_destroyer1_mtg = 1
+		#KiS early_protected_cruiser=1
+		ww1_light_cruiser1 = 1
+		ww1_light_cruiser1_mtg = 1
+		ww1_light_cruiser0 = 1
+		ww1_light_cruiser0_mtg = 1
+		ww1_battleship0 = 1
+		ww1_battleship0_mtg = 1
+		ww1_battleship1 = 1
+		ww1_battleship1_mtg = 1
+		#early_dreadnought=1
+		transport = 1
+		transport_mtg = 1
+		ww1_submarine1 = 1
+		ww1_submarine1_mtg = 1 ww1_coastal_submarine1=1
+		ww1_submarine2=1 ww1_coastal_submarine2=1
+		ww1_destroyer0 = 1
+		ww1_destroyer0_mtg = 1
+		ww1_destroyer1 = 1
+		ww1_destroyer1_mtg = 1
+		ww1_destroyer2 = 1
+		ww1_destroyer2_mtg = 1
+		basic_light_cruiser=1
+		#KiS early_protected_cruiser=1
+		ww1_light_cruiser1 = 1
+		ww1_light_cruiser1_mtg = 1
+		ww1_light_cruiser0 = 1
+		ww1_light_cruiser0_mtg = 1
+		early_battlecruiser=1
+		ww1_battleship0 = 1
+		ww1_battleship0_mtg = 1
+		ww1_battleship1 = 1
+		ww1_battleship1_mtg = 1
+		#early_dreadnought=1
+		ww1_battleship0 = 1
+		ww1_battleship0_mtg = 1
+		transport = 1
+		transport_mtg = 1
+		ww1_submarine1 = 1
+		ww1_submarine1_mtg = 1 ww1_coastal_submarine1=1
+		ww1_submarine2=1 ww1_coastal_submarine2=1
+	}
+}
+
+set_technology = { 
+	light_field_gun1=1
+	 
+	heavy_field_gun1=1
+	#KiS #heavy_howitzer1=1
+	motorised_infantry = 1 #KiS #siege_artillery1=1
+	electronic_mechanical_engineering=1
+	infantry_weapons=1
+	 
+	 
+	 
+	 
+	#KiS=1
+	tech_support=1
+	tech_engineers=1
+	tech_recon=1
+	#tech_military_police=1
+	#tech_maintenance_company=1
+	#tech_field_hospital=1
+	#tech_logistics_company=1
+	#KiS #tech_signal_company=1
+	}
+
+set_politics = {
+    ruling_party = neutrality
+    last_election = "1910.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+set_popularities = {
+    democratic = 0
+    fascism = 0
+    communism = 0
+    neutrality = 100
+}
+
+set_stability=0.75
+1914.1.1 = { oob="TIB_1914" }
+1914.1.1 = { set_technology = { 
+		#KiS #Scout1=1
+		#naval_bomber1=1
+
+		#KiS #airship1=1
+		light_field_gun1=1
+		light_field_gun2=1
+		 
+		 
+		heavy_field_gun1=1
+		heavy_field_gun2=1
+		#KiS #heavy_howitzer1=1
+		#KiS #heavy_howitzer2=1
+		motorised_infantry = 1 #KiS #siege_artillery1=1
+		#KiS #siege_artillery2=1
+		electronic_mechanical_engineering=1
+		#KiS #radio=1
+		mechanical_computing=1
+		computing_machine=1
+		basic_encryption=1
+		basic_decryption=1
+		basic_machine_tools=1
+		improved_machine_tools=1
+		concentrated_industry=1
+		concentrated_industry2=1
+		synth_oil_experiments=1
+		oil_plant=1
+		construction1=1
+		excavation1=1
+		construction2=1
+		excavation2=1
+		infantry_weapons=1
+		ww1infantry_weapons1=1
+		marines=1
+		tech_mountaineers=1
+		#KiS #basic_machinegun=1
+		#KiS=1
+		#KiS=1
+		 
+		 
+		 
+		 
+		#KiS=1
+		tech_support=1
+		tech_engineers=1
+		tech_recon=1
+		tech_military_police=1
+		tech_maintenance_company=1
+		tech_field_hospital=1
+		tech_logistics_company=1
+		#KiS #tech_signal_company=1
+		} }
+create_country_leader={ name = "Dalai Lama Thubten Gyatso" desc=TIB_dalai_lama_thubten_gyatso_DESC picture="gfx/leaders/TIB_dalai_lama_thubten_gyatso.dds" expire="1935.1.1" ideology=despotism  traits={  } }
+create_corps_commander={  name = "Tethong" id=89008 portrait_path="gfx/generals/TIB_tethong.dds" traits={   } skill=3 }
+create_corps_commander={  name = "Tsarong Dzasa" id=89011 portrait_path="gfx/generals/TIB_tsarong_dzasa.dds" traits={   } skill=3 }
+create_corps_commander={  name = "Changra Depsn" id=89012 portrait_path="gfx/generals/TIB_changra_depsn.dds" traits={   } skill=2 }
+create_corps_commander={  name = "Dingja" id=89013 portrait_path="gfx/generals/TIB_dingja.dds" traits={   } skill=2 }
+create_corps_commander={  name = "Kalon Lama" id=89014 portrait_path="gfx/generals/TIB_kalon_lama.dds" traits={   } skill=1 }
+create_corps_commander={  name = "Khyungram Theji" id=89015 portrait_path="gfx/generals/TIB_khyungram_theji.dds" traits={   } skill=1 }
+create_corps_commander={  name = "Ladingser" id=89016 portrait_path="gfx/generals/TIB_ladingser.dds" traits={   } skill=2 }
+create_corps_commander={  name = "Langserling" id=89017 portrait_path="gfx/generals/TIB_langserling.dds" traits={   } skill=1 }
+create_corps_commander={  name = "Miru Gyalwa" id=89018 portrait_path="gfx/generals/TIB_miru_gyalwa.dds" traits={   } skill=1 }
+create_corps_commander={  name = "Neto" id=89019 portrait_path="gfx/generals/TIB_neto.dds" traits={   } skill=1 }
+create_corps_commander={  name = "Tendong Shappe" id=89020 portrait_path="gfx/generals/TIB_tendong_shappe.dds" traits={   } skill=2 }
+create_corps_commander={  name = "Trimon Shappe" id=89021 portrait_path="gfx/generals/TIB_trimon_shappe.dds" traits={   } skill=1 }
+create_corps_commander={  name = "Tsoko" id=89022 portrait_path="gfx/generals/TIB_tsoko.dds" traits={   } skill=1 }
+
+1936.1.1={ 
+capital=322
+
+#oob="TIB_1936"
+#set_technology = { infantry_weapons=1 }
+#
+create_country_leader={ name="Jamphel Yeshe Gyaltsen" desc="POLITICS_JAMPHEL_YESHE_GYALTSEN_DESC" picture="Portrait_Tibet_Jamphel_Yeshe_Gyaltsen.dds" expire="1965.1.1" ideology=despotism traits={  } }
+
+}

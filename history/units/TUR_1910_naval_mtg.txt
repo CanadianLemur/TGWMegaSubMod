@@ -1,47 +1,54 @@
-﻿units = {
+units = {
 	fleet = {
 		name = "Osmanli Donanmasi Fleet"
 		naval_base = 4112 # Smyrna
 		task_force = {
 			name = "Osmanli Donanmasi"
 			location = 4112 # Smyrna
-			# ships "Barbaros Hayreddin", "Turgut Reis", acquired 12 September 1910, excluded for 1910 scenario
+			# sh ips "Barbaros Hayreddin", "Turgut Reis", acquired 12 September 1910, excluded for 1910 scenario
 			# 1 cruiser "Midili" (former SMS Breslau) acquired 16 August 1914, excluded for 1910 scenario
 			# 2 "torpedo cruisers" (aka destroyers) "Peyk-i Şevket", "Berk-i Şevket"  both available 1910
-			# 1 coastal defence ship "Mesûdiye" - class as really old cruiser, both available 1910
+			# 1 coastal defence sh ip "Mesûdiye" - class as really old cruiser, both available 1910
 			# 2 Protected Cruisers "Hamidiye", "Mecidiye", both available 1910
 			# 8 destroyers "Basra", "Samsun", "Taşoz", "Yarhisar",  "Gayret-i Vatâniye", "Yâdigâr-ı Millet", "Muâvenet-i Millîye" , "Nümûne-i Hamiyet", some available 1910, assume all?
 			# 8 "torpedo boats" aka small destroyers, "Draç","Kütahya","Mûsul","Akhisar","Sultanhisar","Demirhisar","Sivrihisar","Hamidâbad"
 			# some minelayers, also excluded
-			
-			ship = { name = "Mesûdiye" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = TUR version_name = "Mesûdiye Class"} } }
-			ship = { name = "Avni Illah" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = TUR version_name = "Avni Illah Class" } } }
-			ship = { name = "Muin-i-Zaffer" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = TUR version_name = "Avni Illah Class" } } }
-			ship = { name = "İclaliye" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = TUR version_name = "İclaliye Class" } } }
-			ship = { name = "Feth-i Bülend" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = TUR version_name = "Feth-i Bülend Class" } } }
-			ship = { name = "1.Hamidiye" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Hamidiye Class" } } }
-			ship = { name = "2.Hamidiye" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Hamidiye Class" } } }
-			ship = { name = "1.Mecidiye" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Medjidieh Class" } } }
-			ship = { name = "2.Mecidiye" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Medjidieh Class" } } }
-			ship = { name = "Peleng-i Derya" definition = protected_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Peleng-i Deryâ Class" } } }
-			ship = { name = "1.Basra" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Samsun Class" } } }
-			ship = { name = "2.Basra" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Samsun Class" } } }
-			ship = { name = "1.Samsun" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Samsun Class" } } }
-			ship = { name = "2.Samsun" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Samsun Class" } } }
-			ship = { name = "1.Taşoz" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Samsun Class" } } }
-			ship = { name = "2.Taşoz" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Samsun Class" } } }
-			ship = { name = "1.Yarhisar" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Samsun Class" } } }
-			ship = { name = "2.Yarhisar" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Samsun Class" } } }
-			ship = { name = "1.Gayret-i Vatâniye" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "S165 Class" } } }
-			ship = { name = "2.Gayret-i Vatâniye" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "S165 Class" } } }
-			ship = { name = "1.Yâdigâr-ı Millet" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "S165 Class" } } }
-			ship = { name = "2.Yâdigâr-ı Millet" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "S165 Class" } } }
-			ship = { name = "1.Muâvenet-i Millîye" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "S165 Class" } } }
-			ship = { name = "2.Muâvenet-i Millîye" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "S165 Class" } } }
-			ship = { name = "1.Nümûne-i Hamiyet" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "S165 Class" } }
-			ship = { name = "2.Nümûne-i Hamiyet" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "S165 Class" } } }
-			ship = { name = "Berk-i Şevket" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Şevket Class" } } }
-			ship = { name = "Peyk-i Şevket" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Şevket Class" } } }
+			#sh ip = { name = "Mesûdiye" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = TUR } } }
+			ship = { name = "Mesûdiye" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought { amount = 1 owner = TUR version_name = "Mesûdiye Class" } } }
+			ship = { name = "1.Hamidiye" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = TUR version_name = "Hamidiye Class" } } }
+			ship = { name = "2.Hamidiye" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = TUR version_name = "Hamidiye Class" } } }
+			ship = { name = "1.Mecidiye" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = TUR version_name = "Hamidiye Class" } } }
+			ship = { name = "2.Mecidiye" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = TUR version_name = "Medjidieh Class" } } }
+			ship = { name = "1.Basra" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = TUR version_name = "Hamidiye Class" } } }
+			ship = { name = "2.Basra" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = TUR version_name = "Hamidiye Class" } } }
+			ship = { name = "1.Samsun" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = TUR version_name = "Hamidiye Class" } } }
+			ship = { name = "2.Samsun" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = TUR version_name = "Hamidiye Class" } } }
+			ship = { name = "1.Taşoz" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = TUR version_name = "Hamidiye Class" } } }
+			ship = { name = "2.Taşoz" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = TUR version_name = "Hamidiye Class" } } }
+			ship = { name = "1.Yarhisar" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = TUR version_name = "Yarhisar Class" } } }
+			ship = { name = "2.Yarhisar" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = TUR version_name = "Yarhisar Class" } } }
+			ship = { name = "1.Gayret-i Vatâniye" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = TUR version_name = "Muâvenet-i Millîye Class" } } }
+			ship = { name = "2.Gayret-i Vatâniye" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = TUR version_name = "S165 Class" } } }
+			ship = { name = "1.Yâdigâr-ı Millet" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = TUR version_name = "Muâvenet-i Millîye Class" } } }
+			ship = { name = "2.Yâdigâr-ı Millet" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = TUR version_name = "S165 Class" } } }
+			ship = { name = "1.Muâvenet-i Millîye" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = TUR version_name = "Muâvenet-i Millîye Class" } } }
+			ship = { name = "2.Muâvenet-i Millîye" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = TUR version_name = "S165 Class" } } }
+			ship = { name = "1.Nümûne-i Hamiyet" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = TUR version_name = "Muâvenet-i Millîye Class" } } }
+			ship = { name = "2.Nümûne-i Hamiyet" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = TUR version_name = "S165 Class" } } }
+			ship = { name = "Berk-i Şevket" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = TUR version_name = "Peyk-i Şevket Class" } } }
+			ship = { name = "Peyk-i Şevket" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = TUR version_name = "Peyk-i Şevket Class" } } }
+			ship = { name = "İclaliye" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought { amount = 1 owner = TUR version_name = "İclaliye Class" } } }
+			ship = { name = "Feth-i Bülend" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought { amount = 1 owner = TUR version_name = "Feth-i Bülend Class" } } }
+			ship = { name = "Avni Illah" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought { amount = 1 owner = TUR version_name = "Avni Illah Class" } } }
+			ship = { name = "Muin-i-Zaffer" definition = armored_cruiser equipment = { ship_hull_pre_dreadnought { amount = 1 owner = TUR version_name = "Avni Illah Class" } } }
+			ship = { name = "Peleng-i Derya" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = TUR version_name = "Turgut Reis Class" } } }
 		}
 	}
+}
+
+instant_effect = {
+	add_equipment_production = { equipment = { type = infantry_equipment_1 creator = "TUR" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	add_equipment_production = { equipment = { type = support_equipment_1 creator = "TUR" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	add_equipment_production = { equipment = { type = light_field_gun_equipment_1 creator = "TUR" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	add_equipment_production = { equipment = { type = motorized_equipment_0 creator = "TUR" } requested_factories = 1 progress = 0.1 efficiency = 50}
 }

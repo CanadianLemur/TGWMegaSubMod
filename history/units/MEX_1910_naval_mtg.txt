@@ -1,0 +1,16 @@
+units = {
+	fleet = {
+		name = "Armada de Mexico Fleet"
+		naval_base = 8032 # Acapulco
+		task_force = {
+			name = "Armada de Mexico"
+			location = 8032 # Acapulco
+			ship = { name = "Zaragosa" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = MEX version_name = "Zaragoza Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = { equipment = { type = infantry_equipment_0 creator = "MEX" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	
+	}

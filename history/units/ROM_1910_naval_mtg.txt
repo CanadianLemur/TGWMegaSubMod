@@ -1,0 +1,16 @@
+units = {
+	fleet = {
+		name = "Flota Marii Negre Fleet"
+		naval_base = 657 # Constanta
+		task_force = {
+			name = "Flota Marii Negre"
+			location = 657 # Constanta
+			ship = { name = "NMS Elisabeta" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ROM version_name = "Elisabeta Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = { equipment = { type = infantry_equipment_0 creator = "ROM" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	add_equipment_production = { equipment = { type = support_equipment_1 creator = "ROM" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	}

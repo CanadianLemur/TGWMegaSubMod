@@ -11,10 +11,10 @@ set_convoys = 25
 #-------------------------------------------------------
 #					POLITICS & ARMY
 #-------------------------------------------------------
-create_country_leader={ name = "Christiaan De Wet" desc=SAF_christiaan_de_wet_DESC picture="gfx/leaders/SAF_christiaan_de_wet.dds" expire="1935.1.1" ideology=fascism_ideology traits={  } }
-create_country_leader={ name = "Sydney Buxton" desc=SAF_sydney_buxton_DESC picture="gfx/leaders/SAF_sydney_buxton.dds" expire="1935.1.1" ideology=liberalism traits={  } }
-create_country_leader={ name = "Herbert Gladstone" desc=SAF_herbert_gladstone_DESC picture="gfx/leaders/SAF_herbert_gladstone.dds" expire="1935.1.1" ideology=liberalism traits={  } }
-create_country_leader={ name = "Louis Botha" desc=SAF_louis_botha_DESC picture="gfx/leaders/SAF_louis_botha.dds" expire="1935.1.1" ideology=liberalism traits={  } }
+create_country_leader={ name = "Christiaan De Wet" desc=SAF_christiaan_de_wet_DESC picture="gfx/hoi4tgw_portraits/SAF/country_leaders/SAF_christiaan_de_wet.dds" expire="1935.1.1" ideology=fascism_ideology traits={  } }
+create_country_leader={ name = "Sydney Buxton" desc=SAF_sydney_buxton_DESC picture="gfx/hoi4tgw_portraits/SAF/country_leaders/SAF_sydney_buxton.dds" expire="1935.1.1" ideology=liberalism traits={  } }
+create_country_leader={ name = "Herbert Gladstone" desc=SAF_herbert_gladstone_DESC picture="gfx/hoi4tgw_portraits/SAF/country_leaders/SAF_herbert_gladstone.dds" expire="1935.1.1" ideology=liberalism traits={  } }
+create_country_leader={ name = "Louis Botha" desc=SAF_louis_botha_DESC picture="gfx/hoi4tgw_portraits/SAF/country_leaders/SAF_louis_botha.dds" expire="1935.1.1" ideology=liberalism traits={  } }
 create_corps_commander={  name = "Lukin" id=78002 portrait_path="gfx/generals/SAF_lukin.dds" traits={   } skill=2 }
 create_corps_commander={  name = "Smuts J.C." id=78003 portrait_path="gfx/generals/SAF_smuts_jc.dds" traits={   } skill=2 }
 create_corps_commander={  name = "Van Deventer" id=78004 portrait_path="gfx/generals/SAF_van_deventer.dds" traits={ trickster  } skill=2 }
@@ -25,27 +25,36 @@ create_corps_commander={  name = "Fourie" id=78012 portrait_path="gfx/generals/S
 create_corps_commander={  name = "de Wet" id=78013 portrait_path="gfx/generals/SAF_de_wet.dds" traits={ trickster  } skill=4 }
 
 if = {
-	limit = { not = {has_dlc = "Man the Guns"} }
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_battery = 1
+		early_ship_hull_submarine = 1
+		basic_torpedo = 1 
+		pre_dreadnoughts = 1
+		early_ship_hull_light = 1
+		mtg_early_transport = 1 
+		basic_secondary_battery = 1
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+	}
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
 		ww1_battleship0 = 1
 		ww1_battleship0_mtg = 1
-	
 		ww1_battleship1 = 1
 		ww1_battleship1_mtg = 1
-	
 		###ww1_battleship2 = 0 #  ww1_battleship_1906 (Dreadnought I)
 		###ww1_battleship3 = 0 #  ww1_battleship_1910 (Dreadnought II)
 		###ww1_battleship4 = 0 #  ww1_battleship_1914 (Dreadnought III)
-
 		###ww1_battlecruiser1 = 0 # ww1_battlecruiser_1906 (Battlecruiser I)
 		###ww1_battlecruiser2 = 0 # ww1_battlecruiser_1910 (Battlecruiser II)
 		###ww1_battlecruiser3 = 0 # ww1_battlecruiser_1910 (Battlecruiser III)
-
 		ww1_heavy_cruiser0 = 1
 		ww1_heavy_cruiser0_mtg = 1 # heavy_cruiser_1890 (Armored Cruiser I)
 		ww1_heavy_cruiser1 = 1
 		ww1_heavy_cruiser1_mtg = 1 # heavy_cruiser_1900 (Armored Cruiser II)
-
 		ww1_light_cruiser0 = 1
 		ww1_light_cruiser0_mtg = 1 # light_cruiser_1890 (Protected Cruiser I)
 		ww1_light_cruiser1 = 1
@@ -53,7 +62,6 @@ if = {
 		###ww1_light_cruiser2 = 0 # light_cruiser_1906 (Light Cruiser I)
 		###ww1_light_cruiser3 = 0 # light_cruiser_1910 (Light Cruiser II)
 		###ww1_light_cruiser4 = 0 # light_cruiser_1914 (Light Cruiser III)
-	
 		ww1_destroyer0 = 1
 		ww1_destroyer0_mtg = 1 # destroyer_1890 (Torpedo Boat I)
 		ww1_destroyer1 = 1
@@ -61,49 +69,29 @@ if = {
 		ww1_destroyer2 = 1
 		ww1_destroyer2_mtg = 1 # destroyer_1906 (Destroyer II)
 		###ww1_destroyer3 = 0 # destroyer_1910 (Destroyer III)
-		###ww1_destroyer4 = 0 # destroyer_1914 (Destroyer IV)	
-
+		###ww1_destroyer4 = 0 # destroyer_1914 (Destroyer IV)
 		ww1_moduleMTG_mines = 1
 		ww1_moduleMTG_mines_mtg = 1 # Mines
-
 		ww1_submarine0 = 1
 		ww1_submarine0_mtg = 1 # coastal_submarine_1900 (Coastal Submarine 1900, first available Submarine)
-		ww1_submarine1 = 1
-		ww1_submarine1_mtg = 1 # submarine_1906 (Submarine I)
+		###ww1_submarine1 = 0 # submarine_1906 (Submarine I)
 		###ww1_submarine2 = 0 # submarine_1910 (Submarine II)
 		###ww1_submarine3 = 0 # submarine_1914 (Submarine III)
-
 		transport = 1
 		transport_mtg = 1 # Naval Transport
-
-		ww1_coastal_submarine1 = 1
-		ww1_coastal_submarine1_mtg = 1
-		ww1_coastal_submarine2 = 1
 	}
 }
-#if = {
-#	limit = { has_dlc = "Man the Guns" }
-#	set_technology = {
-#		ship_hull_submarine_1910 = 1
-#		ww1_ship_hull_light = 1
-#		gw_ship_hull_cruiser = 1
-#		pre_dreadnought_ship_hull_heavy = 1
-#		dreadnought_ship_hull_heavy = 1
-#		basic_torpedo = 1
-#		mtg_transport = 1
-#		basic_secondary_battery = 1
-#		basic_naval_mines = 1
-#		basic_battery = 1
-#	}
-#}
+
 if = {
 	limit = { has_dlc = "Together for Victory" }
-
 	add_to_tech_sharing_group = commonwealth_research
 }
 
 1910.1.1 = {
+	oob = "SAF_1910"
+	
 	set_cosmetic_tag = Transvaal
+	
 	#-------------------------------------------------------
 	#							NF
 	#-------------------------------------------------------
@@ -163,8 +151,9 @@ if = {
 
 1914.1.1 = {
 	oob = "SAF_1914"
+	
+	set_cosmetic_tag = SAFENG
 
-	set_cosmetic_tag =SAFENG
 	#-------------------------------------------------------
 	#							NF
 	#-------------------------------------------------------

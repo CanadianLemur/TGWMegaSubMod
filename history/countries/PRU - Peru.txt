@@ -145,14 +145,6 @@ set_convoys=5
 		ww1infantry_weapons1=1
 		marines=1
 		tech_mountaineers=1
-		
-		ww1_submarine0 = 1
-	ww1_submarine0_mtg = 1
-		ww1_submarine1 = 1
-	ww1_submarine1_mtg = 1
-		ww1_submarine2 = 1
-		ww1_coastal_submarine2 = 1
-		
 		transport = 1
 	transport_mtg = 1
 

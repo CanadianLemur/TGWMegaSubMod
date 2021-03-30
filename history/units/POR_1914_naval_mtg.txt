@@ -1,0 +1,26 @@
+units = {
+	fleet = {
+		name = "Armada Portuguesa Fleet"
+		naval_base = 11805 # Lisboa
+		task_force = {
+			name = "Armada Portuguesa"
+			location = 11805 # Lisboa
+			ship = { name = "Vasco Da Gama" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = POR version_name = "Vasco Da Gama Class" } } }
+			ship = { name = "Adamastor" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = POR version_name = "Adamastor Class" } } }
+			ship = { name = "São Gabriel" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = POR version_name = "São Gabriel Class" } } }
+			ship = { name = "Almirante Reis" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = POR version_name = "Dom Carlos I Class" } } }
+			ship = { name = "República" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = POR version_name = "República Class" } } }
+			ship = { name = "Tejo" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = POR version_name = "Tejo Class" } } }
+			ship = { name = "Douro" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = POR version_name = "Douro Class" } } }
+			ship = { name = "Espadarte" definition = submarine equipment = { MSM_ship_hull_uboat_1 { amount = 1 owner = POR version_name = "Espadarte Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = { equipment = { type = infantry_equipment_0 creator = "POR" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	
+	add_equipment_production = { equipment = { type = support_equipment_1 creator = "POR" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	add_equipment_production = { equipment = { type = light_field_gun_equipment_1 creator = "POR" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	add_equipment_production = { equipment = { type = motorized_equipment_0 creator = "POR" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	}

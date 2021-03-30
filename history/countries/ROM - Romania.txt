@@ -12,9 +12,9 @@ set_convoys = 10
 #-------------------------------------------------------
 #					POLITICS & ARMY
 #-------------------------------------------------------
-create_country_leader={ name = "Ferdinand I" desc=ROM_ferdinand_i_DESC picture="gfx/leaders/ROM_ferdinand_i.dds" expire="1935.1.1" ideology=despotism  traits={  } }
-create_country_leader={ name = "Christian Rakovsky" desc=ROM_christian_rakovsky_DESC picture="gfx/leaders/ROM_christian_rakovsky.dds" expire="1935.1.1" ideology=stalinism traits={  } }
-create_country_leader={ name = "Carol I" desc=ROM_carol_i_DESC picture="gfx/leaders/ROM_carol_i.dds" expire="1935.1.1" ideology=conservatism traits={  } }
+create_country_leader={ name = "Ferdinand I" desc=ROM_ferdinand_i_DESC picture="gfx/hoi4tgw_portraits/ROM/country_leaders/ROM_ferdinand_i.dds" expire="1935.1.1" ideology=despotism  traits={  } }
+create_country_leader={ name = "Christian Rakovsky" desc=ROM_christian_rakovsky_DESC picture="gfx/hoi4tgw_portraits/ROM/country_leaders/ROM_christian_rakovsky.dds" expire="1935.1.1" ideology=stalinism traits={  } }
+create_country_leader={ name = "Carol I" desc=ROM_carol_i_DESC picture="gfx/hoi4tgw_portraits/ROM/country_leaders/ROM_carol_i.dds" expire="1935.1.1" ideology=conservatism traits={  } }
 
 #create_corps_commander={  name = "Barozzi" id=75040 portrait_path="gfx/generals/ROM_barozzi.dds" traits={ old_guard  } skill=2 }
 #create_corps_commander={  name = "Berindei" id=75044 portrait_path="gfx/generals/ROM_berindei.dds" traits={ old_guard  } skill=1 }
@@ -158,25 +158,32 @@ if = {
 		ww1_coastal_submarine2 = 1
 	}
 }
-#if = {
-#	limit = { has_dlc = "Man the Guns" }
-#	set_technology = {
-#		ship_hull_submarine_1910 = 1
-#		ww1_ship_hull_light = 1
-#		gw_ship_hull_cruiser = 1
-#		pre_dreadnought_ship_hull_heavy = 1
-#		dreadnought_ship_hull_heavy = 1
-#		basic_torpedo = 1
-#		mtg_transport = 1
-#		basic_secondary_battery = 1
-#		basic_naval_mines = 1
-#		basic_battery = 1
-#	}
-#}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_battery = 1
+		early_ship_hull_submarine = 1
+		basic_torpedo = 1 
+		pre_dreadnoughts = 1
+		early_ship_hull_light = 1
+		mtg_early_transport = 1 
+		basic_secondary_battery = 1
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+	}
+}
 
 1910.1.1 = {
 	oob = "ROM_1910"
 
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "ROM_1910_naval_mtg"
+		else = {
+			set_naval_oob = "ROM_1910_naval_legacy"
+		}
+	}
+	
 	#-------------------------------------------------------
 	#							NF
 	#-------------------------------------------------------
@@ -234,11 +241,33 @@ if = {
 	add_ideas = {
 		limited_conscription
 	}	
+	
+	if = {
+		limit = { has_dlc = "Man the Guns"} }
+		create_equipment_variant = { name = "Elisabeta Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+		}
+	}
 }
 
 1914.1.1 = {
 	oob = "ROM_1914"
 
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "ROM_1914_naval_mtg"
+		else = {
+			set_naval_oob = "ROM_1914_naval_legacy"
+		}
+	}
 
 	#-------------------------------------------------------
 	#							NF
@@ -340,5 +369,20 @@ if = {
 
 	add_ideas = {
 		limited_conscription
+	}
+	
+	if = {
+		limit = { has_dlc = "Man the Guns"} }
+		create_equipment_variant = { name = "Elisabeta Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+		}
 	}
 }

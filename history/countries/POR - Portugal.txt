@@ -11,13 +11,13 @@ set_convoys = 100
 #-------------------------------------------------------
 #					POLITICS & ARMY
 #-------------------------------------------------------
-create_country_leader={ name = "Bernadino Machado" desc=POR_bernadino_machado_DESC picture="gfx/leaders/POR_bernadino_machado.dds" expire="1935.1.1" ideology=liberalism traits={  } }
-create_country_leader={ name = "Sidónio Pais" desc=POR_sidonio_pais_DESC picture="gfx/leaders/POR_sidonio_pais.dds" expire="1935.1.1" ideology=despotism  traits={  } }
-create_country_leader={ name = "Emanuel II" desc=POR_emanuel_ii_DESC picture="gfx/leaders/POR_emanuel_ii.dds" expire="1935.1.1" ideology=despotism  traits={  } }
-create_country_leader={ name = "João do Canto e Castro" desc=POR_joao_do_canto_e_castro_DESC picture="gfx/leaders/POR_joao_do_canto_e_castro.dds" expire="1935.1.1" ideology=despotism  traits={  } }
-create_country_leader={ name = "António José de Almeida" desc=POR_antonio_jose_de_almeida_DESC picture="gfx/leaders/POR_antonio_jose_de_almeida.dds" expire="1935.1.1" ideology=conservatism traits={  } }
-create_country_leader={ name = "Teófilo Braga" desc=POR_teofilo_braga_DESC picture="gfx/leaders/POR_teofilo_braga.dds" expire="1935.1.1" ideology=liberalism traits={  } }
-create_country_leader={ name = "Manuel II" desc=POR_manuel_ii_DESC picture="gfx/leaders/POR_manuel_ii.dds" expire="1935.1.1" ideology=despotism  traits={  } }
+create_country_leader={ name = "Bernadino Machado" desc=POR_bernadino_machado_DESC picture="gfx/hoi4tgw_portraits/POR/country_leaders/POR_bernadino_machado.dds" expire="1935.1.1" ideology=liberalism traits={  } }
+create_country_leader={ name = "Sidónio Pais" desc=POR_sidonio_pais_DESC picture="gfx/hoi4tgw_portraits/POR/country_leaders/POR_sidonio_pais.dds" expire="1935.1.1" ideology=despotism  traits={  } }
+create_country_leader={ name = "Emanuel II" desc=POR_emanuel_ii_DESC picture="gfx/hoi4tgw_portraits/POR/country_leaders/POR_emanuel_ii.dds" expire="1935.1.1" ideology=despotism  traits={  } }
+create_country_leader={ name = "João do Canto e Castro" desc=POR_joao_do_canto_e_castro_DESC picture="gfx/hoi4tgw_portraits/POR/country_leaders/POR_joao_do_canto_e_castro.dds" expire="1935.1.1" ideology=despotism  traits={  } }
+create_country_leader={ name = "António José de Almeida" desc=POR_antonio_jose_de_almeida_DESC picture="gfx/hoi4tgw_portraits/POR/country_leaders/POR_antonio_jose_de_almeida.dds" expire="1935.1.1" ideology=conservatism traits={  } }
+create_country_leader={ name = "Teófilo Braga" desc=POR_teofilo_braga_DESC picture="gfx/hoi4tgw_portraits/POR/country_leaders/POR_teofilo_braga.dds" expire="1935.1.1" ideology=liberalism traits={  } }
+create_country_leader={ name = "Manuel II" desc=POR_manuel_ii_DESC picture="gfx/hoi4tgw_portraits/POR/country_leaders/POR_manuel_ii.dds" expire="1935.1.1" ideology=despotism  traits={  } }
 create_corps_commander={  name = "Alves Roçadas" id=70002 portrait_path="gfx/generals/POR_alves_rocadas.dds" traits={   } skill=1 }
 create_corps_commander={  name = "de Sousa Rosa" id=70003 portrait_path="gfx/generals/POR_de_sousa_rosa.dds" traits={   } skill=1 }
 create_corps_commander={  name = "Pereira d'Eça" id=70004 portrait_path="gfx/generals/POR_pereira_d_eca.dds" traits={   } skill=1 }
@@ -45,16 +45,16 @@ create_navy_leader={  name = "de Maia" id=70017 portrait_path="gfx/admiral/POR_d
 create_navy_leader={  name = "de Azevedo Coutinho P." id=70018 portrait_path="gfx/admiral/POR_de_azevedo_coutinho_p.dds" traits={   } skill=2 }
 create_navy_leader={  name = "Bastro" id=70022 portrait_path="gfx/admiral/POR_bastro.dds" traits={   } skill=2 }
 create_navy_leader={  name = "de Azevedo Coutinho V." id=70025 portrait_path="gfx/admiral/POR_de_azevedo_coutinho_v.dds" traits={   } skill=3 }
-
 if = {
-	limit = { not = {has_dlc = "Man the Guns"} }
+	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
+		# Navy
 		ww1_battleship0 = 1
 		ww1_battleship0_mtg = 1
-	
+		
 		ww1_battleship1 = 1
 		ww1_battleship1_mtg = 1
-	
+		
 		###ww1_battleship2 = 0 #  ww1_battleship_1906 (Dreadnought I)
 		###ww1_battleship3 = 0 #  ww1_battleship_1910 (Dreadnought II)
 		###ww1_battleship4 = 0 #  ww1_battleship_1914 (Dreadnought III)
@@ -75,7 +75,7 @@ if = {
 		###ww1_light_cruiser2 = 0 # light_cruiser_1906 (Light Cruiser I)
 		###ww1_light_cruiser3 = 0 # light_cruiser_1910 (Light Cruiser II)
 		###ww1_light_cruiser4 = 0 # light_cruiser_1914 (Light Cruiser III)
-	
+
 		ww1_destroyer0 = 1
 		ww1_destroyer0_mtg = 1 # destroyer_1890 (Torpedo Boat I)
 		ww1_destroyer1 = 1
@@ -98,29 +98,26 @@ if = {
 		transport = 1
 		transport_mtg = 1 # Naval Transport
 
-		ww1_coastal_submarine1 = 1
-		ww1_coastal_submarine1_mtg = 1
-		ww1_coastal_submarine2 = 1
+			# Naval Modules Techs
+			heavy_navalmodule_1890 = 1
+		heavy_navalmodule_1890_mtg = 1
+			medium_navalmodule_1890 = 1
+		medium_navalmodule_1890_mtg = 1
+			light_navalmodule_1890 = 1
+		light_navalmodule_1890_mtg = 1
+		
 	}
 }
-#if = {
-#	limit = { has_dlc = "Man the Guns" }
-#	set_technology = {
-#		ship_hull_submarine_1910 = 1
-#		ww1_ship_hull_light = 1
-#		gw_ship_hull_cruiser = 1
-#		pre_dreadnought_ship_hull_heavy = 1
-#		dreadnought_ship_hull_heavy = 1
-#		basic_torpedo = 1
-#		mtg_transport = 1
-#		basic_secondary_battery = 1
-#		basic_naval_mines = 1
-#		basic_battery = 1
-#	}
-#}
-
 1910.1.1 = {
 	oob = "POR_1910"
+
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "POR_1910_naval_mtg"
+		else = {
+			set_naval_oob = "POR_1910_naval_legacy"
+		}
+	}
 
 	#-------------------------------------------------------
 	#							NF
@@ -179,32 +176,107 @@ if = {
 		neutrality_idea
 		limited_conscription
 	}	
-	create_equipment_variant={ name="São Gabriel Class" type=ship_hull_gwcruiser parent_version = 2 obsolete=yes modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_gw
-			mid_1_custom_slot = ship_torpedo_1
-			mid_2_custom_slot = ship_torpedo_1
-			rear_1_custom_slot = ship_torpedo_1
-		} }
-create_equipment_variant={ name="Dom Carlos I Class" type=ship_hull_gwcruiser parent_version = 2 obsolete=yes modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_gw
-			mid_1_custom_slot = ship_torpedo_1
-			mid_2_custom_slot = ship_torpedo_1
-			rear_1_custom_slot = ship_torpedo_1
-		} }
-
+	
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		create_equipment_variant={ name="São Gabriel Class" type=light_cruiser_1890 parent_version = 0 obsolete=yes upgrades={ ship_gun_upgrade=1  ship_engine_upgrade=2 ship_reliability_upgrade=3 ship_anti_air_upgrade=0          } }
+		create_equipment_variant={ name="Dom Carlos I Class" type=light_cruiser_1890 parent_version = 1 obsolete=no upgrades={ ship_gun_upgrade=5  ship_engine_upgrade=5 ship_reliability_upgrade=5 ship_anti_air_upgrade=0          } }
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			basic_battery = 1
+			early_ship_hull_submarine = 1
+			basic_torpedo = 1 
+			pre_dreadnoughts = 1
+			early_ship_hull_light = 1
+			mtg_early_transport = 1 
+			basic_secondary_battery = 1
+			basic_naval_mines = 1
+			submarine_mine_laying = 1
+		}
+		create_equipment_variant = { name = "Vasco Da Gama Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_heavy_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+				fixed_ship_secondaries_slot = empty
+				fixed_ship_armor_slot = MSM_ship_armor_bb_1
+				front_1_custom_slot = empty
+				mid_1_custom_slot = empty
+				rear_1_custom_slot = empty
+			}
+		}
+		create_equipment_variant = { name = "Adamastor Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+		}
+		create_equipment_variant = { name = "São Gabriel Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+		}
+		create_equipment_variant = { name = "Dom Carlos I Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+		}
+		create_equipment_variant = { name = "República Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+		}
+		create_equipment_variant = { name = "Tejo Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			}
+		}
+	}
 }
 
 1914.1.1 = {
 	oob = "POR_1914"
 
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "POR_1914_naval_mtg"
+		else = {
+			set_naval_oob = "POR_1914_naval_legacy"
+		}
+	}
 
 	#-------------------------------------------------------
 	#							NF
@@ -269,12 +341,6 @@ create_equipment_variant={ name="Dom Carlos I Class" type=ship_hull_gwcruiser pa
 		# Air
 		ww1_fighter1 = 1
 
-		ww1_coastal_submarine1 = 1
-	ww1_coastal_submarine1_mtg = 1
-		ww1_coastal_submarine2 = 1
-		ww1_destroyer3 = 1
-	ww1_destroyer3_mtg = 1
-
 		# Engineering
 		electronic_mechanical_engineering = 1
 
@@ -301,6 +367,116 @@ create_equipment_variant={ name="Dom Carlos I Class" type=ship_hull_gwcruiser pa
 	}
 
 	set_global_flag = kis_portugal_revolution
+	
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			basic_battery = 1
+			early_ship_hull_submarine = 1
+			basic_torpedo = 1 
+			pre_dreadnoughts = 1
+			early_ship_hull_light = 1
+			mtg_early_transport = 1 
+			basic_secondary_battery = 1
+			basic_naval_mines = 1
+			submarine_mine_laying = 1
+			MSM_early_ship_hull_light = 1
+			early_ship_hull_heavy = 1
+			MSM_GW_ship_torpedo_launcher = 1
+			MSM_basic_ship_hull_uboat = 1
+			MSM_improved_battery = 1
+			MSM_basic_early_shell = 1
+			MSM_secondary_battery_1 = 1
+			MSM_ship_hull_dreadnought_1 = 1
+		}
+		create_equipment_variant = { name = "Vasco Da Gama Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_heavy_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+				fixed_ship_secondaries_slot = empty
+				fixed_ship_armor_slot = MSM_ship_armor_bb_1
+				front_1_custom_slot = empty
+				mid_1_custom_slot = empty
+				rear_1_custom_slot = empty
+			}
+		}
+		create_equipment_variant = { name = "Adamastor Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+		}
+		create_equipment_variant = { name = "São Gabriel Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+		}
+		create_equipment_variant = { name = "Dom Carlos I Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+		}
+		create_equipment_variant = { name = "República Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			} 
+		}
+		create_equipment_variant = { name = "Tejo Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			}
+		}
+		create_equipment_variant = { name = "Douro Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_battery_slot = MSM_ship_light_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = MSM_light_ship_engine_1
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_1
+				rear_1_custom_slot = MSM_ship_light_battery_1
+			}
+		}
+		create_equipment_variant = { name = "Espadarte Class" type = MSM_ship_hull_uboat_1 parent_version = 0 obsolete = no 
+			modules = {
+				fixed_ship_torpedo_slot = MSM_ship_torpedo_sub_1
+				fixed_ship_engine_slot = MSM_sub_ship_engine_1
+				rear_1_custom_slot = empty
+			}
+		}
+	}
 }
 
 1919.1.1 = {
@@ -324,4 +500,26 @@ create_equipment_variant={ name="Dom Carlos I Class" type=ship_hull_gwcruiser pa
 		democratic = 75
 		communism = 5
 	}	
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			basic_battery = 1
+			early_ship_hull_submarine = 1
+			basic_torpedo = 1 
+			pre_dreadnoughts = 1
+			early_ship_hull_light = 1
+			mtg_early_transport = 1 
+			basic_secondary_battery = 1
+			basic_naval_mines = 1
+			submarine_mine_laying = 1
+			MSM_early_ship_hull_light = 1
+			early_ship_hull_heavy = 1
+			MSM_GW_ship_torpedo_launcher = 1
+			MSM_basic_ship_hull_uboat = 1
+			MSM_improved_battery = 1
+			MSM_basic_early_shell = 1
+			MSM_secondary_battery_1 = 1
+			MSM_ship_hull_dreadnought_1 = 1
+		}
+	}
 }
