@@ -186,7 +186,6 @@ if = {
 		# Engineering
 		electronic_mechanical_engineering = 1
 
-		# Industry
 	}
 
 	set_politics = {
@@ -311,13 +310,13 @@ if = {
 
 	if = {
 		limit = { not = { has_dlc = "Man the Guns" } }
-		create_equipment_variant={ name="Fu Po Class" type=light_cruiser_1890 parent_version = 0 obsolete=yes upgrades={ ship_gun_upgrade=0  ship_engine_upgrade=0 ship_reliability_upgrade=0 ship_anti_air_upgrade=0          } }
-		create_equipment_variant={ name="Hai Ching Class" type=light_cruiser_1890 parent_version = 1 obsolete=yes upgrades={ ship_gun_upgrade=0  ship_engine_upgrade=0 ship_reliability_upgrade=0 ship_anti_air_upgrade=0          } }
-		create_equipment_variant={ name="Nan Tan Class" type=light_cruiser_1890 parent_version = 2 obsolete=yes upgrades={ ship_gun_upgrade=5  ship_engine_upgrade=0 ship_reliability_upgrade=5 ship_anti_air_upgrade=0          } }
-		create_equipment_variant={ name="Pao Min Class" type=light_cruiser_1890 parent_version = 3 obsolete=yes upgrades={ ship_gun_upgrade=4  ship_engine_upgrade=0 ship_reliability_upgrade=4 ship_anti_air_upgrade=0          } }
-		create_equipment_variant={ name="Tung Chi Class" type=light_cruiser_1900 parent_version = 0 obsolete=yes upgrades={ ship_gun_upgrade=0  ship_engine_upgrade=0 ship_reliability_upgrade=0 ship_anti_air_upgrade=0          } }
-		create_equipment_variant={ name="Hai Yung Class" type=light_cruiser_1900 parent_version = 1 obsolete=yes upgrades={ ship_gun_upgrade=0  ship_engine_upgrade=0 ship_reliability_upgrade=5 ship_anti_air_upgrade=0          } }
-		create_equipment_variant={ name="Hai Tien Class" type=light_cruiser_1900 parent_version = 2 obsolete=no upgrades={ ship_gun_upgrade=5  ship_engine_upgrade=5 ship_reliability_upgrade=5 ship_anti_air_upgrade=0          } }
+		create_equipment_variant={ name="Fu Po Class" type=light_cruiser_1890 parent_version = 0 obsolete=yes upgrades={ ship_gun_upgrade=0  ship_engine_upgrade=0 ship_reliability_upgrade=0 ship_anti_air_upgrade=0 } }
+		create_equipment_variant={ name="Hai Ching Class" type=light_cruiser_1890 parent_version = 1 obsolete=yes upgrades={ ship_gun_upgrade=0  ship_engine_upgrade=0 ship_reliability_upgrade=0 ship_anti_air_upgrade=0 } }
+		create_equipment_variant={ name="Nan Tan Class" type=light_cruiser_1890 parent_version = 2 obsolete=yes upgrades={ ship_gun_upgrade=5  ship_engine_upgrade=0 ship_reliability_upgrade=5 ship_anti_air_upgrade=0 } }
+		create_equipment_variant={ name="Pao Min Class" type=light_cruiser_1890 parent_version = 3 obsolete=yes upgrades={ ship_gun_upgrade=4  ship_engine_upgrade=0 ship_reliability_upgrade=4 ship_anti_air_upgrade=0 } }
+		create_equipment_variant={ name="Tung Chi Class" type=light_cruiser_1900 parent_version = 0 obsolete=yes upgrades={ ship_gun_upgrade=0  ship_engine_upgrade=0 ship_reliability_upgrade=0 ship_anti_air_upgrade=0 } }
+		create_equipment_variant={ name="Hai Yung Class" type=light_cruiser_1900 parent_version = 1 obsolete=yes upgrades={ ship_gun_upgrade=0  ship_engine_upgrade=0 ship_reliability_upgrade=5 ship_anti_air_upgrade=0 } }
+		create_equipment_variant={ name="Hai Tien Class" type=light_cruiser_1900 parent_version = 2 obsolete=no upgrades={ ship_gun_upgrade=5  ship_engine_upgrade=5 ship_reliability_upgrade=5 ship_anti_air_upgrade=0 } }
 	}
 }
 

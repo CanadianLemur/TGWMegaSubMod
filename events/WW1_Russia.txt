@@ -679,7 +679,7 @@ country_event = {
 					}
 				}
 				SOV = {release = SIB}
-`				SIB = {
+				SIB = {
 					transfer_state = 408 #Vladivostok
 					transfer_state = 409 #Khabarovsk
 					transfer_state = 657 #Birobidzhan

@@ -7,10 +7,10 @@ Japanese_CP_wargoals = {
 			}
 	}
 	abort = {
-	OR = {
-	has_global_flag = kis_treaty_of_versailles
-	has_global_flag = kis_second_treaty_frankfort
-	}
+		OR = {
+			has_global_flag = kis_treaty_of_versailles
+			has_global_flag = kis_second_treaty_frankfort
+		}
 	}
 	ai_strategy = {
 		type = research_tech
@@ -21,7 +21,7 @@ Japanese_CP_wargoals = {
 		type = build_army
 		id = marines
 		value = 100
-		}
+	}
 	ai_strategy = {
 		type = prepare_for_war	### Prepare for war with entente
 		id = FRA

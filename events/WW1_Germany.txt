@@ -225,17 +225,17 @@ country_event = {
 	option = {
 		name = ww1_germany.22.a
 		ai_chance = { factor = 50 }
-		SWE={ add_opinion_modifier={ target=GER modifier=ger_tur_diplomacy_focus } 
+		SWE={ add_opinion_modifier={ target=GER modifier=ger_tur_diplomacy_focus } }
 		add_ai_strategy = {
-		type = alliance
-		id = GER
-		value = 200
+			type = alliance
+			id = GER
+			value = 200
 		} 
-		add_ideas = {jingoism} 
+		add_ideas = { jingoism } 
 		set_global_flag = swedenincp
-		If = {
-		limit = {GER = {is_faction_leader = yes}}
-		GER={ add_to_faction=SWE }	
+		if = {
+			limit = { GER = { is_faction_leader = yes } }
+			GER = { add_to_faction=SWE }	
 		}
 		111 = { add_claim_by = SWE }
 		145 = { add_claim_by = SWE }
@@ -250,7 +250,6 @@ country_event = {
 		name = ww1_germany.22.b
 		ai_chance = { factor = 0 }
 	}
-}
 }
 #____________________________________________________________
 

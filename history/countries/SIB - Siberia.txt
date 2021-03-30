@@ -554,7 +554,9 @@ if = {
 			fixed_ship_engine_slot = MSM_sub_ship_engine_1
 			rear_1_custom_slot = empty
 		} }
-	}else = {
+	}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
 	create_equipment_variant={ name="Admiral Chichagov Class" type=battleship_1890 parent_version = 0 obsolete=yes upgrades={ ship_gun_upgrade=0 ship_armor_upgrade=0 ship_engine_upgrade=0 ship_reliability_upgrade=0           } }
 	create_equipment_variant={ name="Charodeika Class" type=battleship_1890 parent_version = 1 obsolete=yes upgrades={ ship_gun_upgrade=0 ship_armor_upgrade=0 ship_engine_upgrade=0 ship_reliability_upgrade=0           } }
 	create_equipment_variant={ name="Petr Veliki Class" type=battleship_1890 parent_version = 2 obsolete=yes upgrades={ ship_gun_upgrade=4 ship_armor_upgrade=3 ship_engine_upgrade=0 ship_reliability_upgrade=5           } }
@@ -758,10 +760,13 @@ if = {
 		partial_economic_mobilisation
 		limited_exports 
 	}
-	create_equipment_variant={ name="Leitenant Ilin Class" type=destroyer_1910 parent_version = 0 obsolete=no upgrades={     ship_anti_air_upgrade=5    ship_ASW_upgrade=0 destroyer_engine_upgrade=1    ship_torpedo_upgrade=5 } }
-	create_equipment_variant={ name="Morzh Class" type=submarine_1906 parent_version = 0 obsolete=yes upgrades={    ship_reliability_upgrade=0       sub_torpedo_upgrade=4 sub_stealth_upgrade=0 sub_engine_upgrade=0  } }
-	create_equipment_variant={ name="Narval Class" type=submarine_1906 parent_version = 1 obsolete=yes upgrades={    ship_reliability_upgrade=5       sub_torpedo_upgrade=5 sub_stealth_upgrade=0 sub_engine_upgrade=0  } }
-	create_equipment_variant={ name="Bars Class" type=submarine_1906 parent_version = 2 obsolete=no upgrades={    ship_reliability_upgrade=5       sub_torpedo_upgrade=5 sub_stealth_upgrade=5 sub_engine_upgrade=5  } }	
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		create_equipment_variant={ name="Leitenant Ilin Class" type=destroyer_1910 parent_version = 0 obsolete=no upgrades={     ship_anti_air_upgrade=5    ship_ASW_upgrade=0 destroyer_engine_upgrade=1    ship_torpedo_upgrade=5 } }
+		create_equipment_variant={ name="Morzh Class" type=submarine_1906 parent_version = 0 obsolete=yes upgrades={    ship_reliability_upgrade=0       sub_torpedo_upgrade=4 sub_stealth_upgrade=0 sub_engine_upgrade=0  } }
+		create_equipment_variant={ name="Narval Class" type=submarine_1906 parent_version = 1 obsolete=yes upgrades={    ship_reliability_upgrade=5       sub_torpedo_upgrade=5 sub_stealth_upgrade=0 sub_engine_upgrade=0  } }
+		create_equipment_variant={ name="Bars Class" type=submarine_1906 parent_version = 2 obsolete=no upgrades={    ship_reliability_upgrade=5       sub_torpedo_upgrade=5 sub_stealth_upgrade=5 sub_engine_upgrade=5  } }	
+	}
 }
 
 1919.1.1 = {
@@ -901,9 +906,11 @@ if = {
 		limited_exports
 	}
 	
-
-	create_equipment_variant={ name="Leitenant Ilin Class" type=destroyer_1910 parent_version = 0 obsolete=no upgrades={     ship_anti_air_upgrade=5    ship_ASW_upgrade=0 destroyer_engine_upgrade=1    ship_torpedo_upgrade=5 } }
-	create_equipment_variant={ name="Morzh Class" type=submarine_1906 parent_version = 0 obsolete=yes upgrades={    ship_reliability_upgrade=0       sub_torpedo_upgrade=4 sub_stealth_upgrade=0 sub_engine_upgrade=0  } }
-	create_equipment_variant={ name="Narval Class" type=submarine_1906 parent_version = 1 obsolete=yes upgrades={    ship_reliability_upgrade=5       sub_torpedo_upgrade=5 sub_stealth_upgrade=0 sub_engine_upgrade=0  } }
-	create_equipment_variant={ name="Bars Class" type=submarine_1906 parent_version = 2 obsolete=no upgrades={    ship_reliability_upgrade=5       sub_torpedo_upgrade=5 sub_stealth_upgrade=5 sub_engine_upgrade=5  } }	
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		create_equipment_variant={ name="Leitenant Ilin Class" type=destroyer_1910 parent_version = 0 obsolete=no upgrades={     ship_anti_air_upgrade=5    ship_ASW_upgrade=0 destroyer_engine_upgrade=1    ship_torpedo_upgrade=5 } }
+		create_equipment_variant={ name="Morzh Class" type=submarine_1906 parent_version = 0 obsolete=yes upgrades={    ship_reliability_upgrade=0       sub_torpedo_upgrade=4 sub_stealth_upgrade=0 sub_engine_upgrade=0  } }
+		create_equipment_variant={ name="Narval Class" type=submarine_1906 parent_version = 1 obsolete=yes upgrades={    ship_reliability_upgrade=5       sub_torpedo_upgrade=5 sub_stealth_upgrade=0 sub_engine_upgrade=0  } }
+		create_equipment_variant={ name="Bars Class" type=submarine_1906 parent_version = 2 obsolete=no upgrades={    ship_reliability_upgrade=5       sub_torpedo_upgrade=5 sub_stealth_upgrade=5 sub_engine_upgrade=5  } }	
+	}
 }

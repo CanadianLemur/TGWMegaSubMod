@@ -20,28 +20,27 @@ country_event = {
 			add_to_faction = ROM
 			country_event = { days = 1 id = MSMSecondBrothersWar.2 }
 		}
-		hidden_effect = {set_global_flag = MSM_transylvania_for_romania
-		add_ai_strategy = {
-		type = alliance
-		id = GER
-		value = 200
-		}
-		add_ideas = {jingoism}
-		GER = {
-		add_ai_strategy = {
-		type = alliance
-		id = ROM
-		value = 200
-		}
-		
-		}
+		hidden_effect = {
+			set_global_flag = MSM_transylvania_for_romania
+			add_ai_strategy = {
+				type = alliance
+				id = GER
+				value = 200
+			}
+			add_ideas = { jingoism }
+			GER = {
+				add_ai_strategy = {
+					type = alliance
+					id = ROM
+					value = 200
+				}
+			}
 		}
 	}
 	option = {
 		name = MSMSecondBrothersWar.1.b
 		ai_chance = { factor = 0 }
-			country_event = { days = 1 id = MSMSecondBrothersWar.3 }
-		}
+		country_event = { days = 1 id = MSMSecondBrothersWar.3 }
 	}
 }
 country_event = {  #### Romania Offer accepted ####
@@ -84,20 +83,19 @@ country_event = {
 		name = MSMSecondBrothersWar.4.a
 		ai_chance = { factor = 100 }
 		country_event = { days = 1 id = MSMSecondBrothersWar.5 }
-		hidden_effect = {set_global_flag = MSM_galicia_for_russia
+		hidden_effect = {
+			set_global_flag = MSM_galicia_for_russia
 		}
 		diplomatic_relation = {
-		country = GER
-		relation = non_aggression_pact
-		active = yes
+			country = GER
+			relation = non_aggression_pact
+			active = yes
 		}		
-		
-		}
+	}
 	option = {
 		name = MSMSecondBrothersWar.4.b
 		ai_chance = { factor = 0 }
-			country_event = { days = 1 id = MSMSecondBrothersWar.6 }
-		}
+		country_event = { days = 1 id = MSMSecondBrothersWar.6 }
 	}
 }
 country_event = {  #### Russia Offer accepted ####

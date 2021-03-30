@@ -178,11 +178,6 @@ if = {
 	}	
 	
 	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		create_equipment_variant={ name="São Gabriel Class" type=light_cruiser_1890 parent_version = 0 obsolete=yes upgrades={ ship_gun_upgrade=1  ship_engine_upgrade=2 ship_reliability_upgrade=3 ship_anti_air_upgrade=0          } }
-		create_equipment_variant={ name="Dom Carlos I Class" type=light_cruiser_1890 parent_version = 1 obsolete=no upgrades={ ship_gun_upgrade=5  ship_engine_upgrade=5 ship_reliability_upgrade=5 ship_anti_air_upgrade=0          } }
-	}
-	if = {
 		limit = { has_dlc = "Man the Guns" }
 		set_technology = {
 			basic_battery = 1
@@ -264,6 +259,11 @@ if = {
 				rear_1_custom_slot = MSM_ship_light_battery_1
 			}
 		}
+	}
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		create_equipment_variant={ name="São Gabriel Class" type=light_cruiser_1890 parent_version = 0 obsolete=yes upgrades={ ship_gun_upgrade=1  ship_engine_upgrade=2 ship_reliability_upgrade=3 ship_anti_air_upgrade=0          } }
+		create_equipment_variant={ name="Dom Carlos I Class" type=light_cruiser_1890 parent_version = 1 obsolete=no upgrades={ ship_gun_upgrade=5  ship_engine_upgrade=5 ship_reliability_upgrade=5 ship_anti_air_upgrade=0          } }
 	}
 }
 
@@ -389,6 +389,7 @@ if = {
 			MSM_secondary_battery_1 = 1
 			MSM_ship_hull_dreadnought_1 = 1
 		}
+		
 		create_equipment_variant = { name = "Vasco Da Gama Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
 			modules = {
 				fixed_ship_battery_slot = MSM_ship_heavy_battery_1
