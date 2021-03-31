@@ -2762,7 +2762,7 @@ focus_tree = {
 		prerequisite = { focus=SWE_ww1_aviation_effort_2 }
 		available = { date > 1911.1.1 }
 		icon = GFX_hoi4tgw_zeppelin
-		completion_reward = { add_tech_bonus={ name=fighter_bonus bonus=0.15 uses=1 technology=SWE_ww1_zeppelin1 technology=SWE_ww1_zeppelin2 } }
+		completion_reward = { add_tech_bonus={ name=fighter_bonus bonus=0.15 uses=1 technology=ww1_zeppelin1 technology=ww1_zeppelin2 } }
 		cost = 10
 		x = 24
 		y = 2
@@ -2774,7 +2774,7 @@ focus_tree = {
 		prerequisite = { focus=SWE_ww1_aviation_effort_2 }
 		available = { date > 1911.1.1 }
 		icon = GFX_goal_generic_air_fighter
-		completion_reward = { add_tech_bonus={ name=fighter_bonus bonus=0.15 uses=1 technology=SWE_ww1_fighter1 technology=SWE_ww1_fighter1b technology=SWE_ww1_fighter2 technology=SWE_ww1_fighter2b } }
+		completion_reward = { add_tech_bonus={ name=fighter_bonus bonus=0.15 uses=1 technology=ww1_fighter1 technology=ww1_fighter1b technology=ww1_fighter2 technology=ww1_fighter2b } }
 		cost = 10
 		x = 20
 		y = 2
@@ -2910,7 +2910,7 @@ focus_tree = {
 		prerequisite = { focus=SWE_ww1_aviation_effort_5 }
 		available = { date > 1917.1.1 }
 		icon = GFX_goal_generic_air_fighter2
-		completion_reward = { air_experience=20 add_tech_bonus={ name=SWE_ww1_air_innovation_bonus bonus=0.2 uses=1 technology=SWE_ww1_fighter3 technology=SWE_ww1_fighter4 technology=early_fighter } }
+		completion_reward = { air_experience=20 add_tech_bonus={ name=SWE_ww1_air_innovation_bonus bonus=0.2 uses=1 technology=ww1_fighter3 technology=ww1_fighter4 technology=early_fighter } }
 		ai_will_do = { factor=1 }
 		cost = 10
 		x = 21
@@ -3527,7 +3527,7 @@ focus_tree = {
 		prerequisite = { focus=SWE_ww1_newnavalcanons_1 }
 		available = { date > 1911.1.1 }
 		icon = GFX_goal_generic_navy_battleship
-		completion_reward = { add_tech_bonus={ name=cr_bonus bonus=0.15 uses=1 technology=SWE_ww1_battleship0 technology=SWE_ww1_battleship1 technology=SWE_ww1_battleship2 } }
+		completion_reward = { add_tech_bonus={ name=cr_bonus bonus=0.15 uses=1 technology=ww1_battleship0 technology=ww1_battleship1 technology=ww1_battleship2 } }
 		ai_will_do = { factor=10 modifier={ factor=0 all_owned_state={ OR={ is_coastal=no dockyard < 1 } } } }
 		cost = 10
 		x = 35
@@ -3583,13 +3583,13 @@ focus_tree = {
 				limit = { 
 					has_dlc = "Man the Guns"
 				}
-				add_tech_bonus={ name=ss_bonus bonus=0.2 uses=1 technology=SWE_ww1_submarine1_mtg technology=SWE_ww1_submarine2_mtg }
+				add_tech_bonus={ name=ss_bonus bonus=0.2 uses=1 technology=early_ship_hull_submarine technology=MSM_basic_ship_hull_uboat }
 			}
 			if = { 
 				limit = { 
 					not = { has_dlc = "Man the Guns" }
 				}
-				add_tech_bonus={ name=ss_bonus bonus=0.2 uses=1 technology=SWE_ww1_submarine1 technology=SWE_ww1_submarine2 }
+				add_tech_bonus={ name=ss_bonus bonus=0.2 uses=1 technology=ww1_submarine1 technology=ww1_submarine2 }
 			}
 		}
 		ai_will_do = { factor=10 modifier={ factor=0 all_owned_state={ OR={ is_coastal=no dockyard < 1 } } } }
@@ -3608,13 +3608,13 @@ focus_tree = {
 				limit = { 
 					has_dlc = "Man the Guns"
 				}
-				add_tech_bonus={ name=cr_bonus bonus=0.2 uses=1 technology=SWE_ww1_light_cruiser0_mtg technology=SWE_ww1_light_cruiser1_mtg technology=SWE_ww1_light_cruiser2_mtg }
+				add_tech_bonus={ name=cr_bonus bonus=0.2 uses=1 technology=early_ship_hull_light technology=MSM_early_ship_hull_light technology=MSM_basic_ship_hull_light }
 			}
 			if = { 
 				limit = { 
 					not = { has_dlc = "Man the Guns" }
 				}
-				add_tech_bonus={ name=cr_bonus bonus=0.2 uses=1 technology=SWE_ww1_light_cruiser0 technology=SWE_ww1_light_cruiser1 technology=SWE_ww1_light_cruiser2 }
+				add_tech_bonus={ name=cr_bonus bonus=0.2 uses=1 technology=ww1_light_cruiser0 technology=ww1_light_cruiser1 technology=ww1_light_cruiser2 }
 			}
 		}
 		ai_will_do = { factor=10 modifier={ factor=0 all_owned_state={ OR={ is_coastal=no dockyard < 1 } } } }
@@ -3633,13 +3633,13 @@ focus_tree = {
 				limit = { 
 					has_dlc = "Man the Guns"
 				}
-				add_tech_bonus={ name=dd_bonus bonus=0.2 uses=1 technology=SWE_ww1_destroyer0_mtg technology=SWE_ww1_destroyer1_mtg technology=SWE_ww1_destroyer2_mtg }
+				add_tech_bonus={ name=dd_bonus bonus=0.2 uses=1 technology=early_ship_hull_light technology=MSM_early_ship_hull_light technology=MSM_basic_ship_hull_light }
 			}
 			if = { 
 				limit = { 
 					not = { has_dlc = "Man the Guns" }
 				}
-				add_tech_bonus={ name=dd_bonus bonus=0.2 uses=1 technology=SWE_ww1_destroyer0 technology=SWE_ww1_destroyer1 technology=SWE_ww1_destroyer2 }
+				add_tech_bonus={ name=dd_bonus bonus=0.2 uses=1 technology=ww1_destroyer0 technology=ww1_destroyer1 technology=ww1_destroyer2 }
 			}
 		}
 		ai_will_do = { factor=10 modifier={ factor=0 all_owned_state={ OR={ is_coastal=no dockyard < 1 } } } }
@@ -3658,13 +3658,13 @@ focus_tree = {
 				limit = { 
 					has_dlc = "Man the Guns"
 				}
-				 navy_experience=25 add_tech_bonus={ name=capital_ships_bonus bonus=0.2 uses=1 technology=SWE_ww1_battlecruiser0_mtg technology=SWE_ww1_battlecruiser1_mtg technology=SWE_ww1_battlecruiser2_mtg technology=early_battleship_mtg technology=seaplane_carrier_mtg }
+				 navy_experience=25 add_tech_bonus={ name=capital_ships_bonus bonus=0.2 uses=1 technology=early_ship_hull_heavy technology=MSM_ship_hull_dreadnought_1 technology=MSM_ship_hull_dreadnought_2 technology=early_battleship_mtg technology=seaplane_carrier_mtg }
 			}
 			if = { 
 				limit = { 
 					not = { has_dlc = "Man the Guns" }
 				}
-				 navy_experience=25 add_tech_bonus={ name=capital_ships_bonus bonus=0.2 uses=1 technology=SWE_ww1_battlecruiser0 technology=SWE_ww1_battlecruiser1 technology=SWE_ww1_battlecruiser2 technology=early_battleship technology=seaplane_carrier }
+				 navy_experience=25 add_tech_bonus={ name=capital_ships_bonus bonus=0.2 uses=1 technology=ww1_battlecruiser0 technology=ww1_battlecruiser1 technology=ww1_battlecruiser2 technology=early_battleship technology=seaplane_carrier }
 			}
 		}
 		ai_will_do = { factor=10 modifier={ factor=0 all_owned_state={ OR={ is_coastal=no dockyard < 1 } } } }

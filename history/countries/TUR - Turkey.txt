@@ -160,41 +160,25 @@ if = {
 	set_technology = {
 		# Navy
 		ww1_battleship0 = 1
-		ww1_battleship0_mtg = 1 #  ww1_battleship_1890 (Pre-Dreadnought I)
 
 		ww1_heavy_cruiser0 = 1
-		ww1_heavy_cruiser0_mtg = 1 # heavy_cruiser_1890 (Armored Cruiser I)
 		ww1_heavy_cruiser1 = 1
-		ww1_heavy_cruiser1_mtg = 1 # heavy_cruiser_1900 (Armored Cruiser II)
 
 		ww1_light_cruiser0 = 1
-		ww1_light_cruiser0_mtg = 1 # light_cruiser_1890 (Protected Cruiser I)
 		ww1_light_cruiser1 = 1
-		ww1_light_cruiser1_mtg = 1 # light_cruiser_1900 (Protected Cruiser II)
 
 		ww1_destroyer0 = 1
-		ww1_destroyer0_mtg = 1 # destroyer_1890 (Torpedo Boat I)
 		ww1_destroyer1 = 1
-		ww1_destroyer1_mtg = 1 # destroyer_1900 (Destroyer I)
 		ww1_destroyer2 = 1
-		ww1_destroyer2_mtg = 1 # destroyer_1906 (Destroyer II)
-
-		ww1_moduleMTG_mines = 1
-		ww1_moduleMTG_mines_mtg = 1 # Mines
 
 		ww1_submarine0 = 1
-		ww1_submarine0_mtg = 1 # coastal_submarine_1900 (Coastal Submarine 1900, first available Submarine)
 
 		transport = 1
-		transport_mtg = 1 # Naval Transport
 
 			# Naval Modules Techs
 			heavy_navalmodule_1890 = 1
-		heavy_navalmodule_1890_mtg = 1
 			medium_navalmodule_1890 = 1
-		medium_navalmodule_1890_mtg = 1
 			light_navalmodule_1890 = 1
-		light_navalmodule_1890_mtg = 1
 
 	}
 }
