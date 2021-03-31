@@ -17,7 +17,7 @@ focus_tree = {
 	}	
 
 	#----------------------------------------------------------------------- 
-	# Bloc 1 - Reinforce Kaiser
+	# Block 1 - Reinforce Kaiser
 	#-----------------------------------------------------------------------
 	focus = {
 		id = GER_ww1_support_kaiser
@@ -275,7 +275,7 @@ focus_tree = {
 	}
 
 	#----------------------------------------------------------------------- 
-	# Bloc 2 - Contest Kaiser
+	# Block 2 - Contest Kaiser
 	#-----------------------------------------------------------------------
 	
 	#---------- Communist 
@@ -583,7 +583,7 @@ focus_tree = {
 
 
 	#----------------------------------------------------------------------- 
-	# Bloc 1
+	# Block 1
 	#-----------------------------------------------------------------------
 
 	focus = {
@@ -1019,7 +1019,7 @@ focus_tree = {
 
 
 	#----------------------------------------------------------------------- 
-	# Bloc 2
+	# Block 2
 	#-----------------------------------------------------------------------
 	focus = {
 		id = GER_ww1_assert_position_west
@@ -1138,7 +1138,7 @@ focus_tree = {
 	#-----------------------------------------------------------------------
 
 	#-----------------------------------------------------------------------
-	# Bloc 3
+	# Block 3
 	#-----------------------------------------------------------------------
 	focus = {
 		id = GER_ww1_restructure_ostafrika
@@ -1228,7 +1228,7 @@ focus_tree = {
 	#-----------------------------------------------------------------------	
 
 	#-----------------------------------------------------------------------
-	# Bloc 4
+	# Block 4
 	#-----------------------------------------------------------------------
 	focus = {
 		id = GER_ww1_assert_position_east
@@ -1394,7 +1394,7 @@ focus_tree = {
 		relative_position_id = GER_ww1_war_plans_mobile_howitzer
 		prerequisite = { focus=GER_ww1_war_plans_mobile_howitzer focus=GER_ww1_war_plans_replace_the_g88 focus=GER_ww1_war_plans_war_games }
 		available = { 
-			has_tech = ww1_fortification3b
+			has_tech = ww1_fortification2
 		}
 		icon = GFX_goal_generic_construct_military
 		icon = GFX_goal_generic_construct_military
@@ -1491,8 +1491,7 @@ focus_tree = {
 		prerequisite = { focus=GER_ww1_war_plans_fortify_the_eastern_front }
 		prerequisite = { focus=GER_ww1_war_plans_whip_up_the_reserves }
 		available = { 
-			has_tech = ww1_fortification3b
-			has_tech = ww1_fighter2b
+			has_tech = ww1_fortification2
 		}
 		icon = GFX_focus_generic_manpower
 		completion_reward = { 
@@ -1529,7 +1528,6 @@ focus_tree = {
 		relative_position_id = GER_ww1_war_plans_front_line_reports
 		prerequisite = { focus=GER_ww1_war_plans_front_line_reports }
 		available = { 
-			has_tech = ww1_fortification3b
 		}
 		icon = GFX_goal_generic_army_artillery2
 		completion_reward = { 
@@ -1903,9 +1901,6 @@ focus_tree = {
 				country_event = MSMGermany.10
 			}
 			LUX = {
-				country_event = MSMGermany.10
-			}
-			SWI = {
 				country_event = MSMGermany.10
 			}
 			}
