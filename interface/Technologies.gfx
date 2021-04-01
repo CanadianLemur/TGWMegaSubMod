@@ -3203,43 +3203,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/basic_destroyer.dds"
 	}
 
-
-	SpriteType = {
-		name = "GFX_seaplane_carrier_mtg_medium"
-		texturefile = "gfx/interface/technologies/seaplane_carrier.dds"
-	}	
-	SpriteType = {
-		name = "GFX_ww1_carrier_mtg_medium"
-		texturefile = "gfx/interface/technologies/ww1_carrier.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_modern_destroyer_mtg_medium"
-		texturefile = "gfx/interface/technologies/modern_destroyer.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_semi_modern_destroyer_mtg_medium"
-		texturefile = "gfx/interface/technologies/semi_modern_destroyer.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_advanced_destroyer_mtg_medium"
-		texturefile = "gfx/interface/technologies/advanced_destroyer.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_improved_destroyer_mtg_medium"
-		texturefile = "gfx/interface/technologies/improved_destroyer.dds"
-	}		
-	
-	SpriteType = {
-		name = "GFX_basic_destroyer_mtg_medium"
-		texturefile = "gfx/interface/technologies/basic_destroyer.dds"
-	}
-
-
-
 	SpriteType = {
 		name = "GFX_ww1_destroyer5_medium"
 		texturefile = "gfx/interface/technologies/ww1_destroyer0.dds"
@@ -3264,33 +3227,6 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_ww1_destroyer0_medium"
-		texturefile = "gfx/interface/technologies/ww1_destroyer0.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_ww1_destroyer5_mtg_medium"
-		texturefile = "gfx/interface/technologies/ww1_destroyer0.dds"
-	}
-	SpriteType = {
-		name = "GFX_ww1_destroyer4_mtg_medium"
-		texturefile = "gfx/interface/technologies/ww1_destroyer0.dds"
-	}
-	SpriteType = {
-		name = "GFX_ww1_destroyer3_mtg_medium"
-		texturefile = "gfx/interface/technologies/ww1_destroyer0.dds"
-	}
-	SpriteType = {
-		name = "GFX_ww1_destroyer2_mtg_medium"
-		texturefile = "gfx/interface/technologies/ww1_destroyer0.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_ww1_destroyer1_mtg_medium"
-		texturefile = "gfx/interface/technologies/ww1_destroyer0.dds"
-	}		
-	
-	SpriteType = {
-		name = "GFX_ww1_destroyer0_mtg_medium"
 		texturefile = "gfx/interface/technologies/ww1_destroyer0.dds"
 	}
 	

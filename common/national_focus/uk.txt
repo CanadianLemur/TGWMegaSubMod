@@ -3411,7 +3411,7 @@ add_extra_state_shared_building_slots = 3
 				limit = { 
 					has_dlc = "Man the Guns"
 				}
-				add_tech_bonus={ name=ss_bonus bonus=0.2 uses=1 technology=ww1_submarine1_mtg technology=ww1_submarine2_mtg }
+				add_tech_bonus={ name=ss_bonus bonus=0.2 uses=1 technology=early_ship_hull_submarine technology=MSM_basic_ship_hull_uboat }
 			}
 			if = { 
 				limit = { 
@@ -3436,7 +3436,7 @@ add_extra_state_shared_building_slots = 3
 				limit = { 
 					has_dlc = "Man the Guns"
 				}
-				add_tech_bonus={ name=cr_bonus bonus=0.2 uses=1 technology=ww1_light_cruiser0_mtg technology=ww1_light_cruiser1_mtg technology=ww1_light_cruiser2_mtg }
+				add_tech_bonus={ name=cr_bonus bonus=0.2 uses=1 technology=early_ship_hull_light technology=MSM_early_ship_hull_light technology=MSM_basic_ship_hull_light }
 			}
 			if = { 
 				limit = { 
@@ -3461,7 +3461,7 @@ add_extra_state_shared_building_slots = 3
 				limit = { 
 					has_dlc = "Man the Guns"
 				}
-				add_tech_bonus={ name=dd_bonus bonus=0.2 uses=1 technology=ww1_destroyer0_mtg technology=ww1_destroyer1_mtg technology=ww1_destroyer2_mtg }
+				add_tech_bonus={ name=dd_bonus bonus=0.2 uses=1 technology=early_ship_hull_light technology=MSM_early_ship_hull_light technology=MSM_basic_ship_hull_light }
 			}
 			if = { 
 				limit = { 
@@ -3486,7 +3486,7 @@ add_extra_state_shared_building_slots = 3
 				limit = { 
 					has_dlc = "Man the Guns"
 				}
-				 navy_experience=25 add_tech_bonus={ name=capital_ships_bonus bonus=0.2 uses=1 technology=ww1_battlecruiser0_mtg technology=ww1_battlecruiser1_mtg technology=ww1_battlecruiser2_mtg technology=early_battleship_mtg technology=seaplane_carrier_mtg }
+				 navy_experience=25 add_tech_bonus={ name=capital_ships_bonus bonus=0.2 uses=1 technology=early_ship_hull_heavy technology=MSM_ship_hull_dreadnought_1 technology=MSM_ship_hull_dreadnought_2 technology=pre_dreadnoughts technology=early_ship_hull_carrier }
 			}
 			if = { 
 				limit = { 

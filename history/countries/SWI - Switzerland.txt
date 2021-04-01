@@ -95,23 +95,14 @@ create_corps_commander={  name = "Wildbolz" id=81029 portrait_path="gfx/generals
 		limit = { not = { has_dlc = "Man the Guns" } }
 		set_technology = {
 			# ww1_destroyer0 = 1
-			# ww1_destroyer0_mtg = 1
 			# ww1_destroyer1 = 1
-			# ww1_destroyer1_mtg = 1
 			# ww1_light_cruiser1 = 1
-			# ww1_light_cruiser1_mtg = 1
 			# ww1_light_cruiser0 = 1
-			# ww1_light_cruiser0_mtg = 1
 			# ww1_battlecruiser0 = 1
-			# ww1_battlecruiser0_mtg = 1
 			# ww1_battleship0 = 1
-			# ww1_battleship0_mtg = 1
 			# ww1_submarine1 = 1
-			# ww1_submarine1_mtg = 1
 			# ww1_coastal_submarine1 = 1
-			# ww1_coastal_submarine1_mtg = 1
 			# transport = 1
-			# transport_mtg = 1
 		}
 	}
 	set_technology = {
@@ -197,7 +188,7 @@ create_corps_commander={  name = "Wildbolz" id=81029 portrait_path="gfx/generals
 		tech_logistics_company = 1
 
 		# Armor
-		gwtank = 1 # 1910 Armored Car
+		ww1_light_tank = 1 # 1910 Armored Car
 
 		# Artillery
 		light_field_gun1 = 1
@@ -225,23 +216,14 @@ create_corps_commander={  name = "Wildbolz" id=81029 portrait_path="gfx/generals
 		limit = { not = { has_dlc = "Man the Guns" } }
 		set_technology = {
 			# ww1_destroyer0 = 1
-			# ww1_destroyer0_mtg = 1
 			# ww1_destroyer1 = 1
-			# ww1_destroyer1_mtg = 1
 			# ww1_light_cruiser1 = 1
-			# ww1_light_cruiser1_mtg = 1
 			# ww1_light_cruiser0 = 1
-			# ww1_light_cruiser0_mtg = 1
 			# ww1_battleship0 = 1
-			# ww1_battleship0_mtg = 1
 			# ww1_battleship1 = 1
-			# ww1_battleship1_mtg = 1
 			# ww1_submarine1 = 1
-			# ww1_submarine1_mtg = 1
 			# ww1_coastal_submarine1 = 1
-			# ww1_coastal_submarine1_mtg = 1
 			# transport = 1
-			# transport_mtg = 1
 		}
 	}
 	set_technology = {

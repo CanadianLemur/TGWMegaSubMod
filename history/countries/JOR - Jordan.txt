@@ -19,48 +19,30 @@ if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
 		ww1_destroyer0 = 1
-		ww1_destroyer0_mtg = 1
 		ww1_destroyer1 = 1
-		ww1_destroyer1_mtg = 1
 		#KiS early_protected_cruiser=1
 		ww1_light_cruiser1 = 1
-		ww1_light_cruiser1_mtg = 1
 		ww1_light_cruiser0 = 1
-		ww1_light_cruiser0_mtg = 1
 		ww1_battleship0 = 1
-		ww1_battleship0_mtg = 1
 		ww1_battleship1 = 1
-		ww1_battleship1_mtg = 1
 		#early_dreadnought=1
 		transport = 1
-		transport_mtg = 1
 		ww1_submarine1 = 1
-		ww1_submarine1_mtg = 1 ww1_coastal_submarine1=1
 		ww1_submarine2=1 ww1_coastal_submarine2=1
 		ww1_destroyer0 = 1
-		ww1_destroyer0_mtg = 1
 		ww1_destroyer1 = 1
-		ww1_destroyer1_mtg = 1
 		ww1_destroyer2 = 1
-		ww1_destroyer2_mtg = 1
 		basic_light_cruiser=1
 		#KiS early_protected_cruiser=1
 		ww1_light_cruiser1 = 1
-		ww1_light_cruiser1_mtg = 1
 		ww1_light_cruiser0 = 1
-		ww1_light_cruiser0_mtg = 1
 		early_battlecruiser=1
 		ww1_battleship0 = 1
-		ww1_battleship0_mtg = 1
 		ww1_battleship1 = 1
-		ww1_battleship1_mtg = 1
 		#early_dreadnought=1
 		ww1_battleship0 = 1
-		ww1_battleship0_mtg = 1
 		transport = 1
-		transport_mtg = 1
 		ww1_submarine1 = 1
-		ww1_submarine1_mtg = 1 ww1_coastal_submarine1=1
 		ww1_submarine2=1 ww1_coastal_submarine2=1
 	}
 }
@@ -157,7 +139,7 @@ set_convoys=5
 capital=455
 
 #
-#set_technology = { infantry_weapons=1 gwtank=1 }
+#set_technology = { infantry_weapons=1 ww1_light_tank=1 }
 #
 set_convoys=5
 create_country_leader={ name="Hashim Kheir" desc="" picture="gfx/leaders/JOR/Portrait_Arabia_Generic_3.dds" ideology=conservatism traits={  } }
