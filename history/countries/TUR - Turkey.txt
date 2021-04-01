@@ -277,6 +277,9 @@ if = {
 		limited_conscription
 		partial_economic_mobilisation
 		limited_exports
+		TUR_ottoman_army_staff
+		TUR_ottomanism
+		TUR_developing_agrarian_society
 	}
 	if = {
 		limit = { not = { has_dlc = "Man the Guns" } }
