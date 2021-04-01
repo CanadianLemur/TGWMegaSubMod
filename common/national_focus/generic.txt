@@ -2513,7 +2513,7 @@ focus_tree = {
 				limit = { 
 					has_dlc = "Man the Guns"
 				}
-				 navy_experience=25 add_tech_bonus={ name=capital_ships_bonus bonus=0.2 uses=1 technology=early_ship_hull_heavy technology=MSM_ship_hull_dreadnought_1 technology=MSM_ship_hull_dreadnought_2 technology=early_battleship_mtg technology=seaplane_carrier_mtg }
+				 navy_experience=25 add_tech_bonus={ name=capital_ships_bonus bonus=0.2 uses=1 technology=early_ship_hull_heavy technology=MSM_ship_hull_dreadnought_1 technology=MSM_ship_hull_dreadnought_2 technology=pre_dreadnoughts technology=early_ship_hull_carrier }
 			}
 			if = { 
 				limit = { 

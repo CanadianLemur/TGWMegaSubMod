@@ -1138,7 +1138,7 @@ if = {
 		# Armor
 		ww1_armored_car_3 = 1
 		ww1_light_tank = 1
-		ww1_heavy_tank = 1
+		ww1_heavy_tank_1 = 1
 
 		# Artillery
 		light_field_gun2 = 1

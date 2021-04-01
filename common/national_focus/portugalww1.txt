@@ -1213,7 +1213,7 @@ unlock_national_focus = POR_the_iberian_socialist_union
 				bonus = 0.2
 				uses = 1
 				technology = early_motorised
-				technology = POR_ww1_ambulance2
+				technology = ww1_ambulance2
 			}
 		}
 	}
@@ -2234,7 +2234,7 @@ unlock_national_focus = POR_the_iberian_socialist_union
 				limit = { 
 					has_dlc = "Man the Guns"
 				}
-				 navy_experience=25 add_tech_bonus={ name=capital_ships_bonus bonus=0.2 uses=1 technology=MSM_ship_hull_dreadnought_2 technology=early_battleship_mtg technology=seaplane_carrier_mtg }
+				 navy_experience=25 add_tech_bonus={ name=capital_ships_bonus bonus=0.2 uses=1 technology=MSM_ship_hull_dreadnought_2 technology=pre_dreadnoughts technology=early_ship_hull_carrier }
 			}
 			if = { 
 				limit = { 

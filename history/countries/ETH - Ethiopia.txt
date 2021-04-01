@@ -177,7 +177,7 @@ set_popularities = {
 		bonus_bertha1 = 1
 
 		# Navy
-
+	}
 	if = {
 		limit = { has_dlc = "Man the Guns" }
     		set_technology = {
