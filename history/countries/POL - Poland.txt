@@ -318,7 +318,7 @@ create_field_marshal = {
 		tech_signal_company2 = 1
 
 		# Armor
-		gwtank = 1
+		ww1_light_tank = 1
 		ww1_armored_car_2 = 1
 		ww1_armored_car_3 = 1
 		ww1_light_tank = 1

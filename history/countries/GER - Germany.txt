@@ -388,7 +388,7 @@ create_navy_leader={  name = "Max von Fischel" id=34314 portrait_path="gfx/admir
 		tech_logistics_company = 1
 
 		# Armor
-		gwtank=1 # 1910 Armored Car
+		ww1_light_tank=1 # 1910 Armored Car
 		ww1_armored_car_1 = 1
 
 		# Artillery
@@ -1151,7 +1151,7 @@ if = {
 		tech_logistics_company = 1
 
 		# Armor
-		gwtank=1 # 1910 Armored Car
+		ww1_light_tank=1 # 1910 Armored Car
 		ww1_armored_car_2 = 1
 
 		# Artillery

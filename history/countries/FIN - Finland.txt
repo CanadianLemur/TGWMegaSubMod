@@ -156,7 +156,7 @@ create_corps_commander={  name = "Theslöf" id=31003 portrait_path="gfx/generals
 		tech_logistics_company = 1
 
 		# Armor
-		gwtank = 1 # 1910 Armored Car
+		ww1_light_tank = 1 # 1910 Armored Car
 
 		# Artillery
 		light_field_gun1 = 1
