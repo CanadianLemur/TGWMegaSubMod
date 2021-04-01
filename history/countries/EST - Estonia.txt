@@ -176,7 +176,7 @@ create_corps_commander={  name = "Kuperjanov" id=29010 portrait_path="gfx/genera
 		bonus_bertha1 = 1
 
 		# Navy
-
+}
 	if = {
 		limit = { has_dlc = "Man the Guns" }
     		set_technology = {

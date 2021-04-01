@@ -2147,7 +2147,7 @@ if = {
 		ww1_armored_car = 1
 
 		# Navy
-
+}
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {

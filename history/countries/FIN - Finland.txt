@@ -165,7 +165,7 @@ create_corps_commander={  name = "Theslöf" id=31003 portrait_path="gfx/generals
 		bonus_bertha1 = 1
 
 		# Navy
-
+}
 	if = {
 		limit = { has_dlc = "Man the Guns" }
     		set_technology = {

@@ -183,7 +183,7 @@ create_navy_leader={  name = "Oreste Zamor" id=37005 portrait_path="gfx/hoi4tgw_
 		bonus_bertha1 = 1
 
 		# Navy
-
+}
 	if = {
 		limit = { has_dlc = "Man the Guns" }
     		set_technology = {

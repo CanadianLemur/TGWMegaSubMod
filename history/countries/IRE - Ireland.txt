@@ -187,7 +187,7 @@ create_corps_commander = {
 		bonus_bertha1 = 1
 
 		# Navy
-
+}
 	if = {
 		limit = { has_dlc = "Man the Guns" }
     		set_technology = {
