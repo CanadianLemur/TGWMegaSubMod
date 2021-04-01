@@ -1,6 +1,10 @@
 ﻿capital=439
 oob="RAJ_1910"
+if = {
+	limit = { has_dlc = "Together for Victory" }
 
+	add_to_tech_sharing_group = commonwealth_research
+}
 set_cosmetic_tag = RAJ_UK
 add_ideas = { RAJ_agrarian_society }
 if = {
