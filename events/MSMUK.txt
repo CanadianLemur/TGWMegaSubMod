@@ -130,4 +130,27 @@ country_event = {
 		add_political_power = -100
 		set_global_flag = canadacaribbean
 		}
+}
+##MSMUK 3 England Decision to join the Entente (if Germany calls the low countries into the Central Powers)
+country_event = {
+	title = MSMUK.3.t
+	desc = MSMUK.3.d
+	id = MSMUK.3
+	is_triggered_only = yes
+	option = {
+		name = MSMUK.3.a ## England joins the Entente
+		ai_chance = {
+			factor = 100
+		}
+		FRA = {
+			add_to_faction = ENG
+		}
 	}
+	option = {
+		name = MSMUK.3.b
+		ai_chance = {
+			factor = 0
+		}
+	}
+	
+}

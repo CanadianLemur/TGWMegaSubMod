@@ -1903,6 +1903,9 @@ focus_tree = {
 			LUX = {
 				country_event = MSMGermany.10
 			}
+			ENG = {
+				country_event = MSMUK.3
+			}
 			}
 			
 		}
