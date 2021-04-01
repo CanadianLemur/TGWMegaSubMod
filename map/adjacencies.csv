@@ -201,4 +201,5 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 850;7821;impassable;-1;-1;-1;-1;-1;;grand canyon
 850;12765;impassable;-1;-1;-1;-1;-1;;grand canyon
 850;11814;impassable;-1;-1;-1;-1;-1;;grand canyon
+10482;4969;impassable;-1;-1;-1;-1;-1;;darien gap
 -1;-1;;-1;-1;-1;-1;-1;-1
