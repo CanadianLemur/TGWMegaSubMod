@@ -1,0 +1,26 @@
+AUH_negotiations_with_germany = {
+	surrender_to_germany = {
+          visible = {
+               has_war_with = GER
+          }
+          available = {
+               surrender_progress > 0.3
+          }
+          complete_effect = {
+               GER = {country_event = {id = MSMSecondBrothersWar.10}}
+          }
+     }
+	enforce_peace_on_germany = {
+          visible = {
+               has_war_with = GER
+          }
+          available = {
+              GER = { surrender_progress > 0.3 }
+          }
+          complete_effect = {
+               GER = {country_event = {id = MSMSecondBrothersWar.10}}
+          }
+     }
+}
+
+

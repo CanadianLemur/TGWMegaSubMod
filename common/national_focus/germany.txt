@@ -2390,7 +2390,7 @@ focus_tree = {
 				popularity = 0.2
 			}
 			add_timed_idea = { idea = reign_of_terror days = 730 }
-
+			remove_from_faction = AUH
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
