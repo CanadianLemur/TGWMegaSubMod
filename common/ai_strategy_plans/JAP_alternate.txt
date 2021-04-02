@@ -99,7 +99,7 @@ JAP_CENTRAL_POWERS = {
 	jap_improved_sprit_focus
 	}
 	research = {
-	marine_tech
+		marine_tech = 15
 	}
 	ideas = {
 		

@@ -3583,7 +3583,7 @@ focus_tree = {
 				limit = { 
 					has_dlc = "Man the Guns"
 				}
-				add_tech_bonus={ name=ss_bonus bonus=0.2 uses=1 technology=ww1_submarine1_mtg technology=ww1_submarine2_mtg }
+				add_tech_bonus={ name=ss_bonus bonus=0.2 uses=1 technology=early_ship_hull_submarine technology=MSM_basic_ship_hull_uboat }
 			}
 			if = { 
 				limit = { 

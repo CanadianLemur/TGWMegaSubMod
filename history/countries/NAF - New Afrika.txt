@@ -27,6 +27,6 @@ set_convoys = 20
 	}
 	create_country_leader={ name = "Cyril Briggs" 
 	picture="gfx/leaders/NAF_cyril_briggs.dds" 
-	expire="1966-.1.1" 
+	expire="1966.1.1" 
 	ideology=stalinism traits={  } }
 };

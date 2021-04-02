@@ -282,7 +282,7 @@ create_corps_commander={
 			transport = 1
 		}
 	}
-
+	set_technology = {
 		# Air
 		ww1_fighter1 = 1
 		ww1_fighter1b = 1

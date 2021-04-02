@@ -147,9 +147,7 @@ create_corps_commander={  name = "Halil Kut Paşa" id=90517 portrait_path="gfx/h
 }
 
 #NAVY
-1914.1.1 = {
-	create_navy_leader={  name = "Wilhelm Souchon" id=90162 portrait_path="gfx/hoi4tgw_portraits/TUR/navy_admirals/GER_souchon.dds" traits={ superior_tactician  } skill=4 }
-}
+1914.1.1 = { create_navy_leader={  name = "Wilhelm Souchon" id=90162 portrait_path="gfx/hoi4tgw_portraits/TUR/navy_admirals/GER_souchon.dds" traits={ superior_tactician  } skill=4 } }
 
 create_navy_leader={  name = "Ahmed Ramiz Bey" id=90159 portrait_path="gfx/hoi4tgw_portraits/TUR/navy_admirals/TUR_Ahmed_Ramiz_Bey.dds" traits={   } skill=2 }
 
@@ -175,11 +173,10 @@ if = {
 
 		transport = 1
 
-			# Naval Modules Techs
-			heavy_navalmodule_1890 = 1
-			medium_navalmodule_1890 = 1
-			light_navalmodule_1890 = 1
-
+		# Naval Modules Techs
+		heavy_navalmodule_1890 = 1
+		medium_navalmodule_1890 = 1
+		light_navalmodule_1890 = 1
 	}
 }
 if = {
@@ -281,19 +278,7 @@ if = {
 		TUR_ottomanism
 		TUR_developing_agrarian_society
 	}
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		create_equipment_variant={ name="Assari Tewfik Class" type=heavy_cruiser_1890 parent_version = 0 obsolete=yes upgrades={ ship_gun_upgrade=1 ship_armor_upgrade=4 ship_engine_upgrade=0 ship_reliability_upgrade=5           } }
-		create_equipment_variant={ name="Assari Shevket Class" type=heavy_cruiser_1890 parent_version = 1 obsolete=yes upgrades={ ship_gun_upgrade=0 ship_armor_upgrade=0 ship_engine_upgrade=0 ship_reliability_upgrade=0           } }
-		create_equipment_variant={ name="Avni Illah Class" type=heavy_cruiser_1890 parent_version = 2 obsolete=yes upgrades={ ship_gun_upgrade=0 ship_armor_upgrade=0 ship_engine_upgrade=0 ship_reliability_upgrade=0           } }
-		create_equipment_variant={ name="İclaliye Class" type=heavy_cruiser_1890 parent_version = 3 obsolete=yes upgrades={ ship_gun_upgrade=0 ship_armor_upgrade=0 ship_engine_upgrade=0 ship_reliability_upgrade=0           } }
-		create_equipment_variant={ name="Feth-i Bülend Class" type=heavy_cruiser_1890 parent_version = 4 obsolete=yes upgrades={ ship_gun_upgrade=0 ship_armor_upgrade=5 ship_engine_upgrade=0 ship_reliability_upgrade=5           } }
-		create_equipment_variant={ name="Hamidieh Class" type=heavy_cruiser_1900 parent_version = 0 obsolete=no upgrades={ ship_gun_upgrade=0 ship_armor_upgrade=0 ship_engine_upgrade=0 ship_reliability_upgrade=0           } }
-		create_equipment_variant={ name="Heibetnuma Class" type=light_cruiser_1890 parent_version = 0 obsolete=yes upgrades={ ship_gun_upgrade=5  ship_engine_upgrade=0 ship_reliability_upgrade=5 ship_anti_air_upgrade=0          } }
-		create_equipment_variant={ name="Lutfi Humayun Class" type=light_cruiser_1890 parent_version = 1 obsolete=yes upgrades={ ship_gun_upgrade=5  ship_engine_upgrade=0 ship_reliability_upgrade=5 ship_anti_air_upgrade=0          } }
-		create_equipment_variant={ name="Medjidieh Class" type=light_cruiser_1900 parent_version = 0 obsolete=no upgrades={ ship_gun_upgrade=1  ship_engine_upgrade=3 ship_reliability_upgrade=4 ship_anti_air_upgrade=0          } }
-		create_equipment_variant={ name="S165 Class" type=destroyer_1906 parent_version = 0 obsolete=no upgrades={     ship_anti_air_upgrade=0    ship_ASW_upgrade=0 destroyer_engine_upgrade=2    ship_torpedo_upgrade=1 } }
-	}
+
 	if = {
 		limit = { has_dlc = "Man the Guns" }
 		create_equipment_variant = { name = "Mesûdiye Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = no 

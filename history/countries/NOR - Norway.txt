@@ -93,8 +93,6 @@ create_navy_leader={  name = "Sparre" id=62013 portrait_path="gfx/admiral/NOR_sp
 
 	add_ideas = {
 
-	}	
-
 	}
 	if = {
 		limit = { has_dlc = "Man the Guns" }
@@ -164,20 +162,20 @@ create_navy_leader={  name = "Sparre" id=62013 portrait_path="gfx/admiral/NOR_sp
 			}
 		}
 	}
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	set_technology = {
-		basic_battery = 1
-		early_ship_hull_submarine = 1
-		basic_torpedo = 1 
-		pre_dreadnoughts = 1
-		early_ship_hull_light = 1
-		mtg_early_transport = 1 
-		basic_secondary_battery = 1
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			basic_battery = 1
+			early_ship_hull_submarine = 1
+			basic_torpedo = 1 
+			pre_dreadnoughts = 1
+			early_ship_hull_light = 1
+			mtg_early_transport = 1 
+			basic_secondary_battery = 1
+			basic_naval_mines = 1
+			submarine_mine_laying = 1
+		}
 	}
-}
 
 	if = {
 		limit = { not = { has_dlc = "Man the Guns" } }
@@ -211,9 +209,8 @@ if = {
 			ww1_coastal_submarine1 = 1
 			ww1_coastal_submarine2 = 1			
 		}
-		create_equipment_variant = { name = "Viking Class" type = light_cruiser_1890 parent_version = 0 obsolete=no upgrades={ ship_gun_upgrade=0  ship_engine_upgrade=0 ship_reliability_upgrade=0 ship_anti_air_upgrade=0 } }
 	}
-
+}
 1914.1.1 = {
 	oob = "NOR_1914"
 	}
