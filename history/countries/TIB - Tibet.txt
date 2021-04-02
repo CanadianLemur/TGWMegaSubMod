@@ -1,6 +1,6 @@
 ﻿capital = 322
 oob = "TIB_1910"
-	}
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
     		set_technology = {
@@ -47,7 +47,7 @@ if = {
 	}
 }
 
-set_technology = { 
+set_technology = {
 	light_field_gun1=1
 	 
 	heavy_field_gun1=1
@@ -85,7 +85,7 @@ set_popularities = {
 
 set_stability=0.75
 1914.1.1 = { oob="TIB_1914" }
-1914.1.1 = { set_technology = { 
+1914.1.1 = { set_technology = {
 		#KiS #Scout1=1
 		#naval_bomber1=1
 
@@ -152,7 +152,7 @@ create_corps_commander={  name = "Tendong Shappe" id=89020 portrait_path="gfx/ge
 create_corps_commander={  name = "Trimon Shappe" id=89021 portrait_path="gfx/generals/TIB_trimon_shappe.dds" traits={   } skill=1 }
 create_corps_commander={  name = "Tsoko" id=89022 portrait_path="gfx/generals/TIB_tsoko.dds" traits={   } skill=1 }
 
-1936.1.1={ 
+1936.1.1={
 capital=322
 
 #oob="TIB_1936"
