@@ -9,6 +9,7 @@ state={
 		}
 	history={
 		victory_points={ 7138 3 }
+		victory_points={ 12054 5 }
 		owner=USA
 		add_core_of=USA
 		add_core_of=CFS
@@ -16,7 +17,6 @@ state={
 			owner=USA
 			add_core_of=USA
 			add_core_of=CFS
-			victory_points={ 7138 3 }
 			buildings={
 				infrastructure=6
 				industrial_complex=3
