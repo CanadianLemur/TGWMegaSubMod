@@ -2972,19 +2972,19 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/ww1_heavy_cruiser1.dds"
 	}
 	SpriteType = {
-		name = "GFX_ww1_light_cruiser0_mtg_medium"
+		name = "GFX_pre_dreadnoughts_medium"
 		texturefile = "gfx/interface/technologies/ww1_light_cruiser0.dds"
 	}	
 	SpriteType = {
-		name = "GFX_ww1_light_cruiser0_mtg_medium"
+		name = "GFX_pre_dreadnoughts_medium"
 		texturefile = "gfx/interface/technologies/ww1_light_cruiser0.dds"
 	}	
 	SpriteType = {
-		name = "GFX_ww1_light_cruiser1_mtg_medium"
+		name = "GFX_early_ship_hull_heavy_medium"
 		texturefile = "gfx/interface/technologies/ww1_light_cruiser1.dds"
 	}	
 	SpriteType = {
-		name = "GFX_ww1_light_cruiser2_mtg_medium"
+		name = "GFX_MSM_ship_hull_dreadnought_1_medium"
 		texturefile = "gfx/interface/technologies/ww1_light_cruiser2.dds"
 	}	
 	SpriteType = {
