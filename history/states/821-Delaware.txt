@@ -7,6 +7,7 @@ state={
 	state_category = city
 
 	history={
+		victory_points = { 13219 2 }
 		owner = USA
 		add_core_of = USA
 		buildings = {
