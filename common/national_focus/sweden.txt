@@ -2030,7 +2030,6 @@ focus_tree = {
 
 		 	available = {
 		 		NOT = { has_war_with = GER }
-		 		has_completed_focus = SWE_ww1_centralizedpower
 		 		GER = {
 		 			exists = yes
 		 		}
@@ -2063,7 +2062,6 @@ focus_tree = {
 
 		 	available = {
 		 		NOT = { has_war_with = FRA }
-		 		has_completed_focus = SWE_ww1_democracy
 		 		FRA = {
 		 			exists = yes
 		 		}

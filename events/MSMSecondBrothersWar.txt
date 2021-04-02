@@ -288,7 +288,7 @@ country_event = {  #### dismantlement of AUH ####
 	puppet = HUN
 	puppet = CRO
 	HUN = {
-		create_country_leader={ name = "Franz Joseph I" desc=AUH_franz_joseph_i_DESC picture="gfx/hoi4tgw_portraits/AUH/country_leaders/AUH_franz_joseph_i.dds" expire="1935.1.1" ideology=autocracy traits={  } }
+		create_country_leader={ name = "Franz Ferdinand" desc=AUH_franz_ferdinand_DESC picture="gfx/hoi4tgw_portraits/AUH/country_leaders/AUH_franz_ferdinand.dds" expire="1935.1.1" ideology=autocracy  traits={  } }
 		add_popularity = {
     ideology = neutrality
     popularity = 0.8
@@ -306,7 +306,7 @@ set_party_name = {
 }
 		}
 	CRO = {
-		create_country_leader={ name = "Franz Joseph I" desc=AUH_franz_joseph_i_DESC picture="gfx/hoi4tgw_portraits/AUH/country_leaders/AUH_franz_joseph_i.dds" expire="1935.1.1" ideology=autocracy traits={  } }
+		create_country_leader={ name = "Karl I" desc=CRO_karl_i_DESC picture="gfx/hoi4tgw_portraits/AUH/country_leaders/AUH_karl_i.dds" expire="1935.1.1" ideology=autocracy  traits={  } }
 		add_popularity = {
     ideology = neutrality
     popularity = 0.8
@@ -370,4 +370,25 @@ set_party_name = {
     transfer_troops = no
 	}
 }
+}
+country_event = {  #### AUH sends terms to germany ####
+	id =  MSMSecondBrothersWar.12
+	title = MSMSecondBrothersWar.12.t
+	desc = MSMSecondBrothersWar.12.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = no
+	is_triggered_only = yes
+	## defeat
+	option = {
+		name = MSMSecondBrothersWar.12.a
+		BAV = {
+		transfer_state = 52
+		transfer_state = 53
+		transfer_state = 54
+		}
+		AUH = {
+		puppet = BAV
+		}
+	}
 }
