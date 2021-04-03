@@ -1,6 +1,5 @@
 ﻿capital = 301
 oob = "PAR_1910"
-	}
 if = {
 	limit = { has_dlc = "Man the Guns" }
     		set_technology = {
@@ -134,9 +133,9 @@ set_country_flag=monroe_doctrine
 		tech_logistics_company=1
 		#KiS #tech_signal_company=1
 		} }
-create_country_leader={ name = "Manuel Franco" desc=PAR_manuel_franco_DESC picture="gfx/hoi4tgw_portraits/PAR/country_leaders/PAR_manuel_franco.dds" expire="1935.1.1" ideology=liberalism traits={  } }
-create_country_leader={ name = "José Candia" desc=PAR_jose_candia_DESC picture="gfx/hoi4tgw_portraits/PAR/country_leaders/PAR_jose_candia.dds" expire="1935.1.1" ideology=liberalism traits={  } }
-create_country_leader={ name = "Manuel Pereira" desc=PAR_manuel_pereira_DESC picture="gfx/hoi4tgw_portraits/PAR/country_leaders/PAR_manuel_pereira.dds" expire="1935.1.1" ideology=liberalism traits={  } }
+create_country_leader={ name = "Manuel Franco" desc=PAR_manuel_franco_DESC picture="gfx/leaders/URG_feliciano_viera.dds" expire="1935.1.1" ideology=liberalism traits={  } }
+create_country_leader={ name = "José Candia" desc=PAR_jose_candia_DESC picture="gfx/leaders/URG_baltasar_rodriguez.dds" expire="1935.1.1" ideology=liberalism traits={  } }
+create_country_leader={ name = "Manuel Pereira" desc=PAR_manuel_pereira_DESC picture="gfx/leaders/URG_claudio_williman.dds" expire="1935.1.1" ideology=liberalism traits={  } }
 
 create_country_leader={ name = "Emiliano González Navero" desc=PAR_emiliano_gonzalez_navero_DESC picture="gfx/leaders/PAR_emiliano_gonzalez_navero.dds" expire="1935.1.1" ideology=liberalism traits={  } }
 

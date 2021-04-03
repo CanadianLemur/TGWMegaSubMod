@@ -46,7 +46,6 @@ set_technology = {
 
 
 }
-	}
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_technology = {
