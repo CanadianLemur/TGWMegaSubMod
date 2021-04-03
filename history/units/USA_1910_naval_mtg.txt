@@ -139,7 +139,7 @@ fleet = {
 	task_force = {
 		name = "Atlantic Reserve Fleet"
 		location = 788 # Norfolk
-		ship = { name = "USS Texas" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA version_name = ""Texas Class""} } }
+		ship = { name = "USS Texas" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA version_name = "Texas Class"} } }
 		ship = { name = "USS Indiana" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA version_name = "Indiana Class" } } }
 		ship = { name = "USS Massachusetts" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA version_name = "Indiana Class" } } }
 		ship = { name = "USS Oregon" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = USA version_name = "Indiana Class" } } }
