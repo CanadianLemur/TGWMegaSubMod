@@ -26,7 +26,7 @@ schlieffen_military_access = {
 	available = {
 		OR = {
 			has_completed_focus = GER_ww1_war_plans_deal_with_the_low_countries
-			has_completed_focus = GER_ww1_war_plans_dela_with_the_swiss
+			has_completed_focus = GER_ww1_war_plans_deal_with_the_swiss
 		}
 	}
 	visible = {
