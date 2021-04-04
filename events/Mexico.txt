@@ -1,0 +1,29 @@
+﻿add_namespace = MSMMexico
+
+country_event = {
+	title = MSMMexico.1.t ##1910 Election Popup
+	desc = MSMMexico.1.d
+	id = MSMMexico.1
+	fire_only_once=yes
+	trigger={ date >  1910.5.1}
+	option = {
+		name =  MSMMexico.1.a
+		
+	}
+}
+
+country_event = {
+	title = MSMMexico.2.t ##1910 Election Rigged!
+	desc = MSMMexico.2.d
+	id = MSMMexico.2
+	fire_only_once=yes
+	trigger={ date >  1910.10.1}
+	option = {
+		name =  MSMMexico.2.a ##It's Revolution Then.
+		custom_
+	}
+	option = {
+		name =  MSMMexico.2.b ##Its fine. Diaz is a good president I guess
+		
+	}
+}
