@@ -25,16 +25,22 @@ country_event = {
 		TAG = MEX
 	}
 	option = {
-		name =  MSMMexico.2.a ##We will see what happens
-		custom_modifier_tooltip=MSMMexicoRevolutionTooltip
+		name =  MSMMexico.2.a ##Madero is good
+		custom_effect_tooltip=MSMMexicoRevolutionTooltip
+		MEX={
+			remove_state_core=482
+			set_variable = { support_revolution = 1 }
+		}
 	}
 	option = {
-		name =  MSMMexico.2.b ##Diaz must
-		custom_modifier_tooltip=MSMMexicoDiazTooltip
+		name =  MSMMexico.2.b ## Madero is bad
+		custom_effect_tooltip=MSMMexicoDiazTooltip
+		MEX={
+			remove_state_core=482
+			set_variable = { support_revolution = 0 }
+		}
 	}
-	MEX={
-		remove_state_core=482
-	}
+
 }
 
 country_event = {
@@ -43,15 +49,99 @@ country_event = {
 	id = MSMMexico.3
 	fire_only_once=yes
 	trigger={
-		date >  1910.10.1
+		date >  1910.6.21
 		TAG = MEX
 	}
 	option = {
-		name =  MSMMexico.3.a ##
-		custom_
+		name =  MSMMexico.3.a ##revolutionary response
+		trigger= {
+			check_variable = {
+				var = support_revolution
+				value = 1
+				compare = equals
+			}
+		}
 	}
 	option = {
-		name =  MSMMexico.3.b ##
-		
+		name =  MSMMexico.3.b ##counter-revolutionary response
+		trigger= {
+			check_variable = {
+				var = support_revolution
+				value = 0
+				compare = equals
+			}
+		}
 	}
+}
+
+country_event = {
+	title = MSMMexico.4.t ##Madero Escapes Prison
+	desc = MSMMexico.4.d
+	id = MSMMexico.4
+	fire_only_once=yes
+	trigger={
+		date >  1910.10.4
+		TAG = MEX
+    }
+	option = {
+		name =  MSMMexico.4.a ##revolutionary response
+        trigger= {
+			check_variable = {
+				var = support_revolution
+				value = 1
+				compare = equals
+			}
+        }
+        activate_targeted_decision = { target = MEX decision = countdown_to_revolution }
+    }
+    option = {
+		name =  MSMMexico.4.b ##counter-revolutionary response
+        trigger= {
+			check_variable = {
+				var = support_revolution
+				value = 0
+				compare = equals
+			}
+        }
+        activate_targeted_decision = { target = MEX decision = countdown_to_revolution }
+    }
+}
+
+country_event = {
+	title = MSMMexico.5.t ##Mexican Revolution
+	desc = MSMMexico.5.d
+	id = MSMMexico.5
+	fire_only_once=yes
+	is_triggered_only = yes
+	
+	option = {
+		name =  MSMMexico.5.a ##revolutionary response
+        trigger= {
+			check_variable = {
+				var = support_revolution
+				value = 1
+				compare = equals
+			}
+        }
+		
+		MEX = {
+				set_variable = { has_revolution = 1 }
+			}
+	}
+	
+    option = {
+		name =  MSMMexico.5.b ##counter-revolutionary response
+        trigger= {
+			check_variable = {
+				var = support_revolution
+				value = 0
+				compare = equals
+			}
+        }
+		
+		MEX = {
+				set_variable = { has_revolution = 1 }
+		}
+	}
+	
 }

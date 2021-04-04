@@ -473,10 +473,10 @@ if = {
 	    elections_allowed = yes
 	}
 	set_popularities = {
-	    democratic = 5
-	    fascism = 1
-	    communism = 1
-	    neutrality = 93
+	    democratic = 13
+	    fascism = 2
+	    communism = 2
+	    neutrality = 83
 	}
 
 	add_ideas = {

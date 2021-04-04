@@ -1,0 +1,37 @@
+MEX_civil_war = {
+	countdown_to_revolution = {
+		fire_only_once = yes
+		allowed = {
+			tag = MEX
+		}
+		available = {
+			custom_modifier_tooltip=MSMMexicoCivilWarAvailableTooltip
+		}
+		activation = {
+			check_variable = {
+				var = MEX.has_revolution
+				value = 1
+				compare = equals
+			}
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 120
+		timeout_effect = {
+			custom_effect_tooltip=MSMMexicoCivilWarAvailableTooltip
+			hidden_effect = {
+				country_event = {
+					id = MSMMexico.5
+				}
+			}
+		}
+		complete_effect ={
+			custom_effect_tooltip=MSMMexicoCivilWarAvailableTooltip
+			hidden_effect = {
+				country_event = {
+					id = MSMMexico.5
+				}
+			}
+		}
+	}
+}

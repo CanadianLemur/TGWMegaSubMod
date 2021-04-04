@@ -838,4 +838,9 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
+	
+	SpriteType = { #Mexican Revolution Category Icon
+		name = "GFX_mex_revolution_category_icon"
+		texturefile = "gfx/decisionCategories/decision_category_mex_rev_icon.dds"
+	}
 }

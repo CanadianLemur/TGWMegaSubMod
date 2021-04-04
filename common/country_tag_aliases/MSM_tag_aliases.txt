@@ -1,0 +1,15 @@
+MXA = {
+	original_tag = MEX
+}
+
+MXB = {
+	original_tag = MEX
+}
+
+MXC = {
+	original_tag = MEX
+}
+
+MXD = {
+	original_tag = MEX
+}

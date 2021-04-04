@@ -58,3 +58,24 @@ china_congress = {
 	scripted_gui = china_congress_decision_ui
 	
 }
+
+MEX_civil_war = {
+	icon = GFX_mex_revolution_category_icon
+	available = {
+		tag = MEX
+		check_variable = {
+			var = MEX.has_revolution
+			value = 1
+			compare = greater_than_or_equals
+		}
+	}
+	priority = 100
+	visible = {
+		tag = MEX
+		check_variable = {
+			var = MEX.has_revolution
+			value = 1
+			compare = greater_than_or_equals
+		}
+	}
+}
