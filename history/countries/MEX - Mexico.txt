@@ -17,7 +17,7 @@ set_country_flag=monroe_doctrine
         desc = MEX_venustiano_carranza_DESC
         picture = "gfx/hoi4tgw_portraits/MEX/country_leaders/MEX_venustiano_carranza.dds"
         expire = "1935.1.1"
-        ideology = moderatism traits = {}
+        ideology = liberalism traits = {}
     }
 
     create_country_leader = {
@@ -50,7 +50,7 @@ create_country_leader = {
     desc = MXR_francisco_i_madero_DESC
     picture = "gfx/hoi4tgw_portraits/MEX/country_leaders/MEX_francisco_madero.dds"
     expire = "1935.1.1"
-    ideology = moderatism traits = {}
+    ideology = liberalism traits = {}
 }
 
 create_country_leader = {
