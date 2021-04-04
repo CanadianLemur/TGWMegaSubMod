@@ -1,15 +1,19 @@
-MXA = {
+MXA = {  ##Federal Mexican Forces
 	original_tag = MEX
+	has_country_flag = MEX_diaz_flag
 }
 
-MXB = {
+MXB = {  ##Francisco Madero Forces
 	original_tag = MEX
+	has_country_flag = MEX_madero_flag
 }
 
-MXC = {
+MXC = {  ##Pancho Villa Forces
 	original_tag = MEX
+	has_country_flag = MEX_villa_flag
 }
 
-MXD = {
+MXD = {  ##Emiliano Zapata Uprising
 	original_tag = MEX
+	has_country_flag = MEX_zapata_flag
 }

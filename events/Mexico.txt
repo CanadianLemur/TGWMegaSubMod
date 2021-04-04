@@ -83,6 +83,11 @@ country_event = {
 		date >  1910.9.20
 		TAG = MEX
     }
+	immediate = {
+		#activate_targeted_decision = { target = MEX decision = countdown_to_revolution }
+		set_variable = { MEX.has_revolution = 1 }
+	}
+	
 	option = {
 		name =  MSMMexico.4.a ##revolutionary response
         trigger= {
@@ -92,10 +97,6 @@ country_event = {
 				compare = equals
 			}
         }
-		activate_targeted_decision = { target = MEX decision = countdown_to_revolution }
-		MEX = {
-				set_variable = { has_revolution = 1 }
-		}
     }
     option = {
 		name =  MSMMexico.4.b ##counter-revolutionary response
@@ -106,24 +107,53 @@ country_event = {
 				compare = equals
 			}
         }
-		activate_targeted_decision = { target = MEX decision = countdown_to_revolution }
-		MEX = {
-				set_variable = { has_revolution = 1 }
-		}
     }
 }
 
 country_event = {
-	title = MSMMexico.5.t ##Mexican Revolution
+	title = MSMMexico.5.t ##Mexican Revolution # # # ##  VIVA LA REVOLUCION!!########
 	desc = MSMMexico.5.d
 	id = MSMMexico.5
 	fire_only_once=yes
 	is_triggered_only = yes
 	
-	MEX = {
-				set_variable = { has_revolution = 2 }
-		}
-	
+	immediate = {
+		set_variable = { MEX.has_revolution = 2 }
+		if=  {
+			limit={
+				check_variable = {
+					var = support_revolution
+					value = 1
+					compare = equals
+				}
+			}
+			##Give player Chihuahua and give MXA control of mexico states
+			MEX = { add_state_core = 482 }
+			MXA = {
+				set_politics = {
+						ruling_party = neutrality
+					}
+				set_popularities = {
+					democratic = 20
+					neutrality = 72
+					fascism = 8
+				}
+				set_party_name = { ideology = neutrality long_name = MEX_neutrality_party_long name = MEX_neutrality_party }
+				transfer_state = 481
+				transfer_state = 480
+				transfer_state = 479
+				transfer_state = 478
+				transfer_state = 277
+				transfer_state = 477
+				transfer_state = 485
+				transfer_state = 476
+				transfer_state = 475
+				transfer_state = 474
+			
+			}
+			
+		}	
+	}
 	option = {
 		name =  MSMMexico.5.a ##revolutionary response
         trigger= {
@@ -133,6 +163,8 @@ country_event = {
 				compare = equals
 			}
         }
+		
+		
 	}
 	
     option = {
@@ -146,4 +178,30 @@ country_event = {
         }
 	}
 	
+}
+
+news_event = {
+	title=MSMMexico.6.t ##Plan of San Luis Potosí
+	desc=MSMMexico.6.d
+	id=MSMMexico.6
+	fire_only_once=yes
+	major=yes
+	trigger={
+		date > 1910.10.5
+		date < 1911.1.1
+	}
+	option ={
+		name = MSMMexico.6.a
+		trigger = {
+			NOT = {
+				tag = MEX
+			}
+		}
+	}
+	option ={
+		name = MSMMexico.6.b
+		trigger = {
+			tag = MEX
+		}
+	}
 }

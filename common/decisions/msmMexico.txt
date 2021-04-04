@@ -5,7 +5,7 @@ MEX_civil_war = {
 			tag = MEX
 		}
 		available = {
-			custom_modifier_tooltip=MSMMexicoCivilWarAvailableTooltip
+			always = no
 		}
 		activation = {
 			check_variable = {
