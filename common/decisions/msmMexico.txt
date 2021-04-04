@@ -26,7 +26,6 @@ MEX_civil_war = {
 			}
 		}
 		complete_effect ={
-			custom_effect_tooltip=MSMMexicoCivilWarAvailableTooltip
 			hidden_effect = {
 				country_event = {
 					id = MSMMexico.5

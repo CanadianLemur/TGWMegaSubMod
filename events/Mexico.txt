@@ -80,7 +80,7 @@ country_event = {
 	id = MSMMexico.4
 	fire_only_once=yes
 	trigger={
-		date >  1910.10.4
+		date >  1910.9.20
 		TAG = MEX
     }
 	option = {
@@ -92,7 +92,10 @@ country_event = {
 				compare = equals
 			}
         }
-        activate_targeted_decision = { target = MEX decision = countdown_to_revolution }
+		activate_targeted_decision = { target = MEX decision = countdown_to_revolution }
+		MEX = {
+				set_variable = { has_revolution = 1 }
+		}
     }
     option = {
 		name =  MSMMexico.4.b ##counter-revolutionary response
@@ -103,7 +106,10 @@ country_event = {
 				compare = equals
 			}
         }
-        activate_targeted_decision = { target = MEX decision = countdown_to_revolution }
+		activate_targeted_decision = { target = MEX decision = countdown_to_revolution }
+		MEX = {
+				set_variable = { has_revolution = 1 }
+		}
     }
 }
 
@@ -114,6 +120,10 @@ country_event = {
 	fire_only_once=yes
 	is_triggered_only = yes
 	
+	MEX = {
+				set_variable = { has_revolution = 2 }
+		}
+	
 	option = {
 		name =  MSMMexico.5.a ##revolutionary response
         trigger= {
@@ -123,10 +133,6 @@ country_event = {
 				compare = equals
 			}
         }
-		
-		MEX = {
-				set_variable = { has_revolution = 1 }
-			}
 	}
 	
     option = {
@@ -138,10 +144,6 @@ country_event = {
 				compare = equals
 			}
         }
-		
-		MEX = {
-				set_variable = { has_revolution = 1 }
-		}
 	}
 	
 }
