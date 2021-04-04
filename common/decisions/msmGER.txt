@@ -48,6 +48,7 @@ german_poland = {
 		}
 		available = {
 			FROM = {is_controlled_by = GER}
+			POL = {exists = YES}
 		}
 		ai_will_do = {factor = 100}
 		visible = {
