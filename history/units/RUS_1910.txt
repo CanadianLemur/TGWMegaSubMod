@@ -92,64 +92,64 @@ units = {
 			location = 11121 # Petsamo
 			division_template="Diviziya Opolcheniya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "2-ya Diviziya Opolcheniya"
 			location=3134 # Murmansk
 			division_template="Diviziya Opolcheniya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "3-ya Diviziya Opolcheniya"
 			location = 11121 # Oulu
 			division_template="Diviziya Opolcheniya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "4-ya Diviziya Opolcheniya"
 			location = 9228 # Mariehamn
 			division_template="Diviziya Opolcheniya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "5-ya Diviziya Opolcheniya"
 			location=3083 # Turku
 			division_template="Diviziya Opolcheniya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "9-ya Diviziya Opolcheniya"
 			location=4797 # Irkutsk
 			division_template="Diviziya Opolcheniya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "10-ya Diviziya Opolcheniya"
 			location=12189 # Khabarovsk
 			division_template="Diviziya Opolcheniya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "14-ya Diviziya Opolcheniya"
 			location=1459 # Tashkent
 			division_template="Diviziya Opolcheniya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "1-ya Gvardeyskaya Pekhotnaya Diviziya"
@@ -168,14 +168,14 @@ units = {
 			location = 3151 # St. Petersburg
 			division_template="Kavaleriyskaya Diviziya"
 			start_experience_factor=0.2
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "Gvardeyskaya Strelkovaya Brigada"
 			location = 3151 # St. Petersburg
 			division_template="Gvardeyskaya Pekhotnaya Diviziya"
 			start_experience_factor=0.2
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "1-ya Gvardeyskaya Kavaleriyskaya Diviziya"
@@ -242,48 +242,48 @@ units = {
 			location = 3151 # St. Petersburg
 			division_template="Sibirskaya Strelkovaya Diviziya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "54-ya Pekhotnaya Diviziya"
 			location = 3151 # St. Petersburg
 			division_template="Sibirskaya Strelkovaya Diviziya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "55-ya Pekhotnaya Diviziya"
 			location = 3151 # St. Petersburg
 			division_template="Sibirskaya Strelkovaya Diviziya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "56-ya Pekhotnaya Diviziya"
 			location = 3151 # St. Petersburg
 			division_template="Sibirskaya Strelkovaya Diviziya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "57-ya Pekhotnaya Diviziya"
 			location = 3151 # St. Petersburg
 			division_template="Sibirskaya Strelkovaya Diviziya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "St Petersburg Local Brigada"
 			location = 3151 # St. Petersburg
 			division_template="Diviziya Opolcheniya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "26-ya Pekhotnaya Diviziya"
@@ -356,72 +356,72 @@ units = {
 			location=3320 # Wilno
 			division_template="Sibirskaya Strelkovaya Diviziya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "59-ya Pekhotnaya Diviziya"
 			location=3320 # Wilno
 			division_template="Sibirskaya Strelkovaya Diviziya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "60-ya Pekhotnaya Diviziya"
 			location=3320 # Wilno
 			division_template="Sibirskaya Strelkovaya Diviziya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "61-ya Pekhotnaya Diviziya"
 			location=3320 # Wilno
 			division_template="Sibirskaya Strelkovaya Diviziya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "Riga Garrison"
 			location=9340 # Riga
 			division_template="Diviziya Opolcheniya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "62-ya Pekhotnaya Diviziya"
 			location = 3544 # Warszawa
 			division_template="Sibirskaya Strelkovaya Diviziya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "63-ya Pekhotnaya Diviziya"
 			location = 3544 # Warszawa
 			division_template="Sibirskaya Strelkovaya Diviziya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "64-ya Pekhotnaya Diviziya"
 			location = 3544 # Warszawa
 			division_template="Sibirskaya Strelkovaya Diviziya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	#division= {
 	#		name = "65-ya Pekhotnaya Diviziya"
 	#		location = 3544 # Warszawa
 	#		division_template="Sibirskaya Strelkovaya Diviziya"
 	#		start_experience_factor=0.05
-	#		start_equipment_factor = 0.3
-	#		start_manpower_factor = 0.3
+	#		start_equipment_factor = 0.1
+	#		start_manpower_factor = 0.2
 	#		}
 	division= {
 			name = "4-ya Pekhotnaya Diviziya"
@@ -536,48 +536,48 @@ units = {
 			location = 525 # Kyiv
 			division_template="Sibirskaya Strelkovaya Diviziya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "67-ya Pekhotnaya Diviziya"
 			location = 525 # Kyiv
 			division_template="Sibirskaya Strelkovaya Diviziya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "68-ya Pekhotnaya Diviziya"
 			location = 525 # Kyiv
 			division_template="Sibirskaya Strelkovaya Diviziya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "Kiev Local Brigada"
 			location = 525 # Kyiv
 			division_template="Diviziya Opolcheniya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "Kharkov Local Brigada"
 			location=418 # Kharkov
 			division_template="Diviziya Opolcheniya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "Poltava Local Brigada"
 			location = 559 # Poltava
 			division_template="Diviziya Opolcheniya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "5-ya Pekhotnaya Diviziya"
@@ -722,394 +722,394 @@ units = {
 			location=11670 # Odessa
 			division_template="Sibirskaya Strelkovaya Diviziya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "Sevastopol Garrison"
 			location=3686 # Sevastopol
 			division_template="Diviziya Opolcheniya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "Moscow Local Brigada"
 			location = 6380 # Kyiv
 			division_template="Diviziya Opolcheniya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "Jaraslavl Local Brigada"
 			location = 121 # Jaroslavl
 			division_template="Diviziya Opolcheniya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "Smolensk Local Brigada"
 			location=306 # Smolensk
 			division_template="Diviziya Opolcheniya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "1-ya Grenaderskaya Diviziya"
 			location = 6380 # Kyiv
 			division_template="Pekhotnaya Diviziya"
 			start_experience_factor=0.2
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "2-ya Grenaderskaya Diviziya"
 			location = 6380 # Kyiv
 			division_template="Pekhotnaya Diviziya"
 			start_experience_factor=0.2
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "1-ya Kavaleriyskaya Diviziya"
 			location = 6380 # Kyiv
 			division_template="Kavaleriyskaya Diviziya"
 			start_experience_factor=0.1
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "7-ya Pekhotnaya Diviziya"
 			location=413 # Voronezh
 			division_template="Pekhotnaya Diviziya"
 			start_experience_factor=0.1
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "10-ya Pekhotnaya Diviziya"
 			location=413 # Voronezh
 			division_template="Pekhotnaya Diviziya"
 			start_experience_factor=0.1
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "3-ya Otdel'naya Kavaleriyskaya Brigada"
 			location=413 # Voronezh
 			division_template="Kavaleriyskaya Diviziya"
 			start_experience_factor=0.1
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "1-ya Pekhotnaya Diviziya"
 			location = 6387 # Dorogobuz
 			division_template="Pekhotnaya Diviziya"
 			start_experience_factor=0.1
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "36-ya Pekhotnaya Diviziya"
 			location = 6387 # Dorogobuz
 			division_template="Pekhotnaya Diviziya"
 			start_experience_factor=0.1
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "2-ya Otdel'naya Kavaleriyskaya Brigada"
 			location = 6387 # Dorogobuz
 			division_template="Kavaleriyskaya Diviziya"
 			start_experience_factor=0.1
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "3-ya Grenaderskaya Diviziya"
 			location = 6380 # Kyiv
 			division_template="Pekhotnaya Diviziya"
 			start_experience_factor=0.2
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "76-ya Pekhotnaya Diviziya"
 			location=6338 # Kazan
 			division_template="Sibirskaya Strelkovaya Diviziya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "Kazan Local Brigada"
 			location=6338 # Kazan
 			division_template="Diviziya Opolcheniya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "Orenburg Local Brigada"
 			location = 4261 # Orenburg
 			division_template="Diviziya Opolcheniya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "Saratov Local Brigada"
 			location=3578 # Saratov
 			division_template="Diviziya Opolcheniya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "Ural Region Local Brigada"
 			location = 1406 # Ural
 			division_template="Diviziya Opolcheniya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "20-ya Pekhotnaya Diviziya"
 			location=12320 # Yerevan
 			division_template="Pekhotnaya Diviziya"
 			start_experience_factor=0.1
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "39-ya Pekhotnaya Diviziya"
 			location=12320 # Yerevan
 			division_template="Pekhotnaya Diviziya"
 			start_experience_factor=0.1
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "1-ya Kavkazskaya Kazach'ya Diviziya"
 			location=12320 # Yerevan
 			division_template="Kavaleriyskaya Diviziya"
 			start_experience_factor=0.1
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "1-ya Kavkazskaya Strelkovaya Brigada"
 			location=12320 # Yerevan
 			division_template="Pekhotnaya Diviziya"
 			start_experience_factor=0.1
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "Kavkazskaya Grenaderskaya Diviziya"
 			location=1599 # Tbilisi
 			division_template="Pekhotnaya Diviziya"
 			start_experience_factor=0.2
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "51-ya Pekhotnaya Diviziya"
 			location=1599 # Tbilisi
 			division_template="Pekhotnaya Diviziya"
 			start_experience_factor=0.1
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "2-ya Kavkazskaya Strelkovaya Brigada"
 			location=1599 # Tbilisi
 			division_template="Pekhotnaya Diviziya"
 			start_experience_factor=0.1
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "Kavkazskaya Kavaleriyskaya Diviziya"
 			location=1599 # Tbilisi
 			division_template="Kavaleriyskaya Diviziya"
 			start_experience_factor=0.1
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "2 Kavkazskaya Kazach'ya Diviziya"
 			location=1599 # Tbilisi
 			division_template="Kavaleriyskaya Diviziya"
 			start_experience_factor=0.1
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "21-ya Pekhotnaya Diviziya"
 			location = 3672 # Groznyj
 			division_template="Pekhotnaya Diviziya"
 			start_experience_factor=0.1
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "52-ya Pekhotnaya Diviziya"
 			location = 3672 # Groznyj
 			division_template="Pekhotnaya Diviziya"
 			start_experience_factor=0.1
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "3 Kavkazskaya Kazach'ya Diviziya"
 			location = 3672 # Groznyj
 			division_template="Kavaleriyskaya Diviziya"
 			start_experience_factor=0.1
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "80-ya Pekhotnaya Diviziya"
 			location=1599 # Tbilisi
 			division_template="Sibirskaya Strelkovaya Diviziya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "81-ya Pekhotnaya Diviziya"
 			location=1599 # Tbilisi
 			division_template="Sibirskaya Strelkovaya Diviziya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "82-ya Pekhotnaya Diviziya"
 			location=1599 # Tbilisi
 			division_template="Sibirskaya Strelkovaya Diviziya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "83-ya Pekhotnaya Diviziya"
 			location=1599 # Tbilisi
 			division_template="Sibirskaya Strelkovaya Diviziya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "84-ya Pekhotnaya Diviziya"
 			location=1599 # Tbilisi
 			division_template="Sibirskaya Strelkovaya Diviziya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "Tiflis Local Brigada"
 			location=1599 # Tbilisi
 			division_template="Diviziya Opolcheniya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "Vladikavkaz Local Brigada"
 			location=12320 # Yerevan
 			division_template="Diviziya Opolcheniya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "1-ya Turkestanskaya Strelkovaya Brigada"
 			location=1459 # Tashkent
 			division_template="Pekhotnaya Diviziya"
 			start_experience_factor=0.1
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "2-ya Turkestanskaya Strelkovaya Brigada"
 			location=1459 # Tashkent
 			division_template="Pekhotnaya Diviziya"
 			start_experience_factor=0.1
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "3-ya Turkestanskaya Strelkovaya Brigada"
 			location=1459 # Tashkent
 			division_template="Pekhotnaya Diviziya"
 			start_experience_factor=0.1
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "1 Turkestanskaya Kazach'ya Diviziya"
 			location=1459 # Tashkent
 			division_template="Kavaleriyskaya Diviziya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "4-ya Turkestanskaya Strelkovaya Brigada"
 			location = 12333 # Ashgabat
 			division_template="Pekhotnaya Diviziya"
 			start_experience_factor=0.1
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "5-ya Turkestanskaya Strelkovaya Brigada"
 			location = 12333 # Ashgabat
 			division_template="Pekhotnaya Diviziya"
 			start_experience_factor=0.1
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "85-ya Pekhotnaya Diviziya"
 			location=1459 # Tashkent
 			division_template="Sibirskaya Strelkovaya Diviziya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "6-ya Turkestanskaya Strelkovaya Brigada"
 			location=1459 # Tashkent
 			division_template="Sibirskaya Strelkovaya Diviziya"
 			start_experience_factor=0.1
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "Sibirskaya Kazach'ya Brigada"
 			location=1459 # Tashkent
 			division_template="Kavaleriyskaya Diviziya"
 			start_experience_factor=0.1
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "Tashkent Garrison"
 			location=1459 # Tashkent
 			division_template="Diviziya Opolcheniya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "11-ya Sibirskaya Strelkovaya Diviziya"
 			location=10696 # Omsk
 			division_template="Pekhotnaya Diviziya"
 			start_experience_factor=0.1
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "3-ya Sibirskaya Kazach'ya"
 			location=10696 # Omsk
 			division_template="Kavaleriyskaya Diviziya"
 			start_experience_factor=0.1
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "Omsk Sibirskaya Reserve Diviziya"
 			location=10696 # Omsk
 			division_template="Sibirskaya Strelkovaya Diviziya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "Omsk Local Brigada"
 			location=10696 # Omsk
 			division_template="Diviziya Opolcheniya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "5-ya Sibirskaya Strelkovaya Diviziya"
@@ -1122,97 +1122,97 @@ units = {
 			location=4797 # Irkutsk
 			division_template="Kavaleriyskaya Diviziya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "7-ya Sibirskaya Strelkovaya Diviziya"
 			location=4797 # Irkutsk
 			division_template="Pekhotnaya Diviziya"
 			start_experience_factor=0.1
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "Irkutsk Local Brigada"
 			location=4797 # Irkutsk
 			division_template="Diviziya Opolcheniya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "13-ya Sibirskaya Reserve Diviziya"
 			location=4797 # Irkutsk
 			division_template="Sibirskaya Strelkovaya Diviziya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "1-ya Sibirskaya Strelkovaya Diviziya"
 			location=957 # Vladivostok
 			division_template="Pekhotnaya Diviziya"
 			start_experience_factor=0.1
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "2-ya Sibirskaya Strelkovaya Diviziya"
 			location=957 # Vladivostok
 			division_template="Pekhotnaya Diviziya"
 			start_experience_factor=0.1
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "3-ya Sibirskaya Strelkovaya Diviziya"
 			location=957 # Vladivostok
 			division_template="Pekhotnaya Diviziya"
 			start_experience_factor=0.1
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "9-ya Sibirskaya Strelkovaya"
 			location=957 # Vladivostok
 			division_template="Pekhotnaya Diviziya"
 			start_experience_factor=0.1
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "6-ya Sibirskaya Strelkovaya Diviziya"
 			location=12189 # Khabarovsk
 			division_template="Pekhotnaya Diviziya"
 			start_experience_factor=0.1
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "10-ya Sibirskaya Strelkovaya Diviziya"
 			location=12189 # Khabarovsk
 			division_template="Pekhotnaya Diviziya"
 			start_experience_factor=0.1
-			start_equipment_factor = 0.3
+			start_equipment_factor = 0.1
 			}
 	division= {
 			name = "14-ya Sibirskaya Reserve Diviziya"
 			location=12189 # Khabarovsk
 			division_template="Sibirskaya Strelkovaya Diviziya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "Vladivostok Garrison"
 			location=957 # Vladivostok
 			division_template="Diviziya Opolcheniya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	division= {
 			name = "Khabarovsk Garrison"
 			location=12189 # Khabarovsk
 			division_template="Diviziya Opolcheniya"
 			start_experience_factor=0.05
-			start_equipment_factor = 0.3
-			start_manpower_factor = 0.3
+			start_equipment_factor = 0.1
+			start_manpower_factor = 0.2
 			}
 	  } }
 		}
