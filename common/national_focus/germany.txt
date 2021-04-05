@@ -10,7 +10,7 @@ focus_tree = {
 		id = GER_ww1_political_effort
 		icon = GFX_goal_generic_demand_territory
 		completion_reward = { add_political_power = 50 }
-		ai_will_do = { factor = 800 }
+		ai_will_do = { factor = 5 }
 		cost = 10
 		x = 3
 		y = 0
@@ -598,7 +598,7 @@ focus_tree = {
 		}
 
 
-		ai_will_do = { factor = 20	}
+		ai_will_do = { factor = 30	}
 		cost = 10
 		x = -4
 		y = 1
@@ -625,7 +625,13 @@ focus_tree = {
 		available = { NOT={ has_war_with=ITA } }
 		completion_reward = { ITA={ add_opinion_modifier={ target=GER modifier=ger_ita_alliance_focus } } AUH={ add_opinion_modifier={ target=GER modifier=HOI4TGW_Opinion_ger_auh_alliance_focus_malus } } }
 		
-		ai_will_do = { factor = 20	}
+		ai_will_do = {
+			factor = 30
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
 		cost = 10
 		x = -1
 		y = 1
@@ -640,7 +646,7 @@ focus_tree = {
 		available = { NOT={ has_war_with=AUH } }
 		completion_reward = { AUH={ add_opinion_modifier={ target=GER modifier=ger_auh_alliance_focus } } ITA={ add_opinion_modifier={ target=GER modifier=HOI4TGW_Opinion_ger_ita_alliance_focus_malus } } }
 		
-		ai_will_do = { factor = 20	}
+		ai_will_do = { factor = 30	}
 		cost = 10
 		x = 1
 		y = 1
@@ -713,8 +719,13 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			factor = 1000
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
 		}
+		
 		cost = 10
 		x = -1
 		y = 1
@@ -1305,7 +1316,7 @@ focus_tree = {
 		icon = GFX_goal_generic_axis_build_infantry
 		relative_position_id = GER_ww1_diplomatic_effort
 		completion_reward = { army_experience=15 add_tech_bonus={ name=land_doc_bonus bonus=0.2 uses=1 category=land_doctrine } }
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 80 }
 		cost = 10
 		x = 16
 		y = 0
@@ -1329,8 +1340,14 @@ focus_tree = {
 			}
 			add_ideas = GER_helmuth_von_moltke
 		}
-		ai_will_do = { factor = 10 }
-		cost = 10
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = 19
+				is_historical_focus_on = yes
+			}
+		}
+		cost = 5
 		x = -3
 		y = 1
 	}
@@ -1343,9 +1360,12 @@ focus_tree = {
 		}
 		icon = GFX_goal_generic_small_arms
 		completion_reward = { 
-			add_ideas = MSM_GER_ww1_g88_replaced
+			add_timed_idea = {
+				idea = MSM_GER_ww1_g88_replaced
+				days = 720
+			}
 		}
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 25 }
 		cost = 10
 		x = -2
 		y = 1
@@ -1366,7 +1386,7 @@ focus_tree = {
 				category = artillery
 			}
 		}
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 25 }
 		cost = 10
 		x = 0
 		y = 1
@@ -1382,7 +1402,7 @@ focus_tree = {
 		completion_reward = { 
 			add_ideas = MSM_GER_ww1_war_games
 		}
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 25 }
 		cost = 10
 		x = 2
 		y = 1
@@ -1460,7 +1480,7 @@ focus_tree = {
 				}
 			}
 		}
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 25 }
 		cost = 10
 		x = 1
 		y = 1
@@ -1477,8 +1497,8 @@ focus_tree = {
 				days = 240
 			}
 		}
-		ai_will_do = { factor = 10 }
-		cost = 10
+		ai_will_do = { factor = 25 }
+		cost = 5
 		x = -1
 		y = 1
 	}
@@ -1500,7 +1520,7 @@ focus_tree = {
 				days = 720
 			}
 		}
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 25 }
 		cost = 10
 		x = -1
 		y = 1
@@ -1518,7 +1538,7 @@ focus_tree = {
 				category = air_equipment
 			}
 		}
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 25 }
 		cost = 10
 		x = -2
 		y = 1
@@ -1533,7 +1553,7 @@ focus_tree = {
 		completion_reward = { 
 			add_ideas = MSM_GER_ww1_feuerwalze
 		}
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 25 }
 		cost = 10
 		x = 0
 		y = 1
@@ -1549,8 +1569,8 @@ focus_tree = {
 			add_war_support = 0.1
 			add_political_power = 50
 		}
-		ai_will_do = { factor = 10 }
-		cost = 10
+		ai_will_do = { factor = 25 }
+		cost = 5
 		x = 2
 		y = 1
 	}
@@ -1603,7 +1623,7 @@ focus_tree = {
 			custom_effect_tooltip = "Unlocks decisions to ask the low countries for Military Access"
 		}
 		ai_will_do = { factor = 2000 }
-		cost = 10
+		cost = 5
 		x = 1
 		y = 1
 	}
@@ -1618,7 +1638,7 @@ focus_tree = {
 			custom_effect_tooltip = "Unlocks decision to ask Switzerland for Military Access"
 		}
 		ai_will_do = { factor = 2000 }
-		cost = 10
+		cost = 5
 		x = -1
 		y = 1
 	}
@@ -1636,7 +1656,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = { factor = 2000 }
-		cost = 10
+		cost = 5
 		x = 1
 		y = 1
 	}
@@ -1651,10 +1671,7 @@ focus_tree = {
 		}
 		
 		bypass = {
-			AND = {
-				has_war_with = FRA
-				has_war_with = LUX
-			}
+			has_war_with = FRA
 		}
 
 		completion_reward = {
@@ -1713,7 +1730,10 @@ focus_tree = {
 			has_country_flag = MSM_GER_replaced_moltke
 		}
 		completion_reward = { 
-			add_ideas = MSM_GER_ww1_solidify_the_front
+			add_timed_idea = {
+				idea = MSM_GER_ww1_solidify_the_front
+				days = 720
+			}
 		}
 		ai_will_do = { factor = 2000 }
 		cost = 10
@@ -1784,7 +1804,7 @@ focus_tree = {
 			add_war_support = 0.2
 			add_political_power = 100
 		}
-		ai_will_do = { factor = 2000 }
+		ai_will_do = { factor = 1000 }
 		cost = 10
 		x = 0
 		y = 1
@@ -1801,7 +1821,13 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = GER_paul_von_hindenburg
 		}
-		ai_will_do = { factor = 10 }
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = 1.15
+				is_historical_focus_on = no
+			}
+		}
 		cost = 10
 		x = 3
 		y = 1
@@ -2076,7 +2102,7 @@ focus_tree = {
 			#Make ludendorff available as military high command, disable falkenhayn
 		}
 		ai_will_do = { factor = 10 }
-		cost = 10
+		cost = 5
 		x = 10
 		y = 1
 	}
