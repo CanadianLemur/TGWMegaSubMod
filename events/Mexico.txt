@@ -269,22 +269,23 @@ country_event = {
 					type = civil_war
 				}
 				load_oob = "MEX_REV"
+				else = {
+					load_oob = "MEX_FED"
+				}
 			}
 		}
-		MXA = {
+		MXA = { ##Federal AI
 			set_rule = { can_join_factions = no }
 			if = {
 				limit = {
 					check_variable = {
 						var = MEX.support_revolution
-						value = 0
+						value = 1
 						compare = equals
 					}
 				}
-				declare_war_on = {
-					target = MEX
 					type = civil_war
-				}
+				MXA = { load_oob = "MEX_FED" }
 			}
 			
 		}
@@ -302,7 +303,7 @@ country_event = {
 					target = MEX
 					type = civil_war
 				}
-				load_oob = "MEX_REV"
+				MXB = { load_oob = "MEX_REV" }
 			}
 		}
 		MXC = { ##Give ownership of Coahuila to Pancho Villa
@@ -322,12 +323,12 @@ country_event = {
 				}
 				declare_war_on = {
 					target = MXA
-					type = civil_war
+					type = annex_everything
 				}
 				else = {
 					declare_war_on = {
 						target = MEX
-						type = civil_war
+						type = annex_everything
 					}
 				}
 			}
@@ -352,12 +353,12 @@ country_event = {
 				}
 				declare_war_on = {
 					target = MXA
-					type = civil_war
+					type = annex_everything
 				}
 				else = {
 					declare_war_on = {
 						target = MEX
-						type = civil_war
+						type = annex_everything
 					}
 				}
 			}
@@ -373,11 +374,11 @@ country_event = {
 			}
 			declare_war_on = {
 				target = MEX
-				type = civil_war
+				type = annex_everything
 			}
 			declare_war_on = {
 				target = MXA
-				type = civil_war
+				type = annex_everything
 			}
 			MXE = { load_oob = "MEX_MAG" }
 		}
