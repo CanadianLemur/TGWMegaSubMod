@@ -284,7 +284,6 @@ country_event = {
 						compare = equals
 					}
 				}
-					type = civil_war
 				MXA = { load_oob = "MEX_FED" }
 			}
 			
