@@ -308,7 +308,10 @@ country_event = {
 		MXC = { ##Give ownership of Coahuila to Pancho Villa
 			set_rule = { can_join_factions = no }
 			set_state_owner = 480
-			
+			add_timed_idea = {
+			idea = MEX_revolutionary_fervor
+			days = 360
+			}
 			if = {
 				limit = {
 					check_variable = {
@@ -335,7 +338,10 @@ country_event = {
 		MXD = { ##Give ownership of Guerrero to Zapata
 			set_rule = { can_join_factions = no }
 			set_state_owner = 485
-			
+			add_timed_idea = {
+			idea = MEX_revolutionary_fervor
+			days = 360
+			}
 			if = {
 				limit = {
 					check_variable = {
@@ -361,6 +367,10 @@ country_event = {
 		MXE = { ##Give ownership of Baja to Magonistas
 			set_rule = { can_join_factions = no }
 			set_state_owner = 484
+			add_timed_idea = {
+			idea = MEX_revolutionary_fervor
+			days = 360
+			}
 			declare_war_on = {
 				target = MEX
 				type = civil_war
