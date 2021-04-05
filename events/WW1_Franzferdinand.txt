@@ -455,6 +455,10 @@ country_event = {
 		name = ww1_franzferdinand.8.a
 		ai_chance =  { factor = 100 }
 
+		trigger = {
+			BEL = { NOT = { is_in_faction_with = GER } }
+		}
+
 		GER = {
 			declare_war_on = {
 				type = annex_everything
@@ -509,6 +513,10 @@ country_event = {
 	option = {
 		name = ww1_franzferdinand.8.b
 		ai_chance =  { factor = 0 }
+		
+		trigger = {
+			BEL = { NOT = { is_in_faction_with = GER } }
+		}
 
 		GER = {
 			declare_war_on = {
@@ -573,6 +581,44 @@ country_event = {
 			FRA = {
 		        add_timed_idea = { days = 180 idea = FRA_indecisive_deployments }
 		    }
+		}
+	}
+	
+	option = {
+		name = ww1_franzferdinand.8.d
+		ai_chance =  { factor = 0 }
+		
+		trigger = {
+			BEL = { is_in_faction_with = GER }
+		}
+		
+		hidden_effect = {
+			GER = {
+		        declare_war_on = {
+					type = annex_everything
+					target = FRA
+				}
+		    }
+			hidden_effect = {
+				BEL = {
+					add_timed_idea = {
+						idea = jingoism
+						days = 360
+					}
+				}
+				HOL = {
+					add_timed_idea = {
+						idea = jingoism
+						days = 360
+					}
+				}
+				LUX = {
+					add_timed_idea = {
+						idea = jingoism
+						days = 360
+					}
+				}
+			}
 		}
 	}
 }
