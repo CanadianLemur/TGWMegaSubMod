@@ -119,17 +119,23 @@ country_event = {
 	
 	immediate = {
 		set_variable = { MEX.has_revolution = 2 }
-		if=  {
+		if=  { ##If the player chooses to support revolution
 			limit={
 				check_variable = {
-					var = support_revolution
+					var = MEX.support_revolution
 					value = 1
 					compare = equals
 				}
 			}
+			hidden_effect={
 			##Give player Chihuahua and give MXA control of mexico states
 			MEX = { add_state_core = 482 }
-			MXA = {
+			MXA = {  ##Dyanamic Diaz Tag
+				set_capital = 277
+				add_ideas = {
+					MEX_ww1_mexico_prerevolution
+				}
+				
 				set_politics = {
 						ruling_party = neutrality
 					}
@@ -149,11 +155,225 @@ country_event = {
 				transfer_state = 476
 				transfer_state = 475
 				transfer_state = 474
-			
+				transfer_state = 483
+				transfer_state = 484
+				
+				retire_country_leader = yes
+				create_country_leader = {
+					name = "Porfirio Díaz"
+					desc = MEX_porfirio_diaz_DESC
+					picture = "gfx/hoi4tgw_portraits/MEX/country_leaders/MEX_porfirio_diaz.dds"
+					expire = "1912.1.1"
+					ideology = autocracy traits = {}
+				}
+				
 			}
 			
-		}	
+			MEX = { ##Player Madero
+				remove_ideas = {
+					MEX_ww1_mexico_prerevolution
+				}
+			
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = MEX_madero_mexico
+				set_popularities = {
+					democratic = 79
+					neutrality = 3
+					fascism = 9
+					communism = 9
+				}
+				set_politics = {
+						ruling_party = democratic
+					}
+				retire_country_leader = yes
+				create_country_leader = {
+					name = "Francisco I. Madero"
+					desc = "POLITICS_FRANCISO_MADERO_DESC"
+					picture = "gfx/leaders/MEX/Portrait_MEX_Francisco_Madero.dds"
+					expire = "1965.1.1"
+					ideology = liberalism
+					traits = {}
+				}
+			}
+			
+			
+		}
+		}
+		
+		if=  { ##If the player chooses to fight against revolution
+			limit={
+				check_variable = {
+					var = MEX.support_revolution
+					value = 0
+					compare = equals
+				}
+		}
+		hidden_effect={
+		##Give player Chihuahua and give MXA control of mexico states
+			MXB = { add_state_core = 482 }
+			MEX = {  #Player Diaz
+				set_capital = 277
+				set_popularities = {
+					democratic = 18
+					neutrality = 72
+					fascism = 8
+					communism = 2
+				}
+				
+			}
+			
+			MXB = { ##Madero Dynamic Tag
+				remove_ideas = {
+					MEX_ww1_mexico_prerevolution
+				}
+			
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = MEX_madero_mexico
+				set_popularities = {
+					democratic = 79
+					neutrality = 3
+					fascism = 9
+					communism = 9
+				}
+				set_politics = {
+						ruling_party = democratic
+					}
+				retire_country_leader = yes
+				create_country_leader = {
+					name = "Francisco I. Madero"
+					desc = "POLITICS_FRANCISO_MADERO_DESC"
+					picture = "gfx/leaders/MEX/Portrait_MEX_Francisco_Madero.dds"
+					expire = "1965.1.1"
+					ideology = liberalism
+					traits = {}
+				}
+			}
+		
 	}
+	}
+	
+	hidden_effect = { ##These things will happen regardless of player choice
+		
+		MEX = {
+			set_rule = { can_join_factions = no }
+			if = {
+				limit = {
+					check_variable = {
+						var = MEX.support_revolution
+						value = 1
+						compare = equals
+					}
+				}
+				declare_war_on = {
+					target = MXA
+					type = civil_war
+				}
+				load_oob = "MEX_REV"
+			}
+		}
+		MXA = {
+			set_rule = { can_join_factions = no }
+			if = {
+				limit = {
+					check_variable = {
+						var = MEX.support_revolution
+						value = 0
+						compare = equals
+					}
+				}
+				declare_war_on = {
+					target = MEX
+					type = civil_war
+				}
+			}
+			
+		}
+		MXB = { ##Madero AI
+			set_rule = { can_join_factions = no }
+			if = {
+				limit = {
+					check_variable = {
+						var = MEX.support_revolution
+						value = 0
+						compare = equals
+					}
+				}
+				declare_war_on = {
+					target = MEX
+					type = civil_war
+				}
+				load_oob = "MEX_REV"
+			}
+		}
+		MXC = { ##Give ownership of Coahuila to Pancho Villa
+			set_rule = { can_join_factions = no }
+			set_state_owner = 480
+			
+			if = {
+				limit = {
+					check_variable = {
+						var = MEX.support_revolution
+						value = 1
+						compare = equals
+					}
+				}
+				declare_war_on = {
+					target = MXA
+					type = civil_war
+				}
+				else = {
+					declare_war_on = {
+						target = MEX
+						type = civil_war
+					}
+				}
+			}
+			
+			MXC = { load_oob = "MEX_VILLA" }
+		}
+			
+		MXD = { ##Give ownership of Guerrero to Zapata
+			set_rule = { can_join_factions = no }
+			set_state_owner = 485
+			
+			if = {
+				limit = {
+					check_variable = {
+						var = MEX.support_revolution
+						value = 1
+						compare = equals
+					}
+				}
+				declare_war_on = {
+					target = MXA
+					type = civil_war
+				}
+				else = {
+					declare_war_on = {
+						target = MEX
+						type = civil_war
+					}
+				}
+			}
+			##Spawn Zapata oob
+		}
+		
+		MXE = { ##Give ownership of Baja to Magonistas
+			set_rule = { can_join_factions = no }
+			set_state_owner = 484
+			declare_war_on = {
+				target = MEX
+				type = civil_war
+			}
+			declare_war_on = {
+				target = MXA
+				type = civil_war
+			}
+			MXE = { load_oob = "MEX_MAG" }
+		}
+	}
+	}
+	
 	option = {
 		name =  MSMMexico.5.a ##revolutionary response
         trigger= {
@@ -177,9 +397,7 @@ country_event = {
 			}
         }
 	}
-	
 }
-
 news_event = {
 	title=MSMMexico.6.t ##Plan of San Luis Potosí
 	desc=MSMMexico.6.d
@@ -187,7 +405,7 @@ news_event = {
 	fire_only_once=yes
 	major=yes
 	trigger={
-		date > 1910.10.5
+		date > 1910.9.15
 		date < 1911.1.1
 	}
 	option ={

@@ -336,6 +336,17 @@ if = {
 	    reserve_dynamic_country = yes
 	}
 	
+	create_dynamic_country = {
+	    original_tag = MEX
+	    set_country_flag = MEX_magonista_flag
+		set_politics = {
+			ruling_party = communism
+		}
+		set_cosmetic_tag = MEX_magonista_mexico
+		set_research_slots = 3
+	    reserve_dynamic_country = yes
+	}
+	
 }
 	
 	

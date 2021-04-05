@@ -17,3 +17,8 @@ MXD = {  ##Emiliano Zapata Uprising
 	original_tag = MEX
 	has_country_flag = MEX_zapata_flag
 }
+
+MXE = {  ##Magonista Uprising
+	original_tag = MEX
+	has_country_flag = MEX_magonista_flag
+}
