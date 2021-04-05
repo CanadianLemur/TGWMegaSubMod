@@ -1650,9 +1650,11 @@ focus_tree = {
 		icon = GFX_focus_generic_military_mission
 		available = { }
 		completion_reward = { 
-			add_timed_idea = {
-				idea = MSM_GER_ww1_final_preperations_made
-				days = 180
+			custom_effect_tooltip = "We will gain an advantage at the outset of the war"
+			hidden_effect = {
+				country_event = {
+					event = MSMGermany.16
+				}
 			}
 		}
 		ai_will_do = { factor = 2000 }
