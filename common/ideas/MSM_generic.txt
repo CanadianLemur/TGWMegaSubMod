@@ -1,0 +1,26 @@
+ideas = {
+	country = {
+		msm_neutrality_idea = {
+
+			picture = "GFX_Generic_neutrality_focus"
+
+			removal_cost = 0
+				
+			modifier = {
+				neutrality_drift = 0.1
+			}
+		}
+		# BY JINGO, used to make democratic allies of germany join their wars, Sweden, Romania, etc
+		jingoism = {	
+			allowed = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+				
+			modifier = {
+				ai_join_ally_desire_factor = 70			
+			}
+		}
+	}
+}
