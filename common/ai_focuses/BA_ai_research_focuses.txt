@@ -22,6 +22,8 @@ ba_generic_research_focuses = {
 ## Tags: GER, AUH, ITA, ENG.
 ba_fully_naval_prioritized_research_focuses_GER = {
 	research = {
+		infantry_tech = 8.0
+		artillery = 2.0
 		naval_doctrine = 1.8
 		naval_equipment = 1.8
     }

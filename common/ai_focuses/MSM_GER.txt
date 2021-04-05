@@ -1,0 +1,12 @@
+#MSM_generic_research_focuses = {
+#	research = {
+#        infantry_tech = 8.0
+#		support_tech = 4.0
+#		industry = 8.0
+#		electronics = 2.0
+#		land_doctrine = 4.0
+#		air_doctrine = 2.0
+#		naval_doctrine = -0.8
+#		naval_equipment = -0.8
+#    }
+#}
