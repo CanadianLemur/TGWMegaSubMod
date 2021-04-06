@@ -10,6 +10,7 @@ ideas = {
 				neutrality_drift = 0.1
 			}
 		}
+		
 		# BY JINGO, used to make democratic allies of germany join their wars, Sweden, Romania, etc
 		jingoism = {	
 			allowed = {
@@ -20,6 +21,36 @@ ideas = {
 				
 			modifier = {
 				ai_join_ally_desire_factor = 70			
+			}
+		}
+		
+		MSM_embroiled_in_civil_war = {	
+			allowed = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+				
+			modifier = {
+				hidden_modifier = {
+					ai_get_ally_desire_factor = -1.0
+				}
+			}
+		}
+		
+		MSM_recovering_from_civil_war = {	
+			allowed = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+				
+			modifier = {
+				hidden_modifier = {
+					ai_get_ally_desire_factor = -1.0
+					send_volunteer_factor = 0.2
+					send_volunteers_tension = -0.8
+				}
 			}
 		}
 	}
