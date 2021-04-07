@@ -118,6 +118,62 @@ country_event = {
 	is_triggered_only = yes
 	
 	immediate = {
+	###Create Dynamic countries for mexican revolution
+	create_dynamic_country = {
+	    original_tag = MEX
+	    set_country_flag = MEX_diaz_flag
+		set_politics = {
+			ruling_party = neutrality
+		}
+		set_cosmetic_tag = MEX_diaz_mexico
+		set_research_slots = 3
+	    reserve_dynamic_country = yes
+	}
+	
+	create_dynamic_country = {
+	    original_tag = MEX
+	    set_country_flag = MEX_madero_flag
+		set_politics = {
+			ruling_party = democratic
+		}
+		set_cosmetic_tag = MEX_madero_mexico
+		set_research_slots = 3
+	    reserve_dynamic_country = yes
+	}
+	
+	create_dynamic_country = {
+	    original_tag = MEX
+	    set_country_flag = MEX_villa_flag
+		set_politics = {
+			ruling_party = fascism
+		}
+		set_cosmetic_tag = MEX_villa_mexico
+		set_research_slots = 3
+	    reserve_dynamic_country = yes
+	}
+	
+	create_dynamic_country = {
+	    original_tag = MEX
+	    set_country_flag = MEX_zapata_flag
+		set_politics = {
+			ruling_party = communism
+		}
+		set_cosmetic_tag = MEX_zapata_mexico
+		set_research_slots = 3
+	    reserve_dynamic_country = yes
+	}
+	
+	create_dynamic_country = {
+	    original_tag = MEX
+	    set_country_flag = MEX_magonista_flag
+		set_politics = {
+			ruling_party = communism
+		}
+		set_cosmetic_tag = MEX_magonista_mexico
+		set_research_slots = 3
+	    reserve_dynamic_country = yes
+	}
+	
 		set_variable = { MEX.has_revolution = 2 }
 		MEX = {
 		delete_unit_template_and_units = {
@@ -269,7 +325,6 @@ country_event = {
 	hidden_effect = { ##These things will happen regardless of player choice
 		
 		MEX = {
-			set_rule = { can_join_factions = no }
 			if = {
 				limit = {
 					check_variable = {
@@ -279,15 +334,16 @@ country_event = {
 					}
 				}
 				MEX = { load_oob = "MEX_REV" }
-				
+				create_faction = "Anti-Reelection Movement"
+				add_to_faction = MXC
+				add_to_faction = MXD
 				declare_war_on = {
 					target = MXA
-					type = civil_war
+					type = annex_everything
 				}
 			}
 		}
 		MXA = { ##Federal AI
-			set_rule = { can_join_factions = no }
 			if = {
 				limit = {
 					check_variable = {
@@ -301,7 +357,6 @@ country_event = {
 			
 		}
 		MXB = { ##Madero AI
-			set_rule = { can_join_factions = no }
 			if = {
 				limit = {
 					check_variable = {
@@ -312,18 +367,25 @@ country_event = {
 				}
 				declare_war_on = {
 					target = MEX
-					type = civil_war
+					type = annex_everything
 				}
+				create_faction = "Anti-Reelection Movement"
+				add_to_faction = MXC
+				add_to_faction = MXD
 				MXB = { load_oob = "MEX_REV" }
 			}
 		}
 		MXC = { ##Give ownership of Coahuila to Pancho Villa
-			set_rule = { can_join_factions = no }
 			set_state_owner = 480
 			add_timed_idea = {
 			idea = MEX_revolutionary_fervor
 			days = 360
 			}
+			set_popularities = {
+					democratic = 20
+					neutrality = 10
+					fascism = 70
+				}
 			if = {
 				limit = {
 					check_variable = {
@@ -348,12 +410,16 @@ country_event = {
 		}
 			
 		MXD = { ##Give ownership of Guerrero to Zapata
-			set_rule = { can_join_factions = no }
 			set_state_owner = 485
 			add_timed_idea = {
 			idea = MEX_revolutionary_fervor
 			days = 360
 			}
+			set_popularities = {
+					democratic = 20
+					neutrality = 0
+					communism = 80
+				}
 			if = {
 				limit = {
 					check_variable = {
@@ -377,18 +443,42 @@ country_event = {
 		}
 		
 		MXE = { ##Give ownership of Baja to Magonistas
-			set_rule = { can_join_factions = no }
 			set_state_owner = 484
+			set_province_controller = 13215
+			set_province_controller = 13216
 			add_timed_idea = {
 			idea = MEX_revolutionary_fervor
 			days = 360
 			}
+			set_popularities = {
+					democratic = 20
+					neutrality = 0
+					communism = 80
+				}
+			set_party_name = { 
+				ideology = communism 
+				long_name = "Magonistas" 
+				name = "Magonistas"  
+				}
+			
 			declare_war_on = {
 				target = MEX
 				type = annex_everything
 			}
 			declare_war_on = {
 				target = MXA
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = MXB
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = MXD
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = MXC
 				type = annex_everything
 			}
 			MXE = { load_oob = "MEX_MAG" }

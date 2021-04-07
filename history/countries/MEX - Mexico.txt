@@ -287,69 +287,6 @@ if = {
 		}
 	}
 	
-	###Create Dynamic countries for mexican revolution
-if = {
-	limit = {
-		has_dlc = "La Resistance"
-	}
-	create_dynamic_country = {
-	    original_tag = MEX
-	    set_country_flag = MEX_diaz_flag
-		set_politics = {
-			ruling_party = neutrality
-		}
-		set_cosmetic_tag = MEX_diaz_mexico
-		set_research_slots = 3
-	    reserve_dynamic_country = yes
-	}
-	
-	create_dynamic_country = {
-	    original_tag = MEX
-	    set_country_flag = MEX_madero_flag
-		set_politics = {
-			ruling_party = democratic
-		}
-		set_cosmetic_tag = MEX_madero_mexico
-		set_research_slots = 3
-	    reserve_dynamic_country = yes
-	}
-	
-	create_dynamic_country = {
-	    original_tag = MEX
-	    set_country_flag = MEX_villa_flag
-		set_politics = {
-			ruling_party = fascism
-		}
-		set_cosmetic_tag = MEX_villa_mexico
-		set_research_slots = 3
-	    reserve_dynamic_country = yes
-	}
-	
-	create_dynamic_country = {
-	    original_tag = MEX
-	    set_country_flag = MEX_zapata_flag
-		set_politics = {
-			ruling_party = communism
-		}
-		set_cosmetic_tag = MEX_zapata_mexico
-		set_research_slots = 3
-	    reserve_dynamic_country = yes
-	}
-	
-	create_dynamic_country = {
-	    original_tag = MEX
-	    set_country_flag = MEX_magonista_flag
-		set_politics = {
-			ruling_party = communism
-		}
-		set_cosmetic_tag = MEX_magonista_mexico
-		set_research_slots = 3
-	    reserve_dynamic_country = yes
-	}
-	
-}
-	
-	
 	
 	
 

@@ -76,12 +76,17 @@
  
  MEX_diaz_mexico:0 "Federal Mexico"
  MEX_diaz_mexico_DEF:0 "The Federal Government of Mexico"
+ MEX_diaz_mexico_ADJ:0 "Federal Mexican"
  MEX_madero_mexico:0 "Mexican Revolutionaries"
  MEX_madero_mexico_DEF:0 "The Mexican Revolutionary Army"
+ MEX_madero_mexico_ADJ:0"Mexican Revolutionary"
  MEX_villa_mexico:0 "Pancho Villa Revolutionaries"
  MEX_villa_mexico_DEF:0 "Pancho Villa Revolutionary Army"
+ MEX_villa_mexico_ADJ:0 "Villan'
  MEX_zapata_mexico:0 "Zapata Revolutionaries"
  MEX_zapata_mexico_DEF:0 "Emiliano Zapata Revolutionary Army"
+ MEX_zapata_mexico_ADJ:0"Zapatan"
  MEX_magonista_mexico:0 "Magonista Rebellion"
  MEX_magonista_mexico_DEF:0 "the Magonista Rebellion"
+ MEX_magonista_mexico_ADJ:0"Magonista"
  
