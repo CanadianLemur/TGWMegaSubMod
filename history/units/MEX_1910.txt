@@ -1,6 +1,7 @@
 ﻿###################################################################
 division_template = {
 	name = "Infantry Division"
+	is_locked = yes
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -10,6 +11,7 @@ division_template = {
 }
 division_template = {
 	name = "Infantry Brigade"
+	is_locked = yes
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 1 y = 0 }
@@ -18,6 +20,7 @@ division_template = {
 }
 division_template = {
 	name = "Cavalry Division"
+	is_locked = yes
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }

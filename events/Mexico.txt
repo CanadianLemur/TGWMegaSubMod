@@ -119,6 +119,20 @@ country_event = {
 	
 	immediate = {
 		set_variable = { MEX.has_revolution = 2 }
+		MEX = {
+		delete_unit_template_and_units = {
+			division_template = "Infantry Division"
+			disband = no
+		}
+		delete_unit_template_and_units = {
+			division_template = "Infantry Brigade"
+			disband = no
+		}
+		delete_unit_template_and_units = {
+			division_template = "Cavalry Division"
+			disband = no
+		}
+		}
 		if=  { ##If the player chooses to support revolution
 			limit={
 				check_variable = {
@@ -209,8 +223,8 @@ country_event = {
 				}
 		}
 		hidden_effect={
-		##Give player Chihuahua and give MXA control of mexico states
-			MXB = { add_state_core = 482 }
+		##Give AI Madero Chihuahua and maintain player control of mexico states
+			MXB = { transfer_state = 482 }
 			MEX = {  #Player Diaz
 				set_capital = 277
 				set_popularities = {
@@ -264,13 +278,11 @@ country_event = {
 						compare = equals
 					}
 				}
+				MEX = { load_oob = "MEX_REV" }
+				
 				declare_war_on = {
 					target = MXA
 					type = civil_war
-				}
-				load_oob = "MEX_REV"
-				else = {
-					load_oob = "MEX_FED"
 				}
 			}
 		}
@@ -361,7 +373,7 @@ country_event = {
 					}
 				}
 			}
-			##Spawn Zapata oob
+			load_oob = "MEX_ZAPATA"
 		}
 		
 		MXE = { ##Give ownership of Baja to Magonistas
