@@ -42,8 +42,12 @@ ideologies = {
 		faction_impact_on_world_tension = 0.1
 		
 		modifiers = {
-			generate_wargoal_tension = 1.00
-			join_faction_tension = 0.80
+
+			#generate_wargoal_tension = 1.00
+			#KiS
+			generate_wargoal_tension = 0.15
+
+			join_faction_tension = 0.75
 			lend_lease_tension = 0.50
 			send_volunteers_tension = 0.50
 			guarantee_tension = 0.25
@@ -125,9 +129,6 @@ ideologies = {
 		
 			nazism = {
 			}
-
-			gen_nazism = {
-			}
 			
 			fascism_ideology = {
 			}
@@ -181,15 +182,14 @@ ideologies = {
 			
 			oligarchism  = {
 			}
-
-			anarchism = {
-				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
-			}
 			
 			moderatism = {
 			}
 			
 			centrism = {
+			}
+			
+			autocracy = {
 			}
 		}
 
@@ -210,17 +210,20 @@ ideologies = {
 		rules = {
 			can_force_government = no
 			can_puppet = yes
-			can_send_volunteers = no
+			can_send_volunteers = yes
 		}
 		
 		modifiers = {
 			#increased_influence_factor = 0.3 #30% easier to influence
-			generate_wargoal_tension = 0.5
-			join_faction_tension = 0.4
-			lend_lease_tension = 0.4
-			send_volunteers_tension = 0.4
+
+			#KiS
+			generate_wargoal_tension = 0.45
+
+			join_faction_tension = 0.35
+			lend_lease_tension = 0.35
 			guarantee_tension = 0.4
 			drift_defence_factor = -0.3	
+			send_volunteers_tension = 0.15
 			civilian_intel_to_others = 20.0
 			army_intel_to_others = 10.0
 			navy_intel_to_others = 20.0
@@ -232,4 +235,48 @@ ideologies = {
 
 		ai_neutral = yes # 
 	}
-}
+
+
+	anarchism = {
+		
+		types = {
+			anarcho_capitalism = {
+			}
+			
+			anarchist_communism = {
+			}
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_COMMUNIST_1"
+			"FACTION_NAME_COMMUNIST_2"
+			"FACTION_NAME_COMMUNIST_3"
+			"FACTION_NAME_COMMUNIST_4"
+			"FACTION_NAME_COMMUNIST_5"
+		}
+		
+		color = { 10 10 10 }
+		
+		war_impact_on_world_tension = 1
+		faction_impact_on_world_tension = 1
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = no
+		}
+		
+		can_collaborate = no
+		
+		modifiers = {
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 7.5
+			navy_intel_to_others = 12.5
+			airforce_intel_to_others = 7.5
+			hidden_modifier = { join_faction_tension = -0.1 }
+		}
+		
+		faction_modifiers = {
+			
+		}
+
+	}

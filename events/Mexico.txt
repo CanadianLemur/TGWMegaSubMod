@@ -167,7 +167,7 @@ country_event = {
 	    original_tag = MEX
 	    set_country_flag = MEX_magonista_flag
 		set_politics = {
-			ruling_party = communism
+			ruling_party = anarchism
 		}
 		set_cosmetic_tag = MEX_magonista_mexico
 		set_research_slots = 3
@@ -451,14 +451,9 @@ country_event = {
 			days = 360
 			}
 			set_popularities = {
-					democratic = 20
+					communism = 20
 					neutrality = 0
-					communism = 80
-				}
-			set_party_name = { 
-				ideology = communism 
-				long_name = "Magonistas" 
-				name = "Magonistas"  
+					anarchism = 80
 				}
 			
 			declare_war_on = {
