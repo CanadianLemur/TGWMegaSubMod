@@ -187,6 +187,7 @@ country_event = {
 				transfer_state = 154
 				
                 kill_country_leader = yes
+				
                 create_country_leader={ 
 					name = "Miklós Horthy" 
 					desc=HUN_miklos_horothy_DESC 
@@ -195,16 +196,19 @@ country_event = {
 					ideology=despotism 
 					traits = { }
 				}
-			add_ideas = {disarmed_nation}
-if = {
-	limit = {
-		has_dlc = "Death or Dishonor"
-	}
-	add_ideas = {
-		HUN_treaty_of_triannon
-	}
-}
-
+				
+				add_ideas = {disarmed_nation}
+				
+				if = {
+					limit = {
+						has_dlc = "Death or Dishonor"
+					}
+					add_ideas = {
+						HUN_treaty_of_triannon
+					}
+				}
+			}
+			
 			CZE = {
 				transfer_state = 69
 				transfer_state = 9		
@@ -235,7 +239,6 @@ if = {
 			news_event = { days = 3 id = ww1_russian_armistice.1 }
 		}
 	}
-}
 }
 #____________________________________________________________
 
@@ -276,15 +279,15 @@ news_event = {
 					democratic = 80
 					communism = 5
 				}
-			end_puppet = LIT
-			end_puppet = EST
-			end_puppet = POL
-			give_resource_rights = { receiver = FRA state = 42 }
-			add_ideas = {
-			reparations_to_france
-			reparations_to_britain
-			reparations_to_russia
-			}
+				end_puppet = LIT
+				end_puppet = EST
+				end_puppet = POL
+				give_resource_rights = { receiver = FRA state = 42 }
+				add_ideas = {
+					reparations_to_france
+					reparations_to_britain
+					reparations_to_russia
+				}
 			}
 
 			if = {
@@ -304,8 +307,8 @@ news_event = {
 					transfer_state = 345
 				}
 				KUR = {
-				transfer_state = 352
-				transfer_state = 350
+					transfer_state = 352
+					transfer_state = 350
 				}
 				ENG = {
 					transfer_state = 675
@@ -317,51 +320,33 @@ news_event = {
 					give_guarantee = KUR
 				}
 				RUS = {
-				transfer_state = 354
-				transfer_state = 353
-				transfer_state = 341 
-				
+					transfer_state = 354
+					transfer_state = 353
+					transfer_state = 341 
 				}
 				SAU = {
 					transfer_state = 747
-
 					add_state_core = 747
 				}
+				
 				if = {
-				limit = {
-					ITA = {
-						has_war_with = TUR
-						is_in_faction_with = FRA
-					}
-				}
-				ITA = {transfer_state = 342}
+					limit = { ITA = { has_war_with = TUR is_in_faction_with = FRA } }
+					ITA = {transfer_state = 342}
 				}
 				if = {
-				limit = {
-					GRE = {
-						has_war_with = TUR
-						is_in_faction_with = FRA
-					}
-				}
-				GRE = {transfer_state = 339}
+					limit = { GRE = { has_war_with = TUR is_in_faction_with = FRA } }
+					GRE = {transfer_state = 339}
 				}
 			}
 
 			FRA = {
 				transfer_state = 28
 				#transfer_state = 667
-
 				add_state_core = 28
-
 			}
 
 			if = {
-				limit = {
-					ROM = {
-						has_war_with = AUH
-						is_in_faction_with = FRA
-					}
-				}
+				limit = { ROM = { has_war_with = AUH is_in_faction_with = FRA } }
 				ROM = {
 					transfer_state = 79
 					transfer_state = 46
@@ -384,12 +369,7 @@ news_event = {
 			}
 
 			if = {
-				limit = {
-					ITA = {
-						has_war_with = AUH
-						is_in_faction_with = FRA
-					}
-				}
+				limit = { ITA = { has_war_with = AUH is_in_faction_with = FRA } }
 				ITA = {
 					transfer_state = 39
 					transfer_state = 736
@@ -404,21 +384,17 @@ news_event = {
 					set_demilitarized_zone = yes 
 				}
 				else = {
-				SCS = {
-				transfer_state = 736
-				transfer_state = 163
-				add_state_core = 736
-				add_state_core = 163
-				}
+					SCS = {
+						transfer_state = 736
+						transfer_state = 163
+						add_state_core = 736
+						add_state_core = 163
+					}
 				}
 			}
 
 			if = {
-				limit = {
-					SER = {
-						is_in_faction_with = FRA
-					}
-				}
+				limit = { SER = { is_in_faction_with = FRA } }
 				SER = {
 					transfer_state = 764 # https://en.wikipedia.org/wiki/Banat#The_Banat_Question_at_the_end_of_First_World_War
 					add_state_core = 764
@@ -426,19 +402,19 @@ news_event = {
 				}	
 			}
 			SCS = {
-			transfer_state = 45
-			transfer_state = 109
-			transfer_state = 104
-			transfer_state = 103
-			transfer_state = 102
-			add_state_core = 45
-			add_state_core = 109
-			add_state_core = 104
-			add_state_core = 103
-			add_state_core = 102
+				transfer_state = 45
+				transfer_state = 109
+				transfer_state = 104
+				transfer_state = 103
+				transfer_state = 102
+				add_state_core = 45
+				add_state_core = 109
+				add_state_core = 104
+				add_state_core = 103
+				add_state_core = 102
 			}
 			DZG = {
-			transfer_state = 823
+				transfer_state = 823
 			}
 			POL = {
 				transfer_state = 85
@@ -468,7 +444,7 @@ news_event = {
 				add_state_core = 152
 				add_state_core = 4
 				transfer_navy = {
-				target = SCS
+					target = SCS
 				}
 			}
 
@@ -485,7 +461,6 @@ news_event = {
 
 			LUX = {
 				transfer_state = 8
-				
 				add_state_core = 8
 			}
 
@@ -497,47 +472,27 @@ news_event = {
 			#More appropriate, logical and less buggy code (MasterWaifuman)
 			# Updated by Wolferos
 			every_country = {
-			    limit = {
-				    has_war_with = GER
-					is_in_faction_with = FRA
-				}
+			    limit = { has_war_with = GER is_in_faction_with = FRA }
 				white_peace = GER
 			}
 			
 			every_country = {
-			    limit = {
-				    has_war_with = AUH
-					is_in_faction_with = FRA
-				}
+			    limit = { has_war_with = AUH is_in_faction_with = FRA }
 				white_peace = AUH
 			}
 			
 			if = {
-			    limit = {
-				    BUL = {
-					    is_in_faction_with = GER
-					}
-				}
+			    limit = { BUL = { is_in_faction_with = GER } }
 				every_country = {
-			        limit = {
-				        has_war_with = BUL
-						is_in_faction_with = FRA
-				    }
+			        limit = { has_war_with = BUL is_in_faction_with = FRA }
 				    white_peace = BUL
 			    }
 			}
 			
 			if = {
-			    limit = {
-				    TUR = {
-					    is_in_faction_with = GER
-					}
-				}
+			    limit = { TUR = { is_in_faction_with = GER } }
 				every_country = {
-			        limit = {
-				        has_war_with = TUR
-						is_in_faction_with = FRA
-				    }
+			        limit = { has_war_with = TUR is_in_faction_with = FRA }
 				    white_peace = TUR
 			    }
 			}
@@ -601,7 +556,6 @@ news_event = {
 
 			SER = {
 				transfer_state = 764
-
 				add_state_core = 764
 			}
 
@@ -619,7 +573,6 @@ news_event = {
 
 			SAF = {
 				transfer_state = 541
-
 				add_state_core = 541
 			}
 
@@ -634,7 +587,7 @@ news_event = {
 				transfer_state = 648
 				transfer_state = 633
 				transfer_state = 647
-
+				
 				add_state_core = 684
 				add_state_core = 646
 				add_state_core = 648
@@ -642,22 +595,17 @@ news_event = {
 				add_state_core = 647
 			}
 			if = {
-				limit = {
-					GRE = {
-						has_war_with = BUL
-						is_in_faction_with = FRA
-					}
-				}
+				limit = { GRE = { has_war_with = BUL is_in_faction_with = FRA } }
 				GRE = {
-				transfer_state = 184
-				transfer_state = 757
+					transfer_state = 184
+					transfer_state = 757
 
-				add_state_core = 184
-				add_state_core = 757
-			}
+					add_state_core = 184
+					add_state_core = 757
 				}
+			}
 			DZG = {
-			transfer_state = 823
+				transfer_state = 823
 			}
 			POL = {
 				transfer_state = 97
@@ -684,115 +632,99 @@ news_event = {
 				add_state_core = 762
 			}
 			RUS = {
-			puppet = POL
-			puppet = CZE
-			transfer_state = 188
-			transfer_state = 763
-			transfer_state = 91
-			add_state_core = 91
-			transfer_state = 89
-			add_state_core = 89
-			transfer_state = 73
-			add_state_core = 73
-			transfer_state = 80
-			add_state_core = 80
+				puppet = POL
+				puppet = CZE
+				transfer_state = 188
+				transfer_state = 763
+				transfer_state = 91
+				add_state_core = 91
+				transfer_state = 89
+				add_state_core = 89
+				transfer_state = 73
+				add_state_core = 73
+				transfer_state = 80
+				add_state_core = 80
 			}
 			POL = {
-			puppet = DZG
+				puppet = DZG
 			}
 			HAN = {
-			transfer_state = 59
-			transfer_state = 56
-			add_state_core = 59
-			add_state_core = 56
-			inherit_technology = GER
-			create_country_leader = {
-			name = "Prince Edward"
-			desc = "POLITICS_PRINCE_EDWARD_DESC"
-			picture = "gfx/leaders/HAN_Prince_Edward.dds"
-			expire = "1965.1.1"
-			ideology = conservatism
-			traits = {MSM_viceroy_of_hannover
-	}	
-}
-	set_cosmetic_tag = HAN_UK
+				transfer_state = 59
+				transfer_state = 56
+				add_state_core = 59
+				add_state_core = 56
+				inherit_technology = GER
+				create_country_leader = {
+					name = "Prince Edward"
+					desc = "POLITICS_PRINCE_EDWARD_DESC"
+					picture = "gfx/leaders/HAN_Prince_Edward.dds"
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = { MSM_viceroy_of_hannover }	
+				}
+				set_cosmetic_tag = HAN_UK
 			}
 			ENG = {
-			set_autonomy = {
-    target = HAN
-    autonomy_state = autonomy_dominion
-}
+				set_autonomy = {
+					target = HAN
+					autonomy_state = autonomy_dominion
+				}
 			}
 			BAV = {
-			transfer_state = 52
+				transfer_state = 52
 			}
 			GER = {
 				dismantle_faction = yes	
-			transfer_units_fraction= {
-			target = HAN
-			size = 0.5
-			stockpile_ratio = 0
-			army_ratio = 0.05
-			navy_ratio = 0.1
-			air_ratio = 0.1
-			keep_unit_leaders_trigger = {
-			always = yes
-			}
-			}
-			transfer_units_fraction= {
-			target = BAV
-			size = 0.5
-			stockpile_ratio = 0
-			army_ratio = 1
-			navy_ratio = 0
-			air_ratio = 0
-			keep_unit_leaders_trigger = {
-			always = yes
-			}
-			}
-			annex_country = {
-			target = BAV
-			}
-			transfer_units_fraction= {
-			target = ENG
-			size = 0.5
-			stockpile_ratio = 0.5
-			army_ratio = 0
-			navy_ratio = 0.3
-			air_ratio = 0.5
-			keep_unit_leaders_trigger = {
-			always = yes
-			}
-		}
-			transfer_units_fraction= {
-			target = ENG
-			size = 0.5
-			stockpile_ratio = 1
-			army_ratio = 0
-			navy_ratio = 0.5
-			air_ratio = 1
-			keep_unit_leaders_trigger = {
-			always = yes
-			}
-		}
-		add_ideas = { GER_interwar_spirit_BannedConscription		
-		disarmed_nation
-		civilian_economy
-		
-		}
-		set_political_power = -100
+				transfer_units_fraction = {
+					target = HAN
+					size = 0.5
+					stockpile_ratio = 0
+					army_ratio = 0.05
+					navy_ratio = 0.1
+					air_ratio = 0.1
+					keep_unit_leaders_trigger = { always = yes }
+				}
+				transfer_units_fraction = {
+					target = BAV
+					size = 0.5
+					stockpile_ratio = 0
+					army_ratio = 1
+					navy_ratio = 0
+					air_ratio = 0
+					keep_unit_leaders_trigger = { always = yes }
+				}
+				annex_country = { target = BAV }
+				transfer_units_fraction = {
+					target = ENG
+					size = 0.5
+					stockpile_ratio = 0.5
+					army_ratio = 0
+					navy_ratio = 0.3
+					air_ratio = 0.5
+					keep_unit_leaders_trigger = { always = yes }
+				}
+				transfer_units_fraction = {
+					target = ENG
+					size = 0.5
+					stockpile_ratio = 1
+					army_ratio = 0
+					navy_ratio = 0.5
+					air_ratio = 1
+					keep_unit_leaders_trigger = { always = yes }
+				}
+				add_ideas = { 
+					GER_interwar_spirit_BannedConscription		
+					disarmed_nation
+					civilian_economy
+				}
+				set_political_power = -100
 			}
 			FRA = {
 				dismantle_faction = yes
 			}
 
 			if = {
-				limit = {
-					TUR = {
-						is_in_faction_with = FRA
-						has_war_with = GER
-					}
-				}
+				limit = { TUR = { is_in_faction_with = FRA has_war_with = GER } }
 				TUR = {
 					transfer_state = 546
 				}
