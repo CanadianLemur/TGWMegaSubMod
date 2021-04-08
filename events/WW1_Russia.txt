@@ -126,7 +126,7 @@ news_event = {
 	trigger = {
 
 		NOT = {
-			has_global_flag = kis_ask_ger_surrend # Can't happened if Germany loosed the WW1
+			has_global_flag = kis_ask_ger_surrend # Can't happened if Germany lost WW1
 		}
 		
 		RUS = {
@@ -138,17 +138,20 @@ news_event = {
 				has_country_flag = dual_power
 				has_government = communism
 			}
-			NOT = {	controls_state = 98 }
-			NOT = {	controls_state = 10 }
-			NOT = {	controls_state = 90 }
-			NOT = { controls_state = 97 }
-			NOT = { controls_state = 92 }
-			NOT = { controls_state = 93 }
-			NOT = { controls_state = 199 }
-			NOT = { controls_state = 206 }
-			NOT = { controls_state = 202 }
-			NOT = { controls_state = 194 }
-			NOT = { controls_state = 95 }
+			
+			surrender_progress > 0.35
+			
+#			NOT = {	controls_state = 98 }
+#			NOT = {	controls_state = 10 }
+#			NOT = {	controls_state = 90 }
+#			NOT = { controls_state = 97 }
+#			NOT = { controls_state = 92 }
+#			NOT = { controls_state = 93 }
+#			NOT = { controls_state = 199 }
+#			NOT = { controls_state = 206 }
+#			NOT = { controls_state = 202 }
+#			NOT = { controls_state = 194 }
+#			NOT = { controls_state = 95 }
 		}
 	}
 
@@ -376,7 +379,7 @@ news_event = {
 	trigger = {
 
 		NOT = {
-			has_global_flag = kis_ask_ger_surrend # Can't happened if Germany loosed the WW1
+			has_global_flag = kis_ask_ger_surrend # Can't happened if Germany lost WW1
 		}
 
 		country_exists = SOV
