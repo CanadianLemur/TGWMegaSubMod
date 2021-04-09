@@ -13,6 +13,7 @@ units = {
 		location = 13215
 		division_template="Anarchists"
 		start_experience_factor=0.1
+		start_equipment_factor=0.2
 	}
 	
 	division= { 			
@@ -20,6 +21,7 @@ units = {
 		location = 13215
 		division_template="Anarchists"
 		start_experience_factor=0.1
+		start_equipment_factor=0.2
 	}
 	
 	division= { 			
@@ -27,6 +29,7 @@ units = {
 		location = 13215
 		division_template="Anarchists"
 		start_experience_factor=0.1
+		start_equipment_factor=0.2
 	}
 	
 	division= { 			
@@ -34,5 +37,6 @@ units = {
 		location = 13216
 		division_template="Anarchists"
 		start_experience_factor=0.1
+		start_equipment_factor=0.2
 	}
 }

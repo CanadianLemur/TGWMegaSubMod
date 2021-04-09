@@ -23,4 +23,6 @@
  MSMMexico.6.t:0 "Plan of San Luis Potosí"
  MSMMexico.6.d:0 "On October 5th, 1910  Francisco I. Madero published thhe Plan of San Luis Potosí, a document that called for the nullification of the 1910 Mexican election."
  MSMMexico.6.a:0 "What is going on down there!?"
-MSMMexico.6.b:0 "This will impact the mexican economy"
+ MSMMexico.6.b:0 "This will impact the mexican economy"
+ REVOLUTION_VICTORY:0 "Francisco Madero's revolutionaries have won the Mexican Revolution"
+ FEDERALIST_VICTORY:0 "Porfirio Díaz and the Federalists has won the Mexican Revolution"

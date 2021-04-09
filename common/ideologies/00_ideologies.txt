@@ -240,11 +240,13 @@ ideologies = {
 	anarchism = {
 		
 		types = {
-			anarcho_capitalism = {
-			}
 			
 			anarchist_communism = {
 			}
+		
+			anarcho_capitalism = {
+			}
+			
 		}
 		
 		dynamic_faction_names = {
@@ -278,5 +280,6 @@ ideologies = {
 		faction_modifiers = {
 			
 		}
-
+		
+		ai_neutral = yes
 	}

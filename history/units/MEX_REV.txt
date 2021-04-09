@@ -15,29 +15,55 @@ units = {
 		location = 8097
 		division_template="Infantry Brigade"
 		start_experience_factor=0.1
+		start_equipment_factor=0.2
 	}
 	division= { 			
 		name = "Second Revolutionary Infantry"
 		location = 2037
 		division_template="Infantry Brigade"
 		start_experience_factor=0.1
+		start_equipment_factor=0.2
 	}
 	division= { 			
 		name = "Third Revolutionary Infantry"
 		location = 8097
 		division_template="Infantry Brigade"
 		start_experience_factor=0.1
+		start_equipment_factor=0.2
 	}
 	division= { 			
 		name = "Fourth Revolutionary Infantry"
 		location = 10830
 		division_template="Infantry Brigade"
 		start_experience_factor=0.1
+		start_equipment_factor=0.2
 	}
 	division= { 			
 		name = "Fifth Revolutionary Infantry"
 		location = 10809
 		division_template="Infantry Brigade"
 		start_experience_factor=0.1
+		start_equipment_factor=0.2
+	}
+	division= { 			
+		name = "Sixth Revolutionary Infantry"
+		location = 10830
+		division_template="Infantry Brigade"
+		start_experience_factor=0.1
+		start_equipment_factor=0.2
+	}
+	division= { 			
+		name = "Seventh Revolutionary Infantry"
+		location = 12850
+		division_template="Infantry Brigade"
+		start_experience_factor=0.1
+		start_equipment_factor=0.2
+	}
+	division= { 			
+		name = "Eighth Revolutionary Infantry"
+		location = 12827
+		division_template="Infantry Brigade"
+		start_experience_factor=0.1
+		start_equipment_factor=0.2
 	}
 }

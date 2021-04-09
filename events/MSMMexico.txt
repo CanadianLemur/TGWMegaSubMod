@@ -277,63 +277,61 @@ country_event = {
 					value = 0
 					compare = equals
 				}
-		}
-		hidden_effect={
-		##Give AI Madero Chihuahua and maintain player control of mexico states
-			MXB = { transfer_state = 482 }
-			MEX = {  #Player Diaz
-				set_capital = 277
-				set_popularities = {
-					democratic = 18
-					neutrality = 72
-					fascism = 8
-					communism = 2
+			}
+			hidden_effect={
+			##Give AI Madero Chihuahua and maintain player control of mexico states
+				MXB = { transfer_state = 482 }
+				MEX = {  #Player Diaz
+					set_capital = 277
+					set_popularities = {
+						democratic = 18
+						neutrality = 72
+						fascism = 8
+						communism = 2
+					}
 				}
 				
-			}
-			
-			MXB = { ##Madero Dynamic Tag
-				remove_ideas = {
-					MEX_ww1_mexico_prerevolution
-				}
-			
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = MEX_madero_mexico
-				set_popularities = {
-					democratic = 79
-					neutrality = 3
-					fascism = 9
-					communism = 9
-				}
-				set_politics = {
-						ruling_party = democratic
+				MXB = { ##Madero Dynamic Tag
+					remove_ideas = {
+						MEX_ww1_mexico_prerevolution
 					}
-				retire_country_leader = yes
-				create_country_leader = {
-					name = "Francisco I. Madero"
-					desc = "POLITICS_FRANCISO_MADERO_DESC"
-					picture = "gfx/leaders/MEX/Portrait_MEX_Francisco_Madero.dds"
-					expire = "1965.1.1"
-					ideology = liberalism
-					traits = {}
+				
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = MEX_madero_mexico
+					set_popularities = {
+						democratic = 79
+						neutrality = 3
+						fascism = 9
+						communism = 9
+					}
+					set_politics = {
+							ruling_party = democratic
+						}
+					retire_country_leader = yes
+					create_country_leader = {
+						name = "Francisco I. Madero"
+						desc = "POLITICS_FRANCISO_MADERO_DESC"
+						picture = "gfx/leaders/MEX/Portrait_MEX_Francisco_Madero.dds"
+						expire = "1965.1.1"
+						ideology = liberalism
+						traits = {}
+					}
 				}
 			}
-		
-	}
-	}
+		}
 	
 	hidden_effect = { ##These things will happen regardless of player choice
 		
-		MEX = {
-			if = {
-				limit = {
-					check_variable = {
-						var = MEX.support_revolution
-						value = 1
-						compare = equals
-					}
+		if = {
+			limit = {
+				check_variable = {
+					var = MEX.support_revolution
+					value = 1
+					compare = equals
 				}
-				MEX = { load_oob = "MEX_REV" }
+			}
+			MEX = { #Player Madero
+				load_oob = "MEX_REV" 
 				create_faction = "Anti-Reelection Movement"
 				add_to_faction = MXC
 				add_to_faction = MXD
@@ -342,19 +340,7 @@ country_event = {
 					type = annex_everything
 				}
 			}
-		}
-		MXA = { ##Federal AI
-			if = {
-				limit = {
-					check_variable = {
-						var = MEX.support_revolution
-						value = 1
-						compare = equals
-					}
-				}
-				MXA = { load_oob = "MEX_FED" }
-			}
-			
+			MXA = { load_oob = "MEX_FED" }
 		}
 		MXB = { ##Madero AI
 			if = {
@@ -527,6 +513,86 @@ news_event = {
 		name = MSMMexico.6.b
 		trigger = {
 			tag = MEX
+		}
+	}
+}
+
+country_event = {
+	title=MSMMexico.7.t ##Revolution Win Condition  REVOLUTIONARIES
+	desc=MSMMexico.7.d
+	id=MSMMexico.7
+	fire_only_once=yes
+	trigger = {
+		MXA = {
+			has_war_with = MEX
+			surrender_progress > 0.7
+		}
+	}
+	immediate = {
+		MXA = { retire_country_leader = yes  }
+		MEX = {
+			white_peace = {
+				tag = MXA
+				message = REVOLUTION_VICTORY
+			}
+			annex_country = {
+				target = MXA
+				transfer_troops = no
+			}
+			annex_country = {
+				target = MXC
+				transfer_troops = no
+			}
+			annex_country = {
+				target = MXD
+				transfer_troops = no
+			}
+		}
+		
+	}
+	option = {
+		name = MSMMexico.7.a #
+		
+	}
+}
+
+country_event = {
+	title=MSMMexico.7.t ##Revolution Win Condition  FEDERALISTS
+	desc=MSMMexico.7.d
+	id=MSMMexico.7
+	fire_only_once=yes
+	trigger = {
+		MXB = {
+			has_war_with = MEX
+			surrender_progress > 0.85
+		}
+	}
+	immediate = {
+		
+	}
+	option = {
+		name = MSMMexico.7.a #
+		
+	}
+}
+
+country_event = {
+	title=MSMMexico.8.t ##If Magonistas are puppeted they get annexed
+	desc=MSMMexico.8.d
+	id=MSMMexico.8
+	fire_only_once=yes
+	hidden=yes
+	trigger = {
+		MXE = {
+			not={ has_war_with = MEX }
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				country_exists = MEX
+			}
+			MEX = { annex_country = MXE }
 		}
 	}
 }

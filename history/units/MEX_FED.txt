@@ -24,42 +24,49 @@ units = {
 		location = 1965
 		division_template="Infantry Division"
 		start_experience_factor=0.2
+		start_equipment_factor=0.5
 	}
 	division= { 			
 		name = "Second Federal Infantry"
 		location = 2008
 		division_template="Infantry Division"
 		start_experience_factor=0.2
+		start_equipment_factor=0.5
 	}
 	division= { 			
 		name = "Third Federal Infantry"
 		location = 13089
 		division_template="Infantry Division"
 		start_experience_factor=0.2
+		start_equipment_factor=0.5
 	}
 	division= { 			
 		name = "Fourth Federal Infantry"
 		location = 12810
 		division_template="Infantry Division"
 		start_experience_factor=0.2
+		start_equipment_factor=0.5
 	}
 	division= { 			
 		name = "Fifth Federal Infantry"
 		location = 12835
 		division_template="Infantry Division"
 		start_experience_factor=0.2
+		start_equipment_factor=0.5
 	}
 	division= { 			
 		name = "Sixth Federal Infantry"
 		location = 12835
 		division_template="Infantry Division"
 		start_experience_factor=0.2
+		start_equipment_factor=0.5
 	}
 	division= { 			
 		name = "Seventh Federal Infantry"
 		location = 1965
 		division_template="Infantry Division"
 		start_experience_factor=0.2
+		start_equipment_factor=0.5
 	}
 	
 	division= { 			
@@ -67,23 +74,27 @@ units = {
 		location = 1965
 		division_template="Infantry Brigade"
 		start_experience_factor=0.2
+		start_equipment_factor=0.5
 	}
 	division= { 			
 		name = "Second Federal Brigade"
 		location = 12461
 		division_template="Infantry Brigade"
 		start_experience_factor=0.2
+		start_equipment_factor=0.5
 	}
 	division= { 			
 		name = "Third Federal Brigade"
 		location = 4965
 		division_template="Infantry Brigade"
 		start_experience_factor=0.2
+		start_equipment_factor=0.5
 	}
 	division= { 			
 		name = "Fourth Federal Brigade"
 		location = 4956
 		division_template="Infantry Brigade"
 		start_experience_factor=0.2
+		start_equipment_factor=0.5
 	}
 }
