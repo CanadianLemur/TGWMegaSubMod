@@ -529,6 +529,7 @@ country_event = {
 		}
 	}
 	immediate = {
+		set_variable = { MEX.has_revolution = 3 }
 		MXA = { retire_country_leader = yes  }
 		MEX = {
 			white_peace = {
@@ -568,7 +569,7 @@ country_event = {
 		}
 	}
 	immediate = {
-		
+		set_variable = { MEX.has_revolution = 3 }
 	}
 	option = {
 		name = MSMMexico.7.a #
