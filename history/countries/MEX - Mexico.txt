@@ -313,11 +313,7 @@ if = {
 	#							NF
 	#-------------------------------------------------------
 	#Army
-	complete_national_focus = mex_political_effort
-	complete_national_focus = MEX_ww1_industrial_effort
-
 	#Diplomatic
-	complete_national_focus = mex_ww1_diplomatic_effort
 	#-------------------------------------------------------
 
 	set_technology = {
