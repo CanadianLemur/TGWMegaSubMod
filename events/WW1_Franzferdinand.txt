@@ -343,8 +343,19 @@ country_event = {
 			targeted_alliance=SER
 			enemy=AUH
 		}
-		GER = {
-			country_event=ww1_franzferdinand.8
+		if = {
+			limit = { 
+				NOT = {
+					GER = { has_completed_focus = GER_ww1_war_plans_hindenburg_plan }
+				}
+			}
+			GER = { country_event=ww1_franzferdinand.8 }
+		}
+		if = {
+			limit = { 
+				GER = { has_completed_focus = GER_ww1_war_plans_hindenburg_plan }
+			}
+			GER = { country_event=ww1_franzferdinand.9 }
 		}
 	}
 	#option={
@@ -497,9 +508,26 @@ country_event = {
 			FRA = {
 		        add_timed_idea = { days = 180 idea = FRA_indecisive_deployments }
 		    }
+			
+			if = {
+				limit = { HOL = { is_in_faction_with = GER } }
+				HOL = {
+					add_timed_idea = {
+						idea = jingoism
+						days = 360
+					}
+				}
+			}
+			if = {
+				limit = { LUX = { is_in_faction_with = GER } }
+				LUX = {
+					add_timed_idea = {
+						idea = jingoism
+						days = 360
+					}
+				}
+			}
 		}
-		
-		
 
 		LUX = {
 		    hidden_effect = {
@@ -555,6 +583,25 @@ country_event = {
 			FRA = {
 		        add_timed_idea = { days = 180 idea = FRA_indecisive_deployments }
 		    }
+			
+			if = {
+				limit = { HOL = { is_in_faction_with = GER } }
+				HOL = {
+					add_timed_idea = {
+						idea = jingoism
+						days = 360
+					}
+				}
+			}
+			if = {
+				limit = { LUX = { is_in_faction_with = GER } }
+				LUX = {
+					add_timed_idea = {
+						idea = jingoism
+						days = 360
+					}
+				}
+			}
 		}
 
 		HOL = {
@@ -600,22 +647,31 @@ country_event = {
 				}
 		    }
 			hidden_effect = {
-				BEL = {
-					add_timed_idea = {
-						idea = jingoism
-						days = 360
+				if = {
+					limit = { BEL = { is_in_faction_with = GER } }
+					BEL = {
+						add_timed_idea = {
+							idea = jingoism
+							days = 360
+						}
 					}
 				}
-				HOL = {
-					add_timed_idea = {
-						idea = jingoism
-						days = 360
+				if = {
+					limit = { HOL = { is_in_faction_with = GER } }
+					HOL = {
+						add_timed_idea = {
+							idea = jingoism
+							days = 360
+						}
 					}
 				}
-				LUX = {
-					add_timed_idea = {
-						idea = jingoism
-						days = 360
+				if = {
+					limit = { LUX = { is_in_faction_with = GER } }
+					LUX = {
+						add_timed_idea = {
+							idea = jingoism
+							days = 360
+						}
 					}
 				}
 			}
@@ -663,3 +719,335 @@ news_event = {
 	}
 }
 #____________________________________________________________
+
+country_event = {
+	id = ww1_franzferdinand.9
+	title = ww1_franzferdinand.9.t
+	desc = ww1_franzferdinand.9.d
+	picture = ww1_franzferdinand.9
+
+	#fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = hoi4tgw_SchlieffenSecurity
+			SER = {
+				dismantle_faction = yes
+			}
+			MTN = {
+				dismantle_faction = yes
+			}
+			GRE = {
+				dismantle_faction = yes
+			}
+			BUL = {
+				dismantle_faction = yes
+			}
+			TUR = {
+				dismantle_faction = yes
+			}
+			if = { 
+				limit = { 
+					country_exists = SER 
+					FRA = {
+						is_faction_leader = yes
+					}
+				} 
+				FRA = { add_to_faction = SER }
+			}
+
+			if = { 
+				limit = { 
+					country_exists = SER 
+					ENG = { is_faction_leader = yes }
+				} 
+				ENG = { add_to_faction = SER }
+			}
+			
+			if = {
+				limit = {
+					country_exists = MTN
+					MTN = {
+						NOT = {
+							OR = {
+								has_country_flag = MTN_backs_neither_side
+								has_country_flag = MTN_backs_bulgaria
+								has_completed_focus = ww1_supportgermany
+								has_completed_focus = ww1_embargo_france
+							}
+						}
+					}
+					ENG = { is_faction_leader = yes }
+				}
+				ENG = { add_to_faction = MTN }
+			}
+		}
+	}
+
+	# Schlieffen Plan - War with FRA, BEL and RUS, Invasion of LUX
+	option = {
+		name = ww1_franzferdinand.9.a
+		ai_chance =  { factor = 100 }
+
+		trigger = {
+			BEL = { NOT = { is_in_faction_with = GER } }
+		}
+
+		GER = {
+			declare_war_on = {
+				type = annex_everything
+				target = BEL
+			}
+			add_timed_idea = {
+				idea = schlieffen
+				days = .90
+			}
+		}
+
+
+		hidden_effect = {
+			add_named_threat = {
+				threat = 20
+				name = "The Great War"
+			}
+			#GER = {
+			#	create_wargoal = {
+			#		type = annex_everything
+			#		target = FRA
+			#	}
+			#}
+
+	        AUH = {
+				add_to_war = {
+		            targeted_alliance = GER enemy = BEL
+		        }
+		    }
+		}
+		
+		hidden_effect = {
+		    if = {
+				limit = { BEL = { is_in_faction_with = FRA } }
+				BEL = {
+					add_timed_idea = { days = .90 idea = superior_enemy }
+				}
+			}
+			FRA = {
+		        add_timed_idea = { days = .90 idea = FRA_indecisive_deployments }
+		    }
+			if = {
+				limit = { BEL = { is_in_faction_with = GER } }
+				BEL = {
+					add_timed_idea = {
+						idea = jingoism
+						days = 360
+					}
+				}
+			}
+			if = {
+				limit = { HOL = { is_in_faction_with = GER } }
+				HOL = {
+					add_timed_idea = {
+						idea = jingoism
+						days = 360
+					}
+				}
+			}
+			if = {
+				limit = { LUX = { is_in_faction_with = GER } }
+				LUX = {
+					add_timed_idea = {
+						idea = jingoism
+						days = 360
+					}
+				}
+			}
+		}
+		
+		LUX = {
+		    hidden_effect = {
+		        add_timed_idea = { days = .90 idea = superior_enemy }
+			}
+			country_event = { days = 1 id = balkans_ablaze.150 }
+        }
+	}
+
+	# New Schlieffen Plan - War with FRA, BEL, HOL and RUS, Invasion of LUX
+	option = {
+		name = ww1_franzferdinand.9.b
+		ai_chance =  { factor = 0 }
+		
+		trigger = {
+			BEL = { NOT = { is_in_faction_with = GER } }
+		}
+
+		GER = {
+			declare_war_on = {
+				type = annex_everything
+				target = BEL
+			}
+			add_timed_idea = {
+				idea = schlieffen
+				days = .90
+			}
+		}
+		
+		hidden_effect = {
+			add_named_threat = {
+				threat = 25
+				name = "The Great War"
+			}
+			#GER = {
+			#	create_wargoal = {
+			#		type = annex_everything
+			#		target = FRA
+			#	}
+			#}
+	        AUH = {
+				add_to_war = {
+		            targeted_alliance = GER enemy = BEL
+		        }
+		    }
+		
+		}
+		
+		hidden_effect = {
+		    BEL = {
+		        add_timed_idea = { days = .90 idea = superior_enemy }
+			}
+			FRA = {
+		        add_timed_idea = { days = .90 idea = FRA_indecisive_deployments }
+		    }
+			if = {
+				limit = { BEL = { is_in_faction_with = GER } }
+				BEL = {
+					add_timed_idea = {
+						idea = jingoism
+						days = 360
+					}
+				}
+			}
+			if = {
+				limit = { HOL = { is_in_faction_with = GER } }
+				HOL = {
+					add_timed_idea = {
+						idea = jingoism
+						days = 360
+					}
+				}
+			}
+			if = {
+				limit = { LUX = { is_in_faction_with = GER } }
+				LUX = {
+					add_timed_idea = {
+						idea = jingoism
+						days = 360
+					}
+				}
+			}
+		}
+
+		HOL = {
+		    hidden_effect = {
+		        add_timed_idea = { days = .90 idea = superior_enemy }
+			}
+			add_to_war = {
+	            targeted_alliance = BEL enemy = GER
+	        }
+		}
+		LUX = {
+		    hidden_effect = {
+		        add_timed_idea = { days = .90 idea = superior_enemy }
+			}
+			country_event = { days = 1 id = balkans_ablaze.150 }
+        }
+	}
+
+	option = {
+		name = ww1_franzferdinand.9.c
+		ai_chance =  { factor = 0 }
+		
+		hidden_effect = {
+			FRA = {
+		        add_timed_idea = { days = .90 idea = FRA_indecisive_deployments }
+		    }
+			if = {
+				limit = { BEL = { is_in_faction_with = GER } }
+				BEL = {
+					add_timed_idea = {
+						idea = jingoism
+						days = 360
+					}
+				}
+			}
+			if = {
+				limit = { HOL = { is_in_faction_with = GER } }
+				HOL = {
+					add_timed_idea = {
+						idea = jingoism
+						days = 360
+					}
+				}
+			}
+			if = {
+				limit = { LUX = { is_in_faction_with = GER } }
+				LUX = {
+					add_timed_idea = {
+						idea = jingoism
+						days = 360
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = ww1_franzferdinand.9.d
+		ai_chance =  { factor = 0 }
+		
+		trigger = {
+			BEL = { is_in_faction_with = GER }
+		}
+		
+		hidden_effect = {
+			GER = {
+		        declare_war_on = {
+					type = annex_everything
+					target = FRA
+				}
+		    }
+			hidden_effect = {
+				if = {
+					limit = { BEL = { is_in_faction_with = GER } }
+					BEL = {
+						add_timed_idea = {
+							idea = jingoism
+							days = 360
+						}
+					}
+				}
+				if = {
+					limit = { HOL = { is_in_faction_with = GER } }
+					HOL = {
+						add_timed_idea = {
+							idea = jingoism
+							days = 360
+						}
+					}
+				}
+				if = {
+					limit = { LUX = { is_in_faction_with = GER } }
+					LUX = {
+						add_timed_idea = {
+							idea = jingoism
+							days = 360
+						}
+					}
+				}
+			}
+		}
+	}
+}
