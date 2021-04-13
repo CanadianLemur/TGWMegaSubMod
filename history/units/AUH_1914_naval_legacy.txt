@@ -29,7 +29,7 @@ units = {
 			ship = { name = "SMS Reka" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = AUH } } }
 			ship = { name = "SMS Dinara" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = AUH } } }
 			ship = { name = "SMS Velebit" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = AUH } } }
-			ship = { name = "SMS T·tra" definition = destroyer equipment = { destroyer_1910 = { amount = 1 owner = AUH } } }
+			ship = { name = "SMS T√°tra" definition = destroyer equipment = { destroyer_1910 = { amount = 1 owner = AUH } } }
 			ship = { name = "SMS Balaton" definition = destroyer equipment = { destroyer_1910 = { amount = 1 owner = AUH } } }
 			ship = { name = "SMS Csepel" definition = destroyer equipment = { destroyer_1910 = { amount = 1 owner = AUH } } }
 			ship = { name = "SMS Lika" definition = destroyer equipment = { destroyer_1910 = { amount = 1 owner = AUH } } }
@@ -43,7 +43,7 @@ units = {
 			ship = { name = "SMS Erzherzog Friedrich" definition = battleship equipment = { battleship_1900 = { amount = 1 owner = AUH } } }
 			ship = { name = "SMS Erzherzog Ferdinand Max" definition = battleship equipment = { battleship_1900 = { amount = 1 owner = AUH } } }
 			ship = { name = "SMS Habsburg" definition = battleship equipment = { battleship_1890 = { amount = 1 owner = AUH version_name = "Habsburg Class" } } }
-			ship = { name = "SMS ¡rp·d" definition = battleship equipment = { battleship_1890 = { amount = 1 owner = AUH version_name = "Habsburg Class" } } }
+			ship = { name = "SMS √Årp√°d" definition = battleship equipment = { battleship_1890 = { amount = 1 owner = AUH version_name = "Habsburg Class" } } }
 			ship = { name = "SMS Babenberg" definition = battleship equipment = { battleship_1890 = { amount = 1 owner = AUH version_name = "Habsburg Class" } } }
 			ship = { name = "SMS Meteor" definition = destroyer equipment = { destroyer_1890 = { amount = 1 owner = AUH } } }
 			ship = { name = "SMS Blitz" definition = destroyer equipment = { destroyer_1890 = { amount = 1 owner = AUH version_name = "Blitz Class" } } }
@@ -55,7 +55,7 @@ units = {
 			ship = { name = "SMS Ulan" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = AUH } } }
 			ship = { name = "SMS Streiter" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = AUH } } }
 			ship = { name = "SMS Wildfang" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = AUH } } }
-			ship = { name = "SMS Scharfsch¸tze" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = AUH } } }
+			ship = { name = "SMS Scharfsch√ºtze" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = AUH } } }
 			ship = { name = "SMS Uskoke" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = AUH } } }
 			ship = { name = "SMS Huszar II" definition = destroyer equipment = { destroyer_1906 = { amount = 1 owner = AUH } } }
 		}
@@ -67,7 +67,7 @@ units = {
 			ship = { name = "SMS Monarch" definition = battleship equipment = { battleship_1890 = { amount = 1 owner = AUH version_name = "Monarch Class" } } }
 			ship = { name = "SMS Wien" definition = battleship equipment = { battleship_1890 = { amount = 1 owner = AUH version_name = "Monarch Class" } } }
 			ship = { name = "SMS Budapest" definition = battleship equipment = { battleship_1890 = { amount = 1 owner = AUH version_name = "Monarch Class" } } }
-			ship = { name = "SMS Kaiserin und Kˆnigin Maria Theresia" definition = heavy_cruiser equipment = { heavy_cruiser_1890 = { amount = 1 owner = AUH } } }
+			ship = { name = "SMS Kaiserin und K√∂nigin Maria Theresia" definition = heavy_cruiser equipment = { heavy_cruiser_1890 = { amount = 1 owner = AUH } } }
 		}
 		task_force = {
 			name = "1. Kreuzerdivision"
@@ -88,19 +88,19 @@ units = {
 			location = 11735 # Pola
 			ship = { name = "SMS Sankt Georg" definition = heavy_cruiser equipment = { heavy_cruiser_1900 = { amount = 1 owner = AUH version_name = "Sankt Georg Class" } } }
 			ship = { name = "SMS Aspern" definition = light_cruiser equipment = { light_cruiser_1900 = { amount = 1 owner = AUH } } }
-			ship = { name = "SMS Szigetv·r" definition = light_cruiser equipment = { light_cruiser_1900 = { amount = 1 owner = AUH } } }
+			ship = { name = "SMS Szigetv√°r" definition = light_cruiser equipment = { light_cruiser_1900 = { amount = 1 owner = AUH } } }
 			ship = { name = "SMS Admiral Spaun" definition = light_cruiser equipment = { light_cruiser_1906 = { amount = 1 owner = AUH } } }
 		}
 		task_force = {
 			name = "U-bootdivision"
 			location = 11735 # Pola
-			ship = { name = "SMS SM†U-1" definition = submarine equipment = { coastal_submarine_1906 = { amount = 1 owner = AUH } } }
-			ship = { name = "SMS SM†U-2" definition = submarine equipment = { coastal_submarine_1906 = { amount = 1 owner = AUH } } }
-			ship = { name = "SMS SM†U-3" definition = submarine equipment = { coastal_submarine_1906 = { amount = 1 owner = AUH version_name = "U3 Class" } } }
-			ship = { name = "SMS SM†U-4" definition = submarine equipment = { coastal_submarine_1906 = { amount = 1 owner = AUH version_name = "U3 Class" } } }
-			ship = { name = "SMS SM†U-5" definition = submarine equipment = { coastal_submarine_1910 = { amount = 1 owner = AUH } } }
-			ship = { name = "SMS SM†U-6" definition = submarine equipment = { coastal_submarine_1910 = { amount = 1 owner = AUH } } }
-			ship = { name = "SMS SM†U-12" definition = submarine equipment = { coastal_submarine_1910 = { amount = 1 owner = AUH } } }
+			ship = { name = "SMS SM¬†U-1" definition = submarine equipment = { coastal_submarine_1906 = { amount = 1 owner = AUH } } }
+			ship = { name = "SMS SM¬†U-2" definition = submarine equipment = { coastal_submarine_1906 = { amount = 1 owner = AUH } } }
+			ship = { name = "SMS SM¬†U-3" definition = submarine equipment = { coastal_submarine_1906 = { amount = 1 owner = AUH version_name = "U3 Class" } } }
+			ship = { name = "SMS SM¬†U-4" definition = submarine equipment = { coastal_submarine_1906 = { amount = 1 owner = AUH version_name = "U3 Class" } } }
+			ship = { name = "SMS SM¬†U-5" definition = submarine equipment = { coastal_submarine_1910 = { amount = 1 owner = AUH } } }
+			ship = { name = "SMS SM¬†U-6" definition = submarine equipment = { coastal_submarine_1910 = { amount = 1 owner = AUH } } }
+			ship = { name = "SMS SM¬†U-12" definition = submarine equipment = { coastal_submarine_1910 = { amount = 1 owner = AUH } } }
 		}
 	}
 }
@@ -115,7 +115,7 @@ instant_effect = {
 	add_equipment_production = { equipment = { type = motorized_equipment_0 creator = "AUH" } requested_factories = 1 progress = 0.1 efficiency = 50}
 	
 	add_equipment_production = { equipment = { type = battleship_1910 creator = "AUH"  }  requested_factories = 1  progress = 0.78  amount = 1 } #SMS Prinz Eugen LD:16-Jan-1912 Comp:17-Jul-1914
-	add_equipment_production = { equipment = { type = battleship_1910 creator = "AUH"  }  requested_factories = 1  progress = 0.5  amount = 1 } #SMS Szent Istv·n LD:29-Jan-1912 Comp:13-Dec-1915
+	add_equipment_production = { equipment = { type = battleship_1910 creator = "AUH"  }  requested_factories = 1  progress = 0.5  amount = 1 } #SMS Szent Istv√°n LD:29-Jan-1912 Comp:13-Dec-1915
 	add_equipment_production = { equipment = { type = light_cruiser_1910 creator = "AUH"  }  requested_factories = 1  progress = 0.8  amount = 1 } #SMS Saida LD:09-Sep-1911 Comp:01-Aug-1914
 	add_equipment_production = { equipment = { type = light_cruiser_1910 creator = "AUH"  }  requested_factories = 1  progress = 0.77  amount = 1 } #SMS Helgoland LD:28-Oct-1911 Comp:29-Aug-1914
 	add_equipment_production = { equipment = { type = light_cruiser_1910 creator = "AUH"  }  requested_factories = 1  progress = 0.51  amount = 1 } #SMS Novara LD:09-Dec-1912 Comp:10-Jan-1915

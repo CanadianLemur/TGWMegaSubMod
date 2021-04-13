@@ -15,11 +15,11 @@ units = {
 			name = "2e Division Loire"
 			location = 6449 # Cherbourg
 			ship = { name = "Amiral Aube" definition = heavy_cruiser equipment = { heavy_cruiser_1900 = { amount = 1 owner = FRA version_name = "Gloire Class" } } }
-			ship = { name = "Condé" definition = heavy_cruiser equipment = { heavy_cruiser_1900 = { amount = 1 owner = FRA version_name = "Gloire Class" } } }
+			ship = { name = "CondÃ©" definition = heavy_cruiser equipment = { heavy_cruiser_1900 = { amount = 1 owner = FRA version_name = "Gloire Class" } } }
 			ship = { name = "Gloire" definition = heavy_cruiser equipment = { heavy_cruiser_1900 = { amount = 1 owner = FRA version_name = "Gloire Class" } } }
 			ship = { name = "Marseillaise" definition = heavy_cruiser equipment = { heavy_cruiser_1900 = { amount = 1 owner = FRA version_name = "Gloire Class" } } }
 			ship = { name = "Desaix" definition = heavy_cruiser equipment = { heavy_cruiser_1900 = { amount = 1 owner = FRA } } }
-			ship = { name = "Kléber" definition = heavy_cruiser equipment = { heavy_cruiser_1900 = { amount = 1 owner = FRA } } }
+			ship = { name = "KlÃ©ber" definition = heavy_cruiser equipment = { heavy_cruiser_1900 = { amount = 1 owner = FRA } } }
 			ship = { name = "Jeanne D'Arc" definition = heavy_cruiser equipment = { heavy_cruiser_1890 = { amount = 1 owner = FRA version_name = "Jeanne D'Arc Class" } } }
 			ship = { name = "Dupetit-Thouars" definition = heavy_cruiser equipment = { heavy_cruiser_1890 = { amount = 1 owner = FRA version_name = "Gueydon Class" } } }
 			ship = { name = "Gueydon" definition = heavy_cruiser equipment = { heavy_cruiser_1890 = { amount = 1 owner = FRA version_name = "Gueydon Class" } } }
@@ -33,12 +33,12 @@ units = {
 			ship = { name = "D'Iberville" definition = light_cruiser equipment = { light_cruiser_1900 = { amount = 1 owner = FRA } } }
 			ship = { name = "Dunois" definition = light_cruiser equipment = { light_cruiser_1900 = { amount = 1 owner = FRA version_name = "Dunois Class" } } }
 			ship = { name = "La Hire" definition = light_cruiser equipment = { light_cruiser_1900 = { amount = 1 owner = FRA version_name = "Dunois Class" } } }
-			ship = { name = "Amiral Cécille" definition = light_cruiser equipment = { light_cruiser_1900 = { amount = 1 owner = FRA version_name = "Amiral Cécille Class" } } }
+			ship = { name = "Amiral CÃ©cille" definition = light_cruiser equipment = { light_cruiser_1900 = { amount = 1 owner = FRA version_name = "Amiral CÃ©cille Class" } } }
 			ship = { name = "Friant" definition = light_cruiser equipment = { light_cruiser_1900 = { amount = 1 owner = FRA version_name = "Friant Class" } } }
 			ship = { name = "Du Chayla" definition = light_cruiser equipment = { light_cruiser_1900 = { amount = 1 owner = FRA version_name = "D'Assas Class" } } }
-			ship = { name = "Châteaurenault" definition = light_cruiser equipment = { light_cruiser_1900 = { amount = 1 owner = FRA version_name = "Châteaurenault Class" } } }
-			ship = { name = "D'Estrées" definition = light_cruiser equipment = { light_cruiser_1900 = { amount = 1 owner = FRA version_name = "D'Estrées Class" } } }
-			ship = { name = "Jurien De La Gravière" definition = light_cruiser equipment = { light_cruiser_1900 = { amount = 1 owner = FRA version_name = "Jurien De La Gravière Class" } } }
+			ship = { name = "ChÃ¢teaurenault" definition = light_cruiser equipment = { light_cruiser_1900 = { amount = 1 owner = FRA version_name = "ChÃ¢teaurenault Class" } } }
+			ship = { name = "D'EstrÃ©es" definition = light_cruiser equipment = { light_cruiser_1900 = { amount = 1 owner = FRA version_name = "D'EstrÃ©es Class" } } }
+			ship = { name = "Jurien De La GraviÃ¨re" definition = light_cruiser equipment = { light_cruiser_1900 = { amount = 1 owner = FRA version_name = "Jurien De La GraviÃ¨re Class" } } }
 			ship = { name = "Surcouf" definition = light_cruiser equipment = { light_cruiser_1900 = { amount = 1 owner = FRA version_name = "Forbin Class" } } }
 			ship = { name = "Guichen" definition = light_cruiser equipment = { light_cruiser_1900 = { amount = 1 owner = FRA version_name = "Guichen Class" } } }
 			ship = { name = "Durandal" definition = destroyer equipment = { destroyer_1890 = { amount = 1 owner = FRA } } }
@@ -71,12 +71,12 @@ units = {
 			name = "1re Division de Sous-Marins"
 			location = 6449 # Cherbourg
 			ship = { name = "Plongeur" definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA } } }
-			ship = { name = "Espadon " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Sirene Class" } } }
-			ship = { name = "Silure  " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Sirene Class" } } }
-			ship = { name = "Sirene " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Sirene Class" } } }
-			ship = { name = "Triton  " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Sirene Class" } } }
+			ship = { name = "EspadonÂ " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Sirene Class" } } }
+			ship = { name = "SilureÂ Â " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Sirene Class" } } }
+			ship = { name = "SireneÂ " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Sirene Class" } } }
+			ship = { name = "TritonÂ Â " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Sirene Class" } } }
 			ship = { name = "Algerien" definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Morse Class" } } }
-			ship = { name = "Francais  " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Morse Class" } } }
+			ship = { name = "FrancaisÂ Â " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Morse Class" } } }
 		}
 	}
 	fleet = {
@@ -115,14 +115,14 @@ units = {
 			name = "2e Division de Sous-Marins"
 			location = 575 # Calais
 			ship = { name = "Alose" definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Naiade Class" } } }
-			ship = { name = "Anguille " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Naiade Class" } } }
-			ship = { name = "Bonite " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Naiade Class" } } }
-			ship = { name = "Castor " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Naiade Class" } } }
+			ship = { name = "AnguilleÂ " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Naiade Class" } } }
+			ship = { name = "BoniteÂ " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Naiade Class" } } }
+			ship = { name = "CastorÂ " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Naiade Class" } } }
 			ship = { name = "Dorade" definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Naiade Class" } } }
-			ship = { name = "Esturgeon " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Naiade Class" } } }
-			ship = { name = "Grondin  " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Naiade Class" } } }
-			ship = { name = "Loutre " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Naiade Class" } } }
-			ship = { name = "Ludion " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Naiade Class" } } }
+			ship = { name = "EsturgeonÂ " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Naiade Class" } } }
+			ship = { name = "GrondinÂ Â " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Naiade Class" } } }
+			ship = { name = "LoutreÂ " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Naiade Class" } } }
+			ship = { name = "LudionÂ " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Naiade Class" } } }
 		}
 	}
 	fleet = {
@@ -139,12 +139,12 @@ units = {
 			ship = { name = "Mirabeau" definition = battleship equipment = { battleship_1900 = { amount = 1 owner = FRA version_name = "Danton Class" } } }
 			ship = { name = "Vergniaud" definition = battleship equipment = { battleship_1900 = { amount = 1 owner = FRA version_name = "Danton Class" } } }
 			ship = { name = "Voltaire" definition = battleship equipment = { battleship_1900 = { amount = 1 owner = FRA version_name = "Danton Class" } } }
-			ship = { name = "Démocratie" definition = battleship equipment = { battleship_1900 = { amount = 1 owner = FRA version_name = "Liberté Class" } } }
-			ship = { name = "Justice" definition = battleship equipment = { battleship_1900 = { amount = 1 owner = FRA version_name = "Liberté Class" } } }
-			ship = { name = "Verité" definition = battleship equipment = { battleship_1900 = { amount = 1 owner = FRA version_name = "Liberté Class" } } }
+			ship = { name = "DÃ©mocratie" definition = battleship equipment = { battleship_1900 = { amount = 1 owner = FRA version_name = "LibertÃ© Class" } } }
+			ship = { name = "Justice" definition = battleship equipment = { battleship_1900 = { amount = 1 owner = FRA version_name = "LibertÃ© Class" } } }
+			ship = { name = "VeritÃ©" definition = battleship equipment = { battleship_1900 = { amount = 1 owner = FRA version_name = "LibertÃ© Class" } } }
 			ship = { name = "Suffren" definition = battleship equipment = { battleship_1900 = { amount = 1 owner = FRA version_name = "Suffren Class" } } }
-			ship = { name = "République" definition = battleship equipment = { battleship_1900 = { amount = 1 owner = FRA version_name = "République Class" } } }
-			ship = { name = "Patrie" definition = battleship equipment = { battleship_1900 = { amount = 1 owner = FRA version_name = "République Class" } } }
+			ship = { name = "RÃ©publique" definition = battleship equipment = { battleship_1900 = { amount = 1 owner = FRA version_name = "RÃ©publique Class" } } }
+			ship = { name = "Patrie" definition = battleship equipment = { battleship_1900 = { amount = 1 owner = FRA version_name = "RÃ©publique Class" } } }
 			ship = { name = "Bouvet" definition = battleship equipment = { battleship_1890 = { amount = 1 owner = FRA version_name = "Bouvet Class" } } }
 			ship = { name = "Charlemagne" definition = battleship equipment = { battleship_1890 = { amount = 1 owner = FRA version_name = "Charlemagne Class" } } }
 			ship = { name = "Gaulois" definition = battleship equipment = { battleship_1890 = { amount = 1 owner = FRA version_name = "Charlemagne Class" } } }
@@ -152,26 +152,26 @@ units = {
 			ship = { name = "Henri IV" definition = battleship equipment = { battleship_1900 = { amount = 1 owner = FRA } } }
 			ship = { name = "Charles Martel" definition = battleship equipment = { battleship_1890 = { amount = 1 owner = FRA version_name = "Charles Martel Class" } } }
 			ship = { name = "Carnot" definition = battleship equipment = { battleship_1890 = { amount = 1 owner = FRA version_name = "Carnot Class" } } }
-			ship = { name = "Jauréguiberry" definition = battleship equipment = { battleship_1890 = { amount = 1 owner = FRA version_name = "Jauréguiberry Class" } } }
-			ship = { name = "Masséna" definition = battleship equipment = { battleship_1890 = { amount = 1 owner = FRA version_name = "Masséna Class" } } }
+			ship = { name = "JaurÃ©guiberry" definition = battleship equipment = { battleship_1890 = { amount = 1 owner = FRA version_name = "JaurÃ©guiberry Class" } } }
+			ship = { name = "MassÃ©na" definition = battleship equipment = { battleship_1890 = { amount = 1 owner = FRA version_name = "MassÃ©na Class" } } }
 			ship = { name = "Indomptable" definition = battleship equipment = { battleship_1890 = { amount = 1 owner = FRA version_name = "Terrible Class" } } }
-			ship = { name = "Caïman" definition = battleship equipment = { battleship_1890 = { amount = 1 owner = FRA version_name = "Terrible Class" } } }
+			ship = { name = "CaÃ¯man" definition = battleship equipment = { battleship_1890 = { amount = 1 owner = FRA version_name = "Terrible Class" } } }
 			ship = { name = "Requin" definition = battleship equipment = { battleship_1890 = { amount = 1 owner = FRA version_name = "Terrible Class" } } }
 			ship = { name = "Marceau" definition = battleship equipment = { battleship_1890 = { amount = 1 owner = FRA version_name = "Marceau Class" } } }
 			ship = { name = "Brennus" definition = battleship equipment = { battleship_1890 = { amount = 1 owner = FRA version_name = "Brennus Class" } } }
-			ship = { name = "Styx" definition = battleship equipment = { battleship_1890 = { amount = 1 owner = FRA version_name = "Achéron Class" } } }
+			ship = { name = "Styx" definition = battleship equipment = { battleship_1890 = { amount = 1 owner = FRA version_name = "AchÃ©ron Class" } } }
 			ship = { name = "Bouvines" definition = battleship equipment = { battleship_1890 = { amount = 1 owner = FRA version_name = "Bouvines Class" } } }
-			ship = { name = "Amiral Tréhouart" definition = battleship equipment = { battleship_1890 = { amount = 1 owner = FRA version_name = "Bouvines Class" } } }
-			ship = { name = "Dévastation" definition = battleship equipment = { battleship_1890 = { amount = 1 owner = FRA version_name = "Courbet Class" } } }
+			ship = { name = "Amiral TrÃ©houart" definition = battleship equipment = { battleship_1890 = { amount = 1 owner = FRA version_name = "Bouvines Class" } } }
+			ship = { name = "DÃ©vastation" definition = battleship equipment = { battleship_1890 = { amount = 1 owner = FRA version_name = "Courbet Class" } } }
 			ship = { name = "Ernest Renan" definition = heavy_cruiser equipment = { heavy_cruiser_1900 = { amount = 1 owner = FRA version_name = "Ernest Renan Class" } } }
 			ship = { name = "Edgar Quinet" definition = heavy_cruiser equipment = { heavy_cruiser_1900 = { amount = 1 owner = FRA version_name = "Edgar Quinet Class" } } }
 			ship = { name = "Waldeck-Rousseau" definition = heavy_cruiser equipment = { heavy_cruiser_1900 = { amount = 1 owner = FRA version_name = "Edgar Quinet Class" } } }
-			ship = { name = "Léon Gambetta" definition = heavy_cruiser equipment = { heavy_cruiser_1900 = { amount = 1 owner = FRA version_name = "Léon Gambetta Class" } } }
-			ship = { name = "Jules Ferry" definition = heavy_cruiser equipment = { heavy_cruiser_1900 = { amount = 1 owner = FRA version_name = "Léon Gambetta Class" } } }
-			ship = { name = "Victor Hugo" definition = heavy_cruiser equipment = { heavy_cruiser_1900 = { amount = 1 owner = FRA version_name = "Léon Gambetta Class" } } }
+			ship = { name = "LÃ©on Gambetta" definition = heavy_cruiser equipment = { heavy_cruiser_1900 = { amount = 1 owner = FRA version_name = "LÃ©on Gambetta Class" } } }
+			ship = { name = "Jules Ferry" definition = heavy_cruiser equipment = { heavy_cruiser_1900 = { amount = 1 owner = FRA version_name = "LÃ©on Gambetta Class" } } }
+			ship = { name = "Victor Hugo" definition = heavy_cruiser equipment = { heavy_cruiser_1900 = { amount = 1 owner = FRA version_name = "LÃ©on Gambetta Class" } } }
 			ship = { name = "Jules Michelet" definition = heavy_cruiser equipment = { heavy_cruiser_1900 = { amount = 1 owner = FRA version_name = "Jules Michelet Class" } } }
 			ship = { name = "Bruix" definition = heavy_cruiser equipment = { heavy_cruiser_1890 = { amount = 1 owner = FRA version_name = "Amiral Charner Class" } } }
-			ship = { name = "Latouche-Tréville" definition = heavy_cruiser equipment = { heavy_cruiser_1890 = { amount = 1 owner = FRA version_name = "Amiral Charner Class" } } }
+			ship = { name = "Latouche-TrÃ©ville" definition = heavy_cruiser equipment = { heavy_cruiser_1890 = { amount = 1 owner = FRA version_name = "Amiral Charner Class" } } }
 			ship = { name = "Pothuau" definition = heavy_cruiser equipment = { heavy_cruiser_1890 = { amount = 1 owner = FRA version_name = "Pothuau Class" } } }
 			ship = { name = "D'Entrecasteaux" definition = light_cruiser equipment = { light_cruiser_1900 = { amount = 1 owner = FRA version_name = "D'Entrecasteaux Class" } } }
 			ship = { name = "Gabion" definition = destroyer equipment = { destroyer_1900 = { amount = 1 owner = FRA version_name = "Branlebas Class" } } }
@@ -222,17 +222,17 @@ units = {
 			name = "3e Division de Sous-Marins"
 			location = 911 # Toulon
 			ship = { name = "Lynx" definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Naiade Class" } } }
-			ship = { name = "Meduse " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Naiade Class" } } }
-			ship = { name = "Naiade " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Naiade Class" } } }
+			ship = { name = "MeduseÂ " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Naiade Class" } } }
+			ship = { name = "NaiadeÂ " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Naiade Class" } } }
 			ship = { name = "Otarie" definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Naiade Class" } } }
 			ship = { name = "Oursin" definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Naiade Class" } } }
-			ship = { name = "Perle " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Naiade Class" } } }
+			ship = { name = "PerleÂ " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Naiade Class" } } }
 			ship = { name = "Phoque" definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Naiade Class" } } }
-			ship = { name = "Protee " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Naiade Class" } } }
+			ship = { name = "ProteeÂ " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Naiade Class" } } }
 			ship = { name = "Souffleur" definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Naiade Class" } } }
-			ship = { name = "Thon " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Naiade Class" } } }
-			ship = { name = "Truite " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Naiade Class" } } }
-			ship = { name = "X " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "X Class" } } }
+			ship = { name = "ThonÂ " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Naiade Class" } } }
+			ship = { name = "TruiteÂ " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "Naiade Class" } } }
+			ship = { name = "XÂ " definition = submarine equipment = { coastal_submarine_1900 = { amount = 1 owner = FRA version_name = "X Class" } } }
 			ship = { name = "Aigrette" definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA } } }
 			ship = { name = "Cigogne" definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA } } }
 			ship = { name = "Omega" definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Omega Class" } } }
@@ -242,48 +242,48 @@ units = {
 			ship = { name = "Saphir" definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Emeraude Class" } } }
 			ship = { name = "Topase" definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Emeraude Class" } } }
 			ship = { name = "Turquoise" definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Emeraude Class" } } }
-			ship = { name = "Calypso " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Circe Class" } } }
-			ship = { name = "Circe " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Circe Class" } } }
-			ship = { name = "Ampere " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Pluviose Class" } } }
-			ship = { name = "Berthelot " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Pluviose Class" } } }
-			ship = { name = "Cugnot  " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Pluviose Class" } } }
-			ship = { name = "Floreal " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Pluviose Class" } } }
-			ship = { name = "Fresnel " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Pluviose Class" } } }
-			ship = { name = "Fructidor " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Pluviose Class" } } }
-			ship = { name = "Gay - Lussac  " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Pluviose Class" } } }
-			ship = { name = "Germinal " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Pluviose Class" } } }
-			ship = { name = "Giffard  " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Pluviose Class" } } }
-			ship = { name = "Messidor " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Pluviose Class" } } }
-			ship = { name = "Monge " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Pluviose Class" } } }
-			ship = { name = "Papin " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Pluviose Class" } } }
-			ship = { name = "Pluviose " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Pluviose Class" } } }
-			ship = { name = "Prairial " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Pluviose Class" } } }
-			ship = { name = "Thermidor  " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Pluviose Class" } } }
-			ship = { name = "Ventose " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Pluviose Class" } } }
-			ship = { name = "Watt  " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Pluviose Class" } } }
-			ship = { name = "Arago " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Brumaire Class" } } }
-			ship = { name = "Bernouilli  " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Brumaire Class" } } }
+			ship = { name = "CalypsoÂ " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Circe Class" } } }
+			ship = { name = "CirceÂ " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Circe Class" } } }
+			ship = { name = "AmpereÂ " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Pluviose Class" } } }
+			ship = { name = "BerthelotÂ " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Pluviose Class" } } }
+			ship = { name = "CugnotÂ Â " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Pluviose Class" } } }
+			ship = { name = "FlorealÂ " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Pluviose Class" } } }
+			ship = { name = "FresnelÂ " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Pluviose Class" } } }
+			ship = { name = "FructidorÂ " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Pluviose Class" } } }
+			ship = { name = "Gay - LussacÂ Â " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Pluviose Class" } } }
+			ship = { name = "GerminalÂ " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Pluviose Class" } } }
+			ship = { name = "GiffardÂ Â " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Pluviose Class" } } }
+			ship = { name = "MessidorÂ " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Pluviose Class" } } }
+			ship = { name = "MongeÂ " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Pluviose Class" } } }
+			ship = { name = "PapinÂ " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Pluviose Class" } } }
+			ship = { name = "PluvioseÂ " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Pluviose Class" } } }
+			ship = { name = "PrairialÂ " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Pluviose Class" } } }
+			ship = { name = "ThermidorÂ Â " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Pluviose Class" } } }
+			ship = { name = "VentoseÂ " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Pluviose Class" } } }
+			ship = { name = "WattÂ Â " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Pluviose Class" } } }
+			ship = { name = "AragoÂ " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Brumaire Class" } } }
+			ship = { name = "BernouilliÂ Â " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Brumaire Class" } } }
 			ship = { name = "Brumaire" definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Brumaire Class" } } }
-			ship = { name = "Coulomb  " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Brumaire Class" } } }
-			ship = { name = "Curie  " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Brumaire Class" } } }
+			ship = { name = "CoulombÂ Â " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Brumaire Class" } } }
+			ship = { name = "CurieÂ Â " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Brumaire Class" } } }
 			ship = { name = "Euler" definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Brumaire Class" } } }
-			ship = { name = "Faraday  " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Brumaire Class" } } }
-			ship = { name = "Foucault  " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Brumaire Class" } } }
-			ship = { name = "Franklin " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Brumaire Class" } } }
-			ship = { name = "Frimarie " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Brumaire Class" } } }
-			ship = { name = "Joule " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Brumaire Class" } } }
-			ship = { name = "Le Verrier  " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Brumaire Class" } } }
-			ship = { name = "Montgolfier " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Brumaire Class" } } }
-			ship = { name = "Newton  " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Brumaire Class" } } }
-			ship = { name = "Nivose " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Brumaire Class" } } }
-			ship = { name = "Volta  " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Brumaire Class" } } }
+			ship = { name = "FaradayÂ Â " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Brumaire Class" } } }
+			ship = { name = "FoucaultÂ Â " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Brumaire Class" } } }
+			ship = { name = "FranklinÂ " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Brumaire Class" } } }
+			ship = { name = "FrimarieÂ " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Brumaire Class" } } }
+			ship = { name = "JouleÂ " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Brumaire Class" } } }
+			ship = { name = "Le VerrierÂ Â " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Brumaire Class" } } }
+			ship = { name = "MontgolfierÂ " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Brumaire Class" } } }
+			ship = { name = "NewtonÂ Â " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Brumaire Class" } } }
+			ship = { name = "NivoseÂ " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Brumaire Class" } } }
+			ship = { name = "VoltaÂ Â " definition = submarine equipment = { submarine_1910 = { amount = 1 owner = FRA version_name = "Brumaire Class" } } }
 			ship = { name = "Archimede" definition = submarine equipment = { submarine_1906 = { amount = 1 owner = FRA } } }
 			ship = { name = "Mariotte" definition = submarine equipment = { submarine_1906 = { amount = 1 owner = FRA version_name = "Mariotte Class" } } }
-			ship = { name = "Amiral Bourgois " definition = submarine equipment = { submarine_1906 = { amount = 1 owner = FRA version_name = "Amiral Bourgois Class" } } }
-			ship = { name = "Charles Brun " definition = submarine equipment = { submarine_1906 = { amount = 1 owner = FRA version_name = "Charles Brun Class" } } }
-			ship = { name = "Clorinde " definition = submarine equipment = { submarine_1906 = { amount = 1 owner = FRA version_name = "Clorinde Class" } } }
-			ship = { name = "Cornelei " definition = submarine equipment = { submarine_1906 = { amount = 1 owner = FRA version_name = "Clorinde Class" } } }
-			ship = { name = "Gustave Zede " definition = submarine equipment = { submarine_1906 = { amount = 1 owner = FRA version_name = "Gustave Zede Class" } } }
+			ship = { name = "Amiral BourgoisÂ " definition = submarine equipment = { submarine_1906 = { amount = 1 owner = FRA version_name = "Amiral Bourgois Class" } } }
+			ship = { name = "Charles BrunÂ " definition = submarine equipment = { submarine_1906 = { amount = 1 owner = FRA version_name = "Charles Brun Class" } } }
+			ship = { name = "ClorindeÂ " definition = submarine equipment = { submarine_1906 = { amount = 1 owner = FRA version_name = "Clorinde Class" } } }
+			ship = { name = "CorneleiÂ " definition = submarine equipment = { submarine_1906 = { amount = 1 owner = FRA version_name = "Clorinde Class" } } }
+			ship = { name = "Gustave ZedeÂ " definition = submarine equipment = { submarine_1906 = { amount = 1 owner = FRA version_name = "Gustave Zede Class" } } }
 		}
 	}
 	fleet = {
@@ -292,7 +292,7 @@ units = {
 		task_force = {
 			name = "Groupe Speciale"
 			location = 7069 # Casablanca
-			ship = { name = "Dupuy de Lôme" definition = heavy_cruiser equipment = { heavy_cruiser_1890 = { amount = 1 owner = FRA } } }
+			ship = { name = "Dupuy de LÃ´me" definition = heavy_cruiser equipment = { heavy_cruiser_1890 = { amount = 1 owner = FRA } } }
 			ship = { name = "Amiral Charner" definition = heavy_cruiser equipment = { heavy_cruiser_1890 = { amount = 1 owner = FRA version_name = "Amiral Charner Class" } } }
 			ship = { name = "Cassard" definition = light_cruiser equipment = { light_cruiser_1900 = { amount = 1 owner = FRA version_name = "D'Assas Class" } } }
 			ship = { name = "Cosmao" definition = light_cruiser equipment = { light_cruiser_1900 = { amount = 1 owner = FRA version_name = "Troude Class" } } }

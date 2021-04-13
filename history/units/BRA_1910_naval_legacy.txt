@@ -10,7 +10,7 @@ units = {
 			ship = { name = "Minas Geraes" definition = battleship equipment = { battleship_1906 = { amount = 1 owner = BRA } } }
 			ship = { name = "Almirante Tamandare" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = BRA version_name = "Almirante Tamandare Class" } } }
 			ship = { name = "Benjamin Constant" definition = light_cruiser equipment = { light_cruiser_1900 = { amount = 1 owner = BRA } } }
-			ship = { name = "República" definition = light_cruiser equipment = { light_cruiser_1900 = { amount = 1 owner = BRA version_name = "Republica Class" } } }
+			ship = { name = "RepÃºblica" definition = light_cruiser equipment = { light_cruiser_1900 = { amount = 1 owner = BRA version_name = "Republica Class" } } }
 			ship = { name = "Almirante Barroso" definition = light_cruiser equipment = { light_cruiser_1900 = { amount = 1 owner = BRA version_name = "Barrozo Class" } } }
 			ship = { name = "Bahia" definition = light_cruiser equipment = { light_cruiser_1906 = { amount = 1 owner = BRA } } }
 			ship = { name = "Rio Grande Do Sul" definition = light_cruiser equipment = { light_cruiser_1906 = { amount = 1 owner = BRA } } }
@@ -34,5 +34,5 @@ units = {
 
 instant_effect = {
 	add_equipment_production = { equipment = { type = infantry_equipment_0 creator = "BRA" } requested_factories = 1 progress = 0.1 efficiency = 50}
-	add_equipment_production = { equipment = { type = battleship_1890 creator = "BRA" } requested_factories = 1 progress = 0.72 amount = 1 } # name = "São Paulo" historical_model = 1 
+	add_equipment_production = { equipment = { type = battleship_1890 creator = "BRA" } requested_factories = 1 progress = 0.72 amount = 1 } # name = "SÃ£o Paulo" historical_model = 1 
 	}

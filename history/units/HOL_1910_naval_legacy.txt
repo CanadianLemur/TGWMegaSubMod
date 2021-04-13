@@ -1,10 +1,10 @@
 units = {
 	fleet = {
-		name = "West-Indië Vloot Fleet"
-		naval_base = 9498 # Curaçao
+		name = "West-IndiÃ« Vloot Fleet"
+		naval_base = 9498 # CuraÃ§ao
 		task_force = {
-			name = "West-Indië Vloot"
-			location = 9498 # Curaçao
+			name = "West-IndiÃ« Vloot"
+			location = 9498 # CuraÃ§ao
 			ship = { name = "HrMs Jacob Van Heemskerck" definition = battleship equipment = { battleship_1900 = { amount = 1 owner = HOL } } }
 			ship = { name = "HrMs Friesland" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = HOL version_name = "Holland Class" } } }
 			ship = { name = "HrMs Gelderland" definition = light_cruiser equipment = { light_cruiser_1890 = { amount = 1 owner = HOL version_name = "Holland Class" } } }
@@ -29,10 +29,10 @@ units = {
 		}
 	}
 	fleet = {
-		name = "Oost-Indië Vloot Fleet"
+		name = "Oost-IndiÃ« Vloot Fleet"
 		naval_base = 4608 # Soerabaja
 		task_force = {
-			name = "Oost-Indië Vloot"
+			name = "Oost-IndiÃ« Vloot"
 			location = 4608 # Soerabaja
 			ship = { name = "HrMs Koningin Regentes" definition = battleship equipment = { battleship_1900 = { amount = 1 owner = HOL } } }
 			ship = { name = "HrMs Kortenaer" definition = battleship equipment = { battleship_1890 = { amount = 1 owner = HOL version_name = "Evertsen Class" } } }
