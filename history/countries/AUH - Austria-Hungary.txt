@@ -135,7 +135,7 @@ create_navy_leader={  name = "Miklós Horthy" id=6394 portrait_path="gfx/hoi4tgw
 		tech_logistics_company = 1
 
 		# Armor
-		ww1_light_tank=1 # 1910 Armored Car
+		ww1_armored_car_1 = 1
 
 		# Artillery
 		light_field_gun1 = 1
@@ -521,7 +521,7 @@ if = {
 		tech_logistics_company = 1
 
 		# Armor
-		ww1_light_tank=1 # 1910 Armored Car
+		ww1_armored_car_1 = 1
 		ww1_armored_car_2 = 1
 
 		# Artillery
