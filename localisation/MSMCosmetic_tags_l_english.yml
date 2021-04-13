@@ -67,6 +67,9 @@
  FRA_petain_DEF:0"The French Military Government"
  FRA_petain:0"French Military Government"
  
+ white_ruthenia_neutrality:0"Kingdom of White Ruthenia"
+ white_ruthenia_neutrality_DEF:0"The Kingdom of White Ruthenia"
+ white_ruthenia_neutrality_ADJ:0"White Ruthenian"
  FRAROI_neutrality:0"Kingdom of France"
  FRAROI_neutrality_DEF:0"The Kingdom of France"
  FRAROI_fascism:0"Kingdom of France"

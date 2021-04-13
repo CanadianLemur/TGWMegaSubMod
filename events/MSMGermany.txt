@@ -2,7 +2,7 @@
 # New German Events, added by Ecrfour #
 #######################################
 add_namespace = MSMGermany
-
+add_namespace = MSM_WKV_Germany
 ####Military access events####
 country_event = {
 	id =  MSMGermany.1
@@ -350,5 +350,83 @@ news_event = {
 			factor = 100
 		}
 		trigger = { TAG = GER }
+	}
+}
+####Fate of Lithuania####
+country_event = {
+	id =  MSM_WKV_Germany.1
+	title = MSM_WKV_Germany.1.t
+	desc = MSM_WKV_Germany.1.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = MSM_WKV_Germany.1.a
+		ai_chance = { factor = 00 }
+		complete_national_focus = GER_interwar_WKV_lithuanian_kingdom
+	}
+	option = {
+		name = MSM_WKV_Germany.1.b
+		ai_chance = { factor = 00 }
+		complete_national_focus = GER_interwar_WKV_lithuanian_republic
+	}
+	option = {
+		name = MSM_WKV_Germany.1.c
+		ai_chance = { factor = 00 }
+		complete_national_focus = GER_interwar_WKV_integrate_lithuania_into_baltic_duchy
+	}
+	option = {
+		name = MSM_WKV_Germany.1.e
+		ai_chance = { factor = 00 }
+		complete_national_focus = GER_interwar_WKV_leave_lithuania_alone
+	}
+}
+####Germany seizes white ruthenia####
+country_event = {
+	id =  MSM_WKV_Germany.2
+	title = MSM_WKV_Germany.2.t
+	desc = MSM_WKV_Germany.2.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = MSM_WKV_Germany.2.a
+		ai_chance = { factor = 00 }
+		trigger = {NOT = {TAG = GER}}
+	}
+	option = {
+		name = MSM_WKV_Germany.2.b
+		ai_chance = { factor = 00 }
+		trigger = {TAG = GER}
+		transfer_state = 207
+		transfer_state = 206
+		transfer_state = 204
+		transfer_state = 194
+		transfer_state = 241
+	}
+}
+####Germany fails to seize white ruthenia####
+country_event = {
+	id =  MSM_WKV_Germany.3
+	title = MSM_WKV_Germany.3.t
+	desc = MSM_WKV_Germany.3.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = MSM_WKV_Germany.3.a
+		ai_chance = { factor = 00 }
+		trigger = {NOT = {tag = GER}}
+	}
+	option = {
+		name = MSM_WKV_Germany.3.b
+		ai_chance = { factor = 00 }
+		trigger = {tag = GER}
 	}
 }

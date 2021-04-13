@@ -303,4 +303,21 @@ ideas={
 			
 		}
 	}
+### Interwar Victory ideas
+	country = {
+		MSM_GER_WKV_interwar_tired_of_war	= {
+			allowed = {
+				original_tag = GER
+			}
+			
+			
+			removal_cost = -1 
+			modifier = {
+			conscription_factor = -0.35
+			war_support_factor = -0.15
+			war_support_weekly = -0.02
+			}
+			
+		}
+	}
 }

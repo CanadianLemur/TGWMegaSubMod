@@ -1589,7 +1589,6 @@ country_event = {
 			GER = {country_event = {days = 10 id = MSMGermany.6}}
 		}
 	}
-}
 #____________________________________________________________
 
 
