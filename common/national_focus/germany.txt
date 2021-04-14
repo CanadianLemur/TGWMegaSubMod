@@ -4906,10 +4906,10 @@ set_party_name = {
 		completion_reward = {
 			air_experience = 15
 			add_tech_bonus = {
-			bonus = 0.5
-			uses = 1
-			category = air_equipment
-		}
+				bonus = 0.5
+				uses = 1
+				category = air_equipment
+			}
 		}
 	}
 	focus = {
@@ -4960,13 +4960,40 @@ set_party_name = {
 		}
 	}
 	# 0.5.1 (03/2018)
+	
+	focus = {
+		id = GER_interwar_combat_fascist_elements
+		prerequisite = {focus = GER_interwar_loss_in_ww1}
+		icon = GFX_
+		mutually_exclusive = { focus = GER_interwar_beer_hall_putsch }
+		relative_position_id = GER_interwar_loss_in_ww1
+		allow_branch = { has_dlc = "Waking the Tiger" }
+		available = {
+			has_war = no
+			is_puppet = no
+			NOT = { has_government = communism }
+			has_global_flag = kis_treaty_of_versailles
+		}
 
+		x = 23
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 0	
+		}
+		completion_reward = {
+			
+		}
+	}
+	
 	focus = {
 		id = GER_interwar_beer_AntiSpartacists # Crush the Spartacists
 		icon = GFX_goal_generic_secret_weapon
-		mutually_exclusive = { focus = GER_interwar_beer_ProSpartacists focus = GER_interwar_easing_tensions focus = GER_interwar_beer_hall_putsch }
-		relative_position_id = GER_interwar_easing_tensions
-		prerequisite = {focus = GER_interwar_loss_in_ww1}
+		mutually_exclusive = { focus = GER_interwar_beer_ProSpartacists focus = GER_interwar_easing_tensions }
+		relative_position_id = GER_interwar_combat_fascist_elements
+		prerequisite = {focus = GER_interwar_combat_fascist_elements}
 		available = {
 			has_war = no
 			is_puppet = no		
@@ -4976,7 +5003,7 @@ set_party_name = {
 		}
 
 		x = -2
-		y = 0
+		y = 2
 
 		cost = 10
 
@@ -5037,10 +5064,10 @@ set_party_name = {
 	# Communist Germany
 	focus = {
 		id = GER_interwar_beer_ProSpartacists # Liebknecht and Luxemburg are German Martyrs
-		relative_position_id = GER_interwar_easing_tensions
+		relative_position_id = GER_interwar_combat_fascist_elements
 		icon = GFX_focus_YUG_pan_slavic_congress
-		mutually_exclusive = { focus = GER_interwar_beer_AntiSpartacists focus = GER_interwar_easing_tensions focus = GER_interwar_beer_hall_putsch }
-		prerequisite = {focus = GER_interwar_loss_in_ww1}
+		mutually_exclusive = { focus = GER_interwar_beer_AntiSpartacists focus = GER_interwar_easing_tensions }
+		prerequisite = {focus = GER_interwar_combat_fascist_elements}
 		available = {
 			has_war = no
 			is_puppet = no
@@ -5049,7 +5076,7 @@ set_party_name = {
 		}
 
 		x = 2
-		y = 0
+		y = 2
 
 		cost = 10
 
@@ -5127,10 +5154,10 @@ set_party_name = {
 	
 	focus = {
 		id = GER_interwar_easing_tensions # lowers extremist support
-		prerequisite = {focus = GER_interwar_loss_in_ww1}
+		prerequisite = {focus = GER_interwar_combat_fascist_elements}
 		icon = GFX_
-		mutually_exclusive = { focus = GER_interwar_beer_AntiSpartacists focus = GER_interwar_beer_ProSpartacists focus = GER_interwar_beer_hall_putsch }
-		relative_position_id = GER_interwar_loss_in_ww1
+		mutually_exclusive = { focus = GER_interwar_beer_AntiSpartacists focus = GER_interwar_beer_ProSpartacists }
+		relative_position_id = GER_interwar_combat_fascist_elements
 		available = {
 			has_war = no
 			is_puppet = no
@@ -5138,8 +5165,8 @@ set_party_name = {
 			has_global_flag = kis_treaty_of_versailles
 		}
 
-		x = 23
-		y = 4
+		x = 0
+		y = 2
 
 		cost = 10
 
