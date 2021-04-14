@@ -483,11 +483,11 @@ country_event = {
 		if = {
 		limit = {
 			OR = {
-			RUS = {owns_state = 39}
-			SOV = {owns_state = 39}
+			RUS = {owns_state = 137}
+			SOV = {owns_state = 137}
 			}
 		}
-		transfer_state = 39 #Crimea for Gothic Homeland and Naval Projection
+		transfer_state = 137 #Crimea for Gothic Homeland and Naval Projection
 		}
 		if = {
 		limit = {
@@ -534,5 +534,6 @@ country_event = {
 		}
 		transfer_state = 194 #Mozyr
 		}
+		## do something with volga germans cossacks and caucausus
 	}
 }
