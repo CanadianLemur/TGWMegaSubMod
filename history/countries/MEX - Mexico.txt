@@ -17,7 +17,7 @@ set_country_flag=monroe_doctrine
         desc = MEX_venustiano_carranza_DESC
         picture = "gfx/hoi4tgw_portraits/MEX/country_leaders/MEX_venustiano_carranza.dds"
         expire = "1935.1.1"
-        ideology = moderatism traits = {}
+        ideology = liberalism traits = {}
     }
 
     create_country_leader = {
@@ -50,7 +50,7 @@ create_country_leader = {
     desc = MXR_francisco_i_madero_DESC
     picture = "gfx/hoi4tgw_portraits/MEX/country_leaders/MEX_francisco_madero.dds"
     expire = "1935.1.1"
-    ideology = moderatism traits = {}
+    ideology = liberalism traits = {}
 }
 
 create_country_leader = {
@@ -59,6 +59,14 @@ create_country_leader = {
     picture = "gfx/hoi4tgw_portraits/MEX/country_leaders/MEX_porfirio_diaz.dds"
     expire = "1912.1.1"
     ideology = autocracy traits = {}
+}
+
+create_country_leader = {
+    name = "Ricardo Flores Magón"
+    desc = MEX_ricardo_flores_magon_DESC
+    picture = "gfx/hoi4tgw_portraits/MEX/country_leaders/MEX_ricardo_magon.dds"
+    expire = "1912.1.1"
+    ideology = anarchist_communism traits = {}
 }
 
 #==========================#==========================#==========================#==========================#==========================#
@@ -239,12 +247,6 @@ set_technology = {
 	
 	
 
-
-
-
-
-
-
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -292,6 +294,9 @@ if = {
 		transport = 1
 		}
 	}
+	
+	
+	
 
 1910.1.1 = {
 	oob = "MEX_1910"
@@ -308,11 +313,7 @@ if = {
 	#							NF
 	#-------------------------------------------------------
 	#Army
-	complete_national_focus = mex_political_effort
-	complete_national_focus = MEX_ww1_industrial_effort
-
 	#Diplomatic
-	complete_national_focus = mex_ww1_diplomatic_effort
 	#-------------------------------------------------------
 
 	set_technology = {
@@ -364,7 +365,7 @@ if = {
 	add_ideas = {
 		MEX_ww1_mexico_prerevolution
 	}
-	}
+	
 	if = {
 		limit = { has_dlc = "Man the Guns" }
 		set_technology = {
@@ -473,10 +474,10 @@ if = {
 	    elections_allowed = yes
 	}
 	set_popularities = {
-	    democratic = 5
-	    fascism = 1
-	    communism = 1
-	    neutrality = 93
+	    democratic = 13
+	    fascism = 2
+	    communism = 2
+	    neutrality = 83
 	}
 
 	add_ideas = {
