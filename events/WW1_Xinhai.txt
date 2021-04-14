@@ -821,3 +821,59 @@ country_event = {
 		# remove_brigade = "Guizhou Lujun"
 	}
 }
+
+country_event = {
+	id = ww1_xinhai.24
+	title = ww1_xinhai.24.t
+	desc = ww1_xinhai.24.d
+	picture = ww1_xinhai_24
+	fire_only_once = yes
+
+	trigger = {
+		CHI = {
+			has_war_with = QIN
+			surrender_progress > 0.7
+		}
+		TAG = QIN
+		NOT = { has_global_flag = kis_xinhaire_end }
+	}
+	
+	option = {
+		name = ww1_xinhai.24.a
+		ai_chance = { factor = 100 }
+		QIN = {
+			annex_country = {
+				target = CHI
+				transfer_troops = no
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ww1_xinhai.25
+	title = ww1_xinhai.25.t
+	desc = ww1_xinhai.25.d
+	picture = ww1_xinhai_25
+	fire_only_once = yes
+
+	trigger = {
+		QIN = {
+			has_war_with = CHI
+			surrender_progress > 0.7
+		}
+		TAG = CHI
+		NOT = { has_global_flag = kis_xinhaire_end }
+	}
+	
+	option = {
+		name = ww1_xinhai.25.a
+		ai_chance = { factor = 100 }
+		CHI = {
+			annex_country = {
+				target = QIN
+				transfer_troops = no
+			}
+		}
+	}
+}
