@@ -1124,7 +1124,26 @@ focus_tree = {
 		x = 0
 		y = 2
 	}
-
+	focus = {
+		id = GER_ww1_support_irish_uprising
+		relative_position_id = GER_ww1_anti_uk
+		prerequisite = { focus = GER_ww1_anti_uk }
+		icon = GFX_focus_generic_support_the_left_right
+		completion_reward = {  }##Irish Uprising event, choose level of support, more support will lead to greater relations with ireland in the interwar period
+		available = { 
+	 		ENG = {
+	 			exists = yes
+	 		}
+			has_war_with=ENG
+			ENG = {
+			owns_state = 113
+			}
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 0
+		y = 2
+	}
 	focus = {
 		id = GER_ww1_agadir_crisis
 		relative_position_id = GER_ww1_anti_uk
@@ -4512,6 +4531,27 @@ set_party_name = {
 		}
 	}
 	focus = {
+		id = GER_interwar_WKV_a_king_for_ireland
+		relative_position_id = GER_interwar_WKV_western_european_policy
+		icon = GFX_focus_ger_oppose_hitler
+		prerequisite = {focus = GER_interwar_WKV_western_european_policy}
+		available = {
+		has_completed_focus = GER_ww1_support_irish_uprising
+		}
+		x = 2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10	
+		}
+		completion_reward = {
+			add_political_power = 100
+
+		}
+	}
+	focus = {
 		id = GER_interwar_WKV_french_civil_war
 		relative_position_id = GER_interwar_WKV_western_european_policy
 		icon = GFX_focus_ger_oppose_hitler
@@ -4549,6 +4589,26 @@ set_party_name = {
 		}
 		completion_reward = {
 			add_political_power = 100
+
+		}
+	}
+	focus = {
+		id = GER_interwar_WKV_exert_influence_in_ukraine
+		relative_position_id = GER_interwar_WKV_eastern_european_policy
+		icon = GFX_focus_attack_soviet
+		prerequisite = {focus = GER_interwar_WKV_eastern_european_policy}
+		available = {
+		}
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10	
+		}
+		completion_reward = {
+			puppet = UKR ##make this more nuanced, put that austrian fellow on the throne of ukraine as well
 
 		}
 	}
@@ -4646,7 +4706,7 @@ set_party_name = {
 		}
 		x = 0
 		y = 1
-		cost = 10
+		cost = 4
 
 		ai_will_do = {
 			factor = 10	
@@ -4673,7 +4733,87 @@ set_party_name = {
 
 		}
 	}	
+	focus = {
+		id = GER_interwar_WKV_secure_crimean_anchorage
+		relative_position_id = GER_interwar_WKV_full_intervention
+		icon = GFX_focus_attack_soviet
+		prerequisite = {focus = GER_interwar_WKV_full_intervention }
+		available = {
+		owns_state = 137
+		}
+		x = -2
+		y = 1
+		cost = 10
 
+		ai_will_do = {
+			factor = 10	
+		}
+		completion_reward = {
+		##Unlock decisions to integrate crimea, rename sevastapol and such
+		}
+	}	
+	focus = {
+		id = GER_interwar_WKV_transcaucasian_kingdom
+		relative_position_id = GER_interwar_WKV_full_intervention
+		icon = GFX_focus_attack_soviet
+		prerequisite = {focus = GER_interwar_WKV_full_intervention }
+		available = {
+		owns_state = 229
+		owns_state = 230
+		owns_state = 231
+		}
+		x = 1
+		y = 2
+		cost = 4
+
+		ai_will_do = {
+			factor = 10	
+		}
+		completion_reward = {
+		##release transcaucasia under prince adalbert of prussia
+		}
+	}
+	focus = {
+		id = GER_interwar_WKV_protect_cossack_rights
+		relative_position_id = GER_interwar_WKV_full_intervention
+		icon = GFX_focus_attack_soviet
+		prerequisite = {focus = GER_interwar_WKV_full_intervention }
+		available = {
+		owns_state = 218
+		}
+		x = -1
+		y = 2
+		cost = 4
+
+		ai_will_do = {
+			factor = 10	
+		}
+		completion_reward = {
+		##release don kuban union
+		}
+	}
+	focus = {
+		id = GER_interwar_WKV_volga_german
+		relative_position_id = GER_interwar_WKV_full_intervention
+		icon = GFX_focus_attack_soviet
+		prerequisite = {focus = GER_interwar_WKV_full_intervention }
+		available = {
+		owns_state = 239
+		owns_state = 401
+		owns_state = 251
+		owns_state = 652
+		}
+		x = 0
+		y = 1
+		cost = 4
+
+		ai_will_do = {
+			factor = 10	
+		}
+		completion_reward = {
+		##release volga german state
+		}
+	}
 	focus = {
 		id = GER_interwar_WKV_baltic_policy
 		relative_position_id = GER_interwar_WKV_eastern_european_policy

@@ -468,6 +468,7 @@ country_event = {
 		surrender_progress > 0.75
 		}
 	}
+	mean_time_to_happen = {days = 15}
 	fire_only_once = no
 	is_triggered_only = no
 	## Ladies and Gentlemen, We gottem
@@ -534,6 +535,176 @@ country_event = {
 		}
 		transfer_state = 194 #Mozyr
 		}
-		## do something with volga germans cossacks and caucausus
+		if = {
+		limit = {
+			OR = {
+			RUS = {owns_state = 228}
+			SOV = {owns_state = 228}
+			}
+		}
+		UKR = {transfer_state = 228}#Voroshilovgrad
+		}
+		if = {
+		limit = {
+			OR = {
+			RUS = {owns_state = 218}
+			SOV = {owns_state = 218}
+			}
+		}
+		transfer_state = 218 #Rostov
+		}
+		if = {
+		limit = {
+			OR = {
+			RUS = {owns_state = 234}
+			SOV = {owns_state = 234}
+			}
+		}
+		transfer_state = 234 #Krasnodar
+		}
+		if = {
+		limit = {
+			OR = {
+			RUS = {owns_state = 245}
+			SOV = {owns_state = 245}
+			}
+		}
+		transfer_state = 245 #Millerovo
+		}
+		if = {
+		limit = {
+			OR = {
+			RUS = {owns_state = 265}
+			SOV = {owns_state = 265}
+			}
+		}
+		transfer_state = 265 #Mikhaylovka
+		}
+		if = {
+		limit = {
+			OR = {
+			RUS = {owns_state = 217}
+			SOV = {owns_state = 217}
+			}
+		}
+		transfer_state = 217 #Tsaritsyn
+		}
+		if = {
+		limit = {
+			OR = {
+			RUS = {owns_state = 236}
+			SOV = {owns_state = 236}
+			}
+		}
+		transfer_state = 236 #Astrakhan
+		}
+		if = {
+		limit = {
+			OR = {
+			RUS = {owns_state = 237}
+			SOV = {owns_state = 237}
+			}
+		}
+		transfer_state = 237#Elista
+		}
+		if = {
+		limit = {
+			OR = {
+			RUS = {owns_state = 238}
+			SOV = {owns_state = 238}
+			}
+		}
+		transfer_state = 238#Volgodonsk
+		}
+		if = {
+		limit = {
+			OR = {
+			RUS = {owns_state = 235}
+			SOV = {owns_state = 235}
+			}
+		}
+		transfer_state = 235#Stavropol
+		}
+		if = {
+		limit = {
+			OR = {
+			RUS = {owns_state = 239}
+			SOV = {owns_state = 239}
+			}
+		}
+		transfer_state = 239#Saratov
+		}
+		if = {
+		limit = {
+			OR = {
+			RUS = {owns_state = 401}
+			SOV = {owns_state = 401}
+			}
+		}
+		transfer_state = 401#Engels
+		}
+		if = {
+		limit = {
+			OR = {
+			RUS = {owns_state = 251}
+			SOV = {owns_state = 251}
+			}
+		}
+		transfer_state = 251#Samara
+		}
+		if = {
+		limit = {
+			OR = {
+			RUS = {owns_state = 652}
+			SOV = {owns_state = 652}
+			}
+		}
+		transfer_state = 652#Orenburg
+		}
+		if = {
+		limit = {
+			OR = {
+			RUS = {owns_state = 232}
+			SOV = {owns_state = 232}
+			}
+		}
+		transfer_state = 232#Grozny
+		}
+		if = {
+		limit = {
+			OR = {
+			RUS = {owns_state = 229}
+			SOV = {owns_state = 229}
+			}
+		}
+		transfer_state = 229#Azerbaijan
+		}
+		if = {
+		limit = {
+			OR = {
+			RUS = {owns_state = 223}
+			SOV = {owns_state = 223}
+			}
+		}
+		transfer_state = 233#Caucasus Mountains
+		}
+		if = {
+		limit = {
+			OR = {
+			RUS = {owns_state = 231}
+			SOV = {owns_state = 231}
+			}
+		}
+		transfer_state = 231#Georgia
+		}
+		if = {
+		limit = {
+			OR = {
+			RUS = {owns_state = 230}
+			SOV = {owns_state = 230}
+			}
+		}
+		transfer_state = 230#Georgia
+		}
 	}
 }

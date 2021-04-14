@@ -407,6 +407,10 @@ UKR = {
 color = rgb { 0 124 195 }
 color_ui = rgb { 0 136 215 }
 }
+DKU = {
+color = rgb { 50 124 195 }
+color_ui = rgb { 50 136 215 }
+}
 GEO = {
 color = rgb { 200 100 70 }
 color_ui = rgb { 220 110 77 }

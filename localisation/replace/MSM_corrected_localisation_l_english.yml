@@ -8,8 +8,11 @@
  STATE_796:0 "Southern Gangwon"
  STATE_290:0 "The Rif"
  STATE_750:0 "Virgin Islands"
+ STATE_251:0"Samara"
+ VICTORY_POINTS_11225:0"Samara"
  VICTORY_POINTS_8039:0 "Tamale"
  VICTORY_POINTS_11752:0 "Zhangbei"
+ 
  ###Gun Carrier Mark I is used earlier, so cannot be used later 
  AST_heavy_tank_artillery_equipment_1:0 "Heavy SP Artillery I"
  AST_heavy_tank_artillery_equipment_1_short:0 "H. SPG I"
