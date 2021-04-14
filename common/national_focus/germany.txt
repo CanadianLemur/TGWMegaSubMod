@@ -5,7 +5,7 @@ focus_tree = {
 	###########################################################################################################################
 	# POLITICAL
 	###########################################################################################################################
-	continuous_focus_position = { x = 50 y = 1500 }
+	continuous_focus_position = { x = 50 y = 1300 }
 	focus = {
 		id = GER_ww1_political_effort
 		icon = GFX_goal_generic_demand_territory
@@ -513,7 +513,7 @@ focus_tree = {
 
 		ai_will_do = { factor = 20	}
 		cost = 10
-		x = 16
+		x = 12
 		y = 0
 	}
 
@@ -861,7 +861,7 @@ focus_tree = {
 
 		cost = 5
 		x = 1
-		y = 2
+		y = 1
 	}
 	focus = {
 		id = GER_ww1_persia_friend
@@ -897,7 +897,7 @@ focus_tree = {
 
 		cost = 5
 		x = 0
-		y = 1
+		y = 2
 	}
 	focus = {
 		id = GER_ww1_mission_to_somalia
@@ -935,8 +935,8 @@ focus_tree = {
 		}
 
 		cost = 5
-		x = -1
-		y = 3
+		x = 0
+		y = 2
 	}
 
 
@@ -954,7 +954,7 @@ focus_tree = {
 		completion_reward = { 347={ add_building_construction={ type=infrastructure level=1 instant_build=yes } } 49={ add_building_construction={ type=infrastructure level=1 instant_build=yes } } 346={ add_building_construction={ type=infrastructure level=1 instant_build=yes } } 345={ add_building_construction={ type=infrastructure level=1 instant_build=yes } } 344={ add_building_construction={ type=infrastructure level=1 instant_build=yes } } 677={ add_building_construction={ type=infrastructure level=1 instant_build=yes } } 680={ add_building_construction={ type=infrastructure level=1 instant_build=yes } } 676={ add_building_construction={ type=infrastructure level=1 instant_build=yes } } }        
 		ai_will_do = { factor = 20 }
 		cost = 10
-		x = 0
+		x = -1
 		y = 1
 	}
 
@@ -978,8 +978,8 @@ focus_tree = {
 
 		ai_will_do = { factor = 20 }
 		cost = 10
-		x = -2
-		y = 1
+		x = 0
+		y = 2
 	}
 
 	# Finnish Civil War # Open Beta 0.5
@@ -1122,7 +1122,7 @@ focus_tree = {
 		ai_will_do = { factor = 10 }
 		cost = 10
 		x = 0
-		y = 1
+		y = 2
 	}
 
 	focus = {
@@ -1318,7 +1318,7 @@ focus_tree = {
 		completion_reward = { army_experience=15 add_tech_bonus={ name=land_doc_bonus bonus=0.2 uses=1 category=land_doctrine } }
 		ai_will_do = { factor = 80 }
 		cost = 10
-		x = 16
+		x = 11
 		y = 0
 	}
 	
@@ -2436,7 +2436,7 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
-		x = 1
+		x = 2
 		y = 1
 	}
 	
@@ -2479,7 +2479,7 @@ focus_tree = {
 		ai_will_do = { factor = 10 }
 		cost = 10
 		x = 0
-		y = 2
+		y = 1
 	}
 	focus = {
 		id = GER_ww1_war_plans_association_with_habsburg_lands
@@ -2494,7 +2494,7 @@ focus_tree = {
 		ai_will_do = { factor = 10 }
 		cost = 10
 		x = 2
-		y = 2
+		y = 1
 	}
 	focus = {
 		id = GER_ww1_war_plans_research_cooperation_with_habsburg_lands
@@ -3083,262 +3083,262 @@ set_party_name = {
 	}
 	########Army Focus########
 	
-	focus = {
-		id = GER_ww1_army_effort
-		icon = GFX_goal_generic_axis_build_infantry
-		relative_position_id = GER_ww1_war_plans_division_1
-		completion_reward = { army_experience=15 add_tech_bonus={ name=land_doc_bonus bonus=0.2 uses=1 category=land_doctrine } }
-		ai_will_do = { factor = 10 }
-		cost = 10
-		x = 25
-		y = 0
-		}
-	
-	focus = {
-		id = GER_ww1_equipment_effort
-		relative_position_id = GER_ww1_army_effort
-		prerequisite = { focus=GER_ww1_army_effort }
-		icon = GFX_goal_generic_small_arms
-		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=0.15 uses=1 category=infantry_weapons} }
-		ai_will_do = { factor = 10 }
-		cost = 10
-		x = -1
-		y = 1
-	}
+#	focus = {
+#		id = GER_ww1_army_effort
+#		icon = GFX_goal_generic_axis_build_infantry
+#		relative_position_id = GER_ww1_war_plans_division_1
+#		completion_reward = { army_experience=15 add_tech_bonus={ name=land_doc_bonus bonus=0.2 uses=1 category=land_doctrine } }
+#		ai_will_do = { factor = 10 }
+#		cost = 10
+#		x = 25
+#		y = 0
+#		}
+#	
+#	focus = {
+#		id = GER_ww1_equipment_effort
+#		relative_position_id = GER_ww1_army_effort
+#		prerequisite = { focus=GER_ww1_army_effort }
+#		icon = GFX_goal_generic_small_arms
+#		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=0.15 uses=1 category=infantry_weapons} }
+#		ai_will_do = { factor = 10 }
+#		cost = 10
+#		x = -1
+#		y = 1
+#	}
 
-	focus = {
-		id = GER_ww1_artillery_effort_1
-		relative_position_id = GER_ww1_army_effort
-		prerequisite = { focus=GER_ww1_army_effort }
-		icon = GFX_goal_generic_army_artillery2
-		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=0.15 uses=1 category=artillery } }
-		ai_will_do = { factor = 10 }
-		cost = 10
-		x = 1
-		y = 1
-	}
-	focus = {
-		id = GER_ww1_artillery_effort_2
-		relative_position_id = GER_ww1_artillery_effort_1
-		prerequisite = { focus=GER_ww1_artillery_effort_1 }
-		available = { date > 1912.1.1 }
-		icon = GFX_goal_generic_army_artillery2
-		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=0.15 uses=1 category=artillery } }
-		ai_will_do = { factor = 10 }
-		cost = 10
-		x = 0
-		y = 2
-	}
-	focus = {
-		id = GER_ww1_artillery_effort_3
-		relative_position_id = GER_ww1_artillery_effort_2
-		prerequisite = { focus=GER_ww1_artillery_effort_2 }
-		available = { date > 1914.1.1 }
-		icon = GFX_goal_generic_army_artillery2
-		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=0.15 uses=1 category=artillery } }
-		ai_will_do = { factor = 10 }
-		cost = 10
-		x = 0
-		y = 2
-	}
+#	focus = {
+#		id = GER_ww1_artillery_effort_1
+#		relative_position_id = GER_ww1_army_effort
+#		prerequisite = { focus=GER_ww1_army_effort }
+#		icon = GFX_goal_generic_army_artillery2
+#		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=0.15 uses=1 category=artillery } }
+#		ai_will_do = { factor = 10 }
+#		cost = 10
+#		x = 1
+#		y = 1
+#	}
+#	focus = {
+#		id = GER_ww1_artillery_effort_2
+#		relative_position_id = GER_ww1_artillery_effort_1
+#		prerequisite = { focus=GER_ww1_artillery_effort_1 }
+#		available = { date > 1912.1.1 }
+#		icon = GFX_goal_generic_army_artillery2
+#		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=0.15 uses=1 category=artillery } }
+#		ai_will_do = { factor = 10 }
+#		cost = 10
+#		x = 0
+#		y = 2
+#	}
+#	focus = {
+#		id = GER_ww1_artillery_effort_3
+#		relative_position_id = GER_ww1_artillery_effort_2
+#		prerequisite = { focus=GER_ww1_artillery_effort_2 }
+#		available = { date > 1914.1.1 }
+#		icon = GFX_goal_generic_army_artillery2
+#		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_weapons_bonus bonus=0.15 uses=1 category=artillery } }
+#		ai_will_do = { factor = 10 }
+#		cost = 10
+#		x = 0
+#		y = 2
+#	}
 
-	focus = {
-		id = GER_ww1_doctrine_effort
-		relative_position_id = GER_ww1_army_effort
-		prerequisite = { focus=GER_ww1_army_effort }
-		available = { date > 1911.1.1 }
-		icon = GFX_goal_generic_army_doctrines
-		completion_reward = { army_experience=15 add_tech_bonus={ name=land_doc_bonus bonus=0.2 uses=1 category=land_doctrine } }
-		ai_will_do = { factor = 10 }
-		cost = 10
-		x = 0
-		y = 2
-	}
+#	focus = {
+#		id = GER_ww1_doctrine_effort
+#		relative_position_id = GER_ww1_army_effort
+#		prerequisite = { focus=GER_ww1_army_effort }
+#		available = { date > 1911.1.1 }
+#		icon = GFX_goal_generic_army_doctrines
+#		completion_reward = { army_experience=15 add_tech_bonus={ name=land_doc_bonus bonus=0.2 uses=1 category=land_doctrine } }
+#		ai_will_do = { factor = 10 }
+#		cost = 10
+#		x = 0
+#		y = 2
+#	}
 
-	focus = {
-		id = GER_ww1_equipment_effort_2
-		relative_position_id = GER_ww1_equipment_effort
-		prerequisite = { focus=GER_ww1_equipment_effort }
-		available = { date > 1912.1.1 }
-		icon = GFX_goal_generic_small_arms
-		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_artillery_bonus bonus=0.15 uses=1 category=infantry_weapons } }
-		ai_will_do = { factor = 10 }
-		cost = 10
-		x = 0
-		y = 2
-	}
-
-
-	focus = {
-		id = GER_ww1_trenchwarfare
-		relative_position_id = GER_ww1_equipment_effort
-		prerequisite = { focus=GER_ww1_equipment_effort }
-		available = { date > 1911.1.1 }
-		icon = GFX_goal_generic_military_sphere
-		completion_reward = { army_experience=10 add_tech_bonus={ name=trenchwarfare_bonus bonus=0.15 uses=1 technology=support_weapons technology=support_weapons2 technology=support_weapons3 } }
-		ai_will_do = { factor = 10 }
-		cost = 10
-		x = -1
-		y = 1
-	}
+#	focus = {
+#		id = GER_ww1_equipment_effort_2
+#		relative_position_id = GER_ww1_equipment_effort
+#		prerequisite = { focus=GER_ww1_equipment_effort }
+#		available = { date > 1912.1.1 }
+#		icon = GFX_goal_generic_small_arms
+#		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_artillery_bonus bonus=0.15 uses=1 category=infantry_weapons } }
+#		ai_will_do = { factor = 10 }
+#		cost = 10
+#		x = 0
+#		y = 2
+#	}
 
 
-	focus = {
-		id = GER_ww1_gasmask_focus
-		relative_position_id = GER_ww1_trenchwarfare
-		prerequisite = { focus=GER_ww1_trenchwarfare }
-		available = { date > 1913.1.1 }
-		icon = GFX_hoi4tgw_gasmask
-		completion_reward = { army_experience=15 add_tech_bonus={ name=gasmask_bonus bonus=0.15 uses=1 technology=infantry_gasmask technology=chemical_research2 technology=chemical_research3 } }
-		ai_will_do = { factor = 10 }
-		cost = 10
-		x = 0
-		y = 2
-	}
-
-	focus = {
-		id = GER_ww1_special_forces
-		relative_position_id = GER_ww1_gasmask_focus
-		prerequisite = { focus=GER_ww1_gasmask_focus }
-		available = { date > 1915.1.1 }
-		icon = GFX_goal_generic_special_forces
-		completion_reward = { army_experience=15 add_tech_bonus={ name=special_forces_bonus bonus=0.15 uses=1 technology=marines technology=marines2 technology=tech_mountaineers technology=tech_mountaineers2 } }
-		ai_will_do = { factor = 10 }
-		cost = 10
-		x = 0
-		y = 2
-	}
+#	focus = {
+#		id = GER_ww1_trenchwarfare
+#		relative_position_id = GER_ww1_equipment_effort
+#		prerequisite = { focus=GER_ww1_equipment_effort }
+#		available = { date > 1911.1.1 }
+#		icon = GFX_goal_generic_military_sphere
+#		completion_reward = { army_experience=10 add_tech_bonus={ name=trenchwarfare_bonus bonus=0.15 uses=1 technology=support_weapons technology=support_weapons2 technology=support_weapons3 } }
+#		ai_will_do = { factor = 10 }
+#		cost = 10
+#		x = -1
+#		y = 1
+#	}
 
 
-	focus = {
-		id = GER_ww1_army_motorization_focus
-		available = { date > 1917.1.1 }
-		icon = GFX_goal_generic_army_motorized
-		relative_position_id = GER_ww1_special_forces
-		prerequisite = { focus=GER_ww1_special_forces }
-		x = 0
-		y = 2
-		cost = 10
-		ai_will_do = { factor = 10 }
-		completion_reward = {
-			army_experience = 5
-			add_tech_bonus = {
-				name = mech_army_bonus
-				bonus = 0.2
-				uses = 1
-				technology = early_motorised
-				technology = ww1_ambulance2
-			}
-		}
-	}
+#	focus = {
+#		id = GER_ww1_gasmask_focus
+#		relative_position_id = GER_ww1_trenchwarfare
+#		prerequisite = { focus=GER_ww1_trenchwarfare }
+#		available = { date > 1913.1.1 }
+#		icon = GFX_hoi4tgw_gasmask
+#		completion_reward = { army_experience=15 add_tech_bonus={ name=gasmask_bonus bonus=0.15 uses=1 technology=infantry_gasmask technology=chemical_research2 technology=chemical_research3 } }
+#		ai_will_do = { factor = 10 }
+#		cost = 10
+#		x = 0
+#		y = 2
+#	}
 
-	focus = {
-		id = GER_ww1_doctrine_effort_2
-		relative_position_id = GER_ww1_doctrine_effort
-		prerequisite = { focus=GER_ww1_doctrine_effort }
-		available = { date > 1913.1.1 }
-		icon = GFX_goal_generic_army_doctrines
-		completion_reward = { army_experience=15 add_tech_bonus={ name=land_doc_bonus bonus=0.2 uses=1 category=land_doctrine } }
-		ai_will_do = { factor = 10 }
-		cost = 10
-		x = 0
-		y = 2
-	}
-
-	focus = {
-		id = GER_ww1_equipment_effort_3
-		relative_position_id = GER_ww1_equipment_effort_2
-		prerequisite = { focus=GER_ww1_equipment_effort_2 }
-		available = { date > 1914.1.1 }
-		icon = GFX_goal_generic_small_arms
-		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_artillery_bonus bonus=0.15 uses=1 category=infantry_weapons } }
-		ai_will_do = { factor = 10 }
-		cost = 10
-		x = 0
-		y = 2
-	}
-
-	focus = {
-		id = GER_ww1_doctrine_effort_3
-		relative_position_id = GER_ww1_doctrine_effort_2
-		prerequisite = { focus=GER_ww1_doctrine_effort_2 }
-		available = { date > 1915.1.1 }
-		icon = GFX_goal_generic_army_doctrines
-		completion_reward = { army_experience=15 add_tech_bonus={ name=land_doc_bonus bonus=0.2 uses=1 category=land_doctrine } }
-		ai_will_do = { factor = 10 }
-		cost = 10
-		x = 0
-		y = 2
-	}
+#	focus = {
+#		id = GER_ww1_special_forces
+#		relative_position_id = GER_ww1_gasmask_focus
+#		prerequisite = { focus=GER_ww1_gasmask_focus }
+#		available = { date > 1915.1.1 }
+#		icon = GFX_goal_generic_special_forces
+#		completion_reward = { army_experience=15 add_tech_bonus={ name=special_forces_bonus bonus=0.15 uses=1 technology=marines technology=marines2 technology=tech_mountaineers technology=tech_mountaineers2 } }
+#		ai_will_do = { factor = 10 }
+#		cost = 10
+#		x = 0
+#		y = 2
+#	}
 
 
-	focus = {
-		id = GER_ww1_equipment_effort_4
-		relative_position_id = GER_ww1_equipment_effort_3
-		prerequisite = { focus=GER_ww1_equipment_effort_3 }
-		available = { date > 1916.1.1 }
-		icon = GFX_goal_generic_small_arms
-		completion_reward = { army_experience=20 add_tech_bonus={ name=infantry_artillery_bonus bonus=0.2 uses=1 category=infantry_weapons } }
-		ai_will_do = { factor = 10 }
-		cost = 10
-		x = 0
-		y = 2
-	}
+#	focus = {
+#		id = GER_ww1_army_motorization_focus
+#		available = { date > 1917.1.1 }
+#		icon = GFX_goal_generic_army_motorized
+#		relative_position_id = GER_ww1_special_forces
+#		prerequisite = { focus=GER_ww1_special_forces }
+#		x = 0
+#		y = 2
+#		cost = 10
+#		ai_will_do = { factor = 10 }
+#		completion_reward = {
+#			army_experience = 5
+#			add_tech_bonus = {
+#				name = mech_army_bonus
+#				bonus = 0.2
+#				uses = 1
+#				technology = early_motorised
+#				technology = ww1_ambulance2
+#			}
+#		}
+#	}
 
-	focus = {
-		id = GER_ww1_artillery_effort_4
-		relative_position_id = GER_ww1_artillery_effort_3
-		prerequisite = { focus=GER_ww1_artillery_effort_3 }
-		available = { date > 1916.1.1 }
-		icon = GFX_goal_generic_army_artillery2
-		completion_reward = { army_experience=20 add_tech_bonus={ name=infantry_artillery_bonus bonus=0.2 uses=1 category=artillery } }
-		ai_will_do = { factor = 10 }
-		cost = 10
-		x = 0
-		y = 2
-	}
+#	focus = {
+#		id = GER_ww1_doctrine_effort_2
+#		relative_position_id = GER_ww1_doctrine_effort
+#		prerequisite = { focus=GER_ww1_doctrine_effort }
+#		available = { date > 1913.1.1 }
+#		icon = GFX_goal_generic_army_doctrines
+#		completion_reward = { army_experience=15 add_tech_bonus={ name=land_doc_bonus bonus=0.2 uses=1 category=land_doctrine } }
+#		ai_will_do = { factor = 10 }
+#		cost = 10
+#		x = 0
+#		y = 2
+#	}
+
+#	focus = {
+#		id = GER_ww1_equipment_effort_3
+#		relative_position_id = GER_ww1_equipment_effort_2
+#		prerequisite = { focus=GER_ww1_equipment_effort_2 }
+#		available = { date > 1914.1.1 }
+#		icon = GFX_goal_generic_small_arms
+#		completion_reward = { army_experience=10 add_tech_bonus={ name=infantry_artillery_bonus bonus=0.15 uses=1 category=infantry_weapons } }
+#		ai_will_do = { factor = 10 }
+#		cost = 10
+#		x = 0
+#		y = 2
+#	}
+
+#	focus = {
+#		id = GER_ww1_doctrine_effort_3
+#		relative_position_id = GER_ww1_doctrine_effort_2
+#		prerequisite = { focus=GER_ww1_doctrine_effort_2 }
+#		available = { date > 1915.1.1 }
+#		icon = GFX_goal_generic_army_doctrines
+#		completion_reward = { army_experience=15 add_tech_bonus={ name=land_doc_bonus bonus=0.2 uses=1 category=land_doctrine } }
+#		ai_will_do = { factor = 10 }
+#		cost = 10
+#		x = 0
+#		y = 2
+#	}
 
 
-	focus = {
-		id = GER_ww1_armor_effort_1
-		relative_position_id = GER_ww1_equipment_effort_4
-		prerequisite = { focus=GER_ww1_equipment_effort_4 }
-		prerequisite = { focus=GER_ww1_doctrine_effort_3 }
-		prerequisite = { focus=GER_ww1_artillery_effort_4 }
-		available = { date > 1917.1.1 }
-		icon = GFX_hoi4tgw_renaultft
-		completion_reward = { army_experience=50 add_tech_bonus={ name=armor_bonus bonus=0.15 uses=2 category=armor } }
-		ai_will_do = { factor = 10 }
-		cost = 10
-		x = 1
-		y = 1
-	}
+#	focus = {
+#		id = GER_ww1_equipment_effort_4
+#		relative_position_id = GER_ww1_equipment_effort_3
+#		prerequisite = { focus=GER_ww1_equipment_effort_3 }
+#		available = { date > 1916.1.1 }
+#		icon = GFX_goal_generic_small_arms
+#		completion_reward = { army_experience=20 add_tech_bonus={ name=infantry_artillery_bonus bonus=0.2 uses=1 category=infantry_weapons } }
+#		ai_will_do = { factor = 10 }
+#		cost = 10
+#		x = 0
+#		y = 2
+#	}
 
-	focus = {
-		id = GER_ww1_armor_effort_2
-		relative_position_id = GER_ww1_armor_effort_1
-		prerequisite = { focus=GER_ww1_armor_effort_1 }
-		prerequisite = { focus=GER_ww1_army_motorization_focus }
-		available = { date > 1918.1.1 }
-		icon = GFX_goal_generic_army_tanks
-		completion_reward = { army_experience=75 add_tech_bonus={ name=armor_bonus bonus=0.1 uses=2 category=armor } }
-		ai_will_do = { factor = 10 }
-		cost = 10
-		x = -1
-		y = 1
-	}
+#	focus = {
+#		id = GER_ww1_artillery_effort_4
+#		relative_position_id = GER_ww1_artillery_effort_3
+#		prerequisite = { focus=GER_ww1_artillery_effort_3 }
+#		available = { date > 1916.1.1 }
+#		icon = GFX_goal_generic_army_artillery2
+#		completion_reward = { army_experience=20 add_tech_bonus={ name=infantry_artillery_bonus bonus=0.2 uses=1 category=artillery } }
+#		ai_will_do = { factor = 10 }
+#		cost = 10
+#		x = 0
+#		y = 2
+#	}
+
+
+#	focus = {
+#		id = GER_ww1_armor_effort_1
+#		relative_position_id = GER_ww1_equipment_effort_4
+#		prerequisite = { focus=GER_ww1_equipment_effort_4 }
+#		prerequisite = { focus=GER_ww1_doctrine_effort_3 }
+#		prerequisite = { focus=GER_ww1_artillery_effort_4 }
+#		available = { date > 1917.1.1 }
+#		icon = GFX_hoi4tgw_renaultft
+#		completion_reward = { army_experience=50 add_tech_bonus={ name=armor_bonus bonus=0.15 uses=2 category=armor } }
+#		ai_will_do = { factor = 10 }
+#		cost = 10
+#		x = 1
+#		y = 1
+#	}
+
+#	focus = {
+#		id = GER_ww1_armor_effort_2
+#		relative_position_id = GER_ww1_armor_effort_1
+#		prerequisite = { focus=GER_ww1_armor_effort_1 }
+#		prerequisite = { focus=GER_ww1_army_motorization_focus }
+#		available = { date > 1918.1.1 }
+#		icon = GFX_goal_generic_army_tanks
+#		completion_reward = { army_experience=75 add_tech_bonus={ name=armor_bonus bonus=0.1 uses=2 category=armor } }
+#		ai_will_do = { factor = 10 }
+#		cost = 10
+#		x = -1
+#		y = 1
+#	}
 
 	#############################################################################
 
 	focus = {
 		id = GER_ww1_aviation_effort
 		icon = GFX_goal_generic_build_airforce
-		relative_position_id = GER_ww1_army_effort
+		relative_position_id = GER_ww1_war_plans_division_1
 		completion_reward = { air_experience=25 if={ limit={ capital_scope={ NOT={ free_building_slots={ building=air_base size > 1 } } } } random_owned_state={ limit={ free_building_slots={ building=air_base size > 1 } } add_building_construction={ type=air_base level=2 instant_build=yes } ROOT={ set_country_flag=aviation_effort_AB } } } if={ limit={ capital_scope={ free_building_slots={ building=air_base size > 1 } } } capital_scope={ add_building_construction={ type=air_base level=2 instant_build=yes } ROOT={ set_country_flag=aviation_effort_AB } } } add_tech_bonus={ name=air_doc_bonus bonus=0.15 uses=1 category=air_doctrine } }
 		complete_tooltip = { air_experience=25 if={ limit={ has_country_flag=aviation_effort_AB } add_building_construction={ type=air_base level=2 instant_build=yes } }			 add_tech_bonus={ name=air_doc_bonus bonus=0.15 uses=1 category=air_doctrine }			 }
 		ai_will_do = { factor = 10 }
 		cost = 10
-		x = 5
+		x = 21
 		y = 0
 	}
 
@@ -4429,7 +4429,7 @@ set_party_name = {
 		# Victory in ww1 gatekeeping focus
 	focus = {
 		id = GER_interwar_WKV_victory_in_ww1
-
+		relative_position_id = GER_interwar_loss_in_ww1
 		icon = GFX_focus_ger_oppose_hitler
 		
 		available = {
@@ -4437,8 +4437,8 @@ set_party_name = {
 		}
 		allow_branch = {NOT = {has_global_flag = kis_treaty_of_versailles}}
 		mutually_exclusive = {focus = GER_interwar_loss_in_ww1}
-		x = 27
-		y = 11
+		x = 2
+		y = 0
 
 		cost = 10
 
@@ -4834,7 +4834,7 @@ set_party_name = {
 		allow_branch = {NOT = {has_global_flag = kis_second_treaty_frankfort}}
 
 		x = 25
-		y = 11
+		y = 12
 
 		cost = 10
 
@@ -4848,14 +4848,14 @@ set_party_name = {
 	}
 	focus = {
 		id = GER_interwar_quietly_break_disarmament_treaties
-
+		relative_position_id = GER_interwar_loss_in_ww1
 		icon = GFX_focus_secret_rearmament
 		prerequisite = {focus = GER_interwar_loss_in_ww1}
 		available = {
 		}
 
-		x = 16
-		y = 12
+		x = -9
+		y = 1
 
 		cost = 10
 
@@ -4868,14 +4868,14 @@ set_party_name = {
 	}
 	focus = {
 		id = GER_interwar_rename_the_reichsmarine
-
+		relative_position_id = GER_interwar_quietly_break_disarmament_treaties
 		icon = GFX_focus_secret_rearmament
 		prerequisite = {focus = GER_interwar_quietly_break_disarmament_treaties}
 		available = {
 		}
 
-		x = 22
-		y = 13
+		x = 6
+		y = 1
 
 		cost = 10
 
@@ -4888,15 +4888,15 @@ set_party_name = {
 	}
 	focus = {
 		id = GER_interwar_air_training_in_the_soviet_union
-
+		relative_position_id = GER_interwar_quietly_break_disarmament_treaties
 		icon = GFX_focus_secret_rearmament
 		prerequisite = {focus = GER_interwar_quietly_break_disarmament_treaties}
 		available = {
 		date > 1924.01.01
 		}
 
-		x = 16		
-		y = 14
+		x = 0	
+		y = 1
 
 		cost = 10
 
@@ -4914,15 +4914,15 @@ set_party_name = {
 	}
 	focus = {
 		id = GER_interwar_kama_tank_school
-
+		relative_position_id = GER_interwar_quietly_break_disarmament_treaties
 		icon = GFX_focus_secret_rearmament
 		prerequisite = {focus = GER_interwar_quietly_break_disarmament_treaties}
 		available = {
 		date > 1924.01.01
 		}
 
-		x = 19		
-		y = 14
+		x = 3	
+		y = 3
 
 		cost = 10
 
@@ -4940,15 +4940,15 @@ set_party_name = {
 	}
 	focus = {
 		id = GER_interwar_anglo_german_navy_agreement
-
+		relative_position_id = GER_interwar_rename_the_reichsmarine
 		icon = GFX_focus_secret_rearmament
 		prerequisite = {focus = GER_interwar_rename_the_reichsmarine}
 		available = {
 		date > 1935.01.01
 		}
 
-		x = 22
-		y = 14
+		x = 0
+		y = 1
 
 		cost = 10
 
@@ -4963,7 +4963,6 @@ set_party_name = {
 
 	focus = {
 		id = GER_interwar_beer_AntiSpartacists # Crush the Spartacists
-
 		icon = GFX_goal_generic_secret_weapon
 		mutually_exclusive = { focus = GER_interwar_beer_ProSpartacists focus = GER_interwar_easing_tensions focus = GER_interwar_beer_hall_putsch }
 		relative_position_id = GER_interwar_easing_tensions
@@ -5038,7 +5037,7 @@ set_party_name = {
 	# Communist Germany
 	focus = {
 		id = GER_interwar_beer_ProSpartacists # Liebknecht and Luxemburg are German Martyrs
-
+		relative_position_id = GER_interwar_easing_tensions
 		icon = GFX_focus_YUG_pan_slavic_congress
 		mutually_exclusive = { focus = GER_interwar_beer_AntiSpartacists focus = GER_interwar_easing_tensions focus = GER_interwar_beer_hall_putsch }
 		prerequisite = {focus = GER_interwar_loss_in_ww1}
@@ -5049,8 +5048,8 @@ set_party_name = {
 			has_global_flag = kis_treaty_of_versailles
 		}
 
-		x = 50
-		y = 15
+		x = 2
+		y = 0
 
 		cost = 10
 
@@ -5131,7 +5130,7 @@ set_party_name = {
 		prerequisite = {focus = GER_interwar_loss_in_ww1}
 		icon = GFX_
 		mutually_exclusive = { focus = GER_interwar_beer_AntiSpartacists focus = GER_interwar_beer_ProSpartacists focus = GER_interwar_beer_hall_putsch }
-
+		relative_position_id = GER_interwar_loss_in_ww1
 		available = {
 			has_war = no
 			is_puppet = no
@@ -5139,8 +5138,8 @@ set_party_name = {
 			has_global_flag = kis_treaty_of_versailles
 		}
 
-		x = 48
-		y = 15
+		x = 23
+		y = 4
 
 		cost = 10
 
@@ -5289,6 +5288,7 @@ set_party_name = {
 	focus = {
 		id = GER_interwar_beer_hall_putsch
 		prerequisite = {focus = GER_interwar_loss_in_ww1}
+		relative_position_id = GER_interwar_loss_in_ww1
 		mutually_exclusive = { focus = GER_interwar_beer_ProSpartacists focus = GER_interwar_beer_AntiSpartacists focus = GER_interwar_easing_tensions }
 		icon = GFX_goal_generic_political_pressure
 		available = {
@@ -5303,8 +5303,8 @@ set_party_name = {
 			}
 		}
 
-		x = 25
-		y = 12
+		x = 0
+		y = 1
 
 		cost = 10
 
@@ -7741,12 +7741,13 @@ set_party_name = {
 	focus = {
 		id = GER_army_innovation
 		icon = GFX_goal_generic_axis_build_infantry
-		x = 19
-		y = 16
+		x = 0
+		y = 1
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
+		relative_position_id = GER_interwar_kama_tank_school
 		prerequisite = {focus = GER_interwar_kama_tank_school}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -9873,8 +9874,9 @@ set_party_name = {
 	focus = {
 		id = GER_naval_rearmament
 		icon = GFX_goal_generic_build_navy
-		x = 35
-		y = 17
+		relative_position_id = GER_interwar_anglo_german_navy_agreement
+		x = 13
+		y = 3
 		cost = 5
 		ai_will_do = {
 			factor = 1
