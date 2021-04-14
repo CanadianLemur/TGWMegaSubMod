@@ -877,12 +877,12 @@ focus_tree = {
 			NOT = { 
 				has_war_with = PER
 			} 
-			GER = { 
-				exists=yes 
+			PER ={exists=yes 
 				is_puppet=no 
+				}
 				is_in_faction_with = AFG
-				has_war_with = PER
-			} 
+			NOT = {	has_war_with = PER}
+			 
 		}
 
 		completion_reward = {

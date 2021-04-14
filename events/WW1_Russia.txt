@@ -868,16 +868,16 @@ news_event = {
 	major = yes
 	is_triggered_only = yes
 
-	#trigger = {
-	#	date > 1918.6.1
-	#	country_exists = SOV
-	#	NOT = {
-	#		country_exists = RUS
-	#		has_global_flag = kis_whitesvsreds
-	#	}
-	#	has_global_flag = kis_brestlitovsk
-	#
-	#}
+	trigger = {
+		date > 1918.6.1
+		country_exists = SOV
+		NOT = {
+		country_exists = RUS
+			has_global_flag = kis_whitesvsreds
+		}
+		has_global_flag = kis_brestlitovsk
+	
+	}
 
 	immediate = {
 		hidden_effect = {
