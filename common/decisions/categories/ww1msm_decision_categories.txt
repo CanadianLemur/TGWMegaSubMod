@@ -79,3 +79,22 @@ MEX_civil_war = {
 		}
 	}
 }
+
+MEX_concessions = {
+	icon = generic_political_actions
+	priority = 100
+	visible = {
+		tag = MEX
+		check_variable = {
+			var = MEX.communist_concessions
+			value = 1
+			compare = greater_than_or_equals
+		}
+		check_variable = {
+			var = MEX.fascist_concessions
+			value = 1
+			compare = greater_than_or_equals
+		}
+	}
+	scripted_gui = mex_concessions_scripted_gui
+}	
