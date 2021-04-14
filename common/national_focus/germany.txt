@@ -4429,7 +4429,6 @@ set_party_name = {
 		# Victory in ww1 gatekeeping focus
 	focus = {
 		id = GER_interwar_WKV_victory_in_ww1
-		relative_position_id = GER_interwar_loss_in_ww1
 		icon = GFX_focus_ger_oppose_hitler
 		
 		available = {
@@ -4437,8 +4436,8 @@ set_party_name = {
 		}
 		allow_branch = {NOT = {has_global_flag = kis_treaty_of_versailles}}
 		mutually_exclusive = {focus = GER_interwar_loss_in_ww1}
-		x = 2
-		y = 0
+		x = 27
+		y = 12
 
 		cost = 10
 
@@ -4453,14 +4452,14 @@ set_party_name = {
 		# Victory in ww1 gatekeeping focus 2 
 	focus = {
 		id = GER_interwar_WKV_a_new_european_order
-
+		relative_position_id = GER_interwar_WKV_victory_in_ww1
 		icon = GFX_focus_ger_oppose_hitler
 		prerequisite = {focus = GER_interwar_WKV_victory_in_ww1}
 		available = {
 		}
 		allow_branch = {has_global_flag = kis_second_treaty_frankfort}
-		x = 27
-		y = 12
+		x = 0
+		y = 1
 
 		cost = 10
 
@@ -4474,13 +4473,13 @@ set_party_name = {
 	}
 	focus = {
 		id = GER_interwar_WKV_african_policy
-
+		relative_position_id = GER_interwar_WKV_a_new_european_order
 		icon = GFX_focus_ger_oppose_hitler
 		prerequisite = {focus = GER_interwar_WKV_a_new_european_order}
 		available = {
 		}
-		x = 40
-		y = 13
+		x = 13
+		y = 1
 
 		cost = 10
 
@@ -4494,13 +4493,13 @@ set_party_name = {
 	}
 	focus = {
 		id = GER_interwar_WKV_western_european_policy
-
+		relative_position_id = GER_interwar_WKV_a_new_european_order
 		icon = GFX_focus_ger_oppose_hitler
 		prerequisite = {focus = GER_interwar_WKV_a_new_european_order}
 		available = {
 		}
-		x = 10
-		y = 13
+		x = -17
+		y = 1
 
 		cost = 10
 
@@ -4514,14 +4513,14 @@ set_party_name = {
 	}
 	focus = {
 		id = GER_interwar_WKV_french_civil_war
-
+		relative_position_id = GER_interwar_WKV_western_european_policy
 		icon = GFX_focus_ger_oppose_hitler
 		prerequisite = {focus = GER_interwar_WKV_western_european_policy}
 		available = {
 		always = no
 		}
-		x = 10
-		y = 14
+		x = 0
+		y = 1
 
 		cost = 10
 
@@ -4535,13 +4534,13 @@ set_party_name = {
 	}
 	focus = {
 		id = GER_interwar_WKV_eastern_european_policy
-
+		relative_position_id = GER_interwar_WKV_a_new_european_order
 		icon = GFX_focus_ger_oppose_hitler
 		prerequisite = {focus = GER_interwar_WKV_a_new_european_order}
 		available = {
 		}
-		x = 27
-		y = 13
+		x = 0
+		y = 1
 
 		cost = 10
 
@@ -4555,13 +4554,13 @@ set_party_name = {
 	}
 	focus = {
 		id = GER_interwar_WKV_russian_civil_war_intervention
-
+		relative_position_id = GER_interwar_WKV_eastern_european_policy
 		icon = GFX_focus_attack_soviet
 		prerequisite = {focus = GER_interwar_WKV_eastern_european_policy}
 		available = {
 		}
-		x = 24
-		y = 14
+		x = -3
+		y = 1
 
 		cost = 10
 
@@ -4575,13 +4574,13 @@ set_party_name = {
 	}
 	focus = {
 		id = GER_interwar_WKV_full_intervention
-
+		relative_position_id = GER_interwar_WKV_russian_civil_war_intervention
 		icon = GFX_focus_attack_soviet
 		prerequisite = {focus = GER_interwar_WKV_russian_civil_war_intervention}
 		available = {
 		}
-		x = 23
-		y = 15
+		x = -1
+		y = 1
 		mutually_exclusive = {focus = GER_interwar_WKV_seize_white_ruthenia}
 		cost = 10
 
@@ -4595,14 +4594,14 @@ set_party_name = {
 	}
 	focus = {
 		id = GER_interwar_WKV_seize_white_ruthenia
-
+		relative_position_id = GER_interwar_WKV_russian_civil_war_intervention
 		icon = GFX_focus_attack_soviet
 		prerequisite = {focus = GER_interwar_WKV_russian_civil_war_intervention}
 		available = {
 		}
 		mutually_exclusive = {focus = GER_interwar_WKV_full_intervention}
-		x = 25
-		y = 15
+		x = 1
+		y = 1
 
 		cost = 10
 
@@ -4633,7 +4632,7 @@ set_party_name = {
 	}
 	focus = {
 		id = GER_interwar_WKV_white_ruthenia
-
+		relative_position_id = GER_interwar_WKV_seize_white_ruthenia
 		icon = GFX_focus_attack_soviet
 		prerequisite = {focus = GER_interwar_WKV_full_intervention focus = GER_interwar_WKV_seize_white_ruthenia}
 		available = {
@@ -4645,8 +4644,8 @@ set_party_name = {
 		owns_state = 194
 		owns_state = 241
 		}
-		x = 25
-		y = 16
+		x = 0
+		y = 1
 		cost = 10
 
 		ai_will_do = {
@@ -4677,13 +4676,13 @@ set_party_name = {
 
 	focus = {
 		id = GER_interwar_WKV_baltic_policy
-
+		relative_position_id = GER_interwar_WKV_eastern_european_policy
 		icon = GFX_focus_ger_oppose_hitler
 		prerequisite = {focus = GER_interwar_WKV_eastern_european_policy}
 		available = {
 		}
-		x = 30
-		y = 14
+		x = 3
+		y = 1
 
 		cost = 10
 
@@ -4697,13 +4696,13 @@ set_party_name = {
 	}
 	focus = {
 		id = GER_interwar_WKV_lithuania
-
+		relative_position_id = GER_interwar_WKV_baltic_policy
 		icon = GFX_focus_ger_oppose_hitler
 		prerequisite = {focus = GER_interwar_WKV_baltic_policy}
 		available = {
 		}
-		x = 30
-		y = 15
+		x = 0
+		y = 1
 
 		cost = 10
 
@@ -4717,14 +4716,14 @@ set_party_name = {
 	}
 	focus = {
 		id = GER_interwar_WKV_lithuanian_kingdom
-
+		relative_position_id = GER_interwar_WKV_lithuania
 		icon = GFX_focus_ger_oppose_hitler
 		prerequisite = {focus = GER_interwar_WKV_lithuania}
 		mutually_exclusive = {focus = GER_interwar_WKV_leave_lithuania_alone focus = GER_interwar_WKV_lithuanian_republic focus = GER_interwar_WKV_integrate_lithuania_into_baltic_duchy}
 		available = {
 		}
-		x = 33
-		y = 16
+		x = 3
+		y = 1
 
 		cost = 10
 
@@ -4733,30 +4732,29 @@ set_party_name = {
 		}
 		completion_reward = {
 			LIT = {
-			create_country_leader = {
-			name = "Mindaugas II"
-			desc = "POLITICS_MINDAUGAS_II_DESC"
-			picture = ".dds"
-			expire = "1928.1.1"
-			ideology = despotism
-			traits = {
-		
+				create_country_leader = {
+					name = "Mindaugas II"
+					desc = "POLITICS_MINDAUGAS_II_DESC"
+					picture = ".dds"
+					expire = "1928.1.1"
+					ideology = despotism
+					traits = {
+				
+					}
+				}
 			}
-			}
-			}
-
 		}
 	}
 	focus = {
 		id = GER_interwar_WKV_lithuanian_republic
-
+		relative_position_id = GER_interwar_WKV_lithuania
 		icon = GFX_focus_ger_oppose_hitler
 		prerequisite = {focus = GER_interwar_WKV_lithuania}
 		mutually_exclusive = {focus = GER_interwar_WKV_leave_lithuania_alone focus = GER_interwar_WKV_lithuanian_kingdom focus = GER_interwar_WKV_integrate_lithuania_into_baltic_duchy}
 		available = {
 		}
-		x = 31
-		y = 16
+		x = 1
+		y = 1
 
 		cost = 10
 
@@ -4771,14 +4769,14 @@ set_party_name = {
 	}
 	focus = {
 		id = GER_interwar_WKV_integrate_lithuania_into_baltic_duchy
-
+		relative_position_id = GER_interwar_WKV_lithuania
 		icon = GFX_focus_ger_oppose_hitler
 		prerequisite = {focus = GER_interwar_WKV_lithuania}
 		mutually_exclusive = {focus = GER_interwar_WKV_leave_lithuania_alone focus = GER_interwar_WKV_lithuanian_kingdom focus = GER_interwar_WKV_lithuanian_republic}
 		available = {
 		}
-		x = 29
-		y = 16
+		x = -1
+		y = 1
 
 		cost = 10
 
@@ -4800,13 +4798,14 @@ set_party_name = {
 	}
 	focus = {
 		id = GER_interwar_WKV_leave_lithuania_alone
+		relative_position_id = GER_interwar_WKV_lithuania
 		mutually_exclusive = {focus = GER_interwar_WKV_integrate_lithuania_into_baltic_duchy focus = GER_interwar_WKV_lithuanian_kingdom focus = GER_interwar_WKV_lithuanian_republic}
 		icon = GFX_focus_ger_oppose_hitler
 		prerequisite = {focus = GER_interwar_WKV_lithuania}
 		available = {
 		}
-		x = 27
-		y = 16
+		x = -3
+		y = 1
 
 		cost = 10
 
@@ -4814,11 +4813,10 @@ set_party_name = {
 			factor = 10	
 		}
 		completion_reward = {
-		set_autonomy = {
-		target = LIT
-		autonomy_state = autonomy_free
-		}
-
+			set_autonomy = {
+				target = LIT
+				autonomy_state = autonomy_free
+			}
 		}
 	}
 	################ INTERWAR START (Treaty of Versailles)
