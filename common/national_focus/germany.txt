@@ -1688,7 +1688,7 @@ focus_tree = {
 		relative_position_id = GER_ww1_war_plans_finalize_preparations
 		icon = GFX_hoi4tgw_ironcross
 		available = {
-			
+			date > 1915.1.1
 		}
 		
 		bypass = {
