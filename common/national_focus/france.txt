@@ -995,7 +995,8 @@ focus_tree = {
 			BEL = { has_war_with = GER }
 			FRA = { has_war_with = GER }
 			NOT = { has_war_with = BEL }
-
+			BEL = { is_in_faction = no }
+			GER = { NOT = { has_completed_focus = GER_ww1_war_plans_protect_neutrality } }
 	        FRA = {
 	            is_faction_leader = yes
 	        }

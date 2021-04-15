@@ -1904,7 +1904,10 @@ focus_tree = {
 		completion_reward = {
 			give_guarantee = SWI
 			give_guarantee = HOL
-			give_guarantee = BEL
+			if = {
+				limit = { BEL = { NOT = { is_in_faction_with = ENG} } }
+				give_guarantee = BEL
+			}
 			give_guarantee = LUX
 		}
 		ai_will_do = { factor = 10 }
@@ -5105,7 +5108,12 @@ set_party_name = {
 		icon = GFX_
 		mutually_exclusive = { focus = GER_interwar_beer_hall_putsch }
 		relative_position_id = GER_interwar_loss_in_ww1
-		allow_branch = { has_dlc = "Waking the Tiger" }
+		allow_branch = { 
+			AND = {
+				has_dlc = "Waking the Tiger" 
+				NOT = { has_global_flag = kis_second_treaty_frankfort }
+			}
+		}
 		available = {
 			has_war = no
 			is_puppet = no
