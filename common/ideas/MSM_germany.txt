@@ -320,4 +320,19 @@ ideas={
 			
 		}
 	}
+	country = {
+		MSM_GER_WKV_luxemburger_integration	= {
+			allowed = {
+				original_tag = LUX
+				is_subject_of = GER
+			}
+			
+			
+			removal_cost = -1 
+			modifier = {
+			autonomy_gain = -0.75
+			}
+			
+		}
+	}
 }

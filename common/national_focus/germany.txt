@@ -4629,6 +4629,35 @@ set_party_name = {
 		}
 	}
 	focus = {
+		id = GER_interwar_WKV_move_toward_luxemburger_integration
+		relative_position_id = GER_interwar_WKV_western_european_policy
+		icon = GFX_focus_generic_treaty
+		prerequisite = {focus = GER_interwar_WKV_western_european_policy}
+		available = {
+		OR = {
+		LUX = {is_subject_of = ROOT}
+		owns_state = 8
+		}
+		}
+		x = -2
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 10	
+		}
+		completion_reward = {
+			add_state_core = 8
+			if = {limit = {LUX = {exists = yes}}
+			LUX = {
+			add_ideas = MSM_GER_WKV_luxemburger_integration
+			}
+			}
+
+		}
+	}
+	focus = {
 		id = GER_interwar_WKV_french_civil_war
 		relative_position_id = GER_interwar_WKV_western_european_policy
 		icon = GFX_goal_generic_major_war
