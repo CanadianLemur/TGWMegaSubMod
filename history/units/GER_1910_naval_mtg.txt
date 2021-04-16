@@ -111,24 +111,24 @@ units = {
 	                 ship = { name = "SMS Zähringen" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GER version_name = "Wittelsbach Class" } } }
 	                 ship = { name = "SMS Schwaben" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GER version_name = "Wittelsbach Class" } } }
 	                 ship = { name = "SMS Mecklenburg" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GER version_name = "Wittelsbach Class" } } }
-	         }
-	         task_force = {
-	                 name = "5. Schlachtschwadron"
-	                 location = 241#Wilhelmshaven
-	                 ship = { name = "SMS Wörth" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GER version_name = "Brandenburg Class" } } }
-	                 ship = { name = "SMS Weissenburg" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GER version_name = "Brandenburg Class" } } }
-	                 ship = { name = "SMS Kaiser Friedrich III" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GER version_name = "Kaiser Friedrich III Class" } } }
-	                 ship = { name = "SMS Kaiser Wilhelm II" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GER version_name = "Kaiser Friedrich III Class" } } }
-	                 ship = { name = "SMS Kaiser Wilhelm der Große" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GER version_name = "Kaiser Friedrich III Class" } } }
-	                 ship = { name = "SMS Kaiser Karl der Große" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GER version_name = "Kaiser Friedrich III Class" } } }
-	                 ship = { name = "SMS Kaiser Barbarossa" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GER version_name = "Kaiser Friedrich III Class" } } }
-	                 ship = { name = "SMS Kurfürst Friedrich Wilhelm" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GER version_name = "Brandenburg Class" } } }
-	                 ship = { name = "SMS Brandenburg" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GER version_name = "Brandenburg Class" } } }
-	                 ship = { name = "SMS Kaiser" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GER version_name = "Kaiser Class" } } }
-	                 ship = { name = "SMS Württemberg" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GER version_name = "Sachsen Class" } } }
-	                 ship = { name = "SMS Oldenburg" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GER version_name = "Oldenburg Class" } } }
-	         }
-	    }
+			}
+	        task_force = {
+				name = "5. Schlachtschwadron"
+				location = 241#Wilhelmshaven
+				ship = { name = "SMS Wörth" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GER version_name = "Brandenburg Class" } } }
+				ship = { name = "SMS Weissenburg" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GER version_name = "Brandenburg Class" } } }
+				ship = { name = "SMS Kaiser Friedrich III" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GER version_name = "Kaiser Friedrich III Class" } } }
+				ship = { name = "SMS Kaiser Wilhelm II" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GER version_name = "Kaiser Friedrich III Class" } } }
+				ship = { name = "SMS Kaiser Wilhelm der Große" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GER version_name = "Kaiser Friedrich III Class" } } }
+				ship = { name = "SMS Kaiser Karl der Große" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GER version_name = "Kaiser Friedrich III Class" } } }
+				ship = { name = "SMS Kaiser Barbarossa" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GER version_name = "Kaiser Friedrich III Class" } } }
+				ship = { name = "SMS Kurfürst Friedrich Wilhelm" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GER version_name = "Brandenburg Class" } } }
+				ship = { name = "SMS Brandenburg" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GER version_name = "Brandenburg Class" } } }
+				ship = { name = "SMS Kaiser" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GER version_name = "Kaiser Class" } } }
+				ship = { name = "SMS Württemberg" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GER version_name = "Sachsen Class" } } }
+				ship = { name = "SMS Oldenburg" definition = battleship equipment = { ship_hull_pre_dreadnought { amount = 1 owner = GER version_name = "Oldenburg Class" } } }
+		}
+	}
 	
 	fleet = {
 		name = "U-bootdivision Fleet"
@@ -307,23 +307,32 @@ instant_effect = {
 		}
 		requested_factories = 1 progress = 0.1 efficiency = 50
 	}
-	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought "GER"  }  requested_factories = 1  progress = 0.88 } #SMS Rheinland LD:01-Jun-1907 Comp:21-Sep-1910
-	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought "GER"  }  requested_factories = 1  progress = 0.88 } #SMS Posen LD:11-Jun-1907 Comp:21-Sep-1910
-	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought "GER" version_name = "Helgoland Class"  }  requested_factories = 1  progress = 0.45 } #SMS Helgoland LD:24-Dec-1908 Comp:19-Dec-1911
-	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought "GER" version_name = "Helgoland Class"  }  requested_factories = 1  progress = 0.53 } #SMS Ostfriesland LD:19-Oct-1908 Comp:15-Sep-1911
-	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought "GER" version_name = "Helgoland Class"  }  requested_factories = 1  progress = 0.52 } #SMS Thüringen LD:07-Nov-1908 Comp:10-Sep-1911
-	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought "GER" version_name = "Helgoland Class"  }  requested_factories = 1  progress = 0.35 } #SMS Oldenburg LD:01-Mar-1909 Comp:01-Jul-1912
-	add_equipment_production = { equipment = { type = MSM_ship_hull_dreadnought1 "GER"  version_name = "Helgoland Class" } }
-	add_equipment_production = { equipment = { type = MSM_ship_hull_dreadnought1 "GER"  version_name = "Helgoland Class" } }
-	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought "GER"  version_name = "Helgoland Class" } }
-	add_equipment_production = { equipment = { type = MSM_ship_hull_dreadnought1 "GER"  version_name = "Helgoland Class" } }
-	add_equipment_production = { equipment = { type = MSM_ship_hull_dreadnought1 "GER"  version_name = "Helgoland Class" } }
-	add_equipment_production = { equipment = { type = ship_hull_light_1 "GER" version_name = "Kolberg Class"  }  requested_factories = 1  progress = 0.94 } #SMS Kolberg LD:01-Jan-1908 Comp:21-Jun-1910
-	add_equipment_production = { equipment = { type = ship_hull_light_1 "GER" version_name = "Kolberg Class"  }  requested_factories = 1  progress = 0.67 } #SMS Cöln LD:01-Jan-1908 Comp:16-Jun-1911
-	add_equipment_production = { equipment = { type = ship_hull_light_1 "GER" version_name = "Kolberg Class"  }  requested_factories = 1  progress = 0.82 } #SMS Augsburg LD:01-Jan-1908 Comp:01-Nov-1910
-	add_equipment_production = { equipment = { type = ship_hull_light_1 "GER"  version_name = "Helgoland Class" } }
-	add_equipment_production = { equipment = { type = ship_hull_light_1 "GER"  version_name = "Helgoland Class" } }
-	add_equipment_production = { equipment = { type = ship_hull_light_1 "GER"  version_name = "Helgoland Class" } }
-	add_equipment_production = { equipment = { type = ship_hull_light_1 "GER"  version_name = "Helgoland Class" } }
+	#SMS Rheinland LD:01-Jun-1907 Comp:21-Sep-1910
+	add_equipment_production = { 
+		equipment = { 
+			type = ship_hull_pre_dreadnought 
+			creator = "GER" 
+			version_name = "Nassau Class" 
+		}  
+		requested_factories = 1  
+		progress = 0.88 
+	} 
+	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought creator = "GER" version_name = "Nassau Class" }  requested_factories = 1  progress = 0.88 } #SMS Posen LD:11-Jun-1907 Comp:21-Sep-1910
+	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought creator = "GER" version_name = "Nassau Class"  }  requested_factories = 1  progress = 0.45 } #SMS Nassau LD:24-Dec-1908 Comp:19-Dec-1911
+	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought creator = "GER" version_name = "Nassau Class"  }  requested_factories = 1  progress = 0.53 } #SMS Ostfriesland LD:19-Oct-1908 Comp:15-Sep-1911
+	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought creator = "GER" version_name = "Nassau Class"  }  requested_factories = 1  progress = 0.52 } #SMS Thüringen LD:07-Nov-1908 Comp:10-Sep-1911
+	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought creator = "GER" version_name = "Nassau Class"  }  requested_factories = 1  progress = 0.35 } #SMS Oldenburg LD:01-Mar-1909 Comp:01-Jul-1912
+	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought creator = "GER"  version_name = "Nassau Class" } }
+	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought creator = "GER"  version_name = "Nassau Class" } }
+	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought creator = "GER"  version_name = "Nassau Class" } }
+	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought creator = "GER"  version_name = "Nassau Class" } }
+	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought creator = "GER"  version_name = "Nassau Class" } }
+	add_equipment_production = { equipment = { type = ship_hull_light_1 creator = "GER" version_name = "Kolberg Class"  }  requested_factories = 1  progress = 0.94 } #SMS Kolberg LD:01-Jan-1908 Comp:21-Jun-1910
+	add_equipment_production = { equipment = { type = ship_hull_light_1 creator = "GER" version_name = "Kolberg Class"  }  requested_factories = 1  progress = 0.67 } #SMS Cöln LD:01-Jan-1908 Comp:16-Jun-1911
+	add_equipment_production = { equipment = { type = ship_hull_light_1 creator = "GER" version_name = "Kolberg Class"  }  requested_factories = 1  progress = 0.82 } #SMS Augsburg LD:01-Jan-1908 Comp:01-Nov-1910
+	add_equipment_production = { equipment = { type = ship_hull_light_1 creator = "GER" version_name = "V180 Class" } }
+	add_equipment_production = { equipment = { type = ship_hull_light_1 creator = "GER" version_name = "V180 Class" } }
+	add_equipment_production = { equipment = { type = ship_hull_light_1 creator = "GER" version_name = "V180 Class" } }
+	add_equipment_production = { equipment = { type = ship_hull_light_1 creator = "GER" version_name = "V180 Class" } }
 	
 }
