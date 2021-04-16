@@ -288,11 +288,10 @@ instant_effect = {
 	add_equipment_production = { equipment = { type = support_equipment_1 creator = "FRA" } requested_factories = 1 progress = 0.1 efficiency = 50}
 	add_equipment_production = { equipment = { type = light_field_gun_equipment_1 creator = "FRA" } requested_factories = 1 progress = 0.1 efficiency = 50}
 	add_equipment_production = { equipment = { type = motorized_equipment_0 creator = "FRA" } requested_factories = 1 progress = 0.1 efficiency = 50}
-	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought "FRA" version_name = "Danton Class" } requested_factories = 1 progress = 0.85 amount = 1 } #Condorcet Comp:25-Jul-1911
-	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought "FRA" version_name = "Danton Class" } requested_factories = 1 progress = 0.85 amount = 1 } #Danton Comp:01-Jun-1911
-	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought "FRA" version_name = "Danton Class" } requested_factories = 1 progress = 0.85 amount = 1 } #Diderot Comp:01-Aug-1911
-	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought "FRA" version_name = "Danton Class" } requested_factories = 1 progress = 0.85 amount = 1 } #Mirabeau Comp:01-Aug-1911
-	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought "FRA" version_name = "Danton Class" } requested_factories = 1 progress = 0.85 amount = 1 } #Vergniaud Comp:22-Sep-1911
-	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought "FRA" version_name = "Danton Class" } requested_factories = 1 progress = 0.85 amount = 1 } #Voltaire Comp:01-Aug-1911
-	
+	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought creator = "FRA" version_name = "Danton Class" } requested_factories = 1 progress = 0.85 amount = 1 } #Condorcet Comp:25-Jul-1911
+	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought creator = "FRA" version_name = "Danton Class" } requested_factories = 1 progress = 0.85 amount = 1 } #Danton Comp:01-Jun-1911
+	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought creator = "FRA" version_name = "Danton Class" } requested_factories = 1 progress = 0.85 amount = 1 } #Diderot Comp:01-Aug-1911
+	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought creator = "FRA" version_name = "Danton Class" } requested_factories = 1 progress = 0.85 amount = 1 } #Mirabeau Comp:01-Aug-1911
+	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought creator = "FRA" version_name = "Danton Class" } requested_factories = 1 progress = 0.85 amount = 1 } #Vergniaud Comp:22-Sep-1911
+	add_equipment_production = { equipment = { type = ship_hull_pre_dreadnought creator = "FRA" version_name = "Danton Class" } requested_factories = 1 progress = 0.85 amount = 1 } #Voltaire Comp:01-Aug-1911
 }

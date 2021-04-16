@@ -308,7 +308,7 @@ if = {
 			rear_1_custom_slot = empty
 			}
 	}
-	create_equipment_variant = { name = "AchÃ©ron Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = no 
+	create_equipment_variant = { name = "Achéron Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = no 
 		modules = {
 			fixed_ship_battery_slot = MSM_ship_heavy_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -462,7 +462,7 @@ if = {
 			rear_1_custom_slot = empty
 			}
 	}
-	create_equipment_variant = { name = "JaurÃ©guiberry Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = no 
+	create_equipment_variant = { name = "Jauréguiberry Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = no 
 		modules = {
 			fixed_ship_battery_slot = MSM_ship_heavy_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -476,7 +476,7 @@ if = {
 			rear_1_custom_slot = empty
 			}
 	}
-	create_equipment_variant = { name = "MassÃ©na Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = no 
+	create_equipment_variant = { name = "Masséna Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = no 
 		modules = {
 			fixed_ship_battery_slot = MSM_ship_heavy_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -546,7 +546,7 @@ if = {
 			rear_1_custom_slot = empty
 			}
 	}
-	create_equipment_variant = { name = "RÃ©publique Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = no 
+	create_equipment_variant = { name = "République Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = no 
 		modules = {
 			fixed_ship_battery_slot = MSM_ship_heavy_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -560,7 +560,7 @@ if = {
 			rear_1_custom_slot = empty
 			}
 	}
-	create_equipment_variant = { name = "LibertÃ© Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = no 
+	create_equipment_variant = { name = "Liberté Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = no 
 		modules = {
 			fixed_ship_battery_slot = MSM_ship_heavy_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -602,7 +602,7 @@ if = {
 			rear_1_custom_slot = empty
 			}
 	}
-	create_equipment_variant = { name = "LÃ©on Gambetta Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = no 
+	create_equipment_variant = { name = "Léon Gambetta Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = no 
 		modules = {
 			fixed_ship_battery_slot = MSM_ship_medium_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -840,6 +840,20 @@ if = {
 			rear_1_custom_slot = empty
 			}
 	}
+	create_equipment_variant = { name = "Danton Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = no 
+		modules = {
+			fixed_ship_battery_slot = MSM_ship_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = MSM_heavy_ship_engine_1
+			fixed_ship_secondaries_slot = empty
+			fixed_ship_armor_slot = MSM_ship_armor_bb_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+			}
+	}
 	create_equipment_variant = { name = "Linois Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
 		modules = {
 			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
@@ -917,7 +931,7 @@ if = {
 			rear_1_custom_slot = MSM_ship_light_battery_1
 			} 
 	}
-	create_equipment_variant = { name = "Amiral CÃ©cille Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+	create_equipment_variant = { name = "Amiral Cécille Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
 		modules = {
 			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -961,7 +975,7 @@ if = {
 			rear_1_custom_slot = MSM_ship_light_battery_1
 			} 
 	}
-	create_equipment_variant = { name = "ChÃ¢teaurenault Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+	create_equipment_variant = { name = "Chéteaurenault Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
 		modules = {
 			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -972,7 +986,7 @@ if = {
 			rear_1_custom_slot = MSM_ship_light_battery_1
 			} 
 	}
-	create_equipment_variant = { name = "Jurien De La GraviÃ¨re Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+	create_equipment_variant = { name = "Jurien De La Graviére Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
 		modules = {
 			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -1005,7 +1019,7 @@ if = {
 			rear_1_custom_slot = MSM_ship_light_battery_1
 			} 
 	}
-	create_equipment_variant = { name = "D'EstrÃ©es Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+	create_equipment_variant = { name = "D'Estrées Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
 		modules = {
 			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -1350,7 +1364,7 @@ if = {
 			rear_1_custom_slot = empty
 			}
 	}
-	create_equipment_variant = { name = "AchÃ©ron Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
+	create_equipment_variant = { name = "Achéron Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
 		modules = {
 			fixed_ship_battery_slot = MSM_ship_heavy_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -1504,7 +1518,7 @@ if = {
 			rear_1_custom_slot = empty
 			}
 	}
-	create_equipment_variant = { name = "JaurÃ©guiberry Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
+	create_equipment_variant = { name = "Jauréguiberry Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
 		modules = {
 			fixed_ship_battery_slot = MSM_ship_heavy_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -1518,7 +1532,7 @@ if = {
 			rear_1_custom_slot = empty
 			}
 	}
-	create_equipment_variant = { name = "MassÃ©na Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
+	create_equipment_variant = { name = "Masséna Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
 		modules = {
 			fixed_ship_battery_slot = MSM_ship_heavy_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -1588,7 +1602,7 @@ if = {
 			rear_1_custom_slot = empty
 			}
 	}
-	create_equipment_variant = { name = "RÃ©publique Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
+	create_equipment_variant = { name = "République Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
 		modules = {
 			fixed_ship_battery_slot = MSM_ship_heavy_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -1602,7 +1616,7 @@ if = {
 			rear_1_custom_slot = empty
 			}
 	}
-	create_equipment_variant = { name = "LibertÃ© Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
+	create_equipment_variant = { name = "Liberté Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
 		modules = {
 			fixed_ship_battery_slot = MSM_ship_heavy_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -1644,7 +1658,7 @@ if = {
 			rear_1_custom_slot = empty
 			}
 	}
-	create_equipment_variant = { name = "LÃ©on Gambetta Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
+	create_equipment_variant = { name = "Léon Gambetta Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
 		modules = {
 			fixed_ship_battery_slot = MSM_ship_medium_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -1959,7 +1973,7 @@ if = {
 			rear_1_custom_slot = MSM_ship_light_battery_1
 			} 
 	}
-	create_equipment_variant = { name = "Amiral CÃ©cille Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+	create_equipment_variant = { name = "Amiral Cécille Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
 		modules = {
 			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -2003,7 +2017,7 @@ if = {
 			rear_1_custom_slot = MSM_ship_light_battery_1
 			} 
 	}
-	create_equipment_variant = { name = "ChÃ¢teaurenault Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+	create_equipment_variant = { name = "Chéteaurenault Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
 		modules = {
 			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -2014,7 +2028,7 @@ if = {
 			rear_1_custom_slot = MSM_ship_light_battery_1
 			} 
 	}
-	create_equipment_variant = { name = "Jurien De La GraviÃ¨re Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+	create_equipment_variant = { name = "Jurien De La Graviére Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
 		modules = {
 			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -2047,7 +2061,7 @@ if = {
 			rear_1_custom_slot = MSM_ship_light_battery_1
 			} 
 	}
-	create_equipment_variant = { name = "D'EstrÃ©es Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+	create_equipment_variant = { name = "D'Estrées Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
 		modules = {
 			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -2634,7 +2648,7 @@ if = {
 			rear_1_custom_slot = empty
 			}
 	}
-	create_equipment_variant = { name = "AchÃ©ron Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
+	create_equipment_variant = { name = "Achéron Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
 		modules = {
 			fixed_ship_battery_slot = MSM_ship_heavy_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -2788,7 +2802,7 @@ if = {
 			rear_1_custom_slot = empty
 			}
 	}
-	create_equipment_variant = { name = "JaurÃ©guiberry Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
+	create_equipment_variant = { name = "Jauréguiberry Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
 		modules = {
 			fixed_ship_battery_slot = MSM_ship_heavy_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -2802,7 +2816,7 @@ if = {
 			rear_1_custom_slot = empty
 			}
 	}
-	create_equipment_variant = { name = "MassÃ©na Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
+	create_equipment_variant = { name = "Masséna Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
 		modules = {
 			fixed_ship_battery_slot = MSM_ship_heavy_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -2872,7 +2886,7 @@ if = {
 			rear_1_custom_slot = empty
 			}
 	}
-	create_equipment_variant = { name = "RÃ©publique Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
+	create_equipment_variant = { name = "République Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
 		modules = {
 			fixed_ship_battery_slot = MSM_ship_heavy_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -2886,7 +2900,7 @@ if = {
 			rear_1_custom_slot = empty
 			}
 	}
-	create_equipment_variant = { name = "LibertÃ© Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
+	create_equipment_variant = { name = "Liberté Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
 		modules = {
 			fixed_ship_battery_slot = MSM_ship_heavy_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -2928,7 +2942,7 @@ if = {
 			rear_1_custom_slot = empty
 			}
 	}
-	create_equipment_variant = { name = "LÃ©on Gambetta Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
+	create_equipment_variant = { name = "Léon Gambetta Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
 		modules = {
 			fixed_ship_battery_slot = MSM_ship_medium_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -3243,7 +3257,7 @@ if = {
 			rear_1_custom_slot = MSM_ship_light_battery_1
 			} 
 	}
-	create_equipment_variant = { name = "Amiral CÃ©cille Class" type = ship_hull_light_1 parent_version = 0 obsolete = yes 
+	create_equipment_variant = { name = "Amiral Cécille Class" type = ship_hull_light_1 parent_version = 0 obsolete = yes 
 		modules = {
 			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -3287,7 +3301,7 @@ if = {
 			rear_1_custom_slot = MSM_ship_light_battery_1
 			} 
 	}
-	create_equipment_variant = { name = "ChÃ¢teaurenault Class" type = ship_hull_light_1 parent_version = 0 obsolete = yes 
+	create_equipment_variant = { name = "Chéteaurenault Class" type = ship_hull_light_1 parent_version = 0 obsolete = yes 
 		modules = {
 			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -3298,7 +3312,7 @@ if = {
 			rear_1_custom_slot = MSM_ship_light_battery_1
 			} 
 	}
-	create_equipment_variant = { name = "Jurien De La GraviÃ¨re Class" type = ship_hull_light_1 parent_version = 0 obsolete = yes 
+	create_equipment_variant = { name = "Jurien De La Graviére Class" type = ship_hull_light_1 parent_version = 0 obsolete = yes 
 		modules = {
 			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -3331,7 +3345,7 @@ if = {
 			rear_1_custom_slot = MSM_ship_light_battery_1
 			} 
 	}
-	create_equipment_variant = { name = "D'EstrÃ©es Class" type = ship_hull_light_1 parent_version = 0 obsolete = yes 
+	create_equipment_variant = { name = "D'Estrées Class" type = ship_hull_light_1 parent_version = 0 obsolete = yes 
 		modules = {
 			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
 			fixed_ship_anti_air_slot = empty

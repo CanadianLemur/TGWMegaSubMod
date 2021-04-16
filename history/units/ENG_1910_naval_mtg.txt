@@ -74,14 +74,14 @@ units = {
 			ship = { name = "HMS Diamond" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "Gem Class" } } }
 			ship = { name = "HMS Topaze" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "Gem Class" } } }
 			ship = { name = "HMS Proserpine" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "Pelorus Class" } } }
-			ship = { name = "HMS Otter" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "C Class" } } }
-			ship = { name = "HMS Leopard" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "C Class" } } }
-			ship = { name = "HMS Vixen" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "C Class" } } }
-			ship = { name = "HMS Brazen" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "C Class" } } }
-			ship = { name = "HMS Electra" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "C Class" } } }
-			ship = { name = "HMS Recruit" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "C Class" } } }
-			ship = { name = "HMS Vulture" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "C Class" } } }
-			ship = { name = "HMS Kestrel" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "C Class" } } }
+			ship = { name = "HMS Otter" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Leopard" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Vixen" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Brazen" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Electra" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Recruit" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Vulture" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Kestrel" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
 		}
 		task_force = {
 			name = "Harwich Force"
@@ -90,30 +90,30 @@ units = {
 			ship = { name = "HMS Amethyst" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "Gem Class" } } }
 			ship = { name = "HMS Dido" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "Eclipse Class" } } }
 			ship = { name = "HMS Hermes" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "Hermes Class" } } }
-			ship = { name = "HMS Cheerful" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "C Class" } } }
-			ship = { name = "HMS Mermaid" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "C Class" } } }
-			ship = { name = "HMS Greyhound" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "C Class" } } }
-			ship = { name = "HMS Racehorse" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "C Class" } } }
-			ship = { name = "HMS Roebuck" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "C Class" } } }
-			ship = { name = "HMS Gipsy" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "C Class" } } }
-			ship = { name = "HMS Fairy" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "C Class" } } }
-			ship = { name = "HMS Osprey" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "C Class" } } }
-			ship = { name = "HMS Leven" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "C Class" } } }
-			ship = { name = "HMS Falcon" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "C Class" } } }
-			ship = { name = "HMS Ostrich" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "C Class" } } }
-			ship = { name = "HMS Thorn" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "C Class" } } }
-			ship = { name = "HMS Vigilant" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "C Class" } } }
-			ship = { name = "HMS Albatross" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "C Class" } } }
-			ship = { name = "HMS Velox" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "C Class" } } }
-			ship = { name = "HMS Desperate" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "D Class" } } }
-			ship = { name = "HMS Fame" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "D Class" } } }
-			ship = { name = "HMS Foam" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "D Class" } } }
-			ship = { name = "HMS Mallard" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "D Class" } } }
-			ship = { name = "HMS Angler" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "D Class" } } }
-			ship = { name = "HMS Coquette" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "D Class" } } }
-			ship = { name = "HMS Cynthia" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "D Class" } } }
-			ship = { name = "HMS Cygnet" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "D Class" } } }
-			ship = { name = "HMS Stag" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "D Class" } } }
+			ship = { name = "HMS Cheerful" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Mermaid" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Greyhound" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Racehorse" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Roebuck" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Gipsy" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Fairy" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Osprey" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Leven" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Falcon" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Ostrich" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Thorn" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Vigilant" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Albatross" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Velox" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Desperate" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Fame" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Foam" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Mallard" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Angler" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Coquette" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Cynthia" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Cygnet" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Stag" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
 		}
 		task_force = {
 			name = "1st Submarine Flotilla"
@@ -174,40 +174,40 @@ units = {
 			ship = { name = "HMS Pathfinder" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "Pathfinder Class" } } }
 			ship = { name = "HMS Patrol" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "Pathfinder Class" } } }
 			ship = { name = "HMS Sentinel" definition = protected_cruiser equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "Sentinel Class" } } }
-			ship = { name = "HMS Thrasher" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "B Class" } } }
-			ship = { name = "HMS Virago" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "B Class" } } }
-			ship = { name = "HMS Earnest" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "B Class" } } }
-			ship = { name = "HMS Griffon" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "B Class" } } }
-			ship = { name = "HMS Locust" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "B Class" } } }
-			ship = { name = "HMS Panther" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "B Class" } } }
-			ship = { name = "HMS Seal" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "B Class" } } }
-			ship = { name = "HMS Wolf" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "B Class" } } }
-			ship = { name = "HMS Express" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "B Class" } } }
-			ship = { name = "HMS Orwell" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "B Class" } } }
-			ship = { name = "HMS Lively" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "B Class" } } }
-			ship = { name = "HMS Sprightly" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "B Class" } } }
-			ship = { name = "HMS Success" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "B Class" } } }
-			ship = { name = "HMS Spiteful" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "B Class" } } }
-			ship = { name = "HMS Peterel" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "B Class" } } }
-			ship = { name = "HMS Myrmidon" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "B Class" } } }
-			ship = { name = "HMS Syren" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "B Class" } } }
-			ship = { name = "HMS Kangaroo" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "B Class" } } }
-			ship = { name = "HMS Arab" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "B Class" } } }
-			ship = { name = "HMS Albacore" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "B Class" } } }
-			ship = { name = "HMS Bonetta" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "B Class" } } }
-			ship = { name = "HMS Star" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "C Class" } } }
-			ship = { name = "HMS Whiting" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "C Class" } } }
-			ship = { name = "HMS Bat" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "C Class" } } }
-			ship = { name = "HMS Crane" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "C Class" } } }
-			ship = { name = "HMS Flying Fish" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "C Class" } } }
-			ship = { name = "HMS Fawn" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "C Class" } } }
-			ship = { name = "HMS Flirt" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "C Class" } } }
-			ship = { name = "HMS Bullfinch" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "C Class" } } }
-			ship = { name = "HMS Dove" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "C Class" } } }
-			ship = { name = "HMS Violet" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "C Class" } } }
-			ship = { name = "HMS Sylvia" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "C Class" } } }
-			ship = { name = "HMS Avon" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "C Class" } } }
-			ship = { name = "HMS Bittern" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "C Class" } } }
+			ship = { name = "HMS Thrasher" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Virago" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Earnest" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Griffon" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Locust" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Panther" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Seal" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Wolf" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Express" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Orwell" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Lively" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Sprightly" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Success" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Spiteful" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Peterel" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Myrmidon" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Syren" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Kangaroo" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Arab" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Albacore" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Bonetta" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Star" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Whiting" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Bat" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Crane" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Flying Fish" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Fawn" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Flirt" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Bullfinch" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Dove" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Violet" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Sylvia" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Avon" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
+			ship = { name = "HMS Bittern" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
 		}
 	}
 	fleet = {
@@ -308,7 +308,7 @@ units = {
 			ship = { name = "HMS Starfish" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "Sturgeon Class" } } }
 			ship = { name = "HMS Spitfire" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "Swordfish Class" } } }
 			ship = { name = "HMS Zebra" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
-			ship = { name = "HMS Quail" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "B Class" } } }
+			ship = { name = "HMS Quail" definition = destroyer equipment = { ship_hull_light_1 { amount = 1 owner = ENG version_name = "River Class" } } }
 		}
 	}
 	fleet = {
@@ -619,27 +619,25 @@ instant_effect = {
 	add_equipment_production = { equipment = { type = light_field_gun_equipment_1 creator = "ENG" } requested_factories = 1 progress = 0.1 efficiency = 50}
 	add_equipment_production = { equipment = { type = motorized_equipment_0 creator = "ENG" } requested_factories = 1 progress = 0.1 efficiency = 50}
 	
-	add_equipment_production = { equipment = { type = MSM_ship_hull_dreadnought1 "ENG"  }  requested_factories = 1  progress = 0.46  amount = 1 } #HMS Neptune LD:19-Jan-1909 Comp:01-Nov-1911
-	add_equipment_production = { equipment = { type = MSM_ship_hull_dreadnought1 "ENG" version_name = "Colossus Class"  }  requested_factories = 1  progress = 0.83  amount = 1 } #HMS Colossus LD:08-Jul-1909 Comp:01-Jul-1910
-	add_equipment_production = { equipment = { type = MSM_ship_hull_dreadnought1 "ENG" version_name = "Colossus Class"  }  requested_factories = 1  progress = 0.47  amount = 1 } #HMS Hercules LD:30-Jul-1909 Comp:01-Mar-1911
-	add_equipment_production = { equipment = { type = MSM_ship_hull_dreadnought1 "ENG" version_name = "Orion Class"  }  requested_factories = 1  progress = 0.03  amount = 1 } #HMS Conqueror LD:05-Apr-1910 Comp:01-Nov-1912
-	add_equipment_production = { equipment = { type = MSM_ship_hull_dreadnought1 "ENG" version_name = "Orion Class"  }  requested_factories = 1  progress = 0.04  amount = 1 } #HMS Monarch LD:01-Apr-1910 Comp:01-Mar-1912
-	add_equipment_production = { equipment = { type = MSM_ship_hull_dreadnought1 "ENG" version_name = "Orion Class"  }  requested_factories = 1  progress = 0.2  amount = 1 } #HMS Orion LD:29-Nov-1909 Comp:01-Jan-1912
-	add_equipment_production = { equipment = { type = MSM_ship_hull_dreadnought1 "ENG" version_name = "Orion Class"  }  requested_factories = 1  progress = 0.02  amount = 1 } #HMS Thunderer LD:13-Apr-1910 Comp:01-Jun-1912
-	add_equipment_production = { equipment = { type = MSM_ship_hull_dreadnought1 "ENG"  version_name = "Colossus Class" } } }
-	add_equipment_production = { equipment = { type = MSM_ship_hull_dreadnought1 "ENG" version_name = "Lion Class"  }  requested_factories = 1  progress = 0.23  amount = 1 } #HMS Lion LD:29-Sep-1909 Comp:01-May-1912
-	add_equipment_production = { equipment = { type = ship_hull_light_1 "ENG" version_name = "Blonde Class"  }  requested_factories = 1  progress = 0.29  amount = 1 } #HMS Blonde LD:06-Dec-1909 Comp:01-May-1911
-	add_equipment_production = { equipment = { type = ship_hull_light_1 "ENG" version_name = "Blonde Class"  }  requested_factories = 1  progress = 0.68  amount = 1 } #HMS Blanche LD:12-Apr-1909 Comp:01-Nov-1910
-	add_equipment_production = { equipment = { type = ship_hull_light_1 "ENG" version_name = "Bristol Class"  }  requested_factories = 1  progress = 0.65  amount = 1 } #HMS Bristol LD:23-Mar-1909 Comp:01-Dec-1910
-	add_equipment_production = { equipment = { type = ship_hull_light_1 "ENG" version_name = "Bristol Class"  }  requested_factories = 1  progress = 0.77  amount = 1 } #HMS Glasgow LD:25-Mar-1909 Comp:01-Sep-1910
-	add_equipment_production = { equipment = { type = ship_hull_light_1 "ENG" version_name = "Bristol Class"  }  requested_factories = 1  progress = 0.71  amount = 1 } #HMS Gloucester LD:15-Apr-1909 Comp:01-Oct-1910
-	add_equipment_production = { equipment = { type = ship_hull_light_1 "ENG" version_name = "Bristol Class"  }  requested_factories = 1  progress = 0.74  amount = 1 } #HMS Liverpool LD:17-Feb-1909 Comp:01-Oct-1910
-	add_equipment_production = { equipment = { type = ship_hull_light_1 "ENG" version_name = "Bristol Class"  }  requested_factories = 1  progress = 0.76  amount = 1 } #HMS Newcastle LD:14-Apr-1909 Comp:01-Sep-1910
-	add_equipment_production = { equipment = { type = ship_hull_light_1 "ENG"  version_name = "Colossus Class" } } }
-	add_equipment_production = { equipment = { type = ship_hull_light_1 "ENG"  version_name = "Colossus Class" } } }
-	add_equipment_production = { equipment = { type = ship_hull_light_1 "ENG"  version_name = "Colossus Class" } } }
-	add_equipment_production = { equipment = { type = ship_hull_light_1 "ENG"  version_name = "Colossus Class" } } }
-	add_equipment_production = { equipment = { type = MSM_ship_hull_uboat_1 "ENG"  version_name = "Colossus Class" } } }
-	
-	
+	add_equipment_production = { equipment = { type = MSM_ship_hull_dreadnought1 creator = "ENG" version_name = "Colossus Class" }  requested_factories = 1  progress = 0.46  amount = 1 } #HMS Neptune LD:19-Jan-1909 Comp:01-Nov-1911
+	add_equipment_production = { equipment = { type = MSM_ship_hull_dreadnought1 creator = "ENG" version_name = "Colossus Class"  }  requested_factories = 1  progress = 0.83  amount = 1 } #HMS Colossus LD:08-Jul-1909 Comp:01-Jul-1910
+	add_equipment_production = { equipment = { type = MSM_ship_hull_dreadnought1 creator = "ENG" version_name = "Colossus Class"  }  requested_factories = 1  progress = 0.47  amount = 1 } #HMS Hercules LD:30-Jul-1909 Comp:01-Mar-1911
+	add_equipment_production = { equipment = { type = MSM_ship_hull_dreadnought1 creator = "ENG" version_name = "Orion Class"  }  requested_factories = 1  progress = 0.03  amount = 1 } #HMS Conqueror LD:05-Apr-1910 Comp:01-Nov-1912
+	add_equipment_production = { equipment = { type = MSM_ship_hull_dreadnought1 creator = "ENG" version_name = "Orion Class"  }  requested_factories = 1  progress = 0.04  amount = 1 } #HMS Monarch LD:01-Apr-1910 Comp:01-Mar-1912
+	add_equipment_production = { equipment = { type = MSM_ship_hull_dreadnought1 creator = "ENG" version_name = "Orion Class"  }  requested_factories = 1  progress = 0.2  amount = 1 } #HMS Orion LD:29-Nov-1909 Comp:01-Jan-1912
+	add_equipment_production = { equipment = { type = MSM_ship_hull_dreadnought1 creator = "ENG" version_name = "Orion Class"  }  requested_factories = 1  progress = 0.02  amount = 1 } #HMS Thunderer LD:13-Apr-1910 Comp:01-Jun-1912
+	add_equipment_production = { equipment = { type = MSM_ship_hull_dreadnought1 creator = "ENG" version_name = "Orion Class" } }
+	add_equipment_production = { equipment = { type = MSM_ship_hull_dreadnought1 creator = "ENG" version_name = "Lion Class"  }  requested_factories = 1  progress = 0.23  amount = 1 } #HMS Lion LD:29-Sep-1909 Comp:01-May-1912
+	add_equipment_production = { equipment = { type = ship_hull_light_1 creator = "ENG" version_name = "Blonde Class"  }  requested_factories = 1  progress = 0.29  amount = 1 } #HMS Blonde LD:06-Dec-1909 Comp:01-May-1911
+	add_equipment_production = { equipment = { type = ship_hull_light_1 creator = "ENG" version_name = "Blonde Class"  }  requested_factories = 1  progress = 0.68  amount = 1 } #HMS Blanche LD:12-Apr-1909 Comp:01-Nov-1910
+	add_equipment_production = { equipment = { type = ship_hull_light_1 creator = "ENG" version_name = "Bristol Class"  }  requested_factories = 1  progress = 0.65  amount = 1 } #HMS Bristol LD:23-Mar-1909 Comp:01-Dec-1910
+	add_equipment_production = { equipment = { type = ship_hull_light_1 creator = "ENG" version_name = "Bristol Class"  }  requested_factories = 1  progress = 0.77  amount = 1 } #HMS Glasgow LD:25-Mar-1909 Comp:01-Sep-1910
+	add_equipment_production = { equipment = { type = ship_hull_light_1 creator = "ENG" version_name = "Bristol Class"  }  requested_factories = 1  progress = 0.71  amount = 1 } #HMS Gloucester LD:15-Apr-1909 Comp:01-Oct-1910
+	add_equipment_production = { equipment = { type = ship_hull_light_1 creator = "ENG" version_name = "Bristol Class"  }  requested_factories = 1  progress = 0.74  amount = 1 } #HMS Liverpool LD:17-Feb-1909 Comp:01-Oct-1910
+	add_equipment_production = { equipment = { type = ship_hull_light_1 creator = "ENG" version_name = "Bristol Class"  }  requested_factories = 1  progress = 0.76  amount = 1 } #HMS Newcastle LD:14-Apr-1909 Comp:01-Sep-1910
+	add_equipment_production = { equipment = { type = ship_hull_light_1 creator = "ENG"  version_name = "Astraea Class" } }
+	add_equipment_production = { equipment = { type = ship_hull_light_1 creator = "ENG"  version_name = "Astraea Class" } }
+	add_equipment_production = { equipment = { type = ship_hull_light_1 creator = "ENG"  version_name = "Astraea Class" } }
+	add_equipment_production = { equipment = { type = ship_hull_light_1 creator = "ENG"  version_name = "Astraea Class" } }
+	add_equipment_production = { equipment = { type = MSM_ship_hull_uboat_1 creator = "ENG"  version_name = "C Class" } }
 }
