@@ -399,27 +399,27 @@ create_navy_leader={  name = "Max von Fischel" id=34314 portrait_path="gfx/admir
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
-				ww1_heavy_cruiser0 = 1
-				ww1_heavy_cruiser1 = 1
-				ww1_battlecruiser0 = 1
-				ww1_battlecruiser1 = 1
-				ww1_light_cruiser0 = 1
-				ww1_light_cruiser1 = 1
-				ww1_light_cruiser2 = 1
-				ww1_light_cruiser3 = 1
-				ww1_submarine0 = 1
-				ww1_submarine1 = 1
-				ww1_coastal_submarine1 = 1
-				ww1_battleship0 = 1
-				ww1_battleship1 = 1
-				ww1_battleship2 = 1
-				ww1_battleship3 = 1
-				ww1_destroyer0 = 1
-				ww1_destroyer1 = 1
-				ww1_destroyer2 = 1
-				ww1_destroyer3 = 1
-				ww1_moduleMTG_mines = 1
-				transport = 1
+		ww1_heavy_cruiser0 = 1
+		ww1_heavy_cruiser1 = 1
+		ww1_battlecruiser0 = 1
+		ww1_battlecruiser1 = 1
+		ww1_light_cruiser0 = 1
+		ww1_light_cruiser1 = 1
+		ww1_light_cruiser2 = 1
+		ww1_light_cruiser3 = 1
+		ww1_submarine0 = 1
+		ww1_submarine1 = 1
+		ww1_coastal_submarine1 = 1
+		ww1_battleship0 = 1
+		ww1_battleship1 = 1
+		ww1_battleship2 = 1
+		ww1_battleship3 = 1
+		ww1_destroyer0 = 1
+		ww1_destroyer1 = 1
+		ww1_destroyer2 = 1
+		ww1_destroyer3 = 1
+		ww1_moduleMTG_mines = 1
+		transport = 1
 	}
 }
 if = {
@@ -435,7 +435,7 @@ if = {
 		basic_naval_mines = 1
 		submarine_mine_laying = 1
 	}
-	create_equipment_variant = { name = "BlÃ¼cher Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = no 
+	create_equipment_variant = { name = "Blücher Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = no 
 		modules = {
 			fixed_ship_battery_slot = MSM_ship_medium_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -460,7 +460,7 @@ if = {
 			rear_1_custom_slot = MSM_ship_light_battery_1
 			} 
 	}
-	create_equipment_variant = { name = "KÃ¶nigsberg Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+	create_equipment_variant = { name = "Königsberg Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
 		modules = {
 			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -1211,9 +1211,9 @@ if = {
 		MSM_improved_battery = 1
 		MSM_basic_early_shell = 1
 		MSM_secondary_battery_1 = 1
-		MSM_ship_hull_dreadnought_1 = 1
+		early_ship_hull_heavy = 1
 	}
-	create_equipment_variant = { name = "BlÃ¼cher Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
+	create_equipment_variant = { name = "Blücher Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
 		modules = {
 			fixed_ship_battery_slot = MSM_ship_medium_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -1238,7 +1238,7 @@ if = {
 			rear_1_custom_slot = MSM_ship_light_battery_1
 			} 
 	}
-	create_equipment_variant = { name = "KÃ¶nigsberg Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
+	create_equipment_variant = { name = "Königsberg Class" type = ship_hull_light_1 parent_version = 0 obsolete = no 
 		modules = {
 			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -2188,7 +2188,7 @@ if = {
 		MSM_ship_hull_dreadnought_1 = 1
 		sonar = 1
 	}
-	create_equipment_variant = { name = "BlÃ¼cher Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
+	create_equipment_variant = { name = "Blücher Class" type = ship_hull_pre_dreadnought parent_version = 0 obsolete = yes 
 		modules = {
 			fixed_ship_battery_slot = MSM_ship_medium_battery_1
 			fixed_ship_anti_air_slot = empty
@@ -2213,7 +2213,7 @@ if = {
 			rear_1_custom_slot = MSM_ship_light_battery_1
 			} 
 	}
-	create_equipment_variant = { name = "KÃ¶nigsberg Class" type = ship_hull_light_1 parent_version = 0 obsolete = yes 
+	create_equipment_variant = { name = "Königsberg Class" type = ship_hull_light_1 parent_version = 0 obsolete = yes 
 		modules = {
 			fixed_ship_battery_slot = MSM_ship_light_medium_battery_1
 			fixed_ship_anti_air_slot = empty
