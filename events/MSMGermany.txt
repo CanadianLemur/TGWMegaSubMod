@@ -468,7 +468,7 @@ country_event = {
 		surrender_progress > 0.75
 		}
 	}
-	mean_time_to_happen = {days = 15}
+	mean_time_to_happen = {days = 5}
 	fire_only_once = no
 	is_triggered_only = no
 	## Ladies and Gentlemen, We gottem
@@ -682,8 +682,8 @@ country_event = {
 		if = {
 		limit = {
 			OR = {
-			RUS = {owns_state = 223}
-			SOV = {owns_state = 223}
+			RUS = {owns_state = 233}
+			SOV = {owns_state = 233}
 			}
 		}
 		transfer_state = 233#Caucasus Mountains
@@ -704,7 +704,34 @@ country_event = {
 			SOV = {owns_state = 230}
 			}
 		}
-		transfer_state = 230#Georgia
+		transfer_state = 230#Armenia
 		}
+		if = {
+		limit = {
+			OR = {
+			RUS = {owns_state = 742}
+			SOV = {owns_state = 742}
+			}
+		}
+		AFG = {transfer_state = 742#Dyushambe
+			add_state_core = 742
+			}
+		}
+		RUS = {remove_state_core = 742}
+		KAZ = {
+		add_state_core = 407
+		add_state_core = 406
+		add_state_core = 587
+		add_state_core = 584
+		add_state_core = 585
+		add_state_core = 405
+		add_state_core = 732
+		add_state_core = 586
+		add_state_core = 404
+		add_state_core = 402
+		add_state_core = 589
+		set_cosmetic_tag = turkic_federation
+		}
+		RUS = {release = KAZ}
 	}
 }

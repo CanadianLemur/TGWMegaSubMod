@@ -363,7 +363,23 @@ country_event = {
 					540 = { remove_core_of = POR }
 				}
 			}
-			
+			if = {
+				limit = {
+					GER = {
+						has_war_with = POR
+					}
+					NOT = {
+						GER = { owns_state = 812 }
+					}
+				}
+				GER = {
+					transfer_state = 540	### Angola, planned to be split between Germany and the United Kingdom before the war, but now Germany gets all of it (by Khanor)
+				}
+				if = {
+					limit = { 812 = { is_core_of = POR } }
+					812 = { remove_core_of = POR }
+				}
+			}
 			if = {
 				limit = {
 					GER = {

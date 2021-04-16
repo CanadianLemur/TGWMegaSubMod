@@ -6,6 +6,9 @@ AUH_negotiations_with_germany = {
           available = {
                surrender_progress > 0.3
           }
+		  ai_will_do = {
+			factor = 10
+		}
           complete_effect = {
                GER = {country_event = {id = MSMSecondBrothersWar.10}}
           }
@@ -17,6 +20,9 @@ AUH_negotiations_with_germany = {
           available = {
               GER = { surrender_progress > 0.3 }
           }
+		  ai_will_do = {
+			factor = 10
+		}
           complete_effect = {
                GER = {country_event = {id = MSMSecondBrothersWar.12}
           }

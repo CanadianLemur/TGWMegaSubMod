@@ -44,7 +44,16 @@ germanization = {
 		tag = GER
 	}
 }
-
+securing_crimean_anchorage = {
+	icon = generic_industry
+	priority = 10
+	available = {
+		has_completed_focus = GER_interwar_WKV_secure_crimean_anchorage
+	}
+	visible = {
+		tag = GER
+	}
+}
 germanization_integration = {
 	icon = generic_political_actions
 	priority = 10

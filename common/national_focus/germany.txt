@@ -2574,6 +2574,10 @@ focus_tree = {
 				add_state_core = 89
 				transfer_state = 72
 				add_state_core = 72
+				add_State_core = 94
+				transfer_state = 94
+				add_State_core = 97
+				transfer_state = 97
 				unlock_national_focus = POL_interwar_choosing_a_king
 				complete_national_focus = POL_interwar_an_austrian_king
 				unlock_national_focus = POL_interwar_request_galicia
@@ -4475,7 +4479,7 @@ set_party_name = {
 	focus = {
 		id = GER_interwar_WKV_a_new_european_order
 		relative_position_id = GER_interwar_WKV_victory_in_ww1
-		icon = GFX_focus_ger_oppose_hitler
+		icon = GFX_focus_ger_revive_kaiserreich
 		prerequisite = {focus = GER_interwar_WKV_victory_in_ww1}
 		available = {
 		}
@@ -4496,7 +4500,7 @@ set_party_name = {
 	focus = {
 		id = GER_interwar_WKV_african_policy
 		relative_position_id = GER_interwar_WKV_a_new_european_order
-		icon = GFX_focus_ger_oppose_hitler
+		icon = GFX_goal_mittelafrika
 		prerequisite = {focus = GER_interwar_WKV_a_new_european_order}
 		available = {
 		}
@@ -4514,9 +4518,53 @@ set_party_name = {
 		}
 	}
 	focus = {
+		id = GER_interwar_WKV_centralized_administration
+		relative_position_id = GER_interwar_WKV_african_policy
+		mutually_exclusive = {focus = GER_interwar_WKV_decentralized_administration }
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = {focus = GER_interwar_WKV_african_policy}
+		available = {
+		}
+		x = 2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10	
+		}
+		completion_reward = {
+		##Full united Mittelafrika puppet
+			add_political_power = 100
+
+		}
+	}
+	focus = {
+		id = GER_interwar_WKV_decentralized_administration
+		relative_position_id = GER_interwar_WKV_african_policy
+		mutually_exclusive = {focus = GER_interwar_WKV_centralized_administration }
+		icon = GFX_focus_generic_treaty
+		prerequisite = {focus = GER_interwar_WKV_african_policy}
+		available = {
+		}
+		x = -2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10	
+		}
+		completion_reward = {
+		##less crazy decentralized African Administration
+			add_political_power = 100
+
+		}
+	}
+	focus = {
 		id = GER_interwar_WKV_western_european_policy
 		relative_position_id = GER_interwar_WKV_a_new_european_order
-		icon = GFX_focus_ger_oppose_hitler
+		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = {focus = GER_interwar_WKV_a_new_european_order}
 		available = {
 		}
@@ -4536,7 +4584,7 @@ set_party_name = {
 	focus = {
 		id = GER_interwar_WKV_a_king_for_ireland
 		relative_position_id = GER_interwar_WKV_western_european_policy
-		icon = GFX_focus_ger_oppose_hitler
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		prerequisite = {focus = GER_interwar_WKV_western_european_policy}
 		available = {
 		has_completed_focus = GER_ww1_support_irish_uprising
@@ -4557,7 +4605,7 @@ set_party_name = {
 	focus = {
 		id = GER_interwar_WKV_french_civil_war
 		relative_position_id = GER_interwar_WKV_western_european_policy
-		icon = GFX_focus_ger_oppose_hitler
+		icon = GFX_goal_generic_major_war
 		prerequisite = {focus = GER_interwar_WKV_western_european_policy}
 		available = {
 		always = no
@@ -4578,7 +4626,7 @@ set_party_name = {
 	focus = {
 		id = GER_interwar_WKV_eastern_european_policy
 		relative_position_id = GER_interwar_WKV_a_new_european_order
-		icon = GFX_focus_ger_oppose_hitler
+		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = {focus = GER_interwar_WKV_a_new_european_order}
 		available = {
 		}
@@ -4598,7 +4646,7 @@ set_party_name = {
 	focus = {
 		id = GER_interwar_WKV_exert_influence_in_ukraine
 		relative_position_id = GER_interwar_WKV_eastern_european_policy
-		icon = GFX_focus_attack_soviet
+		icon = GFX_goal_demand_sudetenland
 		prerequisite = {focus = GER_interwar_WKV_eastern_european_policy}
 		available = {
 		}
@@ -4611,7 +4659,21 @@ set_party_name = {
 			factor = 10	
 		}
 		completion_reward = {
-			puppet = UKR ##make this more nuanced, put that austrian fellow on the throne of ukraine as well
+			puppet = UKR 
+			UKR = {set_cosmetic_tag = kingdom_of_ukraine
+			create_country_leader = {
+		name = "Kniaz Vasyl"
+		desc = "POLITICS_KNIAZ_VASYL_DESC"
+		picture = ".dds"
+		expire = "1948.1.1"
+		ideology = despotism
+		traits = {
+		
+	}
+}
+			
+			}
+			##make this more nuanced, put that austrian fellow on the throne of ukraine as well
 
 		}
 	}
@@ -4638,7 +4700,7 @@ set_party_name = {
 	focus = {
 		id = GER_interwar_WKV_full_intervention
 		relative_position_id = GER_interwar_WKV_russian_civil_war_intervention
-		icon = GFX_focus_attack_soviet
+		icon = GFX_goal_generic_major_war
 		prerequisite = {focus = GER_interwar_WKV_russian_civil_war_intervention}
 		available = {
 		}
@@ -4658,7 +4720,7 @@ set_party_name = {
 	focus = {
 		id = GER_interwar_WKV_seize_white_ruthenia
 		relative_position_id = GER_interwar_WKV_russian_civil_war_intervention
-		icon = GFX_focus_attack_soviet
+		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = {focus = GER_interwar_WKV_russian_civil_war_intervention}
 		available = {
 		}
@@ -4696,7 +4758,7 @@ set_party_name = {
 	focus = {
 		id = GER_interwar_WKV_white_ruthenia
 		relative_position_id = GER_interwar_WKV_seize_white_ruthenia
-		icon = GFX_focus_attack_soviet
+		icon = GFX_goal_generic_improve_relations
 		prerequisite = {focus = GER_interwar_WKV_full_intervention focus = GER_interwar_WKV_seize_white_ruthenia}
 		available = {
 		owns_state = 206
@@ -4731,6 +4793,16 @@ set_party_name = {
 		transfer_state = 241
 		add_State_core = 241
 		set_cosmetic_tag = white_ruthenia
+		create_country_leader = {
+		name = "King Genrikh"
+		desc = "POLITICS_PRINCE_HEINRICH_DESC"
+		picture = ".dds"
+		expire = "1930.1.1"
+		ideology = despotism
+		traits = {
+		
+	}
+}
 		}
 		puppet = BLR
 
@@ -4739,7 +4811,7 @@ set_party_name = {
 	focus = {
 		id = GER_interwar_WKV_secure_crimean_anchorage
 		relative_position_id = GER_interwar_WKV_full_intervention
-		icon = GFX_focus_attack_soviet
+		icon = GFX_goal_generic_build_navy
 		prerequisite = {focus = GER_interwar_WKV_full_intervention }
 		available = {
 		owns_state = 137
@@ -4752,18 +4824,20 @@ set_party_name = {
 			factor = 10	
 		}
 		completion_reward = {
-		##Unlock decisions to integrate crimea, rename sevastapol and such
+		custom_effect_tooltip = germanize_crimea
 		}
 	}	
 	focus = {
 		id = GER_interwar_WKV_transcaucasian_kingdom
 		relative_position_id = GER_interwar_WKV_full_intervention
-		icon = GFX_focus_attack_soviet
+		icon = GFX_focus_generic_little_entente
 		prerequisite = {focus = GER_interwar_WKV_full_intervention }
 		available = {
 		owns_state = 229
 		owns_state = 230
 		owns_state = 231
+		owns_state = 232
+		owns_state = 233
 		}
 		x = 1
 		y = 2
@@ -4773,16 +4847,84 @@ set_party_name = {
 			factor = 10	
 		}
 		completion_reward = {
+		CAU = {
+		add_state_core = 229
+		add_state_core = 230
+		add_state_core = 231
+		add_state_core = 232
+		add_state_core = 233
+		transfer_state = 229
+		transfer_state = 230
+		transfer_state = 231
+		transfer_state = 232
+		transfer_state = 233
+		}
+		puppet = CAU
+		CAU = {
+		set_politics = {
+	ruling_party = neutrality
+        elections_allowed = no
+        last_election = "1910.1.1"
+        election_frequency = 48
+			}
+			set_popularities = {
+				democratic = 5
+				neutrality = 80
+				fascism = 1
+				communism = 10
+				anarchism = 4
+			}
+			create_country_leader = {
+				name = "King Adalbert"
+				desc = "POLITICS_KING_ADALBERT_DESC"
+				picture = "adalbert.dds"
+				expire = "1948.1.1"
+				ideology = despotism
+				traits = {
+						
+				}
+			}
+		}
 		##release transcaucasia under prince adalbert of prussia
+		}
+	}
+	focus = {
+		id = GER_interwar_WKV_ensure_access_to_transcaucasian_oil_fields
+		relative_position_id = GER_interwar_WKV_full_intervention
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = {focus = GER_interwar_WKV_full_intervention }
+		available = {
+		CAU = {is_subject_of = ROOT owns_state = 229 controls_state = 229}
+		}
+		x = 1
+		y = 3
+		cost = 4
+
+		ai_will_do = {
+			factor = 10	
+		}
+		completion_reward = {
+		CAU = {
+		give_resource_rights = { receiver = GER state = 229 }
+		give_resource_rights = { receiver = GER state = 232 }
+		}
 		}
 	}
 	focus = {
 		id = GER_interwar_WKV_protect_cossack_rights
 		relative_position_id = GER_interwar_WKV_full_intervention
-		icon = GFX_focus_attack_soviet
+		icon = GFX_goal_generic_defence
 		prerequisite = {focus = GER_interwar_WKV_full_intervention }
 		available = {
 		owns_state = 218
+		owns_state = 234
+		owns_state = 235
+		owns_state = 238
+		owns_state = 237
+		owns_state = 236
+		owns_state = 217
+		owns_state = 245
+		owns_state = 265
 		}
 		x = -1
 		y = 2
@@ -4792,13 +4934,58 @@ set_party_name = {
 			factor = 10	
 		}
 		completion_reward = {
-		##release don kuban union
+		DKU = {
+		transfer_state = 218
+		add_state_core = 218
+		transfer_state = 234
+		add_state_core = 234
+		transfer_state = 235
+		add_state_core = 235
+		transfer_state = 238
+		add_state_core = 238
+		transfer_state = 237
+		add_state_core = 237
+		transfer_state = 236
+		add_state_core = 236
+		transfer_state = 217
+		add_state_core = 217
+		transfer_state = 245
+		add_state_core = 245
+		transfer_state = 265
+		add_state_core = 265
+		}
+		puppet = DKU
+		DKU = {
+		create_country_leader = {
+				name = "Pyotr Krasnov"
+				desc = "POLITICS_PYOTR_KRASNOV_DESC"
+				picture = "Pyotr_Krasnov.dds"
+				expire = "1948.1.1"
+				ideology = despotism
+				traits = {
+						
+				}
+			}
+		set_politics = {
+		ruling_party = neutrality
+        elections_allowed = no
+        last_election = "1910.1.1"
+        election_frequency = 48
+			}
+		set_popularities = {
+				democratic = 5
+				neutrality = 80
+				fascism = 1
+				communism = 10
+				anarchism = 4
+			}
+		}
 		}
 	}
 	focus = {
 		id = GER_interwar_WKV_volga_german
 		relative_position_id = GER_interwar_WKV_full_intervention
-		icon = GFX_focus_attack_soviet
+		icon = GFX_goal_generic_alliance
 		prerequisite = {focus = GER_interwar_WKV_full_intervention }
 		available = {
 		owns_state = 239
@@ -4814,13 +5001,48 @@ set_party_name = {
 			factor = 10	
 		}
 		completion_reward = {
-		##release volga german state
+		SAR = {
+		add_state_core = 239
+		add_state_core = 401
+		add_state_core = 251
+		add_state_core = 652
+		transfer_state = 239
+		transfer_state = 401
+		transfer_state = 251
+		transfer_state = 652
+		}
+		puppet = SAR
+		SAR = {
+		set_politics = {
+		ruling_party = neutrality
+        elections_allowed = no
+        last_election = "1910.1.1"
+        election_frequency = 48
+			}
+		create_country_leader = {
+				name = "Prince Oskar"
+				desc = "POLITICS_PRINCE_OSKAR_DESC"
+				picture = "oskar.dds"
+				expire = "1949.1.1"
+				ideology = despotism
+				traits = {
+						
+				}
+			}
+		set_popularities = {
+				democratic = 5
+				neutrality = 80
+				fascism = 1
+				communism = 10
+				anarchism = 4
+			}
+		}
 		}
 	}
 	focus = {
 		id = GER_interwar_WKV_baltic_policy
 		relative_position_id = GER_interwar_WKV_eastern_european_policy
-		icon = GFX_focus_ger_oppose_hitler
+		icon = GFX_goal_anschluss
 		prerequisite = {focus = GER_interwar_WKV_eastern_european_policy}
 		available = {
 		}
@@ -4840,7 +5062,7 @@ set_party_name = {
 	focus = {
 		id = GER_interwar_WKV_lithuania
 		relative_position_id = GER_interwar_WKV_baltic_policy
-		icon = GFX_focus_ger_oppose_hitler
+		icon = GFX_goal_generic_improve_relations
 		prerequisite = {focus = GER_interwar_WKV_baltic_policy}
 		available = {
 		}
@@ -4860,7 +5082,7 @@ set_party_name = {
 	focus = {
 		id = GER_interwar_WKV_lithuanian_kingdom
 		relative_position_id = GER_interwar_WKV_lithuania
-		icon = GFX_focus_ger_oppose_hitler
+		icon = GFX_focus_generic_monarchy_1
 		prerequisite = {focus = GER_interwar_WKV_lithuania}
 		mutually_exclusive = {focus = GER_interwar_WKV_leave_lithuania_alone focus = GER_interwar_WKV_lithuanian_republic focus = GER_interwar_WKV_integrate_lithuania_into_baltic_duchy}
 		available = {
@@ -4891,7 +5113,7 @@ set_party_name = {
 	focus = {
 		id = GER_interwar_WKV_lithuanian_republic
 		relative_position_id = GER_interwar_WKV_lithuania
-		icon = GFX_focus_ger_oppose_hitler
+		icon = GFX_goal_support_democracy
 		prerequisite = {focus = GER_interwar_WKV_lithuania}
 		mutually_exclusive = {focus = GER_interwar_WKV_leave_lithuania_alone focus = GER_interwar_WKV_lithuanian_kingdom focus = GER_interwar_WKV_integrate_lithuania_into_baltic_duchy}
 		available = {
@@ -4913,7 +5135,7 @@ set_party_name = {
 	focus = {
 		id = GER_interwar_WKV_integrate_lithuania_into_baltic_duchy
 		relative_position_id = GER_interwar_WKV_lithuania
-		icon = GFX_focus_ger_oppose_hitler
+		icon = GFX_goal_generic_propaganda
 		prerequisite = {focus = GER_interwar_WKV_lithuania}
 		mutually_exclusive = {focus = GER_interwar_WKV_leave_lithuania_alone focus = GER_interwar_WKV_lithuanian_kingdom focus = GER_interwar_WKV_lithuanian_republic}
 		available = {
@@ -4943,7 +5165,7 @@ set_party_name = {
 		id = GER_interwar_WKV_leave_lithuania_alone
 		relative_position_id = GER_interwar_WKV_lithuania
 		mutually_exclusive = {focus = GER_interwar_WKV_integrate_lithuania_into_baltic_duchy focus = GER_interwar_WKV_lithuanian_kingdom focus = GER_interwar_WKV_lithuanian_republic}
-		icon = GFX_focus_ger_oppose_hitler
+		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = {focus = GER_interwar_WKV_lithuania}
 		available = {
 		}

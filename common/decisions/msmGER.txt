@@ -80,7 +80,212 @@ schlieffen_military_access = {
 		}
 	}
 }
-
+securing_crimean_anchorage = {
+	deport_communists  = {
+		icon = oppression
+		cost = 25
+	
+		fire_only_once = yes
+		visible = {
+			original_tag = GER
+			FROM = { 
+				is_controlled_by = GER
+			}
+		}
+		allowed = {
+			original_tag = GER
+		}
+		state_target = yes
+		targets = { 137  }
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+			FROM = {
+				add_compliance = 10
+				add_resistance = -10
+				add_manpower = -2000
+			}
+			196 = {
+			add_manpower = 2000
+			}
+			UKR = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.03
+				}
+			}
+		}
+		days_remove = 60
+	}
+	germanize_names  = {
+		icon = generic_form_nation
+		cost = 50
+	
+		fire_only_once = yes
+		visible = {
+			original_tag = GER
+			FROM = { 
+				is_controlled_by = GER
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		allowed = {
+			original_tag = GER
+		}
+		state_target = yes
+		targets = { 137  }
+		complete_effect = {
+		set_province_name = {
+		id = 3686
+		name = "Theoderichshafen"
+		}
+		137 = {
+		set_state_name = "Gotenland"
+		add_compliance = 3
+		}
+		}
+	}
+	naval_development  = {
+		icon = generic_naval
+		cost = 15
+	
+		fire_only_once = yes
+		visible = {
+			original_tag = GER
+			FROM = { 
+				is_controlled_by = GER
+			}
+		}
+		allowed = {
+			original_tag = GER
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		state_target = yes
+		targets = { 137  }
+		modifier = {
+		civilian_factory_use = 3
+		}
+		remove_effect = {
+		137 = {
+		add_building_construction = {
+    type = dockyard
+    level = 3
+    instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 3
+		add_compliance = 2
+		}
+		}
+		days_remove = 100
+		}
+	air_base_development  = {
+		icon = generic_construction
+		cost = 15
+	
+		fire_only_once = yes
+		visible = {
+			original_tag = GER
+			FROM = { 
+				is_controlled_by = GER
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		allowed = {
+			original_tag = GER
+		}
+		state_target = yes
+		targets = { 137  }
+		modifier = {
+		civilian_factory_use = 2
+		}
+		remove_effect = {
+		137 = {
+		add_building_construction = {
+    type = air_base
+    level = 4
+    instant_build = yes
+		}
+		add_compliance = 2
+		}
+		}
+		days_remove = 100
+		}
+	invite_german_companies = {
+		icon = generic_industry
+		cost = 30
+	
+		fire_only_once = yes
+		visible = {
+			original_tag = GER
+			FROM = { 
+				is_controlled_by = GER
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		allowed = {
+			original_tag = GER
+		}
+		state_target = yes
+		targets = { 137  }
+		modifier = {
+		civilian_factory_use = 5
+		}
+		remove_effect = {
+		137 = {
+		add_building_construction = {
+    type = arms_factory
+    level = 1
+    instant_build = yes
+		}
+		add_building_construction = {
+    type = industrial_complex
+    level = 1
+    instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 2
+		add_compliance = 5
+		}
+		}
+		days_remove = 100
+		}
+	germanization_of_crimea = {
+		icon = generic_nationalism
+		cost = 150
+	
+		fire_only_once = yes
+		visible = {
+			original_tag = GER
+			FROM = { 
+				is_controlled_by = GER
+				NOT = { is_core_of = GER }
+			}
+		}
+		available = {
+		FROM = {compliance > 80}
+		}
+		allowed = {
+			original_tag = GER
+		}
+		state_target = yes
+		targets = { 137 }
+		complete_effect = {
+			FROM = {
+				add_core_of = GER
+			}
+		}
+	}
+	}
 germanization = {
 	germanize_german_lands = {
 		icon = generic_form_nation

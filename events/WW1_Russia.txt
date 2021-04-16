@@ -671,6 +671,7 @@ country_event = {
 			LIT = {
 			    transfer_state = 11
 				transfer_state = 189
+				transfer_state = 784
 				load_oob = LIT_army
 			}
 			#Japanese Demands (By Canadian Lemur)

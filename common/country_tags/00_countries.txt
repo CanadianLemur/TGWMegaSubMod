@@ -300,5 +300,5 @@ ACF = "countries/French Communist Army.txt"
 AFA = "countries/Army of National Salvation.txt"
 # New puppets for Germany
 CAU = "countries/Transcaucasia.txt"
-VOL = "countries/Saratov.txt"
+SAR = "countries/Saratov.txt"
 DKU = "countires/Don Kuban Union.txt"
