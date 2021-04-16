@@ -377,6 +377,25 @@ news_event = {
 		trigger = { TAG = GER }
 	}
 }
+country_event = {
+	id =  MSMGermany.17
+	title = MSMGermany.17.t
+	desc = MSMGermany.17.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = MSMGermany.17.a
+		ai_chance = {
+			factor = 100
+		}
+	add_to_faction = SWI
+	add_to_war = { 
+    targeted_alliance = SWI	
+    enemy = GER
+    hostility_reason = asked_to_join
+}
+	}
+}
 ####Fate of Lithuania####
 country_event = {
 	id =  MSM_WKV_Germany.1

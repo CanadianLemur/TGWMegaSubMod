@@ -625,6 +625,10 @@ ETK = {
 	color = rgb { 85 158 226 }
 	color_ui = rgb { 17 73 224 }
 }
+CAU = {
+	color = rgb { 100 100 136 }
+	color_ui = rgb { 110 110 136 }
+}
 D01 = {
 	color = rgb { 187 80 86 }
 	color_ui = rgb { 243 103 112 }

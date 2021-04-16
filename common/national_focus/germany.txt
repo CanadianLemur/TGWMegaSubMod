@@ -2489,6 +2489,32 @@ focus_tree = {
 		y = 1
 	}
 	focus = {
+		id = GER_ww1_war_plans_final_piece_of_the_german_nation
+		relative_position_id = GER_ww1_war_plans_great_german_state
+		prerequisite = { focus=GER_ww1_war_plans_great_german_state }
+		available = {}
+		icon = GFX_focus_attack_switzerland
+		completion_reward = {
+			declare_war_on = {
+				target = SWI
+				type = annex_everything
+			}
+			add_state_claim = 3
+			add_state_claim = 151
+			FRA = {country_event = MSMGermany.17 days = 1}
+		}
+		ai_will_do = { factor = 0 
+		modifier = {
+			add = 30
+			AUH = {exists = no}
+		}
+
+		}
+		cost = 10
+		x = 0
+		y = 1
+	}
+	focus = {
 		id = GER_ww1_war_plans_germany_for_germans
 		relative_position_id = GER_ww1_war_plans_great_german_state
 		prerequisite = { focus=GER_ww1_war_plans_great_german_state }
@@ -2500,7 +2526,7 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
-		x = 0
+		x = 2
 		y = 1
 	}
 	focus = {
@@ -2515,7 +2541,7 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 10 }
 		cost = 10
-		x = 2
+		x = 4
 		y = 1
 	}
 	focus = {
@@ -4664,7 +4690,7 @@ set_party_name = {
 			create_country_leader = {
 		name = "Kniaz Vasyl"
 		desc = "POLITICS_KNIAZ_VASYL_DESC"
-		picture = ".dds"
+		picture = "kniaz_vasyl.dds"
 		expire = "1948.1.1"
 		ideology = despotism
 		traits = {
@@ -4796,7 +4822,7 @@ set_party_name = {
 		create_country_leader = {
 		name = "King Genrikh"
 		desc = "POLITICS_PRINCE_HEINRICH_DESC"
-		picture = ".dds"
+		picture = "Henry.dds"
 		expire = "1930.1.1"
 		ideology = despotism
 		traits = {
@@ -5100,7 +5126,7 @@ set_party_name = {
 				create_country_leader = {
 					name = "Mindaugas II"
 					desc = "POLITICS_MINDAUGAS_II_DESC"
-					picture = ".dds"
+					picture = "mindaugas_II.dds"
 					expire = "1928.1.1"
 					ideology = despotism
 					traits = {
