@@ -112,9 +112,32 @@ ideas={
 
 			removal_cost = -1
 
-			modifier={ stability_factor=-0.10 }
+			modifier={
+				stability_factor=-0.10
+				army_attack_factor = -0.10
+				army_speed_factor = -0.05
+				army_org_factor = -0.3
+			}
 		}
+		AUH_ww1_Multinational_State_2 = {
 
+			allowed = {
+				original_tag = AUH
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier={
+				army_attack_factor = -0.05
+				army_speed_factor = -0.02
+				army_org_factor = -0.05
+			}
+		}
 
 		AUH_ww1_House_Habsburg_Lorraine = {
 

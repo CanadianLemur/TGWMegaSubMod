@@ -187,7 +187,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 120
-			remove_ideas = AUH_ww1_Multinational_State
+			swap_ideas = {
+				remove_idea = AUH_ww1_Multinational_State
+				add_idea = AUH_ww1_Multinational_State_2
+			}
 		}
 
 		ai_will_do = {	factor = 20	}
