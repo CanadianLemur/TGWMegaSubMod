@@ -1,5 +1,18 @@
 ﻿capital = 327
-oob = "PHI_1910"
+set_cosmetic_tag = PHI_US
+1910.1.1 = {
+	oob = "PHI_1910"
+	set_popularities = {
+		democratic = 50
+		fascism = 0
+		communism = 0
+		neutrality = 50
+	}
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1910.1.1"
+		election_frequency = 72
+		elections_allowed = no
 	}
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -79,7 +92,7 @@ set_popularities = {
     communism = 9
     neutrality = 0
 }
-
+}
 set_stability=0.75
 set_convoys=5
 1914.1.1 = { oob="PHI_1914" }

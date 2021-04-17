@@ -235,6 +235,14 @@ country_event = {  #### dismantlement of AUH ####
 		transfer_state = 88
 		transfer_state = 72
 		}
+		else = {
+		GER = {
+		transfer_state = 91
+		transfer_state = 89
+		transfer_state = 88
+		transfer_state = 72
+		}
+		}
 		}
 	CRO = {
 	transfer_state = 103

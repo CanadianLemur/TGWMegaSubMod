@@ -822,3 +822,65 @@ country_event = {
 		RUS = {release = KAZ}
 	}
 }
+####A King for Ireland?####
+country_event = {
+	id =  MSM_WKV_Germany.5
+	title = MSM_WKV_Germany.5.t
+	desc = MSM_WKV_Germany.5.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = no
+	is_triggered_only = yes
+#### Accept
+	option = {
+		name = MSM_WKV_Germany.5.a
+		ai_chance = { factor = 2 
+			modifier = {
+			check_variable = {
+			german_irish_support = 1
+			}
+			factor = 10
+			}
+
+		}
+		create_country_leader = {
+			name = "Ard Rí Ioaichím"
+			desc = "POLITICS_PRINCE_JOACHIM_DESC"
+			picture = "joachim.dds"
+			expire = "1950.1.1"
+			ideology = despotism
+			traits = {	}
+			}
+		create_country_leader = {
+			name = "Ard Rí Ioaichím"
+			desc = "POLITICS_PRINCE_JOACHIM_DESC"
+			picture = "joachim.dds"
+			expire = "1950.1.1"
+			ideology = conservatism
+			traits = {	}
+			}
+		set_cosmetic_tag = IREHOH
+		GER = {
+		diplomatic_relation = {
+    country = IRE
+    relation = guarantee
+    active = yes
+}
+		}
+	}
+#### Deny
+	option = {
+		name = MSM_WKV_Germany.5.b
+		ai_chance = { factor = 0 
+				modifier = {
+				check_variable = {
+				german_irish_support = 2
+				}
+				factor = 10
+				}
+
+		
+		}
+		
+	}
+}

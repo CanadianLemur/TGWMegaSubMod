@@ -4624,7 +4624,7 @@ set_party_name = {
 			factor = 10	
 		}
 		completion_reward = {
-			add_political_power = 100
+			IRE = {country_event = MSM_WKV_Germany.5}
 
 		}
 	}

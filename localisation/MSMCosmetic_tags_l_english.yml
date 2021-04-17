@@ -76,8 +76,11 @@
  FRAROI_fascism:0"Kingdom of France"
  FRAROI_fascism_DEF:0"The Kingdom of France"
  FRAROI_democratic:0"Kingdom of France"
- FRAROI_democratic_DEF:0"Kingdom of France"
- 
+ FRAROI_democratic_DEF:0"The Kingdom of France"
+ IREHOH_neutrality:0"Kingdom of Ireland"
+ IREHOH_neutrality_DEF:0"The Kingdom of Ireland"
+ IREHOH_democratic:0"Kingdom of Ireland"
+ IREHOH_democratic_DEF:0"The Kingdom of Ireland"
  MEX_diaz_mexico:0 "Federal Mexico"
  MEX_diaz_mexico_DEF:0 "The Federal Government of Mexico"
  MEX_diaz_mexico_ADJ:0 "Federal Mexican"
