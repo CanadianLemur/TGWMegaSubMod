@@ -818,6 +818,28 @@ country_event = {
 		add_state_core = 402
 		add_state_core = 589
 		set_cosmetic_tag = turkic_federation
+		create_country_leader = {
+			name = "Alikhan Bukeikhanov"
+			desc = "ALIKHAN_BUKEIKHANOV_DESC"
+			picture = ".dds"
+			expire = "1937.1.1"
+			ideology = despotism
+			traits = {
+				
+			}
+		}
+		set_politics = {
+		ruling_party = neutrality
+        elections_allowed = no
+        last_election = "1910.1.1"
+        election_frequency = 48
+		}
+		set_popularities = {
+			democratic = 35
+			neutrality = 55
+			fascism = 0
+			communism = 10
+		}
 		}
 		RUS = {release = KAZ}
 	}
