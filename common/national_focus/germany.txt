@@ -4768,7 +4768,10 @@ set_party_name = {
 			factor = 10	
 		}
 		completion_reward = {
-			add_political_power = 100
+			create_wargoal = {
+    type = annex_everything
+    target = SOV
+}
 
 		}
 	}

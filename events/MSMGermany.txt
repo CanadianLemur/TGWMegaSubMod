@@ -421,6 +421,7 @@ country_event = {
 		}
 		GER = {
 		add_to_faction = IRE
+		add_political_power = -20
 		load_oob = "GER_irish_expeditionary_force"
 		send_equipment = {
 			equipment = infantry_equipment

@@ -12,6 +12,7 @@
  VICTORY_POINTS_11225:0"Samara"
  VICTORY_POINTS_8039:0 "Tamale"
  VICTORY_POINTS_11752:0 "Zhangbei"
+ VICTORY_POINTS_8207:0"Libreville"
  
  ###Gun Carrier Mark I is used earlier, so cannot be used later 
  AST_heavy_tank_artillery_equipment_1:0 "Heavy SP Artillery I"
