@@ -2561,7 +2561,7 @@ technologies = {
 	MSM_new_armored_car_role = {
 		allow_branch = { has_dlc = "La Resistance" }
 		enable_subunits = {
-		armored_car_recon
+			armored_car_recon
 		}
 		armored_car = {
 			suppression = 2.5

@@ -61,7 +61,7 @@ spriteTypes = {
 		name = "GFX_EMI_MSM_light_ship_engine_1"
 		texturefile = "gfx/interface/equipmentdesigner/naval/modules/icons/coal_engine_1.dds"
 	}
-		SpriteType = {
+	SpriteType = {
 		name = "GFX_EMI_MSM_light_ship_engine_2"
 		texturefile = "gfx/interface/equipmentdesigner/naval/modules/icons/coal_engine_2.dds"
 	}
@@ -69,18 +69,106 @@ spriteTypes = {
 		name = "GFX_EMI_MSM_heavy_ship_engine_1"
 		texturefile = "gfx/interface/equipmentdesigner/naval/modules/icons/coal_engine_1.dds"
 	}
-		SpriteType = {
+	SpriteType = {
 		name = "GFX_EMI_MSM_heavy_ship_engine_2"
 		texturefile = "gfx/interface/equipmentdesigner/naval/modules/icons/coal_engine_2.dds"
 	}
+	
 	SpriteType = {
 		name = "GFX_improved_depth_charges_medium"
 		texturefile = "gfx/interface/technologies/improved_depth_charges.dds"
 	}
-	
 	SpriteType = {
 		name = "GFX_MSM_improved_depth_charges_medium"
 		texturefile = "gfx/interface/technologies/MSM_improved_depth_charges.dds"
+	}
+	SpriteType = {
+		name = "GFX_MSM_improved_depth_charges_medium"
+		texturefile = "gfx/interface/technologies/MSM_improved_depth_charges.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_EMI_MSM_sub_ship_engine_1"
+		texturefile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_PW.dds"
+	}
+	SpriteType = {
+		name = "GFX_EMI_MSM_sub_ship_engine_2"
+		texturefile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_GW.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_EMI_MSM_ship_torpedo_1"
+		texturefile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_torpedo_launcher_icn_PW.dds"
+	}
+	SpriteType = {
+		name = "GFX_EMI_MSM_ship_torpedo_2"
+		texturefile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_torpedo_launcher_icn_GW.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_EMI_MSM_ship_torpedo_sub_1"
+		texturefile = "gfx/interface/equipmentdesigner/naval/modules/icons/sub_torpedo_launcher_icn_PW.dds"
+	}
+	SpriteType = {
+		name = "GFX_EMI_MSM_ship_torpedo_sub_2"
+		texturefile = "gfx/interface/equipmentdesigner/naval/modules/icons/sub_torpedo_launcher_icn_GW.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_EMI_MSM_ship_light_battery_1"
+		texturefile = "gfx/interface/equipmentdesigner/naval/modules/icons/light_battery_icn_PW.dds"
+	}
+	SpriteType = {
+		name = "GFX_EMI_MSM_ship_light_battery_2"
+		texturefile = "gfx/interface/equipmentdesigner/naval/modules/icons/light_battery_icn_GW.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_EMI_MSM_ship_medium_battery_1"
+		texturefile = "gfx/interface/equipmentdesigner/naval/modules/icons/medium_battery_icn_PW.dds"
+	}
+	SpriteType = {
+		name = "GFX_EMI_MSM_ship_medium_battery_2"
+		texturefile = "gfx/interface/equipmentdesigner/naval/modules/icons/medium_battery_icn_GW.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_EMI_MSM_ship_light_medium_battery_1"
+		texturefile = "gfx/interface/equipmentdesigner/naval/modules/icons/medium_light_battery_icn_PW.dds"
+	}
+	SpriteType = {
+		name = "GFX_EMI_MSM_ship_light_medium_battery_2"
+		texturefile = "gfx/interface/equipmentdesigner/naval/modules/icons/medium_light_battery_icn_GW.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_EMI_MSM_ship_heavy_battery_1"
+		texturefile = "gfx/interface/equipmentdesigner/naval/modules/icons/heavy_battery_icn_PW.dds"
+	}
+	SpriteType = {
+		name = "GFX_EMI_MSM_ship_heavy_battery_2"
+		texturefile = "gfx/interface/equipmentdesigner/naval/modules/icons/heavy_battery_icn_GW.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_EMI_MSM_ship_secondaries_1"
+		texturefile = "gfx/interface/equipmentdesigner/naval/modules/icons/secondary_battery_icn_PW.dds"
+	}
+	SpriteType = {
+		name = "GFX_EMI_MSM_ship_secondaries_2"
+		texturefile = "gfx/interface/equipmentdesigner/naval/modules/icons/secondary_battery_icn_GW.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_mtg_early_transport_medium"
+		texturefile = "gfx/interface/technologies/early_transport.dds"
+	}
+	
+	#####Infantry#####
+	
+	SpriteType = {
+		name = "GFX_MSM_new_armored_car_role_medium"
+		texturefile = "gfx/interface/technologies/armored_car.dds"
 	}
 	
 }

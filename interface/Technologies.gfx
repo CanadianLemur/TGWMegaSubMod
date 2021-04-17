@@ -6961,5 +6961,4 @@ spriteTypes = {
 		name = "GFX_heavy_navalmodule_1918_medium"
 		texturefile = "gfx/interface/technologies/hoi4tgw/naval/ww1_naval_seaplane.dds"
 	}
-
 }
