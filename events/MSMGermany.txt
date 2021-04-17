@@ -377,6 +377,7 @@ news_event = {
 		trigger = { TAG = GER }
 	}
 }
+#### French Reaction to German invasion of Switzerland
 country_event = {
 	id =  MSMGermany.17
 	title = MSMGermany.17.t
@@ -394,6 +395,72 @@ country_event = {
     enemy = GER
     hostility_reason = asked_to_join
 }
+	}
+}
+#### Easter Rising ####
+country_event = {
+	id =  MSMGermany.18
+	title = MSMGermany.18.t
+	desc = MSMGermany.18.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	#### Fully support the Irish Uprising with an expeditionary force
+	option = {
+		name = MSMGermany.18.a
+		ai_chance = {
+			factor = 100
+		}
+		IRE = {
+		set_state_owner = 113
+		set_province_controller = 11293
+		load_oob = "IRE_easter_rising"
+		declare_war_on = {
+			target = ENG
+			type = annex_everything
+		}
+		}
+		GER = {
+		add_to_faction = IRE
+		load_oob = "GER_irish_expeditionary_force"
+		send_equipment = {
+			equipment = infantry_equipment
+			amount = 1500
+			target = IRE
+		}
+		}
+		set_variable = {
+			var = german_irish_support
+			value = 1
+		}
+
+	}
+	#### Just send arms and ammunition
+	option = {
+		name = MSMGermany.18.b
+		ai_chance = {
+			factor = 100
+		}
+		IRE = {
+		set_state_owner = 113
+		set_province_controller = 11293
+		load_oob = "IRE_easter_rising"
+		declare_war_on = {
+			target = ENG
+			type = annex_everything
+		}
+		}
+		GER = {
+		add_to_faction = IRE
+		send_equipment = {
+			equipment = infantry_equipment
+			amount = 1500
+			target = IRE
+		}
+		}
+		set_variable = {
+			var = german_irish_support
+			value = 2
+		}
 	}
 }
 ####Fate of Lithuania####

@@ -1218,7 +1218,78 @@ country_event = {
 					transfer_state = 44		# ALBANIA
 				}
 			}
-			
+			#Switzerland
+			if = {
+				limit = {
+					GER = {
+						has_war_with = SWI
+					}
+				}
+				GER = {
+				annex_country = {
+				target = SWI
+				transfer_troops = no
+				}
+				
+				}
+				}
+			#Consequences of Easter Uprising (Free Ireland)
+			if = {
+				limit = {
+					IRE = {
+						has_war_with = ENG
+						is_in_faction_with = GER
+						NOT = {
+							IRE = { owns_state = 119 }
+						}
+					}
+				}
+				IRE = {
+					transfer_state = 119		# Northern Ireland
+				}
+			}
+			if = {
+				limit = {
+					IRE = {
+						has_war_with = ENG
+						is_in_faction_with = GER
+						NOT = {
+							IRE = { owns_state = 134 }
+						}
+					}
+				}
+				IRE = {
+					transfer_state = 134 # Connaught
+				}
+			}
+			if = {
+				limit = {
+					IRE = {
+						has_war_with = ENG
+						is_in_faction_with = GER
+						NOT = {
+							IRE = { owns_state = 135 }
+						}
+					}
+				}
+				IRE = {
+					transfer_state = 135 # Munster
+				}
+			}
+			if = {
+				limit = {
+					IRE = {
+						has_war_with = ENG
+						is_in_faction_with = GER
+						NOT = {
+							IRE = { owns_state = 113 }
+						}
+					}
+				}
+				IRE = {
+					transfer_state = 113		# Dublin in case Ireland came out some other way
+				}
+			}
 			#The Netherlands is in Central Powers (by Khanor)
 			if = {
 				limit = {

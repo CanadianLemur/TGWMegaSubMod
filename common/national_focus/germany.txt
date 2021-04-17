@@ -1129,7 +1129,7 @@ focus_tree = {
 		relative_position_id = GER_ww1_anti_uk
 		prerequisite = { focus = GER_ww1_anti_uk }
 		icon = GFX_focus_generic_support_the_left_right
-		completion_reward = {  }##Irish Uprising event, choose level of support, more support will lead to greater relations with ireland in the interwar period
+		completion_reward = { country_event = MSMGermany.18 }
 		available = { 
 	 		ENG = {
 	 			exists = yes
@@ -4833,6 +4833,8 @@ set_party_name = {
 		}
 		completion_reward = {
 		BLR = {
+		inherit_technology = RUS
+		inherit_technology = SOV
 		transfer_state = 206
 		add_state_core = 206
 		transfer_state = 207
@@ -4903,6 +4905,8 @@ set_party_name = {
 		}
 		completion_reward = {
 		CAU = {
+		inherit_technology = RUS
+		inherit_technology = SOV
 		add_state_core = 229
 		add_state_core = 230
 		add_state_core = 231
@@ -4990,6 +4994,8 @@ set_party_name = {
 		}
 		completion_reward = {
 		DKU = {
+		inherit_technology = RUS
+		inherit_technology = SOV
 		transfer_state = 218
 		add_state_core = 218
 		transfer_state = 234
@@ -5057,6 +5063,8 @@ set_party_name = {
 		}
 		completion_reward = {
 		SAR = {
+		inherit_technology = RUS
+		inherit_technology = SOV
 		add_state_core = 239
 		add_state_core = 401
 		add_state_core = 251
