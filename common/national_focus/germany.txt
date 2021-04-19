@@ -5284,7 +5284,7 @@ set_party_name = {
 		}
 
 		x = -9
-		y = 1
+		y = 2
 
 		cost = 10
 
@@ -5410,7 +5410,7 @@ set_party_name = {
 		}
 
 		x = 23
-		y = 2
+		y = 3
 
 		cost = 10
 
@@ -5914,7 +5914,7 @@ set_party_name = {
 		}
 
 		x = 0
-		y = 1
+		y = 2
 
 		cost = 10
 
@@ -5940,7 +5940,7 @@ set_party_name = {
 		id = GER_four_year_plan
 		icon = GFX_goal_generic_construction
 		x = 6
-		y = 16
+		y = 18
 		cost = 10
 		ai_will_do = {
 			factor = 12
@@ -10337,7 +10337,7 @@ set_party_name = {
 		icon = GFX_goal_generic_build_navy
 		relative_position_id = GER_interwar_anglo_german_navy_agreement
 		x = 13
-		y = 3
+		y = 4
 		cost = 5
 		ai_will_do = {
 			factor = 1
