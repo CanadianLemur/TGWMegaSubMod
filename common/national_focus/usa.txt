@@ -19,72 +19,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = USA_ww1_john_rockefeller_conglomerate
-		icon = GFX_focus_generic_industry_2
-		cost = 5
-		relative_position_id = USA_ww1_political_effort
-		prerequisite = { focus = USA_ww1_political_effort }
-		x = -3
-		y = 2
-		completion_reward = {
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = USA_john_rockefeller
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = ROOT
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = fuel_silo
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = USA_john_rockefeller_conglomerate
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = ROOT
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = synthetic_refinery
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = USA_john_rockefeller_conglomerate
-			}
-		}
-	}
-
-	focus = {
-		id = USA_ww1_expand_standard_oil_influence
-		icon = GFX_goal_generic_oil_refinery
-		relative_position_id = USA_ww1_john_rockefeller_conglomerate
-		cost = 5
-		prerequisite = {
-			focus = USA_ww1_john_rockefeller_conglomerate
-		}
-		x = 0
-		y = 1
-		completion_reward = {
-			custom_effect_tooltip = available_industrial_concern
-			show_ideas_tooltip = standard_oil_california
-		}
-	}
-
-
-
-	focus = {
 		id = USA_ww1_UnderwoodTariffAct
 		prerequisite = { focus=USA_ww1_political_effort }
 		icon = GFX_goal_generic_construct_civ_factory
@@ -1295,16 +1229,384 @@ focus_tree = {
 		x = 0
 		y = 2
 	}
-	#-----------------------------------------
+	#####MSM Tree Start
+	
+	#####Historical Wilson Tree
+	focus = {
+		id = USA_MSM_elect_wilson
+		relative_position_id = USA_ww1_diplomatic_effort
+		mutually_exclusive = { focus = USA_MSM_elect_roosevelt }
+		icon = 
+		completion_reward = { add_political_power = 50 }
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 12
+		y = 0
+	}
+	focus = {
+		id = USA_MSM_promise_neutrality
+		prerequisite = { focus = USA_MSM_elect_wilson }
+		relative_position_id = USA_MSM_elect_wilson
+		icon = 
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 3
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_new_southern_cabinet
+		prerequisite = { focus = USA_MSM_promise_neutrality }
+		relative_position_id = USA_MSM_promise_neutrality
+		icon = 
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = -3
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_federal_jim_crow_imposition
+		prerequisite = { focus = USA_MSM_new_southern_cabinet }
+		relative_position_id = USA_MSM_new_southern_cabinet
+		icon = 
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_historian_credentials
+		prerequisite = { focus = USA_MSM_new_southern_cabinet }
+		relative_position_id = USA_MSM_new_southern_cabinet
+		icon = 
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_ignore_korean_annexation
+		prerequisite = { focus = USA_MSM_promise_neutrality }
+		relative_position_id = USA_MSM_promise_neutrality
+		icon = 
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 0
+		y = 2
+	}
+	focus = {
+		id = USA_MSM_found_a_central_bank
+		prerequisite = { focus = USA_MSM_promise_neutrality }
+		relative_position_id = USA_MSM_promise_neutrality
+		icon = 
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 1
+		y = 1
+	}
+	
+	focus = {
+		id = USA_MSM_new_freedom
+		prerequisite = { focus = USA_MSM_elect_wilson }
+		relative_position_id = USA_MSM_elect_wilson
+		icon = 
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = -3
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_underwood_tariff_act
+		prerequisite = { focus = USA_MSM_new_freedom }
+		relative_position_id = USA_MSM_new_freedom
+		icon = 
+		completion_reward = {
+			#Put on free trade
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = -2
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_new_federal_tax
+		prerequisite = { focus = USA_MSM_underwood_tariff_act }
+		relative_position_id = USA_MSM_underwood_tariff_act
+		icon = 
+		completion_reward = {
+			#consumer goods buff
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_clayton_antitrust_act
+		prerequisite = { focus = USA_MSM_new_freedom }
+		relative_position_id = USA_MSM_new_freedom
+		icon = 
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 0
+		y = 2
+	}
+	focus = {
+		id = USA_MSM_fight_monopolies
+		prerequisite = { focus = USA_MSM_clayton_antitrust_act }
+		relative_position_id = USA_MSM_clayton_antitrust_act
+		mutually_exclusive = { focus = USA_MSM_work_with_monopolies }
+		icon = 
+		completion_reward = {
+			add_stability = -0.05
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_american_railroads
+		prerequisite = { focus = USA_MSM_fight_monopolies }
+		relative_position_id = USA_MSM_fight_monopolies
+		icon = 
+		completion_reward = {
+			#Debuff to building infrastructure, gain stability/support in senate
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_non_standard_oil
+		prerequisite = { focus = USA_MSM_american_railroads }
+		relative_position_id = USA_MSM_american_railroads
+		icon = 
+		completion_reward = {
+			#Research bonus to refining tech, harder to build refineries
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 0
+		y = 2
+	}
+	focus = {
+		id = USA_MSM_target_the_banks
+		prerequisite = { focus = USA_MSM_non_standard_oil focus = USA_MSM_separate_steelworks }
+		relative_position_id = USA_MSM_non_standard_oil
+		icon = 
+		completion_reward = {
+			#Large hit to senate support, consumer goods boost
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_separate_steelworks
+		prerequisite = { focus = USA_MSM_fight_monopolies }
+		relative_position_id = USA_MSM_fight_monopolies
+		icon = 
+		completion_reward = {
+			#Remove some steel in some states and gain a consumer goods buff
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 1
+		y = 2
+	}
+	
+	focus = {
+		id = USA_MSM_work_with_monopolies
+		prerequisite = { focus = USA_MSM_clayton_antitrust_act }
+		relative_position_id = USA_MSM_clayton_antitrust_act
+		mutually_exclusive = { focus = USA_MSM_fight_monopolies }
+		icon = 
+		completion_reward = {
+			#Lets you do the john rockefeller and standard oil focuses
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = USA_ww1_john_rockefeller_conglomerate
+		icon = GFX_focus_generic_industry_2
+		cost = 5
+		relative_position_id = USA_MSM_work_with_monopolies
+		prerequisite = { focus = USA_MSM_work_with_monopolies }
+		x = 0
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = USA_john_rockefeller
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = fuel_silo
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = USA_john_rockefeller_conglomerate
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = USA_john_rockefeller_conglomerate
+			}
+		}
+	}
+	focus = {
+		id = USA_MSM_subsidized_rail
+		prerequisite = { focus = USA_ww1_john_rockefeller_conglomerate }
+		relative_position_id = USA_ww1_john_rockefeller_conglomerate
+		icon = 
+		completion_reward = {
+			#Bonus to building rail, hit to consumer goods
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_combined_vertical_integration
+		prerequisite = { focus = USA_MSM_subsidized_rail }
+		relative_position_id = USA_MSM_subsidized_rail
+		icon = 
+		completion_reward = {
+			#Add 2 civilian factories
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_wall_street_preference
+		prerequisite = { focus = USA_MSM_combined_vertical_integration }
+		relative_position_id = USA_MSM_combined_vertical_integration
+		icon = 
+		completion_reward = {
+			#Civilian factory buff
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = USA_ww1_expand_standard_oil_influence
+		icon = GFX_goal_generic_oil_refinery
+		relative_position_id = USA_ww1_john_rockefeller_conglomerate
+		cost = 5
+		prerequisite = {
+			focus = USA_ww1_john_rockefeller_conglomerate
+		}
+		x = 1
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip = available_industrial_concern
+			show_ideas_tooltip = standard_oil_california
+		}
+	}
+	focus = {
+		id = USA_MSM_detroit_steel
+		prerequisite = { focus = USA_ww1_expand_standard_oil_influence }
+		relative_position_id = USA_ww1_expand_standard_oil_influence
+		icon = 
+		completion_reward = {
+			#Add 2 civilian factories in detroit
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 0
+		y = 2
+	}
+	focus = {
+		id = USA_MSM_ford_motor_company
+		prerequisite = { focus = USA_MSM_wall_street_preference focus = USA_MSM_detroit_steel}
+		relative_position_id = USA_MSM_wall_street_preference
+		icon = 
+		completion_reward = {
+			#motorized research bonus, make ford available as a matterials designer with buffs to armored cars and motorized
+		}
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 1
+		y = 1
+	}
+	
+	focus = {
+		id = USA_MSM_elect_roosevelt
+		relative_position_id = USA_MSM_elect_wilson
+		mutually_exclusive = { focus = USA_MSM_elect_wilson }
+		icon = 
+		completion_reward = { add_political_power = 50 }
+		ai_will_do = { factor = 10 }
+		cost = 10
+		x = 2
+		y = 0
+	}
 
+	#####MSM End
+
+	#-------------------------------------
+	
 	focus = {
 		id = USA_ww1_army_effort
-		relative_position_id = USA_ww1_diplomatic_effort
+		relative_position_id = USA_MSM_elect_roosevelt
 		icon = GFX_goal_generic_allies_build_infantry
 		completion_reward = { army_experience=15 add_tech_bonus={ name=land_doc_bonus bonus=0.2 uses=1 category=land_doctrine } }
 		ai_will_do = { factor = 10 }
 		cost = 10
-		x = 9
+		x = 11
 		y = 0
 	}
 	
