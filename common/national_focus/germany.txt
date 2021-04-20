@@ -5284,7 +5284,7 @@ set_party_name = {
 		}
 
 		x = -9
-		y = 2
+		y = 1
 
 		cost = 10
 
@@ -5409,8 +5409,8 @@ set_party_name = {
 			has_global_flag = kis_treaty_of_versailles
 		}
 
-		x = 23
-		y = 3
+		x = 24
+		y = 1
 
 		cost = 10
 
@@ -5795,7 +5795,7 @@ set_party_name = {
 			has_global_flag = interwar_hitler_putsch_success
 		}
 
-		x = 0
+		x = -1
 		y = 1
 
 		cost = 10
@@ -5817,15 +5817,15 @@ set_party_name = {
 
 		icon = GFX_goal_generic_forceful_treaty
 
-		relative_position_id = GER_interwar_mein_kampf
-		prerequisite = { focus = GER_interwar_mein_kampf }
+		relative_position_id = GER_interwar_beer_hall_putsch
+		prerequisite = { focus = GER_interwar_beer_hall_putsch }
 
 		available = {
 			has_war = no
 			is_puppet = no
 		}
 
-		x = 0
+		x = 1
 		y = 1
 
 		cost = 10
@@ -5872,13 +5872,13 @@ set_party_name = {
 		icon = GFX_focus_ger_reichskommisariats
 
 		relative_position_id = GER_interwar_hitler_chancellor
-		prerequisite = { focus = GER_interwar_hitler_chancellor }
+		prerequisite = { focus = GER_interwar_hitler_chancellor focus = GER_interwar_mein_kampf }
 
 		available = {
 			has_government = fascism
 		}
 
-		x = 0
+		x = -1
 		y = 1
 
 		cost = 10
@@ -5904,7 +5904,7 @@ set_party_name = {
 
 		icon = GFX_hoi4tgw_knifeintheback
 
-		relative_position_id = GER_interwar_hitler_chancellor
+		relative_position_id = GER_interwar_Reichstag_Fire_Decree
 		prerequisite = { focus = GER_interwar_Reichstag_Fire_Decree }
 
 		available = {
@@ -5914,7 +5914,7 @@ set_party_name = {
 		}
 
 		x = 0
-		y = 2
+		y = 1
 
 		cost = 10
 
@@ -5939,12 +5939,13 @@ set_party_name = {
 	focus = {
 		id = GER_four_year_plan
 		icon = GFX_goal_generic_construction
-		x = 6
-		y = 18
+		x = -10
+		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 12
 		}
+		relative_position_id = GER_interwar_quietly_break_disarmament_treaties
 		prerequisite = {focus = GER_interwar_quietly_break_disarmament_treaties}
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -7970,12 +7971,13 @@ set_party_name = {
 		id = GER_air_innovation
 		text = air_innovation
 		icon = GFX_goal_generic_build_airforce
-		x = 16
-		y = 16
+		x = 0
+		y = 1
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
+		relative_position_id = GER_interwar_air_training_in_the_soviet_union
 		prerequisite = {focus = GER_interwar_air_training_in_the_soviet_union}
 
 		available_if_capitulated = yes
