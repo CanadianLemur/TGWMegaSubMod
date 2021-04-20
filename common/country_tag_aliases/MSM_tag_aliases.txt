@@ -22,3 +22,16 @@ MXE = {  ##Magonista Uprising
 	original_tag = MEX
 	has_country_flag = MEX_magonista_flag
 }
+
+AFL = {  ##French Freedom Army
+	original_tag = FRA
+	has_country_flag = french_democratic_rebellion
+}
+ACF = {	 ##French Communist Army
+	original_tag = FRA
+	has_country_flag = french_communist_rebellion
+}
+AFA = {	 ##Action Francaise Army
+	original_tag = FRA
+	has_country_flag = french_fascist_rebellion
+}

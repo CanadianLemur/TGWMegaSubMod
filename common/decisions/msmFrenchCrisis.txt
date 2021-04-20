@@ -14,7 +14,27 @@ French_civil_unrest = {
 		ai_will_do = { factor = 100 } 
 		selectable_mission = no               
 		days_mission_timeout = 10
-		timeout_effect = { 
+		timeout_effect = {
+			create_dynamic_country = {
+					original_tag = FRA
+					set_country_flag = french_communist_rebellion
+					set_politics = {
+						ruling_party = communism
+					}
+					set_cosmetic_tag = ACF
+					set_research_slots = 3
+					reserve_dynamic_country = yes
+				}
+			create_dynamic_country = {
+					original_tag = FRA
+					set_country_flag = french_democratic_rebellion
+					set_politics = {
+						ruling_party = democratic
+					}
+					set_cosmetic_tag = AFL
+					set_research_slots = 3
+					reserve_dynamic_country = yes
+				}		
 	if = {
 		limit = {owns_state = 29} 
 	ACF = {	transfer_state = 29 
@@ -46,6 +66,16 @@ French_civil_unrest = {
 		}
 		}
 	if = { limit = {NOT = {has_completed_focus = FRA_crisis_alliance_with_action_francaise}}
+	create_dynamic_country = {
+					original_tag = FRA
+					set_country_flag = french_fascist_rebellion
+					set_politics = {
+						ruling_party = fascism
+					}
+					set_cosmetic_tag = AFA
+					set_research_slots = 3
+					reserve_dynamic_country = yes
+				}
 	if = {
 		limit = {owns_state = 14}
 	AFA = {	transfer_state = 14

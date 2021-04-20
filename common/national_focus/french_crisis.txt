@@ -1,7 +1,7 @@
 focus_tree = {
 	id = france_crisis
 	default = no
-	country = { factor=0  }
+	country = { factor=0 modifier = { add = 20 tag = FRA has_global_flag = kis_second_treaty_frankfort }  }
 
 	###########################################################################################################################
 	# POLITICAL
@@ -89,6 +89,27 @@ focus_tree = {
 		completion_reward = {  
 		custom_effect_tooltip = start_civil_war
 		hidden_effect ={
+			create_dynamic_country = {
+					original_tag = FRA
+					set_country_flag = french_communist_rebellion
+					set_politics = {
+						ruling_party = communism
+					}
+					set_cosmetic_tag = ACF
+					set_research_slots = 3
+					reserve_dynamic_country = yes
+				}
+			create_dynamic_country = {
+					original_tag = FRA
+					set_country_flag = french_democratic_rebellion
+					set_politics = {
+						ruling_party = democratic
+					}
+					set_cosmetic_tag = AFL
+					set_research_slots = 3
+					reserve_dynamic_country = yes
+				}
+
 		if = {
 		limit = {owns_state = 29}
 	ACF = {	transfer_state = 29 
@@ -120,6 +141,16 @@ focus_tree = {
 		}
 		}
 	if = { limit = {NOT = {has_completed_focus = FRA_crisis_alliance_with_action_francaise}}
+			create_dynamic_country = {
+					original_tag = FRA
+					set_country_flag = french_fascist_rebellion
+					set_politics = {
+						ruling_party = fascism
+					}
+					set_cosmetic_tag = AFA
+					set_research_slots = 3
+					reserve_dynamic_country = yes
+				}
 	if = {
 		limit = {owns_state = 14}
 	AFA = {	transfer_state = 14
