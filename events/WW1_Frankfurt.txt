@@ -1386,7 +1386,7 @@ country_event = {
 				}
 
 				SWE = {
-					transfer_state = 247		# Ghana (Added by Ecrfour)
+					transfer_state = 274		# Ghana (Added by Ecrfour)
 				}
 			}
 			if = {

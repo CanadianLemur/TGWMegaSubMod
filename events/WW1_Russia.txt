@@ -139,7 +139,7 @@ news_event = {
 				has_government = communism
 			}
 			
-			surrender_progress > 0.35
+			surrender_progress > 0.25
 			
 #			NOT = {	controls_state = 98 }
 #			NOT = {	controls_state = 10 }
