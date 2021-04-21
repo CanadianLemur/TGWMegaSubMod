@@ -1,0 +1,8 @@
+﻿l_english:
+ MSM_news.1.t:0"The Fall of Paris"
+ MSM_news.1.d:0"Despite valiant defensive efforts by Entente forces, Paris has fallen into German hands once again, dealing a devastating blow to French morale.\n\nLike in 1870, Germany avoided direct confrontations by shelling defensive positions in the city. Entente forces launched several counterattacks, which ultimately proved fruitless.\n\nThough [FRA.GetLeader] has urged his people to fight on, most believe the fall of the City of Lights spells the end of the war effort."
+ MSM_news.1.a:0"It seems the spirit of von Moltke still lives."
+ MSM_news.1.b:0"Sieg im Westen!"
+ MSM_news.1.c:0"Sacre bleu!"
+ MSM_news.1.e:0"We must mount a counter-offensive!"
+ MSM_news.1.f:0"Three cheers for [GER.GetNameDef]!"

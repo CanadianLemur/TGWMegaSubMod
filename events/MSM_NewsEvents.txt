@@ -1,0 +1,64 @@
+﻿add_namespace = MSM_news
+
+# The Fall of Paris (Germany) WWI
+news_event = {
+	id = MSM_news.1
+	title = MSM_news.1.t
+	desc = MSM_news.1.d
+	picture = GFX_news_event_german_soldiers
+	
+	major = yes
+	
+	trigger = {
+		16 = { is_controlled_by = GER }
+		16 = { is_owned_by = FRA }
+		FRA = { has_war_with = GER }
+		NOT = { has_global_flag = fall_of_paris_ger_ww1 }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_paris_ger_ww1
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = MSM_news.1.a
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = FRA
+				is_in_faction_with = GER
+				is_in_faction_with = FRA
+			}
+		}
+	}
+	option = {
+		name = MSM_news.1.b
+		trigger = { TAG = GER }
+	}
+	option = {
+		name = MSM_news.1.c
+		trigger = { TAG = FRA }
+	}
+	option = {
+		name = MSM_news.1.e
+		trigger = {
+			NOT = {
+				TAG = FRA
+			}
+		is_in_faction_with = FRA
+		}
+	}
+	option = {
+		name = MSM_news.1.f
+		trigger = {
+			NOT = {
+				TAG = GER
+			}
+		is_in_faction_with = GER
+		}
+	}
+}
