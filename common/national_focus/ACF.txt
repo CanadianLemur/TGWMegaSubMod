@@ -1,8 +1,7 @@
 focus_tree = {
 	id = french_communist_army
 	default = no
-	country = { factor=0 modifier = { add = 0 tag = ACF } }
-	#disabled for now
+	country = { factor=0 modifier = { add = 30 has_country_flag = french_communist_rebellion } }
 	###########################################################################################################################
 	# POLITICAL
 	###########################################################################################################################
@@ -10,7 +9,9 @@ focus_tree = {
 	focus = {
 		id = ACF_legacy_of_the_paris_commune
 		icon = GFX_goal_support_communism
-		completion_reward = {  }
+		completion_reward = {  
+		add_ideas = MSM_FRA_legacy_of_the_paris_commune
+		}
 		ai_will_do = { factor = 20 }
 		cost = 2
 		x = 10
@@ -20,7 +21,15 @@ focus_tree = {
 		id = ACF_revolution_triumphant
 		icon = GFX_goal_support_communism
 		prerequisite = {focus = ACF_legacy_of_the_paris_commune}
-		completion_reward = {  }
+		available = {
+		controls_state = 16
+		controls_state = 21 
+		controls_state = 30
+		controls_state = 19
+		}
+		completion_reward = { set_cosmetic_tag = FRA 
+		set_capital = 16
+		}
 		ai_will_do = { factor = 20 }
 		cost = 10
 		x = 10
@@ -40,6 +49,66 @@ focus_tree = {
 		cost = 10
 		x = 14
 		y = 2
+	}
+	focus = {
+		id = ACF_join_comintern
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		prerequisite = {focus = ACF_revolution_triumphant}
+		available = {SOV = {exists = yes is_faction_leader = yes}}
+		completion_reward = {  
+		SOV = {country_event = generic.2}
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		mutually_exclusive = {focus = ACF_found_the_internationale}
+		x = 6
+		y = 2
+	}
+	focus = {
+		id = ACF_paris_moscow_research_cooperation
+		icon = GFX_goal_tfv_generic_tech_sharing
+		prerequisite = {focus = ACF_join_comintern}
+		available = {is_in_faction_with = SOV}
+		completion_reward = {  
+		SOV = {add_to_tech_sharing_group = comintern_research }
+		add_to_tech_sharing_group = comintern_research
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		mutually_exclusive = {focus = ACF_found_the_internationale}
+		x = 6
+		y = 3
+	}
+	focus = {
+		id = ACF_found_the_internationale
+		icon = GFX_goal_support_communism
+		prerequisite = {focus = ACF_revolution_triumphant}
+		completion_reward = {  
+		create_faction = "The Internationale"
+		}
+		ai_will_do = { 
+		factor = 3 
+		modifier = {factor = 30 NOT = SOV = {{exists = yes is_faction_leader = yes}}}
+		}
+		cost = 10
+		mutually_exclusive = {focus = ACF_join_comintern}
+		x = 8
+		y = 2
+	}
+	focus = {
+		id = ACF_safeguard_the_flank_of_the_revolution
+		icon = GFX_focus_focus_fra_intervention_spain
+		prerequisite = {focus = ACF_found_the_internationale focus = ACF_join_comintern}
+		completion_reward = { 
+		create_wargoal = {
+		type = puppet_wargoal_focus
+		target = SPR
+		}
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 8
+		y = 3
 	}
 	focus = {
 		id = ACF_african_situation
@@ -66,6 +135,32 @@ focus_tree = {
 		cost = 10
 		x = 14
 		y = 4
+	}
+	focus = {
+		id = ACF_west_african_union
+		icon = GFX_goal_generic_major_war
+		prerequisite = {focus = ACF_communist_decolonization}
+		available = {owns_state = 459}
+		completion_reward = {  
+		add_political_power = 100
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 13
+		y = 5
+	}
+	focus = {
+		id = ACF_local_states
+		icon = GFX_goal_generic_major_war
+		prerequisite = {focus = ACF_communist_decolonization}
+		available = {owns_state = 459}
+		completion_reward = {  
+		add_political_power = 100
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 15
+		y = 5
 	}
 	focus = {
 		id = ACF_purge_the_anti_revolutionaries

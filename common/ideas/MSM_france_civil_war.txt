@@ -14,5 +14,18 @@ ideas={
 				army_org_factor = -0.3
 			}
 		}
+	MSM_FRA_legacy_of_the_paris_commune = {
+			allowed = {
+				always = no
+			}
+			
+			
+			removal_cost = -1 
+			
+			modifier = {
+				army_org = 4
+				attack_bonus_against_cores = 0.05
+			}
+		}
 	}
 	}

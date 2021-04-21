@@ -24,12 +24,24 @@ French_civil_unrest = {
 					set_cosmetic_tag = ACF
 					set_research_slots = 3
 					reserve_dynamic_country = yes
+					set_popularities = {
+						democratic = 10
+						neutrality = 10
+						fascism = 10
+						anarchism = 20
+						communism = 50
+					}
 				}
 			create_dynamic_country = {
 					original_tag = FRA
 					set_country_flag = french_democratic_rebellion
 					set_politics = {
 						ruling_party = democratic
+					}
+					set_popularities = {
+						democratic = 80
+						neutrality = 10
+						fascism = 10
 					}
 					set_cosmetic_tag = AFL
 					set_research_slots = 3
@@ -75,6 +87,11 @@ French_civil_unrest = {
 					set_cosmetic_tag = AFA
 					set_research_slots = 3
 					reserve_dynamic_country = yes
+					set_popularities = {
+						democratic = 10
+						neutrality = 20
+						fascism = 70
+					}
 				}
 	if = {
 		limit = {owns_state = 14}
@@ -226,7 +243,7 @@ French_civil_war = {
 		idea = MSM_FRA_recovering_from_exile
 		days = 200
 		}
-		load_focus_tree = france_exiled
+		mark_focus_tree_layout_dirty = yes #reloads focus tree use sparingly
 		}
 		}
 		}
