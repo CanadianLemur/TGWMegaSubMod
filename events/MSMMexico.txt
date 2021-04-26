@@ -1,0 +1,711 @@
+﻿add_namespace = MSMMexico
+
+country_event = {
+	title = MSMMexico.1.t ##1910 Election Popup
+	desc = MSMMexico.1.d
+	id = MSMMexico.1
+	fire_only_once=yes
+	trigger={
+		date >  1910.5.1
+		TAG = MEX
+	}
+	option = {
+		name =  MSMMexico.1.a
+		
+	}
+}
+
+country_event = {
+	title = MSMMexico.2.t ##Madero Arrested
+	desc = MSMMexico.2.d
+	id = MSMMexico.2
+	fire_only_once=yes
+	trigger={
+		date >  1910.6.6
+		TAG = MEX
+	}
+	option = {
+		name =  MSMMexico.2.a ##Madero is good
+		custom_effect_tooltip=MSMMexicoRevolutionTooltip
+		MEX={
+			remove_state_core=482
+			set_variable = { support_revolution = 1 }
+		}
+	}
+	option = {
+		name =  MSMMexico.2.b ## Madero is bad
+		custom_effect_tooltip=MSMMexicoDiazTooltip
+		MEX={
+			remove_state_core=482
+			set_variable = { support_revolution = 0 }
+		}
+	}
+
+}
+
+country_event = {
+	title = MSMMexico.3.t ##1910 Election Rigged!
+	desc = MSMMexico.3.d
+	id = MSMMexico.3
+	fire_only_once=yes
+	trigger={
+		date >  1910.6.21
+		TAG = MEX
+	}
+	option = {
+		name =  MSMMexico.3.a ##revolutionary response
+		trigger= {
+			check_variable = {
+				var = support_revolution
+				value = 1
+				compare = equals
+			}
+		}
+	}
+	option = {
+		name =  MSMMexico.3.b ##counter-revolutionary response
+		trigger= {
+			check_variable = {
+				var = support_revolution
+				value = 0
+				compare = equals
+			}
+		}
+	}
+}
+
+country_event = {
+	title = MSMMexico.4.t ##Madero Escapes Prison
+	desc = MSMMexico.4.d
+	id = MSMMexico.4
+	fire_only_once=yes
+	trigger={
+		date >  1910.9.20
+		TAG = MEX
+    }
+	immediate = {
+		#activate_targeted_decision = { target = MEX decision = countdown_to_revolution }
+		set_variable = { MEX.has_revolution = 1 }
+	}
+	
+	option = {
+		name =  MSMMexico.4.a ##revolutionary response
+        trigger= {
+			check_variable = {
+				var = support_revolution
+				value = 1
+				compare = equals
+			}
+        }
+    }
+    option = {
+		name =  MSMMexico.4.b ##counter-revolutionary response
+        trigger= {
+			check_variable = {
+				var = support_revolution
+				value = 0
+				compare = equals
+			}
+        }
+    }
+}
+
+country_event = {
+	title = MSMMexico.5.t ##Mexican Revolution # # # ##  VIVA LA REVOLUCION!!########
+	desc = MSMMexico.5.d
+	id = MSMMexico.5
+	fire_only_once=yes
+	is_triggered_only = yes
+	
+	immediate = {
+	
+	set_global_flag = MSMMEXICAN_REVOLUTION_GLOBAL
+	
+	###Create Dynamic countries for mexican revolution
+	create_dynamic_country = {
+	    original_tag = MEX
+	    set_country_flag = MEX_diaz_flag
+		set_politics = {
+			ruling_party = neutrality
+		}
+		set_cosmetic_tag = MEX_diaz_mexico
+		set_research_slots = 3
+	    reserve_dynamic_country = yes
+	}
+	
+	create_dynamic_country = {
+	    original_tag = MEX
+	    set_country_flag = MEX_madero_flag
+		set_politics = {
+			ruling_party = democratic
+		}
+		set_cosmetic_tag = MEX_madero_mexico
+		set_research_slots = 3
+	    reserve_dynamic_country = yes
+	}
+	
+	create_dynamic_country = {
+	    original_tag = MEX
+	    set_country_flag = MEX_villa_flag
+		set_politics = {
+			ruling_party = fascism
+		}
+		set_cosmetic_tag = MEX_villa_mexico
+		set_research_slots = 3
+	    reserve_dynamic_country = yes
+	}
+	
+	create_dynamic_country = {
+	    original_tag = MEX
+	    set_country_flag = MEX_zapata_flag
+		set_politics = {
+			ruling_party = communism
+		}
+		set_cosmetic_tag = MEX_zapata_mexico
+		set_research_slots = 3
+	    reserve_dynamic_country = yes
+	}
+	
+	create_dynamic_country = {
+	    original_tag = MEX
+	    set_country_flag = MEX_magonista_flag
+		set_politics = {
+			ruling_party = anarchism
+		}
+		set_cosmetic_tag = MEX_magonista_mexico
+		set_research_slots = 3
+	    reserve_dynamic_country = yes
+	}
+	
+		set_variable = { MEX.has_revolution = 2 }
+		MEX = {
+		delete_unit_template_and_units = {
+			division_template = "Infantry Division"
+			disband = no
+		}
+		delete_unit_template_and_units = {
+			division_template = "Infantry Brigade"
+			disband = no
+		}
+		delete_unit_template_and_units = {
+			division_template = "Cavalry Division"
+			disband = no
+		}
+		}
+		if=  { ##If the player chooses to support revolution
+			limit={
+				check_variable = {
+					var = MEX.support_revolution
+					value = 1
+					compare = equals
+				}
+			}
+			hidden_effect={
+			##Give player Chihuahua and give MXA control of mexico states
+			MEX = { add_state_core = 482 }
+			MXA = {  ##Dyanamic Diaz Tag
+				set_capital = 277
+				add_ideas = {
+					MEX_ww1_mexico_prerevolution
+				}
+				
+				set_politics = {
+						ruling_party = neutrality
+					}
+				set_popularities = {
+					democratic = 20
+					neutrality = 72
+					fascism = 8
+				}
+				set_party_name = { ideology = neutrality long_name = MEX_neutrality_party_long name = MEX_neutrality_party }
+				transfer_state = 481
+				transfer_state = 480
+				transfer_state = 479
+				transfer_state = 478
+				transfer_state = 277
+				transfer_state = 477
+				transfer_state = 485
+				transfer_state = 476
+				transfer_state = 475
+				transfer_state = 474
+				transfer_state = 483
+				transfer_state = 484
+				
+				retire_country_leader = yes
+				create_country_leader = {
+					name = "Porfirio Díaz"
+					desc = MEX_porfirio_diaz_DESC
+					picture = "gfx/hoi4tgw_portraits/MEX/country_leaders/MEX_porfirio_diaz.dds"
+					expire = "1912.1.1"
+					ideology = autocracy traits = {}
+				}
+				
+			}
+			
+			MEX = { ##Player Madero
+				remove_ideas = {
+					MEX_ww1_mexico_prerevolution
+				}
+			
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = MEX_madero_mexico
+				set_popularities = {
+					democratic = 79
+					neutrality = 3
+					fascism = 9
+					communism = 9
+				}
+				set_politics = {
+						ruling_party = democratic
+					}
+				retire_country_leader = yes
+				create_country_leader = {
+					name = "Francisco I. Madero"
+					desc = "POLITICS_FRANCISO_MADERO_DESC"
+					picture = "gfx/leaders/MEX/Portrait_MEX_Francisco_Madero.dds"
+					expire = "1965.1.1"
+					ideology = liberalism
+					traits = {}
+				}
+			}
+			
+			
+		}
+		}
+		
+		if=  { ##If the player chooses to fight against revolution
+			limit={
+				check_variable = {
+					var = MEX.support_revolution
+					value = 0
+					compare = equals
+				}
+			}
+			hidden_effect={
+			##Give AI Madero Chihuahua and maintain player control of mexico states
+				MXB = { transfer_state = 482 }
+				MEX = {  #Player Diaz
+					set_capital = 277
+					set_popularities = {
+						democratic = 18
+						neutrality = 72
+						fascism = 8
+						communism = 2
+					}
+				}
+				
+				MXB = { ##Madero Dynamic Tag
+					remove_ideas = {
+						MEX_ww1_mexico_prerevolution
+					}
+				
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = MEX_madero_mexico
+					set_popularities = {
+						democratic = 79
+						neutrality = 3
+						fascism = 9
+						communism = 9
+					}
+					set_politics = {
+							ruling_party = democratic
+						}
+					retire_country_leader = yes
+					create_country_leader = {
+						name = "Francisco I. Madero"
+						desc = "POLITICS_FRANCISO_MADERO_DESC"
+						picture = "gfx/leaders/MEX/Portrait_MEX_Francisco_Madero.dds"
+						expire = "1965.1.1"
+						ideology = liberalism
+						traits = {}
+					}
+				}
+			}
+		}
+	
+	hidden_effect = { ##These things will happen regardless of player choice
+		
+		if = {
+			limit = {
+				check_variable = {
+					var = MEX.support_revolution
+					value = 1
+					compare = equals
+				}
+			}
+			MEX = { #Player Madero
+				load_oob = "MEX_REV" 
+				create_faction = "Anti-Reelection Movement"
+				add_to_faction = MXC
+				add_to_faction = MXD
+				declare_war_on = {
+					target = MXA
+					type = annex_everything
+				}
+			}
+			MXA = { load_oob = "MEX_FED" }
+		}
+		MXB = { ##Madero AI
+			if = {
+				limit = {
+					check_variable = {
+						var = MEX.support_revolution
+						value = 0
+						compare = equals
+					}
+				}
+				declare_war_on = {
+					target = MEX
+					type = annex_everything
+				}
+				create_faction = "Anti-Reelection Movement"
+				add_to_faction = MXC
+				add_to_faction = MXD
+				MXB = { load_oob = "MEX_REV" }
+			}
+		}
+		MXC = { ##Give ownership of Coahuila to Pancho Villa
+			set_state_owner = 480
+			add_timed_idea = {
+			idea = MEX_revolutionary_fervor
+			days = 360
+			}
+			set_popularities = {
+					democratic = 20
+					neutrality = 10
+					fascism = 70
+				}
+			if = {
+				limit = {
+					check_variable = {
+						var = MEX.support_revolution
+						value = 1
+						compare = equals
+					}
+				}
+				declare_war_on = {
+					target = MXA
+					type = annex_everything
+				}
+				else = {
+					declare_war_on = {
+						target = MEX
+						type = annex_everything
+					}
+				}
+			}
+			
+			MXC = { load_oob = "MEX_VILLA" }
+		}
+			
+		MXD = { ##Give ownership of Guerrero to Zapata
+			set_state_owner = 485
+			add_timed_idea = {
+			idea = MEX_revolutionary_fervor
+			days = 360
+			}
+			set_popularities = {
+					democratic = 20
+					neutrality = 0
+					communism = 80
+				}
+			if = {
+				limit = {
+					check_variable = {
+						var = MEX.support_revolution
+						value = 1
+						compare = equals
+					}
+				}
+				declare_war_on = {
+					target = MXA
+					type = annex_everything
+				}
+				else = {
+					declare_war_on = {
+						target = MEX
+						type = annex_everything
+					}
+				}
+			}
+			load_oob = "MEX_ZAPATA"
+		}
+		
+		MXE = { ##Give ownership of Baja to Magonistas
+			set_state_owner = 484
+			set_province_controller = 13215
+			set_province_controller = 13216
+			add_timed_idea = {
+			idea = MEX_revolutionary_fervor
+			days = 360
+			}
+			set_popularities = {
+					communism = 20
+					neutrality = 0
+					anarchism = 80
+				}
+			
+			declare_war_on = {
+				target = MEX
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = MXA
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = MXB
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = MXD
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = MXC
+				type = annex_everything
+			}
+			MXE = { load_oob = "MEX_MAG" }
+		}
+	}
+	}
+	
+	option = {
+		name =  MSMMexico.5.a ##revolutionary response
+        trigger= {
+			check_variable = {
+				var = support_revolution
+				value = 1
+				compare = equals
+			}
+        }
+		
+		
+	}
+	
+    option = {
+		name =  MSMMexico.5.b ##counter-revolutionary response
+        trigger= {
+			check_variable = {
+				var = support_revolution
+				value = 0
+				compare = equals
+			}
+        }
+	}
+}
+news_event = {
+	title=MSMMexico.6.t ##Plan of San Luis Potosí
+	desc=MSMMexico.6.d
+	id=MSMMexico.6
+	fire_only_once=yes
+	major=yes
+	trigger={
+		TAG	 = MEX
+		date > 1910.9.15
+		date < 1911.1.1
+	}
+	option ={
+		name = MSMMexico.6.a
+		trigger = {
+			NOT = {
+				TAG = MEX
+			}
+		}
+	}
+	option ={
+		name = MSMMexico.6.b
+		trigger = {
+			TAG = MEX
+		}
+	}
+}
+
+country_event = {
+	title=MSMMexico.7.t ##Revolution Win Condition  REVOLUTIONARIES
+	desc=MSMMexico.7.d
+	id=MSMMexico.7
+	fire_only_once=yes
+	trigger = {
+		OR = {
+			MXA = {
+				AND ={
+				has_war_with = MEX
+				surrender_progress > 0.6
+				}
+			}
+			NOT = { country_exists = MXA }
+		}
+		TAG = MEX
+		has_global_flag = MSMMEXICAN_REVOLUTION_GLOBAL
+	}
+	immediate = {
+		set_variable = { MEX.has_revolution = 3 }
+		MXA = {
+			retire_country_leader = yes ##Retire Diaz and place Francisco Leon
+        }
+		MEX = {
+			white_peace = {
+				TAG = MXA
+				message = REVOLUTION_VICTORY
+			}
+			annex_country = {
+				target = MXA
+				transfer_troops = no
+			}
+			annex_country = {
+				target = MXC
+				transfer_troops = no
+			}
+			annex_country = {
+				target = MXD
+				transfer_troops = no
+			}
+			on_new_term_election = {
+				country_event = {
+					id = MSMMexico.11
+					days = 1
+					random = 6
+				}
+			}
+		}
+	}
+	option = {
+		name = MSMMexico.7.a #Acknowledge Winning and prepare Interim Presidency
+		country_event = {
+					id = MSMMexico.12
+					days = 1
+					random = 9
+				}
+	}
+}
+
+country_event = {
+	title=MSMMexico.8.t ##Revolution Win Condition  FEDERALISTS
+	desc=MSMMexico.8.d
+	id=MSMMexico.8
+	fire_only_once=yes
+	trigger = {
+		OR = {
+			MXB = {
+				has_war_with = MEX
+				surrender_progress > 0.85
+			}
+			NOT = { country_exists = MXB }
+		}
+		TAG = MEX
+	}
+	immediate = {
+		set_variable = { MEX.has_revolution = 3 }
+	}
+	option = {
+		name = MSMMexico.8.a #
+		
+	}
+}
+
+country_event = {
+	title=MSMMexico.9.t ##If Magonistas are puppeted they get annexed
+	desc=MSMMexico.9.d
+	id=MSMMexico.9
+	fire_only_once=yes
+	hidden=yes
+	trigger = {
+		MXE = {
+			not={ has_war_with = MEX }
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				country_exists = MEX
+			}
+			MEX = { annex_country = MXE }
+		}
+	}
+	option={
+		name = MSMMexico.9.a
+	}
+}
+
+country_event = {
+	title=MSMMexico.10.t ##Pancho villa and Zapata want concessions
+	desc=MSMMexico.10.d
+	id=MSMMexico.10
+	fire_only_once=yes
+	trigger = {
+		TAG = MEX
+		check_variable = {
+			var = MEX.has_revolution
+			value = 3
+			type = equals
+		}
+	}
+	immediate={
+		set_variable = { MEX.communist_concessions = 1 }
+		set_variable = { MEX.fascist_concessions = 1 }
+	}
+	option = {
+		name=MSMMexico.10.a
+	}
+}
+
+country_event = {
+	title=MSMMexico.11.t ##Election of Madero
+	desc=MSMMexico.11.d
+	id=MSMMexico.11
+	fire_only_once=yes
+	is_triggered_only=yes
+	trigger = {
+		TAG = MEX
+	}
+	option = {
+		name=MSMMexico.11.a
+		hidden_effect={
+			set_politics = {
+				ruling_party = democratic
+			}
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "Francisco I. Madero"
+				desc = "POLITICS_FRANCISO_MADERO_DESC"
+				picture = "gfx/leaders/MEX/Portrait_MEX_Francisco_Madero.dds"
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = {}
+			}
+		}
+	}
+}
+
+country_event = {
+	title=MSMMexico.12.t ##Interim Presidency of Francisco Leon
+	desc=MSMMexico.12.d
+	id=MSMMexico.12
+	fire_only_once=yes
+	is_triggered_only=yes
+	trigger = {
+		TAG = MEX
+	}
+	option = {
+		name=MSMMexico.12.a
+		MEX = {
+			set_politics = {
+					ruling_party = neutrality
+					elections_allowed = yes
+					last_election = "1910.6.21"
+					election_frequency = 48
+				}
+				
+				retire_country_leader = yes ##Temporarily remove Madero for Leon interim presidency
+				create_country_leader = {
+						name = "Francisco León de la Barra"
+						desc = MEX_francisco_leon_DESC
+						picture = "gfx/hoi4tgw_portraits/MEX/country_leaders/Portrait_MEX_Francisco_Leon.dds"
+						expire = "1912.1.1"
+						ideology = autocracy traits = {}
+				}
+			}
+		}
+	}
+}

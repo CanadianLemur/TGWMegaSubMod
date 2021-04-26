@@ -43,7 +43,6 @@ focus_tree = {
     id = MEX_ww1_support_diaz
     icon = GFX_hoi4tgw_mex_support_diaz
     prerequisite = { focus=mex_political_effort }
-    mutually_exclusive = { focus=mex_support_revolucionary_forces focus=MEX_ww1_support_magonistas}
     available = {
       MEX = {
         exists = yes
@@ -52,7 +51,7 @@ focus_tree = {
         date < 1910.11.20
        has_government= neutrality
       }
-      NOT = { has_global_flag = SUPER_GLOBAL_Mexican_Revolution_1910 }
+      NOT = { has_global_flag = MSMMEXICAN_REVOLUTION_GLOBAL }
       NOT = { has_government= democratic}
     }
     completion_reward = {
@@ -177,10 +176,13 @@ focus = {
   available = {
     MEX = {
       exists = yes
-      has_global_flag = SUPER_GLOBAL_Mexican_Revolution_1910
-
     }
-    NOT = { has_government=neutrality }
+	has_global_flag = MSMMEXICAN_REVOLUTION_GLOBAL
+    check_variable = {
+		var = MEX.has_revolution
+		value = 1
+		compare = greater_than
+	}
   }
   completion_reward = { add_political_power=120 }
   cost = 4
