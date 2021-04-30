@@ -19,7 +19,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ACF_revolution_triumphant
-		icon = GFX_goal_support_communism
+		icon = GFX_focus_focus_fra_revolution_utmost
 		prerequisite = {focus = ACF_legacy_of_the_paris_commune}
 		available = {
 		controls_state = 16
@@ -140,9 +140,29 @@ focus_tree = {
 		id = ACF_west_african_union
 		icon = GFX_goal_generic_major_war
 		prerequisite = {focus = ACF_communist_decolonization}
-		available = {owns_state = 459}
+		available = {owns_state = 459 owns_state = 556}
 		completion_reward = {  
-		add_political_power = 100
+		MLI = {set_cosmetic_tag = WEST_AFRICA		
+		add_state_core = 786
+		add_state_core = 557
+		add_state_core = 272
+		add_state_core = 701
+		add_state_core = 296
+		add_state_core = 780
+		add_state_core = 700
+		add_state_core = 298
+		add_state_core = 799
+		add_state_core = 778
+		add_state_core = 274
+		add_state_core = 794
+		add_state_core = 777
+		add_state_core = 776
+		add_state_core = 558
+		add_state_core = 781
+		add_state_core = 515
+		add_state_core = 779
+			}
+		release_puppet = MLI
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -154,8 +174,18 @@ focus_tree = {
 		icon = GFX_goal_generic_major_war
 		prerequisite = {focus = ACF_communist_decolonization}
 		available = {owns_state = 459}
-		completion_reward = {  
-		add_political_power = 100
+		completion_reward = {
+		release_puppet = ALG
+		release_puppet = TUN
+		release_puppet = MLI
+		release_puppet = NGR
+		release_puppet = SEN
+		release_puppet = GNA
+		release_puppet = IVO
+		release_puppet = MRT
+		release_puppet = VOL
+		release_puppet = CHA
+		release_puppet = DAH
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10

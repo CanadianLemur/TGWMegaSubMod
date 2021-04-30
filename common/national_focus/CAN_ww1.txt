@@ -3,10 +3,10 @@ focus_tree = {
 	
 	country = {
 		factor = 0
-		#modifier = {
-		#	add = 10
-	#		original_tag = CAN
-	#	}
+		modifier = {
+			add = 10
+			original_tag = CAN
+		}
 		#not ready for release
 	}
 focus = {
@@ -56,6 +56,49 @@ focus = {
 		cost = 10
 		x = 17
 		y = 2
+		ai_will_do = { factor = 10 }
+	}
+focus = {
+		id = ww1_CAN_assert_canadian_independence #Bye Britain :(
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = {focus = ww1_CAN_reciprocity}
+		completion_reward = { add_political_power=100 }
+		cost = 10
+		x = 17
+		y = 3
+		ai_will_do = { factor = 10 }
+	}
+focus = {
+		id = ww1_CAN_dissolution_of_canada # anglo-canada joins usa, quebec gains independence
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = {focus = ww1_CAN_assert_canadian_independence}
+		completion_reward = { add_political_power=100 }
+		mutually_exclusive = {focus = ww1_CAN_dissolution_of_canada}
+		cost = 10
+		x = 18
+		y = 4
+		ai_will_do = { factor = 10 }
+	}
+focus = {
+		id = ww1_CAN_maintained_independence
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = {focus = ww1_CAN_assert_canadian_independence}
+		completion_reward = { add_political_power=100 }
+		mutually_exclusive = {focus = ww1_CAN_dissolution_of_canada}
+		cost = 10
+		x = 16
+		y = 4
+		ai_will_do = { factor = 10 }
+	}
+focus = {
+		id = ww1_CAN_close_but_cautious_american_relation
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = {focus = ww1_CAN_maintained_independence}
+		completion_reward = { add_political_power=100 }
+		mutually_exclusive = {focus = ww1_CAN_dissolution_of_canada}
+		cost = 10
+		x = 16
+		y = 5
 		ai_will_do = { factor = 10 }
 	}
 	focus = {

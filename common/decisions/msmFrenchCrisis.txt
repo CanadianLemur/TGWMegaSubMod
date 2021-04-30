@@ -38,6 +38,7 @@ French_civil_unrest = {
 					set_politics = {
 						ruling_party = democratic
 					}
+					mark_focus_tree_layout_dirty = yes #reloads focus tree use sparingly
 					set_popularities = {
 						democratic = 80
 						neutrality = 10
@@ -46,7 +47,8 @@ French_civil_unrest = {
 					set_cosmetic_tag = AFL
 					set_research_slots = 3
 					reserve_dynamic_country = yes
-				}		
+				}
+				ACF = {load_focus_tree = french_communist_army}
 	if = {
 		limit = {owns_state = 29} 
 	ACF = {	transfer_state = 29 
@@ -86,7 +88,8 @@ French_civil_unrest = {
 					}
 					set_cosmetic_tag = AFA
 					set_research_slots = 3
-					reserve_dynamic_country = yes
+					reserve_dynamic_country = yes	
+					mark_focus_tree_layout_dirty = yes #reloads focus tree use sparingly
 					set_popularities = {
 						democratic = 10
 						neutrality = 20
@@ -216,7 +219,11 @@ French_civil_unrest = {
 
 French_civil_war = {
 	FRA_flee_to_africa = {                      
-		allowed = { tag = FRA }              
+		allowed = { tag = FRA }
+		visible = {
+		has_focus_tree = france_crisis
+		has_global_flag = kis_second_treaty_frankfort
+		}
 		available = {     
 		or = {has_war_with = AFL has_war_with = AFA has_war_with = ACF}
 		surrender_progress > 0.5
@@ -236,14 +243,14 @@ French_civil_war = {
 		set_capital = 459
 		set_country_flag = exiled_france
 		if = {
-		limit = {not = {controls_state = 26}}
-		26 = {controller = {country_event = MSMFrenchCrisis.2}}		}
+		limit = {not = {controls_state = 19}}
+		19 = {controller = {country_event = MSMFrenchCrisis.2}}		}
 		else = {16 = {controller = {country_event = MSMFrenchCrisis.2}}}
 		add_timed_idea = {
 		idea = MSM_FRA_recovering_from_exile
 		days = 200
 		}
-		mark_focus_tree_layout_dirty = yes #reloads focus tree use sparingly
+		load_focus_tree = france_exiled
 		}
 		}
 		}

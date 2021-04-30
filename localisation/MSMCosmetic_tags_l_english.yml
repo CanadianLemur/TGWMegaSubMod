@@ -96,4 +96,9 @@
  MEX_magonista_mexico:0 "Magonista Rebellion"
  MEX_magonista_mexico_DEF:0 "the Magonista Rebellion"
  MEX_magonista_mexico_ADJ:0"Magonista"
- 
+ WEST_AFRICA:0"West African Union"
+ WEST_AFRICA_DEF:0"The West African Union"
+ WEST_AFRICA_ADJ:0"West African"
+ WEST_AFRICA_communism:0"West African Socialist Union"
+ WEST_AFRICA_communism_DEF:0"The West African Socialist Union"
+ WEST_AFRICA_communism_ADJ:0"West African"
