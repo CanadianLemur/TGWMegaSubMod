@@ -1,0 +1,23 @@
+
+state={
+	id=835
+	name="STATE_835"
+	manpower = 119949
+	resources={
+	}
+	provinces={ 11516  521 }
+	state_category = town
+	victory_points={ 11516 5 }
+	history={
+		victory_points={    }
+		owner = FRA
+		buildings = {
+		infrastructure=7
+		11516={ bunker=1 trench=1 }
+		521={ bunker=1 trench=1  }
+		}
+		add_core_of = FRA
+		
+	}
+
+}
