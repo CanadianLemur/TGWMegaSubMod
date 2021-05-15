@@ -67,6 +67,7 @@ country_event = {
 		name = MSMFrankfurt_France.1.b
 		ai_chance = { factor = 30 }
  		FRA = {
+			add_ideas = MSM_frankfurt_naval_restrictions_france
 			transfer_ship = {
 				type = battleship
 				target = GER
@@ -143,6 +144,7 @@ country_event = {
 		name = MSMFrankfurt_France.1.c
 		ai_chance = { factor = 5 }
  		FRA = {
+			add_ideas = MSM_frankfurt_naval_restrictions_france
 			transfer_navy = {
 				target = GER
 			}
@@ -150,6 +152,7 @@ country_event = {
 				var = french_german_antongonism
 				value = 8
 			}
+
 		}
 		hidden_effect = {
 			country_event = {
@@ -180,6 +183,13 @@ country_event = {
 					id = MSMFrankfurt_France.3
 				}
 			}
+			FRA = {
+				add_to_variable = {
+					var = french_german_antongonism
+					value = -1
+				}
+			
+			}
 		}
 	}
 	# cession of nancy
@@ -192,6 +202,13 @@ country_event = {
 				country_event = {
 					id = MSMFrankfurt_France.3
 				}
+			}
+			FRA = {
+				add_to_variable = {
+					var = french_german_antongonism
+					value = 1
+				}
+			
 			}
 		}
 	}
@@ -210,6 +227,13 @@ country_event = {
 				country_event = {
 					id = MSMFrankfurt_France.3
 				}
+			}
+			FRA = {
+				add_to_variable = {
+					var = french_german_antongonism
+					value = 4
+				}
+			
 			}
 		}
 	}
@@ -232,6 +256,13 @@ country_event = {
 				country_event = {
 					id = MSMFrankfurt_France.3
 				}
+			}
+			FRA = {
+				add_to_variable = {
+					var = french_german_antongonism
+					value = 8
+				}
+			
 			}
 		}
 	}
@@ -260,6 +291,13 @@ country_event = {
 					id = MSMFrankfurt_France.4
 				}
 			}
+			FRA = {
+				add_to_variable = {
+					var = french_german_antongonism
+					value = 3
+				}
+			
+			}
 			BRI = {
 				add_popularity = {
 					ideology = neutrality
@@ -273,8 +311,7 @@ country_event = {
 				}
 				# install prince franz of bavaria on the throne
 				create_country_leader = {
-					name = "King
-					Frañsez"
+					name = "King Frañsez"
 					desc = "POLITICS_KING_FRANSEZ_DESC"
 					picture = ".dds"
 					expire = "1957.1.1"
@@ -332,6 +369,32 @@ country_event = {
 				}
 			}
 			transfer_state = 752
+		}
+		set_autonomy = {
+			target = MOR
+			autonomy_state = autonomy_free
+		}
+		puppet = MOR
+		hidden_effect = {
+		MOR = {
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+			last_election = "1910.1.1"
+			election_frequency = 48
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.5
+				}
+			}
+		}
+		FRA = {
+				add_to_variable = {
+					var = french_german_antongonism
+					value = 1
+				}
+			
 		}
 	}
 	# take french somaliland and madagascar as well
@@ -393,6 +456,13 @@ country_event = {
 				}
 			}
 			transfer_state = 268
+		}
+		FRA = {
+				add_to_variable = {
+					var = french_german_antongonism
+					value = 3
+				}
+			
 		}
 	}
 	# take above as well as indochina
@@ -494,6 +564,13 @@ country_event = {
 				}
 			}
 			transfer_state = 728
+		}
+		FRA = {
+				add_to_variable = {
+					var = french_german_antongonism
+					value = 5
+				}
+			
 		}
 	}
 }
