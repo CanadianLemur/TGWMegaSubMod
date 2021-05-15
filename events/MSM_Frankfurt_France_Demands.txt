@@ -1,0 +1,303 @@
+add_namespace = MSMFrankfurt_France
+# MSMFrankfurt_France 1 Decision on the French fleet
+country_event = {
+	id =  MSMFrankfurt_France.1
+	title = MSMFrankfurt_France.1.t
+	desc = MSMFrankfurt_France.1.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+		# take 10 capital ships
+	option = {
+		name = MSMFrankfurt_France.1.a 
+		ai_chance = { factor = 65 }
+		FRA = {
+		transfer_ship = {
+			type = battleship
+			target = GER
+		}
+		transfer_ship = {
+			type = battleship
+			target = GER
+		}
+		transfer_ship = {
+			type = battleship
+			target = GER
+		}
+		transfer_ship = {
+			type = battleship
+			target = GER
+		}
+		transfer_ship = {
+			type = battleship
+			target = GER
+		}
+		transfer_ship = {
+			type = battleship
+			target = GER
+		}
+		transfer_ship = {
+			type = battleship
+			target = GER
+		}
+		transfer_ship = {
+			type = battleship
+			target = GER
+		}
+		transfer_ship = {
+			type = battleship
+			target = GER
+		}
+		transfer_ship = {
+			type = battleship
+			target = GER
+		}
+		set_variable = {
+		var = french_german_antongonism
+		value = 1
+			}
+		}
+		hidden_effect = {
+		country_event = {id = MSMFrankfurt_France.2}
+		}
+		}
+		# take 15 capital ships and enforce naval treaty
+	option = {
+		name = MSMFrankfurt_France.1.b 
+		ai_chance = { factor = 30 }
+		FRA = {
+		transfer_ship = {
+			type = battleship
+			target = GER
+		}
+		transfer_ship = {
+			type = battleship
+			target = GER
+		}
+		transfer_ship = {
+			type = battleship
+			target = GER
+		}
+		transfer_ship = {
+			type = battleship
+			target = GER
+		}
+		transfer_ship = {
+			type = battleship
+			target = GER
+		}
+		transfer_ship = {
+			type = battleship
+			target = GER
+		}
+		transfer_ship = {
+			type = battleship
+			target = GER
+		}
+		transfer_ship = {
+			type = battleship
+			target = GER
+		}
+		transfer_ship = {
+			type = battleship
+			target = GER
+		}
+		transfer_ship = {
+			type = battleship
+			target = GER
+		}
+		transfer_ship = {
+			type = battleship
+			target = GER
+		}
+		transfer_ship = {
+			type = battleship
+			target = GER
+		}
+		transfer_ship = {
+			type = battleship
+			target = GER
+		}
+		transfer_ship = {
+			type = battleship
+			target = GER
+		}
+		transfer_ship = {
+			type = battleship
+			target = GER
+		}
+		set_variable = {
+		var = french_german_antongonism
+		value = 4
+			}
+		}
+		hidden_effect = {
+		country_event = {id = MSMFrankfurt_France.2 }
+		}
+		}
+		# take all and enforce naval treaty
+	option = {
+		name = MSMFrankfurt_France.1.c 
+		ai_chance = { factor = 5 }
+		FRA = {
+		transfer_navy = {
+			target = GER
+		}
+		set_variable = {
+		var = french_german_antongonism
+		value = 8
+				}
+			}
+		hidden_effect = {
+		country_event = {id = MSMFrankfurt_France.2}
+		}
+		}
+	}
+	
+# MSMFrankfurt_France 2 Decision on european territorial demands
+country_event = {
+	id =  MSMFrankfurt_France.2
+	title = MSMFrankfurt_France.2.t
+	desc = MSMFrankfurt_France.2.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+		# No concessions, not available to proto-fascists
+	option = {
+		name = MSMFrankfurt_France.2.a 
+		ai_chance = { factor = 65 }
+		trigger = {not = {has_government = fascism}}
+		hidden_effect = {
+		GER = {country_event = {id = MSMFrankfurt_France.3}}
+		}
+		}
+		# cession of nancy
+	option = {
+		name = MSMFrankfurt_France.2.b 
+		ai_chance = { factor = 65 }
+		transfer_state = 835
+		hidden_effect = {
+		GER = {country_event = {id = MSMFrankfurt_France.3}}
+		}
+		}
+		# cession of nancy and sedan, as well as ardennes from belgium and pas de calais to belgium as compensation
+	option = {
+		name = MSMFrankfurt_France.2.c 
+		ai_chance = { factor = 65 }
+		transfer_state = 835
+		transfer_state = 836
+		transfer_state = 837
+		BEL = {transfer_state = 29}
+		hidden_effect = {
+		GER = {country_event = {id = MSMFrankfurt_France.3}}
+		}
+		}
+		# above but also ceding of franche comte, intended for proto fascists and swiss annexation nice borders
+	option = {
+		name = MSMFrankfurt_France.2.e 
+		ai_chance = { factor = 65 }
+		trigger = {has_government = fascism}
+		transfer_state = 17
+		transfer_state = 835
+		transfer_state = 836
+		transfer_state = 837
+		BEL = {transfer_state = 29}
+		hidden_effect = {
+		GER = {country_event = {id = MSMFrankfurt_France.3}}
+		}
+		}
+	}
+# MSMFrankfurt_France 3 Brittany
+country_event = {
+	id =  MSMFrankfurt_France.3
+	title = MSMFrankfurt_France.3.t
+	desc = MSMFrankfurt_France.3.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+		# Creation of a Breton State under Germany protection
+	option = {
+		name = MSMFrankfurt_France.3.a 
+		ai_chance = { factor = 65 }
+		BRI = {transfer_state = 14 add_state_core = 14}
+		GER = {puppet = BRI}
+		hidden_effect = {
+		GER = {country_event = {id = MSMFrankfurt_France.4}}
+		BRI = {
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.7
+		}
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = yes
+			last_election = "1910.1.1"
+			election_frequency = 48
+			}
+		# install prince franz of bavaria on the throne
+		create_country_leader = {
+				name = "King Frañsez"
+				desc = "POLITICS_KING_FRANSEZ_DESC"
+				picture = ".dds"
+				expire = "1957.1.1"
+				ideology = despotism
+				traits = {}
+					}
+				}
+			}
+		}
+		# do nothing
+	option = {
+		name = MSMFrankfurt_France.3.b 
+		ai_chance = { factor = 65 }
+		hidden_effect = {
+		GER = {country_event = {id = MSMFrankfurt_France.4}}
+		}
+		}
+	}
+	
+# MSMFrankfurt_France 4 africa
+country_event = {
+	id =  MSMFrankfurt_France.4
+	title = MSMFrankfurt_France.4.t
+	desc = MSMFrankfurt_France.4.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+		# take the bare minimum
+	option = {
+		name = MSMFrankfurt_France.4.a 
+		ai_chance = { factor = 65 }
+		if = {limit = {FRA = {owns_state = 755} } transfer_state = 755 }
+		if = {limit = {FRA = {owns_state = 772} } transfer_state = 772 }
+		if = {limit = {FRA = {owns_state = 752} } transfer_state = 752 }
+		}
+		# take french somaliland and madagascar as well
+	option = {
+		name = MSMFrankfurt_France.4.b 
+		ai_chance = { factor = 65 }
+		if = {limit = {FRA = {owns_state = 755} } transfer_state = 755 }
+		if = {limit = {FRA = {owns_state = 772} } transfer_state = 772 }
+		if = {limit = {FRA = {owns_state = 752} } transfer_state = 752 }
+		if = {limit = {FRA = {owns_state = 543} } transfer_state = 543 }
+		if = {limit = {FRA = {owns_state = 708} } transfer_state = 708 }
+		if = {limit = {FRA = {owns_state = 706} } transfer_state = 706 }
+		if = {limit = {FRA = {owns_state = 268} } transfer_state = 268 }
+		}
+		# take above as well as indochina
+	option = {
+		name = MSMFrankfurt_France.4.c
+		ai_chance = { factor = 65 }
+		if = {limit = {FRA = {owns_state = 755} } transfer_state = 755 }
+		if = {limit = {FRA = {owns_state = 772} } transfer_state = 772 }
+		if = {limit = {FRA = {owns_state = 752} } transfer_state = 752 }
+		if = {limit = {FRA = {owns_state = 543} } transfer_state = 543 }
+		if = {limit = {FRA = {owns_state = 708} } transfer_state = 708 }
+		if = {limit = {FRA = {owns_state = 706} } transfer_state = 706 }
+		if = {limit = {FRA = {owns_state = 268} } transfer_state = 268 }
+		if = {limit = {FRA = {owns_state = 670} } transfer_state = 670 }
+		if = {limit = {FRA = {owns_state = 741} } transfer_state = 741 }
+		if = {limit = {FRA = {owns_state = 286} } transfer_state = 286 }
+		if = {limit = {FRA = {owns_state = 671} } transfer_state = 671 }
+		if = {limit = {FRA = {owns_state = 728} } transfer_state = 728 }
+		}
+	}	
+
+	
+	

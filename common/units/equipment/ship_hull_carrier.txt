@@ -6,6 +6,7 @@ equipments = {
 		can_be_produced = {
 			NOT = {
 				has_idea = BUL_army_restrictions
+				has_idea = MSM_frankfurt_naval_restrictions_france
 			}
 		}
 

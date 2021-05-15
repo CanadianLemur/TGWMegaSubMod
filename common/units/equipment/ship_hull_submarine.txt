@@ -2,6 +2,12 @@ equipments = {
 
 	ship_hull_submarine = {
 		year = 1910
+		
+		can_be_produced = {
+			NOT = {
+				has_idea = MSM_frankfurt_naval_restrictions_france
+			}
+		}
 
 		is_archetype = yes
 		is_buildable = no

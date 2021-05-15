@@ -1,5 +1,26 @@
 ideas={
 	country = {
+		MSM_frankfurt_naval_restrictions_france = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = MTG_naval_treaty_adherent
+			
+			modifier = {
+				production_cost_max_ship_hull_heavy = 9000
+				production_cost_max_ship_hull_cruiser = 5000
+				industrial_capacity_dockyard = -0.1
+				custom_modifier_tooltip = naval_restrictions_on_submarines_and_carriers
+			}
+		}
 		MSM_FRA_recovering_from_exile = {
 			allowed = {
 				always = no
