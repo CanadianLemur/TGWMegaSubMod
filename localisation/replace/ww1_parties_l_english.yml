@@ -4,6 +4,11 @@
  fascism_noun:0 "Proto-Fascism"
  fascism_desc:0 "Totalitarian Regime"
 
+ anarchist_communism:0 "Anarcho-communism"
+ anarchist_communism_noun:0 "Ancom"
+ anarchist_communism_desc:0 "An ideology embracing the idea of communism as a stateless society, Anarcho-communism eschews the idea of a transitionary socialist state and favors a society based on voluntary associations and mutual aid."
+ anarcho_capitalism:0 "Anarcho-capitalism"
+
  neutrality:0 "Authoritarian"
  moderatism:0 "Moderatism"
  moderatism_desc:0 "Moderatism is a form of government which avoids the extremes of left and right by taking a moderate position or course of action."
@@ -105,3 +110,5 @@
  RUS_neutrality_party:0 "House of Romanov"
  RUS_communism_party:0 "RSDLP"
  RUS_fascism_party:0 "Tsarists"
+ MEX_anarchism_party:0 "Magonistas"
+ MXE_anarchism_party:0 "Magonistas"

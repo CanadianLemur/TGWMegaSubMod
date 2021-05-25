@@ -843,4 +843,9 @@ spriteTypes = {
 		name = "GFX_mex_revolution_category_icon"
 		texturefile = "gfx/decisionCategories/decision_category_mex_rev_icon.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_ideology_anarchist_communism"
+		texturefile = "gfx/interface/ideologies/anarchocommunism.dds"
+	}
 }

@@ -562,6 +562,9 @@ country_event = {
 				TAG = MXA
 				message = REVOLUTION_VICTORY
 			}
+			
+			
+			
 			annex_country = {
 				target = MXA
 				transfer_troops = no
@@ -613,30 +616,6 @@ country_event = {
 }
 
 country_event = {
-	title=MSMMexico.9.t ##If Magonistas are puppeted they get annexed
-	desc=MSMMexico.9.d
-	id=MSMMexico.9
-	fire_only_once=yes
-	hidden=yes
-	trigger = {
-		MXE = {
-			not={ has_war_with = MEX }
-		}
-	}
-	immediate = {
-		if = {
-			limit = {
-				country_exists = MEX
-			}
-			MEX = { annex_country = MXE }
-		}
-	}
-	option={
-		name = MSMMexico.9.a
-	}
-}
-
-country_event = {
 	title=MSMMexico.10.t ##Pancho villa and Zapata want concessions
 	desc=MSMMexico.10.d
 	id=MSMMexico.10
@@ -648,6 +627,7 @@ country_event = {
 			value = 3
 			type = equals
 		}
+		date > 1912.4.10
 	}
 	immediate={
 		set_variable = { MEX.communist_concessions = 1 }
@@ -695,8 +675,8 @@ country_event = {
 	trigger = {
 		TAG = MEX
 	}
-	option = {
-		name=MSMMexico.12.a
+	
+	immediate = {
 		MEX = {
 			set_politics = {
 					ruling_party = neutrality
@@ -709,11 +689,15 @@ country_event = {
 				create_country_leader = {
 						name = "Francisco León de la Barra"
 						desc = MEX_francisco_leon_DESC
-						picture = "gfx/hoi4tgw_portraits/MEX/country_leaders/Portrait_MEX_Francisco_Leon.dds"
+						picture = "gfx/leaders/MEX/Portrait_MEX_Francisco_Leon.dds"
 						expire = "1912.1.1"
 						ideology = autocracy traits = {}
 				}
-			}
 		}
 	}
-}
+	
+	option = {
+		name=MSMMexico.12.a
+		
+		}
+	}
