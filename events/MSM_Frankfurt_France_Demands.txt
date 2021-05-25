@@ -4,7 +4,7 @@ country_event = {
 	id = MSMFrankfurt_France.1
 	title = MSMFrankfurt_France.1.t
 	desc = MSMFrankfurt_France.1.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_report_event_generic_naval_treaty
 	is_triggered_only = yes
 	# take 10 capital ships
 	option = {
@@ -313,7 +313,7 @@ country_event = {
 				create_country_leader = {
 					name = "King Frañsez"
 					desc = "POLITICS_KING_FRANSEZ_DESC"
-					picture = ".dds"
+					picture = "gfx/leaders/BRI_king_fransez.dds"
 					expire = "1957.1.1"
 					ideology = despotism
 					traits = {
@@ -457,6 +457,25 @@ country_event = {
 			}
 			transfer_state = 268
 		}
+		set_autonomy = {
+			target = MOR
+			autonomy_state = autonomy_free
+		}
+		puppet = MOR
+		hidden_effect = {
+		MOR = {
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+			last_election = "1910.1.1"
+			election_frequency = 48
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.5
+				}
+			}
+		}
 		FRA = {
 				add_to_variable = {
 					var = french_german_antongonism
@@ -564,6 +583,25 @@ country_event = {
 				}
 			}
 			transfer_state = 728
+		}
+		set_autonomy = {
+			target = MOR
+			autonomy_state = autonomy_free
+		}
+		puppet = MOR
+		hidden_effect = {
+		MOR = {
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+			last_election = "1910.1.1"
+			election_frequency = 48
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.5
+				}
+			}
 		}
 		FRA = {
 				add_to_variable = {

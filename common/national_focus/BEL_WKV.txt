@@ -1,0 +1,42 @@
+focus_tree = {
+	id = belgium_WKV
+	default = no
+	country = { factor=0 modifier = { add = 15 tag = BEL has_global_flag = kis_second_treaty_frankfort } }
+	###########################################################################################################################
+	# POLITICAL
+	###########################################################################################################################
+
+	focus = {
+		id = BEL_WKV_leopold_IIIs_reign
+		icon = GFX_focus_generic_monarchy_2
+		completion_reward = {  	
+		}
+		ai_will_do = { factor = 20 }
+		cost = 2
+		x = 10
+		y = 0
+	}
+	focus = {
+		id = BEL_WKV_a_reduced_belgium
+		icon = GFX_focus_generic_monarchy_2
+		prerequisite = {focus = BEL_WKV_leopold_IIIs_reign}
+		mutually_exclusive = {focus = BEL_WKV_an_acceptable_trade}
+		completion_reward = {  	
+		}
+		ai_will_do = { factor = 20 }
+		cost = 2
+		x = 9
+		y = 1
+	}
+	focus = {
+		id = BEL_WKV_an_acceptable_trade
+		icon = GFX_focus_generic_monarchy_2
+		prerequisite = {focus = BEL_WKV_leopold_IIIs_reign}
+		mutually_exclusive = {focus = BEL_WKV_a_reduced_belgium}
+		completion_reward = {  	
+		}
+		ai_will_do = { factor = 20 }
+		cost = 2
+		x = 11
+		y = 1
+	}

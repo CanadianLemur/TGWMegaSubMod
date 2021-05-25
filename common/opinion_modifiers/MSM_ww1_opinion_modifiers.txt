@@ -5,6 +5,12 @@ opinion_modifiers = {
 		value = 100
 	}
 	
+	### Celtic Stuff
+	
+	celtic_brotherhood = {
+		value = 25
+	}
+	
 	#Portugal
 	
 	POR_bought_guns = {

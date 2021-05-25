@@ -1,0 +1,129 @@
+add_namespace = MSMBrittany
+#An Independent Brittany!
+country_event = {
+	id =  MSMBrittany.1
+	title = MSMBrittany.1.t
+	desc = MSMBrittany.1.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+
+	option = {
+		name = MSMBrittany.1.a
+		ai_chance = { factor = 50 }
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+#Cultural Exchange with Brittany?
+country_event = {
+	id =  MSMBrittany.2
+	title = MSMBrittany.2.t
+	desc = MSMBrittany.2.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+
+	option = {
+		name = MSMBrittany.2.a
+		ai_chance = { factor = 100 }
+		add_political_power = 25
+		add_offsite_building = { type = industrial_complex level = 1 }
+		BRI = {add_political_power = 25
+		add_offsite_building = { type = industrial_complex level = 1 }
+		set_variable = {
+		var = irish_exchange
+		value = 1
+		}
+		country_event = {
+			id = MSMBrittany.3
+			days = 1
+		}
+		}
+	}
+	option = {
+		name = MSMBrittany.2.b
+		ai_chance = { factor = 0 }
+	}
+}
+#Cultural Exchange with Ireland Response
+country_event = {
+	id =  MSMBrittany.3
+	title = MSMBrittany.3.t
+	desc = MSMBrittany.3.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = MSMBrittany.3.a
+		ai_chance = { factor = 100 }
+		trigger = {
+		check_variable = {
+		var = irish_exchange
+		value = 1
+		}
+		}
+		effect_tooltip = {
+		add_political_power = 25
+		add_offsite_building = { type = industrial_complex level = 1 }
+		IRE = {add_political_power = 25
+		add_offsite_building = { type = industrial_complex level = 1 }
+		}
+		}
+	}
+	option = {
+		name = MSMBrittany.3.b
+		ai_chance = { factor = 100 }
+		trigger = {
+		NOT = {check_variable = {
+		var = irish_exchange
+		value = 1
+				}
+			}
+		}
+	}
+}
+#Brittany wants to buy Fighters
+country_event = {
+	id =  MSMBrittany.4
+	title = MSMBrittany.4.t
+	desc = MSMBrittany.4.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+				
+	#sell them fighters from our reserve
+	option = {
+		name = MSMBrittany.4.a
+		ai_chance = { factor = 100 }
+		add_timed_idea = {
+		idea = msm_fighter_sale_to_brittany_profits
+		days = 60
+		}
+		send_equipment = {
+			equipment = fighter_equipment
+			amount = 100
+			target = BRI
+		}
+		trigger = {
+			has_equipment = { fighter_equipment > 100 }
+		}
+	}
+	#divert production to make the sale
+	option = {
+		name = MSMBrittany.4.b
+		ai_chance = { factor = 50 }
+		add_timed_idea = {
+		idea = msm_fighter_sale_to_brittany_production_diverted
+		days = 30
+		}
+		add_timed_idea = {
+		idea = msm_fighter_sale_to_brittany_profits
+		days = 60
+		}
+	}
+	#No sale
+	option = {
+		name = MSMBrittany.4.c
+		ai_chance = { factor = 0 }
+	}
+}
