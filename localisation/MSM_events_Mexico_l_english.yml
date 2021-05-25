@@ -1,5 +1,7 @@
 ﻿l_english:
  MSMMEXICAN_REVOLUTION_GLOBAL:0 "§CThe Mexican Revolution has begun!§!"
+ MEX_support_diaz:0 "§+Is supporting Díaz§!"
+ MEX_support_madero:0 "§+Is supporting Madero§!"
  MSMMexico.1.t:0 "The 1910 Election"`
  MSMMexico.1.d:0 "Francisco Madero is challenging Porfirio Díaz for the presidency in the current 1910 election. Díaz, the sitting president of Mexico who was intially planning to retire has decided to run against Madero, leader of the Anti-Re-election Movement, who has promised reforms."
  MSMMexico.1.a:0 "We shall see who wins"

@@ -30,6 +30,7 @@ country_event = {
 		MEX={
 			remove_state_core=482
 			set_variable = { support_revolution = 1 }
+			set_global_flag = MEX_support_madero
 		}
 	}
 	option = {
@@ -38,6 +39,7 @@ country_event = {
 		MEX={
 			remove_state_core=482
 			set_variable = { support_revolution = 0 }
+			set_global_flag = MEX_support_diaz
 		}
 	}
 
@@ -153,6 +155,7 @@ country_event = {
 		set_cosmetic_tag = MEX_villa_mexico
 		set_research_slots = 3
 	    reserve_dynamic_country = yes
+		add_ideas = { MEX_revolutionary_fervor }
 	}
 	
 	create_dynamic_country = {
@@ -164,6 +167,7 @@ country_event = {
 		set_cosmetic_tag = MEX_zapata_mexico
 		set_research_slots = 3
 	    reserve_dynamic_country = yes
+		add_ideas = { MEX_revolutionary_fervor }
 	}
 	
 	create_dynamic_country = {
@@ -175,6 +179,15 @@ country_event = {
 		set_cosmetic_tag = MEX_magonista_mexico
 		set_research_slots = 3
 	    reserve_dynamic_country = yes
+		add_ideas = { MEX_revolutionary_fervor }
+		create_country_leader = {
+			name = "Ricardo Flores Magón"
+			desc = "POLITICS_RICARDO_MAGON_DESC"
+			picture = "gfx/leaders/MEX/MEX_ricardo_magon.dds"
+			expire = "1925.1.1"
+			ideology = anarchist_communism
+			traits = { }
+		}
 	}
 	
 		set_variable = { MEX.has_revolution = 2 }
@@ -586,13 +599,8 @@ country_event = {
 	id=MSMMexico.8
 	fire_only_once=yes
 	trigger = {
-		OR = {
-			MXB = {
-				has_war_with = MEX
-				surrender_progress > 0.85
-			}
-			NOT = { country_exists = MXB }
-		}
+		MXB = { has_capitulated = yes }	
+		has_global_flag = MSMMEXICAN_REVOLUTION_GLOBAL
 		TAG = MEX
 	}
 	immediate = {
