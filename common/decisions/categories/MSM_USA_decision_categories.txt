@@ -1,0 +1,10 @@
+USA_MSM_panama_construction = {
+	icon = generic_political_actions
+	priority = 15
+	available = {
+	}
+	visible = {
+		tag = USA
+		has_global_flag = PANAMA_CANAL_INCOMPLETE
+	}
+}

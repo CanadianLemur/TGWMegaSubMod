@@ -179,6 +179,7 @@ adjacency_rule
 		OR = {
 			has_global_flag = PANAMA_CANAL_BLOCKED
 			has_country_flag = PANAMA_CANAL_BLOCKED_FOR_COUNTRY
+			has_global_flag = PANAMA_CANAL_INCOMPLETE #MSM
 		}
 		tooltip = disable_canal_tt
 	}

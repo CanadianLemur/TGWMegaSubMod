@@ -232,6 +232,10 @@ if = {
 		home_of_the_free
 	}
 	
+	#Make panama canal impassable until the mission is finished
+	set_global_flag = PANAMA_CANAL_INCOMPLETE
+	set_country_flag = building_panama_canal
+	
 	if = {
 		limit = { has_dlc = "Man the Guns" }
 		set_technology = {
