@@ -144,6 +144,15 @@ country_event = {
 		set_cosmetic_tag = MEX_madero_mexico
 		set_research_slots = 3
 	    reserve_dynamic_country = yes
+		
+		create_country_leader = {
+			name = "Francisco I. Madero"
+			desc = "POLITICS_FRANCISO_MADERO_DESC"
+			picture = "gfx/leaders/MEX/Portrait_MEX_Francisco_Madero.dds"
+			expire = "1965.1.1"
+			ideology = liberalism
+			traits = {}
+		}
 	}
 	
 	create_dynamic_country = {
@@ -156,6 +165,15 @@ country_event = {
 		set_research_slots = 3
 	    reserve_dynamic_country = yes
 		add_ideas = { MEX_revolutionary_fervor }
+		
+		create_country_leader = {
+			name = "Pancho Villa"
+			desc = "POLITICS_PANCHO_VILLA_DESC"
+			picture = "gfx/leaders/MEX/MEX_panco_villa_ww1.dds"
+			expire = "1965.1.1"
+			ideology = liberalism
+			traits = {}
+		}
 	}
 	
 	create_dynamic_country = {
@@ -324,14 +342,7 @@ country_event = {
 							ruling_party = democratic
 						}
 					retire_country_leader = yes
-					create_country_leader = {
-						name = "Francisco I. Madero"
-						desc = "POLITICS_FRANCISO_MADERO_DESC"
-						picture = "gfx/leaders/MEX/Portrait_MEX_Francisco_Madero.dds"
-						expire = "1965.1.1"
-						ideology = liberalism
-						traits = {}
-					}
+					
 				}
 			}
 		}
@@ -683,6 +694,11 @@ country_event = {
 					elections_allowed = yes
 					last_election = "1910.6.21"
 					election_frequency = 48
+				}
+				
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.45
 				}
 				
 				retire_country_leader = yes ##Temporarily remove Madero for Leon interim presidency
