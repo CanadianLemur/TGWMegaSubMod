@@ -239,7 +239,7 @@ ideologies = {
 		
 		types = {
 			
-			anarchist_communism = {
+			anarcho_communism = {
 			}
 		
 			anarcho_capitalism = {
