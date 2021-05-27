@@ -81,8 +81,6 @@ ideologies = {
 			anti_revisionism = {
 			}
 			
-			anarchist_communism = {
-			}
 		}
 		
 		dynamic_faction_names = {
