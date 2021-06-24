@@ -41,3 +41,6 @@
  MSMMexico.12.t:0 "Interim Presidency of Francisco León"
  MSMMexico.12.d:0 "Díaz has resigned as president of Mexico following a successful revolution. As stated in the Treaty of Ciudad Juárez, Francisco Madero will not immediately assume the office of President of Mexico. He will, however, be considered a candidate for president in the upcoming election. Until the election, Francisco León de la Barra, will be Interim President of Mexico."
  MSMMexico.12.a:0 "I suppose we can wait"
+ MSMMexico.13.t:0 "Tampico Affair"
+ MSMMexico.13.d:0 "Following the decline of US-Mexico relations and the refusal of US president [USA.GetLeader] to recoginize our president [ROOT.GetLeader], our oil fields in Tampico and the port of Veracruz have been occupied by the Americans."
+ MSMMexico.13.a:0 "Unfortunate"

@@ -726,3 +726,48 @@ country_event = {
 		
 		}
 	}
+	
+	country_event={ ## Tampico Affair part 1
+		title=MSMMexico.13.t
+		desc=MSMMexico.13.d
+		id=MSMMexico.13
+		fire_only_once=yes
+		
+		trigger={
+			date > 1914.4.9
+			TAG=MEX
+		}
+		
+		immediate={
+			hidden_effect={
+			USA={
+				transfer_state = 477
+				add_opinion_modifier = {
+					target = MEX
+					modifer = tampico_affair
+				}
+			}
+			MEX = {
+				add_opinion_modifier = {
+					target = USA
+					modifer = tampico_affair
+				}
+			}
+			
+			477 = {
+				add_resistance_target = {
+					id = 123
+					amount = 40
+					occupied = MEX
+					occupier = USA
+					days = 365
+					tooltip = tampico_affair_anti_us
+				}
+			}
+			
+		}
+		}
+		option = {
+			name=MSMMexico.13.a
+		}
+	}

@@ -3,11 +3,12 @@ state={
 	name="STATE_277"
 	manpower = 3424403
 	state_category=city
-	provinces={ 1965 2008 2011 7913 12755 }
+	provinces={ 1965 2008 2011 7913 8079 8089 12755 }
 	resources={
-		wood=5
+		wood=15
 		steel=15
 		coal=2
+		oil=5
 		}
 	history={
 		victory_points = {
@@ -15,6 +16,9 @@ state={
 		}
 		victory_points = {
 			2008 10
+		}
+		victory_points = {
+			8089 10
 		}
 		owner=MEX
 		add_core_of=MEX

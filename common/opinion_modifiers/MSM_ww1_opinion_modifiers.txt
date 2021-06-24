@@ -67,4 +67,9 @@ opinion_modifiers = {
 		value = 25
 	}
 	
+	#Tampico Affair
+	
+	tampico_affair = {
+		value = -50
+	}
 }
