@@ -848,4 +848,9 @@ spriteTypes = {
 		name = "GFX_ideology_anarchist_communism"
 		texturefile = "gfx/interface/ideologies/anarchocommunism.dds"
 	}
+	
+	spriteType = { #Tampico Affair Event Picture
+		name = "GFX_tampico_affair_image"
+		texturefile = "gfx/event_pictures/tampico_affair_event.dds"
+	}
 }
