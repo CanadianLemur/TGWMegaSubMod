@@ -57,4 +57,13 @@ leader_traits = {
 	}
 	MSM_viceroy_of_hannover= {
 	}
+	anarchism_booster = {
+	random = no
+	sprite = 13
+	anarchism_drift = 0.1
+	
+	ai_will_do = {
+		factor = 0
+	}
+}
 }

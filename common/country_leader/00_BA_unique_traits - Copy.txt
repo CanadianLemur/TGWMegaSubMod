@@ -1,9 +1,0 @@
-<ideology>_booster = {
-	random = no
-	sprite = 13
-	<ideology>_drift = 0.1
-	
-	ai_will_do = {
-		factor = 0
-	}
-}
