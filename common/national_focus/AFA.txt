@@ -1,0 +1,54 @@
+focus_tree = {
+	id = action_francaise_army
+	default = no
+	country = { factor=0 modifier = { add = 30 tag = FRA } }
+	###########################################################################################################################
+	# POLITICAL
+	###########################################################################################################################
+	focus = {
+		id = AFA_revive_the_spirit_of_the_vendee
+		icon = GFX_
+		completion_reward = {  
+		add_ideas = MSM_FRA_revive_the_spirit_of_the_vendee
+		}
+		ai_will_do = { factor = 20 }
+		cost = 2
+		x = 10
+		y = 0
+	}
+	focus = {
+		id = AFA_the_kingdom_restored
+		icon = GFX
+		prerequisite = {focus = AFA_revive_the_spirit_of_the_vendee}
+		available = {
+		controls_state = 16
+		controls_state = 21 
+		controls_state = 30
+		controls_state = 19
+		}
+		completion_reward = { set_cosmetic_tag = FRA 
+		set_capital = 16
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 10
+		y = 1
+	}
+	focus = {
+		id = AFA_return_of_the_king
+		icon = GFX
+		prerequisite = {focus = AFA_the_kingdom_restored}
+		available = {
+		controls_state = 16
+		controls_state = 21 
+		controls_state = 30
+		controls_state = 19
+		}
+		completion_reward = { set_cosmetic_tag = FRA 
+		set_capital = 16
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 10
+		y = 2
+	}

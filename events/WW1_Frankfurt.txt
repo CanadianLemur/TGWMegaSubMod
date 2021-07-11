@@ -368,8 +368,16 @@ country_event = {
 						has_war_with = HOL
 					}
 				}
-				if = {limit = {HOL = owns_state = 838} transfer_state = 838}
-				if = {limit = {HOL = owns_state = 669} transfer_state = 669}
+				if = {limit = {HOL = {owns_state = 838}} transfer_state = 838}
+				if = {limit = {HOL = {owns_state = 669}} transfer_state = 669}
+			}
+		if = {
+				limit = {
+					GER = {
+						has_war_with = INS
+					}
+				}
+				if = {limit = {INS = {owns_state = 669}} transfer_state = 669}
 			}
 			if = {
 				limit = {
@@ -417,6 +425,28 @@ country_event = {
 					}
 				}
 				GER = {
+					transfer_state = 333		# North Borneo
+				}
+			}
+			if = {
+				limit = {
+					ENG = { owns_state = 824 }	### If Zanzibar is owned by the UK
+					ENG = {
+						has_war_with = GER
+					}
+				}
+				GER = {
+					transfer_state = 824		# Zanzibar
+				}
+			}
+			if = {
+				limit = {
+					MAL = { owns_state = 333 }	### If North Borneo is owned by the Straits Settlements
+					MAL = {
+						has_war_with = GER
+					}
+				}
+				MAL = {
 					transfer_state = 333		# North Borneo
 				}
 			}
@@ -1631,6 +1661,7 @@ country_event = {
 			news_event = { days = 3 id = ww1_frankfurt.1 }
 			GER = {country_event = {days = 10 id = MSMGermany.6}}
 			GER = {country_event = {days = 2 id = MSMFrankfurt_France.1}}
+			FRA = {country_event = {days = 10 id = MSMFrenchCrisis.1}}
 		}
 	}
 #____________________________________________________________

@@ -319,6 +319,7 @@ country_event = {
 					traits = {
 					}
 				}
+				inherit_technology = FRA
 			}
 		}
 	}

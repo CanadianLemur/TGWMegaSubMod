@@ -66,4 +66,10 @@ leader_traits = {
 		factor = 0
 	}
 }
+	MSM_lion_of_africa= {
+		recruitable_population_factor = 0.15
+		compliance_gain = 0.015
+		non_core_manpower = 0.02
+		political_power_gain = 0.15
+	}
 }

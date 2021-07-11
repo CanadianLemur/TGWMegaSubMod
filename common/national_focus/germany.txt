@@ -4575,10 +4575,10 @@ set_party_name = {
 		}
 	}
 	focus = {
-		id = GER_interwar_WKV_centralized_administration
+		id = GER_interwar_WKV_the_lion_of_africa
 		relative_position_id = GER_interwar_WKV_african_policy
 		mutually_exclusive = {focus = GER_interwar_WKV_decentralized_administration }
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_focus_hol_united_netherlands
 		prerequisite = {focus = GER_interwar_WKV_african_policy}
 		available = {
 		}
@@ -4591,15 +4591,13 @@ set_party_name = {
 			factor = 10	
 		}
 		completion_reward = {
-		##Full united Mittelafrika puppet
-			add_political_power = 100
-
+		##Lettow Vorbeck
 		}
 	}
 	focus = {
-		id = GER_interwar_WKV_decentralized_administration
+		id = GER_interwar_WKV_schnees_promotion
 		relative_position_id = GER_interwar_WKV_african_policy
-		mutually_exclusive = {focus = GER_interwar_WKV_centralized_administration }
+		mutually_exclusive = {focus = GER_interwar_WKV_mittelafrika_lettow_vorbeck }
 		icon = GFX_focus_generic_treaty
 		prerequisite = {focus = GER_interwar_WKV_african_policy}
 		available = {
@@ -4613,8 +4611,7 @@ set_party_name = {
 			factor = 10	
 		}
 		completion_reward = {
-		##less crazy decentralized African Administration
-			add_political_power = 100
+		#Heinrich Schnee
 
 		}
 	}

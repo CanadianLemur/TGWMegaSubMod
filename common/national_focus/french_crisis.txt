@@ -17,6 +17,24 @@ focus_tree = {
 		y = 0
 	}
 	focus = {
+		id = FRA_crisis_action_francaise_coup
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = {focus = FRA_crisis_shame_of_defeat}
+		completion_reward = {  
+		set_politics = {
+			ruling_party = fascism
+		}
+		add_popularity = {
+				ideology = fascism
+				popularity = 0.50
+			}
+		}
+		ai_will_do = { factor = 20 }
+		cost = 3
+		x = 6
+		y = 1
+	}
+	focus = {
 		id = FRA_crisis_petain_takes_control
 		icon = GFX_goal_generic_attack_allies
 		prerequisite = {focus = FRA_crisis_shame_of_defeat}
@@ -44,7 +62,6 @@ focus_tree = {
 		
 		}
 		}
-		country_event = MSMFrenchCrisis.1
 		}
 		ai_will_do = { factor = 20 }
 		cost = 3
@@ -61,7 +78,7 @@ focus_tree = {
 		mutually_exclusive = {focus = FRA_crisis_alliance_with_action_francaise}
 		ai_will_do = { factor = 20 }
 		cost = 1
-		x = 8
+		x = 12
 		y = 3
 	}
 	focus = {
@@ -79,216 +96,6 @@ focus_tree = {
 		mutually_exclusive = {focus = FRA_crisis_no_alliances_with_fascists}
 		ai_will_do = { factor = 20 }
 		cost = 1
-		x = 12
+		x = 8
 		y = 3
-	}
-	focus = {
-		id = FRA_crisis_crack_down_on_communists
-		icon = GFX_goal_demand_sudetenland
-		prerequisite = {focus = FRA_crisis_no_alliances_with_fascists focus = FRA_crisis_alliance_with_action_francaise}
-		completion_reward = {  
-		custom_effect_tooltip = start_civil_war
-		hidden_effect ={
-			create_dynamic_country = {
-					original_tag = FRA
-					set_country_flag = french_communist_rebellion
-					set_politics = {
-						ruling_party = communism
-					}
-					set_popularities = {
-						democratic = 10
-						neutrality = 10
-						fascism = 10
-						anarchism = 20
-						communism = 50
-					}
-					set_cosmetic_tag = ACF
-					set_research_slots = 3
-					reserve_dynamic_country = yes
-				}
-			create_dynamic_country = {
-					original_tag = FRA
-					set_country_flag = french_democratic_rebellion
-					set_politics = {
-						ruling_party = democratic
-					}
-					mark_focus_tree_layout_dirty = yes #reloads focus tree use sparingly
-					set_popularities = {
-						democratic = 80
-						neutrality = 10
-						fascism = 10
-					}
-					set_cosmetic_tag = AFL
-					set_research_slots = 3
-					reserve_dynamic_country = yes
-				}
-				ACF = {load_focus_tree = french_communist_army}
-
-		if = {
-		limit = {owns_state = 29}
-	ACF = {	transfer_state = 29 
-		add_state_core = 29
-		}
-		}
-		if = {
-		limit = {owns_state = 785}
-	ACF = {	transfer_state = 785
-		add_state_core = 785
-		}
-		}
-		if = {
-		limit = {owns_state = 18}
-	ACF = {	transfer_state = 18 
-		add_state_core = 18
-		}
-		}
-		if = {
-		limit = {owns_state = 16}
-	ACF = {	transfer_state = 16 
-		add_state_core = 16
-		}
-		}
-		if = {
-		limit = {owns_state = 15}
-	ACF = {	transfer_state = 15 
-		add_state_core = 15
-		}
-		}
-	if = { limit = {NOT = {has_completed_focus = FRA_crisis_alliance_with_action_francaise}}
-			create_dynamic_country = {
-					original_tag = FRA
-					set_country_flag = french_fascist_rebellion
-					set_politics = {
-						ruling_party = fascism
-					}
-					set_cosmetic_tag = AFA
-					set_research_slots = 3
-					reserve_dynamic_country = yes
-					mark_focus_tree_layout_dirty = yes #reloads focus tree use sparingly
-					set_popularities = {
-						democratic = 10
-						neutrality = 20
-						fascism = 70
-					}
-				}
-	if = {
-		limit = {owns_state = 14}
-	AFA = {	transfer_state = 14
-		add_state_core = 14
-		}
-		}
-	if = {
-		limit = {owns_state = 30}
-	AFA = {	transfer_state = 30
-		add_state_core = 30
-		}
-		}
-			if = {
-		limit = {owns_state = 23}
-	AFA = {	transfer_state = 23
-		add_state_core = 23
-		}
-		}
-	if = {
-		limit = {owns_state = 19}
-	AFA = {	transfer_state = 19
-		add_state_core = 19
-		}
-		}
-		}
-		if = {
-		limit = {owns_state = 24}
-	AFL = {	transfer_state = 24
-		add_state_core = 24
-		}
-		}
-			if = {
-		limit = {owns_state = 33}
-	AFL = {	transfer_state = 33
-		add_state_core = 33
-		}
-		}
-			if = {
-		limit = {owns_state = 27}
-	AFL = {	transfer_state = 27
-		add_state_core = 27
-		}
-		}
-		declare_war_on = {
-		target = AFL 
-		type = civil_war
-		}
-		declare_war_on = {
-		target = ACF
-		type = civil_war
-		}
-		if = {
-		limit = {AFA = {exists = yes}}
-		AFA = {declare_war_on = {
-		target = AFL 
-		type = civil_war
-		}
-		declare_war_on = {
-		target = ACF 
-		type = civil_war
-		}
-		declare_war_on = {
-		target = FRA 
-		type = civil_war
-		}
-		}
-		}
-		AFL = {
-		declare_war_on = {
-		target = ACF 
-		type = civil_war
-		}
-		}
-		transfer_units_fraction= {
-		target = ACF
-		size = 1.0
-		stockpile_ratio = 0.3
-		army_ratio = 0.3
-		navy_ratio = 0.3
-		air_ratio = 0.3
-		keep_unit_leaders_trigger = {
-			always = yes
-			}
-		}
-		transfer_units_fraction= {
-		target = AFL
-		size = 1.0
-		stockpile_ratio = 0.2
-		army_ratio = 0.2
-		navy_ratio = 0.2
-		air_ratio = 0.2
-		keep_unit_leaders_trigger = {
-			always = yes
-			}
-		}
-		if = {
-		limit = {AFA = {exists = yes}}
-				transfer_units_fraction= {
-		target = AFA
-		size = 1.0
-		stockpile_ratio = 0.2
-		army_ratio = 0.5
-		navy_ratio = 0.5
-		air_ratio = 0.5
-		keep_unit_leaders_trigger = {
-			always = yes
-			}
-		}
-		}
-		ACF = {inherit_technology = FRA}
-		AFA = {inherit_technology = FRA}
-		AFL = {inherit_technology = FRA}
-		}
-		}
-		
-		ai_will_do = { factor = 20 }
-		cost = 3
-		x = 10
-		y = 4
-		}
 	}

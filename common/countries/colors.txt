@@ -617,6 +617,10 @@ CAU = {
 	color = rgb { 100 100 136 }
 	color_ui = rgb { 110 110 136 }
 }
+MIT = {
+	color = rgb { 85 85 85 }
+	color_ui = rgb { 85 85 85 }
+}
 D01 = {
 	color = rgb { 187 80 86 }
 	color_ui = rgb { 243 103 112 }

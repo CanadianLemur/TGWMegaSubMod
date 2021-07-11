@@ -247,6 +247,11 @@ focus_tree = {
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = {focus = BRI_WKV_a_breton_airforce}
 		completion_reward = {  
+		GER = {
+		country_event = {
+		id = MSMBrittany.4
+		}
+		}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 7
@@ -257,7 +262,12 @@ focus_tree = {
 		id = BRI_WKV_purchase_seaplanes_from_germany
 		icon = GFX_goal_generic_air_naval_bomber
 		prerequisite = {focus = BRI_WKV_a_breton_airforce}
-		completion_reward = {  
+		completion_reward = { 
+		GER = {
+		country_event = {
+		id = MSMBrittany.6
+		}
+		}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 7
@@ -269,6 +279,11 @@ focus_tree = {
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = {focus = BRI_WKV_purchase_fighters_from_germany}
 		completion_reward = {  
+		GER = {
+		country_event = {
+		id = MSMBrittany.5
+		}
+		}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 7

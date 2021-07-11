@@ -906,3 +906,267 @@ country_event = {
 		
 	}
 }
+####African Policy####
+country_event = {
+	id =  MSM_WKV_Germany.6
+	title = MSM_WKV_Germany.6.t
+	desc = MSM_WKV_Germany.6.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = no
+	is_triggered_only = yes
+#### Lettow-Vorbeck
+	option = {
+		name = MSM_WKV_Germany.6.a
+	MIT = {
+	create_country_leader = {
+	name = "Paul Von Lettow-Vorbeck"
+	desc = "POLITICS_LETTOW_VORBECK_DESC"
+	picture = "gfx/hoi4tgw_portraits/GER/army_generals/GER_von_lettow_vorbeck.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+	MSM_lion_of_africa
+	}
+}
+	hidden_effect = {
+	if = {
+		limit = {
+			GER = {owns_state = 546}
+		}
+		transfer_state = 546#Tanganyika
+		}
+	if = {
+		limit = {
+			GER = {owns_state = 824}
+		}
+		transfer_state = 824#Zanzibar
+		}
+	if = {
+		limit = {
+			GER = {owns_state = 768}
+		}
+		transfer_state = 768#Rwanda
+		}
+	if = {
+		limit = {
+			GER = {owns_state = 769}
+		}
+		transfer_state = 769#Burundi
+		}
+	if = {
+		limit = {
+			GER = {owns_state = 547}
+		}
+		transfer_state = 547#Kenya
+		}
+	if = {
+		limit = {
+			GER = {owns_state = 548}
+		}
+		transfer_state = 548#Uganda
+		}
+	if = {
+		limit = {
+			GER = {owns_state = 708}
+		}
+		transfer_state = 708#Comoros
+		}
+	if = {
+		limit = {
+			GER = {owns_state = 543}
+		}
+		transfer_state = 543#Madagascar
+		}
+	if = {
+		limit = {
+			GER = {owns_state = 708}
+		}
+		transfer_state = 708#Reunion
+		}
+	if = {
+		limit = {
+			GER = {owns_state = 544}
+		}
+		transfer_state = 544#Mozambique
+		}
+	if = {
+		limit = {
+			GER = {owns_state = 770}
+		}
+		transfer_state = 770#Malawi
+		}
+	if = {
+		limit = {
+			GER = {owns_state = 771}
+		}
+		transfer_state = 771#Zambia
+		}
+	if = {
+		limit = {
+			GER = {owns_state = 541}
+		}
+		transfer_state = 541#South West Africa
+		}
+	if = {
+		limit = {
+			GER = {owns_state = 789}
+		}
+		transfer_state = 789#Walvis Bay
+		}
+	if = {
+		limit = {
+			GER = {owns_state = 540}
+		}
+		transfer_state = 540#South Angola
+		}
+	if = {
+		limit = {
+			GER = {owns_state = 812}
+		}
+		transfer_state = 812#North Angola
+		}
+	if = {
+		limit = {
+			GER = {owns_state = 295}
+		}
+		transfer_state = 295#Leopoldville
+		}
+	if = {
+		limit = {
+			GER = {owns_state = 718}
+		}
+		transfer_state = 718#Stanleyville
+		}
+	if = {
+		limit = {
+			GER = {owns_state = 538}
+		}
+		transfer_state = 538#Central Congo
+		}
+	if = {
+		limit = {
+			GER = {owns_state = 660}
+		}
+		transfer_state = 660#Equatorial Africa
+		}
+	if = {
+		limit = {
+			GER = {owns_state = 774}
+		}
+		transfer_state = 774#Entenschnabel
+		}
+	if = {
+		limit = {
+			GER = {owns_state = 773}
+		}
+		transfer_state = 773#NordKamerun
+		}
+	if = {
+		limit = {
+			GER = {owns_state = 755}
+		}
+		transfer_state = 755#Sangha
+		}
+	if = {
+		limit = {
+			GER = {owns_state = 539}
+		}
+		transfer_state = 539#Kamerun
+		}
+	if = {
+		limit = {
+			GER = {owns_state = 772}
+		}
+		transfer_state = 772#Middle Congo
+		}
+	if = {
+		limit = {
+			GER = {owns_state = 752}
+		}
+		transfer_state = 752#Gabon
+		}
+	if = {
+		limit = {
+			GER = {owns_state = 297}
+		}
+		transfer_state = 297#Equatorial Guinea
+		}
+	if = {
+		limit = {
+			GER = {owns_state = 705}
+		}
+		transfer_state = 705#Sao Tome
+		}
+	if = {
+		limit = {
+			GER = {owns_state = 558}
+		}
+		transfer_state = 558#Nigeria
+		}
+	if = {
+		limit = {
+			GER = {owns_state = 776}
+		}
+		transfer_state = 776#Dahomey
+		}
+	if = {
+		limit = {
+			GER = {owns_state = 777}
+		}
+		transfer_state = 777#East Togoland
+		}
+	if = {
+		limit = {
+			GER = {owns_state = 794}
+		}
+		transfer_state = 794#West Togoland
+		}
+	if = {
+		limit = {
+			GER = {owns_state = 274}
+		}
+		transfer_state = 274#Ghana
+		}
+	if = {
+		limit = {
+			GER = {owns_state = 779}
+		}
+		transfer_state = 779#Ivory Coast
+		}
+	}
+}
+puppet = MIT 
+hidden_effect = {
+MIT = {
+complete_national_focus = MIT_the_lion_of_africa
+add_state_core = 546
+add_state_core = 768
+add_state_core = 769
+add_state_core = 541
+add_state_core = 539
+add_state_core = 773
+add_state_core = 774
+add_state_core = 777
+add_state_core = 794
+set_popularities = {
+	democratic = 10
+	neutrality = 60`
+	anarchism = 15
+	communism = 15
+}
+set_politics = {
+	ruling_party = neutrality
+        elections_allowed = no
+        last_election = "1910.1.1"
+        election_frequency = 48
+			}
+		}
+	}
+}
+#### Schnee
+	option = {
+		name = MSM_WKV_Germany.6.b
+		
+	}
+}

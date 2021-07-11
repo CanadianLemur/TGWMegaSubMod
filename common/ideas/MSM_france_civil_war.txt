@@ -48,5 +48,18 @@ ideas={
 				attack_bonus_against_cores = 0.05
 			}
 		}
+	MSM_FRA_revive_the_spirit_of_the_vendee = {
+			allowed = {
+				always = no
+			}
+			
+			
+			removal_cost = -1 
+			
+			modifier = {
+				conscription_factor = 0.15
+				equipment_capture_factor  = 0.02
+			}
+		}
 	}
 	}
