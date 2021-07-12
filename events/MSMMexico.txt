@@ -766,9 +766,77 @@ country_event = {
 				}
 			}
 			
-		}
+			}
 		}
 		option = {
 			name=MSMMexico.13.a
+		}
+	}
+	
+	country_event = { ###Huerta Coup
+		title=MSMMexico.14.t
+		desc=MSMMexico.14.d
+		id=MSMMexico.14
+		fire_only_once=yes
+		is_triggered_only=no
+		
+		trigger={
+			TAG=MEX
+			date > 1913.2.1
+			MEX = {
+				has_country_leader = {
+					name = "Francisco I. Madero"
+					ruling_only = yes
+				}
+			}
+		}
+		
+		immediate = {
+			
+		}
+		option={
+			name=MSMMexico.14.a
+			MEX = {
+				kill_country_leader = yes
+				create_country_leader = {
+					name = "Victoriano Huerta"
+					desc = "POLITICS_VICTORIANO_HUERTA_DESC"
+					picture = "gfx/leaders/MEX/Portrait_MEX_Victoriano_Huerta.dds"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {}
+				}
+				set_political_party = {
+					ideology = neutrality
+					popularity = 65
+				}
+			}
+			set_global_flag=MEXMaderoDies
+			country_event = {
+				id = MSMMexico.15
+				days = 10
+				random = 10
+			}
+		}
+		option={
+			name=MSMMexico.14.b
+			set_global_flag=MEXMaderoLives
+		}
+	}
+	
+	country_event={ ###Ten Tragic Days
+		title=MSMMexico.15.t
+		desc=MSMMexico.15.d
+		id=MSMMexico.15
+		fire_only_once=yes
+		is_triggered_only=yes
+		trigger={
+			TAG=MEX
+		}
+		immediate={
+			add_stability=-0.1
+		}
+		option={
+			name=MSMMexico.15.a
 		}
 	}
