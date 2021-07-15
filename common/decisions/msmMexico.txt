@@ -8,11 +8,7 @@ MEX_civil_war = {
 			always = no
 		}
 		activation = {
-			check_variable = {
-				var = MEX.has_revolution
-				value = 1
-				compare = equals
-			}
+			has_country_flag = warlord_era
 		}
 		is_good = no
 		selectable_mission = no

@@ -9,6 +9,39 @@ country_event = {
 		date >  1910.5.1
 		TAG = MEX
 	}
+	immediate = {
+		hidden_effect = {
+			no_compliance_gain = 1
+			remove_state_core = 480
+			480 = {
+				force_enable_resistance = MEX
+				start_resistance = yes
+				set_resistance = 30
+				set_resistance_target = 15
+			}
+			remove_state_core = 482
+			482 = {
+				force_enable_resistance = MEX
+				start_resistance = yes
+				set_resistance = 30
+				set_resistance_target = 15
+			}
+			remove_state_core = 484
+			484 = {
+				force_enable_resistance = MEX
+				start_resistance = yes
+				set_resistance = 30
+				set_resistance_target = 15
+			}
+			remove_state_core = 485
+			485 = {
+				force_enable_resistance = MEX
+				start_resistance = yes
+				set_resistance = 10
+				set_resistance_target = 5
+			}
+		}
+	}
 	option = {
 		name =  MSMMexico.1.a
 		
@@ -28,7 +61,6 @@ country_event = {
 		name =  MSMMexico.2.a ##Madero is good
 		custom_effect_tooltip=MSMMexicoRevolutionTooltip
 		MEX={
-			remove_state_core=482
 			set_variable = { support_revolution = 1 }
 			set_global_flag = MEX_support_madero
 		}
@@ -37,7 +69,6 @@ country_event = {
 		name =  MSMMexico.2.b ## Madero is bad
 		custom_effect_tooltip=MSMMexicoDiazTooltip
 		MEX={
-			remove_state_core=482
 			set_variable = { support_revolution = 0 }
 			set_global_flag = MEX_support_diaz
 		}
@@ -574,6 +605,7 @@ country_event = {
 	}
 	immediate = {
 		set_variable = { MEX.has_revolution = 3 }
+		set_country_flag = warlord_era
 		MXA = {
 			retire_country_leader = yes ##Retire Diaz and place Francisco Leon
         }
@@ -582,9 +614,6 @@ country_event = {
 				TAG = MXA
 				message = REVOLUTION_VICTORY
 			}
-			
-			
-			
 			annex_country = {
 				target = MXA
 				transfer_troops = no
@@ -811,7 +840,6 @@ country_event = {
 					popularity = 65
 				}
 			}
-			set_global_flag=MEXMaderoDies
 			country_event = {
 				id = MSMMexico.15
 				days = 10
@@ -835,6 +863,7 @@ country_event = {
 		}
 		immediate={
 			add_stability=-0.1
+			set_global_flag=MEXMaderoDies
 		}
 		option={
 			name=MSMMexico.15.a

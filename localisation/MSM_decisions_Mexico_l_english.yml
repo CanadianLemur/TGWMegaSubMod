@@ -3,5 +3,5 @@
  countdown_to_revolution:0 "§RCountdown to Revolution§!"
  countdown_to_revolution_DESC:0 "TEST"
  MSMMexicoCivilWarAvailableTooltip:0 "The §RMexican Revolution§! will begin"
- MEXMaderoLives:0 "Madero survives his assassination attempt"
- MEXMaderoDies:0 "Madero is killed by Huerta"
+ MEXMaderoLives:0 "§+Francisco Madero survives his assassination attempt§!"
+ MEXMaderoDies:0 "§+Francisco Madero is dead§!"

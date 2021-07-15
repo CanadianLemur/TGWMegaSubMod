@@ -13,7 +13,7 @@ state={
 	history={
 		victory_points={ 12835 5 }
 		owner=MEX
-		add_core_of=MEX
+		remove_core_of = MEX
 		victory_points = {
 			12835 10
 		}
@@ -25,6 +25,9 @@ state={
 		}
 		victory_points = {
 			12811 1
+		}
+		1910.1.1={
+			remove_core_of = MEX
 		}
 		1936.1.1={
 			owner=MEX

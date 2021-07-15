@@ -10,7 +10,7 @@ state={
 		}
 	history={
 		owner=MEX
-		add_core_of=MEX
+		remove_core_of = MEX
 		victory_points = {
 			12461 10
 		}

@@ -1,0 +1,13 @@
+scripted_gui = {
+
+	mexico_concessions_decision_ui = {
+		context_type = decision_category
+		window_name = "mexico_concessions_window"
+
+		properties = {
+			
+		}
+	}
+	
+}
+
