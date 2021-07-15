@@ -7,7 +7,7 @@ focus_tree = {
 	###########################################################################################################################
 	focus = {
 		id = AFA_revive_the_spirit_of_the_vendee
-		icon = GFX_
+		icon = GFX_focus_focus_fra_maquis
 		completion_reward = {  
 		add_ideas = MSM_FRA_revive_the_spirit_of_the_vendee
 		}
@@ -18,7 +18,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AFA_the_kingdom_restored
-		icon = GFX
+		icon = GFX_focus_focus_fra_orleans_restoration
 		prerequisite = {focus = AFA_revive_the_spirit_of_the_vendee}
 		available = {
 		controls_state = 16
@@ -26,7 +26,7 @@ focus_tree = {
 		controls_state = 30
 		controls_state = 19
 		}
-		completion_reward = { set_cosmetic_tag = FRA 
+		completion_reward = { set_cosmetic_tag = FRAROI 
 		set_capital = 16
 		}
 		ai_will_do = { factor = 20 }
@@ -36,19 +36,1195 @@ focus_tree = {
 	}
 	focus = {
 		id = AFA_return_of_the_king
-		icon = GFX
+		icon = GFX_focus_generic_monarchy_2
 		prerequisite = {focus = AFA_the_kingdom_restored}
 		available = {
-		controls_state = 16
-		controls_state = 21 
-		controls_state = 30
-		controls_state = 19
+		NOT = {has_war = yes}
 		}
-		completion_reward = { set_cosmetic_tag = FRA 
-		set_capital = 16
+		completion_reward = {
+		#king is restored
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
 		x = 10
 		y = 2
+	}
+	focus = {
+		id = AFA_rebuilding_the_country
+		icon = GFX_goal_generic_construction
+		prerequisite = {focus = AFA_return_of_the_king}
+		available = {
+		}
+		completion_reward = {
+		add_timed_idea = {
+			idea = MSM_FRA_rebuilding_the_country
+			days = 300
+		}
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 10
+		y = 3
+	}
+	focus = {
+		id = AFA_industrial_recovery_commission
+		icon = GFX_goal_generic_production2
+		prerequisite = {focus = AFA_rebuilding_the_country}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 3 
+		y = 4
+	}
+	focus = {
+		id = AFA_voitures_du_roi
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = {focus = AFA_industrial_recovery_commission}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 3 
+		y = 5
+	}
+	focus = {
+		id = AFA_expand_steel_works_in_aquitaine
+		icon = GFX_focus_generic_steel
+		prerequisite = {focus = AFA_voitures_du_roi}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 3 
+		y = 6
+	}
+	focus = {
+		id = AFA_the_royal_highway_northern_section
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = {focus = AFA_industrial_recovery_commission}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 1 
+		y = 5
+	}
+	focus = {
+		id = AFA_the_royal_highway_southern_section
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = {focus = AFA_the_royal_highway_northern_section}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 1 
+		y = 6
+	}
+focus = {
+		id = AFA_experiments_in_sythetics
+		icon = GFX_focus_generic_rubber
+		prerequisite = {focus = AFA_industrial_recovery_commission}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 5 
+		y = 5
+	}
+focus = {
+		id = AFA_further_investments_in_synthetics
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = {focus = AFA_experiments_in_sythetics}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 5 
+		y = 6
+	}
+focus = {
+		id = AFA_finalizing_the_economic_recovery
+		icon = GFX_focus_generic_industry_3
+		prerequisite = {focus = AFA_further_investments_in_synthetics}
+		prerequisite = {focus = AFA_expand_steel_works_in_aquitaine}
+		prerequisite = {focus = AFA_the_royal_highway_southern_section}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 3 
+		y = 7
+	}
+	focus = {
+		id = AFA_la_marine_royale
+		icon = GFX_goal_generic_build_navy
+		prerequisite = {focus = AFA_rebuilding_the_country}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 18
+		y = 4
+	}
+	focus = {
+		id = AFA_la_marine_royale
+		icon = GFX_goal_generic_build_navy
+		prerequisite = {focus = AFA_rebuilding_the_country}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 18
+		y = 4
+	}
+	focus = {
+		id = AFA_experimental_focus
+		icon = GFX_goal_generic_navy_carrier
+		mutually_exclusive = {focus = AFA_traditional_focus}
+		prerequisite = {focus = AFA_la_marine_royale}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 19
+		y = 5
+	}
+	focus = {
+		id = AFA_destroyers
+		icon = GFX_focus_generic_destroyer
+		prerequisite = {focus = AFA_traditional_focus focus = AFA_experimental_focus}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 18
+		y = 6
+	}
+	focus = {
+		id = AFA_cruisers
+		icon = GFX_focus_generic_cruiser2
+		prerequisite = {focus = AFA_destroyers }
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 18
+		y = 7
+	}
+	focus = {
+		id = AFA_making_the_battleship_obsolete
+		icon = GFX_goal_generic_navy_carrier
+		prerequisite = {focus = AFA_experimental_focus }
+		prerequisite = {focus = AFA_cruisers}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 19
+		y = 8
+	}
+	focus = {
+		id = AFA_submarines
+		icon = GFX_goal_generic_navy_submarine
+		prerequisite = {focus = AFA_making_the_battleship_obsolete}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 20
+		y = 9
+	}
+	focus = {
+		id = AFA_new_generation_of_admirals
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = {focus = AFA_making_the_battleship_obsolete focus = AFA_a_grand_fleet}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 18
+		y = 9
+	}
+	focus = {
+		id = AFA_traditional_focus
+		icon = GFX_goal_generic_navy_battleship
+		mutually_exclusive = {focus = AFA_experimental_focus}
+		prerequisite = {focus = AFA_la_marine_royale}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 17
+		y = 5
+	}
+	focus = {
+		id = AFA_the_big_guns
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = {focus = AFA_traditional_focus}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 16
+		y = 6
+	}
+	focus = {
+		id = AFA_a_grand_fleet
+		icon = GFX_focus_generic_navy_battleship2
+		prerequisite = {focus = AFA_traditional_focus }
+		prerequisite = {focus = AFA_cruisers}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 17
+		y = 8
+	}
+	focus = {
+		id = AFA_armee_royale_francais
+		icon = GFX_u_fra_france_adrian
+		prerequisite = {focus = AFA_rebuilding_the_country}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 26
+		y = 4
+	}
+	focus = {
+		id = AFA_mass_motorization
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = {focus = AFA_armee_royale_francais}
+		mutually_exclusive = {focus = AFA_massed_infantry}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 27
+		y = 5
+	}
+	focus = {
+		id = AFA_cavalry_tank_role
+		icon = GFX_goal_generic_cavalry
+		prerequisite = {focus = AFA_mass_motorization}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 27
+		y = 6
+	}
+	focus = {
+		id = AFA_experiments_in_self_propelled_guns
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = {focus = AFA_cavalry_tank_role}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 27
+		y = 7
+	}
+	focus = {
+		id = AFA_armoured_car_developments
+		icon = GFX_goal_generic_air_production
+		prerequisite = {focus = AFA_experiments_in_self_propelled_guns}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 27
+		y = 8
+	}
+	focus = {
+		id = AFA_massed_infantry
+		icon = GFX_goal_generic_small_arms
+		prerequisite = {focus = AFA_armee_royale_francais}
+		mutually_exclusive = {focus = AFA_mass_motorization}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 25
+		y = 5
+	}
+	focus = {
+		id = AFA_infantry_tank_role
+		icon = GFX_goal_generic_build_tank
+		prerequisite = {focus = AFA_massed_infantry}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 25
+		y = 6
+	}
+	focus = {
+		id = AFA_modernize_the_artillery
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = {focus = AFA_infantry_tank_role}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 25
+		y = 7
+	}
+	focus = {
+		id = AFA_expand_the_foreign_legion
+		icon = GFX_u_fra_foreign_legion
+		prerequisite = {focus = AFA_modernize_the_artillery}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 25
+		y = 8
+	}
+	focus = {
+		id = AFA_new_generation_of_generals
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = {focus = AFA_expand_the_foreign_legion}
+		prerequisite = {focus = AFA_armoured_car_developments}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 26
+		y = 9
+	}
+	focus = {
+		id = AFA_armee_royale_de_l_air
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = {focus = AFA_rebuilding_the_country}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 22
+		y = 4
+	}
+	focus = {
+		id = AFA_tactical_focus
+		icon = GFX_goal_generic_CAS
+		mutually_exclusive = {focus = AFA_strategic_focus}
+		prerequisite = {focus = AFA_armee_royale_de_l_air}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 23
+		y = 5
+	}
+	focus = {
+		id = AFA_dive_bombers
+		icon = GFX_goal_generic_CAS
+		prerequisite = {focus = AFA_tactical_focus}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 23
+		y = 8
+	}
+	focus = {
+		id = AFA_strategic_focus
+		icon = GFX_goal_generic_occupy_start_war
+		mutually_exclusive = {focus = AFA_tactical_focus}
+		prerequisite = {focus = AFA_armee_royale_de_l_air}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 21
+		y = 5
+	}
+	focus = {
+		id = AFA_long_range_bombing
+		icon = GFX_goal_generic_occupy_start_war
+		prerequisite = {focus = AFA_strategic_focus}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 21
+		y = 8
+	}
+	focus = {
+		id = AFA_the_jack_of_all_trades
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = {focus = AFA_strategic_focus focus = AFA_tactical_focus}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 22
+		y = 6
+	}
+	focus = {
+		id = AFA_defenders_of_the_sky
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = {focus = AFA_the_jack_of_all_trades }
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 22
+		y = 7
+	}
+	focus = {
+		id = AFA_new_generation_of_pilots
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = {focus = AFA_defenders_of_the_sky }
+		prerequisite = {focus = AFA_long_range_bombing focus = AFA_dive_bombers}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 22
+		y = 9
+	}
+	focus = {
+		id = AFA_all_the_kings_men
+		icon = GFX_focus_generic_military_mission
+		prerequisite = {focus = AFA_new_generation_of_pilots }
+		prerequisite = {focus = AFA_new_generation_of_generals}
+		prerequisite = {focus = AFA_new_generation_of_admirals}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 22
+		y = 10
+	}
+	focus = {
+		id = AFA_naval_aviation
+		icon = GFX_goal_generic_air_naval_bomber
+		prerequisite = {focus = AFA_armee_royale_de_l_air}
+		prerequisite = {focus = AFA_experimental_focus}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 20
+		y = 6
+	}
+	focus = {
+		id = AFA_restore_the_state_religion
+		icon = GFX_focus_por_concordat
+		prerequisite = {focus = AFA_rebuilding_the_country}
+		available = {
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 10
+		y = 4
+	}
+	focus = {
+		id = AFA_purging_the_anti_france
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = {focus = AFA_restore_the_state_religion}
+		available = {
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 10
+		y = 5
+	}
+	focus = {
+		id = AFA_mandatory_membership_in_the_camelots_du_roi
+		icon = GFX_focus_generic_military_mission
+		prerequisite = {focus = AFA_purging_the_anti_france}
+		available = {
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 10
+		y = 6
+	}
+	focus = {
+		id = AFA_restoring_the_ancient_rights_of_the_provinces
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = {focus = AFA_rebuilding_the_country}
+		available = {
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 12
+		y = 4
+	}
+	focus = {
+		id = AFA_destroying_republican_symbols
+		icon = GFX_focus_focus_fra_down_marianne
+		prerequisite = {focus = AFA_restoring_the_ancient_rights_of_the_provinces}
+		available = {
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 13
+		y = 5
+	}
+	focus = {
+		id = AFA_concessions_to_the_king
+		icon = GFX_focus_generic_concessions
+		prerequisite = {focus = AFA_destroying_republican_symbols}
+		available = {
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 13
+		y = 6
+	}
+	focus = {
+		id = AFA_aid_the_poor
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = {focus = AFA_concessions_to_the_king}
+		available = {
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 12
+		y = 7
+	}
+	focus = {
+		id = AFA_royal_society_of_voyageurs
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = {focus = AFA_concessions_to_the_king}
+		available = {
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 14
+		y = 7
+	}
+	focus = {
+		id = AFA_seek_compromise_with_algiers
+		icon = GFX_focus_generic_treaty
+		prerequisite = {focus = AFA_rebuilding_the_country}
+		available = {
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 8
+		y = 4
+	}
+	focus = {
+		id = AFA_securing_fealty_of_local_african_monarchs
+		icon = GFX_focus_rom_handle_king
+		prerequisite = {focus = AFA_seek_compromise_with_algiers}
+		available = {
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 7
+		y = 5
+	}
+	focus = {
+		id = AFA_increase_integration_of_algerie_france
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = {focus = AFA_seek_compromise_with_algiers}
+		available = {
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 8
+		y = 6
+	}
+	focus = {
+		id = AFA_investment_in_algerie_france
+		icon = GFX_focus_generic_africa_factory
+		prerequisite = {focus = AFA_increase_integration_of_algerie_france}
+		available = {
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 6
+		y = 7
+	}
+	focus = {
+		id = AFA_naval_yards_in_algerie_france
+		icon = GFX_focus_generic_africa_naval
+		prerequisite = {focus = AFA_increase_integration_of_algerie_france}
+		available = {
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 10
+		y = 7
+	}
+	focus = {
+		id = AFA_increase_integration_of_senegal
+		icon = GFX_goal_anschluss
+		prerequisite = {focus = AFA_increase_integration_of_algerie_france}
+		available = {
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 8
+		y = 7
+	}
+	focus = {
+		id = AFA_investment_in_senegal
+		icon = GFX_focus_generic_africa_factory
+		prerequisite = {focus = AFA_increase_integration_of_senegal}
+		available = {
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 6
+		y = 8
+	}
+	focus = {
+		id = AFA_naval_infrastructure_in_senegal
+		icon = GFX_focus_generic_africa_naval
+		prerequisite = {focus = AFA_increase_integration_of_senegal}
+		available = {
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 10
+		y = 8
+	}
+#### Diplomatic
+
+	focus = {
+		id = AFA_the_new_foreign_policy
+		icon = GFX_goal_generic_territory_or_war
+		available = {
+		has_completed_focus = AFA_finalizing_the_economic_recovery
+		has_completed_focus = AFA_all_the_kings_men
+		date > 1930.1.1
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 10
+		y = 10
+	}
+	focus = {
+		id = AFA_catalonian_ambitions
+		icon = GFX_focus_focus_fra_intervention_spain
+		prerequisite = {focus = AFA_the_new_foreign_policy}
+		available = {
+		
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 8
+		y = 11
+	}
+	focus = {
+		id = AFA_deal_with_portugal
+		icon = GFX_focus_generic_befriend_portugal 
+		prerequisite = {focus = AFA_catalonian_ambitions}
+		available = {
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 8
+		y = 12
+	}
+	focus = {
+		id = AFA_supporting_the_carlists
+		icon = GFX_focus_spa_supremacy_of_the_communion
+		prerequisite = {focus = AFA_the_new_foreign_policy}
+		available = {
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 8
+		y = 13
+	}
+	focus = {
+		id = AFA_restoring_our_empire
+		icon = GFX_u_fra_fleur_de_lys
+		prerequisite = {focus = AFA_supporting_the_carlists}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 8
+		y = 14
+	}
+	focus = {
+		id = AFA_returning_to_indochina
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = {focus = AFA_restoring_our_empire}
+		available = {
+		}
+		completion_reward = {
+		}
+		bypass = {owns_state = 286}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 6
+		y = 15
+	}
+	focus = {
+		id = AFA_invest_in_indochina
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = {focus = AFA_returning_to_indochina}
+		available = {
+		}
+		completion_reward = {
+		}
+		bypass = {owns_state = 286}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 6
+		y = 16
+	}
+	focus = {
+		id = AFA_a_return_to_haiti
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = {focus = AFA_restoring_our_empire}
+		available = {
+		}
+		completion_reward = {
+		#choice to coerce haiti back into your sphere, or go straight after them
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 8
+		y = 15
+	}
+	focus = {
+		id = AFA_regain_canada
+		icon = GFX_focus_attack_canada
+		prerequisite = {focus = AFA_a_return_to_haiti}
+		available = {
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 11
+		y = 16
+	}
+	focus = {
+		id = AFA_self_rule_for_canada
+		icon = GFX_goal_tfv_can_compromise_with_quebec
+		prerequisite = {focus = AFA_regain_canada}
+		available = {
+		CAN = {exists = no}
+		owns_state = 468
+		owns_state = 276
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 11
+		y = 17
+	}
+	focus = {
+		id = AFA_a_return_to_mexico
+		icon = GFX_focus_mex_jefe_maximo
+		prerequisite = {focus = AFA_a_return_to_haiti}
+		available = {
+		}
+		completion_reward = {
+		#invade mexico, choice to either restore the mexican empire, or return it to spain
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 8
+		y = 16
+	}
+	focus = {
+		id = AFA_fixing_napoleons_mistake
+		icon = GFX_focus_generic_strike_at_democracy3
+		prerequisite = {focus = AFA_a_return_to_mexico}
+		available = {
+		}
+		completion_reward = {
+		#getting louisiana back
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 8
+		y = 17
+	}
+	focus = {
+		id = AFA_pact_with_austria_hungary
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = {focus = AFA_the_new_foreign_policy}
+		mutually_exclusive = {focus = AFA_support_habsburg_seperatism}
+		available = {
+		AUH = {exists = yes}
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 14
+		y = 11
+	}
+	focus = {
+		id = AFA_support_habsburg_seperatism
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		prerequisite = {focus = AFA_the_new_foreign_policy}
+		mutually_exclusive = {focus = AFA_pact_with_austria_hungary}
+		available = {
+		AUH = {exists = no}
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 16
+		y = 11
+	}
+	focus = {
+		id = AFA_habsburg_lands_restored
+		icon = GFX_focus_generic_monarchy_2
+		prerequisite = {focus = AFA_the_new_foreign_policy}
+		available = {
+		AUH = {exists = yes}
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 16
+		y = 12
+	}
+	focus = {
+		id = AFA_the_division_of_italy
+		icon = GFX_focus_attack_italy
+		prerequisite = {focus = AFA_habsburg_lands_restored focus = AFA_pact_with_austria_hungary}
+		available = {
+		AUH = {exists = yes}
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 15
+		y = 13
+	}
+	focus = {
+		id = AFA_the_last_crusade
+		icon = GFX_focus_generic_attack_turkey
+		prerequisite = {focus = AFA_the_division_of_italy }
+		available = {
+		TUR = {exists = yes}
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 17
+		y = 14
+	}
+	focus = {
+		id = AFA_defender_of_christendom
+		icon = GFX_focus_mex_restore_the_army_of_christ
+		prerequisite = {focus = AFA_the_last_crusade }
+		available = {
+		TUR = {exists = no}
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 17
+		y = 15
+	}
+	focus = {
+		id = AFA_destroy_soviet_communism
+		icon = GFX_focus_attack_soviet
+		prerequisite = {focus = AFA_defender_of_christendom }
+		available = {
+		SOV = {exists = yes}
+		}
+		completion_reward = {
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = SOV
+		}
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 19
+		y = 16
+	}
+	focus = {
+		id = AFA_mending_the_schism
+		icon = GFX_u_fra_mend_schism
+		prerequisite = {focus = AFA_defender_of_christendom }
+		available = {
+		2 = { is_controlled_by_ROOT_or_ally = yes }
+		341 = { is_controlled_by_ROOT_or_ally = yes}
+		677 = { is_controlled_by_ROOT_or_ally = yes}
+		454 = { is_controlled_by_ROOT_or_ally = yes}
+		447 = { is_controlled_by_ROOT_or_ally = yes}
+		OR = {
+		219 = { is_controlled_by_ROOT_or_ally = yes}
+		RUS = { 
+		has_opinion = {
+				target = ROOT
+				value > 99
+			}
+		}
+		}
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 17
+		y = 16
+	}
+	focus = {
+		id = AFA_destroying_the_stain_on_europe
+		icon = GFX_focus_attack_switzerland
+		prerequisite = {focus = AFA_the_division_of_italy }
+		available = {
+		AUH = {exists = yes}
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 15
+		y = 14
+	}
+focus = {
+		id = AFA_demand_the_return_of_brittany
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = {focus = AFA_the_new_foreign_policy}
+		available = {
+		}
+		bypass = {controls_state = 14}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 10
+		y = 11
+	}
+focus = {
+		id = AFA_reintegrate_brittany
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = {focus = AFA_demand_the_return_of_brittany}
+		available = {
+		}
+		bypass = {14 = {
+		is_core_of = root
+			}
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 10
+		y = 12
+	}
+focus = {
+		id = AFA_round_three
+		icon = GFX_goal_generic_major_war
+		prerequisite = {focus = AFA_reintegrate_brittany}
+		available = {
+		}
+		bypass = {
+		has_war_with = GER
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 10
+		y = 13
+	}
+focus = {
+		id = AFA_enforcing_our_will_on_the_dutch
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = {focus = AFA_round_three}
+		available = {
+		}
+		bypass = {
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 12
+		y = 14
+	}
+focus = {
+		id = AFA_restoration_of_the_rhinebund
+		icon = GFX_focus_generic_little_entente
+		prerequisite = {focus = AFA_round_three}
+		available = {
+		GER = {exists = no}
+		}
+		bypass = {
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 10
+		y = 14
 	}
