@@ -19,15 +19,36 @@ focus_tree = {
 	#####MSM Tree Start
 	#####Historical Wilson Tree
 	focus = {
+		id = USA_MSM_switch_trees
+		icon = goal_unknown
+		completion_reward = {
+			country_event = { id = MSMUSA.1 }
+			if = {
+				limit = { USA = { has_country_flag = USA_roosevelt_elected } }
+				clr_country_flag = USA_roosevelt_elected
+			}
+			if = {
+				limit = { USA = { NOT = { has_country_flag = USA_roosevelt_elected } } }
+				set_country_flag = USA_roosevelt_elected
+			}
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 2
+		y = 10
+	}
+	focus = {
 		id = USA_MSM_elect_wilson
-		mutually_exclusive = { focus = USA_MSM_elect_roosevelt }
  		icon = goal_unknown
+		allow_branch = {
+			NOT = { has_country_flag = USA_roosevelt_elected }
+		}
 		completion_reward = {
 			add_political_power = 50
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
-		x = 1
+		x = 20
 		y = 0
 	}
 	focus = {
@@ -557,7 +578,6 @@ focus_tree = {
 		id = USA_MSM_mexican_revolution_intervention
 		prerequisite = { focus = USA_MSM_elect_wilson }
  		relative_position_id = USA_MSM_elect_wilson
-		mutually_exclusive = { focus = USA_MSM_mexican_revolution_arbitration }
 		icon = goal_unknown
 		completion_reward = {
 			#
@@ -640,9 +660,10 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_MSM_elect_roosevelt
-		relative_position_id = USA_MSM_elect_wilson
-		mutually_exclusive = { focus = USA_MSM_elect_wilson }
  		icon = goal_unknown
+		allow_branch = {
+			has_country_flag = USA_roosevelt_elected
+		}
 		completion_reward = {
 			add_political_power = 50
 		}
@@ -652,17 +673,150 @@ focus_tree = {
 		y = 0
 	}
 	focus = {
-		id = USA_MSM_mexican_revolution_arbitration
+		id = USA_MSM_internal_isolationism_debates
 		prerequisite = { focus = USA_MSM_elect_roosevelt }
  		relative_position_id = USA_MSM_elect_roosevelt
-		mutually_exclusive = { focus = USA_MSM_mexican_revolution_intervention }
 		icon = goal_unknown
 		completion_reward = {
-			#Should be VERY easy to escalate to all-out war. Roosevelt hated iarbitration
+			#
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
-		x = -9
+		x = -5
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_for_the_people
+		prerequisite = { focus = USA_MSM_internal_isolationism_debates }
+ 		relative_position_id = USA_MSM_internal_isolationism_debates
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_the_world_stage
+		prerequisite = { focus = USA_MSM_internal_isolationism_debates }
+ 		relative_position_id = USA_MSM_internal_isolationism_debates
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_flex_our_power
+		prerequisite = { focus = USA_MSM_the_world_stage }
+ 		relative_position_id = USA_MSM_the_world_stage
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_roosevelts_decree
+		prerequisite = { focus = USA_MSM_for_the_people }
+		prerequisite = { focus = USA_MSM_flex_our_power }
+ 		relative_position_id = USA_MSM_for_the_people
+		icon = goal_unknown
+		completion_reward = {
+			#Basically a replacement for the monroe doctrine
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 2
+	}
+	focus = {
+		id = USA_MSM_necessary_intervention
+		prerequisite = { focus = USA_MSM_roosevelts_decree }
+ 		relative_position_id = USA_MSM_roosevelts_decree
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_continental_leader
+		prerequisite = { focus = USA_MSM_necessary_intervention }
+ 		relative_position_id = USA_MSM_necessary_intervention
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 2
+	}
+	focus = {
+		id = USA_MSM_global_power
+		prerequisite = { focus = USA_MSM_continental_leader }
+		prerequisite = { focus = USA_MSM_forced_awakening }
+ 		relative_position_id = USA_MSM_continental_leader
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_european_interventionalism
+		prerequisite = { focus = USA_MSM_roosevelts_decree }
+		prerequisite = { focus = USA_MSM_invisible_government }
+ 		relative_position_id = USA_MSM_roosevelts_decree
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 2
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_worth_our_while
+		prerequisite = { focus = USA_MSM_european_interventionalism }
+ 		relative_position_id = USA_MSM_european_interventionalism
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_forced_awakening
+		prerequisite = { focus = USA_MSM_worth_our_while }
+ 		relative_position_id = USA_MSM_worth_our_while
+		icon = goal_unknown
+		#needs to have lucitania sunk
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
 		y = 1
 	}
 	focus = {
@@ -675,7 +829,7 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
-		x = 3
+		x = -1
 		y = 1
 	}
 	focus = {
@@ -701,7 +855,7 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
-		x = 0
+		x = -1
 		y = 2
 	}
 	focus = {
@@ -744,6 +898,140 @@ focus_tree = {
 		x = 1
 		y = 1
 	}
+	###############
+	focus = {
+		id = USA_MSM_new_nationalism
+		prerequisite = { focus = USA_MSM_elect_roosevelt }
+ 		relative_position_id = USA_MSM_elect_roosevelt
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 3
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_sereno_free_trade_act
+		prerequisite = { focus = USA_MSM_new_nationalism }
+ 		relative_position_id = USA_MSM_new_nationalism
+		icon = goal_unknown
+		completion_reward = {
+			#Put on free trade
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_new_revenue_sources
+		prerequisite = { focus = USA_MSM_sereno_free_trade_act }
+ 		relative_position_id = USA_MSM_sereno_free_trade_act
+		icon = goal_unknown
+		completion_reward = {
+			#consumer goods buff
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_american_central_bank
+ 		prerequisite = { focus = USA_MSM_new_revenue_sources }
+		prerequisite = { focus = USA_MSM_down_with_lobbying }
+ 		relative_position_id = USA_MSM_new_revenue_sources
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = -1
+		y = 2
+	}
+	focus = {
+		id = USA_MSM_haywood_competition_act
+		prerequisite = { focus = USA_MSM_new_nationalism }
+ 		relative_position_id = USA_MSM_new_nationalism
+		icon = goal_unknown
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_dismantle_monopolies
+		prerequisite = { focus = USA_MSM_haywood_competition_act }
+ 		relative_position_id = USA_MSM_haywood_competition_act
+		mutually_exclusive = { focus = USA_MSM_work_with_monopolies }
+ 		icon = goal_unknown
+		completion_reward = {
+			add_stability = -0.05
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_national_railroads
+		prerequisite = { focus = USA_MSM_dismantle_monopolies }
+ 		relative_position_id = USA_MSM_dismantle_monopolies
+		icon = goal_unknown
+		completion_reward = {
+			#Debuff to building infrastructure, gain stability/support in senate
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_american_oil
+		prerequisite = { focus = USA_MSM_national_railroads }
+ 		relative_position_id = USA_MSM_national_railroads
+		icon = goal_unknown
+		completion_reward = {
+			#Research bonus to refining tech, harder to build refineries
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 2
+	}
+	focus = {
+		id = USA_MSM_banking_integration
+		prerequisite = { focus = USA_MSM_american_oil focus = USA_MSM_american_steel }
+ 		relative_position_id = USA_MSM_american_oil
+		icon = goal_unknown
+		completion_reward = {
+			#Large hit to senate support, consumer goods boost
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_american_steel
+		prerequisite = { focus = USA_MSM_dismantle_monopolies }
+ 		relative_position_id = USA_MSM_dismantle_monopolies
+		icon = goal_unknown
+		completion_reward = {
+			#Remove some steel in some states and gain a consumer goods buff
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = -1
+		y = 2
+	}
+	###############
 	focus = {
 		id = USA_MSM_american_muscle
 		prerequisite = { focus = USA_MSM_elect_roosevelt }
@@ -754,7 +1042,7 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
-		x = 8
+		x = 7
 		y = 1
 	}
 	focus = {
@@ -796,6 +1084,72 @@ focus_tree = {
  		cost = 10
 		x = 1
 		y = 1
+	}
+	focus = {
+		id = USA_MSM_safeguard_our_ports
+		prerequisite = { focus = USA_MSM_atlantic_buildup focus = USA_MSM_industrial_might }
+ 		relative_position_id = USA_MSM_atlantic_buildup
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_universal_instruction
+		prerequisite = { focus = USA_MSM_commercial_incentives }
+ 		relative_position_id = USA_MSM_commercial_incentives
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_hamilton_marine_academy
+		prerequisite = { focus = USA_MSM_atlantic_buildup }
+		prerequisite = { focus = USA_MSM_universal_instruction }
+ 		relative_position_id = USA_MSM_atlantic_buildup
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_naval_expansion
+		prerequisite = { focus = USA_MSM_atlantic_buildup }
+ 		relative_position_id = USA_MSM_atlantic_buildup
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 2
+	}
+	focus = {
+		id = USA_MSM_civilian_training
+		prerequisite = { focus = USA_MSM_universal_instruction }
+ 		relative_position_id = USA_MSM_universal_instruction
+		icon = goal_unknown
+		completion_reward = {
+			#Increase education among the masses, leads to maybe decrease in civilian goods or maybe an increase in civilian factory build speed
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 2
 	}
 	#####MSM End
 	#-------------------------------------

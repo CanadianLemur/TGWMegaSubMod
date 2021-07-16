@@ -1,0 +1,23 @@
+﻿#######################################
+# New American Events, added by Ecrfour #
+#######################################
+add_namespace = MSMUSA
+
+####President Elected - 1912####
+country_event = {
+	id =  MSMUSA.1
+	title = MSMUSA.1.t
+	desc = MSMUSA.1.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = MSMUSA.1.a
+		ai_chance = { factor = 100 }
+		USA = {
+			mark_focus_tree_layout_dirty = yes #reloads focus tree use sparingly
+		}
+	}
+}
