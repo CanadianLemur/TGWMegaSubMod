@@ -22,7 +22,11 @@ country_event = {
 			}
 			set_variable = {
 				var = MEX.nationalist_tensions_amount
-				value = 20
+				value = 0.2
+			}
+			set_variable = {
+				var = MEX.nationalist_appeasement_amount
+				value = 0.1
 			}
 			remove_state_core = 482
 			482 = {
@@ -34,7 +38,11 @@ country_event = {
 			}
 			set_variable = {
 				var = MEX.constitutionalist_tensions_amount
-				value = 20
+				value = 0.2
+			}
+			set_variable = {
+				var = MEX.constitutionalist_appeasement_amount
+				value = 0.1
 			}
 			remove_state_core = 484
 			484 = {
@@ -45,7 +53,7 @@ country_event = {
 			}
 			set_variable = {
 				var = MEX.anarchist_tensions_amount
-				value = 50
+				value = 0.5
 			}
 			remove_state_core = 485
 			485 = {

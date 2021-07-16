@@ -1,4 +1,9 @@
 ﻿l_english:
- concessions_gui_intro_localization:0 "In order to regain full control of the country you must deal with the rebel elements of this nation. An authoritarian ruler will go on a campaign of repression until the rebels are all but stomped out, while a democratic ruler will try to appease these groups with democratic reforms."
- agrarian_text_1_localization_gui:0 "Our repression of the zapatistas is: [?MEX.communist_tensions_amount|§%]"
- agrarian_text_2_localization_gui:0 "Our support among the zapatistas is: [?MEX.communist_appeasement_amount|§%]"
+ concessions_gui_intro_localization:0 "In order to regain full control of the country you must deal with the rebel elements of this nation that threaten to plunge Mexico back into civil war. Through either brutal repression or diplomatic problem solving, the dissident groups can be brought to heel."
+ agrarian_text_1_localization_gui:0 "Our repression of the §RZapatistas§! is: §Y	[?MEX.communist_tensions_amount|§%]"§!	
+ agrarian_text_2_localization_gui:0 "Our support among the §RZapatistas§! is: §Y	[?MEX.communist_appeasement_amount|§%]"§!
+ constitutuonalist_1_localization_text_gui:0 "Our repression of the §BConstitutionalists§!	 is: §Y	[?MEX.constitutionalist_tensions_amount|§%]"§!
+ constitutuonalist_2_localization_text_gui:0 "Our support among the §BConstitutionalists§! is" §Y	[?MEX.constitutionalist_appeasement_amount|§%]"§!
+ nationalist_1_localization_text_gui:0 "Our repression of the §OVillistas§! is: §Y	[?MEX.nationalist_tensions_amount|§%]"§!
+ nationalist_2_localization_text_gui:0 "Our support among the §OVillistas§! is: §Y	[?MEX.nationalist_appeasement_amount|§%]"§!
+

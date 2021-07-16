@@ -37,6 +37,7 @@ MEX_civil_war = {
 		}
 	}
 }
+
 MEX_concessions = {
 	test_decision = {
 		fire_only_once = no
