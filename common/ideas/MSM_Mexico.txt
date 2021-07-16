@@ -2,7 +2,7 @@ ideas = {
 	country = {
 		MEX_revolutionary_fervor = {
 
-			picture = 
+			picture = GFX_unknown_idea
 				
 			allowed = {
 				has_war = yes

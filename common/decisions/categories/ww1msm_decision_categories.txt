@@ -48,11 +48,11 @@ china_congress = {
 	priority = 100
 	visible = {
 		#tag = CHI
-		tag = QIN
+		#tag = QIN
 	}
 	available = {
 		#tag = CHI
-		tag = QIN
+		#tag = QIN
 	}
 	
 	scripted_gui = china_congress_decision_ui
@@ -83,9 +83,13 @@ MEX_civil_war = {
 MEX_concessions = {
 	icon = generic_political_actions
 	priority = 100
+	available = {
+		tag = MEX
+		MEX = { has_country_flag = warlord_era }
+	}
 	visible = {
 		tag = MEX
 		MEX = { has_country_flag = warlord_era }
 	}
-	scripted_gui = mex_concessions_scripted_gui
-}	
+	scripted_gui = mexico_concessions_decision_ui
+}

@@ -9102,4 +9102,5 @@ spriteType = { name = "GFX_idea_CYN_mi_zaiming" texturefile = "gfx/interface/ide
 spriteType = { name = "GFX_idea_CYN_lu_han" texturefile = "gfx/interface/ideas/idea_CYN_lu_han.dds" }
 spriteType = { name = "GFX_idea_GRE_eleftherios_venizelos" texturefile = "gfx/interface/ideas/idea_GRE_eleftherios_venizelos.dds" }
 
+spriteType = { name = "GFX_modifier_agrarian_communists" texturefile = "gfx/interface/modifiers/agrarian_communists_icon.dds" }
 }

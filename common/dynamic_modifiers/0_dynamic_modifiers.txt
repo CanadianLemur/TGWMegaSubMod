@@ -59,3 +59,42 @@ semi_autonomous_state = {
 	state_resources_factor = -0.25
 	state_production_speed_buildings_factor = -0.25
 }
+
+agrarian_communists = {
+	icon = GFX_modifier_agrarian_communists
+	enable = { always = yes }
+	remove_trigger = {
+		OR = {
+			has_country_flag = communists_destroyed
+			has_country_flag = communists_appeased
+		}
+	}
+	resistance_target = MEX.communist_tensions_amount
+	
+}
+
+mexican_nationalists = {
+	icon = GFX_modifier_mexican_nationalists
+	enable = { always = yes }
+	remove_trigger = {
+		OR = {
+			has_country_flag = nationalists_destroyed
+			has_country_flag = nationalists_appeased
+		}
+	}
+	resistance_target = MEX.nationalist_tensions_amount
+	
+}
+
+mexican_constitutionalists = {
+	icon = GFX_modifier_mexican_constitutionalists
+	enable = { always = yes }
+	remove_trigger = {
+		OR = {
+			has_country_flag = constitutionalists_destroyed
+			has_country_flag = constitutionalists_appeased
+		}
+	}
+	resistance_target = MEX.constitutionalist_tensions_amount
+	
+}

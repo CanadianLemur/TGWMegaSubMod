@@ -14,31 +14,54 @@ country_event = {
 			no_compliance_gain = 1
 			remove_state_core = 480
 			480 = {
+				add_dynamic_modifier = { modifier = mexican_nationalists }
 				force_enable_resistance = MEX
 				start_resistance = yes
-				set_resistance = 30
+				set_resistance = 0.3
 				set_resistance_target = 15
+			}
+			set_variable = {
+				var = MEX.nationalist_tensions_amount
+				value = 20
 			}
 			remove_state_core = 482
 			482 = {
+				add_dynamic_modifier = { modifier = mexican_constitutionalists }
 				force_enable_resistance = MEX
 				start_resistance = yes
-				set_resistance = 30
+				set_resistance = 0.3
 				set_resistance_target = 15
+			}
+			set_variable = {
+				var = MEX.constitutionalist_tensions_amount
+				value = 20
 			}
 			remove_state_core = 484
 			484 = {
 				force_enable_resistance = MEX
 				start_resistance = yes
-				set_resistance = 30
+				set_resistance = 0.3
 				set_resistance_target = 15
+			}
+			set_variable = {
+				var = MEX.anarchist_tensions_amount
+				value = 50
 			}
 			remove_state_core = 485
 			485 = {
+				add_dynamic_modifier = { modifier = agrarian_communists }
 				force_enable_resistance = MEX
 				start_resistance = yes
-				set_resistance = 10
+				set_resistance = 0.1
 				set_resistance_target = 5
+			}
+			set_variable = {
+				var = MEX.communist_tensions_amount
+				value = 0.2
+			}
+			set_variable = {
+				var = MEX.communist_appeasement_amount
+				value = 0.1
 			}
 		}
 	}
@@ -117,7 +140,7 @@ country_event = {
 		TAG = MEX
     }
 	immediate = {
-		#activate_targeted_decision = { target = MEX decision = countdown_to_revolution }
+		activate_targeted_decision = { target = MEX decision = countdown_to_revolution }
 		set_variable = { MEX.has_revolution = 1 }
 	}
 	

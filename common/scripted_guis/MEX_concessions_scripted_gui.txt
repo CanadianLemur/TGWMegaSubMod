@@ -3,9 +3,32 @@ scripted_gui = {
 	mexico_concessions_decision_ui = {
 		context_type = decision_category
 		window_name = "mexico_concessions_window"
-
+		parent_window_token = decision_tab
+		
+		visible = {
+			TAG = MEX
+			MEX = { has_country_flag = warlord_era }
+		}
+		
 		properties = {
-			
+			defined_text = {
+				name = agrarian_text
+				
+				text = {
+					trigger = {
+						always = yes
+					}
+					localization_key = "agrarian_text_1_localization_gui"
+				}
+				text = {
+					trigger = {
+						always = yes
+					}
+					localization_key = "agrarian_text_2_localization_gui"
+				}
+				x = 1
+				y = 2
+			}
 		}
 	}
 	
