@@ -17,6 +17,9 @@ state={
 		1919.1.1 = {
 			owner = CZE
 		}
+		1919.7.2 = {
+            owner = AUH
+        }
 		1936.1.1={ 
 			owner=CZE
 			add_core_of=CZE

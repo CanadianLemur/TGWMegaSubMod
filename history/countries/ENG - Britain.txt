@@ -3543,3 +3543,9 @@ if = {
 	}
 	}
 }
+1919.7.2 = {
+set_autonomy = {
+    target = NEP
+    autonomy_state = autonomy_free
+}
+}

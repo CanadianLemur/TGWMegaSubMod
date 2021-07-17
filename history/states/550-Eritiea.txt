@@ -12,6 +12,9 @@ state={
 		owner=ITA
 		add_claim_by=ETH #KiS
 		add_core_of=ERI
+		1919.7.2 = {
+            owner = ETH
+        }
 		1936.1.1={ 
 			owner=ITA
 			victory_points={ 12766 1 }

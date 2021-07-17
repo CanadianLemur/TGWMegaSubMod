@@ -432,7 +432,6 @@ if = {
 	}
 	
 
-}
 
 
 1914.1.1 = {
@@ -1145,7 +1144,6 @@ if = {
 			}
 	}
 	}
-}
 	set_technology = {
 		# Engineering
 		electronic_mechanical_engineering = 1
@@ -1184,6 +1182,10 @@ if = {
 		limited_conscription
 		#Austrian_staff
 	}
-	
-
+1919.7.2 = {
+create_country_leader={ name = "Karl I" desc=AUH_karl_i_DESC picture="gfx/hoi4tgw_portraits/AUH/country_leaders/AUH_karl_i.dds" expire="1935.1.1" ideology=autocracy  traits={  } }
+puppet = SER
+puppet = ALB
+puppet = LMV
+puppet = GRE
 }

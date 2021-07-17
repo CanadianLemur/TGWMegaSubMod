@@ -11,6 +11,9 @@ state={
 		victory_points={ 10833 2 }
 		owner=ENG
 		add_core_of=SOM
+		1919.7.2 = {
+            owner = SOM
+        }
 		1936.1.1={ 
 			owner=ENG
 			buildings={

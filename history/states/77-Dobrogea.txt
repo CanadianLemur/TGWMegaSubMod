@@ -18,6 +18,9 @@ state={
 		add_core_of=BUL
 		add_claim_by=ROM
 		1913.8.10 = { owner = ROM add_core_of=ROM }
+		1919.7.2 = {
+            owner = BUL
+        }
 		1936.1.1={ 
 			owner=ROM
 			remove_claim_by=ROM

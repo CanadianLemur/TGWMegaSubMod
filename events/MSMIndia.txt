@@ -292,6 +292,7 @@ country_event = {
 	transfer_state = 429
 	inherit_technology = RAJ
 	change_tag_from = RAJ
+	add_ideas = RAJ_agrarian_society
 	}
 	RAJ = {
 			every_unit_leader = {

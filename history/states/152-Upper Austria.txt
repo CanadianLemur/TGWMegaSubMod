@@ -35,5 +35,9 @@ state={
             owner = AUS
             add_core_of = AUS
         }
+		1919.7.2 = {
+            owner = AUH
+            remove_core_of = AUS
+        }
 	}
 }

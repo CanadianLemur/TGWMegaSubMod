@@ -14,7 +14,9 @@ state={
 		infrastructure=5
 		}
 		add_core_of = BEL
-		
+		1919.7.2 = {
+            owner = GER
+        }
 	}
 
 }

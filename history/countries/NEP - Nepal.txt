@@ -152,6 +152,11 @@ set_stability=0.75
 		}
 	}
 }
+1919.7.2 = {
+set_cosmetic_tag = NEP_DEL
+add_ideas = RAJ_agrarian_society
+puppet = BHU
+}
 create_country_leader={ name = "Prithvi of Nepal" desc=NEP_prithvi_of_nepal_DESC picture="gfx/hoi4tgw_portraits/NEP/country_leaders/NEP_prithvi_of_nepal.dds" expire="1935.1.1" ideology=despotism  traits={  } }
 
 1936.1.1={ 

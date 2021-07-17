@@ -32,5 +32,10 @@ state={
 			add_core_of = POL
 			add_claim_by = UKR
 		}
+		1919.7.2 = {
+            owner = AUH
+            remove_core_of = POL
+			remove_claim_by = UKR
+        }
 		}
 	}

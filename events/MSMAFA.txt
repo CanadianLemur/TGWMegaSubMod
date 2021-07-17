@@ -1,0 +1,281 @@
+add_namespace = MSMAFA
+#  Return of the King
+country_event = {
+	id =  MSMAFA.1
+	title = MSMAFA.1.t
+	desc = MSMAFA.1.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+
+	option = {
+		name = MSMAFA.1.a
+		ai_chance = { factor = 100 }
+		create_country_leader = {
+			name = "Philippe VIII"
+			desc = "POLITICS_PHILIPPE_VIII_DESC"
+			picture = ".dds"
+			expire = "1927.1.1"
+			ideology = fascism_ideology
+			traits = {
+				
+			}
+		}
+		create_country_leader = {
+			name = "Philippe VIII"
+			desc = "POLITICS_PHILIPPE_VIII_DESC"
+			picture = ".dds"
+			expire = "1927.1.1"
+			ideology = despotism
+			traits = {
+				
+			}
+		}
+		}
+ 
+	}
+# Union with the Mainland?
+country_event = {
+	id =  MSMAFA.2
+	title = MSMAFA.2.t
+	desc = MSMAFA.2.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	#accept
+	option = {
+		name = MSMAFA.2.a
+		ai_chance = { factor = 100 }
+		every_unit_leader = {
+		set_nationality = FROM
+		}
+		FROM = {
+		annex_country = {
+			target = ROOT
+			transfer_troops = yes
+		}
+		country_event = {id = MSMAFA.3}
+		}
+		}
+	#deny
+	option = {
+		name = MSMAFA.2.b
+		ai_chance = { factor = 100 }
+		FROM = {
+		create_wargoal = {
+			type = annex_everything
+			target = ROOT
+		}
+		country_event = {id = MSMAFA.4}
+		}
+		}
+	}
+# Union accepted!
+country_event = {
+	id =  MSMAFA.3
+	title = MSMAFA.3.t
+	desc = MSMAFA.3.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+
+	option = {
+		name = MSMAFA.3.a
+		ai_chance = { factor = 100 }
+		}
+	}
+#Union Denied
+country_event = {
+	id =  MSMAFA.4
+	title = MSMAFA.4.t
+	desc = MSMAFA.4.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+
+	option = {
+		name = MSMAFA.4.a
+		ai_chance = { factor = 100 }
+
+		}
+	}
+# France Demands Catalonia
+country_event = {
+	id =  MSMAFA.5
+	title = MSMAFA.5.t
+	desc = MSMAFA.5.d 
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	#accept
+	option = {
+		name = MSMAFA.5.a
+		ai_chance = { factor = 100 }
+		FROM = {country_event = {id =  MSMAFA.6}}
+		}
+	#deny
+	option = {
+		name = MSMAFA.5.b
+		ai_chance = { factor = 10 }
+		FROM = {country_event = {id =  MSMAFA.7}}
+		}
+	}
+# Spain Accepts
+country_event = {
+	id =  MSMAFA.6
+	title = MSMAFA.6.t
+	desc = MSMAFA.6.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	option = {
+		name = MSMAFA.6.a
+		ai_chance = { factor = 100 }
+		transfer_state = 165
+		}
+	}
+# Spain refuses
+country_event = {
+	id =  MSMAFA.7
+	title = MSMAFA.7.t
+	desc = MSMAFA.7.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	option = {
+		name = MSMAFA.7.a
+		ai_chance = { factor = 100 }
+		create_wargoal = {
+			target = FROM
+			type = take_claimed_state
+		}
+		}
+	}
+# Offer Portugal Galicia
+country_event = {
+	id =  MSMAFA.8
+	title = MSMAFA.8.t
+	desc = MSMAFA.8.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	#accept
+	option = {
+		name = MSMAFA.8.a
+		ai_chance = { factor = 100 }
+		add_state_claim = 171
+		set_variable = { PortugueseFrenchDeal = 1 }
+		FROM = {country_event = {id = MSMAFA.9} add_to_faction = ROOT}
+		}
+	#refuse 
+	option = {
+		name = MSMAFA.8.b
+		ai_chance = { factor = 0 }
+		FROM = {country_event = {id = MSMAFA.10}}
+		}
+	}
+# Portugal accepts
+country_event = {
+	id =  MSMAFA.9
+	title = MSMAFA.9.t
+	desc = MSMAFA.9.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	option = {
+		name = MSMAFA.9.a
+		ai_chance = { factor = 100 }
+		}
+	}
+# Portugal refuses
+country_event = {
+	id =  MSMAFA.10
+	title = MSMAFA.10.t
+	desc = MSMAFA.10.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	option = {
+		name = MSMAFA.10.a
+		ai_chance = { factor = 100 }
+		}
+	}
+	
+# Ultimatum to Spain
+country_event = {
+	id =  MSMAFA.11
+	title = MSMAFA.11.t
+	desc = MSMAFA.11.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	option = {
+		name = MSMAFA.11.a
+		ai_chance = { factor = 80 }
+	FROM = {puppet = ROOT 
+	country_event = {id = MSMAFA.12}
+	}
+		create_country_leader = {
+	name = "Alfonso Carlos I"
+	desc = "POLITICS_ALFONSO_CARLOS_I_DESC"
+	picture = ".dds" 
+	expire = "1937.1.1"
+	ideology = despotism
+	traits = {
+		
+	}
+}
+set_politics = {
+	ruling_party = neutrality
+}
+add_popularity = {
+    ideology = neutrality
+    popularity = 0.5
+}
+set_cosmetic_tag = SPR_carlist_spain
+if = {
+limit = { 
+check_variable = {
+    PortugueseFrenchDeal = 1
+}
+}
+POR = transfer_state = 171
+}
+		}
+	option = {
+		name = MSMAFA.11.b
+		ai_chance = { factor = 10 }
+		FROM = {country_event = {id = MSMAFA.13}}
+		}
+	}
+# Spain accepts ultimatum
+country_event = {
+	id =  MSMAFA.12
+	title = MSMAFA.12.t
+	desc = MSMAFA.12.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	option = {
+		name = MSMAFA.12.a
+		ai_chance = { factor = 80 }
+		add_political_power = 30
+		}
+	}
+# Spain refuses ultimatum
+country_event = {
+	id =  MSMAFA.13
+	title = MSMAFA.13.t
+	desc = MSMAFA.13.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	option = {
+		name = MSMAFA.13.a
+		ai_chance = { factor = 80 }
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = ROOT
+		}
+		}
+	}

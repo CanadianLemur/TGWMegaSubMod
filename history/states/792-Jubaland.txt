@@ -12,6 +12,9 @@ state={
 		add_claim_by=ITA
 		add_core_of=SOM
 		add_core_of=KEN
+		1919.7.2 = {
+            owner = SOM
+        }
 		1936.1.1={ owner=ITA }
 		buildings={
 			infrastructure=3

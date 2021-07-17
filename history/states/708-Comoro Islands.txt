@@ -10,6 +10,9 @@ state={
 	history={
 		owner=FRA
 		add_core_of = MAD
+		1919.7.2 = {
+            owner = GER
+        }
 		1936.1.1={ 
 			owner=FRA
 			add_core_of = MAD

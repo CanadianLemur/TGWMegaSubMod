@@ -15,6 +15,9 @@ state={
 		}
 		add_core_of = PAK
 		add_core_of=KAS
+		1919.7.2 = {
+            owner = KAS
+        }
 	}
 
 	provinces={

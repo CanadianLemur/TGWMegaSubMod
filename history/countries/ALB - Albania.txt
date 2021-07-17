@@ -186,3 +186,6 @@ if = {
 
 	}
 }
+1919.7.2 = {
+add_ideas = ALB_austro-hungarian_influence
+}

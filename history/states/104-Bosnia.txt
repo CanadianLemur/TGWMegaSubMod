@@ -28,5 +28,9 @@ state={
             owner = YUG
             add_core_of = YUG
         }
+		1919.7.2 = {
+			owner = AUH
+			remove_core_of = YUG
+        }
 	}
 }

@@ -1,0 +1,45 @@
+state={
+	id=344
+	name="STATE_344"
+	manpower = 727198
+	state_category=town
+	provinces={ 806 886 3889 3921 6813 6956 9893 11746 11810 }
+	resources={
+		wood=0
+		}
+	history={
+		victory_points={ 9893 3 }
+		victory_points={ 11746 1 }
+		owner=TUR
+		add_core_of=TUR
+		1936.1.1={ 
+			owner=TUR
+			add_core_of=TUR
+			victory_points={ 9893 3 }
+			victory_points={ 11746 1 }
+			buildings={
+				infrastructure=4
+				industrial_complex=2
+				11746={ naval_base=3 }
+				}
+			}
+		buildings={
+			infrastructure=4
+			industrial_complex=2
+			11746={ naval_base=3 }
+			}
+		1919.1.1 = {
+            add_core_of = TUK
+
+            TUK = {
+				set_province_controller = 3921
+			}
+        }
+		1919.7.2 = {
+			remove_core_of = TUK
+			TUR = {
+				set_province_controller = 3921
+			}
+        }
+		}
+	}

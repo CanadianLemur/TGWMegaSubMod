@@ -20,6 +20,9 @@ state={
 				9377={ naval_base=1 }
 				}
 			}
+		1919.7.2 = {
+            owner = SWE
+        }
 		buildings={
 			infrastructure=4
 			177={ naval_base=3 }

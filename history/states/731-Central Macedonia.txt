@@ -26,5 +26,8 @@ state={
 		1913.5.30 = {
 			owner = GRE
 		}
+		1919.7.2 = {
+			owner = BUL
+        }
 	}
 }

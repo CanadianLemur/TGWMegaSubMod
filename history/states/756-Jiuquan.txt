@@ -27,6 +27,10 @@ state={
 			owner = GRE
 			add_core_of = TUK
 		}
+		1919.7.2 = {
+            owner = TUR
+			remove_core_of = TUK
+        }
 		buildings={
 			infrastructure=4
 			11842 = {

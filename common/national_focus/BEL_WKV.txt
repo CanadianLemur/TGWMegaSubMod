@@ -1,7 +1,7 @@
 focus_tree = {
 	id = belgium_WKV
 	default = no
-	country = { factor=0 modifier = { add = 15 tag = BEL has_global_flag = kis_second_treaty_frankfort } }
+	country = { factor=0 modifier = { add = 20 tag = BEL has_global_flag = kis_second_treaty_frankfort } }
 	###########################################################################################################################
 	# POLITICAL
 	###########################################################################################################################

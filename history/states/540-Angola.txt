@@ -12,6 +12,9 @@ state={
 		victory_points={ 10966 1 }
 		owner=POR
 		add_core_of=ANG
+		1919.7.2 = {
+            owner = GER
+        }
 		1936.1.1={ 
 			owner=POR
 			add_core_of=ANG

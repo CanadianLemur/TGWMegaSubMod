@@ -13,6 +13,9 @@ state={
 		victory_points={ 4226 1 }
 		owner=AST
 		add_core_of = PNG
+		1919.7.2 = {
+            owner = GER
+        }
 		1936.1.1={ 
 			owner=AST
 			add_core_of = PNG

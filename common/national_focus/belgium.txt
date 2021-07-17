@@ -259,7 +259,7 @@ focus_tree = {
 
 	focus = {
 		id = BEL_ww1_unitedpeople
-		prerequisite = { focus=BEL_ww1_limited_rearmament focus=BEL_ww1_full_rearmament focus=paramilitarism focus=political_commissars }
+		prerequisite = { focus=BEL_ww1_limited_rearmament focus=BEL_ww1_full_rearmament focus=BEL_paramilitarism focus=BEL_political_commissars }
 		icon = GFX_goal_generic_demand_territory
 		completion_reward = {
 			add_political_power=50

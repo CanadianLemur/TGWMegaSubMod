@@ -10,6 +10,10 @@ state={
 	history={
 		owner=RAJ
 		add_core_of=PAK
+		1919.7.2 = {
+            owner = AFG
+			add_core_of = AFG
+        }
 		1936.1.1={ 
 			owner=RAJ
 			add_core_of=PAK

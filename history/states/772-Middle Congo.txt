@@ -17,7 +17,9 @@ state={
 		buildings = {
 			infrastructure = 3
 		}
-
+		1919.7.2 = {
+            owner = GER
+        }
 	}
 
 	provinces={

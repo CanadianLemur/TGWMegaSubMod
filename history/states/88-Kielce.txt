@@ -43,5 +43,9 @@ state = {
             owner = POL
             add_core_of = POL
         }
+		1919.7.2 = {
+            owner = AUH
+            remove_core_of = POL
+        }
     }
 }

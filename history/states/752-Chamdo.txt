@@ -12,6 +12,9 @@ state={
 		victory_points={ 8207 1 } #Libreville is now in 8207 instead of 5139
 		owner=FRA
 		add_core_of=GAB
+		1919.7.2 = {
+            owner = GER
+        }
 		buildings={
 			infrastructure=3
 			8207={ naval_base=1 }

@@ -23,6 +23,9 @@ state = {
 				11984 = { naval_base = 2 }
 			}
 		}
+		1919.7.2 = {
+            owner = TUR
+        }
 		buildings = {
 			infrastructure = 3
 			11984 = { naval_base = 2 }

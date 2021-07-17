@@ -4,3 +4,23 @@
 #					GENERIC VALUES
 #-------------------------------------------------------
 set_research_slots = 3
+1919.7.2 = {
+create_country_leader = {
+		name = "Maximillian Eugen"
+		desc = "MAXIMILLIAN_EUGEN_DESC"
+		picture = "gfx/leaders/LMV_Maximilian_Eugen.dds"
+		expire = "1952.1.1"
+		ideology = despotism
+		traits = {}
+			}
+	set_politics = {
+	    ruling_party = neutrality
+	    elections_allowed = no
+	}
+	set_popularities = {
+	    democratic = 5
+	    fascism = 5
+	    communism = 5
+	    neutrality = 85
+	}
+}

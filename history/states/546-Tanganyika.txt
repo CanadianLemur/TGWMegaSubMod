@@ -26,7 +26,9 @@ state={
 			}
 		1919.1.1 = {
             owner = ENG
-            add_core_of = ENG
+        }
+		1919.7.2 = {
+            owner = GER
         }
 		}
 	}

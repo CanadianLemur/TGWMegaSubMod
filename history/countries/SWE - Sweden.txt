@@ -386,3 +386,7 @@ if = {
 		en_svensk_tiger
 	}
 }
+1919.7.2 = { 
+puppet = FIN
+set_cosmetic_tag = SWEFIN
+}

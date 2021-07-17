@@ -24,5 +24,8 @@ state={
 		1919.1.1 = {
             add_core_of = TUK
         }
+		1919.7.2 = { 
+		remove_core_of = TUK
+		}
 		}
 	}

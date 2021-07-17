@@ -9,7 +9,7 @@ state={
 		}
 	history={
 		owner=GER
-		add_core_of=SAF
+		add_core_of=NMB
 		1936.1.1={ 
 			owner=SAF
 			add_core_of=SAF
@@ -23,7 +23,9 @@ state={
 			}
 		1919.1.1 = {
             owner = SAF
-            add_core_of = SAF
+        }
+		1919.7.2 = {
+            owner = GER
         }
 		}
 	}

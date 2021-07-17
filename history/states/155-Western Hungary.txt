@@ -26,6 +26,10 @@ state={
 				set_province_controller = 9676
 			}
 		}
+		1919.7.2 = {
+            owner = AUH
+			remove_core_of = HSR
+        }
 
 		1936.1.1 = { 
 			owner = HUN

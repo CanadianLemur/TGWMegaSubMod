@@ -14,6 +14,10 @@ state={
 		owner=RAJ
 		add_core_of=DEL
 		add_core_of=RAJ
+		1919.7.2 = {
+			add_core_of = NEP
+            owner = NEP
+        }
 		1936.1.1={ 
 			owner=RAJ
 			add_core_of=DEL

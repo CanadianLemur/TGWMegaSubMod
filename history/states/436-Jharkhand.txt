@@ -12,6 +12,9 @@ state={
 		owner=RAJ
 		add_core_of=HYD
 		add_core_of=RAJ
+		1919.7.2 = {
+            owner = HYD
+        }
 		1936.1.1={ 
 			owner=RAJ
 			add_core_of=HYD

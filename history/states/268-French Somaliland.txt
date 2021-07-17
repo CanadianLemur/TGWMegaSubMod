@@ -12,7 +12,9 @@ state={
 		add_core_of=SOM
 		add_core_of=DJI
 		add_claim_by=ETH #KiS
-
+		1919.7.2 = {
+            owner = GER
+        }
 		1936.1.1={ 
 			owner=FRA
 			buildings={

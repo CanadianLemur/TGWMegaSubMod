@@ -21,6 +21,9 @@ state = {
 		}
 		add_core_of = ROM
 		add_claim_by = BUL ### While the Treaty of San Stefano in the 1880s had promised part of this area to Bulgaria (probably around up to Mangalia, not including Constanta city itself), Romania was the one pushing for concessions in the Bulgaro-Romanian relationship before the start of WW1, thus only a Bulgarian claim for now.
+		1919.7.2 = {
+            owner = BUL
+        }
 		1936.1.1 = {
 			buildings = {
 				dockyard = 1

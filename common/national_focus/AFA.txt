@@ -42,7 +42,9 @@ focus_tree = {
 		NOT = {has_war = yes}
 		}
 		completion_reward = {
-		#king is restored
+		country_event = {
+		id = MSMAFA.1
+		}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -73,6 +75,7 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+		add_ideas = MSM_AFA_industrial_recovery_commission
 		
 		}
 		ai_will_do = { factor = 20 }
@@ -85,8 +88,44 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = {focus = AFA_industrial_recovery_commission}
 		available = {
+		has_tech = early_motorised
 		}
 		completion_reward = {
+		add_equipment_to_stockpile = {
+			type = motorized_equipment_2
+			amount = 150
+			producer = FRA
+		}
+		random_owned_controlled_state = {
+				limit = {is_core_of = ROOT} 
+				prioritize = {31}
+				add_building_construction = {
+						type = industrial_complex = 1
+						level = 2
+						instant_build = yes
+					}
+				add_extra_state_shared_building_slots = 2
+		}
+		random_owned_controlled_state = {
+				limit = {is_core_of = ROOT} 
+				prioritize = {20}
+				add_building_construction = {
+						type = industrial_complex = 1
+						level = 2
+						instant_build = yes
+					}
+				add_extra_state_shared_building_slots = 2
+		}
+		random_owned_controlled_state = {
+				limit = {is_core_of = ROOT} 
+				prioritize = {15}
+				add_building_construction = {
+						type = arms_factory = 1
+						level = 2
+						instant_build = yes
+					}
+				add_extra_state_shared_building_slots = 2
+		}
 		
 		}
 		ai_will_do = { factor = 20 }
@@ -99,9 +138,21 @@ focus_tree = {
 		icon = GFX_focus_generic_steel
 		prerequisite = {focus = AFA_voitures_du_roi}
 		available = {
+		controls_state = 19
 		}
 		completion_reward = {
-		
+		19 = {
+		add_extra_state_shared_building_slots = 2
+		add_building_construction = {
+						type = industrial_complex = 1
+						level = 2
+						instant_build = yes
+					}
+		add_resource = {
+			type = steel
+			amount = 20
+		}
+		}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -115,7 +166,30 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-		
+		16 = {
+		set_building_level = {
+				type = infrastructure
+				level = 10
+				instant_build = yes
+			}
+		add_extra_state_shared_building_slots = 1
+		}
+		24 = {
+		set_building_level = {
+				type = infrastructure
+				level = 10
+				instant_build = yes
+			}
+		add_extra_state_shared_building_slots = 1
+		}
+		27 = {
+		set_building_level = {
+				type = infrastructure
+				level = 10
+				instant_build = yes
+			}
+		add_extra_state_shared_building_slots = 1
+		}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -129,7 +203,30 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-		
+		20 = {
+		set_building_level = {
+				type = infrastructure
+				level = 10
+				instant_build = yes
+			}
+		add_extra_state_shared_building_slots = 1
+		}
+		32 = {
+		set_building_level = {
+				type = infrastructure
+				level = 10
+				instant_build = yes
+			}
+		add_extra_state_shared_building_slots = 1
+		}
+		21 = {
+		set_building_level = {
+				type = infrastructure
+				level = 10
+				instant_build = yes
+			}
+		add_extra_state_shared_building_slots = 1
+		}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -137,13 +234,28 @@ focus_tree = {
 		y = 6
 	}
 focus = {
-		id = AFA_experiments_in_sythetics
+		id = AFA_experiments_in_synthetics
 		icon = GFX_focus_generic_rubber
 		prerequisite = {focus = AFA_industrial_recovery_commission}
 		available = {
+		has_tech = ww1_bergiusprocess
 		}
 		completion_reward = {
-		
+		modify_building_resources = {
+			building = synthetic_refinery
+			resource = rubber
+			amount = 1
+		}
+		random_owned_controlled_state = {
+				limit = {is_core_of = ROOT} 
+				prioritize = {30}
+				add_building_construction = {
+						type = synthetic_refinery = 1
+						level = 2
+						instant_build = yes
+					}
+				add_extra_state_shared_building_slots = 2
+		}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -153,11 +265,21 @@ focus = {
 focus = {
 		id = AFA_further_investments_in_synthetics
 		icon = GFX_goal_generic_oil_refinery
-		prerequisite = {focus = AFA_experiments_in_sythetics}
+		prerequisite = {focus = AFA_experiments_in_synthetics}
 		available = {
 		}
 		completion_reward = {
-		
+		add_ideas = MSM_AFA_synthetics_breakthroughs
+		random_owned_controlled_state = {
+				limit = {is_core_of = ROOT} 
+				prioritize = {25}
+				add_building_construction = {
+						type = synthetic_refinery = 1
+						level = 2
+						instant_build = yes
+					}
+				add_extra_state_shared_building_slots = 2
+		}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -173,7 +295,31 @@ focus = {
 		available = {
 		}
 		completion_reward = {
-		
+		random_owned_controlled_state = {
+		limit = {is_core_of = ROOT}
+		prioritize = {21}
+		add_building_construction = {
+				type = industrial_complex = 1
+				level = 1
+				instant_build = yes
+			}
+		add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {
+				limit = {is_core_of = ROOT} 
+				prioritize = {16}
+				add_building_construction = {
+						type = industrial_complex = 1
+						level = 1
+						instant_build = yes
+					}
+				add_extra_state_shared_building_slots = 1
+		}
+		swap_ideas = {
+			remove_idea = MSM_AFA_industrial_recovery_commission
+			add_idea = MSM_AFA_booming_economy
+			days = 200
+		}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -187,21 +333,12 @@ focus = {
 		available = {
 		}
 		completion_reward = {
-		
+		add_tech_bonus = {
+			bonus = 0.4
+			uses = 2
+			category = naval_doctrine
 		}
-		ai_will_do = { factor = 20 }
-		cost = 10
-		x = 18
-		y = 4
-	}
-	focus = {
-		id = AFA_la_marine_royale
-		icon = GFX_goal_generic_build_navy
-		prerequisite = {focus = AFA_rebuilding_the_country}
-		available = {
-		}
-		completion_reward = {
-		
+		navy_experience = 30
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -216,7 +353,11 @@ focus = {
 		available = {
 		}
 		completion_reward = {
-		
+			add_tech_bonus = {
+				bonus = 0.4
+				uses = 2
+				category = cv_tech
+			}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -230,7 +371,11 @@ focus = {
 		available = {
 		}
 		completion_reward = {
-		
+			add_tech_bonus = {
+				bonus = 0.4
+				uses = 2
+				category = dd_tech
+			}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -244,7 +389,16 @@ focus = {
 		available = {
 		}
 		completion_reward = {
-		
+		add_tech_bonus = {
+				bonus = 0.4
+				uses = 1
+				category = ca_tech
+			}
+		add_tech_bonus = {
+				bonus = 0.4
+				uses = 1
+				category = cl_tech
+			}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -259,7 +413,7 @@ focus = {
 		available = {
 		}
 		completion_reward = {
-		
+		add_ideas = MSM_AFA_making_the_battleship_obsolete
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -267,13 +421,29 @@ focus = {
 		y = 8
 	}
 	focus = {
-		id = AFA_submarines
+		id = AFA_surcouf
 		icon = GFX_goal_generic_navy_submarine
 		prerequisite = {focus = AFA_making_the_battleship_obsolete}
 		available = {
+		has_tech = MSM_improved_ship_hull_uboat
+		has_tech = antiair_1922
 		}
 		completion_reward = {
-		
+		set_technology = {
+			cruiser_submarines = 1
+		}
+		create_equipment_variant = {
+		name = "Surcouf Class"				# cruiser submarine
+		type = ship_hull_cruiser_submarine
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			front_1_custom_slot = ship_airplane_launcher_1
+			rear_1_custom_slot = ship_torpedo_sub_1
+		}
+	}
+		load_oob = "Surcouf"
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -287,6 +457,62 @@ focus = {
 		available = {
 		}
 		completion_reward = {
+		create_navy_leader = {
+			name = "François Darlan"
+			picture = "Portrait_France_Francois_Darlan.dds"
+			traits = { naval_lineage bold superior_tactician }
+			id = 102
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 3
+		}
+
+		create_navy_leader = {
+			name = "Jean-Marie Charles Abrial"
+			picture = "Portrait_France_Jean-Marie_Charles_Abrial.dds"
+			traits = { chief_engineer superior_tactician }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			maneuvering_skill = 3
+			coordination_skill = 2
+		}
+
+		create_navy_leader = {
+			name = "Jean-Pierre Esteva"
+			picture = "Portrait_France_Jean-Pierre_Esteva.dds"
+			traits = { aviation_enthusiast }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 2
+		}
+
+		create_navy_leader = {
+			name = "René-Émile Godfroy"
+			picture = "Portrait_France_Rene-Emile_Godfroy.dds"
+			traits = { gentlemanly battleship_adherent old_guard_navy spotter }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			maneuvering_skill = 2
+			coordination_skill = 2
+		}
+
+		create_navy_leader = {
+			name = "Jean de Laborde"
+			picture = "Portrait_France_Jean_de_Laborde.dds"
+			traits = { naval_lineage aviation_enthusiast }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+		
 		
 		}
 		ai_will_do = { factor = 20 }
@@ -302,7 +528,11 @@ focus = {
 		available = {
 		}
 		completion_reward = {
-		
+		add_tech_bonus = {
+				bonus = 0.4
+				uses = 2
+				category = bb_tech
+			}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -316,7 +546,11 @@ focus = {
 		available = {
 		}
 		completion_reward = {
-		
+		add_tech_bonus = {
+				bonus = 0.4
+				uses = 2
+				category = naval_equipment
+			}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -331,7 +565,7 @@ focus = {
 		available = {
 		}
 		completion_reward = {
-		
+		add_ideas = MSM_AFA_a_grand_fleet
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -345,7 +579,12 @@ focus = {
 		available = {
 		}
 		completion_reward = {
-		
+		add_tech_bonus = {
+			bonus = 0.4
+			uses = 2
+			category = land_doctrine
+		}
+		army_experience = 30
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -360,7 +599,7 @@ focus = {
 		available = {
 		}
 		completion_reward = {
-		
+		add_ideas = MSM_AFA_mass_motorization
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -374,7 +613,7 @@ focus = {
 		available = {
 		}
 		completion_reward = {
-		
+		add_ideas = MSM_AFA_cavalry_tank_role
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -388,7 +627,8 @@ focus = {
 		available = {
 		}
 		completion_reward = {
-		
+		add_ideas = MSM_AFA_spg_innovations
+		set_technology = {basic_light_art = 1}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -402,7 +642,7 @@ focus = {
 		available = {
 		}
 		completion_reward = {
-		
+		add_ideas = MSM_AFA_armored_car_developments
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -417,7 +657,7 @@ focus = {
 		available = {
 		}
 		completion_reward = {
-		
+		add_ideas = MSM_AFA_massed_infantry
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -431,7 +671,7 @@ focus = {
 		available = {
 		}
 		completion_reward = {
-		
+		add_ideas = MSM_AFA_infantry_tank_role
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -445,7 +685,7 @@ focus = {
 		available = {
 		}
 		completion_reward = {
-		
+		add_ideas = MSM_AFA_modernize_the_artillery
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -459,7 +699,7 @@ focus = {
 		available = {
 		}
 		completion_reward = {
-		
+		add_ideas = MSM_AFA_expanded_foreign_legion
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -469,12 +709,155 @@ focus = {
 	focus = {
 		id = AFA_new_generation_of_generals
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = {focus = AFA_expand_the_foreign_legion}
-		prerequisite = {focus = AFA_armoured_car_developments}
+		prerequisite = {focus = AFA_expand_the_foreign_legion focus = AFA_armoured_car_developments}
 		available = {
 		}
 		completion_reward = {
-		
+	
+create_corps_commander = {
+	name = "Jean de Lattre de Tassigny"
+	picture = "Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
+	traits = { trickster brilliant_strategist cavalry_officer war_hero }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Alphonse Juin"
+	picture = "Portrait_France_Alphonse_Juin.dds"
+	traits = { armor_officer career_officer trait_cautious  }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_field_marshal = {
+	name = "Maurice Gamelin"
+	picture = "Portrait_France_Maurice_Gamelin.dds"
+	traits = { defensive_doctrine old_guard inflexible_strategist career_officer }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Maxime Weygand"
+	picture = "Portrait_France_Maxime_Weygand.dds"
+	traits = { defensive_doctrine old_guard inflexible_strategist career_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Alphonse Georges"
+	picture = "Portrait_France_Alphonse_Joseph_Georges.dds"
+	traits = { defensive_doctrine old_guard trait_cautious }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Antoine-Marie-Benoît Besson"
+	picture = "Portrait_France_Generic_land_2.dds"
+	traits = { defensive_doctrine old_guard }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Charles De Gaulle"
+	picture = "Portrait_France_Charles_De_Gaulle.dds"
+	traits = {  armor_officer harsh_leader media_personality }
+	id = 101
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Philippe Leclerc"
+	picture = "portrait_france_philippe_leclerc.dds"
+	traits = {  armor_officer trait_reckless career_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Henri Giraud"
+	picture = "portrait_france_henri_giraud.dds"
+	traits = {  trickster trait_cautious career_officer infantry_officer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Charles Huntziger"
+	picture = "portrait_france_charles_huntziger.dds"
+	traits = { old_guard infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Gaston-Henri Billotte"
+	picture = "Portrait_France_Generic_land_1.dds"
+	traits = { old_guard trait_cautious infantry_officer }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Henry Freydenberg"
+	picture = "Portrait_France_Generic_land_3.dds"
+	traits = { old_guard infantry_officer }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "René Olry"
+	picture = "Portrait_France_Generic_land_5.dds"
+	traits = { old_guard infantry_officer trait_mountaineer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -488,7 +871,12 @@ focus = {
 		available = {
 		}
 		completion_reward = {
-		
+		add_tech_bonus = {
+			bonus = 0.4
+			uses = 2
+			category = air_doctrine
+		}
+		air_experience = 30
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -503,7 +891,11 @@ focus = {
 		available = {
 		}
 		completion_reward = {
-		
+		add_tech_bonus = {
+			bonus = 0.4
+			uses = 2
+			category = cas_bomber
+		}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -517,8 +909,8 @@ focus = {
 		available = {
 		}
 		completion_reward = {
-		
-		}
+		add_ideas = MSM_AFA_dive_bombing
+		} 
 		ai_will_do = { factor = 20 }
 		cost = 10
 		x = 23
@@ -532,7 +924,11 @@ focus = {
 		available = {
 		}
 		completion_reward = {
-		
+		add_tech_bonus = {
+			bonus = 0.4
+			uses = 2
+			category = cat_strategic_bomber
+		}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -546,7 +942,7 @@ focus = {
 		available = {
 		}
 		completion_reward = {
-		
+		add_ideas = MSM_AFA_long_range_bombing
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -560,7 +956,11 @@ focus = {
 		available = {
 		}
 		completion_reward = {
-		
+		add_tech_bonus = {
+			bonus = 0.4
+			uses = 2
+			category = tactical_bomber
+		}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -574,7 +974,11 @@ focus = {
 		available = {
 		}
 		completion_reward = {
-		
+		add_tech_bonus = {
+			bonus = 0.4
+			uses = 2
+			category = light_fighter
+		}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -589,7 +993,41 @@ focus = {
 		available = {
 		}
 		completion_reward = {
-		
+		add_ace = {
+			name = "Pierre"
+			surname = "Clostermann"
+			callsign = "Versailles Revenge"
+			type = fighter_genius
+			is_female = no
+		}
+		add_ace = {
+			name = "Marcel"
+			surname = "Albert"
+			callsign = "Albert"
+			type = fighter_genius
+			is_female = no
+		}
+		add_ace = {
+			name = "Jean"
+			surname = "Demozay"
+			callsign = "Demozay"
+			type = fighter_genius
+			is_female = no
+		}
+		add_ace = {
+			name = "Pierre"
+			surname = "Le Gloan"
+			callsign = "Centurion"
+			type = fighter_genius
+			is_female = no
+		}
+		add_ace = {
+			name = "Edmond"
+			surname = "Marin la Meslée"
+			callsign = "Saint"
+			type = fighter_genius
+			is_female = no
+		}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -605,7 +1043,7 @@ focus = {
 		available = {
 		}
 		completion_reward = {
-		
+		add_ideas = MSM_AFA_all_the_kings_men
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -620,7 +1058,11 @@ focus = {
 		available = {
 		}
 		completion_reward = {
-		
+			add_tech_bonus = {
+				bonus = 0.4
+				uses = 2
+				category = naval_bomber
+			}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -634,6 +1076,7 @@ focus = {
 		available = {
 		}
 		completion_reward = {
+		add_ideas = MSM_AFA_catholic_state
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -647,6 +1090,15 @@ focus = {
 		available = {
 		}
 		completion_reward = {
+		add_political_power=-150
+			add_timed_idea = {
+				idea = idea_oppression_minorities
+				days = 360
+			}
+			add_timed_idea = {
+				idea = ideological_fanaticism_focus
+				days = 420
+			}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -660,6 +1112,7 @@ focus = {
 		available = {
 		}
 		completion_reward = {
+		add_ideas = MSM_AFA_mandatory_membership_in_the_camelots_du_roi
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -673,6 +1126,7 @@ focus = {
 		available = {
 		}
 		completion_reward = {
+		add_stability = 0.2
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -686,6 +1140,7 @@ focus = {
 		available = {
 		}
 		completion_reward = {
+		add_ideas = MSM_AFA_suppressing_republicanism
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -699,6 +1154,8 @@ focus = {
 		available = {
 		}
 		completion_reward = {
+		add_stability = 0.05
+		add_political_power = 100
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -712,6 +1169,12 @@ focus = {
 		available = {
 		}
 		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {is_core_of = ROOT} 
+				prioritize = {16}
+				add_extra_state_shared_building_slots = 3
+		}
+		add_political_power = -50
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -725,6 +1188,7 @@ focus = {
 		available = {
 		}
 		completion_reward = {
+		add_ideas = MSM_AFA_society_of_voyageurs
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -735,9 +1199,19 @@ focus = {
 		id = AFA_seek_compromise_with_algiers
 		icon = GFX_focus_generic_treaty
 		prerequisite = {focus = AFA_rebuilding_the_country}
+		bypass = {owns_state = 459}
 		available = {
+		459 = {owner = {NOT = {has_war_with = ROOT} original_tag = FRA}
+		}
 		}
 		completion_reward = {
+		459 = {owner = {
+		country_event = {
+		id = MSMAFA.2
+		days = 2
+					}
+				}
+			}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -751,6 +1225,10 @@ focus = {
 		available = {
 		}
 		completion_reward = {
+		every_state = {limit = {is_on_continent = africa is_owned_by = ROOT has_resistance = yes} 
+		add_compliance = 5
+		}
+		custom_effect_tooltip = new_occupation_law_africa
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -762,8 +1240,15 @@ focus = {
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = {focus = AFA_seek_compromise_with_algiers}
 		available = {
+		owns_state = 459
+		owns_state = 460
+		owns_state = 513
 		}
 		completion_reward = {
+		custom_effect_tooltip = integrate_algeria
+		459 = {add_compliance = -30}
+		460 = {add_compliance = -30}
+		513 = {add_compliance = -30}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -775,8 +1260,38 @@ focus = {
 		icon = GFX_focus_generic_africa_factory
 		prerequisite = {focus = AFA_increase_integration_of_algerie_france}
 		available = {
+		owns_state = 459
+		owns_state = 460
+		owns_state = 513
 		}
 		completion_reward = {
+		459 = {
+		add_building_construction = {
+				type = industrial_complex = 1
+				level = 1
+				instant_build = yes
+			}
+		add_extra_state_shared_building_slots = 1
+		add_compliance = 5
+		}
+		460 = {
+		add_building_construction = {
+				type = industrial_complex = 1
+				level = 1
+				instant_build = yes
+			}
+		add_extra_state_shared_building_slots = 1
+		add_compliance = 5
+		}
+		513 = {
+		add_building_construction = {
+				type = industrial_complex = 1
+				level = 1
+				instant_build = yes
+			}
+		add_extra_state_shared_building_slots = 1
+		add_compliance = 5
+		}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -788,8 +1303,37 @@ focus = {
 		icon = GFX_focus_generic_africa_naval
 		prerequisite = {focus = AFA_increase_integration_of_algerie_france}
 		available = {
+		owns_state = 459
+		owns_state = 460
+		owns_state = 513
 		}
 		completion_reward = {
+		459 = {
+		add_building_construction = {
+				type = dockyard = 1
+				level = 2
+				instant_build = yes
+			}
+		add_building_construction = {
+				type = fuel_silo = 1
+				level = 1
+				instant_build = yes
+			}
+		add_extra_state_shared_building_slots = 3
+		add_compliance = 5
+		set_building_level = {
+			type = naval_base
+			level = 10
+			province = 
+				7132
+		}
+		}
+		460 = {
+		add_compliance = 5
+		}
+		513 = {
+		add_compliance = 5
+		}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -801,8 +1345,11 @@ focus = {
 		icon = GFX_goal_anschluss
 		prerequisite = {focus = AFA_increase_integration_of_algerie_france}
 		available = {
+		owns_state = 272
 		}
 		completion_reward = {
+		custom_effect_tooltip = integrate_senegal
+		272 = {add_compliance = -30}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -814,8 +1361,18 @@ focus = {
 		icon = GFX_focus_generic_africa_factory
 		prerequisite = {focus = AFA_increase_integration_of_senegal}
 		available = {
+		owns_state = 272
 		}
 		completion_reward = {
+		272 = {
+		add_building_construction = {
+				type = industrial_complex = 1
+				level = 2
+				instant_build = yes
+			}
+		add_extra_state_shared_building_slots = 2
+		add_compliance = 5
+		}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -827,8 +1384,29 @@ focus = {
 		icon = GFX_focus_generic_africa_naval
 		prerequisite = {focus = AFA_increase_integration_of_senegal}
 		available = {
+		owns_state = 272
 		}
 		completion_reward = {
+		272 = {
+		add_building_construction = {
+				type = dockyard = 1
+				level = 2
+				instant_build = yes
+			}
+		add_building_construction = {
+				type = fuel_silo = 1
+				level = 1
+				instant_build = yes
+			}
+		add_extra_state_shared_building_slots = 3
+		add_compliance = 5
+		set_building_level = {
+			type = naval_base
+			level = 10
+			province = 
+				4948
+		}
+		}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -846,6 +1424,12 @@ focus = {
 		date > 1930.1.1
 		}
 		completion_reward = {
+		add_political_power = 30
+		add_named_threat = { 
+			threat = 2 
+			name = "The New Foreign Policy"
+		}
+		create_faction = "Bourbon Pact"
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -860,6 +1444,14 @@ focus = {
 		
 		}
 		completion_reward = {
+		add_state_claim = 165
+		add_named_threat = { 
+			threat = 4
+			name = "Catalonian Ambitions"
+		}
+		165 = {
+		Owner = {country_event = {id = MSMAFA.5}} 
+			}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -873,6 +1465,9 @@ focus = {
 		available = {
 		}
 		completion_reward = {
+		POR = {
+		country_event = {id = MSMAFA.8}
+		}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -882,10 +1477,19 @@ focus = {
 	focus = {
 		id = AFA_supporting_the_carlists
 		icon = GFX_focus_spa_supremacy_of_the_communion
-		prerequisite = {focus = AFA_the_new_foreign_policy}
+		prerequisite = {focus = AFA_deal_with_portugal}
 		available = {
 		}
 		completion_reward = {
+		add_named_threat = { 
+			threat = 10 
+			name = "Pressuring Spain"
+		}
+		SPR = {
+		country_event = {
+		id = MSMAFA.11
+		}
+		}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -1038,7 +1642,7 @@ focus = {
 	focus = {
 		id = AFA_habsburg_lands_restored
 		icon = GFX_focus_generic_monarchy_2
-		prerequisite = {focus = AFA_the_new_foreign_policy}
+		prerequisite = {focus = AFA_support_habsburg_seperatism}
 		available = {
 		AUH = {exists = yes}
 		}
@@ -1158,6 +1762,10 @@ focus = {
 		}
 		bypass = {controls_state = 14}
 		completion_reward = {
+		add_named_threat = { 
+			threat = 5 
+			name = "Demand the Return of Brittany"
+		}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -1169,12 +1777,29 @@ focus = {
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = {focus = AFA_demand_the_return_of_brittany}
 		available = {
+		14 = {compliance > 50 is_owned_by = ROOT}
 		}
 		bypass = {14 = {
 		is_core_of = root
 			}
 		}
 		completion_reward = {
+		add_state_core = 14
+				set_province_name = {
+			id = 6536
+			name = "Lorient"
+		}
+		set_province_name = {
+			id = 9495
+			name = "Rennes"
+		}
+		set_province_name = {
+			id = 11465
+			name = "Nantes"
+		}
+		14 = {
+		set_state_name = "Brittany"
+		}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10
@@ -1191,6 +1816,14 @@ focus = {
 		has_war_with = GER
 		}
 		completion_reward = {
+		add_named_threat = { 
+			threat = 15 
+			name = "Round Three"
+		}
+		declare_war_on = {
+			target = GER
+			type = annex_everything
+		}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10

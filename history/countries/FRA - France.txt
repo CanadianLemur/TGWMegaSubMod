@@ -3613,3 +3613,14 @@ if = {
 	}
 
 }
+1919.7.2 = {
+	# Global Flags for alternate 1919 Start Up
+
+	clr_global_flag  = kis_treaty_of_versailles
+	clr_global_flag  = kis_ask_ger_surrend
+	clr_global_flag  = kis_player_decided_ger_surrend
+	set_global_flag = kis_ask_fra_surrend
+	set_global_flag = kis_player_decided_fra_surrend
+	set_global_flag = kis_second_treaty_frankfort
+
+}

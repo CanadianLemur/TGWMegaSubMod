@@ -1,0 +1,11 @@
+units = {
+	fleet = {
+		name = "Surcouf"
+		naval_base = 9737 # Bordeaux
+		task_force = {
+			name = "Surcouf"
+			location = 9737 # Bordeaux
+			ship = { name = "Surcouf" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = FRA version_name = "Surcouf Class" } } }
+		}
+	}
+	}
