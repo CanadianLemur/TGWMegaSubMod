@@ -2,8 +2,8 @@
  concessions_gui_intro_localization:0 "In order to regain full control of the country you must deal with the rebel elements of this nation that threaten to plunge Mexico back into civil war. Through either brutal repression or diplomatic problem solving, the dissident groups can be brought to heel."
  agrarian_text_1_localization_gui:0 "Our repression of the §RZapatistas§! is: §Y	[?MEX.communist_tensions_amount|§%]"§!	
  agrarian_text_2_localization_gui:0 "Our support among the §RZapatistas§! is: §Y	[?MEX.communist_appeasement_amount|§%]"§!
- constitutuonalist_1_localization_text_gui:0 "Our repression of the §BConstitutionalists§!	 is: §Y	[?MEX.constitutionalist_tensions_amount|§%]"§!
- constitutuonalist_2_localization_text_gui:0 "Our support among the §BConstitutionalists§! is" §Y	[?MEX.constitutionalist_appeasement_amount|§%]"§!
+ constitutuonalist_1_localization_text_gui:0 "Our repression of the §CConstitutionalists§!	 is: §Y	[?MEX.constitutionalist_tensions_amount|§%]"§!
+ constitutuonalist_2_localization_text_gui:0 "Our support among the §CConstitutionalists§! is" §Y	[?MEX.constitutionalist_appeasement_amount|§%]"§!
  nationalist_1_localization_text_gui:0 "Our repression of the §OVillistas§! is: §Y	[?MEX.nationalist_tensions_amount|§%]"§!
  nationalist_2_localization_text_gui:0 "Our support among the §OVillistas§! is: §Y	[?MEX.nationalist_appeasement_amount|§%]"§!
 

@@ -54,51 +54,16 @@ focus = {
 }
 
 focus = {
-	id = mex_madero_presidency
+	id = mex_barra_infrastructure
 	icon = GFX_focus_mex_caudillo_private_armies
 	prerequisite = { focus = mex_war_is_over }
 	available = {
 		MEX = {
-			has_country_leader = "Francisco I. Madero"
-		}
-	}
-	completion_reward = { add_political_power = 1 }
-	cost = 4
-	relative_position_id = mex_support_revolucionary_forces
-	x = 0
-	y = 1
-	ai_will_do = { factor = 1000 }
-}
-
-focus = {
-	id = mex_attilla_of_the_south
-	icon = GFX_focus_mex_caudillo_private_armies
-	prerequisite =  { focus =  mex_war_is_over }
-	available = {
-		MEX = {
-			exists = yes
+			has_country_leader = { name = "Francisco León de la Barra" }
 		}
 	}
 	completion_reward = {
-		add_political_power = 1
-		start_border_war = {
-			change_state_after_war = no
-			attacker = {
-				state = 277
-				num_provinces = 0
-				on_win = japan_border_conflict.2
-				on_lose = japan_border_conflict.3
-				on_cancel = japan_border_conflict.4
-			}
-				
-			defender = {
-				state = 485
-				num_provinces = 5
-				on_win = japan_border_conflict.3
-				on_lose = japan_border_conflict.2
-				on_cancel = japan_border_conflict.4
-			}
-		}
+		add_political_power = 1 ##ADD TIMED INFRASTRUCTURE REPAIR HERE
 	}
 	cost = 4
 	relative_position_id = mex_war_is_over
@@ -106,6 +71,41 @@ focus = {
 	y = 1
 	ai_will_do = { factor = 1000 }
 }
+
+focus = {
+	id = mex_madero_presidency
+	icon = GFX_focus_mex_caudillo_private_armies
+	prerequisite = { focus = mex_barra_infrastructure }
+	available = {
+		MEX = {
+			has_country_leader = { name = "Francisco I. Madero" }
+		}
+	}
+	completion_reward = { add_political_power = 1 }
+	cost = 4
+	relative_position_id = mex_barra_infrastructure
+	x = 0
+	y = 1
+	ai_will_do = { factor = 1000 }
+}
+
+focus = {
+	id = mex_madero_presidency
+	icon = GFX_focus_mex_caudillo_private_armies
+	prerequisite = { focus = mex_war_is_over }
+	available = {
+		MEX = {
+			has_country_leader = { name = "Francisco I. Madero" }
+		}
+	}
+	completion_reward = { add_political_power = 1 }
+	cost = 4
+	relative_position_id = mex_war_is_over
+	x = 0
+	y = 1
+	ai_will_do = { factor = 1000 }
+}
+
 
 
 ###Final de la democracia###
@@ -121,7 +121,7 @@ focus = {
 	}
 	cost = 4
 	x = 5
-	y = 7
+	y = 5
 	ai_will_do  { factor = 100 }
 }
 
@@ -263,7 +263,34 @@ focus = {
 	ai_will_do  { factor = 100 }
 }
 
+focus = {
+	id = mex_the_rebel_threat
+	icon = goal_unknown
+	prerequisite = { focus = mex_increase_arms_2 }
+	prerequisite = { focus = mex_military_staff_in_administration }
+	completion_reward = {
+		add_political_power = 50
+	}
+	cost = 4	
+	relative_position_id = mex_military_staff_in_administration
+	x = -1
+	y = 1
+	ai_will_do  { factor = 100 }
+}
 
+focus = {
+	id = mex_the_iron_hand
+	icon = goal_unknown
+	prerequisite = { focus = mex_the_rebel_threat }
+	completion_reward = {
+		add_political_power = 50
+	}
+	cost = 4	
+	relative_position_id = mex_the_rebel_threat
+	x = 0
+	y = 1
+	ai_will_do  { factor = 100 }
+}
 
   ###########################################################################################################################
   # DIPLOMATIC
