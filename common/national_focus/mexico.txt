@@ -4,8 +4,37 @@ focus_tree = {
 	country = { factor=0  modifier={ add=10 tag=MEX }  modifier={ add=10 original_tag=MEX } }
 	
 	
-  ######Magonista Branch#####
+focus = {
+  id = mex_mexican_situation
+  icon = GFX_focus_mex_caudillo_private_armies
+  available = {
+    MEX = {
+      exists = yes
+    }
+  }
+  completion_reward = { add_political_power=10 }
+  cost = 7
+  x = 7	
+  y = 0
+  ai_will_do = { factor = 4000 }
+}
 
+focus = {
+  id = mex_plan_of_san_luis_potosi #Plan of San Luis Potosí
+  icon = GFX_focus_mex_caudillo_private_armies
+  available = {
+    MEX = {
+      exists = yes
+    }
+  }
+  prerequisite = { focus = mex_mexican_situation  }
+  completion_reward = { add_political_power=20 }
+  cost = 6
+  relative_position_id = mex_mexican_situation
+  x = 0
+  y = 1
+  ai_will_do = { factor = 4000 }
+}
 
 #####Revolutionary Forces#####
 
@@ -25,11 +54,12 @@ focus = {
 		compare = greater_than
 	}
   }
+  prerequisite = { focus = mex_plan_of_san_luis_potosi }
   completion_reward = { add_political_power=120 }
   cost = 4
   relative_position_id = mex_political_effort
-  x = 2
-  y = 1
+  x = 10
+  y = 2
   ai_will_do = { factor = 2000 }
   mutually_exclusive = { focus=MEX_ww1_support_diaz focus=MEX_ww1_support_magonistas}
 }
@@ -48,6 +78,23 @@ focus = {
 	completion_reward = { add_political_power = 1 }
 	cost = 4
 	relative_position_id = mex_support_revolucionary_forces
+	x = 0
+	y = 1
+	ai_will_do = { factor = 1000 }
+}
+
+focus = {
+	id = mex_barra_agrarian_revolt
+	icon = GFX_focus_mex_caudillo_private_armies
+	prerequisite = { focus = mex_war_is_over }
+	available = {
+		
+	}
+	completion_reward = {
+		add_political_power = 1 ##ADD TIMED INFRASTRUCTURE REPAIR HERE
+	}
+	cost = 4
+	relative_position_id = mex_war_is_over
 	x = 0
 	y = 1
 	ai_will_do = { factor = 1000 }
@@ -120,8 +167,8 @@ focus = {
 		add_stability = 0.05
 	}
 	cost = 4
-	x = 5
-	y = 5
+	x = 7
+	y = 8
 	ai_will_do  { factor = 100 }
 }
 
@@ -211,7 +258,7 @@ focus = {
 			}
 		}
 		random_owned_state = {
-			prioritize = {} #to pick those states first if they fulfill the limit
+			prioritize = {}
 			add_building_construction = {
 				type = arms_factory
 				level = 1
@@ -219,7 +266,7 @@ focus = {
 			}
 		}
 		random_owned_state = {
-			prioritize = {} #to pick those states first if they fulfill the limit
+			prioritize = {}
 			add_building_construction = {
 				type = arms_factory
 				level = 1
@@ -292,441 +339,39 @@ focus = {
 	ai_will_do  { factor = 100 }
 }
 
-  ###########################################################################################################################
-  # DIPLOMATIC
-  ###########################################################################################################################
-
-##Diplomatic Effort
-focus = {
-  id = mex_ww1_diplomatic_effort
-  icon = GFX_goal_generic_intelligence_exchange
-  completion_reward = {
-    add_political_power=120
-  }
-  cost = 10
-  x = 11
-  y = 0
-  ai_will_do = { factor = 2000 }
-}
-
-focus = {
-  id = mex_ww1_takeposition
-  prerequisite = { focus=mex_ww1_diplomatic_effort }
-  icon = GFX_goal_generic_propaganda
-  completion_reward = { add_political_power=20 }
-  ai_will_do = { factor = 0 }
-  cost = 10
-  x = 10
-  y = 1
-  mutually_exclusive = { focus=mex_neutrality_focus }
-}
-
-focus = {
-  id = mex_ww1_supportgermany
-  prerequisite = { focus=mex_ww1_takeposition }
-  icon = GFX_hoi4tgw_ironcross
-
-    available = {
-      NOT = { has_war_with = GER }
-
-      GER = {
-        exists = yes
-      }
-    }
-
-    completion_reward = {
-
-        add_opinion_modifier = {
-          target = GER
-          modifier =  HOI4TGW_Opinion_improved_diplomatic_relations
-        }
-        add_opinion_modifier = {
-          target = FRA
-          modifier =  HOI4TGW_Opinion_hostile_diplomatic_relations
-        }
-    }
-
-  ai_will_do = { factor=0 }
-  cost = 10
-  x = 8
-  y = 2
-  mutually_exclusive = { focus=mex_ww1_supportfrance }
-}
-
-focus = {
-  id = mex_ww1_supportfrance
-  prerequisite = { focus=mex_ww1_takeposition }
-  icon = GFX_hoi4tgw_marianne
-
-    available = {
-      NOT = { has_war_with = FRA }
-
-      FRA = {
-        exists = yes
-      }
-    }
-
-    completion_reward = {
-
-        add_opinion_modifier = {
-          target = FRA
-          modifier =  HOI4TGW_Opinion_improved_diplomatic_relations
-        }
-        add_opinion_modifier = {
-          target = GER
-          modifier =  HOI4TGW_Opinion_hostile_diplomatic_relations
-        }
-    }
-
-  ai_will_do = { factor=0 }
-
-  cost = 10
-  x = 10
-  y = 2
-  mutually_exclusive = { focus=mex_ww1_supportgermany }
-}
-
-focus = {
-  id = mex_ww1_supportaustria
-  prerequisite = { focus=mex_ww1_supportgermany }
-  icon = GFX_hoi4tgw_austriahungary
-
-    available = {
-      NOT = { has_war_with = AUH }
-
-      AUH = {
-        exists = yes
-      }
-    }
-
-    completion_reward = {
-
-        add_opinion_modifier = {
-          target = AUH
-          modifier =  HOI4TGW_Opinion_improved_diplomatic_relations
-        }
-        add_opinion_modifier = {
-          target = RUS
-          modifier =  HOI4TGW_Opinion_hostile_diplomatic_relations
-        }
-    }
-
-  ai_will_do = { factor=0 }
-
-  cost = 10
-  x = 8
-  y = 3
-}
-
-focus = {
-  id = mex_ww1_supportrussia
-  prerequisite = { focus=mex_ww1_supportfrance }
-  icon = GFX_hoi4tgw_russianempire
-
-    available = {
-      NOT = { has_war_with = RUS }
-
-      RUS = {
-        exists = yes
-      }
-    }
-
-    completion_reward = {
-
-        add_opinion_modifier = {
-          target = RUS
-          modifier =  HOI4TGW_Opinion_improved_diplomatic_relations
-        }
-        add_opinion_modifier = {
-          target = AUH
-          modifier =  HOI4TGW_Opinion_hostile_diplomatic_relations
-        }
-    }
-
-  ai_will_do = { factor=0 }
-
-  cost = 10
-  x = 10
-  y = 3
-}
-
-focus = {
-  id = mex_neutrality_focus
-  prerequisite = { focus=mex_ww1_diplomatic_effort }
-  icon = GFX_goal_generic_neutrality_focus
-  completion_reward = { if={ limit={ NOT={ has_idea=neutrality_idea } } add_ideas=neutrality_idea } add_political_power=150 }
-  cost = 10
-  x = 12
-  y = 1
-
-  ai_will_do = { factor = 100 }
-
-  mutually_exclusive = { focus=mex_ww1_takeposition }
-}
-
-focus = {
-  id = mex_interventionism_focus
-  prerequisite = { focus=mex_ww1_supportrussia focus=mex_ww1_supportaustria }
-  icon = GFX_goal_generic_political_pressure
-  completion_reward = { if={ limit={ has_idea=neutrality_idea } remove_ideas=neutrality_idea }	 set_rule={ can_send_volunteers=yes } add_political_power=150 }
-  ai_will_do = { factor = 10 }
-  cost = 10
-  x = 9
-  y = 4
-  # mutually_exclusive = { focus=mex_neutrality_focus }
-}
-
-focus = {
-  id = mex_ww1_military_reserve
-  prerequisite = { focus=mex_neutrality_focus }
-  icon = GFX_goal_generic_military_sphere
-
-  completion_reward = {
-    army_experience=10
-    add_tech_bonus={ name=land_doc_bonus bonus=0.25 uses=1 category=land_doctrine }
-  }
-
-  cost = 10
-  x = 12
-  y = 2
-  ai_will_do = { factor = 10 }
-}
 
 
 focus = {
-  id = mex_deterrence
-  prerequisite = { focus=mex_ww1_military_reserve }
-  icon = GFX_goal_generic_defence
-  completion_reward = { add_ideas=deterrence }
-  cost = 10
-  x = 12
-  y = 3
-  ai_will_do = { factor = 10 }
-}
-
-focus = {
-  id = mex_volunteer_corps
-  prerequisite = { focus=mex_interventionism_focus }
-  icon = GFX_goal_generic_allies_build_infantry
-  completion_reward = { add_ideas=volunteer_corps_focus }
-  cost = 10
-  x = 9
-  y = 5
-  ai_will_do = { factor = 10 }
-}
-
-focus = {
-  id = mex_foreign_expeditions
-  prerequisite = { focus=mex_volunteer_corps }
-  icon = GFX_goal_generic_more_territorial_claims
-  completion_reward = { add_ideas=foreign_expeditions_focus }
-  cost = 10
-  x = 9
-  y = 6
-  ai_will_do = { factor = 10 }
-}
-
-focus = {
-  id = mex_ww1_embargo_germany
-  prerequisite = { focus = mex_deterrence }
-  available = {
-    GER = {
-      exists = yes
-    }
-  }
-  icon = GFX_goal_generic_trade
-  x = 11
-  y = 4
-  cost = 10
-  completion_reward = {
-    add_opinion_modifier = { target = GER modifier = minor_sanctions }
-    add_opinion_modifier = { target = GER modifier = minor_sanctions_relations }
-  }
-  ai_will_do = { factor = 0 }
-}
-
-focus = {
-  id = mex_ww1_embargo_france
-  prerequisite = { focus = mex_deterrence }
-  available = {
-    FRA = {
-      exists = yes
-    }
-  }
-  icon = GFX_goal_generic_trade
-  x = 13
-  y = 4
-  cost = 10
-  completion_reward = {
-      add_opinion_modifier = { target = FRA modifier = minor_sanctions }
-      add_opinion_modifier = { target = FRA modifier = minor_sanctions_relations }
-  }
-  ai_will_do = { factor = 0 }
-}
-
-focus = {
-  id = mex_ww1_sellweapons
-  prerequisite = { focus=mex_deterrence }
-  icon = GFX_goal_generic_small_arms
-  available = { threat > 0.50 }
-
-  completion_reward = {
-    random_owned_state={ limit={ free_building_slots={ building=arms_factory size > 0 include_locked=yes } OR={ is_in_home_area=yes NOT={ owner={ any_owned_state={ free_building_slots={ building=arms_factory size > 0 include_locked=yes } is_in_home_area=yes } } } } } add_extra_state_shared_building_slots=1 add_building_construction={ type=arms_factory level=1 instant_build=yes } } }
-    complete_tooltip = { add_extra_state_shared_building_slots=1 add_building_construction={ type=arms_factory level=1 instant_build=yes }
-
-    add_political_power=15
-
-  }
-
-  ai_will_do = { factor = 1000 }
-
-  cost = 10
-  x = 12
-  y = 5
-}
-
-focus = {
-  id = mex_ww1_equip_fra
-  prerequisite = { focus = mex_ww1_sellweapons}
-  icon = GFX_goal_generic_allies_build_infantry
-  mutually_exclusive = { focus=mex_ww1_equip_ger }
-  completion_reward = {
-    add_opinion_modifier = { target = FRA modifier = HOI4TGW_Opinion_give_weapons }
-    add_opinion_modifier = { target = ENG modifier = HOI4TGW_Opinion_give_weapons }
-  }
-
-  ai_will_do = { factor = 0 }
-  cost = 10
-  x = 11
-  y = 6
-}
-
-focus = {
-  id = mex_ww1_equip_ger
-  prerequisite = { focus = mex_ww1_sellweapons}
-  icon = GFX_goal_generic_axis_build_infantry
-  mutually_exclusive = { focus=mex_ww1_equip_fra }
-  completion_reward = {
-    add_opinion_modifier = { target = GER modifier = HOI4TGW_Opinion_give_weapons }
-    add_opinion_modifier = { target = AUH modifier = HOI4TGW_Opinion_give_weapons }
-  }
-
-  ai_will_do = { factor = 100 }
-  cost = 10
-  x = 13
-  y = 6
+	id = mex_huerta_armor
+	icon = goal_unknown
+	prerequisite = { focus = mex_the_iron_hand }
+	completion_reward = {
+		
+		if = {
+			limit = {
+				NOT = { MEX = { has_technology = tank_unlocker1 } }
+			}
+			set_technology = {
+				tank_unlocker1 = 1
+				popup = no
+			}
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = armor
+		}
+		
+	}
+	cost = 4	
+	relative_position_id = mex_the_rebel_threat
+	x = 0
+	y = 1
+	ai_will_do  { factor = 100 }
 }
 
 
-
-focus = {
-  id = mex_why_we_fight
-  prerequisite = { focus=mex_ww1_equip_ger focus =mex_ww1_equip_fra  }
-  icon = GFX_goal_generic_propaganda
-  available = { threat > 0.75 }
-  completion_reward = { if={ limit={ NOT={ has_idea=neutrality_idea } } set_rule={ can_create_factions=yes } } add_ideas=why_we_fight_focus }
-  cost = 10
-  x = 12
-  y = 7
-  ai_will_do = { factor = 1000 }
-}
-
-
-
-
-
-focus = {
-  id = mex_ww1_joingermany
-  prerequisite = { focus=mex_ww1_supportaustria  }
-  prerequisite = { focus=mex_foreign_expeditions }
-  icon = GFX_goal_generic_territory_or_war
-
-  available = {
-    date > 1915.1.1
-    is_puppet = no
-    NOT = { has_war_with = GER }
-    is_in_faction = no
-
-    GER = {
-      exists = yes
-      is_faction_leader = yes
-    }
-    NOT = { has_global_flag = kis_treaty_of_versailles }
-  }
-
-  completion_reward = {
-
-      GER={
-        add_to_faction=ROOT
-      }
-  }
-
-  ai_will_do = { factor = 0 }
-  cost = 4
-  x = 8
-  y = 7
-}
-
-focus = {
-  id = mex_ww1_joinfrance
-  prerequisite = { focus=mex_ww1_supportrussia }
-  prerequisite = { focus=mex_foreign_expeditions }
-  icon = GFX_goal_support_democracy
-  available = {
-    date > 1915.1.1
-    is_puppet = no
-    NOT = { has_war_with = FRA }
-    is_in_faction = no
-
-    FRA = {
-      exists = yes
-      is_faction_leader = yes
-    }
-    NOT = { has_global_flag = kis_treaty_of_versailles }
-  }
-  completion_reward = {
-
-      FRA={
-        add_to_faction=ROOT
-      }
-  }
-
-  ai_will_do = { factor = 0 }
-  cost = 4
-  x = 10
-  y = 7
-}
-
-focus = {
-  id = mex_ww1_war_effort
-  prerequisite = { focus=mex_why_we_fight focus=mex_ww1_joinfrance focus=mex_ww1_joingermany }
-  icon = GFX_goal_generic_army_doctrines
-  available = { has_war=yes }
-
-  completion_reward = {
-    army_experience=25
-    army_experience=15 add_tech_bonus={ name=land_doc_bonus bonus=0.2 uses=1 category=land_doctrine }
-  }
-  cost = 10
-  x = 11
-  y = 8
-  ai_will_do = { factor = 10 }
-}
-
-focus = {
-  id = mex_technology_sharing
-  prerequisite = { focus= mex_ww1_war_effort }
-  icon = GFX_goal_generic_scientific_exchange
-  available = { has_war=yes is_in_faction=yes }
-  completion_reward = { if={ limit={ original_research_slots < 3 } add_research_slot=1 } if={ limit={ original_research_slots > 2 } add_tech_bonus={ name=electronics_bonus bonus=0.5 uses=1 category=electronics } add_tech_bonus={ name=industrial_bonus bonus=0.15 uses=1 category=industry }	 add_tech_bonus={ name=infantry_weapons_bonus bonus=0.5 uses=1 category=infantry_weapons category=artillery }				 }			 }
-  cost = 10
-  x = 11
-  y = 9
-  ai_will_do = { factor = 10 }
-}
-
-
-####Army Effort##
+####Army Effort####
 
   focus ={
     id = MEX_ww1_army_effort
