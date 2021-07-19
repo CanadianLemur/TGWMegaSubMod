@@ -108,4 +108,5 @@ set_convoys=20
 1910.1.1 = {
 	create_country_leader = { name = "Mir Osman Ali Khan" picture ="gfx/leaders/HYD_mir_osman_ali_khan.dds" expire="1967.1.1" ideology=despotism traits={  } }
 add_ideas = ww1_Faith_Allah
+add_ideas = RAJ_agrarian_society
 }

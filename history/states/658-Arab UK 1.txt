@@ -1,0 +1,29 @@
+state={
+	id=658
+	name="STATE_658"
+	manpower = 220000
+	state_category=pastoral
+	provinces={ 2048 7960 8108 10904 }
+	resources={
+		wood=0
+		}
+	history={
+		victory_points={ 7960 1 }
+		owner=ENG
+		1919.7.2 = {
+			owner = PER
+		}
+		1936.1.1={ 
+			owner=ENG
+			victory_points={ 7960 1 }
+			buildings={
+				infrastructure=2
+				7960={ naval_base=3 }
+				}
+			}
+		buildings={
+			infrastructure=2
+			7960={ naval_base=3 }
+			}
+		}
+	}

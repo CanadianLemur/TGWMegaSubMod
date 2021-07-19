@@ -259,3 +259,15 @@ create_corps_commander={  name = "Kuperjanov" id=29010 portrait_path="gfx/genera
 	    neutrality = 60
 	}
 }
+1919.7.2 = {
+	set_cosmetic_tag = UBD
+	set_capital = 12		### Riga added (by Ecrfour)
+	create_country_leader = {
+	name = "Adolf Friedrich, Duke of Mecklenburg-Schwerin"
+	picture = "gfx/leaders/hoi4tgw/Adolf_Friedrich.dds"			
+    expire = "1965.1.1"
+    ideology = despotism
+    traits = {}
+	}
+	set_politics = { ruling_party = neutrality elections_allowed = no }
+}

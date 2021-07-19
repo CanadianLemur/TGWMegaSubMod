@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_alternate_1919"
+		texturefile = "gfx/interface/alternate_1919.dds"
+	}
+}

@@ -251,6 +251,10 @@ SCS = "countries/State of Slovenes Croats and Serbs.txt"
 LMV = "countries/Lombardy-Venetia.txt"
 TUS = "countries/Tuscany"
 SRD = "countries/Sardinia"
+# The following four are taken from FerdX's France Completed with permission, hence different format
+TWS = "countries/TWS - Two Sicilies.txt"
+VAT = "countries/VAT - Papal States.txt"
+LOF = "countries/LOF - French Louisiana.txt"
 # American Breakaway States
 CAL = "countries/California.txt"
 NWN = "countries/New England.txt"

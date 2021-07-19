@@ -2,7 +2,7 @@ state={
 	id=828
 	name="STATE_828"
 	manpower=542610
-	state_category=metropolis
+	state_category=enclave
 	buildings_max_level_factor=1.000
 	provinces={ 9832 }
 	resources={
@@ -20,14 +20,10 @@ state={
 			add_core_of=NWN
 			buildings={
 				infrastructure=8
-				industrial_complex=1
-				dockyard=2
 			}
 		}
 		buildings={
 			infrastructure=8
-			industrial_complex=1
-			dockyard=2
 			9832={ naval_base=3  }
 		}
 	}

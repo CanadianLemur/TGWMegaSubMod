@@ -1,0 +1,146 @@
+bookmarks = {
+	bookmark = {
+		name = "TRIUMPH_OF_GERMANY_NAME"
+		desc = "TRIUMPH_OF_GERMANY_DESC"
+		date = 1919.7.2.1
+		picture = "GFX_alternate_1919"
+		default_country = "FRA"
+
+		GER = {
+			history = GER_TRIUMPH_OF_GERMANY_DESC
+			ideology = neutrality
+			ideas = {
+				GER_interwar_spirit_BannedConscription
+				interwar_spirit_TheGreatWar_Loser
+			}
+			focuses = {
+				GER_interwar_beer_AntiSpartacists
+				GER_interwar_beer_HelpSovietAgainstPoland
+				GER_interwar_beer_hall_putsch
+			}
+		}
+		SOV = {
+			history = SOV_TRIUMPH_OF_GERMANY_DESC
+			ideology = communism
+			ideas = {
+				home_of_revolution
+				SOV_interwar_spirit_LeninRedArmy
+			}
+			focuses = {
+				SOV_interwar_SpreadCommunism_ITA
+				SOV_interwar_WarUkraine
+				SOV_interwar_CeaseFirePoland
+			}
+		}
+		RUS = {
+			history = RUS_TRIUMPH_OF_GERMANY_DESC
+			ideology = democratic
+			ideas = {
+				RUS_ww1_orthodox_church
+			}
+			focuses = {
+				RUS_ww1_interwar_HonorRussianImperialFamily
+				RUS_ww1_interwar_TraitorVladimirovich
+				RUS_ww1_interwar_AlexanderIV
+			}
+		}
+		POL = {
+			minor = yes
+			history = POL_TRIUMPH_OF_GERMANY_DESC
+			ideology = neutrality
+			ideas = {
+				POL_interwar_spirit_WielkopolskaUprising
+				POL_interwar_spirit_RuinedIndustry
+			}
+			focuses = {
+				POL_interwar_LithuaniaCoup
+				POL_interwar_Miedzymorze
+			}
+		}
+		TUR = {
+			history = TUR_TRIUMPH_OF_GERMANY_DESC
+			ideology = democratic
+			ideas = {
+				ww1_Faith_Allah
+				interwar_spirit_TheGreatWar_Loser
+			}
+			focuses = {
+			}
+		}
+		ITA = {
+			history = ITA_TRIUMPH_OF_GERMANY_DESC
+			ideology = democratic
+			ideas = {
+				ITA_ww1_Risorgimento
+				interwar_spirit_TGWWinner_Italy
+			}
+			focuses = {
+				ITA_interwar_FascistManifesto
+				ITA_interwar_march_on_rome
+			}
+		}
+
+		FRA = {
+			history = "FRA_TRIUMPH_OF_GERMANY_DESC"
+			ideology = democratic
+			ideas = {
+				interwar_spirit_TheGreatWar_Winner
+			}
+			focuses = {
+				FRA_interwar_HelpPoland
+				FRA_interwar_WarWithSoviet
+			}
+		}
+
+		"---"={
+			history = "OTHER_TRIUMPH_OF_GERMANY_DESC"
+		}
+		
+		ENG = {
+			minor = yes
+			history = "ENG_TRIUMPH_OF_GERMANY_DESC"
+			ideology = democratic
+			ideas = {
+				stiff_upper_lip
+				interwar_spirit_TheGreatWar_Winner
+			}
+			focuses = {
+				ENG_interwar_Allied_Intervention_in_Russia
+				ENG_interwar_Support_Kolchak_s_Armies
+				ENG_interwar_ASovietKing
+			}
+		}
+
+		USA = {
+			minor = yes
+			history = "USA_TRIUMPH_OF_GERMANY_DESC"
+			ideology = democratic
+			ideas = {
+				USA_ww1_us_war_department
+				interwar_spirit_TheGreatWar_Winner
+			}
+			focuses = {
+				USA_interwar_AnnexDominicanRepublic
+				USA_interwar_LeaveDominicanRepublic
+			}
+		}
+
+		JAP = {
+			minor = yes
+			history = "JAP_TRIUMPH_OF_GERMANY_DESC"
+			ideology = neutrality
+			ideas = {
+				state_shintoism
+				interwar_spirit_TheGreatWar_Winner
+			}
+			focuses = {
+				JAP_ww1_Fukoku_Kyohei
+			}
+		}
+
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

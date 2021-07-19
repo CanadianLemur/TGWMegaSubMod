@@ -136,6 +136,9 @@ ideologies = {
 			
 			rexism = {
 			}
+			
+			integralism = {
+			}
 		}
 		
 		dynamic_faction_names = {

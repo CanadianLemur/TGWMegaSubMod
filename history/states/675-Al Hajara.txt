@@ -15,6 +15,9 @@ state={
 		1919.1.1 = {
             owner = ENG
         }
+		1919.7.2 = {
+			owner = JBS
+		}
 	}
 	
 	provinces={

@@ -1,1 +1,26 @@
 capital = 14
+				1919.7.2 = {
+				set_popularities = {
+					democratic = 30
+					fascism = 5
+					communism = 5
+					neutrality = 60
+				}
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = yes
+					last_election = "1910.1.1"
+					election_frequency = 48
+				}
+				# install prince franz of bavaria on the throne
+				create_country_leader = {
+					name = "King Frañsez"
+					desc = "POLITICS_KING_FRANSEZ_DESC"
+					picture = "gfx/leaders/BRI_king_fransez.dds"
+					expire = "1957.1.1"
+					ideology = despotism
+					traits = {
+					}
+				}
+				load_focus_tree = brittany_WKV
+				}

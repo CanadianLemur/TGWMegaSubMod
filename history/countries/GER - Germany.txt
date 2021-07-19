@@ -2994,3 +2994,24 @@ if = {
 		ww1_fortification3b = 1
 	}
 }
+1919.7.2 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1912.1.12"
+		election_frequency = 60
+		elections_allowed = yes
+	}
+	set_popularities = {
+		democratic = 9
+		fascism = 9
+		communism = 3
+		neutrality = 79
+	}
+	drop_cosmetic_tag = yes
+	puppet = BEL
+	puppet = BRI
+	puppet = LUX
+	puppet = LIT
+	puppet = EST
+	puppet = POL
+}

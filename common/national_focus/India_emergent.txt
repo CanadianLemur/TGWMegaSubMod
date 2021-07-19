@@ -241,8 +241,8 @@ focus_tree = {
 		}
 		prerequisite = { focus = MSM_IND_coalition }
 		cost = 10
-		x = 26
-		y = 14
+		x = 9
+		y = 5
 		ai_will_do = { factor = 1 }
 	}
 	focus = {
@@ -283,8 +283,8 @@ focus_tree = {
 		prerequisite = { focus = MSM_IND_japanese_relations }
 		prerequisite = { focus = MSM_IND_tata_steel }
 		cost = 10
-		x = 25
-		y = 15
+		x = 8
+		y = 6
 		ai_will_do = { factor = 1 }
 	}
 	focus = {
@@ -295,8 +295,8 @@ focus_tree = {
 		}
 		prerequisite = { focus = MSM_IND_coalition }
 		cost = 10
-		x = 18
-		y = 14
+		x = 1
+		y = 5
 		ai_will_do = { factor = 1 }
 	}
 	focus = {
@@ -307,8 +307,8 @@ focus_tree = {
 		}
 		prerequisite = { focus = MSM_IND_india_united }
 		cost = 10
-		x = 18
-		y = 15
+		x = 1
+		y = 6
 		ai_will_do = { factor = 1 }
 	}
 	focus = {
@@ -352,8 +352,8 @@ focus_tree = {
 		}
 		prerequisite = { focus = MSM_IND_indian_officer_corps }
 		cost = 10
-		x = 18
-		y = 16
+		x = 1
+		y = 7
 		ai_will_do = { factor = 1 }
 	}		
 }

@@ -621,6 +621,22 @@ MIT = {
 	color = rgb { 85 85 85 }
 	color_ui = rgb { 85 85 85 }
 }
+VAT = {
+	color = rgb { 255 252 254 }
+	color_ui = rgb { 255 252 254 }
+}
+ACF = {
+	color = rgb { 85 13 44 }
+	color_ui = rgb { 85 13 44 }
+}
+TWS = {
+	color = rgb { 255 228 0 }
+	color_ui = rgb { 255 228 0 }
+}
+LOF = {
+	color = rgb { 60 0 220 }
+	color_ui = rgb { 60 0 220 }
+}
 D01 = {
 	color = rgb { 187 80 86 }
 	color_ui = rgb { 243 103 112 }

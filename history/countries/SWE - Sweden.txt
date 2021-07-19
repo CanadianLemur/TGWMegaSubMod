@@ -389,4 +389,5 @@ if = {
 1919.7.2 = { 
 puppet = FIN
 set_cosmetic_tag = SWEFIN
+complete_national_focus = SWE_ww1_interwar_Victory
 }

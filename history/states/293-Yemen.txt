@@ -13,7 +13,9 @@ state={
 		owner=TUR
 
 		1912.1.1={ owner=YEM }
-
+		1919.7.2 = {
+			owner = TUR
+		}
 
 		1936.1.1={ 
 			owner=YEM

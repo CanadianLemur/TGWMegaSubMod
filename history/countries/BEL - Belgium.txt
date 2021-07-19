@@ -297,3 +297,33 @@ set_technology = {
 		ww1_idea_1839_agreement
 	}
 }
+1919.7.2 = {
+	oob = "BEL_1919_alternate"
+	remove_ideas = {
+		interwar_spirit_TheGreatWar_Winner
+		ww1_Scramble_for_Africa
+		volunteer_corps_focus
+		foreign_expeditions_focus
+	}
+	create_country_leader = {
+						name = "Leopold III"
+						desc = "POLITICS_LEOPOLD3_DESC"
+						picture = "gfx/hoi4tgw_portraits/BEL/country_leaders/BEL_leopold_iii.dds"
+						expire = "1965.1.1"
+						ideology = autocracy
+						traits = { }
+					}
+	set_popularities = {
+					democratic = 30
+					fascism = 5
+					communism = 5
+					neutrality = 60
+				}
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = yes
+					last_election = "1910.1.1"
+					election_frequency = 48
+				}
+	load_focus_tree = belgium_WKV
+	}

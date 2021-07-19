@@ -2387,6 +2387,18 @@ if = {
 	}
 
 	# Wars and Threats
+	RUS = {
+	declare_war_on = {
+			target = SOV
+			type = annex_everything
+		}
+		add_named_threat = {
+			threat = 9
+			name = ww1_interwar_RussianCivil_war_threat
+		}
+
+	}
+	if = { limit = {has_start_date < 1919.7.2}
 	SOV = {
 		declare_war_on = {
 			target = POL
@@ -2451,15 +2463,6 @@ if = {
 
 	RUS = {
 		declare_war_on = {
-			target = SOV
-			type = annex_everything
-		}
-		add_named_threat = {
-			threat = 9
-			name = ww1_interwar_RussianCivil_war_threat
-		}
-
-		declare_war_on = {
 			target = POL
 			type = annex_everything
 		}
@@ -2490,6 +2493,7 @@ if = {
 			generator = { 13 191 }
 		}
 	}
+	}
 
 	#-------------------------------------------------------
 	#							NF
@@ -2512,9 +2516,10 @@ if = {
 	complete_national_focus = FRA_ww1_gasmask_focus
 	complete_national_focus = FRA_ww1_fighter_focus
 	complete_national_focus = FRA_ww1_newnavalcanons_2
-
+	if = { limit = {date < 1919.7.2}
 	complete_national_focus = FRA_interwar_PeaceAfterVersailles
 	complete_national_focus = FRA_interwar_allied_occupation_rhineland
+	}
 	#-------------------------------------------------------
 
 	set_technology = {
@@ -3622,5 +3627,6 @@ if = {
 	set_global_flag = kis_ask_fra_surrend
 	set_global_flag = kis_player_decided_fra_surrend
 	set_global_flag = kis_second_treaty_frankfort
+	set_global_flag = indiacollapsed
 
 }

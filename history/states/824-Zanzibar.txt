@@ -8,5 +8,8 @@ state={
 	history={
 		owner=ENG
 		add_core_of=TZN
+		1919.7.2 = {
+			owner = GER
+		}
 		}
 	}
