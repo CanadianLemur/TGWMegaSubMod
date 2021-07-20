@@ -12,12 +12,11 @@ focus_tree = {
 			original_tag = USA
 		}
 	}
-	continuous_focus_position = { x = 650 y = 950 } #x = 4000 y = 50
+	continuous_focus_position = { x = 50 y = 850 } #x = 4000 y = 50
  	###########################################################################################################################
 	# POLITICAL
 	###########################################################################################################################
 	#####MSM Tree Start
-	#####Historical Wilson Tree
 	focus = {
 		id = USA_MSM_switch_trees
 		icon = goal_unknown
@@ -33,13 +32,270 @@ focus_tree = {
 			}
 		}
 		ai_will_do = { factor = 10 }
- 		cost = 10
-		x = 2
-		y = 10
+ 		cost = 0
+		x = 23
+		y = 0
 	}
+	#####Taft Tree
+	focus = {
+		id = USA_MSM_broken_party
+ 		icon = goal_unknown
+		completion_reward = {
+			add_political_power = 50
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 7
+		y = 0
+	}
+	focus = {
+		id = USA_MSM_continue_the_trust_busting
+		prerequisite = { focus = USA_MSM_broken_party }
+		relative_position_id = USA_MSM_broken_party
+ 		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = -4
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_reorganize_the_iron_trusts
+		prerequisite = { focus = USA_MSM_continue_the_trust_busting }
+		relative_position_id = USA_MSM_continue_the_trust_busting
+ 		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_the_question_of_us_industry
+		prerequisite = { focus = USA_MSM_reorganize_the_iron_trusts }
+		relative_position_id = USA_MSM_reorganize_the_iron_trusts
+ 		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_go_after_us_steel
+		prerequisite = { focus = USA_MSM_the_question_of_us_industry }
+		relative_position_id = USA_MSM_the_question_of_us_industry
+		mutually_exclusive = { focus = USA_MSM_leave_the_good_trusts }
+ 		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_leave_the_good_trusts
+		prerequisite = { focus = USA_MSM_the_question_of_us_industry }
+		relative_position_id = USA_MSM_the_question_of_us_industry
+		mutually_exclusive = { focus = USA_MSM_go_after_us_steel }
+ 		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_break_up_standard_oil
+		prerequisite = { focus = USA_MSM_continue_the_trust_busting }
+		relative_position_id = USA_MSM_continue_the_trust_busting
+ 		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_split_american_tobacco
+		prerequisite = { focus = USA_MSM_continue_the_trust_busting }
+		relative_position_id = USA_MSM_continue_the_trust_busting
+ 		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 2
+	}
+	focus = {
+		id = USA_MSM_republican_definition
+		prerequisite = { focus = USA_MSM_broken_party }
+		relative_position_id = USA_MSM_broken_party
+		mutually_exclusive = { focus = USA_MSM_amend_the_payne_aldrich_act }
+ 		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_amend_the_payne_aldrich_act
+		prerequisite = { focus = USA_MSM_broken_party }
+		relative_position_id = USA_MSM_broken_party
+		mutually_exclusive = { focus = USA_MSM_republican_definition }
+ 		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_southern_policy
+		prerequisite = { focus = USA_MSM_republican_definition focus = USA_MSM_amend_the_payne_aldrich_act }
+		relative_position_id = USA_MSM_republican_definition
+		mutually_exclusive = { focus = USA_MSM_meritocratic_appointments }
+ 		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_meritocratic_appointments
+		prerequisite = { focus = USA_MSM_amend_the_payne_aldrich_act focus = USA_MSM_republican_definition }
+		relative_position_id = USA_MSM_amend_the_payne_aldrich_act
+		mutually_exclusive = { focus = USA_MSM_southern_policy }
+ 		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_our_own_men
+		prerequisite = { focus = USA_MSM_southern_policy focus = USA_MSM_meritocratic_appointments }
+		relative_position_id = USA_MSM_southern_policy
+		mutually_exclusive = { focus = USA_MSM_a_spot_for_garfield }
+ 		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_a_spot_for_garfield
+		prerequisite = { focus = USA_MSM_southern_policy focus = USA_MSM_meritocratic_appointments }
+		relative_position_id = USA_MSM_meritocratic_appointments
+		mutually_exclusive = { focus = USA_MSM_our_own_men }
+ 		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_the_question_of_the_republican_vote
+		prerequisite = { focus = USA_MSM_our_own_men focus = USA_MSM_a_spot_for_garfield }
+		relative_position_id = USA_MSM_our_own_men
+ 		icon = goal_unknown
+		#If both the progressives and conservatives are happy enough, you can get taft. If not, you can choose roosevelt or taft to take the forefront
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_latin_american_interventionism
+		prerequisite = { focus = USA_MSM_broken_party }
+		relative_position_id = USA_MSM_broken_party
+ 		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 4
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_dollar_diplomacy
+		prerequisite = { focus = USA_MSM_latin_american_interventionism }
+		relative_position_id = USA_MSM_latin_american_interventionism
+ 		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_strike_the_earth
+		prerequisite = { focus = USA_MSM_dollar_diplomacy }
+		relative_position_id = USA_MSM_dollar_diplomacy
+ 		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 2
+	}
+	focus = {
+		id = USA_MSM_military_for_hire
+		prerequisite = { focus = USA_MSM_latin_american_interventionism }
+		relative_position_id = USA_MSM_latin_american_interventionism
+ 		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 2
+	}
+	#####Historical Wilson Tree
 	focus = {
 		id = USA_MSM_elect_wilson
  		icon = goal_unknown
+		relative_position_id = USA_MSM_broken_party
 		allow_branch = {
 			NOT = { has_country_flag = USA_roosevelt_elected }
 		}
@@ -48,7 +304,7 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
-		x = 20
+		x = 9
 		y = 0
 	}
 	focus = {
@@ -661,6 +917,7 @@ focus_tree = {
 	focus = {
 		id = USA_MSM_elect_roosevelt
  		icon = goal_unknown
+		relative_position_id = USA_MSM_broken_party
 		allow_branch = {
 			has_country_flag = USA_roosevelt_elected
 		}
@@ -669,7 +926,7 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
-		x = 20
+		x = 12
 		y = 0
 	}
 	focus = {
@@ -1554,7 +1811,7 @@ focus_tree = {
 	focus = {
 		id = USA_ww1_aviation_effort
 		relative_position_id = USA_ww1_army_effort
-		icon = GFX_goal_generic_build_airforce
+		icon = GFX_hoi4tgw_usa_aviation_effort
 		completion_reward = {
 			air_experience = 25
 			if = {
