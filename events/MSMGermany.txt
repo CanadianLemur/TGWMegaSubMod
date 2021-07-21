@@ -352,12 +352,12 @@ country_event = {
 }
 
 
-#Fascists take over Germany
+#von Ludendorff Growing Influence in German Government
 news_event = {
 	id = MSMGermany.15
 	title = MSMGermany.15.t
 	desc = MSMGermany.15.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_german_soldiers
 
 	is_triggered_only = yes
 	major = yes
@@ -1168,5 +1168,29 @@ set_politics = {
 	option = {
 		name = MSM_WKV_Germany.6.b
 		
+	}
+}
+####Lettow-Vorbecks Ultimatum####
+country_event = {
+	id =  MSM_WKV_Germany.7
+	title = MSM_WKV_Germany.7.t
+	desc = MSM_WKV_Germany.7.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = no
+	is_triggered_only = yes
+#### Accept
+	option = {
+		name = MSM_WKV_Germany.7.a
+		ai_chance = { factor = 2 
+
+		}
+	}
+#### Deny
+	option = {
+		name = MSM_WKV_Germany.7.b
+		ai_chance = { factor = 0 
+				modifier = {}
+		}
 	}
 }

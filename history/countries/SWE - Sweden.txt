@@ -386,6 +386,62 @@ if = {
 		en_svensk_tiger
 	}
 }
+1919.1.1 = {
+	set_technology = {
+		# Naval Doctrine
+		ww1_navaldoctrine_4 = 1
+		ww1_navaldoctrine_5 = 1
+		ww1_navaldoctrine_6 = 1
+
+		# Air
+		ww1_fighter2 = 1
+		ww1_fighter2b = 1
+		ww1_fighter3 = 1
+		ww1_fighter4 = 1
+		ww1_seaplane1 = 1
+		ww1_bomber1 = 1
+		ww1_bomber2 = 1
+		ww1_bomber3 = 1
+		ww1_zeppelin2 = 1
+
+		# Air Doctrine
+		ww1_airdoctrine_4 = 1
+		ww1_airdoctrine_5 = 1
+		ww1_airdoctrine_6 = 1
+		ww1_airdoctrine_7 = 1
+		ww1_airdoctrine_8 = 1
+		ww1_airdoctrine_9 = 1
+
+		# Engineering
+		radio2 = 1
+		hoi4tgw_encryption = 1
+		hoi4tgw_decryption = 1
+		dingfelder_engine1 = 1
+		tanktrack1 = 1
+		subhulltech1 = 1
+		mechanical_computing2 = 1
+		chemical_research2 = 1
+		tank_unlocker2 = 1
+
+		# Industry
+		ww1_tools2 = 1
+		ww1_tools3 = 1
+		ww1_camera1 = 1
+		ww1_industry1 = 1
+		ww1_industry2 = 1
+		ww1_medicine2 = 1
+		ww1_medicine3 = 1
+		ww1_construction1 = 1
+		ww1_construction2 = 1
+		ww1_mining1 = 1
+		ww1_mining2 = 1
+		ww1_oil1 = 1
+		ww1_oil2 = 1
+		ww1_bergiusprocess = 1
+		ww1_fortification3 = 1
+		ww1_fortification3b = 1
+	}
+}
 1919.7.2 = { 
 puppet = FIN
 set_cosmetic_tag = SWEFIN

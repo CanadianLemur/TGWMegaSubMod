@@ -1,7 +1,7 @@
 focus_tree = {
 	id = action_francaise_army
 	default = no
-	country = { factor=0 modifier = { add = 30 tag = FRA } }
+	country = { factor=0 modifier = { add = 30 has_country_flag = french_fascist_rebellion } }
 	###########################################################################################################################
 	# POLITICAL
 	###########################################################################################################################

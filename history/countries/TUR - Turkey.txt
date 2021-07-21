@@ -835,8 +835,12 @@ if = {
 	complete_national_focus = TUR_ww1_centralizedpower
 	complete_national_focus = TUR_ww1_limited_rearmament
 	complete_national_focus = TUR_ww1_full_rearmament
+	if = {
+	limit = {
+		has_start_date < 1919.1.1
+	}
 	complete_national_focus = TUR_interwar_ParisPeaceConference
-
+	}
 	#Diplomatic
 	unlock_national_focus = TUR_ww1_war_hejaz
 	unlock_national_focus = TUR_ww1_war_yemen

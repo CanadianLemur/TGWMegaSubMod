@@ -10,16 +10,32 @@ focus_tree = {
 	focus = {
 		id = FRA_crisis_shame_of_defeat
 		icon = GFX_focus_generic_strike_at_democracy1
-		completion_reward = {  }
+		completion_reward = {  
+		country_event = {id = MSMFrenchCrisis.2}
+		}
 		ai_will_do = { factor = 20 }
 		cost = 2
-		x = 10
+		x = 13
 		y = 0
 	}
 	focus = {
+		id = FRA_crisis_attempt_to_arrest_rebellious_leaders
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = {focus = FRA_crisis_no_alliances_with_fascists focus = FRA_no_compromises_on_democratic_principles focus = FRA_crisis_national_salvation_coalition focus = FRA_crisis_going_it_alone focus = FRA_crisis_distribute_bread focus = FRA_crisis_socialist_concessions}
+		relative_position_id = FRA_crisis_shame_of_defeat
+		completion_reward = {
+		custom_effect_tooltip = civil_war_start_france
+		}
+		ai_will_do = { factor = 20 }
+		cost = 5
+		x = 0
+		y = 5
+	}
+	focus = {
 		id = FRA_crisis_action_francaise_coup
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_goal_support_fascism
 		prerequisite = {focus = FRA_crisis_shame_of_defeat}
+		relative_position_id = FRA_crisis_shame_of_defeat
 		completion_reward = {  
 		set_politics = {
 			ruling_party = fascism
@@ -31,13 +47,113 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 20 }
 		cost = 3
-		x = 6
+		x = -11
 		y = 1
+	}
+	focus = {
+		id = FRA_crisis_communard_coup
+		icon = GFX_goal_support_communism
+		prerequisite = {focus = FRA_crisis_shame_of_defeat}
+		relative_position_id = FRA_crisis_shame_of_defeat
+		completion_reward = {  
+		set_politics = {
+			ruling_party = communism
+		}
+		add_popularity = {
+				ideology = communism
+				popularity = 0.50
+			}
+		}
+		ai_will_do = { factor = 20 }
+		cost = 3
+		x = 10
+		y = 1
+	}
+	focus = {
+		id = FRA_crisis_distribute_bread
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = {focus = FRA_crisis_communard_coup}
+		relative_position_id = FRA_crisis_communard_coup
+		completion_reward = {  
+		add_stability = 0.05
+		add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+		ai_will_do = { factor = 20 }
+		cost = 3
+		x = 0
+		y = 2
+	}
+	focus = {
+		id = FRA_crisis_socialist_concessions
+		icon = GFX_focus_generic_concessions
+		available = {has_political_power > 200}
+		prerequisite = {focus = FRA_crisis_democracy_holds_on}
+		relative_position_id = FRA_crisis_democracy_holds_on
+		completion_reward = {  
+		add_political_power = -200
+		add_stability = 0.1
+		add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		add_popularity = {
+				ideology = democratic
+				popularity = 0.10
+			}
+		}
+		ai_will_do = { factor = 20 }
+		cost = 3
+		x = 4
+		y = 2
+	}
+	focus = {
+		id = FRA_crisis_democracy_holds_on
+		icon = GFX_goal_support_democracy
+		prerequisite = {focus = FRA_crisis_shame_of_defeat}
+		relative_position_id = FRA_crisis_shame_of_defeat
+		completion_reward = {  
+		add_stability = 0.05
+		}
+		ai_will_do = { factor = 20 }
+		cost = 3
+		x = 3
+		y = 1
+	}
+	focus = {
+		id = FRA_no_compromises_on_democratic_principles
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = {focus = FRA_crisis_democracy_holds_on}
+		relative_position_id = FRA_crisis_democracy_holds_on
+		completion_reward = {  
+		add_stability = 0.05
+		}
+		ai_will_do = { factor = 20 }
+		cost = 3
+		x = 0
+		y = 2
+	}
+	focus = {
+		id = FRA_crisis_going_it_alone
+		icon = GFX_focus_generic_strike_at_democracy2
+		prerequisite = {focus = FRA_crisis_action_francaise_coup}
+		relative_position_id = FRA_crisis_action_francaise_coup
+		completion_reward = {  
+		add_stability = 0.05
+		}
+		mutually_exclusive = {focus = FRA_crisis_national_salvation_coalition}
+		ai_will_do = { factor = 20 }
+		cost = 1
+		x = 0
+		y = 2
 	}
 	focus = {
 		id = FRA_crisis_petain_takes_control
 		icon = GFX_goal_generic_attack_allies
 		prerequisite = {focus = FRA_crisis_shame_of_defeat}
+		relative_position_id = FRA_crisis_shame_of_defeat
 		completion_reward = {  
 		set_politics = {
 			ruling_party = neutrality
@@ -65,37 +181,46 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 20 }
 		cost = 3
-		x = 10
+		x = -3
 		y = 1
 	}
 	focus = {
 		id = FRA_crisis_no_alliances_with_fascists
 		icon = GFX_focus_generic_anti_fascist_diplomacy
 		prerequisite = {focus = FRA_crisis_petain_takes_control}
+		relative_position_id = FRA_crisis_petain_takes_control
 		completion_reward = {  
-		add_stability = -0.1 #make AF an extra faction in the civil war
+			add_stability = 0.05
 		}
-		mutually_exclusive = {focus = FRA_crisis_alliance_with_action_francaise}
+		mutually_exclusive = {focus = FRA_crisis_national_salvation_coalition}
 		ai_will_do = { factor = 20 }
 		cost = 1
-		x = 12
-		y = 3
+		x = 0
+		y = 2
 	}
 	focus = {
-		id = FRA_crisis_alliance_with_action_francaise
-		icon = GFX_goal_support_fascism
-		prerequisite = {focus = FRA_crisis_petain_takes_control}
+		id = FRA_crisis_national_salvation_coalition
+		icon = GFX_goal_molotov_ribbentrop_pact
+		prerequisite = {focus = FRA_crisis_petain_takes_control focus = FRA_crisis_action_francaise_coup}
+		relative_position_id = FRA_crisis_petain_takes_control
+		available = {has_political_power > 200}
 		completion_reward = { 
+			add_political_power = -200
 			add_popularity = {
 				ideology = fascism
 				popularity = 0.05
 			}
-			add_stability = 0.1 #adds AF strength and units to petains government in civil war
-			set_country_flag = alliance_with_action_francaise
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+			add_stability = 0.1 #Petain and Action Francaise will be together in the civil war, under the leadership of whoever executed the coup
+			set_country_flag = national_salvation_coalition
 		}
 		mutually_exclusive = {focus = FRA_crisis_no_alliances_with_fascists}
+		mutually_exclusive = {focus = FRA_crisis_going_it_alone}
 		ai_will_do = { factor = 20 }
 		cost = 1
-		x = 8
-		y = 3
+		x = -4
+		y = 2
 	}

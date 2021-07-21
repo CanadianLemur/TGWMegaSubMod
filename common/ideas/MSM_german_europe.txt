@@ -1,0 +1,44 @@
+ideas = {
+	country = {
+		european_economic_union_leader = {
+
+			picture = jap_zaibatsu
+				
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+				
+			modifier = {
+				political_power_gain = 0.25			
+				consumer_goods_factor = -0.02
+				production_speed_buildings_factor = 0.03
+			}
+		}
+		european_economic_union_member = {
+
+			picture = jap_zaibatsu
+				
+			allowed = {
+				NOT = {has_war_with = GER}
+			}
+
+			removal_cost = -1
+				
+			modifier = {
+				political_power_gain = -0.25			
+				local_resources_factor = 0.05
+				consumer_goods_factor = -0.02
+			}
+				
+			targeted_modifier = { 
+				tag = GER
+				trade_opinion_factor = 0.10
+				extra_trade_to_target_factor = 0.05
+				trade_cost_for_target_factor = -0.05
+				cic_to_target_factor = 0.05	
+			}
+		}
+	}
+}

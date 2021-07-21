@@ -625,10 +625,6 @@ VAT = {
 	color = rgb { 255 252 254 }
 	color_ui = rgb { 255 252 254 }
 }
-ACF = {
-	color = rgb { 85 13 44 }
-	color_ui = rgb { 85 13 44 }
-}
 TWS = {
 	color = rgb { 255 228 0 }
 	color_ui = rgb { 255 228 0 }

@@ -249,8 +249,9 @@ CPM = "countries/Constitutional Protection Movement.txt"
 SCS = "countries/State of Slovenes Croats and Serbs.txt"
 # Italian Breakaway States
 LMV = "countries/Lombardy-Venetia.txt"
-TUS = "countries/Tuscany"
-SRD = "countries/Sardinia"
+TUS = "countries/Tuscany.txt"
+SRD = "countries/Sardinia.txt"
+PRM = "countries/Parma.txt"
 # The following four are taken from FerdX's France Completed with permission, hence different format
 TWS = "countries/TWS - Two Sicilies.txt"
 VAT = "countries/VAT - Papal States.txt"

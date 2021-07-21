@@ -13,6 +13,7 @@ country_event = {
 		ai_chance = { factor = 100 }
 		FRA = {mark_focus_tree_layout_dirty = yes #reloads focus tree use sparingly
 		}
+		
 	}
 }
 #  Power Struggle in the Capital
@@ -37,6 +38,11 @@ country_event = {
 	#Communists Take Control
 	option = {
 		name = MSMFrenchCrisis.2.c
+		ai_chance = { factor = 100 }
+	}
+	#The Democratic forces hold on
+	option = {
+		name = MSMFrenchCrisis.2.e
 		ai_chance = { factor = 100 }
 	}
 }

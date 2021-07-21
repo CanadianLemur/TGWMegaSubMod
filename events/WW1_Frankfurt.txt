@@ -1661,7 +1661,7 @@ country_event = {
 			news_event = { days = 3 id = ww1_frankfurt.1 }
 			GER = {country_event = {days = 10 id = MSMGermany.6}}
 			GER = {country_event = {days = 2 id = MSMFrankfurt_France.1}}
-			FRA = {country_event = {days = 10 id = MSMFrenchCrisis.1}}
+			FRA = {country_event = {days = 40 id = MSMFrenchCrisis.1}}
 		}
 	}
 #____________________________________________________________
