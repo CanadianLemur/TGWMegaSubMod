@@ -61,6 +61,9 @@ china_congress = {
 
 MEX_civil_war = {
 	icon = GFX_mex_revolution_category_icon
+	allowed = {
+		original_tag = MEX
+	}
 	available = {
 		tag = MEX
 		check_variable = {
@@ -83,6 +86,9 @@ MEX_civil_war = {
 MEX_concessions = {
 	icon = generic_political_actions
 	priority = 100
+	allowed={
+		tag = MEX
+	}
 	available = {
 		tag = MEX
 		MEX = { has_country_flag = warlord_era }

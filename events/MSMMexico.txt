@@ -794,6 +794,7 @@ country_event = {
 	immediate = {
 		hidden_effect={
 		MEX = {
+			set_cosmetic_tag = MEX_republic_mexico
 			set_politics = {
 					ruling_party = neutrality
 					elections_allowed = yes
@@ -935,5 +936,57 @@ country_event = {
 		}
 		option={
 			name=MSMMexico.15.a
+		}
+	}
+	
+	country_event={ ###Pascual Orozco
+		title=MSMMexico.16.t
+		desc=MSMMexico.16.d
+		id=MSMMexico.16
+		fire_only_once=yes
+		trigger={
+			TAG=MEX
+			has_country_leader = {
+					name = "Francisco I. Madero"
+					ruling_only = yes
+				}
+		}
+		immediate={
+			add_stability=-0.1
+			set_country_flag=MEXOrozcoRebellion
+			
+			create_dynamic_country = {
+				original_tag = MEX
+				set_country_flag = MEX_orozco_flag
+				set_politics = {
+					ruling_party = democratic
+				}
+			}
+			
+			create_country_leader = {
+				name = "Pascual Orozco"
+				desc = "POLITICS_PASCUAL_OROZCO_DESC"
+				picture = "gfx/leaders/MEX/Portrait_MEX_pascual_orozco.dds"
+				expire = "1965.1.1"
+				ideology = democratic_ideology
+				traits = {}
+			}
+			
+			482 = {
+				add_core_of = MXF
+				set_owner = MXF
+			}
+			
+			MXF = {
+				set_cosmetic_tag = MEX_orozco_mexico
+				declare_war_on = {
+					target = MEX
+					type = annex_everything
+				}
+			}
+			
+		}
+		option={
+			name=MSMMexico.16.a
 		}
 	}

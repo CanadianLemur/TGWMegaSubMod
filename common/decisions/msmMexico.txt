@@ -3,14 +3,12 @@ MEX_civil_war = {
 		fire_only_once = yes
 		allowed = {
 			tag = MEX
-			not={
-				MEX = { has_country_flag = warlord_era }
-			}
 		}
 		available = {
 			always = no
 		}
 		activation = {
+			always = no
 			}
 		is_good = no
 		selectable_mission = no

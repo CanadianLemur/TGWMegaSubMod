@@ -637,6 +637,10 @@ LOF = {
 	color = rgb { 60 0 220 }
 	color_ui = rgb { 60 0 220 }
 }
+MXE = {
+	color = rgb { 10 24 14  }
+	color_ui = rgb { 10 24 14  }
+}
 D01 = {
 	color = rgb { 187 80 86 }
 	color_ui = rgb { 243 103 112 }
