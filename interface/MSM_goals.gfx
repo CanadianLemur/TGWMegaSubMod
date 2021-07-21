@@ -1,0 +1,173 @@
+spriteTypes = {
+	#FranceCompleted
+	SpriteType = {
+		name = "GFX_u_fra_bourbon_france"
+		texturefile = "gfx/interface/goals/bourbon_france.dds"
+	}
+	SpriteType = {
+		name = "GFX_u_fra_croix_de_feu"
+		texturefile = "gfx/interface/goals/croix_de_feu.dds"
+	}
+	SpriteType = {
+		name = "GFX_u_fra_focus_african_fac"
+		texturefile = "gfx/interface/goals/focus_african_fac.dds"
+	}
+	SpriteType = {
+		name = "GFX_u_fra_focus_chantiers"
+		texturefile = "gfx/interface/goals/focus_chantiers.dds"
+	}
+	SpriteType = {
+		name = "GFX_u_fra_focus_trans_saharian"
+		texturefile = "gfx/interface/goals/focus_trans_saharian.dds"
+	}
+	SpriteType = {
+		name = "GFX_u_fra_foreign_legion"
+		texturefile = "gfx/interface/goals/foreign_legion.dds"
+	}
+	SpriteType = {
+		name = "GFX_u_fra_france_adrian"
+		texturefile = "gfx/interface/goals/france_adrian.dds"
+	}
+	SpriteType = {
+		name = "GFX_u_fra_france_ue"
+		texturefile = "gfx/interface/goals/france_ue.dds"
+	}
+	SpriteType = {
+		name = "GFX_u_fra_french_africa"
+		texturefile = "gfx/interface/goals/french_africa.dds"
+	}
+	SpriteType = {
+		name = "GFX_u_fra_partisocialfr"
+		texturefile = "gfx/interface/goals/partisocialfr.dds"
+	}
+	SpriteType = {
+		name = "GFX_u_fra_napoleon1"
+		texturefile = "gfx/interface/goals/Napoleon.dds"
+	}
+	SpriteType = {
+		name = "GFX_u_fra_napoleon3"
+		texturefile = "gfx/interface/goals/Napoleon3.dds"
+	}
+	SpriteType = {
+		name = "GFX_u_fra_french_tank"
+		texturefile = "gfx/interface/goals/french_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_u_fra_european_france"
+		texturefile = "gfx/interface/goals/european_france.dds"
+	}
+	SpriteType = {
+		name = "GFX_u_fra_fleur_de_lys"
+		texturefile = "gfx/interface/goals/fleur_de_lys.dds"
+	}
+	SpriteType = {
+		name = "GFX_u_fra_french_revolution"
+		texturefile = "gfx/interface/goals/french_revolution.dds"
+	}
+	SpriteType = {
+		name = "GFX_u_fra_new_world_order"
+		texturefile = "gfx/interface/goals/new_world_order.dds"
+	}
+	SpriteType = {
+		name = "GFX_u_fra_paris"
+		texturefile = "gfx/interface/goals/paris.dds"
+	}
+	SpriteType = {
+		name = "GFX_u_fra_classicism"
+		texturefile = "gfx/interface/goals/classicism.dds"
+	}
+	SpriteType = {
+		name = "GFX_u_fra_cocorico"
+		texturefile = "gfx/interface/goals/cocorico.dds"
+	}
+	SpriteType = {
+		name = "GFX_u_fra_burning_journal"
+		texturefile = "gfx/interface/goals/burning_journal.dds"
+	}
+	SpriteType = {
+		name = "GFX_u_fra_celtic_paganism"
+		texturefile = "gfx/interface/goals/celtic_paganism.dds"
+	}
+	SpriteType = {
+		name = "GFX_u_fra_mend_schism"
+		texturefile = "gfx/interface/goals/mend_schism.dds"
+	}
+	SpriteType = {
+		name = "GFX_u_fra_degaule"
+		texturefile = "gfx/interface/goals/degaule.dds"
+	}
+	SpriteType = {
+		name = "GFX_u_fra_wine"
+		texturefile = "gfx/interface/goals/wine.dds"
+	}
+	SpriteType = {
+		name = "GFX_u_fra_daladier"
+		texturefile = "gfx/interface/goals/daladier.dds"
+	}
+	SpriteType = {
+		name = "GFX_u_fra_blum"
+		texturefile = "gfx/interface/goals/blum.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_u_fra_bourbon_france2"
+		texturefile = "gfx/interface/goals/bourbon_france2.dds"
+	}
+	spriteType = {
+		name = "GFX_Generic_French_Volunteers"
+		texturefile = "gfx/interface/goals/Generic_French_Volunteers.dds"
+	}
+	
+	#EpicUsStates
+	SpriteType = {
+		name = "GFX_american_democracy_focus"
+		texturefile = "gfx/interface/goals/american_democracy_focus.dds"
+	}
+	SpriteType = {
+		name = "GFX_american_fascism_focus"
+		texturefile = "gfx/interface/goals/american_fascism_focus.dds"
+	}
+	SpriteType = {
+		name = "GFX_bread_and_wheat_focus"
+		texturefile = "gfx/interface/goals/bread_and_wheat_focus.dds"
+	}
+	SpriteType = {
+		name = "GFX_communist_america_focus"
+		texturefile = "gfx/interface/goals/communist_america_focus.dds"
+	}
+	SpriteType = {
+		name = "GFX_constitution_birthplace_focus"
+		texturefile = "gfx/interface/goals/constitution_birthplace_focus.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_aristocratic_focus"
+		texturefile = "gfx/interface/goals/generic_aristocratic_focus.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_blank_leader_focus"
+		texturefile = "gfx/interface/goals/generic_blank_leader_focus.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_communist_focus"
+		texturefile = "gfx/interface/goals/Generic_Communist_Focus.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_river_crossing"
+		texturefile = "gfx/interface/goals/generic_river_crossing.dds"
+	}
+	SpriteType = {
+		name = "GFX_us_breakup_focus"
+		texturefile = "gfx/interface/goals/us_breakup_focus.dds"
+	}
+	
+	#TGW
+	SpriteType = { #China Revolution Focus Icon
+		name = "GFX_china_revolution_icon"
+		texturefile = "gfx/interface/goals/CHI_revolution_focus_icon.dds"
+	}
+	SpriteType = { #Sun Yat-sen Focus Icon
+		name = "GFX_father_of_the_nation_icon"
+		texturefile = "gfx/interface/goals/CHI_father_of_the_nation.dds"
+	}
+	
+}
