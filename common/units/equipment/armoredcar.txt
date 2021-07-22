@@ -103,21 +103,47 @@ equipments = {
 		priority = 10
 		visual_level = 3
 	}
+
+	# Last Interwar Armored Car
+	gw_armored_car_equipment = {
+		year = 1914
 	
+		archetype = ww1_armored_car_equipment
+		parent = ww1_armored_car_equipment_5
+		priority = 5
+		visual_level = 4
+		
+		
+
+		#Misc Abilities
+		maximum_speed 	= 9
+		reliability 	= 0.8
+		#recon 			= 1
+
+		#Defensive Abilities
+		defense 		= 2
+		breakthrough 	= 12
+		armor_value 	= 5
+
+		#Offensive Abilities
+		soft_attack 	= 6
+		hard_attack 	= 2
+		ap_attack 		= 6
+		air_attack 		= 0
+
+		build_cost_ic 		= 4 
+		fuel_consumption 	= 0.8
+	}
+
 	armored_car_equipment_1 = {
 		year = 1934
 		
 		archetype = ww1_armored_car_equipment
-		parent = ww1_armored_car_equipment_5
+		parent = gw_armored_car_equipment
 		priority = 10
-		visual_level = 0
+		visual_level = 4
 		is_convertable = yes
-		picture = archetype_armored_car_equipment			
-		type = motorized
-		group_by = archetype
-		
-		interface_category = interface_category_armor
-		
+
 		upgrades = {
 			tank_reliability_upgrade
 			ac_engine_upgrade
@@ -133,7 +159,7 @@ equipments = {
 		#Defensive Abilities
 		defense 		= 3
 		breakthrough 	= 16
-		hardness 		= 0.70
+		hardness 		= 0.65
 		armor_value 	= 10
 
 		#Offensive Abilities
@@ -151,7 +177,6 @@ equipments = {
 			steel 		= 2
 		}
 
-		fuel_consumption 	= 1.8
 	}
 
 	armored_car_equipment_2 = {
@@ -160,9 +185,14 @@ equipments = {
 		archetype = ww1_armored_car_equipment
 		parent = armored_car_equipment_1
 		priority = 10
-		visual_level = 1
+		visual_level = 5
 		is_convertable = yes
-
+		upgrades = {
+			tank_reliability_upgrade
+			ac_engine_upgrade
+			tank_armor_upgrade
+			tank_gun_upgrade
+		}
 		#Misc Abilities
 		maximum_speed 	= 15
 
@@ -178,7 +208,7 @@ equipments = {
 		hard_attack 	= 8
 		ap_attack 		= 36
 		air_attack 		= 0		
-		
+		fuel_consumption 	= 1.8
 		build_cost_ic = 8
 		resources = {
 			#oil = 1
@@ -194,9 +224,14 @@ equipments = {
 		archetype = ww1_armored_car_equipment
 		parent = armored_car_equipment_2
 		priority = 10
-		visual_level = 1
+		visual_level = 5
 		is_convertable = yes
-
+		upgrades = {
+			tank_reliability_upgrade
+			ac_engine_upgrade
+			tank_armor_upgrade
+			tank_gun_upgrade
+		}
 		#Misc Abilities
 		maximum_speed 	= 16
 		reliability 	= 0.8
@@ -222,4 +257,8 @@ equipments = {
 		}
 		fuel_consumption = 1.8
 	}
-} 
+
+	
+	
+}
+

@@ -44,6 +44,8 @@
  MSM_heavy_tank_artillery_equipment_0:0"Experimental SPG"
  MSM_heavy_tank_artillery_equipment_0:0""
  ENG_MSM_heavy_tank_artillery_equipment_0:0"Gun Carrier Mk. I"
+ early_special_forces:0"Early Special Forces"
+ early_special_forces_desc:0"The horrors of the trenches have shown us the need for more specialized divisions in our army"
  ####Armored Cars####
  ww1_armored_car_equipment_1:0 "Armored Car I"
  ww1_armored_car_equipment_2:0 "Armored Car II"

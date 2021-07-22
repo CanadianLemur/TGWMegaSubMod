@@ -1116,16 +1116,7 @@ if = {
 	complete_national_focus = GER_ww1_naval_effort
 	complete_national_focus = GER_ww1_newnavalcanons_1
 	complete_national_focus = GER_ww1_dreadnought_effort
-
-	#Political
-	complete_national_focus = GER_ww1_political_effort
-	complete_national_focus = GER_ww1_support_kaiser
-	unlock_national_focus = GER_ww1_militarism
-	complete_national_focus = GER_ww1_centralizedpower
-	complete_national_focus = GER_ww1_full_rearmament
-	complete_national_focus = GER_ww1_reorganization_act
-
-
+	
 	#Diplomatic
 	complete_national_focus = GER_ww1_diplomatic_effort
 	complete_national_focus = GER_ww1_triple_alliance
@@ -2140,6 +2131,7 @@ if = {
 		# Armor
 		ww1_armored_car_3 = 1
 		ww1_light_tank = 1
+		ww1_light_tank_b = 1
 		ww1_heavy_tank_1 = 1
 		ww1_heavy_tank2 = 1
 		ww1_super_heavy_tank = 1
@@ -2995,6 +2987,7 @@ if = {
 	}
 }
 1919.7.2 = {
+	oob = "GER_1919_alternate"
 	set_politics = {
 		ruling_party = neutrality
 		last_election = "1912.1.12"
@@ -3006,6 +2999,16 @@ if = {
 		fascism = 9
 		communism = 3
 		neutrality = 79
+	}
+	remove_ideas = GER_interwar_spirit_BannedConscription
+	add_ideas = {
+		#general_staff
+		German_staff_ww1
+		GER_ww1_North_German_Confederation
+		ww1_Scramble_for_Africa
+		limited_exports
+		limited_conscription
+		war_economy
 	}
 	drop_cosmetic_tag = yes
 	puppet = BEL

@@ -432,6 +432,10 @@ technologies = {
 			leads_to_tech = basic_medium_tank
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = amphibious_tank
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 2
 		start_year = 1936
@@ -538,6 +542,106 @@ technologies = {
 		
 		categories = {
 			armor
+		}
+	}
+	amphibious_tank = { #SchwimmPanzer II
+
+		enable_equipments = {
+			amphibious_tank_equipment_1
+		}
+
+		enable_subunits = {
+			amphibious_armor
+		}
+
+		path = {
+			leads_to_tech = amphibious_tank_2
+			research_cost_coeff = 1
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 2
+		start_year = 1940
+		
+		folder = {
+			name = armour_folder
+			position = { x = -8 y = 15 }
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				OR = {
+					original_tag = USA
+					original_tag = JAP
+				}
+				factor = 2
+			}
+			modifier = {
+				not = {
+					any_controlled_state = {
+						is_coastal = yes
+					}
+				}
+				factor = 0
+			}
+		}
+		
+		categories = {
+			armor
+			tp_tech
+		}
+	}
+
+	amphibious_tank_2 = { #tauchPanzer III
+
+		enable_equipments = {
+			amphibious_tank_equipment_2
+		}
+		
+		research_cost = 2
+		start_year = 1942
+		
+		folder = {
+			name = armour_folder
+			position = { x = -8 y = 17 }
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				OR = {
+					original_tag = USA
+					original_tag = JAP
+				}
+				factor = 2
+			}
+			modifier = {
+				not = {
+					any_controlled_state = {
+						is_coastal = yes
+					}
+				}
+				factor = 0
+			}
+		}
+		
+		categories = {
+			armor
+			tp_tech
 		}
 	}
 	

@@ -4274,7 +4274,22 @@ set_party_name = {
 		x = 0
 		y = 1
 	}
+	focus = {
+		id = GER_interwar_WKV_bastion_of_european_liberty
+		relative_position_id = GER_interwar_WKV_a_purely_constitutional_role
+		prerequisite = { focus=GER_interwar_WKV_a_purely_constitutional_role }
+		icon = GFX_goal_support_democracy
 
+		available = {	}
+
+		completion_reward = { add_political_power=-100 }
+
+		ai_will_do = { factor = 0 }
+
+		cost = 10
+		x = 0
+		y = 1
+	}
 		# Victory in ww1 gatekeeping focus 2 
 	focus = {
 		id = GER_interwar_WKV_a_new_european_order

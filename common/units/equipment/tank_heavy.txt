@@ -53,7 +53,7 @@ equipments = {
 	ww1_heavy_tank_equipment_1 = {
 		archetype = heavy_tank_equipment		
 		priority = 90
-		visual_level = 0
+		visual_level = 3
 
 		#Misc Abilities
 		maximum_speed = 3
@@ -84,7 +84,7 @@ equipments = {
 		archetype = heavy_tank_equipment	
 		parent = ww1_heavy_tank_equipment_1
 		priority = 90
-		visual_level = 0
+		visual_level = 3
 
 		#Misc Abilities
 		maximum_speed = 4
@@ -115,7 +115,7 @@ equipments = {
 		archetype = heavy_tank_equipment	
 		parent = ww1_heavy_tank_equipment_2	
 		priority = 90
-		visual_level = 0
+		visual_level = 3
 
 		#Misc Abilities
 		maximum_speed = 4
