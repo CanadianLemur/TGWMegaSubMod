@@ -39,7 +39,7 @@ focus_tree = {
 	#####Taft Tree
 	focus = {
 		id = USA_MSM_broken_party
- 		icon = goal_unknown
+ 		icon = GFX_focus_generic_treaty
 		completion_reward = {
 			add_political_power = 50
 		}
@@ -52,7 +52,7 @@ focus_tree = {
 		id = USA_MSM_continue_the_trust_busting
 		prerequisite = { focus = USA_MSM_broken_party }
 		relative_position_id = USA_MSM_broken_party
- 		icon = goal_unknown
+ 		icon = GFX_focus_generic_self_management
 		completion_reward = {
 			#
 		}
@@ -65,7 +65,7 @@ focus_tree = {
 		id = USA_MSM_reorganize_the_iron_trusts
 		prerequisite = { focus = USA_MSM_continue_the_trust_busting }
 		relative_position_id = USA_MSM_continue_the_trust_busting
- 		icon = goal_unknown
+ 		icon = GFX_focus_generic_aluminum
 		completion_reward = {
 			#
 		}
@@ -78,7 +78,7 @@ focus_tree = {
 		id = USA_MSM_the_question_of_us_industry
 		prerequisite = { focus = USA_MSM_reorganize_the_iron_trusts }
 		relative_position_id = USA_MSM_reorganize_the_iron_trusts
- 		icon = goal_unknown
+ 		icon = GFX_goal_generic_construction
 		completion_reward = {
 			#
 		}
@@ -92,7 +92,7 @@ focus_tree = {
 		prerequisite = { focus = USA_MSM_the_question_of_us_industry }
 		relative_position_id = USA_MSM_the_question_of_us_industry
 		mutually_exclusive = { focus = USA_MSM_leave_the_good_trusts }
- 		icon = goal_unknown
+ 		icon = GFX_goal_generic_construction2
 		completion_reward = {
 			#
 		}
@@ -106,7 +106,7 @@ focus_tree = {
 		prerequisite = { focus = USA_MSM_the_question_of_us_industry }
 		relative_position_id = USA_MSM_the_question_of_us_industry
 		mutually_exclusive = { focus = USA_MSM_go_after_us_steel }
- 		icon = goal_unknown
+ 		icon = GFX_focus_generic_steel
 		completion_reward = {
 			#
 		}
@@ -119,7 +119,7 @@ focus_tree = {
 		id = USA_MSM_break_up_standard_oil
 		prerequisite = { focus = USA_MSM_continue_the_trust_busting }
 		relative_position_id = USA_MSM_continue_the_trust_busting
- 		icon = goal_unknown
+ 		icon = GFX_goal_generic_oil_refinery
 		completion_reward = {
 			#
 		}
@@ -132,7 +132,7 @@ focus_tree = {
 		id = USA_MSM_split_american_tobacco
 		prerequisite = { focus = USA_MSM_continue_the_trust_busting }
 		relative_position_id = USA_MSM_continue_the_trust_busting
- 		icon = goal_unknown
+ 		icon = GFX_focus_generic_support_the_left_right
 		completion_reward = {
 			#
 		}
@@ -146,7 +146,7 @@ focus_tree = {
 		prerequisite = { focus = USA_MSM_broken_party }
 		relative_position_id = USA_MSM_broken_party
 		mutually_exclusive = { focus = USA_MSM_amend_the_payne_aldrich_act }
- 		icon = goal_unknown
+ 		icon = GFX_focus_generic_support_the_left_right
 		completion_reward = {
 			#
 		}
@@ -160,7 +160,7 @@ focus_tree = {
 		prerequisite = { focus = USA_MSM_broken_party }
 		relative_position_id = USA_MSM_broken_party
 		mutually_exclusive = { focus = USA_MSM_republican_definition }
- 		icon = goal_unknown
+ 		icon = GFX_goal_generic_intelligence_exchange
 		completion_reward = {
 			#
 		}
@@ -174,7 +174,7 @@ focus_tree = {
 		prerequisite = { focus = USA_MSM_republican_definition focus = USA_MSM_amend_the_payne_aldrich_act }
 		relative_position_id = USA_MSM_republican_definition
 		mutually_exclusive = { focus = USA_MSM_meritocratic_appointments }
- 		icon = goal_unknown
+ 		icon = GFX_goal_generic_demand_territory
 		completion_reward = {
 			#
 		}
@@ -188,7 +188,7 @@ focus_tree = {
 		prerequisite = { focus = USA_MSM_amend_the_payne_aldrich_act focus = USA_MSM_republican_definition }
 		relative_position_id = USA_MSM_amend_the_payne_aldrich_act
 		mutually_exclusive = { focus = USA_MSM_southern_policy }
- 		icon = goal_unknown
+ 		icon = GFX_goal_generic_national_unity
 		completion_reward = {
 			#
 		}
@@ -202,7 +202,7 @@ focus_tree = {
 		prerequisite = { focus = USA_MSM_southern_policy focus = USA_MSM_meritocratic_appointments }
 		relative_position_id = USA_MSM_southern_policy
 		mutually_exclusive = { focus = USA_MSM_a_spot_for_garfield }
- 		icon = goal_unknown
+ 		icon = GFX_goal_generic_political_pressure
 		completion_reward = {
 			#
 		}
@@ -216,7 +216,7 @@ focus_tree = {
 		prerequisite = { focus = USA_MSM_southern_policy focus = USA_MSM_meritocratic_appointments }
 		relative_position_id = USA_MSM_meritocratic_appointments
 		mutually_exclusive = { focus = USA_MSM_our_own_men }
- 		icon = goal_unknown
+ 		icon = GFX_goal_generic_improve_relations
 		completion_reward = {
 			#
 		}
@@ -229,7 +229,7 @@ focus_tree = {
 		id = USA_MSM_the_question_of_the_republican_vote
 		prerequisite = { focus = USA_MSM_our_own_men focus = USA_MSM_a_spot_for_garfield }
 		relative_position_id = USA_MSM_our_own_men
- 		icon = goal_unknown
+ 		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		#If both the progressives and conservatives are happy enough, you can get taft. If not, you can choose roosevelt or taft to take the forefront
 		completion_reward = {
 			#
@@ -243,7 +243,7 @@ focus_tree = {
 		id = USA_MSM_latin_american_interventionism
 		prerequisite = { focus = USA_MSM_broken_party }
 		relative_position_id = USA_MSM_broken_party
- 		icon = goal_unknown
+ 		icon = GFX_focus_por_recover_latin_america
 		completion_reward = {
 			#
 		}
@@ -256,7 +256,7 @@ focus_tree = {
 		id = USA_MSM_dollar_diplomacy
 		prerequisite = { focus = USA_MSM_latin_american_interventionism }
 		relative_position_id = USA_MSM_latin_american_interventionism
- 		icon = goal_unknown
+ 		icon = GFX_focus_mex_privatisation
 		completion_reward = {
 			#
 		}
@@ -269,7 +269,7 @@ focus_tree = {
 		id = USA_MSM_strike_the_earth
 		prerequisite = { focus = USA_MSM_dollar_diplomacy }
 		relative_position_id = USA_MSM_dollar_diplomacy
- 		icon = goal_unknown
+ 		icon = GFX_focus_generic_strike_at_democracy1
 		completion_reward = {
 			#
 		}
@@ -282,7 +282,7 @@ focus_tree = {
 		id = USA_MSM_military_for_hire
 		prerequisite = { focus = USA_MSM_latin_american_interventionism }
 		relative_position_id = USA_MSM_latin_american_interventionism
- 		icon = goal_unknown
+ 		icon = GFX_goal_generic_military_deal
 		completion_reward = {
 			#
 		}
@@ -296,6 +296,12 @@ focus_tree = {
 		id = USA_MSM_elect_wilson
  		icon = goal_unknown
 		relative_position_id = USA_MSM_broken_party
+		available = {
+			has_country_leader = {
+				ruling_only = yes
+				name = "Woodrow Wilson"
+			}
+		}
 		allow_branch = {
 			NOT = { has_country_flag = USA_roosevelt_elected }
 		}
@@ -311,7 +317,7 @@ focus_tree = {
 		id = USA_MSM_new_freedom
 		prerequisite = { focus = USA_MSM_elect_wilson }
  		relative_position_id = USA_MSM_elect_wilson
-		icon = goal_unknown
+		icon = GFX_focus_generic_treaty
 		completion_reward = {
 			#
 		}
@@ -324,7 +330,7 @@ focus_tree = {
 		id = USA_MSM_underwood_tariff_act
 		prerequisite = { focus = USA_MSM_new_freedom }
  		relative_position_id = USA_MSM_new_freedom
-		icon = goal_unknown
+		icon = GFX_goal_generic_neutrality_focus
 		completion_reward = {
 			#Put on free trade
 		}
@@ -337,7 +343,7 @@ focus_tree = {
 		id = USA_MSM_new_federal_tax
 		prerequisite = { focus = USA_MSM_underwood_tariff_act }
  		relative_position_id = USA_MSM_underwood_tariff_act
-		icon = goal_unknown
+		icon = GFX_focus_generic_industry_2
 		completion_reward = {
 			#consumer goods buff
 		}
@@ -351,7 +357,7 @@ focus_tree = {
 		prerequisite = { focus = USA_MSM_aftershock_of_the_panic_of_1907 }
  		prerequisite = { focus = USA_MSM_new_federal_tax }
  		relative_position_id = USA_MSM_new_federal_tax
-		icon = goal_unknown
+		icon = GFX_goal_generic_production2
 		completion_reward = {
 			#
 		}
@@ -364,7 +370,7 @@ focus_tree = {
 		id = USA_MSM_clayton_antitrust_act
 		prerequisite = { focus = USA_MSM_new_freedom }
  		relative_position_id = USA_MSM_new_freedom
-		icon = goal_unknown
+		icon = GFX_goal_generic_demand_territory
 		completion_reward = {
 			add_political_power = 100
 		}
@@ -378,7 +384,7 @@ focus_tree = {
 		prerequisite = { focus = USA_MSM_clayton_antitrust_act }
  		relative_position_id = USA_MSM_clayton_antitrust_act
 		mutually_exclusive = { focus = USA_MSM_work_with_monopolies }
- 		icon = goal_unknown
+ 		icon = GFX_goal_generic_political_pressure
 		completion_reward = {
 			add_stability = -0.05
 		}
@@ -391,7 +397,7 @@ focus_tree = {
 		id = USA_MSM_american_railroads
 		prerequisite = { focus = USA_MSM_fight_monopolies }
  		relative_position_id = USA_MSM_fight_monopolies
-		icon = goal_unknown
+		icon = GFX_goal_generic_construct_infrastructure
 		completion_reward = {
 			#Debuff to building infrastructure, gain stability/support in senate
 		}
@@ -404,7 +410,7 @@ focus_tree = {
 		id = USA_MSM_non_standard_oil
 		prerequisite = { focus = USA_MSM_american_railroads }
  		relative_position_id = USA_MSM_american_railroads
-		icon = goal_unknown
+		icon = GFX_goal_generic_production2
 		completion_reward = {
 			#Research bonus to refining tech, harder to build refineries
 		}
@@ -417,7 +423,7 @@ focus_tree = {
 		id = USA_MSM_target_the_banks
 		prerequisite = { focus = USA_MSM_non_standard_oil focus = USA_MSM_separate_steelworks }
  		relative_position_id = USA_MSM_non_standard_oil
-		icon = goal_unknown
+		icon = GFX_goal_generic_forceful_treaty
 		completion_reward = {
 			#Large hit to senate support, consumer goods boost
 		}
@@ -430,7 +436,7 @@ focus_tree = {
 		id = USA_MSM_separate_steelworks
 		prerequisite = { focus = USA_MSM_fight_monopolies }
  		relative_position_id = USA_MSM_fight_monopolies
-		icon = goal_unknown
+		icon = GFX_focus_generic_steel
 		completion_reward = {
 			#Remove some steel in some states and gain a consumer goods buff
 		}
@@ -444,7 +450,7 @@ focus_tree = {
 		prerequisite = { focus = USA_MSM_clayton_antitrust_act }
  		relative_position_id = USA_MSM_clayton_antitrust_act
 		mutually_exclusive = { focus = USA_MSM_fight_monopolies }
- 		icon = goal_unknown
+ 		icon = GFX_focus_generic_concessions
 		completion_reward = {
 			#Lets you do the john rockefeller and standard oil focuses
 		}
@@ -504,7 +510,7 @@ focus_tree = {
 		id = USA_MSM_subsidized_rail
 		prerequisite = { focus = USA_ww1_john_rockefeller_conglomerate }
  		relative_position_id = USA_ww1_john_rockefeller_conglomerate
-		icon = goal_unknown
+		icon = GFX_goal_generic_construct_infrastructure
 		completion_reward = {
 			#Bonus to building rail, hit to consumer goods
 		}
@@ -517,7 +523,7 @@ focus_tree = {
 		id = USA_MSM_combined_vertical_integration
 		prerequisite = { focus = USA_MSM_subsidized_rail }
  		relative_position_id = USA_MSM_subsidized_rail
-		icon = goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		completion_reward = {
 			#Add 2 civilian factories
 		}
@@ -530,7 +536,7 @@ focus_tree = {
 		id = USA_MSM_wall_street_preference
 		prerequisite = { focus = USA_MSM_combined_vertical_integration }
  		relative_position_id = USA_MSM_combined_vertical_integration
-		icon = goal_unknown
+		icon = GFX_focus_usa_reestablish_the_gold_standard
 		completion_reward = {
 			#Civilian factory buff
 		}
@@ -556,7 +562,7 @@ focus_tree = {
 		id = USA_MSM_detroit_steel
 		prerequisite = { focus = USA_ww1_expand_standard_oil_influence }
  		relative_position_id = USA_ww1_expand_standard_oil_influence
-		icon = goal_unknown
+		icon = GFX_focus_generic_steel
 		completion_reward = {
 			#Add 2 civilian factories in detroit
 		}
@@ -569,7 +575,7 @@ focus_tree = {
 		id = USA_MSM_ford_motor_company
 		prerequisite = { focus = USA_MSM_wall_street_preference focus = USA_MSM_detroit_steel }
  		relative_position_id = USA_MSM_wall_street_preference
-		icon = goal_unknown
+		icon = GFX_goal_generic_army_motorized
 		completion_reward = {
 			#motorized research bonus, make ford available as a matterials designer with buffs to armored cars and motorized
 		}
@@ -582,7 +588,7 @@ focus_tree = {
 		id = USA_MSM_internal_politics
 		prerequisite = { focus = USA_MSM_elect_wilson }
  		relative_position_id = USA_MSM_elect_wilson
-		icon = goal_unknown
+		icon = GFX_goal_generic_intelligence_exchange
 		completion_reward = {
 			#
 		}
@@ -595,7 +601,7 @@ focus_tree = {
 		id = USA_MSM_financial_stability
 		prerequisite = { focus = USA_MSM_internal_politics }
  		relative_position_id = USA_MSM_internal_politics
-		icon = goal_unknown
+		icon = GFX_goal_generic_consumer_goods
 		completion_reward = {
 			#
 		}
@@ -608,7 +614,7 @@ focus_tree = {
 		id = USA_MSM_aftershock_of_the_panic_of_1907
 		prerequisite = { focus = USA_MSM_financial_stability }
  		relative_position_id = USA_MSM_financial_stability
-		icon = goal_unknown
+		icon = GFX_goal_generic_demand_territory
 		completion_reward = {
 			#
 		}
@@ -621,7 +627,7 @@ focus_tree = {
 		id = USA_MSM_new_southern_cabinet
 		prerequisite = { focus = USA_MSM_internal_politics }
  		relative_position_id = USA_MSM_internal_politics
-		icon = goal_unknown
+		icon = GFX_focus_usa_honor_the_confederacy
 		completion_reward = {
 			#
 		}
@@ -634,7 +640,7 @@ focus_tree = {
 		id = USA_MSM_federal_jim_crow_imposition
 		prerequisite = { focus = USA_MSM_new_southern_cabinet }
  		relative_position_id = USA_MSM_new_southern_cabinet
-		icon = goal_unknown
+		icon = GFX_goal_generic_forceful_treaty
 		completion_reward = {
 			#
 		}
@@ -647,7 +653,7 @@ focus_tree = {
 		id = USA_MSM_historian_credentials
 		prerequisite = { focus = USA_MSM_new_southern_cabinet }
  		relative_position_id = USA_MSM_new_southern_cabinet
-		icon = goal_unknown
+		icon = GFX_focus_hol_the_foundations_of_defense
 		completion_reward = {
 			#
 		}
@@ -657,11 +663,11 @@ focus_tree = {
 		y = 1
 	}
 	focus = {
-		id = USA_MSM_internal_politic
+		id = USA_MSM_moralistic_policy
 		prerequisite = { focus = USA_MSM_historian_credentials }
  		prerequisite = { focus = USA_MSM_federal_jim_crow_imposition }
  		relative_position_id = USA_MSM_historian_credentials
-		icon = goal_unknown
+		icon = GFX_focus_generic_support_the_left_right
 		completion_reward = {
 		}
 		ai_will_do = { factor = 10 }
@@ -671,9 +677,9 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_MSM_california_alien_land_law
-		prerequisite = { focus = USA_MSM_internal_politic }
- 		relative_position_id = USA_MSM_internal_politic
-		icon = goal_unknown
+		prerequisite = { focus = USA_MSM_moralistic_policy }
+ 		relative_position_id = USA_MSM_moralistic_policy
+		icon = GFX_focus_generic_military_mission
 		completion_reward = {
 			#Add an event to decide whether to force california to recind the law, or accept it
 			#Accepting the law will cause relations issues for Japan, and recinding it will cause instability and maybe congressional issues
@@ -685,10 +691,10 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_MSM_federal_reparations_program
-		prerequisite = { focus = USA_MSM_internal_politic }
+		prerequisite = { focus = USA_MSM_moralistic_policy }
  		prerequisite = { focus = USA_MSM_historian_credentials }
- 		relative_position_id = USA_MSM_internal_politic
-		icon = goal_unknown
+ 		relative_position_id = USA_MSM_moralistic_policy
+		icon = GFX_focus_generic_self_management
 		completion_reward = {
 			#
 		}
@@ -701,7 +707,7 @@ focus_tree = {
 		id = USA_MSM_liberal_idealism
 		prerequisite = { focus = USA_MSM_federal_reparations_program }
  		relative_position_id = USA_MSM_federal_reparations_program
-		icon = goal_unknown
+		icon = GFX_focus_generic_the_giant_wakes
 		completion_reward = {
 			#
 		}
@@ -714,7 +720,7 @@ focus_tree = {
 		id = USA_MSM_interventionalism_debate
 		prerequisite = { focus = USA_MSM_elect_wilson }
  		relative_position_id = USA_MSM_elect_wilson
-		icon = goal_unknown
+		icon = GFX_goal_generic_military_sphere
 		completion_reward = {
 			#
 		}
@@ -728,7 +734,7 @@ focus_tree = {
 		prerequisite = { focus = USA_MSM_interventionalism_debate }
  		relative_position_id = USA_MSM_interventionalism_debate
 		mutually_exclusive = { focus = USA_MSM_fight_for_democracy }
-		icon = goal_unknown
+		icon = GFX_goal_generic_alliance
 		completion_reward = {
 			#
 		}
@@ -741,7 +747,7 @@ focus_tree = {
 		id = USA_MSM_civilized_society
 		prerequisite = { focus = USA_MSM_quell_aggressive_sentiments }
  		relative_position_id = USA_MSM_quell_aggressive_sentiments
-		icon = goal_unknown
+		icon = GFX_goal_generic_neutrality_focus
 		completion_reward = {
 			#
 		}
@@ -755,7 +761,7 @@ focus_tree = {
 		prerequisite = { focus = USA_MSM_interventionalism_debate }
  		relative_position_id = USA_MSM_interventionalism_debate
 		mutually_exclusive = { focus = USA_MSM_quell_aggressive_sentiments }
-		icon = goal_unknown
+		icon = GFX_focus_hol_war_on_pacifism
 		completion_reward = {
 			#
 		}
@@ -768,7 +774,7 @@ focus_tree = {
 		id = USA_MSM_american_idealism
 		prerequisite = { focus = USA_MSM_fight_for_democracy }
  		relative_position_id = USA_MSM_fight_for_democracy
-		icon = goal_unknown
+		icon = GFX_goal_support_democracy
 		completion_reward = {
 			#
 		}
@@ -781,7 +787,7 @@ focus_tree = {
 		id = USA_MSM_god-ordained_nation
 		prerequisite = { focus = USA_MSM_american_idealism }
  		relative_position_id = USA_MSM_american_idealism
-		icon = goal_unknown
+		icon = GFX_hoi4tgw_mex_mexican_usa_war
 		completion_reward = {
 			#
 		}
@@ -794,7 +800,7 @@ focus_tree = {
 		id = USA_MSM_european_provication
 		prerequisite = { focus = USA_MSM_civilized_society focus = USA_MSM_god-ordained_nation }
  		relative_position_id = USA_MSM_civilized_society
-		icon = goal_unknown
+		icon = GFX_goal_generic_major_war
 		completion_reward = {
 			#
 		}
@@ -807,7 +813,7 @@ focus_tree = {
 		id = USA_MSM_moral_leader
 		prerequisite = { focus = USA_MSM_european_provication }
  		relative_position_id = USA_MSM_european_provication
-		icon = goal_unknown
+		icon = GFX_goal_generic_small_arms
 		completion_reward = {
 			#
 		}
@@ -933,7 +939,7 @@ focus_tree = {
 		id = USA_MSM_internal_isolationism_debates
 		prerequisite = { focus = USA_MSM_elect_roosevelt }
  		relative_position_id = USA_MSM_elect_roosevelt
-		icon = goal_unknown
+		icon = GFX_focus_generic_military_academy
 		completion_reward = {
 			#
 		}
@@ -946,7 +952,7 @@ focus_tree = {
 		id = USA_MSM_for_the_people
 		prerequisite = { focus = USA_MSM_internal_isolationism_debates }
  		relative_position_id = USA_MSM_internal_isolationism_debates
-		icon = goal_unknown
+		icon = GFX_focus_generic_military_mission
 		completion_reward = {
 			#
 		}
@@ -959,7 +965,7 @@ focus_tree = {
 		id = USA_MSM_the_world_stage
 		prerequisite = { focus = USA_MSM_internal_isolationism_debates }
  		relative_position_id = USA_MSM_internal_isolationism_debates
-		icon = goal_unknown
+		icon = GFX_focus_generic_diplomatic_treaty
 		completion_reward = {
 			#
 		}
@@ -972,7 +978,7 @@ focus_tree = {
 		id = USA_MSM_flex_our_power
 		prerequisite = { focus = USA_MSM_the_world_stage }
  		relative_position_id = USA_MSM_the_world_stage
-		icon = goal_unknown
+		icon = GFX_goal_generic_demand_territory
 		completion_reward = {
 			#
 		}
@@ -986,7 +992,7 @@ focus_tree = {
 		prerequisite = { focus = USA_MSM_for_the_people }
 		prerequisite = { focus = USA_MSM_flex_our_power }
  		relative_position_id = USA_MSM_for_the_people
-		icon = goal_unknown
+		icon = GFX_focus_generic_strike_at_democracy1
 		completion_reward = {
 			#Basically a replacement for the monroe doctrine
 		}
@@ -999,7 +1005,7 @@ focus_tree = {
 		id = USA_MSM_necessary_intervention
 		prerequisite = { focus = USA_MSM_roosevelts_decree }
  		relative_position_id = USA_MSM_roosevelts_decree
-		icon = goal_unknown
+		icon = GFX_goal_generic_military_deal
 		completion_reward = {
 			#
 		}
@@ -1012,7 +1018,7 @@ focus_tree = {
 		id = USA_MSM_continental_leader
 		prerequisite = { focus = USA_MSM_necessary_intervention }
  		relative_position_id = USA_MSM_necessary_intervention
-		icon = goal_unknown
+		icon = GFX_goal_generic_territory_or_war
 		completion_reward = {
 			#
 		}
@@ -1026,7 +1032,7 @@ focus_tree = {
 		prerequisite = { focus = USA_MSM_continental_leader }
 		prerequisite = { focus = USA_MSM_forced_awakening }
  		relative_position_id = USA_MSM_continental_leader
-		icon = goal_unknown
+		icon = GFX_goal_rhineland
 		completion_reward = {
 			#
 		}
@@ -1040,7 +1046,7 @@ focus_tree = {
 		prerequisite = { focus = USA_MSM_roosevelts_decree }
 		prerequisite = { focus = USA_MSM_invisible_government }
  		relative_position_id = USA_MSM_roosevelts_decree
-		icon = goal_unknown
+		icon = GFX_focus_RAJ_lions_of_the_great_war
 		completion_reward = {
 			#
 		}
@@ -1053,7 +1059,7 @@ focus_tree = {
 		id = USA_MSM_worth_our_while
 		prerequisite = { focus = USA_MSM_european_interventionalism }
  		relative_position_id = USA_MSM_european_interventionalism
-		icon = goal_unknown
+		icon = GFX_focus_generic_concessions
 		completion_reward = {
 			#
 		}
@@ -1066,7 +1072,7 @@ focus_tree = {
 		id = USA_MSM_forced_awakening
 		prerequisite = { focus = USA_MSM_worth_our_while }
  		relative_position_id = USA_MSM_worth_our_while
-		icon = goal_unknown
+		icon = GFX_goal_generic_major_war
 		#needs to have lucitania sunk
 		completion_reward = {
 			#
@@ -1080,7 +1086,7 @@ focus_tree = {
 		id = USA_MSM_secure_a_cabinet
 		prerequisite = { focus = USA_MSM_elect_roosevelt }
  		relative_position_id = USA_MSM_elect_roosevelt
-		icon = goal_unknown
+		icon = GFX_goal_generic_major_alliance
 		completion_reward = {
 			#
 		}
@@ -1093,7 +1099,7 @@ focus_tree = {
 		id = USA_MSM_mend_the_schism
 		prerequisite = { focus = USA_MSM_secure_a_cabinet }
  		relative_position_id = USA_MSM_secure_a_cabinet
-		icon = goal_unknown
+		icon = GFX_goal_generic_forceful_treaty
 		completion_reward = {
 			#
 		}
@@ -1106,7 +1112,7 @@ focus_tree = {
 		id = USA_MSM_invisible_government
 		prerequisite = { focus = USA_MSM_mend_the_schism }
  		relative_position_id = USA_MSM_mend_the_schism
-		icon = goal_unknown
+		icon = GFX_goal_generic_intelligence_exchange
 		completion_reward = {
 			#
 		}
@@ -1119,7 +1125,7 @@ focus_tree = {
 		id = USA_MSM_social_and_industrial_justice
 		prerequisite = { focus = USA_MSM_secure_a_cabinet }
  		relative_position_id = USA_MSM_secure_a_cabinet
-		icon = goal_unknown
+		icon = GFX_goal_generic_consumer_goods
 		completion_reward = {
 			#
 		}
@@ -1132,7 +1138,7 @@ focus_tree = {
 		id = USA_MSM_proper_governance
 		prerequisite = { focus = USA_MSM_secure_a_cabinet }
  		relative_position_id = USA_MSM_secure_a_cabinet
-		icon = goal_unknown
+		icon = GFX_focus_generic_self_management
 		completion_reward = {
 			#Basically undoing some of the stuff that Taft did
 		}
@@ -1146,7 +1152,7 @@ focus_tree = {
 		prerequisite = { focus = USA_MSM_social_and_industrial_justice }
  		prerequisite = { focus = USA_MSM_proper_governance }
 		relative_position_id = USA_MSM_social_and_industrial_justice
-		icon = goal_unknown
+		icon = GFX_focus_generic_support_the_left_right
 		completion_reward = {
 			#
 		}
@@ -1160,7 +1166,7 @@ focus_tree = {
 		id = USA_MSM_new_nationalism
 		prerequisite = { focus = USA_MSM_elect_roosevelt }
  		relative_position_id = USA_MSM_elect_roosevelt
-		icon = goal_unknown
+		icon = GFX_focus_generic_support_the_left_right
 		completion_reward = {
 			#
 		}
@@ -1173,7 +1179,7 @@ focus_tree = {
 		id = USA_MSM_sereno_free_trade_act
 		prerequisite = { focus = USA_MSM_new_nationalism }
  		relative_position_id = USA_MSM_new_nationalism
-		icon = goal_unknown
+		icon = GFX_goal_generic_positive_trade_relations
 		completion_reward = {
 			#Put on free trade
 		}
@@ -1186,7 +1192,7 @@ focus_tree = {
 		id = USA_MSM_new_revenue_sources
 		prerequisite = { focus = USA_MSM_sereno_free_trade_act }
  		relative_position_id = USA_MSM_sereno_free_trade_act
-		icon = goal_unknown
+		icon = GFX_goal_generic_production2
 		completion_reward = {
 			#consumer goods buff
 		}
@@ -1200,7 +1206,7 @@ focus_tree = {
  		prerequisite = { focus = USA_MSM_new_revenue_sources }
 		prerequisite = { focus = USA_MSM_down_with_lobbying }
  		relative_position_id = USA_MSM_new_revenue_sources
-		icon = goal_unknown
+		icon = GFX_focus_hol_abandon_the_gold_standard
 		completion_reward = {
 			#
 		}
@@ -1213,7 +1219,7 @@ focus_tree = {
 		id = USA_MSM_haywood_competition_act
 		prerequisite = { focus = USA_MSM_new_nationalism }
  		relative_position_id = USA_MSM_new_nationalism
-		icon = goal_unknown
+		icon = GFX_goal_generic_improve_relations
 		completion_reward = {
 			add_political_power = 100
 		}
@@ -1227,7 +1233,7 @@ focus_tree = {
 		prerequisite = { focus = USA_MSM_haywood_competition_act }
  		relative_position_id = USA_MSM_haywood_competition_act
 		mutually_exclusive = { focus = USA_MSM_work_with_monopolies }
- 		icon = goal_unknown
+ 		icon = GFX_focus_generic_industry_2
 		completion_reward = {
 			add_stability = -0.05
 		}
@@ -1240,7 +1246,7 @@ focus_tree = {
 		id = USA_MSM_national_railroads
 		prerequisite = { focus = USA_MSM_dismantle_monopolies }
  		relative_position_id = USA_MSM_dismantle_monopolies
-		icon = goal_unknown
+		icon = GFX_goal_generic_construct_infrastructure
 		completion_reward = {
 			#Debuff to building infrastructure, gain stability/support in senate
 		}
@@ -1253,7 +1259,7 @@ focus_tree = {
 		id = USA_MSM_american_oil
 		prerequisite = { focus = USA_MSM_national_railroads }
  		relative_position_id = USA_MSM_national_railroads
-		icon = goal_unknown
+		icon = GFX_goal_generic_oil_refinery
 		completion_reward = {
 			#Research bonus to refining tech, harder to build refineries
 		}
@@ -1266,7 +1272,7 @@ focus_tree = {
 		id = USA_MSM_banking_integration
 		prerequisite = { focus = USA_MSM_american_oil focus = USA_MSM_american_steel }
  		relative_position_id = USA_MSM_american_oil
-		icon = goal_unknown
+		icon = GFX_goal_generic_neutrality_focus
 		completion_reward = {
 			#Large hit to senate support, consumer goods boost
 		}
@@ -1279,7 +1285,7 @@ focus_tree = {
 		id = USA_MSM_american_steel
 		prerequisite = { focus = USA_MSM_dismantle_monopolies }
  		relative_position_id = USA_MSM_dismantle_monopolies
-		icon = goal_unknown
+		icon = GFX_focus_generic_steel
 		completion_reward = {
 			#Remove some steel in some states and gain a consumer goods buff
 		}
@@ -1293,7 +1299,7 @@ focus_tree = {
 		id = USA_MSM_american_muscle
 		prerequisite = { focus = USA_MSM_elect_roosevelt }
  		relative_position_id = USA_MSM_elect_roosevelt
-		icon = goal_unknown
+		icon = GFX_goal_generic_construction
 		completion_reward = {
 			#
 		}
@@ -1306,7 +1312,7 @@ focus_tree = {
 		id = USA_MSM_industrial_might
 		prerequisite = { focus = USA_MSM_american_muscle }
  		relative_position_id = USA_MSM_american_muscle
-		icon = goal_unknown
+		icon = GFX_goal_generic_production2
 		completion_reward = {
 			#
 		}
@@ -1319,7 +1325,7 @@ focus_tree = {
 		id = USA_MSM_commercial_incentives
 		prerequisite = { focus = USA_MSM_american_muscle }
  		relative_position_id = USA_MSM_american_muscle
-		icon = goal_unknown
+		icon = GFX_goal_generic_improve_relations
 		completion_reward = {
 			#
 		}
@@ -1333,7 +1339,7 @@ focus_tree = {
 		prerequisite = { focus = USA_MSM_industrial_might }
 		prerequisite = { focus = USA_MSM_commercial_incentives }
  		relative_position_id = USA_MSM_industrial_might
-		icon = goal_unknown
+		icon = GFX_goal_generic_occupy_states_coastal
 		completion_reward = {
 			#
 		}
@@ -1346,7 +1352,7 @@ focus_tree = {
 		id = USA_MSM_safeguard_our_ports
 		prerequisite = { focus = USA_MSM_atlantic_buildup focus = USA_MSM_industrial_might }
  		relative_position_id = USA_MSM_atlantic_buildup
-		icon = goal_unknown
+		icon = GFX_focus_generic_coastal_fort
 		completion_reward = {
 			#
 		}
@@ -1359,7 +1365,7 @@ focus_tree = {
 		id = USA_MSM_universal_instruction
 		prerequisite = { focus = USA_MSM_commercial_incentives }
  		relative_position_id = USA_MSM_commercial_incentives
-		icon = goal_unknown
+		icon = GFX_focus_research
 		completion_reward = {
 			#
 		}
@@ -1373,7 +1379,7 @@ focus_tree = {
 		prerequisite = { focus = USA_MSM_atlantic_buildup }
 		prerequisite = { focus = USA_MSM_universal_instruction }
  		relative_position_id = USA_MSM_atlantic_buildup
-		icon = goal_unknown
+		icon = GFX_goal_generic_construct_naval_dockyard
 		completion_reward = {
 			#
 		}
@@ -1386,7 +1392,7 @@ focus_tree = {
 		id = USA_MSM_naval_expansion
 		prerequisite = { focus = USA_MSM_atlantic_buildup }
  		relative_position_id = USA_MSM_atlantic_buildup
-		icon = goal_unknown
+		icon = GFX_goal_generic_navy_cruiser
 		completion_reward = {
 			#
 		}
@@ -1399,7 +1405,7 @@ focus_tree = {
 		id = USA_MSM_civilian_training
 		prerequisite = { focus = USA_MSM_universal_instruction }
  		relative_position_id = USA_MSM_universal_instruction
-		icon = goal_unknown
+		icon = GFX_goal_generic_production2
 		completion_reward = {
 			#Increase education among the masses, leads to maybe decrease in civilian goods or maybe an increase in civilian factory build speed
 		}
