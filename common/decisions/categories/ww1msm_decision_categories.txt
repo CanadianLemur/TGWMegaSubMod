@@ -66,11 +66,7 @@ MEX_civil_war = {
 	}
 	available = {
 		tag = MEX
-		check_variable = {
-			var = MEX.has_revolution
-			value = 1
-			compare = greater_than_or_equals
-		}
+		has_global_flag = MSMMEXICO_REVOLUTION_PERIOD
 	}
 	priority = 100
 	visible = {

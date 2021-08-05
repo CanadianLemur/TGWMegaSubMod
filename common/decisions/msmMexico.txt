@@ -13,6 +13,7 @@ MEX_civil_war = {
 		is_good = no
 		selectable_mission = no
 		days_mission_timeout = 120
+		days_remove = 1
 		timeout_effect = {
 			custom_effect_tooltip=MSMMexicoCivilWarAvailableTooltip
 			hidden_effect = {
@@ -28,6 +29,26 @@ MEX_civil_war = {
 				}
 			}
 		}
+	}
+	
+	funnel_guns = {
+		cost = 40
+		available = {
+			MEX = { has_country_flag = MEXFUNNELGUNS }
+		}
+		visible = {
+			MEX = { has_country_flag = MEXFUNNELGUNS }
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+				producer = USA
+			}
+		}
+		days_remove = 5
+		days_re_enable = 20
+		fire_only_once = no
 	}
 }
 

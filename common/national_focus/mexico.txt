@@ -13,7 +13,7 @@ focus = {
     }
   }
   completion_reward = { add_political_power=10 }
-  cost = 7
+  cost = 15
   x = 7	
   y = 0
   ai_will_do = { factor = 4000 }
@@ -29,7 +29,7 @@ focus = {
   }
   prerequisite = { focus = mex_mexican_situation  }
   completion_reward = { add_political_power=20 }
-  cost = 6
+  cost = 15
   relative_position_id = mex_mexican_situation
   x = 0
   y = 1
@@ -64,6 +64,27 @@ focus = {
   mutually_exclusive = { focus=MEX_ww1_support_diaz focus=MEX_ww1_support_magonistas}
 }
 
+focus = {
+	id = mex_funnel_guns
+	icon = GFX_focus_mex_caudillo_private_armies
+	prerequisite = { focus = mex_support_revolucionary_forces }
+	available = {
+		MEX = {
+			exists = yes
+			NOT = { has_war_with = MXA }
+		}
+	}
+	completion_reward = {
+		set_country_flag = MEXFUNNELGUNS
+        custom_effect_tooltip = MEXFUNNELGUNSTOOLTIP
+        add_political_power = 80
+	}
+	cost = 4
+	relative_position_id = mex_support_revolucionary_forces
+	x = 2
+	y = 1
+	ai_will_do = { factor = 200 }
+}
 
 focus = {
 	id = mex_war_is_over
@@ -98,6 +119,11 @@ focus = {
 	x = 0
 	y = 1
 	ai_will_do = { factor = 1000 }
+    bypass = {
+        MEX = {
+			has_country_leader = { name = "Francisco I. Madero" }
+		}
+    }
 }
 
 focus = {
@@ -131,23 +157,6 @@ focus = {
 	completion_reward = { add_political_power = 1 }
 	cost = 4
 	relative_position_id = mex_barra_infrastructure
-	x = 0
-	y = 1
-	ai_will_do = { factor = 1000 }
-}
-
-focus = {
-	id = mex_madero_presidency
-	icon = GFX_focus_mex_caudillo_private_armies
-	prerequisite = { focus = mex_war_is_over }
-	available = {
-		MEX = {
-			has_country_leader = { name = "Francisco I. Madero" }
-		}
-	}
-	completion_reward = { add_political_power = 1 }
-	cost = 4
-	relative_position_id = mex_war_is_over
 	x = 0
 	y = 1
 	ai_will_do = { factor = 1000 }
@@ -381,6 +390,12 @@ focus = {
     x = 17
     y = 0
     ai_will_do = { factor = 30 }
+    available = {
+        OR = {
+            has_global_flag = MSMMEXICAN_REVOLUTION_FED_VICTORY
+            has_global_flag = MSMMEXICAN_REVOLUTION_REV_VICTORY
+        }
+    }
   }
 
   focus ={
@@ -871,7 +886,6 @@ focus = {
     ai_will_do = { factor = 10 }
     bypass = {
       custom_trigger_tooltip = {
-
         NOT = {
           any_owned_state = {
             is_in_home_area = yes

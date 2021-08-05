@@ -185,6 +185,7 @@ country_event = {
 	immediate = {
 		activate_targeted_decision = { target = MEX decision = countdown_to_revolution }
 		set_variable = { MEX.has_revolution = 1 }
+		set_global_flag = MSMMEXICO_REVOLUTION_PERIOD
 	}
 	
 	option = {
@@ -700,6 +701,9 @@ country_event = {
 				}
 			}
 		}
+		clr_global_flag = MSMMEXICAN_REVOLUTION_GLOBAL
+		set_global_flag = MSMMEXICAN_REVOLUTION_REV_VICTORY
+		clr_global_flag = MSMMEXICO_REVOLUTION_PERIOD
 	}
 	option = {
 		name = MSMMexico.7.a #Acknowledge Winning and prepare Interim Presidency
@@ -723,6 +727,9 @@ country_event = {
 	}
 	immediate = {
 		set_variable = { MEX.has_revolution = 3 }
+		clr_global_flag = MSMMEXICAN_REVOLUTION_GLOBAL
+		set_global_flag = MSMMEXICAN_REVOLUTION_FED_VICTORY
+		clr_global_flag = MSMMEXICO_REVOLUTION_PERIOD
 	}
 	option = {
 		name = MSMMexico.8.a #
@@ -950,6 +957,7 @@ country_event = {
 					name = "Francisco I. Madero"
 					ruling_only = yes
 				}
+			date > 1912.3.3
 		}
 		immediate={
 			add_stability=-0.1
@@ -983,6 +991,7 @@ country_event = {
 					target = MEX
 					type = annex_everything
 				}
+				load_oob = "MEX_ORO"
 			}
 			
 		}
