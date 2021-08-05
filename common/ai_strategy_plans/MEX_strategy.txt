@@ -1,0 +1,112 @@
+MEX_DIAZ = {
+	name = "Díaz Wins Civil War"
+	desc = "1000 year Porfiriato"
+
+	allowed = {
+		original_tag = MEX	
+		}
+	enable = {
+			has_game_rule = {
+				rule = MEX_AI_BEHAVIOR
+				option = DIAZ_PATH
+			}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+	mex_mexican_situation
+	mex_plan_of_san_luis_potosi
+	mex_porfiriato
+	mex_porfiriato_2
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+MEX_MADERO = {
+	name = "Historical Madero Path"
+	desc = "The Apostle of Democracy"
+
+	allowed = {
+		original_tag = MEX
+		is_historical_focus_on = yes
+		}
+	enable = {
+		OR = {
+		has_game_rule = {
+			rule = MEX_AI_BEHAVIOR
+			option = DEFAULT
+			}
+		has_game_rule = {
+			rule = MEX_AI_BEHAVIOR
+			option = JOIN_CENTRAL_POWERS
+		}
+		}
+	}
+	abort = {
+		MEX = {
+			has_country_leader = {
+				name = "Victoriano Huerta"
+				ruling_only = yes
+			}
+		}
+	}
+	ai_national_focuses = {
+	mex_mexican_situation
+	mex_plan_of_san_luis_potosi
+	mex_support_revolucionary_forces
+	
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}

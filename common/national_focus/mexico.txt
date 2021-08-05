@@ -164,12 +164,56 @@ focus = {
 
 
 
-###Final de la democracia###
+###End of Madero tree###
+
+focus = {
+	id = mex_porfiriato  ##Player has decided against madero, must fight civil war soon. Not civil war locked though
+	icon = goal_unknown
+	available={
+		has_global_flag = MEX_support_diaz
+		check_variable = {
+			var = MEX.support_revolution
+			value = 0
+			compare = equals
+		}
+	}
+	prerequisite = { focus = mex_plan_of_san_luis_potosi }
+	completion_reward = {
+		add_stability = 0.05
+	}
+	cost = 4
+	relative_position_id = mex_plan_of_san_luis_potosi
+	x = -3
+	y = 1
+	ai_will_do  { factor = 100 }
+}
+
+focus = {
+	id = mex_porfiriato_2  ##
+	icon = goal_unknown
+	available={
+		has_global_flag = MEX_support_diaz
+		check_variable = {
+			var = MEX.support_revolution
+			value = 0
+			compare = equals
+		}
+	}
+	prerequisite = { focus = mex_porfiriato }
+	completion_reward = {
+		add_stability = 0.05
+	}
+	cost = 4
+	relative_position_id = mex_porfiriato
+	x = 0
+	y = 1
+	ai_will_do  { factor = 100 }
+}
 
 
 ######Huerta Tree###########################
 focus = {
-	id = mex_after_coup  ##Madero is dead. Huerta must prepare his new state for what is to come
+	id = mex_after_coup  ##Madero is dead. Huerta must prepare his new state for what is to come!
 	icon = goal_unknown
 	available={ has_global_flag=MEXMaderoDies }
 	completion_reward = {

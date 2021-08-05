@@ -614,6 +614,11 @@ MEX_ai_behavior = {
 		desc = "RULE_OPTION_DEFAULT_AI_DESC"
 	}
 	option = {
+		name =  DIAZ_PATH
+		text = "RULE_OPTION_DIAZ_PATH_MEX"
+		desc = "RULE_OPTION_DIAZ_PATH_MEX_AI_DESC"
+	}
+	option = {
 		name =  JOIN_ENTENTE
 		text = "RULE_OPTION_JOIN_ENTENTE_MEX"
 		desc = "RULE_OPTION_JOIN_ENTENTE_MEX_AI_DESC"
