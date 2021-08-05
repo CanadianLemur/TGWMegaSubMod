@@ -1419,7 +1419,7 @@ focus_tree = {
 	}
 	#####Taft Continuation Tree
 	focus = {
-		id = USA_MSM_elect_taft
+		id = USA_MSM_reelect_taft
  		icon = goal_unknown
 		relative_position_id = USA_MSM_broken_party
 		avaliable = {
@@ -1432,6 +1432,32 @@ focus_tree = {
 			has_country_leader = {
 				ruling_only = yes
 				name = "William H. Taft"
+			}
+			has_country_flag = new_1913_president_usa
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 12
+		y = 0
+	}
+	#####Debs Tree
+	focus = {
+		id = USA_MSM_elect_debs
+ 		icon = goal_unknown
+		relative_position_id = USA_MSM_broken_party
+		avaliable = {
+			has_country_leader = {
+				ruling_only = yes
+				name = "Eugene V. Debs"
+			}
+		}
+		allow_branch = {
+			has_country_leader = {
+				ruling_only = yes
+				name = "Eugene V. Debs"
 			}
 			has_country_flag = new_1913_president_usa
 		}
