@@ -17,25 +17,6 @@ focus_tree = {
 	# POLITICAL
 	###########################################################################################################################
 	#####MSM Tree Start
-	focus = {
-		id = USA_MSM_switch_trees
-		icon = goal_unknown
-		completion_reward = {
-			country_event = { id = MSMUSA.1 }
-			if = {
-				limit = { USA = { has_country_flag = USA_roosevelt_elected } }
-				clr_country_flag = USA_roosevelt_elected
-			}
-			if = {
-				limit = { USA = { NOT = { has_country_flag = USA_roosevelt_elected } } }
-				set_country_flag = USA_roosevelt_elected
-			}
-		}
-		ai_will_do = { factor = 10 }
- 		cost = 0
-		x = 23
-		y = 0
-	}
 	#####Taft Tree
 	focus = {
 		id = USA_MSM_broken_party
@@ -303,14 +284,26 @@ focus_tree = {
 			}
 		}
 		allow_branch = {
-			NOT = { has_country_flag = USA_roosevelt_elected }
+			OR = {
+				AND = {
+					has_country_leader = {
+						ruling_only = yes
+						name = "William H. Taft"
+					}
+					NOT = { has_country_flag = new_1913_president_usa }
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "Woodrow Wilson"
+				}
+			}
 		}
 		completion_reward = {
 			add_political_power = 50
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
-		x = 9
+		x = 12
 		y = 0
 	}
 	focus = {
@@ -323,7 +316,7 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
-		x = -3
+		x = -6
 		y = 1
 	}
 	focus = {
@@ -594,7 +587,7 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
-		x = 2
+		x = -1
 		y = 1
 	}
 	focus = {
@@ -726,7 +719,7 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
-		x = 6
+		x = 3
 		y = 1
 	}
 	focus = {
@@ -846,7 +839,7 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
-		x = 9
+		x = 6
 		y = 1
 	}
 	focus = {
@@ -924,8 +917,18 @@ focus_tree = {
 		id = USA_MSM_elect_roosevelt
  		icon = goal_unknown
 		relative_position_id = USA_MSM_broken_party
+		avaliable = {
+			has_country_leader = {
+				ruling_only = yes
+				name = "Theodore Roosevelt"
+			}
+		}
 		allow_branch = {
-			has_country_flag = USA_roosevelt_elected
+			has_country_leader = {
+				ruling_only = yes
+				name = "Theodore Roosevelt"
+			}
+			has_country_flag = new_1913_president_usa
 		}
 		completion_reward = {
 			add_political_power = 50
@@ -1413,6 +1416,32 @@ focus_tree = {
  		cost = 10
 		x = 0
 		y = 2
+	}
+	#####Taft Continuation Tree
+	focus = {
+		id = USA_MSM_elect_taft
+ 		icon = goal_unknown
+		relative_position_id = USA_MSM_broken_party
+		avaliable = {
+			has_country_leader = {
+				ruling_only = yes
+				name = "William H. Taft"
+			}
+		}
+		allow_branch = {
+			has_country_leader = {
+				ruling_only = yes
+				name = "William H. Taft"
+			}
+			has_country_flag = new_1913_president_usa
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 12
+		y = 0
 	}
 	#####MSM End
 	#-------------------------------------
