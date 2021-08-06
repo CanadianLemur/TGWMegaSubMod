@@ -1443,6 +1443,441 @@ focus_tree = {
 		x = 12
 		y = 0
 	}
+	focus = {
+		id = USA_MSM_foreign_interests
+		prerequisite = { focus = USA_MSM_reelect_taft }
+ 		relative_position_id = USA_MSM_reelect_taft
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = -5
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_protectionism
+		prerequisite = { focus = USA_MSM_foreign_interests }
+ 		relative_position_id = USA_MSM_foreign_interests
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = -2
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_latin_american_upheaval
+		prerequisite = { focus = USA_MSM_protectionism }
+ 		relative_position_id = USA_MSM_protectionism
+		icon = goal_unknown
+		completion_reward = {
+			#Basically let you cause a bunch of civil wars in latin america that you can step in and create puppet governments
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_offer_our_support
+		prerequisite = { focus = USA_MSM_protectionism }
+ 		relative_position_id = USA_MSM_protectionism
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 2
+	}
+	focus = {
+		id = USA_MSM_neutral_interventionism
+		prerequisite = { focus = USA_MSM_foreign_interests }
+ 		relative_position_id = USA_MSM_foreign_interests
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_reach_out_to_europe
+		prerequisite = { focus = USA_MSM_foreign_interests }
+		prerequisite = { focus = USA_MSM_affirm_legislative_support }
+ 		relative_position_id = USA_MSM_foreign_interests
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 2
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_pact_with_the_swiss
+		prerequisite = { focus = USA_MSM_reach_out_to_europe }
+ 		relative_position_id = USA_MSM_reach_out_to_europe
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_appeal_to_portugal
+		prerequisite = { focus = USA_MSM_reach_out_to_europe }
+ 		relative_position_id = USA_MSM_reach_out_to_europe
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_announce_our_intentions
+		prerequisite = { focus = USA_MSM_appeal_to_portugal focus = USA_MSM_pact_with_the_swiss }
+ 		relative_position_id = USA_MSM_appeal_to_portugal
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_form_the_neutral_bloc
+		prerequisite = { focus = USA_MSM_neutral_interventionism }
+		prerequisite = { focus = USA_MSM_announce_our_intentions }
+ 		relative_position_id = USA_MSM_neutral_interventionism
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 3
+	}
+	focus = {
+		id = USA_MSM_extend_the_invitation
+		prerequisite = { focus = USA_MSM_form_the_neutral_bloc }
+ 		relative_position_id = USA_MSM_form_the_neutral_bloc
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_affirm_legislative_support
+		prerequisite = { focus = USA_MSM_reelect_taft }
+ 		relative_position_id = USA_MSM_reelect_taft
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_the_fight_for_social_reform
+		prerequisite = { focus = USA_MSM_affirm_legislative_support }
+ 		relative_position_id = USA_MSM_affirm_legislative_support
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_address_the_womens_sufferage_movement
+		prerequisite = { focus = USA_MSM_the_fight_for_social_reform }
+ 		relative_position_id = USA_MSM_the_fight_for_social_reform
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_examine_voting_descrimination
+		prerequisite = { focus = USA_MSM_address_the_womens_sufferage_movement }
+ 		relative_position_id = USA_MSM_address_the_womens_sufferage_movement
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_expedite_reconstruction
+		prerequisite = { focus = USA_MSM_the_fight_for_social_reform }
+ 		relative_position_id = USA_MSM_the_fight_for_social_reform
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_restructure_our_relationship_with_native_americans
+		prerequisite = { focus = USA_MSM_expedite_reconstruction }
+		prerequisite = { focus = USA_MSM_address_the_womens_sufferage_movement }
+ 		relative_position_id = USA_MSM_expedite_reconstruction
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_propose_a_new_civil_rights_amendment
+		prerequisite = { focus = USA_MSM_examine_voting_descrimination }
+		prerequisite = { focus = USA_MSM_restructure_our_relationship_with_native_americans }
+ 		relative_position_id = USA_MSM_examine_voting_descrimination
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_cultural_reckoning
+		prerequisite = { focus = USA_MSM_expedite_reconstruction }
+ 		relative_position_id = USA_MSM_expedite_reconstruction
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 2
+	}
+	focus = {
+		id = USA_MSM_found_the_department_of_civil_rights
+		prerequisite = { focus = USA_MSM_propose_a_new_civil_rights_amendment }
+		prerequisite = { focus = USA_MSM_cultural_reckoning }
+ 		relative_position_id = USA_MSM_propose_a_new_civil_rights_amendment
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_lead_by_example
+		prerequisite = { focus = USA_MSM_reelect_taft }
+ 		relative_position_id = USA_MSM_reelect_taft
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 6
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_our_relationship_with_enterprise
+		prerequisite = { focus = USA_MSM_lead_by_example }
+ 		relative_position_id = USA_MSM_lead_by_example
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = -2
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_subsidize_american_steelworks
+		prerequisite = { focus = USA_MSM_our_relationship_with_enterprise }
+ 		relative_position_id = USA_MSM_our_relationship_with_enterprise
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_rebuild_aging_rail
+		prerequisite = { focus = USA_MSM_subsidize_american_steelworks }
+ 		relative_position_id = USA_MSM_subsidize_american_steelworks
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 2
+	}
+	focus = {
+		id = USA_MSM_assist_american_manufacturies
+		prerequisite = { focus = USA_MSM_our_relationship_with_enterprise }
+ 		relative_position_id = USA_MSM_our_relationship_with_enterprise
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = -1
+		y = 2
+	}
+	focus = {
+		id = USA_MSM_restrict_lassez_faire
+		prerequisite = { focus = USA_MSM_assist_american_manufacturies focus = USA_MSM_rebuild_aging_rail }
+ 		relative_position_id = USA_MSM_assist_american_manufacturies
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 2
+	}
+	focus = {
+		id = USA_MSM_insist_on_state_contributions
+		prerequisite = { focus = USA_MSM_lead_by_example }
+ 		relative_position_id = USA_MSM_lead_by_example
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_utilize_underdeveloped_areas
+		prerequisite = { focus = USA_MSM_insist_on_state_contributions }
+ 		relative_position_id = USA_MSM_insist_on_state_contributions
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_western_industrial_revolution
+		prerequisite = { focus = USA_MSM_utilize_underdeveloped_areas }
+ 		relative_position_id = USA_MSM_utilize_underdeveloped_areas
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_revitalize_the_interior
+		prerequisite = { focus = USA_MSM_western_industrial_revolution }
+ 		relative_position_id = USA_MSM_western_industrial_revolution
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_make_use_of_our_resources
+		prerequisite = { focus = USA_MSM_insist_on_state_contributions }
+ 		relative_position_id = USA_MSM_insist_on_state_contributions
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_healthy_competition
+		prerequisite = { focus = USA_MSM_make_use_of_our_resources }
+ 		relative_position_id = USA_MSM_make_use_of_our_resources
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 2
+	}
+	focus = {
+		id = USA_MSM_beacon_of_self_sufficiency
+		prerequisite = { focus = USA_MSM_revitalize_the_interior }
+		prerequisite = { focus = USA_MSM_healthy_competition }
+ 		relative_position_id = USA_MSM_revitalize_the_interior
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 1
+		y = 1
+	}
 	#####Debs Tree
 	focus = {
 		id = USA_MSM_elect_debs
