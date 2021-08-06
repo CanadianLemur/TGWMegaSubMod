@@ -71,7 +71,7 @@ focus = {
 	available = {
 		MEX = {
 			exists = yes
-			NOT = { has_war_with = MXA }
+			has_war_with = MXA
 		}
 	}
 	completion_reward = {
@@ -344,21 +344,6 @@ focus = {
 	cost = 4
 	relative_position_id = mex_military_support
 	x = 0
-	y = 1
-	ai_will_do  { factor = 100 }
-}
-
-focus = {
-	id = mex_the_rebel_threat
-	icon = goal_unknown
-	prerequisite = { focus = mex_increase_arms_2 }
-	prerequisite = { focus = mex_military_staff_in_administration }
-	completion_reward = {
-		add_political_power = 50
-	}
-	cost = 4	
-	relative_position_id = mex_military_staff_in_administration
-	x = -1
 	y = 1
 	ai_will_do  { factor = 100 }
 }

@@ -130,6 +130,12 @@ country_event = {
 			set_variable = { support_revolution = 1 }
 			set_global_flag = MEX_support_madero
 		}
+		factor = 100
+		modifer = {
+			add = 1000
+			is_historical_focus_on = yes
+		}
+		
 	}
 	option = {
 		name =  MSMMexico.2.b ## Madero is bad
@@ -138,6 +144,15 @@ country_event = {
 			set_variable = { support_revolution = 0 }
 			set_global_flag = MEX_support_diaz
 		}
+		factor = 1
+		modifer = {
+			add = 1000
+			has_game_rule = {
+				rule = MEX_AI_BEHAVIOR
+				option = DIAZ_PATH
+			}
+		}
+		
 	}
 
 }

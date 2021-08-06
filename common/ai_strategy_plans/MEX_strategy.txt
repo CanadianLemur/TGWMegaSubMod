@@ -59,14 +59,14 @@ MEX_MADERO = {
 		}
 	enable = {
 		OR = {
-		has_game_rule = {
-			rule = MEX_AI_BEHAVIOR
-			option = DEFAULT
+			has_game_rule = {
+				rule = MEX_AI_BEHAVIOR
+				option = DEFAULT
+				}
+			has_game_rule = {
+				rule = MEX_AI_BEHAVIOR
+				option = JOIN_ENTENTE
 			}
-		has_game_rule = {
-			rule = MEX_AI_BEHAVIOR
-			option = JOIN_CENTRAL_POWERS
-		}
 		}
 	}
 	abort = {
@@ -81,7 +81,70 @@ MEX_MADERO = {
 	mex_mexican_situation
 	mex_plan_of_san_luis_potosi
 	mex_support_revolucionary_forces
+	mex_funnel_guns
+	mex_war_is_over
+	mex_barra_infrastructure
+	mex_madero_presidency
 	
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+MEX_Huerta = {
+	name = "Victoriano Huerta Administration"
+	desc = "Militarization of Mexico"
+
+	allowed = {
+		original_tag = MEX
+		}
+	enable = {
+		MEX = {
+			has_country_leader = {
+				name = "Victoriano Huerta"
+				ruling_only = yes
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		mex_after_coup
+		mex_consolidate_power
+		mex_military_buildup
+		mex_increase_arms_1
+		mex_military_support
+		mex_increase_arms_2
+		mex_military_staff_in_administration
+		mex_the_rebel_threat
+		mex_the_iron_hand
+		mex_huerta_armor
 	}
 
 	research = {
