@@ -3,13 +3,15 @@ MEX_DIAZ = {
 	desc = "1000 year Porfiriato"
 
 	allowed = {
-		original_tag = MEX	
+		original_tag = MEX
+		is_historical_focus_on = no
 		}
 	enable = {
-			has_game_rule = {
-				rule = MEX_AI_BEHAVIOR
-				option = DIAZ_PATH
-			}
+		has_game_rule = {
+			rule = MEX_AI_BEHAVIOR
+			option = DIAZ_PATH
+		}
+		is_historical_focus_on = no
 	}
 	abort = {
 		
@@ -61,16 +63,7 @@ MEX_MADERO = {
 		is_historical_focus_on = yes
 		}
 	enable = {
-		OR = {
-			has_game_rule = {
-				rule = MEX_AI_BEHAVIOR
-				option = DEFAULT
-				}
-			has_game_rule = {
-				rule = MEX_AI_BEHAVIOR
-				option = JOIN_ENTENTE
-			}
-		}
+		is_historical_focus_on = yes
 	}
 	abort = {
 		MEX = {

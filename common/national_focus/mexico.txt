@@ -60,7 +60,7 @@ focus = {
   relative_position_id = mex_political_effort
   x = 10
   y = 2
-  ai_will_do = { factor = 4000 }
+  ai_will_do = { base = 400 }
   mutually_exclusive = { focus=MEX_ww1_support_diaz focus=MEX_ww1_support_magonistas}
 }
 
@@ -159,7 +159,13 @@ focus = {
 	relative_position_id = mex_barra_infrastructure
 	x = 0
 	y = 1
-	ai_will_do = { factor = 1000 }
+	ai_will_do = {
+		base = 1000
+		modifier = {
+			is_historical_focus_on = yes
+			factor = 100
+		}
+	}
 }
 
 
@@ -185,7 +191,16 @@ focus = {
 	relative_position_id = mex_plan_of_san_luis_potosi
 	x = -3
 	y = 1
-	ai_will_do  { factor = 200 }
+	ai_will_do  {
+		base = 50
+		modifier = {
+			has_game_rule = {
+				rule = MEX_AI_BEHAVIOR
+				option = DIAZ_PATH
+			}
+		factor = 1000
+		}
+	}
 }
 
 focus = {

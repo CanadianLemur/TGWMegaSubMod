@@ -131,12 +131,7 @@ country_event = {
 			set_global_flag = MEX_support_madero
 		}
 		ai_will_do = {
-			base = 10
-			modifer = {
-				add = 100
-				is_historical_focus_on = yes
-			}
-			factor = 10
+			base = 1
 		}
 		
 	}
@@ -148,15 +143,7 @@ country_event = {
 			set_global_flag = MEX_support_diaz
 		}
 		ai_will_do = {
-			base = 1
-			modifer = {
-				add = 100
-				has_game_rule = {
-					rule = MEX_AI_BEHAVIOR
-					option = DIAZ_PATH
-				}
-			}
-			factor = 10
+			base = 0
 		}
 		
 	}
