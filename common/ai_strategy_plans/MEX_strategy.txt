@@ -19,6 +19,9 @@ MEX_DIAZ = {
 	mex_mexican_situation
 	mex_plan_of_san_luis_potosi
 	mex_porfiriato
+	mex_additional_defence
+	mex_dispatch_north
+	mex_dispatch_home
 	mex_porfiriato_2
 	}
 

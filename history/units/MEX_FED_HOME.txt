@@ -1,0 +1,58 @@
+division_template = {
+	name = "Infantry Brigade"
+	is_locked = yes
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Infantry Brigade"
+	is_locked = yes
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division= { 			
+		name = "Tenth Federal Infantry"
+		location = 10732
+		division_template="Infantry Division"
+		start_experience_factor=0.1
+		start_equipment_factor=0.5
+	}
+	division= { 			
+		name = "Eleventh Federal Infantry"
+		location = 13089
+		division_template="Infantry Division"
+		start_experience_factor=0.1
+		start_equipment_factor=0.5
+	}
+	
+	division= { 			
+		name = "Eighth Federal Brigade"
+		location = 12746
+		division_template="Infantry Brigade"
+		start_experience_factor=0.1
+		start_equipment_factor=0.5
+	}
+	division= { 			
+		name = "Ninth Federal Brigade"
+		location = 4956
+		division_template="Infantry Brigade"
+		start_experience_factor=0.1
+		start_equipment_factor=0.5
+	}
+	division= { 			
+		name = "Tenth Federal Brigade"
+		location = 2008
+		division_template="Infantry Brigade"
+		start_experience_factor=0.1
+		start_equipment_factor=0.5
+	}
+}

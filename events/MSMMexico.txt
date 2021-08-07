@@ -497,6 +497,31 @@ country_event = {
 			}
 			MXA = { load_oob = "MEX_FED" }
 		}
+		
+		if = {
+			limit = {
+				check_variable = {
+					var = MEX.support_revolution
+					value = 0
+					compare = equals
+				}
+			}
+			MEX = { #Player Diaz
+				load_oob = "MEX_FED" 
+			}
+			if = {
+				limit = {
+					MEX = { has_country_flag = MEX_HOME_DEFENDED }
+				}
+				load_oob = MEX_FED_HOME
+			}
+			if = {
+				limit = {
+					MEX = { has_country_flag = MEX_NORTH_DEFENDED }
+				}
+				load_oob = MEX_FED_NORTH
+			}
+		}
 		MXB = { ##Madero AI
 			if = {
 				limit = {
@@ -725,6 +750,7 @@ country_event = {
 		clr_global_flag = MSMMEXICAN_REVOLUTION_GLOBAL
 		set_global_flag = MSMMEXICAN_REVOLUTION_REV_VICTORY
 		clr_global_flag = MSMMEXICO_REVOLUTION_PERIOD
+		clr_global_flag = MEXFUNNELGUNS
 	}
 	option = {
 		name = MSMMexico.7.a #Acknowledge Winning and prepare Interim Presidency
@@ -751,6 +777,7 @@ country_event = {
 		clr_global_flag = MSMMEXICAN_REVOLUTION_GLOBAL
 		set_global_flag = MSMMEXICAN_REVOLUTION_FED_VICTORY
 		clr_global_flag = MSMMEXICO_REVOLUTION_PERIOD
+		clr_global_flag = MEXFUNNELGUNS
 	}
 	option = {
 		name = MSMMexico.8.a #

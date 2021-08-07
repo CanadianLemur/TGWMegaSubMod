@@ -60,7 +60,7 @@ focus = {
   relative_position_id = mex_political_effort
   x = 10
   y = 2
-  ai_will_do = { factor = 2000 }
+  ai_will_do = { factor = 4000 }
   mutually_exclusive = { focus=MEX_ww1_support_diaz focus=MEX_ww1_support_magonistas}
 }
 
@@ -164,7 +164,7 @@ focus = {
 
 
 
-###End of Madero tree###
+###End of Madero tree###DIAZ GANG###
 
 focus = {
 	id = mex_porfiriato  ##Player has decided against madero, must fight civil war soon. Not civil war locked though
@@ -185,8 +185,62 @@ focus = {
 	relative_position_id = mex_plan_of_san_luis_potosi
 	x = -3
 	y = 1
-	ai_will_do  { factor = 100 }
+	ai_will_do  { factor = 200 }
 }
+
+focus = {
+	id = mex_additional_defence  ##Player has decided against madero, must fight civil war soon. Not civil war locked though
+	icon = goal_unknown
+	available={
+		has_global_flag = MEX_support_diaz
+		check_variable = {
+			var = MEX.support_revolution
+			value = 0
+			compare = equals
+		}
+	}
+	prerequisite = { focus = mex_porfiriato }
+	completion_reward = {
+		add_stability = -0.01
+		custom_effect_tooltip = MEXDEFENCEPATHTOOLTIP
+	}
+	cost = 4
+	relative_position_id = mex_porfiriato
+	x = 0
+	y = 1
+	ai_will_do  { factor = 200 }
+}
+
+focus = {
+	id = mex_dispatch_north  ##Player has decided against madero, must fight civil war soon. Not civil war locked though
+	icon = goal_unknown
+	prerequisite = { focus = mex_additional_defence }
+	completion_reward = {
+		set_country_flag = MEX_NORTH_DEFENDED
+		custom_effect_tooltip = MEXNORTHDEFENCETOOLTIP
+	}
+	cost = 2
+	relative_position_id = mex_additional_defence
+	x = 1
+	y = 1
+	ai_will_do  { factor = 250 }
+}
+
+focus = {
+	id = mex_dispatch_home  ##Player has decided against madero, must fight civil war soon. Not civil war locked though
+	icon = goal_unknown
+	prerequisite = { focus = mex_additional_defence }
+	completion_reward = {
+		set_country_flag = MEX_HOME_DEFENDED
+		custom_effect_tooltip = MEXHOMEDEFENCETOOLTIP
+	}
+	cost = 2
+	relative_position_id = mex_additional_defence
+	x = -1
+	y = 1
+	ai_will_do  { factor = 220 }
+}
+
 
 focus = {
 	id = mex_porfiriato_2  ##
@@ -199,14 +253,14 @@ focus = {
 			compare = equals
 		}
 	}
-	prerequisite = { focus = mex_porfiriato }
+	prerequisite = { focus = mex_additional_defence }
 	completion_reward = {
 		add_stability = 0.05
 	}
 	cost = 4
-	relative_position_id = mex_porfiriato
+	relative_position_id = mex_additional_defence
 	x = 0
-	y = 1
+	y = 2
 	ai_will_do  { factor = 100 }
 }
 

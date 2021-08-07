@@ -49,6 +49,7 @@ MEX_civil_war = {
 		days_remove = 5
 		days_re_enable = 20
 		fire_only_once = no
+		ai_will_do = { base = 1 }
 	}
 }
 
