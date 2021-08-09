@@ -120,7 +120,7 @@ country_event = {
 	id = MSMMexico.2
 	fire_only_once=yes
 	trigger={
-		date >  1910.6.6
+		date > 1910.6.12
 		TAG = MEX
 	}
 	option = {
@@ -130,8 +130,16 @@ country_event = {
 			set_variable = { support_revolution = 1 }
 			set_global_flag = MEX_support_madero
 		}
-		ai_will_do = {
-			base = 1
+		ai_chance = {
+			factor = 3
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = MEX_AI_BEHAVIOR
+					option = DIAZ_PATH
+				}
+			}
+			
 		}
 		
 	}
@@ -142,12 +150,21 @@ country_event = {
 			set_variable = { support_revolution = 0 }
 			set_global_flag = MEX_support_diaz
 		}
-		ai_will_do = {
-			base = 0
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = MEX_AI_BEHAVIOR
+					option = JOIN_ENTENTE
+				}
+			}
 		}
-		
 	}
-
 }
 
 country_event = {
@@ -191,7 +208,9 @@ country_event = {
 		TAG = MEX
     }
 	immediate = {
+		hidden_effect = {
 		activate_targeted_decision = { target = MEX decision = countdown_to_revolution }
+		}
 		set_variable = { MEX.has_revolution = 1 }
 		set_global_flag = MSMMEXICO_REVOLUTION_PERIOD
 	}
@@ -686,7 +705,7 @@ news_event = {
 }
 
 country_event = {
-	title=MSMMexico.7.t ##Revolution Win Condition  REVOLUTIONARIES
+	title=MSMMexico.7.t ##Revolution Win Condition  REVOLUTIONARIES  
 	desc=MSMMexico.7.d
 	id=MSMMexico.7
 	fire_only_once=yes
@@ -733,6 +752,7 @@ country_event = {
 					random = 6
 				}
 			}
+			dismantle_faction = yes
 		}
 		clr_global_flag = MSMMEXICAN_REVOLUTION_GLOBAL
 		set_global_flag = MSMMEXICAN_REVOLUTION_REV_VICTORY
@@ -755,7 +775,7 @@ country_event = {
 	id=MSMMexico.8
 	fire_only_once=yes
 	trigger = {
-		MXB = { has_capitulated = yes }	
+		MXB = { has_capitulated = yes }
 		has_global_flag = MSMMEXICAN_REVOLUTION_GLOBAL
 		TAG = MEX
 	}
@@ -764,7 +784,15 @@ country_event = {
 		clr_global_flag = MSMMEXICAN_REVOLUTION_GLOBAL
 		set_global_flag = MSMMEXICAN_REVOLUTION_FED_VICTORY
 		clr_global_flag = MSMMEXICO_REVOLUTION_PERIOD
-		clr_global_flag = MEXFUNNELGUNS
+		clr_country_flag = MEXFUNNELGUNS
+		hidden_effect = {
+		MEX = {
+			annex_country = {
+				target = MXB
+				transfer_troops = no
+			}
+		}
+		}
 	}
 	option = {
 		name = MSMMexico.8.a #
@@ -858,16 +886,14 @@ country_event = {
 						ideology = autocracy traits = {}
 				}
 		}
-	}
-	}
-	
+        }
+    }
 	option = {
 		name=MSMMexico.12.a
 		
 		}
-	}
-	
-	country_event={ ## Tampico Affair part 1
+}
+country_event={ ## Tampico Affair part 1
 		title=MSMMexico.13.t
 		desc=MSMMexico.13.d
 		id=MSMMexico.13
@@ -908,12 +934,12 @@ country_event = {
 			
 			}
 		}
-		option = {
-			name=MSMMexico.13.a
-		}
+	option = {
+		name=MSMMexico.13.a
 	}
+}
 	
-	country_event = { ###Huerta Coup
+country_event = { ###Huerta Coup
 		title=MSMMexico.14.t
 		desc=MSMMexico.14.d
 		id=MSMMexico.14
@@ -928,6 +954,7 @@ country_event = {
 					name = "Francisco I. Madero"
 					ruling_only = yes
 				}
+				has_country_flag = MADERO_MILITARY_IGNORED
 			}
 		}
 		
@@ -961,9 +988,9 @@ country_event = {
 			name=MSMMexico.14.b
 			set_global_flag=MEXMaderoLives
 		}
-	}
+}
 	
-	country_event={ ###Ten Tragic Days
+country_event={ ###Ten Tragic Days
 		title=MSMMexico.15.t
 		desc=MSMMexico.15.d
 		id=MSMMexico.15
@@ -979,9 +1006,9 @@ country_event = {
 		option={
 			name=MSMMexico.15.a
 		}
-	}
+}
 	
-	country_event={ ###Pascual Orozco
+country_event={ ###Pascual Orozco Rebellion
 		title=MSMMexico.16.t
 		desc=MSMMexico.16.d
 		id=MSMMexico.16
@@ -1033,4 +1060,100 @@ country_event = {
 		option={
 			name=MSMMexico.16.a
 		}
+}
+	
+country_event={ ###Madero Address Parliment
+	title=MSMMexico.16.t
+	desc=MSMMexico.16.d
+	id=MSMMexico.16
+	fire_only_once=yes
+	is_triggered_only=yes
+	option={
+		name=MSMMexico.16.a ##Ignore Parliment
+		set_country_flag = MADERO_PARLIMENT_IGNORED
+		ai_chance = {
+			factor = 2
+		}
 	}
+	option={
+		name=MSMMexico.16.b ##Dismiss Díaz-Era MPs and hold elections
+		add_stability = -0.10
+		set_country_flag = MADERO_PARLIMENT_PURGED
+		custom_effect_tooltip = MSMMEXICO16bTOOLTIP
+		ai_chance = {
+			factor = 1
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+	}
+}
+
+country_event={ ###Madero Address Military
+	title=MSMMexico.17.t
+	desc=MSMMexico.17.d
+	id=MSMMexico.17
+	fire_only_once=yes
+	is_triggered_only=yes
+	option={
+		name=MSMMexico.17.a ##Ignore Military
+		set_country_flag = MADERO_MILITARY_IGNORED
+		custom_effect_tooltip = MSMMEXICO17aTOOLTIP
+		ai_chance = {
+			factor = 2
+		}
+	}
+	option={
+		name=MSMMexico.17.b ##Dismiss Díaz-Era Officers
+		add_war_support = -0.10
+		set_country_flag = MADERO_MILITARY_PURGED
+		ai_chance = {
+			factor = 1
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+	}
+	option={
+		name=MSMMexico.17.c ##Replace Díaz-Era Officers with loyal revolutionaries
+		add_war_support = 0.10
+		set_country_flag = MADERO_MILITARY_REPLACED
+		custom_effect_tooltip = MSMMEXICO17cTOOLTIP
+		add_ideas = MEX_pascual_orozco
+		ai_chance = {
+			factor = 1
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+	}
+}
+
+country_event={ ###Plan of Alaya
+	title=MSMMexico.18.t
+	desc=MSMMexico.18.d
+	id=MSMMexico.18
+	fire_only_once=yes
+	is_triggered_only=yes
+	trigger = {
+		date > 1911.11.28
+		TAG = MEX
+	}
+	immediate = {
+		hidden_effect = {
+			485 = {
+				set_border_war = yes
+			}
+		}
+	}
+	option={
+		name=MSMMexico.18.a
+		set_country_flag = MSM_AGRARIAN_UPRISING
+		ai_chance = {
+			factor = 1
+		}
+	}
+}

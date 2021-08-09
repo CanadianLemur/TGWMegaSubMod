@@ -79,9 +79,12 @@ MEX_MADERO = {
 	mex_support_revolucionary_forces
 	mex_funnel_guns
 	mex_war_is_over
+	mex_barra_agrarian_revolt
+	mex_rebels_disarmament
 	mex_barra_infrastructure
 	mex_madero_presidency
-	
+	mex_address_military
+	mex_address_parliment
 	}
 
 	research = {

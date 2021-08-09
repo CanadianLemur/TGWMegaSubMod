@@ -5,7 +5,7 @@
  fascism_desc:0 "Totalitarian Regime"
  
  anarchism_booster:0 "Anarchist"
- 
+ anarchism:0 "Anarchism"
  anarcho_communism:0 "Anarcho-communism"
  anarcho_communism_noun:0 "Ancom"
  anarcho_communism_desc:0 "An ideology embracing the idea of communism as a stateless society, Anarcho-communism eschews the idea of a transitionary socialist state and favors a society based on voluntary associations and mutual aid."
@@ -75,8 +75,8 @@
  MEX_anarchism_party_long:0 "Mexican Liberal Party"
  MEX_villa_mexico_fascism:0 "Villistas"
  MEX_villa_mexico_fascism_long:0 "Villistas"
- MEX_magonista_mexico_anarchism:0 "Magonism"
- MEX_magonista_mexico_anarchism_long:0 "Magonism"
+ MEX_magonista_mexico_anarchism:0 "Magonistas"
+ MEX_magonista_mexico_anarchism_long:0 "Magonistas"
  MEX_magonista_mexico_communism:0 "MLP"
  MEX_magonista_mexico_communism_long:0 "Mexican Liberal Party"
  BRA_fascism_party:0 "Integralismo brasileiro"

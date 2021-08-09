@@ -463,6 +463,22 @@ maximum_fort_level = {
 	}
 }
 
+allow_wackiness = {
+	name = "RULE_ALLOW_WACKINESS"
+	group = "RULE_GROUP_GAMEPLAY"
+	icon = "GFX_game_rule_wacky"
+	option = {
+		name = yes_wack
+		text = "RULE_OPTION_YES_WACK"
+		desc = "RULE_YES_WACK_DESC"
+	}
+	option = {
+		name = no_wack
+		text = "RULE_OPTION_NO_WACK"
+		desc = "RULE_NO_WACK_DESC"
+	}
+}
+
 ###  ###  ## ###  ##  ###   ##  #  # 
 #  # #   #   #   #  # #  # #  # #  # 
 ###  ##   #  ##  #### ###  #    #### 

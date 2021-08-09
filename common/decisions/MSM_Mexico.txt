@@ -49,7 +49,7 @@ MEX_civil_war = {
 		days_remove = 5
 		days_re_enable = 20
 		fire_only_once = no
-		ai_will_do = { base = 1 }
+		ai_will_do = { factor = 10 }
 	}
 }
 
@@ -116,7 +116,7 @@ MEX_concessions = {
 		complete_effect ={
 			custom_effect_tooltip = MSMMexico_decrease_agrarian_tensions
 			add_to_variable={
-				var = MEX.nationalist_appeasement_amount
+				var = MEX.communist_appeasement_amount
 				value = 0.05
 			}
 			if={
@@ -135,4 +135,163 @@ MEX_concessions = {
 		}
 	}
 	
+	increase_nationalist_tensions = { ##Repression of Villistas
+		fire_only_once = no
+		allowed = {
+			tag = MEX
+			check_variable = {
+				var = MEX.nationalist_tensions_amount
+				value = 1
+				compare = less_than
+			}
+		}
+		available = {
+			always = yes
+		}
+		is_good = yes
+		
+		days_remove = 20
+		days_re_enable = 0
+		
+		complete_effect ={
+			custom_effect_tooltip = MSMMexico_nationalist_agrarian_tensions
+			add_to_variable={
+				var = MEX.nationalist_tensions_amount
+				value = 0.05
+			}
+			if={
+				limit={
+					check_variable = {
+						var = MEX.nationalist_appeasement_amount
+						value = 0
+						compare = greater_than
+					}
+				}
+				add_to_variable = {
+					var = MEX.nationalist_appeasement_amount
+					value = -0.025
+				}
+			}
+		}
+	}
+	
+	appeal_to_nationalists = { ##Appeal to Villistas
+		fire_only_once = no
+		allowed = {
+			tag = MEX
+			check_variable = {
+				var = MEX.nationalist_appeasement_amount
+				value = 1
+				compare = less_than
+			}
+		}
+		available = {
+			always = yes
+		}
+		is_good = yes
+		
+		days_remove = 20
+		days_re_enable = 0
+		
+		complete_effect ={
+			custom_effect_tooltip = MSMMexico_decrease_nationalist_tensions
+			add_to_variable={
+				var = MEX.nationalist_appeasement_amount
+				value = 0.05
+			}
+			if={
+				limit={
+					check_variable = {
+						var = MEX.nationalist_tensions_amount
+						value = 0
+						compare = greater_than
+					}
+				}
+				add_to_variable = {
+					var = MEX.nationalist_tensions_amount
+					value = -0.025
+				}
+			}
+		}
+	}
+	
+	increase_constitutionalist_tensions = { ##Repression of Constitutionalists
+		fire_only_once = no
+		allowed = {
+			tag = MEX
+			check_variable = {
+				var = MEX.constitutionalist_tensions_amount
+				value = 1
+				compare = less_than
+			}
+		}
+		available = {
+			always = yes
+		}
+		is_good = yes
+		
+		days_remove = 20
+		days_re_enable = 0
+		
+		complete_effect ={
+			custom_effect_tooltip = MSMMexico_increase_constitutionalist_tensions
+			add_to_variable={
+				var = MEX.constitutionalist_tensions_amount
+				value = 0.05
+			}
+			if={
+				limit={
+					check_variable = {
+						var = MEX.constitutionalist_appeasement_amount
+						value = 0
+						compare = greater_than
+					}
+				}
+				add_to_variable = {
+					var = MEX.constitutionalist_appeasement_amount
+					value = -0.025
+				}
+			}
+		}
+	}
+	
+	appeal_to_constitutionalists = { ##Appeal to Constitutionalists
+		fire_only_once = no
+		allowed = {
+			tag = MEX
+			check_variable = {
+				var = MEX.constitutionalist_appeasement_amount
+				value = 1
+				compare = less_than
+			}
+		}
+		available = {
+			always = yes
+		}
+		is_good = yes
+		
+		days_remove = 20
+		days_re_enable = 0
+		
+		complete_effect ={
+			custom_effect_tooltip = MSMMexico_decrease_constitutionalist_tensions
+			add_to_variable={
+				var = MEX.constitutionalist_appeasement_amount
+				value = 0.05
+			}
+			if={
+				limit={
+					check_variable = {
+						var = MEX.constitutionalist_tensions_amount
+						value = 0
+						compare = greater_than
+					}
+				}
+				add_to_variable = {
+					var = MEX.constitutionalist_tensions_amount
+					value = -0.025
+				}
+			}
+		}
+	}
 }

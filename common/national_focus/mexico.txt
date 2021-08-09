@@ -8,13 +8,10 @@ focus = {
   id = mex_mexican_situation
   icon = GFX_focus_mex_caudillo_private_armies
   available = {
-    MEX = {
-      exists = yes
-    }
   }
   completion_reward = { add_political_power=10 }
-  cost = 15
-  x = 7	
+  cost = 12
+  x = 6
   y = 0
   ai_will_do = { factor = 4000 }
 }
@@ -23,13 +20,10 @@ focus = {
   id = mex_plan_of_san_luis_potosi #Plan of San Luis Potosí
   icon = GFX_focus_mex_caudillo_private_armies
   available = {
-    MEX = {
-      exists = yes
-    }
   }
   prerequisite = { focus = mex_mexican_situation  }
   completion_reward = { add_political_power=20 }
-  cost = 15
+  cost = 12
   relative_position_id = mex_mexican_situation
   x = 0
   y = 1
@@ -43,9 +37,6 @@ focus = {
   icon = GFX_focus_mex_caudillo_private_armies
   prerequisite = { focus=mex_political_effort }
   available = {
-    MEX = {
-      exists = yes
-    }
 	has_global_flag = MSMMEXICAN_REVOLUTION_GLOBAL
 	has_global_flag = MEX_support_madero
     check_variable = {
@@ -55,11 +46,13 @@ focus = {
 	}
   }
   prerequisite = { focus = mex_plan_of_san_luis_potosi }
-  completion_reward = { add_political_power=120 }
+  completion_reward = {
+	add_political_power = 120
+  }
   cost = 4
   relative_position_id = mex_political_effort
   x = 10
-  y = 2
+  y = 3
   ai_will_do = { base = 400 }
   mutually_exclusive = { focus=MEX_ww1_support_diaz focus=MEX_ww1_support_magonistas}
 }
@@ -105,41 +98,85 @@ focus = {
 }
 
 focus = {
+	id = mex_rebels_disarmament
+	icon = GFX_focus_mex_caudillo_private_armies
+	prerequisite = { focus = mex_war_is_over }
+	completion_reward = {
+		add_stability = -0.05
+		add_to_variable = {
+			var = MEX.constitutionalist_tensions_amount
+			value 0.2
+		}
+		add_to_variable = {
+			var = MEX.commnist_tensions_amount
+			value 0.2
+		}
+		add_to_variable = {
+			var = MEX.nationalist_tensions_amount
+			value 0.2
+		}
+		custom_effect_tooltip = MSMMEXICODISARMAMENTTOOLTIP
+	}
+	cost = 4
+	relative_position_id = mex_war_is_over
+	x = -3
+	y = 1
+	ai_will_do = { factor = 1000 }
+}
+
+focus = {
+	id = mex_address_plan_of_alaya
+	icon = GFX_focus_mex_caudillo_private_armies
+	prerequisite = { focus = mex_rebels_disarmament }
+	completion_reward = {
+		add_stability = -0.05
+	}
+	cost = 4
+	relative_position_id = mex_rebels_disarmament
+	x = 0
+	y = 1
+	ai_will_do = { factor = 1000 }
+}
+
+focus = {
 	id = mex_barra_agrarian_revolt
 	icon = GFX_focus_mex_caudillo_private_armies
 	prerequisite = { focus = mex_war_is_over }
 	available = {
-		
+		has_country_leader = { name = "Francisco León de la Barra" }
 	}
 	completion_reward = {
-		add_political_power = 1 ##ADD TIMED INFRASTRUCTURE REPAIR HERE
+		add_political_power = 1 ##ADD RESPONSE HERE
+	}
+	bypass = {
+		has_country_leader = { name = "Francisco I. Madero" }
 	}
 	cost = 4
 	relative_position_id = mex_war_is_over
 	x = 0
 	y = 1
 	ai_will_do = { factor = 1000 }
-    bypass = {
-        MEX = {
-			has_country_leader = { name = "Francisco I. Madero" }
-		}
-    }
 }
 
 focus = {
 	id = mex_barra_infrastructure
 	icon = GFX_focus_mex_caudillo_private_armies
-	prerequisite = { focus = mex_war_is_over }
+	prerequisite = { focus = mex_barra_agrarian_revolt }
 	available = {
-		MEX = {
-			has_country_leader = { name = "Francisco León de la Barra" }
-		}
+		has_country_leader = { name = "Francisco León de la Barra" }
 	}
 	completion_reward = {
 		add_political_power = 1 ##ADD TIMED INFRASTRUCTURE REPAIR HERE
+		add_timed_idea = {
+			idea = MEX_de_la_barra_infrastructure_plan
+			days = 100
+		}
+	}
+	bypass = {
+		has_country_leader = { name = "Francisco I. Madero" }
 	}
 	cost = 4
-	relative_position_id = mex_war_is_over
+	relative_position_id = mex_barra_agrarian_revolt
 	x = 0
 	y = 1
 	ai_will_do = { factor = 1000 }
@@ -159,15 +196,36 @@ focus = {
 	relative_position_id = mex_barra_infrastructure
 	x = 0
 	y = 1
-	ai_will_do = {
-		base = 1000
-		modifier = {
-			is_historical_focus_on = yes
-			factor = 100
-		}
-	}
+	ai_will_do = { factor = 1000 }
 }
 
+focus = {
+	id = mex_address_military
+	icon = GFX_focus_mex_caudillo_private_armies
+	prerequisite = { focus = mex_madero_presidency }
+	available = {
+	}
+	completion_reward = { country_event = { id = MSMMexico.17 } }
+	cost = 4
+	relative_position_id = mex_madero_presidency
+	x = -1
+	y = 1
+	ai_will_do = { factor = 1000 }
+}
+
+focus = {
+	id = mex_address_parliment
+	icon = GFX_focus_mex_caudillo_private_armies
+	prerequisite = { focus = mex_madero_presidency }
+	available = {
+	}
+	completion_reward = { country_event = { id = MSMMexico.16 } }
+	cost = 4
+	relative_position_id = mex_madero_presidency
+	x = 1
+	y = 1
+	ai_will_do = { factor = 1000 }
+}
 
 
 ###End of Madero tree###DIAZ GANG###
@@ -192,13 +250,17 @@ focus = {
 	x = -3
 	y = 1
 	ai_will_do  {
-		base = 50
+		factor = 1
 		modifier = {
+			factor = 100
 			has_game_rule = {
 				rule = MEX_AI_BEHAVIOR
 				option = DIAZ_PATH
 			}
-		factor = 1000
+		}
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes
 		}
 	}
 }
@@ -290,7 +352,7 @@ focus = {
 	}
 	cost = 4
 	x = 7
-	y = 8
+	y = 12
 	ai_will_do  { factor = 100 }
 }
 
@@ -722,7 +784,13 @@ focus = {
     icon = GFX_goal_generic_build_airforce
     completion_reward = { air_experience=25 if={ limit={ capital_scope={ NOT={ free_building_slots={ building=air_base size > 1 } } } } random_owned_state={ limit={ free_building_slots={ building=air_base size > 1 } } add_building_construction={ type=air_base level=2 instant_build=yes } ROOT={ set_country_flag=aviation_effort_AB } } } if={ limit={ capital_scope={ free_building_slots={ building=air_base size > 1 } } } capital_scope={ add_building_construction={ type=air_base level=2 instant_build=yes } ROOT={ set_country_flag=aviation_effort_AB } } } add_tech_bonus={ name=air_doc_bonus bonus=0.15 uses=1 category=air_doctrine } }
     complete_tooltip = { air_experience=25 if={ limit={ has_country_flag=aviation_effort_AB } add_building_construction={ type=air_base level=2 instant_build=yes } }			 add_tech_bonus={ name=air_doc_bonus bonus=0.15 uses=1 category=air_doctrine }			 }
-    cost = 10
+    available = {
+        OR = {
+            has_global_flag = MSMMEXICAN_REVOLUTION_FED_VICTORY
+            has_global_flag = MSMMEXICAN_REVOLUTION_REV_VICTORY
+        }
+    }
+	cost = 10
     x = 22
     y = 0
     ai_will_do = { factor = 30 }
@@ -920,6 +988,12 @@ focus = {
     id = MEX_ww1_industrial_effort
     icon = GFX_goal_generic_production
     completion_reward = { add_tech_bonus={ name=industrial_bonus bonus=0.15 uses=1 category=industry } }
+	available = {
+        OR = {
+            has_global_flag = MSMMEXICAN_REVOLUTION_FED_VICTORY
+            has_global_flag = MSMMEXICAN_REVOLUTION_REV_VICTORY
+        }
+    }
     cost = 10
     x = 29
     y = 0
@@ -976,7 +1050,9 @@ focus = {
     id = MEX_ww1_dockyard_effort_1
     prerequisite = { focus = MEX_ww1_infrastructure_effort }
     prerequisite = { focus = MEX_ww1_naval_effort }
-    available = { date > 1911.1.1 }
+    available = {
+		date > 1911.1.1
+	}
     icon = GFX_goal_generic_construct_naval_dockyard
     x = 32
     y = 2
@@ -1484,7 +1560,14 @@ focus = {
   focus ={
     id = MEX_ww1_naval_effort
     icon = GFX_goal_generic_build_navy
-    available = { any_state={ is_coastal=yes is_controlled_by=ROOT } }
+    available = {
+		any_state={ is_coastal=yes is_controlled_by=ROOT }
+	
+        OR = {
+            has_global_flag = MSMMEXICAN_REVOLUTION_FED_VICTORY
+            has_global_flag = MSMMEXICAN_REVOLUTION_REV_VICTORY
+        }
+	}
     completion_reward = { navy_experience=25 if={ limit={ NOT={ any_owned_state={ dockyard > 0 free_building_slots={ building=dockyard size > 2 include_locked=yes } } } any_owned_state={ is_coastal=yes } } random_owned_state={ limit={ is_coastal=yes free_building_slots={ building=dockyard size > 2 include_locked=yes } } add_extra_state_shared_building_slots=3 add_building_construction={ type=dockyard level=3 instant_build=yes } } set_country_flag=naval_effort_built } if={ limit={ NOT={ has_country_flag=naval_effort_built } any_owned_state={ dockyard > 0 free_building_slots={ building=dockyard size > 2 include_locked=yes } } } random_owned_state={ limit={ dockyard > 0 free_building_slots={ building=dockyard size > 2 include_locked=yes } } add_extra_state_shared_building_slots=3 add_building_construction={ type=dockyard level=3 instant_build=yes } } set_country_flag=naval_effort_built } if={ limit={ NOT={ has_country_flag=naval_effort_built } NOT={ any_owned_state={ free_building_slots={ building=dockyard size > 2 include_locked=yes } } } } random_state={ limit={ controller={ tag=ROOT } free_building_slots={ building=dockyard size > 2 include_locked=yes } } add_extra_state_shared_building_slots=3 add_building_construction={ type=dockyard level=3 instant_build=yes } } }			 }
     complete_tooltip = { navy_experience=25 add_extra_state_shared_building_slots=3 add_building_construction={ type=dockyard level=3 instant_build=yes } }
     cost = 10

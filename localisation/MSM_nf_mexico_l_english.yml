@@ -1,6 +1,6 @@
 ﻿l_english:
  mex_mexican_situation:0 "The Mexican Situation"
- mex_mexican_situation_desc:0 "Revolution is brewing in Mexico. Porfiro   has been president for the last 26 years of consecutive terms with a total of 31 years as president. Formerly a war hero of the French Invasion of Mexico, he is finding his list of allies growing thin as a combination of nationalists, constitutionalists, and communists prepare to seize control and forge a new future for Mexico."
+ mex_mexican_situation_desc:0 "Revolution is brewing in Mexico. Porfiro   has been president for the last 26 years of consecutive terms with a total of 31 years as president. Formerly a war hero of the French Invasion of Mexico, he is finding his list of allies growing thin as an alliance of nationalists, constitutionalists, and communists prepare to seize control and forge a new future for Mexico."
  mex_plan_of_san_luis_potosi:0 "Plan of San Luis Potosí"
  mex_plan_of_san_luis_potosi_desc:0 "The Plan of San Luis Potosí was a document that called for the nullification of the 1910 Mexican election, as well as called for a revolution to remove Porfiro Díaz. This document justified the Mexican Revolution of 1911 and all subsequent internal conflicts in the years to come."
  mex_after_coup:0 "Legitimize Presidency"
@@ -35,3 +35,5 @@
  mex_dispatch_north_desc:0 "The northern regions are swarming with rebels. We should send more armies up there to hold back the main rebel advance until the Zapatistas can be neutralized."
  mex_porfiriato_2:0 "Second Porfiriato"
  mex_porfiriato_2_desc:0 "The Porfiriato has been a great time for Mexico. Through the protection of wealthy business owners, Díaz has ensured that mexican industries remain strong, regardless of foreign ownership."
+ MSMMEXICODISARMAMENTTOOLTIP: "§RAsking the revolutionaries to lay down their arms will cause many of them to feel upset§!"
+ MSM_AGRARIAN_UPRISING:0 "§+Plan of Alaya has been declared§!"

@@ -16,5 +16,19 @@ ideas = {
 				army_core_attack_factor = 0.15
 			}
 		}
+		MEX_de_la_barra_infrastructure_plan = {
+
+			picture = GFX_unknown_idea
+				
+			allowed = {
+				
+			}
+
+			removal_cost = -1
+				
+			modifier = {
+				repair_speed_infrastructure_factor = 0.3
+			}
+		}
 	}
 }
