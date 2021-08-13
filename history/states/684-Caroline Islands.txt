@@ -13,7 +13,6 @@ state={
 		owner=GER
 		1936.1.1={ 
 			owner=JAP
-			add_core_of=JAP
 			victory_points={ 2489 5 }
 			victory_points={ 13028 1 }
 			buildings={
@@ -42,7 +41,9 @@ state={
 			}
 		1919.1.1 = {
             owner = JAP
-            add_core_of = JAP
         }
+		1919.7.2 = {
+			owner = GER
+		}
 		}
 	}

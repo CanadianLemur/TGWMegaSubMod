@@ -1,0 +1,205 @@
+focus_tree = {
+	id = arabistan_communist
+	default = no
+	country = { factor=0 modifier = { add = 30 has_country_flag = arabistan_communist_republic } }
+	###########################################################################################################################
+	# POLITICAL
+	###########################################################################################################################
+	focus = {
+		id = ARB_COM_liberation_of_arabistan
+		icon = GFX_focus_generic_treaty
+		available = {
+			has_government = communism
+		}
+		completion_reward = { 
+			
+		}
+		ai_will_do = { factor = 1  }
+		cost = 1
+		x = 10
+		y = 0
+	}
+	focus = {
+		id = ARB_COM_soviet_investment_in_arabistan_oil_fields
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = {focus = ARB_COM_liberation_of_arabistan}
+		relative_position_id = ARB_COM_liberation_of_arabistan
+		available = {
+			has_government = communism
+			is_subject_of = SOV
+		}
+		completion_reward = { 
+		413 = {
+			add_resource = {
+				type = oil
+				amount = 5
+				}
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+
+			}
+			give_resource_rights = { receiver = SOV state = 413 }
+		}
+		ai_will_do = { factor = 1  }
+		cost = 5
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = ARB_COM_foundation_of_the_red_army_of_arabistan
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = {focus = ARB_COM_liberation_of_arabistan}
+		relative_position_id = ARB_COM_liberation_of_arabistan
+		available = {
+			has_government = communism
+		}
+		completion_reward = { 
+			army_experience = 10
+			add_manpower = 1000
+			#load oob
+		}
+		ai_will_do = { factor = 1  }
+		cost = 5
+		x = 2
+		y = 1
+	}
+	focus = {
+		id = ARB_COM_found_arsenal_of_ahvaz
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = {focus = ARB_COM_liberation_of_arabistan}
+		relative_position_id = ARB_COM_liberation_of_arabistan
+		available = {
+			has_government = communism
+			NOT = {has_war_with = SOV}
+		}
+		completion_reward = { 
+			413 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+			# unlock designer
+			}
+		}
+		ai_will_do = { factor = 1  }
+		cost = 5
+		x = -2
+		y = 1
+	}
+	focus = {
+		id = ARB_COM_subvert_pan_arabism
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = {focus = ARB_COM_found_arsenal_of_ahvaz}
+		prerequisite = {focus = ARB_COM_soviet_investment_in_arabistan_oil_fields}
+		prerequisite = {focus = ARB_COM_foundation_of_the_red_army_of_arabistan}
+		relative_position_id = ARB_COM_soviet_investment_in_arabistan_oil_fields
+		available = {
+			has_government = communism
+			has_political_power > 200
+		}
+		completion_reward = { 
+			add_political_power = -200
+		}
+		ai_will_do = { factor = 1  }
+		cost = 5
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = ARB_COM_safehaven_for_arab_nationalists
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = {focus = ARB_COM_subvert_pan_arabism}
+		relative_position_id = ARB_COM_subvert_pan_arabism
+		available = {
+			has_government = communism
+		}
+		completion_reward = { 
+			#give some advisors and manpower
+		}
+		ai_will_do = { factor = 1  }
+		cost = 5
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = ARB_COM_a_suitable_figurehead
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = {focus = ARB_COM_safehaven_for_arab_nationalists}
+		relative_position_id = ARB_COM_safehaven_for_arab_nationalists
+		available = {
+			has_government = communism
+		}
+		completion_reward = { 
+			create_country_leader = {
+				name = "Shukri al-Quwatli"
+				desc = "POLITICS_SHUKRI_AL_QUWATLI_DESC"
+				picture = ".dds"
+				expire = "1968.1.1"
+				ideology = stalinism
+				traits = {
+					MSM_nationalist_hero
+					MSM_reluctant_revolutionary
+				}
+			}
+		}
+		ai_will_do = { factor = 1  }
+		cost = 5
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = ARB_COM_union_of_arab_socialist_republics
+		icon = GFX_focus_generic_treaty
+		prerequisite = {focus = ARB_COM_a_suitable_figurehead}
+		relative_position_id = ARB_COM_a_suitable_figurehead
+		available = {
+			has_government = communism
+		}
+		completion_reward = { 
+			
+		}
+		ai_will_do = { factor = 1  }
+		cost = 10
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = ARB_COM_raiding_the_turks
+		icon = GFX_focus_generic_treaty
+		prerequisite = {focus = ARB_COM_union_of_arab_socialist_republics}
+		relative_position_id = ARB_COM_union_of_arab_socialist_republics
+		available = {
+			has_government = communism
+			TUR = {owns_state = 291}
+		}
+		completion_reward = { 
+			#unlock decisions to raid the ottomans for equipment and political power
+		}
+		ai_will_do = { factor = 1  }
+		cost = 5
+		x = -2
+		y = 1
+	}
+	focus = {
+		id = ARB_COM_spreading_arab_communism
+		icon = GFX_focus_generic_treaty
+		prerequisite = {focus = ARB_COM_union_of_arab_socialist_republics}
+		relative_position_id = ARB_COM_union_of_arab_socialist_republics
+		available = {
+			has_government = communism
+		}
+		completion_reward = { 
+			#unlock decisions to spread communism in arab countries
+		}
+		ai_will_do = { factor = 1  }
+		cost = 5
+		x = 2
+		y = 1
+	}
+}

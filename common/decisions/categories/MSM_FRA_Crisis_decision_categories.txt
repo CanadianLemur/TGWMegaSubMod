@@ -1,19 +1,10 @@
-French_civil_unrest = {
-	icon = generic_political_actions
-	priority = 30
-	available = {
-	}
-	visible = {
-		tag = FRA
-	}
-}
 French_civil_war = {
 	icon = generic_political_actions
 	priority = 30
 	available = {
 	}
 	visible = {
-		tag = FRA
+		original_tag = FRA
 	}
 }
 French_collapse_opportunities = {
@@ -22,6 +13,6 @@ French_collapse_opportunities = {
 	available = {
 	}
 	visible = {
-		NOT = {tag = FRA}
+		NOT = {original_tag = FRA}
 	}
 }

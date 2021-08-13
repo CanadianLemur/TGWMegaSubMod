@@ -1,227 +1,8 @@
-
-French_civil_unrest = {
-	FRA_civil_unrest = {                      
-		allowed = { tag = FRA }              
-		available = {     
-		has_completed_focus = FRA_crisis_crack_down_on_communists
-		}
-		activation = {
-			has_focus_tree = france_crisis
-			has_global_flag = kis_second_treaty_frankfort
-		}
-		is_good = no   
-		fire_only_once = yes
-		ai_will_do = { factor = 100 } 
-		selectable_mission = no               
-		days_mission_timeout = 10
-		timeout_effect = {
-			create_dynamic_country = {
-					original_tag = FRA
-					set_country_flag = french_communist_rebellion
-					set_politics = {
-						ruling_party = communism
-					}
-					set_cosmetic_tag = ACF
-					set_research_slots = 3
-					reserve_dynamic_country = yes
-					set_popularities = {
-						democratic = 10
-						neutrality = 10
-						fascism = 10
-						anarchism = 20
-						communism = 50
-					}
-				}
-			create_dynamic_country = {
-					original_tag = FRA
-					set_country_flag = french_democratic_rebellion
-					set_politics = {
-						ruling_party = democratic
-					}
-					mark_focus_tree_layout_dirty = yes #reloads focus tree use sparingly
-					set_popularities = {
-						democratic = 80
-						neutrality = 10
-						fascism = 10
-					}
-					set_cosmetic_tag = AFL
-					set_research_slots = 3
-					reserve_dynamic_country = yes
-				}
-				ACF = {load_focus_tree = french_communist_army}
-	if = {
-		limit = {owns_state = 29} 
-	ACF = {	transfer_state = 29 
-		add_state_core = 29
-		}
-		}
-		if = {
-		limit = {owns_state = 785}
-	ACF = {	transfer_state = 785
-		add_state_core = 785
-		}
-		}
-		if = {
-		limit = {owns_state = 18}
-	ACF = {	transfer_state = 18 
-		add_state_core = 18
-		}
-		}
-		if = {
-		limit = {owns_state = 16}
-	ACF = {	transfer_state = 16 
-		add_state_core = 16
-		}
-		}
-		if = {
-		limit = {owns_state = 15}
-	ACF = {	transfer_state = 15 
-		add_state_core = 15
-		}
-		}
-	if = { limit = {NOT = {has_completed_focus = FRA_crisis_alliance_with_action_francaise}}
-	create_dynamic_country = {
-					original_tag = FRA
-					set_country_flag = french_fascist_rebellion
-					set_politics = {
-						ruling_party = fascism
-					}
-					set_cosmetic_tag = AFA
-					set_research_slots = 3
-					reserve_dynamic_country = yes	
-					mark_focus_tree_layout_dirty = yes #reloads focus tree use sparingly
-					set_popularities = {
-						democratic = 10
-						neutrality = 20
-						fascism = 70
-					}
-				}
-	if = {
-		limit = {owns_state = 14}
-	AFA = {	transfer_state = 14
-		add_state_core = 14
-		}
-		}
-	if = {
-		limit = {owns_state = 30}
-	AFA = {	transfer_state = 30
-		add_state_core = 30
-		}
-		}
-			if = {
-		limit = {owns_state = 23}
-	AFA = {	transfer_state = 23
-		add_state_core = 23
-		}
-		}
-	if = {
-		limit = {owns_state = 19}
-	AFA = {	transfer_state = 19
-		add_state_core = 19
-		}
-		}
-		}
-		if = {
-		limit = {owns_state = 24}
-	AFL = {	transfer_state = 24
-		add_state_core = 24
-		}
-		}
-			if = {
-		limit = {owns_state = 33}
-	AFL = {	transfer_state = 33
-		add_state_core = 33
-		}
-		}
-			if = {
-		limit = {owns_state = 27}
-	AFL = {	transfer_state = 27
-		add_state_core = 27
-		}
-		}
-		declare_war_on = {
-		target = AFL 
-		type = civil_war
-		}
-		declare_war_on = {
-		target = ACF
-		type = civil_war
-		}
-		if = {
-		limit = {AFA = {exists = yes}}
-		AFA = {declare_war_on = {
-		target = AFL 
-		type = civil_war
-		}
-		declare_war_on = {
-		target = ACF 
-		type = civil_war
-		}
-		declare_war_on = {
-		target = FRA 
-		type = civil_war
-		}
-		}
-		}
-		AFL = {
-		declare_war_on = {
-		target = ACF 
-		type = civil_war
-		}
-		}
-		transfer_units_fraction= {
-		target = ACF
-		size = 1.0
-		stockpile_ratio = 0.2
-		army_ratio = 0.2
-		navy_ratio = 0.2
-		air_ratio = 0.2
-		keep_unit_leaders_trigger = {
-			always = yes
-			}
-		}
-		transfer_units_fraction= {
-		target = AFL
-		size = 1.0
-		stockpile_ratio = 0.2
-		army_ratio = 0.2
-		navy_ratio = 0.2
-		air_ratio = 0.2
-		keep_unit_leaders_trigger = {
-			always = yes
-			}
-		}
-		if = {
-		limit = {AFA = {exists = yes}}
-				transfer_units_fraction= {
-		target = AFA
-		size = 1.0
-		stockpile_ratio = 0.2
-		army_ratio = 0.5
-		navy_ratio = 0.5
-		air_ratio = 0.5
-		keep_unit_leaders_trigger = {
-			always = yes
-			}
-		}
-		}
-		ACF = {inherit_technology = FRA}
-		AFA = {inherit_technology = FRA}
-		AFL = {inherit_technology = FRA}
-		
-		}
-		complete_effect = {                   
-		
-		}
-	}
-	}
-	
-
 French_civil_war = {
 	FRA_flee_to_africa = {                      
-		allowed = { tag = FRA }
+		allowed = { original_tag = FRA }
 		visible = {
-		has_focus_tree = france_crisis
+		has_country_flag = french_military_government
 		has_global_flag = kis_second_treaty_frankfort
 		}
 		available = {     
@@ -229,8 +10,6 @@ French_civil_war = {
 		surrender_progress > 0.5
 		}
 		activation = {
-			has_focus_tree = france_crisis
-			has_global_flag = kis_second_treaty_frankfort
 		}
 		is_good = yes    
 		fire_only_once = yes
@@ -244,8 +23,8 @@ French_civil_war = {
 		set_country_flag = exiled_france
 		if = {
 		limit = {not = {controls_state = 19}}
-		19 = {controller = {country_event = MSMFrenchCrisis.2}}		}
-		else = {16 = {controller = {country_event = MSMFrenchCrisis.2}}}
+		19 = {controller = {country_event = MSMFrenchCrisis.3}}		}
+		else = {16 = {controller = {country_event = MSMFrenchCrisis.3}}}
 		add_timed_idea = {
 		idea = MSM_FRA_recovering_from_exile
 		days = 200
@@ -253,7 +32,44 @@ French_civil_war = {
 		load_focus_tree = france_exiled
 		}
 		}
+	FRA_begin_offensive = {                      
+		allowed = { original_tag = FRA }
+		visible = {
+		or = {has_war_with = AFL has_war_with = AFA has_war_with = ACF has_war_with = FRP}
 		}
+		available = {
+		not = {has_country_flag = FRA_planning_offensive}
+		}
+		activation = {
+		}
+		state_target = yes
+		target_trigger = {
+		   FROM = {
+			   has_state_flag = FRA_unplanned_offensive_flag
+			   any_neighbor_state = { is_controlled_by = ROOT }
+			   NOT = {is_controlled_by = ROOT}
+		   }
+	   }
+		cost = 20
+		days_remove = 20
+		is_good = yes    
+		fire_only_once = yes
+		ai_will_do = { factor = 100 } 
+		complete_effect = {set_country_flag = FRA_planning_offensive}
+		remove_effect = {
+		clr_country_flag = FRA_planning_offensive
+		FROM = {
+		remove_state_flag = FRA_unplanned_offensive_flag
+		remove_province_modifier = {
+					static_modifiers = { unplanned_offensive }
+					province = {
+						all_provinces = yes
+					}
+				}
+		}
+	}
+	}
+	}
 French_collapse_opportunities = {
 	seize_madagascar = {                      
 		allowed = { tag = GER }              

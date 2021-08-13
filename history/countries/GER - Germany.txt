@@ -1087,7 +1087,13 @@ if = {
 
 1914.1.1 = {
 	oob = "GER_1914"
-
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "GER_1914_naval_mtg"
+		else = {
+			set_naval_oob = "GER_1914_naval_legacy"
+		}
+	}
 
 	#-------------------------------------------------------
 	#							NF
@@ -2017,7 +2023,13 @@ if = {
 	set_cosmetic_tag = GER_WEIMAR
 	set_political_power = 0
 	oob = "GER_1919"
-
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "GER_1919_naval_mtg"
+		else = {
+			set_naval_oob = "GER_1919_naval_legacy"
+		}
+	}
 	add_ideas = {
 		GER_interwar_spirit_BannedConscription
 	}
@@ -2075,10 +2087,6 @@ if = {
 
 	unlock_national_focus = GER_ww1_support_boer
 	unlock_national_focus = GER_ww1_support_boer_war
-
-	unlock_national_focus = GER_ww1_unitedpeople
-
-	unlock_national_focus = GER_ww1_unitedpeople
 
 	unlock_national_focus = GER_ww1_polnische_wehrmacht
 
@@ -2988,6 +2996,17 @@ if = {
 }
 1919.7.2 = {
 	oob = "GER_1919_alternate"
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "GER_1919_naval_mtg_alternate"
+		else = {
+			set_naval_oob = "GER_1919_naval_legacy_alternate"
+		}
+	}
+	if = {
+		limit = { has_dlc = "La Resistance" }
+		create_intelligence_agency = yes
+	}
 	set_politics = {
 		ruling_party = neutrality
 		last_election = "1912.1.12"

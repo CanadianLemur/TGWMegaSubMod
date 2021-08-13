@@ -1,0 +1,19 @@
+focus_tree = {
+	id = french_liberty_army
+	default = no
+	country = { factor=0 modifier = { add = 30 has_country_flag = french_democratic_rebellion } }
+	###########################################################################################################################
+	# POLITICAL
+	###########################################################################################################################
+
+	focus = {
+		id = AFL_defend_the_republic
+		icon = GFX_
+		completion_reward = {  
+		add_ideas = MSM_FRA_defend_the_republic
+		}
+		ai_will_do = { factor = 20 }
+		cost = 2
+		x = 10
+		y = 0
+	}

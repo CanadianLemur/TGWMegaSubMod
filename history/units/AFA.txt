@@ -1,0 +1,109 @@
+﻿
+division_template = {
+	name = "Action Francaise Militia"	# Militia
+	is_locked = yes
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		}
+	priority = 0
+}
+###################################################################
+units = {
+	division= { 
+			name = "Action Francaise Militia"
+			location=6657 # La Rochelle
+			division_template = "Action Francaise Militia"
+			start_experience_factor=0.01
+			start_equipment_factor = 1 
+			start_manpower_factor = 1
+			}
+	division= { 
+			name = "Action Francaise Militia"
+			location=6657 # La Rochelle
+			division_template = "Action Francaise Militia"
+			start_experience_factor=0.01
+			start_equipment_factor = 1 
+			start_manpower_factor = 1
+			}
+	division= { 
+			name = "Action Francaise Militia"
+			location=6657 # La Rochelle
+			division_template = "Action Francaise Militia"
+			start_experience_factor=0.01
+			start_equipment_factor = 1 
+			start_manpower_factor = 1
+			}
+	division= { 
+			name = "Action Francaise Militia"
+			location=6657 # La Rochelle
+			division_template = "Action Francaise Militia"
+			start_experience_factor=0.01
+			start_equipment_factor = 1 
+			start_manpower_factor = 1
+			}
+	division= { 
+			name = "Action Francaise Militia"
+			location=9737 # Bordeaux
+			division_template = "Action Francaise Militia"
+			start_experience_factor=0.01
+			start_equipment_factor = 1 
+			start_manpower_factor = 1
+			}
+	division= { 
+			name = "Action Francaise Militia"
+			location=9737 # Bordeaux
+			division_template = "Action Francaise Militia"
+			start_experience_factor=0.01
+			start_equipment_factor = 1 
+			start_manpower_factor = 1
+			}
+	division= { 
+			name = "Action Francaise Militia"
+			location=9737 # Bordeaux
+			division_template = "Action Francaise Militia"
+			start_experience_factor=0.01
+			start_equipment_factor = 1 
+			start_manpower_factor = 1
+			}
+	division= { 
+			name = "Action Francaise Militia"
+			location=9737 # Bordeaux
+			division_template = "Action Francaise Militia"
+			start_experience_factor=0.01
+			start_equipment_factor = 1 
+			start_manpower_factor = 1
+			}
+	division= { 
+			name = "Vendée Militia"
+			location=11600 # Vendée
+			division_template = "Action Francaise Militia"
+			start_experience_factor=0.01
+			start_equipment_factor = 1 
+			start_manpower_factor = 1
+			}
+	division= { 
+			name = "Vendée Militia"
+			location=11600 # Vendée
+			division_template = "Action Francaise Militia"
+			start_experience_factor=0.01
+			start_equipment_factor = 1 
+			start_manpower_factor = 1
+			}
+	division= { 
+			name = "Vendée Militia"
+			location=11600 # Vendée
+			division_template = "Action Francaise Militia"
+			start_experience_factor=0.01
+			start_equipment_factor = 1 
+			start_manpower_factor = 1
+			}
+	division= { 
+			name = "Vendée Militia"
+			location=11600 # Vendée
+			division_template = "Action Francaise Militia"
+			start_experience_factor=0.01
+			start_equipment_factor = 1 
+			start_manpower_factor = 1
+			}
+	}

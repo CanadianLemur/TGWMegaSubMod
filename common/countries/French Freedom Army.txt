@@ -1,5 +1,0 @@
-#French Freedom Army
-
-graphical_culture = western_european_gfx
-
-color = { 20  70  0 }

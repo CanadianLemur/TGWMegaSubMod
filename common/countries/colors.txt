@@ -637,6 +637,14 @@ MXE = {
 	color = rgb { 10 24 14  }
 	color_ui = rgb { 10 24 14  }
 }
+ARB = {
+	color = rgb { 250 114 99 }
+	color_ui = rgb { 250 114 99 }
+}
+ARB = {
+	color = rgb { 255 42 50 }
+	color_ui = rgb { 255 42 50 }
+}
 D01 = {
 	color = rgb { 187 80 86 }
 	color_ui = rgb { 243 103 112 }

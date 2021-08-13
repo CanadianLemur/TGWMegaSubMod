@@ -1,5 +1,0 @@
-#Action Francaise
-
-graphical_culture = western_european_gfx
-
-color = { 255  213  228 }

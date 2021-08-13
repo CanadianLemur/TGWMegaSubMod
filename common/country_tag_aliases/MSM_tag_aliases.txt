@@ -40,3 +40,11 @@ AFA = {	 ##Action Francaise Army
 	original_tag = FRA
 	has_country_flag = french_fascist_rebellion
 }
+FRP = {	 ##France Petain
+	original_tag = FRA
+	has_country_flag = french_military_government
+}
+PSR = {	 ##Jangali Persia
+	original_tag = PER
+	has_government = communism
+}

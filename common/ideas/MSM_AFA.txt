@@ -64,7 +64,7 @@ ideas={
 				always = no
 			}
 			cancel = {
-			not = {ruling_party = fascism}
+			not = {has_government = fascism}
 			}
 			
 			removal_cost = -1 

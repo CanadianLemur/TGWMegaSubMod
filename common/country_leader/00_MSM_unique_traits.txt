@@ -65,6 +65,18 @@ leader_traits = {
 	ai_will_do = {
 		factor = 0
 	}
+	}
+	MSM_nationalist_hero = {
+		political_power_gain = 0.10
+		war_support_factor = 0.10
+		army_attack_factor  = 0.05
+		army_defence_factor = 0.05
+	}
+	MSM_reluctant_revolutionary = {
+		political_power_gain = -0.25
+		autonomy_gain = 0.1
+		communism_drift = -0.01
+	}
 }
 	MSM_lion_of_africa= {
 		recruitable_population_factor = 0.15

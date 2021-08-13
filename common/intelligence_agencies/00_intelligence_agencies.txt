@@ -50,10 +50,25 @@ intelligence_agency = {
 	picture = GFX_intelligence_agency_logo_ger
 	names = { "Abwehr" }
 	
-	default = { tag = GER }
-	available = { original_tag = GER }
+	default = { tag = GER
+	has_global_flag = kis_treaty_of_versailles
+	}
+	available = { original_tag = GER 
+	has_global_flag = kis_treaty_of_versailles
+	}
 }
-
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_ger
+	names = { "Abteilung III b" }
+	
+	default = { tag = GER 
+	NOT = {has_global_flag = kis_treaty_of_versailles}
+	}
+	available = { original_tag = GER 
+	NOT = {has_global_flag = kis_treaty_of_versailles}
+	}
+}
 intelligence_agency = {
 	
 	picture = GFX_intelligence_agency_logo_jap

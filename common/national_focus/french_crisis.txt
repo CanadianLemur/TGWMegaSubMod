@@ -24,7 +24,318 @@ focus_tree = {
 		prerequisite = {focus = FRA_crisis_no_alliances_with_fascists focus = FRA_no_compromises_on_democratic_principles focus = FRA_crisis_national_salvation_coalition focus = FRA_crisis_going_it_alone focus = FRA_crisis_distribute_bread focus = FRA_crisis_socialist_concessions}
 		relative_position_id = FRA_crisis_shame_of_defeat
 		completion_reward = {
+		remove_ideas = MSM_FRA_rising_unrest
 		custom_effect_tooltip = civil_war_start_france
+		hidden_effect = {
+		if = {
+		limit =  {has_completed_focus = FRA_crisis_action_francaise_coup}
+		set_country_flag = french_fascist_rebellion
+		load_focus_tree = action_francaise_army
+		add_manpower = 10000
+		}
+		if = {
+		limit =  {has_completed_focus = FRA_crisis_petain_takes_control}
+		set_country_flag = french_military_government
+		load_focus_tree = petain_government
+		add_manpower = 10000
+		}
+		if = {
+		limit =  {has_completed_focus = FRA_crisis_democracy_holds_on}
+		set_country_flag = french_democratic_rebellion 
+		load_focus_tree = french_liberty_army
+		add_manpower = 10000
+		}
+		if = {
+		limit =  {has_completed_focus = FRA_crisis_communard_coup}
+		set_country_flag = french_communist_rebellion
+		load_focus_tree = french_communist_army
+		add_manpower = 10000
+		}
+		if = {
+			limit = {has_stability < 0.95}
+			add_ideas = MSM_FRA_civil_war_radicalism
+				if = {limit = {TUN = {is_subject_of = FRA}}
+				set_autonomy = {
+					target = TUN
+					autonomy_state = autonomy_free
+				}
+				}
+				if = {
+					limit = {NOT = {OR = {has_completed_focus = FRA_crisis_communard_coup has_completed_focus = FRA_crisis_socialist_concessions}}}
+					create_dynamic_country = {
+					original_tag = FRA
+					add_manpower = 10000
+					set_country_flag = french_communist_rebellion
+					set_politics = {
+						ruling_party = communism
+					}
+					load_focus_tree = french_communist_army
+					set_research_slots = 3
+					add_ideas = MSM_FRA_civil_war_radicalism
+					reserve_dynamic_country = yes
+					set_popularities = {
+						democratic = 10
+						neutrality = 10
+						fascism = 10
+						anarchism = 20
+						communism = 50
+					}
+				}
+					if = {
+						limit = {owns_state = 16} 
+					ACF = {	transfer_state = 16
+						}
+						}
+					if = {
+						limit = {owns_state = 15} 
+					ACF = {	transfer_state = 15
+						}
+						}
+					if = {
+						limit = {owns_state = 785} 
+					ACF = {	transfer_state = 785
+						}
+						}
+					if = {
+						limit = {owns_state = 29} 
+					ACF = {	transfer_state = 29
+						}
+						}
+					if = {
+						limit = {owns_state = 18} 
+					ACF = {	transfer_state = 18
+						}
+						}
+					if = {
+						limit = {owns_state = 836} 
+					ACF = {	transfer_state = 836
+						}
+						}
+					transfer_units_fraction= {
+						target = ACF
+						size = 0.3
+						stockpile_ratio = 0.3
+						army_ratio = 0.3
+						navy_ratio = 0.0
+						air_ratio = 0.0
+						keep_unit_leaders_trigger = {
+							always = yes
+						}
+					}
+				}
+			if = { limit = {NOT = {has_completed_focus = FRA_crisis_democracy_holds_on}}
+			create_dynamic_country = {
+					original_tag = FRA
+					add_manpower = 10000
+					set_country_flag = french_democratic_rebellion
+					set_politics = {
+						ruling_party = democratic
+					}
+					add_ideas = MSM_FRA_civil_war_radicalism
+					mark_focus_tree_layout_dirty = yes #reloads focus tree use sparingly
+					set_popularities = {
+						democratic = 80
+						neutrality = 10
+						fascism = 10
+					}
+					set_research_slots = 3
+					reserve_dynamic_country = yes
+					load_focus_tree = french_liberty_army
+				}
+				if = {
+						limit = {owns_state = 24} 
+					AFL = {	transfer_state = 24
+						}
+						}
+				if = {
+						limit = {owns_state = 27} 
+					AFL = {	transfer_state = 27
+						}
+						}
+				if = {
+						limit = {owns_state = 33} 
+					AFL = {	transfer_state = 33
+						}
+						}
+					transfer_units_fraction= {
+						target = AFL
+						size = 0.3
+						stockpile_ratio = 0.3
+						army_ratio = 0.3
+						navy_ratio = 0.0
+						air_ratio = 0.0
+						keep_unit_leaders_trigger = {
+							always = yes
+						}
+					}
+			}
+			if = { limit = {NOT = {OR = {has_completed_focus = FRA_crisis_national_salvation_coalition has_completed_focus = FRA_crisis_action_francaise_coup}}}
+				create_dynamic_country = {
+					original_tag = FRA
+					add_manpower = 10000
+					set_country_flag = french_fascist_rebellion
+					set_politics = {
+						ruling_party = fascism
+					}
+					add_ideas = MSM_FRA_civil_war_radicalism
+					set_research_slots = 3
+					reserve_dynamic_country = yes	
+					mark_focus_tree_layout_dirty = yes #reloads focus tree use sparingly
+					set_popularities = {
+						democratic = 10
+						neutrality = 20
+						fascism = 70
+					}
+					load_focus_tree = action_francaise_army
+				}
+				if = {
+						limit = {owns_state = 30} 
+					AFA = {	transfer_state = 30
+						}
+						}
+				if = {
+						limit = {owns_state = 23} 
+					AFA = {	transfer_state = 23
+						}
+						}
+				if = {
+						limit = {owns_state = 19} 
+					AFA = {	transfer_state = 19
+						}
+						}
+				if = {
+						limit = {owns_state = 14} 
+					AFA = {	transfer_state = 14
+						}
+						}
+					transfer_units_fraction= {
+						target = AFA
+						size = 0.5
+						stockpile_ratio = 0.3
+						army_ratio = 0.3
+						navy_ratio = 0.0
+						air_ratio = 0.0
+						keep_unit_leaders_trigger = {
+							always = yes
+						}
+					}
+				}
+			if = { limit = {NOT = {OR = {has_completed_focus = FRA_crisis_national_salvation_coalition has_completed_focus = FRA_crisis_petain_takes_control}}}
+				create_dynamic_country = {
+					original_tag = FRA
+					add_manpower = 10000
+					set_country_flag = french_military_government
+					set_politics = {
+						ruling_party = neutrality
+					}
+					add_ideas = MSM_FRA_civil_war_radicalism
+					set_research_slots = 3
+					reserve_dynamic_country = yes	
+					mark_focus_tree_layout_dirty = yes #reloads focus tree use sparingly
+					set_popularities = {
+						democratic = 10
+						neutrality = 70
+						fascism = 20
+					}
+							set_party_name = { 
+								ideology = neutrality 
+								long_name = FRA_crisis_name_long 
+								name = FRA_crisis_name 
+								}
+								create_country_leader = {
+								name = "Phillipe Pétain"
+								desc = "POLITICS_phillipe_petain_DESC"
+								picture = "gfx/hoi4tgw_portraits/FRA/army_generals/FRA_philippe_petain.dds"
+								expire = "1965.1.1"
+								ideology = despotism
+								traits = {
+								
+								}
+								}
+					load_focus_tree = petain_government
+				}
+				every_owned_state = {
+				limit = {NOT = {OR = {state = 33 state = 24 state = 27 state = 14 state = 785 state = 836 state = 29 state = 15 state = 16 state = 30 state = 23 state = 19}}}
+				FRP  = {transfer_state = PREV}
+				}
+				transfer_navy = {
+					target = FRP
+				}
+					every_unit_leader = {set_nationality = FRP
+				}
+				remove_ideas = {MSM_frankfurt_army_restrictions_france MSM_frankfurt_navy_restrictions_france}
+				transfer_units_fraction= {
+						target = FRP
+						size = 0.8
+						stockpile_ratio = 1.0
+						army_ratio = 0.8
+						navy_ratio = 0.0
+						air_ratio = 1.0
+						keep_unit_leaders_trigger = {
+							always = yes
+						}
+					}
+		
+		
+				}
+			FRP = {
+			declare_war_on = {
+				target = AFA
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = AFL
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = ACF
+				type = annex_everything
+			}
+			load_oob = "FRP"
+			country_event = {
+			id = MSMFrenchCrisis.4
+			days = 2
+			}
+			set_cosmetic_tag = FRA_petain
+			}
+			AFA = {
+			declare_war_on = {
+				target = AFL
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = ACF
+				type = annex_everything
+			}
+			load_oob = "AFA"
+			country_event = {
+			id = MSMFrenchCrisis.4
+			days = 2
+			}
+			set_cosmetic_tag = AFA
+			}
+			ACF = {
+			declare_war_on = {
+				target = AFL
+				type = annex_everything
+			}
+			load_oob = "ACF"
+			country_event = {
+			id = MSMFrenchCrisis.4
+			days = 2
+			}
+			set_cosmetic_tag = ACF
+			}
+			AFL = {
+			load_oob = "AFL"
+			country_event = {
+			id = MSMFrenchCrisis.4
+			days = 2
+			}
+			set_cosmetic_tag = AFL
+			}
+			}
+		}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 5

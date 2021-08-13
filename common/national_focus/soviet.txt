@@ -8,7 +8,51 @@ focus_tree = {
 
 
 	# INTERWAR
+	###### Frankfurt ######
+	focus = {
+		id = SOV_interwar_WKV_treaty_of_frankfurt
 
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+
+		available = {
+			has_global_flag = kis_second_treaty_frankfort
+		}
+
+		x = -8
+		y = 8
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 0	
+		}
+
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = SOV_interwar_WKV_french_civil_war_intervention
+
+		icon = GFX_focus_focus_fra_revolution_utmost
+		prerequisite = {focus = SOV_interwar_WKV_treaty_of_frankfurt}
+		relative_position_id = SOV_interwar_WKV_treaty_of_frankfurt
+		available = {
+		}
+
+		x = 2
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 0	
+		}
+
+		completion_reward = {
+			#event to decide what to do
+		}
+	}
 	###### Versailles ######
 	
 	focus = {
@@ -183,7 +227,10 @@ focus_tree = {
 
 
 		available = {
+		 OR = {
 			has_global_flag = kis_treaty_of_versailles
+			has_global_flag = kis_second_treaty_frankfort
+			}
 		}
 
 		x = 20
@@ -1256,7 +1303,7 @@ focus_tree = {
 		completion_reward = { 
 			PER = {
 				start_civil_war = {
-					ruling_party = communism
+					ruling_party = neutrality
 					ideology = communism
 					size = 0.5
 					states = { 420 }
@@ -1279,12 +1326,77 @@ focus_tree = {
 				}
 			}
 		}
-		ai_will_do = { factor = 0 modifier = { factor = 1 is_historical_focus_on = yes} }
+		ai_will_do = { factor = 1 modifier = { factor = 1 is_historical_focus_on = yes} }
 		cost = 10
 		x = 0
 		y = 10
 	}
-
+	focus = {
+		id = SOV_MSM_jangali_victory
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = SOV_ww1_support_jangali }
+		relative_position_id = SOV_ww1_support_jangali
+		available = {
+			any_country = {
+			original_tag = PER
+			has_government = communism
+			has_war = no
+			owns_state = 266
+			}
+		}
+		completion_reward = {
+		puppet = PSR
+		if = {
+		limit = {PSR = {owns_state = 421} KUR = {exists = no} } 
+		KUR = {transfer_state = 421}
+		puppet = KUR
+		}
+		if = {
+		limit = {PSR = {owns_state = 413} ARB = {exists = no} } 
+		ARB = {transfer_state = 413 set_country_flag = arabistan_communist_republic}
+			if = {
+			limit = {PSR = {owns_state = 765} } 
+			ARB = {transfer_state = 765}
+			}
+			if = {
+			limit = {PSR = {owns_state = 658} } 
+			ARB = {transfer_state = 658}
+			}
+		puppet = ARB
+		}
+		if = {
+		limit = {PSR = {owns_state = 410} BAL = {exists = no} } 
+		BAL = {transfer_state = 410}
+			if = {
+			limit = {PSR = {owns_state = 444} } 
+			BAL = {transfer_state = 444}
+			}
+		puppet = BAL
+			
+		}
+		if = {
+		limit = {PSR = {owns_state = 229} } 
+		transfer_state = 229
+		}
+		if = {
+		limit = {PSR = {owns_state = 584} } 
+		transfer_state = 584
+		}
+		if = {
+		limit = {PSR = {owns_state = 419} } 
+		transfer_state = 419
+		}
+		if = {
+		limit = {PSR = {owns_state = 420} } 
+		transfer_state = 420
+		}
+		
+	}
+		ai_will_do = { factor = 1 modifier = { factor = 1 is_historical_focus_on = yes} }
+		cost = 10
+		x = 0
+		y = 1
+	}
 
 	
 	focus = {

@@ -374,7 +374,7 @@ create_navy_leader = {
 }
 1919.7.1 = {
 
-	oob = "SOV_1919"
+	oob = "SOV_1919_alternate"
 	add_ideas = {
 		home_of_revolution
 		SOV_interwar_spirit_LeninRedArmy

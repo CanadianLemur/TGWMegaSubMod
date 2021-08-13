@@ -1,0 +1,109 @@
+﻿
+division_template = {
+	name = "Republican Militia"	# Militia
+	is_locked = yes
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		}
+	priority = 0
+}
+###################################################################
+units = {
+	division= { 
+			name = "1st Republican Militia"
+			location=512 # Orleans
+			division_template = "Republican Militia"
+			start_experience_factor=0.01
+			start_equipment_factor = 1 
+			start_manpower_factor = 1
+			}
+	division= { 
+			name = "2nd Republican Militia"
+			location=512 # Orleans
+			division_template = "Republican Militia"
+			start_experience_factor=0.01
+			start_equipment_factor = 1 
+			start_manpower_factor = 1
+			}
+	division= { 
+			name = "3rd Republican Militia"
+			location=512 # Orleans
+			division_template = "Republican Militia"
+			start_experience_factor=0.01
+			start_equipment_factor = 1 
+			start_manpower_factor = 1
+			}
+	division= { 
+			name = "4th Republican Militia"
+			location=3671 # Tours
+			division_template = "Republican Militia"
+			start_experience_factor=0.01
+			start_equipment_factor = 1 
+			start_manpower_factor = 1
+			}
+	division= { 
+			name = "5th Republican Militia"
+			location=3671 # Tours
+			division_template = "Republican Militia"
+			start_experience_factor=0.01
+			start_equipment_factor = 1 
+			start_manpower_factor = 1
+			}
+	division= { 
+			name = "6th Republican Militia"
+			location=3671 # Tours
+			division_template = "Republican Militia"
+			start_experience_factor=0.01
+			start_equipment_factor = 1 
+			start_manpower_factor = 1
+			}
+	division= { 
+			name = "7th Republican Militia"
+			location=3652 # Dijon
+			division_template = "Republican Militia"
+			start_experience_factor=0.01
+			start_equipment_factor = 1 
+			start_manpower_factor = 1
+			}
+	division= { 
+			name = "8th Republican Militia"
+			location=3652 # Dijon
+			division_template = "Republican Militia"
+			start_experience_factor=0.01
+			start_equipment_factor = 1 
+			start_manpower_factor = 1
+			}
+	division= { 
+			name = "9th Republican Militia"
+			location=3652 # Dijon
+			division_template = "Republican Militia"
+			start_experience_factor=0.01
+			start_equipment_factor = 1 
+			start_manpower_factor = 1
+			}
+	division= { 
+			name = "10th Republican Militia"
+			location=3652 # Dijon
+			division_template = "Republican Militia"
+			start_experience_factor=0.01
+			start_equipment_factor = 1 
+			start_manpower_factor = 1
+			}
+	division= { 
+			name = "11th Republican Militia"
+			location=3652 # Dijon
+			division_template = "Republican Militia"
+			start_experience_factor=0.01
+			start_equipment_factor = 1 
+			start_manpower_factor = 1
+			}
+	division= { 
+			name = "12th Republican Militia"
+			location=3652 # Dijon
+			division_template = "Republican Militia"
+			start_experience_factor=0.01
+			start_equipment_factor = 1 
+			start_manpower_factor = 1
+			}
+	}

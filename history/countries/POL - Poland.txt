@@ -418,6 +418,7 @@ create_field_marshal = {
 	}
 }
 1919.7.2 = { 
+oob = "POL_1919_alternate"
 create_country_leader={ name = "Regency Council"  picture="Portrait_Poland_Regency_council.dds" expire="1935.1.1" ideology=despotism  traits={  } }
 remove_ideas = {
 		POL_interwar_spirit_WielkopolskaUprising

@@ -261,6 +261,7 @@ create_corps_commander={  name = "Kuperjanov" id=29010 portrait_path="gfx/genera
 }
 1919.7.2 = {
 	set_cosmetic_tag = UBD
+	oob = "EST_1919_alternate"
 	set_capital = 12		### Riga added (by Ecrfour)
 	create_country_leader = {
 	name = "Adolf Friedrich, Duke of Mecklenburg-Schwerin"

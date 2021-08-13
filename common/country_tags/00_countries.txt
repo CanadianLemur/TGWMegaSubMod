@@ -308,3 +308,6 @@ SAR = "countries/Saratov.txt"
 DKU = "countires/Don Kuban Union.txt"
 MIT = "countries/MittelAfrika.txt"
 OSA = "countries/OstAsien.txt"
+# Iranian Split
+ARB = "countries/Arabistan.txt"
+BAL = "countries/Baluchistan.txt"

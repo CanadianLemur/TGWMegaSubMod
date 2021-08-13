@@ -105,7 +105,7 @@ units = {
 
 	division = {
 		name = "81eme Division d'Infanterie territoriale"
-		location = 11548
+		location = 11420
 		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.00
 		start_equipment_factor = 0.3
@@ -132,7 +132,7 @@ units = {
 
 	division = {
 		name = "86eme Division d'Infanterie territoriale"
-		location = 6536
+		location = 3671
 		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.00
 		start_equipment_factor = 0.3
@@ -159,14 +159,14 @@ units = {
 
 	division = {
 		name = "1re Division d'Infanterie"
-		location = 11483
+		location = 11420
 		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.1
 	}
 
 	division = {
 		name = "2eme Division d'Infanterie"
-		location = 11483
+		location = 11420
 		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.1
 	}
@@ -236,14 +236,14 @@ units = {
 
 	division = {
 		name = "13eme Division d'Infanterie"
-		location = 5291
+		location = 13011
 		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.1
 	}
 
 	division = {
 		name = "43eme Division d'Infanterie"
-		location = 5291
+		location = 13011
 		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.1
 	}
@@ -264,14 +264,14 @@ units = {
 
 	division = {
 		name = "11eme Division d'Infanterie"
-		location = 11516
+		location = 9642
 		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.1
 	}
 
 	division = {
 		name = "39eme Division d'Infanterie"
-		location = 11516
+		location = 9642
 		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.1
 	}
@@ -386,39 +386,6 @@ units = {
 		start_equipment_factor = 0.3
 		start_manpower_factor = 0.3
 	}
-
-	division = {
-		name = "Troupes auxiliaires marocaines"
-		location = 7069
-		division_template = "Troupes Coloniales"
-		start_experience_factor = 0.05
-	}
-
-	division = {
-		name = "Goumiers"
-		location = 7069
-		division_template = "Troupes Coloniales"
-		start_experience_factor = 0.05
-	}
-
-	division = {
-		name = "d'infanterie coloniale do Saigon"
-		location = 4401
-		division_template = "Troupes Coloniales"
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.3
-		start_manpower_factor = 0.3
-	}
-
-	division = {
-		name = "d'infanterie coloniale du Tonkin"
-		location = 4075
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.3
-		start_manpower_factor = 0.3
-	}
-
 	division = {
 		name = "3ere regiment de tirailleurs malgaches"
 		location = 8180
@@ -454,24 +421,6 @@ units = {
 		start_equipment_factor = 0.3
 		start_manpower_factor = 0.3
 	}
-
-	division = {
-		name = "Regiment indigini du Tchad"
-		location = 11194
-		division_template = "Troupes Coloniales"
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.3
-		start_manpower_factor = 0.3
-	}
-
-	division = {
-		name = "Regiment indigini du Gabon"
-		location = 5139
-		division_template = "Troupes Coloniales"
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.3
-		start_manpower_factor = 0.3
-	}		
  
 }
 air_wings = {
