@@ -1,0 +1,39 @@
+scripted_gui = {
+
+	USA_internal_politics_decision_ui = {
+		context_type = decision_category
+		window_name = "USA_internal_politics_window"
+		parent_window_token = decision_tab
+		
+		visible = {
+			TAG = USA 
+			# has_country_leader = {
+				# ruling_only = yes
+				# name = "William H. Taft"
+			# }
+			# NOT = { has_country_flag = new_1913_president_usa }
+		}
+		
+		properties = {
+			defined_text = {
+				name = progressive_text
+				
+				text = {
+					trigger = {
+						always = yes
+					}
+					localization_key = "USA_progressive_text_localization_gui"
+				}
+				text = {
+					trigger = {
+						always = yes
+					}
+					localization_key = "USA_conservative_text_localization_gui"
+				}
+				x = 1
+				y = 2
+			}
+		}
+	}
+}
+

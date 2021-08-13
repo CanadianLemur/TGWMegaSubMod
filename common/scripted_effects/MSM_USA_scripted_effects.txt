@@ -1,0 +1,115 @@
+MSM_USA_progressive_small_support = { #change up to 5%
+	custom_effect_tooltip = "test1"
+	randomize_temp_variable = { var = temp_factor distribution = binomial min = 5.0 max = 50.0 } #Random value from 5-50.0
+	multiply_variable = { var = progressive_support value = 1000 } #Brings support from 0-1 to 0-1000
+
+	add_to_variable = { progressive_support = temp_factor }
+	clamp_variable = { var = progressive_support max = 1000 min = 0 } #makes sure support is within 0-1000
+	divide_variable = { var = progressive_support value = 1000 } #brings support back down to percent
+}
+MSM_USA_progressive_small_opposition = { #change up to -3%
+	custom_effect_tooltip = "test2"
+	randomize_temp_variable = { var = temp_factor distribution = binomial min = 2.0 max = 30.0 } #Random value from 2-30.0
+	multiply_variable = { var = progressive_support value = 1000 } #Brings support from 0-1 to 0-1000
+
+	multiply_temp_variable = { temp_factor = -1.0 } #flip negative
+	add_to_variable = { progressive_support = temp_factor }
+	clamp_variable = { var = progressive_support max = 1000 min = 0 } #makes sure support is within 0-1000
+	divide_variable = { var = progressive_support value = 1000 } #brings support back down to percent
+}
+MSM_USA_progressive_medium_support = { #change up to 8%
+	custom_effect_tooltip = "test3"
+	randomize_temp_variable = { var = temp_factor distribution = binomial min = 30.0 max = 80.0 } #Random value from 30.0-80.0
+	multiply_variable = { var = progressive_support value = 1000 } #Brings support from 0-1 to 0-1000
+
+	add_to_variable = { progressive_support = temp_factor }
+	clamp_variable = { var = progressive_support max = 1000 min = 0 } #makes sure support is within 0-1000
+	divide_variable = { var = progressive_support value = 1000 } #brings support back down to percent
+}
+MSM_USA_progressive_medium_opposition = { #change up to -7%
+	custom_effect_tooltip = "test4"
+	randomize_temp_variable = { var = temp_factor distribution = binomial min = 10.0 max = 70.0 } #Random value from 10.0-30.0
+	multiply_variable = { var = progressive_support value = 1000 } #Brings support from 0-1 to 0-1000
+
+	multiply_temp_variable = { temp_factor = -1.0 } #flip negative
+	add_to_variable = { progressive_support = temp_factor }
+	clamp_variable = { var = progressive_support max = 1000 min = 0 } #makes sure support is within 0-1000
+	divide_variable = { var = progressive_support value = 1000 } #brings support back down to percent
+}
+MSM_USA_progressive_large_support = { #change up to 16%
+	custom_effect_tooltip = "test5"
+	randomize_temp_variable = { var = temp_factor distribution = binomial min = 50.0 max = 160.0 } #Random value from 50.0-160.0
+	multiply_variable = { var = progressive_support value = 1000 } #Brings support from 0-1 to 0-1000
+
+	add_to_variable = { progressive_support = temp_factor }
+	clamp_variable = { var = progressive_support max = 1000 min = 0 } #makes sure support is within 0-1000
+	divide_variable = { var = progressive_support value = 1000 } #brings support back down to percent
+}
+MSM_USA_progressive_large_opposition = { #change up to -12%
+	custom_effect_tooltip = "test6"
+	randomize_temp_variable = { var = temp_factor distribution = binomial min = 40.0 max = 120.0 } #Random value from 40.0-120.0
+	multiply_variable = { var = progressive_support value = 1000 } #Brings support from 0-1 to 0-1000
+
+	multiply_temp_variable = { temp_factor = -1.0 } #flip negative
+	add_to_variable = { progressive_support = temp_factor }
+	clamp_variable = { var = progressive_support max = 1000 min = 0 } #makes sure support is within 0-1000
+	divide_variable = { var = progressive_support value = 1000 } #brings support back down to percent
+}
+
+MSM_USA_conservative_small_support = { #change up to 5%
+	custom_effect_tooltip = "test1"
+	randomize_temp_variable = { var = temp_factor distribution = binomial min = 5.0 max = 50.0 } #Random value from 5-50.0
+	multiply_variable = { var = conservative_support value = 1000 } #Brings support from 0-1 to 0-1000
+
+	add_to_variable = { conservative_support = temp_factor }
+	clamp_variable = { var = conservative_support max = 1000 min = 0 } #makes sure support is within 0-1000
+	divide_variable = { var = conservative_support value = 1000 } #brings support back down to percent
+}
+MSM_USA_conservative_small_opposition = { #change up to -3%
+	custom_effect_tooltip = "test2"
+	randomize_temp_variable = { var = temp_factor distribution = binomial min = 2.0 max = 30.0 } #Random value from 2-30.0
+	multiply_variable = { var = conservative_support value = 1000 } #Brings support from 0-1 to 0-1000
+
+	multiply_temp_variable = { temp_factor = -1.0 } #flip negative
+	add_to_variable = { conservative_support = temp_factor }
+	clamp_variable = { var = conservative_support max = 1000 min = 0 } #makes sure support is within 0-1000
+	divide_variable = { var = conservative_support value = 1000 } #brings support back down to percent
+}
+MSM_USA_conservative_medium_support = { #change up to 8%
+	custom_effect_tooltip = "test3"
+	randomize_temp_variable = { var = temp_factor distribution = binomial min = 30.0 max = 80.0 } #Random value from 30.0-80.0
+	multiply_variable = { var = conservative_support value = 1000 } #Brings support from 0-1 to 0-1000
+
+	add_to_variable = { conservative_support = temp_factor }
+	clamp_variable = { var = conservative_support max = 1000 min = 0 } #makes sure support is within 0-1000
+	divide_variable = { var = conservative_support value = 1000 } #brings support back down to percent
+}
+MSM_USA_conservative_medium_opposition = { #change up to -7%
+	custom_effect_tooltip = "test4"
+	randomize_temp_variable = { var = temp_factor distribution = binomial min = 10.0 max = 70.0 } #Random value from 10.0-30.0
+	multiply_variable = { var = conservative_support value = 1000 } #Brings support from 0-1 to 0-1000
+
+	multiply_temp_variable = { temp_factor = -1.0 } #flip negative
+	add_to_variable = { conservative_support = temp_factor }
+	clamp_variable = { var = conservative_support max = 1000 min = 0 } #makes sure support is within 0-1000
+	divide_variable = { var = conservative_support value = 1000 } #brings support back down to percent
+}
+MSM_USA_conservative_large_support = { #change up to 16%
+	custom_effect_tooltip = "test5"
+	randomize_temp_variable = { var = temp_factor distribution = binomial min = 50.0 max = 160.0 } #Random value from 50.0-160.0
+	multiply_variable = { var = conservative_support value = 1000 } #Brings support from 0-1 to 0-1000
+
+	add_to_variable = { conservative_support = temp_factor }
+	clamp_variable = { var = conservative_support max = 1000 min = 0 } #makes sure support is within 0-1000
+	divide_variable = { var = conservative_support value = 1000 } #brings support back down to percent
+}
+MSM_USA_conservative_large_opposition = { #change up to -12%
+	custom_effect_tooltip = "test6"
+	randomize_temp_variable = { var = temp_factor distribution = binomial min = 40.0 max = 120.0 } #Random value from 40.0-120.0
+	multiply_variable = { var = conservative_support value = 1000 } #Brings support from 0-1 to 0-1000
+
+	multiply_temp_variable = { temp_factor = -1.0 } #flip negative
+	add_to_variable = { conservative_support = temp_factor }
+	clamp_variable = { var = conservative_support max = 1000 min = 0 } #makes sure support is within 0-1000
+	divide_variable = { var = conservative_support value = 1000 } #brings support back down to percent
+}

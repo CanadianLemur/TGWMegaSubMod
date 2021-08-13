@@ -1523,7 +1523,7 @@ focus_tree = {
 		y = 1
 	}
 	focus = {
-		id = USA_MSM_pact_with_the_swiss
+		id = USA_MSM_pact_with_the_norwegians
 		prerequisite = { focus = USA_MSM_reach_out_to_europe }
  		relative_position_id = USA_MSM_reach_out_to_europe
 		icon = goal_unknown
@@ -1536,7 +1536,7 @@ focus_tree = {
 		y = 1
 	}
 	focus = {
-		id = USA_MSM_appeal_to_portugal
+		id = USA_MSM_appeal_to_sweeden
 		prerequisite = { focus = USA_MSM_reach_out_to_europe }
  		relative_position_id = USA_MSM_reach_out_to_europe
 		icon = goal_unknown
@@ -1550,8 +1550,8 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_MSM_announce_our_intentions
-		prerequisite = { focus = USA_MSM_appeal_to_portugal focus = USA_MSM_pact_with_the_swiss }
- 		relative_position_id = USA_MSM_appeal_to_portugal
+		prerequisite = { focus = USA_MSM_appeal_to_sweeden focus = USA_MSM_pact_with_the_norwegians }
+ 		relative_position_id = USA_MSM_appeal_to_sweeden
 		icon = goal_unknown
 		completion_reward = {
 			#
@@ -1786,10 +1786,262 @@ focus_tree = {
 		x = 0
 		y = 2
 	}
+	#####Debs Tree
+	focus = {
+		id = USA_MSM_elect_debs
+ 		icon = goal_unknown
+		relative_position_id = USA_MSM_broken_party
+		avaliable = {
+			has_country_leader = {
+				ruling_only = yes
+				name = "Eugene V. Debs"
+			}
+		}
+		allow_branch = {
+			has_country_leader = {
+				ruling_only = yes
+				name = "Eugene V. Debs"
+			}
+			has_country_flag = new_1913_president_usa
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 12
+		y = 0
+	}
+	focus = {
+		id = USA_MSM_a_real_politician
+		prerequisite = { focus = USA_MSM_elect_debs }
+ 		relative_position_id = USA_MSM_elect_debs
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = -5
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_legitimacy_campaign
+		prerequisite = { focus = USA_MSM_a_real_politician }
+ 		relative_position_id = USA_MSM_a_real_politician
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = -2
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_combined_objectives
+		prerequisite = { focus = USA_MSM_legitimacy_campaign }
+ 		relative_position_id = USA_MSM_legitimacy_campaign
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 2
+	}
+	focus = {
+		id = USA_MSM_ensure_neutrality
+		prerequisite = { focus = USA_MSM_a_real_politician }
+ 		relative_position_id = USA_MSM_a_real_politician
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_turn_inward
+		prerequisite = { focus = USA_MSM_ensure_neutrality }
+ 		relative_position_id = USA_MSM_ensure_neutrality
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_recind_the_roosevelt_corollary
+		prerequisite = { focus = USA_MSM_turn_inward }
+ 		relative_position_id = USA_MSM_turn_inward
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_for_the_american_good
+		prerequisite = { focus = USA_MSM_combined_objectives }
+		prerequisite = { focus = USA_MSM_recind_the_roosevelt_corollary }
+ 		relative_position_id = USA_MSM_combined_objectives
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_domestic_reform
+		prerequisite = { focus = USA_MSM_elect_debs }
+ 		relative_position_id = USA_MSM_elect_debs
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_proclaim_support_for_the_IWW
+		prerequisite = { focus = USA_MSM_domestic_reform }
+ 		relative_position_id = USA_MSM_domestic_reform
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = -3
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_legislation_for_the_people
+		prerequisite = { focus = USA_MSM_proclaim_support_for_the_IWW }
+		prerequisite = { focus = USA_MSM_turn_inward }
+ 		relative_position_id = USA_MSM_proclaim_support_for_the_IWW
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 2
+	}
+	focus = {
+		id = USA_MSM_propose_a_new_civil_rights_bill
+		prerequisite = { focus = USA_MSM_domestic_reform }
+ 		relative_position_id = USA_MSM_domestic_reform
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_enshrine_the_worker
+		prerequisite = { focus = USA_MSM_proclaim_support_for_the_IWW }
+		prerequisite = { focus = USA_MSM_propose_a_new_civil_rights_bill }
+ 		relative_position_id = USA_MSM_proclaim_support_for_the_IWW
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_address_the_plight_of_minorities
+		prerequisite = { focus = USA_MSM_propose_a_new_civil_rights_bill }
+ 		relative_position_id = USA_MSM_propose_a_new_civil_rights_bill
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_create_a_model_country
+		prerequisite = { focus = USA_MSM_domestic_reform }
+ 		relative_position_id = USA_MSM_domestic_reform
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 2
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_institute_socialist_ideals
+		prerequisite = { focus = USA_MSM_create_a_model_country }
+ 		relative_position_id = USA_MSM_create_a_model_country
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_constitutional_equality
+		prerequisite = { focus = USA_MSM_address_the_plight_of_minorities }
+		prerequisite = { focus = USA_MSM_institute_socialist_ideals }
+		prerequisite = { focus = USA_MSM_enshrine_the_worker }
+ 		relative_position_id = USA_MSM_address_the_plight_of_minorities
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_the_backbone_of_america
+		prerequisite = { focus = USA_MSM_elect_debs }
+ 		relative_position_id = USA_MSM_elect_debs
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 6
+		y = 1
+	}
 	focus = {
 		id = USA_MSM_insist_on_state_contributions
-		prerequisite = { focus = USA_MSM_lead_by_example }
- 		relative_position_id = USA_MSM_lead_by_example
+		prerequisite = { focus = USA_MSM_the_backbone_of_america }
+ 		relative_position_id = USA_MSM_the_backbone_of_america
 		icon = goal_unknown
 		completion_reward = {
 			#
@@ -1877,32 +2129,6 @@ focus_tree = {
  		cost = 10
 		x = 1
 		y = 1
-	}
-	#####Debs Tree
-	focus = {
-		id = USA_MSM_elect_debs
- 		icon = goal_unknown
-		relative_position_id = USA_MSM_broken_party
-		avaliable = {
-			has_country_leader = {
-				ruling_only = yes
-				name = "Eugene V. Debs"
-			}
-		}
-		allow_branch = {
-			has_country_leader = {
-				ruling_only = yes
-				name = "Eugene V. Debs"
-			}
-			has_country_flag = new_1913_president_usa
-		}
-		completion_reward = {
-			add_political_power = 50
-		}
-		ai_will_do = { factor = 10 }
- 		cost = 10
-		x = 12
-		y = 0
 	}
 	#####MSM End
 	#-------------------------------------

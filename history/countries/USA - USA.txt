@@ -9,6 +9,9 @@ set_variable = { var = quorum_medium value = 49 }
 set_variable = { var = quorum_high value = 58 }
 USA_recalc_congress_icon_frames = yes
 
+set_variable = { var = progressive_support value = 0.5 }
+set_variable = { var = conservative_support value = 0.5 }
+
 #-------------------------------------------------------
 #					GENERIC VALUES
 #-------------------------------------------------------

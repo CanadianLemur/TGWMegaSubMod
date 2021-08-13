@@ -17,3 +17,20 @@ USA_MSM_panama_construction = {
 		has_global_flag = PANAMA_CANAL_INCOMPLETE
 	}
 }
+
+USA_internal_politics = {
+	icon = generic_political_actions
+	priority = 86
+	allowed = {
+		tag = USA
+	}
+	visible = {
+		tag = USA
+		has_country_leader = {
+			ruling_only = yes
+			name = "William H. Taft"
+		}
+		NOT = { has_country_flag = new_1913_president_usa }
+	}
+	scripted_gui = USA_internal_politics_decision_ui
+}

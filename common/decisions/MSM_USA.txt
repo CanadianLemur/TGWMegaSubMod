@@ -162,3 +162,109 @@ USA_MSM_dev_decisions = {
 		}
 	}
 }
+
+USA_internal_politics = {
+
+	USA_test = {
+		fire_only_once = no
+		allowed = {
+			tag = USA
+		}
+		available = {
+			always = yes
+		}
+		is_good = yes
+		
+		days_re_enable = 0
+		
+		complete_effect ={
+			add_political_power = 50
+			MSM_USA_progressive_small_support = yes
+		}
+	}
+	USA_test2 = {
+		fire_only_once = no
+		allowed = {
+			tag = USA
+		}
+		available = {
+			always = yes
+		}
+		is_good = yes
+		
+		days_re_enable = 0
+		
+		complete_effect ={
+			add_political_power = 50
+			MSM_USA_progressive_small_opposition = yes
+		}
+	}
+	USA_test3 = {
+		fire_only_once = no
+		allowed = {
+			tag = USA
+		}
+		available = {
+			always = yes
+		}
+		is_good = yes
+		
+		days_re_enable = 0
+		
+		complete_effect ={
+			add_political_power = 50
+			MSM_USA_progressive_medium_support = yes
+		}
+	}
+	USA_test4 = {
+		fire_only_once = no
+		allowed = {
+			tag = USA
+		}
+		available = {
+			always = yes
+		}
+		is_good = yes
+		
+		days_re_enable = 0
+		
+		complete_effect ={
+			add_political_power = 50
+			MSM_USA_progressive_medium_opposition = yes
+		}
+	}
+	USA_test5 = {
+		fire_only_once = no
+		allowed = {
+			tag = USA
+		}
+		available = {
+			always = yes
+		}
+		is_good = yes
+		
+		days_re_enable = 0
+		
+		complete_effect ={
+			add_political_power = 50
+			MSM_USA_progressive_large_support = yes
+		}
+	}
+	USA_test6 = {
+		fire_only_once = no
+		allowed = {
+			tag = USA
+		}
+		available = {
+			always = yes
+		}
+		is_good = yes
+		
+		days_re_enable = 0
+		
+		complete_effect ={
+			add_political_power = 50
+			MSM_USA_progressive_large_opposition = yes
+		}
+	}
+}
