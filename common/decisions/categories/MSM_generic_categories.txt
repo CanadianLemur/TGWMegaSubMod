@@ -4,11 +4,13 @@ MSM_historical_alt_history_explanation = {
 	available = {
 		OR = {
 			tag = USA
+			tag = GER
 		}
 	}
 	visible = {
 		OR = {
 			tag = USA
+			tag = GER
 		}
 	}
 }
