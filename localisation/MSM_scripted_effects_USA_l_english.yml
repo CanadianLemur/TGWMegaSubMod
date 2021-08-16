@@ -1,0 +1,13 @@
+﻿l_english:
+ MSM_USA_progressive_small_support_tooltip:0 "Gain 0.50 - 5.00% support from the §CProgressives§!"
+ MSM_USA_progressive_small_opposition_tooltip:0 "Lose 0.02 - 3.00% support from the §CProgressives§!"
+ MSM_USA_progressive_medium_support_tooltip:0 "Gain 3.00 - 8.00% support from the §CProgressives§!"
+ MSM_USA_progressive_medium_opposition_tooltip:0 "Lose 1.00 - 7.00% support from the §CProgressives§!"
+ MSM_USA_progressive_large_support_tooltip:0 "Gain 5.00 - 16.00% support from the §CProgressives§!"
+ MSM_USA_progressive_large_opposition_tooltip:0 "Lose 4.00 - 12.00% support from the §CProgressives§!"
+ MSM_USA_conservative_small_support_tooltip:0 "Gain 0.50 - 5.00% support from the §RConservatives§!"
+ MSM_USA_conservative_small_opposition_tooltip:0 "Lose 0.02 - 3.00% support from the §RConservatives§!"
+ MSM_USA_conservative_medium_support_tooltip:0 "Gain 3.00 - 8.00% support from the §RConservatives§!"
+ MSM_USA_conservative_medium_opposition_tooltip:0 "Lose 1.00 - 7.00% support from the §RConservatives§!"
+ MSM_USA_conservative_large_support_tooltip:0 "Gain 5.00 - 16.00% support from the §RConservatives§!"
+ MSM_USA_conservative_large_opposition_tooltip:0 "Lose 4.00 - 12.00% support from the §RConservatives§!"

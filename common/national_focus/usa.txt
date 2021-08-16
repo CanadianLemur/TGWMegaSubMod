@@ -35,7 +35,7 @@ focus_tree = {
 		relative_position_id = USA_MSM_broken_party
  		icon = GFX_focus_generic_self_management
 		completion_reward = {
-			#
+			
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
@@ -48,7 +48,8 @@ focus_tree = {
 		relative_position_id = USA_MSM_continue_the_trust_busting
  		icon = GFX_focus_generic_aluminum
 		completion_reward = {
-			#
+			MSM_USA_progressive_small_support = yes
+			MSM_USA_conservative_small_opposition = yes
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
@@ -75,7 +76,7 @@ focus_tree = {
 		mutually_exclusive = { focus = USA_MSM_leave_the_good_trusts }
  		icon = GFX_goal_generic_construction2
 		completion_reward = {
-			#
+			MSM_USA_conservative_large_opposition = yes
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
@@ -89,7 +90,8 @@ focus_tree = {
 		mutually_exclusive = { focus = USA_MSM_go_after_us_steel }
  		icon = GFX_focus_generic_steel
 		completion_reward = {
-			#
+			MSM_USA_progressive_small_opposition = yes
+			MSM_USA_conservative_small_support = yes
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
@@ -102,7 +104,7 @@ focus_tree = {
 		relative_position_id = USA_MSM_continue_the_trust_busting
  		icon = GFX_goal_generic_oil_refinery
 		completion_reward = {
-			#
+			MSM_USA_progressive_medium_support = yes
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
@@ -115,7 +117,8 @@ focus_tree = {
 		relative_position_id = USA_MSM_continue_the_trust_busting
  		icon = GFX_focus_generic_support_the_left_right
 		completion_reward = {
-			#
+			MSM_USA_progressive_small_support = yes
+			MSM_USA_conservative_medium_opposition = yes
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
@@ -129,7 +132,7 @@ focus_tree = {
 		mutually_exclusive = { focus = USA_MSM_amend_the_payne_aldrich_act }
  		icon = GFX_focus_generic_support_the_left_right
 		completion_reward = {
-			#
+			MSM_USA_conservative_small_support = yes
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
@@ -143,7 +146,8 @@ focus_tree = {
 		mutually_exclusive = { focus = USA_MSM_republican_definition }
  		icon = GFX_goal_generic_intelligence_exchange
 		completion_reward = {
-			#
+			#hurt the economy
+			MSM_USA_progressive_medium_support = yes
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
@@ -157,7 +161,8 @@ focus_tree = {
 		mutually_exclusive = { focus = USA_MSM_meritocratic_appointments }
  		icon = GFX_goal_generic_demand_territory
 		completion_reward = {
-			#
+			MSM_USA_progressive_medium_opposition = yes
+			MSM_USA_conservative_medium_support = yes
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
@@ -171,7 +176,8 @@ focus_tree = {
 		mutually_exclusive = { focus = USA_MSM_southern_policy }
  		icon = GFX_goal_generic_national_unity
 		completion_reward = {
-			#
+			MSM_USA_progressive_small_support = yes
+			MSM_USA_conservative_medium_opposition = yes
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
@@ -185,7 +191,8 @@ focus_tree = {
 		mutually_exclusive = { focus = USA_MSM_a_spot_for_garfield }
  		icon = GFX_goal_generic_political_pressure
 		completion_reward = {
-			#
+			MSM_USA_progressive_small_opposition = yes
+			#maybe make an angry teddy roosevelt idea if you do this (he will get very cranky if you do this)
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
@@ -199,7 +206,7 @@ focus_tree = {
 		mutually_exclusive = { focus = USA_MSM_our_own_men }
  		icon = GFX_goal_generic_improve_relations
 		completion_reward = {
-			#
+			MSM_USA_progressive_small_support = yes
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10

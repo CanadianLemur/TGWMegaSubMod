@@ -1,4 +1,4 @@
 ﻿l_english:
  USA_internal_politics_gui_intro_localization:0 "The Progressives and the Conservatives have been maintaining the uneasy political coalition that is the Republican party since March of 1854, however some not-so-thin cracks have begun to show. Namely, the diverging interests of the two parties have caused major schisms within the party, causing infighting and waning loyalties among it's political officials. You must now balance these two factions in order to prevent the breakdown of your supportbase, and indeed the collapse of the Republican party itself."
- USA_progressive_text_localization_gui:0 "Our support from the §BProgressives§! stands at: §Y	[?USA.progressive_support|§%]"§!	
+ USA_progressive_text_localization_gui:0 "Our support from the §CProgressives§! stands at: §Y	[?USA.progressive_support|§%]"§!	
  USA_conservative_text_localization_gui:0 "Our support from the §RConservatives§! stands at: §Y	[?USA.conservative_support|§%]"§!

@@ -7,11 +7,11 @@ scripted_gui = {
 		
 		visible = {
 			TAG = USA 
-			# has_country_leader = {
-				# ruling_only = yes
-				# name = "William H. Taft"
-			# }
-			# NOT = { has_country_flag = new_1913_president_usa }
+			has_country_leader = {
+				ruling_only = yes
+				name = "William H. Taft"
+			}
+			NOT = { has_country_flag = new_1913_president_usa }
 		}
 		
 		properties = {
