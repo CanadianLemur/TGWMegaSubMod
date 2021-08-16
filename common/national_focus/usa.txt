@@ -77,6 +77,7 @@ focus_tree = {
  		icon = GFX_goal_generic_construction2
 		completion_reward = {
 			MSM_USA_conservative_large_opposition = yes
+			custom_effect_tooltip = USA_angry_teddy
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
@@ -192,6 +193,7 @@ focus_tree = {
  		icon = GFX_goal_generic_political_pressure
 		completion_reward = {
 			MSM_USA_progressive_small_opposition = yes
+			custom_effect_tooltip = USA_angry_teddy
 			#maybe make an angry teddy roosevelt idea if you do this (he will get very cranky if you do this)
 		}
 		ai_will_do = { factor = 10 }
