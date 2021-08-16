@@ -1,0 +1,21 @@
+﻿add_namespace = MSM_historical_explanations
+
+country_event = {	#USA
+	title = MSM_historical_explanations.1.t
+	desc = MSM_historical_explanations.1.d
+	id = MSM_historical_explanations.1
+
+	option = {
+		name =  MSM_historical_explanations.1.a
+	}
+}
+
+country_event = {	#Germany
+	title = MSM_historical_explanations.2.t
+	desc = MSM_historical_explanations.2.d
+	id = MSM_historical_explanations.2
+
+	option = {
+		name =  MSM_historical_explanations.2.a
+	}
+}

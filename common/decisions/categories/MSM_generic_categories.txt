@@ -1,0 +1,14 @@
+MSM_historical_alt_history_explanation = {
+	icon = generic_political_actions
+	priority = 0
+	available = {
+		OR = {
+			tag = USA
+		}
+	}
+	visible = {
+		OR = {
+			tag = USA
+		}
+	}
+}

@@ -1,0 +1,16 @@
+MSM_historical_alt_history_explanation = {
+	MSM_USA_explanation = {                      
+		allowed = { tag = USA }
+		complete_effect = {                   
+			country_event = MSM_historical_explanations.1
+		}
+		ai_will_do = { factor = 0 }
+	}
+	MSM_germany_explanation = {                      
+		allowed = { tag = GER }
+		complete_effect = {                   
+			country_event = MSM_historical_explanations.2
+		}
+		ai_will_do = { factor = 0 }
+	}
+}
