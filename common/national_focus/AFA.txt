@@ -100,7 +100,7 @@ focus_tree = {
 				limit = {is_core_of = ROOT} 
 				prioritize = {31}
 				add_building_construction = {
-						type = industrial_complex = 1
+						type = industrial_complex
 						level = 2
 						instant_build = yes
 					}
@@ -110,7 +110,7 @@ focus_tree = {
 				limit = {is_core_of = ROOT} 
 				prioritize = {20}
 				add_building_construction = {
-						type = industrial_complex = 1
+						type = industrial_complex
 						level = 2
 						instant_build = yes
 					}
@@ -120,7 +120,7 @@ focus_tree = {
 				limit = {is_core_of = ROOT} 
 				prioritize = {15}
 				add_building_construction = {
-						type = arms_factory = 1
+						type = arms_factory
 						level = 2
 						instant_build = yes
 					}
@@ -144,7 +144,7 @@ focus_tree = {
 		19 = {
 		add_extra_state_shared_building_slots = 2
 		add_building_construction = {
-						type = industrial_complex = 1
+						type = industrial_complex
 						level = 2
 						instant_build = yes
 					}
@@ -250,7 +250,7 @@ focus = {
 				limit = {is_core_of = ROOT} 
 				prioritize = {30}
 				add_building_construction = {
-						type = synthetic_refinery = 1
+						type = synthetic_refinery
 						level = 2
 						instant_build = yes
 					}
@@ -274,7 +274,7 @@ focus = {
 				limit = {is_core_of = ROOT} 
 				prioritize = {25}
 				add_building_construction = {
-						type = synthetic_refinery = 1
+						type = synthetic_refinery
 						level = 2
 						instant_build = yes
 					}
@@ -299,7 +299,7 @@ focus = {
 		limit = {is_core_of = ROOT}
 		prioritize = {21}
 		add_building_construction = {
-				type = industrial_complex = 1
+				type = industrial_complex
 				level = 1
 				instant_build = yes
 			}
@@ -309,7 +309,7 @@ focus = {
 				limit = {is_core_of = ROOT} 
 				prioritize = {16}
 				add_building_construction = {
-						type = industrial_complex = 1
+						type = industrial_complex
 						level = 1
 						instant_build = yes
 					}
@@ -1267,7 +1267,7 @@ create_corps_commander = {
 		completion_reward = {
 		459 = {
 		add_building_construction = {
-				type = industrial_complex = 1
+				type = industrial_complex
 				level = 1
 				instant_build = yes
 			}
@@ -1276,7 +1276,7 @@ create_corps_commander = {
 		}
 		460 = {
 		add_building_construction = {
-				type = industrial_complex = 1
+				type = industrial_complex
 				level = 1
 				instant_build = yes
 			}
@@ -1285,7 +1285,7 @@ create_corps_commander = {
 		}
 		513 = {
 		add_building_construction = {
-				type = industrial_complex = 1
+				type = industrial_complex
 				level = 1
 				instant_build = yes
 			}
@@ -1366,7 +1366,7 @@ create_corps_commander = {
 		completion_reward = {
 		272 = {
 		add_building_construction = {
-				type = industrial_complex = 1
+				type = industrial_complex
 				level = 2
 				instant_build = yes
 			}
