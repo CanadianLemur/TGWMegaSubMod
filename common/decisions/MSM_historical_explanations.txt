@@ -13,4 +13,11 @@ MSM_historical_alt_history_explanation = {
 		}
 		ai_will_do = { factor = 0 }
 	}
+	MSM_mexico_explanation = {                      
+		allowed = { tag = MEX }
+		complete_effect = {                   
+			country_event = MSM_historical_explanations.3
+		}
+		ai_will_do = { factor = 0 }
+	}
 }

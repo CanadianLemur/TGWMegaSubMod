@@ -19,3 +19,13 @@ country_event = {	#Germany
 		name =  MSM_historical_explanations.2.a
 	}
 }
+
+country_event = {	#Mexico
+	title = MSM_historical_explanations.3.t
+	desc = MSM_historical_explanations.3.d
+	id = MSM_historical_explanations.3
+
+	option = {
+		name =  MSM_historical_explanations.3.a
+	}
+}
