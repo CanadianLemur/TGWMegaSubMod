@@ -40,10 +40,10 @@ state={
 		1939.1.1={ buildings={ industrial_complex=7 } }
 		buildings={
 			infrastructure=6
-			industrial_complex=2
+			industrial_complex=1
 			air_base=2
 			dockyard=1
-			arms_factory=2
+			arms_factory=1
 			1562={ naval_base=10 }
 			9671={ naval_base=4 }
 			9814={ naval_base=5 }

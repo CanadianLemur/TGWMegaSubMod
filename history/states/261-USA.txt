@@ -10,12 +10,20 @@ state={
 		coal=105
 		aluminium=29
 		steel=73
-		}
+	}
 	history={
 		victory_points={ 6855 5 }
 		victory_points={ 6890 10 }
 		owner=USA
 		add_core_of=USA
+
+		buildings={
+			infrastructure=7
+			industrial_complex=2
+			air_base=1
+			arms_factory=1
+		}
+
 		1936.1.1={ 
 			owner=USA
 			add_core_of=USA
@@ -25,14 +33,12 @@ state={
 				infrastructure=7
 				industrial_complex=6
 				arms_factory=1
-				}
 			}
-		1939.1.1={ buildings={ industrial_complex=7  }  }
-		buildings={
-			infrastructure=7
-			industrial_complex=7
-			air_base=1
-			arms_factory=1
+		}
+		1939.1.1 = { 
+			buildings = { 
+				industrial_complex=7
 			}
 		}
 	}
+}
