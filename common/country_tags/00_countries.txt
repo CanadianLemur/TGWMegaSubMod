@@ -311,3 +311,8 @@ OSA = "countries/OstAsien.txt"
 # Iranian Split
 ARB = "countries/Arabistan.txt"
 BAL = "countries/Baluchistan.txt"
+# New Puppets for France
+JER = "countries/Jerusalem.txt"
+MES = "countries/Mesopotamia.txt"
+COP = "countries/Coptic Egypt.txt"
+LTN = "coutnries/Latin Empire.txt"
