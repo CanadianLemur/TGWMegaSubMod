@@ -1,0 +1,51 @@
+﻿add_namespace = MSM_introduction
+
+country_event = {	#Intro
+	id = MSM_introduction.1
+	title = MSM_introduction.1.t
+	desc = MSM_introduction.1.d
+	is_triggered_only = yes
+	option = {
+		name =  MSM_introduction.1.a
+	}
+	#Show Country Guide
+	option = {
+		name =  MSM_introduction.1.b
+		limit = {
+		AND = {
+		has_start_date < 1912.01.01
+		OR = {tag = USA tag = GER tag = MEX}
+		}
+		}
+		# USA 1910
+		if = {
+			limit = {
+				original_tag = USA
+				has_start_date < 1912.01.01
+			}
+		country_event = {
+			id = MSM_historical_explanations.1
+			}
+		}
+		# GER 1910
+		if = {
+			limit = {
+				original_tag = GER
+				has_start_date < 1912.01.01
+			}
+		country_event = {
+			id = MSM_historical_explanations.2
+			}
+		}
+		# MEX 1910
+		if = {
+			limit = {
+				original_tag = MEX
+				has_start_date < 1912.01.01
+			}
+		country_event = {
+			id = MSM_historical_explanations.3
+			}
+		}
+	}
+}

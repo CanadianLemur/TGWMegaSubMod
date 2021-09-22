@@ -1,0 +1,11 @@
+
+on_actions = {
+	###--Startup events for MSM--###
+    on_startup = {
+        effect = {
+		every_country = { 
+			limit = {is_ai = no}
+			country_event = {id = MSM_introduction.1}
+			}
+        }
+    }
