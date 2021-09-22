@@ -255,7 +255,7 @@ focus_tree = {
 					load_focus_tree = petain_government
 				}
 				every_owned_state = {
-				limit = {NOT = {OR = {state = 33 state = 24 state = 27 state = 14 state = 785 state = 836 state = 29 state = 15 state = 16 state = 30 state = 23 state = 19}}}
+				limit = {NOT = {OR = {state = 18 state = 33 state = 24 state = 27 state = 14 state = 785 state = 836 state = 29 state = 15 state = 16 state = 30 state = 23 state = 19}}}
 				FRP  = {transfer_state = PREV}
 				}
 				transfer_navy = {
