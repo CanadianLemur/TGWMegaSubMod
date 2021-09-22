@@ -1598,6 +1598,19 @@ focus_tree = {
 		y = 1
 	}
 	focus = {
+		id = USA_MSM_guarantee_neutral_nations_sovereignty
+		prerequisite = { focus = USA_MSM_announce_our_intentions }
+ 		relative_position_id = USA_MSM_announce_our_intentions
+		icon = goal_unknown
+		completion_reward = {
+			#Basically, guarantee the low countries (Maybe not luxembourg) as a way to get the bloc to participate in WWI
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 1
+	}
+	focus = {
 		id = USA_MSM_affirm_legislative_support
 		prerequisite = { focus = USA_MSM_reelect_taft }
  		relative_position_id = USA_MSM_reelect_taft
@@ -1744,12 +1757,12 @@ focus_tree = {
 		y = 1
 	}
 	focus = {
-		id = USA_MSM_subsidize_american_steelworks
+		id = USA_MSM_roll_back_environmental_regulations
 		prerequisite = { focus = USA_MSM_our_relationship_with_enterprise }
  		relative_position_id = USA_MSM_our_relationship_with_enterprise
 		icon = goal_unknown
 		completion_reward = {
-			#
+			#Give a reduction in construction cost for civvies
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
@@ -1757,12 +1770,12 @@ focus_tree = {
 		y = 1
 	}
 	focus = {
-		id = USA_MSM_rebuild_aging_rail
-		prerequisite = { focus = USA_MSM_subsidize_american_steelworks }
- 		relative_position_id = USA_MSM_subsidize_american_steelworks
+		id = USA_MSM_federal_land_auction_policy
+		prerequisite = { focus = USA_MSM_roll_back_environmental_regulations }
+ 		relative_position_id = USA_MSM_roll_back_environmental_regulations
 		icon = goal_unknown
 		completion_reward = {
-			#
+			#Give a small consumer goods buff
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
@@ -1770,12 +1783,12 @@ focus_tree = {
 		y = 2
 	}
 	focus = {
-		id = USA_MSM_assist_american_manufacturies
+		id = USA_MSM_redirect_union_efforts
 		prerequisite = { focus = USA_MSM_our_relationship_with_enterprise }
  		relative_position_id = USA_MSM_our_relationship_with_enterprise
 		icon = goal_unknown
 		completion_reward = {
-			#
+			#Idea that reduces stability
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
@@ -1783,9 +1796,48 @@ focus_tree = {
 		y = 2
 	}
 	focus = {
-		id = USA_MSM_restrict_lassez_faire
-		prerequisite = { focus = USA_MSM_assist_american_manufacturies focus = USA_MSM_rebuild_aging_rail }
- 		relative_position_id = USA_MSM_assist_american_manufacturies
+		id = USA_MSM_a_policy_of_lassez_faire
+		prerequisite = { focus = USA_MSM_redirect_union_efforts focus = USA_MSM_federal_land_auction_policy }
+ 		relative_position_id = USA_MSM_redirect_union_efforts
+		icon = goal_unknown
+		completion_reward = {
+			#Nice permanent idea that reduces civilian goods, maybe make a thing that doesn't let you build civvies but instead makes a series of events that fire giving you the factories instead
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 2
+	}
+	focus = {
+		id = USA_MSM_concern_the_public_consciousness_with_infrastructure
+		prerequisite = { focus = USA_MSM_lead_by_example }
+ 		relative_position_id = USA_MSM_lead_by_example
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_urban_infrastructure_development_program
+		prerequisite = { focus = USA_MSM_concern_the_public_consciousness_with_infrastructure }
+ 		relative_position_id = USA_MSM_concern_the_public_consciousness_with_infrastructure
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_small_scale_interstate_connections
+		prerequisite = { focus = USA_MSM_urban_infrastructure_development_program }
+ 		relative_position_id = USA_MSM_urban_infrastructure_development_program
 		icon = goal_unknown
 		completion_reward = {
 			#
@@ -1794,6 +1846,97 @@ focus_tree = {
  		cost = 10
 		x = 0
 		y = 2
+	}
+	focus = {
+		id = USA_MSM_increase_public_funding
+		prerequisite = { focus = USA_MSM_concern_the_public_consciousness_with_infrastructure }
+ 		relative_position_id = USA_MSM_concern_the_public_consciousness_with_infrastructure
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_found_the_national_institute_for_higher_learning
+		prerequisite = { focus = USA_MSM_increase_public_funding }
+ 		relative_position_id = USA_MSM_increase_public_funding
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_fund_public_education
+		prerequisite = { focus = USA_MSM_found_the_national_institute_for_higher_learning }
+ 		relative_position_id = USA_MSM_found_the_national_institute_for_higher_learning
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 2
+	}
+	focus = {
+		id = USA_MSM_institute_prison_labor_programs
+		prerequisite = { focus = USA_MSM_increase_public_funding }
+ 		relative_position_id = USA_MSM_increase_public_funding
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_contract_private_weapons_firms
+		prerequisite = { focus = USA_MSM_institute_prison_labor_programs }
+ 		relative_position_id = USA_MSM_institute_prison_labor_programs
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_invigorate_federal_production_capacity
+		prerequisite = { focus = USA_MSM_institute_prison_labor_programs }
+ 		relative_position_id = USA_MSM_institute_prison_labor_programs
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_enable_wartime_self-reliance
+		prerequisite = { focus = USA_MSM_contract_private_weapons_firms focus = USA_MSM_invigorate_federal_production_capacity }
+ 		relative_position_id = USA_MSM_contract_private_weapons_firms
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 1
+		y = 1
 	}
 	#####Debs Tree
 	focus = {
@@ -2048,6 +2191,85 @@ focus_tree = {
 		y = 1
 	}
 	focus = {
+		id = USA_MSM_connect_the_people
+		prerequisite = { focus = USA_MSM_the_backbone_of_america }
+ 		relative_position_id = USA_MSM_the_backbone_of_america
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = -2
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_increase_infrastructure_standardization
+		prerequisite = { focus = USA_MSM_connect_the_people }
+ 		relative_position_id = USA_MSM_connect_the_people
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_redistribute_shipping_capabilities
+		prerequisite = { focus = USA_MSM_increase_infrastructure_standardization }
+ 		relative_position_id = USA_MSM_increase_infrastructure_standardization
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_begin_the_national_initiative_for_continuted_improvement
+		prerequisite = { focus = USA_MSM_redistribute_shipping_capabilities }
+		prerequisite = { focus = USA_MSM_invest_in_the_future }
+ 		relative_position_id = USA_MSM_redistribute_shipping_capabilities
+		icon = goal_unknown
+		completion_reward = {
+			#Really cool idea
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_invest_in_the_future
+		prerequisite = { focus = USA_MSM_increase_infrastructure_standardization }
+ 		relative_position_id = USA_MSM_increase_infrastructure_standardization
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = USA_MSM_designate_a_national_college_of_the_sciences
+		prerequisite = { focus = USA_MSM_invest_in_the_future }
+ 		relative_position_id = USA_MSM_invest_in_the_future
+		icon = goal_unknown
+		completion_reward = {
+			#
+		}
+		ai_will_do = { factor = 10 }
+ 		cost = 10
+		x = 0
+		y = 2
+	}
+	focus = {
 		id = USA_MSM_insist_on_state_contributions
 		prerequisite = { focus = USA_MSM_the_backbone_of_america }
  		relative_position_id = USA_MSM_the_backbone_of_america
@@ -2070,7 +2292,7 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
-		x = -1
+		x = 1
 		y = 1
 	}
 	focus = {
@@ -2109,7 +2331,7 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
-		x = 1
+		x = -1
 		y = 1
 	}
 	focus = {
@@ -2129,7 +2351,7 @@ focus_tree = {
 		id = USA_MSM_beacon_of_self_sufficiency
 		prerequisite = { focus = USA_MSM_revitalize_the_interior }
 		prerequisite = { focus = USA_MSM_healthy_competition }
- 		relative_position_id = USA_MSM_revitalize_the_interior
+ 		relative_position_id = USA_MSM_healthy_competition
 		icon = goal_unknown
 		completion_reward = {
 			#
