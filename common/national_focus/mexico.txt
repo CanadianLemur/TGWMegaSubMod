@@ -13,7 +13,7 @@ focus = {
 	}
 	cost = 5
 	ai_will_do = { factor = 4000 }
-	x = 5
+	x = 4
 	y = 0
 }
 
@@ -54,12 +54,12 @@ focus = {
 	icon = GFX_focus_mexican_succession
 	available = {
 	}
-	prerequisite = { focus = mex_rebuild_el_norte }
+	prerequisite = { focus = mex_trial_maderistas }
 	completion_reward = {
 	
 	}
 	cost = 3
-	relative_position_id = mex_rebuild_el_norte
+	relative_position_id = mex_trial_maderistas
 	ai_will_do = { factor = 1000 }
 	x = 0
 	y = 1
@@ -329,7 +329,8 @@ focus = {
 	icon = GFX_focus_adios_presidente
 	available = {
 	}
-	prerequisite = { focus = mex_greet_public focus = mex_watchful_eye }
+	prerequisite = { focus = mex_greet_public }
+	prerequisite = { focus = mex_watchful_eye }
 	completion_reward = {
 	
 	}
@@ -352,7 +353,7 @@ focus = {
 	cost = 5
 	relative_position_id = mex_trial_maderistas
 	ai_will_do = { factor = 1000 }
-	x = 10
+	x = 8
 	y = 1
 }
 
@@ -498,4 +499,883 @@ focus = {
 	ai_will_do = { factor = 1000 }
 	x = 0
 	y = 1
+}
+
+focus = {
+	id = mex_la_consolidacion
+	icon = GFX_focus_la_consolidacion
+	available = {
+		not = {
+			has_completed_focus	 = mex_a_demon_rises
+		}
+	}
+	prerequisite = { focus = mex_pact_with_colombia }
+	completion_reward = {
+	
+	}
+	cost = 10
+	relative_position_id = mex_pact_with_colombia
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_belize_question
+	icon = GFX_focus_belize_question
+	available = {
+	}
+	prerequisite = { focus = mex_la_consolidacion }
+	completion_reward = {
+	
+	}
+	cost = 10
+	relative_position_id = mex_la_consolidacion
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_andes_friends
+	icon = GFX_focus_andes_friends
+	available = {
+	}
+	prerequisite = { focus = mex_belize_question }
+	completion_reward = {
+	
+	}
+	cost = 5
+	relative_position_id = mex_belize_question
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_questions_remain
+	icon = GFX_focus_questions_remain
+	available = {
+	}
+	prerequisite = { focus = mex_andes_friends }
+	completion_reward = {
+	
+	}
+	cost = 5
+	relative_position_id = mex_andes_friends
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_their_potuguese_our_portuguese
+	icon = GFX_focus_their_potuguese_our_portuguese
+	available = {
+	}
+	prerequisite = { focus = mex_questions_remain }
+	completion_reward = {
+	
+	}
+	cost = 5
+	relative_position_id = mex_questions_remain
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_deal_with_diablo
+	icon = GFX_focus_deal_with_diablo
+	available = {
+	}
+	prerequisite = { focus = mex_their_potuguese_our_portuguese }
+	completion_reward = {
+	
+	}
+	cost = 10
+	relative_position_id = mex_their_potuguese_our_portuguese
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_making_new_friends
+	icon = GFX_focus_making_new_friends
+	available = {
+		not = {
+				has_completed_focus	 = mex_a_demon_rises
+		}
+	}
+	prerequisite = { focus = mex_reestablishing_relations }
+	completion_reward = {
+	
+	}
+	cost = 5
+	relative_position_id = mex_reestablishing_relations
+	ai_will_do = { factor = 1000 }
+	x = 2
+	y = 1
+}
+
+focus = {
+	id = mex_austro_mexican_treaty
+	icon = GFX_focus_austro_mexican_treaty
+	available = {
+	}
+	prerequisite = { focus = mex_making_new_friends }
+	completion_reward = {
+	
+	}
+	cost = 7
+	relative_position_id = mex_making_new_friends
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_accept_german_visitors
+	icon = GFX_focus_accept_german_visitors
+	available = {
+	}
+	prerequisite = { focus = mex_austro_mexican_treaty }
+	completion_reward = {
+	
+	}
+	cost = 7
+	relative_position_id = mex_austro_mexican_treaty
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_run_the_blockades
+	icon = GFX_focus_run_the_blockades
+	available = {
+	}
+	prerequisite = { focus = mex_accept_german_visitors }
+	completion_reward = {
+	
+	}
+	cost = 7
+	relative_position_id = mex_accept_german_visitors
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_carribean_plot
+	icon = GFX_focus_carribean_plot
+	available = {
+	}
+	prerequisite = { focus = mex_run_the_blockades }
+	completion_reward = {
+	
+	}
+	cost = 5
+	relative_position_id = mex_run_the_blockades
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_the_rio_line
+	icon = GFX_focus_the_rio_line
+	available = {
+	}
+	prerequisite = { focus = mex_carribean_plot }
+	completion_reward = {
+	
+	}
+	cost = 10
+	relative_position_id = mex_carribean_plot
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_the_zimmerman_pact
+	icon = GFX_focus_the_zimmerman_pact
+	available = {
+	}
+	prerequisite = { focus = mex_the_rio_line }
+	completion_reward = {
+	
+	}
+	cost = 10
+	relative_position_id = mex_the_rio_line
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_from_the_ashes  ##WARNING BASED ALT-HISTORY INCOMING
+	icon = GFX_focus_from_the_ashes
+	available = { has_completed_focus = mex_rebuild_el_norte }
+	completion_reward = {
+	
+	}
+	cost = 10
+	ai_will_do = { factor = 1000 }
+	x = 22
+	y = 0
+}
+
+focus = {
+	id = mex_comes_something_greater
+	icon = GFX_focus_comes_something_greater
+	available = {
+	}
+	prerequisite = { focus = mex_from_the_ashes }
+	completion_reward = {
+	
+	}
+	cost = 10
+	relative_position_id = mex_from_the_ashes
+	ai_will_do = { factor = 1000 }
+	x = -2
+	y = 1
+}
+
+focus = {
+	id = mex_end_of_the_hacendados
+	icon = GFX_focus_end_of_the_hacendados
+	available = {
+	}
+	prerequisite = { focus = mex_comes_something_greater }
+	completion_reward = {
+	
+	}
+	cost = 10
+	relative_position_id = mex_comes_something_greater
+	ai_will_do = { factor = 1000 }
+	x = -2
+	y = 1
+}
+
+focus = {
+	id = mex_agroindustria
+	icon = GFX_focus_agroindustria
+	available = {
+	}
+	prerequisite = { focus = mex_end_of_the_hacendados }
+	completion_reward = {
+	
+	}
+	cost = 10
+	relative_position_id = mex_end_of_the_hacendados
+	ai_will_do = { factor = 1000 }
+	x = -1
+	y = 1
+}
+
+focus = {
+	id = mex_mechanization_plants
+	icon = GFX_focus_mechanization_plants
+	available = {
+	}
+	prerequisite = { focus = mex_end_of_the_hacendados }
+	completion_reward = {
+	
+	}
+	cost = 10
+	relative_position_id = mex_agroindustria
+	ai_will_do = { factor = 1000 }
+	x = 1
+	y = 1
+}
+
+focus = {
+	id = mex_mexican_iron_steel
+	icon = GFX_focus_mexican_iron_steel
+	available = {
+	}
+	prerequisite = { focus = mex_mechanization_plants }
+	completion_reward = {
+	
+	}
+	cost = 10
+	relative_position_id = mex_mechanization_plants
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 2
+}
+
+focus = {
+	id = mex_opa_hostil
+	icon = GFX_focus_opa_hostil
+	available = {
+	}
+	prerequisite = { focus = mex_agroindustria }
+	completion_reward = {
+	
+	}
+	cost = 10
+	relative_position_id = mex_agroindustria
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 2
+}
+
+focus = {
+	id = mex_a_truly_mexican_economy
+	icon = GFX_focus_a_truly_mexican_economy
+	available = {
+	}
+	prerequisite = { focus = mex_mexican_iron_steel }
+	prerequisite = { focus = mex_opa_hostil }
+	completion_reward = {
+	
+	}
+	cost = 10
+	relative_position_id = mex_mexican_iron_steel
+	ai_will_do = { factor = 1000 }
+	x = -1
+	y = 1
+}
+
+focus = {
+	id = mex_cientifico_revolution
+	icon = GFX_focus_cientifico_revolution
+	available = {
+	}
+	prerequisite = { focus = mex_comes_something_greater }
+	completion_reward = {
+	
+	}
+	cost = 10
+	relative_position_id = mex_comes_something_greater
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_yankee_secret
+	icon = GFX_focus_yankee_secret
+	available = {
+	}
+	prerequisite = { focus = mex_cientifico_revolution }
+	completion_reward = {
+	
+	}
+	cost = 10
+	relative_position_id = mex_cientifico_revolution
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_electrification_campaign
+	icon = GFX_focus_electrification_campaign
+	available = {
+	}
+	prerequisite = { focus = mex_yankee_secret }
+	completion_reward = {
+	
+	}
+	cost = 10
+	relative_position_id = mex_yankee_secret
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_mexican_automobiles
+	icon = GFX_focus_mexican_automobiles
+	available = {
+	}
+	prerequisite = { focus = mex_electrification_campaign }
+	completion_reward = {
+	
+	}
+	cost = 10
+	relative_position_id = mex_electrification_campaign
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_liga_de_la_hidera
+	icon = GFX_focus_liga_de_la_hidera
+	available = {
+	}
+	prerequisite = { focus = mex_mexican_automobiles }
+	completion_reward = {
+	
+	}
+	cost = 10
+	relative_position_id = mex_mexican_automobiles
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_encourage_youth
+	icon = GFX_focus_encourage_youth
+	available = {
+	}
+	prerequisite = { focus = mex_liga_de_la_hidera }
+	completion_reward = {
+	
+	}
+	cost = 10
+	relative_position_id = mex_liga_de_la_hidera
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_the_fruits_of_our_labor
+	icon = GFX_focus_the_fruits_of_our_labor
+	available = {
+		OR = {
+			has_country_flag = MSM_MEX_SECOND_CIVIL_WAR_HAS_HAPPENED
+			has_country_flag = MSM_MEX_SECOND_CIVIL_WAR_WAS_AVERTED
+		}
+	}
+	prerequisite = { focus = mex_a_truly_mexican_economy }
+	prerequisite = { focus = mex_encourage_youth }
+	completion_reward = {
+	
+	}
+	cost = 10
+	relative_position_id = mex_encourage_youth
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_agrigola_cientifico
+	icon = GFX_focus_agrigola_cientifico
+	available = {
+	}
+	prerequisite = { focus = mex_the_fruits_of_our_labor }
+	completion_reward = {
+	
+	}
+	cost = 10
+	relative_position_id = mex_the_fruits_of_our_labor
+	ai_will_do = { factor = 1000 }
+	x = -2
+	y = 1
+}
+
+focus = {
+	id = mex_mexi_pharma
+	icon = GFX_focus_mexi_pharma
+	available = {
+	}
+	prerequisite = { focus = mex_agrigola_cientifico }
+	completion_reward = {
+	
+	}
+	cost = 10
+	relative_position_id = mex_agrigola_cientifico
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_the_best_revenge
+	icon = GFX_focus_the_best_revenge
+	available = {
+	}
+	prerequisite = { focus = mex_mexi_pharma }
+	completion_reward = {
+	
+	}
+	cost = 10
+	relative_position_id = mex_mexi_pharma
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_wells_and_refineries
+	icon = GFX_focus_wells_and_refineries
+	available = {
+	}
+	prerequisite = { focus = mex_the_fruits_of_our_labor }
+	completion_reward = {
+	
+	}
+	cost = 10
+	relative_position_id = mex_the_best_revenge
+	ai_will_do = { factor = 1000 }
+	x = -2
+	y = 0
+}
+
+focus = {
+	id = mex_immigration_campaign
+	icon = GFX_focus_immigration_campaign
+	available = {
+	}
+	prerequisite = { focus = mex_the_fruits_of_our_labor }
+	completion_reward = {
+	
+	}
+	cost = 10
+	relative_position_id = mex_the_fruits_of_our_labor
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_merit_means_nobility
+	icon = GFX_focus_merit_means_nobility
+	available = {
+	}
+	prerequisite = { focus = mex_immigration_campaign }
+	completion_reward = {
+	
+	}
+	cost = 10
+	relative_position_id = mex_immigration_campaign
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_the_mexican_century
+	icon = GFX_focus_the_mexican_century
+	available = {
+	}
+	prerequisite = { focus = mex_merit_means_nobility }
+	prerequisite = { focus = mex_the_best_revenge }
+	completion_reward = {
+	
+	}
+	cost = 10
+	relative_position_id = mex_merit_means_nobility
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 2
+}
+
+focus = {
+	id = mex_get_back_to_work
+	icon = GFX_focus_get_back_to_work
+	available = {
+	}
+	prerequisite = { focus = mex_comes_something_greater focus = mex_a_demon_rises }
+	completion_reward = {
+	
+	}
+	cost = 10
+	relative_position_id = mex_from_the_ashes
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 3
+}
+
+focus = {
+	id = mex_ferrocarilles_del_norte
+	icon = GFX_focus_ferrocarilles_del_norte
+	available = {
+	}
+	prerequisite = { focus = mex_get_back_to_work }
+	completion_reward = {
+	
+	}
+	cost = 5
+	relative_position_id = mex_get_back_to_work
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_civic_restoration
+	icon = GFX_focus_civic_restoration
+	available = {
+	}
+	prerequisite = { focus = mex_ferrocarilles_del_norte }
+	completion_reward = {
+	
+	}
+	cost = 5
+	relative_position_id = mex_ferrocarilles_del_norte
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_but_just_in_case
+	icon = GFX_focus_but_just_in_case
+	available = {
+	}
+	prerequisite = { focus = mex_civic_restoration }
+	completion_reward = {
+	
+	}
+	cost = 5
+	relative_position_id = mex_civic_restoration
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_mondragon_armament_company
+	icon = GFX_focus_mondragon_armament_company
+	available = {
+	}
+	prerequisite = { focus = mex_but_just_in_case }
+	completion_reward = {
+	
+	}
+	cost = 5
+	relative_position_id = mex_but_just_in_case
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_get_back_to_work_again
+	icon = GFX_focus_get_back_to_work_again
+	available = {
+		has_country_flag = MSM_MEX_SECOND_CIVIL_WAR_HAS_HAPPENED
+	}
+	prerequisite = { focus = mex_mondragon_armament_company }
+	completion_reward = {
+	
+	}
+	cost = 10
+	relative_position_id = mex_mondragon_armament_company
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 2
+}
+
+focus = {
+	id = mex_national_bureau_for_reconstruction
+	icon = GFX_focus_national_bureau_for_reconstruction
+	available = {
+	}
+	prerequisite = { focus = mex_get_back_to_work_again }
+	completion_reward = {
+	
+	}
+	cost = 5
+	relative_position_id = mex_get_back_to_work_again
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_using_the_opportunity
+	icon = GFX_focus_using_the_opportunity
+	available = {
+	}
+	prerequisite = { focus = mex_national_bureau_for_reconstruction }
+	completion_reward = {
+	
+	}
+	cost = 5
+	relative_position_id = mex_national_bureau_for_reconstruction
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_a_demon_rises
+	icon = GFX_focus_a_demon_rises
+	available = {
+	}
+	prerequisite = { focus = mex_from_the_ashes }
+	completion_reward = {
+	
+	}
+	cost = 5
+	relative_position_id = mex_from_the_ashes
+	ai_will_do = { factor = 1000 }
+	x = 2
+	y = 1
+}
+
+focus = {
+	id = mex_the_price_we_pay
+	icon = GFX_focus_the_price_we_pay
+	available = {
+	}
+	prerequisite = { focus = mex_a_demon_rises }
+	completion_reward = {
+	
+	}
+	cost = 5
+	relative_position_id = mex_a_demon_rises
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_the_new_oligarchs
+	icon = GFX_focus_the_new_oligarchs
+	available = {
+	}
+	prerequisite = { focus = mex_the_price_we_pay }
+	completion_reward = {
+	
+	}
+	cost = 5
+	relative_position_id = mex_the_price_we_pay
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_american_investment_firms
+	icon = GFX_focus_american_investment_firms
+	available = {
+	}
+	prerequisite = { focus = mex_the_new_oligarchs }
+	completion_reward = {
+	
+	}
+	cost = 5
+	relative_position_id = mex_the_new_oligarchs
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_let_them_drill
+	icon = GFX_focus_let_them_drill
+	available = {
+	}
+	prerequisite = { focus = mex_american_investment_firms }
+	completion_reward = {
+	
+	}
+	cost = 5
+	relative_position_id = mex_american_investment_firms
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_shaking_off_the_chains
+	icon = GFX_focus_shaking_off_the_chains
+	available = {
+	}
+	prerequisite = { focus = mex_let_them_drill }
+	completion_reward = {
+	
+	}
+	cost = 10
+	relative_position_id = mex_let_them_drill
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 4
+}
+
+focus = {
+	id = mex_nationalization_campaign
+	icon = GFX_focus_nationalization_campaign
+	available = {
+	}
+	prerequisite = { focus = mex_shaking_off_the_chains }
+	completion_reward = {
+	
+	}
+	cost = 5
+	relative_position_id = mex_shaking_off_the_chains
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 2
+}
+
+focus = {
+	id = mex_acts_of_land_reform
+	icon = GFX_focus_acts_of_land_reform
+	available = {
+	}
+	prerequisite = { focus = mex_nationalization_campaign }
+	completion_reward = {
+	
+	}
+	cost = 5
+	relative_position_id = mex_nationalization_campaign
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_mexican_recovery_diaz
+	icon = GFX_focus_mexican_recovery_diaz
+	available = {
+	}
+	prerequisite = { focus = mex_using_the_opportunity }
+	prerequisite = { focus = mex_acts_of_land_reform }
+	prerequisite = { focus = mex_turismo }
+	completion_reward = {
+	
+	}
+	cost = 10
+	relative_position_id = mex_acts_of_land_reform
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_expand_drilling_operations
+	icon = GFX_focus_expand_drilling_operations
+	available = {
+	}
+	prerequisite = { focus = mex_shaking_off_the_chains }
+	completion_reward = {
+	
+	}
+	cost = 5
+	relative_position_id = mex_nationalization_campaign
+	ai_will_do = { factor = 1000 }
+	x = 2
+	y = 0
+}
+
+focus = {
+	id = mex_turismo
+	icon = GFX_focus_turismo
+	available = {
+	}
+	prerequisite = { focus = mex_expand_drilling_operations }
+	completion_reward = {
+	
+	}
+	cost = 5
+	relative_position_id = mex_expand_drilling_operations
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
 }
