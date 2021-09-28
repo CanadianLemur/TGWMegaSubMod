@@ -169,5 +169,23 @@ spriteTypes = {
 		name = "GFX_father_of_the_nation_icon"
 		texturefile = "gfx/interface/goals/CHI_father_of_the_nation.dds"
 	}
+
+	#MSM
+	SpriteType = {
+		name = "GFX_wilson_tree_focus"
+		texturefile = "gfx/interface/goals/wilson_focus.dds"
+	}
+	SpriteType = {
+		name = "GFX_teddy_tree_focus"
+		texturefile = "gfx/interface/goals/teddy_focus.dds"
+	}
+	SpriteType = {
+		name = "GFX_taft_tree_focus"
+		texturefile = "gfx/interface/goals/taft_focus.dds"
+	}
+	SpriteType = {
+		name = "GFX_debs_tree_focus"
+		texturefile = "gfx/interface/goals/debs_focus.dds"
+	}
 	
 }
