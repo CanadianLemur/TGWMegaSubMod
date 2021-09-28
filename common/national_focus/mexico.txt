@@ -11,6 +11,9 @@ focus = {
 	completion_reward = {
 	
 	}
+	search_filters = {
+		FOCUS_FILTER_DIAZ
+	}
 	cost = 5
 	ai_will_do = { factor = 4000 }
 	x = 4
@@ -25,6 +28,9 @@ focus = {
 	prerequisite = { focus = mex_thousand_year_porfiriato }
 	completion_reward = {
 	
+	}
+	search_filters = {
+		FOCUS_FILTER_DIAZ
 	}
 	cost = 10
 	relative_position_id = mex_thousand_year_porfiriato
@@ -42,6 +48,9 @@ focus = {
 	completion_reward = {
 	
 	}
+	search_filters = {
+		FOCUS_FILTER_DIAZ
+	}
 	cost = 10
 	relative_position_id = mex_rebuild_el_norte
 	ai_will_do = { factor = 1000 }
@@ -57,6 +66,9 @@ focus = {
 	prerequisite = { focus = mex_trial_maderistas }
 	completion_reward = {
 	
+	}
+	search_filters = {
+		FOCUS_FILTER_DIAZ
 	}
 	cost = 3
 	relative_position_id = mex_trial_maderistas
@@ -155,6 +167,9 @@ focus = {
 	completion_reward = {
 	
 	}
+	search_filters = {
+		FOCUS_FILTER_HUERTA
+	}
 	cost = 3
 	relative_position_id = mex_mexican_succession
 	ai_will_do = { factor = 1000 }
@@ -170,6 +185,9 @@ focus = {
 	prerequisite = { focus = mex_huerta_plan }
 	completion_reward = {
 	
+	}
+	search_filters = {
+		FOCUS_FILTER_HUERTA
 	}
 	cost = 10
 	relative_position_id = mex_huerta_plan
@@ -187,6 +205,9 @@ focus = {
 	completion_reward = {
 	
 	}
+	search_filters = {
+		FOCUS_FILTER_HUERTA
+	}
 	cost = 10
 	relative_position_id = mex_military_cientificos
 	ai_will_do = { factor = 1000 }
@@ -202,6 +223,9 @@ focus = {
 	prerequisite = { focus = mex_republican_values }
 	completion_reward = {
 	
+	}
+	search_filters = {
+		FOCUS_FILTER_HUERTA
 	}
 	cost = 10
 	relative_position_id = mex_republican_values
@@ -219,6 +243,9 @@ focus = {
 	completion_reward = {
 	
 	}
+	search_filters = {
+		FOCUS_FILTER_HUERTA
+	}
 	cost = 5
 	relative_position_id = mex_preparing_coup_diaz
 	ai_will_do = { factor = 1000 }
@@ -234,6 +261,9 @@ focus = {
 	prerequisite = { focus = mex_president_in_distress }
 	completion_reward = {
 	
+	}
+	search_filters = {
+		FOCUS_FILTER_HUERTA
 	}
 	cost = 5
 	relative_position_id = mex_president_in_distress
@@ -333,6 +363,9 @@ focus = {
 	prerequisite = { focus = mex_watchful_eye }
 	completion_reward = {
 	
+	}
+	search_filters = {
+		FOCUS_FILTER_HUERTA
 	}
 	cost = 5
 	relative_position_id = mex_passing_baton
@@ -1373,6 +1406,278 @@ focus = {
 	}
 	cost = 5
 	relative_position_id = mex_expand_drilling_operations
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_choosing_a_right_hand_man
+	icon = GFX_focus_choosing_a_right_hand_man
+	available = {
+	}
+	prerequisite = {}
+	completion_reward = {
+	
+	}
+	cost = 5
+	relative_position_id = mex_from_the_ashes
+	ai_will_do = { factor = 1000 }
+	x = 10
+	y = 0
+}
+
+focus = {
+	id = mex_choose_reyes
+	icon = GFX_focus_choose_reyes
+	available = {
+	}
+	prerequisite = { focus = mex_choosing_a_right_hand_man }
+	completion_reward = {
+	
+	}
+	cost = 5
+	relative_position_id = mex_choosing_a_right_hand_man
+	ai_will_do = { factor = 1000 }
+	x = -3
+	y = 1
+}
+
+focus = {
+	id = mex_keep_your_friends_close
+	icon = GFX_focus_keep_your_friends_close
+	available = {
+	}
+	prerequisite = { focus = mex_choose_reyes }
+	completion_reward = {
+	
+	}
+	cost = 5
+	relative_position_id = mex_choose_reyes
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_and_your_enemies_closer
+	icon = GFX_focus_and_your_enemies_closer
+	available = {
+	}
+	prerequisite = { focus = mex_keep_your_friends_close }
+	completion_reward = {
+	
+	}
+	cost = 5
+	relative_position_id = mex_keep_your_friends_close
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_root_out_the_villistas_and_zapatistas
+	icon = GFX_focus_root_out_the_villistas_and_zapatistas
+	available = {
+	}
+	prerequisite = { focus = mex_and_your_enemies_closer }
+	completion_reward = {
+	
+	}
+	cost = 5
+	relative_position_id = mex_and_your_enemies_closer
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_choose_de_la_barra
+	icon = GFX_focus_choose_de_la_barra
+	available = {
+	}
+	prerequisite = { focus = mex_choosing_a_right_hand_man }
+	completion_reward = {
+	
+	}
+	cost = 5
+	relative_position_id = mex_choosing_a_right_hand_man
+	ai_will_do = { factor = 1000 }
+	x = -1
+	y = 1
+}
+
+focus = {
+	id = mex_cientifico_reforms
+	icon = GFX_focus_cientifico_reforms
+	available = {
+	}
+	prerequisite = { focus = mex_choose_de_la_barra }
+	completion_reward = {
+	
+	}
+	cost = 5
+	relative_position_id = mex_choose_de_la_barra
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_concessions_to_the_labors
+	icon = GFX_focus_concessions_to_the_labors
+	available = {
+	}
+	prerequisite = { focus = mex_cientifico_reforms }
+	completion_reward = {
+	
+	}
+	cost = 5
+	relative_position_id = mex_cientifico_reforms
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_a_call_for_peace
+	icon = GFX_focus_a_call_for_peace
+	available = {
+	}
+	prerequisite = { focus = mex_concessions_to_the_labors }
+	completion_reward = {
+	
+	}
+	cost = 5
+	relative_position_id = mex_concessions_to_the_labors
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_choose_huerta
+	icon = GFX_focus_choose_huerta
+	available = {
+	}
+	prerequisite = { focus = mex_choosing_a_right_hand_man }
+	completion_reward = {
+	
+	}
+	cost = 5
+	relative_position_id = mex_choosing_a_right_hand_man
+	ai_will_do = { factor = 1000 }
+	x = 1
+	y = 1
+}
+
+focus = {
+	id = mex_domestic_arms_industry
+	icon = GFX_focus_domestic_arms_industry
+	available = {
+	}
+	prerequisite = { focus = mex_choose_huerta }
+	completion_reward = {
+	
+	}
+	cost = 5
+	relative_position_id = mex_choose_huerta
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_artillery_factories
+	icon = GFX_focus_artillery_factories
+	available = {
+	}
+	prerequisite = { focus = mex_domestic_arms_industry }
+	completion_reward = {
+	
+	}
+	cost = 5
+	relative_position_id = mex_domestic_arms_industry
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_military_industrial_complex
+	icon = GFX_focus_military_industrial_complex
+	available = {
+	}
+	prerequisite = { focus = mex_artillery_factories }
+	completion_reward = {
+	
+	}
+	cost = 5
+	relative_position_id = mex_artillery_factories
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_choose_carranza
+	icon = GFX_focus_choose_carranza
+	available = {
+	}
+	prerequisite = { focus = mex_choosing_a_right_hand_man }
+	completion_reward = {
+	
+	}
+	cost = 5
+	relative_position_id = mex_choosing_a_right_hand_man
+	ai_will_do = { factor = 1000 }
+	x = 3
+	y = 1
+}
+
+focus = {
+	id = mex_carranza_amnesty
+	icon = GFX_focus_carranza_amnesty
+	available = {
+	}
+	prerequisite = { focus = mex_choose_carranza }
+	completion_reward = {
+	
+	}
+	cost = 5
+	relative_position_id = mex_choose_carranza
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_returning_the_rebels_to_the_fold
+	icon = GFX_focus_returning_the_rebels_to_the_fold
+	available = {
+	}
+	prerequisite = { focus = mex_carranza_amnesty }
+	completion_reward = {
+	
+	}
+	cost = 5
+	relative_position_id = mex_carranza_amnesty
+	ai_will_do = { factor = 1000 }
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_a_constitution_of_compromise
+	icon = GFX_focus_a_constitution_of_compromise
+	available = {
+	}
+	prerequisite = { focus = mex_returning_the_rebels_to_the_fold }
+	completion_reward = {
+	
+	}
+	cost = 5
+	relative_position_id = mex_returning_the_rebels_to_the_fold
 	ai_will_do = { factor = 1000 }
 	x = 0
 	y = 1
