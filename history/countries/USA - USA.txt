@@ -1022,4 +1022,8 @@ if = {
 		ww1_fortification3b = 1
 
 	}
+	}
+1919.7.2 = {
+remove_ideas = {interwar_spirit_TheGreatWar_Winner}
+add_ideas = {MSM_USA_european_embarrassment}
 }

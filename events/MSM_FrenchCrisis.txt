@@ -35,7 +35,7 @@ country_event = {
 	option = {
 		name = MSMFrenchCrisis.2.b
 		ai_chance = { factor = 100 }
-		complete_national_focus = FRA_crisis_petain_takes_control
+		complete_national_focus = FRA_crisis_foch_takes_control
 	}
 	#Communists Take Control
 	option = {

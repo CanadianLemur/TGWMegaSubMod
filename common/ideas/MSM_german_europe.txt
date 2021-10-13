@@ -2,7 +2,7 @@ ideas = {
 	country = {
 		european_economic_union_leader = {
 
-			picture = jap_zaibatsu
+			picture = triumphant_will
 				
 			allowed = {
 				always = yes
@@ -18,7 +18,7 @@ ideas = {
 		}
 		european_economic_union_member = {
 
-			picture = jap_zaibatsu
+			picture = triumphant_will
 				
 			allowed = {
 				NOT = {has_war_with = GER}

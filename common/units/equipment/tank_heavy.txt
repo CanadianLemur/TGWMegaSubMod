@@ -10,7 +10,12 @@ equipments = {
 		is_convertable = yes
 		type = armor
 		group_by = archetype
-		
+		can_be_produced = {
+			NOT = {
+				has_idea = BUL_army_restrictions
+				has_idea = MSM_frankfurt_army_restrictions_france
+			}
+		}
 		interface_category = interface_category_armor
 		
 		upgrades = {

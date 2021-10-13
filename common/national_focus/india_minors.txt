@@ -1,0 +1,41 @@
+focus_tree = {
+	id = india_minor_focus
+	default = no
+	country = { factor=0 modifier = { add = 15 OR = {tag = MYS tag = KAS tag = TRV tag = BAR tag = PUN tag = BAN tag = DEL tag = HYD tag = SIN tag = JAI tag = IDO tag = ASM }} }	
+
+	###########################################################################################################################
+	# POLITICAL
+	###########################################################################################################################
+
+	focus = {
+		id = indian_minor_the_end_of_an_era
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		completion_reward = { add_political_power = 150 }
+		ai_will_do = { factor = 1 }
+		cost = 10
+		x = 3
+		y = 0
+	}	
+	focus = {
+		id = indian_minor_indian_use_princely_wealth
+		icon = GFX_focus_mex_privatisation
+		prerequisite = {focus = indian_minor_the_end_of_an_era}
+		completion_reward = { add_offsite_building = { type = arms_factory level = 1 }
+		add_offsite_building = { type = industrial_complex level = 1 }
+		}
+		ai_will_do = { factor = 1 }
+		cost = 10
+		x = 2
+		y = 1
+	}
+	focus = {
+		id = indian_minor_mobilize_princely_army
+		icon = GFX_focus_RAJ_indian_gentlemen_offcers
+		prerequisite = {focus = indian_minor_the_end_of_an_era}
+		completion_reward = { add_manpower = 4000 }
+		ai_will_do = { factor = 1 }
+		cost = 10
+		x = 4
+		y = 1
+	}
+

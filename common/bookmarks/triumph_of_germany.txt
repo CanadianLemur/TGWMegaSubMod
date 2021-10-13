@@ -84,11 +84,13 @@ bookmarks = {
 			history = "FRA_TRIUMPH_OF_GERMANY_DESC"
 			ideology = democratic
 			ideas = {
+				MSM_frankfurt_army_restrictions_france
 				MSM_frankfurt_naval_restrictions_france
+				MSM_FRA_rising_unrest
 			}
 			focuses = {
 				FRA_crisis_action_francaise_coup
-				FRA_crisis_petain_takes_control
+				FRA_crisis_foch_takes_control
 				FRA_crisis_communard_coup
 			}
 		}

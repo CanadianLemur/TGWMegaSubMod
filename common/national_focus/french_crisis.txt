@@ -21,7 +21,7 @@ focus_tree = {
 	focus = {
 		id = FRA_crisis_attempt_to_arrest_rebellious_leaders
 		icon = GFX_goal_generic_political_pressure
-		prerequisite = {focus = FRA_crisis_no_alliances_with_fascists focus = FRA_no_compromises_on_democratic_principles focus = FRA_crisis_national_salvation_coalition focus = FRA_crisis_going_it_alone focus = FRA_crisis_distribute_bread focus = FRA_crisis_socialist_concessions}
+		prerequisite = {focus = FRA_crisis_no_alliances_with_AF focus = FRA_crisis_no_compromises_on_democratic_principles focus = FRA_crisis_national_salvation_coalition focus = FRA_crisis_going_it_alone focus = FRA_crisis_distribute_bread focus = FRA_crisis_socialist_concessions}
 		relative_position_id = FRA_crisis_shame_of_defeat
 		completion_reward = {
 		remove_ideas = MSM_FRA_rising_unrest
@@ -34,7 +34,7 @@ focus_tree = {
 		add_manpower = 10000
 		}
 		if = {
-		limit =  {has_completed_focus = FRA_crisis_petain_takes_control}
+		limit =  {has_completed_focus = FRA_crisis_foch_takes_control}
 		set_country_flag = french_military_government
 		load_focus_tree = petain_government
 		add_manpower = 10000
@@ -220,7 +220,7 @@ focus_tree = {
 						}
 					}
 				}
-			if = { limit = {NOT = {OR = {has_completed_focus = FRA_crisis_national_salvation_coalition has_completed_focus = FRA_crisis_petain_takes_control}}}
+			if = { limit = {NOT = {OR = {has_completed_focus = FRA_crisis_national_salvation_coalition has_completed_focus = FRA_crisis_foch_takes_control}}}
 				create_dynamic_country = {
 					original_tag = FRA
 					add_manpower = 10000
@@ -398,6 +398,32 @@ focus_tree = {
 		y = 2
 	}
 	focus = {
+		id = FRA_crisis_democracy_holds_on
+		icon = GFX_goal_support_democracy
+		prerequisite = {focus = FRA_crisis_shame_of_defeat}
+		relative_position_id = FRA_crisis_shame_of_defeat
+		completion_reward = {  
+		add_stability = 0.05
+		}
+		ai_will_do = { factor = 20 }
+		cost = 3
+		x = 3
+		y = 1
+	}
+	focus = {
+		id = FRA_crisis_no_compromises_on_democratic_principles
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = {focus = FRA_crisis_democracy_holds_on}
+		relative_position_id = FRA_crisis_democracy_holds_on
+		completion_reward = {  
+		add_stability = 0.05
+		}
+		ai_will_do = { factor = 20 }
+		cost = 3
+		x = 0
+		y = 2
+	}
+	focus = {
 		id = FRA_crisis_socialist_concessions
 		icon = GFX_focus_generic_concessions
 		available = {has_political_power > 200}
@@ -421,32 +447,6 @@ focus_tree = {
 		y = 2
 	}
 	focus = {
-		id = FRA_crisis_democracy_holds_on
-		icon = GFX_goal_support_democracy
-		prerequisite = {focus = FRA_crisis_shame_of_defeat}
-		relative_position_id = FRA_crisis_shame_of_defeat
-		completion_reward = {  
-		add_stability = 0.05
-		}
-		ai_will_do = { factor = 20 }
-		cost = 3
-		x = 3
-		y = 1
-	}
-	focus = {
-		id = FRA_no_compromises_on_democratic_principles
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = {focus = FRA_crisis_democracy_holds_on}
-		relative_position_id = FRA_crisis_democracy_holds_on
-		completion_reward = {  
-		add_stability = 0.05
-		}
-		ai_will_do = { factor = 20 }
-		cost = 3
-		x = 0
-		y = 2
-	}
-	focus = {
 		id = FRA_crisis_going_it_alone
 		icon = GFX_focus_generic_strike_at_democracy2
 		prerequisite = {focus = FRA_crisis_action_francaise_coup}
@@ -461,7 +461,7 @@ focus_tree = {
 		y = 2
 	}
 	focus = {
-		id = FRA_crisis_petain_takes_control
+		id = FRA_crisis_foch_takes_control
 		icon = GFX_goal_generic_attack_allies
 		prerequisite = {focus = FRA_crisis_shame_of_defeat}
 		relative_position_id = FRA_crisis_shame_of_defeat
@@ -480,10 +480,10 @@ focus_tree = {
 			}
 		set_cosmetic_tag =  FRA_petain
 		create_country_leader = {
-		name = "Phillipe Pétain"
-		desc = "POLITICS_phillipe_petain_DESC"
-		picture = "gfx/hoi4tgw_portraits/FRA/army_generals/FRA_philippe_petain.dds"
-		expire = "1965.1.1"
+		name = "Ferdinand Foch"
+		desc = "POLITICS_ferdinand_foch_DESC"
+		picture = "gfx/hoi4tgw_portraits/FRA/army_generals/FRA_ferdinand_foch.dds"
+		expire = "1930.1.1"
 		ideology = despotism
 		traits = {
 		
@@ -496,10 +496,10 @@ focus_tree = {
 		y = 1
 	}
 	focus = {
-		id = FRA_crisis_no_alliances_with_fascists
+		id = FRA_crisis_no_alliances_with_AF
 		icon = GFX_focus_generic_anti_fascist_diplomacy
-		prerequisite = {focus = FRA_crisis_petain_takes_control}
-		relative_position_id = FRA_crisis_petain_takes_control
+		prerequisite = {focus = FRA_crisis_foch_takes_control}
+		relative_position_id = FRA_crisis_foch_takes_control
 		completion_reward = {  
 			add_stability = 0.05
 		}
@@ -512,8 +512,8 @@ focus_tree = {
 	focus = {
 		id = FRA_crisis_national_salvation_coalition
 		icon = GFX_goal_molotov_ribbentrop_pact
-		prerequisite = {focus = FRA_crisis_petain_takes_control focus = FRA_crisis_action_francaise_coup}
-		relative_position_id = FRA_crisis_petain_takes_control
+		prerequisite = {focus = FRA_crisis_foch_takes_control focus = FRA_crisis_action_francaise_coup}
+		relative_position_id = FRA_crisis_foch_takes_control
 		available = {has_political_power > 200}
 		completion_reward = { 
 			add_political_power = -200
@@ -528,7 +528,7 @@ focus_tree = {
 			add_stability = 0.1 #Petain and Action Francaise will be together in the civil war, under the leadership of whoever executed the coup
 			set_country_flag = national_salvation_coalition
 		}
-		mutually_exclusive = {focus = FRA_crisis_no_alliances_with_fascists}
+		mutually_exclusive = {focus = FRA_crisis_no_alliances_with_AF}
 		mutually_exclusive = {focus = FRA_crisis_going_it_alone}
 		ai_will_do = { factor = 20 }
 		cost = 1

@@ -64,3 +64,13 @@ germanization_integration = {
 		tag = GER
 	}
 }
+german_european_union = {
+	icon = generic_political_actions
+	priority = 10
+	visible = {
+		or = {
+		has_idea = european_economic_union_leader
+		has_idea = european_economic_union_member
+		}
+	}
+}

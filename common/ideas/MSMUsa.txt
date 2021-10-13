@@ -1,15 +1,15 @@
 ideas={
 	country = {
-		MSM_USA_war_loss = {
+		MSM_USA_european_embarrassment = {
 
 			picture = GFX_idea_spr_political_violence
 				
 			removal_cost = -1
 				
 			modifier = {
-				political_power_gain = -2
-				war_support_weekly = -0.001
-				stability_weekly = -0.005
+				political_power_gain = -0.5
+				war_support_weekly = -0.01
+				stability_weekly = -0.001
 			}
 				
 		}

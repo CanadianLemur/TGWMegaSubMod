@@ -1,0 +1,54 @@
+
+german_european_union = {
+	#Shows Current members of the EEU
+	GER_EU_members= {                      
+		allowed = { always = yes }              
+		available = {  
+			always = no
+		}
+		is_good = yes   
+		fire_only_once = yes
+		ai_will_do = { factor = 0 } 
+		complete_effect = {
+		every_country = {
+		limit = {OR = {
+			has_idea = european_economic_union_leader
+			has_idea = european_economic_union_member
+			}
+		}
+		custom_effect_tooltip = "Are Members of the European Economic Union"
+		}
+		}
+	}
+	# Invitation of European Subjects
+	GER_EU_invite_european_country= {                      
+		 target_trigger = {
+			FROM = {
+               OR = {
+					tag = HOL
+                    tag = BEL
+                    tag = BRI
+					tag = EST
+					tag = LIT
+					tag = UKR
+					tag = POL
+					tag = HUN
+					tag = CRO
+					tag = LMV
+					tag = BLR
+					tag = DKU
+					tag = SAR
+					tag = CAU
+               }
+			  is_subject_of = ROOT
+          }
+		}
+		fire_only_once = yes
+		ai_will_do = { factor = 0 } 
+		complete_effect = {
+		FROM  = {
+		add_ideas = european_economic_union_member
+		}
+		}
+	}
+}

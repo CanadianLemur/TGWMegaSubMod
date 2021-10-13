@@ -11,11 +11,9 @@ country_event = {	#Intro
 	#Show Country Guide
 	option = {
 		name =  MSM_introduction.1.b
-		limit = {
-		AND = {
+		trigger = {
 		has_start_date < 1912.01.01
 		OR = {tag = USA tag = GER tag = MEX}
-		}
 		}
 		# USA 1910
 		if = {

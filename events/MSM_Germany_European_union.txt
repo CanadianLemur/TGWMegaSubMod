@@ -1,0 +1,24 @@
+﻿#######################################
+# New German Events, added by Canadian Lemur #
+#######################################
+add_namespace = MSM_Germany_EU
+####Military access events####
+country_event = {
+	id =  MSM_Germany_EU.1
+	title = MSM_Germany_EU.1.t
+	desc = MSM_Germany_EU.1.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = MSM_Germany_EU.1.a
+		ai_chance = { factor = 00 }
+	}
+	option = {
+		name = MSM_Germany_EU.1.b
+		ai_chance = { factor = 100 }
+		}
+	}
+}

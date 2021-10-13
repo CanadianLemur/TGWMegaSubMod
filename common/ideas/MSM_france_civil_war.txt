@@ -38,6 +38,7 @@ ideas={
 			modifier = {
 				conscription_factor = -0.50
 				army_morale_factor = -0.15
+				custom_modifier_tooltip = tanks_forbidden
 			}
 		}
 		MSM_FRA_rising_unrest = {

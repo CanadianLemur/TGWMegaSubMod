@@ -3,7 +3,7 @@ focus_tree = {
 	default=no
 	country={ factor=0 
 	modifier = {
-			add = 10
+			add = 20
 			has_country_flag = indianhegemon
 	
 	}

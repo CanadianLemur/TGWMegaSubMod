@@ -926,7 +926,7 @@ focus_tree = {
 		id = USA_MSM_elect_roosevelt
  		icon = GFX_teddy_tree_focus
 		relative_position_id = USA_MSM_broken_party
-		avaliable = {
+		available = {
 			has_country_leader = {
 				ruling_only = yes
 				name = "Theodore Roosevelt"
@@ -1431,7 +1431,7 @@ focus_tree = {
 		id = USA_MSM_reelect_taft
  		icon = GFX_taft_tree_focus
 		relative_position_id = USA_MSM_broken_party
-		avaliable = {
+		available = {
 			has_country_leader = {
 				ruling_only = yes
 				name = "William H. Taft"
@@ -1943,7 +1943,7 @@ focus_tree = {
 		id = USA_MSM_elect_debs
  		icon = GFX_debs_tree_focus
 		relative_position_id = USA_MSM_broken_party
-		avaliable = {
+		available = {
 			has_country_leader = {
 				ruling_only = yes
 				name = "Eugene V. Debs"
@@ -5025,6 +5025,9 @@ focus_tree = {
 			add_political_power = 75
 			add_war_support = -0.2
 		}
+		allow_branch = {
+			not = {has_global_flag = kis_second_treaty_frankfort}
+		}
 		ai_will_do = { factor = 1 }
  		cost = 8
 		x = 10
@@ -5269,6 +5272,9 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 100
 		}
+		allow_branch = {
+		not = {has_global_flag = kis_second_treaty_frankfort}
+		}
 		ai_will_do = { factor = 1 }
  		cost = 5
 		x = 28
@@ -5319,6 +5325,7 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
  		allow_branch = {
 			has_dlc = "Man the Guns"
+			not = {has_global_flag = kis_second_treaty_frankfort}
 		}
 		available = {
 		}
@@ -7907,6 +7914,7 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
  		allow_branch = {
 			has_dlc = "Man the Guns"
+			not = {has_global_flag = kis_second_treaty_frankfort}
 		}
 		available = {
 		}

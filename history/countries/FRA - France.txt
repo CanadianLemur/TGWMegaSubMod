@@ -3640,6 +3640,7 @@ if = {
 	remove_ideas = {
 		interwar_spirit_TheGreatWar_Winner
 		militarism_focus
+		liberty_ethos_focus
 	}
 	# Global Flags for alternate 1919 Start Up
 	oob = "FRA_1919_alternate"
