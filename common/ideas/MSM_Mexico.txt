@@ -30,5 +30,33 @@ ideas = {
 				repair_speed_infrastructure_factor = 0.3
 			}
 		}
+		MEX_repair_norte = {
+
+			picture = GFX_unknown_idea
+				
+			allowed = {
+				
+			}
+
+			removal_cost = -1
+				
+			modifier = {
+				480 = {
+            state_repair_speed_infrastructure_factor = 1.2
+				}
+				481 = {
+					state_repair_speed_infrastructure_factor = 1.2
+				}
+				482 = {
+					state_repair_speed_infrastructure_factor = 1.2
+				}
+				483 = {
+					state_repair_speed_infrastructure_factor = 1.2
+				}
+				484 = {
+					state_repair_speed_infrastructure_factor = 1.2
+				}
+			}
+		}
 	}
 }

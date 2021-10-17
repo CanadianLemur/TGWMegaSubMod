@@ -27,7 +27,10 @@ focus = {
 	}
 	prerequisite = { focus = mex_thousand_year_porfiriato }
 	completion_reward = {
-	
+        add_timed_idea = {
+            idea = MEX_repair_norte
+            days = 160
+        }
 	}
 	search_filters = {
 		FOCUS_FILTER_DIAZ
@@ -46,7 +49,12 @@ focus = {
 	}
 	prerequisite = { focus = mex_rebuild_el_norte }
 	completion_reward = {
-	
+        country_event = {
+			id = MSMMexico.19
+			days = 3
+			random = 10
+			random_days = 1
+		}
 	}
 	search_filters = {
 		FOCUS_FILTER_DIAZ
@@ -442,6 +450,7 @@ focus = {
 	id = mex_british_french_recognition
 	icon = GFX_focus_british_french_recognition
 	available = {
+        not = { has_completed_focus = mex_belize_question }
 	}
 	prerequisite = { focus = mex_an_in_with_a_dominion }
 	completion_reward = {
@@ -557,6 +566,7 @@ focus = {
 	id = mex_belize_question
 	icon = GFX_focus_belize_question
 	available = {
+    not = { has_completed_focus = mex_british_french_recognition }
 	}
 	prerequisite = { focus = mex_la_consolidacion }
 	completion_reward = {
@@ -659,7 +669,7 @@ focus = {
 	}
 	prerequisite = { focus = mex_making_new_friends }
 	completion_reward = {
-	
+        
 	}
 	cost = 7
 	relative_position_id = mex_making_new_friends
@@ -767,6 +777,7 @@ focus = {
 	available = {
 	}
 	prerequisite = { focus = mex_from_the_ashes }
+    mutually_exclusive = { focus = mex_a_demon_rises }
 	completion_reward = {
 	
 	}
@@ -1273,6 +1284,7 @@ focus = {
 	icon = GFX_focus_a_demon_rises
 	available = {
 	}
+    mutually_exclusive = { focus = mex_comes_something_greater }
 	prerequisite = { focus = mex_from_the_ashes }
 	completion_reward = {
 	
@@ -1472,6 +1484,9 @@ focus = {
 	icon = GFX_focus_choose_reyes
 	available = {
 	}
+    mutually_exclusive = { focus = mex_choose_de_la_barra }
+	mutually_exclusive = { focus = mex_choose_huerta }
+    mutually_exclusive = { focus = mex_choose_carranza }
 	prerequisite = { focus = mex_choosing_a_right_hand_man }
 	completion_reward = {
 	
@@ -1536,6 +1551,9 @@ focus = {
 	icon = GFX_focus_choose_de_la_barra
 	available = {
 	}
+    mutually_exclusive = { focus = mex_choose_reyes }
+	mutually_exclusive = { focus = mex_choose_huerta }
+    mutually_exclusive = { focus = mex_choose_carranza }
 	prerequisite = { focus = mex_choosing_a_right_hand_man }
 	completion_reward = {
 	
@@ -1599,7 +1617,14 @@ focus = {
 	id = mex_choose_huerta
 	icon = GFX_focus_choose_huerta
 	available = {
+        has_country_leader = {
+            name = "Victoriano Huerta"
+            ruling_only = yes
+        }
 	}
+    mutually_exclusive = { focus = mex_choose_reyes }
+	mutually_exclusive = { focus = mex_choose_de_la_barra }
+    mutually_exclusive = { focus = mex_choose_carranza }
 	prerequisite = { focus = mex_choosing_a_right_hand_man }
 	completion_reward = {
 	
@@ -1663,7 +1688,11 @@ focus = {
 	id = mex_choose_carranza
 	icon = GFX_focus_choose_carranza
 	available = {
+        has_country_flag = MSMMEXNOTPURGEDCARRANZA
 	}
+    mutually_exclusive = { focus = mex_choose_reyes }
+	mutually_exclusive = { focus = mex_choose_de_la_barra }
+    mutually_exclusive = { focus = mex_choose_huerta }
 	prerequisite = { focus = mex_choosing_a_right_hand_man }
 	completion_reward = {
 	

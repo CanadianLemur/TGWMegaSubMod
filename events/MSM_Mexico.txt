@@ -1157,3 +1157,106 @@ country_event={ ###Plan of Alaya
 		}
 	}
 }
+
+country_event={ ###Trial of Maderistas intro
+	title=MSMMexico.19.t
+	desc=MSMMexico.19.d
+	id=MSMMexico.19
+	fire_only_once=yes
+	is_triggered_only=yes
+	trigger = {
+	always = no
+	}
+	immediate = {
+		country_event = {
+			id = MSMMexico.20
+			days = 2
+			random = 10
+			random_days = 1
+		}
+	}
+	option={
+		name=MSMMexico.19.a
+	}
+}
+
+country_event={ ###Trial of Maderistas madero
+	title=MSMMexico.20.t
+	desc=MSMMexico.20.d
+	id=MSMMexico.20
+	fire_only_once=yes
+	is_triggered_only=yes
+	trigger = {
+	always = no
+	}
+	immediate = {
+		country_event = {
+			id = MSMMexico.21
+			days = 5
+			random = 15
+			random_days = 2
+		}
+	}
+	option={
+		name=MSMMexico.20.a ##Exile him to the countryside  WIP OUTCOME
+		set_country_flag = MSMMEXMADEROEXILED
+	}
+	option={
+		name=MSMMexico.20.b ##Put him in prison  MAKES REBELS SOMEWHAT UPSET
+		set_country_flag = MSMMEXMADEROJAILED
+	}
+	option={
+		name=MSMMexico.20.c ##Execute Madero  MAKES REBELS VERY UPSET
+		set_country_flag = MSMMEXMADEROPURGED
+	}
+}
+
+country_event={ ###Trial of Maderistas carranza
+	title=MSMMexico.21.t
+	desc=MSMMexico.21.d
+	id=MSMMexico.21
+	fire_only_once=yes
+	is_triggered_only=yes
+	trigger = {
+	always = no
+	}
+	immediate = {
+		country_event = {
+			id = MSMMexico.22
+			days = 2
+			random = 15
+			random_days = 2
+		}
+	}
+	option={
+		name=MSMMexico.21.a ##Let him be  May help to prevent or lessen a 2nd civil war
+		set_country_flag = MSMMEXNOTPURGEDCARRANZA
+		custom_effect_tooltip = MSMMEXNOTPURGEDCARRANZATOOLTIP
+	}
+	option={
+		name=MSMMexico.21.b ##Execute Carranza  MAKES REBELS UPSET BUT ALSO SOMEWHAT WEAKER
+		set_country_flag = MSMMEXPURGEDCARRANZA
+		custom_effect_tooltip = MSMMEXPURGEDCARRANZATOOLTIP
+	}
+}
+
+country_event={ ###Trial of Maderistas orozco
+	title=MSMMexico.22.t
+	desc=MSMMexico.22.d
+	id=MSMMexico.22
+	fire_only_once=yes
+	is_triggered_only=yes
+	trigger = {
+	always = no
+	}
+	option={
+		name=MSMMexico.22.a ##Let him be  May help to prevent or lessen a 2nd civil war
+		set_country_flag = MSMMEXNOTPURGEDOROZCO
+		custom_effect_tooltip = MSMMEXNOTPURGEDOROZCOTOOLTIP
+	}
+	option={
+		name=MSMMexico.22.b ##Execute Carranza  MAKES REBELS UPSET BUT ALSO SOMEWHAT WEAKER
+		set_country_flag = MSMMEXPURGEDOROZCO
+		custom_effect_tooltip = MSMMEXPURGEDOROZCOTOOLTIP
+	}
+}
