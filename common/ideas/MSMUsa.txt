@@ -1,6 +1,7 @@
 ideas={
 	country = {
 		MSM_prohibition_middle_ground = {
+			picture = prohibition_accepted
 			allowed = {
 				always = no
 			}
@@ -32,7 +33,7 @@ ideas={
 		}
 		MSM_USA_european_embarrassment = {
 
-			picture = idea_generic_army_problems
+			picture = generic_army_problems
 				
 			removal_cost = -1
 				
@@ -45,7 +46,7 @@ ideas={
 		}
 		MSM_USA_european_loan_payments = {
 
-			picture = idea_generic_foreign_capital
+			picture = generic_foreign_capital
 				
 			removal_cost = -1
 				
@@ -69,7 +70,7 @@ ideas={
 		}
 		MSM_USA_collapsed_government = {
 
-			picture = idea_generic_disjointed_gov
+			picture = generic_disjointed_gov
 				
 			removal_cost = -1
 				

@@ -243,7 +243,7 @@ news_event = {
 		            ideology = liberalism traits = {}
 		        }
 				unlock_national_focus = USA_interwar_1924_elections
-				unlock_national_focus = USA_interwar_elect_john_w_daivs
+				unlock_national_focus = USA_interwar_elect_john_w_davis
 	    	}
     	}
     }
@@ -274,7 +274,7 @@ news_event = {
 		            ideology = socialism traits = {}
 		        }
 				unlock_national_focus = USA_interwar_1924_elections
-				unlock_national_focus = USA_interwar_elect_robert_m_la_follette
+				unlock_national_focus = USA_interwar_elect_robert_m_la_follete
 	    	}
     	}
     }
@@ -438,9 +438,9 @@ country_event = {
 			}
 		}
 	}
-	# Elect Al Smith
+	# Elect FDR
 	option = {
-		name = MSM_USA_Interwar.8.a
+		name = MSM_USA_Interwar.11.a
 		ai_chance = { factor = 100 }
 
 		hidden_effect = {
@@ -450,9 +450,10 @@ country_event = {
 
 	# Reelect Herbert Hoover
 	option = {
-		name = MSM_USA_Interwar.8.b
+		name = MSM_USA_Interwar.11.b
 		ai_chance = { factor = 0 }
-
+		unlock_national_focus = USA_interwar_1932_elections
+		unlock_national_focus = USA_interwar_reelect_herbert_hoover
 	}
 }
 
@@ -480,8 +481,8 @@ news_event = {
 						dislikes_germany
 					}
 				}
-				unlock_national_focus = USA_interwar_1928_elections
-				unlock_national_focus = USA_interwar_elect_al_smith
+				unlock_national_focus = USA_interwar_1932_elections
+				unlock_national_focus = USA_interwar_elect_FDR
 	    	}
     	}
     }
