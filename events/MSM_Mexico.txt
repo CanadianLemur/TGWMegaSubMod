@@ -10,6 +10,7 @@ country_event = {
 		TAG = MEX
 	}
 	immediate = {
+		set_country_flag = MSMMADEROCANDIDATE
 		hidden_effect = {
 			no_compliance_gain = 1
 			remove_state_core = 480
@@ -258,6 +259,7 @@ country_event = {
 		set_cosmetic_tag = MEX_diaz_mexico
 		set_research_slots = 3
 	    reserve_dynamic_country = yes
+		add_ideas = { MEX_revolution_hell }
 	}
 	
 	create_dynamic_country = {
@@ -269,6 +271,8 @@ country_event = {
 		set_cosmetic_tag = MEX_madero_mexico
 		set_research_slots = 3
 	    reserve_dynamic_country = yes
+		
+		add_ideas = { MEX_revolution_hell }
 		
 		create_country_leader = {
 			name = "Francisco I. Madero"
@@ -289,7 +293,10 @@ country_event = {
 		set_cosmetic_tag = MEX_villa_mexico
 		set_research_slots = 3
 	    reserve_dynamic_country = yes
-		add_ideas = { MEX_revolutionary_fervor }
+		add_ideas = {
+			MEX_revolutionary_fervor
+			MEX_revolution_hell
+		}
 		
 		create_country_leader = {
 			name = "Pancho Villa"
@@ -310,7 +317,10 @@ country_event = {
 		set_cosmetic_tag = MEX_zapata_mexico
 		set_research_slots = 3
 	    reserve_dynamic_country = yes
-		add_ideas = { MEX_revolutionary_fervor }
+		add_ideas = {
+			MEX_revolutionary_fervor
+			MEX_revolution_hell
+		}
 		
 		create_country_leader = {
 			name = "Emiliano Zapata"
@@ -331,7 +341,10 @@ country_event = {
 		set_cosmetic_tag = MEX_magonista_mexico
 		set_research_slots = 3
 	    reserve_dynamic_country = yes
-		add_ideas = { MEX_revolutionary_fervor }
+		add_ideas = {
+			MEX_revolutionary_fervor
+			MEX_revolution_hell
+		}
 		create_country_leader = {
 			name = "Ricardo Flores Magón"
 			desc = "POLITICS_RICARDO_MAGON_DESC"
@@ -367,11 +380,15 @@ country_event = {
 			}
 			hidden_effect={
 			##Give player Chihuahua and give MXA control of mexico states
-			MEX = { add_state_core = 482 }
+			MEX = {
+				add_state_core = 482
+				add_ideas = { MEX_revolution_hell }
+			}
 			MXA = {  ##Dyanamic Diaz Tag
 				set_capital = 277
 				add_ideas = {
 					MEX_ww1_mexico_prerevolution
+					MEX_revolution_hell
 				}
 				
 				set_politics = {
@@ -1258,5 +1275,26 @@ country_event={ ###Trial of Maderistas orozco
 		name=MSMMexico.22.b ##Execute Carranza  MAKES REBELS UPSET BUT ALSO SOMEWHAT WEAKER
 		set_country_flag = MSMMEXPURGEDOROZCO
 		custom_effect_tooltip = MSMMEXPURGEDOROZCOTOOLTIP
+	}
+}
+
+country_event={ ###Deal with Landowners
+	title=MSMMexico.23.t
+	desc=MSMMexico.23.d
+	id=MSMMexico.23
+	fire_only_once=yes
+	is_triggered_only=yes
+	trigger = {
+	always = no
+	}
+	option={
+		name=MSMMexico.23.a ##MAKE A DEAL WITH LANDOWNERS
+		set_country_flag = MSMLANDOWNERSPLACATED
+		custom_effect_tooltip = MSMLANDOWNERSPLACATEDTOOLTIP
+	}
+	option={
+		name=MSMMexico.23.b ##THREATEN LANDOWNERS
+		set_country_flag = MSMLANDOWNERSANGERED
+		custom_effect_tooltip = MSMLANDOWNERSANGEREDTOOLTIP
 	}
 }

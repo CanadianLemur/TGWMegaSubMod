@@ -3,6 +3,130 @@ focus_tree = {
 	default = no
 	country = { factor=0  modifier={ add=100 tag=MEX }  modifier={ add=10 original_tag=MEX } }
 
+### STARTING FOCUSES ###
+
+focus = {
+	id = mex_civil_war_looms
+	icon = GFX_focus_civil_war_looms
+	available = {
+	}
+	completion_reward = {
+	
+	}
+	search_filters = {
+		
+	}
+	cost = 5
+	ai_will_do = { factor = 4000 }
+	x = 22
+	y = 0
+}
+
+focus = {
+	id = mex_challenged_election
+	icon = GFX_focus_challenged_election
+	available = {
+		has_country_flag = MSMMADEROCANDIDATE
+	}
+	completion_reward = {
+	
+	}
+	prerequisite = { focus = mex_civil_war_looms }
+	search_filters = {
+	}
+	cost = 2
+	ai_will_do = { factor = 4000 }
+	relative_position_id = mex_civil_war_looms
+	x = 0
+	y = 1
+}
+
+### INITIAL DIAZ ###
+focus = {
+	id = mex_diaz_is_right
+	icon = GFX_focus_diaz_is_right
+	available = {
+	}
+	mutually_exclusive = { focus = mex_a_new_path }
+	completion_reward = {
+	}
+	prerequisite = { focus = mex_challenged_election }
+	search_filters = {
+		FOCUS_FILTER_DIAZ
+	}
+	cost = 5
+	ai_will_do = { factor = 4000 }
+	relative_position_id = mex_challenged_election
+	x = -2
+	y = 1
+}
+
+focus = {
+	id = mex_deal_with_landowners
+	icon = GFX_focus_deal_with_landowners
+	available = {
+	}
+	completion_reward = {
+		country_event = {
+			id = MSMMexico.23
+			days = 2
+			random = 6	
+			random_days = 1
+		}
+	}
+	prerequisite = { focus = mex_diaz_is_right }
+	search_filters = {
+		FOCUS_FILTER_DIAZ
+	}
+	cost = 10
+	ai_will_do = { factor = 4000 }
+	relative_position_id = mex_diaz_is_right
+	x = 0
+	y = 1
+}
+
+focus = {
+	id = mex_so_it_begins
+	icon = GFX_focus_so_it_begins
+	available = {
+		has_global_flag=MSMMEXICAN_REVOLUTION_GLOBAL
+	}
+	completion_reward = {
+	}
+	prerequisite = { focus = mex_deal_with_landowners }
+	search_filters = {
+		FOCUS_FILTER_DIAZ
+	}
+	cost = 7
+	ai_will_do = { factor = 4000 }
+	relative_position_id = mex_deal_with_landowners
+	x = 0
+	y = 1
+}
+
+### INITIAL MADERO ###
+focus = {
+	id = mex_a_new_path
+	icon = GFX_focus_a_new_path
+	available = {
+	}
+	mutually_exclusive = { focus = mex_diaz_is_right }
+	completion_reward = {
+	
+	}
+	prerequisite = { focus = mex_challenged_election }
+	search_filters = {
+		FOCUS_FILTER_MADERO
+	}
+	cost = 5
+	ai_will_do = { factor = 4000 }
+	relative_position_id = mex_challenged_election
+	x = 2
+	y = 1
+}
+
+
+### DIAZ TREE ###
 focus = {
 	id = mex_thousand_year_porfiriato
 	icon = GFX_focus_thousand_year_porfiriato
@@ -17,7 +141,7 @@ focus = {
 	cost = 5
 	ai_will_do = { factor = 4000 }
 	x = 4
-	y = 0
+	y = 8
 }
 
 focus = {
@@ -96,6 +220,9 @@ focus = {
 	completion_reward = {
 	
 	}
+	search_filters ={
+		FOCUS_FILTER_FELIX
+	}
 	cost = 3
 	relative_position_id = mex_mexican_succession
 	ai_will_do = { factor = 1000 }
@@ -112,6 +239,9 @@ focus = {
 	completion_reward = {
 	
 	}
+	search_filters ={
+		FOCUS_FILTER_FELIX
+	}
 	cost = 10
 	relative_position_id = mex_reyes_plan
 	ai_will_do = { factor = 1000 }
@@ -126,6 +256,9 @@ focus = {
 	}
 	prerequisite = { focus = mex_felix_austria }
 	completion_reward = {
+	}
+	search_filters ={
+		FOCUS_FILTER_FELIX
 	}
 	cost = 10
 	relative_position_id = mex_felix_austria
@@ -142,6 +275,9 @@ focus = {
 	prerequisite = { focus = mex_vatican_detour }
 	completion_reward = {
 	}
+	search_filters ={
+		FOCUS_FILTER_FELIX
+	}
 	cost = 5
 	relative_position_id = mex_vatican_detour
 	ai_will_do = { factor = 1000 }
@@ -157,6 +293,9 @@ focus = {
 	prerequisite = { focus = mex_dignified_empire }
 	completion_reward = {
 	}
+	search_filters = {
+		FOCUS_FILTER_FELIX
+	}
 	cost = 5
 	relative_position_id = mex_dignified_empire
 	ai_will_do = { factor = 1000 }
@@ -167,7 +306,7 @@ focus = {
 focus = {
 	id = mex_huerta_plan
 	icon = GFX_focus_huerta_plan
-	available = {
+	available = {	
 	}
 	prerequisite = { focus = mex_mexican_succession }
 	mutually_exclusive = { focus = mex_reyes_plan }
@@ -192,7 +331,7 @@ focus = {
 	}
 	prerequisite = { focus = mex_huerta_plan }
 	completion_reward = {
-	
+		add_research_slot = 1
 	}
 	search_filters = {
 		FOCUS_FILTER_HUERTA
@@ -261,7 +400,7 @@ focus = {
 	y = 1
 }
 
-focus = {
+focus = { ### This will transition to post-madero part of Huerta tree
 	id = mex_passing_baton
 	icon = GFX_focus_passing_baton
 	available = {
@@ -291,6 +430,9 @@ focus = {
 	completion_reward = {
 	
 	}
+	search_filters ={
+		FOCUS_FILTER_REYES
+	}
 	cost = 3
 	relative_position_id = mex_mexican_succession
 	ai_will_do = { factor = 1000 }
@@ -306,6 +448,9 @@ focus = {
 	prerequisite = { focus = mex_cut_out_middlemen }
 	completion_reward = {
 	
+	}
+	search_filters ={
+		FOCUS_FILTER_REYES
 	}
 	cost = 10
 	relative_position_id = mex_cut_out_middlemen
@@ -323,6 +468,9 @@ focus = {
 	completion_reward = {
 	
 	}
+	search_filters ={
+		FOCUS_FILTER_REYES
+	}
 	cost = 10
 	relative_position_id = mex_building_reyista_cabinet
 	ai_will_do = { factor = 1000 }
@@ -339,6 +487,9 @@ focus = {
 	completion_reward = {
 	
 	}
+	search_filters ={
+		FOCUS_FILTER_REYES
+	}
 	cost = 10
 	relative_position_id = mex_in_diaz_shadow
 	ai_will_do = { factor = 1000 }
@@ -354,6 +505,9 @@ focus = {
 	prerequisite = { focus = mex_new_generation }
 	completion_reward = {
 	
+	}
+	search_filters ={
+		FOCUS_FILTER_REYES
 	}
 	cost = 5
 	relative_position_id = mex_new_generation
@@ -373,7 +527,8 @@ focus = {
 	
 	}
 	search_filters = {
-		FOCUS_FILTER_HUERTA
+		FOCUS_FILTER_REYES
+		FOCUS_FILTER_FELIX
 	}
 	cost = 5
 	relative_position_id = mex_watchful_eye
@@ -499,10 +654,15 @@ focus = {
 	id = mex_american_entente
 	icon = GFX_focus_american_entente
 	available = {
+		USA = {
+			is_in_faction_with = ENG
+		}
 	}
 	prerequisite = { focus = mex_petition_america }
 	completion_reward = {
-	
+		USA = {
+			add_to_faction = MEX
+		}
 	}
 	cost = 10
 	relative_position_id = mex_petition_america
@@ -749,7 +909,9 @@ focus = {
 	}
 	prerequisite = { focus = mex_the_rio_line }
 	completion_reward = {
-	
+		GER = {
+			add_to_faction = MEX
+		}
 	}
 	cost = 10
 	relative_position_id = mex_the_rio_line
@@ -767,7 +929,8 @@ focus = {
 	}
 	cost = 10
 	ai_will_do = { factor = 1000 }
-	x = 22
+	relative_position_id = mex_thousand_year_porfiriato
+	x = 18
 	y = 0
 }
 
@@ -775,6 +938,7 @@ focus = {
 	id = mex_comes_something_greater
 	icon = GFX_focus_comes_something_greater
 	available = {
+		has_country_flag = MSMLANDOWNERSANGERED
 	}
 	prerequisite = { focus = mex_from_the_ashes }
     mutually_exclusive = { focus = mex_a_demon_rises }
@@ -1097,8 +1261,8 @@ focus = {
 	cost = 10
 	relative_position_id = mex_the_best_revenge
 	ai_will_do = { factor = 1000 }
-	x = -2
-	y = 0
+	x = -1
+	y = 1
 }
 
 focus = {
@@ -1173,7 +1337,41 @@ focus = {
 	}
 	prerequisite = { focus = mex_get_back_to_work }
 	completion_reward = {
-	
+		480 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 6
+				instant_build = yes
+			}
+		}
+		480 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 6
+				instant_build = yes
+			}
+		}
+		482 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 6
+				instant_build = yes
+			}
+		}
+			483 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 5
+				instant_build = yes
+			}
+		}
+		482 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 4
+				instant_build = yes
+			}
+		}
 	}
 	cost = 5
 	relative_position_id = mex_get_back_to_work
@@ -1221,7 +1419,25 @@ focus = {
 	}
 	prerequisite = { focus = mex_but_just_in_case }
 	completion_reward = {
-	
+		add_tech_bonus = {
+			bonus = 0.2
+			uses = 2
+			category = infantry_weapons
+		}
+		277 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+		478 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
 	}
 	cost = 5
 	relative_position_id = mex_but_just_in_case
@@ -1283,6 +1499,7 @@ focus = {
 	id = mex_a_demon_rises
 	icon = GFX_focus_a_demon_rises
 	available = {
+		has_country_flag = MSMLANDOWNERSPLACATED
 	}
     mutually_exclusive = { focus = mex_comes_something_greater }
 	prerequisite = { focus = mex_from_the_ashes }
@@ -1462,6 +1679,7 @@ focus = {
 	id = mex_choosing_a_right_hand_man
 	icon = GFX_focus_choosing_a_right_hand_man
 	available = {
+		has_completed_focus = mex_thousand_year_porfiriato
 	}
 	prerequisite = {}
 	completion_reward = {
@@ -1475,7 +1693,7 @@ focus = {
 	cost = 5
 	relative_position_id = mex_from_the_ashes
 	ai_will_do = { factor = 1000 }
-	x = 10
+	x = 8
 	y = 0
 }
 
@@ -1483,6 +1701,8 @@ focus = {
 	id = mex_choose_reyes
 	icon = GFX_focus_choose_reyes
 	available = {
+		not = { has_completed_focus = mex_reyes_plan }
+		not = { has_completed_focus = mex_cut_out_middlemen }
 	}
     mutually_exclusive = { focus = mex_choose_de_la_barra }
 	mutually_exclusive = { focus = mex_choose_huerta }
@@ -1617,10 +1837,7 @@ focus = {
 	id = mex_choose_huerta
 	icon = GFX_focus_choose_huerta
 	available = {
-        has_country_leader = {
-            name = "Victoriano Huerta"
-            ruling_only = yes
-        }
+		not = { has_completed_focus = mex_huerta_plan }
 	}
     mutually_exclusive = { focus = mex_choose_reyes }
 	mutually_exclusive = { focus = mex_choose_de_la_barra }

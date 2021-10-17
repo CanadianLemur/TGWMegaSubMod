@@ -58,5 +58,19 @@ ideas = {
 				}
 			}
 		}
+		MEX_revolution_hell = {
+
+			picture = GFX_unknown_idea
+				
+			allowed = {
+				has_war = yes
+			}
+
+			removal_cost = -1
+				
+			modifier = {
+				army_core_defence_factor = 0.6
+			}
+		}
 	}
 }
