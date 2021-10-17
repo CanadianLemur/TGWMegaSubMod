@@ -1,0 +1,492 @@
+﻿#######################################
+# New American Events, added by Lemur #
+#######################################
+add_namespace = MSM_USA_Interwar
+
+####Elections of 1920####__________________________________________________________
+country_event = {
+	id = MSM_USA_Interwar.1
+	title = MSM_USA_Interwar.1.t
+	desc = MSM_USA_Interwar.1.d
+	picture = GFX_report_event_usa_election_generic
+    mean_time_to_happen = {
+        days = 0
+    }
+
+    fire_only_once = yes
+
+    trigger = {
+    	tag = USA
+        date > 1920.11.1
+        date < 1921.10.10
+        USA = {
+	        has_government = democratic 
+        }
+    }
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						has_completed_focus = USA_voter_registration_act
+						has_completed_focus = USA_union_representation_act
+					}
+				}
+				country_event = { id = usa.32 days = 730 } # midterms
+			}
+			else = {
+				country_event = { id = usa.35 days = 730 } # midterms
+			}
+		}
+	}
+	# Elect Warren G. Harding
+	option = {
+		name = MSM_USA_Interwar.1.a
+		ai_chance = { factor = 100 }
+
+		hidden_effect = {
+			news_event = { days = 150 id = MSM_USA_Interwar.2 }
+		}
+	}
+
+	# Elect James M. Cox
+	option = {
+		name = MSM_USA_Interwar.1.b
+		ai_chance = { factor = 0 }
+
+		hidden_effect = {
+			news_event = { days = 150 id = MSM_USA_Interwar.3 }
+		}
+	}
+}
+
+# Warren G. Harding
+#____________________________________________________________
+news_event = {
+    id = MSM_USA_Interwar.2
+    title = MSM_USA_Interwar.2.t
+    desc = MSM_USA_Interwar.2.d
+    picture = GFX_news_event_election_vote
+    major = yes
+    is_triggered_only=yes
+
+    immediate = {
+    	hidden_effect = {
+	    	USA = {
+	    		retire_country_leader = yes
+		        create_country_leader = {
+		            name = "Warren G. Harding"
+		            desc = USA_warren_g_harding_DESC 
+		            picture = "gfx/.dds"
+		            expire = "1935.1.1"
+		            ideology = liberalism traits = {}
+		        }
+				unlock_national_focus = USA_interwar_1920_elections
+				unlock_national_focus = USA_interwar_elect_warren_g_harding
+	    	}
+    	}
+    }
+    
+    option = {
+        name = MSM_USA_Interwar.2.a        
+    }
+}
+#____________________________________________________________
+# James M. Cox
+#____________________________________________________________
+news_event = {
+    id = MSM_USA_Interwar.3
+    title = MSM_USA_Interwar.3.t
+    desc = MSM_USA_Interwar.3.d
+    picture = GFX_news_event_election_vote
+    major = yes
+    is_triggered_only=yes
+
+    immediate = {
+    	hidden_effect = {
+	    	USA = {
+	    		retire_country_leader = yes
+		        create_country_leader = {
+		            name = "James M. Cox"
+		            desc = USA_james_m_cox_DESC 
+		            picture = "gfx/.dds"
+		            expire = "1935.1.1"
+		            ideology = conservatism traits = {}
+		        }
+			unlock_national_focus = USA_interwar_1920_elections
+			unlock_national_focus = USA_interwar_elect_james_m_cox
+	    	}
+    	}
+    }
+    
+    option = {
+        name = MSM_USA_Interwar.3.a        
+    }
+}
+#____________________________________________________________
+####Elections of 1924####__________________________________________________________
+country_event = {
+	id = MSM_USA_Interwar.4
+	title = MSM_USA_Interwar.4.t
+	desc = MSM_USA_Interwar.4.d
+	picture = GFX_report_event_usa_election_generic
+    mean_time_to_happen = {
+        days = 0
+    }
+
+    fire_only_once = yes
+
+    trigger = {
+    	tag = USA
+        date > 1924.11.1
+        date < 1925.10.10
+        USA = {
+	        has_government = democratic
+        }
+    }
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						has_completed_focus = USA_voter_registration_act
+						has_completed_focus = USA_union_representation_act
+					}
+				}
+				country_event = { id = usa.32 days = 730 } # midterms
+			}
+			else = {
+				country_event = { id = usa.35 days = 730 } # midterms
+			}
+		}
+	}
+	# Elect Calvin Coolidge
+	option = {
+		name = MSM_USA_Interwar.4.a
+		ai_chance = { factor = 100 }
+
+		hidden_effect = {
+			news_event = { days = 150 id = MSM_USA_Interwar.5 }
+		}
+	}
+
+	# Elect John W. Davis
+	option = {
+		name = MSM_USA_Interwar.4.b
+		ai_chance = { factor = 0 }
+
+		hidden_effect = {
+			news_event = { days = 150 id = MSM_USA_Interwar.6 }
+		}
+	}
+	# Elect Robert M. La Follette
+	option = {
+		name = MSM_USA_Interwar.4.c
+		ai_chance = { factor = 0 }
+
+		hidden_effect = {
+			news_event = { days = 150 id = MSM_USA_Interwar.7 }
+		}
+	}
+}
+
+# Calvin Coolidge
+#____________________________________________________________
+news_event = {
+    id = MSM_USA_Interwar.5
+    title = MSM_USA_Interwar.5.t
+    desc = MSM_USA_Interwar.5.d
+    picture = GFX_news_event_election_vote
+    major = yes
+    is_triggered_only=yes
+
+    immediate = {
+    	hidden_effect = {
+	    	USA = {
+	    		retire_country_leader = yes
+		        create_country_leader = {
+		            name = "Calvin Coolidge"
+		            desc = USA_calvin_coolidge_DESC 
+		            picture = "gfx/.dds"
+		            expire = "1935.1.1"
+		            ideology = liberalism traits = {}
+		        }
+				unlock_national_focus = USA_interwar_1924_elections
+				unlock_national_focus = USA_interwar_elect_calvin_coolidge
+	    	}
+    	}
+    }
+    
+    option = {
+        name = MSM_USA_Interwar.5.a        
+    }
+}
+# John W. Davis
+#____________________________________________________________
+news_event = {
+    id = MSM_USA_Interwar.6
+    title = MSM_USA_Interwar.6.t
+    desc = MSM_USA_Interwar.6.d
+    picture = GFX_news_event_election_vote
+    major = yes
+    is_triggered_only=yes
+
+    immediate = {
+    	hidden_effect = {
+	    	USA = {
+	    		retire_country_leader = yes
+		        create_country_leader = {
+		            name = "John W. Davis"
+		            desc = USA_john_w_davis_DESC 
+		            picture = "gfx/.dds"
+		            expire = "1935.1.1"
+		            ideology = liberalism traits = {}
+		        }
+				unlock_national_focus = USA_interwar_1924_elections
+				unlock_national_focus = USA_interwar_elect_john_w_daivs
+	    	}
+    	}
+    }
+    
+    option = {
+        name = MSM_USA_Interwar.6.a        
+    }
+}
+# Robert M. La Follette
+#____________________________________________________________
+news_event = {
+    id = MSM_USA_Interwar.7
+    title = MSM_USA_Interwar.7.t
+    desc = MSM_USA_Interwar.7.d
+    picture = GFX_news_event_election_vote
+    major = yes
+    is_triggered_only=yes
+
+    immediate = {
+    	hidden_effect = {
+	    	USA = {
+	    		retire_country_leader = yes
+		        create_country_leader = {
+		            name = "Robert M. La Follette"
+		            desc = USA_robert_m_la_follette_DESC 
+		            picture = "gfx/.dds"
+		            expire = "1935.1.1"
+		            ideology = socialism traits = {}
+		        }
+				unlock_national_focus = USA_interwar_1924_elections
+				unlock_national_focus = USA_interwar_elect_robert_m_la_follette
+	    	}
+    	}
+    }
+    
+    option = {
+        name = MSM_USA_Interwar.7.a        
+    }
+}
+####Elections of 1928####__________________________________________________________
+country_event = {
+	id = MSM_USA_Interwar.8
+	title = MSM_USA_Interwar.8.t
+	desc = MSM_USA_Interwar.8.d
+	picture = GFX_report_event_usa_election_generic
+    mean_time_to_happen = {
+        days = 0
+    }
+
+    fire_only_once = yes
+
+    trigger = {
+    	tag = USA
+        date > 1928.11.1
+        date < 1929.10.10
+        USA = {
+	        has_government = democratic
+        }
+    }
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						has_completed_focus = USA_voter_registration_act
+						has_completed_focus = USA_union_representation_act
+					}
+				}
+				country_event = { id = usa.32 days = 730 } # midterms
+			}
+			else = {
+				country_event = { id = usa.35 days = 730 } # midterms
+			}
+		}
+	}
+	# Elect Al Smith
+	option = {
+		name = MSM_USA_Interwar.8.a
+		ai_chance = { factor = 100 }
+
+		hidden_effect = {
+			news_event = { days = 150 id = MSM_USA_Interwar.9 }
+		}
+	}
+
+	# Elect Herbert Hoover
+	option = {
+		name = MSM_USA_Interwar.8.b
+		ai_chance = { factor = 0 }
+
+		hidden_effect = {
+			news_event = { days = 150 id = MSM_USA_Interwar.10 }
+		}
+	}
+}
+
+# Al Smith
+#____________________________________________________________
+news_event = {
+    id = MSM_USA_Interwar.9
+    title = MSM_USA_Interwar.9.t
+    desc = MSM_USA_Interwar.9.d
+    picture = GFX_news_event_election_vote
+    major = yes
+    is_triggered_only=yes
+
+    immediate = {
+    	hidden_effect = {
+	    	USA = {
+	    		retire_country_leader = yes
+		        create_country_leader = {
+		            name = "Al Smith"
+		            desc = USA_al_smith_DESC 
+		            picture = "gfx/.dds"
+		            expire = "1935.1.1"
+		            ideology = liberalism traits = {}
+		        }
+				unlock_national_focus = USA_interwar_1928_elections
+				unlock_national_focus = USA_interwar_elect_al_smith
+	    	}
+    	}
+    }
+    
+    option = {
+        name = MSM_USA_Interwar.9.a        
+    }
+}
+# Herbert Hoover
+#____________________________________________________________
+news_event = {
+    id = MSM_USA_Interwar.10
+    title = MSM_USA_Interwar.10.t
+    desc = MSM_USA_Interwar.10.d
+    picture = GFX_news_event_election_vote
+    major = yes
+    is_triggered_only=yes
+
+    immediate = {
+    	hidden_effect = {
+	    	USA = {
+	    		retire_country_leader = yes
+		        create_country_leader = {
+		            name = "Herbert Hoover"
+		            desc = USA_herbert_hoover_DESC 
+		            picture = "gfx/.dds"
+		            expire = "1935.1.1"
+		            ideology = conservatism traits = {}
+		        }
+				unlock_national_focus = USA_interwar_1928_elections
+				unlock_national_focus = USA_interwar_elect_herbert_hoover
+	    	}
+    	}
+    }
+    
+    option = {
+        name = MSM_USA_Interwar.10.a        
+    }
+}
+####Elections of 1932####__________________________________________________________
+country_event = {
+	id = MSM_USA_Interwar.11
+	title = MSM_USA_Interwar.11.t
+	desc = MSM_USA_Interwar.11.d
+	picture = GFX_report_event_usa_election_generic
+    mean_time_to_happen = {
+        days = 0
+    }
+
+    fire_only_once = yes
+
+    trigger = {
+    	tag = USA
+        date > 1932.11.1
+        date < 1933.10.10
+        USA = {
+	        has_government = democratic
+        }
+    }
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						has_completed_focus = USA_voter_registration_act
+						has_completed_focus = USA_union_representation_act
+					}
+				}
+				country_event = { id = usa.32 days = 730 } # midterms
+			}
+			else = {
+				country_event = { id = usa.35 days = 730 } # midterms
+			}
+		}
+	}
+	# Elect Al Smith
+	option = {
+		name = MSM_USA_Interwar.8.a
+		ai_chance = { factor = 100 }
+
+		hidden_effect = {
+			news_event = { days = 150 id = MSM_USA_Interwar.12 }
+		}
+	}
+
+	# Reelect Herbert Hoover
+	option = {
+		name = MSM_USA_Interwar.8.b
+		ai_chance = { factor = 0 }
+
+	}
+}
+
+# FDR
+#____________________________________________________________
+news_event = {
+    id = MSM_USA_Interwar.12
+    title = MSM_USA_Interwar.12.t
+    desc = MSM_USA_Interwar.12.d
+    picture = GFX_news_event_election_vote
+    major = yes
+    is_triggered_only=yes
+
+    immediate = {
+    	hidden_effect = {
+	    	USA = {
+	    		retire_country_leader = yes
+		       create_country_leader = {
+					name = "Franklin Delano Roosevelt"
+					desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
+					picture = "Portrait_USA_Franklin_Roosevelt.dds"
+					expire = "1947.1.1"
+					ideology = liberalism
+					traits = {
+						dislikes_germany
+					}
+				}
+				unlock_national_focus = USA_interwar_1928_elections
+				unlock_national_focus = USA_interwar_elect_al_smith
+	    	}
+    	}
+    }
+    
+    option = {
+        name = MSM_USA_Interwar.12.a        
+    }
+}

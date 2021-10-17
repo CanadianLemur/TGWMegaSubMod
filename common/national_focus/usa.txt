@@ -5025,13 +5025,14 @@ focus_tree = {
 			add_political_power = 75
 			add_war_support = -0.2
 		}
+		mutually_exclusive = {focus = USA_interwar_consequences_of_frankfurt}
 		allow_branch = {
-			not = {has_global_flag = kis_second_treaty_frankfort}
+			#not = {has_global_flag = kis_second_treaty_frankfort}
 		}
 		ai_will_do = { factor = 1 }
  		cost = 8
-		x = 10
-		y = 10
+		x = 25
+		y = 11
 	}
 	#-----------------------------------------
 	#-----------------------------------------
@@ -5042,6 +5043,7 @@ focus_tree = {
  		mutually_exclusive = { focus = USA_interwar_AnnexDominicanRepublic }
  		relative_position_id = USA_interwar_PostWarPolicy
 		available = {
+			congress_low_support_trigger = yes
 			date > 1920.1.1
 			country_exists = DOM
 			DOM = {
@@ -5050,6 +5052,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			end_puppet = DOM
+			USA_congress_small_opposition = yes
 		}
 		ai_will_do = { factor = 0 }
  		cost = 8
@@ -5065,6 +5068,7 @@ focus_tree = {
  		mutually_exclusive = { focus = USA_interwar_LeaveDominicanRepublic }
  		relative_position_id = USA_interwar_PostWarPolicy
 		available = {
+			congress_high_support_trigger = yes
 			date > 1920.1.1
 			country_exists = DOM
 			DOM = {
@@ -5080,6 +5084,7 @@ focus_tree = {
 				type = annex_everything
 				target = DOM
 			}
+			USA_congress_large_opposition = yes
 		}
 		ai_will_do = { factor = 0 }
  		cost = 8
@@ -5261,24 +5266,325 @@ focus_tree = {
 		x = 0
 		y = 1
 	}
-	#-----------------------------------------
-	######Interwar Start
 	focus = {
-		id = USA_interwar_treaty_of_versailles
-		icon = GFX_goal_generic_construct_infrastructure
+		id = USA_interwar_1920_elections
+		icon = GFX_goal_support_democracy
+		relative_position_id = USA_interwar_PostWarPolicy
 		available = {
-			has_global_flag = kis_treaty_of_versailles
+			always = no
 		}
 		completion_reward = {
-			add_political_power = 100
-		}
-		allow_branch = {
-		not = {has_global_flag = kis_second_treaty_frankfort}
 		}
 		ai_will_do = { factor = 1 }
- 		cost = 5
-		x = 28
-		y = 11
+ 		cost = 10
+		x = 0
+		y = 3
+	}
+	focus = {
+		id = USA_interwar_elect_warren_g_harding
+		icon = GFX_goal_generic_improve_relations
+		relative_position_id = USA_interwar_1920_elections
+		prerequisite = {focus = USA_interwar_1920_elections}
+		available = {
+			always = no
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 1 }
+ 		cost = 10
+		x = 2
+		y = 1
+	}
+	focus = {
+		id = USA_interwar_elect_james_m_cox
+		icon = GFX_goal_anschluss
+		relative_position_id = USA_interwar_1920_elections
+		prerequisite = {focus = USA_interwar_1920_elections}
+		available = {
+			always = no
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 1 }
+ 		cost = 10
+		x = -2
+		y = 1
+	}
+	focus = {
+		id = USA_interwar_1924_elections
+		icon = GFX_goal_support_democracy
+		relative_position_id = USA_interwar_1920_elections
+		available = {
+			always = no
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 1 }
+ 		cost = 10
+		x = 0
+		y = 3
+	}
+	focus = {
+		id = USA_interwar_elect_calvin_coolidge
+		icon = GFX_goal_generic_propaganda
+		relative_position_id = USA_interwar_1924_elections
+		prerequisite = {focus = USA_interwar_1924_elections}
+		available = {
+			always = no
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 1 }
+ 		cost = 10
+		x = 2
+		y = 1
+	}
+	focus = {
+		id = USA_interwar_elect_john_w_davis
+		icon = GFX_goal_generic_national_unity
+		relative_position_id = USA_interwar_1924_elections
+		prerequisite = {focus = USA_interwar_1924_elections}
+		available = {
+			always = no
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 1 }
+ 		cost = 10
+		x = -2
+		y = 1
+	}
+	focus = {
+		id = USA_interwar_elect_robert_m_la_follete
+		icon = GFX_focus_prc_agrarian_socialism
+		relative_position_id = USA_interwar_1924_elections
+		prerequisite = {focus = USA_interwar_1924_elections}
+		available = {
+			always = no
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 1 }
+ 		cost = 10
+		x = -6
+		y = 1
+	}
+	focus = {
+		id = USA_interwar_begin_construction_of_a_colorado_river_dam
+		icon = GFX_goal_generic_construct_civ_factory
+		relative_position_id = USA_interwar_1924_elections
+		prerequisite = {focus = USA_interwar_elect_calvin_coolidge focus = USA_interwar_elect_john_w_davis focus = USA_interwar_elect_robert_m_la_follete}
+		available = {
+			congress_medium_support_trigger = yes
+			owns_state = 379
+			owns_state = 378
+			owns_state = 377
+		}
+		completion_reward = {
+			USA_congress_small_opposition = yes
+			custom_effect_tooltip = hoover_dam_start_construction
+		}
+		ai_will_do = { factor = 1 }
+ 		cost = 10
+		x = 2
+		y = 2
+	}
+	focus = {
+		id = USA_interwar_1928_elections
+		icon = GFX_goal_support_democracy
+		relative_position_id = USA_interwar_1924_elections
+		available = {
+			always = no
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 1 }
+ 		cost = 10
+		x = 0
+		y = 3
+	}
+		focus = {
+		id = USA_interwar_elect_al_smith
+		icon = GFX_goal_generic_national_unity
+		relative_position_id = USA_interwar_1928_elections
+		prerequisite = {focus = USA_interwar_1928_elections}
+		available = {
+			always = no
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 1 }
+ 		cost = 10
+		x = -2
+		y = 1
+	}
+	focus = {
+		id = USA_interwar_elect_herbert_hoover
+		icon = GFX_goal_generic_propaganda
+		relative_position_id = USA_interwar_1928_elections
+		prerequisite = {focus = USA_interwar_1928_elections}
+		available = {
+			always = no
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 1 }
+ 		cost = 10
+		x = 2
+		y = 1
+	}
+	focus = {
+		id = USA_interwar_wall_street_crash
+		icon = GFX_focus_rom_parties_end
+		relative_position_id = USA_interwar_1928_elections
+		available = {
+			always = no
+		}
+		bypass = {
+		has_global_flag = interwar_wall_street_crash_1929
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 1 }
+ 		cost = 10
+		x = 0
+		y = 2
+	}
+	focus = {
+		id = USA_interwar_1932_elections
+		icon = GFX_goal_support_democracy
+		relative_position_id = USA_interwar_1928_elections
+		available = {
+			always = no
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 1 }
+ 		cost = 10
+		x = 0
+		y = 5
+	}
+	focus = {
+		id = USA_interwar_elect_FDR
+		icon = GFX_goal_generic_intelligence_exchange
+		relative_position_id = USA_interwar_1932_elections
+		prerequisite = {focus = USA_interwar_1932_elections}
+		available = {
+			always = no
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 1 }
+ 		cost = 10
+		x = -4
+		y = 1
+	}
+	focus = {
+		id = USA_interwar_reelect_herbert_hoover
+		icon = GFX_goal_generic_propaganda
+		relative_position_id = USA_interwar_1932_elections
+		prerequisite = {focus = USA_interwar_1932_elections}
+		available = {
+			always = no
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 1 }
+ 		cost = 10
+		x = 4
+		y = 1
+	}
+	#Dealing with Prohibition Issue
+	focus = {
+		id = USA_interwar_repeal_the_18th
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		relative_position_id = USA_interwar_1932_elections
+		prerequisite = {focus = USA_interwar_elect_FDR focus = USA_interwar_reelect_herbert_hoover}
+		available = {
+			congress_low_support_trigger = yes
+			NOT = {
+			has_completed_focus = USA_interwar_amend_the_18th
+			has_completed_focus = USA_interwar_reinforce_the_18th
+			}
+		}
+		completion_reward = {
+		USA_congress_small_support = yes
+		remove_ideas = {
+		bootleggers
+		prohibition_accepted
+		}
+		}
+		ai_will_do = { factor = 100 }
+ 		cost = 10
+		x = -2
+		y = 2
+	}
+	focus = {
+		id = USA_interwar_amend_the_18th
+		icon = GFX_goal_generic_neutrality_focus
+		relative_position_id = USA_interwar_1932_elections
+		prerequisite = {focus = USA_interwar_elect_FDR focus = USA_interwar_reelect_herbert_hoover}
+		available = {
+			congress_low_support_trigger = yes
+			NOT = {
+			has_completed_focus = USA_interwar_reinforce_the_18th
+			has_completed_focus = USA_interwar_repeal_the_18th
+			}
+		}
+		completion_reward = {
+		USA_congress_small_opposition = yes
+		remove_ideas = {
+		bootleggers
+		}
+		swap_ideas = {
+		remove_idea = prohibition_accepted
+		add_idea = MSM_prohibition_middle_ground
+		}
+		}
+		ai_will_do = { factor = 0 }
+ 		cost = 10
+		x = 0
+		y = 2
+	}
+	focus = {
+		id = USA_interwar_reinforce_the_18th
+		icon = GFX_goal_generic_political_pressure
+		relative_position_id = USA_interwar_1932_elections
+		prerequisite = {focus = USA_interwar_elect_FDR focus = USA_interwar_reelect_herbert_hoover}
+		available = {
+			congress_high_support_trigger = yes
+			NOT = {
+			has_completed_focus = USA_interwar_amend_the_18th
+			has_completed_focus = USA_interwar_repeal_the_18th
+			}
+		}
+		completion_reward = {
+		USA_congress_large_opposition = yes
+		remove_ideas = {
+		bootleggers
+		}
+		}
+		ai_will_do = { factor = 0 }
+ 		cost = 10
+		x = 2
+		y = 2
+	}
+
+	#-----------------------------------------
+	######Base Game USA Start
+	focus = {
+		id = USA_interwar_1936_elections
+		icon = GFX_goal_support_democracy
+		relative_position_id = USA_interwar_1932_elections
+		available = {
+		always = no
+		}
+		completion_reward = {
+		}
+		ai_will_do = { factor = 1 }
+ 		cost = 10
+		x = 0
+		y = 5
 		offset = {
 			x = -10
 			y = 0
@@ -5292,8 +5598,8 @@ focus_tree = {
 	focus = {
 		id = USA_continue_the_new_deal #continue the new deal
 		icon = GFX_focus_generic_self_management
-		relative_position_id = USA_interwar_treaty_of_versailles
-		prerequisite = { focus = USA_interwar_treaty_of_versailles }
+		relative_position_id = USA_interwar_1936_elections
+		prerequisite = { focus = USA_interwar_1936_elections }
  		x = -13
 		y = 1
 		mutually_exclusive = { focus = USA_reestablish_the_gold_standard }
@@ -5325,7 +5631,7 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
  		allow_branch = {
 			has_dlc = "Man the Guns"
-			not = {has_global_flag = kis_second_treaty_frankfort}
+			#not = {has_global_flag = kis_second_treaty_frankfort}
 		}
 		available = {
 		}
@@ -5576,6 +5882,35 @@ focus_tree = {
 							generator = { 523 }
  						}
 					}
+				}
+			}
+		}
+	}
+	#-----------------------------------------
+	######Alt Interwar Start (loss against germany)
+	focus = {
+		id = USA_interwar_consequences_of_frankfurt
+		icon = GFX_goal_generic_demand_territory
+		available = {
+			has_global_flag = kis_second_treaty_frankfort
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+		mutually_exclusive = {focus = USA_interwar_PostWarPolicy}
+		allow_branch = {
+		not = {has_global_flag = kis_treaty_of_versailles}
+		}
+		ai_will_do = { factor = 1 }
+ 		cost = 5
+		x = 28
+		y = 11
+		offset = {
+			x = -10
+			y = 0
+			trigger = {
+				not = {
+					has_dlc = "Man the Guns"
 				}
 			}
 		}
@@ -7703,8 +8038,8 @@ focus_tree = {
 	focus = {
 		id = USA_reestablish_the_gold_standard #Reestablish the gold standard
 		icon = GFX_focus_usa_reestablish_the_gold_standard
-		relative_position_id = USA_interwar_treaty_of_versailles
-		prerequisite = { focus = USA_interwar_treaty_of_versailles }
+		relative_position_id = USA_interwar_1936_elections
+		prerequisite = { focus = USA_interwar_1936_elections }
  		x = -9
 		y = 1
 		offset = {
@@ -7914,7 +8249,7 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
  		allow_branch = {
 			has_dlc = "Man the Guns"
-			not = {has_global_flag = kis_second_treaty_frankfort}
+			#not = {has_global_flag = kis_second_treaty_frankfort}
 		}
 		available = {
 		}
@@ -9137,7 +9472,7 @@ focus_tree = {
 		id = USA_war_plans_division
 		icon = GFX_goal_generic_position_armies
 		relative_position_id = USA_continue_the_new_deal
-		prerequisite = { focus = USA_interwar_treaty_of_versailles }
+		prerequisite = { focus = USA_interwar_1936_elections }
  		x = 26
 		y = 0
 		offset = {
@@ -9963,7 +10298,7 @@ focus_tree = {
 		id = USA_war_department
 		icon = GFX_goal_generic_army_doctrines
 		relative_position_id = USA_war_plans_division
-		prerequisite = { focus = USA_interwar_treaty_of_versailles }
+		prerequisite = { focus = USA_interwar_1936_elections }
  		x = 16
 		y = 0
 		cost = 10

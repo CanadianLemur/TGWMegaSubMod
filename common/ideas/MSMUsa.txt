@@ -1,8 +1,38 @@
 ideas={
 	country = {
+		MSM_prohibition_middle_ground = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1 
+			modifier = {
+				consumer_goods_factor = -0.03 #Decreased demand as alcohol consumption "declines"
+			}
+		}
+		MSM_great_depression_onset = {
+			picture = usa_great_depression_3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 1
+				consumer_goods_factor = 0.4
+				conscription_factor = -0.6
+				join_faction_tension = 0.30
+				local_resources_factor = -0.4
+			}
+		}
 		MSM_USA_european_embarrassment = {
 
-			picture = GFX_idea_spr_political_violence
+			picture = idea_generic_army_problems
 				
 			removal_cost = -1
 				
@@ -13,9 +43,33 @@ ideas={
 			}
 				
 		}
+		MSM_USA_european_loan_payments = {
+
+			picture = idea_generic_foreign_capital
+				
+			removal_cost = -1
+				
+			modifier = {
+				political_power_gain = 0.25
+				consumer_goods_factor = -0.1
+			}
+				
+		}
+		MSM_USA_trade_sanctions = {
+
+			picture = null
+				
+			removal_cost = -1
+				
+			modifier = {
+				political_power_gain = -0.5
+				consumer_goods_factor = 0.3
+			}
+				
+		}
 		MSM_USA_collapsed_government = {
 
-			picture = GFX_idea_spr_political_violence
+			picture = idea_generic_disjointed_gov
 				
 			removal_cost = -1
 				

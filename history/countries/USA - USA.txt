@@ -1025,5 +1025,9 @@ if = {
 	}
 1919.7.2 = {
 remove_ideas = {interwar_spirit_TheGreatWar_Winner}
-add_ideas = {MSM_USA_european_embarrassment}
+add_ideas = {
+MSM_USA_european_embarrassment
+MSM_USA_european_loan_payments
+MSM_USA_trade_sanctions
+}
 }

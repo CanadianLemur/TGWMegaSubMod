@@ -1,6 +1,7 @@
 #Add to scripted triggers if more levels of hyper inflation is added
 USA_depression_clear_all = {
 	remove_ideas = {
+		MSM_great_depression_onset
 		great_depression
 		great_depression_2
 		great_depression_3
@@ -12,6 +13,13 @@ USA_great_depression_level_up = {
 	# level 5 not relevant. Cannot go above.
 	custom_effect_tooltip = USA_great_depression_up_tt
 	if = {
+		limit = { has_idea = great_depression }
+		swap_ideas = {
+			remove_idea = great_depression
+			add_idea = MSM_great_depression_onset
+		}
+	}
+	else_if = {
 		limit = { has_idea = great_depression_2 }
 		swap_ideas = {
 			remove_idea = great_depression_2
@@ -49,6 +57,14 @@ USA_great_depression_level_down = {
 		swap_ideas = {
 			remove_idea = great_depression
 			add_idea = great_depression_2
+		}
+	}
+	if = {
+		limit = { has_idea = MSM_great_depression_onset }
+		custom_effect_tooltip = USA_great_depression_down_tt
+		swap_ideas = {
+			remove_idea = MSM_great_depression_onset
+			add_idea = great_depression
 		}
 	}
 }

@@ -27,6 +27,7 @@ ideas = {
 				OR = {
 					has_war_support > 0.5
 					has_war = yes
+					has_completed_focus = USA_limited_intervention
 				}
 			}
 			
@@ -57,7 +58,8 @@ ideas = {
 			allowed_to_remove = {
 				OR = {
 					has_war_support > 0.75
-					has_war = yes					
+					has_war = yes		
+					has_completed_focus = USA_limited_intervention
 				}
 			}
 			

@@ -17,6 +17,16 @@ USA_MSM_panama_construction = {
 		has_global_flag = PANAMA_CANAL_INCOMPLETE
 	}
 }
+USA_MSM_hoover_dam_construction = {
+	icon = generic_political_actions
+	priority = 20
+	available = {
+	}
+	visible = {
+		tag = USA
+		has_completed_focus = USA_interwar_begin_construction_of_a_colorado_river_dam
+	}
+}
 
 USA_internal_politics = {
 	icon = generic_political_actions

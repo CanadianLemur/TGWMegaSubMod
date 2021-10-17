@@ -19,7 +19,57 @@ USA_MSM_panama_construction = {
 		}
 	}
 }
-
+USA_MSM_hoover_dam_construction = {
+	hoover_dam_construction = {
+		allowed = { 
+			controls_state = 379
+		}
+		available = {
+			NOT = { controls_state = 379 }
+		}
+		activation = {
+			has_completed_focus = USA_interwar_begin_construction_of_a_colorado_river_dam
+		}
+		is_good = yes
+		selectable_mission = no
+		days_mission_timeout = 2922 #8 years in days, approximation of scheduled hoover dam completion, it was completed earlier irl and can be in game as well
+		timeout_effect = {
+			custom_effect_tooltip = hoover_dam_completion
+			378 = {MSM_increase_state_development_category = yes
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 2
+			add_manpower = 50000
+			}
+			379 = {
+			add_manpower = 10000
+			MSM_increase_state_development_category = yes
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+			}
+			377 = {
+			add_manpower = 10000
+			MSM_increase_state_development_category = yes
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+			}
+			380 = {
+			add_manpower = 5000
+			}
+		}
+	}
+}
 USA_MSM_dev_decisions = {
 	reset = {
 		icon = generic_research
