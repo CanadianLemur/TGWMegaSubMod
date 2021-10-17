@@ -91,7 +91,7 @@ focus = {
 	cost = 3
 	relative_position_id = mex_mexican_succession
 	ai_will_do = { factor = 1000 }
-	x = -3
+	x = 0
 	y = 1
 }
 
@@ -173,7 +173,7 @@ focus = {
 	cost = 3
 	relative_position_id = mex_mexican_succession
 	ai_will_do = { factor = 1000 }
-	x = 0
+	x = -3
 	y = 1
 }
 
@@ -368,9 +368,9 @@ focus = {
 		FOCUS_FILTER_HUERTA
 	}
 	cost = 5
-	relative_position_id = mex_passing_baton
+	relative_position_id = mex_watchful_eye
 	ai_will_do = { factor = 1000 }
-	x = 0
+	x = 1
 	y = 1
 }
 
@@ -1046,7 +1046,42 @@ focus = {
 	}
 	prerequisite = { focus = mex_the_fruits_of_our_labor }
 	completion_reward = {
-	
+        add_resource = {
+            type = oil
+            amount = 30
+            state = 477
+        }
+        add_resource = {
+            type = oil
+            amount = 30
+            state = 483
+        }
+        add_resource = {
+            type = oil
+            amount = 10
+            state = 477
+        }
+        277 = {
+            add_building_construction = {
+                type = synthetic_refinery
+                level = 3
+                instant_build = yes
+            }
+        }
+        478 = {
+            add_building_construction = {
+                type = synthetic_refinery
+                level = 2
+                instant_build = yes
+            }
+        }
+        477 = {
+            add_building_construction = {
+                type = synthetic_refinery
+                level = 3
+                instant_build = yes
+            }
+        }
 	}
 	cost = 10
 	relative_position_id = mex_the_best_revenge
@@ -1420,6 +1455,11 @@ focus = {
 	completion_reward = {
 	
 	}
+    bypass = {
+        has_completed_focus = mex_dignified_empire
+        has_completed_focus = mex_republican_values
+        has_completed_focus = mex_building_reyista_cabinet
+    }
 	cost = 5
 	relative_position_id = mex_from_the_ashes
 	ai_will_do = { factor = 1000 }
