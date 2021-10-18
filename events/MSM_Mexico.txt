@@ -246,6 +246,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	immediate = {
+	hidden_effect = {
 	
 	set_global_flag = MSMMEXICAN_REVOLUTION_GLOBAL
 	
@@ -378,7 +379,7 @@ country_event = {
 					compare = equals
 				}
 			}
-			hidden_effect={
+			
 			##Give player Chihuahua and give MXA control of mexico states
 			MEX = {
 				add_state_core = 482
@@ -452,7 +453,7 @@ country_event = {
 			}
 			
 			
-		}
+		
 		}
 		
 		if=  { ##If the player chooses to fight against revolution
@@ -463,7 +464,6 @@ country_event = {
 					compare = equals
 				}
 			}
-			hidden_effect={
 			##Give AI Madero Chihuahua and maintain player control of mexico states
 				MXB = { transfer_state = 482 }
 				MEX = {  #Player Diaz
@@ -474,6 +474,7 @@ country_event = {
 						fascism = 8
 						communism = 2
 					}
+					add_ideas = { MEX_revolution_hell }
 				}
 				
 				MXB = { ##Madero Dynamic Tag
@@ -495,10 +496,8 @@ country_event = {
 					retire_country_leader = yes
 					
 				}
-			}
 		}
-	
-	hidden_effect = { ##These things will happen regardless of player choice
+	 ##These things will happen regardless of player choice
 		
 		if = {
 			limit = {
@@ -667,7 +666,7 @@ country_event = {
 			}
 			MXE = { load_oob = "MEX_MAG" }
 		}
-	}
+		}
 	}
 	
 	option = {
@@ -704,6 +703,7 @@ news_event = {
 		TAG	 = MEX
 		date > 1910.9.15
 		date < 1911.1.1
+		has_global_flag = MSMMEXICO_REVOLUTION_PERIOD
 	}
 	option ={
 		name = MSMMexico.6.a
@@ -722,7 +722,7 @@ news_event = {
 }
 
 country_event = {
-	title=MSMMexico.7.t ##Revolution Win Condition  REVOLUTIONARIES  
+	title=MSMMexico.7.t ##Revolution Win Condition  REVOLUTIONARIES    Treaty of Ciudad Juárez
 	desc=MSMMexico.7.d
 	id=MSMMexico.7
 	fire_only_once=yes
@@ -731,7 +731,7 @@ country_event = {
 			MXA = {
 				AND ={
 				has_war_with = MEX
-				surrender_progress > 0.6
+				surrender_progress > 0.7
 				}
 			}
 			NOT = { country_exists = MXA }
@@ -787,7 +787,7 @@ country_event = {
 }
 
 country_event = {
-	title=MSMMexico.8.t ##Revolution Win Condition  FEDERALISTS
+	title=MSMMexico.8.t ##Revolution Win Condition  FEDERALISTS   Treaty of Mexico City
 	desc=MSMMexico.8.d
 	id=MSMMexico.8
 	fire_only_once=yes
@@ -1296,5 +1296,41 @@ country_event={ ###Deal with Landowners
 		name=MSMMexico.23.b ##THREATEN LANDOWNERS
 		set_country_flag = MSMLANDOWNERSANGERED
 		custom_effect_tooltip = MSMLANDOWNERSANGEREDTOOLTIP
+	}
+}
+
+country_event={ ###Choosing Right Hand Man
+	title=MSMMexico.24.t
+	desc=MSMMexico.24.d
+	id=MSMMexico.24
+	fire_only_once=yes
+	is_triggered_only=yes
+	trigger = {
+	always = no
+	}
+	option={
+		name=MSMMexico.24.a ##Reyes
+		trigger = { 
+			or = {
+				not = { has_completed_focus = mex_reyes_plan }
+				not = { has_completed_focus = mex_cut_out_middlemen }
+			}
+		}
+	}
+	option={
+		name=MSMMexico.24.b ##de la Barra
+		
+	}
+	option={
+		name=MSMMexico.24.c ##Huerta
+		trigger = { 		
+			not = { has_completed_focus = mex_huerta_plan }
+		}
+	}
+	option={
+		name=MSMMexico.24.d ##Carranza
+		trigger = {
+			mex = { has_country_flag = MSMMEXNOTPURGEDCARRANZA }
+		}
 	}
 }

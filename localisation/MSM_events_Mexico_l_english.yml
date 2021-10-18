@@ -1,5 +1,6 @@
 ﻿l_english:
  MSMMEXICAN_REVOLUTION_GLOBAL:0 "§CThe Mexican Revolution has begun!§!"
+ MSMMADEROCANDIDATE:0 "§CFrancisco Madero has announced his candidacy in the 1910 election.§!"
  MEX_support_diaz:0 "§+Is supporting Díaz§!"
  MEX_support_madero:0 "§+Is supporting Madero§!"
  MSMMexico.1.t:0 "The 1910 Election"`
@@ -66,8 +67,8 @@
  MSMMexico.17.b:0 "We should remove the top officers"
  MSMMexico.17.c:0 "Replace them with revolutionary generals. Pascual Orozco will keep them in line!"
  MSMMEXICO17cTOOLTIP:0 "This will create a loyal military headed by Pascual Orozco"
- MSMMEXPURGEDCARRANZA:0 "Carranza was purged"
- MSMMEXNOTPURGEDCARRANZA:0 "Carranza was not purged"
+ MSMMEXPURGEDCARRANZA:0 "§CCarranza was purged§!"
+ MSMMEXNOTPURGEDCARRANZA:0 "§CCarranza was not purged§!"
  MSMMexico.18.t:0 "Plan of Alaya"
  MSMMexico.19.t:0 "Trial of the Maderistas"
  MSMMexico.19.d:0 "With the war over and the Maderistas defeated, all that is left to do is put the leaders on trial. We will start with Francisco Madero, and then we will try his ranking men."
@@ -89,8 +90,8 @@
  MSMMexico.23.d:0 "This Madero situation may become dire as his election campaign, however insignificant, will raise the rally the support of our enemies. We should consider the support of the landowners, which may be considerable in weakening any potential rebel activity in the coming months."
  MSMMexico.23.a:0 "Perhaps we can come to an arrangement..."
  MSMMexico.23.b:0 "We do not need their help"
- MSMLANDOWNERSPLACATED:0 "A deal was made with the landowners"
- MSMLANDOWNERSANGERED:0 "No deal was made with the landowners"
+ MSMLANDOWNERSPLACATED:0 "§CA deal was made with the landowners§!"
+ MSMLANDOWNERSANGERED:0 "§CNo deal was made with the landowners§!"
  MSMLANDOWNERSPLACATEDTOOLTIP:0 "This will force you to accept foreign influence"
  MSMLANDOWNERSANGEREDTOOLTIP:0 "This will protect Mexican economic idependence"
  MSMREYESRIGHTHAND:0 "Reyes has been selected` as Right Hand Man"

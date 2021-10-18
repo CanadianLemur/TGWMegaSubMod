@@ -16,7 +16,7 @@ focus = {
 	search_filters = {
 		
 	}
-	cost = 5
+	cost = 3
 	ai_will_do = { factor = 4000 }
 	x = 22
 	y = 0
@@ -34,7 +34,7 @@ focus = {
 	prerequisite = { focus = mex_civil_war_looms }
 	search_filters = {
 	}
-	cost = 2
+	cost = 5
 	ai_will_do = { factor = 4000 }
 	relative_position_id = mex_civil_war_looms
 	x = 0
@@ -46,6 +46,7 @@ focus = {
 	id = mex_diaz_is_right
 	icon = GFX_focus_diaz_is_right
 	available = {
+		has_global_flag = MEX_support_diaz
 	}
 	mutually_exclusive = { focus = mex_a_new_path }
 	completion_reward = {
@@ -62,6 +63,42 @@ focus = {
 }
 
 focus = {
+	id = mex_election_fraud_claims
+	icon = GFX_focus_election_fraud_claims
+	available = {
+	}
+	completion_reward = {
+	}
+	prerequisite = { focus = mex_diaz_is_right }
+	search_filters = {
+		FOCUS_FILTER_DIAZ
+	}
+	cost = 8
+	ai_will_do = { factor = 4000 }
+	relative_position_id = mex_diaz_is_right
+	x = 0	
+	y = 1
+}
+
+focus = {
+	id = mex_shore_up_support
+	icon = GFX_focus_shore_up_support
+	available = {
+	}
+	completion_reward = {
+	}
+	prerequisite = { focus = mex_election_fraud_claims }
+	search_filters = {
+		FOCUS_FILTER_DIAZ
+	}
+	cost = 8
+	ai_will_do = { factor = 4000 }
+	relative_position_id = mex_election_fraud_claims
+	x = 0	
+	y = 1
+}
+
+focus = {
 	id = mex_deal_with_landowners
 	icon = GFX_focus_deal_with_landowners
 	available = {
@@ -74,13 +111,13 @@ focus = {
 			random_days = 1
 		}
 	}
-	prerequisite = { focus = mex_diaz_is_right }
+	prerequisite = { focus = mex_shore_up_support }
 	search_filters = {
 		FOCUS_FILTER_DIAZ
 	}
-	cost = 10
+	cost = 6
 	ai_will_do = { factor = 4000 }
-	relative_position_id = mex_diaz_is_right
+	relative_position_id = mex_shore_up_support
 	x = 0
 	y = 1
 }
@@ -97,18 +134,21 @@ focus = {
 	search_filters = {
 		FOCUS_FILTER_DIAZ
 	}
-	cost = 7
+	cost = 4
 	ai_will_do = { factor = 4000 }
 	relative_position_id = mex_deal_with_landowners
 	x = 0
 	y = 1
 }
 
+
+
 ### INITIAL MADERO ###
 focus = {
 	id = mex_a_new_path
 	icon = GFX_focus_a_new_path
 	available = {
+		has_global_flag = MEX_support_madero
 	}
 	mutually_exclusive = { focus = mex_diaz_is_right }
 	completion_reward = {
@@ -1679,7 +1719,7 @@ focus = {
 	id = mex_choosing_a_right_hand_man
 	icon = GFX_focus_choosing_a_right_hand_man
 	available = {
-		has_completed_focus = mex_thousand_year_porfiriato
+		has_completed_focus = mex_mexican_succession
 	}
 	prerequisite = {}
 	completion_reward = {
@@ -1701,12 +1741,8 @@ focus = {
 	id = mex_choose_reyes
 	icon = GFX_focus_choose_reyes
 	available = {
-		not = { has_completed_focus = mex_reyes_plan }
-		not = { has_completed_focus = mex_cut_out_middlemen }
+		always =no
 	}
-    mutually_exclusive = { focus = mex_choose_de_la_barra }
-	mutually_exclusive = { focus = mex_choose_huerta }
-    mutually_exclusive = { focus = mex_choose_carranza }
 	prerequisite = { focus = mex_choosing_a_right_hand_man }
 	completion_reward = {
 	
@@ -1770,10 +1806,8 @@ focus = {
 	id = mex_choose_de_la_barra
 	icon = GFX_focus_choose_de_la_barra
 	available = {
+		always = no
 	}
-    mutually_exclusive = { focus = mex_choose_reyes }
-	mutually_exclusive = { focus = mex_choose_huerta }
-    mutually_exclusive = { focus = mex_choose_carranza }
 	prerequisite = { focus = mex_choosing_a_right_hand_man }
 	completion_reward = {
 	
@@ -1837,11 +1871,8 @@ focus = {
 	id = mex_choose_huerta
 	icon = GFX_focus_choose_huerta
 	available = {
-		not = { has_completed_focus = mex_huerta_plan }
+		always = no
 	}
-    mutually_exclusive = { focus = mex_choose_reyes }
-	mutually_exclusive = { focus = mex_choose_de_la_barra }
-    mutually_exclusive = { focus = mex_choose_carranza }
 	prerequisite = { focus = mex_choosing_a_right_hand_man }
 	completion_reward = {
 	
@@ -1905,11 +1936,8 @@ focus = {
 	id = mex_choose_carranza
 	icon = GFX_focus_choose_carranza
 	available = {
-        has_country_flag = MSMMEXNOTPURGEDCARRANZA
+		always = no
 	}
-    mutually_exclusive = { focus = mex_choose_reyes }
-	mutually_exclusive = { focus = mex_choose_de_la_barra }
-    mutually_exclusive = { focus = mex_choose_huerta }
 	prerequisite = { focus = mex_choosing_a_right_hand_man }
 	completion_reward = {
 	
