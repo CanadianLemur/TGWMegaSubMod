@@ -1,0 +1,8 @@
+objectTypes = {
+    pdxmesh = {
+        name = "msm_kwagen"
+        file = "gfx/models/msm_kwagen.mesh"
+        animation = { id = "idle" type = "name_of_animation" }				
+        scale = 1.0
+    }
+}

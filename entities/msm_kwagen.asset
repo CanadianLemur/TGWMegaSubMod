@@ -1,0 +1,51 @@
+entity = {
+    name = "msm_kwagen_entity"
+    pdxmesh = "msm_kwagen"
+    scale = 1.0
+    cull_radius = 100
+
+    default_state = "idle"
+    get_state_from_parent = yes
+
+    locator = {
+        name = "example"
+        position = { 0.0 0.0 0.0 }
+    }
+
+    state = { 
+        name = "idle" 
+        state_time = 0.0
+        
+        animation = "idle"
+        animation_blend_time = 0.0
+        animation_speed = 1.0
+        looping = yes
+        
+        next_state = "idle"
+        
+        chance = 2
+        propagate_state = {
+            node = "idle"
+        }
+        
+        event = {
+            time = 1.0
+            trigger_once = yes
+            
+            node = "example_node"
+            light=  "example_light"
+            
+            particle = "example_particle"
+            keep_particle = yes
+            
+            sound = {
+                soundeffect = "example_soundeffect"
+            }
+        }
+    }
+    
+    attach = {
+        name = "name"
+        <node> = "example_entity"
+    }
+}
