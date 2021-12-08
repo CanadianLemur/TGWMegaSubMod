@@ -175,6 +175,7 @@ country_event = {
 		tag = FRA
 		has_war_with = GER
 		has_government = democratic
+		has_global_flag = kis_treaty_of_versailles
 		16 = { is_controlled_by = GER }
 		is_in_faction_with = ENG
 		ENG = { has_war_with = GER }

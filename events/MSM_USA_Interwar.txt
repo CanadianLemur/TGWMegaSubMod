@@ -388,8 +388,8 @@ news_event = {
 		        create_country_leader = {
 		            name = "Herbert Hoover"
 		            desc = USA_herbert_hoover_DESC 
-		            picture = "gfx/.dds"
-		            expire = "1935.1.1"
+		            picture = "gfx/KR_Assets/leaders/USA/Portrait_USA_Herbert_Hoover.png"
+		            expire = "1964.1.1"
 		            ideology = conservatism traits = {}
 		        }
 				unlock_national_focus = USA_interwar_1928_elections

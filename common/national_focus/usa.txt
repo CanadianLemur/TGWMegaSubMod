@@ -39,7 +39,7 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
-		x = -4
+		x = -5
 		y = 1
 	}
 	focus = {
@@ -1044,7 +1044,7 @@ focus_tree = {
 		prerequisite = { focus = USA_MSM_continental_leader }
 		prerequisite = { focus = USA_MSM_forced_awakening }
  		relative_position_id = USA_MSM_continental_leader
-		icon = GFX_goal_rhineland
+		icon = GFX_goal_generic_allies_build_infantry
 		completion_reward = {
 			#
 		}
@@ -5096,10 +5096,9 @@ focus_tree = {
 	focus = {
 		id = USA_interwar_IndianCitizenshipAct # Indian Citizenship Act
 		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = USA_interwar_PostWarPolicy }
- 		relative_position_id = USA_interwar_PostWarPolicy
+		prerequisite = { focus = USA_interwar_elect_calvin_coolidge focus = USA_interwar_elect_john_w_davis focus = USA_interwar_elect_robert_m_la_follete }
+ 		relative_position_id = USA_interwar_elect_calvin_coolidge
 		available = {
-			date > 1915.9.1
 		}
 		completion_reward = {
 			add_manpower = 25000
@@ -5107,7 +5106,7 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 1 }
  		cost = 10
-		x = -3
+		x = 2
 		y = 1
 	}
 	#-----------------------------------------

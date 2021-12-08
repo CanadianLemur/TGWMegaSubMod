@@ -1689,7 +1689,7 @@ focus_tree = {
 		controls_state = 716
         }
 		mutually_exclusive = {focus = RUS_manchurian_puppet}
-		x = 15
+		x = 19
         y = 10
         cost = 10
         completion_reward = {
@@ -1706,7 +1706,7 @@ focus_tree = {
         available = {
 		controls_state = 744
         }
-		x = 19
+		x = 15
         y = 10
         cost = 10
         completion_reward = {
@@ -1739,7 +1739,109 @@ focus_tree = {
         }
 		ai_will_do = { factor = 0	}
     }
-
+focus = {
+        id = RUS_rekindle_pacific_ambitions
+        icon = GFX_focus_generic_navy_battleship2
+        prerequisite = {
+            focus = RUS_expand_dalniy_naval_base
+        }
+        available = {
+		
+        }
+		mutually_exclusive = {focus = RUS_peaceful_pacific_policy}
+		x = 15
+        y = 11
+        cost = 10
+        completion_reward = {
+        }
+		ai_will_do = { factor = 0	}
+    }
+focus = {
+        id = RUS_develop_vladivostok
+        icon = GFX_goal_generic_construction
+        prerequisite = {
+            focus = RUS_rekindle_pacific_ambitions
+			focus = RUS_peaceful_pacific_policy
+        }
+        available = {
+		
+        }
+		mutually_exclusive = {focus = RUS_peaceful_pacific_policy}
+		x = 13
+        y = 12
+        cost = 10
+        completion_reward = {
+        }
+		ai_will_do = { factor = 0	}
+    }
+focus = {
+        id = RUS_peaceful_pacific_policy
+        icon = GFX_goal_generic_national_unity
+        prerequisite = {
+            focus = RUS_second_russo_japanese_war_victory
+        }
+        available = {
+		
+        }
+		mutually_exclusive = {focus = RUS_rekindle_pacific_ambitions}
+		x = 11
+        y = 11
+        cost = 10
+        completion_reward = {
+        }
+		ai_will_do = { factor = 0	}
+    }
+focus = {
+        id = RUS_american_trade_opportunities
+        icon = GFX_goal_generic_national_unity
+        prerequisite = {
+            focus = RUS_peaceful_pacific_policy
+        }
+        available = {
+		
+        }
+		mutually_exclusive = {focus = RUS_rekindle_pacific_ambitions}
+		x = 7
+        y = 12
+        cost = 10
+        completion_reward = {
+        }
+		ai_will_do = { factor = 0	}
+    }
+focus = {
+        id = RUS_australian_trade_opportunities
+        icon = GFX_goal_generic_national_unity
+        prerequisite = {
+            focus = RUS_peaceful_pacific_policy
+        }
+        available = {
+		
+        }
+		mutually_exclusive = {focus = RUS_rekindle_pacific_ambitions}
+		x = 11
+        y = 12
+        cost = 10
+        completion_reward = {
+        }
+		ai_will_do = { factor = 0	}
+    }
+focus = {
+        id = RUS_invest_in_the_east_indies
+        icon = GFX_goal_generic_national_unity
+        prerequisite = {
+            focus = RUS_peaceful_pacific_policy
+        }
+        available = {
+		
+        }
+		mutually_exclusive = {focus = RUS_rekindle_pacific_ambitions}
+		x = 9
+        y = 12
+        cost = 10
+        completion_reward = {
+        }
+		ai_will_do = { factor = 0	}
+    }
     focus = {
         id = RUS_ww1_treaty_portsmouth
         icon = GFX_goal_generic_major_war

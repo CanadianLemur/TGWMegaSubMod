@@ -2369,6 +2369,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = USA
+				has_completed_focus = USA_break_up_standard_oil
 			}
 			
 
@@ -2407,6 +2408,7 @@ ideas = {
 			picture = usa_general_motors
 			allowed = {
 				original_tag = USA
+				has_completed_focus = USA_interwar_1936_elections
 			}
 			available = {
 				has_completed_focus = USA_wartime_industry

@@ -36,7 +36,7 @@ focus_tree = {
 		if = {
 		limit =  {has_completed_focus = FRA_crisis_foch_takes_control}
 		set_country_flag = french_military_government
-		load_focus_tree = petain_government
+		load_focus_tree = foch_government
 		add_manpower = 10000
 		}
 		if = {
@@ -243,16 +243,16 @@ focus_tree = {
 								name = FRA_crisis_name 
 								}
 								create_country_leader = {
-								name = "Phillipe Pétain"
-								desc = "POLITICS_phillipe_petain_DESC"
-								picture = "gfx/hoi4tgw_portraits/FRA/army_generals/FRA_philippe_petain.dds"
-								expire = "1965.1.1"
-								ideology = despotism
-								traits = {
-								
+									name = "Ferdinand Foch"
+									desc = "POLITICS_ferdinand_foch_DESC"
+									picture = "gfx/hoi4tgw_portraits/FRA/army_generals/FRA_ferdinand_foch.dds"
+									expire = "1930.1.1"
+									ideology = despotism
+									traits = {
+									
+									}
 								}
-								}
-					load_focus_tree = petain_government
+					load_focus_tree = foch_government
 				}
 				every_owned_state = {
 				limit = {NOT = {OR = {state = 18 state = 33 state = 24 state = 27 state = 14 state = 785 state = 836 state = 29 state = 15 state = 16 state = 30 state = 23 state = 19}}}

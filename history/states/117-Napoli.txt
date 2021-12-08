@@ -32,7 +32,7 @@ state={
 			industrial_complex=1
 			arms_factory=1
 			819={ naval_base=6 }
-			}
 			6831={ naval_base=1 }
+			}
 		}
 	}

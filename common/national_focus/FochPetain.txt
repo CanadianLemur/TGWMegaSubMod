@@ -1,0 +1,78 @@
+focus_tree = {
+	id = foch_government
+	default = no
+	country = { factor=0 modifier = { add = 30 has_country_flag = french_military_government } }
+	###########################################################################################################################
+	# POLITICAL
+	###########################################################################################################################
+
+	focus = {
+		id = foch_call_upon_the_veterans
+		icon = GFX_focus_generic_military_mission
+		completion_reward = {  
+		#load oob
+		}
+		ai_will_do = { factor = 20 }
+		cost = 2
+		x = 10
+		y = 0
+	}
+	focus = {
+		id = foch_end_of_the_period_of_unrest
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = {focus = foch_call_upon_the_veterans}
+		relative_position_id = foch_call_upon_the_veterans
+		available = {
+		controls_state = 16
+		controls_state = 21 
+		controls_state = 30
+		controls_state = 19
+		}
+		completion_reward = { 
+		set_capital = 16
+		add_political_power = 200
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = foch_solidify_military_rule
+		icon = GFX_focus_generic_manpower
+		prerequisite = {focus = foch_end_of_the_period_of_unrest}
+		relative_position_id = foch_end_of_the_period_of_unrest
+		available = {
+		
+		}
+		completion_reward = { 
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.3
+		}
+		add_stability = 0.15
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = foch_rebuild_the_country
+		icon = GFX_goal_generic_construction
+		prerequisite = {focus = foch_solidify_military_rule}
+		relative_position_id = foch_solidify_military_rule
+		available = {
+		
+		}
+		completion_reward = { 
+		add_timed_idea = {
+			idea = MSM_FRA_rebuilding_the_country
+			days = 300
+		}
+		}
+		ai_will_do = { factor = 20 }
+		cost = 10
+		x = 0
+		y = 1
+	}
