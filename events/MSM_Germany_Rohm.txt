@@ -1,0 +1,68 @@
+﻿######################################################################################
+# New German Events, Regarding the events leading up to the Night of the Long Knives #
+######################################################################################
+add_namespace = MSM_Germany_Rohm
+######## Growing Tension in the Nazi Party
+country_event = {
+	id = MSM_Germany_Rohm.1
+	title = MSM_Germany_Rohm.1.t
+	desc = MSM_Germany_Rohm.1.d
+	picture = GFX_report_event_generic_read_write
+	trigger = {
+	has_country_leader = {
+    name = "Adolf Hitler"
+    ruling_only = yes
+	}
+	}
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 30
+	}
+	immediate = {
+	set_variable = {
+	var = GER_SA_influence
+	value = 50
+		}
+	set_variable = {
+	var = GER_SA_loyalty
+	value = 80
+		}
+	set_variable = {
+	var = GER_reichswehr_influence
+	value = 40
+		}
+	set_variable = {
+	var = GER_reichswehr_loyalty
+	value = 80
+		}
+	}
+	# The Right
+	option = {
+		name = MSM_Germany_Rohm.1.a
+		ai_chance = { factor = 100 }
+		set_country_flag = GER_party_struggle_right
+	}
+	# The Left
+	option = {
+		name = MSM_Germany_Rohm.1.b
+		ai_chance = { factor = 100 }
+		set_country_flag = GER_party_struggle_left
+	}
+}
+country_event = {
+	id =  MSM_Germany_Rohm.2
+	title = MSM_Germany_Rohm.2.t
+	desc = MSM_Germany_Rohm.2.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = yes
+
+	option = {
+		name = MSM_Germany_Rohm.2.a
+		ai_chance = { factor = 100 }
+	}
+	option = {
+		name = MSM_Germany_Rohm.2.b
+		ai_chance = { factor = 100 }
+	}
+}

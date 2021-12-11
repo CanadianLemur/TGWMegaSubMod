@@ -4,7 +4,6 @@ name="Max von Hausen"
 portraits = {
 army = {
 large = "gfx/generals/GER_Max_von_Hausen.dds"
-small = 
 }
 }
 corps_commander = {
@@ -20,4 +19,23 @@ corps_commander = {
 	logistics_skill = 1
 			}
 		}
+GER_ernst_rohm = {
+	name="Ernst Röhm"
+	portraits = {
+			civilian = {
+				large = "gfx/leaders/GER_ernst_rohm.dds"
+			}
+			army = {
+				large = "gfx/leaders/GER_ernst_rohm.dds"
+			}
+
+		}
+
+	country_leader = {
+			ideology = nazism
+			traits = { MSM_unpopular }
+			expire = 1960.1.1
+			id = -1
+		}
 	}
+}

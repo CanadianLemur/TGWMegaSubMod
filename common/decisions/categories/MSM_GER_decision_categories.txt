@@ -74,3 +74,22 @@ german_european_union = {
 		}
 	}
 }
+GER_party_struggle = {
+
+	priority = 101
+
+
+	allowed = {
+		original_tag = GER
+	}
+
+	visible = {
+		ruling_party = fascism
+		OR = {
+			has_country_flag = GER_party_struggle_right
+			has_country_flag = GER_party_struggle_left
+		}
+	}
+
+	visible_when_empty = yes
+}

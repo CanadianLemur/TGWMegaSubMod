@@ -178,7 +178,10 @@ recruit_character = GER_max_von_fischel # Also Advisor
 	#-------------------------------------------------------
 
 	set_technology = {
-
+		
+		# Train
+		ww1_train = 1
+		
 		# Infantry
 		infantry_weapons = 1
 		ww1infantry_weapons1 = 1

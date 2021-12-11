@@ -173,7 +173,10 @@
  GER_ww1_war_plans_germany_over_all:0"Germany over all"
  GER_ww1_war_plans_germany_over_all_desc:0"Germany is the foremost nation in Europe, diplomatic blunders made over the last century shouldn't stop us from having what is rightfully ours"
  ####Interwar Versailles####
- 
+ GER_interwar_loss_in_ww1:0"Humiliation"
+ GER_interwar_loss_in_ww1_desc:0""
+ GER_interwar_rohm_putsch:0"Röhm Putsch"
+ GER_interwar_rohm_putsch_desc:0""
  ####Interwar Frankfurt####
  GER_interwar_WKV_victory_in_ww1:0"Victory in the Weltkrieg"
  GER_interwar_WKV_victory_in_ww1_desc:0"Germany stands triumphantly over a new European order, the long fight is over and the time has come to re-evaluate our diplomatic position"

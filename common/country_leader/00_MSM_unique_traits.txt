@@ -77,7 +77,11 @@ leader_traits = {
 		autonomy_gain = 0.1
 		communism_drift = -0.01
 	}
-}
+	MSM_unpopular = {
+		political_power_gain = -0.25
+		political_power_factor = -0.10
+		stability_factor = -0.05
+	}
 	MSM_lion_of_africa= {
 		recruitable_population_factor = 0.15
 		compliance_gain = 0.015

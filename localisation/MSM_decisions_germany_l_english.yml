@@ -23,3 +23,6 @@
  integrate_german_lands:0"Integrate [from.getname]"
  integrate_habsburg_lands:0"Integrate [from.getname]"
  integrate_hungarian_lands:0"Integrate [from.getname]"
+ GER_party_struggle:0"Division in the NSDAP"
+ GER_party_struggle_desc:0"While Hitler has managed to gain power in Germany, he has not yet managed to fully consolidate his party, the Sturmabteilung, led by Ernst Röhm and aligned with the Strasserists, has increasingly become discontent with the lack of action against the old elites in the Military and Economy\n\nThe SAs Influence is [?GER_SA_influence], Their Loyalty is [?GER_SA_loyalty]\nThe Reichswehrs Influence is [?GER_reichswehr_influence], Their Loyalty is [?GER_reichswehr_loyalty]"
+ 

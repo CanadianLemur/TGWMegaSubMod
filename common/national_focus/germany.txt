@@ -5889,14 +5889,17 @@ set_party_name = {
 		id = GER_interwar_night_long_knives
 
 		icon = GFX_hoi4tgw_knifeintheback
-
+		mutually_exclusive = {focus = GER_interwar_rohm_putsch}
 		relative_position_id = GER_interwar_Reichstag_Fire_Decree
 		prerequisite = { focus = GER_interwar_Reichstag_Fire_Decree }
 
 		available = {
-			date > 1934.1.1
-			is_puppet = no			
-			has_government = fascism
+			hidden_trigger = {
+				always = no
+				}
+			custom_trigger_tooltip = {
+			tooltip = long_knives_tt
+			}
 		}
 
 		x = 0
@@ -5918,7 +5921,127 @@ set_party_name = {
 			add_timed_idea = { idea = reign_of_terror days = 730 }
 		}
 	}
+	# Röhm Putsch, 
+	focus = {
+		id = GER_interwar_rohm_putsch
 
+		icon = GFX_goal_generic_attack_allies
+		mutually_exclusive = {focus = GER_interwar_night_long_knives}
+		relative_position_id = GER_interwar_Reichstag_Fire_Decree
+		prerequisite = { focus = GER_interwar_Reichstag_Fire_Decree }
+
+		available = {
+			hidden_trigger = {
+				always = no
+				}
+			custom_trigger_tooltip = {
+			tooltip = rohm_putsch_tt
+			}
+		}
+		x = 4
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+			factor = 0
+			is_historical_focus_on = yes
+			}
+		}
+
+		completion_reward = {
+			recruit_character = GER_ernst_rohm
+			GER_ernst_rohm = {
+			promote_character = yes
+			}
+		}
+	}
+	# Röhm Leadership
+	focus = {
+		id = GER_interwar_rohms_leadership
+
+		icon = GFX_goal_generic_forceful_treaty
+		mutually_exclusive = {focus = GER_interwar_gregor_strasser focus = GER_interwar_otto_strasser}
+		relative_position_id = GER_interwar_rohm_putsch
+		prerequisite = { focus = GER_interwar_rohm_putsch }
+
+		available = {
+		}
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+			factor = 0
+			is_historical_focus_on = yes
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	# Gregor Strasser
+	focus = {
+		id = GER_interwar_gregor_strasser
+
+		icon = GFX_goal_generic_forceful_treaty
+		mutually_exclusive = {focus = GER_interwar_rohms_leadership focus = GER_interwar_otto_strasser}
+		relative_position_id = GER_interwar_rohm_putsch
+		prerequisite = { focus = GER_interwar_rohm_putsch }
+
+		available = {
+		}
+		x = 2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+			factor = 0
+			is_historical_focus_on = yes
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	# Otto Strasser
+	focus = {
+		id = GER_interwar_otto_strasser
+
+		icon = GFX_goal_generic_forceful_treaty
+		mutually_exclusive = {focus = GER_interwar_gregor_strasser focus = GER_interwar_rohms_leadership}
+		relative_position_id = GER_interwar_rohm_putsch
+		prerequisite = { focus = GER_interwar_rohm_putsch }
+
+		available = {
+		}
+		x = 4
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+			factor = 0
+			is_historical_focus_on = yes
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
 	################ INTERWAR END
 	################ VANILLA START
 
@@ -8525,7 +8648,7 @@ set_party_name = {
 	focus = {
 		id = GER_rhineland
 		icon = GFX_goal_generic_military_sphere 
-		prerequisite = { focus = GER_interwar_night_long_knives }
+		prerequisite = { focus = GER_interwar_night_long_knives focus = GER_interwar_rohm_putsch}
 		relative_position_id = GER_interwar_night_long_knives
 		x = 0
 		y = 1
