@@ -1,0 +1,17 @@
+characters = {
+	MSM_MEX_bernardo_reyes={
+		name="MSM_MEX_bernardo_reyes"
+		portraits={
+			army = {
+				small = "GFX_idea_MEX_bernardo_reyes"
+			}
+			
+		}
+		country_leader = {
+			ideology = liberalism
+			traits={
+			}
+			expire = "1914.1.1"
+		}
+	}
+}

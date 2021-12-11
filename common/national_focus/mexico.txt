@@ -29,7 +29,7 @@ focus = {
 		has_country_flag = MSMMADEROCANDIDATE
 	}
 	completion_reward = {
-	
+		
 	}
 	prerequisite = { focus = mex_civil_war_looms }
 	search_filters = {
