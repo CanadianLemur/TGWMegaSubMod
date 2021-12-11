@@ -9,6 +9,12 @@ state={
 	}
 	history={
 		owner=GER
+		1919.1.1 = {
+            owner = NZL
+        }
+		1919.7.2 = {
+            owner = GER
+        }
 		1936.1.1={ 
 			owner=NZL
 			buildings={

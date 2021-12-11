@@ -2,7 +2,6 @@
 oob="YUG_1910"
 set_fuel_ratio = 0.20
 set_research_slots=3
-	}
 if = {
 	limit = { has_dlc = "Man the Guns" }
     		set_technology = {
