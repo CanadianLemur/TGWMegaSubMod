@@ -247,7 +247,11 @@ spriteTypes = {
 		name = "GFX_heavy_field_gun3_medium"
 		texturefile = "gfx/interface/technologies/hoi4tgw/artillery/bertha3.dds"
 	}
-
+	
+	SpriteType = {
+		name = "GFX_interwar_heavy_artillery_medium"
+		texturefile = "gfx/interface/technologies/hoi4tgw/artillery/bertha4.dds"
+	}
 
 
 	SpriteType = {
