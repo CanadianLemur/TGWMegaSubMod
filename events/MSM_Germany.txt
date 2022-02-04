@@ -223,16 +223,16 @@ country_event = {
 		}
 		give_military_access = GER
 		GER = {
-		diplomatic_relation = {
-		country = DEN
-		relation = guarantee
-		active = yes
-		}
-		diplomatic_relation = {
-		country = DEN
-		relation = non_aggression_pact
-		active = yes
-		}
+			diplomatic_relation = {
+				country = DEN
+				relation = guarantee
+				active = yes
+			}
+			diplomatic_relation = {
+				country = DEN
+				relation = non_aggression_pact
+				active = yes
+			}
 		}
 	}
 	option = {
@@ -508,12 +508,12 @@ country_event = {
 	option = {
 		name = MSM_WKV_Germany.2.a
 		ai_chance = { factor = 00 }
-		trigger = {NOT = {TAG = GER}}
+		trigger = { NOT = { TAG = GER }}
 	}
 	option = {
 		name = MSM_WKV_Germany.2.b
 		ai_chance = { factor = 00 }
-		trigger = {TAG = GER}
+		trigger = { TAG = GER }
 		transfer_state = 207
 		transfer_state = 206
 		transfer_state = 204
@@ -534,12 +534,12 @@ country_event = {
 	option = {
 		name = MSM_WKV_Germany.3.a
 		ai_chance = { factor = 00 }
-		trigger = {NOT = {tag = GER}}
+		trigger = { NOT = { tag = GER }}
 	}
 	option = {
 		name = MSM_WKV_Germany.3.b
 		ai_chance = { factor = 00 }
-		trigger = {tag = GER}
+		trigger = { tag = GER }
 	}
 }
 #### German Intervention in Russia successful ####
@@ -555,7 +555,7 @@ country_event = {
 		surrender_progress > 0.75
 		}
 	}
-	mean_time_to_happen = {days = 5}
+	mean_time_to_happen = { days = 5 }
 	fire_only_once = no
 	is_triggered_only = no
 	## Ladies and Gentlemen, We gottem
@@ -563,248 +563,249 @@ country_event = {
 		name = MSM_WKV_Germany.4.a
 		ai_chance = { factor = 00 }
 		RUS = {
-		annex_country = {
-		target = SOV
-		transfer_troops = no
-		}
+			annex_country = {
+				target = SOV
+				transfer_troops = no
+			}
 		}
 		if = {
-		limit = {
-			OR = {
-			RUS = {owns_state = 137}
-			SOV = {owns_state = 137}
+			limit = {
+				OR = {
+					RUS = { owns_state = 137 }
+					SOV = { owns_state = 137 }
+				}
 			}
-		}
-		transfer_state = 137 #Crimea for Gothic Homeland and Naval Projection
+			transfer_state = 137 #Crimea for Gothic Homeland and Naval Projection
 		}
 		if = {
-		limit = {
-			OR = {
-			RUS = {owns_state = 206}
-			SOV = {owns_state = 206}
+			limit = {
+				OR = {
+					RUS = { owns_state = 206 }
+					SOV = { owns_state = 206 }
+				}
 			}
-		}
-		transfer_state = 206 #Minsk
+			transfer_state = 206 #Minsk
 		}
 		if = {
-		limit = {
-			OR = {
-			RUS = {owns_state = 207}
-			SOV = {owns_state = 207}
+			limit = {
+				OR = {
+					RUS = { owns_state = 207 }
+					SOV = { owns_state = 207 }
+				}
 			}
-		}
-		transfer_state = 207 #Vitebsk
+			transfer_state = 207 #Vitebsk
 		}
 		if = {
-		limit = {
-			OR = {
-			RUS = {owns_state = 241}
-			SOV = {owns_state = 241}
+			limit = {
+				OR = {
+					RUS = { owns_state = 241 }
+					SOV = { owns_state = 241 }
+				}
 			}
-		}
-		transfer_state = 241 #Gomel
+			transfer_state = 241 #Gomel
 		}
 		if = {
-		limit = {
-			OR = {
-			RUS = {owns_state = 204}
-			SOV = {owns_state = 204}
+			limit = {
+				OR = {
+					RUS = { owns_state = 204 }
+					SOV = { owns_state = 204 }
+				}
 			}
-		}
-		transfer_state = 204 #Bobruysk
+			transfer_state = 204 #Bobruysk
 		}
 		if = {
-		limit = {
-			OR = {
-			RUS = {owns_state = 194}
-			SOV = {owns_state = 194}
+			limit = {
+				OR = {
+					RUS = { owns_state = 194 }
+					SOV = { owns_state = 194 }
+				}
 			}
-		}
-		transfer_state = 194 #Mozyr
+			transfer_state = 194 #Mozyr
 		}
 		if = {
-		limit = {
-			OR = {
-			RUS = {owns_state = 228}
-			SOV = {owns_state = 228}
+			limit = {
+				OR = {
+					RUS = { owns_state = 228 }
+					SOV = { owns_state = 228 }
+				}
 			}
-		}
-		UKR = {transfer_state = 228}#Voroshilovgrad
+			UKR = { transfer_state = 228 }#Voroshilovgrad
 		}
 		if = {
-		limit = {
-			OR = {
-			RUS = {owns_state = 218}
-			SOV = {owns_state = 218}
+			limit = {
+				OR = {
+					RUS = { owns_state = 218 }
+					SOV = { owns_state = 218 }
+				}
 			}
-		}
-		transfer_state = 218 #Rostov
+			transfer_state = 218 #Rostov
 		}
 		if = {
-		limit = {
-			OR = {
-			RUS = {owns_state = 234}
-			SOV = {owns_state = 234}
+			limit = {
+				OR = {
+					RUS = { owns_state = 234 }
+					SOV = { owns_state = 234 }
+				}
 			}
-		}
-		transfer_state = 234 #Krasnodar
+			transfer_state = 234 #Krasnodar
 		}
 		if = {
-		limit = {
-			OR = {
-			RUS = {owns_state = 245}
-			SOV = {owns_state = 245}
+			limit = {
+				OR = {
+					RUS = { owns_state = 245 }
+					SOV = { owns_state = 245 }
+				}
 			}
-		}
-		transfer_state = 245 #Millerovo
+			transfer_state = 245 #Millerovo
 		}
 		if = {
-		limit = {
-			OR = {
-			RUS = {owns_state = 265}
-			SOV = {owns_state = 265}
+			limit = {
+				OR = {
+					RUS = { owns_state = 265 }
+					SOV = { owns_state = 265 }
+				}
 			}
-		}
-		transfer_state = 265 #Mikhaylovka
+			transfer_state = 265 #Mikhaylovka
 		}
 		if = {
-		limit = {
-			OR = {
-			RUS = {owns_state = 217}
-			SOV = {owns_state = 217}
+			limit = {
+				OR = {
+					RUS = { owns_state = 217 }
+					SOV = { owns_state = 217 }
+				}
 			}
-		}
-		transfer_state = 217 #Tsaritsyn
+			transfer_state = 217 #Tsaritsyn
 		}
 		if = {
-		limit = {
-			OR = {
-			RUS = {owns_state = 236}
-			SOV = {owns_state = 236}
+			limit = {
+				OR = {
+					RUS = { owns_state = 236 }
+					SOV = { owns_state = 236 }
+				}
 			}
-		}
-		transfer_state = 236 #Astrakhan
+			transfer_state = 236 #Astrakhan
 		}
 		if = {
-		limit = {
-			OR = {
-			RUS = {owns_state = 237}
-			SOV = {owns_state = 237}
+			limit = {
+				OR = {
+					RUS = { owns_state = 237 }
+					SOV = { owns_state = 237 }
+				}
 			}
-		}
-		transfer_state = 237#Elista
+			transfer_state = 237#Elista
 		}
 		if = {
-		limit = {
-			OR = {
-			RUS = {owns_state = 238}
-			SOV = {owns_state = 238}
+			limit = {
+				OR = {
+					RUS = { owns_state = 238 }
+					SOV = { owns_state = 238 }
+				}
 			}
-		}
-		transfer_state = 238#Volgodonsk
+			transfer_state = 238#Volgodonsk
 		}
 		if = {
-		limit = {
-			OR = {
-			RUS = {owns_state = 235}
-			SOV = {owns_state = 235}
+			limit = {
+				OR = {
+					RUS = { owns_state = 235 }
+					SOV = { owns_state = 235 }
+				}
 			}
-		}
-		transfer_state = 235#Stavropol
+			transfer_state = 235#Stavropol
 		}
 		if = {
-		limit = {
-			OR = {
-			RUS = {owns_state = 239}
-			SOV = {owns_state = 239}
+			limit = {
+				OR = {
+					RUS = { owns_state = 239 }
+					SOV = { owns_state = 239 }
+				}
 			}
-		}
-		transfer_state = 239#Saratov
+			transfer_state = 239#Saratov
 		}
 		if = {
-		limit = {
-			OR = {
-			RUS = {owns_state = 401}
-			SOV = {owns_state = 401}
+			limit = {
+				OR = {
+					RUS = { owns_state = 401 }
+					SOV = { owns_state = 401 }
+				}
 			}
-		}
-		transfer_state = 401#Engels
+			transfer_state = 401#Engels
 		}
 		if = {
-		limit = {
-			OR = {
-			RUS = {owns_state = 251}
-			SOV = {owns_state = 251}
+			limit = {
+				OR = {
+					RUS = { owns_state = 251 }
+					SOV = { owns_state = 251 }
+				}
 			}
-		}
-		transfer_state = 251#Samara
+			transfer_state = 251#Samara
 		}
 		if = {
-		limit = {
-			OR = {
-			RUS = {owns_state = 652}
-			SOV = {owns_state = 652}
+			limit = {
+				OR = {
+					RUS = { owns_state = 652 }
+					SOV = { owns_state = 652 }
+				}
 			}
-		}
-		transfer_state = 652#Orenburg
+			transfer_state = 652#Orenburg
 		}
 		if = {
-		limit = {
-			OR = {
-			RUS = {owns_state = 232}
-			SOV = {owns_state = 232}
+			limit = {
+				OR = {
+					RUS = { owns_state = 232 }
+					SOV = { owns_state = 232 }
+				}
 			}
-		}
-		transfer_state = 232#Grozny
+			transfer_state = 232#Grozny
 		}
 		if = {
-		limit = {
-			OR = {
-			RUS = {owns_state = 229}
-			SOV = {owns_state = 229}
+			limit = {
+				OR = {
+					RUS = { owns_state = 229 }
+					SOV = { owns_state = 229 }
+				}
 			}
-		}
-		transfer_state = 229#Azerbaijan
+			transfer_state = 229#Azerbaijan
 		}
 		if = {
-		limit = {
-			OR = {
-			RUS = {owns_state = 233}
-			SOV = {owns_state = 233}
+			limit = {
+				OR = {
+					RUS = { owns_state = 233 }
+					SOV = { owns_state = 233 }
+				}
 			}
-		}
-		transfer_state = 233#Caucasus Mountains
+			transfer_state = 233#Caucasus Mountains
 		}
 		if = {
-		limit = {
-			OR = {
-			RUS = {owns_state = 231}
-			SOV = {owns_state = 231}
+			limit = {
+				OR = {
+					RUS = { owns_state = 231 }
+					SOV = { owns_state = 231 }
+				}
 			}
-		}
-		transfer_state = 231#Georgia
+			transfer_state = 231#Georgia
 		}
 		if = {
-		limit = {
-			OR = {
-			RUS = {owns_state = 230}
-			SOV = {owns_state = 230}
+			limit = {
+				OR = {
+					RUS = { owns_state = 230 }
+					SOV = { owns_state = 230 }
+				}
 			}
-		}
-		transfer_state = 230#Armenia
+			transfer_state = 230#Armenia
 		}
 		if = {
-		limit = {
-			OR = {
-			RUS = {owns_state = 742}
-			SOV = {owns_state = 742}
+			limit = {
+				OR = {
+					RUS = { owns_state = 742 }
+					SOV = { owns_state = 742 }
+				}
+			}
+			AFG = {
+				transfer_state = 742#Dyushambe
+				add_state_core = 742
 			}
 		}
-		AFG = {transfer_state = 742#Dyushambe
-			add_state_core = 742
-			}
-		}
-		RUS = {remove_state_core = 742}
+		RUS = { remove_state_core = 742 }
 		KAZ = {
 		add_state_core = 407
 		add_state_core = 406
@@ -841,7 +842,7 @@ country_event = {
 			communism = 10
 		}
 		}
-		RUS = {release = KAZ}
+		RUS = { release = KAZ }
 	}
 }
 ####A King for Ireland?####
@@ -932,205 +933,205 @@ country_event = {
 	hidden_effect = {
 	if = {
 		limit = {
-			GER = {owns_state = 546}
+			GER = { owns_state = 546 }
 		}
 		transfer_state = 546#Tanganyika
 		}
 	if = {
 		limit = {
-			GER = {owns_state = 824}
+			GER = { owns_state = 824 }
 		}
 		transfer_state = 824#Zanzibar
 		}
 	if = {
 		limit = {
-			GER = {owns_state = 768}
+			GER = { owns_state = 768 }
 		}
 		transfer_state = 768#Rwanda
 		}
 	if = {
 		limit = {
-			GER = {owns_state = 769}
+			GER = { owns_state = 769 }
 		}
 		transfer_state = 769#Burundi
 		}
 	if = {
 		limit = {
-			GER = {owns_state = 547}
+			GER = { owns_state = 547 }
 		}
 		transfer_state = 547#Kenya
 		}
 	if = {
 		limit = {
-			GER = {owns_state = 548}
+			GER = { owns_state = 548 }
 		}
 		transfer_state = 548#Uganda
 		}
 	if = {
 		limit = {
-			GER = {owns_state = 708}
+			GER = { owns_state = 708 }
 		}
 		transfer_state = 708#Comoros
 		}
 	if = {
 		limit = {
-			GER = {owns_state = 543}
+			GER = { owns_state = 543 }
 		}
 		transfer_state = 543#Madagascar
 		}
 	if = {
 		limit = {
-			GER = {owns_state = 708}
+			GER = { owns_state = 708 }
 		}
 		transfer_state = 708#Reunion
 		}
 	if = {
 		limit = {
-			GER = {owns_state = 544}
+			GER = { owns_state = 544 }
 		}
 		transfer_state = 544#Mozambique
 		}
 	if = {
 		limit = {
-			GER = {owns_state = 770}
+			GER = { owns_state = 770 }
 		}
 		transfer_state = 770#Malawi
 		}
 	if = {
 		limit = {
-			GER = {owns_state = 771}
+			GER = { owns_state = 771 }
 		}
 		transfer_state = 771#Zambia
 		}
 	if = {
 		limit = {
-			GER = {owns_state = 541}
+			GER = { owns_state = 541 }
 		}
 		transfer_state = 541#South West Africa
 		}
 	if = {
 		limit = {
-			GER = {owns_state = 789}
+			GER = { owns_state = 789 }
 		}
 		transfer_state = 789#Walvis Bay
 		}
 	if = {
 		limit = {
-			GER = {owns_state = 540}
+			GER = { owns_state = 540 }
 		}
 		transfer_state = 540#South Angola
 		}
 	if = {
 		limit = {
-			GER = {owns_state = 812}
+			GER = { owns_state = 812 }
 		}
 		transfer_state = 812#North Angola
 		}
 	if = {
 		limit = {
-			GER = {owns_state = 295}
+			GER = { owns_state = 295 }
 		}
 		transfer_state = 295#Leopoldville
 		}
 	if = {
 		limit = {
-			GER = {owns_state = 718}
+			GER = { owns_state = 718 }
 		}
 		transfer_state = 718#Stanleyville
 		}
 	if = {
 		limit = {
-			GER = {owns_state = 538}
+			GER = { owns_state = 538 }
 		}
 		transfer_state = 538#Central Congo
 		}
 	if = {
 		limit = {
-			GER = {owns_state = 660}
+			GER = { owns_state = 660 }
 		}
 		transfer_state = 660#Equatorial Africa
 		}
 	if = {
 		limit = {
-			GER = {owns_state = 774}
+			GER = { owns_state = 774 }
 		}
 		transfer_state = 774#Entenschnabel
 		}
 	if = {
 		limit = {
-			GER = {owns_state = 773}
+			GER = { owns_state = 773 }
 		}
 		transfer_state = 773#NordKamerun
 		}
 	if = {
 		limit = {
-			GER = {owns_state = 755}
+			GER = { owns_state = 755 }
 		}
 		transfer_state = 755#Sangha
 		}
 	if = {
 		limit = {
-			GER = {owns_state = 539}
+			GER = { owns_state = 539 }
 		}
 		transfer_state = 539#Kamerun
 		}
 	if = {
 		limit = {
-			GER = {owns_state = 772}
+			GER = { owns_state = 772 }
 		}
 		transfer_state = 772#Middle Congo
 		}
 	if = {
 		limit = {
-			GER = {owns_state = 752}
+			GER = { owns_state = 752 }
 		}
 		transfer_state = 752#Gabon
 		}
 	if = {
 		limit = {
-			GER = {owns_state = 297}
+			GER = { owns_state = 297 }
 		}
 		transfer_state = 297#Equatorial Guinea
 		}
 	if = {
 		limit = {
-			GER = {owns_state = 705}
+			GER = { owns_state = 705 }
 		}
 		transfer_state = 705#Sao Tome
 		}
 	if = {
 		limit = {
-			GER = {owns_state = 558}
+			GER = { owns_state = 558 }
 		}
 		transfer_state = 558#Nigeria
 		}
 	if = {
 		limit = {
-			GER = {owns_state = 776}
+			GER = { owns_state = 776 }
 		}
 		transfer_state = 776#Dahomey
 		}
 	if = {
 		limit = {
-			GER = {owns_state = 777}
+			GER = { owns_state = 777 }
 		}
 		transfer_state = 777#East Togoland
 		}
 	if = {
 		limit = {
-			GER = {owns_state = 794}
+			GER = { owns_state = 794 }
 		}
 		transfer_state = 794#West Togoland
 		}
 	if = {
 		limit = {
-			GER = {owns_state = 274}
+			GER = { owns_state = 274 }
 		}
 		transfer_state = 274#Ghana
 		}
 	if = {
 		limit = {
-			GER = {owns_state = 779}
+			GER = { owns_state = 779 }
 		}
 		transfer_state = 779#Ivory Coast
 		}
@@ -1190,7 +1191,7 @@ country_event = {
 	option = {
 		name = MSM_WKV_Germany.7.b
 		ai_chance = { factor = 0 
-				modifier = {}
+				modifier = { }
 		}
 	}
 }

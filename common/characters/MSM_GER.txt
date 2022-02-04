@@ -1,37 +1,36 @@
 characters = {
-GER_max_von_hausen = {
-name="Max von Hausen"
-portraits = {
-army = {
-large = "gfx/generals/GER_Max_von_Hausen.dds"
-}
-}
-corps_commander = {
-	traits = {
-	old_guard
-	war_hero
-	harsh_leader
-	}
-	skill = 2
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
+	GER_max_von_hausen = {
+		name="Max von Hausen"
+		portraits = {
+			army = {
+				large = "gfx/generals/GER_Max_von_Hausen.dds"
 			}
 		}
-GER_ernst_rohm = {
-	name="Ernst Röhm"
-	portraits = {
+		corps_commander = {
+			traits = {
+				old_guard
+				war_hero
+				harsh_leader
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	GER_ernst_rohm = {
+		name="Ernst Röhm"
+		portraits = {
 			civilian = {
 				large = "gfx/leaders/GER_ernst_rohm.dds"
 			}
 			army = {
 				large = "gfx/leaders/GER_ernst_rohm.dds"
 			}
-
 		}
-
-	country_leader = {
+		country_leader = {
 			ideology = nazism
 			traits = { MSM_unpopular }
 			expire = 1960.1.1
