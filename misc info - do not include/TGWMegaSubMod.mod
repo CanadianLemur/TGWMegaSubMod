@@ -6,5 +6,5 @@ tags={
 	"Fixes"
 }
 name="TGW Megasubmod"
-supported_version="1.10.*"
+supported_version="1.11.*"
 path="C:/Users/ryanp/Documents/Paradox Interactive/Hearts of Iron IV/mod/TGWMegaSubMod"
