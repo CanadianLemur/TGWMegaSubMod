@@ -1,20 +1,317 @@
-﻿#######################################
+﻿#########################################
 # New American Events, added by Ecrfour #
-#######################################
+#########################################
 add_namespace = MSMUSA
 
-####President Elected - 1912####
+####Choose Your Candidate - Republican Vote Question####
 country_event = {
 	id =  MSMUSA.1
 	title = MSMUSA.1.t
 	desc = MSMUSA.1.d
 	picture = GFX_report_event_generic_read_write
 	
+	fire_only_once = yes
+	is_triggered_only = no
+	
+	mean_time_to_happen = {
+        days = 10
+    }
+	
+	trigger = {
+		date > 1912.3.1
+	}
+
+	option = {	#Progressives & Conservatives happy - Taft runs again and wins 
+		name = MSMUSA.1.a
+		ai_chance = { factor = 100 }
+		trigger = { 
+			AND = {
+				MSM_USA_progressives_happy = yes 
+				MSM_USA_conservatives_happy = yes 
+			}
+		}
+		effect = { set_variable = { USA_candidate = 0 } }
+	}
+	option = {	#Conservatives happy - Teddy runs against Taft and Wilson wins
+		name = MSMUSA.1.b
+		ai_chance = { factor = 100 }
+		trigger = { 
+			AND = {
+				MSM_USA_conservatives_happy = yes 
+				NOT = { MSM_USA_progressives_happy = yes }
+				USA = { has_country_flag = MSM_USA_teddys_angry }
+			}
+		}
+		effect = { set_variable = { USA_candidate = 1 } }
+	}
+	option = {	#Conservatives & teddy happy - Debs runs and grabs the progressive and centrist votes for the W
+		name = MSMUSA.1.c
+		ai_chance = { factor = 100 }
+		trigger = { 
+			AND = {
+				MSM_USA_conservatives_happy = yes 
+				NOT = { MSM_USA_progressives_happy = yes }
+				NOT = { USA = { has_country_flag = MSM_USA_teddys_angry } }
+			}
+		}
+		effect = { set_variable = { USA_candidate = 2 } }
+	}
+	option = {	#Everyone's pissed - Teddy runs and wins the primary, beats Wilson
+		name = MSMUSA.1.d
+		ai_chance = { factor = 100 }
+		trigger = { 
+			AND = {
+				NOT = { MSM_USA_conservatives_happy = yes }
+				NOT = { MSM_USA_progressives_happy = yes }
+			}
+		}
+		effect = { set_variable = { USA_candidate = 3 } }
+	}
+}
+
+# Election (1913)
+#____________________________________________________________
+country_event = {
+	id = MSMUSA.30
+	title = MSMUSA.30.t
+	desc = MSMUSA.30.d
+
+    mean_time_to_happen = {
+        days = 0
+    }
+
+    fire_only_once = yes
+
+    trigger = {
+    	tag = USA
+        date > 1912.11.1
+        date < 1913.10.10
+        USA = {
+	        has_government = democratic
+	        not = {
+	            has_country_flag = new_1913_president_usa
+	        }
+        }
+    }
+	hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						has_completed_focus = USA_voter_registration_act
+						has_completed_focus = USA_union_representation_act
+					}
+				}
+				country_event = { id = usa.32 days = 730 } # midterms
+			}
+			else = {
+				country_event = { id = usa.35 days = 730 } # midterms
+			}
+		}
+	# Wilson
+	option = {
+		name = MSMUSA.30.a
+		ai_chance = { factor = 100 }
+		set_country_flag = new_1913_president_usa
+		trigger = { check_variable = { USA_candidate = 0 } }
+		hidden_effect = {
+			news_event = { days = 150 id = MSMUSA.31 }
+		}
+	}
+	# Teddy
+	option = {
+		name = MSMUSA.30.b
+		ai_chance = { factor = 100 }
+		set_country_flag = new_1913_president_usa
+		trigger = { check_variable = { USA_candidate = 1 } }
+		hidden_effect = {
+			news_event = { days = 150 id = MSMUSA.32 }
+		}
+	}
+	# Taft
+	option = {
+		name = MSMUSA.30.c
+		ai_chance = { factor = 100 }
+		set_country_flag = new_1913_president_usa
+		trigger = { check_variable = { USA_candidate = 2 } }
+		hidden_effect = {
+			news_event = { days = 150 id = MSMUSA.33 }
+		}
+	}
+	# Debs
+	option = {
+		name = MSMUSA.30.d
+		ai_chance = { factor = 100 }
+		set_country_flag = new_1913_president_usa
+		trigger = { check_variable = { USA_candidate = 3 } }
+		hidden_effect = {
+			news_event = { days = 150 id = MSMUSA.34 }
+		}
+	}
+}
+#____________________________________________________________
+
+# Wilson
+#____________________________________________________________
+news_event = {
+    id = MSMUSA.31
+    title = MSMUSA.31.t
+    desc = MSMUSA.31.d
+    picture = ww1_usa_5
+
+    major = yes
+    is_triggered_only=yes
+
+    immediate = {
+    	hidden_effect = {
+	    	USA = {
+	    		retire_country_leader = yes
+		        create_country_leader = {
+		            name = "Woodrow Wilson"
+		            desc = USA_woodrow_wilson_DESC 
+		            picture = "gfx/hoi4tgw_portraits/USA/country_leaders/USA_woodrow_wilson.dds"
+		            expire = "1935.1.1"
+		            ideology = liberalism traits = {}
+		        }
+		        add_political_power = -200
+		        set_country_flag = new_freedom
+				mark_focus_tree_layout_dirty = yes
+	    	}
+    	}
+    }
+    
+    option = {
+        name = MSMUSA.31.a        
+    }
+}
+#____________________________________________________________
+
+# Teddy
+#____________________________________________________________
+news_event = {
+    id = MSMUSA.32
+    title = MSMUSA.32.t
+    desc = MSMUSA.32.d
+    picture = ww1_usa_5
+
+    major = yes
+    is_triggered_only=yes
+
+    immediate = {
+    	hidden_effect = {
+	    	USA = {
+	    		retire_country_leader = yes
+		        create_country_leader = {
+		            name = "Teddy Roosevelt"
+		            desc = USA_teddy_roosevelt_DESC 
+		            picture = "gfx/hoi4tgw_portraits/USA/country_leaders/USA_theodore_roosevelt.dds"
+		            expire = "1935.1.1"
+		            ideology = liberalism traits = {}
+		        }
+		        add_political_power = -200
+		        set_country_flag = new_nationalism
+				mark_focus_tree_layout_dirty = yes
+	    	}
+    	}
+    }
+    
+    option = {
+        name = MSMUSA.32.a        
+    }
+}
+#____________________________________________________________
+
+# Taft
+#____________________________________________________________
+news_event = {
+    id = MSMUSA.33
+    title = MSMUSA.33.t
+    desc = MSMUSA.33.d
+    picture = ww1_usa_5
+
+    major = yes
+    is_triggered_only=yes
+
+    immediate = {
+    	hidden_effect = {
+	    	USA = {
+		        add_political_power = -200
+				mark_focus_tree_layout_dirty = yes
+				if = {
+					limit = {
+						NOT = {
+							has_country_leader = {
+								ruling_only = yes
+								name = "William H. Taft"
+							}
+						}
+					}
+					create_country_leader = {
+						name = "William H. Taft"
+						desc = "Some Guy"
+						picture = "gfx/hoi4tgw_portraits/USA/country_leaders/USA_william_h_taft.dds"
+						expire = "1924.3.2"
+						ideology = liberalism
+						traits = {
+							
+						}
+					}
+				}
+	    	}
+    	}
+    }
+    
+    option = {
+        name = MSMUSA.33.a        
+    }
+}
+#____________________________________________________________
+
+# Debs
+#____________________________________________________________
+news_event = {
+    id = MSMUSA.34
+    title = MSMUSA.34.t
+    desc = MSMUSA.34.d
+    picture = ww1_usa_5
+
+    major = yes
+    is_triggered_only=yes
+
+    immediate = {
+    	hidden_effect = {
+	    	USA = {
+	    		retire_country_leader = yes
+		        create_country_leader = {
+		            name = "Eugene V. Debs"
+		            desc = USA_eugene_v_debs_DESC 
+		            picture = "gfx/hoi4tgw_portraits/USA/country_leaders/USA_eugene_v_debs.dds"
+		            expire = "1935.1.1"
+		            ideology = liberalism traits = {}
+		        }
+		        add_political_power = -200
+				mark_focus_tree_layout_dirty = yes
+	    	}
+    	}
+    }
+    
+    option = {
+        name = MSMUSA.34.a        
+    }
+}
+#____________________________________________________________
+
+####President Elected - 1912####
+country_event = {
+	id =  MSMUSA.35
+	title = MSMUSA.35.t
+	desc = MSMUSA.35.d
+	picture = GFX_report_event_generic_read_write
+	
 	fire_only_once = no
 	is_triggered_only = yes
 
 	option = {
-		name = MSMUSA.1.a
+		name = MSMUSA.35.a
 		ai_chance = { factor = 100 }
 		USA = {
 			mark_focus_tree_layout_dirty = yes #reloads focus tree use sparingly

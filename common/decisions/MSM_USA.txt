@@ -95,7 +95,7 @@ USA_MSM_dev_decisions = {
 				}
 			}
 			clr_country_flag = new_1913_president_usa
-			country_event = { id = MSMUSA.1 }
+			country_event = { id = MSMUSA.35 }
 		}
 		ai_will_do = {
 			base = 0
@@ -123,7 +123,7 @@ USA_MSM_dev_decisions = {
 				}
 			}
 			set_country_flag = new_1913_president_usa
-			country_event = { id = MSMUSA.1 }
+			country_event = { id = MSMUSA.35 }
 		}
 		ai_will_do = {
 			base = 0
@@ -151,7 +151,7 @@ USA_MSM_dev_decisions = {
 				}
 			}
 			set_country_flag = new_1913_president_usa
-			country_event = { id = MSMUSA.1 }
+			country_event = { id = MSMUSA.35 }
 		}
 		ai_will_do = {
 			base = 0
@@ -179,7 +179,7 @@ USA_MSM_dev_decisions = {
 				}
 			}
 			set_country_flag = new_1913_president_usa
-			country_event = { id = MSMUSA.1 }
+			country_event = { id = MSMUSA.35 }
 		}
 		ai_will_do = {
 			base = 0
@@ -207,7 +207,7 @@ USA_MSM_dev_decisions = {
 				}
 			}
 			set_country_flag = new_1913_president_usa
-			country_event = { id = MSMUSA.1 }
+			country_event = { id = MSMUSA.35 }
 		}
 		ai_will_do = {
 			base = 0

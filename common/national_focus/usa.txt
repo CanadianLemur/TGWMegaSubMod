@@ -35,7 +35,10 @@ focus_tree = {
 		relative_position_id = USA_MSM_broken_party
  		icon = GFX_focus_generic_self_management
 		completion_reward = {
-			
+			add_timed_idea = {
+				days = 180
+				idea = MSM_USA_trust_busting
+			}
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
@@ -48,6 +51,7 @@ focus_tree = {
 		relative_position_id = USA_MSM_continue_the_trust_busting
  		icon = GFX_focus_generic_aluminum
 		completion_reward = {
+			custom_effect_tooltip = USA_MSM_reorganize_the_iron_trusts_tooltip
 			MSM_USA_progressive_small_support = yes
 			MSM_USA_conservative_small_opposition = yes
 		}
@@ -62,7 +66,7 @@ focus_tree = {
 		relative_position_id = USA_MSM_reorganize_the_iron_trusts
  		icon = GFX_goal_generic_construction
 		completion_reward = {
-			#
+			add_political_power = 75
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
@@ -76,8 +80,10 @@ focus_tree = {
 		mutually_exclusive = { focus = USA_MSM_leave_the_good_trusts }
  		icon = GFX_goal_generic_construction2
 		completion_reward = {
+			custom_effect_tooltip = USA_MSM_go_after_us_steel_tooltip
 			MSM_USA_conservative_large_opposition = yes
 			custom_effect_tooltip = USA_angry_teddy
+			hidden_effect = { set_country_flag = MSM_USA_teddys_angry }
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
@@ -91,6 +97,7 @@ focus_tree = {
 		mutually_exclusive = { focus = USA_MSM_go_after_us_steel }
  		icon = GFX_focus_generic_steel
 		completion_reward = {
+			add_ideas = USA_MSM_benevolent_trusts
 			MSM_USA_progressive_small_opposition = yes
 			MSM_USA_conservative_small_support = yes
 		}
@@ -194,6 +201,7 @@ focus_tree = {
 		completion_reward = {
 			MSM_USA_progressive_small_opposition = yes
 			custom_effect_tooltip = USA_angry_teddy
+			hidden_effect = { set_country_flag = MSM_USA_teddys_angry }
 			#maybe make an angry teddy roosevelt idea if you do this (he will get very cranky if you do this)
 		}
 		ai_will_do = { factor = 10 }

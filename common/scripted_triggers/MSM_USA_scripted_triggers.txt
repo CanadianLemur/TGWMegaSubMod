@@ -1,0 +1,14 @@
+MSM_USA_progressives_happy = {
+	check_variable = {
+		var = progressive_support
+		value = 0.4
+		compare = greater_than_or_equals
+	}
+}
+MSM_USA_conservatives_happy = {
+	check_variable = {
+		var = conservative_support
+		value = 0.4
+		compare = greater_than_or_equals
+	}
+}

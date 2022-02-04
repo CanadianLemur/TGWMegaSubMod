@@ -1,0 +1,24 @@
+characters = {
+	USA_MSM_andrew_carnage = {
+		name="Andrew Carnage"
+		portraits={
+			civilian={
+				large="gfx/leaders/USA/portrait_USA_andrew_carnage.dds"
+				small="gfx/interface/ideas/idea_USA_andrew_carnage.dds"
+			}
+		}
+		advisor = {
+			idea_token = USA_MSM_andrew_carnage
+			slot = political_advisor
+			allowed = { tag = USA }
+			traits = { captain_of_industry }
+			available = { 
+				AND = {
+					has_completed_focus = USA_MSM_reorganize_the_iron_trusts
+					NOT = { has_completed_focus = USA_MSM_go_after_us_steel } 
+				}
+			}
+			ai_will_do = { factor = 1 }
+		}
+	}
+}
