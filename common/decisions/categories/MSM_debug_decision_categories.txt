@@ -1,0 +1,17 @@
+MSM_USA_dev_decisions = {
+	icon = generic_research
+	priority = 100
+	visible = {
+		tag = usa
+		is_debug = yes
+	}
+}
+
+MSM_MEX_dev_decisions = {
+	icon = generic_research
+	priority = 100
+	visible = {
+		tag = mex
+		is_debug = yes
+	}
+}

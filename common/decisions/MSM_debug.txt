@@ -1,0 +1,163 @@
+MSM_USA_dev_decisions = {
+	reset = {
+		icon = generic_research
+		available = {
+			always = yes
+		}
+		visible = {
+			always = yes
+		}
+		fire_only_once = no
+		cost = 0
+		complete_effect = {
+			create_country_leader = {
+				name = "William H. Taft"
+				desc = "Some Guy"
+				picture = "gfx/hoi4tgw_portraits/USA/country_leaders/USA_william_h_taft.dds"
+				expire = "1924.3.2"
+				ideology = liberalism
+				traits = {
+					
+				}
+			}
+			clr_country_flag = new_1913_president_usa
+			country_event = { id = MSMUSA.35 }
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+	switch_wilson = {
+		icon = generic_research
+		available = {
+			always = yes
+		}
+		visible = {
+			always = yes
+		}
+		fire_only_once = no
+		cost = 0
+		complete_effect = {
+			create_country_leader = {
+				name = "Woodrow Wilson"
+				desc = "Some Guy"
+				picture = "gfx/hoi4tgw_portraits/USA/country_leaders/USA_woodrow_wilson.dds"
+				expire = "1924.3.2"
+				ideology = liberalism
+				traits = {
+					
+				}
+			}
+			set_country_flag = new_1913_president_usa
+			country_event = { id = MSMUSA.35 }
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+	switch_roosevelt = {
+		icon = generic_research
+		available = {
+			always = yes
+		}
+		visible = {
+			always = yes
+		}
+		fire_only_once = no
+		cost = 0
+		complete_effect = {
+			create_country_leader = {
+				name = "Theodore Roosevelt"
+				desc = "Some Guy"
+				picture = "gfx/hoi4tgw_portraits/USA/country_leaders/USA_theodore_roosevelt.dds"
+				expire = "1924.3.2"
+				ideology = liberalism
+				traits = {
+					
+				}
+			}
+			set_country_flag = new_1913_president_usa
+			country_event = { id = MSMUSA.35 }
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+	switch_taft = {
+		icon = generic_research
+		available = {
+			always = yes
+		}
+		visible = {
+			always = yes
+		}
+		fire_only_once = no
+		cost = 0
+		complete_effect = {
+			create_country_leader = {
+				name = "William H. Taft"
+				desc = "Some Guy"
+				picture = "gfx/hoi4tgw_portraits/USA/country_leaders/USA_william_h_taft.dds"
+				expire = "1924.3.2"
+				ideology = liberalism
+				traits = {
+					
+				}
+			}
+			set_country_flag = new_1913_president_usa
+			country_event = { id = MSMUSA.35 }
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+	switch_debs = {
+		icon = generic_research
+		available = {
+			always = yes
+		}
+		visible = {
+			always = yes
+		}
+		fire_only_once = no
+		cost = 0
+		complete_effect = {
+			create_country_leader = {
+				name = "Eugene V. Debs"
+				desc = "Some Guy"
+				picture = "gfx/hoi4tgw_portraits/USA/country_leaders/USA_william_h_taft.dds"
+				expire = "1924.3.2"
+				ideology = liberalism
+				traits = {
+					
+				}
+			}
+			set_country_flag = new_1913_president_usa
+			country_event = { id = MSMUSA.35 }
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+}
+
+MSM_MEX_dev_decisions = {
+	debug_support_diaz = {
+		icon = generic_research
+		available = {
+			always = yes
+		}
+		visible = {
+			always = yes
+		}
+		fire_only_once = no
+		cost = 0
+		complete_effect = {
+			set_country_flag = MEX_support_diaz
+			custom_effect_tooltip = "Set country flag 'MEX_support_diaz'"
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+}
