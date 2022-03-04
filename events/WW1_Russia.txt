@@ -678,26 +678,41 @@ country_event = {
 			if = {
 				limit = {
 					JAP = {
-						has_war_with = ENG
+						has_war_with = FRA
 						is_in_faction_with = GER
 					}
 				}
-				SOV = {release = SIB}
-				SIB = {
+				FER = {
 					transfer_state = 408 #Vladivostok
+					add_state_core = 408
 					transfer_state = 409 #Khabarovsk
+					add_state_core = 409
 					transfer_state = 657 #Birobidzhan
+					add_state_core = 657
 					transfer_state = 560 #Nikolayevsk
+					add_state_core = 560
 					transfer_state = 562 #Okhotsk
+					add_state_core = 562
 					transfer_state = 637 #Kamchatka
+					add_state_core = 637
 					transfer_state = 644 #Northeast Siberia
+					add_state_core = 644
 					transfer_state = 574 #Yahtusk
+					add_state_core = 574
 					transfer_state = 575 #Kirensk
+					add_state_core = 375
 					transfer_state = 565 #Bodaybo
+					add_state_core = 565
 					transfer_state = 563 #Chita
+					add_state_core = 563
 					transfer_state = 561 #Amur
+					add_state_core = 561
 					transfer_state = 564 #Ulan Ude
+					add_state_core = 564
 					transfer_state = 566 #Irkutsk
+					add_state_core = 566
+					transfer_state = 567 #Bratsk
+					add_state_core = 567
 					
 
 				}
@@ -706,7 +721,7 @@ country_event = {
 				JAP = {
 					transfer_state = 655		# North Sakhalin
 					add_state_core = 655
-					puppet = SIB
+					puppet = FER
 					puppet = MON
 				}
 			}

@@ -1633,21 +1633,7 @@ guiTypes = {
 				}
 			}
 
-			gridboxtype = {
-				name = "gwtank_tree"
-				position = { x = 10% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-
-			gridboxtype = {
-				name = "tank_unlocker1_tree"
-				position = { x = 1028 y = 246 }
-				size = { width = 400 height = 400 }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
+			
 		}
 		containerWindowType = {
 			name = "artillery_folder"

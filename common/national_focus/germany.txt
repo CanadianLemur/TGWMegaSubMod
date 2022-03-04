@@ -5838,15 +5838,6 @@ set_party_name = {
 
 			create_faction = "Axis"
 
-			create_country_leader = { 
-				name = "Adolf Hitler"
-				desc = GER_adolf_hitler_DESC
-				picture="gfx/leaders/GER_adolf_hitler.dds"
-				expire = "1955.1.1" 
-				ideology = nazism 
-				traits = { } 
-			}
-
 			news_event = { hours = 1 id = interwar_news.1 }
 		}
 	}
@@ -5925,7 +5916,7 @@ set_party_name = {
 	focus = {
 		id = GER_interwar_rohm_putsch
 
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_GER_SA
 		mutually_exclusive = {focus = GER_interwar_night_long_knives}
 		relative_position_id = GER_interwar_Reichstag_Fire_Decree
 		prerequisite = { focus = GER_interwar_Reichstag_Fire_Decree }
@@ -6036,6 +6027,29 @@ set_party_name = {
 			factor = 0
 			is_historical_focus_on = yes
 			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	# Merge the SA and Reichswehr
+	focus = {
+		id = GER_interwar_dissolve_the_reichswehr
+
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = GER_interwar_rohms_leadership
+		prerequisite = { focus = GER_interwar_rohms_leadership focus = GER_interwar_gregor_strasser focus = GER_interwar_otto_strasser }
+
+		available = {
+		}
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
 		}
 
 		completion_reward = {

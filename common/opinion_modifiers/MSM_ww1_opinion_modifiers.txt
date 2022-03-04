@@ -1,10 +1,4 @@
 opinion_modifiers = {
-	### Nordic Stuff
-
-	nordic_leadership.1 = {
-		value = 100
-	}
-	
 	### Celtic Stuff
 	
 	celtic_brotherhood = {
