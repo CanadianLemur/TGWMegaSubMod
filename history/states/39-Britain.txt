@@ -34,12 +34,12 @@ state = {
             add_core_of = ITA
             # add_claim_by = AUS
             buildings = {
-                infrastructure = 6
+                infrastructure=3
                 industrial_complex = 1
             }
         }
         buildings = {
-            infrastructure = 6
+            infrastructure=3
             industrial_complex = 1
         }
     }

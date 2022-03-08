@@ -30,7 +30,7 @@ state = {
 			victory_points = { 11542 20 }
 			victory_points = { 6418 5 }
 			buildings = {
-				infrastructure = 7
+				infrastructure=4
 				industrial_complex = 1
 				air_base = 5
 				arms_factory = 6
@@ -39,7 +39,7 @@ state = {
 		}
 		1939.3.14 = { owner = GER controller = GER }
 		buildings = {
-			infrastructure = 7
+			infrastructure=4
 			industrial_complex = 2
 			arms_factory = 1
 		}

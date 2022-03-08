@@ -19,14 +19,14 @@ state={
 			owner=BUL
 			add_core_of=BUL
 			buildings={
-				infrastructure=4
+				infrastructure=2
 				industrial_complex=3
 				air_base=2
 				arms_factory=2
 			}
 		}
 		buildings={
-			infrastructure=4
+			infrastructure=2
 			industrial_complex=3
 			arms_factory=1
 		}

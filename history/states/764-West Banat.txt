@@ -15,7 +15,7 @@ state = {
 		add_core_of = SER
 		
 		buildings = {
-			infrastructure = 6
+			infrastructure=3
 		}
 		
 		1914.1.1 = {

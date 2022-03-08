@@ -23,7 +23,7 @@ state = {
 			owner = ITA
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure=2
 			industrial_complex = 1
 			dockyard = 2
 			6626 = { naval_base = 2 }

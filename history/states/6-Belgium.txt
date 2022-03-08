@@ -23,7 +23,7 @@ state={
 			victory_points={ 6598 30 }
 			victory_points={ 6560 5 }
 			buildings={
-				infrastructure=9
+				infrastructure=5
 				industrial_complex=2
 				air_base=3
 				arms_factory=2
@@ -31,7 +31,7 @@ state={
 				}
 			}
 		buildings={
-			infrastructure=9
+			infrastructure=5
 			industrial_complex=2
 			arms_factory=1
 			6446={ naval_base=3 }

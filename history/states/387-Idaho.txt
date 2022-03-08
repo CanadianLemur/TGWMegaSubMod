@@ -19,11 +19,11 @@ state={
 			add_core_of=USA
 			add_core_of=CLM
 			buildings={
-				infrastructure=4
+				infrastructure=2
 				}
 			}
 		buildings={
-			infrastructure=4
+			infrastructure=2
 			industrial_complex=1
 			}
 		}

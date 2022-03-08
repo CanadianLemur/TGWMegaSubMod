@@ -19,11 +19,11 @@ state={
 			add_core_of=USA
 			add_core_of=NWN
 			buildings={
-				infrastructure=8
+				infrastructure=4
 			}
 		}
 		buildings={
-			infrastructure=8
+			infrastructure=4
 			9832={ naval_base=3  }
 		}
 	}

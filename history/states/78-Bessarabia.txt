@@ -19,13 +19,13 @@ state={
 			owner=ROM
 			add_core_of=ROM
 			buildings={
-				infrastructure=4
+				infrastructure=2
 				industrial_complex=2
 				air_base=2
 			}
 		}
 		buildings={
-			infrastructure=4
+			infrastructure=2
 			industrial_complex=2
 		}
 		

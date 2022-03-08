@@ -14,7 +14,7 @@ state={
 			owner=FRA
 			add_core_of=GDL
 			buildings={
-				infrastructure=4
+				infrastructure=2
 				air_base=1
 				177={ naval_base=3 }
 				9377={ naval_base=1 }
@@ -24,7 +24,7 @@ state={
             owner = SWE
         }
 		buildings={
-			infrastructure=4
+			infrastructure=2
 			177={ naval_base=3 }
 			9377={ naval_base=1 }
 			}

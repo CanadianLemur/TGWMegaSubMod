@@ -19,7 +19,7 @@ state={
 			add_core_of=USA
 			add_core_of=NWN
 			buildings={
-				infrastructure=7
+				infrastructure=4
 				industrial_complex=5
 				air_base=10
 				dockyard=4
@@ -28,7 +28,7 @@ state={
 			}
 		}
 		buildings={
-			infrastructure=7
+			infrastructure=4
 			industrial_complex=3
 			air_base=2
 			dockyard=1

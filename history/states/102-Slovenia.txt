@@ -23,11 +23,11 @@ state = {
                 9627 3
             }
             buildings = {
-                infrastructure = 6
+                infrastructure=3
             }
         }
         buildings = {
-            infrastructure = 6
+            infrastructure=3
         }
 
         1919.1.1 = {

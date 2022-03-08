@@ -20,11 +20,11 @@ state={
 			add_core_of=HYD
 			add_core_of=RAJ
 			buildings={
-				infrastructure=4
+				infrastructure=2
 				}
 			}
 		buildings={
-			infrastructure=4
+			infrastructure=2
 			}
 		}
 	}

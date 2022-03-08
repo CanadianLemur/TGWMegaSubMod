@@ -20,7 +20,7 @@ state = {
 			owner = YUG
 			add_core_of = YUG
 			buildings = {
-				infrastructure = 3
+				infrastructure=2
 			}
 		}
 		1919.7.2 = {
@@ -28,7 +28,7 @@ state = {
 			remove_core_of = YUG
         }
 		buildings = {
-			infrastructure = 4
+			infrastructure=2
 		}
 	}
 }

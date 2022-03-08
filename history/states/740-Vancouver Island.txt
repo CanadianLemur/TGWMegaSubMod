@@ -18,11 +18,11 @@ state={
 			add_core_of=CAN
 			add_core_of=CLM
 			buildings={
-				infrastructure=2
+				infrastructure=1
 				}
 			}
 		buildings={
-			infrastructure=2
+			infrastructure=1
 			}
 		}
 	}

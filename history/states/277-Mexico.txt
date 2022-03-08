@@ -32,14 +32,14 @@ state={
 			2008 10
 		}
 			buildings={
-				infrastructure=4
+				infrastructure=2
 				industrial_complex=2
 				air_base=3
 				arms_factory=2
 				}
 			}
 		buildings={
-			infrastructure=4
+			infrastructure=2
 			industrial_complex=2
 			arms_factory=1
 			}

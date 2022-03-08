@@ -17,7 +17,7 @@ state={
 		owner = SPR
 		add_core_of = TNG
 		buildings = {
-			infrastructure = 5
+			infrastructure=3
 		}
 	}
 

@@ -33,11 +33,11 @@ state = {
 			add_core_of = GRE
 			add_claim_by = BUL
 			buildings = {
-				infrastructure = 4
+				infrastructure=2
 			}
 		}
 		buildings = {
-			infrastructure = 4
+			infrastructure=2
 			9930 = {
 				naval_base = 1
 			}

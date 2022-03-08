@@ -20,13 +20,13 @@ state={
 			#add_core_of=PRC
 			victory_points={ 10068 1 }
 			buildings={
-				infrastructure=8
+				infrastructure=4
 				10068={ naval_base=2 }
 				}
 			}
 		1938.10.25={ controller=JAP }
 		buildings={
-			infrastructure=7
+			infrastructure=4
 			10068={ naval_base=2 }
 			}
 		}

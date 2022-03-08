@@ -19,7 +19,7 @@ state = {
             owner = CZE
             add_core_of = CZE
             buildings = {
-                infrastructure = 4
+                infrastructure=2
                 industrial_complex = 2
             }
         }
@@ -27,7 +27,7 @@ state = {
             owner = SLO controller = SLO add_core_of = SLO
         }
         buildings = {
-            infrastructure = 4
+            infrastructure=2
             industrial_complex = 2
         }
         1919.1.1 = {

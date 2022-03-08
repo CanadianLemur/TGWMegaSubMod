@@ -22,13 +22,13 @@ state={
 			# add_core_of=AUS
 			victory_points={ 688 10 }
 			buildings={
-				infrastructure=6
+				infrastructure=3
 				industrial_complex=3
 				}
 			}
 		1938.3.12={ owner=GER controller=GER add_core_of=GER }
 		buildings={
-			infrastructure=6
+			infrastructure=3
 			industrial_complex=1
 		}
 		1919.1.1 = {

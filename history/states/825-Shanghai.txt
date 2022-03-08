@@ -14,7 +14,7 @@ state={
 		add_core_of=QIN
 		1912.2.12={ owner=CHI }
 		buildings={
-			infrastructure=8
+			infrastructure=4
 			7014={ naval_base=6 coastal_bunker=1 bunker=1 }
 			}
 		}

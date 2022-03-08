@@ -11,7 +11,7 @@ state={
 	history={
 		owner = FRA
 		buildings = {
-		infrastructure=7
+		infrastructure=4
 		11516={ bunker=1 trench=1 }
 		521={ bunker=1 trench=1  }
 		}

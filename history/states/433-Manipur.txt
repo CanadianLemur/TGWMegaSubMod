@@ -21,12 +21,12 @@ state={
 			add_core_of=RAJ
 			add_core_of=JAI
 			buildings={
-				infrastructure=3
+				infrastructure=2
 				industrial_complex=1
 				}
 			}
 		buildings={
-			infrastructure=3
+			infrastructure=2
 			industrial_complex=1
 			}
 		}

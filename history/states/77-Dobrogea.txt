@@ -26,12 +26,12 @@ state={
 			remove_claim_by=ROM
 			add_core_of=ROM
 			buildings={
-				infrastructure=5
+				infrastructure=3
 				industrial_complex=2
 			}
 		}
 		buildings={
-			infrastructure=5
+			infrastructure=3
 			industrial_complex=1
 		}
 	}

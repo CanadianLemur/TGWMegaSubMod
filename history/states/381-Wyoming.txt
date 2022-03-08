@@ -17,11 +17,11 @@ state={
 			add_core_of=USA
 			add_core_of=SIO
 			buildings={
-				infrastructure=3
+				infrastructure=2
 				}
 			}
 		buildings={
-			infrastructure=3
+			infrastructure=2
 			}
 		}
 	}

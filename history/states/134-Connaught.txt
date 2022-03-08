@@ -16,11 +16,11 @@ state={
 			owner=IRE
 			add_core_of=IRE
 			buildings={
-				infrastructure=6
+				infrastructure=3
 				}
 			}
 		buildings={
-			infrastructure=6
+			infrastructure=3
 			}
 		1919.1.1 = {
 			set_border_war = yes 

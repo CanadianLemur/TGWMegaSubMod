@@ -19,12 +19,12 @@ state={
 			add_core_of=USA
 			add_core_of=NWN
 			buildings={
-				infrastructure=6
+				infrastructure=3
 				industrial_complex=1
 			}
 		}
 		buildings={
-			infrastructure=7
+			infrastructure=4
 			industrial_complex=1
 		}
 	}

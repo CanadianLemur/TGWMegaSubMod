@@ -12,7 +12,7 @@ state={
 		victory_points={ 12814  1 }
 		owner = SOM
 		buildings = {
-			infrastructure = 2
+			infrastructure=1
 		}
 		add_core_of = SOM
 			1920.1.1={ 
