@@ -230,7 +230,7 @@ focus_tree = {
  		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		#If both the progressives and conservatives are happy enough, you can get taft. If not, you can choose roosevelt or taft to take the forefront
 		completion_reward = {
-			#
+			#    
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
