@@ -55,8 +55,8 @@ technologies = {
 	}
 	
 	MSM_armor_0_NSB = {
-		#enable_equipments = { ww1_armored_car_equipment }
-		
+		enable_equipments = { light_tank_chassis_1917 heavy_tank_chassis_1916 }
+		enable_equipment_modules = {tank_landship_concept_turret}
 		research_cost = 2
 		start_year = 1914
 		folder = {

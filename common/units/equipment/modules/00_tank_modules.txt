@@ -205,7 +205,22 @@ equipment_modules = {
 
 	###Turret Types - light
 	### turrets are split by chassis to make it easier to control which guns they can mount
+	tank_landship_concept_turret= {
+		abbreviation = "lnshp"
+		category = tank_landship_concept
+		sfx = sfx_ui_sd_module_turret
 
+		add_stats = {
+			build_cost_ic = 0.2
+			breakthrough = 3
+		}
+		xp_cost = 1
+		multiply_stats = {
+			
+		}
+
+	}
+	
 	tank_light_one_man_tank_turret = {
 		abbreviation = "l1m"
 		category = tank_light_turret_type
