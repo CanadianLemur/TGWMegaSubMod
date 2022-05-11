@@ -3,7 +3,7 @@
 #######################################
 add_namespace = MSM_USA_Interwar
 
-####Elections of 1920####__________________________________________________________
+####Elections of 1920####
 country_event = {
 	id = MSM_USA_Interwar.1
 	title = MSM_USA_Interwar.1.t
@@ -61,7 +61,7 @@ country_event = {
 }
 
 # Warren G. Harding
-#____________________________________________________________
+#
 news_event = {
     id = MSM_USA_Interwar.2
     title = MSM_USA_Interwar.2.t

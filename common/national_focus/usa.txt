@@ -154,7 +154,7 @@ focus_tree = {
 		mutually_exclusive = { focus = USA_MSM_republican_definition }
  		icon = GFX_goal_generic_intelligence_exchange
 		completion_reward = {
-			#hurt the economy
+			consumer_goods_factor = 0.05
 			MSM_USA_progressive_medium_support = yes
 		}
 		ai_will_do = { factor = 10 }
@@ -807,7 +807,7 @@ focus_tree = {
 		y = 1
 	}
 	focus = {
-		id = USA_MSM_european_provication
+		id = USA_MSM_european_provocation
 		prerequisite = { focus = USA_MSM_civilized_society focus = USA_MSM_god-ordained_nation }
  		relative_position_id = USA_MSM_civilized_society
 		icon = GFX_goal_generic_major_war
@@ -821,8 +821,8 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_MSM_moral_leader
-		prerequisite = { focus = USA_MSM_european_provication }
- 		relative_position_id = USA_MSM_european_provication
+		prerequisite = { focus = USA_MSM_european_provocation }
+ 		relative_position_id = USA_MSM_european_provocation
 		icon = GFX_goal_generic_small_arms
 		completion_reward = {
 			#
