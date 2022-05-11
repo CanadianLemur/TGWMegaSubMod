@@ -106,5 +106,119 @@ ideas={
 			}
 				
 		}
+		
+		MSM_USA_payne_aldrich_act_1 = {
+
+			picture = generic_disjointed_gov
+				
+			removal_cost = -1
+				
+			modifier = {
+				consumer_goods_factor = -0.01
+			}
+				
+		}
+		
+		MSM_USA_payne_aldrich_act_2 = {
+
+			picture = generic_disjointed_gov
+				
+			removal_cost = -1
+				
+			modifier = {
+			consumer_goods_factor = -0.05
+			}
+				
+		}
+		
+		MSM_USA_wall_street = {
+
+			picture = generic_disjointed_gov
+				
+			removal_cost = -1
+				
+			modifier = {
+				production_speed_industrial_complex_factor = 0.2
+			}
+				
+		}
+		
+		MSM_USA_rail_subsidized = {
+
+			picture = generic_disjointed_gov
+				
+			removal_cost = -1
+				
+			modifier = {
+				consumer_goods_factor = 0.03
+				production_speed_rail_way_factor = 0.2
+			}
+				
+		}
+		
+		MSM_USA_idea_non_standard_oil = {
+
+			picture = generic_disjointed_gov
+				
+			removal_cost = -1
+				
+			modifier = {
+				production_oil_factor = 0.25 
+				production_speed_synthetic_refinery_factor = -0.10
+			}
+				
+		}
+		
+		MSM_USA_idea_target_banks = {
+
+			picture = generic_disjointed_gov
+				
+			removal_cost = -1
+				
+			modifier = {
+				consumer_goods_factor = -0.3
+			}
+				
+		}
+		
+		MSM_USA_idea_underwood_tariff_act = {
+
+			picture = generic_disjointed_gov
+				
+			removal_cost = -1
+				
+			modifier = {
+				consumer_goods_factor = -0.05
+				stability_factor = -0.05
+			}
+				
+		}
+		
+		MSM_USA_idea_new_federal_tax = {
+
+			picture = generic_disjointed_gov
+				
+			removal_cost = -1
+				
+			modifier = {
+				consumer_goods_factor = -0.07
+				stability_factor = -0.07
+			}
+				
+		}
+		
+		MSM_USA_idea_central_bank_fed = {
+
+			picture = generic_disjointed_gov
+				
+			removal_cost = -1
+				
+			modifier = {
+				consumer_goods_factor = -0.10
+				stability_factor = 0.2
+			}
+				
+		}
+		
 	}
 }

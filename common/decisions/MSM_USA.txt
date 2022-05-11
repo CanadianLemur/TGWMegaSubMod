@@ -176,4 +176,36 @@ USA_internal_politics = {
 			MSM_USA_progressive_large_opposition = yes
 		}
 	}
+	USA_test7 = {
+		fire_only_once = no
+		allowed = {
+			tag = USA
+		}
+		available = {
+			always = yes
+		}
+		is_good = yes
+		
+		days_re_enable = 0
+		
+		complete_effect = {
+			USA_congress_small_support = yes
+		}
+	}
+	USA_test8 = {
+		fire_only_once = no
+		allowed = {
+			tag = USA
+		}
+		available = {
+			always = yes
+		}
+		is_good = yes
+		
+		days_re_enable = 0
+		
+		complete_effect = {
+			USA_congress_small_opposition = yes
+		}
+	}
 }

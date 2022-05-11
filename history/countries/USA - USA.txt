@@ -257,6 +257,7 @@ if = {
 		disarmed_nation 
 		free_trade 
 		home_of_the_free
+		MSM_USA_payne_aldrich_act_1
 	}
 	
 	#Make panama canal impassable until the mission is finished

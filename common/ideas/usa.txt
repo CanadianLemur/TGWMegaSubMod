@@ -133,7 +133,7 @@ ideas = {
 	}
 
 	industrial_concern = {
-			designer = yes 
+			designer = yes
 			standard_oil={ allowed={ TAG=USA NOT = {has_completed_focus = USA_break_up_standard_oil} }    research_bonus = {
 							    industry = 0.10
 							    synth_resources = 0.15

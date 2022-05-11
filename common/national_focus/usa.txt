@@ -154,7 +154,11 @@ focus_tree = {
 		mutually_exclusive = { focus = USA_MSM_republican_definition }
  		icon = GFX_goal_generic_intelligence_exchange
 		completion_reward = {
-			consumer_goods_factor = 0.05
+			USA_congress_small_support = yes
+            swap_ideas = {
+                remove_idea = MSM_USA_payne_aldrich_act_1
+                add_idea = MSM_USA_payne_aldrich_act_2
+            }
 			MSM_USA_progressive_medium_support = yes
 		}
 		ai_will_do = { factor = 10 }
@@ -342,8 +346,31 @@ focus_tree = {
  		relative_position_id = USA_MSM_new_freedom
 		icon = GFX_goal_generic_neutrality_focus
 		completion_reward = {
-			#Put on free trade
-		}
+			custom_effect_tooltip = MSM_USA_federal_reserve_path_tooltip
+			#Replace payne-aldrich with underwood tariff
+            #add_ideas = MSM_USA_idea_underwood_tariff_act
+            if = {
+                limit = { has_idea = MSM_USA_payne_aldrich_act_1 }
+                swap_ideas = {
+					remove_idea = MSM_USA_payne_aldrich_act_1
+					add_idea = MSM_USA_idea_underwood_tariff_act
+				}
+            }
+			else = {
+				if = {
+					limit = { has_idea = MSM_USA_payne_aldrich_act_2 }
+					swap_ideas = {
+						remove_idea = MSM_USA_payne_aldrich_act_2
+						add_idea = MSM_USA_idea_underwood_tariff_act
+					}
+				}
+			}
+			#make free trade if not already
+            if = {
+                limit = { not = { has_idea = free_trade } }
+                add_ideas = free_trade
+            }
+        }
 		ai_will_do = { factor = 10 }
  		cost = 10
 		x = 1
@@ -356,6 +383,16 @@ focus_tree = {
 		icon = GFX_focus_generic_industry_2
 		completion_reward = {
 			#consumer goods buff
+			if = {
+				limit = { not = { has_idea = MSM_USA_idea_underwood_tariff_act } }
+				add_ideas = MSM_USA_idea_new_federal_tax
+			}
+			else = {
+				swap_idea = {
+					remove_idea = MSM_USA_idea_underwood_tariff_act
+					add_idea = MSM_USA_idea_new_federal_tax
+				}
+			}
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
@@ -369,7 +406,16 @@ focus_tree = {
  		relative_position_id = USA_MSM_new_federal_tax
 		icon = GFX_goal_generic_production2
 		completion_reward = {
-			#
+			if = {
+				limit = { not = { has_idea = MSM_USA_idea_new_federal_tax } }
+				add_ideas = MSM_USA_idea_central_bank_fed
+			}
+			else = {
+				swap_idea = {
+					remove_idea = MSM_USA_idea_new_federal_tax
+					add_idea = MSM_USA_idea_central_bank_fed
+				}
+			}
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
@@ -410,7 +456,9 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		completion_reward = {
 			#Debuff to building infrastructure, gain stability/support in senate
-		}
+            add_stability = 0.05
+            USA_congress_small_support = yes
+        }
 		ai_will_do = { factor = 10 }
  		cost = 10
 		x = 0
@@ -422,7 +470,12 @@ focus_tree = {
  		relative_position_id = USA_MSM_american_railroads
 		icon = GFX_goal_generic_production2
 		completion_reward = {
-			#Research bonus to refining tech, harder to build refineries
+            add_tech_bonus = {
+                bonus = 0.5
+                uses = 2
+                category = cat_synth_oil
+            }
+            add_ideas = MSM_USA_idea_non_standard_oil
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
@@ -436,6 +489,8 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		completion_reward = {
 			#Large hit to senate support, consumer goods boost
+            USA_congress_large_opposition = yes
+            add_ideas = MSM_USA_idea_target_banks
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
@@ -522,7 +577,10 @@ focus_tree = {
  		relative_position_id = USA_ww1_john_rockefeller_conglomerate
 		icon = GFX_goal_generic_construct_infrastructure
 		completion_reward = {
-			#Bonus to building rail, hit to consumer goods
+            add_timed_idea = {
+                idea = MSM_USA_rail_subsidized
+                days = 180
+            }
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
@@ -535,7 +593,11 @@ focus_tree = {
  		relative_position_id = USA_MSM_subsidized_rail
 		icon = GFX_goal_generic_construct_civ_factory
 		completion_reward = {
-			#Add 2 civilian factories
+            add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
@@ -548,7 +610,7 @@ focus_tree = {
  		relative_position_id = USA_MSM_combined_vertical_integration
 		icon = GFX_focus_usa_reestablish_the_gold_standard
 		completion_reward = {
-			#Civilian factory buff
+			add_ideas = MSM_USA_wall_street
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
@@ -574,7 +636,16 @@ focus_tree = {
  		relative_position_id = USA_ww1_expand_standard_oil_influence
 		icon = GFX_focus_generic_steel
 		completion_reward = {
-			#Add 2 civilian factories in detroit
+			add_building_construction = {
+                type = industrial_complex
+                level = 2
+                instant_build = yes
+            }
+            add_resource = {
+                type = steel
+                amount = 20
+                state = 393
+            }
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
@@ -588,6 +659,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_motorized
 		completion_reward = {
 			#motorized research bonus, make ford available as a matterials designer with buffs to armored cars and motorized
+			
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
@@ -834,9 +906,9 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_MSM_america_the_beautiful
-		prerequisite = { focus = USA_MSM_european_provication }
+		prerequisite = { focus = USA_MSM_european_provocation }
 		prerequisite = { focus = USA_MSM_civilized_society }
- 		relative_position_id = USA_MSM_european_provication
+ 		relative_position_id = USA_MSM_european_provocation
 		icon = goal_unknown
 		completion_reward = {
 			#
