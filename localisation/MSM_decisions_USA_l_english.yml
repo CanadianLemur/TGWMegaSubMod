@@ -1,4 +1,7 @@
 ﻿l_english:
  USA_MSM_panama_construction:0 "Construction Projects"
+ USA_MSM_hoover_dam_construction:0"Boulder Dam Construction"
+ USA_MSM_hoover_dam_construction_desc:0"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBoulder Dam (Later known as Hoover Dam) will tame the Colorado River and provide Water and Electricity for the growing Southeastern United States"
+ hoover_dam_construction:0"Boulder Dam Construction"
  panama_canal_construction:0 "Panama Canal Construction"
  USA_internal_politics:0 "Internal Politics"

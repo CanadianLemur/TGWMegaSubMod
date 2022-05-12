@@ -26,4 +26,9 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/tampico_affair_event.dds"
 	}
 	
+	SpriteType = { #Hoover Dam Construction Picture
+		name = "GFX_hoover_dam_construction_image"
+		texturefile = "gfx/interface/decisions/decision_cat_HooverDam.dds"
+	}
+	
 }

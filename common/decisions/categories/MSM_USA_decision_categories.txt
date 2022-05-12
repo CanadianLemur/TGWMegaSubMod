@@ -10,6 +10,7 @@ USA_MSM_panama_construction = {
 }
 USA_MSM_hoover_dam_construction = {
 	icon = generic_political_actions
+	picture = GFX_hoover_dam_construction_image
 	priority = 20
 	available = {
 	}
