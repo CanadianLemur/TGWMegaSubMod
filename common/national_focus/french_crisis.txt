@@ -1,7 +1,8 @@
 focus_tree = {
 	id = france_crisis
 	default = no
-	country = { factor=0 modifier = { add = 20 tag = FRA has_global_flag = kis_second_treaty_frankfort }  }
+	country = { factor=0 #modifier = { add = 20 tag = FRA has_global_flag = kis_second_treaty_frankfort }
+	}
 
 	###########################################################################################################################
 	# POLITICAL

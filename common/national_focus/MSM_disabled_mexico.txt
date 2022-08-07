@@ -1,7 +1,7 @@
 focus_tree = {
 	id = MSM_mex_focus
 	default = no
-	country = { factor=0  modifier={ add=100 tag=MEX }  modifier={ add=10 original_tag=MEX } }
+	#country = { factor=0  modifier={ add=100 tag=MEX }  modifier={ add=10 original_tag=MEX } }
 
 ### STARTING FOCUSES ###
 
