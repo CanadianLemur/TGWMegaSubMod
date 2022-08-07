@@ -7,7 +7,7 @@ state={
 	resources={
 		wood=0
 		coal=18
-		steel=171
+		steel=0
 		}
 	history={
 		victory_points={ 12501 3 }

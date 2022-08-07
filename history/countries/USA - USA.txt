@@ -254,8 +254,8 @@ if = {
 		partial_economic_mobilisation
 		limited_exports
 		undisturbed_isolation
-		disarmed_nation 
-		free_trade 
+		disarmed_nation
+		limited_exports 
 		home_of_the_free
 		MSM_USA_payne_aldrich_act_1
 	}

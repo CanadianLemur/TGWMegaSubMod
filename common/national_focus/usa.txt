@@ -157,7 +157,7 @@ focus_tree = {
 			USA_congress_small_support = yes
             swap_ideas = {
                 remove_idea = MSM_USA_payne_aldrich_act_1
-                add_idea = MSM_USA_payne_aldrich_act_2
+                add_ideas = MSM_USA_payne_aldrich_act_2
             }
 			MSM_USA_progressive_medium_support = yes
 		}
@@ -353,7 +353,7 @@ focus_tree = {
                 limit = { has_idea = MSM_USA_payne_aldrich_act_1 }
                 swap_ideas = {
 					remove_idea = MSM_USA_payne_aldrich_act_1
-					add_idea = MSM_USA_idea_underwood_tariff_act
+					add_ideas = MSM_USA_idea_underwood_tariff_act
 				}
             }
 			else = {
@@ -361,7 +361,7 @@ focus_tree = {
 					limit = { has_idea = MSM_USA_payne_aldrich_act_2 }
 					swap_ideas = {
 						remove_idea = MSM_USA_payne_aldrich_act_2
-						add_idea = MSM_USA_idea_underwood_tariff_act
+						add_ideas = MSM_USA_idea_underwood_tariff_act
 					}
 				}
 			}
@@ -390,7 +390,7 @@ focus_tree = {
 			else = {
 				swap_idea = {
 					remove_idea = MSM_USA_idea_underwood_tariff_act
-					add_idea = MSM_USA_idea_new_federal_tax
+					add_ideas = MSM_USA_idea_new_federal_tax
 				}
 			}
 		}
@@ -413,7 +413,7 @@ focus_tree = {
 			else = {
 				swap_idea = {
 					remove_idea = MSM_USA_idea_new_federal_tax
-					add_idea = MSM_USA_idea_central_bank_fed
+					add_ideas = MSM_USA_idea_central_bank_fed
 				}
 			}
 		}
@@ -490,7 +490,10 @@ focus_tree = {
 		completion_reward = {
 			#Large hit to senate support, consumer goods boost
             USA_congress_large_opposition = yes
-            add_ideas = MSM_USA_idea_target_banks
+            add_timed_idea = {
+				idea = MSM_USA_idea_target_banks
+				days = 180
+			}
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
@@ -678,7 +681,7 @@ focus_tree = {
  		relative_position_id = USA_MSM_elect_wilson
 		icon = GFX_goal_generic_intelligence_exchange
 		completion_reward = {
-			#
+			add_political_power = 100
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
@@ -717,7 +720,11 @@ focus_tree = {
  		relative_position_id = USA_MSM_internal_politics
 		icon = GFX_focus_usa_honor_the_confederacy
 		completion_reward = {
-			#
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.02
+			}
+			congress_low_support_trigger = yes
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
@@ -730,7 +737,10 @@ focus_tree = {
  		relative_position_id = USA_MSM_new_southern_cabinet
 		icon = GFX_goal_generic_forceful_treaty
 		completion_reward = {
-			#
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.02
+			}
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
@@ -1266,7 +1276,7 @@ focus_tree = {
  		relative_position_id = USA_MSM_elect_roosevelt
 		icon = GFX_focus_generic_support_the_left_right
 		completion_reward = {
-			#
+			add_stability = 0.2
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
@@ -1280,6 +1290,7 @@ focus_tree = {
 		icon = GFX_goal_generic_positive_trade_relations
 		completion_reward = {
 			#Put on free trade
+				add_ideas = free_trade
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
@@ -1307,6 +1318,7 @@ focus_tree = {
 		icon = GFX_focus_hol_abandon_the_gold_standard
 		completion_reward = {
 			#
+			add_ideas = MSM_USA_idea_central_bank_fed
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
@@ -1360,6 +1372,7 @@ focus_tree = {
 		icon = GFX_goal_generic_oil_refinery
 		completion_reward = {
 			#Research bonus to refining tech, harder to build refineries
+			add_ideas = MSM_USA_idea_non_standard_oil
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
@@ -1386,6 +1399,24 @@ focus_tree = {
 		icon = GFX_focus_generic_steel
 		completion_reward = {
 			#Remove some steel in some states and gain a consumer goods buff
+			360 = {
+				add_resource = {
+					type = steel
+					amount = -100
+				}
+			}
+			393 = {
+				add_resource = {
+					type = steel
+					amount = -100
+				}
+			}
+			391 = {
+				add_resource = {
+					type = steel
+					amount = -300
+				}
+			}
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
@@ -5623,7 +5654,7 @@ focus_tree = {
 		}
 		swap_ideas = {
 		remove_idea = prohibition_accepted
-		add_idea = MSM_prohibition_middle_ground
+		add_ideas = MSM_prohibition_middle_ground
 		}
 		}
 		ai_will_do = { factor = 0 }
@@ -5800,7 +5831,7 @@ focus_tree = {
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = USA_armed_forces_desegregation
-				add_idea = USA_full_desegregation
+				add_ideas = USA_full_desegregation
 			}
 			if = {
 				limit = {
@@ -7518,7 +7549,7 @@ focus_tree = {
 				}
 				swap_ideas = {
 					remove_idea = USA_limited_intervention
-					add_idea = USA_lend_lease_act_li
+					add_ideas = USA_lend_lease_act_li
 				}
 			}
 			else_if = {
@@ -7527,7 +7558,7 @@ focus_tree = {
 				}
 				swap_ideas = {
 					remove_idea = USA_neutrality_act
-					add_idea = USA_lend_lease_act_na
+					add_ideas = USA_lend_lease_act_na
 				}
 			}
 			else = {
@@ -8626,7 +8657,7 @@ focus_tree = {
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = USA_banking_sector_deregulation
-				add_idea = USA_national_employment_strategy
+				add_ideas = USA_national_employment_strategy
 			}
 			USA_great_depression_level_down = yes
 		}
@@ -10744,7 +10775,7 @@ focus_tree = {
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = USA_war_department
-				add_idea = USA_department_of_defense
+				add_ideas = USA_department_of_defense
 			}
 		}
 	}
