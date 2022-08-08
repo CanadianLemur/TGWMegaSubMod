@@ -220,5 +220,29 @@ ideas={
 				
 		}
 		
+		MSM_USA_idea_commercial_incentives = {
+
+			picture = generic_disjointed_gov
+				
+			removal_cost = -1
+				
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = 0.2
+			}
+				
+		}
+		
+		MSM_USA_idea_naval_buildup = {
+			
+			picture = generic_disjointed_gov
+				
+			removal_cost = -1
+				
+			modifier = {
+				industrial_capacity_dockyard = 0.2
+			}
+		}
+		
 	}
 }

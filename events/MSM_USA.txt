@@ -318,3 +318,25 @@ country_event = {
 		}
 	}
 }
+country_event = { 
+	id = MSMUSA.36 #California Alien Land Law
+	title = MSMUSA.36.t
+	desc = MSMUSA.36.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = MSMUSA.36.a #Allow california to pass the law
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = MSMUSA.36.b #Force California to recind the law
+		ai_chance = { factor = 0 }
+		USA = {
+			add_stability = -0.05
+			USA_congress_small_opposition = yes
+		}
+	}
+}

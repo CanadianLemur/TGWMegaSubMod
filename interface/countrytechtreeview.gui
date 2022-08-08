@@ -1232,7 +1232,7 @@ guiTypes = {
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
 						text = "1910"
-`						maxHeight = 32
+						maxHeight = 32
 						format = left
 						Orientation = "UPPER_LEFT"
 					}
