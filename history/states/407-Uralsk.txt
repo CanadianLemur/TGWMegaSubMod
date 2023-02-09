@@ -1,0 +1,35 @@
+state = {
+	id=407
+	name="STATE_407"
+	local_supplies = 1.0 manpower = 268572
+	state_category=rural
+	provinces={ 432 468 470 508 545 566 576 1318 3404 3406 3467 3502 3515 3538 4351 6491 6525 6551 6564 6588 7438 9462 9487 9513 9526 9528 9538 9549 11457 11472 11473 11480 11482 11510 11524 11537 11538 11552 }
+	resources={
+		wood=0
+		}
+	history={
+		owner=RUS
+		add_core_of=RUS
+		1936.1.1={ 
+			owner=SOV
+			add_core_of=SOV
+			buildings={
+				infrastructure=2
+				}
+			}
+		buildings={
+			infrastructure=2
+			}
+		1919.1.1 = {
+            add_core_of = SOV
+
+            SOV = {
+				set_province_controller = 6525
+				set_province_controller = 11457
+				set_province_controller = 545
+				set_province_controller = 11538
+				set_province_controller = 3406
+			}
+        }
+		}
+	}

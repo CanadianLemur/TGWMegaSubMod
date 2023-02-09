@@ -2,6 +2,7 @@ version="1.0"
 dependencies={
 	"Hearts of Iron IV: The Great War"
 }
+replace_path = "history/states"
 tags={
 	"Fixes"
 }

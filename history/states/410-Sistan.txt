@@ -1,0 +1,19 @@
+state = {
+	id=410
+	name="STATE_410"
+	local_supplies = 1.0
+	manpower = 341053
+	state_category=rural
+	provinces={ 1889 2039 2070 4891 10782 13082 }
+	resources={
+		wood=0
+		}
+	history={
+		owner=PER
+		add_core_of=PER
+
+		buildings={
+			infrastructure=2
+		}
+	}
+}

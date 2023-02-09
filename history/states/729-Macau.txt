@@ -1,0 +1,21 @@
+state = {
+	id=729
+	name="STATE_729"
+	local_supplies = 1.0
+	manpower = 157805
+	state_category=enclave
+	provinces={ 4189 }
+	resources={
+		wood=0
+		}
+	history={
+		victory_points={ 4189 1 }
+		owner=POR
+		add_core_of=CHI
+
+		buildings={
+			infrastructure=3
+			4189={ naval_base=1 }
+		}
+	}
+}

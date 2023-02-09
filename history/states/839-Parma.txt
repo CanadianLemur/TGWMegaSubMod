@@ -1,0 +1,25 @@
+state={
+	id=839
+	name="STATE_839"
+	manpower = 1248996
+	state_category=town
+	provinces={ 3773 3976 6790 9752 }
+	resources={
+		}
+	history={
+		victory_points={ 9752 1 }
+		owner=ITA
+		add_core_of=ITA
+		1936.1.1={ 
+			owner=ITA
+			add_core_of=ITA
+			victory_points={ 9752 1 }
+			buildings={
+				infrastructure=4
+				}
+			}
+		buildings={
+			infrastructure=3
+			}
+		}
+	}
