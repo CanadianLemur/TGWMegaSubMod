@@ -197,14 +197,14 @@ set_convoys = 150
 		ww1_fortification1 = 1
 	}
 
-	set_popularities{
+	set_popularities = {
    	 democratic = 20
    	 fascism = 10
 	communism = 5
 	neutrality = 65
 	}
 	set_politics = {
-		ruling_party = neutrality last_election = "1913.6.17"
+		ruling_party = neutrality last_election = "1909.6.17"
 		election_frequency = 48 elections_allowed = yes
 	}
 	
@@ -220,8 +220,8 @@ set_convoys = 150
 		SPR_ww1_idea_caciquismo
 		SPR_ww1_idea_uniones
 		SPR_ww1_idea_semanatragica
-	}	
-}	
+	}
+}
 
 1914.1.1 = {
 	remove_unit_leader = 86089 # Basilio Augustín ( Death 7/8/1910 )
