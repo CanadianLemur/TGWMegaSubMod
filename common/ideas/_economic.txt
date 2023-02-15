@@ -85,7 +85,7 @@ ideas = {
 			
 			cancel_if_invalid = no
 		allowed_to_remove = {
-		NOT = {has_idea = interwar_spirit_BannedConscription}
+		NOT = {has_idea = GER_interwar_spirit_BannedConscription}
 		NOT = {has_idea = MSM_frankfurt_army_restrictions_france}
 			}
 		}
@@ -483,17 +483,6 @@ ideas = {
 					has_war = no
 				}
    			}
-		}
-	}
-	
-	#Not created anywhere :(
-	interwar_spirit_BannedConscription = {
-		allowed={ always = no }
-		allowed_civil_war={ always = no }
-		removal_cost=-1
-		modifier = {
-			conscription_factor = -0.50
-			army_morale_factor = -0.15
 		}
 	}
 }
