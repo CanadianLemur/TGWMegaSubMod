@@ -109,6 +109,7 @@ recruit_character = GER_paul_von_hindenburg
 recruit_character = GER_adolf_hitler
 recruit_character = GER_ludendorff
 recruit_character = GER_karl_liebknecht
+recruit_character = GER_ernst_rohm
 
 #ARMY
 recruit_character = GER_von_gallwitz

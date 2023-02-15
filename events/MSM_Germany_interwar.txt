@@ -20,14 +20,9 @@ country_event = {
 	option = {
 		name = MSM_Germany_IW_politics.1.a
 		ai_chance = { factor = 100 }
-		create_country_leader = { 
-				name = "Adolf Hitler"
-				desc = GER_adolf_hitler_DESC
-				picture="gfx/leaders/GER_adolf_hitler.dds"
-				expire = "1955.1.1" 
-				ideology = nazism 
-				traits = { } 
-		}
+		GER_adolf_hitler = {
+			promote_character = yes
+			}
 		set_party_name = { 
 			ideology = fascism 
 			long_name = GER_NSDAP_name_long 

@@ -5949,7 +5949,6 @@ focus = {
 		}
 
 		completion_reward = {
-			recruit_character = GER_ernst_rohm
 			GER_ernst_rohm = {
 			promote_character = yes
 			}
