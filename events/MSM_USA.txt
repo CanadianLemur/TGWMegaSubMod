@@ -39,7 +39,7 @@ country_event = {
 			AND = {
 				MSM_USA_conservatives_happy = yes 
 				NOT = { MSM_USA_progressives_happy = yes }
-				USA = { has_country_flag = MSM_USA_teddys_angry }
+				USA = { has_country_flag = MSM_USA_teddys_pissed }
 			}
 		}
 		effect = { set_variable = { USA_candidate = 1 } }
@@ -51,7 +51,7 @@ country_event = {
 			AND = {
 				MSM_USA_conservatives_happy = yes 
 				NOT = { MSM_USA_progressives_happy = yes }
-				NOT = { USA = { has_country_flag = MSM_USA_teddys_angry } }
+				NOT = { USA = { has_country_flag = MSM_USA_teddys_pissed } }
 			}
 		}
 		effect = { set_variable = { USA_candidate = 2 } }

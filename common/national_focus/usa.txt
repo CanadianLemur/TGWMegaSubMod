@@ -83,7 +83,15 @@ focus_tree = {
 			custom_effect_tooltip = USA_MSM_go_after_us_steel_tooltip
 			MSM_USA_conservative_large_opposition = yes
 			custom_effect_tooltip = USA_angry_teddy
-			hidden_effect = { set_country_flag = MSM_USA_teddys_angry }
+			hidden_effect = { 
+				if = {
+					limit = { has_country_flag = MSM_USA_teddys_angry }
+					set_country_flag = MSM_USA_teddys_pissed
+				}
+				else = {
+					set_country_flag = MSM_USA_teddys_angry
+				}
+			}
 		}
 		ai_will_do = { factor = 10 }
  		cost = 10
@@ -205,7 +213,15 @@ focus_tree = {
 		completion_reward = {
 			MSM_USA_progressive_small_opposition = yes
 			custom_effect_tooltip = USA_angry_teddy
-			hidden_effect = { set_country_flag = MSM_USA_teddys_angry }
+			hidden_effect = { 
+				if = {
+					limit = { has_country_flag = MSM_USA_teddys_angry }
+					set_country_flag = MSM_USA_teddys_pissed
+				}
+				else = {
+					set_country_flag = MSM_USA_teddys_angry
+				}
+			}
 			#maybe make an angry teddy roosevelt idea if you do this (he will get very cranky if you do this)
 		}
 		ai_will_do = { factor = 10 }
