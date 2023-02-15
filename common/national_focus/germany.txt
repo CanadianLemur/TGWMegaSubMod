@@ -2135,8 +2135,8 @@ focus_tree = {
 				controls_state = 72
 		}
 		completion_reward = {
-				### release poland with austrian king
-				POL = {
+			### release poland with austrian king
+			POL = {
 				transfer_state = 87
 				add_state_core = 87
 				transfer_state = 98
@@ -2165,39 +2165,45 @@ focus_tree = {
 				complete_national_focus = POL_interwar_an_austrian_king
 				unlock_national_focus = POL_interwar_request_galicia
 				create_country_leader = {
-				    name = "Charles Stephen I"
-				    picture = "Portrait_Poland_Charles_Stephen_I.dds"			
-				    expire = "1965.1.1"
-				    ideology = despotism
-				    traits = {}
+					name = "Charles Stephen I"
+					picture = "Portrait_Poland_Charles_Stephen_I.dds"			
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {}
 				}
+			}
+			ROM = { transfer_state = 80 }
+			puppet = POL
+			if = {
+				limit = {
+					POL = {is_subject_of = GER } 
+					has_completed_focus = GER_ww1_war_plans_research_cooperation_with_habsburg_lands
 				}
-				ROM = {transfer_state = 80}
-				puppet = POL
-				if = {limit = {POL = {is_subject_of = GER } has_completed_focus = GER_ww1_war_plans_research_cooperation_with_habsburg_lands} POL = {add_to_tech_sharing_group = ger_association_group}}
-	POL = {
+				POL = {add_to_tech_sharing_group = ger_association_group}
+			}
+			POL = {
 				set_politics = {
-	ruling_party = neutrality
-        elections_allowed = no
-        last_election = "1910.1.1"
-        election_frequency = 48
-		}
-		add_popularity = {
-		ideology = neutrality popularity = 0.7
-		}
-set_party_name = { 
-    ideology = neutrality 
-    long_name = AUH_neutrality_party_long 
-    name = AUH_neutrality_party 
-		}
-		}  
+					ruling_party = neutrality
+					elections_allowed = no
+					last_election = "1910.1.1"
+					election_frequency = 48
+				}
+				add_popularity = {
+					ideology = neutrality popularity = 0.7
+				}
+				set_party_name = { 
+					ideology = neutrality 
+					long_name = AUH_neutrality_party_long 
+					name = AUH_neutrality_party 
+				}
+			}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 5
 		x = 0
 		y = 1
 	}
-		focus = {
+focus = {
 		id = GER_ww1_germanize_poland
 		relative_position_id = GER_ww1_war_plans_germany_for_germans
 		prerequisite = { focus = GER_ww1_war_plans_germany_for_germans focus = GER_ww1_war_plans_association_with_habsburg_lands}
@@ -4844,11 +4850,11 @@ set_party_name = {
 		icon = GFX_focus_generic_little_entente
 		prerequisite = {focus = GER_interwar_WKV_full_intervention }
 		available = {
-		owns_state = 229
-		owns_state = 230
-		owns_state = 231
-		owns_state = 232
-		owns_state = 233
+			owns_state = 229
+			owns_state = 230
+			owns_state = 231
+			owns_state = 232
+			owns_state = 233
 		}
 		x = 1
 		y = 2
@@ -4859,26 +4865,26 @@ set_party_name = {
 		}
 		completion_reward = {
 		CAU = {
-		inherit_technology = RUS
-		inherit_technology = SOV
-		add_state_core = 229
-		add_state_core = 230
-		add_state_core = 231
-		add_state_core = 232
-		add_state_core = 233
-		transfer_state = 229
-		transfer_state = 230
-		transfer_state = 231
-		transfer_state = 232
-		transfer_state = 233
+			inherit_technology = RUS
+			inherit_technology = SOV
+			add_state_core = 229
+			add_state_core = 230
+			add_state_core = 231
+			add_state_core = 232
+			add_state_core = 233
+			transfer_state = 229
+			transfer_state = 230
+			transfer_state = 231
+			transfer_state = 232
+			transfer_state = 233
 		}
 		puppet = CAU
 		CAU = {
-		set_politics = {
-	ruling_party = neutrality
-        elections_allowed = no
-        last_election = "1910.1.1"
-        election_frequency = 48
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+				last_election = "1910.1.1"
+				election_frequency = 48
 			}
 			set_popularities = {
 				democratic = 5

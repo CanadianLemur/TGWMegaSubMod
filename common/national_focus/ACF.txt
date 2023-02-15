@@ -84,11 +84,17 @@ focus_tree = {
 		icon = GFX_goal_support_communism
 		prerequisite = {focus = ACF_revolution_triumphant}
 		completion_reward = {  
-		create_faction = "The Internationale"
+			create_faction = "The Internationale"
 		}
 		ai_will_do = { 
-		factor = 3 
-		modifier = {factor = 30 NOT = SOV = {{exists = yes is_faction_leader = yes}}}
+			factor = 3 
+			modifier = {
+				factor = 30 
+				NOT = { SOV = {
+					exists = yes
+					is_faction_leader = yes 
+				}}
+			}
 		}
 		cost = 10
 		mutually_exclusive = {focus = ACF_join_comintern}

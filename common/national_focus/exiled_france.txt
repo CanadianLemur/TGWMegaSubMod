@@ -76,14 +76,14 @@ focus_tree = {
 		mutually_exclusive = {focus = FRA_exiled_maintain_balance}
 		mutually_exclusive = {focus = FRA_exiled_sideline_AF}
 		completion_reward = {  
-		add_stability = 0.1
-		add_popularity = {
-		ideology = fascism
-		popularity = 0.40
-		}	
-		set_politics = {
-		ruling_party = fascism
-		}
+			add_stability = 0.1
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.40
+			}	
+			set_politics = {
+				ruling_party = fascism
+			}
 		}
 		ai_will_do = { factor = 20 }
 		cost = 10

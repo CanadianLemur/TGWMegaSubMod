@@ -84,7 +84,7 @@ GER_party_struggle = {
 	}
 
 	visible = {
-		ruling_party = fascism
+		has_government = fascism
 		OR = {
 			has_country_flag = GER_party_struggle_right
 			has_country_flag = GER_party_struggle_left

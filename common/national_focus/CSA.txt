@@ -238,16 +238,17 @@ focus_tree = {
 		id = CFS_make_election_preparations
 		icon = GFX_goal_support_democracy
 		prerequisite = { focus = CFS_dixies_fate }
-		completion_reward = { set_politics = {
-		ruling_party = democratic
-		} 
-		create_country_leader = {
-			name = "Transition Council"
-			picture =""
-			expire = "1960.1.1"
-			ideology = liberalism
-			traits = {}
-}
+		completion_reward = { 
+			set_politics = {
+				ruling_party = democratic
+			} 
+			create_country_leader = {
+				name = "Transition Council"
+				picture =""
+				expire = "1960.1.1"
+				ideology = liberalism
+				traits = {}
+			}
 		}
 		ai_will_do = { factor = 1 }
 		mutually_exclusive = { focus=CFS_revive_the_knights_of_the_golden_circle focus=CFS_solidify_military_rule}

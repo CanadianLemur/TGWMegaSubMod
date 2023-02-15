@@ -226,7 +226,7 @@ category_test_decisions = {
 				}
 				set_capital = 26
 				set_politics = {
-					ruling_party = fascism
+					has_government = fascism
 					elections_allowed = no
 				}
 				set_popularities = {

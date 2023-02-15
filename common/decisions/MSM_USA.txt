@@ -1,11 +1,11 @@
 USA_MSM_panama_construction = {
 	panama_canal_construction = {
-		allowed = { 
-			controls_state = 685
-			has_global_flag = PANAMA_CANAL_INCOMPLETE
-		}
+		allowed = {  }
 		available = {
-			NOT = { controls_state = 685 }
+			NOT = { has_full_control_of_state = 685 }
+		}
+		visible = {
+			NOT = { has_global_flag = PANAMA_CANAL_INCOMPLETE }
 		}
 		activation = {
 			has_country_flag = building_panama_canal
@@ -21,11 +21,9 @@ USA_MSM_panama_construction = {
 }
 USA_MSM_hoover_dam_construction = {
 	hoover_dam_construction = {
-		allowed = { 
-			controls_state = 379
-		}
+		allowed = {  }
 		available = {
-			NOT = { controls_state = 379 }
+			NOT = { has_full_control_of_state = 379 }
 		}
 		activation = {
 			has_completed_focus = USA_interwar_begin_construction_of_a_colorado_river_dam

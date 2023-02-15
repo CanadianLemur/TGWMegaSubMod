@@ -5012,7 +5012,10 @@ focus_tree = {
 			multiply_temp_variable = { FRA_democratic_support = -0.25 }
 			add_stability = FRA_democratic_support
 			custom_effect_tooltip = FRA_force_the_issue_tt
-			set_politics = { ruling_party = communism elections_allowed = no }
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
 			if = {
 				limit = {
 					has_idea = FRA_disjointed_government
