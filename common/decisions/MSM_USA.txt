@@ -1,14 +1,15 @@
 USA_MSM_panama_construction = {
 	panama_canal_construction = {
-		allowed = {  }
+		allowed = { always = yes }
 		available = {
-			NOT = { has_full_control_of_state = 685 }
-		}
-		visible = {
-			NOT = { has_global_flag = PANAMA_CANAL_INCOMPLETE }
+			always = no
 		}
 		activation = {
+			has_full_control_of_state = 685
 			has_country_flag = building_panama_canal
+		}
+		cancel_trigger = { 
+			NOT = { has_full_control_of_state = 685 }
 		}
 		is_good = yes
 		selectable_mission = no
@@ -16,6 +17,22 @@ USA_MSM_panama_construction = {
 		timeout_effect = {
 			clr_global_flag = building_panama_canal
 			clr_global_flag = PANAMA_CANAL_INCOMPLETE
+		}
+	}
+	build_panama_canal = {
+		fire_only_once = no
+		allowed = { always = yes }
+		available = {
+			has_full_control_of_state = 685
+		}
+		visible = {
+			has_global_flag = PANAMA_CANAL_INCOMPLETE
+			NOT = { has_country_flag = building_panama_canal }
+		}
+		is_good = yes
+		
+		complete_effect ={
+			set_country_flag = building_panama_canal
 		}
 	}
 }

@@ -4,7 +4,7 @@ USA_MSM_panama_construction = {
 	available = {
 	}
 	visible = {
-		tag = USA
+		controls_state = 685
 		has_global_flag = PANAMA_CANAL_INCOMPLETE
 	}
 }
