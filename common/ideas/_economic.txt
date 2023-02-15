@@ -85,7 +85,7 @@ ideas = {
 			
 			cancel_if_invalid = no
 		allowed_to_remove = {
-		NOT = {has_idea = interwar_spirit_BannedConscription}
+		NOT = {has_idea = GER_interwar_spirit_BannedConscription}
 		NOT = {has_idea = MSM_frankfurt_army_restrictions_france}
 			}
 		}
