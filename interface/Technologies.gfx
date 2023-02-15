@@ -1,6 +1,9 @@
 spriteTypes = {	
 
-
+	SpriteType = {
+		name = "GFX_MSM_armored_car_0_NSB_medium"
+		texturefile = "gfx/interface/technologies/gwtank.dds"
+	}
 
 	SpriteType = {
 		name = "GFX_ww1_infantry_equip1_medium"

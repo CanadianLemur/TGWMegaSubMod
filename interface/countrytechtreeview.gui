@@ -1170,6 +1170,7 @@ guiTypes = {
 				format = "UP"
 			}
 		}
+		
 		containerWindowType = { # [No Step Back] ARMOR
 			name = "nsb_armour_folder"
 			position = { x=0 y=47 }
@@ -1232,7 +1233,7 @@ guiTypes = {
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
 						text = "1910"
-`						maxHeight = 32
+						maxHeight = 32
 						format = left
 						Orientation = "UPPER_LEFT"
 					}
@@ -1640,7 +1641,18 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
+
+			gridboxtype = {
+				name = "MSM_engine_tech_1_tree"
+				position = { x = 22% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
 		}
+		
+		####ARMOR END####
+		
 		containerWindowType = {
 			name = "artillery_folder"
 			position = { x=0 y=47 }
