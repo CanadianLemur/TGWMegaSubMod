@@ -2040,7 +2040,7 @@ focus_tree = {
 		icon = GFX_goal_generic_position_armies
 		available = {}
 		completion_reward = { country_event = MSMUK.1 }
-		ai_will_do = { factor = 20 }
+		ai_will_do = { factor = 0 }
 		cost = 10
 		x = 16
 		y = 2
@@ -2051,7 +2051,7 @@ focus_tree = {
 		icon = GFX_goal_generic_position_armies
 		available = {}
 		completion_reward = { country_event = MSMUK.2 }
-		ai_will_do = { factor = 20 }
+		ai_will_do = { factor = 0 }
 		cost = 10
 		x = 18
 		y = 2
