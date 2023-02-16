@@ -1,5 +1,5 @@
 equipments = {
-	ww1_armored_car_equipment = {
+	ww1_armored_car_equipment_0 = {
 		year = 1900
 		is_archetype = yes
 		type = armor

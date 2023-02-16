@@ -1,0 +1,53 @@
+british_tank_program = {
+	allowed = {
+		original_tag = ENG
+	}
+	visible = {
+		always = yes
+	}
+}
+
+german_tank_program = {
+	allowed = {
+		original_tag = GER
+	}
+	visible = {
+		always = yes
+	}
+}
+
+french_tank_program = {
+	allowed = {
+		original_tag = FRA
+	}
+	visible = {
+		always = yes
+	}
+}
+
+italian_tank_program = {
+	allowed = {
+		original_tag = ITA
+	}
+	visible = {
+		always = yes
+	}
+}
+
+american_tank_program = {
+	allowed = {
+		original_tag = USA
+	}
+	visible = {
+		always = yes
+	}
+}
+
+russian_tank_program = {
+	allowed = {
+		original_tag = RUS
+	}
+	visible = {
+		always = yes
+	}
+}

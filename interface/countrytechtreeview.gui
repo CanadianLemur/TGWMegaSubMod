@@ -1635,6 +1635,14 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "MSM_armored_car_0_NSB_tree"
+				position = { x = -10% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "MSM_armor_0_NSB_tree"
 				position = { x = 10% y = 172 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }

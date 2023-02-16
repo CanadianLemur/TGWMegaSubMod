@@ -1,0 +1,270 @@
+british_tank_program = {
+	british_armor_project_1 = { ##Little Willie
+		
+		available = {
+			always = yes
+			check_variable = {
+				var = uk_tank_prgram
+				value = 1
+				compare = less_than
+			}
+		}
+		
+		visible = {
+			check_variable = {
+				var = uk_tank_prgram
+				value = 1
+				compare = less_than
+			}
+		}
+		
+		cost = 50
+		
+		modifier = {
+			civilian_factory_use = 5
+		}
+		
+		days_remove = 400
+		
+		remove_effect = {
+			set_variable = {
+				var = uk_tank_prgram
+				value = 1
+				tooltip = MSM_uk_tank_prgram_1_tt
+			}
+		}
+	}
+	
+	british_armor_project_1_1 = { ##Little Willie speed up
+		
+		available = {
+			has_decision = british_armor_project_1
+		}
+		
+		visible = {
+			has_decision = british_armor_project_1
+		}
+		
+		cost = 10
+		
+		
+		modifier = {
+			civilian_factory_use = 10
+		}
+		
+		days_remove = 20
+		
+		days_re_enable = 15
+		
+		complete_effect = {
+			add_days_remove  = {
+				decision = british_armor_project_1
+				days = -50
+			}
+		}
+		
+	}
+	
+	british_armor_project_2 = { ##MK I
+		
+		available = {
+			custom_trigger_tooltip = {
+				check_variable = {
+					var = uk_tank_prgram
+					value = 1
+					compare = equals
+				}
+				tooltip = MSM_uk_tank_prgram_2_trigger_tt
+			}
+		}
+		
+		cost = 50
+		
+		modifier = {
+			civilian_factory_use = 5
+		}
+		
+		days_remove = 400
+		
+		remove_effect = {
+		set_variable = {
+				var = uk_tank_prgram
+				value = 2
+				tooltip = MSM_uk_tank_prgram_2_tt
+			}
+		}
+	}
+	
+	british_armor_project_2_1 = { ##Big Willie speed up
+		
+		available = {
+			has_decision = british_armor_project_2
+		}
+		
+		visible = {
+			has_decision = british_armor_project_2
+		}
+		
+		cost = 10
+		
+		
+		modifier = {
+			civilian_factory_use = 10
+		}
+		
+		days_remove = 20
+		
+		days_re_enable = 15
+		
+		complete_effect = {
+			add_days_remove  = {
+				decision = british_armor_project_2
+				days = -50
+			}
+		}
+		
+	}
+	
+	british_armor_project_3 = { ##MK IV
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = MSM_uk_tank_prgram_3_trigger_tt
+				check_variable = {
+					var = uk_tank_prgram
+					value = 2
+					compare = equals
+				}
+			}
+		}
+		
+		cost = 50
+		
+		modifier = {
+			civilian_factory_use = 5
+		}
+		
+		days_remove = 400
+		
+		remove_effect = {
+		set_variable = {
+				var = uk_tank_prgram
+				value = 3
+				tooltip = MSM_uk_tank_prgram_3_tt
+			}
+		}
+	}
+	
+	british_armor_project_3_1 = { ##MK IV speed up  MK II
+		
+		available = {
+			has_decision = british_armor_project_3
+			check_variable = {
+				var = uk_tank_prgram
+				value = 3
+				compare = equals
+			}
+		}
+		
+		visible = {
+			has_decision = british_armor_project_3
+		}
+		
+		cost = 10
+		
+		fire_only_once = yes
+		
+		modifier = {
+			civilian_factory_use = 10
+		}
+		
+		days_remove = 20
+		
+		days_re_enable = 15
+		
+		complete_effect = {
+			add_days_remove  = {
+				decision = british_armor_project_3
+				days = -50
+			}
+			set_variable = {
+				var = uk_tank_prgram
+				value = 4
+				tooltip = MSM_uk_tank_prgram_3_1_tt
+			}
+		}
+		
+	}
+	
+	british_armor_project_3_2 = { ##MK IV speed up  MK III
+		
+		available = {
+			has_decision = british_armor_project_3
+			check_variable = {
+				var = uk_tank_prgram
+				value = 4
+				compare = equals
+			}
+		}
+		
+		visible = {
+			has_decision = british_armor_project_3
+		}
+		
+		cost = 10
+		
+		fire_only_once = yes
+		
+		modifier = {
+			civilian_factory_use = 10
+		}
+		
+		days_remove = 20
+		
+		days_re_enable = 15
+		
+		complete_effect = {
+			add_days_remove  = {
+				decision = british_armor_project_3
+				days = -50
+			}
+			set_variable = {
+				var = uk_tank_prgram
+				value = 5
+				tooltip = MSM_uk_tank_prgram_3_2_tt
+			}
+		}
+		
+	}
+	
+}
+
+german_tank_program = {
+	german_armor_project_1 = {
+		cost = 50
+	}
+}
+
+french_tank_program = {
+	french_armor_project_1 = {
+		cost = 50
+	}
+}
+
+italian_tank_program = {
+	italian_armor_project_1 = {
+		cost = 50
+	}
+}
+
+american_tank_program = {
+	american_armor_project_1 = {
+		cost = 50
+	}
+}
+
+russian_tank_program = {
+	russian_armor_project_1 = {
+		cost = 50
+	}
+}

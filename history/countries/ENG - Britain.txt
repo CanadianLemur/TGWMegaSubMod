@@ -292,7 +292,11 @@ create_navy_leader={  name = "Tyrwhitt" portrait_path="gfx/admiral/ENG_tyrwhitt.
 	#Diplomatic
 	complete_national_focus = ENG_ww1_diplomatic_effort
 	#-------------------------------------------------------
-
+	
+	set_technology = {
+		ww1_train = 1
+	}
+	
 		# Navy
 
 if = {

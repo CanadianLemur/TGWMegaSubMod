@@ -1,12 +1,15 @@
 technologies = {
+
+	###ARMORED CARS
+	
 	MSM_armored_car_0_NSB = {
-		#enable_equipments = { ww1_armored_car_equipment }
+		enable_equipments = { ww1_armored_car_equipment_0 }
 		
 		research_cost = 2
 		start_year = 1900
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -8 y = 0 }
+			position = { x = 0	 y = 0 }
 		}
 		
 		ai_will_do = {
@@ -25,13 +28,13 @@ technologies = {
 	}
 	
 	MSM_armored_car_1_NSB = {
-		#enable_equipments = { ww1_armored_car_equipment }
+		enable_equipments = { ww1_armored_car_equipment_1 }
 		
 		research_cost = 2
 		start_year = 1910
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -8 y = 2 }
+			position = { x = 0 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -47,21 +50,16 @@ technologies = {
 			leads_to_tech = MSM_armored_car_2_NSB
 			research_cost_coeff = 1
 		}
-		
-		path = {
-			leads_to_tech = MSM_armor_0_NSB
-			research_cost_coeff = 2
-		}
 	}
 	
-	MSM_armor_0_NSB = {
-		enable_equipments = { light_tank_chassis_1917 heavy_tank_chassis_1916 }
-		enable_equipment_modules = {tank_landship_concept_turret}
+	MSM_armored_car_2_NSB = {
+		enable_equipments = { ww1_armored_car_equipment_2 }
+		
 		research_cost = 2
 		start_year = 1914
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -2 y = 6 }
+			position = { x = 0 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -79,14 +77,17 @@ technologies = {
 		#}
 	}
 	
-	MSM_armored_car_2_NSB = {
-		#enable_equipments = { ww1_armored_car_equipment }
-		
+	
+	##BEGIN ARMOR TREE
+	
+	MSM_armor_0_NSB = {
+		enable_equipments = { light_tank_chassis_1917 heavy_tank_chassis_1916 }
+		enable_equipment_modules = {tank_landship_concept_turret}
 		research_cost = 2
 		start_year = 1914
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -9 y = 4 }
+			position = { x = 0 y = 0 }
 		}
 		
 		ai_will_do = {
@@ -96,6 +97,162 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
+		}
+		
+		path = {
+			leads_to_tech = MSM_armor_1_NSB
+			research_cost_coeff = 1
+		}
+	}
+	
+	MSM_armor_1_NSB = {
+		enable_equipments = { light_tank_chassis_1918 heavy_tank_chassis_1917 }
+		enable_equipment_modules = {}
+		research_cost = 2
+		start_year = 1916
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 200
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+		
+		path = {
+			leads_to_tech = MSM_armor_2_NSB
+			research_cost_coeff = 1
+		}
+	}
+	
+	MSM_armor_2_NSB = {
+		enable_equipments = { light_tank_chassis_1920 heavy_tank_chassis_1928 }
+		enable_equipment_modules = {}
+		research_cost = 2
+		start_year = 1918
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 200
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+		
+		path = {
+			leads_to_tech = MSM_armor_medium_0_NSB
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = MSM_armor_heavy_0_NSB
+			research_cost_coeff = 1
+		}
+		
+	}
+		
+	MSM_armor_medium_0_NSB = {  ##
+		enable_equipments = { medium_tank_chassis_0 }
+		enable_equipment_modules = {}
+		research_cost = 2
+		start_year = 1922
+		folder = {
+			name = nsb_armour_folder
+			position = { x = -4 y =10 }
+		}
+		
+		ai_will_do = {
+			factor = 200
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		path = {
+			leads_to_tech = MSM_armor_medium_1_NSB
+			research_cost_coeff = 1
+		}
+	}
+	
+	MSM_armor_medium_1_NSB = {
+		enable_equipments = { medium_tank_chassis_1 }
+		enable_equipment_modules = {}
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = nsb_armour_folder
+			position = { x = -4 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 200
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		path = {
+			leads_to_tech = MSM_armor_medium_2_NSB
+			research_cost_coeff = 1
+		}
+	}
+	
+	MSM_armor_medium_2_NSB = {
+		enable_equipments = { medium_tank_chassis_2 }
+		enable_equipment_modules = {}
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = nsb_armour_folder
+			position = { x = -4 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 200
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		#path = {
+		#	leads_to_tech = MSM_armored_car_1_NSB
+		#	research_cost_coeff = 1
+		#}
+	}
+		
+	MSM_armor_heavy_0_NSB = {
+		enable_equipments = { heavy_tank_chassis_1 }
+		enable_equipment_modules = {}
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 4 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 150
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
 		}
 		
 		#path = {

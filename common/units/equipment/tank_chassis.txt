@@ -174,7 +174,6 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_small_main_armament
-					tank_flamethrower
 				}
 			}
 
@@ -542,6 +541,9 @@ equipments = {
 		}
 	}
 
+	##BEGIN HEAVY TANK CHASSIS
+	
+	#Unused parent tech
 	heavy_tank_chassis = {
 		year = 1922
 		is_archetype = yes
@@ -699,7 +701,7 @@ equipments = {
 	}
 
 
-	heavy_tank_chassis_1916 = { # Heavy 1916
+	heavy_tank_chassis_1916 = { # Heavy Armor 1916
 		abbreviation = "h16"
 		derived_variant_name = ww1_heavy_tank_equipment_1
 		visual_level = 0
