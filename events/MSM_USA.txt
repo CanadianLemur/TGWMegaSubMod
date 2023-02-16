@@ -4,6 +4,7 @@
 add_namespace = MSMUSA
 
 ####Choose Your Candidate - Republican Vote Question####
+#Primaries
 country_event = {
 	id =  MSMUSA.1
 	title = MSMUSA.1.t
@@ -18,10 +19,11 @@ country_event = {
     }
 	
 	trigger = {
+		tag = USA
 		date > 1912.3.1
 	}
 
-	option = {	#Progressives & Conservatives happy - Taft runs again and wins 
+	option = {	#Progressives & Conservatives happy - Taft runs again and wins regardless of teddy's mood (he concedes the primaries)
 		name = MSMUSA.1.a
 		ai_chance = { factor = 100 }
 		trigger = { 
@@ -30,9 +32,10 @@ country_event = {
 				MSM_USA_conservatives_happy = yes 
 			}
 		}
-		effect = { set_variable = { USA_candidate = 0 } }
+		set_variable = { USA_candidate = 0 }
+		complete_national_focus = USA_MSM_the_question_of_the_republican_vote
 	}
-	option = {	#Conservatives happy - Teddy runs against Taft and Wilson wins
+	option = {	#Conservatives happy & Progressives & teddy pissed - Teddy runs against Taft and Wilson wins
 		name = MSMUSA.1.b
 		ai_chance = { factor = 100 }
 		trigger = { 
@@ -42,30 +45,34 @@ country_event = {
 				USA = { has_country_flag = MSM_USA_teddys_pissed }
 			}
 		}
-		effect = { set_variable = { USA_candidate = 1 } }
+		set_variable = { USA_candidate = 1 }
+		complete_national_focus = USA_MSM_the_question_of_the_republican_vote
 	}
-	option = {	#Conservatives & teddy happy - Debs runs and grabs the progressive and centrist votes for the W
+	option = {	#Progressives angry & teddy happy - Debs runs and grabs the progressive and centrist votes for the W
 		name = MSMUSA.1.c
 		ai_chance = { factor = 100 }
 		trigger = { 
 			AND = {
-				MSM_USA_conservatives_happy = yes 
+				#NOT = { MSM_USA_conservatives_happy = yes }
 				NOT = { MSM_USA_progressives_happy = yes }
 				NOT = { USA = { has_country_flag = MSM_USA_teddys_pissed } }
 			}
 		}
-		effect = { set_variable = { USA_candidate = 2 } }
+		set_variable = { USA_candidate = 2 }
+		complete_national_focus = USA_MSM_the_question_of_the_republican_vote
 	}
-	option = {	#Everyone's pissed - Teddy runs and wins the primary, beats Wilson
+	option = {	#Conservatives & Progressives angry & teddy's pissed	- Teddy runs and wins the primary, beats Wilson
 		name = MSMUSA.1.d
 		ai_chance = { factor = 100 }
 		trigger = { 
 			AND = {
 				NOT = { MSM_USA_conservatives_happy = yes }
 				NOT = { MSM_USA_progressives_happy = yes }
+				USA = { has_country_flag = MSM_USA_teddys_pissed }
 			}
 		}
-		effect = { set_variable = { USA_candidate = 3 } }
+		set_variable = { USA_candidate = 3 }
+		complete_national_focus = USA_MSM_the_question_of_the_republican_vote
 	}
 }
 
@@ -77,7 +84,7 @@ country_event = {
 	desc = MSMUSA.30.d
 
     mean_time_to_happen = {
-        days = 0
+        days = 10
     }
 
     fire_only_once = yes
@@ -93,38 +100,24 @@ country_event = {
 	        }
         }
     }
-	hidden_effect = {
-			if = {
-				limit = {
-					OR = {
-						has_completed_focus = USA_voter_registration_act
-						has_completed_focus = USA_union_representation_act
-					}
-				}
-				country_event = { id = usa.32 days = 730 } # midterms
-			}
-			else = {
-				country_event = { id = usa.35 days = 730 } # midterms
-			}
-		}
 	# Wilson
 	option = {
 		name = MSMUSA.30.a
 		ai_chance = { factor = 100 }
 		set_country_flag = new_1913_president_usa
-		trigger = { check_variable = { USA_candidate = 0 } }
+		trigger = { check_variable = { USA_candidate = 1 } }
 		hidden_effect = {
-			news_event = { days = 150 id = MSMUSA.31 }
+			news_event = { days = 10 id = MSMUSA.31 }	#Was 150 days
 		}
 	}
 	# Teddy
 	option = {
 		name = MSMUSA.30.b
+		trigger = { check_variable = { USA_candidate = 3 } }
 		ai_chance = { factor = 100 }
 		set_country_flag = new_1913_president_usa
-		trigger = { check_variable = { USA_candidate = 1 } }
 		hidden_effect = {
-			news_event = { days = 150 id = MSMUSA.32 }
+			news_event = { days = 10 id = MSMUSA.32 }
 		}
 	}
 	# Taft
@@ -132,9 +125,9 @@ country_event = {
 		name = MSMUSA.30.c
 		ai_chance = { factor = 100 }
 		set_country_flag = new_1913_president_usa
-		trigger = { check_variable = { USA_candidate = 2 } }
+		trigger = { check_variable = { USA_candidate = 0 } }
 		hidden_effect = {
-			news_event = { days = 150 id = MSMUSA.33 }
+			news_event = { days = 10 id = MSMUSA.33 }
 		}
 	}
 	# Debs
@@ -142,9 +135,9 @@ country_event = {
 		name = MSMUSA.30.d
 		ai_chance = { factor = 100 }
 		set_country_flag = new_1913_president_usa
-		trigger = { check_variable = { USA_candidate = 3 } }
+		trigger = { check_variable = { USA_candidate = 2 } }
 		hidden_effect = {
-			news_event = { days = 150 id = MSMUSA.34 }
+			news_event = { days = 10 id = MSMUSA.34 }
 		}
 	}
 }
@@ -201,7 +194,7 @@ news_event = {
 	    	USA = {
 	    		retire_country_leader = yes
 		        create_country_leader = {
-		            name = "Teddy Roosevelt"
+		            name = "Theodore Roosevelt"
 		            desc = USA_teddy_roosevelt_DESC 
 		            picture = "gfx/hoi4tgw_portraits/USA/country_leaders/USA_theodore_roosevelt.dds"
 		            expire = "1935.1.1"

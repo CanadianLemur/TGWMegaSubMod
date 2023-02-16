@@ -69,7 +69,7 @@ focus_tree = {
 			add_political_power = 75
 		}
 		ai_will_do = { factor = 10 }
- 		cost = 10
+ 		cost = 5
 		x = -1
 		y = 1
 	}
@@ -165,7 +165,7 @@ focus_tree = {
 			USA_congress_small_support = yes
             swap_ideas = {
                 remove_idea = MSM_USA_payne_aldrich_act_1
-                add_ideas = MSM_USA_payne_aldrich_act_2
+                add_idea = MSM_USA_payne_aldrich_act_2
             }
 			MSM_USA_progressive_medium_support = yes
 		}
@@ -185,7 +185,7 @@ focus_tree = {
 			MSM_USA_conservative_medium_support = yes
 		}
 		ai_will_do = { factor = 10 }
- 		cost = 10
+ 		cost = 5
 		x = 0
 		y = 1
 	}
@@ -200,7 +200,7 @@ focus_tree = {
 			MSM_USA_conservative_medium_opposition = yes
 		}
 		ai_will_do = { factor = 10 }
- 		cost = 10
+ 		cost = 5
 		x = 0
 		y = 1
 	}
@@ -225,7 +225,7 @@ focus_tree = {
 			#maybe make an angry teddy roosevelt idea if you do this (he will get very cranky if you do this)
 		}
 		ai_will_do = { factor = 10 }
- 		cost = 10
+ 		cost = 5
 		x = 0
 		y = 1
 	}
@@ -239,21 +239,25 @@ focus_tree = {
 			MSM_USA_progressive_small_support = yes
 		}
 		ai_will_do = { factor = 10 }
- 		cost = 10
+ 		cost = 5
 		x = 0
 		y = 1
 	}
+	
+	#Set the republican nominee
+	#Auto-completed by primaries event
 	focus = {
 		id = USA_MSM_the_question_of_the_republican_vote
 		prerequisite = { focus = USA_MSM_our_own_men focus = USA_MSM_a_spot_for_garfield }
 		relative_position_id = USA_MSM_our_own_men
  		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		#If both the progressives and conservatives are happy enough, you can get taft. If not, you can choose roosevelt or taft to take the forefront
+		#If both the progressives and conservatives are happy enough, you can get taft. If not, you get roosevelt.
 		completion_reward = {
-			#    
+			country_event = MSMUSA.1
+			#Add something else too so that people have a reason to do this focus
 		}
 		ai_will_do = { factor = 10 }
- 		cost = 10
+ 		cost = 5
 		x = 1
 		y = 1
 	}
@@ -369,7 +373,7 @@ focus_tree = {
                 limit = { has_idea = MSM_USA_payne_aldrich_act_1 }
                 swap_ideas = {
 					remove_idea = MSM_USA_payne_aldrich_act_1
-					add_ideas = MSM_USA_idea_underwood_tariff_act
+					add_idea = MSM_USA_idea_underwood_tariff_act
 				}
             }
 			else = {
@@ -377,7 +381,7 @@ focus_tree = {
 					limit = { has_idea = MSM_USA_payne_aldrich_act_2 }
 					swap_ideas = {
 						remove_idea = MSM_USA_payne_aldrich_act_2
-						add_ideas = MSM_USA_idea_underwood_tariff_act
+						add_idea = MSM_USA_idea_underwood_tariff_act
 					}
 				}
 			}
@@ -406,7 +410,7 @@ focus_tree = {
 			else = {
 				swap_idea = {
 					remove_idea = MSM_USA_idea_underwood_tariff_act
-					add_ideas = MSM_USA_idea_new_federal_tax
+					add_idea = MSM_USA_idea_new_federal_tax
 				}
 			}
 		}
@@ -429,7 +433,7 @@ focus_tree = {
 			else = {
 				swap_idea = {
 					remove_idea = MSM_USA_idea_new_federal_tax
-					add_ideas = MSM_USA_idea_central_bank_fed
+					add_idea = MSM_USA_idea_central_bank_fed
 				}
 			}
 		}
@@ -5754,11 +5758,11 @@ focus_tree = {
 		completion_reward = {
 		USA_congress_small_opposition = yes
 		remove_ideas = {
-		bootleggers
+			bootleggers
 		}
 		swap_ideas = {
-		remove_idea = prohibition_accepted
-		add_ideas = MSM_prohibition_middle_ground
+			remove_idea = prohibition_accepted
+			add_idea = MSM_prohibition_middle_ground
 		}
 		}
 		ai_will_do = { factor = 0 }
@@ -5935,7 +5939,7 @@ focus_tree = {
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = USA_armed_forces_desegregation
-				add_ideas = USA_full_desegregation
+				add_idea = USA_full_desegregation
 			}
 			if = {
 				limit = {
@@ -7395,11 +7399,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			if = {
-				limit = {
-					NOT = {
-						has_dlc = "La Resistance"
-					}
-				}
+				limit = { NOT = { has_dlc = "La Resistance" } }
 				add_ideas = office_of_strategic_services
 			}
 			else = {
@@ -7653,7 +7653,7 @@ focus_tree = {
 				}
 				swap_ideas = {
 					remove_idea = USA_limited_intervention
-					add_ideas = USA_lend_lease_act_li
+					add_idea = USA_lend_lease_act_li
 				}
 			}
 			else_if = {
@@ -7662,7 +7662,7 @@ focus_tree = {
 				}
 				swap_ideas = {
 					remove_idea = USA_neutrality_act
-					add_ideas = USA_lend_lease_act_na
+					add_idea = USA_lend_lease_act_na
 				}
 			}
 			else = {
@@ -8761,7 +8761,7 @@ focus_tree = {
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = USA_banking_sector_deregulation
-				add_ideas = USA_national_employment_strategy
+				add_idea = USA_national_employment_strategy
 			}
 			USA_great_depression_level_down = yes
 		}
@@ -10879,7 +10879,7 @@ focus_tree = {
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = USA_war_department
-				add_ideas = USA_department_of_defense
+				add_idea = USA_department_of_defense
 			}
 		}
 	}
