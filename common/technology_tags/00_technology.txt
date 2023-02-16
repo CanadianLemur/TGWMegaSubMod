@@ -117,13 +117,17 @@ technology_folders = {
 		ledger = army
 	}
 	air_techs_folder = {
-		available = { NOT = { has_dlc = "By Blood Alone" } }
+		available = { 
+			#NOT = { has_dlc = "By Blood Alone" } 
+			always = yes
+			}
 		ledger = air
 	}
 	bba_air_techs_folder = {
 		available = {
-			has_dlc = "By Blood Alone"
-		}
+			#has_dlc = "By Blood Alone"
+			always = no
+			}
 		ledger = air
 	}
 	naval_folder = {
