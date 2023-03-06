@@ -19,13 +19,7 @@ country_event = {
 		ai_chance = { factor = 90 }		
 		add_political_power = 120
 		set_party_name = { ideology = democratic long_name = Canada_Conservative name = Canada_Conservative }
-		create_country_leader = {
-        name = "Robert Borden"
-        desc = CAN_robert_borden_DESC picture = "gfx/hoi4tgw_portraits/CAN/country_leaders/CAN_robert_borden.dds"
-        expire = "1935.1.1"
-        ideology = liberalism 
-		traits = {}
-			}
+		promote_character = CAN_robert_borden
 			}
 			
 	option = { 
